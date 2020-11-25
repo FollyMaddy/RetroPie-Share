@@ -10,4 +10,6 @@ This repository is created for sharing home made :
  
  - (.cmd) Command files (for running combined multi-disk/multi-hd/multi-cd programs/games)
  
+ - (.sh ) bash script files for automating stuff
+ 
  
