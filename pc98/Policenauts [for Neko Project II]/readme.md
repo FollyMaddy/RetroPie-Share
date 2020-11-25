@@ -8,6 +8,4 @@ works with :
 
 sound-board : PC9801-86
 
-added file for booting :
-
-.cmd file for booting
+added .cmd file for booting
