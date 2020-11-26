@@ -8,11 +8,11 @@ fix without IPS_patch : remove the "umb" (upper memmory block) in the config.sys
 
 - go into the menu "F12"
 
-- insert floppy "Policenauts (User boot disk) [for Neko Project II].hdm"
+- insert fdd1 : "Policenauts (User boot disk) [for Neko Project II].hdm"
 
 - press "enter" to get the prompt again
 
-- type -> b: (use the "b" and the "' key")
+- type -> b: ( use " for : )
 
 - type -> sedit config.sys
 
