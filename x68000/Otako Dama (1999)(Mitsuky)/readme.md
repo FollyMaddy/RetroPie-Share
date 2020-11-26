@@ -4,14 +4,14 @@ md5sum : 03cd0df3d66e211a2fdddf8af0857670
 
 fix without IPS_patch : add "ZMUSIC.X" above the CD (change directory) line
 
-- make a .cmd (with full paths) to edit the drive (b:) :     
+- make a .cmd (with full paths) to edit the drive (b:) :    
 px68k /home/pi/RetroPie/roms/x68000/HUMAN302.XDF /home/pi/RetroPie/roms/x68000/Otoko_dama.hdm
 
 - type -> ed b:autoexec.bat
 
 - insert command -> ZMUSIC.X
 
-- quit ed to save
+- press "esc" -> press "e" (exit "ed" and save)
 
 - exit the emulator
 
