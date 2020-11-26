@@ -23,4 +23,4 @@ tested emulator(s) : lr-px68k
 
 sound : works with more ram, 12 Mb is ok
 
-cpu clock : Game is designed for 16Mhz
+cpu clock : game is designed for 16Mhz
