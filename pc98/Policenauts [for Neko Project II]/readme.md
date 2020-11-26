@@ -18,14 +18,9 @@ fix without IPS_patch : remove the "umb" (upper memmory block) in the config.sys
 
 - remove the "umb" (upper memmory block)
 
-- press "F1" -> select "S" for saving -> select "Q" to quit
+- press "F1" -> select "E" to exit and save    
+(or press "F1" -> select "S" for saving -> select "Q" to quit)
 
 - type -> del config.bak (to remove the backup file)
 
 - quit the emulator and boot with the .cmd file
-
-tested emulator(s) : lr-np2kai
-
-works with : sound-board = PC9801-86
-
-added : .cmd file for booting
