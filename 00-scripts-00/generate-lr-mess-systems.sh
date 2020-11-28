@@ -68,7 +68,7 @@ rp_module_ext="${extensions[$index]}"
 rp_module_desc="MESS emulator (\$rp_module_name) - MESS Port for libretro"
 rp_module_help="ROM Extensions: \$rp_module_ext\n\n
 Put games in:\n
-\$romdir/${systems[$index]}.zip\n\n
+\$romdir/${systems[$index]}\n\n
 Put BIOS files in \$biosdir:\n
 ${systems[$index]}.zip\n\n"
 
