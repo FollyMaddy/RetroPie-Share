@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Version : 1
+# Version : 1.1
 #
 # Author : @folly
-# Date   : 27/11/2020
+# Date   : 29/11/2020
 #
 # Copyright 2020 @folly
 #
@@ -23,34 +23,52 @@
 #
 #--------------------------------------
 
-
 echo start
 date
 
-systems=()
-media=()
-extensions=()
-descriptions=()
+onesystem=$1
 
-echo "reading systems, media and extensions from listmedia into arrays"
+systems=(); mediadescriptions=(); media=(); extensions=(); descriptions=()
+
+echo "reading system(s)"
 while read LINE; do 
+# check for "system" in line
+# if "no sytem" in line place add the last value again, in the system array
+if [[ -z $LINE ]]; then
+systems+=( "${systems[-1]}" )
+##echo ${systems[-1]} $LINE
+else
 # use the first column if seperated by a space
-systems+=( "$(echo $LINE | cut -d " " -f 1)" )
+systems+=( "$(echo $LINE)" )
+fi
+done < <(/opt/retropie/emulators/mame/mame -listmedia $onesystem | grep -v -E '\(brief|------|\(none' | grep -E '\(quik|\(cart|\(flop1|\(cass|\(dump|\(cdrm' | cut -d " " -f 1)
+
+
+echo "reading media and extension(s)"
+index=0
+while read LINE; do
+# if any?, remove earlier detected system(s) from the line
+substitudeline=$(echo $LINE | sed "s/${systems[$index]}//g")
+# use the first column if seperated by a space
+mediadescriptions+=( "$(echo $substitudeline | cut -d " " -f 1)" )
 # use the third column if seperated by a space and remove ( ) characters and add - for media
-media+=( "$(echo $LINE | cut -d " " -f 3 | sed s/\(/-/g | sed s/\)//g)" )
-# use the second column if seperated by a ) character
-extensions+=( "$(echo $LINE | cut -d ")" -f 2)" )
-done < <(/opt/retropie/emulators/mame/mame -listmedia | grep -v -E '\(brief|------|\(none|\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s' | grep -E '\(cart|\(flop1|\(cass|\(dump|\(cdrm')
+media+=( "$(echo $substitudeline | cut -d " " -f 2 | sed s/\(/-/g | sed s/\)//g)" )
+# use the second column if seperated by a ) character and cut off the first space
+extensions+=( "$(echo $substitudeline | cut -d ")" -f 2 | cut -c 2-)" )
+index=$(( $index + 1 ))
+done < <(/opt/retropie/emulators/mame/mame -listmedia $onesystem | grep -v -E '\(brief|------|\(none' | grep -E '\(quik|\(cart|\(flop1|\(cass|\(dump|\(cdrm')
 
-echo "reading computer descriptions from listdevices into array"
-for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/Driver//g | sed s/${systems[$index]}//g | sed s/\://g)" ); done
 
-#for index in "${!systems[@]}"; do echo ${descriptions[$index]} ${systems[$index]} ${media[$index]} ${extensions[$index]}; echo -ne '\n'; done
+echo "reading computer description(s)"
+# keep the good info and delete text in lines ( "Driver"(cut), "system"(sed), "):"(sed) )
+for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" ); done
+
 
 echo "generating and writing the generated-lr-mess-<system>.sh script files"
 # put everything in a seperate directory
 mkdir libretrocores 2>&-
-for index in "${!systems[@]}"; do cat > libretrocores/generated-lr-mess-${systems[$index]}.sh << _EOF_
+# used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
+for index in "${!systems[@]}"; do cat > libretrocores/generated-lr-mess-"${systems[$index]}${media[$index]}".sh << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
@@ -62,8 +80,8 @@ for index in "${!systems[@]}"; do cat > libretrocores/generated-lr-mess-${system
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
-rp_module_id="lr-mess-${systems[$index]}"
-rp_module_name="${descriptions[$index]}"
+rp_module_id="lr-mess-${systems[$index]}${media[$index]}"
+rp_module_name="${descriptions[$index]} with ${mediadescriptions[$index]} support"
 rp_module_ext="${extensions[$index]}"
 rp_module_desc="MESS emulator (\$rp_module_name) - MESS Port for libretro"
 rp_module_help="ROM Extensions: \$rp_module_ext\n\n
@@ -76,7 +94,7 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/mame/master/L
 rp_module_section="exp"
 rp_module_flags=""
 
-function depends_lr-mess-${systems[$index]}() {
+function depends_lr-mess-${systems[$index]}${media[$index]}() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	if [[ ! -f "\$_mess" ]]; then
 		printMsgs dialog "cannot find '\$_mess' !\n\nplease install 'lr-mess' package."
@@ -84,19 +102,19 @@ function depends_lr-mess-${systems[$index]}() {
 	fi
 }
 
-function sources_lr-mess-${systems[$index]}() {
+function sources_lr-mess-${systems[$index]}${media[$index]}() {
 	true
 }
 
-function build_lr-mess-${systems[$index]}() {
+function build_lr-mess-${systems[$index]}${media[$index]}() {
 	true
 }
 
-function install_lr-mess-${systems[$index]}() {
+function install_lr-mess-${systems[$index]}${media[$index]}() {
 	true
 }
 
-function configure_lr-mess-${systems[$index]}() {
+function configure_lr-mess-${systems[$index]}${media[$index]}() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
 	local _system="${systems[$index]}"
