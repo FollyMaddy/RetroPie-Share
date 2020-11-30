@@ -41,7 +41,7 @@ else
 # use the first column if seperated by a space
 systems+=( "$(echo $LINE)" )
 fi
-done < <(/opt/retropie/emulators/mame/mame -listmedia $onesystem | grep -v -E '\(brief|------|\(none' | grep -E '\(quik|\(cart|\(flop1|\(cass|\(dump|\(cdrm' | cut -d " " -f 1)
+done < <(/opt/retropie/emulators/mame/mame -listmedia $onesystem | grep -v -E '\(brief|------|\(none' | grep -E '\(prin|\(quik|\(cart|\(flop|\(flop1|\(cass|\(dump|\(cdrm' | cut -d " " -f 1)
 
 
 echo "reading media and extension(s)"
@@ -56,7 +56,7 @@ media+=( "$(echo $substitudeline | cut -d " " -f 2 | sed s/\(/-/g | sed s/\)//g)
 # use the second column if seperated by a ) character and cut off the first space
 extensions+=( "$(echo $substitudeline | cut -d ")" -f 2 | cut -c 2-)" )
 index=$(( $index + 1 ))
-done < <(/opt/retropie/emulators/mame/mame -listmedia $onesystem | grep -v -E '\(brief|------|\(none' | grep -E '\(quik|\(cart|\(flop1|\(cass|\(dump|\(cdrm')
+done < <(/opt/retropie/emulators/mame/mame -listmedia $onesystem | grep -v -E '\(brief|------|\(none' | grep -E '\(prin|\(quik|\(cart|\(flop|\(flop1|\(cass|\(dump|\(cdrm')
 
 
 echo "reading computer description(s)"
