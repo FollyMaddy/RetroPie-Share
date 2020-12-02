@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Version : 1.1
+# Version : 1.2
 #
 # Author : @folly
-# Date   : 29/11/2020
+# Date   : 02/12/2020
 #
 # Copyright 2020 @folly
 #
@@ -23,10 +23,13 @@
 #
 #--------------------------------------
 
+if [[ $1 == "-h" ]]; then
+echo "helptext"
+else
+# run program
+
 echo start
 date
-
-onesystem=$1
 
 systems=(); mediadescriptions=(); media=(); extensions=(); descriptions=()
 
@@ -41,10 +44,21 @@ else
 # use the first column if seperated by a space
 systems+=( "$(echo $LINE)" )
 fi
-done < <(/opt/retropie/emulators/mame/mame -listmedia $onesystem | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(cart|flop\)|flop1\)|cass\)|dump\)|cdrm\)' | cut -d " " -f 1)
+done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(cart|flop\)|flop1\)|cass\)|dump\)|cdrm\)' | cut -d " " -f 1)
 
 
-echo "reading media and extension(s)"
+echo "reading all available extensions per system(s)"
+for index in "${!systems[@]}"; do 
+# export all supported media per system on unique base
+allextensions+=( "$(/opt/retropie/emulators/mame/mame -listmedia ${systems[$index]} | grep -o "\...." | tr ' ' '\n' | sort -u | tr '\n' ' ')" )
+#testline
+#echo ${systems[$index]} ${allextensions[$index]}
+done
+#testline
+#echo ${allextensions[@]} ${#allextensions[@]}
+
+
+echo "reading media with compatible extension(s)"
 index=0
 while read LINE; do
 # if any?, remove earlier detected system(s) from the line
@@ -56,7 +70,7 @@ media+=( "$(echo $substitudeline | cut -d " " -f 2 | sed s/\(/-/g | sed s/\)//g)
 # use the second column if seperated by a ) character and cut off the first space
 extensions+=( "$(echo $substitudeline | cut -d ")" -f 2 | cut -c 2-)" )
 index=$(( $index + 1 ))
-done < <(/opt/retropie/emulators/mame/mame -listmedia $onesystem | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(cart|flop\)|flop1\)|cass\)|dump\)|cdrm\)')
+done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(cart|flop\)|flop1\)|cass\)|dump\)|cdrm\)')
 
 
 echo "reading computer description(s)"
@@ -82,9 +96,12 @@ for index in "${!systems[@]}"; do cat > libretrocores/generated-lr-mess-"${syste
 
 rp_module_id="lr-mess-${systems[$index]}${media[$index]}"
 rp_module_name="${descriptions[$index]} with ${mediadescriptions[$index]} support"
-rp_module_ext="${extensions[$index]}"
+rp_module_ext="${allextensions[$index]}"
 rp_module_desc="MESS emulator (\$rp_module_name) - MESS Port for libretro"
-rp_module_help="ROM Extensions: \$rp_module_ext\n\n
+rp_module_help="ROM Extensions: \$rp_module_ext\n
+Above extensions are included for compatibility between different media installs.\n\n
+ROM extensions only supported by this install:\n
+${extensions[$index]}\n\n
 Put games in:\n
 \$romdir/${systems[$index]}\n\n
 Put BIOS files in \$biosdir:\n
@@ -160,3 +177,5 @@ done
 
 echo stop
 date
+
+fi

@@ -20,3 +20,4 @@
 
 #msx systems
 #bash generate-lr-mess-systems.sh fsa1wsx # bootable # FS-A1WX / 1st released version (Japan) (MSX2+)
+#bash generate-lr-mess-systems.sh hbf700p # bootable # HB-F700P / Sony (MSX2)
