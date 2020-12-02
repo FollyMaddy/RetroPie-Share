@@ -31,7 +31,7 @@ else
 echo start
 date
 
-systems=(); mediadescriptions=(); media=(); extensions=(); descriptions=()
+systems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
 
 echo "reading system(s)"
 while read LINE; do 
