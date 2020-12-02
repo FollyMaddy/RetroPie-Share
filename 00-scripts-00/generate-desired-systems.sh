@@ -10,9 +10,10 @@
 #bash generate-lr-mess-systems.sh pc6001mk2 # bootable
 #bash generate-lr-mess-systems.sh zx81 # bootable
 #bash generate-lr-mess-systems.sh smc777 # bootable
+#bash generate-lr-mess-systems.sh astrocde # bootable
 #bash generate-lr-mess-systems.sh videopac #videopac g7000 # bios files missing
 #bash generate-lr-mess-systems.sh g7400 #videopac g7400 # bios files missing
-
+#bash generate-lr-mess-systems.sh apple2gs # bios files missing
 #bash generate-lr-mess-systems.sh mtx512 # bios files missing
 
 #amiga
