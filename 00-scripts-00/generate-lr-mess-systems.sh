@@ -23,17 +23,51 @@
 #
 #--------------------------------------
 
-if [[ $1 == "-h" ]]; then
-echo "helptext"
-else
-# run program
+# Get the options
+while getopts ":h" option; do
+   case $option in
+      h) # display Help
+         echo "options	:"
+         echo "-h		this help "
+         echo "<system>	choosen system to generate " 
+         echo
+         echo "Version	-->	1.2 (stable, but WIP)"
+         echo "Creator	-->	@folly"
+         echo "Use	--> 	Create @valerino's alike lr-mess scripts for Retropie" 
+         echo "Dependancies"
+         echo "--> MAME (install in RetroPie-Setup)"
+         echo "--> @valerino's fork of RetroPie-Setup (https://github.com/valerino/RetroPie-Setup)"
+         echo "======= extra information ======="
+         echo "Run"
+         echo "- generate for all systems: 		bash generate-lr-mess-systems.sh "
+         echo "- generate only one system: 		bash generate-lr-mess-systems.sh <system> "
+         echo "- batch generate only desired systems: 	bash generate-desired-systems.sh "
+         echo "Example"
+         echo "- generating only one system: 		generate-lr-mess-systems.sh fm77av "
+         echo "MAME commands"
+         echo "- help"
+         echo "/opt/retropie/emulators/mame/mame -h "
+         echo "- get system names in a textfile"
+         echo "/opt/retropie/emulators/mame/mame -listdevices | grep Driver > possiblesystems.txt "
+         echo "- check for compatible media"
+         echo "/opt/retropie/emulators/mame/mame -listmedia | grep <system> "
+         echo "!!! systems that use no media (<none>) will not or cannot be created !!!"
+         exit;;
+   esac
+done
+
 
 echo start
 date
 
-systems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
 
-echo "reading system(s)"
+systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
+
+
+[[ -z "$1" ]] && echo "generating all possible files can take up to 30 minutes"
+
+
+# read system(s)
 while read LINE; do 
 # check for "system" in line
 # if "no sytem" in line place add the last value again, in the system array
@@ -47,7 +81,14 @@ fi
 done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(cart|flop\)|flop1\)|\(cass|dump\)|cdrm\)' | cut -d " " -f 1)
 
 
-echo "reading all available extensions per system(s)"
+echo "read system(s)"
+unique=$(echo ${systems[@]} | tr ' ' '\n' | sort -u | tr '\n' ' ')
+IFS=$' ' GLOBIGNORE='*' command eval  'uniquesystems=($(echo $unique))'
+echo  "- got information for ${#uniquesystems[@]} unique system(s)"
+echo  "- got information for creating ${#systems[@]} script files"
+
+
+echo "read all available extensions per system(s)"
 for index in "${!systems[@]}"; do 
 # export all supported media per system on unique base
 allextensions+=( "$(/opt/retropie/emulators/mame/mame -listmedia ${systems[$index]} | grep -o "\...." | tr ' ' '\n' | sort -u | tr '\n' ' ')" )
@@ -58,7 +99,7 @@ done
 #echo ${allextensions[@]} ${#allextensions[@]}
 
 
-echo "reading media with compatible extension(s)"
+echo "read compatible extension(s) for the individual media"
 index=0
 while read LINE; do
 # if any?, remove earlier detected system(s) from the line
@@ -73,12 +114,12 @@ index=$(( $index + 1 ))
 done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(cart|flop\)|flop1\)|\(cass|dump\)|cdrm\)')
 
 
-echo "reading computer description(s)"
+echo "read computer description(s)"
 # keep the good info and delete text in lines ( "Driver"(cut), "system"(sed), "):"(sed) )
 for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" ); done
 
 
-echo "generating and writing the generated-lr-mess-<system>.sh script files"
+echo "generate and write the generated-lr-mess-<system><-media>.sh script files"
 # put everything in a seperate directory
 mkdir libretrocores 2>&-
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
@@ -177,5 +218,3 @@ done
 
 echo stop
 date
-
-fi
