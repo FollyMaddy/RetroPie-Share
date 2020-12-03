@@ -33,7 +33,7 @@ while getopts ":h" option; do
          echo
          echo "Version	-->	1.2 (stable, but WIP)"
          echo "Creator	-->	@folly"
-         echo "Use	--> 	Create @valerino's alike lr-mess scripts for Retropie" 
+         echo "Use	--> 	Create @valerino's alike lr-mess scripts for RetroPie-Setup" 
          echo "Dependancies"
          echo "--> MAME (install in RetroPie-Setup)"
          echo "--> @valerino's fork of RetroPie-Setup (https://github.com/valerino/RetroPie-Setup)"
@@ -44,6 +44,10 @@ while getopts ":h" option; do
          echo "- batch generate only desired systems: 	bash generate-desired-systems.sh "
          echo "Example"
          echo "- generating only one system: 		generate-lr-mess-systems.sh fm77av "
+         echo "Advise : create files not directly in the RetroPie-Setup use copy and paste"
+         echo "If you want to create the scripts directly in RetroPie-Setup,"
+         echo "place and run the script from this directory"
+         echo "/home/pi/RetroPie-Setup"
          echo "MAME commands"
          echo "- help"
          echo "/opt/retropie/emulators/mame/mame -h "
@@ -121,9 +125,9 @@ for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mam
 
 echo "generate and write the generated-lr-mess-<system><-media>.sh script files"
 # put everything in a seperate directory
-mkdir libretrocores 2>&-
+mkdir -p  scriptmodules/libretrocores 2>&-
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
-for index in "${!systems[@]}"; do cat > libretrocores/generated-lr-mess-"${systems[$index]}${media[$index]}".sh << _EOF_
+for index in "${!systems[@]}"; do cat > "scriptmodules/libretrocores/generated-lr-mess-${systems[$index]}${media[$index]}".sh << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
