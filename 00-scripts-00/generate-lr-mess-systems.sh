@@ -89,7 +89,7 @@ echo "read system(s)"
 unique=$(echo ${systems[@]} | tr ' ' '\n' | sort -u | tr '\n' ' ')
 IFS=$' ' GLOBIGNORE='*' command eval  'uniquesystems=($(echo $unique))'
 echo  "- got information for ${#uniquesystems[@]} unique system(s)"
-echo  "- got information for creating ${#systems[@]} script files"
+echo  "- got information for creating ${#systems[@]} script file(s)"
 
 
 echo "read all available extensions per system(s)"
@@ -123,7 +123,7 @@ echo "read computer description(s)"
 for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" ); done
 
 
-echo "generate and write the generated-lr-mess-<system><-media>.sh script files"
+echo "generate and write the generated-lr-mess-<system><-media>.sh script file(s)"
 # put everything in a seperate directory
 mkdir -p  scriptmodules/libretrocores 2>&-
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
@@ -150,7 +150,10 @@ ${extensions[$index]}\n\n
 Put games in:\n
 \$romdir/${systems[$index]}\n\n
 Put BIOS files in \$biosdir:\n
-${systems[$index]}.zip\n\n"
+${systems[$index]}.zip\n
+Note:\n
+BIOS info is automatically generated,\n
+but some systems don't need a BIOS file!\n\n"
 
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/mame/master/LICENSE.md"
 rp_module_section="exp"
@@ -220,5 +223,6 @@ _EOF_
 
 done
 
-echo stop
 date
+echo stop
+
