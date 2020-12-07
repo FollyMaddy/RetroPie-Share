@@ -3,7 +3,7 @@
 # Version : 1.2
 #
 # Author : @folly
-# Date   : 02/12/2020
+# Date   : 07/12/2020
 #
 # Copyright 2020 @folly
 #
@@ -82,7 +82,7 @@ else
 # use the first column if seperated by a space
 systems+=( "$(echo $LINE)" )
 fi
-done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(cart|flop\)|flop1\)|\(cass|dump\)|cdrm\)' | cut -d " " -f 1)
+done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(rom1|\(cart|flop\)|flop1\)|\(cass|dump\)|cdrm\)' | cut -d " " -f 1)
 
 
 echo "read system(s)"
@@ -115,7 +115,7 @@ media+=( "$(echo $substitudeline | cut -d " " -f 2 | sed s/\(/-/g | sed s/\)//g)
 # use the second column if seperated by a ) character and cut off the first space
 extensions+=( "$(echo $substitudeline | cut -d ")" -f 2 | cut -c 2-)" )
 index=$(( $index + 1 ))
-done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(cart|flop\)|flop1\)|\(cass|dump\)|cdrm\)')
+done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E '\(brief|------|\(none' | grep -E 'prin\)|quik\)|\(rom1|\(cart|flop\)|flop1\)|\(cass|dump\)|cdrm\)')
 
 
 echo "read computer description(s)"
