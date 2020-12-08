@@ -142,12 +142,12 @@ for index in "${!systems[@]}"; do cat > "scriptmodules/libretrocores/generated-l
 
 rp_module_id="lr-mess-${systems[$index]}${media[$index]}"
 rp_module_name="${descriptions[$index]} with ${mediadescriptions[$index]} support"
-rp_module_ext=".zip ${allextensions[$index]}"
+rp_module_ext=".zip .7z ${allextensions[$index]}"
 rp_module_desc="MESS emulator (\$rp_module_name) - MESS Port for libretro"
 rp_module_help="ROM Extensions: \$rp_module_ext\n
 Above extensions are included for compatibility between different media installs.\n\n
 ROM extensions only supported by this install:\n
-.zip ${extensions[$index]}\n\n
+.zip .7z ${extensions[$index]}\n\n
 Put games in:\n
 \$romdir/${systems[$index]}\n\n
 Put BIOS files in \$biosdir:\n

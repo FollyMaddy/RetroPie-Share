@@ -82,7 +82,7 @@ namesfilter="\(brief|------|\(none"
 mediafilter="prin\)|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|\(cass|dump\)|cdrm\)"
 
 #string for adding extra extensions in all generated scripts
-addextensions=".zip"
+addextensions=".zip .7z"
 
 
 [[ -z "$1" ]] && echo "generating all possible files can take up to 35 minutes"
