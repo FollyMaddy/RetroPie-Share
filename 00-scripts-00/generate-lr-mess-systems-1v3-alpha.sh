@@ -79,7 +79,7 @@ newsystems=()
 namesfilter="\(brief|------|\(none"
 
 #filter on usefull media, otherwise we also get many unusefull scripts
-mediafilter="prin\)|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|\(cass|dump\)|cdrm\)"
+mediafilter="prin\)|quik\)|\(memc|\(rom1|\(cart|\(flop|\(cass|dump\)|cdrm\)"
 
 #string for adding extra extensions in all generated scripts
 addextensions=".zip .7z"
