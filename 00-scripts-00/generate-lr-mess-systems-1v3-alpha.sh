@@ -3,7 +3,7 @@
 # Version : 1.3 alpha
 #
 # Author : @folly
-# Date   : 08/12/2020
+# Date   : 16/12/2020
 #
 # Copyright 2020 @folly
 #
@@ -83,6 +83,9 @@ mediafilter="prin\)|quik\)|\(memc|\(rom1|\(cart|\(flop|\(cass|dump\)|cdrm\)"
 
 #string for adding extra extensions in all generated scripts
 addextensions=".zip .7z"
+
+#string for adding mame/mess config options
+messcfgoptions="-autoframeskip"
 
 
 [[ -z "$1" ]] && echo "generating all possible files can take up to 35 minutes"
@@ -292,6 +295,7 @@ function configure_lr-mess-${newsystems[$index]}-${systems[$index]}${media[$inde
     iniSet "mame_softlists_enable" "disabled"
 	iniSet "mame_softlists_auto_media" "disabled"
 	iniSet "mame_boot_from_cli" "disabled"
+        iniSet "mame_mouse_enable" "enabled"
 
 	# this will get loaded too via --append_config
 	iniConfig " = " "\"" "\$_add_config"
@@ -309,7 +313,7 @@ function configure_lr-mess-${newsystems[$index]}-${systems[$index]}${media[$inde
 	chmod 755 "\$_script"
 
 	# add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
-	addEmulator 1 "\$md_id" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir ${media[$index]} %ROM%"
+	addEmulator 1 "\$md_id" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir $messcfgoptions ${media[$index]} %ROM%"
 
 	# add system to es_systems.cfg as normal
 	addSystem "\$_system" "\$md_name" "\$md_ext"
