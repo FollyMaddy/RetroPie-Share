@@ -30,12 +30,11 @@ while getopts ":h" option; do
          echo "-h		this help "
          echo "<system>	choosen system to generate " 
          echo
-         echo "Version	-->	1.4 alpha (testing, WIP)"
+         echo "Version	-->	$0 (testing, WIP)"
          echo "!!! THIS VERSION GENERATES @VALAERINO ALIKE SCRIPTS AND ORIGINAL LR-MESS COMMAND SCRIPTS !!!"
-         echo "!!! WHILE DOING THIS IT TRIES TO USE RETROPIE NAMES IF A MATCH IS FOUND !!!"
-         echo "!!! IT ALSO ADDS NEW RETROPIE PLATFORMS NAMES USED BY @DTEAM HANDHELD TUTORIAL !!!"
+         echo "!!! WHILE DOING THIS, IT TRIES TO USE RETROPIE NAMES IF A MATCH IS FOUND !!!"
+         echo "!!! IT ALSO ADDS NEW RETROPIE PLATFORM NAMES, USED BY THE @DTEAM HANDHELD TUTORIAL !!!"
          echo "Creator	-->	@folly"
-         echo "Use	--> 	Create @valerino's alike lr-mess scripts for RetroPie-Setup" 
          echo "Dependancies"
          echo "--> MAME (install in RetroPie-Setup)"
          echo "--> @valerino's fork of RetroPie-Setup (https://github.com/valerino/RetroPie-Setup)"
@@ -46,8 +45,8 @@ while getopts ":h" option; do
          echo "- batch generate only desired systems: 	bash generate-desired-systems.sh "
          echo "Example"
          echo "- generating only one system: 		$0 fm77av "
-         echo "- generating konamih cmd script:		$0 kgradius "
-         echo "(you are done creating this with one game, it can be used for more konamih games !)"
+         echo "- generating konamih cmd script:	$0 kgradius "
+         echo "(creating this can be done with one game)(a cmd script can be used for more konamih games !)"
          echo "Advise : create files not directly in the RetroPie-Setup use copy and paste"
          echo "If you want to create the scripts directly in RetroPie-Setup,"
          echo "place and run the script from this directory"
@@ -59,7 +58,6 @@ while getopts ":h" option; do
          echo "/opt/retropie/emulators/mame/mame -listdevices | grep Driver > possiblesystems.txt "
          echo "- check for compatible media"
          echo "/opt/retropie/emulators/mame/mame -listmedia | grep <system> "
-         echo "!!! systems that use no media (<none>) will not or cannot be created !!!"
          exit;;
    esac
 done
