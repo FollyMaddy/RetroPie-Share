@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Version : 1.3 alpha 5
 #
 # Author : @folly
 # Date   : 27/12/2020
