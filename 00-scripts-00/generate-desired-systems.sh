@@ -22,18 +22,18 @@ version=generate-lr-mess-systems-1v4-alpha.sh
 #bash $version arcadia # Emerson # bootable # No bios needed 
 #bash $version videopac #videopac g7000 # bios files missing
 #bash $version g7400 #videopac g7400 # bios files missing
-#bash $version apple2gs # bios files missing
+#bash $version apple2gs # bootable
 #bash $version mtx512 # bios files missing
 
 #handhelds (use version 1v4-alpha or above)(creates only cmd scripts)(these systems have no external media)
 ##such a cmd script can be created with one game and used for many ! 
-#bash $version ablmini # creates cmd script for all_in1 # 
-#bash $version alnattck # creates cmd script for classich #
-#bash $version gnw_ball # creates cmd script for gameandwatch # 
-#bash $version jak_batm # creates cmd script for jakks #
+#bash $version ablmini # creates cmd script for all_in1 # bootable 
+#bash $version alnattck # creates cmd script for classich # bootable
+#bash $version gnw_ball # creates cmd script for gameandwatch # bootable 
+#bash $version jak_batm # creates cmd script for jakks # bootable
 #bash $version kgradius # creates cmd script for konamih # bootable
-#bash $version taddams # creates cmd script for tigerh #
-#bash $version rzbatfor # creates cmd script for tigerrz #
+#bash $version taddams # creates cmd script for tigerh # bootable
+#bash $version rzbatfor # creates cmd script for tigerrz # bootable
 
 #amiga
 #bash $version a500 # bootable (needs extra keyboard rom), sometimes sluggish, not always good sound, mouse not working oob
