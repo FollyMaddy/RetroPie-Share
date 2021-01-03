@@ -1,6 +1,11 @@
 # RetroPie-Share
 
-This repository is created for sharing home made :
+This repository is created for sharing :
+
+ - (.sh ) bash script files for automating stuff
+ 
+ https://github.com/FollyMaddy/RetroPie-Share/edit/main/00-scripts-00/readme.md
+ 
 
  - (.ips) IPS patch files (for fixing programs/games with a differences patch)
  
@@ -10,6 +15,7 @@ This repository is created for sharing home made :
  
  - (.cmd) Command files (for running combined multi-disk/multi-hd/multi-cd programs/games)
  
- - (.sh ) bash script files for automating stuff
+
+ 
  
  
