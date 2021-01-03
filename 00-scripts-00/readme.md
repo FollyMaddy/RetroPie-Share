@@ -41,7 +41,7 @@ Uncomment one or multiple systems to generate.
 --
 
 
-Introduction :
+# Introduction :
 
 @valerino did a thread on proper lr-mess intergration for RetroPie.
 
@@ -52,7 +52,7 @@ All the @valerino scripts are mostly the same.
 So this is how I got this idea on 27-11-2020.
 
 
-The idea :
+# The idea :
 
 We want to be able to generate all the scripts for all those systems that still have no @valerino script.
 
@@ -71,7 +71,7 @@ It will also add the media type that can be run if the script is installed.
 ( -cart / -flop / -cass etc. ) 
 
 
-Idea added in generate-lr-mess-systems-1v3-alpha and generate-lr-mess-systems-1v4-alpha :
+# Idea added in generate-lr-mess-systems-1v3-alpha and generate-lr-mess-systems-1v4-alpha :
 
 Because there are no es-themes yet for lr-mess system names we came up with the next idea.
 
@@ -92,7 +92,7 @@ If you want to generate a script for the MSX type "hbf700p" the script will use 
 So it can use the existing msx es-theme.
 
 
-Idea added in generate-lr-mess-systems-1v3-alpha and generate-lr-mess-systems-1v4-alpha:
+# Idea added in generate-lr-mess-systems-1v3-alpha and generate-lr-mess-systems-1v4-alpha:
 
 Many systems use mouse.
 
@@ -107,7 +107,7 @@ Also autoframeskipping is enabled as a test.
 You can use F8,F9 and F11 to experiment with frameskipping.
 
 
-Idea added generate-lr-mess-systems-1v4-alpha:
+# Idea added generate-lr-mess-systems-1v4-alpha:
 
 This version will also generate command-scripts.
 
@@ -128,7 +128,7 @@ Example (oilswell.cmd), including autoboot and media type cassette :
 hbf700p -rp /home/pi/RetroPie/BIOS -autoboot_command load"cas:",r\n -autoboot_delay 8 -cass "/home/pi/RetroPie/roms/msx/cassettes/OILSWELL.CAS"
 
 
-Idea added generate-lr-mess-systems-1v4-alpha:
+# Idea added generate-lr-mess-systems-1v4-alpha:
 
 Added the possibility to generate command scripts for handhelds described in @DTEAMS tutorial.
 
@@ -141,7 +141,7 @@ This is done to match possible existing es-themes for these systems.
 I am also hoping this naming will be used in future RetroPie versions.
 
 
-install :
+# install :
 
 Go to the website and download it clicking on the button "code" -> "download zip" (https://github.com/FollyMaddy/RetroPie-Share)
 
@@ -162,7 +162,7 @@ pi@raspberrypi:~ $ cd RetroPie-Share/
 pi@raspberrypi:~/RetroPie-Share $ cd 00-scripts-00/
 
 
-Run :
+# Run :
 
 Everything is explained in the help.
 
