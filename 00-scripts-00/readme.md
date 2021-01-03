@@ -45,11 +45,11 @@ Uncomment one or multiple systems to generate.
 
 @valerino did a thread on proper lr-mess intergration for RetroPie.
 
-In the https://retropie.org.uk/forum/topic/28345/old-computer-appreciation-thread we created 2 @valerino alike scripts for systems that had no @valerino script.
+In the https://retropie.org.uk/forum/topic/28345/old-computer-appreciation-thread we manually created 2 @valerino alike scripts for systems that had no @valerino script.
 
-All the @valerino scripts are mostly the same.
+All the @valerino scripts are mostly, so it's possible to automate this in a script.
 
-So this is how I got this idea on 27-11-2020.
+This is how I got this idea on 27-11-2020.
 
 
 # The idea :
