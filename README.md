@@ -4,7 +4,7 @@ This repository is created for sharing :
 
  - (.sh ) bash script files for automating stuff
  
- https://github.com/FollyMaddy/RetroPie-Share/edit/main/00-scripts-00/readme.md
+https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00
  
 
  - (.ips) IPS patch files (for fixing programs/games with a differences patch)
