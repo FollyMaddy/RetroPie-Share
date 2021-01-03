@@ -81,15 +81,15 @@ If RetroPie system names are used then existing es-themes will be used for the i
 
 It checks MAME system descriptions with RetroPie system descriptions.
 
-If there is a match it will use the RetroPie system name.
+If there is a match, it will use the RetroPie system name.
 
-Otherwise it will keeps using the MAME system name. 
+Otherwise it will keep using the MAME system name. 
 
 Explanation :
 
 If you want to generate a script for the MSX type "hbf700p" the script will use "msx" now as module id.
 
-So it can use the existing msx es-theme.
+So now it uses the existing msx es-theme, if installed.
 
 
 # Idea added in generate-lr-mess-systems-1v3-alpha and generate-lr-mess-systems-1v4-alpha:
@@ -98,7 +98,7 @@ Many systems use mouse.
 
 In the @valerino scripts mouse is turned off.
 
-Only in the generated @valerino alike scripts it's turned on as a test.
+In the generated @valerino alike scripts it's turned on as a test.
 
 If all systems work well with mouse enabled, we will keep it on to support the systems with mouse.
 
@@ -134,11 +134,11 @@ Added the possibility to generate command scripts for handhelds described in @DT
 
 https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame?_=1609426789602
 
-While not RetroPie standard, it will use @DTEAM naming as RetroPie naming.
+While not a RetroPie standard, it will use @DTEAM naming as RetroPie naming.
 
 This is done to match possible existing es-themes for these systems.
 
-I am also hoping this naming will be used in future RetroPie versions.
+I am also hoping this naming will be used in the future RetroPie versions.
 
 
 # install :
@@ -160,6 +160,15 @@ pi@raspberrypi:~ $ git clone https://github.com/FollyMaddy/RetroPie-Share.git
 pi@raspberrypi:~ $ cd RetroPie-Share/
 
 pi@raspberrypi:~/RetroPie-Share $ cd 00-scripts-00/
+
+
+# generate directly in the RetroPie-Setup
+
+Copy the scripts to :
+
+/home/pi/RetroPie-Setup
+
+Run the script from above location.
 
 
 # Run :
