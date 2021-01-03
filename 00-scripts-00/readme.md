@@ -1,11 +1,11 @@
-#generate-lr-mess-systems.sh
+# generate-lr-mess-systems.sh
 
 Stable version to generate @valerine alike scripts with lr-mess system names.
 
 It will not generate for systems that support no media.
 
 
-#generate-lr-mess-systems-1v3-alpha.sh
+# generate-lr-mess-systems-1v3-alpha.sh
 
 Test version to generate @valerine alike scripts with RetroPie system names, if possible.
 
@@ -16,7 +16,7 @@ It will not generate for systems that support no media.
 Only in the generated @valerino alike scripts, mouse and autoframeskipping is turned on for all systems.
 
 
-#generate-lr-mess-systems-1v4-alpha.sh
+# generate-lr-mess-systems-1v4-alpha.sh
 
 Test version to generate @valerine alike and command scripts with RetroPie system names, if possible.
 
@@ -27,7 +27,7 @@ Only in the generated @valerino alike scripts, mouse and autoframeskipping is tu
 It will generate command scripts for systems that support no media.
 
 
-#generate-desired-systems.sh
+# generate-desired-systems.sh
 
 This is a bash script to "batch" create single/multiple desired system(s)
 
