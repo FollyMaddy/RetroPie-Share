@@ -104,7 +104,7 @@ If all systems work well with mouse enabled, we will keep it on to support the s
 
 Also autoframeskipping is enabled as a test. 
 
-You can use F8,F9 and F11 to experiment with frameskipping.
+You can use F8,F9,F10 and F11 to experiment with frameskipping.
 
 
 # Idea added generate-lr-mess-systems-1v4-alpha:
