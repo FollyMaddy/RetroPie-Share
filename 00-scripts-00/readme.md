@@ -107,7 +107,7 @@ Also autoframeskipping is enabled as a test.
 You can use F8,F9,F10 and F11 to experiment with frameskipping.
 
 
-# Idea added generate-lr-mess-systems-1v4-alpha:
+# Idea added in generate-lr-mess-systems-1v4-alpha:
 
 This version will also generate command-scripts.
 
@@ -128,7 +128,7 @@ Example (oilswell.cmd), including autoboot and media type cassette :
 hbf700p -rp /home/pi/RetroPie/BIOS -autoboot_command load"cas:",r\n -autoboot_delay 8 -cass "/home/pi/RetroPie/roms/msx/cassettes/OILSWELL.CAS"
 
 
-# Idea added generate-lr-mess-systems-1v4-alpha:
+# Idea added in generate-lr-mess-systems-1v4-alpha:
 
 Added the possibility to generate command scripts for handhelds described in @DTEAMS tutorial.
 
@@ -188,119 +188,214 @@ or
 bash generate-lr-mess-systems-1v4-alpha -h
 
 
-# Run with a background/overlay picture for handheld or vextrex with Retroarch in lr-mess
+# After installing a script 
+
+## Run with a background/overlay picture for handheld or vextrex with Retroarch in lr-mess
+
 Basically if artwork is used, the MAME way, games becoming slow in lr-mess.
 
+
 So if we want to add an overlay, we have to do this another way.
+
 With lr-vecx and Retroarch this can already be done.
+
 For more information look here : https://retropie.org.uk/forum/topic/2638/vectrex-overlay-artwork
+
 So here we do the exact same thing.
 
+
 But how is such config for an overlay appended ?
+
 After a succesfull run you can see how a config is appended in the /dev/shm/runcommand.log.
+
 So I searching for '|' in the runcommand script (first with grep then in a texteditor).
+
 That's when i found runcommand.sh appends configs if the module-id of the installed script begins with "lr-*" .
+
 If such config if created it can be used, for example, for loading an overlay.
 
+
 :-(
+
 Tested this to see if such config appending works when the rom is loaded through the valerino run_mess.sh script,
+
 with a valerino or valerino alike script.
+
 It seems the game specific retroarch config is added in the commandline.
-But trouble is, run_mess.sh creates a temporary .cmd file and will run this .cmd again with lr-mess. Because this is done from within the run_mess.sh the config isn't added anymore. Presumably.
+
+But trouble is, run_mess.sh creates a temporary .cmd file and will run this .cmd again with lr-mess. 
+
+Because this is done from within the run_mess.sh the config isn't added anymore. Presumably.
+
 
 :-)
+
 Tested this also with a generated command script created with generate-lr-mess-systems-1v4-alpha,
+
 running a .zip and also a .cmd when using a system that uses no media, but only a game-bios.
+
 Both work with such a system.
+
 But remember, you have to match the config file with the game file like this :
+
 1 - (konamih handheld example working with lr-mess command script running .zip file)
+
 /home/pi/RetroPie/roms/konamih/kgradius.zip
+
 /home/pi/RetroPie/roms/konamih/kgradius.zip.cfg
+
 /home/pi/RetroPie/roms/konamih/overlay/kgradius.cfg
+
 /home/pi/RetroPie/roms/konamih/overlay/kgradius.png
+
 
 or
 
+
 2 - (konamih handheld example working with lr-mess command script running .cmd file)
+
 /home/pi/RetroPie/roms/konamih/kgradius.cmd  (containing the text : kgradius)
+
 /home/pi/RetroPie/roms/konamih/kgradius.cmd.cfg
+
 /home/pi/RetroPie/roms/konamih/kgradius.zip 
+
 /home/pi/RetroPie/roms/konamih/overlay/kgradius.cfg
+
 /home/pi/RetroPie/roms/konamih/overlay/kgradius.png
 
+
 This is what the .cmd and .cfg files contain :
+
 */kgradius.cmd :
+
 kgradius
 
+
 */kgradius.zip.cfg and */kgradius.cmd.cfg (# uncommented commands can be used for experimenting) :
+
 input_overlay = /home/pi/RetroPie/roms/konamih/overlays/kgradius.cfg
+
 input_overlay_enable = true
+
 input_overlay_opacity = 0.500000
+
 input_overlay_scale = 1.000000
+
 #custom_viewport_width = "600"
+
 #custom_viewport_height = "800"
+
 #custom_viewport_width = "846"
+
 #custom_viewport_height = "1080"
+
 #custom_viewport_x = "0"
+
 #custom_viewport_y = "0"
+
 #aspect_ratio_index = "22"
 
+
 */overlay/kgradius.cfg :
+
 #video_scale_integer = true
+
 overlays = 1
+
 overlay0_overlay = kgradius.png
+
 overlay0_full_screen = false
+
 overlay0_descs = 0
+
 
 
 For systems that also have to run media, a cartridge for example, like vectrex, this works a bit different.
+
 Both work with such a system, but the first option is not ideal.
+
 1 - (vectrex example working with lr-mess command script running the .7z)
+
     The first option will only work, if :
+    
     - the bios is in the same directory as the game
+    
     - the <system>.xml or, in this case, vectrex.xml is in /home/pi/RetroPie/BIOS/mame/hash 
+    
     - you use the software_name of the game from the hash table.
+    
 Example :
+
 /home/pi/RetroPie/BIOS/mame/vectrex.xml
+
 /home/pi/RetroPie/roms/vectrex/vectrex.zip
+
 /home/pi/RetroPie/roms/vectrex/spike.7z
+
 /home/pi/RetroPie/roms/vectrex/spike.7z.cfg 
+
 /home/pi/RetroPie/roms/vectrex/overlays/spike.cfg
+
 /home/pi/RetroPie/roms/vectrex/overlays/spike.png
+
 
 or
 
+
 2 - this option will work directly, and you are more flexible with game names.
+
   - The name "spike" does not have to match with the mame software_name, it can be, for example "spike_(1983)_usa"
+  
+Example :  
+
 /home/pi/RetroPie/BIOS/vectrex.zip
+
 /home/pi/RetroPie/roms/vectrex/spike.cmd or /home/pi/RetroPie/roms/vectrex/spike_(1983)_usa.cmd
+
 /home/pi/RetroPie/roms/vectrex/spike.cmd.cfg  or /home/pi/RetroPie/roms/vectrex/spike_(1983)_usa.cmd.cfg
+
 /home/pi/RetroPie/roms/vectrex/overlays/spike.cfg
+
 /home/pi/RetroPie/roms/vectrex/overlays/spike.png
 
+
 This is what the .cmd and .cfg files contain :
+
 */spike.cmd :
+
 vectrex -rp /home/pi/RetroPie/BIOS -cart /home/pi/RetroPie/roms/vectrex/spike_(1983)_usa.7z
 
+
 */spike.cmd.cfg :
+
 input_overlay = /home/pi/RetroPie/roms/vectrex/overlays/spike.cfg
+
 input_overlay_enable = true
+
 input_overlay_opacity = 0.375000
+
 input_overlay_scale = 1.000000
+
 custom_viewport_width = "846"
+
 custom_viewport_height = "1080"
+
 custom_viewport_x = "0"
+
 custom_viewport_y = "0"
+
 aspect_ratio_index = "22"
+
 video_scale_integer = true
 
+
 */overlays/spike.cfg :
+
 overlays = 1
+
 overlay0_overlay = spike.png
+
 overlay0_full_screen = false
+
 overlay0_descs = 0
-
-
-
-
-
