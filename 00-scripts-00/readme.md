@@ -24,7 +24,7 @@ If not possible use lr-mess system names.
 
 Only in the generated @valerino alike scripts, mouse and autoframeskipping is turned on for all systems.
 
-It will generate command scripts for systems that support no media.
+It will also generate command scripts.
 
 
 # generate-desired-systems.sh
@@ -130,7 +130,9 @@ hbf700p -rp /home/pi/RetroPie/BIOS -autoboot_command load"cas:",r\n -autoboot_de
 
 # Idea added in generate-lr-mess-systems-1v4-alpha:
 
-Added the possibility to generate command scripts for handhelds described in @DTEAMS tutorial.
+Added the possibility to generate command scripts.
+
+It can also generate command scripts for handhelds described in @DTEAMS tutorial :
 
 https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame?_=1609426789602
 
