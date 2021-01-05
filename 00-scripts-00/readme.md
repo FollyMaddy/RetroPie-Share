@@ -317,13 +317,13 @@ Both work with such a system, but the first option is not ideal.
 
 1 - (vectrex example working with lr-mess command script running the .7z)
 
-    The first option will only work, if :
+   The first option will only work, if :
     
-    - the bios is in the same directory as the game
+   - the bios is in the same directory as the game
     
-    - the <system>.xml or, in this case, vectrex.xml is in /home/pi/RetroPie/BIOS/mame/hash 
+   - the <system>.xml or, in this case, vectrex.xml is in /home/pi/RetroPie/BIOS/mame/hash 
     
-    - you use the software_name of the game from the hash table.
+   - you use the software_name of the game from the hash table.
     
 Example :
 
