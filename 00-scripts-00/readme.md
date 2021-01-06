@@ -246,9 +246,9 @@ But remember, you have to match the config file with the game file like this :
 
 /home/pi/RetroPie/roms/konamih/kgradius.zip.cfg
 
-/home/pi/RetroPie/roms/konamih/overlay/kgradius.cfg
+/home/pi/RetroPie/overlays/konamih/kgradius.cfg
 
-/home/pi/RetroPie/roms/konamih/overlay/kgradius.png
+/home/pi/RetroPie/overlays/konamih/kgradius.png
 
 
 or
@@ -262,9 +262,9 @@ or
 
 /home/pi/RetroPie/roms/konamih/kgradius.zip 
 
-/home/pi/RetroPie/roms/konamih/overlay/kgradius.cfg
+/home/pi/RetroPie/overlays/konamih/kgradius.cfg
 
-/home/pi/RetroPie/roms/konamih/overlay/kgradius.png
+/home/pi/RetroPie/overlays/konamih/kgradius.png
 
 
 This is what the .cmd and .cfg files contain :
@@ -276,7 +276,7 @@ kgradius
 
 */kgradius.zip.cfg and */kgradius.cmd.cfg (# uncommented commands can be used for experimenting) :
 
-input_overlay = /home/pi/RetroPie/roms/konamih/overlays/kgradius.cfg
+input_overlay = /home/pi/RetroPie/overlays/konamih/kgradius.cfg
 
 input_overlay_enable = true
 
@@ -337,9 +337,9 @@ Example :
 
 /home/pi/RetroPie/roms/vectrex/spike.7z.cfg 
 
-/home/pi/RetroPie/roms/vectrex/overlays/spike.cfg
+/home/pi/RetroPie/overlays/vectrex/spike.cfg
 
-/home/pi/RetroPie/roms/vectrex/overlays/spike.png
+/home/pi/RetroPie/overlays/vectrex/spike.png
 
 
 or
@@ -357,9 +357,9 @@ Example :
 
 /home/pi/RetroPie/roms/vectrex/spike.cmd.cfg  or /home/pi/RetroPie/roms/vectrex/spike_(1983)_usa.cmd.cfg
 
-/home/pi/RetroPie/roms/vectrex/overlays/spike.cfg
+/home/pi/RetroPie/overlays/vectrex/spike.cfg
 
-/home/pi/RetroPie/roms/vectrex/overlays/spike.png
+/home/pi/RetroPie/overlays/vectrex/spike.png
 
 
 This is what the .cmd and .cfg files contain :
@@ -371,7 +371,7 @@ vectrex -rp /home/pi/RetroPie/BIOS -cart /home/pi/RetroPie/roms/vectrex/spike_(1
 
 */spike.cmd.cfg :
 
-input_overlay = /home/pi/RetroPie/roms/vectrex/overlays/spike.cfg
+input_overlay = /home/pi/RetroPie/overlays/vectrex/spike.cfg
 
 input_overlay_enable = true
 
