@@ -411,7 +411,7 @@ But I think this is still an issue, in the way valarino's scripts setup the conf
 
 All lr-mess configs are stored in :
 
-/opt/retropie/configs/system/configs
+/opt/retropie/configs/<system>
 
 This is done to clean it all up, and try to intergrade the configs into the Retropie structure.
 
