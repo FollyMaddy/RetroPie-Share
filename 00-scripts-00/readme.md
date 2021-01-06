@@ -401,3 +401,66 @@ overlay0_overlay = spike.png
 overlay0_full_screen = false
 
 overlay0_descs = 0
+
+
+# Solution for game specific configs with lr-mess
+
+Perhaps others have a better idea.
+
+But I think this is still an issue, in the way valarino's scripts setup the config files.
+
+All lr-mess configs are stored in :
+
+/opt/retropie/configs/<system>/<configs>
+
+This is done to clean it all up, and try to intergrade the configs into the Retropie structure.
+
+This is ofcourse really nice !
+
+Drawback is that you can't configure per game.
+
+It's possible that the configs are stored in the same directory as where the game is in. (mame/cfg)
+
+So it's possible to use different directory's for different joystick settings.
+
+The solution is described in this thread :
+
+https://retropie.org.uk/forum/topic/25576/new-scriptmodules-lr-vice-xvic-gsplus-proper-lr-mess-integration/377
+
+With this solution it's possible to configure configs per game.
+
+Just comment these lines in the valerino run_mess script /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh
+
+change :
+
+_cmdarr+=( "-cfg_directory" )
+
+_cmdarr+=( "$_cfgdir" )
+
+into :
+
+#_cmdarr+=( "-cfg_directory" )
+
+#_cmdarr+=( "$_cfgdir" )
+
+If you then put every game in a seperate directory.
+
+You get a game(s) specific config (mame/cfg/apple2gs.cfg) in the same directory.
+
+Example structure for one game :
+
+/home/pi/RetroPie/roms/apple2gs/airball/airball.zip
+
+/home/pi/RetroPie/roms/apple2gs/airball/mame/cfg/apple2gs.cfg
+
+Example structure for multiple games that use the same config :
+
+/home/pi/RetroPie/roms/apple2gs/your_specific_config/airball.zip
+
+/home/pi/RetroPie/roms/apple2gs/your_specific_config/<other_game>.zip (etc.)
+
+/home/pi/RetroPie/roms/apple2gs/your_specific_config/mame/cfg/apple2gs.cfg
+
+You will be able to copy configs between directory's so you don't have to configure twice for the buttons that are the same.
+
+And then reconfigure again.
