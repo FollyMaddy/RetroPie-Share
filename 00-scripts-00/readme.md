@@ -38,6 +38,17 @@ Uncomment the version you want to generate the scripts with.
 Uncomment one or multiple systems to generate.
 
 
+# generate-overlay-configs.sh
+
+This script is created for making config files, that will run the background overlays
+
+The .png files are not yet included !
+
+Goal is to add these .png files in the future.
+
+You can read about these configs and how they work, in this readme.
+
+
 --
 
 
