@@ -2,9 +2,9 @@
 
 #
 # Author : @folly
-# Date   : 27/12/2020
+# Date   : 20/01/2021
 #
-# Copyright 2020 @folly
+# Copyright 2021 @folly
 #
 #
 # This program is free software: you can redistribute it and/or modify
@@ -262,57 +262,30 @@ newsystems+=( "${systems[@]}" )
 
 date
 
+#create a subarray of the arrays being used for overlays
+#now only two for loops can be use for multiple arrays
+#note:some systems are not added because they should be recognised in a normal way
+dteam_systems=("all_in1" "classich" "konamih" "tigerh")
 
-#check multiple handheld games to inject naming used by @DTEAM in the Handheld tutorial
-#insert unknown newsystems for different handhelds (all_in1)
-  for messindex in "${!systems[@]}"; do
-    for hhdataindex in "${!all_in1[@]}"; do
-      #compare array game names with the mess systems ( * *=globally , " "=exact ) 
-      if [[ "${systems[$messindex]}" == "${all_in1[$hhdataindex]}" ]]; then
-        # If descriptions are exactly the same then use the system name of retropie as romdirectory
-        # for the other arrays we use the mess information
-        newsystems[$messindex]=all_in1
-        echo "Now using pseudo RetroPie systemname for ${systems[$messindex]} becomes ${newsystems[$messindex]}"
-      fi
-    done
-  done
-#insert unknown newsystems for different handhelds (classich)
-  for messindex in "${!systems[@]}"; do
-    for hhdataindex in "${!classich[@]}"; do
-      #compare array game names with the mess systems ( * *=globally , " "=exact ) 
-      if [[ "${systems[$messindex]}" == "${classich[$hhdataindex]}" ]]; then
-        # If descriptions are exactly the same then use the system name of retropie as romdirectory
-        # for the other arrays we use the mess information
-        newsystems[$messindex]=classich
-        echo "Now using pseudo RetroPie systemname for ${systems[$messindex]} becomes ${newsystems[$messindex]}"
-      fi
-    done
-  done
-#insert unknown newsystems for different handhelds (konamih)
-  for messindex in "${!systems[@]}"; do
-    for hhdataindex in "${!konamih[@]}"; do
-      #compare array game names with the mess systems ( * *=globally , " "=exact ) 
-      if [[ "${systems[$messindex]}" == "${konamih[$hhdataindex]}" ]]; then
-        # If descriptions are exactly the same then use the system name of retropie as romdirectory
-        # for the other arrays we use the mess information
-        newsystems[$messindex]=konamih
-        echo "Now using pseudo RetroPie systemname for ${systems[$messindex]} becomes ${newsystems[$messindex]}"
-      fi
-    done
-  done
-#insert unknown newsystems for different handhelds (tigerh)
-  for messindex in "${!systems[@]}"; do
-    for hhdataindex in "${!tigerh[@]}"; do
-      #compare array game names with the mess systems ( * *=globally , " "=exact ) 
-      if [[ "${systems[$messindex]}" == "${tigerh[$hhdataindex]}" ]]; then
-        # If descriptions are exactly the same then use the system name of retropie as romdirectory
-        # for the other arrays we use the mess information
-        newsystems[$messindex]=tigerh
-        echo "Now using pseudo RetroPie systemname for ${systems[$messindex]} becomes ${newsystems[$messindex]}"
-      fi
-    done
-  done
+#multiple arrays over one for loop:
+#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
 
+for messindex in "${!systems[@]}"; do
+  for dteam_system in "${dteam_systems[@]}"; do
+    declare -n games="$dteam_system"
+    #testline#echo "system name: ${dteam_system} with system members: ${games[@]}"
+    for game in "${games[@]}"; do
+        #compare array game names with the mess systems ( * *=globally , " "=exact ) 
+        #testline#echo "${systems[$messindex]}" == "$game"
+        if [[ "${systems[$messindex]}" == "$game" ]]; then
+        # If descriptions are exactly the same then use the system name of retropie as romdirectory
+        # for the other arrays we use the mess information
+        newsystems[$messindex]=$dteam_system
+        echo "Now using pseudo RetroPie systemname for ${systems[$messindex]} becomes ${newsystems[$messindex]}"
+      fi
+    done
+  done
+done
 
 # test line total output
 #for index in "${!systems[@]}"; do echo $index ${systems[$index]} -- ${newsystems[$index]} | more ; echo -ne '\n'; done

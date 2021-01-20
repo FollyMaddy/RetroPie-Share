@@ -16,7 +16,7 @@ It will not generate for systems that support no media.
 Only in the generated @valerino alike scripts, mouse and autoframeskipping is turned on for all systems.
 
 
-# generate-lr-mess-systems-1v4-alpha.sh
+# generate-lr-mess-systems-1v4-alpha.sh / generate-lr-mess-systems-1v5-alpha.sh
 
 Test version to generate @valerine alike and command scripts with RetroPie system names, if possible.
 
@@ -29,7 +29,7 @@ It will also generate command scripts.
 
 # generate-desired-systems.sh
 
-This is a bash script to "batch" create single/multiple desired system(s)
+This is a bash script to "batch" create single/multiple desired system(s).
 
 Open the file with a text editor.
 
@@ -40,7 +40,7 @@ Uncomment one or multiple systems to generate.
 
 # generate-overlay-configs.sh
 
-This script is created for making config files, that will run the background overlays
+This script is created for making config files, that will run the background overlays.
 
 The .png files are not yet included !
 
@@ -152,6 +152,11 @@ While not a RetroPie standard, it will use @DTEAM naming as RetroPie naming.
 This is done to match possible existing es-themes for these systems.
 
 I am also hoping this naming will be used in the future RetroPie versions.
+
+
+# Improved in generate-lr-mess-systems-1v5-alpha:
+
+Match @DTEAM handheld naming with less loops.
 
 
 # install :
