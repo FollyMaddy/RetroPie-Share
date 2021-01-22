@@ -37,5 +37,5 @@ function install_mog() {
 }
 
 function configure_mog() {
-    addPort "$md_id" "mog" "MazeOfGaliousRemake" "$md_inst/mog-svn-20120228/mog"
+    addPort "$md_id" "mog" "MazeOfGaliousRemake" "pushd $md_inst/mog-svn-20120228; $md_inst/mog-svn-20120228/mog"
 }
