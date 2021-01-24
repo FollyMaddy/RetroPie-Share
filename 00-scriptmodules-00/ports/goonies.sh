@@ -26,12 +26,12 @@ function sources_goonies() {
 
 function build_goonies() {
     cp "$md_build/nightlies/goonies-svn-20120216/build/linux/Makefile" "$md_build/nightlies/goonies-svn-20120216/src/Makefile"
-    sed -i "0,/return false./s/return false.//g" $md_build/nightlies/goonies-svn-20120216/src/auxiliar.cpp
     sed -i 's/if..tmp \=\= 0...//g;s/mask \=\= 0.//g' $md_build/nightlies/goonies-svn-20120216/src/auxiliar.cpp
+    sed -i '0,/return.false./! {0,/return.false./ s/return.false.//}' $md_build/nightlies/goonies-svn-20120216/src/auxiliar.cpp
     sed -i 's/bool fullscreen=false\;/bool fullscreen=true\;/g' $md_build/nightlies/goonies-svn-20120216/src/main.cpp
     sed -i 's/lGLU/lGLU \-lm \-lstdc\+\+/g' $md_build/nightlies/goonies-svn-20120216/src/Makefile
     cd "$md_build/nightlies/goonies-svn-20120216/src/"
-    make -j4
+    make
     cp "$md_build/nightlies/goonies-svn-20120216/src/goonies" "$md_build/nightlies/goonies-svn-20120216/goonies"
 }
 
