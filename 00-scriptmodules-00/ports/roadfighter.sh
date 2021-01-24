@@ -17,7 +17,7 @@ rp_module_flags=""
 
 
 function depends_roadfighter() {
-    getDepends libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-sound1.2-dev libsdl-ttf2.0-dev
+    getDepends xorg matchbox-window-manager libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-sound1.2-dev libsdl-ttf2.0-dev
 }
 
 function sources_roadfighter() {
@@ -39,5 +39,13 @@ function install_roadfighter() {
 }
 
 function configure_roadfighter() {
-    addPort "$md_id" "roadfighter" "RoadFighterRemake" "pushd $md_inst/roadfighter-svn-20120302; $md_inst/roadfighter-svn-20120302/roadfighter"
+    addPort "$md_id" "roadfighter" "RoadFighterRemake" "XINIT:pushd $md_inst/roadfighter-svn-20120302; $md_inst/roadfighter-svn-20120302/roadfighter.sh"
+
+    cat >"$md_inst/roadfighter-svn-20120302/roadfighter.sh" << _EOF_
+#!/bin/bash
+xset -dpms s off s noblank
+matchbox-window-manager &
+/opt/retropie/ports/roadfighter/roadfighter-svn-20120302/roadfighter
+_EOF_
+    chmod +x "$md_inst/roadfighter-svn-20120302/roadfighter.sh"
 }

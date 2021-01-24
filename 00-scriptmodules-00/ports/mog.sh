@@ -17,7 +17,7 @@ rp_module_flags=""
 
 
 function depends_mog() {
-    getDepends libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-sound1.2-dev
+    getDepends xorg matchbox-window-manager libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-sound1.2-dev
 }
 
 function sources_mog() {
@@ -37,5 +37,13 @@ function install_mog() {
 }
 
 function configure_mog() {
-    addPort "$md_id" "mog" "MazeOfGaliousRemake" "pushd $md_inst/mog-svn-20120228; $md_inst/mog-svn-20120228/mog"
+    addPort "$md_id" "mog" "MazeOfGaliousRemake" "XINIT:pushd $md_inst/mog-svn-20120228; $md_inst/mog-svn-20120228/mog.sh"
+
+    cat >"$md_inst/mog-svn-20120228/mog.sh" << _EOF_
+#!/bin/bash
+xset -dpms s off s noblank
+matchbox-window-manager &
+/opt/retropie/ports/mog/mog-svn-20120228/mog
+_EOF_
+    chmod +x "$md_inst/mog-svn-20120228/mog.sh"
 }

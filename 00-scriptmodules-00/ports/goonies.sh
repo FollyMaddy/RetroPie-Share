@@ -17,7 +17,7 @@ rp_module_flags=""
 
 
 function depends_goonies() {
-    getDepends libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-sound1.2-dev libsdl-ttf2.0-dev libstdc++6 libstdc++-6-dev
+    getDepends xorg matchbox-window-manager libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-sound1.2-dev libsdl-ttf2.0-dev libstdc++6 libstdc++-6-dev
 }
 
 function sources_goonies() {
@@ -25,14 +25,13 @@ function sources_goonies() {
 }
 
 function build_goonies() {
-    rm $md_build/nightlies/goonies-svn-20120216/src/goonies
     cp "$md_build/nightlies/goonies-svn-20120216/build/linux/Makefile" "$md_build/nightlies/goonies-svn-20120216/src/Makefile"
+    sed -i "0,/return false./s/return false.//g" $md_build/nightlies/goonies-svn-20120216/src/auxiliar.cpp
     sed -i 's/if..tmp \=\= 0...//g;s/mask \=\= 0.//g' $md_build/nightlies/goonies-svn-20120216/src/auxiliar.cpp
-    sed -i '0,/return false/{s/return false\;//}' $md_build/nightlies/goonies-svn-20120216/src/auxiliar.cpp
     sed -i 's/bool fullscreen=false\;/bool fullscreen=true\;/g' $md_build/nightlies/goonies-svn-20120216/src/main.cpp
     sed -i 's/lGLU/lGLU \-lm \-lstdc\+\+/g' $md_build/nightlies/goonies-svn-20120216/src/Makefile
     cd "$md_build/nightlies/goonies-svn-20120216/src/"
-    make
+    make -j4
     cp "$md_build/nightlies/goonies-svn-20120216/src/goonies" "$md_build/nightlies/goonies-svn-20120216/goonies"
 }
 
@@ -43,5 +42,14 @@ function install_goonies() {
 }
 
 function configure_goonies() {
-    addPort "$md_id" "goonies" "GooniesRemake" "pushd $md_inst/goonies-svn-20120216; $md_inst/goonies-svn-20120216/goonies"
+    addPort "$md_id" "goonies" "GooniesRemake" "XINIT:pushd $md_inst/goonies-svn-20120216; $md_inst/goonies-svn-20120216/goonies.sh"
+
+    cat >"$md_inst/goonies-svn-20120216/goonies.sh" << _EOF_
+#!/bin/bash
+xset -dpms s off s noblank
+matchbox-window-manager &
+/opt/retropie/ports/goonies/goonies-svn-20120216/goonies
+_EOF_
+    chmod +x "$md_inst/goonies-svn-20120216/goonies.sh"
 }
+
