@@ -2,7 +2,7 @@
 
 #
 # Author : @folly
-# Date   : 20/01/2021
+# Date   : 13/02/2021
 #
 # Copyright 2021 @folly
 #
@@ -44,8 +44,8 @@ while getopts ":h" option; do
          echo "- generate only one system: 		bash $0 <system> "
          echo "- batch generate only desired systems: 	bash generate-desired-systems.sh "
          echo "Example"
-         echo "- generating only one system: 		$0 fm77av "
-         echo "- generating konamih cmd script:	$0 kgradius "
+         echo "- generating only one system: 		bash $0 fm77av "
+         echo "- generating konamih cmd script:	bash $0 kgradius "
          echo "(creating this can be done with one game)(a cmd script can be used for more konamih games !)"
          echo "Advise : create files not directly in the RetroPie-Setup use copy and paste"
          echo "If you want to create the scripts directly in RetroPie-Setup,"
@@ -395,8 +395,8 @@ function configure_lr-mess-${newsystems[$index]}-${systems[$index]}${media[$inde
 
 	# add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
 	addEmulator 0 "\$md_id" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir $messcfgoptions ${media[$index]} %ROM%"
-	addEmulator 0 "mame-${newsystems[$index]}-${systems[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -c  ${newsystems[$index]} -${media[$index]} %ROM%"
-        addEmulator 0 "mame-${newsystems[$index]}-${systems[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -c -autoframeskip ${newsystems[$index]} -${media[$index]} %ROM%"
+	addEmulator 0 "mame-${newsystems[$index]}-${systems[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${newsystems[$index]} ${media[$index]} %ROM%"
+        addEmulator 0 "mame-${newsystems[$index]}-${systems[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${newsystems[$index]} ${media[$index]} %ROM%"
 
 	# add system to es_systems.cfg as normal
 	addSystem "\$_system" "\$md_name" "\$md_ext"
@@ -486,8 +486,8 @@ function configure_lr-mess-${newsystems[$index]}-cmd() {
     ensureSystemretroconfig "\$_system"
     addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
     addEmulator 0 "lr-mess" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
-    addEmulator 0 "mame" "\$_system" "/opt/retropie/emulators/mame/mame -c %BASENAME%"
-    addEmulator 0 "mame-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -c -autoframeskip %BASENAME%"
+    addEmulator 0 "mame" "\$_system" "/opt/retropie/emulators/mame/mame -v -c %BASENAME%"
+    addEmulator 0 "mame-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip %BASENAME%"
 
     # add game rompath
     echo "rompath /home/pi/RetroPie/roms/${newsystems[$index]}" >> /opt/retropie/configs/mame/mame.ini
