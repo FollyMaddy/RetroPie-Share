@@ -17,8 +17,7 @@ rp_module_section="exp"
 rp_module_flags="rpi4 x86"
 
 function depends_box86wineroadfighterremake() {
-    local dep_idx="$(rp_getIdxFromId "wine")"
-    if [ "$dep_idx" == "" ] || ! rp_isInstalled "$dep_idx" ; then
+    if ! rp_isInstalled "wine" ; then
         md_ret_errors+=("Sorry, you need to install the wine scriptmodule")
         return 1
     fi
