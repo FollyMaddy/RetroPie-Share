@@ -7,8 +7,8 @@
 #version=generate-lr-mess-systems.sh
 #version=generate-lr-mess-systems-1v3-alpha.sh
 #version=generate-lr-mess-systems-1v4-alpha.sh
-version=generate-lr-mess-systems-1v5-alpha.sh
-
+#version=generate-lr-mess-systems-1v5-alpha.sh
+version=generate-systems-lr-mess_mame-1v8-alpha.sh
 
 # use 1 or more lines to create one system or more systems
 # by uncommenting -> remove #
@@ -26,6 +26,8 @@ version=generate-lr-mess-systems-1v5-alpha.sh
 #bash $version g7400 #videopac g7400 # bios files missing
 #bash $version apple2gs # bootable
 #bash $version mtx512 # bios files missing
+#bash $version vectrex 
+#bash $version nes 
 
 #handhelds (use version 1v4-alpha or above)(creates only cmd scripts)(these systems have no external media)
 ##such a cmd script can be created with one game and used for many ! 
