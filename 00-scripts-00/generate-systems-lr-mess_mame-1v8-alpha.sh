@@ -549,7 +549,7 @@ function configure_install-${newsystems[$index]}-cmd() {
     addEmulator 0 "mame-cmd" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
     addEmulator 0 "mame-cmd-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
     addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${newsystems[$index]} %BASENAME%"
-    addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${newsystems[$index]} -autoframeskip %BASENAME%"
+    addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${newsystems[$index]} %BASENAME%"
     #not sure this command will work, but kept for testing
     addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
     #not sure this command will work, but kept for testing
