@@ -49,11 +49,16 @@ while getopts ":h" option; do
          echo "Version	-->	$0 (testing, WIP)"
          echo "!!! THIS VERSION GENERATES @VALERINO ALIKE SCRIPTS AND ORIGINAL LR-MESS COMMAND SCRIPTS !!!"
          echo "!!! WHILE DOING THIS, IT TRIES TO USE RETROPIE NAMES IF A MATCH IS FOUND !!!"
-         echo "!!! IT ALSO ADDS NEW RETROPIE PLATFORM NAMES, USED BY THE @DTEAM HANDHELD TUTORIAL !!!"
+         echo "!!! IT ALSO USES THE NEW RETROPIE PLATFORM NAMES, USED BY THE @DTEAM HANDHELD TUTORIAL !!!"
          echo "Creator	-->	@folly"
          echo "Dependancies"
-         echo "--> MAME (install in RetroPie-Setup)"
-         echo "--> @valerino's fork of RetroPie-Setup (https://github.com/valerino/RetroPie-Setup)"
+         echo "--> MAME and lr-mess (install in RetroPie-Setup)"
+         echo " use --> generated scripts tested on version 4.7.8 / should work on :"
+         echo "        > original RetroPie-setup and the run_mess.sh script of @valerino's fork"
+         echo "           manually install run_mess.sh :"
+         echo "           wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh"
+         echo " or   -->generated scripts not tested / probably will work on :"
+         echo "        > @valerino's fork of RetroPie-Setup (https://github.com/valerino/RetroPie-Setup)"
          echo "======= extra information ======="
          echo "Run"
          echo "- generate for all systems: 		bash $0 "
@@ -556,12 +561,9 @@ function configure_install-${newsystems[$index]}-cmd() {
     addEmulator 0 "mame-cmd-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
     addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${newsystems[$index]} %BASENAME%"
     addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${newsystems[$index]} %BASENAME%"
-    #not sure this command will work, but kept for testing
-    addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
-    #not sure this command will work, but kept for testing
-    addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
-
-
+    #turned these off, seems these commands will not work, but kept for future testing : https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/33
+    ##addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
+    ##addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
 
     # add system to es_systems.cfg
     #the line used by @valerino didn't work for the original RetroPie-setup 
