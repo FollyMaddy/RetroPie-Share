@@ -547,6 +547,7 @@ function configure_install-${newsystems[$index]}-cmd() {
     local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
     local _system="${newsystems[$index]}"
     local _config="\$configdir/\$_system/retroarch.cfg"
+    
     mkRomDir "\$_system"
     ensureSystemretroconfig "\$_system"
     
@@ -554,7 +555,13 @@ function configure_install-${newsystems[$index]}-cmd() {
     iniConfig " = " "\"" "\$configdir/all/retroarch-core-options.cfg"
     iniSet "mame_cheats_enable" "enabled"
     chown \$user:\$user "\$configdir/all/retroarch-core-options.cfg"
-    
+
+    echo "enable cheats for mame in \$romdir/mame/mame.ini"    
+    iniConfig " " "" "\$romdir/mame/mame.ini"
+    iniSet "cheatpath"  "\$romdir/mame/cheat"
+    iniSet "cheat" "1"
+    chown \$user:\$user "\$romdir/mame/mame.ini"
+        
     addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
     addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
     addEmulator 0 "mame-cmd" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
