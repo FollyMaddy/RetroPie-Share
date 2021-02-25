@@ -1,17 +1,18 @@
 #!/bin/bash
-# Program : generate-overlay-configs.sh
-# Version : 1
+# Program : get-cheats-artwork-overlays.sh
+# Version : 1.1
 # Use : 
-# create retroarch overlay configs for handhelds running with lr-mess
+# - download cheats for MAME standalone/lr-mess
+# - download artwork for MAME standalone (@DTEAM handhelds)
+# - create custom configs for retroarch overlays, running with lr-mess (@DTEAM handhelds)
 # Additional info : 
-# This script is created for making config files, that will run the background overlays
-# The .png files are not yet included !
-# Goal is to add these .png files in the future.
+# Not all background overlays can be extracted, we try to improve this by editing the artwork
 # How to run :
 # Make the program executable, dubbleclick and choose open in terminal.
-# Or run it from the terminal with : ./generate-overlay-configs.sh
-# Author : @folly
-# Date   : 23/2/2021
+# Or run it from the terminal with : ./get-cheats-artwork-overlays.sh
+# Author    : @folly
+# Co-Author : @DTEAM
+# Date      : 25/2/2021
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -26,6 +27,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
+#part 0 : string's and array's
 startworkdir=$(pwd)
 
 #added handheld arrays, but these are not used
@@ -43,9 +46,35 @@ gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bjack" "gnw_boxing" "gnw_
 #now only two for loops can be use for multiple arrays
 systems=("classich" "konamih" "tigerh" "gameandwatch")
 
-#multiple arrays over one for loop:
-#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
 
+#part 1
+#time warning
+echo "download cheats and artwork and create overlays"
+echo "beware, it can take up to 30 minutes"
+echo
+
+
+#part 2
+echo "gets the cheat.7z and places it in the correct path"
+echo
+wget -N -P /tmp http://cheat.retrogames.com/download/cheat0221.zip
+unzip -o /tmp/cheat0221.zip cheat.7z -d $HOME/RetroPie/BIOS/mame/cheat
+rm /tmp/cheat0221.zip
+
+
+#part 3
+echo "get all artwork files and put it in the correct path"
+echo
+wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
+python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 -P $HOME/RetroPie/roms/mame/artwork
+rm /tmp/gdrivedl.py
+
+
+#part 4
+echo "extract background files, if available, and create custom retroarch configs for overlay's"
+echo
+#use multiple arrays over one for loop:
+#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
 for system in "${systems[@]}"; do
     declare -n games="$system"
     #echo "system name: ${system} with system members: ${games[@]}"
@@ -71,7 +100,3 @@ overlay0_descs = 0
 _EOF_
     done
 done
-
-
-
-
