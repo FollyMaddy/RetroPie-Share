@@ -79,6 +79,8 @@ function configure_lr-mess-p2000t() {
 	# add the emulators.cfg as normal, pointing to the above script
 	addEmulator 1 "$md_id" "$_system" "$_script $_retroarch_bin $_mess $_config $_system $biosdir -cass %ROM%"
 
-	# add system to es_systems.cfg as normal
-	addSystem "$_system" "$md_name" "$md_ext"
+	# add system to es_systems.cfg
+	#the line used by @valerino didn't work for the original RetroPie-setup 
+	#therefore the information is added in a different way and should also work with the valerino fork
+	addSystem "$_system" "Philips P2000T" ".cas"	
 }
