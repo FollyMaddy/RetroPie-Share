@@ -55,7 +55,7 @@ echo
 
 
 #part 2
-echo "gets the cheat.7z and places it in the correct path"
+echo "get the cheat.7z and place it in the correct path"
 echo
 wget -N -P /tmp http://cheat.retrogames.com/download/cheat0221.zip
 unzip -o /tmp/cheat0221.zip cheat.7z -d $HOME/RetroPie/BIOS/mame/cheat
@@ -63,7 +63,7 @@ rm /tmp/cheat0221.zip
 
 
 #part 3
-echo "get all artwork files and put it in the correct path"
+echo "get all artwork files and put these in the correct path"
 echo
 wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
 python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 -P $HOME/RetroPie/roms/mame/artwork
