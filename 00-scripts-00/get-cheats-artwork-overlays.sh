@@ -81,22 +81,25 @@ for system in "${systems[@]}"; do
     for game in "${games[@]}"; do
         #echo -en "\tworking on hame $game of the $system system\n"
         mkdir -p "$HOME/RetroPie/roms/$system"
-        mkdir -p "$HOME/RetroPie/overlays/$system"
 	#extract Background files,if existing in zip, from mame artwork files // issue not all artwork files have Background.png
-        unzip $HOME/RetroPie/roms/mame/artwork/$game.zip Background.png -d $HOME/RetroPie/overlays/$system
-        mv $HOME/RetroPie/overlays/$system/Background.png $HOME/RetroPie/overlays/$system/$game.png
+        unzip $HOME/RetroPie/roms/mame/artwork/$game.zip Background.png -d $HOME/RetroPie/roms/mame/artwork 2>/dev/null
+        checkforbackground=$(ls $HOME/RetroPie/roms/mame/artwork/Background.png 2> /dev/null)
+        if [[ -n $checkforbackground ]]
+        then
+        mv $HOME/RetroPie/roms/mame/artwork/Background.png  /opt/retropie/configs/all/retroarch/overlay/$game.png 2>/dev/null
 	#create configs
 	cat > "$HOME/RetroPie/roms/$system/$game.zip.cfg" << _EOF_
-input_overlay = /home/pi/RetroPie/overlays/$system/$game.cfg
+input_overlay =  /opt/retropie/configs/all/retroarch/overlay/$game.cfg
 input_overlay_enable = true
 input_overlay_opacity = 0.500000
 input_overlay_scale = 1.000000
 _EOF_
-	cat > "$HOME/RetroPie/overlays/$system/$game.cfg" << _EOF_
+	cat > "/opt/retropie/configs/all/retroarch/overlay/$game.cfg" << _EOF_
 overlays = 1
 overlay0_overlay = $game.png
 overlay0_full_screen = false
 overlay0_descs = 0
 _EOF_
+     fi 
     done
 done
