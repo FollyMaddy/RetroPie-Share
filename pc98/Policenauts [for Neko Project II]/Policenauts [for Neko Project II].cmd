@@ -1,1 +1,0 @@
-np2kai "/home/pi/RetroPie/roms/pc98/Policenauts [for Neko Project II]/Policenauts (User boot disk) [for Neko Project II].hdm" "/home/pi/RetroPie/roms/pc98/Policenauts [for Neko Project II]/Policenauts [for Neko Project II].hdi" "/home/pi/RetroPie/roms/pc98/Policenauts [for Neko Project II]/Policenauts.ccd"
