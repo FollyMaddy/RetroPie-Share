@@ -108,7 +108,7 @@ Does this in one go :
 
 You can run it directly without even downloading it as a file, with this command :
 
-curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/get-cheats-artwork-overlays.sh | bash
+```curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/get-cheats-artwork-overlays.sh | bash```
 
 
 # Solution for game specific configs with lr-mess :
