@@ -1,6 +1,6 @@
 # generate-lr-mess-systems-1v2-alpha.sh
 
-Stable version to generate @valerine alike scripts with lr-mess system names.
+Test version to generate @valerine alike scripts with lr-mess system names.
 
 It will not generate for systems that support no media.
 
