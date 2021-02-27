@@ -1,4 +1,4 @@
-# generate-lr-mess-systems.sh
+# generate-lr-mess-systems-1v2-alpha.sh
 
 Stable version to generate @valerine alike scripts with lr-mess system names.
 
