@@ -34,9 +34,9 @@ While busy with this project, I also added more things like :
  
   https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame
 
-- creation of module-scripts that will work with the original RetroPie-setup (for lr-mess only the run_mess.sh from valerino is needed)
+- creation of module-scripts that will work with the original RetroPie-setup
 
-  Install this with :
+  For lr-mess only the run_mess.sh from valerino is needed, install this with :
 
   ```wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh```
 
