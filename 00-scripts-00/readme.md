@@ -4,13 +4,15 @@ This is how I got started on with this project on 27-11-2020.
 
 @valerino made a thread on the proper lr-mess intergration for RetroPie here :
 
-https://retropie.org.uk/forum/topic/28345/old-computer-appreciation-thread
+https://retropie.org.uk/forum/topic/25576/new-scriptmodules-lr-vice-xvic-gsplus-proper-lr-mess-integration
 
 @valerino made a fork of the RetroPie-setup with added module-scripts for running about 80 systems with lr-mess.
 
 But lr-mess / MAME can emulate litteraly thousands of systems for where there are no module-scripts in the @valerino fork.
 
-So I manually created 2 @valerino alike scripts for systems that had no @valerino script.
+So I manually created 2 @valerino alike scripts for systems that had no @valerino script in this thread :
+
+https://retropie.org.uk/forum/topic/28345/old-computer-appreciation-thread
 
 All the @valerino scripts are mostly the same, so it's possible to automate this.
 
