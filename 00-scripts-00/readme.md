@@ -30,7 +30,9 @@ While busy with this project, I also added more thing like :
 
 - turning lr-mess / MAME system-types into RetroPie system names
 
-- adding the handheld systems of @DTEAM found here : https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame
+- adding the handheld systems of @DTEAM found here : 
+ 
+  https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame
 
 - creation of module-scripts that will work with the original RetroPie-setup (for lr-mess only the run_mess.sh from valerino is needed)
 
