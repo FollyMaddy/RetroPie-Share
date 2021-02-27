@@ -48,9 +48,11 @@ While busy with this project, I also added more things like :
 
 Above additions are mainly in the latest version.
 
-In this thread the ideas, discoveries, issues,fixes and improvements are being discussed :
+In this thread the ideas, discoveries, issues, fixes and improvements are being discussed :
 
 https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone
+
+( @DTEAM is helping a lot ! )
 
 
 # How to install :
