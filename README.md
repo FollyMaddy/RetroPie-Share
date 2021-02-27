@@ -3,17 +3,14 @@
 This repository is created for sharing :
 
  - (.sh ) bash script files for automating stuff
- 
-   * added scripts that can generate RetroPie scripts for lr-mess.
- 
-     https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00
+   
+   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00
+      
+   * added scripts that can generate module-scripts for RetroPie-setup using lr-mess / MAME.
      
    * added a script that downloads cheats, artwork and create retroarch overlays for lr-mess / MAME
  
-     https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00
-      
-
- - (.ips) IPS patch files (for fixing programs/games with a differences patch)
+- (.ips) IPS patch files (for fixing programs/games with a differences patch)
  
     * With this script you can make from or apply IPS patches to programs/games.
     
