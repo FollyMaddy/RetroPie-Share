@@ -92,6 +92,22 @@ Uncomment the version you want to generate the scripts with.
 
 Uncomment one or multiple systems to generate.
 
+- get-cheats-artwork-overlays.sh
+
+Does this in one go :
+
+ * Download cheats for MAME standalone/lr-mess
+
+ * Download artwork for MAME standalone (@DTEAM handhelds)
+ 
+ * create custom configs for retroarch overlays and extract backgrounds for running with lr-mess (@DTEAM handhelds)
+
+You can run it directly without even downloading it as a file, with this command :
+
+```curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/get-cheats-artwork-overlays.sh | bash
+
+```
+
 
 # Solution for game specific configs with lr-mess :
 
