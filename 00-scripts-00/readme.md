@@ -38,7 +38,7 @@ While busy with this project, I also added more things like :
 
   Install this with :
 
-  ```wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh```
+```wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh```
 
 - creation of module-scripts that will work with the @valerino fork of the RetroPie-setup
 
