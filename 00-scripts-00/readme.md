@@ -81,12 +81,12 @@ bash generate-lr-mess-systems-1v8-alpha -h
 
 # File descriptions :
 
-- generate-systems-lr-mess_mame-1v8-alpha.sh
+## generate-systems-lr-mess_mame-1v8-alpha.sh
 
 This is a bash script for generating module-scripts for RetroPie-setup.
 
 
-- generate-desired-systems.sh
+## generate-desired-systems.sh
 
 This is a bash script to "batch" create single/multiple desired system(s).
 
@@ -96,7 +96,7 @@ Uncomment the version you want to generate the scripts with.
 
 Uncomment one or multiple systems to generate.
 
-- get-cheats-artwork-overlays.sh
+## get-cheats-artwork-overlays.sh
 
 Does this in one go :
 
