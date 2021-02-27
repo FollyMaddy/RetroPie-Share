@@ -1,31 +1,51 @@
-# generate-systems-lr-mess_mame-1v8-alpha.sh
-
-This is a bash script for generating module-scripts for RetroPie-setup.
-
-
-# generate-desired-systems.sh
-
-This is a bash script to "batch" create single/multiple desired system(s).
-
-Open the file with a text editor.
-
-Uncomment the version you want to generate the scripts with.
-
-Uncomment one or multiple systems to generate.
-
-
 # Introduction :
 
-@valerino did a thread on proper lr-mess intergration for RetroPie.
+This is how I got started on with this project on 27-11-2020.
 
-In the https://retropie.org.uk/forum/topic/28345/old-computer-appreciation-thread we manually created 2 @valerino alike scripts for systems that had no @valerino script.
+@valerino made a thread on the proper lr-mess intergration for RetroPie here :
 
-All the @valerino scripts are mostly, so it's possible to automate this in a script.
+https://retropie.org.uk/forum/topic/28345/old-computer-appreciation-thread
 
-This is how I got this idea on 27-11-2020.
+@valerino made a fork of the RetroPie-setup with added module-scripts for running about 80 systems with lr-mess.
+
+But lr-mess / MAME can emulate litteraly thousands of systems for where there are no module-scripts in the @valerino fork.
+
+So I manually created 2 @valerino alike scripts for systems that had no @valerino script.
+
+All the @valerino scripts are mostly the same, so it's possible to automate this.
+
+The idea behind this project is be able to generate module-scripts for the desired systems that lr-mess / MAME can emulate.
+
+Information about the supported system-types in lr-mess / MAME can be extracted from MAME.
+
+We can use this information to create module-scripts that we want to create.
+
+Once created, we can install these module-scripts in the RetroPie-setup.
+
+While busy with this project, I also added more thing like :
+
+- using this BIOS directory for both lr-mess and MAME : /home/pi/RetroPie/BIOS/mame
+
+- turning lr-mess / MAME system-types into RetroPie system names
+
+- adding the handheld systems of @DTEAM found here : https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame
+
+- creation of module-scripts that will work with the original RetroPie-setup (for lr-mess only the run_mess.sh from valerino is needed)
+
+- creation of module-scripts that will work with the @valerino fork of the RetroPie-setup
+
+- adding the rompaths for MAME in the cmd module-scripts
+
+- saving generated files directly in RetroPie-setup
+
+Above additions are mainly in the latest version.
+
+In this thread the ideas, discoveries, issues,fixes and improvements are being discussed :
+
+https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone
 
 
-# install :
+# How to install :
 
 Go to the website and download it clicking on the button "code" -> "download zip" (https://github.com/FollyMaddy/RetroPie-Share)
 
@@ -46,21 +66,31 @@ pi@raspberrypi:~ $ cd RetroPie-Share/
 pi@raspberrypi:~/RetroPie-Share $ cd 00-scripts-00/
 
 
-# Run :
+# How to run :
 
 Everything is explained in the help.
 
 Do this to read the help :
 
-bash generate-lr-mess-systems.sh -h
+bash generate-lr-mess-systems-1v8-alpha -h
 
-or
 
-bash generate-lr-mess-systems-1v3-alpha -h
+# File descriptions :
 
-or
+- generate-systems-lr-mess_mame-1v8-alpha.sh
 
-bash generate-lr-mess-systems-1v4-alpha -h
+This is a bash script for generating module-scripts for RetroPie-setup.
+
+
+- generate-desired-systems.sh
+
+This is a bash script to "batch" create single/multiple desired system(s).
+
+Open the file with a text editor.
+
+Uncomment the version you want to generate the scripts with.
+
+Uncomment one or multiple systems to generate.
 
 
 # Solution for game specific configs with lr-mess :
