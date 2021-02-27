@@ -16,7 +16,7 @@ This repository is created for sharing :
     
       https://github.com/kylon/Lipx
       
-    * I already added some IPS patches with a description.
+    * I already added some IPS patches with a descriptions.
  
  - (.bat) Batch files (for running programs/games in lr-dosbox)
  
