@@ -24,17 +24,21 @@ We can use this information to create module-scripts that we want to create.
 
 Once created, we can install these module-scripts in the RetroPie-setup.
 
-While busy with this project, I also added more thing like :
+While busy with this project, I also added more things like :
 
 - using this BIOS directory for both lr-mess and MAME : /home/pi/RetroPie/BIOS/mame
 
-- turning lr-mess / MAME system-types into RetroPie system names
+- turning lr-mess / MAME system-types into RetroPie system names so the RetroPie themes can match
 
 - adding the handheld systems of @DTEAM found here : 
  
   https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame
 
 - creation of module-scripts that will work with the original RetroPie-setup (for lr-mess only the run_mess.sh from valerino is needed)
+
+  Install this with :
+
+  ```wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh```
 
 - creation of module-scripts that will work with the @valerino fork of the RetroPie-setup
 
