@@ -7,6 +7,10 @@ This repository is created for sharing :
    * added scripts that can generate RetroPie scripts for lr-mess.
  
      https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00
+     
+   * added a script that download cheats, artwork and create retroarch overlays for lr-mess / MAME
+ 
+     https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00
       
 
  - (.ips) IPS patch files (for fixing programs/games with a differences patch)
