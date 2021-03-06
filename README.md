@@ -34,7 +34,7 @@ This repository is created for sharing :
  
 ## (.opt) retroarch game option files (game specific retroarch core option)
 
-   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-roms-00
+   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/config
  
  
  
