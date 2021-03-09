@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<gameList>
+	<game id="993979" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/baseball.7z</path>
+		<name>Baseball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Baseball_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="993972" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/bowling.7z</path>
+		<name>Bowling</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Bowling_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>sport</genre>
+		<players>1</players>
+	</game>
+	<game id="993973" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/connect4.7z</path>
+		<name>Connect Four</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Connect Four_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>game</genre>
+		<players>1</players>
+	</game>
+	<game id="993975" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/mindbstr.7z</path>
+		<name>Mindbuster</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Mindbuster_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>game</genre>
+		<players>1</players>
+	</game>
+	<game id="993976" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/phsrstrk.7z</path>
+		<name>Star Trek: Phaser Strike</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Phaser Strike_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>action</genre>
+		<players>1</players>
+	</game>
+	<game id="993988" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/invaders.7z</path>
+		<name>Space Invaders</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Space Invaders (homebrew)_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>20140101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>action</genre>
+		<players>1</players>
+	</game>
+	<game id="993908" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/sprblock.7z</path>
+		<name>Super Blockbuster</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Super Blockbuster_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>action</genre>
+		<players>1</players>
+	</game>
+	<game id="993987" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/vegasslt.7z</path>
+		<name>Vegas Slots</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Vegas Slots_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>casino</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./seaduel.7z</path>
+		<name>Sea Duel</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Sea Duel_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>action</genre>
+		<playcount>3</playcount>
+		<lastplayed>20200911T181042</lastplayed>
+	</game>
+	<game>
+		<path>./alienrdr.7z</path>
+		<name>Alien Raiders</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Alien Raiders_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>Action</genre>
+		<playcount>1</playcount>
+		<lastplayed>20200911T183052</lastplayed>
+	</game>
+	<game>
+		<path>./blckbstr.7z</path>
+		<name>Block Buster</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Block Buster_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>Action</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201013T161613</lastplayed>
+	</game>
+	<game>
+		<path>./cosmichu.7z</path>
+		<name>Cosmic hunter</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Cosmic Hunter_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>game</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201013T161805</lastplayed>
+	</game>
+	<game>
+		<path>./pinball.7z</path>
+		<name>Pinball</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/pinball_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>pinball</genre>
+		<playcount>3</playcount>
+		<lastplayed>20201013T162100</lastplayed>
+	</game>
+	<game>
+		<path>./bomber.7z</path>
+		<name>Bomber</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Bomber (homebrew)_snap.png</image>
+		<rating>0</rating>
+		<releasedate>20140101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>strategy</genre>
+		<playcount>2</playcount>
+		<lastplayed>20201020T023553</lastplayed>
+	</game>
+	<game id="993979" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/baseball.zip</path>
+		<name>Baseball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Baseball_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="993972" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/bowling.zip</path>
+		<name>Bowling</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Bowling_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>sport</genre>
+		<players>1</players>
+	</game>
+	<game id="993973" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/connect4.zip</path>
+		<name>Connect Four</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Connect Four_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>game</genre>
+		<players>1</players>
+	</game>
+	<game id="993975" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/mindbstr.zip</path>
+		<name>Mindbuster</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Mindbuster_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>game</genre>
+		<players>1</players>
+	</game>
+	<game id="993976" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/phsrstrk.zip</path>
+		<name>Star Trek: Phaser Strike</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Phaser Strike_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>action</genre>
+		<players>1</players>
+	</game>
+	<game id="993988" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/invaders.zip</path>
+		<name>Space Invaders</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Space Invaders (homebrew)_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>20140101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>action</genre>
+		<players>1</players>
+	</game>
+	<game id="993908" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/sprblock.zip</path>
+		<name>Super Blockbuster</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Super Blockbuster_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>action</genre>
+		<players>1</players>
+	</game>
+	<game id="993987" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/microvsn/vegasslt.zip</path>
+		<name>Vegas Slots</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Vegas Slots_snap.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>casino</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./seaduel.zip</path>
+		<name>Sea Duel</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Sea Duel_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>action</genre>
+		<playcount>3</playcount>
+		<lastplayed>20200911T181042</lastplayed>
+	</game>
+	<game>
+		<path>./alienrdr.zip</path>
+		<name>Alien Raiders</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Alien Raiders_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>Action</genre>
+		<playcount>1</playcount>
+		<lastplayed>20200911T183052</lastplayed>
+	</game>
+	<game>
+		<path>./blckbstr.zip</path>
+		<name>Block Buster</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Block Buster_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>Action</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201013T161613</lastplayed>
+	</game>
+	<game>
+		<path>./cosmichu.zip</path>
+		<name>Cosmic hunter</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Cosmic Hunter_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>game</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201013T161805</lastplayed>
+	</game>
+	<game>
+		<path>./pinball.zip</path>
+		<name>Pinball</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/pinball_snap.png</image>
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>pinball</genre>
+		<playcount>3</playcount>
+		<lastplayed>20201013T162100</lastplayed>
+	</game>
+	<game>
+		<path>./bomber.zip</path>
+		<name>Bomber</name>
+		<image>~/.emulationstation/downloaded_images/microvsn/Bomber (homebrew)_snap.png</image>
+		<rating>0</rating>
+		<releasedate>20140101T000000</releasedate>
+		<developer>Milton Bradley</developer>
+		<publisher>Milton Bradley</publisher>
+		<genre>strategy</genre>
+		<playcount>2</playcount>
+		<lastplayed>20201020T023553</lastplayed>
+	</game>
+</gameList>

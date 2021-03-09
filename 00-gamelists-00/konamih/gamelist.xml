@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<gameList>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kbilly.7z</path>
+		<name>The Adventure of Bayou Billy</name>
+		<desc>Konami Adventure of Bayou Billy (1989, LCD, 2 AA Batteries)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kbilly1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kbilly.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kbilly.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kblades.7z</path>
+		<name>Blades of Steel</name>
+		<desc>Konami Blades of Steel (19??, LCD, 2 AA Batteries, Model# 13011)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kblades1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kblades.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kblades.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kdribble.7z</path>
+		<name>Double Dribble</name>
+		<desc>Konami Double Dribble (1989, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kdribble1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kdribble.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kdribble.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kgarfld.7z</path>
+		<name>Garfield</name>
+		<desc>Konami Garfield (1991, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kgarfld1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kgarfld.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kgarfld.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kloneran.7z</path>
+		<name>The Lone Ranger</name>
+		<desc>Konami The Lone Ranger (1988, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kloneran1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kloneran.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kloneran.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19880101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/knfl.7z</path>
+		<name>NFL Football</name>
+		<desc>Konami NFL Football (1989, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/knfl1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/knfl.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Knfl.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/ktmnt.7z</path>
+		<name>Teenage Mutant Ninja Turtles</name>
+		<desc>Konami Teenage Mutant Ninja Turtles (1989, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/ktmnt1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/ktmnt.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Ktmnt.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/ktopgun.7z</path>
+		<name>Top Gun</name>
+		<desc>Konami Top Gun (19??, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/ktopgun1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/ktopgun.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Ktopgun.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./kgradius.7z</path>
+		<name>Gradius</name>
+		<desc>Konami Gradius (1989, LCD, 2 AA Batteries, Model# ?). Based on Konami's Gradius arcade game. Called Nemesis in Japan.
+</desc>
+		<image>~/.emulationstation/downloaded_images/konamih/kgradius1.png</image>
+		<video>~/.emulationstation/downloaded_images/konamih/Kgradius.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/konamih/kgradius.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201030T114901</lastplayed>
+	</game>
+	<game>
+		<path>./kbucky.7z</path>
+		<name>Bucky O'Hare</name>
+		<desc>Konami Bucky O'Hare (1991, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>~/.emulationstation/downloaded_images/konamih/kbucky1.png</image>
+		<video>~/.emulationstation/downloaded_images/konamih/Kbucky.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/konamih/kbucky.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201106T124553</lastplayed>
+	</game>
+	<game>
+		<path>./kcontra.7z</path>
+		<name>Contra</name>
+		<desc>Konami Contra (1989, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>~/.emulationstation/downloaded_images/konamih/kcontra1.png</image>
+		<video>~/.emulationstation/downloaded_images/konamih/Kcontra.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/konamih/kcontra.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<playcount>3</playcount>
+		<lastplayed>20201107T031047</lastplayed>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kbilly.zip</path>
+		<name>The Adventure of Bayou Billy</name>
+		<desc>Konami Adventure of Bayou Billy (1989, LCD, 2 AA Batteries)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kbilly1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kbilly.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kbilly.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kblades.zip</path>
+		<name>Blades of Steel</name>
+		<desc>Konami Blades of Steel (19??, LCD, 2 AA Batteries, Model# 13011)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kblades1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kblades.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kblades.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kdribble.zip</path>
+		<name>Double Dribble</name>
+		<desc>Konami Double Dribble (1989, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kdribble1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kdribble.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kdribble.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kgarfld.zip</path>
+		<name>Garfield</name>
+		<desc>Konami Garfield (1991, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kgarfld1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kgarfld.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kgarfld.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/kloneran.zip</path>
+		<name>The Lone Ranger</name>
+		<desc>Konami The Lone Ranger (1988, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/kloneran1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/kloneran.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Kloneran.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19880101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/knfl.zip</path>
+		<name>NFL Football</name>
+		<desc>Konami NFL Football (1989, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/knfl1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/knfl.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Knfl.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/ktmnt.zip</path>
+		<name>Teenage Mutant Ninja Turtles</name>
+		<desc>Konami Teenage Mutant Ninja Turtles (1989, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/ktmnt1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/ktmnt.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Ktmnt.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/konamih/ktopgun.zip</path>
+		<name>Top Gun</name>
+		<desc>Konami Top Gun (19??, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/konamih/ktopgun1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/konamih/ktopgun.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/konamih/Ktopgun.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./kgradius.zip</path>
+		<name>Gradius</name>
+		<desc>Konami Gradius (1989, LCD, 2 AA Batteries, Model# ?). Based on Konami's Gradius arcade game. Called Nemesis in Japan.
+</desc>
+		<image>~/.emulationstation/downloaded_images/konamih/kgradius1.png</image>
+		<video>~/.emulationstation/downloaded_images/konamih/Kgradius.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/konamih/kgradius.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201030T114901</lastplayed>
+	</game>
+	<game>
+		<path>./kbucky.zip</path>
+		<name>Bucky O'Hare</name>
+		<desc>Konami Bucky O'Hare (1991, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>~/.emulationstation/downloaded_images/konamih/kbucky1.png</image>
+		<video>~/.emulationstation/downloaded_images/konamih/Kbucky.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/konamih/kbucky.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201106T124553</lastplayed>
+	</game>
+	<game>
+		<path>./kcontra.zip</path>
+		<name>Contra</name>
+		<desc>Konami Contra (1989, LCD, 2 AA Batteries, Model# ?)
+</desc>
+		<image>~/.emulationstation/downloaded_images/konamih/kcontra1.png</image>
+		<video>~/.emulationstation/downloaded_images/konamih/Kcontra.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/konamih/kcontra.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Handheld LCD</genre>
+		<playcount>3</playcount>
+		<lastplayed>20201107T031047</lastplayed>
+	</game>
+</gameList>

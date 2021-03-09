@@ -1,0 +1,823 @@
+<?xml version="1.0"?>
+<gameList>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_batm.7z</path>
+		<name>The Batman</name>
+		<desc>The Batman (JAKKS Pacific TV Game)
+	spg2xx_jakks.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_batm.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_batm_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_batm.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_capc.7z</path>
+		<name>Capcom 3-in-1</name>
+		<desc>Capcom 3-in-1 (1942, Commando, Ghosts'n Goblins) (JAKKS Pacific TV Game, Game-Key Ready) (29 MAR 2005 B)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_capc.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_capc_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_capc.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050329T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_care.7z</path>
+		<name>Care Bears TV Games</name>
+		<desc>Care Bears TV Games (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_care.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_care_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_care.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Backbone Entertainment</developer>
+		<publisher>JAKKS Pacific Inc / Backbone Entertainment</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dbz.7z</path>
+		<name>Dragon Ball Z</name>
+		<desc>Dragon Ball Z (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dbz.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dbz_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dbz.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Handheld Games</developer>
+		<publisher>JAKKS Pacific Inc / Handheld Games</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_disf.7z</path>
+		<name>Disney Friends</name>
+		<desc>Disney Friends (JAKKS Pacific TV Game, Game-Key Ready) (17 MAY 2005 A)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_disf.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_disf_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_disf.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050517T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd </developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_disn.7z</path>
+		<name>Disney</name>
+		<desc>Disney (JAKKS Pacific TV Game, Game-Key Ready) (08 FEB 2005 A)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_disn.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_disn_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_disn.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050208T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd </developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dora.7z</path>
+		<name>Dora the Explorer - Nursery Rhyme Adventure</name>
+		<desc>Dora the Explorer - Nursery Rhyme Adventure (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dora.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dora_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dora.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Handheld Games</developer>
+		<publisher>JAKKS Pacific Inc / Handheld Games</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dorr.7z</path>
+		<name>Dora the Explorer - Race to Play Park</name>
+		<desc>Dora the Explorer - Race to Play Park (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dorr.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dorr_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dorr.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Handheld Games</developer>
+		<publisher>JAKKS Pacific Inc / Handheld Games</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dpr.7z</path>
+		<name>Disney Princess</name>
+		<desc>Disney Princess (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dpr.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dpr_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dpr.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / 5000ft, Inc</developer>
+		<publisher>JAKKS Pacific Inc / 5000ft, Inc</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dprs.7z</path>
+		<name>Disney Princesses</name>
+		<desc>Disney Princesses (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dprs.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dprs_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dprs.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / 5000ft, Inc</developer>
+		<publisher>JAKKS Pacific Inc / 5000ft, Inc</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_fan4.7z</path>
+		<name>Fantastic Four</name>
+		<desc>Fantastic Four (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_fan4.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_fan4_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_fan4.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Digital Eclipse </developer>
+		<publisher>JAKKS Pacific Inc / Digital Eclipse </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_just.7z</path>
+		<name>Justice League</name>
+		<desc>Justice League (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_just.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_just_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_just.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Taniko  </developer>
+		<publisher>JAKKS Pacific Inc / Taniko  </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_mk.7z</path>
+		<name>Mortal Kombat</name>
+		<desc>Mortal Kombat (JAKKS Pacific TV Game)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_mk.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_mk_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_mk.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Digital Eclipse</developer>
+		<publisher>JAKKS Pacific Inc / Digital Eclipse</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_mpac.7z</path>
+		<name>Ms. Pac-Man 5-in-1</name>
+		<desc>Ms. Pac-Man 5-in-1 (Ms. Pac-Man, Pole Position, Galaga, Xevious, Mappy) (JAKKS Pacific TV Game, Game-Key Ready) (07 FEB 2005 A SKU F)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_mpac.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_mpac_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_mpac.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050207T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Namco / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / Namco / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_nick.7z</path>
+		<name>Nicktoons</name>
+		<desc>Nicktoons (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_nick.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_nick_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_nick.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Handheld Games </developer>
+		<publisher>JAKKS Pacific Inc / Handheld Games </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_pooh.7z</path>
+		<name>Winnie the Pooh - Piglet's Special Day</name>
+		<desc>Winnie the Pooh - Piglet's Special Day (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_pooh.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_pooh_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_pooh.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Backbone Entertainment</developer>
+		<publisher>JAKKS Pacific Inc / Backbone Entertainment</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_sdoo.7z</path>
+		<name>Scooby-Doo! and the Mystery of the Castle</name>
+		<desc>Scooby-Doo! and the Mystery of the Castle (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_sdoo.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_sdoo_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_sdoo.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Jolliford Management</developer>
+		<publisher>JAKKS Pacific Inc / Jolliford Management</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_sith.7z</path>
+		<name>Star Wars - Revenge of the Sith</name>
+		<desc>Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready)
+
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_sith.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_sith_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_sith.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Griptonite Games </developer>
+		<publisher>JAKKS Pacific Inc / Griptonite Games </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_spdm.7z</path>
+		<name>Spider-Man</name>
+		<desc>Spider-Man (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_spdm.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_spdm_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_spdm.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Digital Eclipse</developer>
+		<publisher>JAKKS Pacific Inc / Digital Eclipse</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_wall.7z</path>
+		<name>Wall-E</name>
+		<desc>Wall-E (JAKKS Pacific TV Game)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_wall.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_wall_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_wall.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20080101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_wof.7z</path>
+		<name>Wheel of Fortune</name>
+		<desc>Wheel of Fortune (JAKKS Pacific TV Game, Game-Key Ready) (Jul 11 2005 ORIG)
+
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_wof.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_wof_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_wof.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050711T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_wwe.7z</path>
+		<name>WWE</name>
+		<desc>WWE (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_wwe.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_wwe_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_wwe.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./jak_mpacw.7z</path>
+		<name>Ms. Pac-Man 7-in-1</name>
+		<desc>Ms. Pac-Man 7-in-1 (Wireless) (Ms. Pac-Man, Pole Position, Galaga, Xevious, Mappy, New Rally X, Bosconian) (18 AUG 2004 A)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>~/.emulationstation/downloaded_images/jakks/jak_mpacw.png</image>
+		<video>~/.emulationstation/downloaded_images/jakks/jak_mpacw.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/jakks/jak_mpacw_logo.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>20050818T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Namco / HotGen Ltd </developer>
+		<publisher>JAKKS Pacific Inc / Namco / HotGen Ltd </publisher>
+		<genre>Plug &amp; Play</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201107T213043</lastplayed>
+	</game>
+	<game>
+		<path>./jak_sbfc.7z</path>
+		<name>SpongeBob SquarePants - The Fry Cook Games</name>
+		<desc>SpongeBob SquarePants - The Fry Cook Games (JAKKS Pacific TV Game, Game-Key Ready) (AUG 18 2005)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>~/.emulationstation/downloaded_images/jakks/jak_sbfc.png</image>
+		<video>~/.emulationstation/downloaded_images/jakks/jak_sbfc.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/jakks/jak_sbfc_logo.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>20050818T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201107T212538</lastplayed>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_batm.zip</path>
+		<name>The Batman</name>
+		<desc>The Batman (JAKKS Pacific TV Game)
+	spg2xx_jakks.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_batm.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_batm_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_batm.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_capc.zip</path>
+		<name>Capcom 3-in-1</name>
+		<desc>Capcom 3-in-1 (1942, Commando, Ghosts'n Goblins) (JAKKS Pacific TV Game, Game-Key Ready) (29 MAR 2005 B)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_capc.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_capc_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_capc.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050329T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_care.zip</path>
+		<name>Care Bears TV Games</name>
+		<desc>Care Bears TV Games (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_care.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_care_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_care.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Backbone Entertainment</developer>
+		<publisher>JAKKS Pacific Inc / Backbone Entertainment</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dbz.zip</path>
+		<name>Dragon Ball Z</name>
+		<desc>Dragon Ball Z (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dbz.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dbz_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dbz.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Handheld Games</developer>
+		<publisher>JAKKS Pacific Inc / Handheld Games</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_disf.zip</path>
+		<name>Disney Friends</name>
+		<desc>Disney Friends (JAKKS Pacific TV Game, Game-Key Ready) (17 MAY 2005 A)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_disf.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_disf_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_disf.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050517T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd </developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_disn.zip</path>
+		<name>Disney</name>
+		<desc>Disney (JAKKS Pacific TV Game, Game-Key Ready) (08 FEB 2005 A)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_disn.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_disn_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_disn.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050208T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd </developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dora.zip</path>
+		<name>Dora the Explorer - Nursery Rhyme Adventure</name>
+		<desc>Dora the Explorer - Nursery Rhyme Adventure (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dora.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dora_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dora.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Handheld Games</developer>
+		<publisher>JAKKS Pacific Inc / Handheld Games</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dorr.zip</path>
+		<name>Dora the Explorer - Race to Play Park</name>
+		<desc>Dora the Explorer - Race to Play Park (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dorr.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dorr_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dorr.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Handheld Games</developer>
+		<publisher>JAKKS Pacific Inc / Handheld Games</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dpr.zip</path>
+		<name>Disney Princess</name>
+		<desc>Disney Princess (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dpr.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dpr_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dpr.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / 5000ft, Inc</developer>
+		<publisher>JAKKS Pacific Inc / 5000ft, Inc</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_dprs.zip</path>
+		<name>Disney Princesses</name>
+		<desc>Disney Princesses (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_dprs.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_dprs_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_dprs.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / 5000ft, Inc</developer>
+		<publisher>JAKKS Pacific Inc / 5000ft, Inc</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_fan4.zip</path>
+		<name>Fantastic Four</name>
+		<desc>Fantastic Four (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_fan4.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_fan4_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_fan4.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Digital Eclipse </developer>
+		<publisher>JAKKS Pacific Inc / Digital Eclipse </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_just.zip</path>
+		<name>Justice League</name>
+		<desc>Justice League (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_just.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_just_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_just.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Taniko  </developer>
+		<publisher>JAKKS Pacific Inc / Taniko  </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_mk.zip</path>
+		<name>Mortal Kombat</name>
+		<desc>Mortal Kombat (JAKKS Pacific TV Game)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_mk.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_mk_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_mk.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Digital Eclipse</developer>
+		<publisher>JAKKS Pacific Inc / Digital Eclipse</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_mpac.zip</path>
+		<name>Ms. Pac-Man 5-in-1</name>
+		<desc>Ms. Pac-Man 5-in-1 (Ms. Pac-Man, Pole Position, Galaga, Xevious, Mappy) (JAKKS Pacific TV Game, Game-Key Ready) (07 FEB 2005 A SKU F)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_mpac.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_mpac_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_mpac.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050207T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Namco / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / Namco / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_nick.zip</path>
+		<name>Nicktoons</name>
+		<desc>Nicktoons (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_nick.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_nick_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_nick.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Handheld Games </developer>
+		<publisher>JAKKS Pacific Inc / Handheld Games </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_pooh.zip</path>
+		<name>Winnie the Pooh - Piglet's Special Day</name>
+		<desc>Winnie the Pooh - Piglet's Special Day (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_pooh.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_pooh_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_pooh.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Backbone Entertainment</developer>
+		<publisher>JAKKS Pacific Inc / Backbone Entertainment</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_sdoo.zip</path>
+		<name>Scooby-Doo! and the Mystery of the Castle</name>
+		<desc>Scooby-Doo! and the Mystery of the Castle (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_sdoo.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_sdoo_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_sdoo.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Jolliford Management</developer>
+		<publisher>JAKKS Pacific Inc / Jolliford Management</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_sith.zip</path>
+		<name>Star Wars - Revenge of the Sith</name>
+		<desc>Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready)
+
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_sith.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_sith_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_sith.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Griptonite Games </developer>
+		<publisher>JAKKS Pacific Inc / Griptonite Games </publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_spdm.zip</path>
+		<name>Spider-Man</name>
+		<desc>Spider-Man (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_spdm.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_spdm_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_spdm.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20040101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Digital Eclipse</developer>
+		<publisher>JAKKS Pacific Inc / Digital Eclipse</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_wall.zip</path>
+		<name>Wall-E</name>
+		<desc>Wall-E (JAKKS Pacific TV Game)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_wall.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_wall_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_wall.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20080101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_wof.zip</path>
+		<name>Wheel of Fortune</name>
+		<desc>Wheel of Fortune (JAKKS Pacific TV Game, Game-Key Ready) (Jul 11 2005 ORIG)
+
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_wof.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_wof_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_wof.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050711T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game id="41424" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/jakks/jak_wwe.zip</path>
+		<name>WWE</name>
+		<desc>WWE (JAKKS Pacific TV Game, Game-Key Ready)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/jakks/jak_wwe.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/jakks/jak_wwe_logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/jakks/jak_wwe.mp4</video>
+		<thumbnail />
+		<rating>0.8</rating>
+		<releasedate>20050101T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./jak_mpacw.zip</path>
+		<name>Ms. Pac-Man 7-in-1</name>
+		<desc>Ms. Pac-Man 7-in-1 (Wireless) (Ms. Pac-Man, Pole Position, Galaga, Xevious, Mappy, New Rally X, Bosconian) (18 AUG 2004 A)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>~/.emulationstation/downloaded_images/jakks/jak_mpacw.png</image>
+		<video>~/.emulationstation/downloaded_images/jakks/jak_mpacw.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/jakks/jak_mpacw_logo.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>20050818T000000</releasedate>
+		<developer>JAKKS Pacific Inc / Namco / HotGen Ltd </developer>
+		<publisher>JAKKS Pacific Inc / Namco / HotGen Ltd </publisher>
+		<genre>Plug &amp; Play</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201107T213043</lastplayed>
+	</game>
+	<game>
+		<path>./jak_sbfc.zip</path>
+		<name>SpongeBob SquarePants - The Fry Cook Games</name>
+		<desc>SpongeBob SquarePants - The Fry Cook Games (JAKKS Pacific TV Game, Game-Key Ready) (AUG 18 2005)
+	spg2xx_jakks_gkr.cpp
+</desc>
+		<image>~/.emulationstation/downloaded_images/jakks/jak_sbfc.png</image>
+		<video>~/.emulationstation/downloaded_images/jakks/jak_sbfc.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/jakks/jak_sbfc_logo.png</marquee>
+		<rating>0.8</rating>
+		<releasedate>20050818T000000</releasedate>
+		<developer>JAKKS Pacific Inc / HotGen Ltd</developer>
+		<publisher>JAKKS Pacific Inc / HotGen Ltd</publisher>
+		<genre>Plug &amp; Play</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201107T212538</lastplayed>
+	</game>
+</gameList>

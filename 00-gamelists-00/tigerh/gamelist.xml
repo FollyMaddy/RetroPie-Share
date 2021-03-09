@@ -1,0 +1,1503 @@
+<?xml version="1.0"?>
+<gameList>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/taddams.7z</path>
+		<name>The Addams Family</name>
+		<desc>The Addams Family (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/taddams1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/taddams.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Taddams.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tapollo13.7z</path>
+		<name>Apollo 13</name>
+		<desc>Apollo 13 (handheld) , hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tapollo131.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tapollo13.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tapollo13.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tbatfor.7z</path>
+		<name>Batman Forever - Double Dose of Doom</name>
+		<desc>Batman Forever - Double Dose of Doom (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbatfor1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbatfor.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbatfor.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tbatmana.7z</path>
+		<name>Batman: The Animated Series</name>
+		<desc>Batman: The Animated Series (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbatmana1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbatmana.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbatmana.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tbtoads.7z</path>
+		<name>Battletoads</name>
+		<desc>Battletoads (handheld),(licensed from Rare/Tradewest), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbtoads1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbtoads.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbtoads.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tbttf.7z</path>
+		<name>Back to the Future</name>
+		<desc>Back to the Future (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbttf1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbttf.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbttf.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tddragon.7z</path>
+		<name>Double Dragon</name>
+		<desc>Double Dragon(handheld),(licensed from Technos/Tradewest)  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tddragon.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tddragon3.7z</path>
+		<name>Double Dragon 3 - The Rosetta Stone</name>
+		<desc>Double Dragon 3 - The Rosetta Stone (handheld), (licensed from Technos)  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon31.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon3.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tddragon3.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tdennis.7z</path>
+		<name>Dennis the Menace</name>
+		<desc>Dennis the Menace (handheld), (licensed from Technos)  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tdennis1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tdennis.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tdennis.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tdummies.7z</path>
+		<name>The Incredible Crash Dummies</name>
+		<desc>The Incredible Crash Dummies (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tdummies1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tdummies.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tdummies.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tflash.7z</path>
+		<name>The Flash</name>
+		<desc>The Flash (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tflash1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tflash.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tflash.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tgaiden.7z</path>
+		<name>Ninja Gaiden</name>
+		<desc>Ninja Gaiden, (handheld),(licensed from Tecmo), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgaiden1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgaiden.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgaiden.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tgaunt.7z</path>
+		<name>Gauntlet</name>
+		<desc>Gauntlet, (handheld), (licensed from Tengen) , hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgaunt1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgaunt.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgaunt.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tgoldeye.7z</path>
+		<name>007: GoldenEye</name>
+		<desc>007: GoldenEye (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldeye1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldeye.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgoldeye.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tgoldnaxe.7z</path>
+		<name>Golden Axe</name>
+		<desc>Golden Axe (handheld), (licensed from Sega), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldnaxe1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldnaxe.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgoldnaxe.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/thalone.7z</path>
+		<name>Home Alone</name>
+		<desc>Home Alone (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thalone1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thalone.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thalone.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/thalone2.7z</path>
+		<name>Home Alone 2 - Lost in New York</name>
+		<desc>Home Alone 2 - Lost in New York (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thalone21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thalone2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thalone2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/thook.7z</path>
+		<name>Hook</name>
+		<desc>Hook (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thook1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thook.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thook.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tjdredd.7z</path>
+		<name>Judge Dredd</name>
+		<desc>Judge Dredd (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tjdredd1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tjdredd.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tjdredd.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tjpark.7z</path>
+		<name>Jurassic Park</name>
+		<desc>Jurassic Park (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tjpark1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tjpark.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tjpark.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tkarnov.7z</path>
+		<name>Karnov</name>
+		<desc>Karnov (handheld), (licensed from Data East) , hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tkarnov1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tkarnov.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tkarnov.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tkazaam.7z</path>
+		<name>Kazaam</name>
+		<desc>Kazaam (handheld), (licensed from Data East) , hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tkazaam1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tkazaam.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tkazaam.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19960101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tmchammer.7z</path>
+		<name>MC Hammer: U Can't Touch This</name>
+		<desc>MC Hammer: U Can't Touch This (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tmchammer1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tmchammer.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tmchammer.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tnmarebc.7z</path>
+		<name>Nightmare Before Christmas</name>
+		<desc>Nightmare Before Christmas (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tnmarebc1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tnmarebc.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tnmarebc.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/topaliens.7z</path>
+		<name>Operation: Aliens</name>
+		<desc>Operation: Aliens (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/topaliens1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/topaliens.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Topaliens.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19940101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/trobhood.7z</path>
+		<name>Robin Hood</name>
+		<desc>Robin Hood (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobhood1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobhood.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobhood.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/trobocop2.7z</path>
+		<name>Robocop 2</name>
+		<desc>Robocop 2 (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobocop2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/trobocop3.7z</path>
+		<name>Robocop 3</name>
+		<desc>Robocop 3 (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop31.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop3.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobocop3.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/trockteer.7z</path>
+		<name>The Rocketeer</name>
+		<desc>The Rocketeer (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trockteer1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trockteer.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trockteer.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsddragon.7z</path>
+		<name>Super Double Dragon</name>
+		<desc>Super Double Dragon (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsddragon1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsddragon.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsddragon.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsf2010.7z</path>
+		<name>Street Fighter 2010 - The Final Fight</name>
+		<desc>Street Fighter 2010 - The Final Fight (handheld),(licensed from Capcom), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsf20101.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsf2010.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsf2010.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsfight2.7z</path>
+		<name>Street Fighter II</name>
+		<desc>Street Fighter II (handheld),(licensed from Capcom), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsfight21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsfight2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsfight2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tshadow.7z</path>
+		<name>The Shadow</name>
+		<desc>The Shadow (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tshadow1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tshadow.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tshadow.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19940101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsharr2.7z</path>
+		<name>Space Harrier II</name>
+		<desc>Space Harrier II (handheld), (licensed from Sega), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsharr21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsharr2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsharr2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsjam.7z</path>
+		<name>Space Jam</name>
+		<desc>Space Jam (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsjam1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsjam.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsjam.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19960101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tskelwarr.7z</path>
+		<name>Skeleton Warriors - The Dark Crusade</name>
+		<desc>Skeleton Warriors - The Dark Crusade (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tskelwarr1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tskelwarr.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tskelwarr.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19940101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsonic.7z</path>
+		<name>Sonic The Hedgehog</name>
+		<desc>Sonic The Hedgehog (handheld), (licensed from Sega),  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsonic.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsonic2.7z</path>
+		<name>Sonic The Hedgehog 2</name>
+		<desc>Sonic The Hedgehog 2 (handheld), (licensed from Sega),  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsonic2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tspidman.7z</path>
+		<name>Spider-Man</name>
+		<desc>Spider-Man (handheld, Tiger 1991 version),  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tspidman1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tspidman.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tspidman.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tstrider.7z</path>
+		<name>Strider</name>
+		<desc>Strider (handheld), (licensed from Capcom), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tstrider1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tstrider.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tstrider.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tswampt.7z</path>
+		<name>Swamp Thing</name>
+		<desc>Swamp Thing (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tswampt1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tswampt.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tswampt.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/ttransf2.7z</path>
+		<name>Transformers - Generation 2</name>
+		<desc>Transformers - Generation 2 (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/ttransf21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/ttransf2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Ttransf2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tvindictr.7z</path>
+		<name>Vindicators</name>
+		<desc>Vindicators (handheld),(licensed from Tengen), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tvindictr1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tvindictr.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tvindictr.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/twworld.7z</path>
+		<name>Wayne's World</name>
+		<desc>Wayne's World (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/twworld1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/twworld.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Twworld.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/txmen.7z</path>
+		<name>X-Men</name>
+		<desc>X-Men (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/txmen1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/txmen.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Txmen.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/txmenpx.7z</path>
+		<name>X-Men - Project X</name>
+		<desc>X-Men - Project X (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/txmenpx1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/txmenpx.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Txmenpx.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./tinday.7z</path>
+		<name>Independence Day</name>
+		<desc>Independence Day (handheld), hh_sm510.cpp</desc>
+		<image>~/.emulationstation/downloaded_images/tigerh/tinday1.png</image>
+		<video>~/.emulationstation/downloaded_images/tigerh/Tinday.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/tigerh/tinday.png</marquee>
+		<rating>0</rating>
+		<releasedate>19960101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201103T021450</lastplayed>
+	</game>
+	<game>
+		<path>./tmkombat.7z</path>
+		<name>Mortal Kombat</name>
+		<desc>Mortal Kombat (handheld),  (licensed from Midway) , hh_sm510.cpp</desc>
+		<image>~/.emulationstation/downloaded_images/tigerh/tmkombat1.png</image>
+		<video>~/.emulationstation/downloaded_images/tigerh/Tmkombat.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/tigerh/tmkombat.png</marquee>
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<playcount>2</playcount>
+		<lastplayed>20201103T021846</lastplayed>
+	</game>
+	<game>
+		<path>./taltbeast.7z</path>
+		<name>Altered Beast</name>
+		<desc>Altered Beast (handheld),(licensed from Sega) , hh_sm510.cpp</desc>
+		<image>~/.emulationstation/downloaded_images/tigerh/taltbeast1.png</image>
+		<video>~/.emulationstation/downloaded_images/tigerh/Taltbeast.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/tigerh/taltbeast.png</marquee>
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<playcount>3</playcount>
+		<lastplayed>20201107T000130</lastplayed>
+	</game>
+	<game>
+		<path>./tbatman.7z</path>
+		<name>Batman</name>
+		<desc>Batman (handheld), hh_sm510.cpp</desc>
+		<image>~/.emulationstation/downloaded_images/tigerh/tbatman1.png</image>
+		<video>~/.emulationstation/downloaded_images/tigerh/Tbatmana.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/tigerh/tbatman.png</marquee>
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201112T131129</lastplayed>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/taddams.zip</path>
+		<name>The Addams Family</name>
+		<desc>The Addams Family (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/taddams1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/taddams.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Taddams.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tapollo13.zip</path>
+		<name>Apollo 13</name>
+		<desc>Apollo 13 (handheld) , hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tapollo131.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tapollo13.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tapollo13.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tbatfor.zip</path>
+		<name>Batman Forever - Double Dose of Doom</name>
+		<desc>Batman Forever - Double Dose of Doom (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbatfor1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbatfor.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbatfor.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tbatmana.zip</path>
+		<name>Batman: The Animated Series</name>
+		<desc>Batman: The Animated Series (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbatmana1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbatmana.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbatmana.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tbtoads.zip</path>
+		<name>Battletoads</name>
+		<desc>Battletoads (handheld),(licensed from Rare/Tradewest), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbtoads1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbtoads.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbtoads.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tbttf.zip</path>
+		<name>Back to the Future</name>
+		<desc>Back to the Future (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbttf1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbttf.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbttf.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tddragon.zip</path>
+		<name>Double Dragon</name>
+		<desc>Double Dragon(handheld),(licensed from Technos/Tradewest)  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tddragon.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tddragon3.zip</path>
+		<name>Double Dragon 3 - The Rosetta Stone</name>
+		<desc>Double Dragon 3 - The Rosetta Stone (handheld), (licensed from Technos)  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon31.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon3.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tddragon3.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tdennis.zip</path>
+		<name>Dennis the Menace</name>
+		<desc>Dennis the Menace (handheld), (licensed from Technos)  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tdennis1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tdennis.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tdennis.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tdummies.zip</path>
+		<name>The Incredible Crash Dummies</name>
+		<desc>The Incredible Crash Dummies (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tdummies1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tdummies.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tdummies.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tflash.zip</path>
+		<name>The Flash</name>
+		<desc>The Flash (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tflash1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tflash.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tflash.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tgaiden.zip</path>
+		<name>Ninja Gaiden</name>
+		<desc>Ninja Gaiden, (handheld),(licensed from Tecmo), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgaiden1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgaiden.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgaiden.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tgaunt.zip</path>
+		<name>Gauntlet</name>
+		<desc>Gauntlet, (handheld), (licensed from Tengen) , hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgaunt1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgaunt.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgaunt.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tgoldeye.zip</path>
+		<name>007: GoldenEye</name>
+		<desc>007: GoldenEye (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldeye1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldeye.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgoldeye.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tgoldnaxe.zip</path>
+		<name>Golden Axe</name>
+		<desc>Golden Axe (handheld), (licensed from Sega), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldnaxe1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldnaxe.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgoldnaxe.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/thalone.zip</path>
+		<name>Home Alone</name>
+		<desc>Home Alone (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thalone1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thalone.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thalone.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/thalone2.zip</path>
+		<name>Home Alone 2 - Lost in New York</name>
+		<desc>Home Alone 2 - Lost in New York (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thalone21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thalone2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thalone2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/thook.zip</path>
+		<name>Hook</name>
+		<desc>Hook (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thook1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thook.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thook.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tjdredd.zip</path>
+		<name>Judge Dredd</name>
+		<desc>Judge Dredd (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tjdredd1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tjdredd.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tjdredd.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tjpark.zip</path>
+		<name>Jurassic Park</name>
+		<desc>Jurassic Park (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tjpark1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tjpark.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tjpark.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tkarnov.zip</path>
+		<name>Karnov</name>
+		<desc>Karnov (handheld), (licensed from Data East) , hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tkarnov1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tkarnov.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tkarnov.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tkazaam.zip</path>
+		<name>Kazaam</name>
+		<desc>Kazaam (handheld), (licensed from Data East) , hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tkazaam1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tkazaam.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tkazaam.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19960101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tmchammer.zip</path>
+		<name>MC Hammer: U Can't Touch This</name>
+		<desc>MC Hammer: U Can't Touch This (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tmchammer1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tmchammer.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tmchammer.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tnmarebc.zip</path>
+		<name>Nightmare Before Christmas</name>
+		<desc>Nightmare Before Christmas (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tnmarebc1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tnmarebc.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tnmarebc.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/topaliens.zip</path>
+		<name>Operation: Aliens</name>
+		<desc>Operation: Aliens (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/topaliens1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/topaliens.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Topaliens.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19940101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/trobhood.zip</path>
+		<name>Robin Hood</name>
+		<desc>Robin Hood (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobhood1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobhood.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobhood.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/trobocop2.zip</path>
+		<name>Robocop 2</name>
+		<desc>Robocop 2 (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobocop2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/trobocop3.zip</path>
+		<name>Robocop 3</name>
+		<desc>Robocop 3 (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop31.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop3.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobocop3.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/trockteer.zip</path>
+		<name>The Rocketeer</name>
+		<desc>The Rocketeer (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trockteer1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trockteer.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trockteer.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsddragon.zip</path>
+		<name>Super Double Dragon</name>
+		<desc>Super Double Dragon (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsddragon1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsddragon.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsddragon.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsf2010.zip</path>
+		<name>Street Fighter 2010 - The Final Fight</name>
+		<desc>Street Fighter 2010 - The Final Fight (handheld),(licensed from Capcom), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsf20101.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsf2010.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsf2010.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsfight2.zip</path>
+		<name>Street Fighter II</name>
+		<desc>Street Fighter II (handheld),(licensed from Capcom), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsfight21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsfight2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsfight2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tshadow.zip</path>
+		<name>The Shadow</name>
+		<desc>The Shadow (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tshadow1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tshadow.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tshadow.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19940101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsharr2.zip</path>
+		<name>Space Harrier II</name>
+		<desc>Space Harrier II (handheld), (licensed from Sega), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsharr21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsharr2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsharr2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsjam.zip</path>
+		<name>Space Jam</name>
+		<desc>Space Jam (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsjam1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsjam.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsjam.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19960101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tskelwarr.zip</path>
+		<name>Skeleton Warriors - The Dark Crusade</name>
+		<desc>Skeleton Warriors - The Dark Crusade (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tskelwarr1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tskelwarr.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tskelwarr.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19940101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsonic.zip</path>
+		<name>Sonic The Hedgehog</name>
+		<desc>Sonic The Hedgehog (handheld), (licensed from Sega),  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsonic.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tsonic2.zip</path>
+		<name>Sonic The Hedgehog 2</name>
+		<desc>Sonic The Hedgehog 2 (handheld), (licensed from Sega),  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsonic2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tspidman.zip</path>
+		<name>Spider-Man</name>
+		<desc>Spider-Man (handheld, Tiger 1991 version),  hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tspidman1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tspidman.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tspidman.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tstrider.zip</path>
+		<name>Strider</name>
+		<desc>Strider (handheld), (licensed from Capcom), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tstrider1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tstrider.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tstrider.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tswampt.zip</path>
+		<name>Swamp Thing</name>
+		<desc>Swamp Thing (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tswampt1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tswampt.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tswampt.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/ttransf2.zip</path>
+		<name>Transformers - Generation 2</name>
+		<desc>Transformers - Generation 2 (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/ttransf21.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/ttransf2.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Ttransf2.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/tvindictr.zip</path>
+		<name>Vindicators</name>
+		<desc>Vindicators (handheld),(licensed from Tengen), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tvindictr1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tvindictr.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tvindictr.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/twworld.zip</path>
+		<name>Wayne's World</name>
+		<desc>Wayne's World (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/twworld1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/twworld.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Twworld.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19920101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/txmen.zip</path>
+		<name>X-Men</name>
+		<desc>X-Men (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/txmen1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/txmen.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Txmen.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="99432" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/tigerh/txmenpx.zip</path>
+		<name>X-Men - Project X</name>
+		<desc>X-Men - Project X (handheld), hh_sm510.cpp</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/tigerh/txmenpx1.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/txmenpx.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Txmenpx.mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./tinday.zip</path>
+		<name>Independence Day</name>
+		<desc>Independence Day (handheld), hh_sm510.cpp</desc>
+		<image>~/.emulationstation/downloaded_images/tigerh/tinday1.png</image>
+		<video>~/.emulationstation/downloaded_images/tigerh/Tinday.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/tigerh/tinday.png</marquee>
+		<rating>0</rating>
+		<releasedate>19960101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201103T021450</lastplayed>
+	</game>
+	<game>
+		<path>./tmkombat.zip</path>
+		<name>Mortal Kombat</name>
+		<desc>Mortal Kombat (handheld),  (licensed from Midway) , hh_sm510.cpp</desc>
+		<image>~/.emulationstation/downloaded_images/tigerh/tmkombat1.png</image>
+		<video>~/.emulationstation/downloaded_images/tigerh/Tmkombat.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/tigerh/tmkombat.png</marquee>
+		<rating>0</rating>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<playcount>2</playcount>
+		<lastplayed>20201103T021846</lastplayed>
+	</game>
+	<game>
+		<path>./taltbeast.zip</path>
+		<name>Altered Beast</name>
+		<desc>Altered Beast (handheld),(licensed from Sega) , hh_sm510.cpp</desc>
+		<image>~/.emulationstation/downloaded_images/tigerh/taltbeast1.png</image>
+		<video>~/.emulationstation/downloaded_images/tigerh/Taltbeast.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/tigerh/taltbeast.png</marquee>
+		<rating>0</rating>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<playcount>3</playcount>
+		<lastplayed>20201107T000130</lastplayed>
+	</game>
+	<game>
+		<path>./tbatman.zip</path>
+		<name>Batman</name>
+		<desc>Batman (handheld), hh_sm510.cpp</desc>
+		<image>~/.emulationstation/downloaded_images/tigerh/tbatman1.png</image>
+		<video>~/.emulationstation/downloaded_images/tigerh/Tbatmana.mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/tigerh/tbatman.png</marquee>
+		<rating>0</rating>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Tiger Electronics, Inc.</developer>
+		<publisher>Tiger Electronics, Inc.</publisher>
+		<genre>LCD Handheld</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201112T131129</lastplayed>
+	</game>
+</gameList>

@@ -1,0 +1,3221 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Armor Battle.mgw</path>
+		<name>Armor Battle</name>
+		<desc>Armor Battle [2938], Mattel Electronics 1978</desc>
+		<releasedate>1978</releasedate>
+		<developer>Mattel Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Armor Battle.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Banana.mgw</path>
+		<name>Banana</name>
+		<desc>Banana [80-0173], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Banana.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Baseball.mgw</path>
+		<name>Baseball</name>
+		<desc>Baseball, VTech, Explorer Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Baseball.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Bomb Fight.mgw</path>
+		<name>Bomb Fight</name>
+		<desc>Bomb Fight [80-0255], VTech, Mini Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Bomb Fight.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Caccia al Ladro.mgw</path>
+		<name>Caccia al Ladro</name>
+		<desc>Caccia al Ladro Isidoro &amp; Sonja, VTech, Mini Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Caccia al Ladro.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Cessate il Fuoco.mgw</path>
+		<name>Cessate il Fuoco</name>
+		<desc>Cessate il Fuoco Isidoro &amp; Sonja, VTech, Mini Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Cessate il Fuoco.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Chicky Woggy (Arcade).mgw</path>
+		<name>Chicky Woggy (Arcade)</name>
+		<desc>Chicky Woggy [80-0247], VTech, Arcade Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Chicky Woggy (Arcade).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Chicky Woggy (Tabletop).mgw</path>
+		<name>Chicky Woggy (Tabletop)</name>
+		<desc>Chicky Woggy [80-0250], VTech, Electronic Tini-Arcade 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Chicky Woggy (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Condor.mgw</path>
+		<name>Condor</name>
+		<desc>Condor [80-0188], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Condor.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Crazy Chewy (Tabletop).mgw</path>
+		<name>Crazy Chewy (Tabletop)</name>
+		<desc>Crazy Chewy, VTech, Electronic Tini-Arcade 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Crazy Chewy (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Defendo.mgw</path>
+		<name>Defendo</name>
+		<desc>Defendo, VTech, Explorer Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Defendo.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Donkey Angler.mgw</path>
+		<name>Donkey Angler</name>
+		<desc>Donkey Angler, Gakken, LCD Card Game 1983</desc>
+		<releasedate>1983</releasedate>
+		<developer>Gakken</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Donkey Angler.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Donkey Kong Jr (Tabletop Coleco).mgw</path>
+		<name>Donkey Kong Jr (Tabletop Coleco)</name>
+		<desc>Donkey Kong Junior [2398], Coleco 1983</desc>
+		<releasedate>1983</releasedate>
+		<developer>Coleco</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Donkey Kong Jr (Tabletop Coleco).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Donkey Kong Jr (Tabletop Nintendo).mgw</path>
+		<name>Donkey Kong Jr (Tabletop Nintendo)</name>
+		<desc>Donkey Kong Jr. [CJ-71], Nintendo, Game &amp; Watch Table Top 1983-04-28</desc>
+		<releasedate>1983-04-28</releasedate>
+		<developer>Nintendo</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Donkey Kong Jr (Tabletop Nintendo).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Donkey Kong (Tabletop).mgw</path>
+		<name>Donkey Kong (Tabletop)</name>
+		<desc>Donkey Kong [2391], Coleco 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>Coleco</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Donkey Kong (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Dungeons &amp; Dragons Computer Fantasy Game.mgw</path>
+		<name>Dungeons &amp; Dragons Computer Fantasy Game</name>
+		<desc>Dungeons &amp; Dragons Computer Fantasy Game [5409], Mattel Electronics, Action Arcade Series 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Mattel Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Dungeons &amp; Dragons Computer Fantasy Game.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Engine Room.mgw</path>
+		<name>Engine Room</name>
+		<desc>Engine Room, VTech, Explorer Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Engine Room.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Escape.mgw</path>
+		<name>Escape</name>
+		<desc>Escape [80-0172], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Escape.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Explorers of Space.mgw</path>
+		<name>Explorers of Space</name>
+		<desc>Explorers of Space [MG-13], Elektronika 1989</desc>
+		<releasedate>1989</releasedate>
+		<developer>Elektronika</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Explorers of Space.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Fowling.mgw</path>
+		<name>Fowling</name>
+		<desc>Fowling [MG-18], Elektronika 1989</desc>
+		<releasedate>1989</releasedate>
+		<developer>Elektronika</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Fowling.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Frog Boaster.mgw</path>
+		<name>Frog Boaster</name>
+		<desc>Frog Boaster [MG-33], Elektronika 1989</desc>
+		<releasedate>1989</releasedate>
+		<developer>Elektronika</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Frog Boaster.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Galaxy II (Tabletop).mgw</path>
+		<name>Galaxy II (Tabletop)</name>
+		<desc>Galaxy II [8100], Epoch 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Epoch</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Galaxy II (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Grab Man.mgw</path>
+		<name>Grab Man</name>
+		<desc>Grab Man [GM 16], unknown manufacturer, Game &amp; Time 198x</desc>
+		<releasedate>198x</releasedate>
+		<developer />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Grab Man.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Hippo Teeth (Mini).mgw</path>
+		<name>Hippo Teeth (Mini)</name>
+		<desc>Hippo Teeth [80-0254], VTech, Mini Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Hippo Teeth (Mini).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Hippo Teeth (Sporty).mgw</path>
+		<name>Hippo Teeth (Sporty)</name>
+		<desc>Hippo Teeth [80-0243], VTech, Sporty Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Hippo Teeth (Sporty).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Hot Line (Mini).mgw</path>
+		<name>Hot Line (Mini)</name>
+		<desc>Hot Line [80-0252], VTech, Mini Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Hot Line (Mini).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Hot Line (Sporty).mgw</path>
+		<name>Hot Line (Sporty)</name>
+		<desc>Hot Line [80-0241], VTech, Sporty Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Hot Line (Sporty).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Las Vegas.mgw</path>
+		<name>Las Vegas</name>
+		<desc>Las Vegas [16279], Bandai Electronics, LCD Game Digital 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Bandai Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Las Vegas.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Monkey Jump (Arcade).mgw</path>
+		<name>Monkey Jump (Arcade)</name>
+		<desc>Monkey Jump [80-0218], VTech, Arcade Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Monkey Jump (Arcade).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Monkey.mgw</path>
+		<name>Monkey</name>
+		<desc>Monkey [80-0171], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Monkey.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Motor Cross.mgw</path>
+		<name>Motor Cross</name>
+		<desc>Motor Cross [QGH 37A], Queentex 199x</desc>
+		<releasedate>199x</releasedate>
+		<developer>Queentex</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Motor Cross.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Pac Man.mgw</path>
+		<name>Pac Man</name>
+		<desc>Pac Man [7612], Tomytronic 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Tomytronic</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Pac Man.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Pancake.mgw</path>
+		<name>Pancake</name>
+		<desc>Pancake [80-0174], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Pancake.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Penguin Land.mgw</path>
+		<name>Penguin Land</name>
+		<desc>Penguin Land [0200032], Bandai Electronics, LCD Double Play 1983</desc>
+		<releasedate>1983</releasedate>
+		<developer>Bandai Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Penguin Land.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Pirate.mgw</path>
+		<name>Pirate</name>
+		<desc>Pirate [80-0187], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Pirate.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Roller Coaster.mgw</path>
+		<name>Roller Coaster</name>
+		<desc>Roller Coaster, VTech, Explorer Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Roller Coaster.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Safari.mgw</path>
+		<name>Safari</name>
+		<desc>Safari [80-0186], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Safari.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Sleep Walker.mgw</path>
+		<name>Sleep Walker</name>
+		<desc>Sleep Walker [80-0185], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Sleep Walker.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Snoopy (Tabletop).mgw</path>
+		<name>Snoopy (Tabletop)</name>
+		<desc>Snoopy [SM-73], Nintendo, Game &amp; Watch Table Top 1983-06-05</desc>
+		<releasedate>1983-06-05</releasedate>
+		<developer>Nintendo</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Snoopy (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Sub Chase.mgw</path>
+		<name>Sub Chase</name>
+		<desc>Sub Chase [2937], Mattel Electronics 1978</desc>
+		<releasedate>1978</releasedate>
+		<developer>Mattel Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Sub Chase.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Tennis Menace (Sporty).mgw</path>
+		<name>Tennis Menace (Sporty)</name>
+		<desc>Tennis Menace [80-0242], VTech, Sporty Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Tennis Menace (Sporty).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Tom &amp; Jerry Popper.mgw</path>
+		<name>Tom &amp; Jerry Popper</name>
+		<desc>Tom &amp; Jerry Popper, Gakken, LCD Card Game 1983</desc>
+		<releasedate>1983</releasedate>
+		<developer>Gakken</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Tom &amp; Jerry Popper.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Towering Rescue.mgw</path>
+		<name>Towering Rescue</name>
+		<desc>Towering Rescue [81555], Gakken, LCD Card Game 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Gakken</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Towering Rescue.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Tron.mgw</path>
+		<name>Tron</name>
+		<desc>Tron [7601], Tomytronic 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>Tomytronic</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Tron.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Wild Man Jump (Tabletop).mgw</path>
+		<name>Wild Man Jump (Tabletop)</name>
+		<desc>Wild Man Jump [80-0194], VTech, Electronic Tini-Arcade 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Wild Man Jump (Tabletop).png</image>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/alnattck.7z</path>
+		<name>Alien Attack</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/alnattck.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/classich/alnattck_1.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/alnchase.7z</path>
+		<name>Alien Chase</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/alnchase.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/classich/alnchase (1).png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19840101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bambball.7z</path>
+		<name>Dribble Away Basketball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bambball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Bambino</developer>
+		<developer>Bambino</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bbtime.7z</path>
+		<name>Burger Time</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bbtime.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bcclimbr.7z</path>
+		<name>Crazy Climber</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bcclimbr.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bdoramon.7z</path>
+		<name>Dokodemo Dorayaki Doraemon</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bdoramon.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bfriskyt.7z</path>
+		<name>Frisky Tom</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bfriskyt.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bmboxing.7z</path>
+		<name>Knock-Em Out Boxing</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bmboxing.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>	Bambino</developer>
+		<developer>	Bambino</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bmsafari.7z</path>
+		<name>Safari</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bmsafari.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>	Bambino</developer>
+		<developer>	Bambino</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bmsoccer.7z</path>
+		<name>Kick The Goal Soccer</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bmsoccer.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>	Bambino</developer>
+		<developer>	Bambino</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bpengo.7z</path>
+		<name>Pengo</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bpengo.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>	Bandai</developer>
+		<developer>	Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bultrman.7z</path>
+		<name>Ultraman Monster Battle</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bultrman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>	Bandai</developer>
+		<developer>	Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bzaxxon.7z</path>
+		<name>Zaxxon</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bzaxxon.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>	Bandai</developer>
+		<developer>	Bandai</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cdkong.7z</path>
+		<name>Donkey Kong</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cdkong.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cfrogger.7z</path>
+		<name>Frogger</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cfrogger.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cgalaxn.7z</path>
+		<name>Galaxian</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cgalaxn.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cmspacmn.7z</path>
+		<name>Ms. Pac-Man</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cmspacmn.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cpacman.7z</path>
+		<name>Pac-Man</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cpacman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cqback.7z</path>
+		<name>Electronic Quarterback</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cqback.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19780101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/edracula.7z</path>
+		<name>Dracula</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/edracula.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Epoch</developer>
+		<developer>Epoch</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/efball.7z</path>
+		<name>Electronic Football</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/efball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Epoch</developer>
+		<developer>Epoch</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/einvader.7z</path>
+		<name>Space Invader (Entex, TMS1100 version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/einvader.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/einvader2.7z</path>
+		<name>Super Space Invader 2 (Entex, black version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/einvader2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/epacman2.7z</path>
+		<name>Pac Man 2 (Entex, cyan Pacman)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/epacman2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/estargte.7z</path>
+		<name>Stargate (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/estargte.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/eturtles.7z</path>
+		<name>Turtles (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/eturtles.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/flash.7z</path>
+		<name>Flash (Ideal)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/flash.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Ideal Toy Corporation</developer>
+		<developer>Ideal Toy Corporation</developer>
+		<genre>Music</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/funjacks.7z</path>
+		<name>Jacks</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/funjacks.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Mattel</developer>
+		<developer>Mattel</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/galaxy2.7z</path>
+		<name>Galaxy II (VFD Rev. D)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/galaxy2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Epoch</developer>
+		<developer>Epoch</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/gckong.7z</path>
+		<name>Crazy Kong (Gakken)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/gckong.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/gdigdug.7z</path>
+		<name>Dig Dug (Gakken)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/gdigdug.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ghalien.7z</path>
+		<name>Heiankyo Alien (Gakken)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ghalien.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ginv.7z</path>
+		<name>Invader (Gakken, cyan version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ginv.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ginv1000.7z</path>
+		<name>Galaxy Invader 1000</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ginv1000.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ginv2000.7z</path>
+		<name>Invader 2000</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ginv2000.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/gjungler.7z</path>
+		<name>Jungler (Gakken)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/gjungler.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Gakken / Konami</developer>
+		<developer>Gakken / Konami</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/hccbaskb.7z</path>
+		<name>Half Court Computer Basketball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/hccbaskb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Tiger Electronics</developer>
+		<developer>Tiger Electronics</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/invspace.7z</path>
+		<name>Invader From Space</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/invspace.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Epoch</developer>
+		<developer>Epoch</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/kingman.7z</path>
+		<name>Kingman</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/kingman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/kingman.7z</path>
+		<name>Kingman</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/kingman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/machiman.7z</path>
+		<name>Machine Man</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/machiman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19840101T000000</releasedate>
+		<developer>	Bandai </developer>
+		<developer>	Bandai </developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/mcompgin.7z</path>
+		<name>Computer Gin</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/mcompgin.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Mattel</developer>
+		<developer>Mattel</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/msthawk.7z</path>
+		<name>Star Hawk (Mattel)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/msthawk.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Mattel</developer>
+		<developer>Mattel</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/mwcbaseb.7z</path>
+		<name>World Championship Baseball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/mwcbaseb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Mattel</developer>
+		<developer>Mattel</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/packmon.7z</path>
+		<name>Packri Monster</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/packmon.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/pairmtch.7z</path>
+		<name>Pair Match</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/pairmtch.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19840101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/pbqbert.7z</path>
+		<name>Q*Bert (Parker Brothers)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/pbqbert.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Parker Brothers</developer>
+		<developer>Parker Brothers</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/phpball.7z</path>
+		<name>Power House Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/phpball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Pinball</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/rockpin.7z</path>
+		<name>Rocket Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/rockpin.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Tiger Electronics</developer>
+		<developer>Tiger Electronics</developer>
+		<genre>Pinball</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/splasfgt.7z</path>
+		<name>Space Laser Fight</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/splasfgt.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Bambino</developer>
+		<developer>Bambino</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/splitsec.7z</path>
+		<name>Split Second</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/splitsec.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Parker Brothers</developer>
+		<developer>Parker Brothers</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ssfball.7z</path>
+		<name>Superstar Football (Bambino)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ssfball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Bambino</developer>
+		<developer>Bambino</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tbreakup.7z</path>
+		<name>Break Up (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tbreakup.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tcaveman.7z</path>
+		<name>Caveman (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tcaveman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tccombat.7z</path>
+		<name>Cosmic Combat</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tccombat.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tmpacman.7z</path>
+		<name>Pac Man (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tmpacman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tmscramb.7z</path>
+		<name>Scramble (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tmscramb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tmtennis.7z</path>
+		<name>Tennis (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tmtennis.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tmtron.7z</path>
+		<name>Tron (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tmtron.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/trshutvoy.7z</path>
+		<name>Shuttle Voyage</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/trshutvoy.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Tronica</developer>
+		<developer>Tronica</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/trsrescue.7z</path>
+		<name>Space Rescue</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/trsrescue.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tronica</developer>
+		<developer>Tronica</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ufombs.7z</path>
+		<name>UFO Master-Blaster Station</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ufombs.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Bambino </developer>
+		<developer>Bambino </developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/vinvader.7z</path>
+		<name>Invaders (VTech)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/vinvader.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>VTech</developer>
+		<developer>VTech</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/zackman.7z</path>
+		<name>Zackman</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/zackman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bankshot.7z</path>
+		<name>Bank Shot - Electronic Pool</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bankshot.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Parker Brothers</developer>
+		<developer>Parker Brothers</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cmsport.7z</path>
+		<name>Electronic Multisport</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cmsport.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Conic</developer>
+		<developer>Conic</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cnbaskb.7z</path>
+		<name>Electronic Basketball (Conic)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cnbaskb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Conic</developer>
+		<developer>Conic</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cnfball.7z</path>
+		<name>Electronic Football (Conic, TMS1000 version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cnfball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Conic</developer>
+		<developer>Conic</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cnfball2.7z</path>
+		<name>Electronic Football II (Conic)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cnfball2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Conic</developer>
+		<developer>Conic</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ebaskb2.7z</path>
+		<name>Electronic Basketball 2 (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ebaskb2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ebball.7z</path>
+		<name>Electronic Baseball (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ebball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ebball2.7z</path>
+		<name>Electronic Baseball 2 (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ebball2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ebball3.7z</path>
+		<name>Electronic Baseball 3 (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ebball3.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/esoccer.7z</path>
+		<name>Electronic Soccer (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/esoccer.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hbaseb.7z</path>
+		<name>Head to Head: Electronic Baseball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hbaseb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hbaskb.7z</path>
+		<name>Head to Head: Electronic Basketball (TMS1000 version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hbaskb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hfootb.7z</path>
+		<name>Head to Head: Electronic Football</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hfootb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hhockey.7z</path>
+		<name>Head to Head: Electronic Hockey</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hhockey.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hsoccerc.7z</path>
+		<name>Head to Head: Electronic Soccer</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hsoccerc.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tbaskb.7z</path>
+		<name>Electronic Basketball (Tandy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tbaskb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Tandy Corporation</developer>
+		<developer>Tandy Corporation</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/us2pfball.7z</path>
+		<name>Electronic 2-Player Football</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/us2pfball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>U.S. Games</developer>
+		<developer>U.S. Games</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./astrocmd.7z</path>
+		<name>Astro Command</name>
+		<image>~/.emulationstation/downloaded_images/classich/astrocmd.png</image>
+		<marquee>~/.emulationstation/downloaded_images/classich/astrocmd (1).png</marquee>
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Epoch</developer>
+		<genre>Shooter</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201121T030917</lastplayed>
+	</game>
+	<game>
+		<path>./egalaxn2.7z</path>
+		<name>Galaxian 2 (Entex)</name>
+		<image>~/.emulationstation/downloaded_images/classich/egalaxn2.png</image>
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201121T030713</lastplayed>
+	</game>
+	<game>
+		<path>./raisedvl.7z</path>
+		<name>Raise The Devil</name>
+		<image>~/.emulationstation/downloaded_images/classich/raisedvl.png</image>
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Entex</developer>
+		<genre>Pinball</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201121T030453</lastplayed>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Armor Battle.mgw</path>
+		<name>Armor Battle</name>
+		<desc>Armor Battle [2938], Mattel Electronics 1978</desc>
+		<releasedate>1978</releasedate>
+		<developer>Mattel Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Armor Battle.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Banana.mgw</path>
+		<name>Banana</name>
+		<desc>Banana [80-0173], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Banana.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Baseball.mgw</path>
+		<name>Baseball</name>
+		<desc>Baseball, VTech, Explorer Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Baseball.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Bomb Fight.mgw</path>
+		<name>Bomb Fight</name>
+		<desc>Bomb Fight [80-0255], VTech, Mini Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Bomb Fight.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Caccia al Ladro.mgw</path>
+		<name>Caccia al Ladro</name>
+		<desc>Caccia al Ladro Isidoro &amp; Sonja, VTech, Mini Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Caccia al Ladro.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Cessate il Fuoco.mgw</path>
+		<name>Cessate il Fuoco</name>
+		<desc>Cessate il Fuoco Isidoro &amp; Sonja, VTech, Mini Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Cessate il Fuoco.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Chicky Woggy (Arcade).mgw</path>
+		<name>Chicky Woggy (Arcade)</name>
+		<desc>Chicky Woggy [80-0247], VTech, Arcade Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Chicky Woggy (Arcade).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Chicky Woggy (Tabletop).mgw</path>
+		<name>Chicky Woggy (Tabletop)</name>
+		<desc>Chicky Woggy [80-0250], VTech, Electronic Tini-Arcade 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Chicky Woggy (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Condor.mgw</path>
+		<name>Condor</name>
+		<desc>Condor [80-0188], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Condor.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Crazy Chewy (Tabletop).mgw</path>
+		<name>Crazy Chewy (Tabletop)</name>
+		<desc>Crazy Chewy, VTech, Electronic Tini-Arcade 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Crazy Chewy (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Defendo.mgw</path>
+		<name>Defendo</name>
+		<desc>Defendo, VTech, Explorer Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Defendo.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Donkey Angler.mgw</path>
+		<name>Donkey Angler</name>
+		<desc>Donkey Angler, Gakken, LCD Card Game 1983</desc>
+		<releasedate>1983</releasedate>
+		<developer>Gakken</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Donkey Angler.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Donkey Kong Jr (Tabletop Coleco).mgw</path>
+		<name>Donkey Kong Jr (Tabletop Coleco)</name>
+		<desc>Donkey Kong Junior [2398], Coleco 1983</desc>
+		<releasedate>1983</releasedate>
+		<developer>Coleco</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Donkey Kong Jr (Tabletop Coleco).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Donkey Kong Jr (Tabletop Nintendo).mgw</path>
+		<name>Donkey Kong Jr (Tabletop Nintendo)</name>
+		<desc>Donkey Kong Jr. [CJ-71], Nintendo, Game &amp; Watch Table Top 1983-04-28</desc>
+		<releasedate>1983-04-28</releasedate>
+		<developer>Nintendo</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Donkey Kong Jr (Tabletop Nintendo).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Donkey Kong (Tabletop).mgw</path>
+		<name>Donkey Kong (Tabletop)</name>
+		<desc>Donkey Kong [2391], Coleco 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>Coleco</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Donkey Kong (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Dungeons &amp; Dragons Computer Fantasy Game.mgw</path>
+		<name>Dungeons &amp; Dragons Computer Fantasy Game</name>
+		<desc>Dungeons &amp; Dragons Computer Fantasy Game [5409], Mattel Electronics, Action Arcade Series 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Mattel Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Dungeons &amp; Dragons Computer Fantasy Game.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Engine Room.mgw</path>
+		<name>Engine Room</name>
+		<desc>Engine Room, VTech, Explorer Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Engine Room.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Escape.mgw</path>
+		<name>Escape</name>
+		<desc>Escape [80-0172], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Escape.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Explorers of Space.mgw</path>
+		<name>Explorers of Space</name>
+		<desc>Explorers of Space [MG-13], Elektronika 1989</desc>
+		<releasedate>1989</releasedate>
+		<developer>Elektronika</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Explorers of Space.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Fowling.mgw</path>
+		<name>Fowling</name>
+		<desc>Fowling [MG-18], Elektronika 1989</desc>
+		<releasedate>1989</releasedate>
+		<developer>Elektronika</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Fowling.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Frog Boaster.mgw</path>
+		<name>Frog Boaster</name>
+		<desc>Frog Boaster [MG-33], Elektronika 1989</desc>
+		<releasedate>1989</releasedate>
+		<developer>Elektronika</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Frog Boaster.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Galaxy II (Tabletop).mgw</path>
+		<name>Galaxy II (Tabletop)</name>
+		<desc>Galaxy II [8100], Epoch 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Epoch</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Galaxy II (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Grab Man.mgw</path>
+		<name>Grab Man</name>
+		<desc>Grab Man [GM 16], unknown manufacturer, Game &amp; Time 198x</desc>
+		<releasedate>198x</releasedate>
+		<developer />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Grab Man.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Hippo Teeth (Mini).mgw</path>
+		<name>Hippo Teeth (Mini)</name>
+		<desc>Hippo Teeth [80-0254], VTech, Mini Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Hippo Teeth (Mini).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Hippo Teeth (Sporty).mgw</path>
+		<name>Hippo Teeth (Sporty)</name>
+		<desc>Hippo Teeth [80-0243], VTech, Sporty Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Hippo Teeth (Sporty).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Hot Line (Mini).mgw</path>
+		<name>Hot Line (Mini)</name>
+		<desc>Hot Line [80-0252], VTech, Mini Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Hot Line (Mini).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Hot Line (Sporty).mgw</path>
+		<name>Hot Line (Sporty)</name>
+		<desc>Hot Line [80-0241], VTech, Sporty Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Hot Line (Sporty).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Las Vegas.mgw</path>
+		<name>Las Vegas</name>
+		<desc>Las Vegas [16279], Bandai Electronics, LCD Game Digital 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Bandai Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Las Vegas.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Monkey Jump (Arcade).mgw</path>
+		<name>Monkey Jump (Arcade)</name>
+		<desc>Monkey Jump [80-0218], VTech, Arcade Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Monkey Jump (Arcade).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Monkey.mgw</path>
+		<name>Monkey</name>
+		<desc>Monkey [80-0171], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Monkey.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Motor Cross.mgw</path>
+		<name>Motor Cross</name>
+		<desc>Motor Cross [QGH 37A], Queentex 199x</desc>
+		<releasedate>199x</releasedate>
+		<developer>Queentex</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Motor Cross.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Pac Man.mgw</path>
+		<name>Pac Man</name>
+		<desc>Pac Man [7612], Tomytronic 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Tomytronic</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Pac Man.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Pancake.mgw</path>
+		<name>Pancake</name>
+		<desc>Pancake [80-0174], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Pancake.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Penguin Land.mgw</path>
+		<name>Penguin Land</name>
+		<desc>Penguin Land [0200032], Bandai Electronics, LCD Double Play 1983</desc>
+		<releasedate>1983</releasedate>
+		<developer>Bandai Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Penguin Land.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Pirate.mgw</path>
+		<name>Pirate</name>
+		<desc>Pirate [80-0187], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Pirate.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Roller Coaster.mgw</path>
+		<name>Roller Coaster</name>
+		<desc>Roller Coaster, VTech, Explorer Time &amp; Fun 1984</desc>
+		<releasedate>1984</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Roller Coaster.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Safari.mgw</path>
+		<name>Safari</name>
+		<desc>Safari [80-0186], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Safari.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Sleep Walker.mgw</path>
+		<name>Sleep Walker</name>
+		<desc>Sleep Walker [80-0185], VTech, Time &amp; Fun 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Sleep Walker.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Snoopy (Tabletop).mgw</path>
+		<name>Snoopy (Tabletop)</name>
+		<desc>Snoopy [SM-73], Nintendo, Game &amp; Watch Table Top 1983-06-05</desc>
+		<releasedate>1983-06-05</releasedate>
+		<developer>Nintendo</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Snoopy (Tabletop).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Sub Chase.mgw</path>
+		<name>Sub Chase</name>
+		<desc>Sub Chase [2937], Mattel Electronics 1978</desc>
+		<releasedate>1978</releasedate>
+		<developer>Mattel Electronics</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Sub Chase.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Tennis Menace (Sporty).mgw</path>
+		<name>Tennis Menace (Sporty)</name>
+		<desc>Tennis Menace [80-0242], VTech, Sporty Time &amp; Fun 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Tennis Menace (Sporty).png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Tom &amp; Jerry Popper.mgw</path>
+		<name>Tom &amp; Jerry Popper</name>
+		<desc>Tom &amp; Jerry Popper, Gakken, LCD Card Game 1983</desc>
+		<releasedate>1983</releasedate>
+		<developer>Gakken</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Tom &amp; Jerry Popper.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Towering Rescue.mgw</path>
+		<name>Towering Rescue</name>
+		<desc>Towering Rescue [81555], Gakken, LCD Card Game 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>Gakken</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Towering Rescue.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Tron.mgw</path>
+		<name>Tron</name>
+		<desc>Tron [7601], Tomytronic 1982</desc>
+		<releasedate>1982</releasedate>
+		<developer>Tomytronic</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Tron.png</image>
+	</game>
+	<game>
+		<path>/home/pi/RetroPie/roms/classich/Wild Man Jump (Tabletop).mgw</path>
+		<name>Wild Man Jump (Tabletop)</name>
+		<desc>Wild Man Jump [80-0194], VTech, Electronic Tini-Arcade 1981</desc>
+		<releasedate>1981</releasedate>
+		<developer>VTech</developer>
+		<image>/home/pi/.emulationstation/downloaded_images/classich/Wild Man Jump (Tabletop).png</image>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/alnattck.zip</path>
+		<name>Alien Attack</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/alnattck.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/classich/alnattck_1.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/alnchase.zip</path>
+		<name>Alien Chase</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/alnchase.png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/classich/alnchase (1).png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19840101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bambball.zip</path>
+		<name>Dribble Away Basketball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bambball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Bambino</developer>
+		<developer>Bambino</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bbtime.zip</path>
+		<name>Burger Time</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bbtime.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bcclimbr.zip</path>
+		<name>Crazy Climber</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bcclimbr.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bdoramon.zip</path>
+		<name>Dokodemo Dorayaki Doraemon</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bdoramon.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bfriskyt.zip</path>
+		<name>Frisky Tom</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bfriskyt.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bmboxing.zip</path>
+		<name>Knock-Em Out Boxing</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bmboxing.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>	Bambino</developer>
+		<developer>	Bambino</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bmsafari.zip</path>
+		<name>Safari</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bmsafari.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>	Bambino</developer>
+		<developer>	Bambino</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bmsoccer.zip</path>
+		<name>Kick The Goal Soccer</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bmsoccer.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>	Bambino</developer>
+		<developer>	Bambino</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bpengo.zip</path>
+		<name>Pengo</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bpengo.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>	Bandai</developer>
+		<developer>	Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bultrman.zip</path>
+		<name>Ultraman Monster Battle</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bultrman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>	Bandai</developer>
+		<developer>	Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bzaxxon.zip</path>
+		<name>Zaxxon</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bzaxxon.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>	Bandai</developer>
+		<developer>	Bandai</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cdkong.zip</path>
+		<name>Donkey Kong</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cdkong.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cfrogger.zip</path>
+		<name>Frogger</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cfrogger.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cgalaxn.zip</path>
+		<name>Galaxian</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cgalaxn.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cmspacmn.zip</path>
+		<name>Ms. Pac-Man</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cmspacmn.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cpacman.zip</path>
+		<name>Pac-Man</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cpacman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cqback.zip</path>
+		<name>Electronic Quarterback</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cqback.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19780101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/edracula.zip</path>
+		<name>Dracula</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/edracula.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Epoch</developer>
+		<developer>Epoch</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/efball.zip</path>
+		<name>Electronic Football</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/efball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Epoch</developer>
+		<developer>Epoch</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/einvader.zip</path>
+		<name>Space Invader (Entex, TMS1100 version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/einvader.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/einvader2.zip</path>
+		<name>Super Space Invader 2 (Entex, black version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/einvader2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/epacman2.zip</path>
+		<name>Pac Man 2 (Entex, cyan Pacman)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/epacman2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/estargte.zip</path>
+		<name>Stargate (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/estargte.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/eturtles.zip</path>
+		<name>Turtles (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/eturtles.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/flash.zip</path>
+		<name>Flash (Ideal)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/flash.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Ideal Toy Corporation</developer>
+		<developer>Ideal Toy Corporation</developer>
+		<genre>Music</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/funjacks.zip</path>
+		<name>Jacks</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/funjacks.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Mattel</developer>
+		<developer>Mattel</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/galaxy2.zip</path>
+		<name>Galaxy II (VFD Rev. D)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/galaxy2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Epoch</developer>
+		<developer>Epoch</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/gckong.zip</path>
+		<name>Crazy Kong (Gakken)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/gckong.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/gdigdug.zip</path>
+		<name>Dig Dug (Gakken)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/gdigdug.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ghalien.zip</path>
+		<name>Heiankyo Alien (Gakken)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ghalien.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ginv.zip</path>
+		<name>Invader (Gakken, cyan version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ginv.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ginv1000.zip</path>
+		<name>Galaxy Invader 1000</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ginv1000.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ginv2000.zip</path>
+		<name>Invader 2000</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ginv2000.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Gakken</developer>
+		<developer>Gakken</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/gjungler.zip</path>
+		<name>Jungler (Gakken)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/gjungler.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Gakken / Konami</developer>
+		<developer>Gakken / Konami</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/hccbaskb.zip</path>
+		<name>Half Court Computer Basketball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/hccbaskb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Tiger Electronics</developer>
+		<developer>Tiger Electronics</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/invspace.zip</path>
+		<name>Invader From Space</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/invspace.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Epoch</developer>
+		<developer>Epoch</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/kingman.zip</path>
+		<name>Kingman</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/kingman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/kingman.zip</path>
+		<name>Kingman</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/kingman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/machiman.zip</path>
+		<name>Machine Man</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/machiman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19840101T000000</releasedate>
+		<developer>	Bandai </developer>
+		<developer>	Bandai </developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/mcompgin.zip</path>
+		<name>Computer Gin</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/mcompgin.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Mattel</developer>
+		<developer>Mattel</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/msthawk.zip</path>
+		<name>Star Hawk (Mattel)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/msthawk.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Mattel</developer>
+		<developer>Mattel</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/mwcbaseb.zip</path>
+		<name>World Championship Baseball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/mwcbaseb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Mattel</developer>
+		<developer>Mattel</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/packmon.zip</path>
+		<name>Packri Monster</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/packmon.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/pairmtch.zip</path>
+		<name>Pair Match</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/pairmtch.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19840101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/pbqbert.zip</path>
+		<name>Q*Bert (Parker Brothers)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/pbqbert.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Parker Brothers</developer>
+		<developer>Parker Brothers</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/phpball.zip</path>
+		<name>Power House Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/phpball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Pinball</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/rockpin.zip</path>
+		<name>Rocket Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/rockpin.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Tiger Electronics</developer>
+		<developer>Tiger Electronics</developer>
+		<genre>Pinball</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/splasfgt.zip</path>
+		<name>Space Laser Fight</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/splasfgt.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Bambino</developer>
+		<developer>Bambino</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/splitsec.zip</path>
+		<name>Split Second</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/splitsec.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Parker Brothers</developer>
+		<developer>Parker Brothers</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ssfball.zip</path>
+		<name>Superstar Football (Bambino)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ssfball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Bambino</developer>
+		<developer>Bambino</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tbreakup.zip</path>
+		<name>Break Up (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tbreakup.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Handheld</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tcaveman.zip</path>
+		<name>Caveman (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tcaveman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tccombat.zip</path>
+		<name>Cosmic Combat</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tccombat.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tmpacman.zip</path>
+		<name>Pac Man (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tmpacman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tmscramb.zip</path>
+		<name>Scramble (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tmscramb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tmtennis.zip</path>
+		<name>Tennis (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tmtennis.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tmtron.zip</path>
+		<name>Tron (Tomy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tmtron.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tomy</developer>
+		<developer>Tomy</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/trshutvoy.zip</path>
+		<name>Shuttle Voyage</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/trshutvoy.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Tronica</developer>
+		<developer>Tronica</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/trsrescue.zip</path>
+		<name>Space Rescue</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/trsrescue.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Tronica</developer>
+		<developer>Tronica</developer>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ufombs.zip</path>
+		<name>UFO Master-Blaster Station</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ufombs.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Bambino </developer>
+		<developer>Bambino </developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/vinvader.zip</path>
+		<name>Invaders (VTech)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/vinvader.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>VTech</developer>
+		<developer>VTech</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/zackman.zip</path>
+		<name>Zackman</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/zackman.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19830101T000000</releasedate>
+		<developer>Bandai</developer>
+		<developer>Bandai</developer>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/bankshot.zip</path>
+		<name>Bank Shot - Electronic Pool</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/bankshot.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Parker Brothers</developer>
+		<developer>Parker Brothers</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cmsport.zip</path>
+		<name>Electronic Multisport</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cmsport.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Conic</developer>
+		<developer>Conic</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cnbaskb.zip</path>
+		<name>Electronic Basketball (Conic)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cnbaskb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Conic</developer>
+		<developer>Conic</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cnfball.zip</path>
+		<name>Electronic Football (Conic, TMS1000 version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cnfball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Conic</developer>
+		<developer>Conic</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/cnfball2.zip</path>
+		<name>Electronic Football II (Conic)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/cnfball2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Conic</developer>
+		<developer>Conic</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ebaskb2.zip</path>
+		<name>Electronic Basketball 2 (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ebaskb2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ebball.zip</path>
+		<name>Electronic Baseball (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ebball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ebball2.zip</path>
+		<name>Electronic Baseball 2 (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ebball2.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/ebball3.zip</path>
+		<name>Electronic Baseball 3 (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/ebball3.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/esoccer.zip</path>
+		<name>Electronic Soccer (Entex)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/esoccer.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Entex</developer>
+		<developer>Entex</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hbaseb.zip</path>
+		<name>Head to Head: Electronic Baseball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hbaseb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hbaskb.zip</path>
+		<name>Head to Head: Electronic Basketball (TMS1000 version)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hbaskb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hfootb.zip</path>
+		<name>Head to Head: Electronic Football</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hfootb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hhockey.zip</path>
+		<name>Head to Head: Electronic Hockey</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hhockey.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/h2hsoccerc.zip</path>
+		<name>Head to Head: Electronic Soccer</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/h2hsoccerc.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Coleco</developer>
+		<developer>Coleco</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/tbaskb.zip</path>
+		<name>Electronic Basketball (Tandy)</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/tbaskb.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19790101T000000</releasedate>
+		<developer>Tandy Corporation</developer>
+		<developer>Tandy Corporation</developer>
+		<genre>Sport</genre>
+		<players>1</players>
+	</game>
+	<game id="" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/classich/us2pfball.zip</path>
+		<name>Electronic 2-Player Football</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/classich/us2pfball.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>U.S. Games</developer>
+		<developer>U.S. Games</developer>
+		<genre>Sport</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./astrocmd.zip</path>
+		<name>Astro Command</name>
+		<image>~/.emulationstation/downloaded_images/classich/astrocmd.png</image>
+		<marquee>~/.emulationstation/downloaded_images/classich/astrocmd (1).png</marquee>
+		<rating>0</rating>
+		<releasedate>19820101T000000</releasedate>
+		<developer>Epoch</developer>
+		<genre>Shooter</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201121T030917</lastplayed>
+	</game>
+	<game>
+		<path>./egalaxn2.zip</path>
+		<name>Galaxian 2 (Entex)</name>
+		<image>~/.emulationstation/downloaded_images/classich/egalaxn2.png</image>
+		<rating>0</rating>
+		<releasedate>19810101T000000</releasedate>
+		<developer>Entex</developer>
+		<genre>Shooter</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201121T030713</lastplayed>
+	</game>
+	<game>
+		<path>./raisedvl.zip</path>
+		<name>Raise The Devil</name>
+		<image>~/.emulationstation/downloaded_images/classich/raisedvl.png</image>
+		<rating>0</rating>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Entex</developer>
+		<genre>Pinball</genre>
+		<playcount>1</playcount>
+		<lastplayed>20201121T030453</lastplayed>
+	</game>
+</gameList>

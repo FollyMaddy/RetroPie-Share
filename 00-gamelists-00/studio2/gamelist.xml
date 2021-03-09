@@ -1,0 +1,452 @@
+<gameList>
+<game id="46349" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/baseball.7z</path>
+	<name>TV Arcade IV - Baseball</name>
+	<desc>TV Arcade IV - Baseball is an Sport game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade IV - Baseball (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade IV - Baseball (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade IV - Baseball (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Sport</genre>
+	<players>2</players>
+</game>
+<game id="46350" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/tennis.7z</path>
+	<name>TV Arcade III: Tennis/Squash</name>
+	<desc>Tennis / Squash is the RCA Studio II's version of Pong and features two variations of it. Tennis is a two player game and plays like the original Pong. Each player moves a paddle up and down to hit a ball that bounces between them. The goal is to score by hitting the ball past the opponent's paddle while at the same time preventing him from doing the same. The player to first reach 21 points wins the game. Squash plays the same but is a single player game where the player competes against a wall. The player scores by hitting the wall while the wall scores when the player misses the ball. In both versions of the game the player can customize the speed of the ball and the size of the paddles and thereby making the game easier or harder.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade III - Tennis + Squash (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade III - Tennis + Squash (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade III - Tennis + Squash (USA).mp4</video>
+	<thumbnail/>
+	<rating>3</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Sport</genre>
+	<players>2</players>
+</game>
+<game id="46377" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/spacewar.7z</path>
+	<name>TV Arcade I: Spacewar</name>
+	<desc>TV Arcade I: Spacewar is an shooter game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade I - Space War (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade I - Space War (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade I - Space War (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>shooter</genre>
+	<players>1</players>
+</game>
+<game id="46378" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/speedwaya.7z</path>
+	<name>Speedway / Tag (MPT-02)</name>
+	<desc>Speedway / Tag (MPT-02) is an racing game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Speedway + Tag (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Speedway + Tag (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade V - Speedway + Tag (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	Hanimex</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Sport</genre>
+	<players>2</players>
+</game>
+<game id="46378" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/speedway.7z</path>
+	<name>TV Arcade Series V: Speedway/Tag</name>
+	<desc>TV Arcade Series V: Speedway/Tag is an racing game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Speedway + Tag (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Speedway + Tag (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade V - Speedway + Tag (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Sport</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/bjack.7z</path>
+	<name>TV Casino I: Blackjack</name>
+	<desc>TV Casino I: Blackjack is a casino game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino I - Blackjack (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino I - Blackjack (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino I - Blackjack (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Casino</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/compquiz.7z</path>
+	<name>TV School House: Computer Quiz</name>
+	<desc>TV School House: Computer Quiz, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV School House I (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV School House I (USA)l.png</marquee>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Quiz</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/mathfun.7z</path>
+	<name>TV School House II: Math Fun</name>
+	<desc>TV School House II: Math Fun, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV School House II - Math Fun (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV School House II - Math Fun (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV School House II - Math Fun (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Quiz</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/biorhyth.7z</path>
+	<name>TV Mystic Series: Biorhythm</name>
+	<desc>TV Mystic Series: Biorhythm, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Mystic Series - Biorythm (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Mystic Series - Biorythm (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Mystic Series - Biorhythm (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>school</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/bingo.7z</path>
+	<name>Bingo</name>
+	<desc>Bingo, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino Series - TV Bingo (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino Series - TV Bingo (USA)l.png</marquee>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>casino</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/starwars.7z</path>
+	<name>Star Wars</name>
+	<desc>Star Wars, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/starwars.png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/starwars logo.png</marquee>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>action</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/pinball.7z</path>
+	<name>Pinball</name>
+	<desc>Pinball, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/pinball.png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/logo pinball.png</marquee>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>Pinball</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/gunfight.7z</path>
+	<name>TV Arcade Series: Gunfighter/Moonship Battle</name>
+	<desc>TV Arcade Series: Gunfighter/Moonship Battle, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - gunfighter + moonship battle (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - gunfighter + moonship battle (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Gunfighter + Moonship Battle (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>action</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/grandpak.7z</path>
+	<name>Grand Pack</name>
+	<desc>Grand Pack, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/921227-grand-pack-rca-studio-ii-screenshot-pattern.png</image>
+	<marquee/>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>strategy</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/conmatch.7z</path>
+	<name>Concentration Match</name>
+	<desc>Concentration Match, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image/>
+	<marquee/>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>strategy</genre>
+	<players>2</players>
+</game>
+<game id="46349" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/baseball.zip</path>
+	<name>TV Arcade IV - Baseball</name>
+	<desc>TV Arcade IV - Baseball is an Sport game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade IV - Baseball (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade IV - Baseball (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade IV - Baseball (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Sport</genre>
+	<players>2</players>
+</game>
+<game id="46350" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/tennis.zip</path>
+	<name>TV Arcade III: Tennis/Squash</name>
+	<desc>Tennis / Squash is the RCA Studio II's version of Pong and features two variations of it. Tennis is a two player game and plays like the original Pong. Each player moves a paddle up and down to hit a ball that bounces between them. The goal is to score by hitting the ball past the opponent's paddle while at the same time preventing him from doing the same. The player to first reach 21 points wins the game. Squash plays the same but is a single player game where the player competes against a wall. The player scores by hitting the wall while the wall scores when the player misses the ball. In both versions of the game the player can customize the speed of the ball and the size of the paddles and thereby making the game easier or harder.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade III - Tennis + Squash (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade III - Tennis + Squash (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade III - Tennis + Squash (USA).mp4</video>
+	<thumbnail/>
+	<rating>3</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Sport</genre>
+	<players>2</players>
+</game>
+<game id="46377" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/spacewar.zip</path>
+	<name>TV Arcade I: Spacewar</name>
+	<desc>TV Arcade I: Spacewar is an shooter game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade I - Space War (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade I - Space War (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade I - Space War (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>shooter</genre>
+	<players>1</players>
+</game>
+<game id="46378" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/speedwaya.zip</path>
+	<name>Speedway / Tag (MPT-02)</name>
+	<desc>Speedway / Tag (MPT-02) is an racing game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Speedway + Tag (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Speedway + Tag (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade V - Speedway + Tag (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	Hanimex</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Sport</genre>
+	<players>2</players>
+</game>
+<game id="46378" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/speedway.zip</path>
+	<name>TV Arcade Series V: Speedway/Tag</name>
+	<desc>TV Arcade Series V: Speedway/Tag is an racing game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Speedway + Tag (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Speedway + Tag (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade V - Speedway + Tag (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Sport</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/bjack.zip</path>
+	<name>TV Casino I: Blackjack</name>
+	<desc>TV Casino I: Blackjack is a casino game, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino I - Blackjack (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino I - Blackjack (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino I - Blackjack (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Casino</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/compquiz.zip</path>
+	<name>TV School House: Computer Quiz</name>
+	<desc>TV School House: Computer Quiz, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV School House I (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV School House I (USA)l.png</marquee>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Quiz</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/mathfun.zip</path>
+	<name>TV School House II: Math Fun</name>
+	<desc>TV School House II: Math Fun, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV School House II - Math Fun (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV School House II - Math Fun (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV School House II - Math Fun (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>Quiz</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/biorhyth.zip</path>
+	<name>TV Mystic Series: Biorhythm</name>
+	<desc>TV Mystic Series: Biorhythm, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Mystic Series - Biorythm (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Mystic Series - Biorythm (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Mystic Series - Biorhythm (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>school</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/bingo.zip</path>
+	<name>Bingo</name>
+	<desc>Bingo, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino Series - TV Bingo (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Casino Series - TV Bingo (USA)l.png</marquee>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>casino</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/starwars.zip</path>
+	<name>Star Wars</name>
+	<desc>Star Wars, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/starwars.png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/starwars logo.png</marquee>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>action</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/pinball.zip</path>
+	<name>Pinball</name>
+	<desc>Pinball, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/pinball.png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/logo pinball.png</marquee>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>Pinball</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/gunfight.zip</path>
+	<name>TV Arcade Series: Gunfighter/Moonship Battle</name>
+	<desc>TV Arcade Series: Gunfighter/Moonship Battle, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - gunfighter + moonship battle (USA).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - gunfighter + moonship battle (USA)l.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/studio2/TV Arcade Series - Gunfighter + Moonship Battle (USA).mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19770101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	RCA Corporation</publisher>
+	<genre>action</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/grandpak.zip</path>
+	<name>Grand Pack</name>
+	<desc>Grand Pack, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/studio2/921227-grand-pack-rca-studio-ii-screenshot-pattern.png</image>
+	<marquee/>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>strategy</genre>
+	<players>2</players>
+</game>
+<game id="46398" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/studio2/conmatch.zip</path>
+	<name>Concentration Match</name>
+	<desc>Concentration Match, developed by RCA and published by RCA, which was released in 1977.</desc>
+	<image/>
+	<marquee/>
+	<video/>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19780101T000000</releasedate>
+	<developer>	RCA Corporation</developer>
+	<publisher>	Hanimex</publisher>
+	<genre>strategy</genre>
+	<players>2</players>
+</game>
+</gameList>

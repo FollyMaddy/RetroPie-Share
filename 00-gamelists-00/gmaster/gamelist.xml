@@ -1,0 +1,362 @@
+<gameList>
+<game id="59489" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/bublboy.7z</path>
+	<name>Bubble Boy</name>
+	<desc>Bubble Boy is a puzzle game, developed and published by Hartung, which was released in Germany in 1990.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Bubble Boy (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/bublboy-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/bublboy-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre/>
+	<players>1</players>
+</game>
+<game id="59493" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/gobang.7z</path>
+	<name>Go Bang</name>
+	<desc>Go Bang is a board game, developed and published by Hartung, which was released in Germany in 1990.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Go Bang (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/gobang-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/gobang-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre/>
+	<players/>
+</game>
+<game id="59494" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/hspace.7z</path>
+	<name>Hyper Space</name>
+	<desc>Hyper Space is a shooting game, developed and published by Hartung, which was released in Germany in 1990.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Hyper Space (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/hspace-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/hspace-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre/>
+	<players/>
+</game>
+<game id="59496" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/pinball.7z</path>
+	<name>Pin Ball</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Pin Ball (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/pinball-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/pinball-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59496" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/pinball.7z</path>
+	<name>Pin Ball</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Pin Ball (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/pinball-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/pinball-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="594977" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/cg2020.7z</path>
+	<name>Continental Galaxy 2020</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Continental Galaxy 2020 (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Continental Galaxy 2020 (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Continental Galaxy 2020.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497017" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/dungeon.7z</path>
+	<name>Dungeon Adventure</name>
+	<desc/>
+	<image/>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Dungeon Adventure (Germany).png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Dungeon Adventure.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497027" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/fallbloc.7z</path>
+	<name>Falling Block!</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/2988124-fallingblock.png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Falling Block! (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Falling Block.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497037" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/kungfu.7z</path>
+	<name>Kung Fu Challenge</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Kung Fu Challenge (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Kung Fu Challenge (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Kung Fu Challenge.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497047" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/scastle.7z</path>
+	<name>Space Castle</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Space Castle (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Space Castle (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Space Castle.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497057" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/tennism.7z</path>
+	<name>Tennis Master</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Tennis Master (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Tennis Master (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Tennis Master.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497067" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/uchamp.7z</path>
+	<name>Urban Champion</name>
+	<desc/>
+	<image/>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/imageedit_8_2536934857.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Urban Champion.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59489" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/bublboy.zip</path>
+	<name>Bubble Boy</name>
+	<desc>Bubble Boy is a puzzle game, developed and published by Hartung, which was released in Germany in 1990.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Bubble Boy (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/bublboy-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/bublboy-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre/>
+	<players>1</players>
+</game>
+<game id="59493" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/gobang.zip</path>
+	<name>Go Bang</name>
+	<desc>Go Bang is a board game, developed and published by Hartung, which was released in Germany in 1990.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Go Bang (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/gobang-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/gobang-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre/>
+	<players/>
+</game>
+<game id="59494" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/hspace.zip</path>
+	<name>Hyper Space</name>
+	<desc>Hyper Space is a shooting game, developed and published by Hartung, which was released in Germany in 1990.</desc>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Hyper Space (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/hspace-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/hspace-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre/>
+	<players/>
+</game>
+<game id="59496" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/pinball.zip</path>
+	<name>Pin Ball</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Pin Ball (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/pinball-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/pinball-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59496" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/pinball.zip</path>
+	<name>Pin Ball</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Pin Ball (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/pinball-marquee.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/pinball-video.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="594977" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/cg2020.zip</path>
+	<name>Continental Galaxy 2020</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Continental Galaxy 2020 (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Continental Galaxy 2020 (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Continental Galaxy 2020.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497017" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/dungeon.zip</path>
+	<name>Dungeon Adventure</name>
+	<desc/>
+	<image/>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Dungeon Adventure (Germany).png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Dungeon Adventure.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497027" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/fallbloc.zip</path>
+	<name>Falling Block!</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/2988124-fallingblock.png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Falling Block! (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Falling Block.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497037" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/kungfu.zip</path>
+	<name>Kung Fu Challenge</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Kung Fu Challenge (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Kung Fu Challenge (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Kung Fu Challenge.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497047" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/scastle.zip</path>
+	<name>Space Castle</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Space Castle (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Space Castle (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Space Castle.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497057" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/tennism.zip</path>
+	<name>Tennis Master</name>
+	<desc/>
+	<image>/home/pi/.emulationstation/downloaded_images/gmaster/Tennis Master (Germany).png</image>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/Tennis Master (Germany)1.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Tennis Master.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+<game id="59497067" source="ScreenScraper">
+	<path>/home/pi/RetroPie/roms/gmaster/uchamp.zip</path>
+	<name>Urban Champion</name>
+	<desc/>
+	<image/>
+	<marquee>/home/pi/.emulationstation/downloaded_images/gmaster/imageedit_8_2536934857.png</marquee>
+	<video>/home/pi/.emulationstation/downloaded_images/gmaster/Urban Champion.mp4</video>
+	<thumbnail/>
+	<rating>0</rating>
+	<releasedate>19900101T000000</releasedate>
+	<developer>Hartung</developer>
+	<publisher>Hartung</publisher>
+	<genre>Action</genre>
+	<players>1</players>
+</game>
+</gameList>

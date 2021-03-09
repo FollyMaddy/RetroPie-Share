@@ -1,0 +1,1139 @@
+<?xml version="1.0"?>
+<gameList>
+	<game id="00001" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/astropin.7z</path>
+		<name>Astro Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Pinball</genre>
+		<players>1-4</players>
+	</game>
+	<game id="10001" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/astropina.7z</path>
+		<name>Astro Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Pinball</genre>
+		<players>1-4</players>
+	</game>
+	<game id="20001" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/astropinb.7z</path>
+		<name>Astro Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Pinball</genre>
+		<players>1-4</players>
+	</game>
+	<game id="00003" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/autochas</path>
+		<name>Auto Chase </name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Maze, Driving</genre>
+		<players>1</players>
+	</game>
+	<game id="10003" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/autochasa</path>
+		<name>Auto Chase </name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Maze, Driving</genre>
+		<players>1</players>
+	</game>
+	<game id="00004" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/crazych.7z</path>
+		<name>Crazy Chicky</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Maze</genre>
+		<players>1-4</players>
+	</game>
+	<game id="00005" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/basic.7z</path>
+		<name>Basic Interpreter</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	None</genre>
+		<players>1</players>
+	</game>
+	<game id="10005" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/basico1.7z</path>
+		<name>Basic Interpreter</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	None</genre>
+		<players>1</players>
+	</game>
+	<game id="20005" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/basico2.7z</path>
+		<name>Basic Interpreter</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	None</genre>
+		<players>1</players>
+	</game>
+	<game id="30005" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/basico3.7z</path>
+		<name>Basic Interpreter</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	None</genre>
+		<players>1</players>
+	</game>
+	<game id="00006" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/crazypuc.7z</path>
+		<name>Crazy Pucker</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Maze</genre>
+		<players>1-4</players>
+	</game>
+	<game id="00007" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/deepsea.7z</path>
+		<name>Deep Sea Adventure</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10007" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/deepseaa.7z</path>
+		<name>Deep Sea Adventure</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00008" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/locomot.7z</path>
+		<name>Locomotive</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10008" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/locomota.7z</path>
+		<name>Locomotive</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00009" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/mousepuz.7z</path>
+		<name>Mouse Puzzle</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Puzzle</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10009" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/mousepuza.7z</path>
+		<name>Mouse Puzzle</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Puzzle</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00010" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/musicmak.7z</path>
+		<name>Music Maker</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Music</genre>
+		<players>1</players>
+	</game>
+	<game id="00011" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/planetd.7z</path>
+		<name>Planet Defender</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10011" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/planetd1.7z</path>
+		<name>Planet Defender</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="20011" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/planetd2.7z</path>
+		<name>Planet Defender</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00012" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/policej.7z</path>
+		<name>Police Jump</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10012" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/policeja.7z</path>
+		<name>Police Jump</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="20012" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/policeje.7z</path>
+		<name>Police Jump</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00013" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/soccer.7z</path>
+		<name>Soccer</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10013" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/soccerinv.7z</path>
+		<name>Soccer</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00015" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/stoneage.7z</path>
+		<name>Stone Age</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19841201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Puzzle</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00016" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tankatk.7z</path>
+		<name>Tank Attack</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Multi-directional shooter</genre>
+		<players>2</players>
+	</game>
+	<game id="10016" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tankatka.7z</path>
+		<name>Tank Attack</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Multi-directional shooter</genre>
+		<players>2</players>
+	</game>
+	<game id="00017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennis.7z</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennisa.7z</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="20017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennisb.7z</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="30017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tenniscs.7z</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="40017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennisd.7z</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="50017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennisda.7z</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./sonicinv.7z</path>
+		<name>Sonic Invader</name>
+		<image>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe).png</image>
+		<video>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe).mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe) - logo.png</marquee>
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Fixed shooter</genre>
+		<players>1-4</players>
+		<playcount>1</playcount>
+		<lastplayed>20200608T215157</lastplayed>
+	</game>
+	<game>
+		<path>./airsea.7z</path>
+		<name>Air Sea Attack</name>
+		<image>~/.emulationstation/downloaded_images/crvision/Air Sea Attack (Asia, Europe).png</image>
+		<video>~/.emulationstation/downloaded_images/crvision/Air Sea Attack (Asia, Europe).mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/crvision/Sea Attack (Asia, Europe) - logo.png</marquee>
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Fixed shooter</genre>
+		<players>1-2</players>
+		<playcount>1</playcount>
+		<lastplayed>20200609T130928</lastplayed>
+	</game>
+	<game>
+		<path>./chopper.7z</path>
+		<name>Chopper Rescue </name>
+		<image>~/.emulationstation/downloaded_images/crvision/Chopper Rescue (Asia, Europe).png</image>
+		<marquee>~/.emulationstation/downloaded_images/crvision/Chopper Rescue (Asia, Europe) - logo.png</marquee>
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>		Scrolling shooter</genre>
+		<playcount>1</playcount>
+		<lastplayed>20200821T145505</lastplayed>
+	</game>
+	<game id="00001" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/astropin.zip</path>
+		<name>Astro Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Pinball</genre>
+		<players>1-4</players>
+	</game>
+	<game id="10001" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/astropina.zip</path>
+		<name>Astro Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Pinball</genre>
+		<players>1-4</players>
+	</game>
+	<game id="20001" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/astropinb.zip</path>
+		<name>Astro Pinball</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Pinball</genre>
+		<players>1-4</players>
+	</game>
+	<game id="00003" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/autochas</path>
+		<name>Auto Chase </name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Maze, Driving</genre>
+		<players>1</players>
+	</game>
+	<game id="10003" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/autochasa</path>
+		<name>Auto Chase </name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Maze, Driving</genre>
+		<players>1</players>
+	</game>
+	<game id="00004" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/crazych.zip</path>
+		<name>Crazy Chicky</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Maze</genre>
+		<players>1-4</players>
+	</game>
+	<game id="00005" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/basic.zip</path>
+		<name>Basic Interpreter</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	None</genre>
+		<players>1</players>
+	</game>
+	<game id="10005" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/basico1.zip</path>
+		<name>Basic Interpreter</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	None</genre>
+		<players>1</players>
+	</game>
+	<game id="20005" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/basico2.zip</path>
+		<name>Basic Interpreter</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	None</genre>
+		<players>1</players>
+	</game>
+	<game id="30005" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/basico3.zip</path>
+		<name>Basic Interpreter</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<marquee />
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	None</genre>
+		<players>1</players>
+	</game>
+	<game id="00006" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/crazypuc.zip</path>
+		<name>Crazy Pucker</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Maze</genre>
+		<players>1-4</players>
+	</game>
+	<game id="00007" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/deepsea.zip</path>
+		<name>Deep Sea Adventure</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10007" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/deepseaa.zip</path>
+		<name>Deep Sea Adventure</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00008" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/locomot.zip</path>
+		<name>Locomotive</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10008" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/locomota.zip</path>
+		<name>Locomotive</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00009" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/mousepuz.zip</path>
+		<name>Mouse Puzzle</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Puzzle</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10009" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/mousepuza.zip</path>
+		<name>Mouse Puzzle</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Puzzle</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00010" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/musicmak.zip</path>
+		<name>Music Maker</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Music</genre>
+		<players>1</players>
+	</game>
+	<game id="00011" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/planetd.zip</path>
+		<name>Planet Defender</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10011" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/planetd1.zip</path>
+		<name>Planet Defender</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="20011" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/planetd2.zip</path>
+		<name>Planet Defender</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Scrolling shooter</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00012" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/policej.zip</path>
+		<name>Police Jump</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10012" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/policeja.zip</path>
+		<name>Police Jump</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="20012" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/policeje.zip</path>
+		<name>Police Jump</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<video />
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19821201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Platformer</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00013" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/soccer.zip</path>
+		<name>Soccer</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10013" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/soccerinv.zip</path>
+		<name>Soccer</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00015" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/stoneage.zip</path>
+		<name>Stone Age</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19841201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Puzzle</genre>
+		<players>1-2</players>
+	</game>
+	<game id="00016" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tankatk.zip</path>
+		<name>Tank Attack</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Multi-directional shooter</genre>
+		<players>2</players>
+	</game>
+	<game id="10016" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tankatka.zip</path>
+		<name>Tank Attack</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Multi-directional shooter</genre>
+		<players>2</players>
+	</game>
+	<game id="00017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennis.zip</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="10017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennisa.zip</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="20017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennisb.zip</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="30017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tenniscs.zip</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="40017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennisd.zip</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game id="50017" source="ScreenScraper">
+		<path>/home/pi/RetroPie/roms/crvision/tennisda.zip</path>
+		<name>Tennis</name>
+		<desc />
+		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
+		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<thumbnail />
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Sports</genre>
+		<players>1-2</players>
+	</game>
+	<game>
+		<path>./sonicinv.zip</path>
+		<name>Sonic Invader</name>
+		<image>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe).png</image>
+		<video>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe).mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe) - logo.png</marquee>
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>	Fixed shooter</genre>
+		<players>1-4</players>
+		<playcount>1</playcount>
+		<lastplayed>20200608T215157</lastplayed>
+	</game>
+	<game>
+		<path>./airsea.zip</path>
+		<name>Air Sea Attack</name>
+		<image>~/.emulationstation/downloaded_images/crvision/Air Sea Attack (Asia, Europe).png</image>
+		<video>~/.emulationstation/downloaded_images/crvision/Air Sea Attack (Asia, Europe).mp4</video>
+		<marquee>~/.emulationstation/downloaded_images/crvision/Sea Attack (Asia, Europe) - logo.png</marquee>
+		<rating>0</rating>
+		<releasedate>19811201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>Fixed shooter</genre>
+		<players>1-2</players>
+		<playcount>1</playcount>
+		<lastplayed>20200609T130928</lastplayed>
+	</game>
+	<game>
+		<path>./chopper.zip</path>
+		<name>Chopper Rescue </name>
+		<image>~/.emulationstation/downloaded_images/crvision/Chopper Rescue (Asia, Europe).png</image>
+		<marquee>~/.emulationstation/downloaded_images/crvision/Chopper Rescue (Asia, Europe) - logo.png</marquee>
+		<rating>0</rating>
+		<releasedate>19831201T000000</releasedate>
+		<developer>VTech</developer>
+		<publisher>VTech</publisher>
+		<genre>		Scrolling shooter</genre>
+		<playcount>1</playcount>
+		<lastplayed>20200821T145505</lastplayed>
+	</game>
+</gameList>
