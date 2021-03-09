@@ -37,6 +37,10 @@ Goal is to add these .png files in the future.
 
 You can read about these configs and how they work, in this readme.
 
+# gamelist-add-7z-zip.sh
+
+A script that I used once to keep .7z/.zip add .zip/.7z game entry's to all gamelists from @DTEAM
+
 # The idea :
 
 We want to be able to generate all the scripts for all those systems that still have no @valerino script.
