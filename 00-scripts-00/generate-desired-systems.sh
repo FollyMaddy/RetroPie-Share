@@ -26,8 +26,26 @@ version=generate-systems-lr-mess_mame-1v8-alpha.sh
 #bash $version g7400 #videopac g7400 # bios files missing
 #bash $version apple2gs # bootable
 #bash $version mtx512 # bios files missing
-bash $version vectrex 
-bash $version nes 
+#bash $version vectrex 
+#bash $version nes 
+
+#all possible BBC Micro models
+bash $version bbca #(BBC Micro Model A):
+bash $version bbcb #(BBC Micro Model B):
+bash $version bbcb_de #(BBC Micro Model B (German)):
+bash $version bbcb_us #(BBC Micro Model B (US)):
+bash $version bbcbc #(BBC Bridge Companion):
+bash $version bbcbp #(BBC Micro Model B+ 64K):
+bash $version bbcbp128 #(BBC Micro Model B+ 128K):
+bash $version bbchall #(Baby Boom Challenge):
+bash $version bbcm #(BBC Master 128):
+bash $version bbcm512 #(BBC Master 512):
+bash $version bbcmaiv #(BBC Master AIV):
+bash $version bbcmarm #(BBC Master (ARM Evaluation)):
+bash $version bbcmc #(BBC Master Compact):
+bash $version bbcmc_ar #(BBC Master Compact (Arabic)):
+bash $version bbcmet #(BBC Master ET):
+bash $version bbcmt #(BBC Master Turbo):
 
 #handhelds (use version 1v4-alpha or above)(creates only cmd scripts)(these systems have no external media)
 ##such a cmd script can be created with one game and used for many ! 
