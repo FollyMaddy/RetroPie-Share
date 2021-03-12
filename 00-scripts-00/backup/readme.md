@@ -1,3 +1,8 @@
+# gamelist-add-7z-zip.sh
+
+A script that I used once to keep .7z/.zip add .zip/.7z game entry's to all gamelists from @DTEAM
+
+
 # generate-lr-mess-systems-1v2-alpha.sh
 
 Test version to generate @valerine alike scripts with lr-mess system names.
