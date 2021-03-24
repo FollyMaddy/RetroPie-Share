@@ -364,10 +364,10 @@ done
 # the lr-mess command is changed to use the same BIOS dir
 echo "generate and write the install-<RPname>-from-mamedev-system-<MESSname><-media>.sh script file(s)"
 # put everything in a seperate directory
-mkdir -p  $HOME/RetroPie-Setup/scriptmodules/libretrocores 2>&-
+mkdir -p  $HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 # !!! .zip is manually added as extension in every generated script !!!
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
-for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]] && cat > "$HOME/RetroPie-Setup/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}".sh << _EOF_
+for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]] && cat > "$HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}".sh << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
@@ -483,13 +483,13 @@ done
 # (perhaps adding the future abitity of loading game specific retroarch configs)(for example configs for overlays)
 echo "generate and write the install-<RPname>-cmd.sh command script file(s)"
 # put everything in a seperate directory
-mkdir -p  $HOME/RetroPie-Setup/scriptmodules/libretrocores 2>&-
+mkdir -p  $HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 # !!! .zip is manually added as extension in every generated script !!!
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
 # grep function is used to get all extensions compatible with all possible emulation methods so switching within emulationstation is possible
 # grep searches in both platform.cfg and this script ($0) , so also extensions are added that are not in platform.cfg 
 # using grep this way can create double extension, but this should not be a problem
-for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${newsystems[$index]}_exts $HOME/RetroPie-Setup/platforms.cfg $0 | cut -d '"' -f 2); cat > "$HOME/RetroPie-Setup/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd".sh << _EOF_
+for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${newsystems[$index]}_exts $HOME/RetroPie-Setup/platforms.cfg $0 | cut -d '"' -f 2); cat > "$HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd".sh << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
