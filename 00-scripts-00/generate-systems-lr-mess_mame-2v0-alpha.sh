@@ -84,8 +84,7 @@ while getopts ":h" option; do
 done
 
 
-echo start
-date
+echo
 
 
 #part 2 : define strings, arrays and @DTEAM handheld platform information
@@ -149,9 +148,10 @@ tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoa
 #if this part is commented and no option is added while running this scripts, it is possible to generate all possible scripts
 #because of the time it will consume, it is turned off in this part !
 if [[ -z "$1" ]]; then 
-echo -ne "\ngenerating all possible files is turned off, \nbecause it will probably take more than 5 hours to do so !\n\nyou can comment part 3, in the script, to turn it on again !\n"
+echo -ne "\ngenerating all possible files is turned off\n"
 exit
 fi
+
 
 #part 4 : extract system data to array
 # read system(s) using "mame" to extract the data and add them in the systems array
@@ -181,15 +181,7 @@ fi
 done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E "$namesfilter" | grep -E "$mediafilter" | cut -d " " -f 1)
 
 
-#part 5 : indication on how many scripts can be generated
-echo "read system(s)"
-unique=$(echo ${systems[@]} | tr ' ' '\n' | sort -u | tr '\n' ' ')
-IFS=$' ' GLOBIGNORE='*' command eval  'uniquesystems=($(echo $unique))'
-echo  "- detected ${#uniquesystems[@]} unique mamedev system type(s)"
-echo  "- cannot calculate the amound of generating possible scripts now"
-
-
-#part 6 : extract all extension data per system to array
+#part 5 : extract all extension data per system to array
 # an example output for the msx system hbf700p is :
 #hbf700p          printout         (prin)     .prn  
 #                 cassette         (cass)     .wav  .tap  .cas  
@@ -209,7 +201,7 @@ done
 #echo ${allextensions[@]} ${#allextensions[@]}
 
 
-#part 7 : extract only extension data per media per system to array
+#part 6 : extract only extension data per media per system to array
 #the collected data stored in the specific arrays using this example structure for the msx system hbf700p, information is stored like this :
 #(mediadescriptions)  (media)    (extensions)
 # printout            (prin)     .prn  
@@ -232,7 +224,7 @@ index=$(( $index + 1 ))
 done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E "$namesfilter" | grep -E "$mediafilter")
 
 
-#part 8 : do some filtering and read mamedev system descriptions into (descriptions)
+#part 7 : do some filtering and read mamedev system descriptions into (descriptions)
 echo "read computer description(s)"
 #a manual command example would be :
 #/opt/retropie/emulators/mame/mame -listdevices hbf700p | grep Driver | sed s/hbf700p//g | cut -c 10- | sed s/\)\://g
@@ -243,7 +235,7 @@ echo "read computer description(s)"
 for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" ); done
 
 
-#part 9 : read RetroPie systems and descriptions from the platforms.cfg
+#part 8 : read RetroPie systems and descriptions from the platforms.cfg
 echo "read and match RetroPie names with mamedev names"
 while read LINE; do
 # read retropie rom directory names 
@@ -267,7 +259,7 @@ descriptionsrp+=( "$(echo $LINE | sed 's/\"PC\"/\"-PC-\"/g' | sed 's/Atari Jagua
 done < <(cat $HOME/RetroPie-Setup/platforms.cfg | grep fullname)
 
 
-#part 10 : add extra possible future/unknown RetroPie names
+#part 9 : add extra possible future/unknown RetroPie names
 #added because of the @DTEAM in Handheld tutorial
 #!!! this name "handheld" not used by @DTEAM in Handheld tutorial !!! <=> can't extract "konamih" and "tigerh" from mamedev database, for now
 systemsrp+=( "handheld" ) # can be overruled by added @DTEAM name changing
@@ -285,7 +277,7 @@ descriptionsrp+=( "R-Zone" )
 #echo ${descriptionsrp[@]}
 
 
-#part 11 : match the RetroPie descriptions to the mamedev descriptions
+#part 10 : match the RetroPie descriptions to the mamedev descriptions
 newsystems+=( "${systems[@]}" )
 # use this in if function *${descriptionsrp[$rpindex]}* for match for a global match (containing parts)
 # use this in if function "${descriptionsrp[$rpindex]}" for an exact match 
@@ -321,7 +313,7 @@ newsystems+=( "${systems[@]}" )
   done
 
 
-#part 12 : match the added @DTEAM/RetroPie descriptions to the mamedev descriptions
+#part 11 : match the added @DTEAM/RetroPie descriptions to the mamedev descriptions
 #create a subarray "dteam_systems" containing the arrays that have to be used here
 #now only two "for loops" can be use for checking multiple arrays against the RetroPie names
 #note:some systems are not added because they should be recognised in a normal way
@@ -356,7 +348,7 @@ done
 #  done
 
 
-#part 13 : use all stored data to generate the modulescript containing "lr-mess" and "mame" commands with media option
+#part 12 : use all stored data to generate the modulescript containing "lr-mess" and "mame" commands with media option
 # "install" in front of the filename is used for distinquish the files from others in the directory
 # in the script libretro commands index use "lr-*" for compatibility with runcommand.sh 
 # (perhaps adding the future abitity of loading game specific retroarch configs)
@@ -469,7 +461,7 @@ _EOF_
 done
 
 
-#part 14 : use all stored data to generate the modulescript containing "lr-mess" and "mame" commands for loading handmade .cmd files or to run basenames
+#part 13 : use all stored data to generate the modulescript containing "lr-mess" and "mame" commands for loading handmade .cmd files or to run basenames
 # the none media mamedev system types have no extensions in the mamedev database
 # in order to switch between emulators at retropie rom boot
 # we have to add these extensions
@@ -584,6 +576,5 @@ _EOF_
 done
 
 
-date
-echo stop
+echo
 
