@@ -37,52 +37,6 @@
 #because mame is also added as emulator and because mame is using a different BIOS dir : $HOME/RetroPie/BIOS/mame
 #the lr-mess command is changed to use the same BIOS dir, so they can use the same bios files
 
-#part 1 : help
-# show the the help options when running with "-h"
-while getopts ":h" option; do
-   case $option in
-      h) # display Help
-         echo "options	:"
-         echo "-h		this help "
-         echo "<system>	choosen system to generate " 
-         echo
-         echo "Version	-->	$0 (testing, WIP)"
-         echo "!!! THIS VERSION GENERATES @VALERINO ALIKE SCRIPTS AND ORIGINAL LR-MESS COMMAND SCRIPTS !!!"
-         echo "!!! WHILE DOING THIS, IT TRIES TO USE RETROPIE NAMES IF A MATCH IS FOUND !!!"
-         echo "!!! IT ALSO USES THE NEW RETROPIE PLATFORM NAMES, USED BY THE @DTEAM HANDHELD TUTORIAL !!!"
-         echo "Creator	-->	@folly"
-         echo "Dependancies"
-         echo "--> MAME and lr-mess (install in RetroPie-Setup)"
-         echo " use --> generated scripts tested on version 4.7.8 / should work on :"
-         echo "        > original RetroPie-setup and the run_mess.sh script of @valerino's fork"
-         echo "           manually install run_mess.sh :"
-         echo "           wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh"
-         echo " or   -->generated scripts not tested / probably will work on :"
-         echo "        > @valerino's fork of RetroPie-Setup (https://github.com/valerino/RetroPie-Setup)"
-         echo "======= extra information ======="
-         echo "Run"
-         echo "- generate for all systems: 		bash $0 "
-         echo "- generate only one system: 		bash $0 <system> "
-         echo "- batch generate only desired systems: 	bash generate-desired-systems.sh "
-         echo "Example"
-         echo "- generating only one system: 		bash $0 fm77av "
-         echo "- generating konamih cmd script:	bash $0 kgradius "
-         echo "(creating this can be done with one game)(a cmd script can be used for more konamih games !)"
-         echo "Advise : create files not directly in the RetroPie-Setup use copy and paste"
-         echo "If you want to create the scripts directly in RetroPie-Setup,"
-         echo "place and run the script from this directory"
-         echo "$HOME/RetroPie-Setup"
-         echo "MAME commands"
-         echo "- help"
-         echo "/opt/retropie/emulators/mame/mame -h "
-         echo "- get system names in a textfile"
-         echo "/opt/retropie/emulators/mame/mame -listdevices | grep Driver > possiblesystems.txt "
-         echo "- check for compatible media"
-         echo "/opt/retropie/emulators/mame/mame -listmedia | grep <system> "
-         exit;;
-   esac
-done
-
 
 echo
 
