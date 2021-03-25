@@ -79,9 +79,14 @@ konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" 
 tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
 
 
-#part 1 : prepair directory structure
+#part 1 : prepair some things first
 #for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
 mkdir -p  $HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
+#install @valerino run_mess.sh script if not detected
+if [[ -z $(ls $HOME/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) ]]; then 
+echo "install @valerino run_mess.sh script"
+wget -q -nv -O $HOME/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh
+fi
 
 
 #part 2 : platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)
