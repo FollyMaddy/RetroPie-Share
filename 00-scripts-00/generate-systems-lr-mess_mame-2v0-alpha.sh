@@ -41,7 +41,7 @@
 echo
 
 
-#part 2 : define strings, arrays and @DTEAM handheld platform information
+#part 0 : define strings, arrays and @DTEAM handheld platform information
 
 #mamedev arrays
 systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
@@ -78,24 +78,32 @@ classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bccl
 konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
 tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
 
-#platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)
-#tigerh_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
-#tigerh_fullname="Tiger Handheld Electronics"
-#
-#tigerrz_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
-#tigerrz_fullname="Tiger R-Zone"
-#
-#jakks_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
-#jakks_fullname="JAKKS Pacific TV Games"
-#
-#konamih_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
-#konamih_fullname="Konami Handheld"
-#
-#all_in1_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
-#all_in1_fullname="All in One Handheld and Plug and Play"
-#
-#classich_exts=".mgw .7z"
-#classich_fullname="Classic Handheld Systems"
+
+#part 1 : prepair directory structure
+#for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
+mkdir -p  $HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
+
+
+#part 2 : platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)
+cat >"$HOME/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg" << _EOF_
+tigerh_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+tigerh_fullname="Tiger Handheld Electronics"
+
+tigerrz_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+tigerrz_fullname="Tiger R-Zone"
+
+jakks_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+jakks_fullname="JAKKS Pacific TV Games"
+
+konamih_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+konamih_fullname="Konami Handheld"
+
+all_in1_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+all_in1_fullname="All in One Handheld and Plug and Play"
+
+classich_exts=".mgw .7z"
+classich_fullname="Classic Handheld Systems"
+_EOF_
 
 
 #part 3 : turning off creating all scripts
@@ -310,7 +318,6 @@ done
 # the lr-mess command is changed to use the same BIOS dir
 echo "generate and write the install-<RPname>-from-mamedev-system-<MESSname><-media>.sh script file(s)"
 # put everything in a seperate directory
-mkdir -p  $HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 # !!! .zip is manually added as extension in every generated script !!!
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
 for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]] && cat > "$HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}".sh << _EOF_
@@ -429,13 +436,12 @@ done
 # (perhaps adding the future abitity of loading game specific retroarch configs)(for example configs for overlays)
 echo "generate and write the install-<RPname>-cmd.sh command script file(s)"
 # put everything in a seperate directory
-mkdir -p  $HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 # !!! .zip is manually added as extension in every generated script !!!
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
 # grep function is used to get all extensions compatible with all possible emulation methods so switching within emulationstation is possible
-# grep searches in both platform.cfg and this script ($0) , so also extensions are added that are not in platform.cfg 
+# grep searches in both platform.cfg and the ext/RetroPie-Share/platforms.cfg , so also extensions are added that are not in platform.cfg 
 # using grep this way can create double extension, but this should not be a problem
-for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${newsystems[$index]}_exts $HOME/RetroPie-Setup/platforms.cfg $0 | cut -d '"' -f 2); cat > "$HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd".sh << _EOF_
+for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${newsystems[$index]}_exts $HOME/RetroPie-Setup/platforms.cfg $HOME/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2); cat > "$HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd".sh << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
