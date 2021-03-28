@@ -108,6 +108,12 @@ all_in1_fullname="All in One Handheld and Plug and Play"
 
 classich_exts=".mgw .7z"
 classich_fullname="Classic Handheld Systems"
+
+bbcmicro_exts=".ssd"
+bbcmicro_fullname="BBC Micro"
+
+bbcmicro_exts=".ssd"
+bbcmicro_fullname="BBC Master"
 _EOF_
 
 
@@ -239,6 +245,12 @@ descriptionsrp+=( "JAKKS" )
 #because "tigerrz" is not in the RetroPie platforms we add this here for later matching
 systemsrp+=( "tigerrz" )
 descriptionsrp+=( "R-Zone" )
+#bbcmicro for BBC Micro is not in the original platforms.cfg
+systemsrp+=( "bbcmicro" )
+descriptionsrp+=( "BBC Micro" )
+#bbcmicro for BBC Master is not in the original platforms.cfg
+systemsrp+=( "bbcmicro" )
+descriptionsrp+=( "BBC Master" )
 #testlines
 #echo ${systemsrp[@]}
 #echo ${descriptionsrp[@]}
