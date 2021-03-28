@@ -11,7 +11,7 @@
 
 rp_module_id="b-em-pico-pi"
 rp_module_desc="BBC Micro Emulator / the b-em-pico fork of kilograham"
-rp_module_help="ROM Extensions: .ssd\n\nCopy your BBC Micro games to $romdir/bbcmicro\n\n"
+rp_module_help="ROM Extensions: .ssd\n\nCopy your BBC Micro games to $romdir/bbcmicro\n\n- use F11 for the gui\n- use shift+F12 to run the disc\n- exit with mouse clicking X\n"
 rp_module_section="exp"
 rp_module_flags=""
 
