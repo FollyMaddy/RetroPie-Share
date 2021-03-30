@@ -48,7 +48,7 @@ function configure_b-em-pico-pi() {
 #!/bin/bash
 xset -dpms s off s noblank
 matchbox-window-manager &
-/opt/retropie/emulators/b-em-pico-pi/xbeeb -disc \$1
+/opt/retropie/emulators/b-em-pico-pi/xbeeb -disc "\$1"
 _EOF_
     chmod +x "$md_inst/xbeeb.sh"
 
@@ -56,7 +56,7 @@ _EOF_
 #!/bin/bash
 xset -dpms s off s noblank
 matchbox-window-manager &
-/opt/retropie/emulators/b-em-pico-pi/xmaster -disc \$1
+/opt/retropie/emulators/b-em-pico-pi/xmaster -disc "\$1"
 _EOF_
     chmod +x "$md_inst/xmaster.sh"
 
