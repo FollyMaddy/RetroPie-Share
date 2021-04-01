@@ -9,39 +9,42 @@
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
-rp_module_id="docsview"
+rp_module_id="add"
 rp_module_desc="RetroPie-Setup Docs Viewer"
 rp_module_section="config"
 
-function depends_docsview() {
-    getDepends pandoc lynx
+function depends_add() {
+    true
 }
 
-function choose_page_docsview() {
-    local path="$1"
-    local include="$2"
-    local exclude="$3"
-    local pages=()
+function choose_system_add() {
+    #local path="$1"
+    #local include="$2"
+    #local exclude="$3"
+    local systems=()
     local options=()
-    local page
+    local system
     local i=0
-    while read page; do
-        page=${page//$path\//}
-        pages+=("$page")
-        options+=("$i" "$page")
+    while read system; do
+        #system=${system//$path\//}
+        systems+=("$system")
+        options+=("$i" "$system")
         ((i++))
-    done < <(find "$path" -type f -regex "$include" ! -regex "$exclude" | sort)
+    done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -d " " -f2 | sort)
     local default
     local file
     while true; do
-        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which page would you like to view?" 22 76 16)
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to view?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
-            file="${pages[choice]}"
+            #file="${systems[choice]}"
             joy2keyStop
             joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
-            pandoc "$dir/docs/$file" | lynx -localhost -restrictions=all -stdin >/dev/tty
+            #pandoc "$dir/docs/$file" | lynx -localhost -restrictions=all -stdin >/dev/tty
+            curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/generate-systems-lr-mess_mame-2v0-alpha.sh | bash -s ${systems[$choice]} 
+            echo $choice ${systems[$choice]}
+            sleep 4
             joy2keyStop
             joy2keyStart
         else
@@ -50,33 +53,33 @@ function choose_page_docsview() {
     done
 }
 
-function gui_docsview() {
+function gui_add() {
     local dir="$rootdir/RetroPie-Docs"
     while true; do
         local cmd=(dialog --backtitle "$__backtitle" --menu "RetroPie-Setup Docs Viewer" 22 76 16)
         local options=()
-        if [[ -d "$dir" ]]; then
+#        if [[ -d "$dir" ]]; then
             options=(
                 1 "Update RetroPie-Setup Docs"
-                2 "View Pages"
+                2 "View systems"
                 3 "Remove RetroPie-Setup Docs"
             )
-        else
-            options+=("1" "Download RetroPie-Setup Docs")
-        fi
+#        else
+#            options+=("1" "Download RetroPie-Setup Docs")
+#        fi
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         if [[ -n "$choice" ]]; then
             case "$choice" in
                 1)
-                    gitPullOrClone "$dir" "https://github.com/RetroPie/RetroPie-Docs.git"
+                    #gitPullOrClone "$dir" "https://github.com/RetroPie/RetroPie-Docs.git"
                     ;;
                 2)
-                    choose_page_docsview "$dir/docs" ".*.md" ".*_.*"
+                    choose_system_add
                     ;;
                 3)
-                    if [[ -d "$dir" ]]; then
-                        rm -rf "$dir"
-                    fi
+                    #if [[ -d "$dir" ]]; then
+                    #    rm -rf "$dir"
+                    #fi
                     ;;
             esac
         else
