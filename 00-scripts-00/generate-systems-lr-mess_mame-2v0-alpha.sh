@@ -82,6 +82,7 @@ tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoa
 #part 1 : prepair some things first
 #for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
 mkdir -p  /home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
+chown -R $(ls /home):$(ls /home) "/home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share"
 #install @valerino run_mess.sh script if not detected
 if [[ -z $(ls /home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) ]]; then 
 echo "install @valerino run_mess.sh script"
