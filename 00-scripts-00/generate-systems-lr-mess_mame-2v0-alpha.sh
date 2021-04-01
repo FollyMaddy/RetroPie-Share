@@ -34,7 +34,7 @@
 #i started this script for "lr-mess" but it's now also possible to do somewhat the same with "mame"
 #because "mame" and "lr-mess" can be compile from the same mamedev source i use now the universal name "mamedev" in this script
 #
-#because mame is also added as emulator and because mame is using a different BIOS dir : $HOME/RetroPie/BIOS/mame
+#because mame is also added as emulator and because mame is using a different BIOS dir : /home/$(ls /home)/RetroPie/BIOS/mame
 #the lr-mess command is changed to use the same BIOS dir, so they can use the same bios files
 
 
@@ -81,16 +81,18 @@ tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoa
 
 #part 1 : prepair some things first
 #for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
-mkdir -p  $HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
+mkdir -p  /home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 #install @valerino run_mess.sh script if not detected
-if [[ -z $(ls $HOME/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) ]]; then 
+if [[ -z $(ls /home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) ]]; then 
 echo "install @valerino run_mess.sh script"
-wget -q -nv -O $HOME/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh
+wget -q -nv -O /home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh
+#change ownership to normal user
+chown $(ls /home):$(ls /home) "/home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh" 
 fi
 
 
 #part 2 : platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)
-cat >"$HOME/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg" << _EOF_
+cat >"/home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg" << _EOF_
 tigerh_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
 tigerh_fullname="Tiger Handheld Electronics"
 
@@ -115,6 +117,9 @@ bbcmicro_fullname="BBC Micro"
 bbcmicro_exts=".ssd"
 bbcmicro_fullname="BBC Master"
 _EOF_
+
+#change ownership to normal user
+chown $(ls /home):$(ls /home) "/home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg" 
 
 
 #part 3 : turning off creating all scripts
@@ -229,7 +234,7 @@ systemsrp+=( "$(echo $LINE | cut -d '_' -f 1)" )
 #otherwise we don't have matches for these systems
 #
 descriptionsrp+=( "$(echo $LINE | sed 's/\"PC\"/\"-PC-\"/g' | sed 's/Atari Jaguar/Jaguar/g' | sed 's/Mega CD/Mega-CD/g' | sed 's/Sega 32X/32X/g' | sed 's/Commodore Amiga/Amiga/g' | sed 's/ and / \& /g' | sed 's/ProSystem//g' | cut -d '"' -f 2)" )
-done < <(cat $HOME/RetroPie-Setup/platforms.cfg | grep fullname)
+done < <(cat /home/$(ls /home)/RetroPie-Setup/platforms.cfg | grep fullname)
 
 
 #part 9 : add extra possible future/unknown RetroPie names
@@ -331,13 +336,13 @@ done
 # "install" in front of the filename is used for distinquish the files from others in the directory
 # in the script libretro commands index use "lr-*" for compatibility with runcommand.sh 
 # (perhaps adding the future abitity of loading game specific retroarch configs)
-# because mame is added and because mame is using this BIOS dir : $HOME/RetroPie/BIOS/mame
+# because mame is added and because mame is using this BIOS dir : /home/$(ls /home)/RetroPie/BIOS/mame
 # the lr-mess command is changed to use the same BIOS dir
 echo "generate and write the install-<RPname>-from-mamedev-system-<MESSname><-media>.sh script file(s)"
 # put everything in a seperate directory
 # !!! .zip is manually added as extension in every generated script !!!
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
-for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]] && cat > "$HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}".sh << _EOF_
+for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]] && cat > "/home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}.sh" << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
@@ -436,6 +441,9 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 
 _EOF_
 
+#change ownership to normal user
+chown $(ls /home):$(ls /home) "/home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}.sh" 
+
 done
 
 
@@ -445,7 +453,7 @@ done
 # we have to add these extensions
 # otherwise extensions supported by other emulators will not be shown anymore
 
-# because mame is added and because mame is using this BIOS dir : $HOME/RetroPie/BIOS/mame
+# because mame is added and because mame is using this BIOS dir : /home/$(ls /home)/RetroPie/BIOS/mame
 # the lr-mess command is changed to use the same BIOS dir
 
 # "install" in front of the filename is used for distinquish the files from others in the directory
@@ -458,7 +466,7 @@ echo "generate and write the install-<RPname>-cmd.sh command script file(s)"
 # grep function is used to get all extensions compatible with all possible emulation methods so switching within emulationstation is possible
 # grep searches in both platform.cfg and the ext/RetroPie-Share/platforms.cfg , so also extensions are added that are not in platform.cfg 
 # using grep this way can create double extension, but this should not be a problem
-for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${newsystems[$index]}_exts $HOME/RetroPie-Setup/platforms.cfg $HOME/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2); cat > "$HOME/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd".sh << _EOF_
+for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${newsystems[$index]}_exts /home/$(ls /home)/RetroPie-Setup/platforms.cfg /home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2); cat > "/home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd.sh" << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
@@ -533,13 +541,13 @@ function configure_install-${newsystems[$index]}-cmd() {
         
     addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
     addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
-    addEmulator 0 "mame-cmd" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
-    addEmulator 0 "mame-cmd-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
+    addEmulator 0 "mame-cmd" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$(ls /home)/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
+    addEmulator 0 "mame-cmd-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$(ls /home)/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
     addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${newsystems[$index]} %BASENAME%"
     addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${newsystems[$index]} %BASENAME%"
     #turned these off, seems these commands will not work, but kept for future testing : https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/33
-    ##addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
-    ##addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath $HOME/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
+    ##addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$(ls /home)/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
+    ##addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$(ls /home)/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
 
     # add system to es_systems.cfg
     #the line used by @valerino didn't work for the original RetroPie-setup 
@@ -549,6 +557,9 @@ function configure_install-${newsystems[$index]}-cmd() {
 }
 
 _EOF_
+
+#change ownership to normal user
+chown $(ls /home):$(ls /home) "/home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd.sh" 
 
 done
 
