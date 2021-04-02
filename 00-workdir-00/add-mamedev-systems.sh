@@ -75,6 +75,7 @@ function gui_add() {
                     ;;
                 2)
                     choose_system_add
+                    rp_registerAllModules
                     ;;
                 3)
                     #if [[ -d "$dir" ]]; then
