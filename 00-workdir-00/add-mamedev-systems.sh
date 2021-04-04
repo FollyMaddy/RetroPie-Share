@@ -42,7 +42,13 @@ function choose_system_add() {
             joy2keyStop
             joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
             #pandoc "$dir/docs/$file" | lynx -localhost -restrictions=all -stdin >/dev/tty
+            clear
             curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/generate-systems-lr-mess_mame-2v0-alpha.sh | bash -s ${systems[$choice]} 
+            rp_registerAllModules
+            ls -w1 $scriptdir/ext/RetroPie-Share/scriptmodules/libretrocores/ | grep "${systems[$choice]}" | while read module
+            do
+            $scriptdir/retropie_packages.sh $(echo $module | cut -d "." -f1)
+            done
             echo $choice ${systems[$choice]}
             sleep 4
             joy2keyStop
@@ -75,7 +81,6 @@ function gui_add() {
                     ;;
                 2)
                     choose_system_add
-                    rp_registerAllModules
                     ;;
                 3)
                     #if [[ -d "$dir" ]]; then
