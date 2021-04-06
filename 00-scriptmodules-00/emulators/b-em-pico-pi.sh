@@ -22,7 +22,8 @@ function depends_b-em-pico-pi() {
 function sources_b-em-pico-pi() {
     downloadAndExtract "https://github.com/raspberrypi/pico-sdk/archive/master.zip" "$md_build"
     downloadAndExtract "https://github.com/raspberrypi/pico-extras/archive/master.zip" "$md_build"
-    downloadAndExtract "https://github.com/kilograham/b-em/archive/pico.zip" "$md_build"
+    #downloadAndExtract "https://github.com/kilograham/b-em/archive/pico.zip" "$md_build"
+    downloadAndExtract "https://github.com/FollyMaddy/b-em/archive/pico.zip" "$md_build"
 }
 
 function build_b-em-pico-pi() {
