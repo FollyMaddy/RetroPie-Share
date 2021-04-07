@@ -17,23 +17,13 @@ function depends_add() {
     true
 }
 
-function choose_system_add() {
-    #local path="$1"
-    #local include="$2"
-    #local exclude="$3"
+function choose_dteam_add() {
     local systems_read=()
     local options=()
+    local systems_read=( "ablmini" "alnattck" "gnw_ball" "jak_batm" "kbilly" "taddams" "rzbatfor" )
+    local options=( "0" "All in One Handheld and Plug and Play" "1" "Classic Handheld Systems" "2" "Game and Watch" "3" "JAKKS Pacific TV Games" "4" "Konami Handheld" "5" "Tiger Handheld Electronics" "6" "Tiger R-Zone" )
     local system_read
-    local i=0
-    while read system_read; do
-        #system=${system//$path\//}
-        if [[ -n $system_read ]] 
-        then
-        systems_read+=("$system_read")
-        options+=("$i" "$system_read")
-        ((i++))
-        fi
-    done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -d " " -f2)
+    local i=${#systems_read[@]}
     local default
     local file
     while true; do
@@ -41,18 +31,47 @@ function choose_system_add() {
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
-            #file="${systems_read[choice]}"
             joy2keyStop
             joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
-            #pandoc "$dir/docs/$file" | lynx -localhost -restrictions=all -stdin >/dev/tty
             clear
             #curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/generate-systems-lr-mess_mame-2v0-alpha.sh | bash -s ${systems[$choice]} 
-            run_generato_script
+            run_generator_script
             rp_registerAllModules
-            #ls -w1 $scriptdir/ext/RetroPie-Share/scriptmodules/libretrocores/ | grep "${systems_read[$choice]}" | while read module
-            #do
-            #$scriptdir/retropie_packages.sh $(echo $module | cut -d "." -f1)
-            #done
+            echo $choice ${systems_read[$choice]}
+            sleep 4
+            joy2keyStop
+            joy2keyStart
+        else
+            break
+        fi
+    done
+}
+
+function choose_system_add() {
+    local systems_read=()
+    local options=()
+    local system_read
+    local i=0
+    while read system_read; do
+        if [[ -n $system_read ]] 
+        then
+        systems_read+=("$system_read")
+        options+=("$i" "$system_read")
+        ((i++))
+        fi
+    done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -d " " -f2 | sort)
+    local default
+    local file
+    while true; do
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        default="$choice"
+        if [[ -n "$choice" ]]; then
+            joy2keyStop
+            joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
+            clear
+            run_generator_script
+            rp_registerAllModules
             echo $choice ${systems_read[$choice]}
             sleep 4
             joy2keyStop
@@ -70,7 +89,7 @@ function gui_add() {
         local options=()
 #        if [[ -d "$dir" ]]; then
             options=(
-                1 "-"
+                1 "Select and install a handheld system"
                 2 "Select and install a system"
                 3 "-"
             )
@@ -81,7 +100,7 @@ function gui_add() {
         if [[ -n "$choice" ]]; then
             case "$choice" in
                 1)
-                    #gitPullOrClone "$dir" "https://github.com/RetroPie/RetroPie-Docs.git"
+                    choose_dteam_add
                     ;;
                 2)
                     choose_system_add
@@ -98,46 +117,7 @@ function gui_add() {
     done
 }
 
-function run_generato_script() {
-#
-# Author : @folly
-# Date   : 24/03/2021
-#
-# Copyright 2021 @folly
-#
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-#--------------------------------------
-
-#about this project :
-#i have created this project while i was busy with the RetroPie-setup fork from @valerino
-#@valerino made modulescripts for systems running with lr-mess
-#some systems were not created by @valerino so i created 2 myself
-#while doing that, creating such a script was basically the same everytime
-#that is why i made this script to automate this process
-#
-#it basically creates a virtual excel sheet in arrays from the mame command output, and injects this information in the scripts that are being generated
-#
-#i started this script for "lr-mess" but it's now also possible to do somewhat the same with "mame"
-#because "mame" and "lr-mess" can be compile from the same mamedev source i use now the universal name "mamedev" in this script
-#
-#because mame is also added as emulator and because mame is using a different BIOS dir : /home/$user/RetroPie/BIOS/mame
-#the lr-mess command is changed to use the same BIOS dir, so they can use the same bios files
-
-
-echo
+function run_generator_script() {
 
 
 #part 0 : define strings, arrays and @DTEAM handheld platform information
@@ -220,15 +200,6 @@ _EOF_
 
 #change ownership to normal user
 chown $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg" 
-
-
-#part 3 : turning off creating all scripts
-#if this part is commented and no option is added while running this scripts, it is possible to generate all possible scripts
-#because of the time it will consume, it is turned off in this part !
-if [[ -z "${systems_read[$choice]}" ]]; then 
-echo -ne "\ngenerating all possible files is turned off\n"
-exit
-fi
 
 
 #part 4 : extract system data to array
@@ -546,8 +517,6 @@ chown $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/l
 
 #install directly after generation
 $scriptdir/retropie_packages.sh install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}
-
-
 done
 
 
@@ -667,11 +636,5 @@ chown $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/l
 
 #install directly after generation
 $scriptdir/retropie_packages.sh install-${newsystems[$index]}-cmd
-
 done
-
-
-echo
-
-
 }
