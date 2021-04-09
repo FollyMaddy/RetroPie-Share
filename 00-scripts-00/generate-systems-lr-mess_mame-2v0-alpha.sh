@@ -78,6 +78,10 @@ classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bccl
 konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
 tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
 
+echo "--------------------------------------------"
+echo "-      E-mail me at : meulenf@gmx.net      -"
+echo "--------------------------------------------"
+sleep 4
 
 #part 1 : prepair some things first
 #for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
