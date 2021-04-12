@@ -27,8 +27,8 @@ function gui_add() {
                 0 "Handhelds -> Select and install"
                 1 "Handhelds -> Select downloads"
                 2 "-"
-                3 "All       -> Select and install"
-                4 "-"
+                3 "All -> Select and install upon descriptions"
+                4 "All -> Select and install upon system names"
                 5 "-"
             )
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -44,10 +44,10 @@ function gui_add() {
                     
                     ;;
                 3)
-                    choose_system_add
+                    choose_description_add
                     ;;
                 4)
-                    
+                    choose_system_add
                     ;;
                 5)
                     
@@ -102,6 +102,7 @@ function gui_downloads() {
 }
 
 
+
 function choose_dteam_add() {
     local systems_read=()
     local descriptions_read=()
@@ -113,25 +114,30 @@ function choose_dteam_add() {
     local systems_read=( "ablmini" "alnattck" "gnw_ball" "jak_batm" "kbilly" "taddams" "rzbatfor" ) 
     local descriptions_read=( "All in One Handheld and Plug and Play" "Classic Handheld Systems" "Game and Watch" "JAKKS Pacific TV Games" "Konami Handheld" "Tiger Handheld Electronics" "Tiger R-Zone" )  
     for i in ${!descriptions_read[@]}; do options+=("$i" "${descriptions_read[$i]}");done
-    while true; do
-        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
-        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-        default="$choice"
-        if [[ -n "$choice" ]]; then
-            joy2keyStop
-            joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
-            clear
-            run_generator_script
-            rp_registerAllModules
-            echo $choice ${systems_read[$choice]}
-            sleep 4
-            joy2keyStop
-            joy2keyStart
-        else
-            break
-        fi
-    done
+    #call function
+    build_menu
 }
+
+
+function choose_description_add() {
+    local systems_read=()
+    local descriptions_read=()
+    local options=()
+    local system_read
+    local default
+    local i
+    #fixed array generated with : for i in ${!systems_read[@]}; do echo -n "\"${systems_read[$i]}\" " ;done >system
+    while read system_read;do systems_read+=("$system_read");done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -d " " -f2)
+    while read description_read;do descriptions_read+=("$description_read");done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -c 10- | sed s/\)\://g | sed 's/[^ ]* //' | cut -c 2-)
+    #import from text file
+    #while read system_read;do systems_read+=("$system_read");done < <(cat /home/pi/systems)
+    #while read description_read;do descriptions_read+=("$description_read");done < <(cat /home/pi/descriptions)
+    for i in ${!descriptions_read[@]}; do options+=("$i" "${descriptions_read[$i]}");done
+    #call function
+    build_menu
+}
+
+
 
 function choose_system_add() {
     local systems_read=()
@@ -140,14 +146,19 @@ function choose_system_add() {
     local system_read
     local default
     local i
-    local description_read
     #fixed array generated with : for i in ${!systems_read[@]}; do echo -n "\"${systems_read[$i]}\" " ;done >system
-    #while read system_read;do systems_read+=("$system_read");done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -d " " -f2)
+    while read system_read;do systems_read+=("$system_read");done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -d " " -f2)
     #while read description_read;do descriptions_read+=("$description_read");done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -c 10- | sed s/\)\://g | sed 's/[^ ]* //' | cut -c 2-)
     #import from text file
-    while read system_read;do systems_read+=("$system_read");done < <(cat /home/pi/systems)
-    while read description_read;do descriptions_read+=("$description_read");done < <(cat /home/pi/descriptions)
-    for i in ${!descriptions_read[@]}; do options+=("$i" "${descriptions_read[$i]}");done
+    #while read system_read;do systems_read+=("$system_read");done < <(cat /home/pi/systems)
+    #while read description_read;do descriptions_read+=("$description_read");done < <(cat /home/pi/descriptions)
+    for i in ${!systems_read[@]}; do options+=("$i" "${systems_read[$i]}");done
+    #call function
+    build_menu
+}
+
+
+function build_menu() {
     while true; do
         local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
