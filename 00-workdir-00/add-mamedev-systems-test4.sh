@@ -17,15 +17,102 @@ function depends_add() {
     true
 }
 
+
+function gui_add() {
+    local dir="$rootdir/RetroPie-Docs"
+    while true; do
+        local cmd=(dialog --backtitle "$__backtitle" --menu "lr-mess/MAME Systems adder" 22 76 16)
+        local options=()
+            options=(
+                0 "Handhelds -> Select and install"
+                1 "Handhelds -> Select downloads"
+                2 "-"
+                3 "All       -> Select and install"
+                4 "-"
+                5 "-"
+            )
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        if [[ -n "$choice" ]]; then
+            case "$choice" in
+                0)
+                    choose_dteam_add
+                    ;;
+                1)
+                    gui_downloads
+                    ;;
+                2)
+                    
+                    ;;
+                3)
+                    choose_system_add
+                    ;;
+                4)
+                    
+                    ;;
+                5)
+                    
+                    ;;
+            esac
+        else
+            break
+        fi
+    done
+}
+
+
+function gui_downloads() {
+    local dir="$rootdir/RetroPie-Docs"
+    while true; do
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Submenu -> Handhelds -> Select downloads" 22 76 16)
+        local options=()
+            options=(
+                0 "Download cheats"
+                1 "Download gamelists"
+                2 "Download artwork / create_overlays (+/-30 minutes !)"
+                3 "-"
+                4 "-"
+                5 "-"
+            )
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        if [[ -n "$choice" ]]; then
+            case "$choice" in
+                0)
+                    download_cheats
+                    ;;
+                1)
+                    download_gamelists
+                    ;;
+                2)
+                    download_artwork_create_overlays
+                    ;;
+                3)
+                    
+                    ;;
+                4)
+                    
+                    ;;
+                5)
+                    
+                    ;;
+            esac
+        else
+            break
+        fi
+    done
+}
+
+
 function choose_dteam_add() {
     local systems_read=()
+    local descriptions_read=()
     local options=()
-    local systems_read=( "ablmini" "alnattck" "gnw_ball" "jak_batm" "kbilly" "taddams" "rzbatfor" )
-    local options=( "0" "All in One Handheld and Plug and Play" "1" "Classic Handheld Systems" "2" "Game and Watch" "3" "JAKKS Pacific TV Games" "4" "Konami Handheld" "5" "Tiger Handheld Electronics" "6" "Tiger R-Zone" )
     local system_read
-    local i=${#systems_read[@]}
     local default
-    local file
+    local i
+    #fixed array generated with : for i in ${!systems_read[@]}; do echo -n "\"${systems_read[$i]}\" " ;done >system
+    local systems_read=( "ablmini" "alnattck" "gnw_ball" "jak_batm" "kbilly" "taddams" "rzbatfor" ) 
+    local descriptions_read=( "All in One Handheld and Plug and Play" "Classic Handheld Systems" "Game and Watch" "JAKKS Pacific TV Games" "Konami Handheld" "Tiger Handheld Electronics" "Tiger R-Zone" )  
+    for i in ${!descriptions_read[@]}; do options+=("$i" "${descriptions_read[$i]}");done
     while true; do
         local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -34,7 +121,6 @@ function choose_dteam_add() {
             joy2keyStop
             joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
             clear
-            #curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/generate-systems-lr-mess_mame-2v0-alpha.sh | bash -s ${systems[$choice]} 
             run_generator_script
             rp_registerAllModules
             echo $choice ${systems_read[$choice]}
@@ -49,19 +135,19 @@ function choose_dteam_add() {
 
 function choose_system_add() {
     local systems_read=()
+    local descriptions_read=()
     local options=()
     local system_read
-    local i=0
-    while read system_read; do
-        if [[ -n $system_read ]] 
-        then
-        systems_read+=("$system_read")
-        options+=("$i" "$system_read")
-        ((i++))
-        fi
-    done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -d " " -f2 | sort)
     local default
-    local file
+    local i
+    local description_read
+    #fixed array generated with : for i in ${!systems_read[@]}; do echo -n "\"${systems_read[$i]}\" " ;done >system
+    #while read system_read;do systems_read+=("$system_read");done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -d " " -f2)
+    #while read description_read;do descriptions_read+=("$description_read");done < <(/opt/retropie/emulators/mame/mame -listdevices | grep Driver | cut -c 10- | sed s/\)\://g | sed 's/[^ ]* //' | cut -c 2-)
+    #import from text file
+    while read system_read;do systems_read+=("$system_read");done < <(cat /home/pi/systems)
+    while read description_read;do descriptions_read+=("$description_read");done < <(cat /home/pi/descriptions)
+    for i in ${!descriptions_read[@]}; do options+=("$i" "${descriptions_read[$i]}");done
     while true; do
         local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -82,40 +168,6 @@ function choose_system_add() {
     done
 }
 
-function gui_add() {
-    local dir="$rootdir/RetroPie-Docs"
-    while true; do
-        local cmd=(dialog --backtitle "$__backtitle" --menu "RetroPie-Setup Mamedev Systems Adder" 22 76 16)
-        local options=()
-#        if [[ -d "$dir" ]]; then
-            options=(
-                1 "Select and install a handheld system"
-                2 "Select and install a system"
-                3 "-"
-            )
-#        else
-#            options+=("1" "Download RetroPie-Setup Docs")
-#        fi
-        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-        if [[ -n "$choice" ]]; then
-            case "$choice" in
-                1)
-                    choose_dteam_add
-                    ;;
-                2)
-                    choose_system_add
-                    ;;
-                3)
-                    #if [[ -d "$dir" ]]; then
-                    #    rm -rf "$dir"
-                    #fi
-                    ;;
-            esac
-        else
-            break
-        fi
-    done
-}
 
 function run_generator_script() {
 
@@ -163,6 +215,7 @@ tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoa
 mkdir -p  /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 chown -R $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share"
 #install @valerino run_mess.sh script if not detected
+#if zero (-z) (empty) then istall the run_mess.sh script
 if [[ -z $(ls /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) ]]; then 
 echo "install @valerino run_mess.sh script"
 wget -q -nv -O /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh
@@ -512,11 +565,13 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 
 _EOF_
 
-#change ownership to normal user
+#if not empty (-n) : change ownership to normal user and install 
+if [[ -n $(ls /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}.sh 2>&-) ]]; then 
 chown $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}.sh" 
-
 #install directly after generation
 $scriptdir/retropie_packages.sh install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}
+fi
+
 done
 
 
@@ -631,10 +686,82 @@ function configure_install-${newsystems[$index]}-cmd() {
 
 _EOF_
 
-#change ownership to normal user
+#if not empty (-n) : change ownership to normal user and install 
+if [[ -n $(ls /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd.sh 2>&-) ]]; then 
 chown $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd.sh" 
-
 #install directly after generation
 $scriptdir/retropie_packages.sh install-${newsystems[$index]}-cmd
+fi
+
 done
 }
+
+
+function download_cheats() {
+clear
+echo "get the cheat.7z and place it in the correct path"
+echo
+wget -N -P /tmp http://cheat.retrogames.com/download/cheat0221.zip
+unzip -o /tmp/cheat0221.zip cheat.7z -d /home/$user/RetroPie/BIOS/mame/cheat
+chown -R $user:$user "/home/$user/RetroPie/BIOS/mame/cheat" 
+rm /tmp/cheat0221.zip
+}
+
+function download_gamelists() {
+clear
+echo "get all gamelist files and put these in the correct path"
+echo
+wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
+python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P /opt/retropie/configs/all/emulationstation/gamelists
+chown -R $user:$user "/opt/retropie/configs/all/emulationstation/gamelists"
+rm /tmp/gdrivedl.py
+}
+
+function download_artwork_create_overlays() {
+clear
+echo "get all artwork files and put these in the correct path"
+echo
+wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
+python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 -P /home/$user/RetroPie/roms/mame/artwork
+rm /tmp/gdrivedl.py
+chown -R $user:$user "/home/$user/RetroPie/roms/mame/artwork"
+echo "extract background files, if available, and create custom retroarch configs for overlay's"
+echo
+#use multiple arrays over one for loop:
+#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
+for system in "${systems[@]}"; do
+    declare -n games="$system"
+    #echo "system name: ${system} with system members: ${games[@]}"
+    for game in "${games[@]}"; do
+        #echo -en "\tworking on name $game of the $system system\n"
+        mkdir -p "/home/$user/RetroPie/roms/$system"
+        chown $user:$user "/home/$user/RetroPie/roms/$system" 
+	#extract Background files,if existing in zip, from mame artwork files // issue not all artwork files have Background.png
+        unzip /home/$user/RetroPie/roms/mame/artwork/$game.zip Background.png -d /home/$user/RetroPie/roms/mame/artwork 2>/dev/null
+        checkforbackground=$(ls /home/$user/RetroPie/roms/mame/artwork/Background.png 2> /dev/null)
+        if [[ -n $checkforbackground ]]
+        then
+        mv /home/$user/RetroPie/roms/mame/artwork/Background.png  /opt/retropie/configs/all/retroarch/overlay/$game.png 2>/dev/null
+        chown $user:$user "/opt/retropie/configs/all/retroarch/overlay/$game.png" 
+	#create configs
+	cat > "/home/$user/RetroPie/roms/$system/$game.zip.cfg" << _EOF_
+input_overlay =  /opt/retropie/configs/all/retroarch/overlay/$game.cfg
+input_overlay_enable = true
+input_overlay_opacity = 0.500000
+input_overlay_scale = 1.000000
+_EOF_
+        chown $user:$user "/home/$user/RetroPie/roms/$system/$game.zip.cfg" 
+        #
+	cat > "/opt/retropie/configs/all/retroarch/overlay/$game.cfg" << _EOF_
+overlays = 1
+overlay0_overlay = $game.png
+overlay0_full_screen = false
+overlay0_descs = 0
+_EOF_
+        chown $user:$user "/opt/retropie/configs/all/retroarch/overlay/$game.cfg" 
+        fi 
+    done
+done
+}
+
+
