@@ -108,6 +108,7 @@ function choose_dteam_add() {
     local descriptions_read=()
     local options=()
     local system_read
+    local description_read
     local default
     local i
     #fixed array generated with : for i in ${!systems_read[@]}; do echo -n "\"${systems_read[$i]}\" " ;done >system
@@ -124,6 +125,7 @@ function choose_description_add() {
     local descriptions_read=()
     local options=()
     local system_read
+    local description_read
     local default
     local i
     #fixed array generated with : for i in ${!systems_read[@]}; do echo -n "\"${systems_read[$i]}\" " ;done >system
@@ -144,6 +146,7 @@ function choose_system_add() {
     local descriptions_read=()
     local options=()
     local system_read
+    local description_read
     local default
     local i
     #fixed array generated with : for i in ${!systems_read[@]}; do echo -n "\"${systems_read[$i]}\" " ;done >system
