@@ -112,7 +112,7 @@ function gui_download_ext_module-scripts() {
                 0 "FollyMaddy/RetroPie-Share"
                 1 "zerojay/RetroPie-Extra"
                 2 "valerino/RetroPie-Setup"
-                3 "-"
+                3 "GeorgeMcMullen/RetroPie-Setup"
                 4 "-"
                 5 "-"
             )
@@ -129,7 +129,7 @@ function gui_download_ext_module-scripts() {
                     download_ext_module_scripts
                     ;;
                 3)
-                    
+                    download_ext_module_scripts
                     ;;
                 4)
                     
@@ -825,10 +825,10 @@ function download_ext_module_scripts() {
 clear
 local repository
 local repositories=()
-local repositories=( "FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00" "zerojay/RetroPie-Extra/tree/master/scriptmodules" "valerino/RetroPie-Setup/tree/master/scriptmodules" )
+local repositories=( "FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00" "zerojay/RetroPie-Extra/tree/master/scriptmodules" "valerino/RetroPie-Setup/tree/master/scriptmodules" "GeorgeMcMullen/RetroPie-Setup/tree/box86wine/scriptmodules" )
 local map
 local raw_repositories=()
-local raw_repositories=( "raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00" "raw.githubusercontent.com/zerojay/RetroPie-Extra/master/scriptmodules" "raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules" )
+local raw_repositories=( "raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00" "raw.githubusercontent.com/zerojay/RetroPie-Extra/master/scriptmodules" "raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules" "raw.githubusercontent.com/GeorgeMcMullen/RetroPie-Setup/box86wine/scriptmodules" )
 local directory
 local directories=()
 local directories=( "emulators" "libretrocores" "ports" "supplementary" )
