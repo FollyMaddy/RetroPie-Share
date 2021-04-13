@@ -846,7 +846,7 @@ echo
   do
    #download if not in original RetroPie-Setup (-z if zero)
    if [[ -z $(find /home/$user/RetroPie-Setup/scriptmodules -name "$file") ]]; then
-   #wget -q -nv -O "/home/$user/RetroPie-Setup/ext/$map" | cut -d "/" -f 2)/scriptmodules/$directory/$file" "https://${raw_repositories[$choice]}/$directory/$file"
+   #wget -q -nv -O "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file" "https://${raw_repositories[$choice]}/$directory/$file"
    curl "https://${raw_repositories[$choice]}/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
    fi
   done
