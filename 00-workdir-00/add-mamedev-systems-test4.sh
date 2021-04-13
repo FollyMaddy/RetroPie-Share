@@ -826,7 +826,7 @@ clear
 local repository
 local repositories=()
 local repositories=( "FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00" "zerojay/RetroPie-Extra/tree/master/scriptmodules" "valerino/RetroPie-Setup/tree/master/scriptmodules" )
-#local raw_repository
+local map
 local raw_repositories=()
 local raw_repositories=( "raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00" "raw.githubusercontent.com/zerojay/RetroPie-Extra/master/scriptmodules" "raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules" )
 local directory
@@ -836,13 +836,18 @@ echo "get external module-scripts and place them in the correct path"
 echo
 #for repository in "${!repositories[@]}"; do
  for directory in "${directories[@]}"; do
- mkdir -p /home/$user/RetroPie-Setup/ext/$(echo "${repositories[$choice]}" | cut -d "/" -f 2)/scriptmodules/$directory 2>&-
+ if [[ $(echo "${repositories[$choice]}" | cut -d "/" -f 2) == "RetroPie-Setup" ]]; then
+ map=$(echo "${repositories[$choice]}" | cut -d "/" -f 2)_$(echo "${repositories[$choice]}" | cut -d "/" -f 1)
+ else
+ map=$(echo "${repositories[$choice]}" | cut -d "/" -f 2)
+ fi
+ mkdir -p /home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory 2>&-
  curl https://github.com/${repositories[$choice]}/$directory | grep "\.sh" | cut -d '"' -f 6 | while read file
   do
    #download if not in original RetroPie-Setup (-z if zero)
    if [[ -z $(find /home/$user/RetroPie-Setup/scriptmodules -name "$file") ]]; then
-   #wget -q -nv -O "/home/$user/RetroPie-Setup/ext/$(echo "${repositories[$choice]}" | cut -d "/" -f 2)/scriptmodules/$directory/$file" "https://${raw_repositories[$choice]}/$directory/$file"
-   curl "https://${raw_repositories[$choice]}/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$(echo "${repositories[$choice]}" | cut -d "/" -f 2)/scriptmodules/$directory/$file"
+   #wget -q -nv -O "/home/$user/RetroPie-Setup/ext/$map" | cut -d "/" -f 2)/scriptmodules/$directory/$file" "https://${raw_repositories[$choice]}/$directory/$file"
+   curl "https://${raw_repositories[$choice]}/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
    fi
   done
  done
