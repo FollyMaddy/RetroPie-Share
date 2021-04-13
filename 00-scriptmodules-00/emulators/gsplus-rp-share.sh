@@ -9,27 +9,27 @@
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
-rp_module_id="gsplus-pi4-test"
+rp_module_id="gsplus-rp-share"
 rp_module_desc="Apple II/GS emulator v"
 rp_module_help="ROM Extensions: .gsp .txt .GSP .TXT\n\nCopy your Apple II/GS games to $romdir/apple2gs\n\nCopy the required BIOS file ROM.03 or ROM.01 to $biosdir\n\n"
 rp_module_section="exp"
 rp_module_flags=""
 
-function depends_gsplus-pi4-test() {
+function depends_gsplus-rp-share() {
      getDepends libsdl2-dev libsdl2-image-dev re2c libreadline-dev
 }
 
-function sources_gsplus-pi4-test() {
+function sources_gsplus-rp-share() {
     gitPullOrClone "$md_build" https://github.com/digarok/gsplus
 }
 
-function build_gsplus-pi4-test() {
+function build_gsplus-rp-share() {
     cmake .
     make
     md_ret_require="$md_build/bin/GSplus"
 }
 
-function install_gsplus-pi4-test() {
+function install_gsplus-rp-share() {
     md_ret_files=(
     'bin/GSplus'
 	'bin/partls'
@@ -37,7 +37,7 @@ function install_gsplus-pi4-test() {
     )
 }
 
-function configure_gsplus-pi4-test() {
+function configure_gsplus-rp-share() {
     mkRomDir "apple2gs"
     
     addEmulator 1 "$md_id" "apple2gs" "$md_inst/gsplus.sh %ROM%"
