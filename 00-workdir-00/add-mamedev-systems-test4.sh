@@ -19,17 +19,17 @@ function depends_add() {
 
 
 function gui_add() {
-    local dir="$rootdir/RetroPie-Docs"
     while true; do
         local cmd=(dialog --backtitle "$__backtitle" --menu "lr-mess/MAME Systems adder" 22 76 16)
         local options=()
             options=(
-                0 "Handhelds -> Select and install"
-                1 "Handhelds -> Select downloads"
+                0 "Handhelds / Plug & play -> Select and install"
+                1 "Handhelds / Plug & play -> Select downloads"
                 2 "-"
                 3 "All -> Select and install upon descriptions"
                 4 "All -> Select and install upon system names"
                 5 "-"
+                6 "Download external repository module-scripts"
             )
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         if [[ -n "$choice" ]]; then
@@ -52,6 +52,9 @@ function gui_add() {
                 5)
                     
                     ;;
+                6)
+                    gui_download_ext_module-scripts
+                    ;;
             esac
         else
             break
@@ -61,7 +64,6 @@ function gui_add() {
 
 
 function gui_downloads() {
-    local dir="$rootdir/RetroPie-Docs"
     while true; do
         local cmd=(dialog --backtitle "$__backtitle" --menu "Submenu -> Handhelds -> Select downloads" 22 76 16)
         local options=()
@@ -84,6 +86,47 @@ function gui_downloads() {
                     ;;
                 2)
                     download_artwork_create_overlays
+                    ;;
+                3)
+                    
+                    ;;
+                4)
+                    
+                    ;;
+                5)
+                    
+                    ;;
+            esac
+        else
+            break
+        fi
+    done
+}
+
+
+function gui_download_ext_module-scripts() {
+    while true; do
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Submenu -> External repositories -> Select downloads" 22 76 16)
+        local options=()
+            options=(
+                0 "FollyMaddy/RetroPie-Share"
+                1 "zerojay/RetroPie-Extra"
+                2 "valerino/RetroPie-Setup"
+                3 "-"
+                4 "-"
+                5 "-"
+            )
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        if [[ -n "$choice" ]]; then
+            case "$choice" in
+                0)
+                    download_ext_module_scripts
+                    ;;
+                1)
+                    download_ext_module_scripts
+                    ;;
+                2)
+                    download_ext_module_scripts
                     ;;
                 3)
                     
@@ -201,7 +244,7 @@ newsystems=()
 namesfilter="\(brief|------"
 
 #filter on usefull media, otherwise we also get many unusefull scripts
-mediafilter="none\)|prin\)|quik\)|\(memc|\(rom1|\(cart|\(flop|\(cass|dump\)|cdrm\)|hard1\)"
+mediafilter="none\)|prin\)|quik\)|\(memc|\(rom1|\(cart|\(flop|\(cass|dump\)|cdrm\)"
 
 #string for adding extra extensions in all generated scripts
 addextensions=".zip .7z"
@@ -778,4 +821,32 @@ _EOF_
 done
 }
 
-
+function download_ext_module_scripts() {
+clear
+local repository
+local repositories=()
+local repositories=( "FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00" "zerojay/RetroPie-Extra/tree/master/scriptmodules" "valerino/RetroPie-Setup/tree/master/scriptmodules" )
+#local raw_repository
+local raw_repositories=()
+local raw_repositories=( "raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00" "raw.githubusercontent.com/zerojay/RetroPie-Extra/master/scriptmodules" "raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules" )
+local directory
+local directories=()
+local directories=( "emulators" "libretrocores" "ports" "supplementary" )
+echo "get external module-scripts and place them in the correct path"
+echo
+#for repository in "${!repositories[@]}"; do
+ for directory in "${directories[@]}"; do
+ mkdir -p /home/$user/RetroPie-Setup/ext/$(echo "${repositories[$choice]}" | cut -d "/" -f 2)/scriptmodules/$directory 2>&-
+ curl https://github.com/${repositories[$choice]}/$directory | grep "\.sh" | cut -d '"' -f 6 | while read file
+  do
+   #download if not in original RetroPie-Setup (-z if zero)
+   if [[ -z $(find /home/$user/RetroPie-Setup/scriptmodules -name "$file") ]]; then
+   #wget -q -nv -O "/home/$user/RetroPie-Setup/ext/$(echo "${repositories[$choice]}" | cut -d "/" -f 2)/scriptmodules/$directory/$file" "https://${raw_repositories[$choice]}/$directory/$file"
+   curl "https://${raw_repositories[$choice]}/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$(echo "${repositories[$choice]}" | cut -d "/" -f 2)/scriptmodules/$directory/$file"
+   fi
+  done
+ done
+#done
+chown -R $user:$user "/home/$user/RetroPie-Setup/ext/" 
+rp_registerAllModules
+}
