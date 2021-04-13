@@ -19,17 +19,17 @@ function depends_add() {
 
 
 function gui_add() {
+    local dir="$rootdir/RetroPie-Docs"
     while true; do
         local cmd=(dialog --backtitle "$__backtitle" --menu "lr-mess/MAME Systems adder" 22 76 16)
         local options=()
             options=(
-                0 "Handhelds / Plug & play -> Select and install"
-                1 "Handhelds / Plug & play -> Select downloads"
+                0 "Handhelds -> Select and install"
+                1 "Handhelds -> Select downloads"
                 2 "-"
                 3 "All -> Select and install upon descriptions"
                 4 "All -> Select and install upon system names"
                 5 "-"
-                6 "Download external repository module-scripts"
             )
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         if [[ -n "$choice" ]]; then
@@ -52,9 +52,6 @@ function gui_add() {
                 5)
                     
                     ;;
-                6)
-                    gui_download_ext_module-scripts
-                    ;;
             esac
         else
             break
@@ -64,6 +61,7 @@ function gui_add() {
 
 
 function gui_downloads() {
+    local dir="$rootdir/RetroPie-Docs"
     while true; do
         local cmd=(dialog --backtitle "$__backtitle" --menu "Submenu -> Handhelds -> Select downloads" 22 76 16)
         local options=()
@@ -89,47 +87,6 @@ function gui_downloads() {
                     ;;
                 3)
                     
-                    ;;
-                4)
-                    
-                    ;;
-                5)
-                    
-                    ;;
-            esac
-        else
-            break
-        fi
-    done
-}
-
-
-function gui_download_ext_module-scripts() {
-    while true; do
-        local cmd=(dialog --backtitle "$__backtitle" --menu "Submenu -> External repositories -> Select downloads" 22 76 16)
-        local options=()
-            options=(
-                0 "FollyMaddy/RetroPie-Share"
-                1 "zerojay/RetroPie-Extra"
-                2 "valerino/RetroPie-Setup"
-                3 "GeorgeMcMullen/RetroPie-Setup"
-                4 "-"
-                5 "-"
-            )
-        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-        if [[ -n "$choice" ]]; then
-            case "$choice" in
-                0)
-                    download_ext_module_scripts
-                    ;;
-                1)
-                    download_ext_module_scripts
-                    ;;
-                2)
-                    download_ext_module_scripts
-                    ;;
-                3)
-                    download_ext_module_scripts
                     ;;
                 4)
                     
@@ -244,7 +201,7 @@ newsystems=()
 namesfilter="\(brief|------"
 
 #filter on usefull media, otherwise we also get many unusefull scripts
-mediafilter="none\)|prin\)|quik\)|\(memc|\(rom1|\(cart|\(flop|\(cass|dump\)|cdrm\)"
+mediafilter="none\)|prin\)|quik\)|\(memc|\(rom1|\(cart|\(flop|\(cass|dump\)|cdrm\)|hard1\)"
 
 #string for adding extra extensions in all generated scripts
 addextensions=".zip .7z"
@@ -285,25 +242,18 @@ fi
 cat >"/home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg" << _EOF_
 tigerh_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
 tigerh_fullname="Tiger Handheld Electronics"
-
 tigerrz_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
 tigerrz_fullname="Tiger R-Zone"
-
 jakks_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
 jakks_fullname="JAKKS Pacific TV Games"
-
 konamih_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
 konamih_fullname="Konami Handheld"
-
 all_in1_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
 all_in1_fullname="All in One Handheld and Plug and Play"
-
 classich_exts=".mgw .7z"
 classich_fullname="Classic Handheld Systems"
-
 bbcmicro_exts=".ssd"
 bbcmicro_fullname="BBC Micro"
-
 bbcmicro_exts=".ssd"
 bbcmicro_fullname="BBC Master"
 _EOF_
@@ -525,7 +475,6 @@ echo "generate and write the install-<RPname>-from-mamedev-system-<MESSname><-me
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
 for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]] && cat > "/home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}.sh" << _EOF_
 #!/usr/bin/env bash
-
 # This file is part of The RetroPie Project
 #
 # The RetroPie Project is the legal property of its developers, whose names are
@@ -534,7 +483,6 @@ for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]]
 # See the LICENSE.md file at the top-level directory of this distribution and
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
-
 rp_module_id="install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}"
 rp_module_name="${descriptions[$index]} with ${mediadescriptions[$index]} support"
 rp_module_ext="$addextensions ${allextensions[$index]}"
@@ -550,11 +498,9 @@ ${systems[$index]}.zip\n
 Note:\n
 BIOS info is automatically generated,\n
 but some systems don't need a BIOS file!\n\n"
-
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/mame/master/LICENSE.md"
 rp_module_section="exp"
 rp_module_flags=""
-
 function depends_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	if [[ ! -f "\$_mess" ]]; then
@@ -562,19 +508,15 @@ function depends_install-${newsystems[$index]}-from-mamedev-system-${systems[$in
 		exit 1
 	fi
 }
-
 function sources_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}() {
 	true
 }
-
 function build_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}() {
 	true
 }
-
 function install_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}() {
 	true
 }
-
 function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
@@ -583,43 +525,34 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	local _add_config="\$_config.add"
 	local _custom_coreconfig="\$configdir/\$_system/custom-core-options.cfg"
 	local _script="\$scriptdir/scriptmodules/run_mess.sh"
-
 	# create retroarch configuration
 	ensureSystemretroconfig "\$_system"
-
 	# ensure it works without softlists, using a custom per-fake-core config
 	iniConfig " = " "\"" "\$_custom_coreconfig"
 	iniSet "mame_softlists_enable" "disabled"
 	iniSet "mame_softlists_auto_media" "disabled"
 	iniSet "mame_boot_from_cli" "disabled"
         iniSet "mame_mouse_enable" "enabled"
-
 	# this will get loaded too via --append_config
 	iniConfig " = " "\"" "\$_add_config"
 	iniSet "core_options_path" "\$_custom_coreconfig"
 	#iniSet "save_on_exit" "false"
-
 	# set permissions for configurations
  	chown \$user:\$user "\$_custom_coreconfig" 
  	chown \$user:\$user "\$_add_config" 
-
 	# setup rom folder # edit newsystem RetroPie name
 	mkRomDir "\$_system"
-
 	# ensure run_mess.sh script is executable
 	chmod 755 "\$_script"
-
 	# add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
 	addEmulator 0 "lr-mess-system-${systems[$index]}${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame $mamedevcfgoptions ${media[$index]} %ROM%"
 	addEmulator 0 "mame-system-${systems[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${systems[$index]} ${media[$index]} %ROM%"
         addEmulator 0 "mame-system-${systems[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${systems[$index]} ${media[$index]} %ROM%"
-
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
 	addSystem "\$_system" "${descriptions[$index]}" "$addextensions ${allextensions[$index]}"	
 }
-
 _EOF_
 
 #if not empty (-n) : change ownership to normal user and install 
@@ -653,7 +586,6 @@ echo "generate and write the install-<RPname>-cmd.sh command script file(s)"
 # using grep this way can create double extension, but this should not be a problem
 for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${newsystems[$index]}_exts /home/$user/RetroPie-Setup/platforms.cfg /home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2); cat > "/home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd.sh" << _EOF_
 #!/usr/bin/env bash
-
 # This file is part of The RetroPie Project
 #
 # The RetroPie Project is the legal property of its developers, whose names are
@@ -662,8 +594,6 @@ for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${
 # See the LICENSE.md file at the top-level directory of this distribution and
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
-
-
 rp_module_id="install-${newsystems[$index]}-cmd"
 rp_module_name="${newsystems[$index]} with command and game-BIOS support"
 rp_module_ext="$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
@@ -681,7 +611,6 @@ When using game-BIOS files, no BIOS is needed in the BIOS directory.\n"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/mame/master/LICENSE.md"
 rp_module_section="exp"
 rp_module_flags=""
-
 function depends_install-${newsystems[$index]}-cmd() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	if [[ ! -f "\$_mess" ]]; then
@@ -689,21 +618,15 @@ function depends_install-${newsystems[$index]}-cmd() {
 		exit 1
 	fi
 }
-
 function sources_install-${newsystems[$index]}-cmd() {
 	true
 }
-
 function build_install-${newsystems[$index]}-cmd() {
 	true
 }
-
-
 function install_install-${newsystems[$index]}-cmd() {
 	true
 }
-
-
 function configure_install-${newsystems[$index]}-cmd() {
     local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
     local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
@@ -717,7 +640,6 @@ function configure_install-${newsystems[$index]}-cmd() {
     iniConfig " = " "\"" "\$configdir/all/retroarch-core-options.cfg"
     iniSet "mame_cheats_enable" "enabled"
     chown \$user:\$user "\$configdir/all/retroarch-core-options.cfg"
-
     echo "enable cheats for mame in \$romdir/mame/mame.ini"    
     iniConfig " " "" "\$romdir/mame/mame.ini"
     iniSet "cheatpath"  "\$romdir/mame/cheat"
@@ -733,14 +655,12 @@ function configure_install-${newsystems[$index]}-cmd() {
     #turned these off, seems these commands will not work, but kept for future testing : https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/33
     ##addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
     ##addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
-
     # add system to es_systems.cfg
     #the line used by @valerino didn't work for the original RetroPie-setup 
     #therefore the information is added in a different way
     #the system name is also used as description because, for example, handhelds are generated with game system names
     addSystem "\$_system" "\$_system" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
 }
-
 _EOF_
 
 #if not empty (-n) : change ownership to normal user and install 
@@ -819,39 +739,4 @@ _EOF_
         fi 
     done
 done
-}
-
-function download_ext_module_scripts() {
-clear
-local repository
-local repositories=()
-local repositories=( "FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00" "zerojay/RetroPie-Extra/tree/master/scriptmodules" "valerino/RetroPie-Setup/tree/master/scriptmodules" "GeorgeMcMullen/RetroPie-Setup/tree/box86wine/scriptmodules" )
-local map
-local raw_repositories=()
-local raw_repositories=( "raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00" "raw.githubusercontent.com/zerojay/RetroPie-Extra/master/scriptmodules" "raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules" "raw.githubusercontent.com/GeorgeMcMullen/RetroPie-Setup/box86wine/scriptmodules" )
-local directory
-local directories=()
-local directories=( "emulators" "libretrocores" "ports" "supplementary" )
-echo "get external module-scripts and place them in the correct path"
-echo
-#for repository in "${!repositories[@]}"; do
- for directory in "${directories[@]}"; do
- if [[ $(echo "${repositories[$choice]}" | cut -d "/" -f 2) == "RetroPie-Setup" ]]; then
- map=$(echo "${repositories[$choice]}" | cut -d "/" -f 2)_$(echo "${repositories[$choice]}" | cut -d "/" -f 1)
- else
- map=$(echo "${repositories[$choice]}" | cut -d "/" -f 2)
- fi
- mkdir -p /home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory 2>&-
- curl https://github.com/${repositories[$choice]}/$directory | grep "\.sh" | cut -d '"' -f 6 | while read file
-  do
-   #download if not in original RetroPie-Setup (-z if zero)
-   if [[ -z $(find /home/$user/RetroPie-Setup/scriptmodules -name "$file") ]]; then
-   #wget -q -nv -O "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file" "https://${raw_repositories[$choice]}/$directory/$file"
-   curl "https://${raw_repositories[$choice]}/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
-   fi
-  done
- done
-#done
-chown -R $user:$user "/home/$user/RetroPie-Setup/ext/" 
-rp_registerAllModules
 }
