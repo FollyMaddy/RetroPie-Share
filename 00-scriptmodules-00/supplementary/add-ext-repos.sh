@@ -90,15 +90,17 @@ echo
  else
  map=$(echo "${repositories[$choice]}" | cut -d "/" -f 2)
  fi
+ mkdir -p /home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory 2>&-
  curl https://github.com/${repositories[$choice]}/$directory | grep "\.sh" | cut -d '"' -f 6 | while read file
   do
    #download if not in original RetroPie-Setup (-z if zero)
    if [[ -z $(find /home/$user/RetroPie-Setup/scriptmodules -name "$file") ]]; then
-   curl "https://raw.githubusercontent.com/${raw_repositories[$choice]}/$directory/$file" --create-dirs -o "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
+   #wget -q -nv -O "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file" "https://raw.githubusercontent.com/${raw_repositories[$choice]}/$directory/$file"
+   curl "https://raw.githubusercontent.com/${raw_repositories[$choice]}/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
    fi
   done
  done
 #done
-chown 755 -R $user:$user "/home/$user/RetroPie-Setup/ext/" 
+chown -R $user:$user "/home/$user/RetroPie-Setup/ext/" 
 rp_registerAllModules
 }
