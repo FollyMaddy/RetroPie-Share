@@ -10,7 +10,7 @@
 #
 
 rp_module_id="add"
-rp_module_desc="RetroPie-Setup Mamedev Systems Adder"
+rp_module_desc="Add lr-mess/MAME systems"
 rp_module_section="config"
 
 function depends_add() {
@@ -19,13 +19,12 @@ function depends_add() {
 
 
 function gui_add() {
-    local dir="$rootdir/RetroPie-Docs"
     while true; do
-        local cmd=(dialog --backtitle "$__backtitle" --menu "lr-mess/MAME Systems adder" 22 76 16)
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Add lr-mess/MAME systems" 22 76 16)
         local options=()
             options=(
-                0 "Handhelds -> Select and install"
-                1 "Handhelds -> Select downloads"
+                0 "Handhelds / Plug & play -> Select and install"
+                1 "Handhelds / Plug & play -> Select downloads"
                 2 "-"
                 3 "All -> Select and install upon descriptions"
                 4 "All -> Select and install upon system names"
@@ -61,7 +60,6 @@ function gui_add() {
 
 
 function gui_downloads() {
-    local dir="$rootdir/RetroPie-Docs"
     while true; do
         local cmd=(dialog --backtitle "$__backtitle" --menu "Submenu -> Handhelds -> Select downloads" 22 76 16)
         local options=()
