@@ -10,7 +10,7 @@
 #
 
 rp_module_id="add-ext-repos"
-rp_module_desc="Add external repositories"
+rp_module_desc="Add or update external repositories"
 rp_module_section="config"
 
 function depends_add-ext-repos() {
@@ -21,7 +21,7 @@ function depends_add-ext-repos() {
 
 function gui_add-ext-repos() {
     while true; do
-        local cmd=(dialog --backtitle "$__backtitle" --menu "Add external repositories" 22 76 16)
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Add or update external repositories" 22 76 16)
         local options=()
             options=(
                 0 "FollyMaddy/RetroPie-Share"
