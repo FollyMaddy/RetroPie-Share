@@ -71,13 +71,6 @@ local repositories=(
 "valerino/RetroPie-Setup/tree/master/scriptmodules"
 )
 local map
-local raw_repositories=()
-local raw_repositories=(
-"FollyMaddy/RetroPie-Share/main/00-scriptmodules-00"
-"GeorgeMcMullen/RetroPie-Setup/box86wine/scriptmodules"
-"zerojay/RetroPie-Extra/master/scriptmodules"
-"valerino/RetroPie-Setup/master/scriptmodules"
-)
 local directory
 local directories=()
 local directories=( "emulators" "libretrocores" "ports" "supplementary" )
@@ -95,8 +88,7 @@ echo
   do
    #download if not in original RetroPie-Setup (-z if zero)
    if [[ -z $(find /home/$user/RetroPie-Setup/scriptmodules -name "$file") ]]; then
-   #wget -q -nv -O "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file" "https://raw.githubusercontent.com/${raw_repositories[$choice]}/$directory/$file"
-   curl "https://raw.githubusercontent.com/${raw_repositories[$choice]}/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
+   curl "https://raw.githubusercontent.com/$(echo ${repositories[$choice]} | sed "s/tree\///g")/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
    fi
   done
  done
