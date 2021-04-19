@@ -66,7 +66,7 @@ local repository
 local repositories=()
 local repositories=(
 "FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00"
-"GeorgeMcMullen/RetroPie-Setup/tree/box86wine/scriptmodules"
+"GeorgeMcMullen/rp-box86wine/tree/main/scriptmodules"
 "zerojay/RetroPie-Extra/tree/master/scriptmodules"
 "valerino/RetroPie-Setup/tree/master/scriptmodules"
 )
