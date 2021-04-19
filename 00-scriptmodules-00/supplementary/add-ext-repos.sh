@@ -25,7 +25,7 @@ function gui_add-ext-repos() {
         local options=()
             options=(
                 0 "FollyMaddy/RetroPie-Share"
-                1 "GeorgeMcMullen/RetroPie-Setup"
+                1 "GeorgeMcMullen/rp-box86wine"
                 2 "zerojay/RetroPie-Extra"
                 3 "valerino/RetroPie-Setup"
                 4 "-"
