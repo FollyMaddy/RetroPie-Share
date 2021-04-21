@@ -20,21 +20,26 @@ function depends_add-ext-repos() {
 
 function gui_add-ext-repos() {
     local csv=()
-    local options=()
-    local default
-    local i
+    #add an empty value in the array so the menu begins with 1
     csv=(
-    "FollyMaddy/RetroPie-Share,FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00"
-    "GeorgeMcMullen/rp-box86wine,GeorgeMcMullen/rp-box86wine/tree/main/scriptmodules"
-    "zerojay/RetroPie-Extra,zerojay/RetroPie-Extra/tree/master/scriptmodules"
-    "valerino/RetroPie-Setup,valerino/RetroPie-Setup/tree/master/scriptmodules"    
+,
+FollyMaddy/RetroPie-Share,FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00,download_ext_module_scripts
+GeorgeMcMullen/rp-box86wine,GeorgeMcMullen/rp-box86wine/tree/main/scriptmodules,download_ext_module_scripts
+zerojay/RetroPie-Extra,zerojay/RetroPie-Extra/tree/master/scriptmodules,download_ext_module_scripts
+valerino/RetroPie-Setup,valerino/RetroPie-Setup/tree/master/scriptmodules,download_ext_module_scripts
     )
-    for i in ${!csv[@]}; do options+=("$i" "$(echo ${csv[$i]} | cut -d ',' -f 1)");done
-    build_menu
+    build_menu_add-ext-repos
+    rp_registerAllModules
 }
 
 
-function build_menu() {
+function build_menu_add-ext-repos() {
+	local options=()
+    local default
+    local i
+    for i in ${!csv[@]}; do options+=("$i" "$(echo ${csv[$i]} | cut -d ',' -f 1)");done
+    #erase option 0 (value 0 and 1) so the menu begins with 1
+    options[0]= ; options[1]= 
     while true; do
         local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -43,11 +48,10 @@ function build_menu() {
             joy2keyStop
             joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
             clear
-            download_ext_module_scripts
-            #run_generator_script
-            #rp_registerAllModules
-            echo $choice $(echo ${csv[$choice]} | cut -d ',' -f 2)
-            sleep 4
+            #run what's in the third "column"
+            $(echo ${csv[$choice]} | cut -d ',' -f 3)
+            #echo $choice $(echo ${csv[$choice]} | cut -d ',' -f 2)
+            #sleep 4
             joy2keyStop
             joy2keyStart
         else
