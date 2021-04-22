@@ -38,8 +38,8 @@ function build_menu_add-ext-repos() {
     local default
     local i
     for i in ${!csv[@]}; do options+=("$i" "$(echo ${csv[$i]} | cut -d ',' -f 1)");done
-    #erase option 0 (value 0 and 1) so the menu begins with 1
-    options[0]= ; options[1]= 
+    #remove option 0 (value 0 and 1) so the menu begins with 1
+    unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
