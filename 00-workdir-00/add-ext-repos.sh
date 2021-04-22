@@ -20,8 +20,9 @@ function depends_add-ext-repos() {
 
 function gui_add-ext-repos() {
     local csv=()
-    #add an empty value in the array so the menu begins with 1 and make sure every line begins and ends with quotes because of possible spaces
-    #just use the first and last colum in excel/calc for the quotes and you should be fine
+   #the first value should be an empty value so the menu begins with 1
+   #make sure every line begins and ends with quotes because of possible spaces
+   #just use the first and last colum in excel/calc for the quotes and you should be fine
     csv=(
 ",,,"
 ",FollyMaddy/RetroPie-Share,FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00,download_ext_module_scripts,"
