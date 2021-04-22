@@ -34,7 +34,7 @@ valerino/RetroPie-Setup,valerino/RetroPie-Setup/tree/master/scriptmodules,downlo
 
 
 function build_menu_add-ext-repos() {
-	local options=()
+    local options=()
     local default
     local i
     for i in ${!csv[@]}; do options+=("$i" "$(echo ${csv[$i]} | cut -d ',' -f 1)");done
