@@ -9,6 +9,16 @@
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
+
+#----------------------------------------------------------------------------------------------------------------------------------------------
+# INFORMATION ABOUT THE CSV STRUCTURE USED FOR GENERATING A GUI/SUB-GUI :
+# - the first value isn't used for the menu, that way the menu begins with 1
+# - this first value should be empty or contain a description of the specific column
+# - make sure every line begins and ends with quotes because of possible spaces
+# - just use the first and last column in excel/calc for the quotes and you should be fine
+#----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 rp_module_id="add-ext-repos"
 rp_module_desc="Add or update external repositories"
 rp_module_section="config"
@@ -18,41 +28,41 @@ function depends_add-ext-repos() {
 }
 
 
-
 function gui_add-ext-repos() {
+    local csv=()
+    csv=(
+",repository,path,to_do,"
+",FollyMaddy/RetroPie-Share,FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00,download_ext_module_scripts,"
+",GeorgeMcMullen/rp-box86wine,GeorgeMcMullen/rp-box86wine/tree/main/scriptmodules,download_ext_module_scripts,"
+",zerojay/RetroPie-Extra,zerojay/RetroPie-Extra/tree/master/scriptmodules,download_ext_module_scripts,"
+",valerino/RetroPie-Setup,valerino/RetroPie-Setup/tree/master/scriptmodules,download_ext_module_scripts,"
+    )
+    build_menu_add-ext-repos
+    rp_registerAllModules
+}
+
+
+function build_menu_add-ext-repos() {
+    local options=()
+    local default
+    local i
+    for i in ${!csv[@]}; do options+=("$i" "$(echo ${csv[$i]} | cut -d ',' -f 2)");done
+    #remove option 0 (value 0 and 1) so the menu begins with 1
+    unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --backtitle "$__backtitle" --menu "Add or update external repositories" 22 76 16)
-        local options=()
-            options=(
-                0 "FollyMaddy/RetroPie-Share"
-                1 "GeorgeMcMullen/rp-box86wine"
-                2 "zerojay/RetroPie-Extra"
-                3 "valerino/RetroPie-Setup"
-                4 "-"
-                5 "-"
-            )
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        default="$choice"
         if [[ -n "$choice" ]]; then
-            case "$choice" in
-                0)
-                    download_ext_module_scripts
-                    ;;
-                1)
-                    download_ext_module_scripts
-                    ;;
-                2)
-                    download_ext_module_scripts
-                    ;;
-                3)
-                    download_ext_module_scripts
-                    ;;
-                4)
-                    
-                    ;;
-                5)
-                    
-                    ;;
-            esac
+            joy2keyStop
+            joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
+            clear
+            #run what's in the fourth "column"
+            $(echo ${csv[$choice]} | cut -d ',' -f 4)
+            #echo $choice $(echo ${csv[$choice]} | cut -d ',' -f 3)
+            #sleep 4
+            joy2keyStop
+            joy2keyStart
         else
             break
         fi
@@ -61,38 +71,28 @@ function gui_add-ext-repos() {
 
 
 function download_ext_module_scripts() {
-clear
-local repository
-local repositories=()
-local repositories=(
-"FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00"
-"GeorgeMcMullen/rp-box86wine/tree/main/scriptmodules"
-"zerojay/RetroPie-Extra/tree/master/scriptmodules"
-"valerino/RetroPie-Setup/tree/master/scriptmodules"
-)
 local map
 local directory
 local directories=()
 local directories=( "emulators" "libretrocores" "ports" "supplementary" )
 echo "get external module-scripts and place them in the correct path"
 echo
-#for repository in "${!repositories[@]}"; do
- for directory in "${directories[@]}"; do
- if [[ $(echo "${repositories[$choice]}" | cut -d "/" -f 2) == "RetroPie-Setup" ]]; then
- map=$(echo "${repositories[$choice]}" | cut -d "/" -f 2)_$(echo "${repositories[$choice]}" | cut -d "/" -f 1)
+for directory in "${directories[@]}"; do
+ if [[ $(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 3) == "RetroPie-Setup" ]]; then
+ map=$(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 3)_$(echo $(echo ${csv[$choice]} | cut -d ',' -f 3) | cut -d '/' -f 1)
  else
- map=$(echo "${repositories[$choice]}" | cut -d "/" -f 2)
+ map=$(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 3)
  fi
+echo $map
  mkdir -p /home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory 2>&-
- curl https://github.com/${repositories[$choice]}/$directory | grep "\.sh" | cut -d '"' -f 6 | while read file
+ curl https://github.com/$(echo ${csv[$choice]} | cut -d ',' -f 3)/$directory | grep "\.sh" | cut -d '"' -f 6 | while read file
   do
    #download if not in original RetroPie-Setup (-z if zero)
    if [[ -z $(find /home/$user/RetroPie-Setup/scriptmodules -name "$file") ]]; then
-   curl "https://raw.githubusercontent.com/$(echo ${repositories[$choice]} | sed "s/tree\///g")/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
+   curl "https://raw.githubusercontent.com/$(echo $(echo ${csv[$choice]} | cut -d ',' -f 3) | sed "s/tree\///g")/$directory/$file" > "/home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory/$file"
    fi
   done
- done
-#done
+done
 chown -R $user:$user "/home/$user/RetroPie-Setup/ext/" 
 rp_registerAllModules
 }
