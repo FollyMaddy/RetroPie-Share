@@ -9,6 +9,16 @@
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
+
+#----------------------------------------------------------------------------------------------------------------------------------------------
+# INFORMATION ABOUT THE CSV STRUCTURE USED FOR GENERATING A GUI/SUB-GUI :
+# - the first value isn't used for the menu, that way the menu begins with 1
+# - this first value should be empty or contain a description of the specific column
+# - make sure every line begins and ends with quotes because of possible spaces
+# - just use the first and last column in excel/calc for the quotes and you should be fine
+#----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 rp_module_id="add-ext-repos"
 rp_module_desc="Add or update external repositories"
 rp_module_section="config"
@@ -20,11 +30,8 @@ function depends_add-ext-repos() {
 
 function gui_add-ext-repos() {
     local csv=()
-   #the first value should be an empty value so the menu begins with 1
-   #make sure every line begins and ends with quotes because of possible spaces
-   #just use the first and last colum in excel/calc for the quotes and you should be fine
     csv=(
-",,,"
+",repository,path,to_do,"
 ",FollyMaddy/RetroPie-Share,FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00,download_ext_module_scripts,"
 ",GeorgeMcMullen/rp-box86wine,GeorgeMcMullen/rp-box86wine/tree/main/scriptmodules,download_ext_module_scripts,"
 ",zerojay/RetroPie-Extra,zerojay/RetroPie-Extra/tree/master/scriptmodules,download_ext_module_scripts,"
