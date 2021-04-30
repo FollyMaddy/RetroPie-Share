@@ -42,9 +42,6 @@ function gui_download_legal_stuff() {
 }
 
 
-https://atariage.com/forums/applications/core/interface/file/attachment.php?id=661460
-
-
 function gui_download_legal_stuff_arcade() {
     local csv=()
     csv=(
