@@ -36,9 +36,13 @@ function gui_download_legal_stuff() {
 ",Platform,,,,,,,,to_do,"
 ",Arcade,,,,,,,,gui_download_legal_stuff_arcade,"
 ",Atari 2600,,,,,,,,gui_download_legal_stuff_atari2600,"
+",Atari Lynx,,,,,,,,gui_download_legal_stuff_atarilynx,"
     )
     build_menu_download_legal_stuff
 }
+
+
+https://atariage.com/forums/applications/core/interface/file/attachment.php?id=661460
 
 
 function gui_download_legal_stuff_arcade() {
@@ -97,11 +101,29 @@ function gui_download_legal_stuff_atari2600() {
 }
 
 
+function gui_download_legal_stuff_atarilynx() {
+    local csv=()
+    csv=(
+",description,file_name,rom_directory,download_link,,,,,to_do,"
+",30th Birthday Programming Competition Roms,30th Birthday ROMs.zip,atarilynx,https://atariage.com/forums/applications/core/interface/file/attachment.php?id=661460,,,,,download_with_wget_and_extract,"
+    )
+    build_menu_download_legal_stuff
+}
+
 function download_with_wget() {
     mkdir -p "/home/pi/RetroPie/roms/$(echo ${csv[$choice]} | cut -d ',' -f 4)/00-Legal_Downloads-00"
     wget -nv -O "/home/pi/RetroPie/roms/$(echo ${csv[$choice]} | cut -d ',' -f 4)/00-Legal_Downloads-00/$(echo ${csv[$choice]} | cut -d ',' -f 3)" "$(echo ${csv[$choice]} | cut -d ',' -f 5)"
     chown -R $user:$user "/home/$user/RetroPie/roms/$(echo ${csv[$choice]} | cut -d ',' -f 4)"
 }
+
+
+function download_with_wget_and_extract() {
+    download_with_wget
+    unzip "/home/pi/RetroPie/roms/$(echo ${csv[$choice]} | cut -d ',' -f 4)/00-Legal_Downloads-00/$(echo ${csv[$choice]} | cut -d ',' -f 3)" -d "/home/pi/RetroPie/roms/$(echo ${csv[$choice]} | cut -d ',' -f 4)/00-Legal_Downloads-00"
+    rm "/home/pi/RetroPie/roms/$(echo ${csv[$choice]} | cut -d ',' -f 4)/00-Legal_Downloads-00/$(echo ${csv[$choice]} | cut -d ',' -f 3)"
+    chown -R $user:$user "/home/$user/RetroPie/roms/$(echo ${csv[$choice]} | cut -d ',' -f 4)"
+}
+
 
 
 function build_menu_download_legal_stuff() {
@@ -112,7 +134,7 @@ function build_menu_download_legal_stuff() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "What is your choice ?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
