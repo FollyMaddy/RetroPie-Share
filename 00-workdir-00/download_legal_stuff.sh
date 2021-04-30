@@ -33,7 +33,7 @@ function depends_download_legal_stuff() {
 function gui_download_legal_stuff() {
     local csv=()
     csv=(
-",Platform,path,to_do,"
+",Platform,,,to_do,"
 ",Atari 2600,,,gui_download_legal_stuff_atari2600,"
     )
     build_menu_download_legal_stuff
@@ -43,7 +43,7 @@ function gui_download_legal_stuff() {
 function gui_download_legal_stuff_atari2600() {
     local csv=()
     csv=(
-",game_name,rom_directory,download_link,to_do,"
+",file_name,rom_directory,download_link,to_do,"
 ",Aardvark (2019).zip,atari2600,https://atariage.com/forums/applications/core/interface/file/attachment.php?id=833216,download_with_wget,"
 ",Bombs Away! (NTSC) 12-2017.bin,atari2600,https://atariage.com/forums/applications/core/interface/file/attachment.php?id=544819,download_with_wget,"
 ",Bombs Away! (PAL) 12-2017.bin,atari2600,https://atariage.com/forums/applications/core/interface/file/attachment.php?id=544820,download_with_wget,"
