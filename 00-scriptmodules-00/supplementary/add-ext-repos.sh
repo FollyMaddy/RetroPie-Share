@@ -78,10 +78,10 @@ local directories=( "emulators" "libretrocores" "ports" "supplementary" )
 echo "get external module-scripts and place them in the correct path"
 echo
 for directory in "${directories[@]}"; do
- if [[ $(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 3) == "RetroPie-Setup" ]]; then
- map=$(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 3)_$(echo $(echo ${csv[$choice]} | cut -d ',' -f 3) | cut -d '/' -f 1)
+ if [[ $(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 2) == "RetroPie-Setup" ]]; then
+ map=$(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 2)_$(echo $(echo ${csv[$choice]} | cut -d ',' -f 3) | cut -d '/' -f 1)
  else
- map=$(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 3)
+ map=$(echo $(echo ${csv[$choice]} | cut -d ',' -f 2) | cut -d '/' -f 2)
  fi
 echo $map
  mkdir -p /home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory 2>&-
