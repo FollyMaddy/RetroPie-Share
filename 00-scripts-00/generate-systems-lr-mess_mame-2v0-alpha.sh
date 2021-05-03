@@ -238,7 +238,15 @@ systemsrp+=( "$(echo $LINE | cut -d '_' -f 1)" )
 #(ProSystem)
 #otherwise we don't have matches for these systems
 #
-descriptionsrp+=( "$(echo $LINE | sed 's/\"PC\"/\"-PC-\"/g' | sed 's/Atari Jaguar/Jaguar/g' | sed 's/Mega CD/Mega-CD/g' | sed 's/Sega 32X/32X/g' | sed 's/Commodore Amiga/Amiga/g' | sed 's/ and / \& /g' | sed 's/ProSystem//g' | cut -d '"' -f 2)" )
+descriptionsrp+=( "$(echo $LINE | \
+sed 's/\"PC\"/\"-PC-\"/g' | \
+sed 's/Atari Jaguar/Jaguar/g' | \
+sed 's/Mega CD/Mega-CD/g' | \
+sed 's/Sega 32X/32X/g' | \
+sed 's/Commodore Amiga/Amiga/g' | \
+sed 's/ and / \& /g' | \
+sed 's/ and / \& /g' | \
+cut -d '"' -f 2)" )
 done < <(cat /home/$(ls /home)/RetroPie-Setup/platforms.cfg | grep fullname)
 
 
@@ -283,7 +291,16 @@ newsystems+=( "${systems[@]}" )
 #the second match is probably the best match
 # ??? have to find a solution for this ??? filter out or put in first index of array
 
+  #here we can change mamedev systems names that normally wouldn't be detected in the next for loop
+  #so now they can be detected changed into RetroPie names
+  for mamedevindex in "${!descriptions[@]}"; do
+    if [[ "${descriptions[$mamedevindex]}" == "Adam" ]]; then
+       descriptions[$mamedevindex]="ColecoVision Adam"
+       echo "changed in ${descriptions[$mamedevindex]}"
+    fi
+  done
 
+  #check the mamedev descriptions against the RetroPie descriptions
   for mamedevindex in "${!descriptions[@]}"; do
     for rpindex in "${!descriptionsrp[@]}"; do
       #create an empty array and split the the retropie name descriptions into seperate "words" in an array
