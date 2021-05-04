@@ -10,7 +10,7 @@ I started the HDD version and it stopped at the A> prompt.
 
 I used the translation button [T] to translate the Japanese text.
 
-*Translation button [T] can be added using the lines from this [post]( https://retropie.org.uk/forum/topic/28461/translate-games-on-the-fly/10) (see "edit (fix)" part ).
+*Translation button [T] can be added using the lines from this [post]( https://retropie.org.uk/forum/topic/28461/translate-games-on-the-fly/10) (see "edit (fix)" part )*.
 
 Place them in /opt/retropie/configs/all/retroarch.cfg
 
