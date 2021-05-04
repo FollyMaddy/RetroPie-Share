@@ -1,14 +1,18 @@
-insufficient memory error : Super Street Fighter II - The New Challengers.hdf
+Insufficient memory error : Super Street Fighter II - The New Challengers.hdf
 
 md5sum : d56faf3cdf7d6ee12f911294df14f121
 
-should work too on dim's and hdm's versions
+Other versions : This fix should work's on dim's and hdm's too !
 
-link to solution : https://retropie.org.uk/forum/topic/30460/x68k-emulator/7
+Link to solution : https://retropie.org.uk/forum/topic/30460/x68k-emulator/7
 
 I started the HDD version and it stopped at the A> prompt.
 
-I used the translation button to translate the Japanese text above the A> prompt.
+I used the translation button [T] to translate the Japanese text.
+
+*Translation button [T] can be added using the lines from this [post]( https://retropie.org.uk/forum/topic/28461/translate-games-on-the-fly/10) (see "edit (fix)" part ).
+
+Place them in /opt/retropie/configs/all/retroarch.cfg
 
 The translation was => insufficient memory .
 
