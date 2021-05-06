@@ -87,13 +87,11 @@ sleep 4
 #for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
 mkdir -p  /home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 chown -R $(ls /home):$(ls /home) "/home/$(ls /home)/RetroPie-Setup/ext/RetroPie-Share"
-#install @valerino run_mess.sh script if not detected
-if [[ -z $(ls /home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) ]]; then 
-echo "install @valerino run_mess.sh script"
-wget -q -nv -O /home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh
+echo "install @valerino run_mess.sh script (the RusselB version)"
+#get the run_mess.sh edited by RusselB
+wget -q -nv -O /home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/run_mess.sh
 #change ownership to normal user
 chown $(ls /home):$(ls /home) "/home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh" 
-fi
 
 
 #part 2 : platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)

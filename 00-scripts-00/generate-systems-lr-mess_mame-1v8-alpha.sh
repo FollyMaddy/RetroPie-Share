@@ -37,7 +37,7 @@
 #because mame is also added as emulator and because mame is using a different BIOS dir : $HOME/RetroPie/BIOS/mame
 #the lr-mess command is changed to use the same BIOS dir, so they can use the same bios files
 
-#part 1 : help
+#part 0 : help
 # show the the help options when running with "-h"
 while getopts ":h" option; do
    case $option in
@@ -86,6 +86,14 @@ done
 
 echo start
 date
+
+
+#part 1 : prepair some things first
+echo "install @valerino run_mess.sh script (the RusselB version)"
+#get the run_mess.sh edited by RusselB
+wget -q -nv -O /home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/run_mess.sh
+#change ownership to normal user
+chown $(ls /home):$(ls /home) "/home/$(ls /home)/RetroPie-Setup/scriptmodules/run_mess.sh" 
 
 
 #part 2 : define strings, arrays and @DTEAM handheld platform information
