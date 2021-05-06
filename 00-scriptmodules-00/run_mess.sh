@@ -14,6 +14,13 @@ _config="$3"
 _cfgdir=$(dirname "$_config")
 _system="$4"
 _biosdir="$5"
+#<<NEW CODE FOLLOWS>>
+#
+# use the name of the rom to generate the 'tmpmess.cmd' file so RetroArch can save a custom game config$
+#
+_fname="$(basename "${*: -3:1}")"
+_fbname="${_fname%.*}"
+#<<END NEW CODE>>
 
 echo "[.] parameters dump"
 echo "\t_retroarchbin: $_retroarchbin"
@@ -59,7 +66,13 @@ echo "\t_romdir: $_romdir"
 
 # generate mess.cmd
 echo "\t/tmp/mess.cmd content: ${_cmdarr[@]}"
-_tmpcmd="$_romdir/tmpmess.cmd"
+#<<NEW CODE FOLLOWS>>
+# _tmpcmd="$_romdir/tmpmess.cmd"
+#
+# Now use the root name of the rom file as the name of the cmd file
+#
+_tmpcmd="$_romdir/$_fbname.cmd"
+#<<END NEW CODE>>
 _tmpcfg="$_cfgdir/tmpconfig.add"
 rm "$_tmpcmd"
 rm "$_tmpcfg"
