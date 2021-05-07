@@ -2,7 +2,7 @@
 
 #
 # Author : @folly
-# Date   : 24/03/2021
+# Date   : 07/05/2021
 #
 # Copyright 2021 @folly
 #
@@ -63,9 +63,6 @@ addextensions=".zip .7z"
 
 #string for adding extra extensions in all generated command scripts
 addextensionscmd=".cmd"
-
-#string for adding mamedev config options, this doesn't seem to work in the generated command scripts with lr-mess
-mamedevcfgoptions="-autoframeskip"
 
 #array data for "game system names" of "handhelds" that cannot be detected or matched with the mamedev database
 #systems that cannot be detected (all_in1, classich, konamih, tigerh) (*h is for handheld)
@@ -449,9 +446,10 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	chmod 755 "\$_script"
 
 	# add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
-	addEmulator 0 "lr-mess-system-${systems[$index]}${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame $mamedevcfgoptions ${media[$index]} %ROM%"
-	addEmulator 0 "mame-system-${systems[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${systems[$index]} ${media[$index]} %ROM%"
-        addEmulator 0 "mame-system-${systems[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${systems[$index]} ${media[$index]} %ROM%"
+	# all option should work with both mame and lr-mess, although -autoframeskip is better with mame
+	addEmulator 0 "lr-mess-system-${systems[$index]}${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -autoframeskip -ui_active ${media[$index]} %ROM%"
+	addEmulator 0 "mame-system-${systems[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -ui_active ${systems[$index]} ${media[$index]} %ROM%"
+        addEmulator 0 "mame-system-${systems[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip -ui_active ${systems[$index]} ${media[$index]} %ROM%"
 
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
