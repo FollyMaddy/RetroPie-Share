@@ -52,8 +52,8 @@ installation_after_generating=off
 fi
 
 #choose 1 of the 2 to define ext string : the scriptmodules are created in the ext directory or in the normal directory
-#ext=/ext/RetroPie-Share
-ext=
+ext=/ext/RetroPie-Share
+#ext=
 
 #mamedev arrays
 systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
