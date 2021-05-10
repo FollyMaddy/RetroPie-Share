@@ -51,9 +51,8 @@ user=$(ls /home)
 installation_after_generating=off
 fi
 
-#choose 1 of the 2 to define ext string : the scriptmodules are created in the ext directory or in the normal directory
+#uncomment if the scriptmodules have to be created in the `ext` directory, it will use the normal directory if commented
 ext=/ext/RetroPie-Share
-#ext=
 
 #mamedev arrays
 systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
