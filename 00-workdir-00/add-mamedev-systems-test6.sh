@@ -72,9 +72,12 @@ function subgui_add-mamedev-systems_downloads() {
     csv=(
 ",menu_item,empty,to_do,"
 ",Download cheats,,download_cheats,"
-",Download gamelists,,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /opt/retropie/configs/all/emulationstation/gamelists,"
-",Download artwork (+/-30 minutes !),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
-",Create lr-mess overlays from downloaded artwork !),,create_lr-mess_overlays,"
+",,,,"
+",Download ES gamelists,,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /opt/retropie/configs/all/emulationstation/gamelists,"
+",Download ES gamelists images and videos (+/-30 minutes),,download_from_google_drive https://drive.google.com/drive/folders/1WELgDx21e8mid1zQEyFmigaFUT_2vo2x /opt/retropie/configs/all/emulationstation/downloaded_images,"
+",,,,"
+",Download mame artwork (+/-30 minutes),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
+",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
     )
     build_menu_add-mamedev-systems
 }
