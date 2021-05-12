@@ -26,8 +26,8 @@ rp_module_section="config"
 
 local mamedev_csv=()
 
-function depends_add() {
-    true
+function depends_add-mamedev-systems() {
+    getDepends curl python3
 }
 
 
@@ -73,7 +73,8 @@ function subgui_add-mamedev-systems_downloads() {
 ",menu_item,empty,to_do,"
 ",Download cheats,,download_cheats,"
 ",Download gamelists,,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /opt/retropie/configs/all/emulationstation/gamelists,"
-",Download artwork / create_overlays (+/-30 minutes !),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork;create_lr-mess_overlays,"
+",Download artwork (+/-30 minutes !),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
+",Create lr-mess overlays from downloaded artwork !),,create_lr-mess_overlays,"
     )
     build_menu_add-mamedev-systems
 }
@@ -813,7 +814,7 @@ clear
 echo "get all gamelist files and put these in the correct path"
 echo
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | \
-python - https://drive.google.com/drive/folders/$1 -P "$2"
+python3 - https://drive.google.com/drive/folders/$1 -P "$2"
 #wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
 #python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P /opt/retropie/configs/all/emulationstation/gamelists
 chown -R $user:$user "$2"
@@ -824,6 +825,16 @@ function create_lr-mess_overlays() {
 clear
 echo "extract background files from mame artwork, if available, and create custom retroarch configs for overlay's"
 echo
+#added handheld arrays, used for overlays
+classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "edracula" "efball" "egalaxn2" "einvader" "einvader2" "epacman2" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mcompgin" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
+konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
+tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
+gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bjack" "gnw_boxing" "gnw_bsweep" "gnw_cgrab" "gnw_chef" "gnw_climber" "gnw_dkhockey" "gnw_dkjr" "gnw_dkjrp" "gnw_dkong" "gnw_dkong2" "gnw_dkong3" "gnw_fire" "gnw_fireatk" "gnw_fires" "gnw_flagman" "gnw_gcliff" "gnw_ghouse" "gnw_helmet" "gnw_judge" "gnw_lboat" "gnw_lion" "gnw_manhole" "gnw_manholeg" "gnw_mario" "gnw_mariocm" "gnw_mariocmt" "gnw_mariotj" "gnw_mbaway" "gnw_mickdon" "gnw_mmouse" "gnw_mmousep" "gnw_octopus" "gnw_opanic" "gnw_pchute" "gnw_pinball" "gnw_popeye" "gnw_popeyep" "gnw_rshower" "gnw_sbuster" "gnw_smb" "gnw_snoopyp" "gnw_squish" "gnw_ssparky" "gnw_stennis" "gnw_tbridge" "gnw_tfish" "gnw_vermin" "gnw_zelda" )
+
+#create a subarray of the arrays being used for overlays
+#now only two for loops can be use for multiple arrays
+systems=("classich" "konamih" "tigerh" "gameandwatch")
+
 #use multiple arrays over one for loop:
 #https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
 for system in "${systems[@]}"; do
