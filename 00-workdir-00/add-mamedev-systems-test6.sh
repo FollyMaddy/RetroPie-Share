@@ -55,13 +55,13 @@ function choose_dteam_add() {
     local csv=()
     csv=(
 ",menu_item_dteam_description,to_do driver_used_for_installation,"
-",All in One Handheld and Plug and Play,run_generator_script ablmini,"
-",Classic Handheld Systems,run_generator_script alnattck,"
-",Game and Watch,run_generator_script gnw_ball,"
-",JAKKS Pacific TV Games,run_generator_script jak_batm,"
-",Konami Handheld,run_generator_script kbilly,"
-",Tiger Handheld Electronics,run_generator_script taddams,"
-",Tiger R-Zone,run_generator_script rzbatfor,"
+",All in One Handheld and Plug and Play,,run_generator_script ablmini,"
+",Classic Handheld Systems,,run_generator_script alnattck,"
+",Game and Watch,,run_generator_script gnw_ball,"
+",JAKKS Pacific TV Games,,run_generator_script jak_batm,"
+",Konami Handheld,,run_generator_script kbilly,"
+",Tiger Handheld Electronics,,run_generator_script taddams,"
+",Tiger R-Zone,,run_generator_script rzbatfor,"
     )
     build_menu_add-mamedev-systems
 }
