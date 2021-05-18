@@ -11,7 +11,7 @@
 
 rp_module_id="b-em-pico-pi"
 rp_module_desc="BBC Micro Emulator / the b-em-pico fork of kilograham"
-rp_module_help="ROM Extensions: .ssd\n\nCopy your BBC Micro games to $romdir/bbcmicro\n\n- use F11/WIN-key for the gui\n- use shift+F12 to run the disc\n- exit with mouse clicking X\n"
+rp_module_help="ROM Extensions: .ssd\n\nCopy your BBC Micro games to $romdir/bbcmicro\n\n- use F11/WIN-key for the gui\n- use shift+F12 to run the disc\n- use ctrl+c to exit the emulator\n"
 rp_module_section="exp"
 rp_module_flags=""
 
@@ -30,10 +30,15 @@ function build_b-em-pico-pi() {
     rm -r $md_build/b-em-pico/pi_build
     mkdir $md_build/b-em-pico/pi_build
     cd $md_build/b-em-pico/pi_build
+    if isPlatform "rpi4"; then
     #;-) next line works, makes a working xbeeb and xmaster
     sudo -u root cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DDRM_PRIME=1 -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
     #!!! next line doesn't work, xbeeb and xmaster don't work (bus error)
     #cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DDRM_PRIME=1 -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
+    else
+    #tested on RPI3, but other platforms could work with this line too
+    sudo -u root cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
+    fi
     make -j4
 }
 
@@ -45,10 +50,14 @@ function install_b-em-pico-pi() {
 }
 
 function configure_b-em-pico-pi() {
+    cat >"$md_inst/matchbox_key_shortcuts" << _EOF_
+<ctrl>c=close
+_EOF_
+
     cat >"$md_inst/xbeeb.sh" << _EOF_
 #!/bin/bash
 xset -dpms s off s noblank
-matchbox-window-manager &
+matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
 /opt/retropie/emulators/b-em-pico-pi/xbeeb -disc "\$1"
 _EOF_
     chmod +x "$md_inst/xbeeb.sh"
@@ -56,7 +65,7 @@ _EOF_
     cat >"$md_inst/xmaster.sh" << _EOF_
 #!/bin/bash
 xset -dpms s off s noblank
-matchbox-window-manager &
+matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
 /opt/retropie/emulators/b-em-pico-pi/xmaster -disc "\$1"
 _EOF_
     chmod +x "$md_inst/xmaster.sh"
