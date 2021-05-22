@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <gameList>
 	<game id="993979" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/baseball.7z</path>
+		<path>./baseball.7z</path>
 		<name>Baseball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Baseball_snap.png</image>
+		<image>./media/emulationstation/Baseball_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -16,10 +16,10 @@
 		<players>1</players>
 	</game>
 	<game id="993972" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/bowling.7z</path>
+		<path>./bowling.7z</path>
 		<name>Bowling</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Bowling_snap.png</image>
+		<image>./media/emulationstation/Bowling_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -31,10 +31,10 @@
 		<players>1</players>
 	</game>
 	<game id="993973" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/connect4.7z</path>
+		<path>./connect4.7z</path>
 		<name>Connect Four</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Connect Four_snap.png</image>
+		<image>./media/emulationstation/Connect Four_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -46,10 +46,10 @@
 		<players>1</players>
 	</game>
 	<game id="993975" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/mindbstr.7z</path>
+		<path>./mindbstr.7z</path>
 		<name>Mindbuster</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Mindbuster_snap.png</image>
+		<image>./media/emulationstation/Mindbuster_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -61,10 +61,10 @@
 		<players>1</players>
 	</game>
 	<game id="993976" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/phsrstrk.7z</path>
+		<path>./phsrstrk.7z</path>
 		<name>Star Trek: Phaser Strike</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Phaser Strike_snap.png</image>
+		<image>./media/emulationstation/Phaser Strike_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -76,10 +76,10 @@
 		<players>1</players>
 	</game>
 	<game id="993988" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/invaders.7z</path>
+		<path>./invaders.7z</path>
 		<name>Space Invaders</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Space Invaders (homebrew)_snap.png</image>
+		<image>./media/emulationstation/Space Invaders (homebrew)_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -91,10 +91,10 @@
 		<players>1</players>
 	</game>
 	<game id="993908" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/sprblock.7z</path>
+		<path>./sprblock.7z</path>
 		<name>Super Blockbuster</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Super Blockbuster_snap.png</image>
+		<image>./media/emulationstation/Super Blockbuster_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -106,10 +106,10 @@
 		<players>1</players>
 	</game>
 	<game id="993987" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/vegasslt.7z</path>
+		<path>./vegasslt.7z</path>
 		<name>Vegas Slots</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Vegas Slots_snap.png</image>
+		<image>./media/emulationstation/Vegas Slots_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -123,7 +123,7 @@
 	<game>
 		<path>./seaduel.7z</path>
 		<name>Sea Duel</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Sea Duel_snap.png</image>
+		<image>./media/emulationstation/Sea Duel_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -135,7 +135,7 @@
 	<game>
 		<path>./alienrdr.7z</path>
 		<name>Alien Raiders</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Alien Raiders_snap.png</image>
+		<image>./media/emulationstation/Alien Raiders_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19810101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -147,7 +147,7 @@
 	<game>
 		<path>./blckbstr.7z</path>
 		<name>Block Buster</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Block Buster_snap.png</image>
+		<image>./media/emulationstation/Block Buster_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -159,7 +159,7 @@
 	<game>
 		<path>./cosmichu.7z</path>
 		<name>Cosmic hunter</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Cosmic Hunter_snap.png</image>
+		<image>./media/emulationstation/Cosmic Hunter_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19810101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -171,7 +171,7 @@
 	<game>
 		<path>./pinball.7z</path>
 		<name>Pinball</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/pinball_snap.png</image>
+		<image>./media/emulationstation/pinball_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -183,7 +183,7 @@
 	<game>
 		<path>./bomber.7z</path>
 		<name>Bomber</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Bomber (homebrew)_snap.png</image>
+		<image>./media/emulationstation/Bomber (homebrew)_snap.png</image>
 		<rating>0</rating>
 		<releasedate>20140101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -193,10 +193,10 @@
 		<lastplayed>20201020T023553</lastplayed>
 	</game>
 	<game id="993979" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/baseball.zip</path>
+		<path>./baseball.zip</path>
 		<name>Baseball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Baseball_snap.png</image>
+		<image>./media/emulationstation/Baseball_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -208,10 +208,10 @@
 		<players>1</players>
 	</game>
 	<game id="993972" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/bowling.zip</path>
+		<path>./bowling.zip</path>
 		<name>Bowling</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Bowling_snap.png</image>
+		<image>./media/emulationstation/Bowling_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -223,10 +223,10 @@
 		<players>1</players>
 	</game>
 	<game id="993973" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/connect4.zip</path>
+		<path>./connect4.zip</path>
 		<name>Connect Four</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Connect Four_snap.png</image>
+		<image>./media/emulationstation/Connect Four_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -238,10 +238,10 @@
 		<players>1</players>
 	</game>
 	<game id="993975" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/mindbstr.zip</path>
+		<path>./mindbstr.zip</path>
 		<name>Mindbuster</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Mindbuster_snap.png</image>
+		<image>./media/emulationstation/Mindbuster_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -253,10 +253,10 @@
 		<players>1</players>
 	</game>
 	<game id="993976" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/phsrstrk.zip</path>
+		<path>./phsrstrk.zip</path>
 		<name>Star Trek: Phaser Strike</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Phaser Strike_snap.png</image>
+		<image>./media/emulationstation/Phaser Strike_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -268,10 +268,10 @@
 		<players>1</players>
 	</game>
 	<game id="993988" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/invaders.zip</path>
+		<path>./invaders.zip</path>
 		<name>Space Invaders</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Space Invaders (homebrew)_snap.png</image>
+		<image>./media/emulationstation/Space Invaders (homebrew)_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -283,10 +283,10 @@
 		<players>1</players>
 	</game>
 	<game id="993908" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/sprblock.zip</path>
+		<path>./sprblock.zip</path>
 		<name>Super Blockbuster</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Super Blockbuster_snap.png</image>
+		<image>./media/emulationstation/Super Blockbuster_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -298,10 +298,10 @@
 		<players>1</players>
 	</game>
 	<game id="993987" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/microvsn/vegasslt.zip</path>
+		<path>./vegasslt.zip</path>
 		<name>Vegas Slots</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/microvsn/Vegas Slots_snap.png</image>
+		<image>./media/emulationstation/Vegas Slots_snap.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -315,7 +315,7 @@
 	<game>
 		<path>./seaduel.zip</path>
 		<name>Sea Duel</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Sea Duel_snap.png</image>
+		<image>./media/emulationstation/Sea Duel_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -327,7 +327,7 @@
 	<game>
 		<path>./alienrdr.zip</path>
 		<name>Alien Raiders</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Alien Raiders_snap.png</image>
+		<image>./media/emulationstation/Alien Raiders_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19810101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -339,7 +339,7 @@
 	<game>
 		<path>./blckbstr.zip</path>
 		<name>Block Buster</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Block Buster_snap.png</image>
+		<image>./media/emulationstation/Block Buster_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -351,7 +351,7 @@
 	<game>
 		<path>./cosmichu.zip</path>
 		<name>Cosmic hunter</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Cosmic Hunter_snap.png</image>
+		<image>./media/emulationstation/Cosmic Hunter_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19810101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -363,7 +363,7 @@
 	<game>
 		<path>./pinball.zip</path>
 		<name>Pinball</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/pinball_snap.png</image>
+		<image>./media/emulationstation/pinball_snap.png</image>
 		<rating>0</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Milton Bradley</developer>
@@ -375,7 +375,7 @@
 	<game>
 		<path>./bomber.zip</path>
 		<name>Bomber</name>
-		<image>~/.emulationstation/downloaded_images/microvsn/Bomber (homebrew)_snap.png</image>
+		<image>./media/emulationstation/Bomber (homebrew)_snap.png</image>
 		<rating>0</rating>
 		<releasedate>20140101T000000</releasedate>
 		<developer>Milton Bradley</developer>

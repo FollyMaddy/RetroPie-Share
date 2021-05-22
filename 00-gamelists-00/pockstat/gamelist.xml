@@ -1,12 +1,12 @@
 <gameList>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/15 Puzzle (19xx)(Nissie).7z</path>
+	<path>./15 Puzzle (19xx)(Nissie).7z</path>
 	<name>15 Puzzle</name>
 	<desc>15 Puzzle (19xx)(Nissie)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/15 Puzzle (19xx)(Nissie).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/15 Puzzle (19xx)(Nissie).mp4</video>
+	<marquee>./media/emulationstation/15 Puzzle (19xx)(Nissie).png</marquee>
+	<video>./media/emulationstation/15 Puzzle (19xx)(Nissie).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -16,13 +16,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Alien</name>
 	<desc>Aliens (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -32,13 +32,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Ana-Digi Clock (19xx)(Mets).7z</path>
+	<path>./Ana-Digi Clock (19xx)(Mets).7z</path>
 	<name>Ana-Digi Clock</name>
 	<desc>Ana-Digi Clock (19xx)(Mets)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Ana-Digi Clock (19xx)(Mets).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Ana-Digi Clock (19xx)(Mets).mp4</video>
+	<marquee>./media/emulationstation/Ana-Digi Clock (19xx)(Mets).png</marquee>
+	<video>./media/emulationstation/Ana-Digi Clock (19xx)(Mets).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -48,13 +48,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Ana-Digi Clock (19xx)(Mets)[a].7z</path>
+	<path>./Ana-Digi Clock (19xx)(Mets)[a].7z</path>
 	<name>Ana-Digi Clock Alt</name>
 	<desc>Ana-Digi Clock (19xx)(Mets)[a]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/0Ana-Digi Clock (19xx)(Mets)[a].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Ana-Digi Clock (19xx)(Mets).mp4</video>
+	<marquee>./media/emulationstation/0Ana-Digi Clock (19xx)(Mets)[a].png</marquee>
+	<video>./media/emulationstation/Ana-Digi Clock (19xx)(Mets).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -64,13 +64,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Apple (1999)(SN Systems).7z</path>
+	<path>./Apple (1999)(SN Systems).7z</path>
 	<name>Apple</name>
 	<desc>Apple (1999)(SN Systems)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Apple v0.2 (19xx)(Kami).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Apple v0.2 (19xx)(Kami).mp4</video>
+	<marquee>./media/emulationstation/Apple v0.2 (19xx)(Kami).png</marquee>
+	<video>./media/emulationstation/Apple v0.2 (19xx)(Kami).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -80,13 +80,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Astro Fighter</name>
 	<desc>Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -96,13 +96,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Beat Timer v0.02 (19xx)(-).7z</path>
+	<path>./Beat Timer v0.02 (19xx)(-).7z</path>
 	<name>Beat Timer</name>
 	<desc>Beat Timer v0.02 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Beat Timer v0.02 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Beat Timer v0.02 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Beat Timer v0.02 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Beat Timer v0.02 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -112,13 +112,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Black Jack</name>
 	<desc>Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -128,13 +128,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Block Out 1</name>
 	<desc>Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -144,13 +144,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Block Out 2</name>
 	<desc>Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -160,13 +160,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Block Out 3</name>
 	<desc>Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -176,13 +176,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Brightis (1999)(SCEI)(JP)[Brightis].7z</path>
+	<path>./Brightis (1999)(SCEI)(JP)[Brightis].7z</path>
 	<name>Brightis</name>
 	<desc>Brightis (1999)(SCEI)(JP)[Brightis]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Brightis (1999)(SCEI)(JP)[Brightis].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Brightis (1999)(SCEI)(JP)[Brightis].mp4</video>
+	<marquee>./media/emulationstation/Brightis (1999)(SCEI)(JP)[Brightis].png</marquee>
+	<video>./media/emulationstation/Brightis (1999)(SCEI)(JP)[Brightis].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -192,13 +192,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Calculator</name>
 	<desc>Calculator (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -208,13 +208,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Cars (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Cars</name>
 	<desc>Cars (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -224,13 +224,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chaku v0.02t (19xx)(-).7z</path>
+	<path>./Chaku v0.02t (19xx)(-).7z</path>
 	<name>Chaku</name>
 	<desc>Chaku v0.02t (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chaku v0.02t (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chaku v0.02t (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Chaku v0.02t (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Chaku v0.02t (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -240,13 +240,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].7z</path>
+	<path>./Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].7z</path>
 	<name>Chivas</name>
 	<desc>Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].mp4</video>
+	<marquee>./media/emulationstation/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].png</marquee>
+	<video>./media/emulationstation/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -256,13 +256,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chocobo Stallion (1999)(Square)[Chocobo Stallion].7z</path>
+	<path>./Chocobo Stallion (1999)(Square)[Chocobo Stallion].7z</path>
 	<name>Chocobo Stallion</name>
 	<desc>Chocobo Stallion (1999)(Square)[Chocobo Stallion]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo Stallion (1999)(Square)[Chocobo Stallion].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo Stallion (1999)(Square)[Chocobo Stallion].mp4</video>
+	<marquee>./media/emulationstation/Chocobo Stallion (1999)(Square)[Chocobo Stallion].png</marquee>
+	<video>./media/emulationstation/Chocobo Stallion (1999)(Square)[Chocobo Stallion].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -272,13 +272,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chocobo World (1999)(Square)[Final Fantasy 8].7z</path>
+	<path>./Chocobo World (1999)(Square)[Final Fantasy 8].7z</path>
 	<name>Chocobo World</name>
 	<desc>Chocobo World (1999)(Square)[Final Fantasy 8]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo World (1999)(Square)[Final Fantasy 8].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo World (1999)(Square)[Final Fantasy 8].mp4</video>
+	<marquee>./media/emulationstation/Chocobo World (1999)(Square)[Final Fantasy 8].png</marquee>
+	<video>./media/emulationstation/Chocobo World (1999)(Square)[Final Fantasy 8].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -288,13 +288,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].7z</path>
+	<path>./Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].7z</path>
 	<name>Chocobo World Enhanced</name>
 	<desc>Chocobo World Enhanced (1999)(Square)[Final Fantasy 8]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].mp4</video>
+	<marquee>./media/emulationstation/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].png</marquee>
+	<video>./media/emulationstation/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -304,13 +304,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Copy Dance</name>
 	<desc>Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -320,13 +320,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Curling (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Curling</name>
 	<desc>Curling (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -336,13 +336,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].7z</path>
+	<path>./Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].7z</path>
 	<name>Dance Dance Revolution 2nd Mix</name>
 	<desc>Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].mp4</video>
+	<marquee>./media/emulationstation/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].png</marquee>
+	<video>./media/emulationstation/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -352,13 +352,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Darts (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Darts</name>
 	<desc>Darts (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -368,13 +368,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Denki (19xx)(-).7z</path>
+	<path>./Denki (19xx)(-).7z</path>
 	<name>Denki</name>
 	<desc>Denki (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Denki (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Denki (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Denki (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Denki (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -384,12 +384,12 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Dice (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Dice (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Dice</name>
 	<desc>Dice (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Dice (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<marquee>./media/emulationstation/Dice (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
 	<video/>
 	<thumbnail/>
 	<rating>0.00</rating>
@@ -400,13 +400,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].7z</path>
+	<path>./Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].7z</path>
 	<name>Doreamon 3</name>
 	<desc>Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].mp4</video>
+	<marquee>./media/emulationstation/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].png</marquee>
+	<video>./media/emulationstation/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -416,13 +416,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Drive 2000</name>
 	<desc>Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -432,13 +432,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Drop Ball</name>
 	<desc>Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -448,13 +448,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Drop Zone</name>
 	<desc>Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -464,13 +464,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/DTMF Hack Beta 2 (19xx)(Error).7z</path>
+	<path>./DTMF Hack Beta 2 (19xx)(Error).7z</path>
 	<name>DTMF Hack Beta 2</name>
 	<desc>DTMF Hack Beta 2 (19xx)(Error)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/DTMF Hack Beta 2 (19xx)(Error).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/DTMF Hack Beta 2 (19xx)(Error).mp4</video>
+	<marquee>./media/emulationstation/DTMF Hack Beta 2 (19xx)(Error).png</marquee>
+	<video>./media/emulationstation/DTMF Hack Beta 2 (19xx)(Error).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -480,13 +480,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Durama (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Durama</name>
 	<desc>Durama (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -496,13 +496,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/EnPKclock v1.4 (19xx)(-)(JP).7z</path>
+	<path>./EnPKclock v1.4 (19xx)(-)(JP).7z</path>
 	<name>EnPKclock</name>
 	<desc>EnPKclock v1.4 (19xx)(-)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/EnPKclock v1.4 (19xx)(-)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/EnPKclock v1.4 (19xx)(-)(JP).mp4</video>
+	<marquee>./media/emulationstation/EnPKclock v1.4 (19xx)(-)(JP).png</marquee>
+	<video>./media/emulationstation/EnPKclock v1.4 (19xx)(-)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -512,13 +512,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Fishing</name>
 	<desc>Fishing (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -528,13 +528,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Fishing 2</name>
 	<desc>Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -544,13 +544,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Go Go Digger (2000)(Square)[Saga Frontier 2].7z</path>
+	<path>./Go Go Digger (2000)(Square)[Saga Frontier 2].7z</path>
 	<name>Go Go Digger</name>
 	<desc>Go Go Digger (2000)(Square)[Saga Frontier 2]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Go Go Digger (2000)(Square)[Saga Frontier 2].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Go Go Digger (2000)(Square)[Saga Frontier 2].mp4</video>
+	<marquee>./media/emulationstation/Go Go Digger (2000)(Square)[Saga Frontier 2].png</marquee>
+	<video>./media/emulationstation/Go Go Digger (2000)(Square)[Saga Frontier 2].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -560,13 +560,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Golf (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Golf</name>
 	<desc>Golf (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -576,13 +576,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Hammer</name>
 	<desc>Hammer (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -592,13 +592,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Harvest Moon (2001)(Natsume)[Harvest Moon].7z</path>
+	<path>./Harvest Moon (2001)(Natsume)[Harvest Moon].7z</path>
 	<name>Harvest Moon</name>
 	<desc>Harvest Moon (2001)(Natsume)[Harvest Moon]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Harvest Moon (2001)(Natsume)[Harvest Moon].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Harvest Moon (2001)(Natsume)[Harvest Moon].mp4</video>
+	<marquee>./media/emulationstation/Harvest Moon (2001)(Natsume)[Harvest Moon].png</marquee>
+	<video>./media/emulationstation/Harvest Moon (2001)(Natsume)[Harvest Moon].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20010101T000000</releasedate>
@@ -608,13 +608,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hata v0.02 (19xx)(-).7z</path>
+	<path>./Hata v0.02 (19xx)(-).7z</path>
 	<name>Hata</name>
 	<desc>Hata v0.02 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hata v0.02 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hata v0.02 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Hata v0.02 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Hata v0.02 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -624,13 +624,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Hit & Blow</name>
 	<desc>Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -640,13 +640,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hit And Blow v0.81 (19xx)(P. Katsu).7z</path>
+	<path>./Hit And Blow v0.81 (19xx)(P. Katsu).7z</path>
 	<name>Hit And Blow v0.81</name>
 	<desc>Hit And Blow v0.81 (19xx)(P. Katsu)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hit And Blow v0.81 (19xx)(P. Katsu).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hit And Blow v0.81 (19xx)(P. Katsu).mp4</video>
+	<marquee>./media/emulationstation/Hit And Blow v0.81 (19xx)(P. Katsu).png</marquee>
+	<video>./media/emulationstation/Hit And Blow v0.81 (19xx)(P. Katsu).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -656,13 +656,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Hitman</name>
 	<desc>Hitman (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -672,13 +672,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Integral v0.02 (19xx)(-).7z</path>
+	<path>./Integral v0.02 (19xx)(-).7z</path>
 	<name>Integral</name>
 	<desc>Integral v0.02 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Integral v0.02 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Integral v0.02 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Integral v0.02 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Integral v0.02 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -688,13 +688,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Japanese Quiz</name>
 	<desc>Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -704,13 +704,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].7z</path>
+	<path>./Jet De Go! (2000)(Taito)(JP)[Jet De Go!].7z</path>
 	<name>Jet De Go!</name>
 	<desc>Jet De Go! (2000)(Taito)(JP)[Jet De Go!]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].mp4</video>
+	<marquee>./media/emulationstation/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].png</marquee>
+	<video>./media/emulationstation/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -720,13 +720,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].7z</path>
+	<path>./Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].7z</path>
 	<name>Kobun No Tokkun Zanmai</name>
 	<desc>Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].mp4</video>
+	<marquee>./media/emulationstation/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].png</marquee>
+	<video>./media/emulationstation/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -736,13 +736,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Lights Out (19xx)(-).7z</path>
+	<path>./Lights Out (19xx)(-).7z</path>
 	<name>Lights Out</name>
 	<desc>Lights Out (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Lights Out (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Lights Out (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Lights Out (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Lights Out (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -752,13 +752,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Line Art v0.01t (19xx)(-).7z</path>
+	<path>./Line Art v0.01t (19xx)(-).7z</path>
 	<name>Line Art</name>
 	<desc>Line Art v0.01t (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Line Art v0.01t (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Line Art v0.01t (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Line Art v0.01t (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Line Art v0.01t (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -768,13 +768,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Math Quiz</name>
 	<desc>Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -784,13 +784,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Maze Game</name>
 	<desc>Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -800,13 +800,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].7z</path>
+	<path>./MGS Integral (1999)(Konami)[Metal Gear Solid Integral].7z</path>
 	<name>Metal Gear Solid Integral</name>
 	<desc>MGS Integral (1999)(Konami)[Metal Gear Solid Integral]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].mp4</video>
+	<marquee>./media/emulationstation/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].png</marquee>
+	<video>./media/emulationstation/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -816,13 +816,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Mimique (1999)(K-Comm).7z</path>
+	<path>./Mimique (1999)(K-Comm).7z</path>
 	<name>Mimique</name>
 	<desc>Mimique (1999)(K-Comm)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Mimique (1999)(K-Comm).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Mimique (1999)(K-Comm).mp4</video>
+	<marquee>./media/emulationstation/Mimique (1999)(K-Comm).png</marquee>
+	<video>./media/emulationstation/Mimique (1999)(K-Comm).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -832,13 +832,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Mine Sweeper (19xx)(P. Katsu)(PD).7z</path>
+	<path>./Mine Sweeper (19xx)(P. Katsu)(PD).7z</path>
 	<name>Mine Sweeper</name>
 	<desc>Mine Sweeper (19xx)(P. Katsu)(PD)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Mine Sweeper (19xx)(P. Katsu)(PD).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Mine Sweeper (19xx)(P. Katsu)(PD).mp4</video>
+	<marquee>./media/emulationstation/Mine Sweeper (19xx)(P. Katsu)(PD).png</marquee>
+	<video>./media/emulationstation/Mine Sweeper (19xx)(P. Katsu)(PD).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -848,13 +848,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].7z</path>
+	<path>./MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].7z</path>
 	<name>MoGuuRu Dabas</name>
 	<desc>MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].mp4</video>
+	<marquee>./media/emulationstation/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].png</marquee>
+	<video>./media/emulationstation/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -864,13 +864,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Monkey See Monkey Do</name>
 	<desc>Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -880,13 +880,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Number (19xx)(-).7z</path>
+	<path>./Number (19xx)(-).7z</path>
 	<name>Number</name>
 	<desc>Number (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Number (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Number (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Number (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Number (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -896,13 +896,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Odetake Chocobo (1999)(Square)[Final Fantasy 8].7z</path>
+	<path>./Odetake Chocobo (1999)(Square)[Final Fantasy 8].7z</path>
 	<name>Odetake Chocobo</name>
 	<desc>Odetake Chocobo (1999)(Square)[Final Fantasy 8]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Odetake Chocobo (1999)(Square)[Final Fantasy 8].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Odetake Chocobo (1999)(Square)[Final Fantasy 8].mp4</video>
+	<marquee>./media/emulationstation/Odetake Chocobo (1999)(Square)[Final Fantasy 8].png</marquee>
+	<video>./media/emulationstation/Odetake Chocobo (1999)(Square)[Final Fantasy 8].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -912,13 +912,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Pairs</name>
 	<desc>Pairs (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -928,13 +928,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Parumui Parumui (19xx)(-)[Parumui Parumui].7z</path>
+	<path>./Parumui Parumui (19xx)(-)[Parumui Parumui].7z</path>
 	<name>Parumui Parumui</name>
 	<desc>Parumui Parumui (19xx)(-)[Parumui Parumui]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Parumui Parumui (19xx)(-)[Parumui Parumui].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Parumui Parumui (19xx)(-)[Parumui Parumui].mp4</video>
+	<marquee>./media/emulationstation/Parumui Parumui (19xx)(-)[Parumui Parumui].png</marquee>
+	<video>./media/emulationstation/Parumui Parumui (19xx)(-)[Parumui Parumui].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -944,13 +944,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PDA Calculator (1998)(SCEI).7z</path>
+	<path>./PDA Calculator (1998)(SCEI).7z</path>
 	<name>PDA Calculator</name>
 	<desc>PDA Calculator (1998)(SCEI)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Calculator (1998)(SCEI).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Calculator (1998)(SCEI).mp4</video>
+	<marquee>./media/emulationstation/PDA Calculator (1998)(SCEI).png</marquee>
+	<video>./media/emulationstation/PDA Calculator (1998)(SCEI).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -960,13 +960,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PDA Remote 1 (1998)(SCEI)(JP).7z</path>
+	<path>./PDA Remote 1 (1998)(SCEI)(JP).7z</path>
 	<name>PDA Remote 1</name>
 	<desc>PDA Remote 1 (1998)(SCEI)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Remote 1 (1998)(SCEI)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Remote 1 (1998)(SCEI)(JP).mp4</video>
+	<marquee>./media/emulationstation/PDA Remote 1 (1998)(SCEI)(JP).png</marquee>
+	<video>./media/emulationstation/PDA Remote 1 (1998)(SCEI)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -976,13 +976,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PDA Remote 2 (1998)(SCEI)(JP).7z</path>
+	<path>./PDA Remote 2 (1998)(SCEI)(JP).7z</path>
 	<name>PDA Remote 2</name>
 	<desc>PDA Remote 2 (1998)(SCEI)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Remote 2 (1998)(SCEI)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Remote 2 (1998)(SCEI)(JP).mp4</video>
+	<marquee>./media/emulationstation/PDA Remote 2 (1998)(SCEI)(JP).png</marquee>
+	<video>./media/emulationstation/PDA Remote 2 (1998)(SCEI)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -992,13 +992,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PDA Timer (1998)(SCEI).7z</path>
+	<path>./PDA Timer (1998)(SCEI).7z</path>
 	<name>PDA Timer</name>
 	<desc>PDA Timer (1998)(SCEI)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Timer (1998)(SCEI).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Timer (1998)(SCEI).mp4</video>
+	<marquee>./media/emulationstation/PDA Timer (1998)(SCEI).png</marquee>
+	<video>./media/emulationstation/PDA Timer (1998)(SCEI).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -1008,13 +1008,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Phone Book</name>
 	<desc>Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1024,13 +1024,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Pinball</name>
 	<desc>Pinball (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1040,13 +1040,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pockeler (1999)(Atlus)(JP)[Pockeler].7z</path>
+	<path>./Pockeler (1999)(Atlus)(JP)[Pockeler].7z</path>
 	<name>Pockeler</name>
 	<desc>Pockeler (1999)(Atlus)(JP)[Pockeler]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pockeler (1999)(Atlus)(JP)[Pockeler].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pockeler (1999)(Atlus)(JP)[Pockeler].mp4</video>
+	<marquee>./media/emulationstation/Pockeler (1999)(Atlus)(JP)[Pockeler].png</marquee>
+	<video>./media/emulationstation/Pockeler (1999)(Atlus)(JP)[Pockeler].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1056,13 +1056,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].7z</path>
+	<path>./Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].7z</path>
 	<name>Pocket Digimon World - Agumon</name>
 	<desc>Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].mp4</video>
+	<marquee>./media/emulationstation/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].png</marquee>
+	<video>./media/emulationstation/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1072,13 +1072,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].7z</path>
+	<path>./Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].7z</path>
 	<name>Pocket Digimon World - Biyomon</name>
 	<desc>Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].mp4</video>
+	<marquee>./media/emulationstation/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].png</marquee>
+	<video>./media/emulationstation/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1088,13 +1088,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].7z</path>
+	<path>./Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].7z</path>
 	<name>Pocket Fighter Alpha 3 - Part 1</name>
 	<desc>Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].mp4</video>
+	<marquee>./media/emulationstation/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].png</marquee>
+	<video>./media/emulationstation/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1104,13 +1104,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].7z</path>
+	<path>./Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].7z</path>
 	<name>Pocket Fighter Alpha 3 - Part 2</name>
 	<desc>Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].mp4</video>
+	<marquee>./media/emulationstation/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].png</marquee>
+	<video>./media/emulationstation/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1120,13 +1120,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].7z</path>
+	<path>./Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].7z</path>
 	<name>Pocket Fighter Zero 3</name>
 	<desc>Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].mp4</video>
+	<marquee>./media/emulationstation/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].png</marquee>
+	<video>./media/emulationstation/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -1136,13 +1136,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Ray (2000)(Taito)[RayCrisis].7z</path>
+	<path>./Pocket Ray (2000)(Taito)[RayCrisis].7z</path>
 	<name>Pocket Ray</name>
 	<desc>Pocket Ray (2000)(Taito)[RayCrisis]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Ray (2000)(Taito)[RayCrisis].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Ray (2000)(Taito)[RayCrisis].mp4</video>
+	<marquee>./media/emulationstation/Pocket Ray (2000)(Taito)[RayCrisis].png</marquee>
+	<video>./media/emulationstation/Pocket Ray (2000)(Taito)[RayCrisis].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1152,13 +1152,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Sokoban (19xx)(Mets).7z</path>
+	<path>./Pocket Sokoban (19xx)(Mets).7z</path>
 	<name>Pocket Sokoban</name>
 	<desc>Pocket Sokoban (19xx)(Mets)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Sokoban (19xx)(Mets).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Sokoban (19xx)(Mets).mp4</video>
+	<marquee>./media/emulationstation/Pocket Sokoban (19xx)(Mets).png</marquee>
+	<video>./media/emulationstation/Pocket Sokoban (19xx)(Mets).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1168,13 +1168,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Timer v1.11 (19xx)(-).7z</path>
+	<path>./Pocket Timer v1.11 (19xx)(-).7z</path>
 	<name>Pocket Timer</name>
 	<desc>Pocket Timer v1.11 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Timer v1.11 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Timer v1.11 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Pocket Timer v1.11 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Pocket Timer v1.11 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1184,13 +1184,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].7z</path>
+	<path>./PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].7z</path>
 	<name>PokeHito</name>
 	<desc>PokeHito (1999)(SCEI)(JP)[PokeHito - Grey]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].mp4</video>
+	<marquee>./media/emulationstation/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].png</marquee>
+	<video>./media/emulationstation/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1200,13 +1200,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Poketro v1.1 (2001)(Credo).7z</path>
+	<path>./Poketro v1.1 (2001)(Credo).7z</path>
 	<name>Poketro</name>
 	<desc>Poketro v1.1 (2001)(Credo)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Poketro v1.1 (2001)(Credo).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Poketro v1.1 (2001)(Credo).mp4</video>
+	<marquee>./media/emulationstation/Poketro v1.1 (2001)(Credo).png</marquee>
+	<video>./media/emulationstation/Poketro v1.1 (2001)(Credo).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20010101T000000</releasedate>
@@ -1216,13 +1216,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].7z</path>
+	<path>./Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].7z</path>
 	<name>Pop n Music 2</name>
 	<desc>Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].mp4</video>
+	<marquee>./media/emulationstation/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].png</marquee>
+	<video>./media/emulationstation/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1232,13 +1232,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Pumping Crash</name>
 	<desc>Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1248,13 +1248,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Punch Block</name>
 	<desc>Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1264,13 +1264,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Push (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Push (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Push</name>
 	<desc>Push (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Push (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Push (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Push (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Push (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1280,13 +1280,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Push Battle</name>
 	<desc>Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1296,13 +1296,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pyramid (19xx)(P. Katsu)(JP).7z</path>
+	<path>./Pyramid (19xx)(P. Katsu)(JP).7z</path>
 	<name>Pyramid</name>
 	<desc>Pyramid (19xx)(P. Katsu)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pyramid (19xx)(P. Katsu)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pyramid (19xx)(P. Katsu)(JP).mp4</video>
+	<marquee>./media/emulationstation/Pyramid (19xx)(P. Katsu)(JP).png</marquee>
+	<video>./media/emulationstation/Pyramid (19xx)(P. Katsu)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1312,13 +1312,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].7z</path>
+	<path>./R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].7z</path>
 	<name>R4 Pocketstation</name>
 	<desc>R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].mp4</video>
+	<marquee>./media/emulationstation/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].png</marquee>
+	<video>./media/emulationstation/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -1328,13 +1328,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rewrite ID (1999)(K-Comm).7z</path>
+	<path>./Rewrite ID (1999)(K-Comm).7z</path>
 	<name>Rewrite ID</name>
 	<desc>Rewrite ID (1999)(K-Comm)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rewrite ID (1999)(K-Comm).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rewrite ID (1999)(K-Comm).mp4</video>
+	<marquee>./media/emulationstation/Rewrite ID (1999)(K-Comm).png</marquee>
+	<video>./media/emulationstation/Rewrite ID (1999)(K-Comm).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1344,13 +1344,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].7z</path>
+	<path>./Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].7z</path>
 	<name>Ring Ring Land</name>
 	<desc>Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].mp4</video>
+	<marquee>./media/emulationstation/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].png</marquee>
+	<video>./media/emulationstation/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1360,13 +1360,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Rocket</name>
 	<desc>Rocket (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1376,13 +1376,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].7z</path>
+	<path>./Rockman 2 (1999)(Capcom)(JP)[Rockman 2].7z</path>
 	<name>Rockman 2</name>
 	<desc>Rockman 2 (1999)(Capcom)(JP)[Rockman 2]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].mp4</video>
+	<marquee>./media/emulationstation/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].png</marquee>
+	<video>./media/emulationstation/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1392,13 +1392,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].7z</path>
+	<path>./Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].7z</path>
 	<name>Rockman 3 - Part 1</name>
 	<desc>Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].mp4</video>
+	<marquee>./media/emulationstation/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].png</marquee>
+	<video>./media/emulationstation/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1408,13 +1408,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].7z</path>
+	<path>./Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].7z</path>
 	<name>Rockman 3 - Part 2</name>
 	<desc>Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].mp4</video>
+	<marquee>./media/emulationstation/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].png</marquee>
+	<video>./media/emulationstation/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1424,13 +1424,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].7z</path>
+	<path>./Rockman 4 (1999)(Capcom)(JP)[Rockman 4].7z</path>
 	<name>Rockman 4</name>
 	<desc>Rockman 4 (1999)(Capcom)(JP)[Rockman 4]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].mp4</video>
+	<marquee>./media/emulationstation/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].png</marquee>
+	<video>./media/emulationstation/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1440,13 +1440,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].7z</path>
+	<path>./Rockman 5 (1999)(Capcom)(JP)[Rockman 5].7z</path>
 	<name>Rockman 5</name>
 	<desc>Rockman 5 (1999)(Capcom)(JP)[Rockman 5]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].mp4</video>
+	<marquee>./media/emulationstation/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].png</marquee>
+	<video>./media/emulationstation/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1456,13 +1456,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>RPG Dungeon</name>
 	<desc>RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1472,13 +1472,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rubato v0.03 (1999)(K-Comm).7z</path>
+	<path>./Rubato v0.03 (1999)(K-Comm).7z</path>
 	<name>Rubato</name>
 	<desc>Rubato v0.03 (1999)(K-Comm)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rubato v0.03 (1999)(K-Comm).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rubato v0.03 (1999)(K-Comm).mp4</video>
+	<marquee>./media/emulationstation/Rubato v0.03 (1999)(K-Comm).png</marquee>
+	<video>./media/emulationstation/Rubato v0.03 (1999)(K-Comm).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1488,13 +1488,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Ski Escape</name>
 	<desc>Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1504,13 +1504,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Slot Machine</name>
 	<desc>Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1520,13 +1520,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Smash Game</name>
 	<desc>Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1536,13 +1536,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./Tank (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>Tank</name>
 	<desc>Tank (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1552,13 +1552,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tasumania (19xx)(-).7z</path>
+	<path>./Tasumania (19xx)(-).7z</path>
 	<name>Tasumania</name>
 	<desc>Tasumania (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tasumania (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tasumania (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Tasumania (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Tasumania (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1568,13 +1568,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tetris (19xx)(-).7z</path>
+	<path>./Tetris (19xx)(-).7z</path>
 	<name>Tetris</name>
 	<desc>Tetris (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tetris (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tetris (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Tetris (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Tetris (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1584,13 +1584,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tetris (1999)(SN Systems).7z</path>
+	<path>./Tetris (1999)(SN Systems).7z</path>
 	<name>Tetris(SN Systems)</name>
 	<desc>Tetris (1999)(SN Systems)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tetris (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tetris (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Tetris (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Tetris (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1600,13 +1600,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tic-Tac-Toe v1.00 (19xx)(-).7z</path>
+	<path>./Tic-Tac-Toe v1.00 (19xx)(-).7z</path>
 	<name>Tic-Tac-Toe</name>
 	<desc>Tic-Tac-Toe v1.00 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tic-Tac-Toe v1.00 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tic-Tac-Toe v1.00 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Tic-Tac-Toe v1.00 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Tic-Tac-Toe v1.00 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1616,13 +1616,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
+	<path>./World Time (1999)(SCEI)(JP)[Pocket MuuMuu].7z</path>
 	<name>World Time</name>
 	<desc>World Time (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1632,13 +1632,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Wose (19xx)(-)(JP).7z</path>
+	<path>./Wose (19xx)(-)(JP).7z</path>
 	<name>Wose</name>
 	<desc>Wose (19xx)(-)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Wose (19xx)(-)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Wose (19xx)(-)(JP).mp4</video>
+	<marquee>./media/emulationstation/Wose (19xx)(-)(JP).png</marquee>
+	<video>./media/emulationstation/Wose (19xx)(-)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1648,13 +1648,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Yubi v0.60 (19xx)(P. Katsu)(JP).7z</path>
+	<path>./Yubi v0.60 (19xx)(P. Katsu)(JP).7z</path>
 	<name>Yubi</name>
 	<desc>Yubi v0.60 (19xx)(P. Katsu)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Yubi v0.60 (19xx)(P. Katsu)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Yubi v0.60 (19xx)(P. Katsu)(JP).mp4</video>
+	<marquee>./media/emulationstation/Yubi v0.60 (19xx)(P. Katsu)(JP).png</marquee>
+	<video>./media/emulationstation/Yubi v0.60 (19xx)(P. Katsu)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1664,13 +1664,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/15 Puzzle (19xx)(Nissie).zip</path>
+	<path>./15 Puzzle (19xx)(Nissie).zip</path>
 	<name>15 Puzzle</name>
 	<desc>15 Puzzle (19xx)(Nissie)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/15 Puzzle (19xx)(Nissie).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/15 Puzzle (19xx)(Nissie).mp4</video>
+	<marquee>./media/emulationstation/15 Puzzle (19xx)(Nissie).png</marquee>
+	<video>./media/emulationstation/15 Puzzle (19xx)(Nissie).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1680,13 +1680,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Alien</name>
 	<desc>Aliens (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Aliens (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1696,13 +1696,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Ana-Digi Clock (19xx)(Mets).zip</path>
+	<path>./Ana-Digi Clock (19xx)(Mets).zip</path>
 	<name>Ana-Digi Clock</name>
 	<desc>Ana-Digi Clock (19xx)(Mets)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Ana-Digi Clock (19xx)(Mets).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Ana-Digi Clock (19xx)(Mets).mp4</video>
+	<marquee>./media/emulationstation/Ana-Digi Clock (19xx)(Mets).png</marquee>
+	<video>./media/emulationstation/Ana-Digi Clock (19xx)(Mets).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1712,13 +1712,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Ana-Digi Clock (19xx)(Mets)[a].zip</path>
+	<path>./Ana-Digi Clock (19xx)(Mets)[a].zip</path>
 	<name>Ana-Digi Clock Alt</name>
 	<desc>Ana-Digi Clock (19xx)(Mets)[a]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/0Ana-Digi Clock (19xx)(Mets)[a].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Ana-Digi Clock (19xx)(Mets).mp4</video>
+	<marquee>./media/emulationstation/0Ana-Digi Clock (19xx)(Mets)[a].png</marquee>
+	<video>./media/emulationstation/Ana-Digi Clock (19xx)(Mets).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1728,13 +1728,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Apple (1999)(SN Systems).zip</path>
+	<path>./Apple (1999)(SN Systems).zip</path>
 	<name>Apple</name>
 	<desc>Apple (1999)(SN Systems)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Apple v0.2 (19xx)(Kami).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Apple v0.2 (19xx)(Kami).mp4</video>
+	<marquee>./media/emulationstation/Apple v0.2 (19xx)(Kami).png</marquee>
+	<video>./media/emulationstation/Apple v0.2 (19xx)(Kami).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1744,13 +1744,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Astro Fighter</name>
 	<desc>Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Astro Fighter (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1760,13 +1760,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Beat Timer v0.02 (19xx)(-).zip</path>
+	<path>./Beat Timer v0.02 (19xx)(-).zip</path>
 	<name>Beat Timer</name>
 	<desc>Beat Timer v0.02 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Beat Timer v0.02 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Beat Timer v0.02 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Beat Timer v0.02 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Beat Timer v0.02 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1776,13 +1776,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Black Jack</name>
 	<desc>Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Black Jack (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1792,13 +1792,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Block Out 1</name>
 	<desc>Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Block Out 1 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1808,13 +1808,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Block Out 2</name>
 	<desc>Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Block Out 2 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1824,13 +1824,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Block Out 3</name>
 	<desc>Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Block Out 3 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1840,13 +1840,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Brightis (1999)(SCEI)(JP)[Brightis].zip</path>
+	<path>./Brightis (1999)(SCEI)(JP)[Brightis].zip</path>
 	<name>Brightis</name>
 	<desc>Brightis (1999)(SCEI)(JP)[Brightis]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Brightis (1999)(SCEI)(JP)[Brightis].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Brightis (1999)(SCEI)(JP)[Brightis].mp4</video>
+	<marquee>./media/emulationstation/Brightis (1999)(SCEI)(JP)[Brightis].png</marquee>
+	<video>./media/emulationstation/Brightis (1999)(SCEI)(JP)[Brightis].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1856,13 +1856,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Calculator</name>
 	<desc>Calculator (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Calculator (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1872,13 +1872,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Cars (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Cars</name>
 	<desc>Cars (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Cars (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1888,13 +1888,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chaku v0.02t (19xx)(-).zip</path>
+	<path>./Chaku v0.02t (19xx)(-).zip</path>
 	<name>Chaku</name>
 	<desc>Chaku v0.02t (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chaku v0.02t (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chaku v0.02t (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Chaku v0.02t (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Chaku v0.02t (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1904,13 +1904,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].zip</path>
+	<path>./Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].zip</path>
 	<name>Chivas</name>
 	<desc>Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].mp4</video>
+	<marquee>./media/emulationstation/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].png</marquee>
+	<video>./media/emulationstation/Chivas 1-2-3 (1999)(Jaleco)[SeaBass 1-2-3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1920,13 +1920,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chocobo Stallion (1999)(Square)[Chocobo Stallion].zip</path>
+	<path>./Chocobo Stallion (1999)(Square)[Chocobo Stallion].zip</path>
 	<name>Chocobo Stallion</name>
 	<desc>Chocobo Stallion (1999)(Square)[Chocobo Stallion]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo Stallion (1999)(Square)[Chocobo Stallion].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo Stallion (1999)(Square)[Chocobo Stallion].mp4</video>
+	<marquee>./media/emulationstation/Chocobo Stallion (1999)(Square)[Chocobo Stallion].png</marquee>
+	<video>./media/emulationstation/Chocobo Stallion (1999)(Square)[Chocobo Stallion].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1936,13 +1936,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chocobo World (1999)(Square)[Final Fantasy 8].zip</path>
+	<path>./Chocobo World (1999)(Square)[Final Fantasy 8].zip</path>
 	<name>Chocobo World</name>
 	<desc>Chocobo World (1999)(Square)[Final Fantasy 8]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo World (1999)(Square)[Final Fantasy 8].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo World (1999)(Square)[Final Fantasy 8].mp4</video>
+	<marquee>./media/emulationstation/Chocobo World (1999)(Square)[Final Fantasy 8].png</marquee>
+	<video>./media/emulationstation/Chocobo World (1999)(Square)[Final Fantasy 8].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1952,13 +1952,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].zip</path>
+	<path>./Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].zip</path>
 	<name>Chocobo World Enhanced</name>
 	<desc>Chocobo World Enhanced (1999)(Square)[Final Fantasy 8]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].mp4</video>
+	<marquee>./media/emulationstation/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].png</marquee>
+	<video>./media/emulationstation/Chocobo World Enhanced (1999)(Square)[Final Fantasy 8].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1968,13 +1968,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Copy Dance</name>
 	<desc>Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Copy Dance (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1984,13 +1984,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Curling (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Curling</name>
 	<desc>Curling (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Curling (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2000,13 +2000,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].zip</path>
+	<path>./Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].zip</path>
 	<name>Dance Dance Revolution 2nd Mix</name>
 	<desc>Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].mp4</video>
+	<marquee>./media/emulationstation/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].png</marquee>
+	<video>./media/emulationstation/Dance Dance Revolution 2nd Mix (2000)(Konami)(JP)[Dance Dance Revolution 2nd Mix].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -2016,13 +2016,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Darts (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Darts</name>
 	<desc>Darts (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Darts (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -2032,13 +2032,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Denki (19xx)(-).zip</path>
+	<path>./Denki (19xx)(-).zip</path>
 	<name>Denki</name>
 	<desc>Denki (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Denki (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Denki (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Denki (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Denki (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2048,12 +2048,12 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Dice (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Dice (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Dice</name>
 	<desc>Dice (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Dice (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<marquee>./media/emulationstation/Dice (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
 	<video/>
 	<thumbnail/>
 	<rating>0.00</rating>
@@ -2064,13 +2064,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].zip</path>
+	<path>./Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].zip</path>
 	<name>Doreamon 3</name>
 	<desc>Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].mp4</video>
+	<marquee>./media/emulationstation/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].png</marquee>
+	<video>./media/emulationstation/Doreamon 3 (2000)(Epoch)(JP)[Doraemon 3 - Makai no Dungeon].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -2080,13 +2080,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Drive 2000</name>
 	<desc>Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Drive 2000 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2096,13 +2096,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Drop Ball</name>
 	<desc>Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Drop Ball (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2112,13 +2112,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Drop Zone</name>
 	<desc>Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Drop Zone (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2128,13 +2128,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/DTMF Hack Beta 2 (19xx)(Error).zip</path>
+	<path>./DTMF Hack Beta 2 (19xx)(Error).zip</path>
 	<name>DTMF Hack Beta 2</name>
 	<desc>DTMF Hack Beta 2 (19xx)(Error)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/DTMF Hack Beta 2 (19xx)(Error).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/DTMF Hack Beta 2 (19xx)(Error).mp4</video>
+	<marquee>./media/emulationstation/DTMF Hack Beta 2 (19xx)(Error).png</marquee>
+	<video>./media/emulationstation/DTMF Hack Beta 2 (19xx)(Error).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2144,13 +2144,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Durama (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Durama</name>
 	<desc>Durama (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Durama (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2160,13 +2160,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/EnPKclock v1.4 (19xx)(-)(JP).zip</path>
+	<path>./EnPKclock v1.4 (19xx)(-)(JP).zip</path>
 	<name>EnPKclock</name>
 	<desc>EnPKclock v1.4 (19xx)(-)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/EnPKclock v1.4 (19xx)(-)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/EnPKclock v1.4 (19xx)(-)(JP).mp4</video>
+	<marquee>./media/emulationstation/EnPKclock v1.4 (19xx)(-)(JP).png</marquee>
+	<video>./media/emulationstation/EnPKclock v1.4 (19xx)(-)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2176,13 +2176,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Fishing</name>
 	<desc>Fishing (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Fishing (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2192,13 +2192,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Fishing 2</name>
 	<desc>Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Fishing 2 (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2208,13 +2208,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Go Go Digger (2000)(Square)[Saga Frontier 2].zip</path>
+	<path>./Go Go Digger (2000)(Square)[Saga Frontier 2].zip</path>
 	<name>Go Go Digger</name>
 	<desc>Go Go Digger (2000)(Square)[Saga Frontier 2]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Go Go Digger (2000)(Square)[Saga Frontier 2].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Go Go Digger (2000)(Square)[Saga Frontier 2].mp4</video>
+	<marquee>./media/emulationstation/Go Go Digger (2000)(Square)[Saga Frontier 2].png</marquee>
+	<video>./media/emulationstation/Go Go Digger (2000)(Square)[Saga Frontier 2].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -2224,13 +2224,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Golf (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Golf</name>
 	<desc>Golf (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Golf (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2240,13 +2240,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Hammer</name>
 	<desc>Hammer (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Hammer (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2256,13 +2256,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Harvest Moon (2001)(Natsume)[Harvest Moon].zip</path>
+	<path>./Harvest Moon (2001)(Natsume)[Harvest Moon].zip</path>
 	<name>Harvest Moon</name>
 	<desc>Harvest Moon (2001)(Natsume)[Harvest Moon]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Harvest Moon (2001)(Natsume)[Harvest Moon].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Harvest Moon (2001)(Natsume)[Harvest Moon].mp4</video>
+	<marquee>./media/emulationstation/Harvest Moon (2001)(Natsume)[Harvest Moon].png</marquee>
+	<video>./media/emulationstation/Harvest Moon (2001)(Natsume)[Harvest Moon].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20010101T000000</releasedate>
@@ -2272,13 +2272,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hata v0.02 (19xx)(-).zip</path>
+	<path>./Hata v0.02 (19xx)(-).zip</path>
 	<name>Hata</name>
 	<desc>Hata v0.02 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hata v0.02 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hata v0.02 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Hata v0.02 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Hata v0.02 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2288,13 +2288,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Hit & Blow</name>
 	<desc>Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Hit & Blow (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2304,13 +2304,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hit And Blow v0.81 (19xx)(P. Katsu).zip</path>
+	<path>./Hit And Blow v0.81 (19xx)(P. Katsu).zip</path>
 	<name>Hit And Blow v0.81</name>
 	<desc>Hit And Blow v0.81 (19xx)(P. Katsu)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hit And Blow v0.81 (19xx)(P. Katsu).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hit And Blow v0.81 (19xx)(P. Katsu).mp4</video>
+	<marquee>./media/emulationstation/Hit And Blow v0.81 (19xx)(P. Katsu).png</marquee>
+	<video>./media/emulationstation/Hit And Blow v0.81 (19xx)(P. Katsu).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2320,13 +2320,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Hitman</name>
 	<desc>Hitman (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Hitman (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2336,13 +2336,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Integral v0.02 (19xx)(-).zip</path>
+	<path>./Integral v0.02 (19xx)(-).zip</path>
 	<name>Integral</name>
 	<desc>Integral v0.02 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Integral v0.02 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Integral v0.02 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Integral v0.02 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Integral v0.02 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2352,13 +2352,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Japanese Quiz</name>
 	<desc>Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Japanese Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2368,13 +2368,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].zip</path>
+	<path>./Jet De Go! (2000)(Taito)(JP)[Jet De Go!].zip</path>
 	<name>Jet De Go!</name>
 	<desc>Jet De Go! (2000)(Taito)(JP)[Jet De Go!]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].mp4</video>
+	<marquee>./media/emulationstation/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].png</marquee>
+	<video>./media/emulationstation/Jet De Go! (2000)(Taito)(JP)[Jet De Go!].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -2384,13 +2384,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].zip</path>
+	<path>./Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].zip</path>
 	<name>Kobun No Tokkun Zanmai</name>
 	<desc>Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].mp4</video>
+	<marquee>./media/emulationstation/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].png</marquee>
+	<video>./media/emulationstation/Kobun No Tokkun Zanmai (1999)(Capcom)(JP)[Tron ni Kobun].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2400,13 +2400,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Lights Out (19xx)(-).zip</path>
+	<path>./Lights Out (19xx)(-).zip</path>
 	<name>Lights Out</name>
 	<desc>Lights Out (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Lights Out (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Lights Out (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Lights Out (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Lights Out (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2416,13 +2416,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Line Art v0.01t (19xx)(-).zip</path>
+	<path>./Line Art v0.01t (19xx)(-).zip</path>
 	<name>Line Art</name>
 	<desc>Line Art v0.01t (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Line Art v0.01t (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Line Art v0.01t (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Line Art v0.01t (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Line Art v0.01t (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2432,13 +2432,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Math Quiz</name>
 	<desc>Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Math Quiz (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2448,13 +2448,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Maze Game</name>
 	<desc>Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Maze Game (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2464,13 +2464,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].zip</path>
+	<path>./MGS Integral (1999)(Konami)[Metal Gear Solid Integral].zip</path>
 	<name>Metal Gear Solid Integral</name>
 	<desc>MGS Integral (1999)(Konami)[Metal Gear Solid Integral]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].mp4</video>
+	<marquee>./media/emulationstation/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].png</marquee>
+	<video>./media/emulationstation/MGS Integral (1999)(Konami)[Metal Gear Solid Integral].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2480,13 +2480,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Mimique (1999)(K-Comm).zip</path>
+	<path>./Mimique (1999)(K-Comm).zip</path>
 	<name>Mimique</name>
 	<desc>Mimique (1999)(K-Comm)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Mimique (1999)(K-Comm).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Mimique (1999)(K-Comm).mp4</video>
+	<marquee>./media/emulationstation/Mimique (1999)(K-Comm).png</marquee>
+	<video>./media/emulationstation/Mimique (1999)(K-Comm).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2496,13 +2496,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Mine Sweeper (19xx)(P. Katsu)(PD).zip</path>
+	<path>./Mine Sweeper (19xx)(P. Katsu)(PD).zip</path>
 	<name>Mine Sweeper</name>
 	<desc>Mine Sweeper (19xx)(P. Katsu)(PD)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Mine Sweeper (19xx)(P. Katsu)(PD).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Mine Sweeper (19xx)(P. Katsu)(PD).mp4</video>
+	<marquee>./media/emulationstation/Mine Sweeper (19xx)(P. Katsu)(PD).png</marquee>
+	<video>./media/emulationstation/Mine Sweeper (19xx)(P. Katsu)(PD).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2512,13 +2512,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].zip</path>
+	<path>./MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].zip</path>
 	<name>MoGuuRu Dabas</name>
 	<desc>MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].mp4</video>
+	<marquee>./media/emulationstation/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].png</marquee>
+	<video>./media/emulationstation/MoGuuRu Dabas (1999)(SCEI)(JP)[Legend Of Dragoon].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2528,13 +2528,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Monkey See Monkey Do</name>
 	<desc>Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Monkey See Monkey Do (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2544,13 +2544,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Number (19xx)(-).zip</path>
+	<path>./Number (19xx)(-).zip</path>
 	<name>Number</name>
 	<desc>Number (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Number (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Number (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Number (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Number (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2560,13 +2560,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Odetake Chocobo (1999)(Square)[Final Fantasy 8].zip</path>
+	<path>./Odetake Chocobo (1999)(Square)[Final Fantasy 8].zip</path>
 	<name>Odetake Chocobo</name>
 	<desc>Odetake Chocobo (1999)(Square)[Final Fantasy 8]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Odetake Chocobo (1999)(Square)[Final Fantasy 8].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Odetake Chocobo (1999)(Square)[Final Fantasy 8].mp4</video>
+	<marquee>./media/emulationstation/Odetake Chocobo (1999)(Square)[Final Fantasy 8].png</marquee>
+	<video>./media/emulationstation/Odetake Chocobo (1999)(Square)[Final Fantasy 8].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2576,13 +2576,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Pairs</name>
 	<desc>Pairs (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Pairs (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2592,13 +2592,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Parumui Parumui (19xx)(-)[Parumui Parumui].zip</path>
+	<path>./Parumui Parumui (19xx)(-)[Parumui Parumui].zip</path>
 	<name>Parumui Parumui</name>
 	<desc>Parumui Parumui (19xx)(-)[Parumui Parumui]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Parumui Parumui (19xx)(-)[Parumui Parumui].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Parumui Parumui (19xx)(-)[Parumui Parumui].mp4</video>
+	<marquee>./media/emulationstation/Parumui Parumui (19xx)(-)[Parumui Parumui].png</marquee>
+	<video>./media/emulationstation/Parumui Parumui (19xx)(-)[Parumui Parumui].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2608,13 +2608,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PDA Calculator (1998)(SCEI).zip</path>
+	<path>./PDA Calculator (1998)(SCEI).zip</path>
 	<name>PDA Calculator</name>
 	<desc>PDA Calculator (1998)(SCEI)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Calculator (1998)(SCEI).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Calculator (1998)(SCEI).mp4</video>
+	<marquee>./media/emulationstation/PDA Calculator (1998)(SCEI).png</marquee>
+	<video>./media/emulationstation/PDA Calculator (1998)(SCEI).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -2624,13 +2624,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PDA Remote 1 (1998)(SCEI)(JP).zip</path>
+	<path>./PDA Remote 1 (1998)(SCEI)(JP).zip</path>
 	<name>PDA Remote 1</name>
 	<desc>PDA Remote 1 (1998)(SCEI)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Remote 1 (1998)(SCEI)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Remote 1 (1998)(SCEI)(JP).mp4</video>
+	<marquee>./media/emulationstation/PDA Remote 1 (1998)(SCEI)(JP).png</marquee>
+	<video>./media/emulationstation/PDA Remote 1 (1998)(SCEI)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -2640,13 +2640,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PDA Remote 2 (1998)(SCEI)(JP).zip</path>
+	<path>./PDA Remote 2 (1998)(SCEI)(JP).zip</path>
 	<name>PDA Remote 2</name>
 	<desc>PDA Remote 2 (1998)(SCEI)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Remote 2 (1998)(SCEI)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Remote 2 (1998)(SCEI)(JP).mp4</video>
+	<marquee>./media/emulationstation/PDA Remote 2 (1998)(SCEI)(JP).png</marquee>
+	<video>./media/emulationstation/PDA Remote 2 (1998)(SCEI)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -2656,13 +2656,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PDA Timer (1998)(SCEI).zip</path>
+	<path>./PDA Timer (1998)(SCEI).zip</path>
 	<name>PDA Timer</name>
 	<desc>PDA Timer (1998)(SCEI)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Timer (1998)(SCEI).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PDA Timer (1998)(SCEI).mp4</video>
+	<marquee>./media/emulationstation/PDA Timer (1998)(SCEI).png</marquee>
+	<video>./media/emulationstation/PDA Timer (1998)(SCEI).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -2672,13 +2672,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Phone Book</name>
 	<desc>Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Phone Book (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2688,13 +2688,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Pinball</name>
 	<desc>Pinball (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Pinball (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2704,13 +2704,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pockeler (1999)(Atlus)(JP)[Pockeler].zip</path>
+	<path>./Pockeler (1999)(Atlus)(JP)[Pockeler].zip</path>
 	<name>Pockeler</name>
 	<desc>Pockeler (1999)(Atlus)(JP)[Pockeler]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pockeler (1999)(Atlus)(JP)[Pockeler].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pockeler (1999)(Atlus)(JP)[Pockeler].mp4</video>
+	<marquee>./media/emulationstation/Pockeler (1999)(Atlus)(JP)[Pockeler].png</marquee>
+	<video>./media/emulationstation/Pockeler (1999)(Atlus)(JP)[Pockeler].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2720,13 +2720,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].zip</path>
+	<path>./Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].zip</path>
 	<name>Pocket Digimon World - Agumon</name>
 	<desc>Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].mp4</video>
+	<marquee>./media/emulationstation/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].png</marquee>
+	<video>./media/emulationstation/Pocket Digimon World - Agumon (2000)(Bandai)[Pocket Digimon World].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -2736,13 +2736,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].zip</path>
+	<path>./Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].zip</path>
 	<name>Pocket Digimon World - Biyomon</name>
 	<desc>Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].mp4</video>
+	<marquee>./media/emulationstation/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].png</marquee>
+	<video>./media/emulationstation/Pocket Digimon World - Biyomon (2000)(Bandai)[Pocket Digimon World].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -2752,13 +2752,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].zip</path>
+	<path>./Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].zip</path>
 	<name>Pocket Fighter Alpha 3 - Part 1</name>
 	<desc>Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].mp4</video>
+	<marquee>./media/emulationstation/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].png</marquee>
+	<video>./media/emulationstation/Pocket Fighter Alpha 3 - Part 1 (1999)(Capcom)[Street Fighter Alpha 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2768,13 +2768,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].zip</path>
+	<path>./Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].zip</path>
 	<name>Pocket Fighter Alpha 3 - Part 2</name>
 	<desc>Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].mp4</video>
+	<marquee>./media/emulationstation/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].png</marquee>
+	<video>./media/emulationstation/Pocket Fighter Alpha 3 - Part 2 (1999)(Capcom)[Street Fighter Alpha 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2784,13 +2784,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].zip</path>
+	<path>./Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].zip</path>
 	<name>Pocket Fighter Zero 3</name>
 	<desc>Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].mp4</video>
+	<marquee>./media/emulationstation/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].png</marquee>
+	<video>./media/emulationstation/Pocket Fighter Zero 3 (1998)(Capcom)(JP)[Street Fighter Alpha 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -2800,13 +2800,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Ray (2000)(Taito)[RayCrisis].zip</path>
+	<path>./Pocket Ray (2000)(Taito)[RayCrisis].zip</path>
 	<name>Pocket Ray</name>
 	<desc>Pocket Ray (2000)(Taito)[RayCrisis]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Ray (2000)(Taito)[RayCrisis].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Ray (2000)(Taito)[RayCrisis].mp4</video>
+	<marquee>./media/emulationstation/Pocket Ray (2000)(Taito)[RayCrisis].png</marquee>
+	<video>./media/emulationstation/Pocket Ray (2000)(Taito)[RayCrisis].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -2816,13 +2816,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Sokoban (19xx)(Mets).zip</path>
+	<path>./Pocket Sokoban (19xx)(Mets).zip</path>
 	<name>Pocket Sokoban</name>
 	<desc>Pocket Sokoban (19xx)(Mets)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Sokoban (19xx)(Mets).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Sokoban (19xx)(Mets).mp4</video>
+	<marquee>./media/emulationstation/Pocket Sokoban (19xx)(Mets).png</marquee>
+	<video>./media/emulationstation/Pocket Sokoban (19xx)(Mets).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2832,13 +2832,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pocket Timer v1.11 (19xx)(-).zip</path>
+	<path>./Pocket Timer v1.11 (19xx)(-).zip</path>
 	<name>Pocket Timer</name>
 	<desc>Pocket Timer v1.11 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Timer v1.11 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pocket Timer v1.11 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Pocket Timer v1.11 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Pocket Timer v1.11 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2848,13 +2848,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].zip</path>
+	<path>./PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].zip</path>
 	<name>PokeHito</name>
 	<desc>PokeHito (1999)(SCEI)(JP)[PokeHito - Grey]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].mp4</video>
+	<marquee>./media/emulationstation/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].png</marquee>
+	<video>./media/emulationstation/PokeHito (1999)(SCEI)(JP)[PokeHito - Grey].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2864,13 +2864,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Poketro v1.1 (2001)(Credo).zip</path>
+	<path>./Poketro v1.1 (2001)(Credo).zip</path>
 	<name>Poketro</name>
 	<desc>Poketro v1.1 (2001)(Credo)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Poketro v1.1 (2001)(Credo).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Poketro v1.1 (2001)(Credo).mp4</video>
+	<marquee>./media/emulationstation/Poketro v1.1 (2001)(Credo).png</marquee>
+	<video>./media/emulationstation/Poketro v1.1 (2001)(Credo).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>20010101T000000</releasedate>
@@ -2880,13 +2880,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].zip</path>
+	<path>./Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].zip</path>
 	<name>Pop n Music 2</name>
 	<desc>Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].mp4</video>
+	<marquee>./media/emulationstation/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].png</marquee>
+	<video>./media/emulationstation/Pop n Music 2 (1999)(Konami)(JP)[Pop n Music 2].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2896,13 +2896,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Pumping Crash</name>
 	<desc>Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Pumping Crash (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2912,13 +2912,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Punch Block</name>
 	<desc>Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Punch Block (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2928,13 +2928,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Push (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Push (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Push</name>
 	<desc>Push (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Push (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Push (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Push (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Push (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2944,13 +2944,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Push Battle</name>
 	<desc>Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Push Battle (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2960,13 +2960,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Pyramid (19xx)(P. Katsu)(JP).zip</path>
+	<path>./Pyramid (19xx)(P. Katsu)(JP).zip</path>
 	<name>Pyramid</name>
 	<desc>Pyramid (19xx)(P. Katsu)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Pyramid (19xx)(P. Katsu)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Pyramid (19xx)(P. Katsu)(JP).mp4</video>
+	<marquee>./media/emulationstation/Pyramid (19xx)(P. Katsu)(JP).png</marquee>
+	<video>./media/emulationstation/Pyramid (19xx)(P. Katsu)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -2976,13 +2976,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].zip</path>
+	<path>./R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].zip</path>
 	<name>R4 Pocketstation</name>
 	<desc>R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].mp4</video>
+	<marquee>./media/emulationstation/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].png</marquee>
+	<video>./media/emulationstation/R4 Pocketstation (1998)(Namco)[R4 Ridge Racer Type 4].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19980101T000000</releasedate>
@@ -2992,13 +2992,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rewrite ID (1999)(K-Comm).zip</path>
+	<path>./Rewrite ID (1999)(K-Comm).zip</path>
 	<name>Rewrite ID</name>
 	<desc>Rewrite ID (1999)(K-Comm)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rewrite ID (1999)(K-Comm).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rewrite ID (1999)(K-Comm).mp4</video>
+	<marquee>./media/emulationstation/Rewrite ID (1999)(K-Comm).png</marquee>
+	<video>./media/emulationstation/Rewrite ID (1999)(K-Comm).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3008,13 +3008,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].zip</path>
+	<path>./Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].zip</path>
 	<name>Ring Ring Land</name>
 	<desc>Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].mp4</video>
+	<marquee>./media/emulationstation/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].png</marquee>
+	<video>./media/emulationstation/Ring Ring Land (1999)(Square)(JP)[Seiken Densetsu - Legend of Mana].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3024,13 +3024,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Rocket</name>
 	<desc>Rocket (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Rocket (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3040,13 +3040,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].zip</path>
+	<path>./Rockman 2 (1999)(Capcom)(JP)[Rockman 2].zip</path>
 	<name>Rockman 2</name>
 	<desc>Rockman 2 (1999)(Capcom)(JP)[Rockman 2]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].mp4</video>
+	<marquee>./media/emulationstation/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].png</marquee>
+	<video>./media/emulationstation/Rockman 2 (1999)(Capcom)(JP)[Rockman 2].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3056,13 +3056,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].zip</path>
+	<path>./Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].zip</path>
 	<name>Rockman 3 - Part 1</name>
 	<desc>Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].mp4</video>
+	<marquee>./media/emulationstation/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].png</marquee>
+	<video>./media/emulationstation/Rockman 3 - Part 1 (1999)(Capcom)(JP)[Rockman 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3072,13 +3072,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].zip</path>
+	<path>./Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].zip</path>
 	<name>Rockman 3 - Part 2</name>
 	<desc>Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].mp4</video>
+	<marquee>./media/emulationstation/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].png</marquee>
+	<video>./media/emulationstation/Rockman 3 - Part 2 (1999)(Capcom)(JP)[Rockman 3].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3088,13 +3088,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].zip</path>
+	<path>./Rockman 4 (1999)(Capcom)(JP)[Rockman 4].zip</path>
 	<name>Rockman 4</name>
 	<desc>Rockman 4 (1999)(Capcom)(JP)[Rockman 4]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].mp4</video>
+	<marquee>./media/emulationstation/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].png</marquee>
+	<video>./media/emulationstation/Rockman 4 (1999)(Capcom)(JP)[Rockman 4].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3104,13 +3104,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].zip</path>
+	<path>./Rockman 5 (1999)(Capcom)(JP)[Rockman 5].zip</path>
 	<name>Rockman 5</name>
 	<desc>Rockman 5 (1999)(Capcom)(JP)[Rockman 5]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].mp4</video>
+	<marquee>./media/emulationstation/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].png</marquee>
+	<video>./media/emulationstation/Rockman 5 (1999)(Capcom)(JP)[Rockman 5].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3120,13 +3120,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>RPG Dungeon</name>
 	<desc>RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/RPG Dungeon (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3136,13 +3136,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Rubato v0.03 (1999)(K-Comm).zip</path>
+	<path>./Rubato v0.03 (1999)(K-Comm).zip</path>
 	<name>Rubato</name>
 	<desc>Rubato v0.03 (1999)(K-Comm)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Rubato v0.03 (1999)(K-Comm).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Rubato v0.03 (1999)(K-Comm).mp4</video>
+	<marquee>./media/emulationstation/Rubato v0.03 (1999)(K-Comm).png</marquee>
+	<video>./media/emulationstation/Rubato v0.03 (1999)(K-Comm).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3152,13 +3152,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Ski Escape</name>
 	<desc>Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Ski Escape (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3168,13 +3168,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Slot Machine</name>
 	<desc>Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Slot Machine (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3184,13 +3184,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Smash Game</name>
 	<desc>Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Smash Game (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3200,13 +3200,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./Tank (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>Tank</name>
 	<desc>Tank (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/Tank (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3216,13 +3216,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tasumania (19xx)(-).zip</path>
+	<path>./Tasumania (19xx)(-).zip</path>
 	<name>Tasumania</name>
 	<desc>Tasumania (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tasumania (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tasumania (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Tasumania (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Tasumania (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3232,13 +3232,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tetris (19xx)(-).zip</path>
+	<path>./Tetris (19xx)(-).zip</path>
 	<name>Tetris</name>
 	<desc>Tetris (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tetris (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tetris (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Tetris (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Tetris (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3248,13 +3248,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tetris (1999)(SN Systems).zip</path>
+	<path>./Tetris (1999)(SN Systems).zip</path>
 	<name>Tetris(SN Systems)</name>
 	<desc>Tetris (1999)(SN Systems)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tetris (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tetris (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Tetris (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Tetris (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3264,13 +3264,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Tic-Tac-Toe v1.00 (19xx)(-).zip</path>
+	<path>./Tic-Tac-Toe v1.00 (19xx)(-).zip</path>
 	<name>Tic-Tac-Toe</name>
 	<desc>Tic-Tac-Toe v1.00 (19xx)(-)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Tic-Tac-Toe v1.00 (19xx)(-).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Tic-Tac-Toe v1.00 (19xx)(-).mp4</video>
+	<marquee>./media/emulationstation/Tic-Tac-Toe v1.00 (19xx)(-).png</marquee>
+	<video>./media/emulationstation/Tic-Tac-Toe v1.00 (19xx)(-).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3280,13 +3280,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
+	<path>./World Time (1999)(SCEI)(JP)[Pocket MuuMuu].zip</path>
 	<name>World Time</name>
 	<desc>World Time (1999)(SCEI)(JP)[Pocket MuuMuu]
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
+	<marquee>./media/emulationstation/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].png</marquee>
+	<video>./media/emulationstation/World Time (1999)(SCEI)(JP)[Pocket MuuMuu].mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3296,13 +3296,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Wose (19xx)(-)(JP).zip</path>
+	<path>./Wose (19xx)(-)(JP).zip</path>
 	<name>Wose</name>
 	<desc>Wose (19xx)(-)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Wose (19xx)(-)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Wose (19xx)(-)(JP).mp4</video>
+	<marquee>./media/emulationstation/Wose (19xx)(-)(JP).png</marquee>
+	<video>./media/emulationstation/Wose (19xx)(-)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -3312,13 +3312,13 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/pockstat/Yubi v0.60 (19xx)(P. Katsu)(JP).zip</path>
+	<path>./Yubi v0.60 (19xx)(P. Katsu)(JP).zip</path>
 	<name>Yubi</name>
 	<desc>Yubi v0.60 (19xx)(P. Katsu)(JP)
 	</desc>
 	<image/>
-	<marquee>/home/pi/.emulationstation/downloaded_images/pockstat/Yubi v0.60 (19xx)(P. Katsu)(JP).png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/pockstat/Yubi v0.60 (19xx)(P. Katsu)(JP).mp4</video>
+	<marquee>./media/emulationstation/Yubi v0.60 (19xx)(P. Katsu)(JP).png</marquee>
+	<video>./media/emulationstation/Yubi v0.60 (19xx)(P. Katsu)(JP).mp4</video>
 	<thumbnail/>
 	<rating>0.00</rating>
 	<releasedate>19990101T000000</releasedate>

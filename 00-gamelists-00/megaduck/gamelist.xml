@@ -1,11 +1,11 @@
 <gameList>
 <game id="58781" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/2ndspace.7z</path>
+	<path>./2ndspace.7z</path>
 	<name>2nd Space</name>
 	<desc>2nd Space is an arcade puzzle game where the gameplay is somewhat of an hybrid between Pac-Man and Qix; your job is to circle the objects on the screen while avoiding the monster occupying the screen with you. Once you succeed in doing so, the circled area will reveal a partial picture. Once you've revealed all the objects, you'll see the full image and move on to the next level.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/megaduck/2ndspace-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/2ndspace-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/2nd Space (Europe).mp4</video>
+		<image>./media/emulationstation/2ndspace-image.png</image>
+	<marquee>./media/emulationstation/2ndspace-marquee.png</marquee>
+	<video>./media/emulationstation/2nd Space (Europe).mp4</video>
 	<thumbnail/>
 	<rating>4</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -15,12 +15,12 @@
 	<players>1</players>
 </game>
 <game id="56869" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/railway.7z</path>
+	<path>./railway.7z</path>
 	<name>Railway</name>
 	<desc>Railway is a puzzle game, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/megaduck/railway-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/railway-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Arctic Zone (Europe).mp4</video>
+		<image>./media/emulationstation/railway-image.png</image>
+	<marquee>./media/emulationstation/railway-marquee.png</marquee>
+	<video>./media/emulationstation/Arctic Zone (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -30,12 +30,12 @@
 	<players>1</players>
 </game>
 <game id="58784" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/vex.7z</path>
+	<path>./vex.7z</path>
 	<name>Vex</name>
 	<desc>Vex is an puzzle game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/vex-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/vex-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Vex (Europe).mp4</video>
+	<image>./media/emulationstation/vex-image.png</image>
+	<marquee>./media/emulationstation/vex-marquee.png</marquee>
+	<video>./media/emulationstation/Vex (Europe).mp4</video>
 	<thumbnail/>
 	<rating>1.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -45,12 +45,12 @@
 	<players>1</players>
 </game>
 <game id="56864" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/arczone.7z</path>
+	<path>./arczone.7z</path>
 	<name>Arctic Zone</name>
 	<desc>Artic Zone is a puzzle game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Arctic Zone (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/ARZ.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Arctic Zone (Europe).mp4</video>
+	<image>./media/emulationstation/Arctic Zone (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/ARZ.png</marquee>
+	<video>./media/emulationstation/Arctic Zone (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -60,12 +60,12 @@
 	<players>1</players>
 </game>
 <game id="56872" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/brckwall.7z</path>
+	<path>./brckwall.7z</path>
 	<name>Brick Wall, The</name>
 	<desc>The Brick Wall is a shooter game, developed and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Brick Wall, The (1993)(Timlex)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/TBWALL.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/The Brick Wall (Europe).mp4</video>
+	<image>./media/emulationstation/Brick Wall, The (1993)(Timlex)-image.png</image>
+	<marquee>./media/emulationstation/TBWALL.png</marquee>
+	<video>./media/emulationstation/The Brick Wall (Europe).mp4</video>
 	<thumbnail/>
 	<rating>0</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -75,12 +75,12 @@
 	<players>1</players>
 </game>
 <game id="56865" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/c5in1.7z</path>
+	<path>./c5in1.7z</path>
 	<name>Commin 5 In 1</name>
 	<desc>Five in One is compilation of games, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Commin 5 in 1 (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/FINONE.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Commin 5 in 1 (Europe).mp4</video>
+	<image>./media/emulationstation/Commin 5 in 1 (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/FINONE.png</marquee>
+	<video>./media/emulationstation/Commin 5 in 1 (Europe).mp4</video>
 	<thumbnail/>
 	<rating>0</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -90,12 +90,12 @@
 	<players>1</players>
 </game>
 <game id="56866" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/magictwr.7z</path>
+	<path>./magictwr.7z</path>
 	<name>Magical Tower</name>
 	<desc>Magic Tower is an Adventure game, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Magical Tower (1993)(Sachen)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Magical Tower (1993)(Sachen)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Magical Tower (Europe).mp4</video>
+	<image>./media/emulationstation/Magical Tower (1993)(Sachen)-image.png</image>
+	<marquee>./media/emulationstation/Magical Tower (1993)(Sachen)-marquee.png</marquee>
+	<video>./media/emulationstation/Magical Tower (Europe).mp4</video>
 	<thumbnail/>
 	<rating>3.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -105,12 +105,12 @@
 	<players>1</players>
 </game>
 <game id="56867" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/md4in1.7z</path>
+	<path>./md4in1.7z</path>
 	<name>Mega Duck 4 In 1 Game</name>
 	<desc>Four in One was the cartridge that accompanied the Cougar Boy / Mega Duck, which contains 4 games: Virus Attack (space shooting game, Space Invaders clone); Electron World (maze action game); Trouble Zone (puzzle game); Says Block (adventure game)., developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/megaduck/Mega Duck 4 in 1 Game (1993)(Sachen)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Mega Duck 4 in 1 Game (1993)(Sachen)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Mega Duck 4 in 1 Game (Europe).mp4</video>
+		<image>./media/emulationstation/Mega Duck 4 in 1 Game (1993)(Sachen)-image.png</image>
+	<marquee>./media/emulationstation/Mega Duck 4 in 1 Game (1993)(Sachen)-marquee.png</marquee>
+	<video>./media/emulationstation/Mega Duck 4 in 1 Game (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -120,12 +120,12 @@
 	<players>1</players>
 </game>
 <game id="56868" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/pilewndra.7z</path>
+	<path>./pilewndra.7z</path>
 	<name>Pile Wonder (Alt)</name>
 	<desc>Pile Wonder is an Puzzle game, Sokoban style, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (1993)(Commin)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (Europe).mp4</video>
+	<image>./media/emulationstation/Pile Wonder (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/Pile Wonder (1993)(Commin)-marquee.png</marquee>
+	<video>./media/emulationstation/Pile Wonder (Europe).mp4</video>
 	<thumbnail/>
 	<rating>3.25</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -135,12 +135,12 @@
 	<players>1</players>
 </game>
 <game id="568689" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/pilewndr.7z</path>
+	<path>./pilewndr.7z</path>
 	<name>Pile Wonder</name>
 	<desc>Pile Wonder is an Puzzle game, Sokoban style, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (1993)(Commin)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (Europe).mp4</video>
+	<image>./media/emulationstation/Pile Wonder (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/Pile Wonder (1993)(Commin)-marquee.png</marquee>
+	<video>./media/emulationstation/Pile Wonder (Europe).mp4</video>
 	<thumbnail/>
 	<rating>3.25</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -150,12 +150,12 @@
 	<players>1</players>
 </game>
 <game id="56870" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/srider.7z</path>
+	<path>./srider.7z</path>
 	<name>Street Rider</name>
 	<desc>Street Rider is a race game (clone of the game Rally-X, classic of Namco in the Arcades in the 80s), developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Street Rider (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Street Rider (1993)(Commin)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Street Rider (Europe).mp4</video>
+	<image>./media/emulationstation/Street Rider (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/Street Rider (1993)(Commin)-marquee.png</marquee>
+	<video>./media/emulationstation/Street Rider (Europe).mp4</video>
 	<thumbnail/>
 	<rating>4</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -165,12 +165,12 @@
 	<players>1</players>
 </game>
 <game id="56871" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/treasure.7z</path>
+	<path>./treasure.7z</path>
 	<name>Suleimans Treasure</name>
 	<desc>Suleiman's Treasure is an Adventure game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Suleimans Treasure (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Suleimans Treasure (1993)(Commin)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Suleimans Treasure (Europe).mp4</video>
+	<image>./media/emulationstation/Suleimans Treasure (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/Suleimans Treasure (1993)(Commin)-marquee.png</marquee>
+	<video>./media/emulationstation/Suleimans Treasure (Europe).mp4</video>
 	<thumbnail/>
 	<rating>0</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -180,12 +180,12 @@
 	<players/>
 </game>
 <game id="00001" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/antsoldr.7z</path>
+	<path>./antsoldr.7z</path>
 	<name>Ant Soldiers</name>
 	<desc>Ant Soldiers is a puzzle game, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/antsoldier.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/AS.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Ant Soldiers (Europe).mp4</video>
+	<image>./media/emulationstation/antsoldier.png</image>
+	<marquee>./media/emulationstation/AS.png</marquee>
+	<video>./media/emulationstation/Ant Soldiers (Europe).mp4</video>
 	<thumbnail/>
 	<rating>5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -195,12 +195,12 @@
 	<players>1</players>
 </game>
 <game id="00002" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/aforce.7z</path>
+	<path>./aforce.7z</path>
 	<name>Armour Force</name>
 	<desc>Armour Force is an Space battle game (horizontal shmup), developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/armourforce.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/AF.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Armour Force (Europe).mp4</video>
+	<image>./media/emulationstation/armourforce.png</image>
+	<marquee>./media/emulationstation/AF.png</marquee>
+	<video>./media/emulationstation/Armour Force (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -210,12 +210,12 @@
 	<players>1</players>
 </game>
 <game id="00003" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/bstfgtr.7z</path>
+	<path>./bstfgtr.7z</path>
 	<name>Beast Fighter</name>
 	<desc>Beast Fighter is an beat 'em up, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/BeastFighter.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/BF.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Beast Fighter (Europe).mp4</video>
+	<image>./media/emulationstation/BeastFighter.png</image>
+	<marquee>./media/emulationstation/BF.png</marquee>
+	<video>./media/emulationstation/Beast Fighter (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -225,12 +225,12 @@
 	<players>1</players>
 </game>
 <game id="00004" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/bftale.7z</path>
+	<path>./bftale.7z</path>
 	<name>Black Forest Tale</name>
 	<desc>Black Forest Tale is an Adventure game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Black Forest.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/BFT.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Black Forest Tale (Europe).mp4</video>
+	<image>./media/emulationstation/Black Forest.png</image>
+	<marquee>./media/emulationstation/BFT.png</marquee>
+	<video>./media/emulationstation/Black Forest Tale (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -240,12 +240,12 @@
 	<players>1</players>
 </game>
 <game id="00005" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/bombdisp.7z</path>
+	<path>./bombdisp.7z</path>
 	<name>Bomb Disposer</name>
 	<desc>Bomb Disposer is a puzzle game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/BombDisposer.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/BD.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Bomb Disposer (Europe).mp4</video>
+	<image>./media/emulationstation/BombDisposer.png</image>
+	<marquee>./media/emulationstation/BD.png</marquee>
+	<video>./media/emulationstation/Bomb Disposer (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -255,12 +255,12 @@
 	<players>1</players>
 </game>
 <game id="00006" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/captkk.7z</path>
+	<path>./captkk.7z</path>
 	<name>Captain Knick Knack</name>
 	<desc>Captain Knick Knack is a Shooting game (vertical shmup), developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Captain Knick Knack.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/CKK.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Captain Knick Knack (Europe).mp4</video>
+	<image>./media/emulationstation/Captain Knick Knack.png</image>
+	<marquee>./media/emulationstation/CKK.png</marquee>
+	<video>./media/emulationstation/Captain Knick Knack (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -270,12 +270,12 @@
 	<players>1</players>
 </game>
 <game id="00007" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/mmaze.7z</path>
+	<path>./mmaze.7z</path>
 	<name>Magic Maze</name>
 	<desc>Magic Maze is a puzzle game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/MagicMaze.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/MM.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Magic Maze (Europe).mp4</video>
+	<image>./media/emulationstation/MagicMaze.png</image>
+	<marquee>./media/emulationstation/MM.png</marquee>
+	<video>./media/emulationstation/Magic Maze (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -285,12 +285,12 @@
 	<players>1</players>
 </game>
 <game id="00008" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/puptkngt.7z</path>
+	<path>./puptkngt.7z</path>
 	<name>Puppet Knight</name>
 	<desc>Puppet Knight is an Action game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Puppet Knight.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/PK.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Puppet Knight (Europe).mp4</video>
+	<image>./media/emulationstation/Puppet Knight.png</image>
+	<marquee>./media/emulationstation/PK.png</marquee>
+	<video>./media/emulationstation/Puppet Knight (Europe).mp4</video>
 	<thumbnail/>
 	<rating>1.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -300,12 +300,12 @@
 	<players>1</players>
 </game>
 <game id="00009" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/trapturn.7z</path>
+	<path>./trapturn.7z</path>
 	<name>Trap and Turn</name>
 	<desc>Trap and Turn is an action game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Trap and Turn.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/TT.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Trap and Turn (Europe).mp4</video>
+	<image>./media/emulationstation/Trap and Turn.png</image>
+	<marquee>./media/emulationstation/TT.png</marquee>
+	<video>./media/emulationstation/Trap and Turn (Europe).mp4</video>
 	<thumbnail/>
 	<rating>1.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -315,12 +315,12 @@
 	<players>1</players>
 </game>
 <game id="00010" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/wormvstr.7z</path>
+	<path>./wormvstr.7z</path>
 	<name>Worm Visitor</name>
 	<desc>Worm Visitor is an Adventure game (Frogger style), developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/WormVisitor.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/WV.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Worm Visitor (Europe).mp4</video>
+	<image>./media/emulationstation/WormVisitor.png</image>
+	<marquee>./media/emulationstation/WV.png</marquee>
+	<video>./media/emulationstation/Worm Visitor (Europe).mp4</video>
 	<thumbnail/>
 	<rating>3</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -330,12 +330,12 @@
 	<players>1</players>
 </game>
 <game id="00011" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/zipball.7z</path>
+	<path>./zipball.7z</path>
 	<name>Zipball</name>
 	<desc>Zipball is an Action game, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/ZipBall.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/ZB.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Zipball (Europe).mp4</video>
+	<image>./media/emulationstation/ZipBall.png</image>
+	<marquee>./media/emulationstation/ZB.png</marquee>
+	<video>./media/emulationstation/Zipball (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -345,11 +345,11 @@
 	<players>1</players>
 </game>
 <game id="00012" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/duckadv.7z</path>
+	<path>./duckadv.7z</path>
 	<name>Duck Adventures</name>
 	<desc>Duck Adventure is an Adventure game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/DuckAdv.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/DA.png</marquee>
+	<image>./media/emulationstation/DuckAdv.png</image>
+	<marquee>./media/emulationstation/DA.png</marquee>
 	<video/>
 	<thumbnail/>
 	<rating>3.4</rating>
@@ -360,11 +360,11 @@
 	<players>1</players>
 </game>
 <game id="00013" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/snakeroy.7z</path>
+	<path>./snakeroy.7z</path>
 	<name>Snake Roy</name>
 	<desc>Snake Roy is a Jigsaw puzzle game (game of the "snake"), developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/SnakeRoy.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/SR.png</marquee>
+	<image>./media/emulationstation/SnakeRoy.png</image>
+	<marquee>./media/emulationstation/SR.png</marquee>
 	<video/>
 	<thumbnail/>
 	<rating>3.75</rating>
@@ -375,12 +375,12 @@
 	<players>1</players>
 </game>
 <game id="58781" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/2ndspace.zip</path>
+	<path>./2ndspace.zip</path>
 	<name>2nd Space</name>
 	<desc>2nd Space is an arcade puzzle game where the gameplay is somewhat of an hybrid between Pac-Man and Qix; your job is to circle the objects on the screen while avoiding the monster occupying the screen with you. Once you succeed in doing so, the circled area will reveal a partial picture. Once you've revealed all the objects, you'll see the full image and move on to the next level.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/megaduck/2ndspace-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/2ndspace-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/2nd Space (Europe).mp4</video>
+		<image>./media/emulationstation/2ndspace-image.png</image>
+	<marquee>./media/emulationstation/2ndspace-marquee.png</marquee>
+	<video>./media/emulationstation/2nd Space (Europe).mp4</video>
 	<thumbnail/>
 	<rating>4</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -390,12 +390,12 @@
 	<players>1</players>
 </game>
 <game id="56869" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/railway.zip</path>
+	<path>./railway.zip</path>
 	<name>Railway</name>
 	<desc>Railway is a puzzle game, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/megaduck/railway-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/railway-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Arctic Zone (Europe).mp4</video>
+		<image>./media/emulationstation/railway-image.png</image>
+	<marquee>./media/emulationstation/railway-marquee.png</marquee>
+	<video>./media/emulationstation/Arctic Zone (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -405,12 +405,12 @@
 	<players>1</players>
 </game>
 <game id="58784" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/vex.zip</path>
+	<path>./vex.zip</path>
 	<name>Vex</name>
 	<desc>Vex is an puzzle game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/vex-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/vex-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Vex (Europe).mp4</video>
+	<image>./media/emulationstation/vex-image.png</image>
+	<marquee>./media/emulationstation/vex-marquee.png</marquee>
+	<video>./media/emulationstation/Vex (Europe).mp4</video>
 	<thumbnail/>
 	<rating>1.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -420,12 +420,12 @@
 	<players>1</players>
 </game>
 <game id="56864" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/arczone.zip</path>
+	<path>./arczone.zip</path>
 	<name>Arctic Zone</name>
 	<desc>Artic Zone is a puzzle game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Arctic Zone (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/ARZ.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Arctic Zone (Europe).mp4</video>
+	<image>./media/emulationstation/Arctic Zone (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/ARZ.png</marquee>
+	<video>./media/emulationstation/Arctic Zone (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -435,12 +435,12 @@
 	<players>1</players>
 </game>
 <game id="56872" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/brckwall.zip</path>
+	<path>./brckwall.zip</path>
 	<name>Brick Wall, The</name>
 	<desc>The Brick Wall is a shooter game, developed and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Brick Wall, The (1993)(Timlex)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/TBWALL.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/The Brick Wall (Europe).mp4</video>
+	<image>./media/emulationstation/Brick Wall, The (1993)(Timlex)-image.png</image>
+	<marquee>./media/emulationstation/TBWALL.png</marquee>
+	<video>./media/emulationstation/The Brick Wall (Europe).mp4</video>
 	<thumbnail/>
 	<rating>0</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -450,12 +450,12 @@
 	<players>1</players>
 </game>
 <game id="56865" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/c5in1.zip</path>
+	<path>./c5in1.zip</path>
 	<name>Commin 5 In 1</name>
 	<desc>Five in One is compilation of games, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Commin 5 in 1 (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/FINONE.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Commin 5 in 1 (Europe).mp4</video>
+	<image>./media/emulationstation/Commin 5 in 1 (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/FINONE.png</marquee>
+	<video>./media/emulationstation/Commin 5 in 1 (Europe).mp4</video>
 	<thumbnail/>
 	<rating>0</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -465,12 +465,12 @@
 	<players>1</players>
 </game>
 <game id="56866" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/magictwr.zip</path>
+	<path>./magictwr.zip</path>
 	<name>Magical Tower</name>
 	<desc>Magic Tower is an Adventure game, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Magical Tower (1993)(Sachen)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Magical Tower (1993)(Sachen)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Magical Tower (Europe).mp4</video>
+	<image>./media/emulationstation/Magical Tower (1993)(Sachen)-image.png</image>
+	<marquee>./media/emulationstation/Magical Tower (1993)(Sachen)-marquee.png</marquee>
+	<video>./media/emulationstation/Magical Tower (Europe).mp4</video>
 	<thumbnail/>
 	<rating>3.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -480,12 +480,12 @@
 	<players>1</players>
 </game>
 <game id="56867" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/md4in1.zip</path>
+	<path>./md4in1.zip</path>
 	<name>Mega Duck 4 In 1 Game</name>
 	<desc>Four in One was the cartridge that accompanied the Cougar Boy / Mega Duck, which contains 4 games: Virus Attack (space shooting game, Space Invaders clone); Electron World (maze action game); Trouble Zone (puzzle game); Says Block (adventure game)., developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/megaduck/Mega Duck 4 in 1 Game (1993)(Sachen)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Mega Duck 4 in 1 Game (1993)(Sachen)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Mega Duck 4 in 1 Game (Europe).mp4</video>
+		<image>./media/emulationstation/Mega Duck 4 in 1 Game (1993)(Sachen)-image.png</image>
+	<marquee>./media/emulationstation/Mega Duck 4 in 1 Game (1993)(Sachen)-marquee.png</marquee>
+	<video>./media/emulationstation/Mega Duck 4 in 1 Game (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -495,12 +495,12 @@
 	<players>1</players>
 </game>
 <game id="56868" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/pilewndra.zip</path>
+	<path>./pilewndra.zip</path>
 	<name>Pile Wonder (Alt)</name>
 	<desc>Pile Wonder is an Puzzle game, Sokoban style, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (1993)(Commin)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (Europe).mp4</video>
+	<image>./media/emulationstation/Pile Wonder (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/Pile Wonder (1993)(Commin)-marquee.png</marquee>
+	<video>./media/emulationstation/Pile Wonder (Europe).mp4</video>
 	<thumbnail/>
 	<rating>3.25</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -510,12 +510,12 @@
 	<players>1</players>
 </game>
 <game id="568689" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/pilewndr.zip</path>
+	<path>./pilewndr.zip</path>
 	<name>Pile Wonder</name>
 	<desc>Pile Wonder is an Puzzle game, Sokoban style, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (1993)(Commin)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Pile Wonder (Europe).mp4</video>
+	<image>./media/emulationstation/Pile Wonder (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/Pile Wonder (1993)(Commin)-marquee.png</marquee>
+	<video>./media/emulationstation/Pile Wonder (Europe).mp4</video>
 	<thumbnail/>
 	<rating>3.25</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -525,12 +525,12 @@
 	<players>1</players>
 </game>
 <game id="56870" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/srider.zip</path>
+	<path>./srider.zip</path>
 	<name>Street Rider</name>
 	<desc>Street Rider is a race game (clone of the game Rally-X, classic of Namco in the Arcades in the 80s), developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Street Rider (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Street Rider (1993)(Commin)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Street Rider (Europe).mp4</video>
+	<image>./media/emulationstation/Street Rider (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/Street Rider (1993)(Commin)-marquee.png</marquee>
+	<video>./media/emulationstation/Street Rider (Europe).mp4</video>
 	<thumbnail/>
 	<rating>4</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -540,12 +540,12 @@
 	<players>1</players>
 </game>
 <game id="56871" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/treasure.zip</path>
+	<path>./treasure.zip</path>
 	<name>Suleimans Treasure</name>
 	<desc>Suleiman's Treasure is an Adventure game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Suleimans Treasure (1993)(Commin)-image.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/Suleimans Treasure (1993)(Commin)-marquee.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Suleimans Treasure (Europe).mp4</video>
+	<image>./media/emulationstation/Suleimans Treasure (1993)(Commin)-image.png</image>
+	<marquee>./media/emulationstation/Suleimans Treasure (1993)(Commin)-marquee.png</marquee>
+	<video>./media/emulationstation/Suleimans Treasure (Europe).mp4</video>
 	<thumbnail/>
 	<rating>0</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -555,12 +555,12 @@
 	<players/>
 </game>
 <game id="00001" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/antsoldr.zip</path>
+	<path>./antsoldr.zip</path>
 	<name>Ant Soldiers</name>
 	<desc>Ant Soldiers is a puzzle game, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/antsoldier.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/AS.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Ant Soldiers (Europe).mp4</video>
+	<image>./media/emulationstation/antsoldier.png</image>
+	<marquee>./media/emulationstation/AS.png</marquee>
+	<video>./media/emulationstation/Ant Soldiers (Europe).mp4</video>
 	<thumbnail/>
 	<rating>5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -570,12 +570,12 @@
 	<players>1</players>
 </game>
 <game id="00002" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/aforce.zip</path>
+	<path>./aforce.zip</path>
 	<name>Armour Force</name>
 	<desc>Armour Force is an Space battle game (horizontal shmup), developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/armourforce.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/AF.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Armour Force (Europe).mp4</video>
+	<image>./media/emulationstation/armourforce.png</image>
+	<marquee>./media/emulationstation/AF.png</marquee>
+	<video>./media/emulationstation/Armour Force (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -585,12 +585,12 @@
 	<players>1</players>
 </game>
 <game id="00003" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/bstfgtr.zip</path>
+	<path>./bstfgtr.zip</path>
 	<name>Beast Fighter</name>
 	<desc>Beast Fighter is an beat 'em up, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/BeastFighter.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/BF.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Beast Fighter (Europe).mp4</video>
+	<image>./media/emulationstation/BeastFighter.png</image>
+	<marquee>./media/emulationstation/BF.png</marquee>
+	<video>./media/emulationstation/Beast Fighter (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -600,12 +600,12 @@
 	<players>1</players>
 </game>
 <game id="00004" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/bftale.zip</path>
+	<path>./bftale.zip</path>
 	<name>Black Forest Tale</name>
 	<desc>Black Forest Tale is an Adventure game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Black Forest.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/BFT.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Black Forest Tale (Europe).mp4</video>
+	<image>./media/emulationstation/Black Forest.png</image>
+	<marquee>./media/emulationstation/BFT.png</marquee>
+	<video>./media/emulationstation/Black Forest Tale (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -615,12 +615,12 @@
 	<players>1</players>
 </game>
 <game id="00005" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/bombdisp.zip</path>
+	<path>./bombdisp.zip</path>
 	<name>Bomb Disposer</name>
 	<desc>Bomb Disposer is a puzzle game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/BombDisposer.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/BD.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Bomb Disposer (Europe).mp4</video>
+	<image>./media/emulationstation/BombDisposer.png</image>
+	<marquee>./media/emulationstation/BD.png</marquee>
+	<video>./media/emulationstation/Bomb Disposer (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -630,12 +630,12 @@
 	<players>1</players>
 </game>
 <game id="00006" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/captkk.zip</path>
+	<path>./captkk.zip</path>
 	<name>Captain Knick Knack</name>
 	<desc>Captain Knick Knack is a Shooting game (vertical shmup), developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Captain Knick Knack.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/CKK.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Captain Knick Knack (Europe).mp4</video>
+	<image>./media/emulationstation/Captain Knick Knack.png</image>
+	<marquee>./media/emulationstation/CKK.png</marquee>
+	<video>./media/emulationstation/Captain Knick Knack (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -645,12 +645,12 @@
 	<players>1</players>
 </game>
 <game id="00007" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/mmaze.zip</path>
+	<path>./mmaze.zip</path>
 	<name>Magic Maze</name>
 	<desc>Magic Maze is a puzzle game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/MagicMaze.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/MM.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Magic Maze (Europe).mp4</video>
+	<image>./media/emulationstation/MagicMaze.png</image>
+	<marquee>./media/emulationstation/MM.png</marquee>
+	<video>./media/emulationstation/Magic Maze (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -660,12 +660,12 @@
 	<players>1</players>
 </game>
 <game id="00008" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/puptkngt.zip</path>
+	<path>./puptkngt.zip</path>
 	<name>Puppet Knight</name>
 	<desc>Puppet Knight is an Action game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Puppet Knight.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/PK.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Puppet Knight (Europe).mp4</video>
+	<image>./media/emulationstation/Puppet Knight.png</image>
+	<marquee>./media/emulationstation/PK.png</marquee>
+	<video>./media/emulationstation/Puppet Knight (Europe).mp4</video>
 	<thumbnail/>
 	<rating>1.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -675,12 +675,12 @@
 	<players>1</players>
 </game>
 <game id="00009" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/trapturn.zip</path>
+	<path>./trapturn.zip</path>
 	<name>Trap and Turn</name>
 	<desc>Trap and Turn is an action game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/Trap and Turn.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/TT.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Trap and Turn (Europe).mp4</video>
+	<image>./media/emulationstation/Trap and Turn.png</image>
+	<marquee>./media/emulationstation/TT.png</marquee>
+	<video>./media/emulationstation/Trap and Turn (Europe).mp4</video>
 	<thumbnail/>
 	<rating>1.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -690,12 +690,12 @@
 	<players>1</players>
 </game>
 <game id="00010" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/wormvstr.zip</path>
+	<path>./wormvstr.zip</path>
 	<name>Worm Visitor</name>
 	<desc>Worm Visitor is an Adventure game (Frogger style), developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/WormVisitor.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/WV.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Worm Visitor (Europe).mp4</video>
+	<image>./media/emulationstation/WormVisitor.png</image>
+	<marquee>./media/emulationstation/WV.png</marquee>
+	<video>./media/emulationstation/Worm Visitor (Europe).mp4</video>
 	<thumbnail/>
 	<rating>3</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -705,12 +705,12 @@
 	<players>1</players>
 </game>
 <game id="00011" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/zipball.zip</path>
+	<path>./zipball.zip</path>
 	<name>Zipball</name>
 	<desc>Zipball is an Action game, developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/ZipBall.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/ZB.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/megaduck/Zipball (Europe).mp4</video>
+	<image>./media/emulationstation/ZipBall.png</image>
+	<marquee>./media/emulationstation/ZB.png</marquee>
+	<video>./media/emulationstation/Zipball (Europe).mp4</video>
 	<thumbnail/>
 	<rating>2.5</rating>
 	<releasedate>19930101T000000</releasedate>
@@ -720,11 +720,11 @@
 	<players>1</players>
 </game>
 <game id="00012" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/duckadv.zip</path>
+	<path>./duckadv.zip</path>
 	<name>Duck Adventures</name>
 	<desc>Duck Adventure is an Adventure game, developed by Commin and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/DuckAdv.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/DA.png</marquee>
+	<image>./media/emulationstation/DuckAdv.png</image>
+	<marquee>./media/emulationstation/DA.png</marquee>
 	<video/>
 	<thumbnail/>
 	<rating>3.4</rating>
@@ -735,11 +735,11 @@
 	<players>1</players>
 </game>
 <game id="00013" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/megaduck/snakeroy.zip</path>
+	<path>./snakeroy.zip</path>
 	<name>Snake Roy</name>
 	<desc>Snake Roy is a Jigsaw puzzle game (game of the "snake"), developed by Sachen and published by Timlex International Limited, which was released in 1993.</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/megaduck/SnakeRoy.png</image>
-	<marquee>/home/pi/.emulationstation/downloaded_images/megaduck/SR.png</marquee>
+	<image>./media/emulationstation/SnakeRoy.png</image>
+	<marquee>./media/emulationstation/SR.png</marquee>
 	<video/>
 	<thumbnail/>
 	<rating>3.75</rating>

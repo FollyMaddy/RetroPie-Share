@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <gameList>
 	<game id="00001" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/astropin.7z</path>
+		<path>./astropin.7z</path>
 		<name>Astro Pinball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Astro Pinball (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Astro Pinball (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -16,11 +16,11 @@
 		<players>1-4</players>
 	</game>
 	<game id="10001" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/astropina.7z</path>
+		<path>./astropina.7z</path>
 		<name>Astro Pinball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Astro Pinball (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Astro Pinball (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -31,11 +31,11 @@
 		<players>1-4</players>
 	</game>
 	<game id="20001" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/astropinb.7z</path>
+		<path>./astropinb.7z</path>
 		<name>Astro Pinball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Astro Pinball (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Astro Pinball (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -46,11 +46,11 @@
 		<players>1-4</players>
 	</game>
 	<game id="00003" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/autochas</path>
+		<path>./autochas</path>
 		<name>Auto Chase </name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Auto Chase (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Auto Chase (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -61,11 +61,11 @@
 		<players>1</players>
 	</game>
 	<game id="10003" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/autochasa</path>
+		<path>./autochasa</path>
 		<name>Auto Chase </name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Auto Chase (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Auto Chase (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -76,12 +76,12 @@
 		<players>1</players>
 	</game>
 	<game id="00004" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/crazych.7z</path>
+		<path>./crazych.7z</path>
 		<name>Crazy Chicky</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Crazy Chicky (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Crazy Chicky (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Crazy Chicky (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19821201T000000</releasedate>
@@ -91,10 +91,10 @@
 		<players>1-4</players>
 	</game>
 	<game id="00005" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/basic.7z</path>
+		<path>./basic.7z</path>
 		<name>Basic Interpreter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<image>./media/emulationstation/Basic Interpreter.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -106,10 +106,10 @@
 		<players>1</players>
 	</game>
 	<game id="10005" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/basico1.7z</path>
+		<path>./basico1.7z</path>
 		<name>Basic Interpreter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<image>./media/emulationstation/Basic Interpreter.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -121,10 +121,10 @@
 		<players>1</players>
 	</game>
 	<game id="20005" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/basico2.7z</path>
+		<path>./basico2.7z</path>
 		<name>Basic Interpreter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<image>./media/emulationstation/Basic Interpreter.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -136,10 +136,10 @@
 		<players>1</players>
 	</game>
 	<game id="30005" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/basico3.7z</path>
+		<path>./basico3.7z</path>
 		<name>Basic Interpreter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<image>./media/emulationstation/Basic Interpreter.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -151,12 +151,12 @@
 		<players>1</players>
 	</game>
 	<game id="00006" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/crazypuc.7z</path>
+		<path>./crazypuc.7z</path>
 		<name>Crazy Pucker</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Crazy Pucker (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Crazy Pucker (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Crazy Pucker (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -166,11 +166,11 @@
 		<players>1-4</players>
 	</game>
 	<game id="00007" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/deepsea.7z</path>
+		<path>./deepsea.7z</path>
 		<name>Deep Sea Adventure</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Deep Sea Adventure (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -181,11 +181,11 @@
 		<players>1-2</players>
 	</game>
 	<game id="10007" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/deepseaa.7z</path>
+		<path>./deepseaa.7z</path>
 		<name>Deep Sea Adventure</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Deep Sea Adventure (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -196,12 +196,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00008" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/locomot.7z</path>
+		<path>./locomot.7z</path>
 		<name>Locomotive</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Locomotive (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Locomotive (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Locomotive (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -211,12 +211,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10008" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/locomota.7z</path>
+		<path>./locomota.7z</path>
 		<name>Locomotive</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Locomotive (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Locomotive (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Locomotive (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -226,12 +226,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00009" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/mousepuz.7z</path>
+		<path>./mousepuz.7z</path>
 		<name>Mouse Puzzle</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Mouse Puzzle (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Mouse Puzzle (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19821201T000000</releasedate>
@@ -241,12 +241,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10009" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/mousepuza.7z</path>
+		<path>./mousepuza.7z</path>
 		<name>Mouse Puzzle</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Mouse Puzzle (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Mouse Puzzle (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19821201T000000</releasedate>
@@ -256,12 +256,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00010" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/musicmak.7z</path>
+		<path>./musicmak.7z</path>
 		<name>Music Maker</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Music Maker (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Music Maker (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Music Maker (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -271,12 +271,12 @@
 		<players>1</players>
 	</game>
 	<game id="00011" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/planetd.7z</path>
+		<path>./planetd.7z</path>
 		<name>Planet Defender</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Planet Defender (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Planet Defender (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -286,12 +286,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10011" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/planetd1.7z</path>
+		<path>./planetd1.7z</path>
 		<name>Planet Defender</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Planet Defender (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Planet Defender (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -301,12 +301,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="20011" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/planetd2.7z</path>
+		<path>./planetd2.7z</path>
 		<name>Planet Defender</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Planet Defender (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Planet Defender (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -316,11 +316,11 @@
 		<players>1-2</players>
 	</game>
 	<game id="00012" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/policej.7z</path>
+		<path>./policej.7z</path>
 		<name>Police Jump</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Police Jump (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Police Jump (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -331,11 +331,11 @@
 		<players>1-2</players>
 	</game>
 	<game id="10012" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/policeja.7z</path>
+		<path>./policeja.7z</path>
 		<name>Police Jump</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Police Jump (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Police Jump (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -346,11 +346,11 @@
 		<players>1-2</players>
 	</game>
 	<game id="20012" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/policeje.7z</path>
+		<path>./policeje.7z</path>
 		<name>Police Jump</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Police Jump (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Police Jump (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -361,12 +361,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00013" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/soccer.7z</path>
+		<path>./soccer.7z</path>
 		<name>Soccer</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Soccer (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Soccer (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Soccer (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -376,12 +376,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10013" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/soccerinv.7z</path>
+		<path>./soccerinv.7z</path>
 		<name>Soccer</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Soccer (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Soccer (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Soccer (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -391,12 +391,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00015" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/stoneage.7z</path>
+		<path>./stoneage.7z</path>
 		<name>Stone Age</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Stone Age (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Stone Age (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Stone Age (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19841201T000000</releasedate>
@@ -406,12 +406,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00016" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tankatk.7z</path>
+		<path>./tankatk.7z</path>
 		<name>Tank Attack</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tank Attack (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tank Attack (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tank Attack (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -421,12 +421,12 @@
 		<players>2</players>
 	</game>
 	<game id="10016" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tankatka.7z</path>
+		<path>./tankatka.7z</path>
 		<name>Tank Attack</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tank Attack (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tank Attack (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tank Attack (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -436,12 +436,12 @@
 		<players>2</players>
 	</game>
 	<game id="00017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennis.7z</path>
+		<path>./tennis.7z</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -451,12 +451,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennisa.7z</path>
+		<path>./tennisa.7z</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -466,12 +466,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="20017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennisb.7z</path>
+		<path>./tennisb.7z</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -481,12 +481,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="30017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tenniscs.7z</path>
+		<path>./tenniscs.7z</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -496,12 +496,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="40017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennisd.7z</path>
+		<path>./tennisd.7z</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -511,12 +511,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="50017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennisda.7z</path>
+		<path>./tennisda.7z</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -528,9 +528,9 @@
 	<game>
 		<path>./sonicinv.7z</path>
 		<name>Sonic Invader</name>
-		<image>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe).png</image>
-		<video>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe).mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Sonic Invader (Asia, Europe).png</image>
+		<video>./media/emulationstation/Sonic Invader (Asia, Europe).mp4</video>
+		<marquee>./media/emulationstation/Sonic Invader (Asia, Europe) - logo.png</marquee>
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
 		<developer>VTech</developer>
@@ -543,9 +543,9 @@
 	<game>
 		<path>./airsea.7z</path>
 		<name>Air Sea Attack</name>
-		<image>~/.emulationstation/downloaded_images/crvision/Air Sea Attack (Asia, Europe).png</image>
-		<video>~/.emulationstation/downloaded_images/crvision/Air Sea Attack (Asia, Europe).mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/crvision/Sea Attack (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Air Sea Attack (Asia, Europe).png</image>
+		<video>./media/emulationstation/Air Sea Attack (Asia, Europe).mp4</video>
+		<marquee>./media/emulationstation/Sea Attack (Asia, Europe) - logo.png</marquee>
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
 		<developer>VTech</developer>
@@ -558,8 +558,8 @@
 	<game>
 		<path>./chopper.7z</path>
 		<name>Chopper Rescue </name>
-		<image>~/.emulationstation/downloaded_images/crvision/Chopper Rescue (Asia, Europe).png</image>
-		<marquee>~/.emulationstation/downloaded_images/crvision/Chopper Rescue (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Chopper Rescue (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Chopper Rescue (Asia, Europe) - logo.png</marquee>
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
 		<developer>VTech</developer>
@@ -569,11 +569,11 @@
 		<lastplayed>20200821T145505</lastplayed>
 	</game>
 	<game id="00001" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/astropin.zip</path>
+		<path>./astropin.zip</path>
 		<name>Astro Pinball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Astro Pinball (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Astro Pinball (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -584,11 +584,11 @@
 		<players>1-4</players>
 	</game>
 	<game id="10001" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/astropina.zip</path>
+		<path>./astropina.zip</path>
 		<name>Astro Pinball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Astro Pinball (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Astro Pinball (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -599,11 +599,11 @@
 		<players>1-4</players>
 	</game>
 	<game id="20001" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/astropinb.zip</path>
+		<path>./astropinb.zip</path>
 		<name>Astro Pinball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Astro Pinball (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Astro Pinball (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Astro Pinball (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -614,11 +614,11 @@
 		<players>1-4</players>
 	</game>
 	<game id="00003" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/autochas</path>
+		<path>./autochas</path>
 		<name>Auto Chase </name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Auto Chase (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Auto Chase (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -629,11 +629,11 @@
 		<players>1</players>
 	</game>
 	<game id="10003" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/autochasa</path>
+		<path>./autochasa</path>
 		<name>Auto Chase </name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Auto Chase (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Auto Chase (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Auto Chase (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -644,12 +644,12 @@
 		<players>1</players>
 	</game>
 	<game id="00004" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/crazych.zip</path>
+		<path>./crazych.zip</path>
 		<name>Crazy Chicky</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Chicky (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Crazy Chicky (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Crazy Chicky (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Crazy Chicky (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19821201T000000</releasedate>
@@ -659,10 +659,10 @@
 		<players>1-4</players>
 	</game>
 	<game id="00005" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/basic.zip</path>
+		<path>./basic.zip</path>
 		<name>Basic Interpreter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<image>./media/emulationstation/Basic Interpreter.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -674,10 +674,10 @@
 		<players>1</players>
 	</game>
 	<game id="10005" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/basico1.zip</path>
+		<path>./basico1.zip</path>
 		<name>Basic Interpreter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<image>./media/emulationstation/Basic Interpreter.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -689,10 +689,10 @@
 		<players>1</players>
 	</game>
 	<game id="20005" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/basico2.zip</path>
+		<path>./basico2.zip</path>
 		<name>Basic Interpreter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<image>./media/emulationstation/Basic Interpreter.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -704,10 +704,10 @@
 		<players>1</players>
 	</game>
 	<game id="30005" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/basico3.zip</path>
+		<path>./basico3.zip</path>
 		<name>Basic Interpreter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Basic Interpreter.png</image>
+		<image>./media/emulationstation/Basic Interpreter.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -719,12 +719,12 @@
 		<players>1</players>
 	</game>
 	<game id="00006" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/crazypuc.zip</path>
+		<path>./crazypuc.zip</path>
 		<name>Crazy Pucker</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Crazy Pucker (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Crazy Pucker (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Crazy Pucker (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Crazy Pucker (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -734,11 +734,11 @@
 		<players>1-4</players>
 	</game>
 	<game id="00007" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/deepsea.zip</path>
+		<path>./deepsea.zip</path>
 		<name>Deep Sea Adventure</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Deep Sea Adventure (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -749,11 +749,11 @@
 		<players>1-2</players>
 	</game>
 	<game id="10007" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/deepseaa.zip</path>
+		<path>./deepseaa.zip</path>
 		<name>Deep Sea Adventure</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Deep Sea Adventure (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Deep Sea Adventure (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -764,12 +764,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00008" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/locomot.zip</path>
+		<path>./locomot.zip</path>
 		<name>Locomotive</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Locomotive (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Locomotive (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Locomotive (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -779,12 +779,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10008" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/locomota.zip</path>
+		<path>./locomota.zip</path>
 		<name>Locomotive</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Locomotive (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Locomotive (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Locomotive (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Locomotive (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -794,12 +794,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00009" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/mousepuz.zip</path>
+		<path>./mousepuz.zip</path>
 		<name>Mouse Puzzle</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Mouse Puzzle (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Mouse Puzzle (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19821201T000000</releasedate>
@@ -809,12 +809,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10009" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/mousepuza.zip</path>
+		<path>./mousepuza.zip</path>
 		<name>Mouse Puzzle</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Mouse Puzzle (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Mouse Puzzle (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Mouse Puzzle (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Mouse Puzzle (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19821201T000000</releasedate>
@@ -824,12 +824,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00010" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/musicmak.zip</path>
+		<path>./musicmak.zip</path>
 		<name>Music Maker</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Music Maker (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Music Maker (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Music Maker (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Music Maker (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -839,12 +839,12 @@
 		<players>1</players>
 	</game>
 	<game id="00011" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/planetd.zip</path>
+		<path>./planetd.zip</path>
 		<name>Planet Defender</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Planet Defender (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Planet Defender (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -854,12 +854,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10011" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/planetd1.zip</path>
+		<path>./planetd1.zip</path>
 		<name>Planet Defender</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Planet Defender (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Planet Defender (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -869,12 +869,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="20011" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/planetd2.zip</path>
+		<path>./planetd2.zip</path>
 		<name>Planet Defender</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Planet Defender (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Planet Defender (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Planet Defender (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Planet Defender (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -884,11 +884,11 @@
 		<players>1-2</players>
 	</game>
 	<game id="00012" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/policej.zip</path>
+		<path>./policej.zip</path>
 		<name>Police Jump</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Police Jump (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Police Jump (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -899,11 +899,11 @@
 		<players>1-2</players>
 	</game>
 	<game id="10012" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/policeja.zip</path>
+		<path>./policeja.zip</path>
 		<name>Police Jump</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Police Jump (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Police Jump (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -914,11 +914,11 @@
 		<players>1-2</players>
 	</game>
 	<game id="20012" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/policeje.zip</path>
+		<path>./policeje.zip</path>
 		<name>Police Jump</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Police Jump (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Police Jump (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Police Jump (Asia, Europe) - logo.png</marquee>
 		<video />
 		<thumbnail />
 		<rating>0</rating>
@@ -929,12 +929,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00013" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/soccer.zip</path>
+		<path>./soccer.zip</path>
 		<name>Soccer</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Soccer (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Soccer (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Soccer (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -944,12 +944,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10013" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/soccerinv.zip</path>
+		<path>./soccerinv.zip</path>
 		<name>Soccer</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Soccer (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Soccer (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Soccer (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Soccer (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
@@ -959,12 +959,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00015" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/stoneage.zip</path>
+		<path>./stoneage.zip</path>
 		<name>Stone Age</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Stone Age (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Stone Age (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Stone Age (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Stone Age (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19841201T000000</releasedate>
@@ -974,12 +974,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="00016" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tankatk.zip</path>
+		<path>./tankatk.zip</path>
 		<name>Tank Attack</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tank Attack (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tank Attack (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tank Attack (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -989,12 +989,12 @@
 		<players>2</players>
 	</game>
 	<game id="10016" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tankatka.zip</path>
+		<path>./tankatka.zip</path>
 		<name>Tank Attack</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tank Attack (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tank Attack (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tank Attack (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tank Attack (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -1004,12 +1004,12 @@
 		<players>2</players>
 	</game>
 	<game id="00017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennis.zip</path>
+		<path>./tennis.zip</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -1019,12 +1019,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="10017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennisa.zip</path>
+		<path>./tennisa.zip</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -1034,12 +1034,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="20017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennisb.zip</path>
+		<path>./tennisb.zip</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -1049,12 +1049,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="30017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tenniscs.zip</path>
+		<path>./tenniscs.zip</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -1064,12 +1064,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="40017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennisd.zip</path>
+		<path>./tennisd.zip</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -1079,12 +1079,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="50017" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/crvision/tennisda.zip</path>
+		<path>./tennisda.zip</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe) - logo.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/crvision/Tennis (Asia, Europe).mp4</video>
+		<image>./media/emulationstation/Tennis (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Tennis (Asia, Europe) - logo.png</marquee>
+		<video>./media/emulationstation/Tennis (Asia, Europe).mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
@@ -1096,9 +1096,9 @@
 	<game>
 		<path>./sonicinv.zip</path>
 		<name>Sonic Invader</name>
-		<image>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe).png</image>
-		<video>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe).mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/crvision/Sonic Invader (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Sonic Invader (Asia, Europe).png</image>
+		<video>./media/emulationstation/Sonic Invader (Asia, Europe).mp4</video>
+		<marquee>./media/emulationstation/Sonic Invader (Asia, Europe) - logo.png</marquee>
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
 		<developer>VTech</developer>
@@ -1111,9 +1111,9 @@
 	<game>
 		<path>./airsea.zip</path>
 		<name>Air Sea Attack</name>
-		<image>~/.emulationstation/downloaded_images/crvision/Air Sea Attack (Asia, Europe).png</image>
-		<video>~/.emulationstation/downloaded_images/crvision/Air Sea Attack (Asia, Europe).mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/crvision/Sea Attack (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Air Sea Attack (Asia, Europe).png</image>
+		<video>./media/emulationstation/Air Sea Attack (Asia, Europe).mp4</video>
+		<marquee>./media/emulationstation/Sea Attack (Asia, Europe) - logo.png</marquee>
 		<rating>0</rating>
 		<releasedate>19811201T000000</releasedate>
 		<developer>VTech</developer>
@@ -1126,8 +1126,8 @@
 	<game>
 		<path>./chopper.zip</path>
 		<name>Chopper Rescue </name>
-		<image>~/.emulationstation/downloaded_images/crvision/Chopper Rescue (Asia, Europe).png</image>
-		<marquee>~/.emulationstation/downloaded_images/crvision/Chopper Rescue (Asia, Europe) - logo.png</marquee>
+		<image>./media/emulationstation/Chopper Rescue (Asia, Europe).png</image>
+		<marquee>./media/emulationstation/Chopper Rescue (Asia, Europe) - logo.png</marquee>
 		<rating>0</rating>
 		<releasedate>19831201T000000</releasedate>
 		<developer>VTech</developer>

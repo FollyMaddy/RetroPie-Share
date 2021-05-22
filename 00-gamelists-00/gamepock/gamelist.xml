@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <gameList>
 	<game id="57631" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamepock/astrobom.7z</path>
+		<path>./astrobom.7z</path>
 		<name>Astro Bomber</name>
 		<desc>Fly your ship over mountains and through corridors, all the while shooting, bombing, or dodging enemies.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/gamepock/astrobom-image.png</image>
+		<image>./media/emulationstation/astrobom-image.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -16,11 +16,11 @@
 		<players>1</players>
 	</game>
 	<game id="57632" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamepock/blockmaz.7z</path>
+		<path>./blockmaz.7z</path>
 		<name>Block Maze</name>
 		<desc>Block Maze takes its basic concept from Pengo and adds in some Ladybug to make a concept of its own. In a Pacman-like maze, you must push four central blocks marked with letters into a box in each corner marked with the same letter. As in Pengo, the blocks slide when pushed until they reach a wall or another block. The maze is also littered with plain black blocks, which can be used both to crush the two nasties roaming the maze (though they respawn after a few seconds) and to stop the alphabetic blocks at a desired position. To complicate things, there are rotating ramps near each corner. If a block slides into the ramp, it is deflected 90 degrees, which can be used both to reach otherwise unreachable nasties or to get the alphablocks in the right position without too many pushes. Blocks can, and must often, be destroyed to make way for the player sprite and other blocks. Once an alphablock reaches its corner, a fruit machine marked with the letters of the four corners is started on the top of the screen, granting you up to 1000 points if the letter you've cleared turns up.
 </desc>
-		<image>/home/pi/.emulationstation/downloaded_images/gamepock/blockmaz-image.png</image>
+		<image>./media/emulationstation/blockmaz-image.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -32,10 +32,10 @@
 		<players>1</players>
 	</game>
 	<game id="57633" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamepock/pokemahj.7z</path>
+		<path>./pokemahj.7z</path>
 		<name>Mahjong</name>
 		<desc>Simple black and white mahjong game.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/gamepock/pokemahj-image.png</image>
+		<image>./media/emulationstation/pokemahj-image.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -47,10 +47,10 @@
 		<players />
 	</game>
 	<game id="57635" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamepock/pokereve.7z</path>
+		<path>./pokereve.7z</path>
 		<name>Reversi</name>
 		<desc>Reversi is a strategy board game for two players, played on an 8×8 uncheckered board. There are sixty-four identical game pieces called disks (often spelled "discs"), which are light on one side and dark on the other. Players take turns placing disks on the board with their assigned color facing up. During a play, any disks of the opponent's color that are in a straight line and bounded by the disk just placed and another disk of the current player's color are turned over to the current player's color. The object of the game is to have the majority of disks turned to display your color when the last playable empty square is filled.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/gamepock/pokereve-image.png</image>
+		<image>./media/emulationstation/pokereve-image.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -66,7 +66,7 @@
 		<name>Store Keepers</name>
 		<desc>Soko-Ban is a classic puzzle game, the basis of numerous clones in the later years. It is set in a warehouse. On each level, the player must push crates (from square to square) to get them onto designated spots; once each crate is on a marked spot, the level is complete. Crates can only be pushed one at a time (so two crates next to each other cannot be pushed together), and cannot be pulled--so it's possible to get a crate stuck in a corner, where it cannot be retrieved! By the last levels, you must plan 40 steps in advance.
 </desc>
-		<image>~/.emulationstation/downloaded_images/gamepock/sokoban-image.png</image>
+		<image>./media/emulationstation/sokoban-image.png</image>
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
 		<developer></developer>
@@ -77,10 +77,10 @@
 		<lastplayed>20201107T215458</lastplayed>
 	</game>
 	<game id="57631" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamepock/astrobom.zip</path>
+		<path>./astrobom.zip</path>
 		<name>Astro Bomber</name>
 		<desc>Fly your ship over mountains and through corridors, all the while shooting, bombing, or dodging enemies.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/gamepock/astrobom-image.png</image>
+		<image>./media/emulationstation/astrobom-image.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -92,11 +92,11 @@
 		<players>1</players>
 	</game>
 	<game id="57632" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamepock/blockmaz.zip</path>
+		<path>./blockmaz.zip</path>
 		<name>Block Maze</name>
 		<desc>Block Maze takes its basic concept from Pengo and adds in some Ladybug to make a concept of its own. In a Pacman-like maze, you must push four central blocks marked with letters into a box in each corner marked with the same letter. As in Pengo, the blocks slide when pushed until they reach a wall or another block. The maze is also littered with plain black blocks, which can be used both to crush the two nasties roaming the maze (though they respawn after a few seconds) and to stop the alphabetic blocks at a desired position. To complicate things, there are rotating ramps near each corner. If a block slides into the ramp, it is deflected 90 degrees, which can be used both to reach otherwise unreachable nasties or to get the alphablocks in the right position without too many pushes. Blocks can, and must often, be destroyed to make way for the player sprite and other blocks. Once an alphablock reaches its corner, a fruit machine marked with the letters of the four corners is started on the top of the screen, granting you up to 1000 points if the letter you've cleared turns up.
 </desc>
-		<image>/home/pi/.emulationstation/downloaded_images/gamepock/blockmaz-image.png</image>
+		<image>./media/emulationstation/blockmaz-image.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -108,10 +108,10 @@
 		<players>1</players>
 	</game>
 	<game id="57633" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamepock/pokemahj.zip</path>
+		<path>./pokemahj.zip</path>
 		<name>Mahjong</name>
 		<desc>Simple black and white mahjong game.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/gamepock/pokemahj-image.png</image>
+		<image>./media/emulationstation/pokemahj-image.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -123,10 +123,10 @@
 		<players />
 	</game>
 	<game id="57635" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamepock/pokereve.zip</path>
+		<path>./pokereve.zip</path>
 		<name>Reversi</name>
 		<desc>Reversi is a strategy board game for two players, played on an 8×8 uncheckered board. There are sixty-four identical game pieces called disks (often spelled "discs"), which are light on one side and dark on the other. Players take turns placing disks on the board with their assigned color facing up. During a play, any disks of the opponent's color that are in a straight line and bounded by the disk just placed and another disk of the current player's color are turned over to the current player's color. The object of the game is to have the majority of disks turned to display your color when the last playable empty square is filled.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/gamepock/pokereve-image.png</image>
+		<image>./media/emulationstation/pokereve-image.png</image>
 		<marquee />
 		<video />
 		<thumbnail />
@@ -142,7 +142,7 @@
 		<name>Store Keepers</name>
 		<desc>Soko-Ban is a classic puzzle game, the basis of numerous clones in the later years. It is set in a warehouse. On each level, the player must push crates (from square to square) to get them onto designated spots; once each crate is on a marked spot, the level is complete. Crates can only be pushed one at a time (so two crates next to each other cannot be pushed together), and cannot be pulled--so it's possible to get a crate stuck in a corner, where it cannot be retrieved! By the last levels, you must plan 40 steps in advance.
 </desc>
-		<image>~/.emulationstation/downloaded_images/gamepock/sokoban-image.png</image>
+		<image>./media/emulationstation/sokoban-image.png</image>
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
 		<developer></developer>

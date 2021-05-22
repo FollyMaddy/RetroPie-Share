@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <gameList>
 	<game id="79104" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/sv8000/othello.7z</path>
+		<path>./othello.7z</path>
 		<name>Othello</name>
 		<desc>Othello (c) 1979 Success.  - SOURCES -  Game's ROM.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/sv8000/imageedit_4_9086015540.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/sv8000/othello-marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/sv8000/othello.mp4</video>
+		<image>./media/emulationstation/imageedit_4_9086015540.png</image>
+		<marquee>./media/emulationstation/othello-marquee.png</marquee>
+		<video>./media/emulationstation/othello.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19790101T000000</releasedate>
@@ -16,12 +16,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="5" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/sv8000/spfire.7z</path>
+		<path>./spfire.7z</path>
 		<name>SPACEFIRE</name>
 		<desc>A great space game </desc>
-		<image>/home/pi/.emulationstation/downloaded_images/sv8000/imageedit_3_8847181151.png</image>
+		<image>./media/emulationstation/imageedit_3_8847181151.png</image>
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/sv8000/spacefire.mp4</video>
+		<video>./media/emulationstation/spacefire.mp4</video>
 		<thumbnail />
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
@@ -31,12 +31,12 @@
 		<players>1-2</players>
 	</game>
 	<game id="5" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/sv8000/beamgala.7z</path>
+		<path>./beamgala.7z</path>
 		<name>BEAMGALAXIAN</name>
 		<desc>A game like Space Invaders</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/sv8000/imageedit_8_8638642145.png</image>
+		<image>./media/emulationstation/imageedit_8_8638642145.png</image>
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/sv8000/beamgalaxian.mp4</video>
+		<video>./media/emulationstation/beamgalaxian.mp4</video>
 		<thumbnail />
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
@@ -48,8 +48,8 @@
 	<game>
 		<path>./gunprof.7z</path>
 		<name>GUNPROFESSIONAL</name>
-		<image>~/.emulationstation/downloaded_images/sv8000/imageedit_5_4477140449.png</image>
-		<video>~/.emulationstation/downloaded_images/sv8000/gunprofessional.mp4</video>
+		<image>./media/emulationstation/imageedit_5_4477140449.png</image>
+		<video>./media/emulationstation/gunprofessional.mp4</video>
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Bandai</developer>
@@ -63,8 +63,8 @@
 		<path>./pacpac.7z</path>
 		<name>PACPACBIRD</name>
 		<desc>A great bird game </desc>
-		<image>~/.emulationstation/downloaded_images/sv8000/imageedit_6_4913389289.png</image>
-		<video>~/.emulationstation/downloaded_images/sv8000/pacpacbird.mp4</video>
+		<image>./media/emulationstation/imageedit_6_4913389289.png</image>
+		<video>./media/emulationstation/pacpacbird.mp4</video>
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Bandai</developer>
@@ -78,8 +78,8 @@
 		<path>./misvader.7z</path>
 		<name>MISSILEVADER</name>
 		<desc>A great sideways-scrolling shoot-em-up. </desc>
-		<image>~/.emulationstation/downloaded_images/sv8000/imageedit_2_7731760663.png</image>
-		<video>~/.emulationstation/downloaded_images/sv8000/missilevader.mp4</video>
+		<image>./media/emulationstation/imageedit_2_7731760663.png</image>
+		<video>./media/emulationstation/missilevader.mp4</video>
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Bandai</developer>
@@ -95,8 +95,8 @@
 		<desc>A great sideways-scrolling shoot-em-up. 
 
 The player takes control of a futuristic submarine and must shoot their way through the game's levels in a underwater city and in the depths of the seabed and it is attacked from both sides beneath the water in which the submarine moves and from the bottom the water, by a variety of enemies you must destroy all the machines and avoid collide with obstacles while you pick captive divers and fuel to reach the end of level.</desc>
-		<image>~/.emulationstation/downloaded_images/sv8000/imageedit_7_5470520313.png</image>
-		<video>~/.emulationstation/downloaded_images/sv8000/submarine.mp4</video>
+		<image>./media/emulationstation/imageedit_7_5470520313.png</image>
+		<video>./media/emulationstation/submarine.mp4</video>
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Bandai</developer>
@@ -107,12 +107,12 @@ The player takes control of a futuristic submarine and must shoot their way thro
 		<lastplayed>20201016T003908</lastplayed>
 	</game>
 	<game id="79104" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/sv8000/othello.zip</path>
+		<path>./othello.zip</path>
 		<name>Othello</name>
 		<desc>Othello (c) 1979 Success.  - SOURCES -  Game's ROM.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/sv8000/imageedit_4_9086015540.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/sv8000/othello-marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/sv8000/othello.mp4</video>
+		<image>./media/emulationstation/imageedit_4_9086015540.png</image>
+		<marquee>./media/emulationstation/othello-marquee.png</marquee>
+		<video>./media/emulationstation/othello.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19790101T000000</releasedate>
@@ -122,12 +122,12 @@ The player takes control of a futuristic submarine and must shoot their way thro
 		<players>1-2</players>
 	</game>
 	<game id="5" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/sv8000/spfire.zip</path>
+		<path>./spfire.zip</path>
 		<name>SPACEFIRE</name>
 		<desc>A great space game </desc>
-		<image>/home/pi/.emulationstation/downloaded_images/sv8000/imageedit_3_8847181151.png</image>
+		<image>./media/emulationstation/imageedit_3_8847181151.png</image>
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/sv8000/spacefire.mp4</video>
+		<video>./media/emulationstation/spacefire.mp4</video>
 		<thumbnail />
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
@@ -137,12 +137,12 @@ The player takes control of a futuristic submarine and must shoot their way thro
 		<players>1-2</players>
 	</game>
 	<game id="5" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/sv8000/beamgala.zip</path>
+		<path>./beamgala.zip</path>
 		<name>BEAMGALAXIAN</name>
 		<desc>A game like Space Invaders</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/sv8000/imageedit_8_8638642145.png</image>
+		<image>./media/emulationstation/imageedit_8_8638642145.png</image>
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/sv8000/beamgalaxian.mp4</video>
+		<video>./media/emulationstation/beamgalaxian.mp4</video>
 		<thumbnail />
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
@@ -154,8 +154,8 @@ The player takes control of a futuristic submarine and must shoot their way thro
 	<game>
 		<path>./gunprof.zip</path>
 		<name>GUNPROFESSIONAL</name>
-		<image>~/.emulationstation/downloaded_images/sv8000/imageedit_5_4477140449.png</image>
-		<video>~/.emulationstation/downloaded_images/sv8000/gunprofessional.mp4</video>
+		<image>./media/emulationstation/imageedit_5_4477140449.png</image>
+		<video>./media/emulationstation/gunprofessional.mp4</video>
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Bandai</developer>
@@ -169,8 +169,8 @@ The player takes control of a futuristic submarine and must shoot their way thro
 		<path>./pacpac.zip</path>
 		<name>PACPACBIRD</name>
 		<desc>A great bird game </desc>
-		<image>~/.emulationstation/downloaded_images/sv8000/imageedit_6_4913389289.png</image>
-		<video>~/.emulationstation/downloaded_images/sv8000/pacpacbird.mp4</video>
+		<image>./media/emulationstation/imageedit_6_4913389289.png</image>
+		<video>./media/emulationstation/pacpacbird.mp4</video>
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Bandai</developer>
@@ -184,8 +184,8 @@ The player takes control of a futuristic submarine and must shoot their way thro
 		<path>./misvader.zip</path>
 		<name>MISSILEVADER</name>
 		<desc>A great sideways-scrolling shoot-em-up. </desc>
-		<image>~/.emulationstation/downloaded_images/sv8000/imageedit_2_7731760663.png</image>
-		<video>~/.emulationstation/downloaded_images/sv8000/missilevader.mp4</video>
+		<image>./media/emulationstation/imageedit_2_7731760663.png</image>
+		<video>./media/emulationstation/missilevader.mp4</video>
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Bandai</developer>
@@ -201,8 +201,8 @@ The player takes control of a futuristic submarine and must shoot their way thro
 		<desc>A great sideways-scrolling shoot-em-up. 
 
 The player takes control of a futuristic submarine and must shoot their way through the game's levels in a underwater city and in the depths of the seabed and it is attacked from both sides beneath the water in which the submarine moves and from the bottom the water, by a variety of enemies you must destroy all the machines and avoid collide with obstacles while you pick captive divers and fuel to reach the end of level.</desc>
-		<image>~/.emulationstation/downloaded_images/sv8000/imageedit_7_5470520313.png</image>
-		<video>~/.emulationstation/downloaded_images/sv8000/submarine.mp4</video>
+		<image>./media/emulationstation/imageedit_7_5470520313.png</image>
+		<video>./media/emulationstation/submarine.mp4</video>
 		<rating>0.5</rating>
 		<releasedate>19790101T000000</releasedate>
 		<developer>Bandai</developer>

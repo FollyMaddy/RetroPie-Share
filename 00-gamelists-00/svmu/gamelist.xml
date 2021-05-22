@@ -1,10 +1,10 @@
 <gameList>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/chaoadv1.7z</path>
+	<path>./chaoadv1.7z</path>
 	<name>Chao Adventure</name>
 	<desc>chao adventure (1999)(sega)[sonic adventure]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -16,11 +16,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/chaoadv2.7z</path>
+	<path>./chaoadv2.7z</path>
 	<name>Chao Adventure 2</name>
 	<desc>chao adventure 2(2001)(sega)[sonic adventure 2]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -32,11 +32,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/chaoadv2f.7z</path>
+	<path>./chaoadv2f.7z</path>
 	<name>Chao Adventure 2 (France)</name>
 	<desc>chao adventure 2(2001)(sega)[sonic adventure 2] France
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -48,11 +48,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/linearw.7z</path>
+	<path>./linearw.7z</path>
 	<name>Linear Watch</name>
 	<desc>linear watch (2000)(esp software)[evolution 2]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -64,11 +64,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/mvsc2.7z</path>
+	<path>./mvsc2.7z</path>
 	<name>Marvel VS. Capcom 2 vs. Com (Jpn)</name>
 	<desc>marvel vs. capcom 2 vs. com (2000)(capcom)(jp)[marvel vs. capcom 2]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -80,11 +80,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/popnm1.7z</path>
+	<path>./popnm1.7z</path>
 	<name>Pop 'n Music Vol. 1 (Jpn)</name>
 	<desc>pop 'n music vol. 1 (1999)(konami)(jp)[pop 'n music]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -96,11 +96,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/popnm2.7z</path>
+	<path>./popnm2.7z</path>
 	<name>Pop 'n Music Vol. 2 (Jpn)</name>
 	<desc>pop 'n music vol. 2 (2000)(konami)(jp)[pop 'n music]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -112,11 +112,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/popnm3.7z</path>
+	<path>./popnm3.7z</path>
 	<name>Pop 'n Music Vol. 3 (Jpn)</name>
 	<desc>pop 'n music vol. 3 (2000)(konami)(jp)[pop 'n music]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -128,13 +128,13 @@
 	<players>1-2</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/pstone.7z</path>
+	<path>./pstone.7z</path>
 	<name>Powerstone Mini</name>
 	<desc>powerstone mini (1999)(capcom)[power stone]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.png</image>
+	<image>./media/emulationstation/Powerstone Mini.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -144,13 +144,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/pstone2.7z</path>
+	<path>./pstone2.7z</path>
 	<name>Power Stone 2 Mini Store (Jpn)</name>
 	<desc>power stone 2 mini store (2000)(capcom)(jp)[power stone 2]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.png</image>
+	<image>./media/emulationstation/Powerstone Mini.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -160,13 +160,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/gtameric.7z</path>
+	<path>./gtameric.7z</path>
 	<name>Sega GT Pocket America</name>
 	<desc>sega gt pocket america (2000)(sega - wow-ent)[sega gt]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Pocket GT America.png</image>
+	<image>./media/emulationstation/Pocket GT America.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -176,13 +176,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/gt.7z</path>
+	<path>./gt.7z</path>
 	<name>Sega GT (Jpn)</name>
 	<desc>sega gt (2000)(sega)(jp)[sega gt]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Pocket GT America.png</image>
+	<image>./media/emulationstation/Pocket GT America.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -192,13 +192,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/gteurope.7z</path>
+	<path>./gteurope.7z</path>
 	<name>Sega GT Pocket Europe</name>
 	<desc>sega gt pocket europe (2000)(sega - wow-ent)[sega gt]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Pocket GT America.png</image>
+	<image>./media/emulationstation/Pocket GT America.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -208,13 +208,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/gtjapan.7z</path>
+	<path>./gtjapan.7z</path>
 	<name>Sega GT Pocket Japan</name>
 	<desc>sega gt pocket japan (2000)(sega - wow-ent)[sega gt]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Pocket GT America.png</image>
+	<image>./media/emulationstation/Pocket GT America.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -224,13 +224,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/shenmue.7z</path>
+	<path>./shenmue.7z</path>
 	<name>Shenmue </name>
 	<desc>shenmue (1999)(sega)(jp)[shenmue]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Shenmue.png</image>
+	<image>./media/emulationstation/Shenmue.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Shenmue.mp4</video>
+	<video>./media/emulationstation/Shenmue.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -240,13 +240,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/sc31mini.7z</path>
+	<path>./sc31mini.7z</path>
 	<name>Soul Calibur 3-1 Mini (Jpn)</name>
 	<desc>soul calibur 3-1 mini (1999)(namco)(jp)[soulcalibur]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.png</image>
+	<image>./media/emulationstation/SoulCalibur VMU Game Pak.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.mp4</video>
+	<video>./media/emulationstation/SoulCalibur VMU Game Pak.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -256,13 +256,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/scvmugp.7z</path>
+	<path>./scvmugp.7z</path>
 	<name>SoulCalibur VMU Game Pack</name>
 	<desc>soulcalibur vmu game pack (1999)(namco)[soulcalibur]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.png</image>
+	<image>./media/emulationstation/SoulCalibur VMU Game Pak.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.mp4</video>
+	<video>./media/emulationstation/SoulCalibur VMU Game Pak.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -272,13 +272,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/sctext.7z</path>
+	<path>./sctext.7z</path>
 	<name>SoulCalibur Text Adventure (Jpn)</name>
 	<desc>soulcalibur text adventure (1999)(namco)(jp)[soulcalibur]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.png</image>
+	<image>./media/emulationstation/SoulCalibur VMU Game Pak.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.mp4</video>
+	<video>./media/emulationstation/SoulCalibur VMU Game Pak.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -288,13 +288,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/trickjr.7z</path>
+	<path>./trickjr.7z</path>
 	<name>TrickStyle Junior</name>
 	<desc>trickstyle junior (1999)(acclaim)[trickstyle]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Trickstyle Jr VMU Game.png</image>
+	<image>./media/emulationstation/Trickstyle Jr VMU Game.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Trickstyle Jr VMU Game.mp4</video>
+	<video>./media/emulationstation/Trickstyle Jr VMU Game.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -304,13 +304,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/vmufootb.7z</path>
+	<path>./vmufootb.7z</path>
 	<name>VMU Football (USA)</name>
 	<desc>vmu football (1999)(sega)(us)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/VMU Football.png</image>
+	<image>./media/emulationstation/VMU Football.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/VMU Football.mp4</video>
+	<video>./media/emulationstation/VMU Football.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -320,11 +320,11 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/zombie.7z</path>
+	<path>./zombie.7z</path>
 	<name>Zombie Revenge Training Game</name>
 	<desc>zombie revenge training game (1999)(sega)[zombie revenge]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/VMU Football.png</image>
+	<image>./media/emulationstation/VMU Football.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -336,13 +336,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/4 Wins v1.1 (2002)(Schoettke, Vincent)(PD).7z</path>
+	<path>./4 Wins v1.1 (2002)(Schoettke, Vincent)(PD).7z</path>
 	<name>4 wins</name>
 	<desc>4 Wins v1.1 (2002)(Schoettke, Vincent)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.mp4</video>
+	<image>./media/emulationstation/4 Wins.png</image>
+	<marquee>>./media/emulationstation/4 Wins1.png</marquee>
+	<video>./media/emulationstation/4 Wins.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20020101T000000</releasedate>
@@ -352,13 +352,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Alien Fighter v1.0 (200x)(Gust, Soren)(PD).7z</path>
+	<path>./Alien Fighter v1.0 (200x)(Gust, Soren)(PD).7z</path>
 	<name>Alien Fighter</name>
 	<desc>Alien Fighter v1.0 (200x)(Gust, Soren)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Alien Fighter.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Alien Fighter1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Alien Fighter.mp4</video>
+	<image>./media/emulationstation/Alien Fighter.png</image>
+	<marquee>>./media/emulationstation/Alien Fighter1.png</marquee>
+	<video>./media/emulationstation/Alien Fighter.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -368,13 +368,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Alien Shooter (200x)(Dream Machine)(PD).7z</path>
+	<path>./Alien Shooter (200x)(Dream Machine)(PD).7z</path>
 	<name>Alien Shooter</name>
 	<desc>Alien Shooter (200x)(Dream Machine)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Alien Shooter.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Alien Shooter1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Alien Shooter.mp4</video>
+	<image>./media/emulationstation/Alien Shooter.png</image>
+	<marquee>>./media/emulationstation/Alien Shooter1.png</marquee>
+	<video>./media/emulationstation/Alien Shooter.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -384,13 +384,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Basketball (200x)(-)(PD).7z</path>
+	<path>./Basketball (200x)(-)(PD).7z</path>
 	<name>Basketball</name>
 	<desc>Basketball (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Basketball.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Basketball1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Basketball.mp4</video>
+	<image>./media/emulationstation/Basketball.png</image>
+	<marquee>>./media/emulationstation/Basketball1.png</marquee>
+	<video>./media/emulationstation/Basketball.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -400,13 +400,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Dance Dance! (200x)(-)(PD).7z</path>
+	<path>./Dance Dance! (200x)(-)(PD).7z</path>
 	<name>Dance Dance!</name>
 	<desc>Dance Dance! (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Dance Dance.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Dance Dance1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Dance Dance.mp4</video>
+	<image>./media/emulationstation/Dance Dance.png</image>
+	<marquee>>./media/emulationstation/Dance Dance1.png</marquee>
+	<video>./media/emulationstation/Dance Dance.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -416,13 +416,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Dream Racer (200x)(Dream Machine)(PD).7z</path>
+	<path>./Dream Racer (200x)(Dream Machine)(PD).7z</path>
 	<name>Dream Racer</name>
 	<desc>Dream Racer (200x)(Dream Machine)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Dream Racer.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Dream Racer1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Dream Racer.mp4</video>
+	<image>./media/emulationstation/Dream Racer.png</image>
+	<marquee>>./media/emulationstation/Dream Racer1.png</marquee>
+	<video>./media/emulationstation/Dream Racer.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -432,13 +432,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Glucky Laby (2000)(Inutero)(PD).7z</path>
+	<path>./Glucky Laby (2000)(Inutero)(PD).7z</path>
 	<name>Glucky Laby</name>
 	<desc>Glucky Laby (2000)(Inutero)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Glucky Labyrinth.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Glucky Labyrinth1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Glucky Labyrinth.mp4</video>
+	<image>./media/emulationstation/Glucky Labyrinth.png</image>
+	<marquee>>./media/emulationstation/Glucky Labyrinth1.png</marquee>
+	<video>./media/emulationstation/Glucky Labyrinth.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -448,13 +448,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Guess the Square (200x)(J.W.)(PD).7z</path>
+	<path>./Guess the Square (200x)(J.W.)(PD).7z</path>
 	<name>Guess the Square</name>
 	<desc>Guess the Square (200x)(J.W.)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Guess That Square.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Guess That Square1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Guess That Square.mp4</video>
+	<image>./media/emulationstation/Guess That Square.png</image>
+	<marquee>>./media/emulationstation/Guess That Square1.png</marquee>
+	<video>./media/emulationstation/Guess That Square.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -464,13 +464,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Jim's Bowling (200x)(-)(PD).7z</path>
+	<path>./Jim's Bowling (200x)(-)(PD).7z</path>
 	<name>Jim's Bowling</name>
 	<desc>Jim's Bowling (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Jim Bowl.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Jim Bowl1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Jim Bowl.mp4</video>
+	<image>./media/emulationstation/Jim Bowl.png</image>
+	<marquee>>./media/emulationstation/Jim Bowl1.png</marquee>
+	<video>./media/emulationstation/Jim Bowl.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -480,13 +480,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Lightsaber Battle! (200x)(Bryan, J.)(PD).7z</path>
+	<path>./Lightsaber Battle! (200x)(Bryan, J.)(PD).7z</path>
 	<name>Lightsaber Battle!</name>
 	<desc>Lightsaber Battle! (200x)(Bryan, J.)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Lightsaber Battle.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Lightsaber Battle1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Lightsaber Battle.mp4</video>
+	<image>./media/emulationstation/Lightsaber Battle.png</image>
+	<marquee>>./media/emulationstation/Lightsaber Battle1.png</marquee>
+	<video>./media/emulationstation/Lightsaber Battle.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -496,13 +496,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Metal Gear Stealth (200x)(VMU Project)[p].7z</path>
+	<path>./Metal Gear Stealth (200x)(VMU Project)[p].7z</path>
 	<name>Metal Gear Stealth</name>
 	<desc>Metal Gear Stealth (200x)(VMU Project)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Metal Gear Stealth.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Metal Gear Stealth1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Metal Gear Stealth.mp4</video>
+	<image>./media/emulationstation/Metal Gear Stealth.png</image>
+	<marquee>>./media/emulationstation/Metal Gear Stealth1.png</marquee>
+	<video>./media/emulationstation/Metal Gear Stealth.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -512,13 +512,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Minesweeper (200x)(Gust, Soren)(PD).7z</path>
+	<path>./Minesweeper (200x)(Gust, Soren)(PD).7z</path>
 	<name>Minesweeper</name>
 	<desc>Minesweeper (200x)(Gust, Soren)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Mine Sweeper.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Mine Sweeper1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Mine Sweeper.mp4</video>
+	<image>./media/emulationstation/Mine Sweeper.png</image>
+	<marquee>>./media/emulationstation/Mine Sweeper1.png</marquee>
+	<video>./media/emulationstation/Mine Sweeper.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -528,13 +528,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Paper Attack (2000)(Inutero)(PD).7z</path>
+	<path>./Paper Attack (2000)(Inutero)(PD).7z</path>
 	<name>Paper Attack</name>
 	<desc>Paper Attack (2000)(Inutero)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Paper Attack.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Paper Attack1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Paper Attack.mp4</video>
+	<image>./media/emulationstation/Paper Attack.png</image>
+	<marquee>>./media/emulationstation/Paper Attack1.png</marquee>
+	<video>./media/emulationstation/Paper Attack.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -544,13 +544,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Rainbow Six (200x)(Bryan, J.)[p].7z</path>
+	<path>./Rainbow Six (200x)(Bryan, J.)[p].7z</path>
 	<name>Rainbow Six</name>
 	<desc>Rainbow Six (200x)(Bryan, J.)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Rainbow Six.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Rainbow Six1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Rainbow Six.mp4</video>
+	<image>./media/emulationstation/Rainbow Six.png</image>
+	<marquee>>./media/emulationstation/Rainbow Six1.png</marquee>
+	<video>./media/emulationstation/Rainbow Six.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -560,13 +560,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Revenge (200x)(SB6)(PD).7z</path>
+	<path>./Revenge (200x)(SB6)(PD).7z</path>
 	<name>Revenge</name>
 	<desc>Revenge (200x)(SB6)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Revenge.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Revenge1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Revenge.mp4</video>
+	<image>./media/emulationstation/Revenge.png</image>
+	<marquee>>./media/emulationstation/Revenge1.png</marquee>
+	<video>./media/emulationstation/Revenge.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -576,13 +576,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Simon (200x)(Bryan, J.)(PD).7z</path>
+	<path>./Simon (200x)(Bryan, J.)(PD).7z</path>
 	<name>Simon</name>
 	<desc>Simon (200x)(Bryan, J.)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/SIMON.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/SIMON1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/SIMON.mp4</video>
+	<image>./media/emulationstation/SIMON.png</image>
+	<marquee>>./media/emulationstation/SIMON1.png</marquee>
+	<video>./media/emulationstation/SIMON.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -592,13 +592,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Shell Game, The (200x)(-)(PD).7z</path>
+	<path>./Shell Game, The (200x)(-)(PD).7z</path>
 	<name>The Shell Game</name>
 	<desc>Shell Game, The (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/The Shell Game.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/The Shell Game1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/The Shell Game.mp4</video>
+	<image>./media/emulationstation/The Shell Game.png</image>
+	<marquee>>./media/emulationstation/The Shell Game1.png</marquee>
+	<video>./media/emulationstation/The Shell Game.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -608,13 +608,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Puzzle (200x)(-)(PD).7z</path>
+	<path>./Puzzle (200x)(-)(PD).7z</path>
 	<name>Puzzle</name>
 	<desc>Puzzle (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Slide Puzzle.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Slide Puzzle1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Slide Puzzle.mp4</video>
+	<image>./media/emulationstation/Slide Puzzle.png</image>
+	<marquee>>./media/emulationstation/Slide Puzzle1.png</marquee>
+	<video>./media/emulationstation/Slide Puzzle.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -624,13 +624,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Star Wars (200x)(Bryan, J.)[p].7z</path>
+	<path>./Star Wars (200x)(Bryan, J.)[p].7z</path>
 	<name>Star Wars</name>
 	<desc>Star Wars (200x)(Bryan, J.)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/StarWars.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/StarWars1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/StarWars.mp4</video>
+	<image>./media/emulationstation/StarWars.png</image>
+	<marquee>>./media/emulationstation/StarWars1.png</marquee>
+	<video>./media/emulationstation/StarWars.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -640,13 +640,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Supercross VMU (200x)(-)(PD).7z</path>
+	<path>./Supercross VMU (200x)(-)(PD).7z</path>
 	<name>Supercross</name>
 	<desc>Supercross VMU (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Supercross.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Supercross1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Supercross.mp4</video>
+	<image>./media/emulationstation/Supercross.png</image>
+	<marquee>>./media/emulationstation/Supercross1.png</marquee>
+	<video>./media/emulationstation/Supercross.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -656,13 +656,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Swampy (2000)(Inuendo)(PD).7z</path>
+	<path>./Swampy (2000)(Inuendo)(PD).7z</path>
 	<name>Swampy</name>
 	<desc>Swampy (2000)(Inuendo)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Swampy.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Swampy1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Swampy.mp4</video>
+	<image>./media/emulationstation/Swampy.png</image>
+	<marquee>>./media/emulationstation/Swampy1.png</marquee>
+	<video>./media/emulationstation/Swampy.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -672,13 +672,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Tetris v1.3 (200x)(Comstedt, Marcus)[p].7z</path>
+	<path>./Tetris v1.3 (200x)(Comstedt, Marcus)[p].7z</path>
 	<name>Tiny Tetris</name>
 	<desc>Tetris v1.3 (200x)(Comstedt, Marcus)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Tiny Tetris.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Tiny Tetris1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Tiny Tetris.mp4</video>
+	<image>./media/emulationstation/Tiny Tetris.png</image>
+	<marquee>>./media/emulationstation/Tiny Tetris1.png</marquee>
+	<video>./media/emulationstation/Tiny Tetris.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -688,13 +688,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Time Crisis (200x)(-)[p].7z</path>
+	<path>./Time Crisis (200x)(-)[p].7z</path>
 	<name>Time Crisis</name>
 	<desc>Time Crisis (200x)(-)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Time Crisis.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Time Crisis1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Time Crisis.mp4</video>
+	<image>./media/emulationstation/Time Crisis.png</image>
+	<marquee>>./media/emulationstation/Time Crisis1.png</marquee>
+	<video>./media/emulationstation/Time Crisis.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -704,13 +704,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/VMU Mini Pac-Man v1.0 (200x)(Sanasi, Alessandro)[p].7z</path>
+	<path>./VMU Mini Pac-Man v1.0 (200x)(Sanasi, Alessandro)[p].7z</path>
 	<name>Mini Pac-Man</name>
 	<desc>VMU Mini Pac-Man v1.0 (200x)(Sanasi, Alessandro)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/VMU Mini Pac-Man.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/VMU Mini Pac-Man1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/VMU Mini Pac-Man.mp4</video>
+	<image>./media/emulationstation/VMU Mini Pac-Man.png</image>
+	<marquee>>./media/emulationstation/VMU Mini Pac-Man1.png</marquee>
+	<video>./media/emulationstation/VMU Mini Pac-Man.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -720,13 +720,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/VMU Vision (200x)(Sanasi, Alessandro)(PD).7z</path>
+	<path>./VMU Vision (200x)(Sanasi, Alessandro)(PD).7z</path>
 	<name>VMU Vision</name>
 	<desc>VMU Vision (200x)(Sanasi, Alessandro)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/VMU Vision.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/VMU Vision1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/VMU Vision.mp4</video>
+	<image>./media/emulationstation/VMU Vision.png</image>
+	<marquee>>./media/emulationstation/VMU Vision1.png</marquee>
+	<video>./media/emulationstation/VMU Vision.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -736,13 +736,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/VMU Boxing (200x)(VM Team 1)(PD).7z</path>
+	<path>./VMU Boxing (200x)(VM Team 1)(PD).7z</path>
 	<name>VMU Boxing</name>
 	<desc>VMU Boxing (200x)(VM Team 1)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Boxing.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Boxing1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Boxing.mp4</video>
+	<image>./media/emulationstation/Boxing.png</image>
+	<marquee>>./media/emulationstation/Boxing1.png</marquee>
+	<video>./media/emulationstation/Boxing.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -752,11 +752,11 @@
 	<players>1</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/chaoadv1.zip</path>
+	<path>./chaoadv1.zip</path>
 	<name>Chao Adventure</name>
 	<desc>chao adventure (1999)(sega)[sonic adventure]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -768,11 +768,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/chaoadv2.zip</path>
+	<path>./chaoadv2.zip</path>
 	<name>Chao Adventure 2</name>
 	<desc>chao adventure 2(2001)(sega)[sonic adventure 2]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -784,11 +784,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/chaoadv2f.zip</path>
+	<path>./chaoadv2f.zip</path>
 	<name>Chao Adventure 2 (France)</name>
 	<desc>chao adventure 2(2001)(sega)[sonic adventure 2] France
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -800,11 +800,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/linearw.zip</path>
+	<path>./linearw.zip</path>
 	<name>Linear Watch</name>
 	<desc>linear watch (2000)(esp software)[evolution 2]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -816,11 +816,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/mvsc2.zip</path>
+	<path>./mvsc2.zip</path>
 	<name>Marvel VS. Capcom 2 vs. Com (Jpn)</name>
 	<desc>marvel vs. capcom 2 vs. com (2000)(capcom)(jp)[marvel vs. capcom 2]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -832,11 +832,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/popnm1.zip</path>
+	<path>./popnm1.zip</path>
 	<name>Pop 'n Music Vol. 1 (Jpn)</name>
 	<desc>pop 'n music vol. 1 (1999)(konami)(jp)[pop 'n music]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -848,11 +848,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/popnm2.zip</path>
+	<path>./popnm2.zip</path>
 	<name>Pop 'n Music Vol. 2 (Jpn)</name>
 	<desc>pop 'n music vol. 2 (2000)(konami)(jp)[pop 'n music]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -864,11 +864,11 @@
 	<players>1-2</players>
 </game>
 <game id="13535" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/popnm3.zip</path>
+	<path>./popnm3.zip</path>
 	<name>Pop 'n Music Vol. 3 (Jpn)</name>
 	<desc>pop 'n music vol. 3 (2000)(konami)(jp)[pop 'n music]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
+	<image>./media/emulationstation/4 Wins.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -880,13 +880,13 @@
 	<players>1-2</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/pstone.zip</path>
+	<path>./pstone.zip</path>
 	<name>Powerstone Mini</name>
 	<desc>powerstone mini (1999)(capcom)[power stone]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.png</image>
+	<image>./media/emulationstation/Powerstone Mini.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -896,13 +896,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/pstone2.zip</path>
+	<path>./pstone2.zip</path>
 	<name>Power Stone 2 Mini Store (Jpn)</name>
 	<desc>power stone 2 mini store (2000)(capcom)(jp)[power stone 2]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.png</image>
+	<image>./media/emulationstation/Powerstone Mini.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -912,13 +912,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/gtameric.zip</path>
+	<path>./gtameric.zip</path>
 	<name>Sega GT Pocket America</name>
 	<desc>sega gt pocket america (2000)(sega - wow-ent)[sega gt]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Pocket GT America.png</image>
+	<image>./media/emulationstation/Pocket GT America.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -928,13 +928,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/gt.zip</path>
+	<path>./gt.zip</path>
 	<name>Sega GT (Jpn)</name>
 	<desc>sega gt (2000)(sega)(jp)[sega gt]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Pocket GT America.png</image>
+	<image>./media/emulationstation/Pocket GT America.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -944,13 +944,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/gteurope.zip</path>
+	<path>./gteurope.zip</path>
 	<name>Sega GT Pocket Europe</name>
 	<desc>sega gt pocket europe (2000)(sega - wow-ent)[sega gt]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Pocket GT America.png</image>
+	<image>./media/emulationstation/Pocket GT America.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -960,13 +960,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/gtjapan.zip</path>
+	<path>./gtjapan.zip</path>
 	<name>Sega GT Pocket Japan</name>
 	<desc>sega gt pocket japan (2000)(sega - wow-ent)[sega gt]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Pocket GT America.png</image>
+	<image>./media/emulationstation/Pocket GT America.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Powerstone Mini.mp4</video>
+	<video>./media/emulationstation/Powerstone Mini.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -976,13 +976,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/shenmue.zip</path>
+	<path>./shenmue.zip</path>
 	<name>Shenmue </name>
 	<desc>shenmue (1999)(sega)(jp)[shenmue]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Shenmue.png</image>
+	<image>./media/emulationstation/Shenmue.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Shenmue.mp4</video>
+	<video>./media/emulationstation/Shenmue.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -992,13 +992,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/sc31mini.zip</path>
+	<path>./sc31mini.zip</path>
 	<name>Soul Calibur 3-1 Mini (Jpn)</name>
 	<desc>soul calibur 3-1 mini (1999)(namco)(jp)[soulcalibur]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.png</image>
+	<image>./media/emulationstation/SoulCalibur VMU Game Pak.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.mp4</video>
+	<video>./media/emulationstation/SoulCalibur VMU Game Pak.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1008,13 +1008,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/scvmugp.zip</path>
+	<path>./scvmugp.zip</path>
 	<name>SoulCalibur VMU Game Pack</name>
 	<desc>soulcalibur vmu game pack (1999)(namco)[soulcalibur]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.png</image>
+	<image>./media/emulationstation/SoulCalibur VMU Game Pak.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.mp4</video>
+	<video>./media/emulationstation/SoulCalibur VMU Game Pak.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1024,13 +1024,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/sctext.zip</path>
+	<path>./sctext.zip</path>
 	<name>SoulCalibur Text Adventure (Jpn)</name>
 	<desc>soulcalibur text adventure (1999)(namco)(jp)[soulcalibur]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.png</image>
+	<image>./media/emulationstation/SoulCalibur VMU Game Pak.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/SoulCalibur VMU Game Pak.mp4</video>
+	<video>./media/emulationstation/SoulCalibur VMU Game Pak.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1040,13 +1040,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/trickjr.zip</path>
+	<path>./trickjr.zip</path>
 	<name>TrickStyle Junior</name>
 	<desc>trickstyle junior (1999)(acclaim)[trickstyle]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Trickstyle Jr VMU Game.png</image>
+	<image>./media/emulationstation/Trickstyle Jr VMU Game.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Trickstyle Jr VMU Game.mp4</video>
+	<video>./media/emulationstation/Trickstyle Jr VMU Game.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1056,13 +1056,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/vmufootb.zip</path>
+	<path>./vmufootb.zip</path>
 	<name>VMU Football (USA)</name>
 	<desc>vmu football (1999)(sega)(us)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/VMU Football.png</image>
+	<image>./media/emulationstation/VMU Football.png</image>
 	<marquee/>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/VMU Football.mp4</video>
+	<video>./media/emulationstation/VMU Football.mp4</video>
 	<thumbnail/>
 	<rating>0.8</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1072,11 +1072,11 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/zombie.zip</path>
+	<path>./zombie.zip</path>
 	<name>Zombie Revenge Training Game</name>
 	<desc>zombie revenge training game (1999)(sega)[zombie revenge]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/VMU Football.png</image>
+	<image>./media/emulationstation/VMU Football.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1088,13 +1088,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/4 Wins v1.1 (2002)(Schoettke, Vincent)(PD).zip</path>
+	<path>./4 Wins v1.1 (2002)(Schoettke, Vincent)(PD).zip</path>
 	<name>4 wins</name>
 	<desc>4 Wins v1.1 (2002)(Schoettke, Vincent)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/4 Wins.mp4</video>
+	<image>./media/emulationstation/4 Wins.png</image>
+	<marquee>>./media/emulationstation/4 Wins1.png</marquee>
+	<video>./media/emulationstation/4 Wins.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20020101T000000</releasedate>
@@ -1104,13 +1104,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Alien Fighter v1.0 (200x)(Gust, Soren)(PD).zip</path>
+	<path>./Alien Fighter v1.0 (200x)(Gust, Soren)(PD).zip</path>
 	<name>Alien Fighter</name>
 	<desc>Alien Fighter v1.0 (200x)(Gust, Soren)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Alien Fighter.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Alien Fighter1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Alien Fighter.mp4</video>
+	<image>./media/emulationstation/Alien Fighter.png</image>
+	<marquee>>./media/emulationstation/Alien Fighter1.png</marquee>
+	<video>./media/emulationstation/Alien Fighter.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>19990101T000000</releasedate>
@@ -1120,13 +1120,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Alien Shooter (200x)(Dream Machine)(PD).zip</path>
+	<path>./Alien Shooter (200x)(Dream Machine)(PD).zip</path>
 	<name>Alien Shooter</name>
 	<desc>Alien Shooter (200x)(Dream Machine)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Alien Shooter.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Alien Shooter1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Alien Shooter.mp4</video>
+	<image>./media/emulationstation/Alien Shooter.png</image>
+	<marquee>>./media/emulationstation/Alien Shooter1.png</marquee>
+	<video>./media/emulationstation/Alien Shooter.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1136,13 +1136,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Basketball (200x)(-)(PD).zip</path>
+	<path>./Basketball (200x)(-)(PD).zip</path>
 	<name>Basketball</name>
 	<desc>Basketball (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Basketball.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Basketball1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Basketball.mp4</video>
+	<image>./media/emulationstation/Basketball.png</image>
+	<marquee>>./media/emulationstation/Basketball1.png</marquee>
+	<video>./media/emulationstation/Basketball.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1152,13 +1152,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Dance Dance! (200x)(-)(PD).zip</path>
+	<path>./Dance Dance! (200x)(-)(PD).zip</path>
 	<name>Dance Dance!</name>
 	<desc>Dance Dance! (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Dance Dance.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Dance Dance1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Dance Dance.mp4</video>
+	<image>./media/emulationstation/Dance Dance.png</image>
+	<marquee>>./media/emulationstation/Dance Dance1.png</marquee>
+	<video>./media/emulationstation/Dance Dance.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1168,13 +1168,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Dream Racer (200x)(Dream Machine)(PD).zip</path>
+	<path>./Dream Racer (200x)(Dream Machine)(PD).zip</path>
 	<name>Dream Racer</name>
 	<desc>Dream Racer (200x)(Dream Machine)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Dream Racer.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Dream Racer1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Dream Racer.mp4</video>
+	<image>./media/emulationstation/Dream Racer.png</image>
+	<marquee>>./media/emulationstation/Dream Racer1.png</marquee>
+	<video>./media/emulationstation/Dream Racer.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1184,13 +1184,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Glucky Laby (2000)(Inutero)(PD).zip</path>
+	<path>./Glucky Laby (2000)(Inutero)(PD).zip</path>
 	<name>Glucky Laby</name>
 	<desc>Glucky Laby (2000)(Inutero)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Glucky Labyrinth.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Glucky Labyrinth1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Glucky Labyrinth.mp4</video>
+	<image>./media/emulationstation/Glucky Labyrinth.png</image>
+	<marquee>>./media/emulationstation/Glucky Labyrinth1.png</marquee>
+	<video>./media/emulationstation/Glucky Labyrinth.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1200,13 +1200,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Guess the Square (200x)(J.W.)(PD).zip</path>
+	<path>./Guess the Square (200x)(J.W.)(PD).zip</path>
 	<name>Guess the Square</name>
 	<desc>Guess the Square (200x)(J.W.)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Guess That Square.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Guess That Square1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Guess That Square.mp4</video>
+	<image>./media/emulationstation/Guess That Square.png</image>
+	<marquee>>./media/emulationstation/Guess That Square1.png</marquee>
+	<video>./media/emulationstation/Guess That Square.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1216,13 +1216,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Jim's Bowling (200x)(-)(PD).zip</path>
+	<path>./Jim's Bowling (200x)(-)(PD).zip</path>
 	<name>Jim's Bowling</name>
 	<desc>Jim's Bowling (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Jim Bowl.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Jim Bowl1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Jim Bowl.mp4</video>
+	<image>./media/emulationstation/Jim Bowl.png</image>
+	<marquee>>./media/emulationstation/Jim Bowl1.png</marquee>
+	<video>./media/emulationstation/Jim Bowl.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1232,13 +1232,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Lightsaber Battle! (200x)(Bryan, J.)(PD).zip</path>
+	<path>./Lightsaber Battle! (200x)(Bryan, J.)(PD).zip</path>
 	<name>Lightsaber Battle!</name>
 	<desc>Lightsaber Battle! (200x)(Bryan, J.)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Lightsaber Battle.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Lightsaber Battle1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Lightsaber Battle.mp4</video>
+	<image>./media/emulationstation/Lightsaber Battle.png</image>
+	<marquee>>./media/emulationstation/Lightsaber Battle1.png</marquee>
+	<video>./media/emulationstation/Lightsaber Battle.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1248,13 +1248,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Metal Gear Stealth (200x)(VMU Project)[p].zip</path>
+	<path>./Metal Gear Stealth (200x)(VMU Project)[p].zip</path>
 	<name>Metal Gear Stealth</name>
 	<desc>Metal Gear Stealth (200x)(VMU Project)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Metal Gear Stealth.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Metal Gear Stealth1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Metal Gear Stealth.mp4</video>
+	<image>./media/emulationstation/Metal Gear Stealth.png</image>
+	<marquee>>./media/emulationstation/Metal Gear Stealth1.png</marquee>
+	<video>./media/emulationstation/Metal Gear Stealth.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1264,13 +1264,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Minesweeper (200x)(Gust, Soren)(PD).zip</path>
+	<path>./Minesweeper (200x)(Gust, Soren)(PD).zip</path>
 	<name>Minesweeper</name>
 	<desc>Minesweeper (200x)(Gust, Soren)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Mine Sweeper.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Mine Sweeper1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Mine Sweeper.mp4</video>
+	<image>./media/emulationstation/Mine Sweeper.png</image>
+	<marquee>>./media/emulationstation/Mine Sweeper1.png</marquee>
+	<video>./media/emulationstation/Mine Sweeper.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1280,13 +1280,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Paper Attack (2000)(Inutero)(PD).zip</path>
+	<path>./Paper Attack (2000)(Inutero)(PD).zip</path>
 	<name>Paper Attack</name>
 	<desc>Paper Attack (2000)(Inutero)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Paper Attack.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Paper Attack1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Paper Attack.mp4</video>
+	<image>./media/emulationstation/Paper Attack.png</image>
+	<marquee>>./media/emulationstation/Paper Attack1.png</marquee>
+	<video>./media/emulationstation/Paper Attack.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1296,13 +1296,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Rainbow Six (200x)(Bryan, J.)[p].zip</path>
+	<path>./Rainbow Six (200x)(Bryan, J.)[p].zip</path>
 	<name>Rainbow Six</name>
 	<desc>Rainbow Six (200x)(Bryan, J.)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Rainbow Six.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Rainbow Six1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Rainbow Six.mp4</video>
+	<image>./media/emulationstation/Rainbow Six.png</image>
+	<marquee>>./media/emulationstation/Rainbow Six1.png</marquee>
+	<video>./media/emulationstation/Rainbow Six.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1312,13 +1312,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Revenge (200x)(SB6)(PD).zip</path>
+	<path>./Revenge (200x)(SB6)(PD).zip</path>
 	<name>Revenge</name>
 	<desc>Revenge (200x)(SB6)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Revenge.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Revenge1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Revenge.mp4</video>
+	<image>./media/emulationstation/Revenge.png</image>
+	<marquee>>./media/emulationstation/Revenge1.png</marquee>
+	<video>./media/emulationstation/Revenge.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1328,13 +1328,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Simon (200x)(Bryan, J.)(PD).zip</path>
+	<path>./Simon (200x)(Bryan, J.)(PD).zip</path>
 	<name>Simon</name>
 	<desc>Simon (200x)(Bryan, J.)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/SIMON.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/SIMON1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/SIMON.mp4</video>
+	<image>./media/emulationstation/SIMON.png</image>
+	<marquee>>./media/emulationstation/SIMON1.png</marquee>
+	<video>./media/emulationstation/SIMON.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1344,13 +1344,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Shell Game, The (200x)(-)(PD).zip</path>
+	<path>./Shell Game, The (200x)(-)(PD).zip</path>
 	<name>The Shell Game</name>
 	<desc>Shell Game, The (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/The Shell Game.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/The Shell Game1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/The Shell Game.mp4</video>
+	<image>./media/emulationstation/The Shell Game.png</image>
+	<marquee>>./media/emulationstation/The Shell Game1.png</marquee>
+	<video>./media/emulationstation/The Shell Game.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1360,13 +1360,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Puzzle (200x)(-)(PD).zip</path>
+	<path>./Puzzle (200x)(-)(PD).zip</path>
 	<name>Puzzle</name>
 	<desc>Puzzle (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Slide Puzzle.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Slide Puzzle1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Slide Puzzle.mp4</video>
+	<image>./media/emulationstation/Slide Puzzle.png</image>
+	<marquee>>./media/emulationstation/Slide Puzzle1.png</marquee>
+	<video>./media/emulationstation/Slide Puzzle.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1376,13 +1376,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Star Wars (200x)(Bryan, J.)[p].zip</path>
+	<path>./Star Wars (200x)(Bryan, J.)[p].zip</path>
 	<name>Star Wars</name>
 	<desc>Star Wars (200x)(Bryan, J.)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/StarWars.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/StarWars1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/StarWars.mp4</video>
+	<image>./media/emulationstation/StarWars.png</image>
+	<marquee>>./media/emulationstation/StarWars1.png</marquee>
+	<video>./media/emulationstation/StarWars.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1392,13 +1392,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Supercross VMU (200x)(-)(PD).zip</path>
+	<path>./Supercross VMU (200x)(-)(PD).zip</path>
 	<name>Supercross</name>
 	<desc>Supercross VMU (200x)(-)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Supercross.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Supercross1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Supercross.mp4</video>
+	<image>./media/emulationstation/Supercross.png</image>
+	<marquee>>./media/emulationstation/Supercross1.png</marquee>
+	<video>./media/emulationstation/Supercross.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1408,13 +1408,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Swampy (2000)(Inuendo)(PD).zip</path>
+	<path>./Swampy (2000)(Inuendo)(PD).zip</path>
 	<name>Swampy</name>
 	<desc>Swampy (2000)(Inuendo)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Swampy.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Swampy1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Swampy.mp4</video>
+	<image>./media/emulationstation/Swampy.png</image>
+	<marquee>>./media/emulationstation/Swampy1.png</marquee>
+	<video>./media/emulationstation/Swampy.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1424,13 +1424,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Tetris v1.3 (200x)(Comstedt, Marcus)[p].zip</path>
+	<path>./Tetris v1.3 (200x)(Comstedt, Marcus)[p].zip</path>
 	<name>Tiny Tetris</name>
 	<desc>Tetris v1.3 (200x)(Comstedt, Marcus)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Tiny Tetris.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Tiny Tetris1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Tiny Tetris.mp4</video>
+	<image>./media/emulationstation/Tiny Tetris.png</image>
+	<marquee>>./media/emulationstation/Tiny Tetris1.png</marquee>
+	<video>./media/emulationstation/Tiny Tetris.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1440,13 +1440,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/Time Crisis (200x)(-)[p].zip</path>
+	<path>./Time Crisis (200x)(-)[p].zip</path>
 	<name>Time Crisis</name>
 	<desc>Time Crisis (200x)(-)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Time Crisis.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Time Crisis1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Time Crisis.mp4</video>
+	<image>./media/emulationstation/Time Crisis.png</image>
+	<marquee>>./media/emulationstation/Time Crisis1.png</marquee>
+	<video>./media/emulationstation/Time Crisis.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1456,13 +1456,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/VMU Mini Pac-Man v1.0 (200x)(Sanasi, Alessandro)[p].zip</path>
+	<path>./VMU Mini Pac-Man v1.0 (200x)(Sanasi, Alessandro)[p].zip</path>
 	<name>Mini Pac-Man</name>
 	<desc>VMU Mini Pac-Man v1.0 (200x)(Sanasi, Alessandro)[p]
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/VMU Mini Pac-Man.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/VMU Mini Pac-Man1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/VMU Mini Pac-Man.mp4</video>
+	<image>./media/emulationstation/VMU Mini Pac-Man.png</image>
+	<marquee>>./media/emulationstation/VMU Mini Pac-Man1.png</marquee>
+	<video>./media/emulationstation/VMU Mini Pac-Man.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1472,13 +1472,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/VMU Vision (200x)(Sanasi, Alessandro)(PD).zip</path>
+	<path>./VMU Vision (200x)(Sanasi, Alessandro)(PD).zip</path>
 	<name>VMU Vision</name>
 	<desc>VMU Vision (200x)(Sanasi, Alessandro)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/VMU Vision.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/VMU Vision1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/VMU Vision.mp4</video>
+	<image>./media/emulationstation/VMU Vision.png</image>
+	<marquee>>./media/emulationstation/VMU Vision1.png</marquee>
+	<video>./media/emulationstation/VMU Vision.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>
@@ -1488,13 +1488,13 @@
 	<players>1</players>
 </game>
 <game id="13485" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/svmu/VMU Boxing (200x)(VM Team 1)(PD).zip</path>
+	<path>./VMU Boxing (200x)(VM Team 1)(PD).zip</path>
 	<name>VMU Boxing</name>
 	<desc>VMU Boxing (200x)(VM Team 1)(PD)
 	</desc>
-	<image>/home/pi/.emulationstation/downloaded_images/svmu/Boxing.png</image>
-	<marquee>>/home/pi/.emulationstation/downloaded_images/svmu/Boxing1.png</marquee>
-	<video>/home/pi/.emulationstation/downloaded_images/svmu/Boxing.mp4</video>
+	<image>./media/emulationstation/Boxing.png</image>
+	<marquee>>./media/emulationstation/Boxing1.png</marquee>
+	<video>./media/emulationstation/Boxing.mp4</video>
 	<thumbnail/>
 	<rating>0.0</rating>
 	<releasedate>20000101T000000</releasedate>

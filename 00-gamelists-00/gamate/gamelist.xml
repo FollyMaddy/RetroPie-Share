@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <gameList>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/1milwhys.7z</path>
+		<path>./1milwhys.7z</path>
 		<name>One Million Whys</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/1milwhys.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/1milwhys_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/1milwhys.mp4</video>
+		<image>./media/emulationstation/1milwhys.png</image>
+		<marquee>./media/emulationstation/1milwhys_marquee.png</marquee>
+		<video>./media/emulationstation/1milwhys.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -16,12 +16,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/baoqingt.7z</path>
+		<path>./baoqingt.7z</path>
 		<name>Bao Qing Tian</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/baoqingt.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/baoqingt_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/baoqingt.mp4</video>
+		<image>./media/emulationstation/baoqingt.png</image>
+		<marquee>./media/emulationstation/baoqingt_marquee.png</marquee>
+		<video>./media/emulationstation/baoqingt.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -31,12 +31,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/baseball.7z</path>
+		<path>./baseball.7z</path>
 		<name>Baseball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/baseball.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/baseball_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/baseball.mp4</video>
+		<image>./media/emulationstation/baseball.png</image>
+		<marquee>./media/emulationstation/baseball_marquee.png</marquee>
+		<video>./media/emulationstation/baseball.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -46,12 +46,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/cubeup.7z</path>
+		<path>./cubeup.7z</path>
 		<name>Cube Up</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/cubeup.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/cubeup_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/cubeup.mp4</video>
+		<image>./media/emulationstation/cubeup.png</image>
+		<marquee>./media/emulationstation/cubeup_marquee.png</marquee>
+		<video>./media/emulationstation/cubeup.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -61,12 +61,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/wittyape.7z</path>
+		<path>./wittyape.7z</path>
 		<name>Witty Apee</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/wittyape.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/wittyape_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/wittyape.mp4</video>
+		<image>./media/emulationstation/wittyape.png</image>
+		<marquee>./media/emulationstation/wittyape_marquee.png</marquee>
+		<video>./media/emulationstation/wittyape.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -76,12 +76,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/boxforum.7z</path>
+		<path>./boxforum.7z</path>
 		<name>Box Forum</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/boxforum.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/boxforum_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/boxforum.mp4</video>
+		<image>./media/emulationstation/boxforum.png</image>
+		<marquee>./media/emulationstation/boxforum_marquee.png</marquee>
+		<video>./media/emulationstation/boxforum.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -91,12 +91,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/mightytk.7z</path>
+		<path>./mightytk.7z</path>
 		<name>Mighty Tank</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/mightytk.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/mightytk_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/mightytk.mp4</video>
+		<image>./media/emulationstation/mightytk.png</image>
+		<marquee>./media/emulationstation/mightytk_marquee.png</marquee>
+		<video>./media/emulationstation/mightytk.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -106,12 +106,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/encbrick.7z</path>
+		<path>./encbrick.7z</path>
 		<name>Enchanted Bricks</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/encbrick.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/encbrick_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/encbrick.mp4</video>
+		<image>./media/emulationstation/encbrick.png</image>
+		<marquee>./media/emulationstation/encbrick_marquee.png</marquee>
+		<video>./media/emulationstation/encbrick.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -121,12 +121,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/minigolf.7z</path>
+		<path>./minigolf.7z</path>
 		<name>Mini Golf</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/minigolf.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/minigolf_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/minigolf.mp4</video>
+		<image>./media/emulationstation/minigolf.png</image>
+		<marquee>./media/emulationstation/minigolf_marquee.png</marquee>
+		<video>./media/emulationstation/minigolf.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -136,12 +136,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/galaxinv.7z</path>
+		<path>./galaxinv.7z</path>
 		<name>Galaxy Invaders</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/galaxinv.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/galaxinv_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/galaxinv.mp4</video>
+		<image>./media/emulationstation/galaxinv.png</image>
+		<marquee>./media/emulationstation/galaxinv_marquee.png</marquee>
+		<video>./media/emulationstation/galaxinv.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -151,12 +151,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dknight.7z</path>
+		<path>./dknight.7z</path>
 		<name>Legend of Dragon Knight</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dknight.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dinopark_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dknight.mp4</video>
+		<image>./media/emulationstation/dknight.png</image>
+		<marquee>./media/emulationstation/dinopark_marquee.png</marquee>
+		<video>./media/emulationstation/dknight.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -166,12 +166,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/tornado.7z</path>
+		<path>./tornado.7z</path>
 		<name>Tornado</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/tornado.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/tornado_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/tornado.mp4</video>
+		<image>./media/emulationstation/tornado.png</image>
+		<marquee>./media/emulationstation/tornado_marquee.png</marquee>
+		<video>./media/emulationstation/tornado.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -181,12 +181,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/moneymaz.7z</path>
+		<path>./moneymaz.7z</path>
 		<name>Money Maze</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/moneymaz.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/moneymaz_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/moneymaz.mp4</video>
+		<image>./media/emulationstation/moneymaz.png</image>
+		<marquee>./media/emulationstation/moneymaz_marquee.png</marquee>
+		<video>./media/emulationstation/moneymaz.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -196,12 +196,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/pharaoh.7z</path>
+		<path>./pharaoh.7z</path>
 		<name>Pharaoh Revenger</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/pharaoh.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/pharaoh_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/pharaoh.mp4</video>
+		<image>./media/emulationstation/pharaoh.png</image>
+		<marquee>./media/emulationstation/pharaoh_marquee.png</marquee>
+		<video>./media/emulationstation/pharaoh.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -211,12 +211,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dinobibo.7z</path>
+		<path>./dinobibo.7z</path>
 		<name>Dino Bibo</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dinobibo.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dinobibo_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dinobibo.mp4</video>
+		<image>./media/emulationstation/dinobibo.png</image>
+		<marquee>./media/emulationstation/dinobibo_marquee.png</marquee>
+		<video>./media/emulationstation/dinobibo.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -226,12 +226,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/timewarr.7z</path>
+		<path>./timewarr.7z</path>
 		<name>Time Warrior</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/timewarr.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/timewarr_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/timewarr.mp4</video>
+		<image>./media/emulationstation/timewarr.png</image>
+		<marquee>./media/emulationstation/timewarr_marquee.png</marquee>
+		<video>./media/emulationstation/timewarr.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -241,12 +241,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/volpanic.7z</path>
+		<path>./volpanic.7z</path>
 		<name>Volcano Panic</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/volpanic.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/volpanic_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/volpanic.mp4</video>
+		<image>./media/emulationstation/volpanic.png</image>
+		<marquee>./media/emulationstation/volpanic_marquee.png</marquee>
+		<video>./media/emulationstation/volpanic.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -256,12 +256,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dvcastle.7z</path>
+		<path>./dvcastle.7z</path>
 		<name>Devil Castle</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dvcastle.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dvcastle_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dvcastle.mp4</video>
+		<image>./media/emulationstation/dvcastle.png</image>
+		<marquee>./media/emulationstation/dvcastle_marquee.png</marquee>
+		<video>./media/emulationstation/dvcastle.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -271,12 +271,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/kungfu.7z</path>
+		<path>./kungfu.7z</path>
 		<name>Kung-Fu Fighter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/kungfu.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/kungfu_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/kungfu.mp4</video>
+		<image>./media/emulationstation/kungfu.png</image>
+		<marquee>./media/emulationstation/kungfu_marquee.png</marquee>
+		<video>./media/emulationstation/kungfu.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -286,12 +286,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dinoball.7z</path>
+		<path>./dinoball.7z</path>
 		<name>Dino Ball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dinoball.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dinoball_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dinoball.mp4</video>
+		<image>./media/emulationstation/dinoball.png</image>
+		<marquee>./media/emulationstation/dinoball_marquee.png</marquee>
+		<video>./media/emulationstation/dinoball.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -301,12 +301,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/mythasam.7z</path>
+		<path>./mythasam.7z</path>
 		<name>Myth of Asamia</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/mythasam.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/mythasam_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/mythasam.mp4</video>
+		<image>./media/emulationstation/mythasam.png</image>
+		<marquee>./media/emulationstation/mythasam_marquee.png</marquee>
+		<video>./media/emulationstation/mythasam.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -316,12 +316,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/pipemani.7z</path>
+		<path>./pipemani.7z</path>
 		<name>Pipemania</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/pipemani.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/pipemani_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/pipemani.mp4</video>
+		<image>./media/emulationstation/pipemani.png</image>
+		<marquee>./media/emulationstation/pipemani_marquee.png</marquee>
+		<video>./media/emulationstation/pipemani.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -331,12 +331,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/tennis.7z</path>
+		<path>./tennis.7z</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/tennis.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/tennis_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/tennis.mp4</video>
+		<image>./media/emulationstation/tennis.png</image>
+		<marquee>./media/emulationstation/tennis_marquee.png</marquee>
+		<video>./media/emulationstation/tennis.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -346,12 +346,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/tennis.7z</path>
+		<path>./tennis.7z</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/tennis.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/tennis_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/tennis.mp4</video>
+		<image>./media/emulationstation/tennis.png</image>
+		<marquee>./media/emulationstation/tennis_marquee.png</marquee>
+		<video>./media/emulationstation/tennis.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -361,12 +361,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/marauder.7z</path>
+		<path>./marauder.7z</path>
 		<name>Marauder</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/marauder.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/marauder_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/marauder.mp4</video>
+		<image>./media/emulationstation/marauder.png</image>
+		<marquee>./media/emulationstation/marauder_marquee.png</marquee>
+		<video>./media/emulationstation/marauder.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -376,12 +376,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/flipuzle.7z</path>
+		<path>./flipuzle.7z</path>
 		<name>Flipuzzle</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/flipuzle.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/flipuzle_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/flipuzle.mp4</video>
+		<image>./media/emulationstation/flipuzle.png</image>
+		<marquee>./media/emulationstation/flipuzle_marquee.png</marquee>
+		<video>./media/emulationstation/flipuzle.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -391,12 +391,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/monstpit.7z</path>
+		<path>./monstpit.7z</path>
 		<name>Monster Pitfall</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/monstpit.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/monstpit_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/monstpit.mp4</video>
+		<image>./media/emulationstation/monstpit.png</image>
+		<marquee>./media/emulationstation/monstpit_marquee.png</marquee>
+		<video>./media/emulationstation/monstpit.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -406,12 +406,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/vindicat.7z</path>
+		<path>./vindicat.7z</path>
 		<name>Vindicators</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/vindicat.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/vindicat_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/vindicat.mp4</video>
+		<image>./media/emulationstation/vindicat.png</image>
+		<marquee>./media/emulationstation/vindicat_marquee.png</marquee>
+		<video>./media/emulationstation/vindicat.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -421,12 +421,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/brikblst.7z</path>
+		<path>./brikblst.7z</path>
 		<name>Brick Blaster</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/brikblst.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/brikblst_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/brikblst.mp4</video>
+		<image>./media/emulationstation/brikblst.png</image>
+		<marquee>./media/emulationstation/brikblst_marquee.png</marquee>
+		<video>./media/emulationstation/brikblst.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -436,12 +436,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/bomblast.7z</path>
+		<path>./bomblast.7z</path>
 		<name>Bomb Blaster</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/bomblast.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/bomblast_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/bomblast.mp4</video>
+		<image>./media/emulationstation/bomblast.png</image>
+		<marquee>./media/emulationstation/bomblast_marquee.png</marquee>
+		<video>./media/emulationstation/bomblast.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -451,12 +451,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/bomblasta.7z</path>
+		<path>./bomblasta.7z</path>
 		<name>Bomb Blaster (Alt)</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/bomblast.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/bomblast_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/bomblasta.mp4</video>
+		<image>./media/emulationstation/bomblast.png</image>
+		<marquee>./media/emulationstation/bomblast_marquee.png</marquee>
+		<video>./media/emulationstation/bomblasta.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -466,12 +466,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/cosmicfg.7z</path>
+		<path>./cosmicfg.7z</path>
 		<name>Cosmic Fighter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/cosmicfg.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/cosmicfg_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/cosmicfg.mp4</video>
+		<image>./media/emulationstation/cosmicfg.png</image>
+		<marquee>./media/emulationstation/cosmicfg_marquee.png</marquee>
+		<video>./media/emulationstation/cosmicfg.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -481,12 +481,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/fistofth.7z</path>
+		<path>./fistofth.7z</path>
 		<name>Fist of Thunder</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/fistofth.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/fistofth_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/fistofth.mp4</video>
+		<image>./media/emulationstation/fistofth.png</image>
+		<marquee>./media/emulationstation/fistofth_marquee.png</marquee>
+		<video>./media/emulationstation/fistofth.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -496,12 +496,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/treashnt.7z</path>
+		<path>./treashnt.7z</path>
 		<name>Treasure Hunter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/treashnt.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/treashnt_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/treashnt.mp4</video>
+		<image>./media/emulationstation/treashnt.png</image>
+		<marquee>./media/emulationstation/treashnt_marquee.png</marquee>
+		<video>./media/emulationstation/treashnt.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -511,12 +511,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/jewelris.7z</path>
+		<path>./jewelris.7z</path>
 		<name>Jewelriss</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/jewelris.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/jewelris_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/jewelris.mp4</video>
+		<image>./media/emulationstation/jewelris.png</image>
+		<marquee>./media/emulationstation/jewelris_marquee.png</marquee>
+		<video>./media/emulationstation/jewelris.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -526,12 +526,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/santa.7z</path>
+		<path>./santa.7z</path>
 		<name>Nightmare of Santa Claus</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/santa.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/santa_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/santa.mp4</video>
+		<image>./media/emulationstation/santa.png</image>
+		<marquee>./media/emulationstation/santa_marquee.png</marquee>
+		<video>./media/emulationstation/santa.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -541,12 +541,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/marsvoya.7z</path>
+		<path>./marsvoya.7z</path>
 		<name>Mars Voyage</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/marsvoya.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/marsvoya_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/marsvoya.mp4</video>
+		<image>./media/emulationstation/marsvoya.png</image>
+		<marquee>./media/emulationstation/marsvoya_marquee.png</marquee>
+		<video>./media/emulationstation/marsvoya.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -556,12 +556,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/flgoblin.7z</path>
+		<path>./flgoblin.7z</path>
 		<name>Flying Goblin</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/flgoblin.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/flgoblin_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/flgoblin.mp4</video>
+		<image>./media/emulationstation/flgoblin.png</image>
+		<marquee>./media/emulationstation/flgoblin_marquee.png</marquee>
+		<video>./media/emulationstation/flgoblin.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -571,12 +571,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/boom.7z</path>
+		<path>./boom.7z</path>
 		<name>Boom</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/boom.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/boom_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/boom.mp4</video>
+		<image>./media/emulationstation/boom.png</image>
+		<marquee>./media/emulationstation/boom_marquee.png</marquee>
+		<video>./media/emulationstation/boom.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -586,12 +586,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/snowman.7z</path>
+		<path>./snowman.7z</path>
 		<name>Snowman Legend</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/snowman.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/snowman_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/snowman.mp4</video>
+		<image>./media/emulationstation/snowman.png</image>
+		<marquee>./media/emulationstation/snowman_marquee.png</marquee>
+		<video>./media/emulationstation/snowman.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -601,12 +601,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/kikiinla.7z</path>
+		<path>./kikiinla.7z</path>
 		<name>Kiki Inland</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/kikiinla.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/kikiinla_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/kikiinla.mp4</video>
+		<image>./media/emulationstation/kikiinla.png</image>
+		<marquee>./media/emulationstation/kikiinla_marquee.png</marquee>
+		<video>./media/emulationstation/kikiinla.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19920101T000000</releasedate>
@@ -616,12 +616,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/ftnnluck.7z</path>
+		<path>./ftnnluck.7z</path>
 		<name>Fortune 'n Luck</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/ftnnluck.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/ftnnluck_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/ftnnluck.mp4</video>
+		<image>./media/emulationstation/ftnnluck.png</image>
+		<marquee>./media/emulationstation/ftnnluck_marquee.png</marquee>
+		<video>./media/emulationstation/ftnnluck.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19920101T000000</releasedate>
@@ -631,12 +631,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/punkboy.7z</path>
+		<path>./punkboy.7z</path>
 		<name>Punk Boy</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/punkboy.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/punkboy_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/punkboy.mp4</video>
+		<image>./media/emulationstation/punkboy.png</image>
+		<marquee>./media/emulationstation/punkboy_marquee.png</marquee>
+		<video>./media/emulationstation/punkboy.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19920101T000000</releasedate>
@@ -646,12 +646,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/fortress.7z</path>
+		<path>./fortress.7z</path>
 		<name>Fortress of Fierceness</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/fortress.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/fortress_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/fortress.mp4</video>
+		<image>./media/emulationstation/fortress.png</image>
+		<marquee>./media/emulationstation/fortress_marquee.png</marquee>
+		<video>./media/emulationstation/fortress.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -661,12 +661,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/famous7.7z</path>
+		<path>./famous7.7z</path>
 		<name>Famous 7</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/famous7.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/famous7_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/famous7.mp4</video>
+		<image>./media/emulationstation/famous7.png</image>
+		<marquee>./media/emulationstation/famous7_marquee.png</marquee>
+		<video>./media/emulationstation/famous7.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -676,12 +676,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/mjigsaw.7z</path>
+		<path>./mjigsaw.7z</path>
 		<name>Magic Jigsaw</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/mjigsaw.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/mjigsaw_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/mjigsaw.mp4</video>
+		<image>./media/emulationstation/mjigsaw.png</image>
+		<marquee>./media/emulationstation/mjigsaw_marquee.png</marquee>
+		<video>./media/emulationstation/mjigsaw.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -691,12 +691,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/gprace.7z</path>
+		<path>./gprace.7z</path>
 		<name>GP Race</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/gprace.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/gprace_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/gprace.mp4</video>
+		<image>./media/emulationstation/gprace.png</image>
+		<marquee>./media/emulationstation/gprace_marquee.png</marquee>
+		<video>./media/emulationstation/gprace.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19920101T000000</releasedate>
@@ -706,12 +706,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/fanttrav.7z</path>
+		<path>./fanttrav.7z</path>
 		<name>Fantasy Travel</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/fanttrav.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/fanttrav_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/fanttrav.mp4</video>
+		<image>./media/emulationstation/fanttrav.png</image>
+		<marquee>./media/emulationstation/fanttrav_marquee.png</marquee>
+		<video>./media/emulationstation/fanttrav.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -721,12 +721,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/quizfigh.7z</path>
+		<path>./quizfigh.7z</path>
 		<name>Quiz Fighter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/quizfigh.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/quizfigh_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/quizfigh.mp4</video>
+		<image>./media/emulationstation/quizfigh.png</image>
+		<marquee>./media/emulationstation/quizfigh_marquee.png</marquee>
+		<video>./media/emulationstation/quizfigh.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -736,12 +736,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/hannibal.7z</path>
+		<path>./hannibal.7z</path>
 		<name>Further Adventures of Hannibal The Cat</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/hannibal.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/hannibal_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/hannibal.mp4</video>
+		<image>./media/emulationstation/hannibal.png</image>
+		<marquee>./media/emulationstation/hannibal_marquee.png</marquee>
+		<video>./media/emulationstation/hannibal.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -751,12 +751,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dinopark.7z</path>
+		<path>./dinopark.7z</path>
 		<name>Dinosaur Park</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dinopark.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dinopark_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dinopark.mp4</video>
+		<image>./media/emulationstation/dinopark.png</image>
+		<marquee>./media/emulationstation/dinopark_marquee.png</marquee>
+		<video>./media/emulationstation/dinopark.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -766,12 +766,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/basketba.7z</path>
+		<path>./basketba.7z</path>
 		<name>Basketball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/basketba.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/basketba_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/basketba.mp4</video>
+		<image>./media/emulationstation/basketba.png</image>
+		<marquee>./media/emulationstation/basketba_marquee.png</marquee>
+		<video>./media/emulationstation/basketba.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -781,12 +781,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/hothero.7z</path>
+		<path>./hothero.7z</path>
 		<name>Hot Hero</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/hothero.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/hothero_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/hothero.mp4</video>
+		<image>./media/emulationstation/hothero.png</image>
+		<marquee>./media/emulationstation/hothero_marquee.png</marquee>
+		<video>./media/emulationstation/hothero.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -796,12 +796,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/robinhoo.7z</path>
+		<path>./robinhoo.7z</path>
 		<name>Robin Hood</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/robinhoo.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/robinhoo_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/robinhoo.mp4</video>
+		<image>./media/emulationstation/robinhoo.png</image>
+		<marquee>./media/emulationstation/robinhoo_marquee.png</marquee>
+		<video>./media/emulationstation/robinhoo.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19940101T000000</releasedate>
@@ -811,12 +811,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/goldpyra.7z</path>
+		<path>./goldpyra.7z</path>
 		<name>The Golden Pyramid</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/goldpyra.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/goldpyra_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/goldpyra.mp4</video>
+		<image>./media/emulationstation/goldpyra.png</image>
+		<marquee>./media/emulationstation/goldpyra_marquee.png</marquee>
+		<video>./media/emulationstation/goldpyra.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -826,12 +826,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/rotat.7z</path>
+		<path>./rotat.7z</path>
 		<name>Riddle of the Ancient Tomb</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/rotat.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/rotat_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/rotat.mp4</video>
+		<image>./media/emulationstation/rotat.png</image>
+		<marquee>./media/emulationstation/rotat_marquee.png</marquee>
+		<video>./media/emulationstation/rotat.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19940101T000000</releasedate>
@@ -843,9 +843,9 @@
 	<game>
 		<path>./insectwa.7z</path>
 		<name>Insect War</name>
-		<image>~/.emulationstation/downloaded_images/gamate/insectwa.png</image>
-		<video>~/.emulationstation/downloaded_images/gamate/insectwa.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/gamate/insectwa_marquee.png</marquee>
+		<image>./media/emulationstation/insectwa.png</image>
+		<video>./media/emulationstation/insectwa.mp4</video>
+		<marquee>./media/emulationstation/insectwa_marquee.png</marquee>
 		<rating />
 		<releasedate>19950101T000000</releasedate>
 		<developer>Gamate</developer>
@@ -857,9 +857,9 @@
 	<game>
 		<path>./killshot.7z</path>
 		<name>Kill Shot</name>
-		<image>~/.emulationstation/downloaded_images/gamate/killshot.png</image>
-		<video>~/.emulationstation/downloaded_images/gamate/killshot.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/gamate/killshot_marquee.png</marquee>
+		<image>./media/emulationstation/killshot.png</image>
+		<video>./media/emulationstation/killshot.mp4</video>
+		<marquee>./media/emulationstation/killshot_marquee.png</marquee>
 		<rating />
 		<releasedate>19910101T000000</releasedate>
 		<developer>Gamate</developer>
@@ -871,9 +871,9 @@
 	<game>
 		<path>./4in1.7z</path>
 		<name>4-in-1 (Mini Golf, Cube-Up, Brick Blaster, and Vindicators)</name>
-		<image>~/.emulationstation/downloaded_images/gamate/4in1.png</image>
-		<video>~/.emulationstation/downloaded_images/gamate/4in1.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/gamate/4in1_marquee.png</marquee>
+		<image>./media/emulationstation/4in1.png</image>
+		<video>./media/emulationstation/4in1.mp4</video>
+		<marquee>./media/emulationstation/4in1_marquee.png</marquee>
 		<rating></rating>
 		<releasedate>19910101T000000</releasedate>
 		<developer>Armenia / Food and Fun</developer>
@@ -883,12 +883,12 @@
 		<lastplayed>20200902T144627</lastplayed>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/1milwhys.zip</path>
+		<path>./1milwhys.zip</path>
 		<name>One Million Whys</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/1milwhys.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/1milwhys_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/1milwhys.mp4</video>
+		<image>./media/emulationstation/1milwhys.png</image>
+		<marquee>./media/emulationstation/1milwhys_marquee.png</marquee>
+		<video>./media/emulationstation/1milwhys.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -898,12 +898,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/baoqingt.zip</path>
+		<path>./baoqingt.zip</path>
 		<name>Bao Qing Tian</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/baoqingt.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/baoqingt_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/baoqingt.mp4</video>
+		<image>./media/emulationstation/baoqingt.png</image>
+		<marquee>./media/emulationstation/baoqingt_marquee.png</marquee>
+		<video>./media/emulationstation/baoqingt.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -913,12 +913,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/baseball.zip</path>
+		<path>./baseball.zip</path>
 		<name>Baseball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/baseball.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/baseball_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/baseball.mp4</video>
+		<image>./media/emulationstation/baseball.png</image>
+		<marquee>./media/emulationstation/baseball_marquee.png</marquee>
+		<video>./media/emulationstation/baseball.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -928,12 +928,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/cubeup.zip</path>
+		<path>./cubeup.zip</path>
 		<name>Cube Up</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/cubeup.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/cubeup_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/cubeup.mp4</video>
+		<image>./media/emulationstation/cubeup.png</image>
+		<marquee>./media/emulationstation/cubeup_marquee.png</marquee>
+		<video>./media/emulationstation/cubeup.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -943,12 +943,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/wittyape.zip</path>
+		<path>./wittyape.zip</path>
 		<name>Witty Apee</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/wittyape.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/wittyape_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/wittyape.mp4</video>
+		<image>./media/emulationstation/wittyape.png</image>
+		<marquee>./media/emulationstation/wittyape_marquee.png</marquee>
+		<video>./media/emulationstation/wittyape.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -958,12 +958,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/boxforum.zip</path>
+		<path>./boxforum.zip</path>
 		<name>Box Forum</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/boxforum.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/boxforum_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/boxforum.mp4</video>
+		<image>./media/emulationstation/boxforum.png</image>
+		<marquee>./media/emulationstation/boxforum_marquee.png</marquee>
+		<video>./media/emulationstation/boxforum.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -973,12 +973,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/mightytk.zip</path>
+		<path>./mightytk.zip</path>
 		<name>Mighty Tank</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/mightytk.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/mightytk_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/mightytk.mp4</video>
+		<image>./media/emulationstation/mightytk.png</image>
+		<marquee>./media/emulationstation/mightytk_marquee.png</marquee>
+		<video>./media/emulationstation/mightytk.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -988,12 +988,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/encbrick.zip</path>
+		<path>./encbrick.zip</path>
 		<name>Enchanted Bricks</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/encbrick.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/encbrick_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/encbrick.mp4</video>
+		<image>./media/emulationstation/encbrick.png</image>
+		<marquee>./media/emulationstation/encbrick_marquee.png</marquee>
+		<video>./media/emulationstation/encbrick.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1003,12 +1003,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/minigolf.zip</path>
+		<path>./minigolf.zip</path>
 		<name>Mini Golf</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/minigolf.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/minigolf_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/minigolf.mp4</video>
+		<image>./media/emulationstation/minigolf.png</image>
+		<marquee>./media/emulationstation/minigolf_marquee.png</marquee>
+		<video>./media/emulationstation/minigolf.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1018,12 +1018,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/galaxinv.zip</path>
+		<path>./galaxinv.zip</path>
 		<name>Galaxy Invaders</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/galaxinv.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/galaxinv_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/galaxinv.mp4</video>
+		<image>./media/emulationstation/galaxinv.png</image>
+		<marquee>./media/emulationstation/galaxinv_marquee.png</marquee>
+		<video>./media/emulationstation/galaxinv.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1033,12 +1033,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dknight.zip</path>
+		<path>./dknight.zip</path>
 		<name>Legend of Dragon Knight</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dknight.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dinopark_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dknight.mp4</video>
+		<image>./media/emulationstation/dknight.png</image>
+		<marquee>./media/emulationstation/dinopark_marquee.png</marquee>
+		<video>./media/emulationstation/dknight.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1048,12 +1048,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/tornado.zip</path>
+		<path>./tornado.zip</path>
 		<name>Tornado</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/tornado.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/tornado_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/tornado.mp4</video>
+		<image>./media/emulationstation/tornado.png</image>
+		<marquee>./media/emulationstation/tornado_marquee.png</marquee>
+		<video>./media/emulationstation/tornado.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1063,12 +1063,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/moneymaz.zip</path>
+		<path>./moneymaz.zip</path>
 		<name>Money Maze</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/moneymaz.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/moneymaz_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/moneymaz.mp4</video>
+		<image>./media/emulationstation/moneymaz.png</image>
+		<marquee>./media/emulationstation/moneymaz_marquee.png</marquee>
+		<video>./media/emulationstation/moneymaz.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1078,12 +1078,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/pharaoh.zip</path>
+		<path>./pharaoh.zip</path>
 		<name>Pharaoh Revenger</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/pharaoh.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/pharaoh_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/pharaoh.mp4</video>
+		<image>./media/emulationstation/pharaoh.png</image>
+		<marquee>./media/emulationstation/pharaoh_marquee.png</marquee>
+		<video>./media/emulationstation/pharaoh.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1093,12 +1093,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dinobibo.zip</path>
+		<path>./dinobibo.zip</path>
 		<name>Dino Bibo</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dinobibo.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dinobibo_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dinobibo.mp4</video>
+		<image>./media/emulationstation/dinobibo.png</image>
+		<marquee>./media/emulationstation/dinobibo_marquee.png</marquee>
+		<video>./media/emulationstation/dinobibo.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1108,12 +1108,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/timewarr.zip</path>
+		<path>./timewarr.zip</path>
 		<name>Time Warrior</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/timewarr.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/timewarr_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/timewarr.mp4</video>
+		<image>./media/emulationstation/timewarr.png</image>
+		<marquee>./media/emulationstation/timewarr_marquee.png</marquee>
+		<video>./media/emulationstation/timewarr.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1123,12 +1123,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/volpanic.zip</path>
+		<path>./volpanic.zip</path>
 		<name>Volcano Panic</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/volpanic.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/volpanic_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/volpanic.mp4</video>
+		<image>./media/emulationstation/volpanic.png</image>
+		<marquee>./media/emulationstation/volpanic_marquee.png</marquee>
+		<video>./media/emulationstation/volpanic.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1138,12 +1138,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dvcastle.zip</path>
+		<path>./dvcastle.zip</path>
 		<name>Devil Castle</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dvcastle.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dvcastle_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dvcastle.mp4</video>
+		<image>./media/emulationstation/dvcastle.png</image>
+		<marquee>./media/emulationstation/dvcastle_marquee.png</marquee>
+		<video>./media/emulationstation/dvcastle.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1153,12 +1153,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/kungfu.zip</path>
+		<path>./kungfu.zip</path>
 		<name>Kung-Fu Fighter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/kungfu.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/kungfu_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/kungfu.mp4</video>
+		<image>./media/emulationstation/kungfu.png</image>
+		<marquee>./media/emulationstation/kungfu_marquee.png</marquee>
+		<video>./media/emulationstation/kungfu.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1168,12 +1168,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dinoball.zip</path>
+		<path>./dinoball.zip</path>
 		<name>Dino Ball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dinoball.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dinoball_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dinoball.mp4</video>
+		<image>./media/emulationstation/dinoball.png</image>
+		<marquee>./media/emulationstation/dinoball_marquee.png</marquee>
+		<video>./media/emulationstation/dinoball.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1183,12 +1183,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/mythasam.zip</path>
+		<path>./mythasam.zip</path>
 		<name>Myth of Asamia</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/mythasam.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/mythasam_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/mythasam.mp4</video>
+		<image>./media/emulationstation/mythasam.png</image>
+		<marquee>./media/emulationstation/mythasam_marquee.png</marquee>
+		<video>./media/emulationstation/mythasam.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1198,12 +1198,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/pipemani.zip</path>
+		<path>./pipemani.zip</path>
 		<name>Pipemania</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/pipemani.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/pipemani_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/pipemani.mp4</video>
+		<image>./media/emulationstation/pipemani.png</image>
+		<marquee>./media/emulationstation/pipemani_marquee.png</marquee>
+		<video>./media/emulationstation/pipemani.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1213,12 +1213,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/tennis.zip</path>
+		<path>./tennis.zip</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/tennis.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/tennis_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/tennis.mp4</video>
+		<image>./media/emulationstation/tennis.png</image>
+		<marquee>./media/emulationstation/tennis_marquee.png</marquee>
+		<video>./media/emulationstation/tennis.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1228,12 +1228,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/tennis.zip</path>
+		<path>./tennis.zip</path>
 		<name>Tennis</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/tennis.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/tennis_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/tennis.mp4</video>
+		<image>./media/emulationstation/tennis.png</image>
+		<marquee>./media/emulationstation/tennis_marquee.png</marquee>
+		<video>./media/emulationstation/tennis.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1243,12 +1243,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/marauder.zip</path>
+		<path>./marauder.zip</path>
 		<name>Marauder</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/marauder.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/marauder_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/marauder.mp4</video>
+		<image>./media/emulationstation/marauder.png</image>
+		<marquee>./media/emulationstation/marauder_marquee.png</marquee>
+		<video>./media/emulationstation/marauder.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1258,12 +1258,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/flipuzle.zip</path>
+		<path>./flipuzle.zip</path>
 		<name>Flipuzzle</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/flipuzle.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/flipuzle_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/flipuzle.mp4</video>
+		<image>./media/emulationstation/flipuzle.png</image>
+		<marquee>./media/emulationstation/flipuzle_marquee.png</marquee>
+		<video>./media/emulationstation/flipuzle.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1273,12 +1273,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/monstpit.zip</path>
+		<path>./monstpit.zip</path>
 		<name>Monster Pitfall</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/monstpit.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/monstpit_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/monstpit.mp4</video>
+		<image>./media/emulationstation/monstpit.png</image>
+		<marquee>./media/emulationstation/monstpit_marquee.png</marquee>
+		<video>./media/emulationstation/monstpit.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1288,12 +1288,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/vindicat.zip</path>
+		<path>./vindicat.zip</path>
 		<name>Vindicators</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/vindicat.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/vindicat_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/vindicat.mp4</video>
+		<image>./media/emulationstation/vindicat.png</image>
+		<marquee>./media/emulationstation/vindicat_marquee.png</marquee>
+		<video>./media/emulationstation/vindicat.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1303,12 +1303,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/brikblst.zip</path>
+		<path>./brikblst.zip</path>
 		<name>Brick Blaster</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/brikblst.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/brikblst_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/brikblst.mp4</video>
+		<image>./media/emulationstation/brikblst.png</image>
+		<marquee>./media/emulationstation/brikblst_marquee.png</marquee>
+		<video>./media/emulationstation/brikblst.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1318,12 +1318,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/bomblast.zip</path>
+		<path>./bomblast.zip</path>
 		<name>Bomb Blaster</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/bomblast.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/bomblast_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/bomblast.mp4</video>
+		<image>./media/emulationstation/bomblast.png</image>
+		<marquee>./media/emulationstation/bomblast_marquee.png</marquee>
+		<video>./media/emulationstation/bomblast.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1333,12 +1333,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/bomblasta.zip</path>
+		<path>./bomblasta.zip</path>
 		<name>Bomb Blaster (Alt)</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/bomblast.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/bomblast_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/bomblasta.mp4</video>
+		<image>./media/emulationstation/bomblast.png</image>
+		<marquee>./media/emulationstation/bomblast_marquee.png</marquee>
+		<video>./media/emulationstation/bomblasta.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1348,12 +1348,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/cosmicfg.zip</path>
+		<path>./cosmicfg.zip</path>
 		<name>Cosmic Fighter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/cosmicfg.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/cosmicfg_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/cosmicfg.mp4</video>
+		<image>./media/emulationstation/cosmicfg.png</image>
+		<marquee>./media/emulationstation/cosmicfg_marquee.png</marquee>
+		<video>./media/emulationstation/cosmicfg.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1363,12 +1363,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/fistofth.zip</path>
+		<path>./fistofth.zip</path>
 		<name>Fist of Thunder</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/fistofth.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/fistofth_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/fistofth.mp4</video>
+		<image>./media/emulationstation/fistofth.png</image>
+		<marquee>./media/emulationstation/fistofth_marquee.png</marquee>
+		<video>./media/emulationstation/fistofth.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1378,12 +1378,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/treashnt.zip</path>
+		<path>./treashnt.zip</path>
 		<name>Treasure Hunter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/treashnt.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/treashnt_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/treashnt.mp4</video>
+		<image>./media/emulationstation/treashnt.png</image>
+		<marquee>./media/emulationstation/treashnt_marquee.png</marquee>
+		<video>./media/emulationstation/treashnt.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1393,12 +1393,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/jewelris.zip</path>
+		<path>./jewelris.zip</path>
 		<name>Jewelriss</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/jewelris.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/jewelris_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/jewelris.mp4</video>
+		<image>./media/emulationstation/jewelris.png</image>
+		<marquee>./media/emulationstation/jewelris_marquee.png</marquee>
+		<video>./media/emulationstation/jewelris.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1408,12 +1408,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/santa.zip</path>
+		<path>./santa.zip</path>
 		<name>Nightmare of Santa Claus</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/santa.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/santa_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/santa.mp4</video>
+		<image>./media/emulationstation/santa.png</image>
+		<marquee>./media/emulationstation/santa_marquee.png</marquee>
+		<video>./media/emulationstation/santa.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1423,12 +1423,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/marsvoya.zip</path>
+		<path>./marsvoya.zip</path>
 		<name>Mars Voyage</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/marsvoya.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/marsvoya_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/marsvoya.mp4</video>
+		<image>./media/emulationstation/marsvoya.png</image>
+		<marquee>./media/emulationstation/marsvoya_marquee.png</marquee>
+		<video>./media/emulationstation/marsvoya.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1438,12 +1438,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/flgoblin.zip</path>
+		<path>./flgoblin.zip</path>
 		<name>Flying Goblin</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/flgoblin.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/flgoblin_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/flgoblin.mp4</video>
+		<image>./media/emulationstation/flgoblin.png</image>
+		<marquee>./media/emulationstation/flgoblin_marquee.png</marquee>
+		<video>./media/emulationstation/flgoblin.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1453,12 +1453,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/boom.zip</path>
+		<path>./boom.zip</path>
 		<name>Boom</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/boom.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/boom_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/boom.mp4</video>
+		<image>./media/emulationstation/boom.png</image>
+		<marquee>./media/emulationstation/boom_marquee.png</marquee>
+		<video>./media/emulationstation/boom.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1468,12 +1468,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/snowman.zip</path>
+		<path>./snowman.zip</path>
 		<name>Snowman Legend</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/snowman.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/snowman_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/snowman.mp4</video>
+		<image>./media/emulationstation/snowman.png</image>
+		<marquee>./media/emulationstation/snowman_marquee.png</marquee>
+		<video>./media/emulationstation/snowman.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1483,12 +1483,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/kikiinla.zip</path>
+		<path>./kikiinla.zip</path>
 		<name>Kiki Inland</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/kikiinla.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/kikiinla_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/kikiinla.mp4</video>
+		<image>./media/emulationstation/kikiinla.png</image>
+		<marquee>./media/emulationstation/kikiinla_marquee.png</marquee>
+		<video>./media/emulationstation/kikiinla.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19920101T000000</releasedate>
@@ -1498,12 +1498,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/ftnnluck.zip</path>
+		<path>./ftnnluck.zip</path>
 		<name>Fortune 'n Luck</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/ftnnluck.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/ftnnluck_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/ftnnluck.mp4</video>
+		<image>./media/emulationstation/ftnnluck.png</image>
+		<marquee>./media/emulationstation/ftnnluck_marquee.png</marquee>
+		<video>./media/emulationstation/ftnnluck.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19920101T000000</releasedate>
@@ -1513,12 +1513,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/punkboy.zip</path>
+		<path>./punkboy.zip</path>
 		<name>Punk Boy</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/punkboy.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/punkboy_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/punkboy.mp4</video>
+		<image>./media/emulationstation/punkboy.png</image>
+		<marquee>./media/emulationstation/punkboy_marquee.png</marquee>
+		<video>./media/emulationstation/punkboy.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19920101T000000</releasedate>
@@ -1528,12 +1528,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/fortress.zip</path>
+		<path>./fortress.zip</path>
 		<name>Fortress of Fierceness</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/fortress.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/fortress_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/fortress.mp4</video>
+		<image>./media/emulationstation/fortress.png</image>
+		<marquee>./media/emulationstation/fortress_marquee.png</marquee>
+		<video>./media/emulationstation/fortress.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1543,12 +1543,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/famous7.zip</path>
+		<path>./famous7.zip</path>
 		<name>Famous 7</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/famous7.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/famous7_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/famous7.mp4</video>
+		<image>./media/emulationstation/famous7.png</image>
+		<marquee>./media/emulationstation/famous7_marquee.png</marquee>
+		<video>./media/emulationstation/famous7.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -1558,12 +1558,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/mjigsaw.zip</path>
+		<path>./mjigsaw.zip</path>
 		<name>Magic Jigsaw</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/mjigsaw.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/mjigsaw_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/mjigsaw.mp4</video>
+		<image>./media/emulationstation/mjigsaw.png</image>
+		<marquee>./media/emulationstation/mjigsaw_marquee.png</marquee>
+		<video>./media/emulationstation/mjigsaw.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19910101T000000</releasedate>
@@ -1573,12 +1573,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/gprace.zip</path>
+		<path>./gprace.zip</path>
 		<name>GP Race</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/gprace.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/gprace_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/gprace.mp4</video>
+		<image>./media/emulationstation/gprace.png</image>
+		<marquee>./media/emulationstation/gprace_marquee.png</marquee>
+		<video>./media/emulationstation/gprace.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19920101T000000</releasedate>
@@ -1588,12 +1588,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/fanttrav.zip</path>
+		<path>./fanttrav.zip</path>
 		<name>Fantasy Travel</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/fanttrav.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/fanttrav_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/fanttrav.mp4</video>
+		<image>./media/emulationstation/fanttrav.png</image>
+		<marquee>./media/emulationstation/fanttrav_marquee.png</marquee>
+		<video>./media/emulationstation/fanttrav.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -1603,12 +1603,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/quizfigh.zip</path>
+		<path>./quizfigh.zip</path>
 		<name>Quiz Fighter</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/quizfigh.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/quizfigh_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/quizfigh.mp4</video>
+		<image>./media/emulationstation/quizfigh.png</image>
+		<marquee>./media/emulationstation/quizfigh_marquee.png</marquee>
+		<video>./media/emulationstation/quizfigh.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -1618,12 +1618,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/hannibal.zip</path>
+		<path>./hannibal.zip</path>
 		<name>Further Adventures of Hannibal The Cat</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/hannibal.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/hannibal_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/hannibal.mp4</video>
+		<image>./media/emulationstation/hannibal.png</image>
+		<marquee>./media/emulationstation/hannibal_marquee.png</marquee>
+		<video>./media/emulationstation/hannibal.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -1633,12 +1633,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/dinopark.zip</path>
+		<path>./dinopark.zip</path>
 		<name>Dinosaur Park</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/dinopark.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/dinopark_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/dinopark.mp4</video>
+		<image>./media/emulationstation/dinopark.png</image>
+		<marquee>./media/emulationstation/dinopark_marquee.png</marquee>
+		<video>./media/emulationstation/dinopark.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19930101T000000</releasedate>
@@ -1648,12 +1648,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/basketba.zip</path>
+		<path>./basketba.zip</path>
 		<name>Basketball</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/basketba.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/basketba_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/basketba.mp4</video>
+		<image>./media/emulationstation/basketba.png</image>
+		<marquee>./media/emulationstation/basketba_marquee.png</marquee>
+		<video>./media/emulationstation/basketba.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1663,12 +1663,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/hothero.zip</path>
+		<path>./hothero.zip</path>
 		<name>Hot Hero</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/hothero.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/hothero_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/hothero.mp4</video>
+		<image>./media/emulationstation/hothero.png</image>
+		<marquee>./media/emulationstation/hothero_marquee.png</marquee>
+		<video>./media/emulationstation/hothero.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1678,12 +1678,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/robinhoo.zip</path>
+		<path>./robinhoo.zip</path>
 		<name>Robin Hood</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/robinhoo.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/robinhoo_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/robinhoo.mp4</video>
+		<image>./media/emulationstation/robinhoo.png</image>
+		<marquee>./media/emulationstation/robinhoo_marquee.png</marquee>
+		<video>./media/emulationstation/robinhoo.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19940101T000000</releasedate>
@@ -1693,12 +1693,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/goldpyra.zip</path>
+		<path>./goldpyra.zip</path>
 		<name>The Golden Pyramid</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/goldpyra.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/goldpyra_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/goldpyra.mp4</video>
+		<image>./media/emulationstation/goldpyra.png</image>
+		<marquee>./media/emulationstation/goldpyra_marquee.png</marquee>
+		<video>./media/emulationstation/goldpyra.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19900101T000000</releasedate>
@@ -1708,12 +1708,12 @@
 		<players>1</players>
 	</game>
 	<game id="46346" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/gamate/rotat.zip</path>
+		<path>./rotat.zip</path>
 		<name>Riddle of the Ancient Tomb</name>
 		<desc />
-		<image>/home/pi/.emulationstation/downloaded_images/gamate/rotat.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/gamate/rotat_marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/gamate/rotat.mp4</video>
+		<image>./media/emulationstation/rotat.png</image>
+		<marquee>./media/emulationstation/rotat_marquee.png</marquee>
+		<video>./media/emulationstation/rotat.mp4</video>
 		<thumbnail />
 		<rating />
 		<releasedate>19940101T000000</releasedate>
@@ -1725,9 +1725,9 @@
 	<game>
 		<path>./insectwa.zip</path>
 		<name>Insect War</name>
-		<image>~/.emulationstation/downloaded_images/gamate/insectwa.png</image>
-		<video>~/.emulationstation/downloaded_images/gamate/insectwa.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/gamate/insectwa_marquee.png</marquee>
+		<image>./media/emulationstation/insectwa.png</image>
+		<video>./media/emulationstation/insectwa.mp4</video>
+		<marquee>./media/emulationstation/insectwa_marquee.png</marquee>
 		<rating />
 		<releasedate>19950101T000000</releasedate>
 		<developer>Gamate</developer>
@@ -1739,9 +1739,9 @@
 	<game>
 		<path>./killshot.zip</path>
 		<name>Kill Shot</name>
-		<image>~/.emulationstation/downloaded_images/gamate/killshot.png</image>
-		<video>~/.emulationstation/downloaded_images/gamate/killshot.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/gamate/killshot_marquee.png</marquee>
+		<image>./media/emulationstation/killshot.png</image>
+		<video>./media/emulationstation/killshot.mp4</video>
+		<marquee>./media/emulationstation/killshot_marquee.png</marquee>
 		<rating />
 		<releasedate>19910101T000000</releasedate>
 		<developer>Gamate</developer>
@@ -1753,9 +1753,9 @@
 	<game>
 		<path>./4in1.zip</path>
 		<name>4-in-1 (Mini Golf, Cube-Up, Brick Blaster, and Vindicators)</name>
-		<image>~/.emulationstation/downloaded_images/gamate/4in1.png</image>
-		<video>~/.emulationstation/downloaded_images/gamate/4in1.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/gamate/4in1_marquee.png</marquee>
+		<image>./media/emulationstation/4in1.png</image>
+		<video>./media/emulationstation/4in1.mp4</video>
+		<marquee>./media/emulationstation/4in1_marquee.png</marquee>
 		<rating></rating>
 		<releasedate>19910101T000000</releasedate>
 		<developer>Armenia / Food and Fun</developer>

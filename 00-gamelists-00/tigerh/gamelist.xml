@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <gameList>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/taddams.7z</path>
+		<path>./taddams.7z</path>
 		<name>The Addams Family</name>
 		<desc>The Addams Family (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/taddams1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/taddams.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Taddams.mp4</video>
+		<image>./media/emulationstation/taddams1.png</image>
+		<marquee>./media/emulationstation/taddams.png</marquee>
+		<video>./media/emulationstation/Taddams.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -16,12 +16,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tapollo13.7z</path>
+		<path>./tapollo13.7z</path>
 		<name>Apollo 13</name>
 		<desc>Apollo 13 (handheld) , hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tapollo131.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tapollo13.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tapollo13.mp4</video>
+		<image>./media/emulationstation/tapollo131.png</image>
+		<marquee>./media/emulationstation/tapollo13.png</marquee>
+		<video>./media/emulationstation/Tapollo13.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19950101T000000</releasedate>
@@ -31,12 +31,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tbatfor.7z</path>
+		<path>./tbatfor.7z</path>
 		<name>Batman Forever - Double Dose of Doom</name>
 		<desc>Batman Forever - Double Dose of Doom (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbatfor1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbatfor.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbatfor.mp4</video>
+		<image>./media/emulationstation/tbatfor1.png</image>
+		<marquee>./media/emulationstation/tbatfor.png</marquee>
+		<video>./media/emulationstation/Tbatfor.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19950101T000000</releasedate>
@@ -46,12 +46,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tbatmana.7z</path>
+		<path>./tbatmana.7z</path>
 		<name>Batman: The Animated Series</name>
 		<desc>Batman: The Animated Series (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbatmana1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbatmana.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbatmana.mp4</video>
+		<image>./media/emulationstation/tbatmana1.png</image>
+		<marquee>./media/emulationstation/tbatmana.png</marquee>
+		<video>./media/emulationstation/Tbatmana.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -61,12 +61,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tbtoads.7z</path>
+		<path>./tbtoads.7z</path>
 		<name>Battletoads</name>
 		<desc>Battletoads (handheld),(licensed from Rare/Tradewest), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbtoads1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbtoads.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbtoads.mp4</video>
+		<image>./media/emulationstation/tbtoads1.png</image>
+		<marquee>./media/emulationstation/tbtoads.png</marquee>
+		<video>./media/emulationstation/Tbtoads.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -76,12 +76,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tbttf.7z</path>
+		<path>./tbttf.7z</path>
 		<name>Back to the Future</name>
 		<desc>Back to the Future (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbttf1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbttf.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbttf.mp4</video>
+		<image>./media/emulationstation/tbttf1.png</image>
+		<marquee>./media/emulationstation/tbttf.png</marquee>
+		<video>./media/emulationstation/Tbttf.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -91,12 +91,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tddragon.7z</path>
+		<path>./tddragon.7z</path>
 		<name>Double Dragon</name>
 		<desc>Double Dragon(handheld),(licensed from Technos/Tradewest)  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tddragon.mp4</video>
+		<image>./media/emulationstation/tddragon1.png</image>
+		<marquee>./media/emulationstation/tddragon.png</marquee>
+		<video>./media/emulationstation/Tddragon.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -106,12 +106,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tddragon3.7z</path>
+		<path>./tddragon3.7z</path>
 		<name>Double Dragon 3 - The Rosetta Stone</name>
 		<desc>Double Dragon 3 - The Rosetta Stone (handheld), (licensed from Technos)  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon31.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon3.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tddragon3.mp4</video>
+		<image>./media/emulationstation/tddragon31.png</image>
+		<marquee>./media/emulationstation/tddragon3.png</marquee>
+		<video>./media/emulationstation/Tddragon3.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -121,12 +121,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tdennis.7z</path>
+		<path>./tdennis.7z</path>
 		<name>Dennis the Menace</name>
 		<desc>Dennis the Menace (handheld), (licensed from Technos)  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tdennis1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tdennis.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tdennis.mp4</video>
+		<image>./media/emulationstation/tdennis1.png</image>
+		<marquee>./media/emulationstation/tdennis.png</marquee>
+		<video>./media/emulationstation/Tdennis.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -136,12 +136,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tdummies.7z</path>
+		<path>./tdummies.7z</path>
 		<name>The Incredible Crash Dummies</name>
 		<desc>The Incredible Crash Dummies (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tdummies1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tdummies.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tdummies.mp4</video>
+		<image>./media/emulationstation/tdummies1.png</image>
+		<marquee>./media/emulationstation/tdummies.png</marquee>
+		<video>./media/emulationstation/Tdummies.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -151,12 +151,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tflash.7z</path>
+		<path>./tflash.7z</path>
 		<name>The Flash</name>
 		<desc>The Flash (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tflash1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tflash.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tflash.mp4</video>
+		<image>./media/emulationstation/tflash1.png</image>
+		<marquee>./media/emulationstation/tflash.png</marquee>
+		<video>./media/emulationstation/Tflash.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -166,12 +166,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tgaiden.7z</path>
+		<path>./tgaiden.7z</path>
 		<name>Ninja Gaiden</name>
 		<desc>Ninja Gaiden, (handheld),(licensed from Tecmo), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgaiden1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgaiden.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgaiden.mp4</video>
+		<image>./media/emulationstation/tgaiden1.png</image>
+		<marquee>./media/emulationstation/tgaiden.png</marquee>
+		<video>./media/emulationstation/Tgaiden.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -181,12 +181,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tgaunt.7z</path>
+		<path>./tgaunt.7z</path>
 		<name>Gauntlet</name>
 		<desc>Gauntlet, (handheld), (licensed from Tengen) , hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgaunt1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgaunt.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgaunt.mp4</video>
+		<image>./media/emulationstation/tgaunt1.png</image>
+		<marquee>./media/emulationstation/tgaunt.png</marquee>
+		<video>./media/emulationstation/Tgaunt.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -196,12 +196,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tgoldeye.7z</path>
+		<path>./tgoldeye.7z</path>
 		<name>007: GoldenEye</name>
 		<desc>007: GoldenEye (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldeye1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldeye.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgoldeye.mp4</video>
+		<image>./media/emulationstation/tgoldeye1.png</image>
+		<marquee>./media/emulationstation/tgoldeye.png</marquee>
+		<video>./media/emulationstation/Tgoldeye.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19950101T000000</releasedate>
@@ -211,12 +211,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tgoldnaxe.7z</path>
+		<path>./tgoldnaxe.7z</path>
 		<name>Golden Axe</name>
 		<desc>Golden Axe (handheld), (licensed from Sega), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldnaxe1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldnaxe.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgoldnaxe.mp4</video>
+		<image>./media/emulationstation/tgoldnaxe1.png</image>
+		<marquee>./media/emulationstation/tgoldnaxe.png</marquee>
+		<video>./media/emulationstation/Tgoldnaxe.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -226,12 +226,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/thalone.7z</path>
+		<path>./thalone.7z</path>
 		<name>Home Alone</name>
 		<desc>Home Alone (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thalone1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thalone.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thalone.mp4</video>
+		<image>./media/emulationstation/thalone1.png</image>
+		<marquee>./media/emulationstation/thalone.png</marquee>
+		<video>./media/emulationstation/Thalone.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -241,12 +241,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/thalone2.7z</path>
+		<path>./thalone2.7z</path>
 		<name>Home Alone 2 - Lost in New York</name>
 		<desc>Home Alone 2 - Lost in New York (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thalone21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thalone2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thalone2.mp4</video>
+		<image>./media/emulationstation/thalone21.png</image>
+		<marquee>./media/emulationstation/thalone2.png</marquee>
+		<video>./media/emulationstation/Thalone2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -256,12 +256,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/thook.7z</path>
+		<path>./thook.7z</path>
 		<name>Hook</name>
 		<desc>Hook (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thook1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thook.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thook.mp4</video>
+		<image>./media/emulationstation/thook1.png</image>
+		<marquee>./media/emulationstation/thook.png</marquee>
+		<video>./media/emulationstation/Thook.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -271,12 +271,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tjdredd.7z</path>
+		<path>./tjdredd.7z</path>
 		<name>Judge Dredd</name>
 		<desc>Judge Dredd (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tjdredd1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tjdredd.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tjdredd.mp4</video>
+		<image>./media/emulationstation/tjdredd1.png</image>
+		<marquee>./media/emulationstation/tjdredd.png</marquee>
+		<video>./media/emulationstation/Tjdredd.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19950101T000000</releasedate>
@@ -286,12 +286,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tjpark.7z</path>
+		<path>./tjpark.7z</path>
 		<name>Jurassic Park</name>
 		<desc>Jurassic Park (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tjpark1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tjpark.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tjpark.mp4</video>
+		<image>./media/emulationstation/tjpark1.png</image>
+		<marquee>./media/emulationstation/tjpark.png</marquee>
+		<video>./media/emulationstation/Tjpark.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -301,12 +301,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tkarnov.7z</path>
+		<path>./tkarnov.7z</path>
 		<name>Karnov</name>
 		<desc>Karnov (handheld), (licensed from Data East) , hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tkarnov1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tkarnov.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tkarnov.mp4</video>
+		<image>./media/emulationstation/tkarnov1.png</image>
+		<marquee>./media/emulationstation/tkarnov.png</marquee>
+		<video>./media/emulationstation/Tkarnov.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -316,12 +316,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tkazaam.7z</path>
+		<path>./tkazaam.7z</path>
 		<name>Kazaam</name>
 		<desc>Kazaam (handheld), (licensed from Data East) , hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tkazaam1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tkazaam.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tkazaam.mp4</video>
+		<image>./media/emulationstation/tkazaam1.png</image>
+		<marquee>./media/emulationstation/tkazaam.png</marquee>
+		<video>./media/emulationstation/Tkazaam.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19960101T000000</releasedate>
@@ -331,12 +331,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tmchammer.7z</path>
+		<path>./tmchammer.7z</path>
 		<name>MC Hammer: U Can't Touch This</name>
 		<desc>MC Hammer: U Can't Touch This (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tmchammer1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tmchammer.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tmchammer.mp4</video>
+		<image>./media/emulationstation/tmchammer1.png</image>
+		<marquee>./media/emulationstation/tmchammer.png</marquee>
+		<video>./media/emulationstation/Tmchammer.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -346,12 +346,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tnmarebc.7z</path>
+		<path>./tnmarebc.7z</path>
 		<name>Nightmare Before Christmas</name>
 		<desc>Nightmare Before Christmas (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tnmarebc1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tnmarebc.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tnmarebc.mp4</video>
+		<image>./media/emulationstation/tnmarebc1.png</image>
+		<marquee>./media/emulationstation/tnmarebc.png</marquee>
+		<video>./media/emulationstation/Tnmarebc.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -361,12 +361,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/topaliens.7z</path>
+		<path>./topaliens.7z</path>
 		<name>Operation: Aliens</name>
 		<desc>Operation: Aliens (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/topaliens1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/topaliens.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Topaliens.mp4</video>
+		<image>./media/emulationstation/topaliens1.png</image>
+		<marquee>./media/emulationstation/topaliens.png</marquee>
+		<video>./media/emulationstation/Topaliens.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19940101T000000</releasedate>
@@ -376,12 +376,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/trobhood.7z</path>
+		<path>./trobhood.7z</path>
 		<name>Robin Hood</name>
 		<desc>Robin Hood (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobhood1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobhood.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobhood.mp4</video>
+		<image>./media/emulationstation/trobhood1.png</image>
+		<marquee>./media/emulationstation/trobhood.png</marquee>
+		<video>./media/emulationstation/Trobhood.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -391,12 +391,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/trobocop2.7z</path>
+		<path>./trobocop2.7z</path>
 		<name>Robocop 2</name>
 		<desc>Robocop 2 (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobocop2.mp4</video>
+		<image>./media/emulationstation/trobocop21.png</image>
+		<marquee>./media/emulationstation/trobocop2.png</marquee>
+		<video>./media/emulationstation/Trobocop2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -406,12 +406,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/trobocop3.7z</path>
+		<path>./trobocop3.7z</path>
 		<name>Robocop 3</name>
 		<desc>Robocop 3 (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop31.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop3.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobocop3.mp4</video>
+		<image>./media/emulationstation/trobocop31.png</image>
+		<marquee>./media/emulationstation/trobocop3.png</marquee>
+		<video>./media/emulationstation/Trobocop3.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -421,12 +421,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/trockteer.7z</path>
+		<path>./trockteer.7z</path>
 		<name>The Rocketeer</name>
 		<desc>The Rocketeer (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trockteer1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trockteer.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trockteer.mp4</video>
+		<image>./media/emulationstation/trockteer1.png</image>
+		<marquee>./media/emulationstation/trockteer.png</marquee>
+		<video>./media/emulationstation/Trockteer.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -436,12 +436,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsddragon.7z</path>
+		<path>./tsddragon.7z</path>
 		<name>Super Double Dragon</name>
 		<desc>Super Double Dragon (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsddragon1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsddragon.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsddragon.mp4</video>
+		<image>./media/emulationstation/tsddragon1.png</image>
+		<marquee>./media/emulationstation/tsddragon.png</marquee>
+		<video>./media/emulationstation/Tsddragon.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -451,12 +451,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsf2010.7z</path>
+		<path>./tsf2010.7z</path>
 		<name>Street Fighter 2010 - The Final Fight</name>
 		<desc>Street Fighter 2010 - The Final Fight (handheld),(licensed from Capcom), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsf20101.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsf2010.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsf2010.mp4</video>
+		<image>./media/emulationstation/tsf20101.png</image>
+		<marquee>./media/emulationstation/tsf2010.png</marquee>
+		<video>./media/emulationstation/Tsf2010.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -466,12 +466,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsfight2.7z</path>
+		<path>./tsfight2.7z</path>
 		<name>Street Fighter II</name>
 		<desc>Street Fighter II (handheld),(licensed from Capcom), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsfight21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsfight2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsfight2.mp4</video>
+		<image>./media/emulationstation/tsfight21.png</image>
+		<marquee>./media/emulationstation/tsfight2.png</marquee>
+		<video>./media/emulationstation/Tsfight2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -481,12 +481,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tshadow.7z</path>
+		<path>./tshadow.7z</path>
 		<name>The Shadow</name>
 		<desc>The Shadow (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tshadow1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tshadow.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tshadow.mp4</video>
+		<image>./media/emulationstation/tshadow1.png</image>
+		<marquee>./media/emulationstation/tshadow.png</marquee>
+		<video>./media/emulationstation/Tshadow.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19940101T000000</releasedate>
@@ -496,12 +496,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsharr2.7z</path>
+		<path>./tsharr2.7z</path>
 		<name>Space Harrier II</name>
 		<desc>Space Harrier II (handheld), (licensed from Sega), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsharr21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsharr2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsharr2.mp4</video>
+		<image>./media/emulationstation/tsharr21.png</image>
+		<marquee>./media/emulationstation/tsharr2.png</marquee>
+		<video>./media/emulationstation/Tsharr2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -511,12 +511,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsjam.7z</path>
+		<path>./tsjam.7z</path>
 		<name>Space Jam</name>
 		<desc>Space Jam (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsjam1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsjam.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsjam.mp4</video>
+		<image>./media/emulationstation/tsjam1.png</image>
+		<marquee>./media/emulationstation/tsjam.png</marquee>
+		<video>./media/emulationstation/Tsjam.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19960101T000000</releasedate>
@@ -526,12 +526,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tskelwarr.7z</path>
+		<path>./tskelwarr.7z</path>
 		<name>Skeleton Warriors - The Dark Crusade</name>
 		<desc>Skeleton Warriors - The Dark Crusade (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tskelwarr1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tskelwarr.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tskelwarr.mp4</video>
+		<image>./media/emulationstation/tskelwarr1.png</image>
+		<marquee>./media/emulationstation/tskelwarr.png</marquee>
+		<video>./media/emulationstation/Tskelwarr.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19940101T000000</releasedate>
@@ -541,12 +541,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsonic.7z</path>
+		<path>./tsonic.7z</path>
 		<name>Sonic The Hedgehog</name>
 		<desc>Sonic The Hedgehog (handheld), (licensed from Sega),  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsonic.mp4</video>
+		<image>./media/emulationstation/tsonic1.png</image>
+		<marquee>./media/emulationstation/tsonic.png</marquee>
+		<video>./media/emulationstation/Tsonic.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -556,12 +556,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsonic2.7z</path>
+		<path>./tsonic2.7z</path>
 		<name>Sonic The Hedgehog 2</name>
 		<desc>Sonic The Hedgehog 2 (handheld), (licensed from Sega),  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsonic2.mp4</video>
+		<image>./media/emulationstation/tsonic21.png</image>
+		<marquee>./media/emulationstation/tsonic2.png</marquee>
+		<video>./media/emulationstation/Tsonic2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -571,12 +571,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tspidman.7z</path>
+		<path>./tspidman.7z</path>
 		<name>Spider-Man</name>
 		<desc>Spider-Man (handheld, Tiger 1991 version),  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tspidman1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tspidman.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tspidman.mp4</video>
+		<image>./media/emulationstation/tspidman1.png</image>
+		<marquee>./media/emulationstation/tspidman.png</marquee>
+		<video>./media/emulationstation/Tspidman.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -586,12 +586,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tstrider.7z</path>
+		<path>./tstrider.7z</path>
 		<name>Strider</name>
 		<desc>Strider (handheld), (licensed from Capcom), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tstrider1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tstrider.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tstrider.mp4</video>
+		<image>./media/emulationstation/tstrider1.png</image>
+		<marquee>./media/emulationstation/tstrider.png</marquee>
+		<video>./media/emulationstation/Tstrider.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -601,12 +601,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tswampt.7z</path>
+		<path>./tswampt.7z</path>
 		<name>Swamp Thing</name>
 		<desc>Swamp Thing (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tswampt1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tswampt.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tswampt.mp4</video>
+		<image>./media/emulationstation/tswampt1.png</image>
+		<marquee>./media/emulationstation/tswampt.png</marquee>
+		<video>./media/emulationstation/Tswampt.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -616,12 +616,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/ttransf2.7z</path>
+		<path>./ttransf2.7z</path>
 		<name>Transformers - Generation 2</name>
 		<desc>Transformers - Generation 2 (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/ttransf21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/ttransf2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Ttransf2.mp4</video>
+		<image>./media/emulationstation/ttransf21.png</image>
+		<marquee>./media/emulationstation/ttransf2.png</marquee>
+		<video>./media/emulationstation/Ttransf2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -631,12 +631,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tvindictr.7z</path>
+		<path>./tvindictr.7z</path>
 		<name>Vindicators</name>
 		<desc>Vindicators (handheld),(licensed from Tengen), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tvindictr1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tvindictr.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tvindictr.mp4</video>
+		<image>./media/emulationstation/tvindictr1.png</image>
+		<marquee>./media/emulationstation/tvindictr.png</marquee>
+		<video>./media/emulationstation/Tvindictr.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -646,12 +646,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/twworld.7z</path>
+		<path>./twworld.7z</path>
 		<name>Wayne's World</name>
 		<desc>Wayne's World (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/twworld1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/twworld.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Twworld.mp4</video>
+		<image>./media/emulationstation/twworld1.png</image>
+		<marquee>./media/emulationstation/twworld.png</marquee>
+		<video>./media/emulationstation/Twworld.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -661,12 +661,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/txmen.7z</path>
+		<path>./txmen.7z</path>
 		<name>X-Men</name>
 		<desc>X-Men (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/txmen1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/txmen.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Txmen.mp4</video>
+		<image>./media/emulationstation/txmen1.png</image>
+		<marquee>./media/emulationstation/txmen.png</marquee>
+		<video>./media/emulationstation/Txmen.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -676,12 +676,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/txmenpx.7z</path>
+		<path>./txmenpx.7z</path>
 		<name>X-Men - Project X</name>
 		<desc>X-Men - Project X (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/txmenpx1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/txmenpx.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Txmenpx.mp4</video>
+		<image>./media/emulationstation/txmenpx1.png</image>
+		<marquee>./media/emulationstation/txmenpx.png</marquee>
+		<video>./media/emulationstation/Txmenpx.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -694,9 +694,9 @@
 		<path>./tinday.7z</path>
 		<name>Independence Day</name>
 		<desc>Independence Day (handheld), hh_sm510.cpp</desc>
-		<image>~/.emulationstation/downloaded_images/tigerh/tinday1.png</image>
-		<video>~/.emulationstation/downloaded_images/tigerh/Tinday.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/tigerh/tinday.png</marquee>
+		<image>./media/emulationstation/tinday1.png</image>
+		<video>./media/emulationstation/Tinday.mp4</video>
+		<marquee>./media/emulationstation/tinday.png</marquee>
 		<rating>0</rating>
 		<releasedate>19960101T000000</releasedate>
 		<developer>Tiger Electronics, Inc.</developer>
@@ -709,9 +709,9 @@
 		<path>./tmkombat.7z</path>
 		<name>Mortal Kombat</name>
 		<desc>Mortal Kombat (handheld),  (licensed from Midway) , hh_sm510.cpp</desc>
-		<image>~/.emulationstation/downloaded_images/tigerh/tmkombat1.png</image>
-		<video>~/.emulationstation/downloaded_images/tigerh/Tmkombat.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/tigerh/tmkombat.png</marquee>
+		<image>./media/emulationstation/tmkombat1.png</image>
+		<video>./media/emulationstation/Tmkombat.mp4</video>
+		<marquee>./media/emulationstation/tmkombat.png</marquee>
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
 		<developer>Tiger Electronics, Inc.</developer>
@@ -724,9 +724,9 @@
 		<path>./taltbeast.7z</path>
 		<name>Altered Beast</name>
 		<desc>Altered Beast (handheld),(licensed from Sega) , hh_sm510.cpp</desc>
-		<image>~/.emulationstation/downloaded_images/tigerh/taltbeast1.png</image>
-		<video>~/.emulationstation/downloaded_images/tigerh/Taltbeast.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/tigerh/taltbeast.png</marquee>
+		<image>./media/emulationstation/taltbeast1.png</image>
+		<video>./media/emulationstation/Taltbeast.mp4</video>
+		<marquee>./media/emulationstation/taltbeast.png</marquee>
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
 		<developer>Tiger Electronics, Inc.</developer>
@@ -739,9 +739,9 @@
 		<path>./tbatman.7z</path>
 		<name>Batman</name>
 		<desc>Batman (handheld), hh_sm510.cpp</desc>
-		<image>~/.emulationstation/downloaded_images/tigerh/tbatman1.png</image>
-		<video>~/.emulationstation/downloaded_images/tigerh/Tbatmana.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/tigerh/tbatman.png</marquee>
+		<image>./media/emulationstation/tbatman1.png</image>
+		<video>./media/emulationstation/Tbatmana.mp4</video>
+		<marquee>./media/emulationstation/tbatman.png</marquee>
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
 		<developer>Tiger Electronics, Inc.</developer>
@@ -751,12 +751,12 @@
 		<lastplayed>20201112T131129</lastplayed>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/taddams.zip</path>
+		<path>./taddams.zip</path>
 		<name>The Addams Family</name>
 		<desc>The Addams Family (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/taddams1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/taddams.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Taddams.mp4</video>
+		<image>./media/emulationstation/taddams1.png</image>
+		<marquee>./media/emulationstation/taddams.png</marquee>
+		<video>./media/emulationstation/Taddams.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -766,12 +766,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tapollo13.zip</path>
+		<path>./tapollo13.zip</path>
 		<name>Apollo 13</name>
 		<desc>Apollo 13 (handheld) , hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tapollo131.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tapollo13.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tapollo13.mp4</video>
+		<image>./media/emulationstation/tapollo131.png</image>
+		<marquee>./media/emulationstation/tapollo13.png</marquee>
+		<video>./media/emulationstation/Tapollo13.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19950101T000000</releasedate>
@@ -781,12 +781,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tbatfor.zip</path>
+		<path>./tbatfor.zip</path>
 		<name>Batman Forever - Double Dose of Doom</name>
 		<desc>Batman Forever - Double Dose of Doom (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbatfor1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbatfor.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbatfor.mp4</video>
+		<image>./media/emulationstation/tbatfor1.png</image>
+		<marquee>./media/emulationstation/tbatfor.png</marquee>
+		<video>./media/emulationstation/Tbatfor.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19950101T000000</releasedate>
@@ -796,12 +796,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tbatmana.zip</path>
+		<path>./tbatmana.zip</path>
 		<name>Batman: The Animated Series</name>
 		<desc>Batman: The Animated Series (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbatmana1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbatmana.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbatmana.mp4</video>
+		<image>./media/emulationstation/tbatmana1.png</image>
+		<marquee>./media/emulationstation/tbatmana.png</marquee>
+		<video>./media/emulationstation/Tbatmana.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -811,12 +811,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tbtoads.zip</path>
+		<path>./tbtoads.zip</path>
 		<name>Battletoads</name>
 		<desc>Battletoads (handheld),(licensed from Rare/Tradewest), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbtoads1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbtoads.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbtoads.mp4</video>
+		<image>./media/emulationstation/tbtoads1.png</image>
+		<marquee>./media/emulationstation/tbtoads.png</marquee>
+		<video>./media/emulationstation/Tbtoads.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -826,12 +826,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tbttf.zip</path>
+		<path>./tbttf.zip</path>
 		<name>Back to the Future</name>
 		<desc>Back to the Future (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tbttf1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tbttf.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tbttf.mp4</video>
+		<image>./media/emulationstation/tbttf1.png</image>
+		<marquee>./media/emulationstation/tbttf.png</marquee>
+		<video>./media/emulationstation/Tbttf.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -841,12 +841,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tddragon.zip</path>
+		<path>./tddragon.zip</path>
 		<name>Double Dragon</name>
 		<desc>Double Dragon(handheld),(licensed from Technos/Tradewest)  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tddragon.mp4</video>
+		<image>./media/emulationstation/tddragon1.png</image>
+		<marquee>./media/emulationstation/tddragon.png</marquee>
+		<video>./media/emulationstation/Tddragon.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -856,12 +856,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tddragon3.zip</path>
+		<path>./tddragon3.zip</path>
 		<name>Double Dragon 3 - The Rosetta Stone</name>
 		<desc>Double Dragon 3 - The Rosetta Stone (handheld), (licensed from Technos)  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon31.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tddragon3.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tddragon3.mp4</video>
+		<image>./media/emulationstation/tddragon31.png</image>
+		<marquee>./media/emulationstation/tddragon3.png</marquee>
+		<video>./media/emulationstation/Tddragon3.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -871,12 +871,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tdennis.zip</path>
+		<path>./tdennis.zip</path>
 		<name>Dennis the Menace</name>
 		<desc>Dennis the Menace (handheld), (licensed from Technos)  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tdennis1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tdennis.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tdennis.mp4</video>
+		<image>./media/emulationstation/tdennis1.png</image>
+		<marquee>./media/emulationstation/tdennis.png</marquee>
+		<video>./media/emulationstation/Tdennis.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -886,12 +886,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tdummies.zip</path>
+		<path>./tdummies.zip</path>
 		<name>The Incredible Crash Dummies</name>
 		<desc>The Incredible Crash Dummies (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tdummies1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tdummies.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tdummies.mp4</video>
+		<image>./media/emulationstation/tdummies1.png</image>
+		<marquee>./media/emulationstation/tdummies.png</marquee>
+		<video>./media/emulationstation/Tdummies.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -901,12 +901,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tflash.zip</path>
+		<path>./tflash.zip</path>
 		<name>The Flash</name>
 		<desc>The Flash (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tflash1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tflash.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tflash.mp4</video>
+		<image>./media/emulationstation/tflash1.png</image>
+		<marquee>./media/emulationstation/tflash.png</marquee>
+		<video>./media/emulationstation/Tflash.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -916,12 +916,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tgaiden.zip</path>
+		<path>./tgaiden.zip</path>
 		<name>Ninja Gaiden</name>
 		<desc>Ninja Gaiden, (handheld),(licensed from Tecmo), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgaiden1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgaiden.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgaiden.mp4</video>
+		<image>./media/emulationstation/tgaiden1.png</image>
+		<marquee>./media/emulationstation/tgaiden.png</marquee>
+		<video>./media/emulationstation/Tgaiden.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -931,12 +931,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tgaunt.zip</path>
+		<path>./tgaunt.zip</path>
 		<name>Gauntlet</name>
 		<desc>Gauntlet, (handheld), (licensed from Tengen) , hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgaunt1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgaunt.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgaunt.mp4</video>
+		<image>./media/emulationstation/tgaunt1.png</image>
+		<marquee>./media/emulationstation/tgaunt.png</marquee>
+		<video>./media/emulationstation/Tgaunt.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -946,12 +946,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tgoldeye.zip</path>
+		<path>./tgoldeye.zip</path>
 		<name>007: GoldenEye</name>
 		<desc>007: GoldenEye (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldeye1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldeye.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgoldeye.mp4</video>
+		<image>./media/emulationstation/tgoldeye1.png</image>
+		<marquee>./media/emulationstation/tgoldeye.png</marquee>
+		<video>./media/emulationstation/Tgoldeye.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19950101T000000</releasedate>
@@ -961,12 +961,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tgoldnaxe.zip</path>
+		<path>./tgoldnaxe.zip</path>
 		<name>Golden Axe</name>
 		<desc>Golden Axe (handheld), (licensed from Sega), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldnaxe1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tgoldnaxe.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tgoldnaxe.mp4</video>
+		<image>./media/emulationstation/tgoldnaxe1.png</image>
+		<marquee>./media/emulationstation/tgoldnaxe.png</marquee>
+		<video>./media/emulationstation/Tgoldnaxe.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -976,12 +976,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/thalone.zip</path>
+		<path>./thalone.zip</path>
 		<name>Home Alone</name>
 		<desc>Home Alone (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thalone1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thalone.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thalone.mp4</video>
+		<image>./media/emulationstation/thalone1.png</image>
+		<marquee>./media/emulationstation/thalone.png</marquee>
+		<video>./media/emulationstation/Thalone.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -991,12 +991,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/thalone2.zip</path>
+		<path>./thalone2.zip</path>
 		<name>Home Alone 2 - Lost in New York</name>
 		<desc>Home Alone 2 - Lost in New York (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thalone21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thalone2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thalone2.mp4</video>
+		<image>./media/emulationstation/thalone21.png</image>
+		<marquee>./media/emulationstation/thalone2.png</marquee>
+		<video>./media/emulationstation/Thalone2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -1006,12 +1006,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/thook.zip</path>
+		<path>./thook.zip</path>
 		<name>Hook</name>
 		<desc>Hook (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/thook1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/thook.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Thook.mp4</video>
+		<image>./media/emulationstation/thook1.png</image>
+		<marquee>./media/emulationstation/thook.png</marquee>
+		<video>./media/emulationstation/Thook.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -1021,12 +1021,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tjdredd.zip</path>
+		<path>./tjdredd.zip</path>
 		<name>Judge Dredd</name>
 		<desc>Judge Dredd (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tjdredd1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tjdredd.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tjdredd.mp4</video>
+		<image>./media/emulationstation/tjdredd1.png</image>
+		<marquee>./media/emulationstation/tjdredd.png</marquee>
+		<video>./media/emulationstation/Tjdredd.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19950101T000000</releasedate>
@@ -1036,12 +1036,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tjpark.zip</path>
+		<path>./tjpark.zip</path>
 		<name>Jurassic Park</name>
 		<desc>Jurassic Park (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tjpark1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tjpark.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tjpark.mp4</video>
+		<image>./media/emulationstation/tjpark1.png</image>
+		<marquee>./media/emulationstation/tjpark.png</marquee>
+		<video>./media/emulationstation/Tjpark.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -1051,12 +1051,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tkarnov.zip</path>
+		<path>./tkarnov.zip</path>
 		<name>Karnov</name>
 		<desc>Karnov (handheld), (licensed from Data East) , hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tkarnov1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tkarnov.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tkarnov.mp4</video>
+		<image>./media/emulationstation/tkarnov1.png</image>
+		<marquee>./media/emulationstation/tkarnov.png</marquee>
+		<video>./media/emulationstation/Tkarnov.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -1066,12 +1066,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tkazaam.zip</path>
+		<path>./tkazaam.zip</path>
 		<name>Kazaam</name>
 		<desc>Kazaam (handheld), (licensed from Data East) , hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tkazaam1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tkazaam.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tkazaam.mp4</video>
+		<image>./media/emulationstation/tkazaam1.png</image>
+		<marquee>./media/emulationstation/tkazaam.png</marquee>
+		<video>./media/emulationstation/Tkazaam.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19960101T000000</releasedate>
@@ -1081,12 +1081,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tmchammer.zip</path>
+		<path>./tmchammer.zip</path>
 		<name>MC Hammer: U Can't Touch This</name>
 		<desc>MC Hammer: U Can't Touch This (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tmchammer1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tmchammer.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tmchammer.mp4</video>
+		<image>./media/emulationstation/tmchammer1.png</image>
+		<marquee>./media/emulationstation/tmchammer.png</marquee>
+		<video>./media/emulationstation/Tmchammer.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -1096,12 +1096,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tnmarebc.zip</path>
+		<path>./tnmarebc.zip</path>
 		<name>Nightmare Before Christmas</name>
 		<desc>Nightmare Before Christmas (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tnmarebc1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tnmarebc.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tnmarebc.mp4</video>
+		<image>./media/emulationstation/tnmarebc1.png</image>
+		<marquee>./media/emulationstation/tnmarebc.png</marquee>
+		<video>./media/emulationstation/Tnmarebc.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -1111,12 +1111,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/topaliens.zip</path>
+		<path>./topaliens.zip</path>
 		<name>Operation: Aliens</name>
 		<desc>Operation: Aliens (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/topaliens1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/topaliens.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Topaliens.mp4</video>
+		<image>./media/emulationstation/topaliens1.png</image>
+		<marquee>./media/emulationstation/topaliens.png</marquee>
+		<video>./media/emulationstation/Topaliens.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19940101T000000</releasedate>
@@ -1126,12 +1126,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/trobhood.zip</path>
+		<path>./trobhood.zip</path>
 		<name>Robin Hood</name>
 		<desc>Robin Hood (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobhood1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobhood.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobhood.mp4</video>
+		<image>./media/emulationstation/trobhood1.png</image>
+		<marquee>./media/emulationstation/trobhood.png</marquee>
+		<video>./media/emulationstation/Trobhood.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -1141,12 +1141,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/trobocop2.zip</path>
+		<path>./trobocop2.zip</path>
 		<name>Robocop 2</name>
 		<desc>Robocop 2 (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobocop2.mp4</video>
+		<image>./media/emulationstation/trobocop21.png</image>
+		<marquee>./media/emulationstation/trobocop2.png</marquee>
+		<video>./media/emulationstation/Trobocop2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -1156,12 +1156,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/trobocop3.zip</path>
+		<path>./trobocop3.zip</path>
 		<name>Robocop 3</name>
 		<desc>Robocop 3 (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop31.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trobocop3.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trobocop3.mp4</video>
+		<image>./media/emulationstation/trobocop31.png</image>
+		<marquee>./media/emulationstation/trobocop3.png</marquee>
+		<video>./media/emulationstation/Trobocop3.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -1171,12 +1171,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/trockteer.zip</path>
+		<path>./trockteer.zip</path>
 		<name>The Rocketeer</name>
 		<desc>The Rocketeer (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/trockteer1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/trockteer.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Trockteer.mp4</video>
+		<image>./media/emulationstation/trockteer1.png</image>
+		<marquee>./media/emulationstation/trockteer.png</marquee>
+		<video>./media/emulationstation/Trockteer.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -1186,12 +1186,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsddragon.zip</path>
+		<path>./tsddragon.zip</path>
 		<name>Super Double Dragon</name>
 		<desc>Super Double Dragon (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsddragon1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsddragon.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsddragon.mp4</video>
+		<image>./media/emulationstation/tsddragon1.png</image>
+		<marquee>./media/emulationstation/tsddragon.png</marquee>
+		<video>./media/emulationstation/Tsddragon.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -1201,12 +1201,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsf2010.zip</path>
+		<path>./tsf2010.zip</path>
 		<name>Street Fighter 2010 - The Final Fight</name>
 		<desc>Street Fighter 2010 - The Final Fight (handheld),(licensed from Capcom), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsf20101.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsf2010.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsf2010.mp4</video>
+		<image>./media/emulationstation/tsf20101.png</image>
+		<marquee>./media/emulationstation/tsf2010.png</marquee>
+		<video>./media/emulationstation/Tsf2010.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -1216,12 +1216,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsfight2.zip</path>
+		<path>./tsfight2.zip</path>
 		<name>Street Fighter II</name>
 		<desc>Street Fighter II (handheld),(licensed from Capcom), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsfight21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsfight2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsfight2.mp4</video>
+		<image>./media/emulationstation/tsfight21.png</image>
+		<marquee>./media/emulationstation/tsfight2.png</marquee>
+		<video>./media/emulationstation/Tsfight2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -1231,12 +1231,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tshadow.zip</path>
+		<path>./tshadow.zip</path>
 		<name>The Shadow</name>
 		<desc>The Shadow (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tshadow1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tshadow.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tshadow.mp4</video>
+		<image>./media/emulationstation/tshadow1.png</image>
+		<marquee>./media/emulationstation/tshadow.png</marquee>
+		<video>./media/emulationstation/Tshadow.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19940101T000000</releasedate>
@@ -1246,12 +1246,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsharr2.zip</path>
+		<path>./tsharr2.zip</path>
 		<name>Space Harrier II</name>
 		<desc>Space Harrier II (handheld), (licensed from Sega), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsharr21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsharr2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsharr2.mp4</video>
+		<image>./media/emulationstation/tsharr21.png</image>
+		<marquee>./media/emulationstation/tsharr2.png</marquee>
+		<video>./media/emulationstation/Tsharr2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -1261,12 +1261,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsjam.zip</path>
+		<path>./tsjam.zip</path>
 		<name>Space Jam</name>
 		<desc>Space Jam (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsjam1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsjam.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsjam.mp4</video>
+		<image>./media/emulationstation/tsjam1.png</image>
+		<marquee>./media/emulationstation/tsjam.png</marquee>
+		<video>./media/emulationstation/Tsjam.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19960101T000000</releasedate>
@@ -1276,12 +1276,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tskelwarr.zip</path>
+		<path>./tskelwarr.zip</path>
 		<name>Skeleton Warriors - The Dark Crusade</name>
 		<desc>Skeleton Warriors - The Dark Crusade (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tskelwarr1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tskelwarr.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tskelwarr.mp4</video>
+		<image>./media/emulationstation/tskelwarr1.png</image>
+		<marquee>./media/emulationstation/tskelwarr.png</marquee>
+		<video>./media/emulationstation/Tskelwarr.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19940101T000000</releasedate>
@@ -1291,12 +1291,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsonic.zip</path>
+		<path>./tsonic.zip</path>
 		<name>Sonic The Hedgehog</name>
 		<desc>Sonic The Hedgehog (handheld), (licensed from Sega),  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsonic.mp4</video>
+		<image>./media/emulationstation/tsonic1.png</image>
+		<marquee>./media/emulationstation/tsonic.png</marquee>
+		<video>./media/emulationstation/Tsonic.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -1306,12 +1306,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tsonic2.zip</path>
+		<path>./tsonic2.zip</path>
 		<name>Sonic The Hedgehog 2</name>
 		<desc>Sonic The Hedgehog 2 (handheld), (licensed from Sega),  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tsonic2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tsonic2.mp4</video>
+		<image>./media/emulationstation/tsonic21.png</image>
+		<marquee>./media/emulationstation/tsonic2.png</marquee>
+		<video>./media/emulationstation/Tsonic2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -1321,12 +1321,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tspidman.zip</path>
+		<path>./tspidman.zip</path>
 		<name>Spider-Man</name>
 		<desc>Spider-Man (handheld, Tiger 1991 version),  hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tspidman1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tspidman.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tspidman.mp4</video>
+		<image>./media/emulationstation/tspidman1.png</image>
+		<marquee>./media/emulationstation/tspidman.png</marquee>
+		<video>./media/emulationstation/Tspidman.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -1336,12 +1336,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tstrider.zip</path>
+		<path>./tstrider.zip</path>
 		<name>Strider</name>
 		<desc>Strider (handheld), (licensed from Capcom), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tstrider1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tstrider.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tstrider.mp4</video>
+		<image>./media/emulationstation/tstrider1.png</image>
+		<marquee>./media/emulationstation/tstrider.png</marquee>
+		<video>./media/emulationstation/Tstrider.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
@@ -1351,12 +1351,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tswampt.zip</path>
+		<path>./tswampt.zip</path>
 		<name>Swamp Thing</name>
 		<desc>Swamp Thing (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tswampt1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tswampt.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tswampt.mp4</video>
+		<image>./media/emulationstation/tswampt1.png</image>
+		<marquee>./media/emulationstation/tswampt.png</marquee>
+		<video>./media/emulationstation/Tswampt.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -1366,12 +1366,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/ttransf2.zip</path>
+		<path>./ttransf2.zip</path>
 		<name>Transformers - Generation 2</name>
 		<desc>Transformers - Generation 2 (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/ttransf21.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/ttransf2.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Ttransf2.mp4</video>
+		<image>./media/emulationstation/ttransf21.png</image>
+		<marquee>./media/emulationstation/ttransf2.png</marquee>
+		<video>./media/emulationstation/Ttransf2.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -1381,12 +1381,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/tvindictr.zip</path>
+		<path>./tvindictr.zip</path>
 		<name>Vindicators</name>
 		<desc>Vindicators (handheld),(licensed from Tengen), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/tvindictr1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/tvindictr.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Tvindictr.mp4</video>
+		<image>./media/emulationstation/tvindictr1.png</image>
+		<marquee>./media/emulationstation/tvindictr.png</marquee>
+		<video>./media/emulationstation/Tvindictr.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
@@ -1396,12 +1396,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/twworld.zip</path>
+		<path>./twworld.zip</path>
 		<name>Wayne's World</name>
 		<desc>Wayne's World (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/twworld1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/twworld.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Twworld.mp4</video>
+		<image>./media/emulationstation/twworld1.png</image>
+		<marquee>./media/emulationstation/twworld.png</marquee>
+		<video>./media/emulationstation/Twworld.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19920101T000000</releasedate>
@@ -1411,12 +1411,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/txmen.zip</path>
+		<path>./txmen.zip</path>
 		<name>X-Men</name>
 		<desc>X-Men (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/txmen1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/txmen.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Txmen.mp4</video>
+		<image>./media/emulationstation/txmen1.png</image>
+		<marquee>./media/emulationstation/txmen.png</marquee>
+		<video>./media/emulationstation/Txmen.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19910101T000000</releasedate>
@@ -1426,12 +1426,12 @@
 		<players>1</players>
 	</game>
 	<game id="99432" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/tigerh/txmenpx.zip</path>
+		<path>./txmenpx.zip</path>
 		<name>X-Men - Project X</name>
 		<desc>X-Men - Project X (handheld), hh_sm510.cpp</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/tigerh/txmenpx1.png</image>
-		<marquee>/home/pi/.emulationstation/downloaded_images/tigerh/txmenpx.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/tigerh/Txmenpx.mp4</video>
+		<image>./media/emulationstation/txmenpx1.png</image>
+		<marquee>./media/emulationstation/txmenpx.png</marquee>
+		<video>./media/emulationstation/Txmenpx.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
@@ -1444,9 +1444,9 @@
 		<path>./tinday.zip</path>
 		<name>Independence Day</name>
 		<desc>Independence Day (handheld), hh_sm510.cpp</desc>
-		<image>~/.emulationstation/downloaded_images/tigerh/tinday1.png</image>
-		<video>~/.emulationstation/downloaded_images/tigerh/Tinday.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/tigerh/tinday.png</marquee>
+		<image>./media/emulationstation/tinday1.png</image>
+		<video>./media/emulationstation/Tinday.mp4</video>
+		<marquee>./media/emulationstation/tinday.png</marquee>
 		<rating>0</rating>
 		<releasedate>19960101T000000</releasedate>
 		<developer>Tiger Electronics, Inc.</developer>
@@ -1459,9 +1459,9 @@
 		<path>./tmkombat.zip</path>
 		<name>Mortal Kombat</name>
 		<desc>Mortal Kombat (handheld),  (licensed from Midway) , hh_sm510.cpp</desc>
-		<image>~/.emulationstation/downloaded_images/tigerh/tmkombat1.png</image>
-		<video>~/.emulationstation/downloaded_images/tigerh/Tmkombat.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/tigerh/tmkombat.png</marquee>
+		<image>./media/emulationstation/tmkombat1.png</image>
+		<video>./media/emulationstation/Tmkombat.mp4</video>
+		<marquee>./media/emulationstation/tmkombat.png</marquee>
 		<rating>0</rating>
 		<releasedate>19930101T000000</releasedate>
 		<developer>Tiger Electronics, Inc.</developer>
@@ -1474,9 +1474,9 @@
 		<path>./taltbeast.zip</path>
 		<name>Altered Beast</name>
 		<desc>Altered Beast (handheld),(licensed from Sega) , hh_sm510.cpp</desc>
-		<image>~/.emulationstation/downloaded_images/tigerh/taltbeast1.png</image>
-		<video>~/.emulationstation/downloaded_images/tigerh/Taltbeast.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/tigerh/taltbeast.png</marquee>
+		<image>./media/emulationstation/taltbeast1.png</image>
+		<video>./media/emulationstation/Taltbeast.mp4</video>
+		<marquee>./media/emulationstation/taltbeast.png</marquee>
 		<rating>0</rating>
 		<releasedate>19900101T000000</releasedate>
 		<developer>Tiger Electronics, Inc.</developer>
@@ -1489,9 +1489,9 @@
 		<path>./tbatman.zip</path>
 		<name>Batman</name>
 		<desc>Batman (handheld), hh_sm510.cpp</desc>
-		<image>~/.emulationstation/downloaded_images/tigerh/tbatman1.png</image>
-		<video>~/.emulationstation/downloaded_images/tigerh/Tbatmana.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/tigerh/tbatman.png</marquee>
+		<image>./media/emulationstation/tbatman1.png</image>
+		<video>./media/emulationstation/Tbatmana.mp4</video>
+		<marquee>./media/emulationstation/tbatman.png</marquee>
 		<rating>0</rating>
 		<releasedate>19890101T000000</releasedate>
 		<developer>Tiger Electronics, Inc.</developer>

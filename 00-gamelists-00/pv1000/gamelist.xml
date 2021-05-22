@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <gameList>
 	<game id="47073" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/pv1000/amidar.7z</path>
+		<path>./amidar.7z</path>
 		<name>Amidar</name>
 		<desc />
 		<image />
 		<image />
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/pv1000/amidar-video.mp4</video>
+		<video>./media/emulationstation/amidar-video.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
@@ -17,13 +17,13 @@
 		<players />
 	</game>
 	<game id="47074" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/pv1000/excitemj.7z</path>
+		<path>./excitemj.7z</path>
 		<name>Excite Mahjong [Japon]</name>
 		<desc />
 		<image />
 		<image />
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/pv1000/excitemj-video.mp4</video>
+		<video>./media/emulationstation/excitemj-video.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
@@ -33,13 +33,13 @@
 		<players />
 	</game>
 	<game id="47075" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/pv1000/pachiufo.7z</path>
+		<path>./pachiufo.7z</path>
 		<name>Pachinko-ufo [Japon]</name>
 		<desc />
 		<image />
 		<image />
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/pv1000/pachiufo-video.mp4</video>
+		<video>./media/emulationstation/pachiufo-video.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
@@ -49,13 +49,13 @@
 		<players />
 	</game>
 	<game id="47076" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/pv1000/pooyan.7z</path>
+		<path>./pooyan.7z</path>
 		<name>Pooyan</name>
 		<desc />
 		<image />
 		<image />
-		<marquee>/home/pi/.emulationstation/downloaded_images/pv1000/pooyan-marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/pv1000/pooyan-video.mp4</video>
+		<marquee>./media/emulationstation/pooyan-marquee.png</marquee>
+		<video>./media/emulationstation/pooyan-video.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
@@ -67,8 +67,8 @@
 	<game>
 		<path>./scobra.7z</path>
 		<name>Super Cobra [Japon]</name>
-		<video>~/.emulationstation/downloaded_images/pv1000/scobra-video.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/pv1000/scobra-marquee.png</marquee>
+		<video>./media/emulationstation/scobra-video.mp4</video>
+		<marquee>./media/emulationstation/scobra-marquee.png</marquee>
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
 		<developer />
@@ -85,13 +85,13 @@
 		<lastplayed>20201013T152423</lastplayed>
 	</game>
 	<game id="47073" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/pv1000/amidar.zip</path>
+		<path>./amidar.zip</path>
 		<name>Amidar</name>
 		<desc />
 		<image />
 		<image />
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/pv1000/amidar-video.mp4</video>
+		<video>./media/emulationstation/amidar-video.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
@@ -101,13 +101,13 @@
 		<players />
 	</game>
 	<game id="47074" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/pv1000/excitemj.zip</path>
+		<path>./excitemj.zip</path>
 		<name>Excite Mahjong [Japon]</name>
 		<desc />
 		<image />
 		<image />
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/pv1000/excitemj-video.mp4</video>
+		<video>./media/emulationstation/excitemj-video.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
@@ -117,13 +117,13 @@
 		<players />
 	</game>
 	<game id="47075" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/pv1000/pachiufo.zip</path>
+		<path>./pachiufo.zip</path>
 		<name>Pachinko-ufo [Japon]</name>
 		<desc />
 		<image />
 		<image />
 		<marquee />
-		<video>/home/pi/.emulationstation/downloaded_images/pv1000/pachiufo-video.mp4</video>
+		<video>./media/emulationstation/pachiufo-video.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
@@ -133,13 +133,13 @@
 		<players />
 	</game>
 	<game id="47076" source="ScreenScraper">
-		<path>/home/pi/RetroPie/roms/pv1000/pooyan.zip</path>
+		<path>./pooyan.zip</path>
 		<name>Pooyan</name>
 		<desc />
 		<image />
 		<image />
-		<marquee>/home/pi/.emulationstation/downloaded_images/pv1000/pooyan-marquee.png</marquee>
-		<video>/home/pi/.emulationstation/downloaded_images/pv1000/pooyan-video.mp4</video>
+		<marquee>./media/emulationstation/pooyan-marquee.png</marquee>
+		<video>./media/emulationstation/pooyan-video.mp4</video>
 		<thumbnail />
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
@@ -151,8 +151,8 @@
 	<game>
 		<path>./scobra.zip</path>
 		<name>Super Cobra [Japon]</name>
-		<video>~/.emulationstation/downloaded_images/pv1000/scobra-video.mp4</video>
-		<marquee>~/.emulationstation/downloaded_images/pv1000/scobra-marquee.png</marquee>
+		<video>./media/emulationstation/scobra-video.mp4</video>
+		<marquee>./media/emulationstation/scobra-marquee.png</marquee>
 		<rating>0</rating>
 		<releasedate>01010101T000000</releasedate>
 		<developer />

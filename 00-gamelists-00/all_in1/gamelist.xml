@@ -1,10 +1,10 @@
 <gameList>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/bittboy.7z</path>
+<game>
+	<path>./bittboy.7z</path>
 	<name>BittBoy Mini FC 300 in 1</name>
 	<desc>nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/bittboy.png</image>
+	<image>./media/emulationstation/bittboy.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -15,12 +15,12 @@
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/cybar120.7z</path>
+<game>
+	<path>./cybar120.7z</path>
 	<name>Defender M2500P 120-in-1</name>
 	<desc>nes_vt09.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/cybar120.png</image>
+	<image>./media/emulationstation/cybar120.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -31,13 +31,13 @@
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/dgun2573.7z</path>
+<game>
+	<path>./dgun2573.7z</path>
 	<name>My Arcade Gamer V Portable Gaming System</name>
 	<desc>My Arcade Gamer V Portable Gaming System (DGUN-2573)
 	nes_vt32.cpp.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/dgun2573.png</image>
+	<image>./media/emulationstation/dgun2573.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -48,12 +48,12 @@
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ablmini.7z</path>
+<game>
+	<path>./ablmini.7z</path>
 	<name>Double Players Mini Joystick 80-in-1</name>
 	<desc>Double Players Mini Joystick 80-in-1 (MJ8500, ABL TV Game)
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ablmini.png</image>
+	<image>./media/emulationstation/ablmini.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -64,13 +64,13 @@
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ablpinb.7z</path>
+<game>
+	<path>./ablpinb.7z</path>
 	<name>Pinball (P8002, ABL TV Game)</name>
 	<desc>Pinball (P8002, ABL TV Game)
 nes_vt02_vt03.cpp	
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ablpinb.png</image>
+	<image>./media/emulationstation/ablpinb.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -81,13 +81,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one Handheld console Pinball</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/dnv200fs.7z</path>
+<game>
+	<path>./dnv200fs.7z</path>
 	<name>Family Sport 200-in-1</name>
 	<desc>Denver (GMP-270CMK2) (Family Sport 200-in-1)
 spg2xx_zone_32bit.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/dnv200fs.png</image>
+	<image>./media/emulationstation/dnv200fs.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -98,13 +98,13 @@ spg2xx_zone_32bit.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/fapocket.7z</path>
+<game>
+	<path>./fapocket.7z</path>
 	<name>Family Pocket 638 in 1</name>
 	<desc>Family Pocket 638 in 1
 nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/fapocket.png</image>
+	<image>./media/emulationstation/fapocket.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -115,13 +115,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/fcpocket.7z</path>
+<game>
+	<path>./fcpocket.7z</path>
 	<name>FC Pocket 600 in 1</name>
 	<desc>FC Pocket 600 in 1
 nes_vt32.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/fcpocket.png</image>
+	<image>./media/emulationstation/fcpocket.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -132,13 +132,13 @@ nes_vt32.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/gprnrs1.7z</path>
+<game>
+	<path>./gprnrs1.7z</path>
 	<name>Game Prince RS-1</name>
 	<desc>Game Prince RS-1
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/gprnrs1.png</image>
+	<image>./media/emulationstation/gprnrs1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -149,13 +149,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/gprnrs16.7z</path>
+<game>
+	<path>./gprnrs16.7z</path>
 	<name>Game Prince RS-16</name>
 	<desc>Game Prince RS-16
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/gprnrs16.png</image>
+	<image>./media/emulationstation/gprnrs16.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -166,13 +166,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/intact89.7z</path>
+<game>
+	<path>./intact89.7z</path>
 	<name>InterAct Complete Video Game - 89-in-1</name>
 	<desc>InterAct Complete Video Game - 89-in-1
 vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/intact89.png</image>
+	<image>./media/emulationstation/intact89.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -183,13 +183,13 @@ vt1682.cpp
 	<genre>All in one TV Plug 'n play </genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/intg5410.7z</path>
+<game>
+	<path>./intg5410.7z</path>
 	<name>InterAct Complete Video Game - 111 Games & 42 Songs</name>
 	<desc>InterAct Complete Video Game - 111 Games & 42 Songs (G5410)
 vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/intg5410.png</image>
+	<image>./media/emulationstation/intg5410.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -200,13 +200,13 @@ vt1682.cpp
 	<genre>All in one TV Plug 'n play </genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/lexiseal.7z</path>
+<game>
+	<path>./lexiseal.7z</path>
 	<name>Seal 50-in-1</name>
 	<desc>Seal 50-in-1
 spg2xx_lexibook.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/lexiseal.png</image>
+	<image>./media/emulationstation/lexiseal.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -217,13 +217,13 @@ spg2xx_lexibook.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/lexizeus.7z</path>
+<game>
+	<path>./lexizeus.7z</path>
 	<name>Zeus IG900 20-in-1</name>
 	<desc>Zeus IG900 20-in-1 (US?)
 spg2xx_lexibook.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/lexizeus.png</image>
+	<image>./media/emulationstation/lexizeus.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -234,13 +234,13 @@ spg2xx_lexibook.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/lx_jg7415.7z</path>
+<game>
+	<path>./lx_jg7415.7z</path>
 	<name>Lexibook JG7415 120-in-1</name>
 	<desc>Lexibook JG7415 120-in-1
 spg2xx_zone.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/lx_jg7415.png</image>
+	<image>./media/emulationstation/lx_jg7415.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -251,13 +251,13 @@ spg2xx_zone.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/m505neo.7z</path>
+<game>
+	<path>./m505neo.7z</path>
 	<name>Millennium M505 Arcade Neo Portable Spielkonsole</name>
 	<desc>Millennium M505 Arcade Neo Portable Spielkonsole (Family Sport 100-in-1)
 spg2xx_zone_32bit.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/m505neo.png</image>
+	<image>./media/emulationstation/m505neo.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -268,13 +268,13 @@ spg2xx_zone_32bit.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/m521neo.7z</path>
+<game>
+	<path>./m521neo.7z</path>
 	<name>Millennium M521 Arcade Neo 2.0</name>
 	<desc>Millennium M521 Arcade Neo 2.0 (Family Sport 220-in-1)
 spg2xx_zone_32bit.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/m521neo.png</image>
+	<image>./media/emulationstation/m521neo.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -285,13 +285,13 @@ spg2xx_zone_32bit.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/majkon.7z</path>
+<game>
+	<path>./majkon.7z</path>
 	<name>Konami Collector's Series Arcade Advanced</name>
 	<desc>Konami Collector's Series Arcade Advanced
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/majkon.png</image>
+	<image>./media/emulationstation/majkon.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -302,13 +302,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_7x6ss.7z</path>
+<game>
+	<path>./mc_7x6ss.7z</path>
 	<name>777777 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)</name>
 	<desc>777777 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_7x6ss.png</image>
+	<image>./media/emulationstation/mc_7x6ss.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -319,13 +319,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_8x6cb.7z</path>
+<game>
+	<path>./mc_8x6cb.7z</path>
 	<name>888888 in 1 (Coolboy AEF-390)</name>
 	<desc>888888 in 1 (Coolboy AEF-390)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_8x6cb.png</image>
+	<image>./media/emulationstation/mc_8x6cb.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -336,13 +336,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_8x6ss.7z</path>
+<game>
+	<path>./mc_8x6ss.7z</path>
 	<name>888888 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)</name>
 	<desc>888888 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_8x6ss.png</image>
+	<image>./media/emulationstation/mc_8x6ss.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -353,13 +353,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_9x6ss.7z</path>
+<game>
+	<path>./mc_9x6ss.7z</path>
 	<name>999999 in 1 (PXP2 Slim Station)</name>
 	<desc>999999 in 1 (PXP2 Slim Station)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_9x6ss.png</image>
+	<image>./media/emulationstation/mc_9x6ss.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -370,13 +370,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_89in1.7z</path>
+<game>
+	<path>./mc_89in1.7z</path>
 	<name>89 in 1 Mini Game Console</name>
 	<desc>89 in 1 Mini Game Console (060-92023011V1.0)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_89in1.png</image>
+	<image>./media/emulationstation/mc_89in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -387,13 +387,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_110cb.7z</path>
+<game>
+	<path>./mc_110cb.7z</path>
 	<name>110 in 1 CoolBaby</name>
 	<desc>110 in 1 CoolBaby (CoolBoy RS-1S)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_110cb.png</image>
+	<image>./media/emulationstation/mc_110cb.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -404,13 +404,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_aa2.7z</path>
+<game>
+	<path>./mc_aa2.7z</path>
 	<name>100 in 1 Arcade Action II</name>
 	<desc>100 in 1 Arcade Action II (AT-103)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_aa2.png</image>
+	<image>./media/emulationstation/mc_aa2.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -421,13 +421,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_cb280.7z</path>
+<game>
+	<path>./mc_cb280.7z</path>
 	<name>Coolboy RS-18 (280 in 1)</name>
 	<desc>Coolboy RS-18 (280 in 1)
 nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_cb280.png</image>
+	<image>./media/emulationstation/mc_cb280.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -438,13 +438,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_dcat8.7z</path>
+<game>
+	<path>./mc_dcat8.7z</path>
 	<name>100 in 1 (D-CAT8 8bit Console, set 1)</name>
 	<desc>100 in 1 (D-CAT8 8bit Console, set 1) (v5.01.11-frd, BL 20041217)
 	nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_dcat8.png</image>
+	<image>./media/emulationstation/mc_dcat8.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -455,13 +455,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_dg101.7z</path>
+<game>
+	<path>./mc_dg101.7z</path>
 	<name>dreamGEAR 101 in 1</name>
 	<desc>dreamGEAR 101 in 1
 	nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_dg101.png</image>
+	<image>./media/emulationstation/mc_dg101.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -472,13 +472,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_dgear.7z</path>
+<game>
+	<path>./mc_dgear.7z</path>
 	<name>dreamGEAR 75-in-1</name>
 	<desc>dreamGEAR 75-in-1
 	nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_dgear.png</image>
+	<image>./media/emulationstation/mc_dgear.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -489,13 +489,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_sam60.7z</path>
+<game>
+	<path>./mc_sam60.7z</path>
 	<name>Samuri (60 in 1)</name>
 	<desc>Samuri (60 in 1)
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_sam60.png</image>
+	<image>./media/emulationstation/mc_sam60.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -506,13 +506,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_tv200.7z</path>
+<game>
+	<path>./mc_tv200.7z</path>
 	<name>200 in 1 Retro TV Game</name>
 	<desc>200 in 1 Retro TV Game same as DGUN-2577
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_tv200.png</image>
+	<image>./media/emulationstation/mc_tv200.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -523,13 +523,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/megapad.7z</path>
+<game>
+	<path>./megapad.7z</path>
 	<name>Megapad 31-in-1</name>
 	<desc>Megapad 31-in-1
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/megapad.png</image>
+	<image>./media/emulationstation/megapad.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -540,13 +540,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mgt20in1.7z</path>
+<game>
+	<path>./mgt20in1.7z</path>
 	<name>MGT 20-in-1 TV-Spielekonsole</name>
 	<desc>MGT 20-in-1 TV-Spielekonsole (Germany)
 		spg2xx_mysprtch.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mgt20in1.png</image>
+	<image>./media/emulationstation/mgt20in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -557,13 +557,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/miwi2_7.7z</path>
+<game>
+	<path>./miwi2_7.7z</path>
 	<name>MiWi2 7-in-1 Sports</name>
 	<desc>MiWi2 7-in-1 Sports
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/miwi2_7.png</image>
+	<image>./media/emulationstation/miwi2_7.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -574,13 +574,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mysprtcp.7z</path>
+<game>
+	<path>./mysprtcp.7z</path>
 	<name>My Sports Challenge Plus / Wireless Sports Plus</name>
 	<desc>My Sports Challenge Plus / Wireless Sports Plus
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mysprtcp.png</image>
+	<image>./media/emulationstation/mysprtcp.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -591,13 +591,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/njp60in1.7z</path>
+<game>
+	<path>./njp60in1.7z</path>
 	<name>NJ Pocket 60-in-1 handheld 'X zero'</name>
 	<desc>NJ Pocket 60-in-1 handheld 'X zero' (NTSC)
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/njp60in1.png</image>
+	<image>./media/emulationstation/njp60in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -608,13 +608,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/oplayer.7z</path>
+<game>
+	<path>./oplayer.7z</path>
 	<name>OPlayer Mobile Game Console - Family Sport 100-in-1</name>
 	<desc>OPlayer Mobile Game Console (MGS03-white) (Family Sport 100-in-1)
 		spg2xx_zone_32bit.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/oplayer.png</image>
+	<image>./media/emulationstation/oplayer.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -625,13 +625,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc40t.7z</path>
+<game>
+	<path>./pdc40t.7z</path>
 	<name>PDC40 Tactile - Pocket Dream Console</name>
 	<desc>PDC40 Tactile - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc40t.png</image>
+	<image>./media/emulationstation/pdc40t.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -642,13 +642,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc50.7z</path>
+<game>
+	<path>./pdc50.7z</path>
 	<name>PDC50 - Pocket Dream Console</name>
 	<desc>PDC50 - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc50.png</image>
+	<image>./media/emulationstation/pdc50.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -659,13 +659,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc100.7z</path>
+<game>
+	<path>./pdc100.7z</path>
 	<name>PDC100 - Pocket Dream Console</name>
 	<desc>PDC100 - Pocket Dream Console (Anncia, US)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc100.png</image>
+	<image>./media/emulationstation/pdc100.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -676,13 +676,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc150t.7z</path>
+<game>
+	<path>./pdc150t.7z</path>
 	<name>PDC150 Tactile - Pocket Dream Console</name>
 	<desc>PDC150 Tactile - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc150t.png</image>
+	<image>./media/emulationstation/pdc150t.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -693,13 +693,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc200.7z</path>
+<game>
+	<path>./pdc200.7z</path>
 	<name>PDC200 - Pocket Dream Console</name>
 	<desc>PDC200 - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc200.png</image>
+	<image>./media/emulationstation/pdc200.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -710,13 +710,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/tmntpdc.7z</path>
+<game>
+	<path>./tmntpdc.7z</path>
 	<name>PDC Teenage Mutant Ninja Turtles - Pocket Dream Console</name>
 	<desc>PDC Teenage Mutant Ninja Turtles - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/tmntpdc.png</image>
+	<image>./media/emulationstation/tmntpdc.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -727,13 +727,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pjoyn50.7z</path>
+<game>
+	<path>./pjoyn50.7z</path>
 	<name>PowerJoy Navigator 50 in 1</name>
 	<desc>PowerJoy Navigator 50 in 1
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pjoyn50.png</image>
+	<image>./media/emulationstation/pjoyn50.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -744,13 +744,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pjoys30.7z</path>
+<game>
+	<path>./pjoys30.7z</path>
 	<name>PowerJoy Supermax 30 in 1</name>
 	<desc>PowerJoy Supermax 30 in 1
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pjoys30.png</image>
+	<image>./media/emulationstation/pjoys30.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -761,13 +761,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pjoys60.7z</path>
+<game>
+	<path>./pjoys60.7z</path>
 	<name>PowerJoy Supermax 60 in 1 </name>
 	<desc>PowerJoy Supermax 60 in 1
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pjoys60.png</image>
+	<image>./media/emulationstation/pjoys60.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -778,13 +778,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ppgc200g.7z</path>
+<game>
+	<path>./ppgc200g.7z</path>
 	<name>Plug & Play Game Controller with 200 Games (Supreme 200) </name>
 	<desc>Plug & Play Game Controller with 200 Games (Supreme 200)
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ppgc200g.png</image>
+	<image>./media/emulationstation/ppgc200g.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -795,13 +795,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/react.7z</path>
+<game>
+	<path>./react.7z</path>
 	<name>Reactor 32-in-1</name>
 	<desc>Reactor 32-in-1 (NTSC)
 		spg2xx_zone.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/react.png</image>
+	<image>./media/emulationstation/react.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -812,13 +812,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/reactmd.7z</path>
+<game>
+	<path>./reactmd.7z</path>
 	<name>Reactor MD</name>
 	<desc>Reactor MD (PAL)
 		spg2xx_zone.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/reactmd.png</image>
+	<image>./media/emulationstation/reactmd.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -829,13 +829,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/rminitv.7z</path>
+<game>
+	<path>./rminitv.7z</path>
 	<name>Retro 'Mini TV' Console 300-in-1</name>
 	<desc>Retro 'Mini TV' Console 300-in-1
 		spg2xx_zone.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/rminitv.png</image>
+	<image>./media/emulationstation/rminitv.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -846,13 +846,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/sarc110.7z</path>
+<game>
+	<path>./sarc110.7z</path>
 	<name>Super Arcade 110</name>
 	<desc>Super Arcade 110 (set 1) 
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/sarc110.png</image>
+	<image>./media/emulationstation/sarc110.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -863,13 +863,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/sudopptv.7z</path>
+<game>
+	<path>./sudopptv.7z</path>
 	<name>Sudoku Plug & Play TV Game '6 Intelligent Games'</name>
 	<desc>Sudoku Plug & Play TV Game '6 Intelligent Games'
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/sudopptv.png</image>
+	<image>./media/emulationstation/sudopptv.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -880,13 +880,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/sy888b.7z</path>
+<game>
+	<path>./sy888b.7z</path>
 	<name>SY-888B 288 in 1 Handheld</name>
 	<desc>SY-888B 288 in 1 Handheld
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/sy888b.png</image>
+	<image>./media/emulationstation/sy888b.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -897,13 +897,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/sy889.7z</path>
+<game>
+	<path>./sy889.7z</path>
 	<name>SY-889 300 in 1 Handheld</name>
 	<desc>SY-889 300 in 1 Handheld
 		nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/sy889.png</image>
+	<image>./media/emulationstation/sy889.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -914,13 +914,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/techni4.7z</path>
+<game>
+	<path>./techni4.7z</path>
 	<name>Technigame Super 4-in-1 Sports</name>
 	<desc>Technigame Super 4-in-1 Sports (PAL)
 		nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/techni4.png</image>
+	<image>./media/emulationstation/techni4.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -931,14 +931,14 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/vgcaplet.7z</path>
+<game>
+	<path>./vgcaplet.7z</path>
 	<name>VG Pocket Caplet Fast Acting 50-in-1</name>
 	<desc>VG Pocket Caplet Fast Acting 50-in-1
 	Performance Designed Products (licensed by Taito / Data East) / JungleTac
 		spg2xx_lexibook.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/vgcaplet.png</image>
+	<image>./media/emulationstation/vgcaplet.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -949,13 +949,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/vgpmini.7z</path>
+<game>
+	<path>./vgpmini.7z</path>
 	<name>VG Pocket Mini (VG-1500)</name>
 	<desc>VG Pocket Mini (VG-1500)
 		nes_vt09.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/vgpmini.png</image>
+	<image>./media/emulationstation/vgpmini.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -966,13 +966,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/vgpocket.7z</path>
+<game>
+	<path>./vgpocket.7z</path>
 	<name>VG Pocket (VG-2000)</name>
 	<desc>VG Pocket (VG-2000)
 		nes_vt09.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/vgpocket.png</image>
+	<image>./media/emulationstation/vgpocket.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -983,13 +983,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/vjpp2.7z</path>
+<game>
+	<path>./vjpp2.7z</path>
 	<name>Plug Play TV Games 2 (4-in-1)</name>
 	<desc>Plug Play TV Games 2 (4-in-1) (VideoJet, France)
 		spg2xx_pdc.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/vjpp2.png</image>
+	<image>./media/emulationstation/vjpp2.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1000,13 +1000,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/zdog.7z</path>
+<game>
+	<path>./zdog.7z</path>
 	<name>ZDog (44 in 1)</name>
 	<desc>ZDog (44 in 1)
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/zdog.png</image>
+	<image>./media/emulationstation/zdog.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1017,13 +1017,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/zudugo.7z</path>
+<game>
+	<path>./zudugo.7z</path>
 	<name>Zudu-go / 2udu-go</name>
 	<desc>Zudu-go / 2udu-go
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/zudugo.png</image>
+	<image>./media/emulationstation/zudugo.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1034,13 +1034,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ii32in1.7z</path>
+<game>
+	<path>./ii32in1.7z</path>
 	<name>InterAct 32-in-1</name>
 	<desc>InterAct 32-in-1
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ii32in1.png</image>
+	<image>./media/emulationstation/ii32in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1051,13 +1051,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ii8in1.7z</path>
+<game>
+	<path>./ii8in1.7z</path>
 	<name>InterAct 8-in-1</name>
 	<desc>InterAct 8-in-1
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ii8in1.png</image>
+	<image>./media/emulationstation/ii8in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1068,13 +1068,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/namcons1.7z</path>
+<game>
+	<path>./namcons1.7z</path>
 	<name>Let's! TV Play Classic - Namco Nostalgia 1</name>
 	<desc>Let's! TV Play Classic - Namco Nostalgia 1 (Japan)
 		xavix.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/namcons1.png</image>
+	<image>./media/emulationstation/namcons1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1085,13 +1085,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/namcons2.7z</path>
+<game>
+	<path>./namcons2.7z</path>
 	<name>Let's! TV Play Classic - Namco Nostalgia 2</name>
 	<desc>Let's! TV Play Classic - Namco Nostalgia 2 (Japan)
 		xavix.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/namcons2.png</image>
+	<image>./media/emulationstation/namcons2.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1102,13 +1102,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/taitons1.7z</path>
+<game>
+	<path>./taitons1.7z</path>
 	<name>Let's! TV Play Classic - Taito Nostalgia 1</name>
 	<desc>Let's! TV Play Classic - Taito Nostalgia 1 (Japan)
 		xavix.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/taitons1.png</image>
+	<image>./media/emulationstation/taitons1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1119,13 +1119,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/taitons2.7z</path>
+<game>
+	<path>./taitons2.7z</path>
 	<name>Let's! TV Play Classic - Taito Nostalgia 2</name>
 	<desc>Let's! TV Play Classic - Taito Nostalgia 2 (Japan)
 		xavix.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/taitons2.png</image>
+	<image>./media/emulationstation/taitons2.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1136,13 +1136,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/fordrace.7z</path>
+<game>
+	<path>./fordrace.7z</path>
 	<name>Ford Racing</name>
 	<desc>Ford Racing
 			spg2xx.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/fordrace.png</image>
+	<image>./media/emulationstation/fordrace.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1153,12 +1153,12 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/bittboy.zip</path>
+<game>
+	<path>./bittboy.zip</path>
 	<name>BittBoy Mini FC 300 in 1</name>
 	<desc>nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/bittboy.png</image>
+	<image>./media/emulationstation/bittboy.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1169,12 +1169,12 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/cybar120.zip</path>
+<game>
+	<path>./cybar120.zip</path>
 	<name>Defender M2500P 120-in-1</name>
 	<desc>nes_vt09.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/cybar120.png</image>
+	<image>./media/emulationstation/cybar120.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1185,13 +1185,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/dgun2573.zip</path>
+<game>
+	<path>./dgun2573.zip</path>
 	<name>My Arcade Gamer V Portable Gaming System</name>
 	<desc>My Arcade Gamer V Portable Gaming System (DGUN-2573)
 	nes_vt32.cpp.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/dgun2573.png</image>
+	<image>./media/emulationstation/dgun2573.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1202,12 +1202,12 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ablmini.zip</path>
+<game>
+	<path>./ablmini.zip</path>
 	<name>Double Players Mini Joystick 80-in-1</name>
 	<desc>Double Players Mini Joystick 80-in-1 (MJ8500, ABL TV Game)
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ablmini.png</image>
+	<image>./media/emulationstation/ablmini.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1218,13 +1218,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ablpinb.zip</path>
+<game>
+	<path>./ablpinb.zip</path>
 	<name>Pinball (P8002, ABL TV Game)</name>
 	<desc>Pinball (P8002, ABL TV Game)
 nes_vt02_vt03.cpp	
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ablpinb.png</image>
+	<image>./media/emulationstation/ablpinb.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1235,13 +1235,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one Handheld console Pinball</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/dnv200fs.zip</path>
+<game>
+	<path>./dnv200fs.zip</path>
 	<name>Family Sport 200-in-1</name>
 	<desc>Denver (GMP-270CMK2) (Family Sport 200-in-1)
 spg2xx_zone_32bit.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/dnv200fs.png</image>
+	<image>./media/emulationstation/dnv200fs.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1252,13 +1252,13 @@ spg2xx_zone_32bit.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/fapocket.zip</path>
+<game>
+	<path>./fapocket.zip</path>
 	<name>Family Pocket 638 in 1</name>
 	<desc>Family Pocket 638 in 1
 nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/fapocket.png</image>
+	<image>./media/emulationstation/fapocket.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1269,13 +1269,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/fcpocket.zip</path>
+<game>
+	<path>./fcpocket.zip</path>
 	<name>FC Pocket 600 in 1</name>
 	<desc>FC Pocket 600 in 1
 nes_vt32.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/fcpocket.png</image>
+	<image>./media/emulationstation/fcpocket.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1286,13 +1286,13 @@ nes_vt32.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/gprnrs1.zip</path>
+<game>
+	<path>./gprnrs1.zip</path>
 	<name>Game Prince RS-1</name>
 	<desc>Game Prince RS-1
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/gprnrs1.png</image>
+	<image>./media/emulationstation/gprnrs1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1303,13 +1303,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/gprnrs16.zip</path>
+<game>
+	<path>./gprnrs16.zip</path>
 	<name>Game Prince RS-16</name>
 	<desc>Game Prince RS-16
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/gprnrs16.png</image>
+	<image>./media/emulationstation/gprnrs16.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1320,13 +1320,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/intact89.zip</path>
+<game>
+	<path>./intact89.zip</path>
 	<name>InterAct Complete Video Game - 89-in-1</name>
 	<desc>InterAct Complete Video Game - 89-in-1
 vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/intact89.png</image>
+	<image>./media/emulationstation/intact89.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1337,13 +1337,13 @@ vt1682.cpp
 	<genre>All in one TV Plug 'n play </genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/intg5410.zip</path>
+<game>
+	<path>./intg5410.zip</path>
 	<name>InterAct Complete Video Game - 111 Games & 42 Songs</name>
 	<desc>InterAct Complete Video Game - 111 Games & 42 Songs (G5410)
 vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/intg5410.png</image>
+	<image>./media/emulationstation/intg5410.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1354,13 +1354,13 @@ vt1682.cpp
 	<genre>All in one TV Plug 'n play </genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/lexiseal.zip</path>
+<game>
+	<path>./lexiseal.zip</path>
 	<name>Seal 50-in-1</name>
 	<desc>Seal 50-in-1
 spg2xx_lexibook.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/lexiseal.png</image>
+	<image>./media/emulationstation/lexiseal.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1371,13 +1371,13 @@ spg2xx_lexibook.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/lexizeus.zip</path>
+<game>
+	<path>./lexizeus.zip</path>
 	<name>Zeus IG900 20-in-1</name>
 	<desc>Zeus IG900 20-in-1 (US?)
 spg2xx_lexibook.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/lexizeus.png</image>
+	<image>./media/emulationstation/lexizeus.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1388,13 +1388,13 @@ spg2xx_lexibook.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/lx_jg7415.zip</path>
+<game>
+	<path>./lx_jg7415.zip</path>
 	<name>Lexibook JG7415 120-in-1</name>
 	<desc>Lexibook JG7415 120-in-1
 spg2xx_zone.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/lx_jg7415.png</image>
+	<image>./media/emulationstation/lx_jg7415.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1405,13 +1405,13 @@ spg2xx_zone.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/m505neo.zip</path>
+<game>
+	<path>./m505neo.zip</path>
 	<name>Millennium M505 Arcade Neo Portable Spielkonsole</name>
 	<desc>Millennium M505 Arcade Neo Portable Spielkonsole (Family Sport 100-in-1)
 spg2xx_zone_32bit.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/m505neo.png</image>
+	<image>./media/emulationstation/m505neo.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1422,13 +1422,13 @@ spg2xx_zone_32bit.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/m521neo.zip</path>
+<game>
+	<path>./m521neo.zip</path>
 	<name>Millennium M521 Arcade Neo 2.0</name>
 	<desc>Millennium M521 Arcade Neo 2.0 (Family Sport 220-in-1)
 spg2xx_zone_32bit.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/m521neo.png</image>
+	<image>./media/emulationstation/m521neo.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1439,13 +1439,13 @@ spg2xx_zone_32bit.cpp
 	<genre>All in one Handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/majkon.zip</path>
+<game>
+	<path>./majkon.zip</path>
 	<name>Konami Collector's Series Arcade Advanced</name>
 	<desc>Konami Collector's Series Arcade Advanced
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/majkon.png</image>
+	<image>./media/emulationstation/majkon.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1456,13 +1456,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_7x6ss.zip</path>
+<game>
+	<path>./mc_7x6ss.zip</path>
 	<name>777777 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)</name>
 	<desc>777777 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_7x6ss.png</image>
+	<image>./media/emulationstation/mc_7x6ss.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1473,13 +1473,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_8x6cb.zip</path>
+<game>
+	<path>./mc_8x6cb.zip</path>
 	<name>888888 in 1 (Coolboy AEF-390)</name>
 	<desc>888888 in 1 (Coolboy AEF-390)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_8x6cb.png</image>
+	<image>./media/emulationstation/mc_8x6cb.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1490,13 +1490,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_8x6ss.zip</path>
+<game>
+	<path>./mc_8x6ss.zip</path>
 	<name>888888 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)</name>
 	<desc>888888 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_8x6ss.png</image>
+	<image>./media/emulationstation/mc_8x6ss.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1507,13 +1507,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_9x6ss.zip</path>
+<game>
+	<path>./mc_9x6ss.zip</path>
 	<name>999999 in 1 (PXP2 Slim Station)</name>
 	<desc>999999 in 1 (PXP2 Slim Station)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_9x6ss.png</image>
+	<image>./media/emulationstation/mc_9x6ss.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1524,13 +1524,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_89in1.zip</path>
+<game>
+	<path>./mc_89in1.zip</path>
 	<name>89 in 1 Mini Game Console</name>
 	<desc>89 in 1 Mini Game Console (060-92023011V1.0)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_89in1.png</image>
+	<image>./media/emulationstation/mc_89in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1541,13 +1541,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_110cb.zip</path>
+<game>
+	<path>./mc_110cb.zip</path>
 	<name>110 in 1 CoolBaby</name>
 	<desc>110 in 1 CoolBaby (CoolBoy RS-1S)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_110cb.png</image>
+	<image>./media/emulationstation/mc_110cb.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1558,13 +1558,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_aa2.zip</path>
+<game>
+	<path>./mc_aa2.zip</path>
 	<name>100 in 1 Arcade Action II</name>
 	<desc>100 in 1 Arcade Action II (AT-103)
 nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_aa2.png</image>
+	<image>./media/emulationstation/mc_aa2.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1575,13 +1575,13 @@ nes_vt02_vt03.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_cb280.zip</path>
+<game>
+	<path>./mc_cb280.zip</path>
 	<name>Coolboy RS-18 (280 in 1)</name>
 	<desc>Coolboy RS-18 (280 in 1)
 nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_cb280.png</image>
+	<image>./media/emulationstation/mc_cb280.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1592,13 +1592,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_dcat8.zip</path>
+<game>
+	<path>./mc_dcat8.zip</path>
 	<name>100 in 1 (D-CAT8 8bit Console, set 1)</name>
 	<desc>100 in 1 (D-CAT8 8bit Console, set 1) (v5.01.11-frd, BL 20041217)
 	nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_dcat8.png</image>
+	<image>./media/emulationstation/mc_dcat8.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1609,13 +1609,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_dg101.zip</path>
+<game>
+	<path>./mc_dg101.zip</path>
 	<name>dreamGEAR 101 in 1</name>
 	<desc>dreamGEAR 101 in 1
 	nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_dg101.png</image>
+	<image>./media/emulationstation/mc_dg101.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1626,13 +1626,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_dgear.zip</path>
+<game>
+	<path>./mc_dgear.zip</path>
 	<name>dreamGEAR 75-in-1</name>
 	<desc>dreamGEAR 75-in-1
 	nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_dgear.png</image>
+	<image>./media/emulationstation/mc_dgear.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1643,13 +1643,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_sam60.zip</path>
+<game>
+	<path>./mc_sam60.zip</path>
 	<name>Samuri (60 in 1)</name>
 	<desc>Samuri (60 in 1)
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_sam60.png</image>
+	<image>./media/emulationstation/mc_sam60.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1660,13 +1660,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mc_tv200.zip</path>
+<game>
+	<path>./mc_tv200.zip</path>
 	<name>200 in 1 Retro TV Game</name>
 	<desc>200 in 1 Retro TV Game same as DGUN-2577
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mc_tv200.png</image>
+	<image>./media/emulationstation/mc_tv200.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1677,13 +1677,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/megapad.zip</path>
+<game>
+	<path>./megapad.zip</path>
 	<name>Megapad 31-in-1</name>
 	<desc>Megapad 31-in-1
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/megapad.png</image>
+	<image>./media/emulationstation/megapad.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1694,13 +1694,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mgt20in1.zip</path>
+<game>
+	<path>./mgt20in1.zip</path>
 	<name>MGT 20-in-1 TV-Spielekonsole</name>
 	<desc>MGT 20-in-1 TV-Spielekonsole (Germany)
 		spg2xx_mysprtch.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mgt20in1.png</image>
+	<image>./media/emulationstation/mgt20in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1711,13 +1711,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/miwi2_7.zip</path>
+<game>
+	<path>./miwi2_7.zip</path>
 	<name>MiWi2 7-in-1 Sports</name>
 	<desc>MiWi2 7-in-1 Sports
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/miwi2_7.png</image>
+	<image>./media/emulationstation/miwi2_7.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1728,13 +1728,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/mysprtcp.zip</path>
+<game>
+	<path>./mysprtcp.zip</path>
 	<name>My Sports Challenge Plus / Wireless Sports Plus</name>
 	<desc>My Sports Challenge Plus / Wireless Sports Plus
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/mysprtcp.png</image>
+	<image>./media/emulationstation/mysprtcp.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1745,13 +1745,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/njp60in1.zip</path>
+<game>
+	<path>./njp60in1.zip</path>
 	<name>NJ Pocket 60-in-1 handheld 'X zero'</name>
 	<desc>NJ Pocket 60-in-1 handheld 'X zero' (NTSC)
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/njp60in1.png</image>
+	<image>./media/emulationstation/njp60in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1762,13 +1762,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/oplayer.zip</path>
+<game>
+	<path>./oplayer.zip</path>
 	<name>OPlayer Mobile Game Console - Family Sport 100-in-1</name>
 	<desc>OPlayer Mobile Game Console (MGS03-white) (Family Sport 100-in-1)
 		spg2xx_zone_32bit.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/oplayer.png</image>
+	<image>./media/emulationstation/oplayer.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1779,13 +1779,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc40t.zip</path>
+<game>
+	<path>./pdc40t.zip</path>
 	<name>PDC40 Tactile - Pocket Dream Console</name>
 	<desc>PDC40 Tactile - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc40t.png</image>
+	<image>./media/emulationstation/pdc40t.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1796,13 +1796,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc50.zip</path>
+<game>
+	<path>./pdc50.zip</path>
 	<name>PDC50 - Pocket Dream Console</name>
 	<desc>PDC50 - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc50.png</image>
+	<image>./media/emulationstation/pdc50.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1813,13 +1813,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc100.zip</path>
+<game>
+	<path>./pdc100.zip</path>
 	<name>PDC100 - Pocket Dream Console</name>
 	<desc>PDC100 - Pocket Dream Console (Anncia, US)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc100.png</image>
+	<image>./media/emulationstation/pdc100.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1830,13 +1830,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc150t.zip</path>
+<game>
+	<path>./pdc150t.zip</path>
 	<name>PDC150 Tactile - Pocket Dream Console</name>
 	<desc>PDC150 Tactile - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc150t.png</image>
+	<image>./media/emulationstation/pdc150t.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1847,13 +1847,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pdc200.zip</path>
+<game>
+	<path>./pdc200.zip</path>
 	<name>PDC200 - Pocket Dream Console</name>
 	<desc>PDC200 - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pdc200.png</image>
+	<image>./media/emulationstation/pdc200.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1864,13 +1864,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/tmntpdc.zip</path>
+<game>
+	<path>./tmntpdc.zip</path>
 	<name>PDC Teenage Mutant Ninja Turtles - Pocket Dream Console</name>
 	<desc>PDC Teenage Mutant Ninja Turtles - Pocket Dream Console (VideoJet, France)
 		spg2xx_pdc.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/tmntpdc.png</image>
+	<image>./media/emulationstation/tmntpdc.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1881,13 +1881,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld console</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pjoyn50.zip</path>
+<game>
+	<path>./pjoyn50.zip</path>
 	<name>PowerJoy Navigator 50 in 1</name>
 	<desc>PowerJoy Navigator 50 in 1
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pjoyn50.png</image>
+	<image>./media/emulationstation/pjoyn50.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1898,13 +1898,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pjoys30.zip</path>
+<game>
+	<path>./pjoys30.zip</path>
 	<name>PowerJoy Supermax 30 in 1</name>
 	<desc>PowerJoy Supermax 30 in 1
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pjoys30.png</image>
+	<image>./media/emulationstation/pjoys30.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1915,13 +1915,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/pjoys60.zip</path>
+<game>
+	<path>./pjoys60.zip</path>
 	<name>PowerJoy Supermax 60 in 1 </name>
 	<desc>PowerJoy Supermax 60 in 1
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/pjoys60.png</image>
+	<image>./media/emulationstation/pjoys60.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1932,13 +1932,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ppgc200g.zip</path>
+<game>
+	<path>./ppgc200g.zip</path>
 	<name>Plug & Play Game Controller with 200 Games (Supreme 200) </name>
 	<desc>Plug & Play Game Controller with 200 Games (Supreme 200)
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ppgc200g.png</image>
+	<image>./media/emulationstation/ppgc200g.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1949,13 +1949,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/react.zip</path>
+<game>
+	<path>./react.zip</path>
 	<name>Reactor 32-in-1</name>
 	<desc>Reactor 32-in-1 (NTSC)
 		spg2xx_zone.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/react.png</image>
+	<image>./media/emulationstation/react.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1966,13 +1966,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/reactmd.zip</path>
+<game>
+	<path>./reactmd.zip</path>
 	<name>Reactor MD</name>
 	<desc>Reactor MD (PAL)
 		spg2xx_zone.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/reactmd.png</image>
+	<image>./media/emulationstation/reactmd.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -1983,13 +1983,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/rminitv.zip</path>
+<game>
+	<path>./rminitv.zip</path>
 	<name>Retro 'Mini TV' Console 300-in-1</name>
 	<desc>Retro 'Mini TV' Console 300-in-1
 		spg2xx_zone.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/rminitv.png</image>
+	<image>./media/emulationstation/rminitv.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2000,13 +2000,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/sarc110.zip</path>
+<game>
+	<path>./sarc110.zip</path>
 	<name>Super Arcade 110</name>
 	<desc>Super Arcade 110 (set 1) 
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/sarc110.png</image>
+	<image>./media/emulationstation/sarc110.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2017,13 +2017,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/sudopptv.zip</path>
+<game>
+	<path>./sudopptv.zip</path>
 	<name>Sudoku Plug & Play TV Game '6 Intelligent Games'</name>
 	<desc>Sudoku Plug & Play TV Game '6 Intelligent Games'
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/sudopptv.png</image>
+	<image>./media/emulationstation/sudopptv.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2034,13 +2034,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/sy888b.zip</path>
+<game>
+	<path>./sy888b.zip</path>
 	<name>SY-888B 288 in 1 Handheld</name>
 	<desc>SY-888B 288 in 1 Handheld
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/sy888b.png</image>
+	<image>./media/emulationstation/sy888b.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2051,13 +2051,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/sy889.zip</path>
+<game>
+	<path>./sy889.zip</path>
 	<name>SY-889 300 in 1 Handheld</name>
 	<desc>SY-889 300 in 1 Handheld
 		nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/sy889.png</image>
+	<image>./media/emulationstation/sy889.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2068,13 +2068,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/techni4.zip</path>
+<game>
+	<path>./techni4.zip</path>
 	<name>Technigame Super 4-in-1 Sports</name>
 	<desc>Technigame Super 4-in-1 Sports (PAL)
 		nes_vt369_vtunknown.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/techni4.png</image>
+	<image>./media/emulationstation/techni4.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2085,14 +2085,14 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/vgcaplet.zip</path>
+<game>
+	<path>./vgcaplet.zip</path>
 	<name>VG Pocket Caplet Fast Acting 50-in-1</name>
 	<desc>VG Pocket Caplet Fast Acting 50-in-1
 	Performance Designed Products (licensed by Taito / Data East) / JungleTac
 		spg2xx_lexibook.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/vgcaplet.png</image>
+	<image>./media/emulationstation/vgcaplet.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2103,13 +2103,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/vgpmini.zip</path>
+<game>
+	<path>./vgpmini.zip</path>
 	<name>VG Pocket Mini (VG-1500)</name>
 	<desc>VG Pocket Mini (VG-1500)
 		nes_vt09.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/vgpmini.png</image>
+	<image>./media/emulationstation/vgpmini.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2120,13 +2120,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/vgpocket.zip</path>
+<game>
+	<path>./vgpocket.zip</path>
 	<name>VG Pocket (VG-2000)</name>
 	<desc>VG Pocket (VG-2000)
 		nes_vt09.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/vgpocket.png</image>
+	<image>./media/emulationstation/vgpocket.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2137,13 +2137,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one handheld</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/vjpp2.zip</path>
+<game>
+	<path>./vjpp2.zip</path>
 	<name>Plug Play TV Games 2 (4-in-1)</name>
 	<desc>Plug Play TV Games 2 (4-in-1) (VideoJet, France)
 		spg2xx_pdc.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/vjpp2.png</image>
+	<image>./media/emulationstation/vjpp2.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2154,13 +2154,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/zdog.zip</path>
+<game>
+	<path>./zdog.zip</path>
 	<name>ZDog (44 in 1)</name>
 	<desc>ZDog (44 in 1)
 		nes_vt02_vt03.cpp 
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/zdog.png</image>
+	<image>./media/emulationstation/zdog.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2171,13 +2171,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/zudugo.zip</path>
+<game>
+	<path>./zudugo.zip</path>
 	<name>Zudu-go / 2udu-go</name>
 	<desc>Zudu-go / 2udu-go
 		nes_vt02_vt03.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/zudugo.png</image>
+	<image>./media/emulationstation/zudugo.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2188,13 +2188,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ii32in1.zip</path>
+<game>
+	<path>./ii32in1.zip</path>
 	<name>InterAct 32-in-1</name>
 	<desc>InterAct 32-in-1
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ii32in1.png</image>
+	<image>./media/emulationstation/ii32in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2205,13 +2205,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/ii8in1.zip</path>
+<game>
+	<path>./ii8in1.zip</path>
 	<name>InterAct 8-in-1</name>
 	<desc>InterAct 8-in-1
 		vt1682.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/ii8in1.png</image>
+	<image>./media/emulationstation/ii8in1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2222,13 +2222,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/namcons1.zip</path>
+<game>
+	<path>./namcons1.zip</path>
 	<name>Let's! TV Play Classic - Namco Nostalgia 1</name>
 	<desc>Let's! TV Play Classic - Namco Nostalgia 1 (Japan)
 		xavix.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/namcons1.png</image>
+	<image>./media/emulationstation/namcons1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2239,13 +2239,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/namcons2.zip</path>
+<game>
+	<path>./namcons2.zip</path>
 	<name>Let's! TV Play Classic - Namco Nostalgia 2</name>
 	<desc>Let's! TV Play Classic - Namco Nostalgia 2 (Japan)
 		xavix.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/namcons2.png</image>
+	<image>./media/emulationstation/namcons2.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2256,13 +2256,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/taitons1.zip</path>
+<game>
+	<path>./taitons1.zip</path>
 	<name>Let's! TV Play Classic - Taito Nostalgia 1</name>
 	<desc>Let's! TV Play Classic - Taito Nostalgia 1 (Japan)
 		xavix.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/taitons1.png</image>
+	<image>./media/emulationstation/taitons1.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2273,13 +2273,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/taitons2.zip</path>
+<game>
+	<path>./taitons2.zip</path>
 	<name>Let's! TV Play Classic - Taito Nostalgia 2</name>
 	<desc>Let's! TV Play Classic - Taito Nostalgia 2 (Japan)
 		xavix.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/taitons2.png</image>
+	<image>./media/emulationstation/taitons2.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
@@ -2290,13 +2290,13 @@ nes_vt369_vtunknown.cpp
 	<genre>All in one plug and play</genre>
 	<players>1</players>
 </game>
-<game id="41424" source="ScreenScraper">
-	<path>/home/pi/RetroPie/roms/all_in1/fordrace.zip</path>
+<game>
+	<path>./fordrace.zip</path>
 	<name>Ford Racing</name>
 	<desc>Ford Racing
 			spg2xx.cpp
 </desc>
-	<image>/home/pi/.emulationstation/downloaded_images/all_in1/fordrace.png</image>
+	<image>./media/emulationstation/fordrace.png</image>
 	<marquee/>
 	<video/>
 	<thumbnail/>
