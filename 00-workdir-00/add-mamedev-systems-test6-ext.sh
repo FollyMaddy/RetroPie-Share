@@ -73,7 +73,7 @@ function subgui_add-mamedev-systems_downloads() {
 ",menu_item,empty,to_do,"
 ",Download cheats,,download_cheats,"
 ",,,,"
-",Download ES gamelists with images and videos (+/-30 minutes),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
+",Download ES gamelists with images and videos (+/-50 minutes),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
 ",,,,"
 ",Download mame artwork (+/-30 minutes),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
 ",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
