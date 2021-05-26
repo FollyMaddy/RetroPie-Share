@@ -62,19 +62,15 @@ unzip -o /tmp/cheat0221.zip cheat.7z -d $HOME/RetroPie/BIOS/mame/cheat
 rm /tmp/cheat0221.zip
 
 
-#part 2.5
-echo "get all gamelist files and put these in the correct path"
+#part 3
+echo "get gamelists with images and videos and put these in the correct paths"
 echo
 wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
-python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P /opt/retropie/configs/all/emulationstation/gamelists
+python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P /home/pi/RetroPie/roms
 rm /tmp/gdrivedl.py
 
 
-#
-
-
-
-#part 3
+#part 4
 echo "get all artwork files and put these in the correct path"
 echo
 wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
@@ -82,7 +78,7 @@ python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1sm6gdOcaaQaNUtQ9
 rm /tmp/gdrivedl.py
 
 
-#part 4
+#part 5
 echo "extract background files, if available, and create custom retroarch configs for overlay's"
 echo
 #use multiple arrays over one for loop:
