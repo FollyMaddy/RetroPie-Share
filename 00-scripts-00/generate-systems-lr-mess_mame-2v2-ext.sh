@@ -597,7 +597,7 @@ function configure_install-${newsystems[$index]}-cmd() {
 	addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
 	addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
 	addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
-	if [[ "all_in1 classich konamih tigerh" != *${newsystems[$index]}* ]];then
+	if [[ "all_in1 classich konamih tigerh" != *${newsystems[$index]}* ]] || [[ ${systems[$index]} == tigerh ]];then
 	addEmulator 0 "mame-force-${systems[$index]}-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${systems[$index]} %BASENAME%"
 	addEmulator 0 "mame-force-${systems[$index]}-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${systems[$index]} %BASENAME%"
 	addEmulator 0 "mame-force-rompath-${systems[$index]}-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/roms/${newsystems[$index]} -v -c ${systems[$index]} %BASENAME%"
