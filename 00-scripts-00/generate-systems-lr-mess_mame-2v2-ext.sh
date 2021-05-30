@@ -453,13 +453,24 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	# ensure run_mess.sh script is executable
 	chmod 755 "\$_script"
 
+	echo "enable translation ai_service for RetroArch in \$configdir/all/retroarch.cfg"
+	iniConfig " = " "\"" "\$configdir/all/retroarch.cfg"
+	iniSet "ai_service_enable" "true"
+	iniSet "ai_service_mode" "0"
+	iniSet "ai_service_pause" "true"
+	iniSet "ai_service_source_lang" "0"
+	iniSet "ai_service_target_lang" "1"
+	iniSet "ai_service_url" "http://ztranslate.net/service?api_key=HEREISMYKEY"
+	iniSet "input_ai_service" "t"
+	chown \$user:\$user "\$configdir/all/retroarch.cfg"
+
 	# add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
 	# all option should work with both mame and lr-mess, although -autoframeskip is better with mame
-	addEmulator 0 "lr-mess-system-${systems[$index]}${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -autoframeskip -ui_active ${media[$index]} %ROM%"
-	addEmulator 0 "mame-system-${systems[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -ui_active ${systems[$index]} ${media[$index]} %ROM%"
-        addEmulator 0 "mame-system-${systems[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip -ui_active ${systems[$index]} ${media[$index]} %ROM%"
+	addEmulator 0 "2v2_runmess-script_add_driver_${systems[$index]}_&_media_${media[$index]}_&_-autoframeskip" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -autoframeskip -ui_active ${media[$index]} %ROM%"
         # direct line test with single quotes
-	addEmulator 0 "lr-mess-system-${systems[$index]}${media[$index]}-direct" "\$_system" "/opt/retropie/emulators/retroarch/bin/retroarch --config /opt/retropie/configs/${systems[$index]}/retroarch.cfg -v -L /opt/retropie/libretrocores/lr-mess/mess_libretro.so '${systems[$index]} -autoframeskip ${media[$index]} %ROM%'"
+	addEmulator 0 "2v2_lr-mess_use_filename_add_driver_${systems[$index]}_&_media_${media[$index]}_&_-autoframeskip" "\$_system" "/opt/retropie/emulators/retroarch/bin/retroarch --config /opt/retropie/configs/${systems[$index]}/retroarch.cfg -v -L /opt/retropie/libretrocores/lr-mess/mess_libretro.so '${systems[$index]} -autoframeskip ${media[$index]} %ROM%'"
+	addEmulator 0 "2v2_mame_use_filename_add_driver_${systems[$index]}_&_media_${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -ui_active ${systems[$index]} ${media[$index]} %ROM%"
+        addEmulator 0 "2v2_mame_use_filename_add_driver_${systems[$index]}_&_media_${media[$index]}_&_-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip -ui_active ${systems[$index]} ${media[$index]} %ROM%"
 
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
@@ -578,6 +589,7 @@ function configure_install-${newsystems[$index]}-cmd() {
 	local _system="${newsystems[$index]}"
 	local _config="\$configdir/\$_system/retroarch.cfg"
 	local _emulatorscfg="\$configdir/\$_system/emulators.cfg"
+	local _mameini="/opt/retropie/configs/mame/mame.ini"
     
 	mkRomDir "\$_system"
 	ensureSystemretroconfig "\$_system"
@@ -588,24 +600,32 @@ function configure_install-${newsystems[$index]}-cmd() {
 	chown \$user:\$user "\$configdir/all/retroarch-core-options.cfg"
 
 	echo "enable cheats for mame in \$romdir/mame/mame.ini"    
-	iniConfig " " "" "\$romdir/mame/mame.ini"
+	iniConfig " " "" "\$_mameini"
 	iniSet "cheatpath"  "\$romdir/mame/cheat"
 	iniSet "cheat" "1"
-	chown \$user:\$user "\$romdir/mame/mame.ini"
+	chown \$user:\$user "\$_mameini"
+
+	echo "enable translation ai_service for RetroArch in \$configdir/all/retroarch.cfg"
+	iniConfig " = " "\"" "\$configdir/all/retroarch.cfg"
+	iniSet "ai_service_enable" "true"
+	iniSet "ai_service_mode" "0"
+	iniSet "ai_service_pause" "true"
+	iniSet "ai_service_source_lang" "0"
+	iniSet "ai_service_target_lang" "1"
+	iniSet "ai_service_url" "http://ztranslate.net/service?api_key=HEREISMYKEY"
+	iniSet "input_ai_service" "t"
+	chown \$user:\$user "\$configdir/all/retroarch.cfg"
        
-	addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
-	addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
-	addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
-	addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
+	addEmulator 0 "2v2_lr-mess_use_filename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
+	addEmulator 0 "2v2_lr-mess_use_basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
+	addEmulator 0 "2v2_mame_use_basename_add_rompath_${systems[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
+	addEmulator 0 "2v2_mame_use_basename_add_rompath_${systems[$index]}_-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
 	if [[ "all_in1 classich konamih tigerh" != *${newsystems[$index]}* ]] || [[ ${systems[$index]} == tigerh ]];then
-	addEmulator 0 "mame-force-${systems[$index]}-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${systems[$index]} %BASENAME%"
-	addEmulator 0 "mame-force-${systems[$index]}-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${systems[$index]} %BASENAME%"
-	addEmulator 0 "mame-force-rompath-${systems[$index]}-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/roms/${newsystems[$index]} -v -c ${systems[$index]} %BASENAME%"
-	addEmulator 0 "mame-force-rompath-${systems[$index]}-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip ${systems[$index]} %BASENAME%"
+	addEmulator 0 "2v2_mame_use_basename_add_driver_${systems[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${systems[$index]} %BASENAME%"
+	addEmulator 0 "2v2_mame_use_basename_add_driver_${systems[$index]}_&_-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${systems[$index]} %BASENAME%"
+	addEmulator 0 "2v2_mame_use_basename_add_rompath_&_driver_${systems[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/roms/${newsystems[$index]} -v -c ${systems[$index]} %BASENAME%"
+	addEmulator 0 "2v2_mame_use_basename_add_rompath_&_driver_${systems[$index]}_&_-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip ${systems[$index]} %BASENAME%"
 	fi
-	#turned these off, seems these commands will not work, but kept for future testing : https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/33
-	##addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
-	##addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
 
 	#add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
