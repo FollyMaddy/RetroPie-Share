@@ -16,10 +16,10 @@ Use F11 for the GUI !\n\
 EXIT the emulator in the GUI !\n\n\
 Supported ROMS/MEDIA : .rom .uef .ssd .adm .dsd .adf\n\
 Some disc formats still require Shift+F12 for booting !\n\n\
-BIOS roms have to be in $biosdir/elkulator\n\n\
 ROMS/MEDIA have to be in $romdir/electron\n\n\
-Read the readme's, of the sourcode, for more info\n\
-about the BIOS files and the emulator !\n\
+BIOS files are in /opt/retropie/emulators/elkulator/roms\n\
+If needed, there are readme's in the sourcode\n\
+Check them about the BIOS files and the emulator !\n\
 The sha1sums of the BIOS roms are :\n\
 2863b45dc880a7ed91ad9828795a3eb5ed0bcdd4  os\n\
 e7c7a1094d50a3579751df2007269067c8ff6812  adfs.rom\n\
@@ -27,7 +27,8 @@ e7c7a1094d50a3579751df2007269067c8ff6812  adfs.rom\n\
 eaf340b64a0a747ec479e575cc7b07cf928fd845  dfs.rom\n\
 e759e77efd8073c74a04b3907adcca4c6edd1cc8  os300.rom\n\
 2de04ab7c81414d6c9c967f965c53fc276392463  plus1.rom\n\
-2e409b92c97cda34ff25c2951e5f799125fe7e32  sndrom\n\n"
+2e409b92c97cda34ff25c2951e5f799125fe7e32  sndrom\n\n\
+"
 rp_module_section="exp"
 rp_module_flags=""
 
@@ -37,9 +38,8 @@ function depends_elkulator() {
 
 function sources_elkulator() {
     downloadAndExtract "http://elkulator.acornelectron.co.uk/ElkulatorV1.0Linux.tar.gz" "/tmp/elkulator"
-    mkdir "$biosdir/elkulator" 2>&-
-    cp -r /tmp/elkulator/roms/* $biosdir/elkulator
-    chown -R $user:$user "$biosdir/elkulator"
+    mkdir -p "$md_build/elkulator-master/roms" 2>&-
+    cp -r /tmp/elkulator/roms/* $md_build/elkulator-master/roms
     #no need to remove "/tmp/elkulator", it will be removed after a reboot
     downloadAndExtract "https://github.com/stardot/elkulator/archive/refs/heads/master.zip" "$md_build"
 }
@@ -81,10 +81,6 @@ sed -i 's/plus3 = 0/plus3 = 1/g' "$configdir/electron/elk.cfg"
 chown $user:$user "$configdir/electron/elk.cfg"
 mv "$md_inst/elk.cfg" "$md_inst/elk.cfg.bak" 2>&-
 ln -s "$configdir/electron/elk.cfg" "$md_inst/elk.cfg"
-
-#we want to use a bios-roms directory earlier created in the `function sources`
-#to make sure elkulator will find those roms we will make a link to that directory
-ln -s "$biosdir/elkulator" "$md_inst/roms" 2>&-
 
     cat >"$md_inst/matchbox_key_shortcuts" << _EOF_
 <ctrl>c=close
