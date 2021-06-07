@@ -30,7 +30,7 @@ e759e77efd8073c74a04b3907adcca4c6edd1cc8  os300.rom\n\
 2e409b92c97cda34ff25c2951e5f799125fe7e32  sndrom\n\n\
 "
 rp_module_section="exp"
-rp_module_flags=""
+rp_module_flags="!all rpi4"
 
 function depends_elkulator() {
     getDepends xorg matchbox-window-manager automake liballegro4-dev zlib1g-dev libalut-dev libopenal-dev autotools-dev xdotool
@@ -87,7 +87,7 @@ ln -s "$configdir/electron/elk.cfg" "$md_inst/elk.cfg"
 _EOF_
 
     cat >"$md_inst/elkulator-multiload.sh" << _EOF_
-!/bin/bash
+#!/bin/bash
 #see for keylist codes => https://gitlab.com/cunidev/gestures/-/wikis/xdotool-list-of-key-codes
 #see here for tips and tricks ==> https://github.com/damieng/BBCMicroTools/blob/master/tips-and-tricks.md
 #if using a us keyboard you have to use "quotedbl" to get "*" and "at" to get '"', don't know, perhaps there is a better way
@@ -95,8 +95,10 @@ function load_rom() {
 sed -i 's/adfsena = 1/adfsena = 0/g' "$configdir/electron/elk.cfg"
 fullscreen=();fullscreen=( "F11" "Alt+s" "v" "Down" "Down" "Return" )
 xset -dpms s off s noblank
+#add rom2 if exists, a pair of roms have both basename_1.rom and basename_2.rom,
+#check if "_1.rom" exists, do a reverse cut to get the basename, parse the $1 on how the 2nd file has to look like, search for that and add if exists
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/retropie/emulators/elkulator/elkulator -rom1 "\$1"|\
+/opt/retropie/emulators/elkulator/elkulator -rom1 "\$1" \$(if [[ \$1 == *_1.rom ]];then basename=\$(echo \$rom1|rev|cut -d "/" -f 1|rev|cut -d "_" -f 1); [[ -n \$(ls \$(echo \$1|sed s/\$basename\_1\.rom/\$basename\_2\.rom/g)) ]] && echo -rom2 "\$(echo \$1|sed s/\$basename\_1\.rom/\$basename\_2\.rom/g)";fi)|\
 for index in \${!fullscreen[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${fullscreen[\$index]} sleep 0.05 keyup \${fullscreen[\$index]};done
 }
 function load_tape() {
