@@ -26,7 +26,7 @@ Once created, we can install these module-scripts in the RetroPie-setup.
 
 While busy with this project, I also added more things like :
 
-- using this BIOS directory for both lr-mess and MAME : /home/<user>/RetroPie/BIOS/mame
+- using this BIOS directory for both lr-mess and MAME : /home/user_name/RetroPie/BIOS/mame
 
 - turning lr-mess / MAME system-types into RetroPie system names so the RetroPie themes can match
 
@@ -46,7 +46,7 @@ While busy with this project, I also added more things like :
 
 - adding the rompaths for MAME in the cmd module-scripts
 
-- saving generated files directly in (home/<user>/RetroPie-setup) or saving it in the new possible external directory (home/<user>/RetroPie-setup/ext/<external_repository_name>)
+- saving generated files directly in (/home/user_name/RetroPie-setup) or saving it in the new possible external directory (/home/user_name/RetroPie-setup/ext/<external_repository_name>)
 
 Above additions are mainly in the latest version.
 
@@ -114,14 +114,14 @@ It will create a text file with possible systems.
 
 ```/opt/retropie/emulators/mame/mame -listdevices | grep Driver > possiblesystems.txt```
 
-If you found a system,for example coleco, then run the next cmd with the added <system> like this.
+If you found a system,for example coleco, then run the next cmd with the added "system" like this.
  
 
 ```bash generate-systems-lr-mess_mame-2v1.sh coleco```
 
-Above command will generate the module-scripts into (home/<user>/RetroPie-setup).
+Above command will generate the module-scripts into (/home/user_name/RetroPie-setup).
 
-If you want to generate into the external repositories directory (home/<user>/RetroPie-setup/ext/<external_repository_name>) use :
+If you want to generate into the external repositories directory (/home/user_name/RetroPie-setup/ext/external_repository_name) use :
 
 ```bash generate-systems-lr-mess_mame-2v1.sh-ext coleco```
 
