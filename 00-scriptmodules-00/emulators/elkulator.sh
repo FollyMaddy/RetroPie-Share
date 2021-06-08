@@ -41,7 +41,8 @@ function sources_elkulator() {
     mkdir -p "$md_build/elkulator-master/roms" 2>&-
     cp -r /tmp/elkulator/roms/* $md_build/elkulator-master/roms
     #no need to remove "/tmp/elkulator", it will be removed after a reboot
-    downloadAndExtract "https://github.com/stardot/elkulator/archive/refs/heads/master.zip" "$md_build"
+    #using now my RetroPie improved version (boot in fullscreen, exit with exc key)
+    downloadAndExtract "https://github.com/FollyMaddy/elkulator/archive/refs/heads/master.zip" "$md_build"
 }
 
 function build_elkulator() {
@@ -82,10 +83,6 @@ chown $user:$user "$configdir/electron/elk.cfg"
 mv "$md_inst/elk.cfg" "$md_inst/elk.cfg.bak" 2>&-
 ln -s "$configdir/electron/elk.cfg" "$md_inst/elk.cfg"
 
-    cat >"$md_inst/matchbox_key_shortcuts" << _EOF_
-<ctrl>c=close
-_EOF_
-
     cat >"$md_inst/elkulator-multiload.sh" << _EOF_
 #!/bin/bash
 #see for keylist codes => https://gitlab.com/cunidev/gestures/-/wikis/xdotool-list-of-key-codes
@@ -93,39 +90,35 @@ _EOF_
 #if using a us keyboard you have to use "quotedbl" to get "*" and "at" to get '"', don't know, perhaps there is a better way
 function load_rom() {
 sed -i 's/adfsena = 1/adfsena = 0/g' "$configdir/electron/elk.cfg"
-fullscreen=();fullscreen=( "F11" "Alt+s" "v" "Down" "Down" "Return" )
 xset -dpms s off s noblank
 #add rom2 if exists, a pair of roms have both basename_1.rom and basename_2.rom,
 #check if "_1.rom" exists, do a reverse cut to get the basename, parse the $1 on how the 2nd file has to look like, search for that and add if exists
-matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/retropie/emulators/elkulator/elkulator -rom1 "\$1" \$(if [[ \$1 == *_1.rom ]];then basename=\$(echo \$rom1|rev|cut -d "/" -f 1|rev|cut -d "_" -f 1); [[ -n \$(ls \$(echo \$1|sed s/\$basename\_1\.rom/\$basename\_2\.rom/g)) ]] && echo -rom2 "\$(echo \$1|sed s/\$basename\_1\.rom/\$basename\_2\.rom/g)";fi)|\
-for index in \${!fullscreen[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${fullscreen[\$index]} sleep 0.05 keyup \${fullscreen[\$index]};done
+matchbox-window-manager -use_titlebar no -use_cursor no &
+/opt/retropie/emulators/elkulator/elkulator -rom1 "\$1" \$(if [[ \$1 == *_1.rom ]];then basename=\$(echo \$rom1|rev|cut -d "/" -f 1|rev|cut -d "_" -f 1); [[ -n \$(ls \$(echo \$1|sed s/\$basename\_1\.rom/\$basename\_2\.rom/g)) ]] && echo -rom2 "\$(echo \$1|sed s/\$basename\_1\.rom/\$basename\_2\.rom/g)";fi)
 }
 function load_tape() {
 sed -i 's/adfsena = 1/adfsena = 0/g' "$configdir/electron/elk.cfg"
-fullscreen_cassload=();fullscreen_cassload=( "F11" "Alt+s" "v" "Down" "Down" "Return" "quotedbl" "t" "a" "p" "e" "Return" "c" "h" "a" "i" "n" "at" "at" "Return" )
+cassload=();cassload=( "quotedbl" "t" "a" "p" "e" "Return" "c" "h" "a" "i" "n" "at" "at" "Return" )
 xset -dpms s off s noblank
-matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
+matchbox-window-manager -use_titlebar no -use_cursor no &
 /opt/retropie/emulators/elkulator/elkulator -tape "\$1"|\
-for index in \${!fullscreen_cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${fullscreen_cassload[\$index]} sleep 0.1 keyup \${fullscreen_cassload[\$index]};done
+for index in \${!cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${cassload[\$index]} sleep 0.1 keyup \${cassload[\$index]};done
 }
 function load_disc_dfs() {
 sed -i 's/adfsena = 1/adfsena = 0/g' "$configdir/electron/elk.cfg"
-fullscreen_discload=();fullscreen_discload=( "F11" "Alt+s" "v" "Down" "Down" "Return" "quotedbl" "e" "x" "e" "c" "Space" "exclam" "b" "o" "o" "t" "Return" )
+discload=();discload=( "quotedbl" "e" "x" "e" "c" "Space" "exclam" "b" "o" "o" "t" "Return" )
 xset -dpms s off s noblank
-matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
+matchbox-window-manager -use_titlebar no -use_cursor no &
 /opt/retropie/emulators/elkulator/elkulator -disc "\$1"|\
-for index in \${!fullscreen_discload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${fullscreen_discload[\$index]} sleep 0.1 keyup \${fullscreen_discload[\$index]};done
+for index in \${!discload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${discload[\$index]} sleep 0.1 keyup \${discload[\$index]};done
 }
 
 function load_disc_adfs() {
 sed -i 's/adfsena = 0/adfsena = 1/g' "$configdir/electron/elk.cfg"
 #adfs autoload is not implemented yet
-fullscreen_discload=();fullscreen_discload=( "F11" "Alt+s" "v" "Down" "Down" "Return" )
 xset -dpms s off s noblank
-matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/retropie/emulators/elkulator/elkulator -disc "\$1"|\
-for index in \${!fullscreen_discload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${fullscreen_discload[\$index]} sleep 0.1 keyup \${fullscreen_discload[\$index]};done
+matchbox-window-manager -use_titlebar no -use_cursor no &
+/opt/retropie/emulators/elkulator/elkulator -disc "\$1"
 }
 [[ "\$1" == *.rom ]] && load_rom "\$1"
 [[ "\$1" == *.uef ]] && load_tape "\$1"
