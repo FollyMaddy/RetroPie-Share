@@ -36,15 +36,15 @@ While busy with this project, I also added more things like :
 
 - creation of module-scripts that will work with the original RetroPie-setup
 
-  For lr-mess only the run_mess.sh from valerino is needed, install this with :
+  ~~For lr-mess only the run_mess.sh from valerino is needed, install this with :~~
 
-  ```wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh```
+  ~~```wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh```~~ (from 1v8 not needed anymore)
 
 - creation of module-scripts that will work with the @valerino fork of the RetroPie-setup
 
 - adding the rompaths for MAME in the cmd module-scripts
 
-- saving generated files directly in RetroPie-setup
+- saving generated files directly in (~/RetroPie-setup) or saving it in the new possible external directory (~/RetroPie-setup/ext/<external_repository_name>)
 
 Above additions are mainly in the latest version.
 
@@ -78,11 +78,59 @@ pi@raspberrypi:~/RetroPie-Share $ cd 00-scripts-00/
 
 # How to run :
 
+NOTE: 
+
+This part is outdated !
+
+We are now working on a front-end script.
+
+The help part is therefor removed from 2v0 and above.
+
+This way we can paste the generator script better into the front-end script.
+
+I am not sure if I will put back the help part inside again !
+
+END NOTE.
+
+--------
+
+This is still relevant for this version :
+
 Everything is explained in the help.
 
 Do this to read the help :
 
-bash generate-lr-mess-systems-1v8-alpha -h
+```bash generate-lr-mess-systems-1v8-alpha -h```
+
+--------
+
+Basically it always works like this :
+
+Find a system that you want to install using, for example, the next command.
+
+It will create a text file with possible systems.
+
+```/opt/retropie/emulators/mame/mame -listdevices | grep Driver > possiblesystems.txt```
+
+If you found a system,for example coleco, you want to generate for then add this to the command like this.
+
+```bash generate-systems-lr-mess_mame-2v1.sh coleco```
+
+Above command will generate into (~/RetroPie-setup).
+
+If you want to generate into the external repositories directory (~/RetroPie-setup/ext/<external_repository_name>) use :
+
+```bash generate-systems-lr-mess_mame-2v1.sh-ext coleco```
+
+You can do the same without even downloading the scripts !
+
+You can just run them online ! (make sure you have "curl" installed (sudo apt install curl))
+
+```curl "https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/generate-systems-lr-mess_mame-2v1.sh" | bash -s coleco```
+
+or
+
+```curl "https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/generate-systems-lr-mess_mame-2v1-ext.sh" | bash -s coleco```
 
 
 # File descriptions :
@@ -118,6 +166,16 @@ You can run it directly without even downloading it as a file, with this command
 
 
 # Solution for game specific configs with lr-mess :
+
+Note :
+
+Now that @russelb has improve the @valerino run_mess.sh script.
+
+Game specific configs should are now possible with lr-mess !
+
+I leave next part in here, as it can be a solution for something not foreseen yet.
+
+--------
 
 Perhaps others have a better idea.
 
