@@ -36,9 +36,11 @@ While busy with this project, I also added more things like :
 
 - creation of module-scripts that will work with the original RetroPie-setup
 
+  (from 1v8 not needed anymore)
+
   ~~For lr-mess only the run_mess.sh from valerino is needed, install this with :~~
 
-  ~~```wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh```~~ (from 1v8 not needed anymore)
+  ~~```wget -nv -O /home/pi/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/valerino/RetroPie-Setup/master/scriptmodules/run_mess.sh```~~ 
 
 - creation of module-scripts that will work with the @valerino fork of the RetroPie-setup
 
