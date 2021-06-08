@@ -114,17 +114,18 @@ It will create a text file with possible systems.
 
 ```/opt/retropie/emulators/mame/mame -listdevices | grep Driver > possiblesystems.txt```
 
-If you found a system,for example coleco, you want to generate for then add this to the command like this.
+If you found a system,for example coleco, then run the next cmd with the added <system> like this.
+ 
 
 ```bash generate-systems-lr-mess_mame-2v1.sh coleco```
 
-Above command will generate into (~/RetroPie-setup).
+Above command will generate the module-scripts into (~/RetroPie-setup).
 
 If you want to generate into the external repositories directory (~/RetroPie-setup/ext/<external_repository_name>) use :
 
 ```bash generate-systems-lr-mess_mame-2v1.sh-ext coleco```
 
-You can do the same without even downloading the scripts !
+You can do the same without even downloading my repository or scripts  !
 
 You can just run them online ! (make sure you have "curl" installed (sudo apt install curl))
 
