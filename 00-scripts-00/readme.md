@@ -119,9 +119,9 @@ If you found a system,for example coleco, then run the next cmd with the added <
 
 ```bash generate-systems-lr-mess_mame-2v1.sh coleco```
 
-Above command will generate the module-scripts into (\~/RetroPie-setup).
+Above command will generate the module-scripts into ($HOME/RetroPie-setup).
 
-If you want to generate into the external repositories directory (\~/RetroPie-setup/ext/<external_repository_name>) use :
+If you want to generate into the external repositories directory ($HOME/RetroPie-setup/ext/<external_repository_name>) use :
 
 ```bash generate-systems-lr-mess_mame-2v1.sh-ext coleco```
 
