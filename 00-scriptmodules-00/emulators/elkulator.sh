@@ -13,7 +13,7 @@ rp_module_id="elkulator"
 rp_module_desc="Acorn Electron emulator"
 rp_module_help="\
 Use F11 for the GUI !\n\
-EXIT the emulator in the GUI !\n\n\
+Use ESC key to exit the emulator !\n\n\
 Supported ROMS/MEDIA : .rom .uef .ssd .adm .dsd .adf\n\
 Some disc formats still require Shift+F12 for booting !\n\n\
 ROMS/MEDIA have to be in $romdir/electron\n\n\
@@ -41,7 +41,7 @@ function sources_elkulator() {
     mkdir -p "$md_build/elkulator-master/roms" 2>&-
     cp -r /tmp/elkulator/roms/* $md_build/elkulator-master/roms
     #no need to remove "/tmp/elkulator", it will be removed after a reboot
-    #using now my RetroPie improved version (boot in fullscreen, exit with exc key)
+    #using now my RetroPie improved version (boot in fullscreen, exit with ESC key)
     downloadAndExtract "https://github.com/FollyMaddy/elkulator/archive/refs/heads/master.zip" "$md_build"
 }
 
