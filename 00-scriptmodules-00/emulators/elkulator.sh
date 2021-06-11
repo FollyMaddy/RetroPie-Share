@@ -15,7 +15,6 @@ rp_module_help="\
 Use F11 for the GUI !\n\
 Use ESC key to exit the emulator !\n\n\
 Supported ROMS/MEDIA : .rom .uef .ssd .adm .dsd .adf\n\
-Some disc formats still require Shift+F12 for booting !\n\n\
 ROMS/MEDIA have to be in $romdir/electron\n\n\
 BIOS files are in /opt/retropie/emulators/elkulator/roms\n\
 If needed, there are readme's in the sourcode\n\
