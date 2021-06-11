@@ -118,6 +118,8 @@ xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no &
 /opt/retropie/emulators/elkulator/elkulator -disc "\$1" | xdotool sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
 }
+[[ "\$1" == *.rom ]] && load_rom "\$1"
+[[ "\$1" == *.uef ]] && load_tape "\$1"
 [[ "\$1" == *.ssd ]] && load_disc_dfs "\$1"
 [[ "\$1" == *.adm ]] && load_disc_dfs "\$1"
 [[ "\$1" == *.dsd ]] && load_disc_dfs "\$1"
