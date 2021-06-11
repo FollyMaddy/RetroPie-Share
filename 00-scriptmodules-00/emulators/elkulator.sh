@@ -106,22 +106,18 @@ for index in \${!cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sle
 }
 function load_disc_dfs() {
 sed -i 's/adfsena = 1/adfsena = 0/g' "$configdir/electron/elk.cfg"
-discload=();discload=( "quotedbl" "e" "x" "e" "c" "Space" "exclam" "b" "o" "o" "t" "Return" )
+#dfs autoload with Shift_L+F12
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no &
-/opt/retropie/emulators/elkulator/elkulator -disc "\$1"|\
-for index in \${!discload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${discload[\$index]} sleep 0.1 keyup \${discload[\$index]};done
+/opt/retropie/emulators/elkulator/elkulator -disc "\$1" | xdotool sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
 }
-
 function load_disc_adfs() {
 sed -i 's/adfsena = 0/adfsena = 1/g' "$configdir/electron/elk.cfg"
-#adfs autoload is not implemented yet
+#adfs autoload with Shift_L+F12
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no &
-/opt/retropie/emulators/elkulator/elkulator -disc "\$1"
+/opt/retropie/emulators/elkulator/elkulator -disc "\$1" | xdotool sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
 }
-[[ "\$1" == *.rom ]] && load_rom "\$1"
-[[ "\$1" == *.uef ]] && load_tape "\$1"
 [[ "\$1" == *.ssd ]] && load_disc_dfs "\$1"
 [[ "\$1" == *.adm ]] && load_disc_dfs "\$1"
 [[ "\$1" == *.dsd ]] && load_disc_dfs "\$1"
