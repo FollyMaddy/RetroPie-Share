@@ -58,7 +58,7 @@ _EOF_
 #!/bin/bash
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/retropie/emulators/b-em-pico-pi/xbeeb -disc "\$1" | xdotool sleep 1 keydown Shift_L+F12 sleep 0.1 keyup Shift_L+F12
+/opt/retropie/emulators/b-em-pico-pi/xbeeb -disc "\$1"|xdotool sleep 1 keydown Shift_L+F12 sleep 0.1 keyup Shift_L+F12
 _EOF_
     chmod +x "$md_inst/xbeeb.sh"
 
@@ -66,7 +66,7 @@ _EOF_
 #!/bin/bash
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/retropie/emulators/b-em-pico-pi/xmaster -disc "\$1" | xdotool sleep 1 keydown Shift_L+F12 sleep 0.1 keyup Shift_L+F12
+/opt/retropie/emulators/b-em-pico-pi/xmaster -disc "\$1"|xdotool sleep 1 keydown Shift_L+F12 sleep 0.1 keyup Shift_L+F12
 _EOF_
     chmod +x "$md_inst/xmaster.sh"
 
