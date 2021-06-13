@@ -48,7 +48,7 @@
 #now we can also make a string that can activate automatic installation, of module-scripts, if the front-end module script is used
 if [[ -z $user ]];then 
 user=$(ls /home)
-installation_after_generating=off
+generator_script_status=standalone
 fi
 
 #uncomment if the scriptmodules have to be created in the `ext` directory, it will use the normal directory if commented
@@ -470,7 +470,7 @@ _EOF_
 chown $user:$user "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}.sh" 2>&-
 
 #install directly after generation if the script runs as a function within the front-end module script
-if [[ $installation_after_generating != off ]];then
+if [[ $generator_script_status != standalone ]];then
 #if not empty (-n) : change ownership to normal user and install 
    if [[ -n $(ls /home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}.sh 2>&-) ]]; then
    $scriptdir/retropie_packages.sh install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}${media[$index]}
@@ -598,7 +598,7 @@ _EOF_
 chown $user:$user "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd.sh" 2>&-
 
 #install directly after generation if the script runs as a function within the front-end module script
-if [[ $installation_after_generating != off ]];then
+if [[ $generator_script_status != standalone ]];then
    if [[ -n $(ls /home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-cmd.sh 2>&-) ]]; then 
    $scriptdir/retropie_packages.sh install-${newsystems[$index]}-cmd
    fi
@@ -607,7 +607,7 @@ fi
 done
 
 #update the packages if the script runs as a function within the front-end module script
-if [[ $installation_after_generating != off ]];then
+if [[ $generator_script_status != standalone ]];then
    echo refreshing RetroPie packages
    rp_registerAllModules
 fi
