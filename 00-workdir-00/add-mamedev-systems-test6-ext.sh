@@ -167,15 +167,15 @@ function build_menu_add-mamedev-systems() {
             IFS=","
             if [[ "$(set ${csv[$choice]};echo $4)" == run_generator_script ]];then 
             run="$(set ${csv[$choice]};echo $4) $(set ${csv[$choice]};echo $2)"
-            rp_registerAllModules
             else
             run="$(set ${csv[$choice]};echo $4)"
             fi
-            unset IFS
-            $run
-            #sleep 4
             joy2keyStop
             joy2keyStart
+            unset IFS
+            rp_registerAllModules
+            $run
+            #sleep 4
         else
             break
         fi
