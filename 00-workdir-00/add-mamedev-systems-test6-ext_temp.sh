@@ -26,6 +26,7 @@ rp_module_section="config"
 
 local mamedev_csv=()
 
+
 function depends_add-mamedev-systems() {
     getDepends curl python3
 }
@@ -114,7 +115,20 @@ function choose_add() {
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
     while read system_read;do mamedev_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0231_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
     fi
-    csv=("${mamedev_csv[@]}")
+    #we have to do a global comparison as the alfabetical order contains also a letter in the $1
+    if [[ $1 == descriptions* ]];then
+    #here we store the sorted mamedev_csv values in the csv array
+    #we sort on the third colunm which contain the descriptions of the sytems
+    IFS=$'\n' csv=($(sort -t"," -k 3 --ignore-case <<<"${mamedev_csv[*]}"));unset IFS
+    #this is an aternative but much slower
+    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -k 3 --ignore-case;unset IFS)
+    else
+    #here we store the sorted mamedev_csv values in the csv array
+    #we sort on the second colunm which contain the system names
+    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${mamedev_csv[*]}"));unset IFS
+    #this is an aternative but much slower
+    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -k 2 --ignore-case;unset IFS)
+    fi
     build_menu_add-mamedev-systems $1
 }
 
