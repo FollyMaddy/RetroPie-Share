@@ -392,7 +392,6 @@ Driver ace1000 (Franklin ACE 1000):
 Driver aceattac (Ace Attacker (FD1094 317-0059)):
 Driver aceattaca (Ace Attacker (Japan, System 16A, FD1094 317-0060)):
 Driver acedrvrw (Ace Driver: Racing Evolution (Rev. AD2, World)):
-   <root>                         Ace Driver: Racing Evolution (Rev. AD2, World)
 Driver aceex2814 (Aceex 2814):
 Driver acefruit (Silhouette):
 Driver acheart (Arcana Heart):
@@ -3071,7 +3070,6 @@ Driver cc10 (Chess Challenger "10" (model CCX, rev. B)):
 Driver cc10a (Chess Challenger "10" (model CCX)):
 Driver cc10c (Chess Challenger (model UCC10, 10 levels)):
 Driver cc2150 (Chess Champion 2150):
-     lcd                          Epson SED1502 LCD Driver @ 32.76 kHz
 Driver cc3 (Chess Challenger (upgraded version, 3 levels)):
 Driver cc40 (Compact Computer 40):
 Driver cc40p (Compact Computer 40 Plus (prototype)):
@@ -3111,13 +3109,7 @@ Driver ccmk1 (Chess Champion: MK I):
 Driver ccmk2 (Chess Champion: MK II (ver. 1)):
 Driver ccmk2a (Chess Champion: MK II (ver. 2)):
 Driver ccmk5 (Chess Champion: Mark V):
-     lcd0                         Hughes HLCD 0538 LCD Driver
-     lcd1                         Hughes HLCD 0539 LCD Driver
-     lcd2                         Hughes HLCD 0539 LCD Driver
 Driver ccmk6 (Chess Champion: Mark VI/Philidor):
-     lcd0                         Hughes HLCD 0538 LCD Driver
-     lcd1                         Hughes HLCD 0539 LCD Driver
-     lcd2                         Hughes HLCD 0539 LCD Driver
 Driver ccompan (Chess Companion):
 Driver ccorsario (Corsarios (Cirsa slot machine)):
 Driver ccruise (Caribbean Cruise):
@@ -3193,9 +3185,7 @@ Driver cfield (Chaos Field (Japan) (GDL-0025)):
 Driver cfishing (Fishing (DECO Cassette) (Japan)):
 Driver cflyball (Flying Ball (DECO Cassette) (US)):
 Driver cfortea (Constellation Forte (version A)):
-     hlcd0538                     Hughes HLCD 0538 LCD Driver
 Driver cforteb (Constellation Forte (version B)):
-     hlcd0538                     Hughes HLCD 0538 LCD Driver
 Driver cfrogger (Frogger (Coleco)):
 Driver cftbl_l2 (Creature from the Black Lagoon (L-2)):
 Driver cftbl_l3 (Creature from the Black Lagoon (L-3,SP-1)):
@@ -3546,7 +3536,6 @@ Driver cncchess (Computer Chess (Conic, model 7011)):
 Driver cncchess2 (Computer Chess (Conic, model 7012)):
 Driver cndypuzl (Candy Puzzle (v1.0)):
 Driver cnfball (Electronic Football (Conic, TMS1000 version)):
-     ds8874                       DS8874 LED Driver
 Driver cnfball2 (Electronic Football II (Conic)):
 Driver cnightst (Night Star (DECO Cassette) (US) (set 1)):
 Driver cnightst2 (Night Star (DECO Cassette) (US) (set 2)):
@@ -5111,13 +5100,8 @@ Driver driftout (Drift Out (Europe)):
 Driver driftoutct (Drift Out (Europe, Cameltry conversion)):
 Driver driftoutj (Drift Out (Japan)):
 Driver drivedge (Driver's Edge (v1.6)):
-   <root>                         Driver's Edge (v1.6)
 Driver driveout (Drive Out (bootleg)):
 Driver driveyes (Driver's Eyes (Japan) (1992/01/10, Main Ver 2.1, Sub Ver 1.1)):
-   <root>                         Driver's Eyes (Japan) (1992/01/10, Main Ver 2.1, Sub Ver 1.1)
-     pcb_0                        Namco Driver's Eyes PCB stack
-     pcb_1                        Namco Driver's Eyes PCB stack
-     pcb_2                        Namco Driver's Eyes PCB stack
 Driver drivfrcb (Driving Force (Galaxian conversion bootleg)):
 Driver drivfrcg (Driving Force (Galaxian conversion)):
 Driver drivfrcp (Driving Force (Pac-Man conversion)):
@@ -6913,8 +6897,6 @@ Driver excalibrg (Excalibur (German)):
 Driver excelsr (Excelsior (set 1)):
 Driver excelsra (Excelsior (set 2)):
 Driver exchess (Executive Chess):
-     lcd1                         Hughes HLCD 0538 LCD Driver @ 310 Hz
-     lcd2                         Hughes HLCD 0539 LCD Driver
 Driver excitbj (Exciting Black Jack):
 Driver excitebk (Vs. Excitebike (set EB4-3 E)):
 Driver excitebkj (Vs. Excitebike (set EB4-4 A)):
@@ -8377,8 +8359,6 @@ Driver gl2000 (Genius Leader 2000):
 Driver gl2000c (Genius Leader 2000 Compact):
 Driver gl2000p (Genius Leader 2000 Plus):
 Driver gl3000s (Genius Leader 3000S (Germany)):
-     sed1520_l                    Epson SED1520 LCD Driver
-     sed1520_r                    Epson SED1520 LCD Driver
 Driver gl4000 (Genius Leader 4000 Quadro (Germany)):
 Driver gl4004 (Genius Leader 4004 Quadro L (Germany)):
 Driver gl5000 (Genius Leader 5000 (Germany)):
@@ -9566,7 +9546,6 @@ Driver horekidb (Kid no Hore Hore Daisakusen (bootleg)):
 Driver horizon (Horizon (Irem)):
 Driver horocomp (Horoscope Computer):
 Driver horseran (Thoroughbred Horse Race Analyzer):
-     lcd                          Hughes HLCD 0569 LCD Driver @ 1.10 kHz
 Driver horshoes (American Horseshoes (US)):
 Driver hostinv (Host Invaders):
 Driver hot304 (HOT-304):
@@ -10178,7 +10157,6 @@ Driver isbc8010b (iSBC 80/10B):
 Driver isbc8030 (iSBC 80/30):
 Driver isbc86 (iSBC 86/12A):
 Driver isbc8605 (iSBC 86/05):
-     isbc_208                     ISBC 208 Flexible Disk Driver Controller
 Driver isbc8630 (iSBC 86/30):
 Driver isgsm (ISG Selection Master Type 2006 BIOS):
 Driver iskr1030m (Iskra 1030M):
@@ -11982,7 +11960,6 @@ Driver k1r (K1r Digital Multi-Dimensional Synthesizer Module):
 Driver k1rii (K1rII Digital Multi-Dimensional Synthesizer Module):
 Driver k2000 (K2000):
 Driver k28 (K28: Talking Learning Computer (model 7-230)):
-     vfd                          MM5445 VFD Driver
 Driver k286i (286i):
 Driver k28m2 (K28: Talking Learning Computer (model 7-232)):
 Driver k4 (K4 16-bit Digital Synthesizer):
@@ -20938,8 +20915,6 @@ Driver mchampdxa (Multi Champ Deluxe (ver. 1126, 26/11/1999)):
 Driver mchampdxb (Multi Champ Deluxe (ver. 1114, 14/11/1999)):
 Driver mcheonru (Ma Cheon Ru):
 Driver mchess (Computer Chess (Mattel)):
-     lcd0                         Hughes HLCD 0569 LCD Driver @ 500 Hz
-     lcd1                         Hughes HLCD 0569 LCD Driver @ 500 Hz
 Driver mchilli (More Chilli (20248711, NSW/ACT)):
 Driver mchilliq (More Chilli (20289311, Queensland)):
 Driver mcircus (Merry Circus (Version 1.0.2)):
@@ -20953,7 +20928,6 @@ Driver mcombat (Missile Combat (Videotron bootleg, set 1)):
 Driver mcombata (Missile Combat (Videotron bootleg, set 2)):
 Driver mcombats (Missile Combat (Sidam bootleg)):
 Driver mcompgin (Computer Gin):
-     lcd                          Hughes HLCD 0530 LCD Driver @ 500 Hz
 Driver mcontest (Miss Mahjong Contest (Japan)):
 Driver mcx128 (MCX-128):
 Driver md2 (Micro Decision MD-2):
@@ -20980,11 +20954,7 @@ Driver mechattu1 (Mechanized Attack (US, Version 1, Single Player)):
 Driver medlanes (Meadows Lanes):
 Driver medusa (Medusa):
 Driver mega4 (Mephisto Mega IV (set 1)):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver mega4a (Mephisto Mega IV (set 2)):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver megaaton (Meg-Aaton):
 Driver megaatona (Meg-Aaton (alternate set)):
 Driver megablst (Mega Blast (World)):
@@ -21252,7 +21222,6 @@ Driver micron (Micron):
 Driver micronic (Micronic 1000):
 Driver microtrol (unknown Microtrol portable computer):
 Driver microvsn (Microvision):
-     lcd                          Hughes HLCD 0488 LCD Driver
 Driver midearth (Middle Earth):
 Driver mideartha (Middle Earth (alternate)):
 Driver midnrun (Midnight Run: Road Fighter 2 (EAA, Euro v1.11)):
@@ -21567,8 +21536,6 @@ Driver mmmbanc (Medal Mahjong Moukari Bancho (2007/06/05 MASTER VER.)):
 Driver mmonkey (Minky Monkey):
 Driver mmonkeyj (Minky Monkey (Japan)):
 Driver mmonty (Master Monty):
-     lcd0                         Epson SED1503 LCD Driver @ 32.76 kHz
-     lcd1                         Epson SED1503 LCD Driver @ 32.76 kHz
 Driver mmpanic (Monkey Mole Panic (USA)):
 Driver mmpork (Muchi Muchi Pork! (2007/ 4/17 MASTER VER.)):
 Driver mmr4000be (Magnum R4000 (be)):
@@ -21625,7 +21592,6 @@ Driver monacogpa (Monaco GP (set 2) [TTL]):
 Driver mondial (Mephisto Mondial):
 Driver mondial2 (Mephisto Mondial II):
 Driver mondl68k (Mephisto Mondial 68000XL):
-     lcd                          Philips PCF2112 LCD Driver @ 50 Hz
 Driver moneybnk (Money In The Bank (NSW, Australia)):
 Driver moneymac (Money Machine (Version 1.7E Dual)):
 Driver moneymacd1 (Money Machine (Version 1.7R)):
@@ -21671,21 +21637,12 @@ Driver monsterb2 (Monster Bash (2 board version)):
 Driver monsterz (Monster Zero):
 Driver montana (Montana Bingo Stake 6/10 (Bingo)):
 Driver montec (Mephisto Monte Carlo (ver. MC3)):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver montec4le (Mephisto Monte Carlo IV - Limited Edition):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver monteca (Mephisto Monte Carlo (ver. MC2)):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver montecar (Monte Carlo):
 Driver montree (Money Tree (0201397V, New Zealand)):
 Driver montreux (Mephisto Montreux):
-     lcdc                         Epson SED1520 LCD Driver
 Driver monty (Monty Plays Scrabble):
-     lcd0                         Epson SED1503 LCD Driver @ 32.76 kHz
-     lcd1                         Epson SED1503 LCD Driver @ 32.76 kHz
 Driver monymony (Money Money (set 1)):
 Driver monymony2 (Money Money (set 2)):
 Driver monzagp (Monza GP):
@@ -22574,7 +22531,6 @@ Driver ninjemak (Ninja Emaki (US)):
 Driver nitd (Nightmare in the Dark):
 Driver nitdbl (Nightmare in the Dark (bootleg)):
 Driver nitedrvr (Night Driver):
-   <root>                         Night Driver
 Driver nitrobal (Nitro Ball (World, set 1)):
 Driver nitrobala (Nitro Ball (World, set 2)):
 Driver nixpc01 (8810/25 CPC - PC01):
@@ -23414,16 +23370,12 @@ Driver pcd4nl (PCD-4NL):
 Driver pcd4x (PCD-4H, PCD-4M):
 Driver pce (PC Engine):
 Driver pce220 (PC-E220):
-     hd61202                      Hitachi HD61202 LCD Driver
 Driver pcega (PC (EGA)):
 Driver pcfavor (Player's Choice - Favourites (20177311, NSW/ACT)):
 Driver pcfx (PC-FX):
 Driver pcfxga (PC-FX/GA (PC ISA Card)):
 Driver pcg815 (PC-G815):
-     hd61202                      Hitachi HD61202 LCD Driver
-     hd61202_2                    Hitachi HD61202 LCD Driver
 Driver pcg850v (PC-G850V):
-     sed1560                      Epson SED1560 LCD Driver
 Driver pcgold (Player's Choice - Gold Edition (30291411, New Zealand)):
 Driver pcherc (PC (Hercules)):
 Driver pci48af (PCI48AF):
@@ -25258,7 +25210,6 @@ Driver qixo (Qix (set 3, earlier)):
 Driver qjinsei (Quiz Jinsei Gekijoh (Japan)):
 Driver qkracer (QuizKid Racer (COP420 version)):
 Driver qkracerm (QuizKid Racer (MM5799 version)):
-     ds8874                       DS8874 LED Driver
 Driver qkspeller (QuizKid Speller):
 Driver ql (QL (UK)):
 Driver ql_de (QL (Germany)):
@@ -25846,9 +25797,7 @@ Driver relief3 (Relief Pitcher (Rev B, 10 Apr 1992 / 08 Apr 1992)):
 Driver renaiclb (Mahjong Ren-ai Club (Japan)):
 Driver renaimj (Renai Mahjong Idol Gakuen (Japan)):
 Driver renaissa (Kasparov Renaissance (set 1)):
-     lcd                          Epson SED1502 LCD Driver @ 32.76 kHz
 Driver renaissaa (Kasparov Renaissance (set 2)):
-     lcd                          Epson SED1502 LCD Driver @ 32.76 kHz
 Driver renegade (Renegade (US)):
 Driver renegadeb (Renegade (US bootleg)):
 Driver renju (Renju Kizoku):
@@ -25989,9 +25938,7 @@ Driver ripoff (Rip Off):
 Driver ripribit (Ripper Ribbit (Version 3.5)):
 Driver ripribita (Ripper Ribbit (Version 2.8.4)):
 Driver risc2500 (Kasparov RISC 2500 (v1.04)):
-     lcdc                         Epson SED1520 LCD Driver
 Driver risc2500a (Kasparov RISC 2500 (v1.03)):
-     lcdc                         Epson SED1520 LCD Driver
 Driver riskchal (Risky Challenge):
 Driver rittam (R&T (Rod-Land prototype)):
 Driver riviera (Riviera Hi-Score (2131-08, U5-4A)):
@@ -26488,11 +26435,7 @@ Driver saurorr (Sauro (Recreativos Real S.A. license)):
 Driver savagere (Savage Reign / Fu'un Mokushiroku - Kakutou Sousei):
 Driver savanna (Savanna (Jungler bootleg)):
 Driver savant (Savant):
-     lcd1                         Hughes HLCD 0538 LCD Driver
-     lcd2                         Hughes HLCD 0539 LCD Driver
 Driver savant2 (Savant II):
-     lcd1                         Hughes HLCD 0538 LCD Driver
-     lcd2                         Hughes HLCD 0539 LCD Driver
 Driver savgbees (Savage Bees):
 Driver savia84 (Savia 84):
 Driver savquest (Savage Quest):
@@ -32081,7 +32024,6 @@ Driver sciu (Special Criminal Investigation (US)):
 Driver scm_500 (Standard Change-Makers System 500 / 500E):
 Driver scmaster (Super Cherry Master (v1.0)):
 Driver scmder (Sphinx Commander (v2.00)):
-     lcd                          Sanyo LC7582 LCD Driver
 Driver scobra (Super Cobra):
 Driver scobrab (Super Cobra (bootleg, set 1)):
 Driver scobrae (Super Cobra (Stern Electronics) (encrypted, KONATEC XC-103SS CPU)):
@@ -32181,7 +32123,6 @@ Driver sdmg2 (Mahjong Super Da Man Guan II (China, V754C)):
 Driver sdodgeb (Super Dodge Ball / Kunio no Nekketsu Toukyuu Densetsu):
 Driver sdtennis (Super Doubles Tennis):
 Driver sdtor (Sphinx Dominator (v2.05)):
-     lcd                          Sanyo LC7582 LCD Driver
 Driver sdungeon (Space Dungeon):
 Driver sdungeona (Space Dungeon (larger roms)):
 Driver sdwx (Sheng Dan Wu Xian):
@@ -32811,9 +32752,7 @@ Driver simpsons2pj (The Simpsons (2 Players Japan)):
 Driver simpsons4pa (The Simpsons (4 Players Asia)):
 Driver simpsons4pe (The Simpsons (4 Players World, set 2)):
 Driver simultano (Kasparov Simultano (ver. C)):
-     lcd                          Epson SED1502 LCD Driver @ 32.76 kHz
 Driver simultanoa (Kasparov Simultano (ver. B)):
-     lcd                          Epson SED1502 LCD Driver @ 32.76 kHz
 Driver sinbad (Sinbad):
 Driver sinbadn (Sinbad (Norway)):
 Driver sindbadm (Sindbad Mystery):
@@ -33067,17 +33006,9 @@ Driver smleague (Super Major League (U 960108 V1.000)):
 Driver smlg99 (World Series 99 / Super Major League 99):
 Driver smman (Six Million Dollar Man):
 Driver smondial (Mephisto Super Mondial (ver. A)):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver smondial2 (Mephisto Super Mondial II):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver smondialab (Mephisto Super Mondial (ver. AB)):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver smondialb (Mephisto Super Mondial (ver. B)):
-     lcd0                         Philips PCF2112 LCD Driver @ 50 Hz
-     lcd1                         Philips PCF2112 LCD Driver @ 50 Hz
 Driver smooncrs (Super Moon Cresta (Gremlin, bootleg)):
 Driver smoto16 (Super Moto (Italy, v1.6)):
 Driver smoto20 (Super Rider (Italy, v2.0)):
@@ -33944,7 +33875,6 @@ Driver speedbal (Speed Ball (set 1)):
 Driver speedbala (Speed Ball (set 2)):
 Driver speeddrp (Speed Drop (Ver. 1.06)):
 Driver speeddrv (Speed Driver):
-   <root>                         Speed Driver
 Driver speedfrk (Speed Freak):
 Driver speedrcr (Speed Racer):
 Driver speedrs (Speed Race (Seletron / Olympia)):
@@ -33974,7 +33904,6 @@ Driver spgcarn (Spring Carnival (10000311, NSW/ACT)):
 Driver spgcarnq (Spring Carnival (10008011, Queensland)):
 Driver spgfest (Spring Festival (20262311, Queensland)):
 Driver sphinx40 (Sphinx 40):
-     lcd                          Hitachi HD61603 LCD Driver
 Driver spi7000 (ExpertPad PI-7000):
 Driver spicaadv (Spica Adventure (v2.03J)):
 Driver spiceup (Spice It Up (Konami Endeavour, Russia)):
@@ -34289,11 +34218,7 @@ Driver ssvc_a26 (Secret Service (2.6)):
 Driver ssvc_a42 (Secret Service (4.2 alternate sound)):
 Driver ssvc_b26 (Secret Service (2.6 alternate sound)):
 Driver ssystem3 (Chess Champion: Super System III):
-     lcd1                         Mitel MD4332B LCD Driver
-     lcd2_0                       Hughes HLCD 0438 LCD Driver
-     lcd2_1                       Hughes HLCD 0438 LCD Driver
 Driver ssystem4 (Chess Champion: Super System IV):
-     lcd1                         Mitel MD4332B LCD Driver
 Driver st (ST (USA)):
 Driver st1700h (ST-1700 (headphone version)):
 Driver st1701 (ST-1701):
@@ -35033,7 +34958,6 @@ Driver taxi_lg1 (Taxi (Marilyn) (L-1) Germany):
 Driver taxi_lu1 (Taxi (Marilyn) (LU-1)):
 Driver taxi_p5 (Taxi (P-5)):
 Driver taxidriv (Taxi Driver):
-   <root>                         Taxi Driver
 Driver tazmani2 (Tazz-Mania (set 2, alt hardware)):
 Driver tazmani3 (Tazz-Mania (Arfyc / Rodmar bootleg)):
 Driver tazmania (Tazz-Mania (set 1)):
@@ -37016,9 +36940,7 @@ Driver victhc90 (HC-90 (MSX2)):
 Driver victhc95 (HC-95 (MSX2)):
 Driver victhc95a (HC-95A (MSX2)):
 Driver victlapj (Ace Driver: Victory Lap (Rev. ADV1, Japan)):
-   <root>                         Ace Driver: Victory Lap (Rev. ADV1, Japan)
 Driver victlapw (Ace Driver: Victory Lap (Rev. ADV2, World)):
-   <root>                         Ace Driver: Victory Lap (Rev. ADV2, World)
 Driver victnine (Victorious Nine):
 Driver victor (Victor):
 Driver victor21 (Victor 21):
@@ -37189,7 +37111,6 @@ Driver vreader (V.Reader (US, English, 2011-10-17)):
 Driver vreadercaen (V.Reader (CA, English, 2011-10-17)):
 Driver vreadercafr (V.Reader (CA, French, 2011-10-17)):
 Driver vreadere (Reader Laptop E (Germany)):
-     epl                          Elan EPL43102 LCD Driver
 Driver vrkon_l1 (Varkon (L-1)):
 Driver vrnwrld (Verne's World):
 Driver vroulet (Vegas Roulette):
