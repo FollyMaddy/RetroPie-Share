@@ -72,7 +72,7 @@ function configure_supermodel-svn() {
 
     #check if file exists and check if file is a not symlink
     #if so, then : 
-    #- move the Supermodel.ini to the config directory
+    #- move the Supermodel.ini to the desired directory
     #- fix the permissions of that file to the normal user
     #- make a symlink to that file
     if [[ -f "$md_inst/Config/Supermodel.ini" ]] && [[ ! -L "$md_inst/Config/Supermodel.ini" ]]; then
