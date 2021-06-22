@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+
+# This file is part of The RetroPie Project
+#
+# The RetroPie Project is the legal property of its developers, whose names are
+# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
+#
+# See the LICENSE.md file at the top-level directory of this distribution and
+# at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
+#
+
+rp_module_id="supermodel-svn"
+rp_module_desc="Sega supermodel 3 (from svn)"
+rp_module_help="\
+WARNING: Still under construction\n\n\
+Note:\n\
+Created in such a way so it should not conflict with other supermodel installs\n\
+(this emulator gets unique "directories")\n\n\
+ROM Extensions: .zip\n\n\
+Copy your games to $romdir/supermodel\n\n\
+Supermodel emulator directories and files are added in:\n\
+~/RetroPie/roms/supermodel/model3emu/svn\n\
+(NVRAM, Saves, Supermodel.ini and Supermodel.log)\n\n\
+\n\n\
+"
+rp_module_section="exp"
+rp_module_flags=""
+
+function depends_supermodel-svn() {
+    getDepends xorg subversion libsdl2-dev libsdl2-net-dev
+}
+
+function sources_supermodel-svn() {
+    svn checkout https://svn.code.sf.net/p/model3emu/code/trunk $md_build
+}
+
+function build_supermodel-svn() {
+    cd $md_build
+    sed -i 's/texture2DLod/texture2D/g'  Src/Graphics/New3D/R3DShaderTriangles.h
+    sed -i 's/ARCH =/ARCH = \-march=native/g'  /home/pi/model3emu-code/Makefiles/Rules.inc
+    cp Makefiles/Makefile.UNIX Makefile
+    make
+}
+
+function install_supermodel-svn() {
+    md_ret_files=(        
+        'bin'
+        'Config'
+    )
+    #note: command "mv" and "cp" won't work here, you get a "cannot stat error" in this function
+}
+
+function configure_supermodel-svn() {
+    mkRomDir "supermodel"
+    mkRomDir "supermodel/model3emu"
+    mkRomDir "supermodel/model3emu/svn"
+    mkRomDir "supermodel/model3emu/svn/NVRAM"
+    mkRomDir "supermodel/model3emu/svn/Saves"    
+
+    #addEmulator 0 "Supermodel-svn-normal" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel;/opt/retropie/emulators/supermodel-svn/bin/supermodel -fullscreen -res=800,600 -wide-screen -stretch -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -res=800,600 %ROM%"
+    addEmulator 0 "Supermodel-svn-normal" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -wide-screen -stretch -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -res=800,600 %ROM%"
+    #addEmulator 0 "Supermodel-svn-normal" "supermodel" "XINIT:/opt/retropie/emulators/supermodel-svn/bin/supermodel -fullscreen -res=800,600 -wide-screen -stretch -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -res=800,600 %ROM%"
+    addSystem "supermodel" "Sega supermodel 3" ".zip"
+
+    #to prevent nested links within the directories, previously created links are removed before creating new ones !
+    rm "$md_inst/NVRAM" 2>&-
+    rm "$md_inst/Saves" 2>&-
+
+    ln -sv "$romdir/supermodel/model3emu/svn/NVRAM" "$md_inst/NVRAM"
+    ln -sv "$romdir/supermodel/model3emu/svn/Saves" "$md_inst/Saves"
+    ln -sv "$romdir/supermodel/model3emu/svn/Supermodel.log" "$md_inst/Supermodel.log" 2>&-
+
+    #check if file exists and check if file is a not symlink
+    #if so, then : 
+    #- move the Supermodel.ini to the config directory
+    #- fix the permissions of that file to the normal user
+    #- make a symlink to that file
+    if [[ -f "$md_inst/Config/Supermodel.ini" ]] && [[ ! -L "$md_inst/Config/Supermodel.ini" ]]; then
+    mv "$md_inst/Config/Supermodel.ini" "$romdir/supermodel/model3emu/svn/Supermodel.ini"
+    chown $user:$user "$romdir/supermodel/model3emu/svn/Supermodel.ini"
+    ln -sv "$romdir/supermodel/model3emu/svn/Supermodel.ini" "$md_inst/Config/Supermodel.ini"
+    fi
+}
