@@ -21,6 +21,14 @@ Copy your games to $romdir/supermodel\n\n\
 Supermodel emulator directories and files are added in:\n\
 ~/RetroPie/roms/supermodel/model3emu/svn\n\
 (NVRAM, Saves, Supermodel.ini and Supermodel.log)\n\n\
+Add these lines to your Supermodel.ini,\n\
+and alter them to your needs:\n\
+XResolution=800 ; Default value 496\n\
+YResolution=600 ; Default value 384\n\
+FullScreen=0\n\
+WideScreen=0\n\
+Stretch=1\n\
+WideBackground=0\n\
 \n\n\
 "
 rp_module_section="exp"
@@ -57,10 +65,10 @@ function configure_supermodel-svn() {
     mkRomDir "supermodel/model3emu/svn/NVRAM"
     mkRomDir "supermodel/model3emu/svn/Saves"    
 
-    addEmulator 0 "Supermodel-svn-normal" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -wide-screen -stretch -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=%ROM%.st0 %ROM%"
-    addEmulator 0 "Supermodel-svn-40-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -wide-screen -stretch -ppc-frequency=40 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=%ROM%.st0 %ROM%"
-    addEmulator 0 "Supermodel-svn-45-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -wide-screen -stretch -ppc-frequency=45 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=%ROM%.st0 %ROM%"
-    addEmulator 0 "Supermodel-svn-48-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -wide-screen -stretch -ppc-frequency=48 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=%ROM%.st0 %ROM%"
+    addEmulator 0 "Supermodel-svn-normal" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=%ROM%.st0 %ROM%"
+    addEmulator 0 "Supermodel-svn-40-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -ppc-frequency=40 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=%ROM%.st0 %ROM%"
+    addEmulator 0 "Supermodel-svn-45-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -ppc-frequency=45 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=%ROM%.st0 %ROM%"
+    addEmulator 0 "Supermodel-svn-48-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-svn;/opt/retropie/emulators/supermodel-svn/bin/supermodel -ppc-frequency=48 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=%ROM%.st0 %ROM%"
 
 
     addSystem "supermodel" "Sega supermodel 3" ".zip"
