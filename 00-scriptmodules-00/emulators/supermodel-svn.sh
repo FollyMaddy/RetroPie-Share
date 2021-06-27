@@ -10,7 +10,7 @@
 #
 
 rp_module_id="supermodel-svn"
-rp_module_desc="Sega supermodel 3 (from svn)"
+rp_module_desc="Sega supermodel 3 version from sourceforge"
 rp_module_help="\
 WARNING: Still under construction\n\n\
 Notes:\n\
