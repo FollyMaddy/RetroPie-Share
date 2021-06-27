@@ -87,8 +87,8 @@ function configure_supermodel-mechafatnick() {
     #then we can assume the installed directories are in place and we can move them and create symlinks
     #else we do nothing otherwise we are going to push links into links!
     if [[ ! -L "$md_inst/NVRAM" ]];then
-    mv "$md_inst/NVRAM" "$romdir/supermodel/model3emu/mechafatnick/NVRAM" 2>&-
-    mv "$md_inst/Saves" "$romdir/supermodel/model3emu/mechafatnick/Saves" 2>&-
+    mv "$md_inst/NVRAM" "$romdir/supermodel/model3emu/mechafatnick" 2>&-
+    mv "$md_inst/Saves" "$romdir/supermodel/model3emu/mechafatnick" 2>&-
     #we don't want to overwrite an existing Supermodel.ini
     [[ ! -f "$romdir/supermodel/model3emu/mechafatnick/Supermodel.ini" ]] && mv "$md_inst/Config/Supermodel.ini" "$romdir/supermodel/model3emu/mechafatnick/Supermodel.ini"
     #If it can't be copied then remove te file, otherwise we can't make a symlink
