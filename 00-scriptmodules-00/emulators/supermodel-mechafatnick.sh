@@ -71,9 +71,7 @@ function configure_supermodel-mechafatnick() {
     mkRomDir "supermodel"
     mkRomDir "supermodel/model3emu"
     mkRomDir "supermodel/model3emu/mechafatnick"
-    mkRomDir "supermodel/model3emu/mechafatnick/NVRAM"
-    mkRomDir "supermodel/model3emu/mechafatnick/Saves"    
-
+  
     addEmulator 0 "Supermodel-mechafatnick-normal" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -wide-screen -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=$romdir/supermodel/model3emu/mechafatnick/Saves/%BASENAME%.st %ROM%"
     addEmulator 0 "Supermodel-mechafatnick-40-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -wide-screen -ppc-frequency=40 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -load-state=$romdir/supermodel/model3emu/mechafatnick/Saves/%BASENAME%.st %ROM%"
     addEmulator 0 "Supermodel-mechafatnick-45-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -wide-screen -ppc-frequency=45 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -load-state=$romdir/supermodel/model3emu/mechafatnick/Saves/%BASENAME%.st %ROM%"
@@ -92,7 +90,7 @@ function configure_supermodel-mechafatnick() {
     #we don't want to overwrite an existing Supermodel.ini
     [[ ! -f "$romdir/supermodel/model3emu/mechafatnick/Supermodel.ini" ]] && mv "$md_inst/Config/Supermodel.ini" "$romdir/supermodel/model3emu/mechafatnick/Supermodel.ini"
     #If it can't be copied then remove te file, otherwise we can't make a symlink
-    [[ -f "$romdir/supermodel/model3emu/mechafatnick/Supermodel.ini" ]] &&rm "$md_inst/Config/Supermodel.ini"
+    [[ -f "$romdir/supermodel/model3emu/mechafatnick/Supermodel.ini" ]] && rm "$md_inst/Config/Supermodel.ini"
     #fix permissions
     chown $user:$user -R "$romdir/supermodel/model3emu/mechafatnick"
     #make symlinks
