@@ -74,14 +74,7 @@ function configure_supermodel-mechafatnick() {
     mkRomDir "supermodel/model3emu/mechafatnick/NVRAM"
     mkRomDir "supermodel/model3emu/mechafatnick/Saves"
   
-    #addEmulator 0 "Supermodel-mechafatnick-normal" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -wide-screen -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -no-dsb -load-state=$romdir/supermodel/model3emu/mechafatnick/Saves/%BASENAME%.st %ROM%"
-    #addEmulator 0 "Supermodel-mechafatnick-40-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -wide-screen -ppc-frequency=40 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -load-state=$romdir/supermodel/model3emu/mechafatnick/Saves/%BASENAME%.st %ROM%"
-    #addEmulator 0 "Supermodel-mechafatnick-45-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -wide-screen -ppc-frequency=45 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -load-state=$romdir/supermodel/model3emu/mechafatnick/Saves/%BASENAME%.st %ROM%"
-    #addEmulator 0 "Supermodel-mechafatnick-48-hz-PPC-Underclock" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -wide-screen -ppc-frequency=48 -legacy3d -sound-volume=50 -music-volume=60 -no-vsync -no-throttle -load-state=$romdir/supermodel/model3emu/mechafatnick/Saves/%BASENAME%.st %ROM%"
-
-    addEmulator 0 "Supermodel-mechafatnick-496x384" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=496,384 %ROM%"
-    addEmulator 0 "Supermodel-mechafatnick-800x600" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=800,600 %ROM%"
-    addEmulator 0 "Supermodel-mechafatnick-1024x768" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=1024,768 %ROM%"
+    addEmulator 0 "Supermodel-mechafatnick" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=%XRES%,%YRES% %ROM%"
 
     addSystem "supermodel" "Sega supermodel 3" ".zip"
 
