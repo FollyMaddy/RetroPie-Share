@@ -34,7 +34,7 @@ Now you can install :
 **https://docs.google.com/spreadsheets/d/1AQ28J9OUKg55R3d-TZkWO3GH50KjC2hHteCP1Bx59Ns/edit?usp=sharing**
 
 
-![2021-06-09-080708_1600x900_scrot.png](/forum/assets/uploads/files/1623219164203-2021-06-09-080708_1600x900_scrot.png)  
+![2021-06-09-080708_1600x900_scrot.png](https://retropie.org.uk/forum/assets/uploads/files/1623219164203-2021-06-09-080708_1600x900_scrot.png)  
 
 
 **For those who want to use cli/terminal commands or want to know/learn more stuff then you are welcome to read more about this project.**
