@@ -14,7 +14,7 @@ This repository is created for sharing :
    
    https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone
 
-   Or read the backup of the first post of the above tread :
+   Or read the backup of the first post of the above thread :
 
    https://github.com/FollyMaddy/RetroPie-Share/blob/main/thread-post-on-9-june-2021.md 
  
