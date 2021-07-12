@@ -66,29 +66,29 @@ function configure_elkulator() {
 #so if there is a elk.cfg.bak then we will use this one to make use of `sudo retropie_packages.sh electron configure` possible
 #the if function wil remove the link of elk.cfg if the elk.cfg.bak exists and recreate it from the backup file so we can redo the configuration withoun missing a file
 #(perhaps this part can be removed or done in a better way, but I like to keep it in for now)
-if [[ -n $(ls "$md_inst/elk.cfg.bak" 2>&-) ]];then
-rm "$md_inst/elk.cfg" 2>&-
-cp "$md_inst/elk.cfg.bak" "$md_inst/elk.cfg" 2>&-
+if [[ -n $(ls $md_inst/elk.cfg.bak 2>&-) ]];then
+rm $md_inst/elk.cfg 2>&-
+cp $md_inst/elk.cfg.bak $md_inst/elk.cfg 2>&-
 fi
 
 #we want push a fresh elk.cfg to the electron config directory
 #then it's in the correct place and then we can also change the cfg on the fly when starting a rom
 #then have to create a link to that file
 #before we make a link we preserve the elk.cfg as a elk.cfg.bak for later use if needed
-cp "$md_inst/elk.cfg" "$configdir/electron/elk.cfg" 2>&-
-sed -i 's/win_resize = 0/win_resize = 1/g' "$configdir/electron/elk.cfg"
-sed -i 's/plus3 = 0/plus3 = 1/g' "$configdir/electron/elk.cfg"
-chown $user:$user "$configdir/electron/elk.cfg"
-mv "$md_inst/elk.cfg" "$md_inst/elk.cfg.bak" 2>&-
-ln -s "$configdir/electron/elk.cfg" "$md_inst/elk.cfg"
+cp $md_inst/elk.cfg $configdir/electron/elk.cfg 2>&-
+sed -i 's/win_resize = 0/win_resize = 1/g' $configdir/electron/elk.cfg
+sed -i 's/plus3 = 0/plus3 = 1/g' $configdir/electron/elk.cfg
+chown $user:$user $configdir/electron/elk.cfg
+mv $md_inst/elk.cfg $md_inst/elk.cfg.bak 2>&-
+ln -s $configdir/electron/elk.cfg $md_inst/elk.cfg
 
-    cat >"$md_inst/elkulator-multiload.sh" << _EOF_
+    cat >$md_inst/elkulator-multiload.sh << _EOF_
 #!/bin/bash
 #see for keylist codes => https://gitlab.com/cunidev/gestures/-/wikis/xdotool-list-of-key-codes
 #see here for tips and tricks ==> https://github.com/damieng/BBCMicroTools/blob/master/tips-and-tricks.md
 #if using a us keyboard you have to use "quotedbl" to get "*" and "at" to get '"', don't know, perhaps there is a better way
 function load_rom() {
-sed -i 's/adfsena = 1/adfsena = 0/g' "$configdir/electron/elk.cfg"
+sed -i 's/adfsena = 1/adfsena = 0/g' $configdir/electron/elk.cfg
 xset -dpms s off s noblank
 #add rom2 if exists, a pair of roms have both basename_1.rom and basename_2.rom,
 #check if "_1.rom" exists, do a reverse cut to get the basename, parse the $1 on how the 2nd file has to look like, search for that and add if exists
@@ -96,7 +96,7 @@ matchbox-window-manager -use_titlebar no -use_cursor no &
 /opt/retropie/emulators/elkulator/elkulator -rom1 "\$1" \$(if [[ \$1 == *_1.rom ]];then basename=\$(echo \$rom1|rev|cut -d "/" -f 1|rev|cut -d "_" -f 1); [[ -n \$(ls \$(echo \$1|sed s/\$basename\_1\.rom/\$basename\_2\.rom/g)) ]] && echo -rom2 "\$(echo \$1|sed s/\$basename\_1\.rom/\$basename\_2\.rom/g)";fi)
 }
 function load_tape() {
-sed -i 's/adfsena = 1/adfsena = 0/g' "$configdir/electron/elk.cfg"
+sed -i 's/adfsena = 1/adfsena = 0/g' $configdir/electron/elk.cfg
 cassload=();cassload=( "quotedbl" "t" "a" "p" "e" "Return" "c" "h" "a" "i" "n" "at" "at" "Return" )
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no &
@@ -104,14 +104,14 @@ matchbox-window-manager -use_titlebar no -use_cursor no &
 for index in \${!cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${cassload[\$index]} sleep 0.1 keyup \${cassload[\$index]};done
 }
 function load_disc_dfs() {
-sed -i 's/adfsena = 1/adfsena = 0/g' "$configdir/electron/elk.cfg"
+sed -i 's/adfsena = 1/adfsena = 0/g' $configdir/electron/elk.cfg
 #dfs autoload with Shift_L+F12
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no &
 /opt/retropie/emulators/elkulator/elkulator -disc "\$1" | xdotool sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
 }
 function load_disc_adfs() {
-sed -i 's/adfsena = 0/adfsena = 1/g' "$configdir/electron/elk.cfg"
+sed -i 's/adfsena = 0/adfsena = 1/g' $configdir/electron/elk.cfg
 #adfs autoload with Shift_L+F12
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no &
@@ -124,7 +124,7 @@ matchbox-window-manager -use_titlebar no -use_cursor no &
 [[ "\$1" == *.dsd ]] && load_disc_dfs "\$1"
 [[ "\$1" == *.adf ]] && load_disc_adfs "\$1"
 _EOF_
-    chmod +x "$md_inst/elkulator-multiload.sh"
+    chmod +x $md_inst/elkulator-multiload.sh
 
     mkRomDir "electron"
     addEmulator 0 "elkulator-multiload" "electron" "XINIT:$md_inst/elkulator-multiload.sh %ROM%"
