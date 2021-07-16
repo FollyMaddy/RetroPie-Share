@@ -22,7 +22,8 @@ https://github.com/FollyMaddy/RetroPie-Share/archive/refs/heads/main.zip
 Now you can install :
 - lr-mess/mame **<-- make sure you do this first, otherwise you can't add systems !**
 - lr-mess/mame systems
-- the handhelds by @DTEAM 
+- the handhelds by @DTEAM  
+[link to the handheld and plug & play systems of @DTEAM](https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame/2)
 - download retropie-gamelists 
 - download mame-artwork 
 - create overlays from mame-artwork for running handhelds with lr-mess
@@ -63,6 +64,7 @@ The project contains work of :
 - @valerino (https://github.com/valerino)
 - @RussellB 
 - @dmmarti 
+- @JimmyFromTheBay 
 - Matt Huisman (https://github.com/matthuisman)
 
 
@@ -122,6 +124,7 @@ That way it's always on.
 
 **👉 wip :** Idea by  @dmmarti 
 Create a reference sheet with useful information on tested systems [471](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/471)
+
 
 # The idea of making a frond-end script :
 
@@ -206,13 +209,32 @@ Here you can read what the run_mess.sh script does [173](https://retropie.org.uk
 
 # The ideas in  generate-systems-lr-mess_mame.sh version 2v2 or above :
 
-**👍 closed :**  By @folly / fixed by @folly in 2v2 / tested  by @folly :
+**👍 closed :**  By @folly / added by @folly in 2v2 / tested  by @folly :
+Add translation "ai" lines to retroarch.cfg when installing a module-script :
+- Using hotkey "t" will translate the picture and pause the screen and translate
+- Press "t" again to resume the game.
+- You might want to make a save-state before translating, if you experience a crash while translating.
+
+**👍 closed :**  By @folly / added by @folly in 2v2 / tested  by @folly :
+Add cheats to the correct mame.ini when installing a module-script :
+- version 2v1 added this in the wrong mame.ini 
+- version 2v2 should be ok now
+
+**👍 closed :** Idea by  @JimmyFromTheBay / added by @folly in 2v2 / tested  by @folly :
+Create game specific lr-mess and mame config files so we have input configs per game [thread](https://retropie.org.uk/forum/topic/30949/are-per-game-control-mappings-possible-in-mess)
+This is done by adding game-specific-config runcommand lines in the emulators.cfg when installing a module-script :
+- if you load a game with the line containing "game-specific" then game-unique sub-directories are made with mame/lr-mess config files
+- now it's possible to change the input per game in the mame-UI or lr-mess-UI
+- to prevent conflicts between mame and lr-mess don't use the same config files, they get their own sub-directory
+- config files for mame are save in /opt/retropie/configs/<RETROPIE-SYSTEM>/mame/<GAME>/<MAME-SYSTEM>.cfg
+- config files for lr-mess are save in /opt/retropie/configs/<RETROPIE-SYSTEM>/lr-mess/<GAME>/<MAME-SYSTEM>.cfg
+
+**👍 closed :**  By @folly / added by @folly in 2v2 / tested  by @folly :
 Because more starter lines are being added in the emulators.cfg's it can get bit of a mess.
 Therefor it would be nice if the starter lines in the emulators.cfg's could be sorted.
 Sorting the content of an emulators.cfg should be done after new lines have been added. 
 The generator script will add the sorting part in the generated module-scripts.
-When these module-scripts are installed, sorting of the specific emulators.cfg will then take place.
-Added in the generate-systems-lr-mess_mame.sh version 2v2 [332](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/332)
+When these module-scripts are installed, sorting of the specific emulators.cfg will then take place. [332](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/332)
 
 **👉 open :**  By  @folly :
 Improving the naming of the runcommand-lines to a more understandable standard.
