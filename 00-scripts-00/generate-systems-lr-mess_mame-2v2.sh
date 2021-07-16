@@ -2,7 +2,7 @@
 
 #
 # Author : @folly
-# Date   : 07/05/2021
+# Date   : 15/07/2021
 #
 # Copyright 2021 @folly
 #
@@ -426,6 +426,7 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	local _add_config="\$_config.add"
 	local _custom_coreconfig="\$configdir/\$_system/custom-core-options.cfg"
 	local _script="\$scriptdir/scriptmodules/run_mess.sh"
+	local _emulatorscfg="\$configdir/\$_system/emulators.cfg"
 
 	# create retroarch configuration
 	ensureSystemretroconfig "\$_system"
@@ -452,16 +453,45 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	# ensure run_mess.sh script is executable
 	chmod 755 "\$_script"
 
+	echo "enable translation ai_service for RetroArch in \$configdir/all/retroarch.cfg"
+	iniConfig " = " "\"" "\$configdir/all/retroarch.cfg"
+	iniSet "ai_service_enable" "true"
+	iniSet "ai_service_mode" "0"
+	iniSet "ai_service_pause" "true"
+	iniSet "ai_service_source_lang" "0"
+	iniSet "ai_service_target_lang" "1"
+	iniSet "ai_service_url" "http://ztranslate.net/service?api_key=HEREISMYKEY"
+	iniSet "input_ai_service" "t"
+	iniSet "#input_ai_service_btn" "11"
+	chown \$user:\$user "\$configdir/all/retroarch.cfg"
+
 	# add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
 	# all option should work with both mame and lr-mess, although -autoframeskip is better with mame
 	addEmulator 0 "lr-mess-system-${systems[$index]}${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -autoframeskip -ui_active ${media[$index]} %ROM%"
 	addEmulator 0 "mame-system-${systems[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -ui_active ${systems[$index]} ${media[$index]} %ROM%"
         addEmulator 0 "mame-system-${systems[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip -ui_active ${systems[$index]} ${media[$index]} %ROM%"
+	addEmulator 0 "lr-mess-system-${systems[$index]}-game-specific${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -cfg_directory \$configdir/${newsystems[$index]}/lr-mess/%BASENAME% -autoframeskip -ui_active ${media[$index]} %ROM%"
+	addEmulator 0 "mame-system-${systems[$index]}-game-specific${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -cfg_directory \$configdir/${newsystems[$index]}/mame/%BASENAME% -v -c -ui_active ${systems[$index]} ${media[$index]} %ROM%"
+        addEmulator 0 "mame-system-${systems[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -cfg_directory \$configdir/${newsystems[$index]}/mame/%BASENAME% -v -c -autoframeskip -ui_active ${systems[$index]} ${media[$index]} %ROM%"
 
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
-	addSystem "\$_system" "${descriptions[$index]}" "$addextensions ${allextensions[$index]}"	
+	addSystem "\$_system" "${descriptions[$index]}" "$addextensions ${allextensions[$index]}"
+
+	#sort the emulators.cfg file
+	sort -o \$_emulatorscfg \$_emulatorscfg
+	#if containing a default line then remember the default line,
+	#delete it, remove the empty line and put it back at the end of the file
+	cat \$_emulatorscfg|while read line
+	do if [[ \$line == default* ]]; then 
+	sed -i "s/\$line//g" \$_emulatorscfg
+	#https://stackoverflow.com/questions/16414410/delete-empty-lines-using-sed
+	sed -i -r "/^\s*$/d" \$_emulatorscfg
+	echo \$line >> \$_emulatorscfg
+	fi
+	done
+        chown \$user:\$user "\$_emulatorscfg"	
 }
 
 _EOF_
@@ -556,40 +586,68 @@ function install_install-${newsystems[$index]}-cmd() {
 
 
 function configure_install-${newsystems[$index]}-cmd() {
-    local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
-    local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
-    local _system="${newsystems[$index]}"
-    local _config="\$configdir/\$_system/retroarch.cfg"
+	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
+	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
+	local _system="${newsystems[$index]}"
+	local _config="\$configdir/\$_system/retroarch.cfg"
+	local _emulatorscfg="\$configdir/\$_system/emulators.cfg"
+	local _mameini="/opt/retropie/configs/mame/mame.ini"
     
-    mkRomDir "\$_system"
-    ensureSystemretroconfig "\$_system"
+	mkRomDir "\$_system"
+	ensureSystemretroconfig "\$_system"
     
-    echo "enable cheats for lr-mess in \$configdir/all/retroarch-core-options.cfg"
-    iniConfig " = " "\"" "\$configdir/all/retroarch-core-options.cfg"
-    iniSet "mame_cheats_enable" "enabled"
-    chown \$user:\$user "\$configdir/all/retroarch-core-options.cfg"
+	echo "enable cheats for lr-mess in \$configdir/all/retroarch-core-options.cfg"
+	iniConfig " = " "\"" "\$configdir/all/retroarch-core-options.cfg"
+	iniSet "mame_cheats_enable" "enabled"
+	chown \$user:\$user "\$configdir/all/retroarch-core-options.cfg"
 
-    echo "enable cheats for mame in \$romdir/mame/mame.ini"    
-    iniConfig " " "" "\$romdir/mame/mame.ini"
-    iniSet "cheatpath"  "\$romdir/mame/cheat"
-    iniSet "cheat" "1"
-    chown \$user:\$user "\$romdir/mame/mame.ini"
+	echo "enable cheats for mame in /opt/retropie/configs/mame/mame.ini"    
+	iniConfig " " "" "\$_mameini"
+	iniSet "cheatpath"  "\$romdir/mame/cheat"
+	iniSet "cheat" "1"
+	chown \$user:\$user "\$_mameini"
+
+	echo "enable translation ai_service for RetroArch in \$configdir/all/retroarch.cfg"
+	iniConfig " = " "\"" "\$configdir/all/retroarch.cfg"
+	iniSet "ai_service_enable" "true"
+	iniSet "ai_service_mode" "0"
+	iniSet "ai_service_pause" "true"
+	iniSet "ai_service_source_lang" "0"
+	iniSet "ai_service_target_lang" "1"
+	iniSet "ai_service_url" "http://ztranslate.net/service?api_key=HEREISMYKEY"
+	iniSet "input_ai_service" "t"
+	iniSet "#input_ai_service_btn" "11"
+	chown \$user:\$user "\$configdir/all/retroarch.cfg"
         
-    addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
-    addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
-    addEmulator 0 "mame-cmd" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
-    addEmulator 0 "mame-cmd-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
-    addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${newsystems[$index]} %BASENAME%"
-    addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${newsystems[$index]} %BASENAME%"
-    #turned these off, seems these commands will not work, but kept for future testing : https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/33
-    ##addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
-    ##addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
+	addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
+	addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
+	addEmulator 0 "mame-cmd" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
+	addEmulator 0 "mame-cmd-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
+	addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c ${newsystems[$index]} %BASENAME%"
+	addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip ${newsystems[$index]} %BASENAME%"
+	#turned these off, seems these commands will not work, but kept for future testing : https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/33
+	##addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
+	##addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
 
-    # add system to es_systems.cfg
-    #the line used by @valerino didn't work for the original RetroPie-setup 
-    #therefore the information is added in a different way
-    #the system name is also used as description because, for example, handhelds are generated with game system names
-    addSystem "\$_system" "\$_system" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
+	# add system to es_systems.cfg
+	#the line used by @valerino didn't work for the original RetroPie-setup 
+	#therefore the information is added in a different way
+	#the system name is also used as description because, for example, handhelds are generated with game system names
+	addSystem "\$_system" "\$_system" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
+
+	#sort the emulators.cfg file
+	sort -o \$_emulatorscfg \$_emulatorscfg
+	#if containing a default line then remember the default line,
+	#delete it, remove the empty line and put it back at the end of the file
+	cat \$_emulatorscfg|while read line
+	do if [[ \$line == default* ]]; then 
+	sed -i "s/\$line//g" \$_emulatorscfg
+	#https://stackoverflow.com/questions/16414410/delete-empty-lines-using-sed
+	sed -i -r "/^\s*$/d" \$_emulatorscfg
+	echo \$line >> \$_emulatorscfg
+	fi
+	done
+        chown \$user:\$user "\$_emulatorscfg"
 }
 
 _EOF_
