@@ -16,7 +16,7 @@ This repository is created for sharing :
 
    Or read the backup of the first post of the above thread :
 
-   https://github.com/FollyMaddy/RetroPie-Share/blob/main/thread-post-on-9-june-2021.md 
+   https://github.com/FollyMaddy/RetroPie-Share/blob/main/readme-post-one-thread.md
  
 ## (.ips) IPS patch files (for fixing programs/games with a differences patch)
 
