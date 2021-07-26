@@ -5,13 +5,23 @@
 
 #normal versions : generate scripts to /home/pi/RetroPie-Setup/scriptmodules/libretrocores
 #version=generate-systems-lr-mess_mame-2v1.sh 
-version=generate-systems-lr-mess_mame-2v2.sh
+#version=generate-systems-lr-mess_mame-2v2.sh
+version=generate-systems-lr-mess_mame-2v3.sh
 #external repositories versions : generate scripts to /home/pi/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores
 #version=generate-systems-lr-mess_mame-2v1-ext.sh
 #version=generate-systems-lr-mess_mame-2v2-ext.sh
+#version=generate-systems-lr-mess_mame-2v3-ext.sh
+
 
 # use 1 or more lines to create one system or more systems
 # by uncommenting -> remove #
+
+#---
+#these 3 systems with added slots can only be created with 2v3
+#bash $version nes "datach" cartridge2 cart2 ".prg"
+#bash $version famicom "disksys" floppydisk flop ".fds"
+#bash $version famicom "basic7 -exp fc_keyboard" cassette cass ".wav"
+#---
 
 #bash $version x1 # bootable
 #bash $version mz2500 # bootable
