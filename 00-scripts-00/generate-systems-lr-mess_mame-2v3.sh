@@ -149,7 +149,11 @@ if [[ -n "$2" ]]; then
 echo read the system/description and slot device from commandline options
 systems+=( "$1" )
 descriptions+=( "$1" )
-slotdevices+=( "$2" )
+#normally we would use this :
+#slotdevices+=( "$2" )
+#but with using the front-end quotes can't be used in the csv style used there
+#so, in the front-end, we replace the spaces with a * and filter them out here again
+slotdevices+=( "$(echo $2|sed 's/*/ /g')" )
 else
 # read system(s) using "mame" to extract the data and add them in the systems array
 # some things are filtered with grep
@@ -178,6 +182,7 @@ fi
 done < <(/opt/retropie/emulators/mame/mame -listmedia $1 | grep -v -E "$namesfilter" | grep -E "$mediafilter" | cut -d " " -f 1)
 fi
 
+
 #part 5 : extract all extension data per system to array
 #first part from the if function is meant for installing systems with slot-devices or special software cartridges,
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
@@ -186,7 +191,7 @@ fi
 if [[ -n "$2" ]]; then
 echo read the slot device media extension from commandline options
 #will be the same as extensions in part 6
-allextensions+=( "$5" )
+allextensions+=( "$(echo $5|sed 's/*/ /g')" )
 else
 # an example output for the msx system hbf700p is :
 #hbf700p          printout         (prin)     .prn  
@@ -219,7 +224,7 @@ mediadescriptions+=( "$3")
 # use the third column if seperated by a space and remove ( ) characters and add - for media
 media+=( "-$4" )
 # use the second column if seperated by a ) character and cut off the first space
-extensions+=( "$5" )
+extensions+=( "$(echo $5|sed 's/*/ /g')" )
 else
 #the collected data stored in the specific arrays using this example structure for the msx system hbf700p, information is stored like this :
 #(mediadescriptions)  (media)    (extensions)
@@ -715,3 +720,4 @@ if [[ $generator_script_status != standalone ]];then
    echo refreshing RetroPie packages
    rp_registerAllModules
 fi
+#end run_generator_script
