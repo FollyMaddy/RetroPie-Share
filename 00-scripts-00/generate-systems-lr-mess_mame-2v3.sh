@@ -146,8 +146,9 @@ fi
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=slotdevice $3=mediadescription $4=media $5=extension
 if [[ -n "$2" ]]; then
-echo read the system and slot device from commandline options
+echo read the system/description and slot device from commandline options
 systems+=( "$1" )
+descriptions+=( "$1" )
 slotdevices+=( "$2" )
 else
 # read system(s) using "mame" to extract the data and add them in the systems array
