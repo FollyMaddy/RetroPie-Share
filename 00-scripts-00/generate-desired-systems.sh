@@ -20,7 +20,13 @@ version=generate-systems-lr-mess_mame-2v3.sh
 #these 3 systems with added slots can only be created with 2v3
 #bash $version nes "datach" cartridge2 cart2 ".prg"
 #bash $version famicom "disksys" floppydisk flop ".fds"
-#bash $version famicom "basic7 -exp fc_keyboard" cassette cass ".wav"
+#
+#seems the famibs30.zip cannot be found in a mame archive
+#famibs30 is created from extracted "Family BASIC (V3.0) (J).nes"
+#use https://github.com/X-death25/Nes-Extract to extract .prg and .chr
+#check the names and sha1sums with output "/opt/retropie/emulators/mame/mame -listsoftware famicom"
+#rename and repack the .prg .chr to a zip or 7z
+#bash $version famicom "famibs30 -exp fc_keyboard" cassette cass ".wav"
 #---
 
 #bash $version x1 # bootable
