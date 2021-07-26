@@ -1000,7 +1000,7 @@ if [[ $generator_script_status != standalone ]];then
    echo refreshing RetroPie packages
    rp_registerAllModules
 fi
-
+#end run_generator_script
 }
 
 
