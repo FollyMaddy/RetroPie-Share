@@ -52,7 +52,7 @@ function subgui_add-mamedev-systems_reduced() {
     csv=(
 ",menu_item,empty,to_do,"
 ",Handhelds / Plug & play -> Select and install,,choose_dteam_add descriptions,"
-",,,,"
+",Special systems with slotdevices -> Select and install,,choose_folly_add descriptions,"
 ",Other systems -> Select and install,,subgui_add-mamedev-systems_reduced_list,"
 ",,,,"
 ",Select downloads,,subgui_add-mamedev-systems_downloads,"
@@ -95,6 +95,18 @@ function choose_dteam_add() {
 ",Konami Handheld,,run_generator_script kbilly,"
 ",Tiger Handheld Electronics,,run_generator_script taddams,"
 ",Tiger R-Zone,,run_generator_script rzbatfor,"
+    )
+    build_menu_add-mamedev-systems
+}
+
+
+function choose_folly_add() {
+    local csv=()
+    csv=(
+",menu_item_dteam_description,to_do driver_used_for_installation,"
+",Famicom Basic V3 with cassette support,,run_generator_script 'famibs30 -exp fc_keyboard' cassette cass .wav,"
+",Famicom Disk System with floppy support,,run_generator_script famicom disksys floppydisk flop .fds,"
+",Nintendo Datach with cartridge2 support,,run_generator_script nes datach cartridge2 cart2 .prg,"
     )
     build_menu_add-mamedev-systems
 }
@@ -411,8 +423,9 @@ fi
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=slotdevice $3=mediadescription $4=media $5=extension
 if [[ -n "$2" ]]; then
-echo read the system and slot device from commandline options
+echo read the system/description and slot device from commandline options
 systems+=( "$1" )
+descriptions+=( "$1" )
 slotdevices+=( "$2" )
 else
 # read system(s) using "mame" to extract the data and add them in the systems array
