@@ -103,13 +103,15 @@ function choose_dteam_add() {
 function choose_folly_add() {
 #With this csv style we can't use quotes or double quotes 
 #so if we want to add more options in slotoptions or extensions we replace spaces with *
-#later in the run_generator_script they are replaced again with spaces 
+#later in the run_generator_script they are replaced again with spaces
+#the options after run_generator_script are $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
     local csv=()
     csv=(
 ",menu_item_dteam_description,to_do driver_used_for_installation,"
-",Famicom Basic V3 with cassette support,,run_generator_script famicom famibs30*-exp*fc_keyboard cassette cass .wav,"
-",Famicom Disk System with floppy support,,run_generator_script famicom disksys floppydisk flop .fds,"
-",Nintendo Datach with cartridge2 support,,run_generator_script nes datach cartridge2 cart2 .prg,"
+",Dragon 32 with ram and cassette only support,,run_generator_script dragon32 dragon32 -ext*ram cassette cass .wav*.cas,"
+",Famicom Basic V3 with cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
+",Famicom Disk System with floppy support,,run_generator_script famicom famicom_disksys floppydisk flop .fds,"
+",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach cartridge2 cart2 .prg,"
     )
     build_menu_add-mamedev-systems
 }
@@ -337,7 +339,7 @@ fi
 #mamedev arrays
 systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
 #added for systems with a slot-device
-slotdevices=()
+slotdevices=(); RPsystemNames=()
 
 #retropie arrays
 systemsrp=(); descriptionsrp=()
@@ -424,16 +426,20 @@ fi
 #first part from the if function is meant for installing systems with slot-devices or special software cartridges,
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
-#then $1=system $2=slotdevice $3=mediadescription $4=media $5=extension
+#then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo read the system/description and slot device from commandline options
+echo read the system/description, slotdevice and RetroPie system name from commandline options
 systems+=( "$1" )
+#by using the systems name as a description we don't have matches in part 10
+#therefor we can force our own RetroPie name 
+#and therefor we probably have no conflict with the newsystems name
 descriptions+=( "$1" )
+RPsystemNames+=( "$2" )
 #normally we would use this :
-#slotdevices+=( "$2" )
+#slotdevices+=( "$3" )
 #but with using the front-end quotes can't be used in the csv style used there
 #so, in the front-end, we replace the spaces with a * and filter them out here again
-slotdevices+=( "$(echo $2|sed 's/*/ /g')" )
+slotdevices+=( "$(echo $3|sed 's/*/ /g')" )
 else
 # read system(s) using "mame" to extract the data and add them in the systems array
 # some things are filtered with grep
@@ -467,11 +473,11 @@ fi
 #first part from the if function is meant for installing systems with slot-devices or special software cartridges,
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
-#then $1=system $2=slotdevice $3=mediadescription $4=media $5=extension
+#then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
 echo read the slot device media extension from commandline options
 #will be the same as extensions in part 6
-allextensions+=( "$(echo $5|sed 's/*/ /g')" )
+allextensions+=( "$(echo $6|sed 's/*/ /g')" )
 else
 # an example output for the msx system hbf700p is :
 #hbf700p          printout         (prin)     .prn  
@@ -496,15 +502,15 @@ fi
 #first part from the if function is meant for installing systems with slot-devices or special software cartridges,
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
-#then $1=system $2=slotdevice $3=mediadescription $4=media $5=extension
+#then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
 echo read the slot device media data from commandline options
 index=0
-mediadescriptions+=( "$3")
+mediadescriptions+=( "$4")
 # use the third column if seperated by a space and remove ( ) characters and add - for media
-media+=( "-$4" )
+media+=( "-$5" )
 # use the second column if seperated by a ) character and cut off the first space
-extensions+=( "$(echo $5|sed 's/*/ /g')" )
+extensions+=( "$(echo $6|sed 's/*/ /g')" )
 else
 #the collected data stored in the specific arrays using this example structure for the msx system hbf700p, information is stored like this :
 #(mediadescriptions)  (media)    (extensions)
@@ -535,7 +541,7 @@ fi
 #first part from the if function is meant for installing systems with slot-devices or special software cartridges,
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
-#then $1=system $2=slotdevice $3=mediadescription $4=media $5=extension
+#then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
 echo skip reading computer description from mame
 else
@@ -751,7 +757,8 @@ function install_install-${newsystems[$index]}-from-mamedev-system-${systems[$in
 function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))${media[$index]}() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
-	local _system="${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))"
+	#local _system="${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))"
+	local _system="$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)"
 	local _config="\$configdir/\$_system/retroarch.cfg"
 	local _add_config="\$_config.add"
 	local _custom_coreconfig="\$configdir/\$_system/custom-core-options.cfg"
@@ -808,7 +815,7 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
-	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${slotdevices[$index]} ]] && echo with ${slotdevices[$index]})" "$addextensions ${allextensions[$index]}"
+	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${slotdevices[$index]} ]] && echo with extra slotdevices)" "$addextensions ${allextensions[$index]}"
 
 	#sort the emulators.cfg file
 	sort -o \$_emulatorscfg \$_emulatorscfg
@@ -919,7 +926,8 @@ function install_install-${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] 
 function configure_install-${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))-cmd() {
 	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
-	local _system="${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))"
+	#local _system="${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))"
+	local _system="$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)"
 	local _config="\$configdir/\$_system/retroarch.cfg"
 	local _emulatorscfg="\$configdir/\$_system/emulators.cfg"
 	local _mameini="/opt/retropie/configs/mame/mame.ini"
@@ -964,7 +972,7 @@ function configure_install-${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
 	#the system name is also used as description because, for example, handhelds are generated with game system names
-	addSystem "\$_system" "\$_system" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
+	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${slotdevices[$index]} ]] && echo with extra slotdevices)" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
 
 	#sort the emulators.cfg file
 	sort -o \$_emulatorscfg \$_emulatorscfg
