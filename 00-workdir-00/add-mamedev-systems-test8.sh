@@ -334,7 +334,7 @@ generator_script_status=standalone
 fi
 
 #uncomment if the scriptmodules have to be created in the `ext` directory, it will use the normal directory if commented
-ext=/ext/RetroPie-Share
+#ext=/ext/RetroPie-Share
 
 #mamedev arrays
 systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
