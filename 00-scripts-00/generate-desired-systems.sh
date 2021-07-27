@@ -19,9 +19,9 @@ version=generate-systems-lr-mess_mame-2v3.sh
 #---
 #these 4 systems with added slots can only be created with 2v3 or above
 #bash $version dragon32 dragon32 -ext*ram cassette cass .wav*.cas
-#bash $version famicom famicom_disksys floppydisk flop .fds
+#bash $version famicom famicom_disksys disksys floppydisk flop .fds
 #bash $version famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav
-#bash $version nes nes_datach cartridge2 cart2 .prg
+#bash $version nes nes_datach datach cartridge2 cart2 .prg
 #
 #seems the famibs30.zip cannot be found in a mame archive
 #famibs30 is created from extracted "Family BASIC (V3.0) (J).nes"
