@@ -52,7 +52,7 @@ generator_script_status=standalone
 fi
 
 #uncomment if the scriptmodules have to be created in the `ext` directory, it will use the normal directory if commented
-#ext=/ext/RetroPie-Share
+ext=/ext/RetroPie-Share
 
 #mamedev arrays
 systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
@@ -145,7 +145,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
+if [[ -n "$6" ]]; then
 echo read the system/description, slotdevice and RetroPie system name from commandline options
 systems+=( "$1" )
 #by using the systems name as a description we don't have matches in part 10
@@ -192,7 +192,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
+if [[ -n "$6" ]]; then
 echo read the slot device media extension from commandline options
 #will be the same as extensions in part 6
 allextensions+=( "$(echo $6|sed 's/*/ /g')" )
@@ -221,7 +221,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
+if [[ -n "$6" ]]; then
 echo read the slot device media data from commandline options
 index=0
 mediadescriptions+=( "$4")
@@ -260,7 +260,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
+if [[ -n "$6" ]]; then
 echo skip reading computer description from mame
 else
 echo "read computer description(s)"
