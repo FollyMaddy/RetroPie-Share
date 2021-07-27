@@ -54,6 +54,7 @@ Driver pc6001 (PC-6001 (Japan)):
 Driver pc6001mk2 (PC-6001mkII (Japan)):
 Driver pegasus (Aamber Pegasus):
 Driver pockstat (Sony Pocket Station):
+Driver pofo (Atari Portfolio):
 Driver pv1000 (Casio PV-1000):
 Driver pv2000 (PV-2000):
 Driver samcoupe (SAM Coupe):
