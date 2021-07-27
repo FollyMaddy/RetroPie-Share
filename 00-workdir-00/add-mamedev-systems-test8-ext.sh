@@ -110,8 +110,8 @@ function choose_folly_add() {
 ",menu_item_dteam_description,to_do driver_used_for_installation,"
 ",Dragon 32 with ram and cassette only support,,run_generator_script dragon32 dragon32 -ext*ram cassette cass .wav*.cas,"
 ",Famicom Basic V3 with cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
-",Famicom Disk System with floppy support,,run_generator_script famicom famicom_disksys floppydisk flop .fds,"
-",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach cartridge2 cart2 .prg,"
+",Famicom Disk System with floppy support,,run_generator_script famicom famicom_disksys disksys floppydisk flop .fds,"
+",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
     )
     build_menu_add-mamedev-systems
 }
