@@ -112,7 +112,6 @@ function choose_folly_add() {
 ",Famicom Basic V3 with cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
 ",Famicom Disk System with floppy support,,run_generator_script famicom famicom_disksys disksys floppydisk flop .fds,"
 ",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
-",Nintendo Ade with cartridge2 support,,run_generator_script nes nes_ade ade cartridge2 cart2 .u1,"
     )
     build_menu_add-mamedev-systems
 }
@@ -428,7 +427,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
+if [[ -n "$6" ]]; then
 echo read the system/description, slotdevice and RetroPie system name from commandline options
 systems+=( "$1" )
 #by using the systems name as a description we don't have matches in part 10
@@ -475,7 +474,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
+if [[ -n "$6" ]]; then
 echo read the slot device media extension from commandline options
 #will be the same as extensions in part 6
 allextensions+=( "$(echo $6|sed 's/*/ /g')" )
@@ -504,7 +503,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
+if [[ -n "$6" ]]; then
 echo read the slot device media data from commandline options
 index=0
 mediadescriptions+=( "$4")
@@ -543,7 +542,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
+if [[ -n "$6" ]]; then
 echo skip reading computer description from mame
 else
 echo "read computer description(s)"
