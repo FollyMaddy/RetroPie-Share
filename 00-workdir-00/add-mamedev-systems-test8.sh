@@ -112,6 +112,7 @@ function choose_folly_add() {
 ",Famicom Basic V3 with cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
 ",Famicom Disk System with floppy support,,run_generator_script famicom famicom_disksys disksys floppydisk flop .fds,"
 ",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
+",Nintendo Ade with cartridge2 support,,run_generator_script nes nes_ade ade cartridge2 cart2 .u1,"
     )
     build_menu_add-mamedev-systems
 }
@@ -427,7 +428,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$6" ]]; then
+if [[ -n "$2" ]]; then
 echo read the system/description, slotdevice and RetroPie system name from commandline options
 systems+=( "$1" )
 #by using the systems name as a description we don't have matches in part 10
@@ -474,7 +475,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$6" ]]; then
+if [[ -n "$2" ]]; then
 echo read the slot device media extension from commandline options
 #will be the same as extensions in part 6
 allextensions+=( "$(echo $6|sed 's/*/ /g')" )
@@ -503,7 +504,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$6" ]]; then
+if [[ -n "$2" ]]; then
 echo read the slot device media data from commandline options
 index=0
 mediadescriptions+=( "$4")
@@ -542,7 +543,7 @@ fi
 #that can be seen as slot-devices, that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about a slot-device and it's usable media
 #then $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$6" ]]; then
+if [[ -n "$2" ]]; then
 echo skip reading computer description from mame
 else
 echo "read computer description(s)"
@@ -870,7 +871,13 @@ echo "generate and write the install-<RPname>-cmd.sh command script file(s)"
 # grep function is used to get all extensions compatible with all possible emulation methods so switching within emulationstation is possible
 # grep searches in both platform.cfg and the ext/RetroPie-Share/platforms.cfg , so also extensions are added that are not in platform.cfg 
 # using grep this way can create double extension, but this should not be a problem
-for index in "${!newsystems[@]}"; do sleep 0.001; platformextensionsrp=$(grep ${newsystems[$index]}_exts /home/$user/RetroPie-Setup/platforms.cfg /home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2); cat > "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))-cmd.sh" << _EOF_
+##we have to use an if function to be sure this is only generated and installed once per system
+##the if function will check if the last created system is not equal to the next system in the array
+for index in "${!newsystems[@]}"; do if [[ $creating != ${newsystems[$index]} ]];then 
+sleep 0.001
+creating=${newsystems[$index]}
+platformextensionsrp=$(grep ${newsystems[$index]}_exts /home/$user/RetroPie-Setup/platforms.cfg /home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2)
+cat > "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))-cmd.sh" << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
@@ -999,6 +1006,9 @@ if [[ $generator_script_status != standalone ]];then
    if [[ -n $(ls /home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))-cmd.sh 2>&-) ]]; then 
    $scriptdir/retropie_packages.sh install-${newsystems[$index]}$([[ -n ${slotdevices[$index]} ]] && echo $(echo _${slotdevices[$index]} | sed 's/ /_/g'))-cmd
    fi
+fi
+
+#end if, preventing to create and install a module-script multiple times
 fi
 
 done
