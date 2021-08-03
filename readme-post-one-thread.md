@@ -251,17 +251,7 @@ If you want to install similar systems with this script then you have to make yo
 The structure is as follows :
 $1=system $2=RPsystemName $3=ExtraPredefinedDevice(s) $4=mediadescription $5=media $6=extension(s)
 $3 and $6 can take multiple options seperated by a \*
-Example lines are :
-*(Btw. : There is no need to add the extension .zip, .7z and .cmd, they are added in the module-scripts automatically)*
-#normal
-bash generate-systems-lr-mess_mame-2v3-ext.sh famicom
-#with known slotdevice from the mame-database and converted BIOS rom
-bash generate-systems-lr-mess_mame-2v3-ext.sh famicom famicom_famibs30 famibs30\*-exp\*fc_keyboard cassette cass .wav
-#with extra BIOS rom directly, which is or is not in the mame-database, be aware of the (\* => spaces) and (" ' ..... ' " => double and single quotes)
-bash generate-systems-lr-mess_mame-2v3-ext.sh famicom famicom_famibs21a -cart1\*"'~/RetroPie/BIOS/mame/Family\*BASIC\*(V2.1a)\*(J).zip'"\*-exp\*fc_keyboard cassette cass .wav
-#back-slashes can also be used,  this line does the same as above line
-bash generate-systems-lr-mess_mame-2v3-ext.sh famicom famicom_famibs21a -cart1\*\\'~/RetroPie/BIOS/mame/Family\*BASIC\*(V2.1a)\*(J).zip\\'\*-exp\*fc_keyboard cassette cass .wav
-(if not using a filename with spaces, then "double quotes" or "back-slashes" are not needed)
+Look for example lines in generate-desired-systems.sh .
 
 **👍 closed :**  By @folly / added by @folly in 2v3 / tested  by @folly :
 Prevent creating the same cmd module-scripts every time.
