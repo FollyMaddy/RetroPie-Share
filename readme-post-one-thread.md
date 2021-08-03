@@ -10,8 +10,8 @@ Just do these few steps :
 - Download this file and extract it :
 https://github.com/FollyMaddy/RetroPie-Share/archive/refs/heads/main.zip
 
-- Copy `00-workdir-00/add-mamedev-systems-test6_temp.sh` to
-`/home/pi/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems-test6_temp.sh`
+- Copy `00-workdir-00/add-mamedev-systems-test8.sh` to
+`/home/pi/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems-test8.sh`
 
 - Be sure there are `no` other versions of `add-mamedev-systems` in the same directory, remove them !
 
@@ -24,6 +24,9 @@ Now you can install :
 - lr-mess/mame systems
 - the handhelds by @DTEAM  
 [link to the handheld and plug & play systems of @DTEAM](https://retropie.org.uk/forum/topic/28462/tutorial-handheld-and-plug-play-systems-with-mame/2)
+- special systems with added slot-devices
+(for example : nes_datach,famicom_disksys,famicom_famibs3)
+- other systems that are mentioned in the threads
 - download retropie-gamelists 
 - download mame-artwork 
 - create overlays from mame-artwork for running handhelds with lr-mess
@@ -146,6 +149,9 @@ Download the repository in /home/pi/RetroPie-Setup/ext/RetroPie-Share or try to 
 - **(now that we can be copy the updated generator-script into the frond-end as a function this part is not relevant here anymore)** 
 Try to keep multiple emulator/lr-cores in 1 generated script module [125](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/125)
 - **(done)** Show correctly sorted systems and descriptions in the sub-menus [290](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/290)(issue) [470](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/470)(fix)
+- **(re-done in version test7 and version test8)** Adding a submenu to install our selection of systems, described from here [524](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/524) and here [link_xls_@dmmarti](https://docs.google.com/spreadsheets/d/1AQ28J9OUKg55R3d-TZkWO3GH50KjC2hHteCP1Bx59Ns/edit?usp=sharing)
+- **(done in version test8)** Adding a submenu to install systems with slotdevices. 
+In the links you can find some examples  [547 ](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/547) [548 ](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/548) [diff_thread_2](https://retropie.org.uk/forum/topic/31026/booting-the-dragon-32-in-lr-mess-without-a-disk-drive/2)
 - **(--)** Separate Arcade from the rest [410](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/411)
 - **(--)** Update mess doc when front-end module-script works [161](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/161)
 
@@ -236,19 +242,56 @@ Sorting the content of an emulators.cfg should be done after new lines have been
 The generator script will add the sorting part in the generated module-scripts.
 When these module-scripts are installed, sorting of the specific emulators.cfg will then take place. [332](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/332)
 
-**👉 open :**  By  @folly :
-Improving the naming of the runcommand-lines to a more understandable standard.
+# The ideas in  generate-systems-lr-mess_mame.sh version 2v3 or above :
 
-**👉 open  (low priority) :**  By @folly :
+**👍 closed :**  By @folly / added by @folly in 2v3 / tested  by @folly :
+Add the possibility to install systems with slotdevices and manual detected slotdevice configurations. 
+In the links you can find some examples  of systems [547 ](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/547) [548 ](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/548) [diff_thread_2](https://retropie.org.uk/forum/topic/31026/booting-the-dragon-32-in-lr-mess-without-a-disk-drive/2)
+If you want to install similar systems with this script then you have to make your own command.
+The structure is as follows :
+$1=system $2=RPsystemName $3=ExtraPredefinedDevice(s) $4=mediadescription $5=media $6=extension(s)
+$3 and $6 can take multiple options seperated by a \*
+Example lines are :
+*(Btw. : There is no need to add the extension .zip, .7z and .cmd, they are added in the module-scripts automatically)*
+#normal
+bash generate-systems-lr-mess_mame-2v3-ext.sh famicom
+#with known slotdevice from the mame-database and converted BIOS rom
+bash generate-systems-lr-mess_mame-2v3-ext.sh famicom famicom_famibs30 famibs30\*-exp\*fc_keyboard cassette cass .wav
+#with extra BIOS rom directly, which is or is not in the mame-database, be aware of the (\* => spaces) and (" ' ..... ' " => double and single quotes)
+bash generate-systems-lr-mess_mame-2v3-ext.sh famicom famicom_famibs21a -cart1\*"'~/RetroPie/BIOS/mame/Family\*BASIC\*(V2.1a)\*(J).zip'"\*-exp\*fc_keyboard cassette cass .wav
+#back-slashes can also be used,  this line does the same as above line
+bash generate-systems-lr-mess_mame-2v3-ext.sh famicom famicom_famibs21a -cart1\*\\'~/RetroPie/BIOS/mame/Family\*BASIC\*(V2.1a)\*(J).zip\\'\*-exp\*fc_keyboard cassette cass .wav
+(if not using a filename with spaces, then "double quotes" or "back-slashes" are not needed)
+
+**👍 closed :**  By @folly / added by @folly in 2v3 / tested  by @folly :
+Prevent creating the same cmd module-scripts every time.
+If a system has more media then it has more values of the same system in the array.
+That is why it normally would create more cmd module-scripts.
+To prevent this from happening, we have to use an if function to be sure it is only generated and installed once per system.
+The if function will check if the last created system is not equal to the next system in the array.
+It will speed up increasingly, now that it doesn't do the same multiple times.
+\*installing only happens from within the front-end module-script
+[link_to_commit_=>_lines_591-597](https://github.com/FollyMaddy/RetroPie-Share/commit/b707f00e4414e49cab4968bf3d2fe1dac9b7f50f)
+
+**👍 closed :**  (low priority) :**  By @folly :
 The help in the created module-scripts are automatically created and not always correct. 
 It would be nice if we could add a database file that can be read during generating. 
 So when good information is available it could use that instead of the automatically created help.
 Edit : 
 Perhaps this mame command can help to improve the help sections :
 /opt/retropie/emulators/mame/mame -listroms <system>
+Solution:
+Most people, who are using this, know which bios files they have to use.
+Therefor I didn't add more info to the help but I removed specific bios information from the help in 2v3.
+This way no incorrect information is give anymore.
+To get solutions users can always check the `/dev/runcommand.log` if something isn't working.
 
-**👉 open (low priority) :**  By @DTEAM / @folly :
+**`⚠` closed (low priority) :**  By @DTEAM / @folly :
+*(Closed because of too much effort versus gain, I am quite happy how it works in 2v3)*
 Join all media/cmd command lines of 1 system into 1 generated script [101](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/101) [102](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/102) [107](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/107)
+
+**👉 open :**  By  @folly :
+Improving the naming of the runcommand-lines to a more understandable standard.
 
 **👉 open (low priority) :**  By @hhtien1408 / @folly :
 Add support for lr-mame [327](https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/327) --> 329
@@ -269,3 +312,6 @@ When there are multiple config/ini which one is used ? :
 By @folly :
 Here we can find autoboot lines :
 https://forums.launchbox-app.com/topic/54987-autoboot-command-script-for-mame-swl-computer-systems/
+
+# MAME Announcements :
+[link_to_whats_new_in_mame](https://forum.mamedev.org/viewforum.php?f=12&sid=ac328e1cac5b6641e50776f5103e6aa0)
