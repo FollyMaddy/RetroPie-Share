@@ -365,6 +365,9 @@ addextensions=".zip .7z"
 #string for adding extra extensions in all generated command scripts
 addextensionscmd=".cmd"
 
+#begin with an empty variable for part 13, preventing remembering it from an other session
+creating=
+
 #array data for "game system names" of "handhelds" that cannot be detected or matched with the mamedev database
 #systems that cannot be detected (all_in1, classich, konamih, tigerh) (*h is for handheld)
 #systems that can be detected (jakks, tigerrz), these added later in the script for normal matching
@@ -1027,7 +1030,6 @@ if [[ $generator_script_status != standalone ]];then
    rp_registerAllModules
 fi
 #end run_generator_script
-
 }
 
 
