@@ -116,6 +116,8 @@ function choose_folly_add() {
 ",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
 ",MSX2 Sony HB-F700P + fmpac with cartridge2 support,,run_generator_script hbf700p msx fmpac cartridge2 cart2 .rom,"
 ",MSX2 Sony HB-F700P + fmpac with disk support,,run_generator_script hbf700p msx fmpac floppydisk flop .dsk,"
+",Tandy MC-10 micro color computer + 16k with cass support,,run_generator_script mc10 mc10 -ext*ram cassette cass .wav*.cas*.c10*.k7,"
+",Tandy MC-10 micro color computer + MCX-128k with cass support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .wav*.cas*.c10*.k7,"
     )
     build_menu_add-mamedev-systems
 }
