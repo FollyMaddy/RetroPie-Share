@@ -73,8 +73,12 @@ function configure_supermodel-mechafatnick() {
     mkRomDir "supermodel/model3emu/mechafatnick"
     mkRomDir "supermodel/model3emu/mechafatnick/NVRAM"
     mkRomDir "supermodel/model3emu/mechafatnick/Saves"
+
+    addEmulator 0 "Supermodel-mechafatnick-496x384" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=496,384 %ROM%"
+    addEmulator 0 "Supermodel-mechafatnick-800x600" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=800,600 %ROM%"
+    addEmulator 0 "Supermodel-mechafatnick-1024x768" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=1024,768 %ROM%"
   
-    addEmulator 0 "Supermodel-mechafatnick" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=%XRES%,%YRES% %ROM%"
+    addEmulator 0 "TEST auto resolution" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=%XRES%,%YRES% %ROM%"
 
     addSystem "supermodel" "Sega supermodel 3" ".zip"
 
