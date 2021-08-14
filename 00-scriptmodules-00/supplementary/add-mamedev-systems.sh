@@ -104,7 +104,7 @@ function choose_folly_add() {
 #With this csv style we can't use quotes or double quotes 
 #so if we want to add more options in slotoptions or extensions we replace spaces with *
 #later in the run_generator_script they are replaced again with spaces
-#the options after run_generator_script are $1=system $2=RPsystemName $3=slotdevice(s) $4=mediadescription $5=media $6=extension(s)
+#the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedDevice(s) $4=mediadescription $5=media $6=extension(s)
     local csv=()
     csv=(
 ",menu_item_dteam_description,to_do driver_used_for_installation,"
@@ -113,11 +113,14 @@ function choose_folly_add() {
 ",Famicom Playbox BASIC (Prototype V0.0) with cassette support,,run_generator_script famicom famicom_pboxbas pboxbas*-exp*fc_keyboard cassette cass .wav,"
 ",Famicom Family BASIC (V2.1a) (J) with cassette support,,run_generator_script famicom famicom_famibs21a -cart1*'~/RetroPie/BIOS/mame/Family*BASIC*(V2.1a)*(J).zip'*-exp*fc_keyboard cassette cass .wav,"
 ",Famicom Disk System with floppy support,,run_generator_script famicom famicom_disksys disksys floppydisk flop .fds,"
+",FM-Towns + 6M ram with floppy1 support,,run_generator_script fmtowns fmtowns -ram*6M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin,"
+",FM-Towns + 6M ram with cdrom support,,run_generator_script fmtowns fmtowns -ram*6M cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr,"
 ",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
 ",MSX2 Sony HB-F700P + fmpac with cartridge2 support,,run_generator_script hbf700p msx fmpac cartridge2 cart2 .rom,"
 ",MSX2 Sony HB-F700P + fmpac with disk support,,run_generator_script hbf700p msx fmpac floppydisk flop .dsk,"
 ",Tandy MC-10 micro color computer + 16k with cass support,,run_generator_script mc10 mc10 -ext*ram cassette cass .wav*.cas*.c10*.k7,"
 ",Tandy MC-10 micro color computer + MCX-128k with cass support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .wav*.cas*.c10*.k7,"
+",Tandy TRS-80 Model III +  with disk support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1,"
     )
     build_menu_add-mamedev-systems
 }
@@ -161,12 +164,12 @@ function choose_add() {
     # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
     # Now using this : lines that start with "D" using => grep ^[D]
     clear
-    echo "Extracting data from mame0228-mame0233 have issues on 32bit OSes"
-    echo "Now we are reading, mame0231 data, from the RetroPie-Share"
+    echo "Extracting data from mame0228-mame0234 have issues on 32bit OSes"
+    echo "Now we are reading, mame0234 data, from the RetroPie-Share"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    while read system_read;do mamedev_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0231_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0234_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
     fi
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
