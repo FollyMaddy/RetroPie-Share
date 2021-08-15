@@ -120,7 +120,7 @@ function choose_folly_add() {
 ",MSX2 Sony HB-F700P + fmpac with disk support,,run_generator_script hbf700p msx fmpac floppydisk flop .dsk,"
 ",Tandy MC-10 micro color computer + 16k with cass support,,run_generator_script mc10 mc10 -ext*ram cassette cass .wav*.cas*.c10*.k7,"
 ",Tandy MC-10 micro color computer + MCX-128k with cass support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .wav*.cas*.c10*.k7,"
-",Tandy TRS-80 Model III +  with disk support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1,"
+",Tandy TRS-80 Model III + DOS in flop1 with flop2 support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1,"
     )
     build_menu_add-mamedev-systems
 }
