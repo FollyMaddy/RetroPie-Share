@@ -2,6 +2,8 @@ memory fix for : Policenauts (User boot disk) [for Neko Project II].hdm
 
 md5sum : 9dec4162320ec70fa8701a270cd36124
 
+---
+
 manually fix without IPS_patch : remove the "umb" (upper memmory block) in the config.sys
 
 - boot with "Policenauts [for Neko Project II].hdi" to get into DOS 

@@ -2,6 +2,8 @@ music fix for : Otoko_dama.hdm
 
 md5sum : 03cd0df3d66e211a2fdddf8af0857670
 
+---
+
 manually fix without IPS_patch : add "ZMUSIC.X" above the CD (change directory) line
 
 - make a .cmd (with full paths) to edit the drive (b:) :    
