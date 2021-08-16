@@ -4,7 +4,7 @@ md5sum : 50f8b3e89c4a75ec5b7c3fa12edfe13c
 
 ---
 
-manually fix without IPS_patch : remove the "umb" (upper memmory block) in the config.sys
+manually fix without IPS_patch :
 
 I altered the .dsk with openmsx.
 
