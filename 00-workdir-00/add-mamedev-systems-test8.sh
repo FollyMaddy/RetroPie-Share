@@ -108,6 +108,8 @@ function choose_folly_add() {
     local csv=()
     csv=(
 ",menu_item_dteam_description,to_do driver_used_for_installation,"
+",Acorn Archimedes 305 booting RISC-OS 3.10 with floppy support,,run_generator_script aa305 aa305 -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
+",Acorn Archimedes 310 booting RISC-OS 3.10 with floppy support,,run_generator_script aa310 aa310 -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
 ",Dragon 32 with ram and cassette only support,,run_generator_script dragon32 dragon32 -ext*ram cassette cass .wav*.cas,"
 ",Famicom Family BASIC (V3.0) (J) with cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
 ",Famicom Playbox BASIC (Prototype V0.0) with cassette support,,run_generator_script famicom famicom_pboxbas pboxbas*-exp*fc_keyboard cassette cass .wav,"
