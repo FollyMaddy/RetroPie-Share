@@ -11,7 +11,7 @@
 
 rp_module_id="lr-retro8"
 rp_module_desc="PICO-8 emulator port for libretro"
-rp_module_help="ROM Extensions: .zip .ZIP\n\nCompress your .p8.png games to .zip\n\nCopy your compressed roms to $romdir/pico8"
+rp_module_help="ROM Extensions: .p8 .P8 .zip .ZIP\n\nCompress your .p8.png games to .zip\nOr\nRename your .p8.png games to .p8\n\nCopy your roms to :$romdir/pico8"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/retro8/master/COPYING"
 rp_module_repo="git https://github.com/libretro/retro8.git master"
 rp_module_section="exp"
@@ -36,5 +36,5 @@ function configure_lr-retro8() {
     mkRomDir "pico8"
     ensureSystemretroconfig "pico8"
     addEmulator 1 "$md_id" "pico8" "$md_inst/retro8_libretro.so"
-    addSystem "pico8" "PICO-8" ".zip"
+    addSystem "pico8" "PICO-8" ".p8 .zip"
 }
