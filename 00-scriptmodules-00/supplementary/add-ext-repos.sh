@@ -20,7 +20,7 @@
 
 
 rp_module_id="add-ext-repos"
-rp_module_desc="Add or update external repositories"
+rp_module_desc="Add or update 3rd-party repositories"
 rp_module_section="config"
 
 function depends_add-ext-repos() {
@@ -50,7 +50,7 @@ function build_menu_add-ext-repos() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which system would you like to add?" 22 76 16)
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Which 3rd-party repository would you like to add ?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
