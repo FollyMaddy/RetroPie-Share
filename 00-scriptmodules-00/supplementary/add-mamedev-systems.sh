@@ -1055,7 +1055,7 @@ clear
 echo "get all gamelist files and put these in the correct path"
 echo
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | \
-python3 - https://drive.google.com/drive/folders/$1 -P "$2"
+python3 - https://drive.google.com/drive/folders/$1 -m -P "$2"
 #wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
 #python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P /opt/retropie/configs/all/emulationstation/gamelists
 chown -R $user:$user "$2"
