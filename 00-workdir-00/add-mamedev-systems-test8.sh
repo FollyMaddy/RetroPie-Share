@@ -93,6 +93,7 @@ function choose_dteam_add() {
 ",Game and Watch,,run_generator_script gnw_ball,"
 ",JAKKS Pacific TV Games,,run_generator_script jak_batm,"
 ",Konami Handheld,,run_generator_script kbilly,"
+",Mattel Handheld,,run_generator_script mbaskb,"
 ",Tiger Handheld Electronics,,run_generator_script taddams,"
 ",Tiger R-Zone,,run_generator_script rzbatfor,"
     )
@@ -377,7 +378,7 @@ creating=
 
 #array data for "game system names" of "handhelds" that cannot be detected or matched with the mamedev database
 #systems that cannot be detected (all_in1, classich, konamih, tigerh) (*h is for handheld)
-#systems that can be detected (jakks, tigerrz), these added later in the script for normal matching
+#systems that can be detected (mattelh,jakks, tigerrz), these added later in the script for normal matching
 #a system that can be detected (gameandwatch), already in RetroPie naming for normal matching
 #using @DTEAM naming for compatibitity with possible existing es-themes
 #hoping this will be the future RetroPie naming for these handhelds
@@ -411,6 +412,9 @@ jakks_fullname="JAKKS Pacific TV Games"
 
 konamih_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
 konamih_fullname="Konami Handheld"
+
+mattelh_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+mattelh_fullname="Mattel Handheld"
 
 all_in1_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
 all_in1_fullname="All in One Handheld and Plug and Play"
@@ -612,6 +616,10 @@ descriptionsrp+=( "handheld" ) # can be overruled by added @DTEAM name changing
 #because "jakks" is not in the RetroPie platforms we add this here for later matching
 systemsrp+=( "jakks" )
 descriptionsrp+=( "JAKKS" )
+#this name "mattelh" is will be added as a new handheld <=> "mattelh" can be extracted from mamedev database
+#because "mattelh" is not in the RetroPie platforms we add this here for later matching
+systemsrp+=( "mattelh" )
+descriptionsrp+=( "Mattel" )
 #this name "tigerrz" is used by @DTEAM in Handheld tutorial <=> "tigerrz" can be extracted from mamedev database
 #because "tigerrz" is not in the RetroPie platforms we add this here for later matching
 systemsrp+=( "tigerrz" )
