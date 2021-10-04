@@ -1,0 +1,85 @@
+Manufacturer,MAME name,Game name,artwork
+Bambino,bambball,Dribble Away Basketball,N
+Bambino,bmboxing,Krock-Em Out Boxing,N
+Bambino,bmcfball,Classic Football (Bambino),N
+Bambino,bmsafari,Safari (Bambino),N
+Bambino,bmsoccer,Kick The Goal Soccer,N
+Bambino,splasfgt,Space Laser Fight,N
+Bambino,ssfball,Superstar Football (Bambino),N
+Bambino,ufombs,UFO Master-Blaster Station,N
+Bandai,bbtime,Buger Time,N
+Bandai,bcclimbe,Crazy Cimber (Bandai),N
+Bandai,bdoramon,Dokodemo Dorayaki Doraemon,N
+Bandai,bfriskyt,Frisky Tom,N
+Bandai,bpengo,Pengo,N
+Bandai,bultrman,Ultraman Monster Battle,Y
+Bandai,bzaxxon,Zaxxon,N
+Bandai,machiman,Machine Man,N
+Bandai,packmon,Packri Monster,Y
+Bandai,pairmtch,Pair Match,N
+Bandai,zackman,Zackman,N
+coleco,alnattck,Alien Attack,Y
+coleco,cdkong,Donkey Kong,Y
+coleco,cfrogger,Frogger (coleco),N
+coleco,cgalaxn,Galaxian,N
+coleco,cmspacmn,Ms. Pac-Man,N
+coleco,cpacman,Pac-Man,N
+coleco,cpacmanr1,Pac-Man (Coleco, Rev. 28),N
+coleco,cqback,Electronic Quarterback,N
+Elektronika,exospace,Explorers of Space,N
+Elektronika,merrycook,Merry Cook,N
+Elektronika,nupogodi,Nu. pogodi!,Y
+Elektronika,spacebridge,Space Bridge,N
+Entex,egalaxn2,Galaxian 2 (Enter),N
+Entex,einvader,Space Invader (Entex, TMSL100 version),Y
+Entex,einvader2,Super Space Invader 2 (Entex, black version),N
+Entex,einvaderc,Space Invader (Enter, COP444L version),N
+Entex,epacman2,Pac Man 2 (Entex, cyan Pacman),Y
+Entex,epacman2r,Pac Man 2 (Enter, red Pacman),Y
+Entex,estargte,Stargate (Entex),N
+Entex,eturtles,Turtles (Entex),N
+Entex,raisedvl,Raise The Devil,N
+Epoch,astrocmd,Astro Command,N
+Epoch,edracula,Dracula (Epoch),N
+Epoch,efball,Electronie Football (Epoch),N
+Epoch,galaxy2,Galany (VFD Rev. D),Y
+Epoch,galaxy2b,Galaxy (VFD Rev. B),Y
+Epoch,invspace,Invader From Space,N
+Gakken,gckong,Crazy Kong,N
+Gakken,gdigdug,Dig Dug,N
+Gakken,ghalien,Heiankyo Alien,N
+Gakken,ginv,Invader (Gakken. cyan version),N
+Gakken,ginv1000,Galany Invader 1000,N
+Gakken,ginv2000,Invader 2000,N
+Gakken,gjungler,Jungler (Gakken),N
+Ideal Toy Corporation,flash,Flash,N
+Konami,kbilly,The Adventures of Bayou Billy,Y
+Konami,kblades,Blades of Steel,Y
+Konami,kbucky,Bucky O'Hare,Y
+Konami,kcontra,Contra,Y
+Konami,kdribble,Double Dribble,Y
+Konami,kgarfld,Garfield,Y
+Konami,kgradius,Gradus,Y
+Konami,kloneran,Lone Ranger,Y
+Konami,knfl,NFL Football,Y
+Konami,ktmnt,Teenage Mutan Ninja Turtles,Y
+Konami,ktopgun,Top Gun,Y
+Mattel,funjacks,Funtronics:Jacks,N
+Mattel,mcompgin,Computer Gin,N
+Mattel,msthawk,Star Hawk,N
+Mattel,mwcbaseb,World Championship Baseball,Y
+Parker Brothers,pbqbert,Q*bert,N
+Parker Brothers,splitsec,Split Second,N
+Tiger Electronics,hccbaskb,Half Court Computer Basketball,N
+Tiger Electronics,rockpin,Rocket Pinball,N
+Tomy,alnchase,Alien Chase,Y
+Tomy,kingman,Kingman,N
+Tomy,phpball,Power House Pinball,N
+Tomy,tbreakup,Break Up (Tomy),N
+Tomy,tcaveman,Caveman (Tomy),N
+Tomy,tccombat,Cosmic Combat,N
+Tomy,tmpacman,Pac Man (Tomy),N
+Tomy,tmscramb,Scramble (Tomy),N
+Tomy,tmtennis,Tennis (Tomy),N
+Tomy,tmtron,Tron,Y
+Vrech,vinvader,Invaders (VTech),N
