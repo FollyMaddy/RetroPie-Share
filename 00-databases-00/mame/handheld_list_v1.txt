@@ -18,14 +18,14 @@ Bandai,machiman,Machine Man,N
 Bandai,packmon,Packri Monster,Y
 Bandai,pairmtch,Pair Match,N
 Bandai,zackman,Zackman,N
-coleco,alnattck,Alien Attack,Y
-coleco,cdkong,Donkey Kong,Y
-coleco,cfrogger,Frogger (coleco),N
-coleco,cgalaxn,Galaxian,N
-coleco,cmspacmn,Ms. Pac-Man,N
-coleco,cpacman,Pac-Man,N
-coleco,cpacmanr1,Pac-Man (Coleco, Rev. 28),N
-coleco,cqback,Electronic Quarterback,N
+Coleco,alnattck,Alien Attack,Y
+Coleco,cdkong,Donkey Kong,Y
+Coleco,cfrogger,Frogger (Coleco),N
+Coleco,cgalaxn,Galaxian,N
+Coleco,cmspacmn,Ms. Pac-Man,N
+Coleco,cpacman,Pac-Man,N
+Coleco,cpacmanr1,Pac-Man (Coleco, Rev. 28),N
+Coleco,cqback,Electronic Quarterback,N
 Elektronika,exospace,Explorers of Space,N
 Elektronika,merrycook,Merry Cook,N
 Elektronika,nupogodi,Nu. pogodi!,Y
@@ -82,4 +82,4 @@ Tomy,tmpacman,Pac Man (Tomy),N
 Tomy,tmscramb,Scramble (Tomy),N
 Tomy,tmtennis,Tennis (Tomy),N
 Tomy,tmtron,Tron,Y
-Vrech,vinvader,Invaders (VTech),N
+Vtech,vinvader,Invaders (VTech),N
