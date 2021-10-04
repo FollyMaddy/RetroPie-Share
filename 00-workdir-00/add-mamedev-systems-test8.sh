@@ -578,9 +578,12 @@ while read LINE; do
 systemsrp+=( "$(echo $LINE | cut -d '_' -f 1)" )
 # read retropie full system names
 #
-#sed is used to turn off the name (PC => -PC-), 
-#otherwise it has also matches with CPC ,PC Engine etc., for PC a solution still has to be found
-#and change :
+#sed is used to change descriptions on the fly, 
+#otherwise it has also 
+#descriptions that are changed to disable matching:
+#(PC => -PC-) #to prefent matches with CPC ,PC Engine etc., for PC a solution still has to be found
+#(Apple II => -Apple II-) #https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/653
+#descriptions that are changed for matching:
 #(Atari Jaguar => Jaguar)
 #(Mega CD => Mega-CD)
 #(Sega 32X => 32X)
@@ -593,6 +596,7 @@ systemsrp+=( "$(echo $LINE | cut -d '_' -f 1)" )
 #
 descriptionsrp+=( "$(echo $LINE | \
 sed 's/\"PC\"/\"-PC-\"/g' | \
+sed 's/Apple II/-Apple II-/g' | \
 sed 's/Atari Jaguar/Jaguar/g' | \
 sed 's/Mega CD/Mega-CD/g' | \
 sed 's/Sega 32X/32X/g' | \
