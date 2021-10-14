@@ -14,7 +14,7 @@ So I downloaded the 64bit zipped binaries from https://www.mamedev.org/oldrel.ht
 
 Then I extracted the data on a 64 bit Windows10 with next command (for other versions they are similar) :
 
-C:\Users\pi\Downloads\MAME\mame0234>mame -listdevices | findstr /B Driver > mame0234_systems
+Downloads\MAME\mame0236\mame -listdevices | findstr /B Driver > mame0236_systems
 
 
 
