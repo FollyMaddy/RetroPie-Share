@@ -1,12 +1,15 @@
 Driver bassmate (Bassmate Computer):
 Driver gnw_ball (Game & Watch: Ball):
 Driver gnw_bfight (Game & Watch: Balloon Fight (Crystal Screen)):
+Driver gnw_bfightn (Game & Watch: Balloon Fight (New Wide Screen)):
 Driver gnw_bjack (Game & Watch: Black Jack):
 Driver gnw_boxing (Micro Vs. System: Boxing):
 Driver gnw_bsweep (Game & Watch: Bomb Sweeper):
 Driver gnw_cgrab (Game & Watch: Crab Grab):
 Driver gnw_chef (Game & Watch: Chef):
 Driver gnw_climber (Game & Watch: Climber (Crystal Screen)):
+Driver gnw_climbern (Game & Watch: Climber (New Wide Screen)):
+Driver gnw_dkcirc (Game & Watch: Donkey Kong Circus):
 Driver gnw_dkhockey (Micro Vs. System: Donkey Kong Hockey):
 Driver gnw_dkjr (Game & Watch: Donkey Kong Jr. (New Wide Screen)):
 Driver gnw_dkjrp (Game & Watch: Donkey Kong Jr. (Panorama Screen)):
@@ -42,6 +45,7 @@ Driver gnw_popeyep (Game & Watch: Popeye (Panorama Screen)):
 Driver gnw_rshower (Game & Watch: Rain Shower):
 Driver gnw_sbuster (Game & Watch: Safe Buster):
 Driver gnw_smb (Game & Watch: Super Mario Bros. (Crystal Screen)):
+Driver gnw_smbn (Game & Watch: Super Mario Bros. (New Wide Screen)):
 Driver gnw_snoopyp (Game & Watch: Snoopy (Panorama Screen)):
 Driver gnw_squish (Game & Watch: Squish):
 Driver gnw_ssparky (Game & Watch: Spitball Sparky):
@@ -50,3 +54,4 @@ Driver gnw_tbridge (Game & Watch: Turtle Bridge):
 Driver gnw_tfish (Game & Watch: Tropical Fish):
 Driver gnw_vermin (Game & Watch: Vermin):
 Driver gnw_zelda (Game & Watch: Zelda):
+

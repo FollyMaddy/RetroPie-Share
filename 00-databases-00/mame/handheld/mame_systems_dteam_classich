@@ -8,8 +8,10 @@ Driver bcclimbr (Crazy Climber (Bandai)):
 Driver bdoramon (Dokodemo Dorayaki Doraemon):
 Driver bfriskyt (Frisky Tom (Bandai)):
 Driver bmboxing (Knock-Em Out Boxing):
+Driver bmcfball (Classic Football (Bambino)):
 Driver bmsafari (Safari (Bambino)):
 Driver bmsoccer (Kick The Goal Soccer):
+Driver bndarc (Arcadia (Bandai)):
 Driver bpengo (Pengo (Bandai)):
 Driver bultrman (Ultraman Monster Battle):
 Driver bzaxxon (Zaxxon (Bandai)):
@@ -22,17 +24,23 @@ Driver cnbaskb (Electronic Basketball (Conic)):
 Driver cnfball (Electronic Football (Conic, TMS1000 version)):
 Driver cnfball2 (Electronic Football II (Conic)):
 Driver cpacman (Pac-Man (Coleco, Rev. 29)):
+Driver cpacmanr1 (Pac-Man (Coleco, Rev. 28)):
 Driver cqback (Electronic Quarterback):
 Driver ebaskb2 (Electronic Basketball 2 (Entex)):
 Driver ebball (Electronic Baseball (Entex)):
 Driver ebball2 (Electronic Baseball 2 (Entex)):
 Driver ebball3 (Electronic Baseball 3 (Entex)):
+Driver ebknight (Black Knight Pinball (Entex)):
 Driver edracula (Dracula (Epoch)):
 Driver efball (Electronic Football (Epoch)):
+Driver efootb4 (Color Football 4 (Entex)):
 Driver egalaxn2 (Galaxian 2 (Entex)):
 Driver einvader (Space Invader (Entex, TMS1100 version)):
 Driver einvader2 (Super Space Invader 2 (Entex, black version)):
+Driver einvaderc (Space Invader (Entex, COP444L version)):
 Driver epacman2 (Pac Man 2 (Entex, cyan Pacman)):
+Driver epacman2r (Pac Man 2 (Entex, red Pacman)):
+Driver esbattle (Space Battle (Entex)):
 Driver esoccer (Electronic Soccer (Entex)):
 Driver estargte (Stargate (Entex)):
 Driver eturtles (Turtles (Entex)):
@@ -46,6 +54,7 @@ Driver ginv (Invader (Gakken, cyan version)):
 Driver ginv1000 (Galaxy Invader 1000):
 Driver ginv2000 (Invader 2000):
 Driver gjungler (Jungler (Gakken)):
+Driver gpoker (Poker (Gakken, 1979 version)):
 Driver h2hbaseb (Head to Head: Electronic Baseball):
 Driver h2hbaskb (Head to Head: Electronic Basketball (TMS1000 version)):
 Driver h2hfootb (Head to Head: Electronic Football):
@@ -55,7 +64,12 @@ Driver hccbaskb (Half Court Computer Basketball):
 Driver invspace (Invader From Space):
 Driver kingman (Kingman):
 Driver machiman (Machine Man):
+Driver mbaskb (Basketball (Mattel)):
+Driver mchess (Computer Chess (Mattel)):
 Driver mcompgin (Computer Gin):
+Driver mfootb2 (Football 2 (Mattel)):
+Driver mhockey (Hockey (Mattel)):
+Driver msoccer (Soccer (Mattel)):
 Driver msthawk (Star Hawk (Mattel)):
 Driver mwcbaseb (World Championship Baseball):
 Driver packmon (Packri Monster):
