@@ -26,7 +26,7 @@ rp_module_section="config"
 
 local mamedev_csv=()
 local mamedev_forum_csv=()
-
+local gamelists_csv=()
 
 function depends_add-mamedev-systems() {
     getDepends curl python3
@@ -153,11 +153,28 @@ function subgui_add-mamedev-systems_downloads() {
 ",menu_item,empty,to_do,"
 ",Download cheats,,download_cheats,"
 ",,,,"
-",Download ES gamelists with images and videos (+/-50 minutes),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
+",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
+",Download gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
-",Download mame artwork (+/-30 minutes),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
+",Download mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
 ",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
     )
+    build_menu_add-mamedev-systems
+}
+
+
+function subgui_add-mamedev-systems_downloads_gamelists() {
+    local csv=()
+    #here we read the systems and descriptions from mame into an array
+    #by using the if function the data can be re-used, without reading it every time
+    if [[ -z ${gamelists_csv[@]} ]]; then
+    local gamelists_read
+    clear
+    echo "reading the individual gamelist data"
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";curl https://drive.google.com/embeddedfolderview?id=1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m#list|sed 's/https/\nhttps/g'|grep folders|sed 's/folders\//folders\"/g;s/>/"/g;s/</"/g'|while read line;do echo "\",Download/update only for '$(echo $line|cut -d '"' -f50)',,download_from_google_drive $(echo $line|cut -d '"' -f2) /home/$user/RetroPie/roms/$(echo $line|cut -d '"' -f50),\"";done)
+    fi
+    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
     build_menu_add-mamedev-systems
 }
 
@@ -185,12 +202,13 @@ function choose_add() {
     # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
     # Now using this : lines that start with "D" using => grep ^[D]
     clear
-    echo "Extracting data from mame0228-mame0234 have issues on 32bit OSes"
-    echo "Now we are reading, mame0234 data, from the RetroPie-Share"
+    echo "Extracting data from mame0228-mame0236 have issues on 32bit OSes"
+    echo "Now we are reading, mame0236 data, from the RetroPie-Share"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    while read system_read;do mamedev_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0234_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
     fi
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
@@ -224,7 +242,8 @@ function choose_add_forum() {
     echo "For speed, data will be re-used within this session"
     echo "Be patient" 
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    while read system_read;do mamedev_forum_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame_systems_selection|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read system_read;do mamedev_forum_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame_systems_selection|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
     fi
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
