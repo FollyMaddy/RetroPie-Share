@@ -25,8 +25,8 @@ rp_module_section="config"
 
 
 local mamedev_csv=()
-local mamedev_Forum_csv=()
-
+local mamedev_forum_csv=()
+local gamelists_csv=()
 
 function depends_add-mamedev-systems() {
     getDepends curl python3
@@ -40,14 +40,14 @@ function gui_add-mamedev-systems() {
 ",Install mame,,package_setup mame,"
 ",Install lr-mess,,package_setup lr-mess,"
 ",,,,"
-",Selection of systems > Submenu,,subgui_add-mamedev-systems_Forum,"
+",Selection of systems > Submenu,,subgui_add-mamedev-systems_forum,"
 ",,,,"
 ",All systems > Submenu,,subgui_add-mamedev-systems_all,"
     )
     build_menu_add-mamedev-systems
 }
 
-function subgui_add-mamedev-systems_Forum() {
+function subgui_add-mamedev-systems_forum() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
@@ -78,8 +78,8 @@ function subgui_add-mamedev-systems_forum_list() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
-",Forum list upon descriptions,,choose_add_Forum descriptions,"
-",Forum list upon system names,,choose_add_Forum,"
+",Forum list upon descriptions,,choose_add_forum descriptions,"
+",Forum list upon system names,,choose_add_forum,"
     )
     build_menu_add-mamedev-systems
 }
@@ -153,11 +153,28 @@ function subgui_add-mamedev-systems_downloads() {
 ",menu_item,empty,to_do,"
 ",Download cheats,,download_cheats,"
 ",,,,"
-",Download ES gamelists with images and videos (+/-50 minutes),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
+",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
+",Download gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
-",Download mame artwork (+/-30 minutes),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
+",Download mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
 ",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
     )
+    build_menu_add-mamedev-systems
+}
+
+
+function subgui_add-mamedev-systems_downloads_gamelists() {
+    local csv=()
+    #here we read the systems and descriptions from mame into an array
+    #by using the if function the data can be re-used, without reading it every time
+    if [[ -z ${gamelists_csv[@]} ]]; then
+    local gamelists_read
+    clear
+    echo "reading the individual gamelist data"
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";curl https://drive.google.com/embeddedfolderview?id=1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m#list|sed 's/https/\nhttps/g'|grep folders|sed 's/folders\//folders\"/g;s/>/"/g;s/</"/g'|while read line;do echo "\",Download/update only for '$(echo $line|cut -d '"' -f50)',,download_from_google_drive $(echo $line|cut -d '"' -f2) /home/$user/RetroPie/roms/$(echo $line|cut -d '"' -f50),\"";done)
+    fi
+    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
     build_menu_add-mamedev-systems
 }
 
@@ -185,12 +202,13 @@ function choose_add() {
     # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
     # Now using this : lines that start with "D" using => grep ^[D]
     clear
-    echo "Extracting data from mame0228-mame0234 have issues on 32bit OSes"
-    echo "Now we are reading, mame0234 data, from the RetroPie-Share"
+    echo "Extracting data from mame0228-mame0236 have issues on 32bit OSes"
+    echo "Now we are reading, mame0236 data, from the RetroPie-Share"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    while read system_read;do mamedev_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0234_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
     fi
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
@@ -210,31 +228,32 @@ function choose_add() {
 }
 
 
-function choose_add_Forum() {
+function choose_add_forum() {
     local csv=()
     #here we read the systems and descriptions from mame into an array
     #by using the if function the data can be re-used, without reading it every time
-    if [[ -z ${mamedev_Forum_csv[@]} ]]; then
+    if [[ -z ${mamedev_forum_csv[@]} ]]; then
     local system_read
     # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
     # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
     # Now using this : lines that start with "D" using => grep ^[D]
     clear
-    echo "Now we are reading a Forum list from the RetroPie-Share"
+    echo "Now we are reading a forum list from the RetroPie-Share"
     echo "For speed, data will be re-used within this session"
     echo "Be patient" 
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    while read system_read;do mamedev_Forum_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame_systems_selection|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read system_read;do mamedev_forum_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame_systems_selection|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
     fi
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
-    #here we store the sorted mamedev_Forum_csv values in the csv array
+    #here we store the sorted mamedev_forum_csv values in the csv array
     #we sort on the third column which contain the descriptions of the sytems
-    IFS=$'\n' csv=($(sort -t"," -k 3 --ignore-case <<<"${mamedev_Forum_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -k 3 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
     else
-    #here we store the sorted mamedev_Forum_csv values in the csv array
+    #here we store the sorted mamedev_forum_csv values in the csv array
     #we sort on the second column which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${mamedev_Forum_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
     fi
     build_menu_add-mamedev-systems $1
 }
@@ -314,7 +333,7 @@ function run_generator_script() {
 
 #
 # Author : @folly
-# Date   : 01/08/2021
+# Date   : 15/10/2021
 #
 # Copyright 2021 @folly
 #
@@ -398,8 +417,10 @@ creating=
 #a system that can be detected (gameandwatch), already in RetroPie naming for normal matching
 #using @DTEAM naming for compatibitity with possible existing es-themes
 #hoping this will be the future RetroPie naming for these handhelds
+#this is an example command to extract the systems and add them here to the array :
+#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
 all_in1=( "ablmini" "ablpinb" "bittboy" "cybar120" "dgun2573" "dnv200fs" "fapocket" "fcpocket" "fordrace" "gprnrs1" "gprnrs16" "ii32in1" "ii8in1" "intact89" "intg5410" "itvg49" "lexiseal" "lexizeus" "lx_jg7415" "m505neo" "m521neo" "majkon" "mc_105te" "mc_110cb" "mc_138cb" "mc_7x6ss" "mc_89in1" "mc_8x6cb" "mc_8x6ss" "mc_9x6ss" "mc_aa2" "mc_cb280" "mc_dcat8" "mc_dg101" "mc_dgear" "mc_hh210" "mc_sam60" "mc_sp69" "mc_tv200" "megapad" "mgt20in1" "miwi2_7" "mysprtch" "mysprtcp" "mysptqvc" "njp60in1" "oplayer" "pdc100" "pdc150t" "pdc200" "pdc40t" "pdc50" "pjoyn50" "pjoys30" "pjoys60" "ppgc200g" "react" "reactmd" "rminitv" "sarc110" "sudopptv" "sy888b" "sy889" "techni4" "timetp36" "tmntpdc" "unk1682" "vgcaplet" "vgpmini" "vgpocket" "vjpp2" "vsplus" "zdog" "zone7in1" "zudugo" "namcons1" "namcons2" "taitons1" "taitons2" "tak_geig" "namcons1" "namcons2" "taitons1" "taitons2" "tak_geig" "tomcpin" )
-classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "edracula" "efball" "egalaxn2" "einvader" "einvader2" "epacman2" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mcompgin" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
+classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmcfball" "bmsafari" "bmsoccer" "bndarc" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cpacmanr1" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "ebknight" "edracula" "efball" "efootb4" "egalaxn2" "einvader" "einvader2" "einvaderc" "epacman2" "epacman2r" "esbattle" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "gpoker" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mbaskb" "mchess" "mcompgin" "mfootb2" "mhockey" "msoccer" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
 konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
 tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
 
@@ -1088,10 +1109,12 @@ clear
 echo "extract background files from mame artwork, if available, and create custom retroarch configs for overlay's"
 echo
 #added handheld arrays, used for overlays
-classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "edracula" "efball" "egalaxn2" "einvader" "einvader2" "epacman2" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mcompgin" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
+#this is an example command to extract the systems and add them here to the array :
+#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmcfball" "bmsafari" "bmsoccer" "bndarc" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cpacmanr1" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "ebknight" "edracula" "efball" "efootb4" "egalaxn2" "einvader" "einvader2" "einvaderc" "epacman2" "epacman2r" "esbattle" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "gpoker" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mbaskb" "mchess" "mcompgin" "mfootb2" "mhockey" "msoccer" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
 konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
 tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
-gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bjack" "gnw_boxing" "gnw_bsweep" "gnw_cgrab" "gnw_chef" "gnw_climber" "gnw_dkhockey" "gnw_dkjr" "gnw_dkjrp" "gnw_dkong" "gnw_dkong2" "gnw_dkong3" "gnw_fire" "gnw_fireatk" "gnw_fires" "gnw_flagman" "gnw_gcliff" "gnw_ghouse" "gnw_helmet" "gnw_judge" "gnw_lboat" "gnw_lion" "gnw_manhole" "gnw_manholeg" "gnw_mario" "gnw_mariocm" "gnw_mariocmt" "gnw_mariotj" "gnw_mbaway" "gnw_mickdon" "gnw_mmouse" "gnw_mmousep" "gnw_octopus" "gnw_opanic" "gnw_pchute" "gnw_pinball" "gnw_popeye" "gnw_popeyep" "gnw_rshower" "gnw_sbuster" "gnw_smb" "gnw_snoopyp" "gnw_squish" "gnw_ssparky" "gnw_stennis" "gnw_tbridge" "gnw_tfish" "gnw_vermin" "gnw_zelda" )
+gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bfightn" "gnw_bjack" "gnw_boxing" "gnw_bsweep" "gnw_cgrab" "gnw_chef" "gnw_climber" "gnw_climbern" "gnw_dkcirc" "gnw_dkhockey" "gnw_dkjr" "gnw_dkjrp" "gnw_dkong" "gnw_dkong2" "gnw_dkong3" "gnw_fire" "gnw_fireatk" "gnw_fires" "gnw_flagman" "gnw_gcliff" "gnw_ghouse" "gnw_helmet" "gnw_judge" "gnw_lboat" "gnw_lion" "gnw_manhole" "gnw_manholeg" "gnw_mario" "gnw_mariocm" "gnw_mariocmt" "gnw_mariotj" "gnw_mbaway" "gnw_mickdon" "gnw_mmouse" "gnw_mmousep" "gnw_octopus" "gnw_opanic" "gnw_pchute" "gnw_pinball" "gnw_popeye" "gnw_popeyep" "gnw_rshower" "gnw_sbuster" "gnw_smb" "gnw_smbn" "gnw_snoopyp" "gnw_squish" "gnw_ssparky" "gnw_stennis" "gnw_tbridge" "gnw_tfish" "gnw_vermin" "gnw_zelda" )
 
 #create a subarray of the arrays being used for overlays
 #now only two for loops can be use for multiple arrays
