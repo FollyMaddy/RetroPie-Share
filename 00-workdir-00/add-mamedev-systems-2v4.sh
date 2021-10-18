@@ -151,12 +151,12 @@ function subgui_add-mamedev-systems_downloads() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
-",Download cheats,,download_cheats,"
+",Download/update cheats,,download_cheats,"
 ",,,,"
 ",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
-",Download gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
+",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
-",Download mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
+",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
 ",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
     )
     build_menu_add-mamedev-systems
