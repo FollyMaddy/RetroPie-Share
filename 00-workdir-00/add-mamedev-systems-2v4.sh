@@ -70,6 +70,10 @@ function subgui_add-mamedev-systems_all() {
 ",,,,"
 ",All upon descriptions,,choose_add descriptions,"
 ",All upon system names,,choose_add,"
+",,,,"
+",Non-arcade upon descriptions,,choose_add descriptions *non-arcade,"
+",Cabinets upon descriptions,,choose_add descriptions *cabinets,"
+",MSX upon descriptions,,choose_add descriptions MSX,"
     )
     build_menu_add-mamedev-systems
 }
@@ -208,13 +212,21 @@ function choose_add() {
     echo "Be patient for 20 seconds" 
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
     fi
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
     #here we store the sorted mamedev_csv values in the csv array
     #we sort on the third colunm which contain the descriptions of the sytems
-    IFS=$'\n' csv=($(sort -t"," -k 3 --ignore-case <<<"${mamedev_csv[*]}"));unset IFS
+    #to get sorted lists from the full array we need to split it in lines withe the sed command and then grep on what we want
+    #to keep the first reserved csv line, that was added with (echo \",,,,\") we need to grep that pattern
+    #like this (for one or the other ): grep 'pattern1\|pattern2'
+    #like this (for one and the other ): grep -P '^(?=.*pattern1)(?=.*pattern2)'
+    #because we need a combination of "or" and "and" I found more information in the next link
+    #more info https://www.shellhacks.com/grep-or-grep-and-grep-not-match-multiple-patterns/
+    #using awk we can combined (and)&& (or)||
+    #between the second // we can add the second pattern, to sort on only the "working" systems
+    IFS=$'\n' csv=($(awk "/$2/ && // || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")));unset IFS
     #this is an aternative but much slower
     #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -k 3 --ignore-case;unset IFS)
     else
