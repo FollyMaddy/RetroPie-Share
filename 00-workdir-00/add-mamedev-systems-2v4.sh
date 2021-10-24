@@ -40,7 +40,9 @@ function gui_add-mamedev-systems() {
 ",Install mame,,package_setup mame,"
 ",Install lr-mess,,package_setup lr-mess,"
 ",,,,"
-",Selection of systems > Submenu,,subgui_add-mamedev-systems_forum,"
+",Selection of systems and downloads > Submenu,,subgui_add-mamedev-systems_forum,"
+",,,,"
+",Sorted data lists > Submenu,,subgui_add-mamedev-systems_sort,"
 ",,,,"
 ",All systems > Submenu,,subgui_add-mamedev-systems_all,"
     )
@@ -70,13 +72,25 @@ function subgui_add-mamedev-systems_all() {
 ",,,,"
 ",All upon descriptions,,choose_add descriptions,"
 ",All upon system names,,choose_add,"
-",,,,"
-",Non-arcade upon descriptions,,choose_add descriptions *non-arcade,"
-",Cabinets upon descriptions,,choose_add descriptions *cabinets,"
-",MSX upon descriptions,,choose_add descriptions MSX,"
     )
     build_menu_add-mamedev-systems
 }
+
+
+function subgui_add-mamedev-systems_sort() {
+#we can add up to 5 options per list to sort on
+    local csv=()
+    csv=(
+",menu_item,empty,to_do,"
+",*** these are the first test lists ***,,,"
+",Non-arcade upon descriptions,,choose_add descriptions *non-arcade,"
+",Cabinets upon descriptions,,choose_add descriptions *cabinets,"
+",MSX upon descriptions,,choose_add descriptions MSX,"
+",SONY MSX upon descriptions,,choose_add descriptions MSX HB-F,"
+    )
+    build_menu_add-mamedev-systems
+}
+
 
 function subgui_add-mamedev-systems_forum_list() {
     local csv=()
@@ -225,8 +239,9 @@ function choose_add() {
     #because we need a combination of "or" and "and" I found more information in the next link
     #more info https://www.shellhacks.com/grep-or-grep-and-grep-not-match-multiple-patterns/
     #using awk we can combined (and)&& (or)||
-    #between the second // we can add the second pattern, to sort on only the "working" systems
-    IFS=$'\n' csv=($(awk "/$2/ && // || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")));unset IFS
+    #I added up to 5 options ($2 -$6) to sort on multiple patterns in one go
+    #if options are empty, they aren't used
+    IFS=$'\n' csv=($(awk "/$2/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")));unset IFS
     #this is an aternative but much slower
     #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -k 3 --ignore-case;unset IFS)
     else
