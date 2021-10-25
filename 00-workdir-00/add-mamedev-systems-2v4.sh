@@ -84,12 +84,27 @@ function subgui_add-mamedev-systems_sort() {
     csv=(
 ",menu_item,empty,to_do,"
 ",*** next lines are added to test the code ***,,,"
+",Forum list upon descriptions,,choose_add descriptions *forum,"
+",Forum list upon systems,,choose_add systems *forum,"
+",,,,"
 ",Non-arcade upon descriptions,,choose_add descriptions *non-arcade,"
+",Non-arcade upon systems,,choose_add systems *non-arcade,"
+",,,,"
 ",Cabinets upon descriptions,,choose_add descriptions *cabinets,"
+",Cabinets upon systems,,choose_add systems *cabinets,"
+",,,,"
 ",MSX upon descriptions,,choose_add descriptions MSX,"
+",MSX upon systems,,choose_add systems MSX,"
+",,,,"
 ",(and equal test 2 opt.)SONY MSX upon descriptions,,choose_add descriptions MSX HB-F,"
+",(and equal test 2 opt.)SONY MSX upon systems,,choose_add systems MSX HB-F,"
+",,,,"
+
 ",(not equal test 2 opt.)MSX but no HB types upon descriptions,,choose_add descriptions HB! MSX,"
+",(not equal test 2 opt.)MSX but no HB types upon systems,,choose_add systems HB! MSX,"
+",,,,"
 ",(not equal test 1 opt.)arcade upon descriptions,,choose_add descriptions *non-arcade!,"
+",(not equal test 1 opt.)arcade upon systems,,choose_add systems *non-arcade!,"
     )
     build_menu_add-mamedev-systems
 }
@@ -250,7 +265,7 @@ function choose_add() {
     else
     #here we store the sorted mamedev_csv values in the csv array
     #we sort on the second colunm which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${mamedev_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case<<<$(awk "$([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
     #this is an aternative but much slower
     #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 2 --ignore-case;unset IFS)
     fi
@@ -320,7 +335,7 @@ function build_menu_add-mamedev-systems() {
     if [[ $1 == systems# ]]; then
       for i in ${!csv[@]}; do set ${csv[$i]}; [[ $2 != [a-z]* ]] && options+=("$i" "$2");done
     fi
-    if [[ -z $1 ]]; then
+    if [[ -z $1 ]] || [[ $1 == systems ]]; then
     for i in ${!csv[@]}; do set ${csv[$i]}; options+=("$i" "$2");done
     fi
     #remove option 0 (value 0 and 1) so the menu begins with 1
