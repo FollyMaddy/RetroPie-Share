@@ -265,7 +265,7 @@ Driver aa3000 (BBC A3000): *computer*non-arcade
 Driver aa3010 (Acorn A3010): *computer*non-arcade
 Driver aa3020 (Acorn A3020): *computer*non-arcade
 Driver aa305 (Archimedes 305): *computer*non-arcade
-Driver aa310 (Archimedes 310): *computer*non-arcade
+Driver aa310 (Archimedes 310): *forum*computer*non-arcade
 Driver aa4 (Acorn A4): *computer*non-arcade
 Driver aa4000 (Acorn A4000): *computer*non-arcade
 Driver aa4101 (Archimedes 410/1): *computer*non-arcade
@@ -690,7 +690,7 @@ Driver ad5vpaa (Video Poker Ace (Bellfruit) (Adder 5) (set 2)): *arcade*clones-a
 Driver ad5vpab (Video Poker Ace (Bellfruit) (Adder 5) (set 3)): *arcade*clones-arcade*screenless
 Driver ad5vpac (Video Poker Ace (Bellfruit) (Adder 5) (set 4)): *arcade*clones-arcade*screenless
 Driver adacp150p (CP-150 Plus): *non-arcade
-Driver adam (Adam): *computer*non-arcade
+Driver adam (Adam): *forum*computer*non-arcade
 Driver adillor (Armadillo Racing (Rev. AM2 Ver.A, World)): *originals_arcade*working_arcade*arcade*driving
 Driver adillorj (Armadillo Racing (Rev. AM1 Ver.A, Japan)): *working_arcade*arcade*clones-arcade*driving
 Driver adm12 (ADM 12 Video Display Terminal): *computer*non-arcade
@@ -705,7 +705,7 @@ Driver adonisu (Adonis (BHG1508, US)): *arcade*clones-arcade
 Driver adults (Adults Only (Ukraine, V. 43.23)): *originals_arcade*arcade*screenless
 Driver adultsa (Adults Only (Ukraine, V. 43.17)): *arcade*clones-arcade*screenless
 Driver aduskcm (African Dusk - Mr. Cashman (20006711, NSW/ACT)): *originals_arcade*arcade
-Driver advision (Adventure Vision): *game-console*non-arcade
+Driver advision (Adventure Vision): *forum*game-console*non-arcade
 Driver advsnha (Advision Home Arcade): *game-console*non-arcade
 Driver aerfboo2 (Aero Fighters (bootleg, set 2)): *working_arcade*arcade*bootlegs*clones-arcade
 Driver aerfboot (Aero Fighters (bootleg, set 1)): *working_arcade*arcade*bootlegs*clones-arcade
@@ -837,7 +837,7 @@ Driver ali (Ali): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver alibaba (Ali Baba and 40 Thieves): *originals_arcade*arcade*cabinets*maze
 Driver alibabab (Mustafa and 40 Thieves (bootleg)): *arcade*bootlegs*cabinets*clones-arcade*maze
 Driver alice (Alice): *computer*non-arcade
-Driver alice32 (Alice 32): *computer*non-arcade
+Driver alice32 (Alice 32): *forum*computer*non-arcade
 Driver alice90 (Alice 90): *computer*non-arcade
 Driver alien (Alien: The Arcade Medal Edition): *originals_arcade*arcade*medal-game
 Driver alien3 (Alien3: The Gun (World)): *originals_arcade*working_arcade*arcade
@@ -1100,7 +1100,7 @@ Driver apbg (APB - All Points Bulletin (German)): *working_arcade*arcade*clones-
 Driver apc (APC): *computer*non-arcade
 Driver apexc (All Purpose Electronic X-ray Computer (as described in 1957)): *computer*non-arcade
 Driver apfimag (APF Imagination Machine): *computer*non-arcade
-Driver apfm1000 (APF M-1000): *game-console*non-arcade
+Driver apfm1000 (APF M-1000): *forum*game-console*non-arcade
 Driver aplan (A-Plan): *originals_arcade*arcade
 Driver aplannb (Apricot LANstation (Novell Remote Boot)): *computer*non-arcade
 Driver aplanst (Apricot LANstation (Krypton Motherboard)): *computer*non-arcade
@@ -1109,7 +1109,7 @@ Driver aplatoon (Platoon V.3.1 US): *originals_arcade*arcade
 Driver aplsbon (Apricot LS Pro (Bonsai Motherboard)): *computer*non-arcade
 Driver aplscar (Apricot LS Pro (Caracal Motherboard)): *computer*non-arcade
 Driver apocof (Apollo Coffee (0151105, US)): *originals_arcade*arcade
-Driver apogee (Apogee BK-01): *computer*non-arcade
+Driver apogee (Apogee BK-01): *forum*computer*non-arcade
 Driver apollo13 (Apollo 13 (5.01)): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver apollo13_10 (Apollo 13 (1.00)): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver apollo13_20 (Apollo 13 (2.03)): *arcade*clones-arcade*mechanical-arcade*screenless
@@ -1126,7 +1126,7 @@ Driver apple2c3 (Apple //c (Original Memory Expansion)): *computer*non-arcade
 Driver apple2c4 (Apple //c (rev 4)): *computer*non-arcade
 Driver apple2cp (Apple //c Plus): *computer*non-arcade
 Driver apple2e (Apple //e): *computer*non-arcade
-Driver apple2ee (Apple //e (enhanced)): *computer*non-arcade
+Driver apple2ee (Apple //e (enhanced)): *forum*computer*non-arcade
 Driver apple2eefr (Apple //e (enhanced, France)): *computer*non-arcade
 Driver apple2ees (Apple //e (Spain)): *computer*non-arcade
 Driver apple2eeuk (Apple //e (enhanced, UK)): *computer*non-arcade
@@ -1136,7 +1136,7 @@ Driver apple2gs (Apple IIgs (ROM03)): *computer*non-arcade
 Driver apple2gsr0 (Apple IIgs (ROM00)): *computer*non-arcade
 Driver apple2gsr0p (Apple IIgs (ROM00 prototype 6/19/1986)): *computer*non-arcade
 Driver apple2gsr0p2 (Apple IIgs (ROM00 prototype 3/10/1986)): *computer*non-arcade
-Driver apple2gsr1 (Apple IIgs (ROM01)): *computer*non-arcade
+Driver apple2gsr1 (Apple IIgs (ROM01)): *forum*computer*non-arcade
 Driver apple2gsr3p (Apple IIgs (ROM03 prototype)): *computer*non-arcade
 Driver apple2jp (Apple ][ J-Plus): *computer*non-arcade
 Driver apple2p (Apple ][+): *computer*non-arcade
@@ -1161,7 +1161,7 @@ Driver aquajet (Aqua Jet (Rev. AJ2 Ver.B, World)): *originals_arcade*working_arc
 Driver aqualand (Aqualand): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver aquarium (Aquarium (US)): *originals_arcade*working_arcade*arcade
 Driver aquariumj (Aquarium (Japan)): *working_arcade*arcade*clones-arcade
-Driver aquarius (Aquarius (NTSC)): *computer*non-arcade
+Driver aquarius (Aquarius (NTSC)): *forum*computer*non-arcade
 Driver aquarius2 (Aquarius II): *computer*non-arcade
 Driver aquariusp (Aquarius (PAL)): *computer*non-arcade
 Driver aquarush (Aqua Rush (Japan, AQ1/VER.A1)): *originals_arcade*working_arcade*arcade
@@ -1209,7 +1209,7 @@ Driver arbalest (Arbalester): *originals_arcade*working_arcade*arcade
 Driver arbv2 (ARB V2 Sargon 4.0): *board-game*non-arcade*screenless
 Driver arcade10 (Mini Arcade Console (Arcade 10-in-1)): *game-console*non-arcade
 Driver arcadecl (Arcade Classics (prototype)): *originals_arcade*working_arcade*arcade*multi-game
-Driver arcadia (Arcadia 2001): *game-console*non-arcade
+Driver arcadia (Arcadia 2001): *forum*game-console*non-arcade
 Driver arcadian (Arcadia (NMK)): *originals_arcade*working_arcade*arcade
 Driver archrivl (Arch Rivals (rev 4.0 6/29/89)): *originals_arcade*working_arcade*arcade*freeplay
 Driver archrivla (Arch Rivals (rev 2.0 5/03/89)): *working_arcade*arcade*clones-arcade*freeplay
@@ -1525,7 +1525,7 @@ Driver astrob2 (Astro Blaster (version 2)): *working_arcade*arcade*cabinets*clon
 Driver astrob2a (Astro Blaster (version 2a)): *working_arcade*arcade*cabinets*clones-arcade
 Driver astrob2b (Astro Blaster (version 2b)): *working_arcade*arcade*clones-arcade
 Driver astrobg (Astro Blaster (German)): *working_arcade*arcade*cabinets*clones-arcade
-Driver astrocde (Bally Professional Arcade): *game-console*non-arcade
+Driver astrocde (Bally Professional Arcade): *forum*game-console*non-arcade
 Driver astrocdl (Bally Home Library Computer): *game-console*non-arcade
 Driver astrocdw (Bally Computer System): *game-console*non-arcade
 Driver astrocmd (Astro Command): *classich*handheld*non-arcade
@@ -1600,7 +1600,7 @@ Driver atlantol (Atlant Olimpic (Italian bootleg)): *working_arcade*arcade*bootl
 Driver atleta (Atleta): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver atm (ATM): *computer*non-arcade
 Driver atmtb2 (ATM-turbo2): *computer*non-arcade
-Driver atom (Atom): *computer*non-arcade
+Driver atom (Atom): *forum*computer*non-arcade
 Driver atombb (Atom with BBC Basic): *computer*non-arcade
 Driver atombjt (Atom (bootleg of Bombjack Twin)): *working_arcade*arcade*bootlegs*clones-arcade
 Driver atomboy (Atomic Boy (revision B)): *working_arcade*arcade*cabinets*clones-arcade
@@ -1933,7 +1933,7 @@ Driver bbb109 (Big Bang Bar (Beta 1.9 US)): *originals_arcade*arcade*mechanical-
 Driver bbbowlin (Big Ball Bowling (Bowler)): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver bbbxing (Best Bout Boxing (ver 1.3)): *originals_arcade*working_arcade*arcade*freeplay
 Driver bbca (BBC Micro Model A): *computer*non-arcade
-Driver bbcb (BBC Micro Model B): *computer*non-arcade
+Driver bbcb (BBC Micro Model B): *forum*computer*non-arcade
 Driver bbcb_de (BBC Micro Model B (German)): *computer*non-arcade
 Driver bbcb_us (BBC Micro Model B (US)): *computer*non-arcade
 Driver bbcbc (BBC Bridge Companion): *board-game*non-arcade
@@ -2212,7 +2212,7 @@ Driver bjtwin (Bombjack Twin (set 1)): *originals_arcade*working_arcade*arcade
 Driver bjtwina (Bombjack Twin (set 2)): *working_arcade*arcade*clones-arcade
 Driver bjtwinp (Bombjack Twin (prototype? with adult pictures, set 1)): *working_arcade*arcade*clones-arcade
 Driver bjtwinpa (Bombjack Twin (prototype? with adult pictures, set 2)): *working_arcade*arcade*clones-arcade
-Driver bk0010 (BK 0010): *computer*non-arcade
+Driver bk0010 (BK 0010): *forum*computer*non-arcade
 Driver bk001001 (BK 0010-01): *computer*non-arcade
 Driver bk0010fd (BK 0010 FDD): *computer*non-arcade
 Driver bk0011m (BK 0011M): *computer*non-arcade
@@ -3019,7 +3019,7 @@ Driver casino5 (Casino Five (3315-02, U5-2B)): *originals_arcade*working_arcade*
 Driver casino5a (Casino Five (3315-02, U5-0)): *working_arcade*arcade*casino*clones-arcade
 Driver casino5b (Casino Five (3315-12, U5-0)): *working_arcade*arcade*casino*clones-arcade
 Driver casiorom (Casio ROM Pack Software List holder): *non-arcade*screenless
-Driver casloopy (Loopy): *game-console*non-arcade
+Driver casloopy (Loopy): *forum*game-console*non-arcade
 Driver caspoker (Casino Poker (Ver PM88-01-21, German)): *originals_arcade*working_arcade*arcade*casino
 Driver caspokera (Casino Poker (Ver PM86LO-35-5, German)): *working_arcade*arcade*casino*clones-arcade
 Driver caspokerb (Casino Poker (Ver PM86-35-1, German)): *working_arcade*arcade*casino*clones-arcade
@@ -3166,7 +3166,7 @@ Driver cdc721 (721 Display Terminal): *computer*non-arcade
 Driver cdi490a (CD-i 490): *game-console*non-arcade
 Driver cdi910 (CD-i 910-17P Mini-MMC (PAL)): *game-console*non-arcade
 Driver cdibios (CD-i (Mono-I) (PAL) BIOS): *arcade*screenless
-Driver cdimono1 (CD-i (Mono-I) (PAL)): *game-console*non-arcade
+Driver cdimono1 (CD-i (Mono-I) (PAL)): *forum*game-console*non-arcade
 Driver cdimono2 (CD-i (Mono-II) (NTSC)): *game-console*non-arcade
 Driver cdiscon1 (Disco No.1 (DECO Cassette) (US)): *originals_arcade*working_arcade*arcade*cabinets
 Driver cdkong (Donkey Kong (Coleco)): *classich*handheld*non-arcade
@@ -3237,7 +3237,7 @@ Driver cgang (Cosmo Gang (US)): *originals_arcade*working_arcade*arcade*mechanic
 Driver cgangpzl (Cosmo Gang the Puzzle (US)): *originals_arcade*working_arcade*arcade
 Driver cgangpzlj (Cosmo Gang the Puzzle (Japan)): *working_arcade*arcade*clones-arcade
 Driver cgc7900 (CGC 7900): *computer*non-arcade
-Driver cgenie (Colour Genie EG2000): *computer*non-arcade
+Driver cgenie (Colour Genie EG2000): *forum*computer*non-arcade
 Driver cgenienz (Colour Genie EG2000 (New Zealand)): *computer*non-arcade
 Driver cgidjp (Double Joker Poker (CGI)): *originals_arcade*working_arcade*arcade*casino
 Driver cgip30cs (Credit Poker (ver.30c, standard)): *originals_arcade*working_arcade*arcade*casino
@@ -3614,7 +3614,7 @@ Driver cobrasp (Cobra (ITCI)): *computer*non-arcade
 Driver cobrata (Cobra: The Arcade (CBR1 Ver. B)): *originals_arcade*arcade
 Driver cocean1a (Ocean to Ocean (Medal) (DECO Cassette MD) (No.10/Ver.1,Japan)): *originals_arcade*working_arcade*arcade*cabinets*casino
 Driver cocean6b (Ocean to Ocean (Medal) (DECO Cassette MD) (No.10/Ver.6,US)): *working_arcade*arcade*cabinets*casino*clones-arcade
-Driver coco (Color Computer): *computer*non-arcade
+Driver coco (Color Computer): *forum*computer*non-arcade
 Driver coco2 (Color Computer 2): *computer*non-arcade
 Driver coco2b (Color Computer 2B): *computer*non-arcade
 Driver coco2bh (Color Computer 2B (HD6309)): *computer*non-arcade
@@ -4025,7 +4025,7 @@ Driver crusnwld23 (Cruis'n World (v2.3)): *working_arcade*arcade*cabinets*clones
 Driver crusnwld24 (Cruis'n World (v2.4)): *working_arcade*arcade*cabinets*clones-arcade*driving
 Driver crvisio2 (CreatiVision MK-II (Europe)): *game-console*non-arcade
 Driver crvisioj (CreatiVision (Japan)): *game-console*non-arcade
-Driver crvision (CreatiVision): *game-console*non-arcade
+Driver crvision (CreatiVision): *forum*game-console*non-arcade
 Driver cryptklr (Crypt Killer (GQ420 UAA)): *originals_arcade*working_arcade*arcade
 Driver crysbios (Crystal System BIOS): *arcade*freeplay*screenless
 Driver crysking (The Crystal of Kings): *originals_arcade*working_arcade*arcade*fighter*freeplay
@@ -5097,7 +5097,7 @@ Driver dragntra (Dragon Treasure (Rev A) (GDS-0030A)): *arcade*clones-arcade*med
 Driver dragon (Dragon): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver dragon200 (Dragon 200): *computer*non-arcade
 Driver dragon200e (Dragon 200-E): *computer*non-arcade
-Driver dragon32 (Dragon 32): *computer*non-arcade
+Driver dragon32 (Dragon 32): *forum*computer*non-arcade
 Driver dragon64 (Dragon 64): *computer*non-arcade
 Driver dragon64h (Dragon 64 (HD6309E CPU)): *computer*non-arcade
 Driver dragonsh (Dragon's Heaven (development board)): *originals_arcade*working_arcade*arcade*cabinets*fighter*freeplay
@@ -5929,7 +5929,7 @@ Driver eightfrc (Eight Forces): *originals_arcade*working_arcade*arcade
 Driver eightman (Eight Man (NGM-025 ~ NGH-025)): *originals_arcade*working_arcade*arcade*cabinets*freeplay
 Driver einning (Extra Inning / Ball Park II): *originals_arcade*working_arcade*arcade*monochrome
 Driver einst256 (Einstein 256): *computer*non-arcade
-Driver einstein (Einstein TC-01): *computer*non-arcade
+Driver einstein (Einstein TC-01): *forum*computer*non-arcade
 Driver einvader (Space Invader (Entex, TMS1100 version)): *classich*handheld*non-arcade
 Driver einvader2 (Super Space Invader 2 (Entex, black version)): *classich*handheld*non-arcade
 Driver einvaderc (Space Invader (Entex, COP444L version)): *classich*handheld*non-arcade
@@ -5956,7 +5956,7 @@ Driver eldorda5 (El Dorado (0100652V, NSW/ACT)): *originals_arcade*arcade
 Driver elecbowl (Electronic Bowling (Marx)): *game-console*non-arcade*screenless
 Driver elecdet (Electronic Detective): *handheld*non-arcade*screenless
 Driver eleciq (Electronic I.Q.): *handheld*non-arcade*screenless
-Driver electron (Acorn Electron): *computer*non-arcade
+Driver electron (Acorn Electron): *forum*computer*non-arcade
 Driver electron64 (Acorn Electron (64K Master RAM Board)): *computer*non-arcade
 Driver electronsp (Acorn Electron (Stop Press 64i)): *computer*non-arcade
 Driver electront (Acorn Electron (Trial)): *computer*non-arcade
@@ -6057,7 +6057,7 @@ Driver enmadaio (Enma Daio (Japan)): *originals_arcade*working_arcade*arcade
 Driver enmirage (Mirage DMS-8): *non-arcade*screenless
 Driver eott (Eyes of the Tiger (10002011, NSW/ACT)): *originals_arcade*arcade
 Driver ep128 (Enterprise One Two Eight): *computer*non-arcade
-Driver ep64 (Enterprise Sixty Four): *computer*non-arcade
+Driver ep64 (Enterprise Sixty Four): *forum*computer*non-arcade
 Driver ep804 (EP804 EPROM Programmer): *misc*non-arcade*screenless
 Driver ep_21clb (Twenty One Club (Maygay) (EPOCH) (3.2, set 1)): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver ep_21clba (Twenty One Club (Maygay) (EPOCH) (3.2, set 2)): *arcade*clones-arcade*mechanical-arcade*screenless
@@ -6992,7 +6992,7 @@ Driver exerionba (Exerion (Assa, bootleg)): *working_arcade*arcade*bootlegs*clon
 Driver exeriont (Exerion (Taito)): *working_arcade*arcade*cabinets*clones-arcade
 Driver exerizer (Exerizer (Japan)): *working_arcade*arcade*cabinets*clones-arcade
 Driver exerizerb (Exerizer (bootleg)): *working_arcade*arcade*bootlegs*cabinets*clones-arcade
-Driver exl100 (EXL 100): *computer*non-arcade
+Driver exl100 (EXL 100): *forum*computer*non-arcade
 Driver exodus (Exodus (bootleg?)): *working_arcade*arcade*bootlegs*cabinets*clones-arcade
 Driver exorciser (M6800 EXORciser (M68SDT)): *computer*non-arcade
 Driver exorterm155 (EXORterm 155): *computer*non-arcade
@@ -7592,15 +7592,15 @@ Driver flytiger (Flying Tiger (set 1)): *originals_arcade*working_arcade*arcade
 Driver flytigera (Flying Tiger (set 2)): *working_arcade*arcade*clones-arcade
 Driver fm11 (FM-11 EX): *computer*non-arcade
 Driver fm16beta (FM-16β): *computer*non-arcade
-Driver fm7 (FM-7): *computer*non-arcade
+Driver fm7 (FM-7): *forum*computer*non-arcade
 Driver fm7740sx (FM-77AV40SX): *computer*non-arcade
-Driver fm77av (FM-77AV): *computer*non-arcade
+Driver fm77av (FM-77AV): *forum*computer*non-arcade
 Driver fm8 (FM-8): *computer*non-arcade
 Driver fmaniac3 (Fishing Maniac 3): *originals_arcade*working_arcade*arcade
 Driver fmnew7 (FM-NEW7): *computer*non-arcade
-Driver fmtmarty (FM-Towns Marty): *game-console*non-arcade
+Driver fmtmarty (FM-Towns Marty): *forum*game-console*non-arcade
 Driver fmtmarty2 (FM-Towns Marty 2): *game-console*non-arcade
-Driver fmtowns (FM-Towns (Model 1 / 2)): *computer*non-arcade
+Driver fmtowns (FM-Towns (Model 1 / 2)): *forum*computer*non-arcade
 Driver fmtownsftv (FM-Towns II FreshTV): *computer*non-arcade
 Driver fmtownshr (FM-Towns II HR): *computer*non-arcade
 Driver fmtownsmx (FM-Towns II MX): *computer*non-arcade
@@ -7940,13 +7940,13 @@ Driver galaxiant (Galaxian (Taito)): *working_arcade*arcade*cabinets*clones-arca
 Driver galaxrcgg (Galaxian Growing Galaxip / Galaxian Nave Creciente (Recreativos Covadonga Spanish bootleg)): *working_arcade*arcade*bootlegs*clones-arcade
 Driver galaxrf (Galaxian (Recreativos Franco S.A. Spanish bootleg)): *working_arcade*arcade*bootlegs*cabinets*clones-arcade
 Driver galaxrfgg (Galaxian Growing Galaxip / Galaxian Nave Creciente (Recreativos Franco S.A. Spanish bootleg)): *working_arcade*arcade*bootlegs*cabinets*clones-arcade
-Driver galaxy (Galaksija): *computer*non-arcade
+Driver galaxy (Galaksija): *forum*computer*non-arcade
 Driver galaxy2 (Galaxy II (VFD Rev. D)): *classich*handheld*non-arcade
 Driver galaxy2b (Galaxy II (VFD Rev. B)): *handheld*non-arcade
 Driver galaxyfg (Galaxy Fight - Universal Warriors): *originals_arcade*working_arcade*arcade*cabinets*fighter*freeplay
 Driver galaxygn (Galaxy Gunners): *originals_arcade*working_arcade*arcade
 Driver galaxygnh (Galaxy Gunners (1990 year hack)): *working_arcade*arcade*clones-arcade
-Driver galaxyp (Galaksija plus): *computer*non-arcade
+Driver galaxyp (Galaksija plus): *forum*computer*non-arcade
 Driver galaxypi (Galaxy): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver galaxyr (Galaxy Ranger): *originals_arcade*arcade
 Driver galaxyrp (Galaxy Ranger (Pioneer LDV1000)): *arcade*clones-arcade
@@ -8019,7 +8019,7 @@ Driver galxwars (Galaxy Wars (Universal set 1)): *originals_arcade*working_arcad
 Driver galxwars2 (Galaxy Wars (Universal set 2)): *working_arcade*arcade*clones-arcade*monochrome
 Driver galxwarst (Galaxy Wars (Taito?)): *working_arcade*arcade*clones-arcade*monochrome
 Driver galxwarst2 (Galaxy Wars (Taito)): *working_arcade*arcade*clones-arcade
-Driver gamate (Gamate): *handheld*non-arcade
+Driver gamate (Gamate): *forum*handheld*non-arcade
 Driver gamatron (Gamatron): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver gamatros (Gamatron (Sonic)): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver gambit (The Gambit (1989 version)): *board-game*non-arcade*screenless
@@ -8029,7 +8029,7 @@ Driver gambl186a (Multi Game (Versione 4.0.3 - 1.5.7, 05-FEV-99(397)) (V399?)): 
 Driver gambl186b (Multi Game (Versione 3.8.6T - 1.5.6, 25-AUG-97) (V378?)): *arcade*casino*clones-arcade
 Driver gambler (The Gambler (EHG0916-02, US)): *originals_arcade*arcade
 Driver gameboy (Game Boy): *handheld*non-arcade
-Driver gamecom (Game.com): *handheld*non-arcade
+Driver gamecom (Game.com): *forum*handheld*non-arcade
 Driver gamecst2 (GameCristal (version 2.613)): *arcade*clones-arcade*multi-game
 Driver gamecstl (GameCristal): *originals_arcade*arcade*multi-game
 Driver gamefgtr (Game Fighter (bootleg)): *bootlegs*multi-game*non-arcade
@@ -8037,7 +8037,7 @@ Driver gamegeaj (Game Gear (Japan)): *handheld*non-arcade
 Driver gamegear (Game Gear (Europe/America)): *handheld*non-arcade
 Driver gamekin3 (GameKing 3): *handheld*non-arcade
 Driver gameking (GameKing GM-218): *handheld*non-arcade
-Driver gamepock (Game Pocket Computer): *handheld*non-arcade
+Driver gamepock (Game Pocket Computer): *forum*handheld*non-arcade
 Driver gamesnsm (The Games (NSM)): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver gametngk (The Game Paradise - Master of Shooting! / Game Tengoku - The Game Paradise (ver 1.0)): *originals_arcade*working_arcade*arcade*freeplay
 Driver gametree (Game Tree [TTL]): *originals_arcade*arcade
@@ -8519,7 +8519,7 @@ Driver glxplay2 (Galaxy Play 2): *originals_arcade*arcade*mechanical-arcade*scre
 Driver gm1000 (GM-1000 GM Sound Module): *non-arcade
 Driver gm235upc (Ultimate Pocket Console GM-235): *handheld*non-arcade
 Driver gmahou (Great Mahou Daisakusen (Japan 000121)): *working_arcade*arcade*clones-arcade
-Driver gmaster (Game Master): *handheld*non-arcade
+Driver gmaster (Game Master): *forum*handheld*non-arcade
 Driver gmb486sg (GMB-486SG v2.2): *computer*non-arcade
 Driver gmb486unp (GMB-486UNP v2.1): *computer*non-arcade
 Driver gmfamily (Games Family): *originals_arcade*arcade*bootlegs*multi-game
@@ -8722,7 +8722,7 @@ Driver gowcaizr (Voltage Fighter - Gowcaizer / Choujin Gakuen Gowcaizer): *origi
 Driver gp2quiz (Gals Panic II - Quiz Version): *originals_arcade*arcade
 Driver gp2se (Gals Panic II' - Special Edition (Japan)): *originals_arcade*arcade
 Driver gp2x (GP2X): *handheld*non-arcade
-Driver gp32 (GP32): *handheld*non-arcade
+Driver gp32 (GP32): *forum*handheld*non-arcade
 Driver gp98 (Grand Prix '98 (V100K)): *originals_arcade*working_arcade*arcade
 Driver gp_110 (Model 110): *arcade*screenless
 Driver gpgolf (Golden Par Golf (Joystick, V1.1)): *originals_arcade*working_arcade*arcade*cabinets
@@ -9142,7 +9142,7 @@ Driver gwinggen (Giga Wing Generations (v2.02J)): *originals_arcade*arcade
 Driver gwinner (Golden Winner): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver gwnf (Genius Winner Notebook Fun (Germany)): *computer*non-arcade
 Driver gwnn (The Game With No Name! (0452501, US)): *originals_arcade*arcade
-Driver gx4000 (Amstrad GX4000): *game-console*non-arcade
+Driver gx4000 (Amstrad GX4000): *forum*game-console*non-arcade
 Driver gx700 (Boss GX-700 Guitar Effects Processor): *non-arcade*screenless
 Driver gynotai (Gynotai (Japan)): *originals_arcade*arcade*mechanical-arcade*misc*screenless
 Driver gypmagic (Gypsy Magic (Konami Endeavour, Russia)): *originals_arcade*arcade
@@ -9471,7 +9471,7 @@ Driver heavymtl (Heavy Metal): *originals_arcade*arcade*mechanical-arcade*screen
 Driver heberpop (Hebereke no Popoon (Japan)): *originals_arcade*working_arcade*arcade
 Driver hec2hr (Hector 2HR): *computer*non-arcade
 Driver hec2hrp (Hector 2HR+): *computer*non-arcade
-Driver hec2hrx (Hector HRX + Disc2): *computer*non-arcade
+Driver hec2hrx (Hector HRX + Disc2): *forum*computer*non-arcade
 Driver hec2mdhrx (Hector HRX + mini Disc): *computer*non-arcade
 Driver hec2mx40 (Hector MX 40c + Disc2): *computer*non-arcade
 Driver hec2mx80 (Hector MX 80c + Disc2): *computer*non-arcade
@@ -10134,7 +10134,7 @@ Driver intchess (Intelligent Chess): *board-game*non-arcade
 Driver intcup94 (International Cup '94 (Ver 2.2O 1994/05/26)): *originals_arcade*working_arcade*arcade
 Driver intel02 (Intellect-02): *board-game*non-arcade*screenless
 Driver inteladv (Intelligence Advance E/R (Germany)): *computer*non-arcade*screenless
-Driver interact (Interact Family Computer): *computer*non-arcade
+Driver interact (Interact Family Computer): *forum*computer*non-arcade
 Driver intervsn (Intervision 2001): *game-console*non-arcade
 Driver intg5410 (InterAct Complete Video Game - 111 Games & 42 Songs (G5410)): *all_in1*handheld*non-arcade
 Driver inthunt (In The Hunt (World)): *originals_arcade*working_arcade*arcade
@@ -12049,7 +12049,7 @@ Driver juno106 (Juno-106 Programmable Polyphonic Synthesizer): *non-arcade*scree
 Driver juno6 (Juno-6 (JU-6) Polyphonic Synthesizer): *non-arcade*screenless
 Driver junofrst (Juno First): *originals_arcade*working_arcade*arcade*cabinets
 Driver junofrstg (Juno First (Gottlieb)): *working_arcade*arcade*cabinets*clones-arcade
-Driver jupace (Jupiter Ace): *computer*non-arcade
+Driver jupace (Jupiter Ace): *forum*computer*non-arcade
 Driver jupiter2 (Jupiter II): *computer*non-arcade
 Driver jupiter3 (Jupiter III): *computer*non-arcade
 Driver jupk_305 (Jurassic Park (USA 3.05, display A4.00)): *arcade*clones-arcade*mechanical-arcade*screenless
@@ -12658,7 +12658,7 @@ Driver laser (Astro Laser (bootleg of Space Laser)): *working_arcade*arcade*boot
 Driver laser110 (Laser 110): *computer*non-arcade
 Driver laser128 (Laser 128 (version 4.2)): *computer*non-arcade
 Driver laser200 (Laser 200): *computer*non-arcade
-Driver laser210 (Laser 210): *computer*non-arcade
+Driver laser210 (Laser 210): *forum*computer*non-arcade
 Driver laser2c (Laser //c): *computer*non-arcade
 Driver laser2k1 (Laser 2001 (Ver 1.2)): *originals_arcade*arcade*casino
 Driver laser310 (Laser 310): *computer*non-arcade
@@ -13153,7 +13153,7 @@ Driver lxspidaj (Spider-Man Super TV Air Jet (Lexibook Junior, JG6000SP)): *hand
 Driver lxts3 (Toy Story 3 (Lexibook)): *game-console*non-arcade
 Driver lynx (Lynx): *handheld*non-arcade
 Driver lynx128k (Lynx 128k): *computer*non-arcade
-Driver lynx48k (Lynx 48k): *computer*non-arcade
+Driver lynx48k (Lynx 48k): *forum*computer*non-arcade
 Driver lynx96k (Lynx 96k): *computer*non-arcade
 Driver lyon16 (Mephisto Lyon 16 Bit): *board-game*non-arcade
 Driver lyon32 (Mephisto Lyon 32 Bit): *board-game*non-arcade
@@ -20367,7 +20367,7 @@ Driver m5overld (Overload (Barcrest) (MPU5) (set 1)): *originals_arcade*arcade*m
 Driver m5overld02 (Overload (Barcrest) (MPU5) (set 2)): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver m5overld10 (Overload (Barcrest) (MPU5) (set 3)): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver m5overld11 (Overload (Barcrest) (MPU5) (set 4)): *arcade*clones-arcade*mechanical-arcade*screenless
-Driver m5p (m.5 (Europe)): *computer*non-arcade
+Driver m5p (m.5 (Europe)): *forum*computer*non-arcade
 Driver m5p_brno (m.5 (Europe) BRNO mod): *computer*non-arcade
 Driver m5paint (Paint The Town Red (Barcrest - Red Gaming) (MPU5)): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver m5peepsh (Peep Show (Barcrest) (MPU5)): *originals_arcade*arcade*mechanical-arcade*screenless
@@ -20643,7 +20643,7 @@ Driver maciivx (Macintosh IIvx): *computer*non-arcade
 Driver maciix (Macintosh IIx): *computer*non-arcade
 Driver macjungl (MAC Jungle): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver macjungn (MAC Jungle (New version)): *originals_arcade*arcade*mechanical-arcade*screenless
-Driver maclc (Macintosh LC): *computer*non-arcade
+Driver maclc (Macintosh LC): *forum*computer*non-arcade
 Driver maclc2 (Macintosh LC II): *computer*non-arcade
 Driver maclc3 (Macintosh LC III): *computer*non-arcade
 Driver maclc520 (Macintosh LC 520): *computer*non-arcade
@@ -21016,7 +21016,7 @@ Driver mbossy (Mike Bossy): *originals_arcade*arcade*mechanical-arcade*screenles
 Driver mbrush (Magic Brush (bootleg of Crush Roller)): *working_arcade*arcade*bootlegs*cabinets*clones-arcade*maze
 Driver mbs2euro (Mega Bonus Star II (Euro, Millennium Edition)): *originals_arcade*arcade
 Driver mbutrfly (Magical Butterfly (version U350C, protected)): *originals_arcade*working_arcade*arcade
-Driver mc10 (MC-10): *computer*non-arcade
+Driver mc10 (MC-10): *forum*computer*non-arcade
 Driver mc1000 (MC-1000): *computer*non-arcade
 Driver mc1200 (MC-1200): *computer*non-arcade
 Driver mc1502 (Elektronika MS 1502): *computer*non-arcade
@@ -21120,7 +21120,7 @@ Driver megadri4 (Mega Drive 4 / Guitar Idol (set 1)): *game-console*non-arcade
 Driver megadri4a (Mega Drive 4 / Guitar Idol (set 2)): *game-console*non-arcade
 Driver megadrij (Mega Drive (Japan, NTSC)): *game-console*non-arcade
 Driver megadriv (Mega Drive (Europe, PAL)): *game-console*non-arcade
-Driver megaduck (Mega Duck / Cougar Boy): *handheld*non-arcade
+Driver megaduck (Mega Duck / Cougar Boy): *forum*handheld*non-arcade
 Driver megaforc (Mega Force (World)): *working_arcade*arcade*cabinets*clones-arcade
 Driver megaforcu (Mega Force (US)): *working_arcade*arcade*cabinets*clones-arcade
 Driver megajet (Mega Jet (Japan Mega Drive handheld)): *game-console*non-arcade
@@ -21367,7 +21367,7 @@ Driver micromon7141 (Micromon 7141 ECG unit): *medical-equipment*non-arcade*scre
 Driver micron (Micron): *computer*non-arcade
 Driver micronic (Micronic 1000): *handheld*non-arcade
 Driver microtrol (unknown Microtrol portable computer): *computer*non-arcade
-Driver microvsn (Microvision): *handheld*non-arcade
+Driver microvsn (Microvision): *forum*handheld*non-arcade
 Driver midearth (Middle Earth): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver mideartha (Middle Earth (alternate)): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver midnrun (Midnight Run: Road Fighter 2 (EAA, Euro v1.11)): *originals_arcade*working_arcade*arcade*driving
@@ -21390,7 +21390,7 @@ Driver mikiek (Shin-ip Sawon - Seok Dol-i): *working_arcade*arcade*bootlegs*clon
 Driver mikro80 (Mikro-80): *computer*non-arcade
 Driver mikrolab (Mikrolab KR580IK80): *computer*non-arcade*screenless
 Driver mikron2 (Mikron-2): *computer*non-arcade
-Driver mikrosha (Mikrosha): *computer*non-arcade
+Driver mikrosha (Mikrosha): *forum*computer*non-arcade
 Driver mil4000 (Millennium Nuovo 4000 (Version 2.0)): *originals_arcade*working_arcade*arcade*casino
 Driver mil4000a (Millennium Nuovo 4000 (Version 1.8)): *working_arcade*arcade*casino*clones-arcade
 Driver mil4000b (Millennium Nuovo 4000 (Version 1.5)): *working_arcade*arcade*casino*clones-arcade
@@ -22190,7 +22190,7 @@ Driver mtwinbee (Magical Twin Bee (ver EAA)): *working_arcade*arcade*clones-arca
 Driver mtwins (Mega Twins (World 900619)): *originals_arcade*working_arcade*arcade*freeplay
 Driver mtwinsb (Twins (Mega Twins bootleg)): *working_arcade*arcade*bootlegs*clones-arcade
 Driver mtx500 (MTX 500): *computer*non-arcade
-Driver mtx512 (MTX 512): *computer*non-arcade
+Driver mtx512 (MTX 512): *forum*computer*non-arcade
 Driver mu100 (MU100): *non-arcade
 Driver mu100b (MU100B): *non-arcade
 Driver mu100r (MU100 Rackable version): *non-arcade
@@ -22356,11 +22356,11 @@ Driver mywicogt (My Wico Guitar): *handheld*non-arcade
 Driver mz1500 (MZ-1500): *computer*non-arcade
 Driver mz2000 (MZ-2000): *computer*non-arcade
 Driver mz2200 (MZ-2200): *computer*non-arcade
-Driver mz2500 (MZ-2500): *computer*non-arcade
+Driver mz2500 (MZ-2500): *forum*computer*non-arcade
 Driver mz2520 (MZ-2520): *computer*non-arcade
 Driver mz3500 (MZ-3500): *computer*non-arcade
 Driver mz6500 (MZ-6500): *computer*non-arcade
-Driver mz700 (MZ-700): *computer*non-arcade
+Driver mz700 (MZ-700): *forum*computer*non-arcade
 Driver mz700j (MZ-700 (Japan)): *computer*non-arcade
 Driver mz800 (MZ-800): *computer*non-arcade
 Driver mz80a (MZ-80A): *computer*non-arcade
@@ -23035,7 +23035,7 @@ Driver ordyne (Ordyne (World)): *originals_arcade*working_arcade*arcade
 Driver ordynej (Ordyne (Japan)): *working_arcade*arcade*clones-arcade
 Driver ordyneje (Ordyne (Japan, English Version)): *working_arcade*arcade*clones-arcade
 Driver oric1 (Oric 1): *computer*non-arcade
-Driver orica (Oric Atmos): *computer*non-arcade
+Driver orica (Oric Atmos): *forum*computer*non-arcade
 Driver orion128 (Orion 128): *computer*non-arcade
 Driver orionide (Orion 128 + Z80 Card II + IDE): *computer*non-arcade
 Driver orionidm (Orion 128 + Z80 Card II + IDE (MS7007)): *computer*non-arcade
@@ -23144,7 +23144,7 @@ Driver ozmawarsmr (Ozma Wars (Model Racing bootleg)): *working_arcade*arcade*boo
 Driver ozon1 (Ozon I): *originals_arcade*working_arcade*arcade*cabinets
 Driver p112 (P112): *computer*non-arcade
 Driver p2000m (Philips P2000M): *computer*non-arcade
-Driver p2000t (Philips P2000T): *computer*non-arcade
+Driver p2000t (Philips P2000T): *forum*computer*non-arcade
 Driver p386dx40 (P386DX-40): *computer*non-arcade
 Driver p386sx25pw (P386SX-25PW VER:2.00): *computer*non-arcade
 Driver p47 (P-47 - The Phantom Fighter (World)): *originals_arcade*working_arcade*arcade
@@ -23429,9 +23429,9 @@ Driver pc486mu (PC-486MU): *computer*non-arcade
 Driver pc486se (PC-486SE): *computer*non-arcade
 Driver pc5086 (Amstrad PC5086): *computer*non-arcade
 Driver pc50ii (PC 50-II): *computer*non-arcade
-Driver pc6001 (PC-6001 (Japan)): *computer*non-arcade
+Driver pc6001 (PC-6001 (Japan)): *forum*computer*non-arcade
 Driver pc6001a (PC-6001A (US)): *computer*non-arcade
-Driver pc6001mk2 (PC-6001mkII (Japan)): *computer*non-arcade
+Driver pc6001mk2 (PC-6001mkII (Japan)): *forum*computer*non-arcade
 Driver pc6001sr (PC-6001mkIISR (Japan)): *computer*non-arcade
 Driver pc60iii (PC 60-III): *computer*non-arcade
 Driver pc6601 (PC-6601 (Japan)): *computer*non-arcade
@@ -23670,7 +23670,7 @@ Driver pecom64 (Pecom 64): *computer*non-arcade
 Driver peekaboo (Peek-a-Boo! (Japan, ver. 1.1)): *originals_arcade*working_arcade*arcade*ball-and-paddle*cabinets
 Driver peekaboou (Peek-a-Boo! (North America, ver 1.0)): *working_arcade*arcade*ball-and-paddle*cabinets*clones-arcade
 Driver peepshow (Nozokimeguri Mahjong Peep Show (Japan 890404)): *working_arcade*arcade*clones-arcade
-Driver pegasus (Aamber Pegasus): *computer*non-arcade
+Driver pegasus (Aamber Pegasus): *forum*computer*non-arcade
 Driver pegasusm (Aamber Pegasus with RAM expansion unit): *computer*non-arcade
 Driver peggle (Peggle (Joystick, v1.0)): *originals_arcade*working_arcade*arcade*ball-and-paddle
 Driver pegglet (Peggle (Trackball, v1.0)): *working_arcade*arcade*ball-and-paddle*clones-arcade
@@ -24682,8 +24682,8 @@ Driver pnyaa (Pochi and Nyaa (Ver 2.02)): *originals_arcade*working_arcade*arcad
 Driver pnyaaa (Pochi and Nyaa (Ver 2.00)): *working_arcade*arcade*clones-arcade
 Driver pockchal (Pocket Challenge W (Japan)): *calculator*non-arcade
 Driver pocketrc (Pocket Racer (Japan, PKR1/VER.B)): *originals_arcade*working_arcade*arcade*driving
-Driver pockstat (Sony PocketStation): *handheld*non-arcade
-Driver pofo (Portfolio): *computer*non-arcade
+Driver pockstat (Sony PocketStation): *forum*handheld*non-arcade
+Driver pofo (Portfolio): *forum*computer*non-arcade
 Driver poisk1 (Poisk-1): *computer*non-arcade
 Driver poisk2 (Poisk-2): *computer*non-arcade
 Driver poitto (Poitto! (revision D)): *originals_arcade*working_arcade*arcade
@@ -25350,9 +25350,9 @@ Driver puzznicba (Puzznic (bootleg, set 2)): *working_arcade*arcade*bootlegs*cab
 Driver puzznici (Puzznic (Italian bootleg)): *working_arcade*arcade*bootlegs*cabinets*clones-arcade
 Driver puzznicj (Puzznic (Japan)): *working_arcade*arcade*cabinets*clones-arcade
 Driver puzznicu (Puzznic (US)): *working_arcade*arcade*cabinets*clones-arcade
-Driver pv1000 (PV-1000): *game-console*non-arcade
+Driver pv1000 (PV-1000): *forum*game-console*non-arcade
 Driver pv16 (PV-16 (MSX1)): *computer*non-arcade
-Driver pv2000 (PV-2000): *computer*non-arcade
+Driver pv2000 (PV-2000): *forum*computer*non-arcade
 Driver pv7 (PV-7 (MSX1)): *computer*non-arcade
 Driver pv9234 (PowerVu D9234): *misc*non-arcade
 Driver pve500 (PVE-500): *misc*non-arcade*screenless
@@ -26614,7 +26614,7 @@ Driver samba (Samba De Amigo (Rev B)): *originals_arcade*arcade
 Driver samba2k (Samba de Amigo ver. 2000 (Japan)): *originals_arcade*arcade
 Driver sambaa (Samba De Amigo (Rev A)): *arcade*clones-arcade
 Driver sambap (Samba De Amigo (USA, prototype)): *arcade*clones-arcade
-Driver samcoupe (SAM Coupe): *computer*non-arcade
+Driver samcoupe (SAM Coupe): *forum*computer*non-arcade
 Driver samdm286 (Deskmaster 286-12): *computer*non-arcade
 Driver samesame (Same! Same! Same! (1P set)): *working_arcade*arcade*cabinets*clones-arcade
 Driver samesame2 (Same! Same! Same! (2P set)): *working_arcade*arcade*clones-arcade
@@ -32344,7 +32344,7 @@ Driver scuddx (Scud Race Deluxe (Revision A)): *arcade*clones-arcade*driving
 Driver scudhamm (Scud Hammer): *originals_arcade*working_arcade*arcade*medal-game
 Driver scudplus (Scud Race Plus Twin/DX (Revision A)): *arcade*clones-arcade*driving
 Driver scudplusa (Scud Race Plus Twin/DX): *arcade*clones-arcade*driving
-Driver scv (Super Cassette Vision): *game-console*non-arcade
+Driver scv (Super Cassette Vision): *forum*game-console*non-arcade
 Driver scv_pal (Super Cassette Vision (PAL)): *game-console*non-arcade
 Driver scyclone (Space Cyclone): *originals_arcade*working_arcade*arcade*cabinets
 Driver sd1 (SD-1 (21 voice)): *non-arcade*screenless
@@ -32576,7 +32576,7 @@ Driver sf2uk (Street Fighter II: The World Warrior (USA 911101)): *working_arcad
 Driver sf2um (Street Fighter II: The World Warrior (USA 920312)): *working_arcade*arcade*clones-arcade*fighter
 Driver sf2v004 (Street Fighter II': Champion Edition (V004, bootleg)): *working_arcade*arcade*bootlegs*clones-arcade*fighter*freeplay
 Driver sf2yyc (Street Fighter II': Champion Edition (YYC, bootleg)): *working_arcade*arcade*bootlegs*clones-arcade*fighter*freeplay
-Driver sf7000 (SC-3000/Super Control Station SF-7000): *computer*non-arcade
+Driver sf7000 (SC-3000/Super Control Station SF-7000): *forum*computer*non-arcade
 Driver sf_l1 (Slugfest (L-1)): *originals_arcade*arcade*mechanical-arcade*screenless
 Driver sfa (Street Fighter Alpha: Warriors' Dreams (Euro 950727)): *originals_arcade*working_arcade*arcade*fighter
 Driver sfa2 (Street Fighter Alpha 2 (Euro 960229)): *originals_arcade*working_arcade*arcade*fighter
@@ -33430,7 +33430,7 @@ Driver sopranos_204 (The Sopranos (2.04)): *arcade*clones-arcade*mechanical-arca
 Driver sopranos_300 (The Sopranos (3.00)): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver sopranos_400 (The Sopranos (4.00)): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver sorbit (Super Orbit): *originals_arcade*arcade*mechanical-arcade*screenless
-Driver sorcerer (Sorcerer): *computer*non-arcade
+Driver sorcerer (Sorcerer): *forum*computer*non-arcade
 Driver sorcerer2 (Sorcerer 2): *computer*non-arcade
 Driver sorcerera (Sorcerer (with Dreamdisk fdc)): *computer*non-arcade
 Driver sorcererb (Sorcerer (with Digitrio fdc)): *computer*non-arcade
@@ -34746,7 +34746,7 @@ Driver sttng_p5 (Star Trek: The Next Generation (P-5)): *arcade*clones-arcade*me
 Driver sttng_p8 (Star Trek: The Next Generation (P-8)): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver sttng_s7 (Star Trek: The Next Generation (LX-7) SP1): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver sttng_x7 (Star Trek: The Next Generation (LX-7 Special)): *arcade*clones-arcade*mechanical-arcade*screenless
-Driver studio2 (Studio II): *game-console*non-arcade
+Driver studio2 (Studio II): *forum*game-console*non-arcade
 Driver stunrun (S.T.U.N. Runner (rev 6)): *originals_arcade*working_arcade*arcade
 Driver stunrun0 (S.T.U.N. Runner (rev 0)): *working_arcade*arcade*clones-arcade
 Driver stunrun2 (S.T.U.N. Runner (rev 2)): *working_arcade*arcade*clones-arcade
@@ -34899,7 +34899,7 @@ Driver supjolly (Super Jolly): *originals_arcade*arcade*casino
 Driver suplup (Super Lup Lup Puzzle / Zhuan Zhuan Puzzle (version 4.0 / 990518)): *originals_arcade*working_arcade*arcade
 Driver supmodel (Super Model): *originals_arcade*working_arcade*arcade
 Driver supnudg2 (Super Nudger II - P173 (Version 5.21)): *originals_arcade*arcade
-Driver supracan (Super A'Can): *game-console*non-arcade
+Driver supracan (Super A'Can): *forum*game-console*non-arcade
 Driver suprball (Super Ball (Version 1.3)): *originals_arcade*working_arcade*arcade
 Driver suprbowl (Super Bowl): *arcade*clones-arcade*mechanical-arcade*screenless
 Driver supreme (Arcade Classics Mini Handheld Arcade (Supreme 150)): *handheld*non-arcade
@@ -34955,7 +34955,7 @@ Driver suzuk8h2j (Suzuka 8 Hours 2 (Japan, Rev B)): *working_arcade*arcade*clone
 Driver suzuka8h (Suzuka 8 Hours (World, Rev C)): *originals_arcade*working_arcade*arcade*driving
 Driver suzuka8hj (Suzuka 8 Hours (Japan, Rev B)): *working_arcade*arcade*clones-arcade*driving
 Driver suzume (Watashiha Suzumechan (Japan)): *originals_arcade*working_arcade*arcade
-Driver sv8000 (Super Vision 8000 (TV Jack 8000)): *game-console*non-arcade
+Driver sv8000 (Super Vision 8000 (TV Jack 8000)): *forum*game-console*non-arcade
 Driver svc (SNK vs. Capcom - SVC Chaos (NGM-2690 ~ NGH-2690)): *originals_arcade*working_arcade*arcade*cabinets*fighter*freeplay
 Driver svcboot (SNK vs. Capcom - SVC Chaos (bootleg)): *working_arcade*arcade*bootlegs*cabinets*clones-arcade*fighter*freeplay
 Driver svcpcb (SNK vs. Capcom - SVC Chaos (JAMMA PCB, set 1)): *originals_arcade*working_arcade*arcade*cabinets*fighter*freeplay
@@ -34969,7 +34969,7 @@ Driver svg (S.V.G. - Spectral vs Generation / Sheng Mo Shiji (M68k label V200) (
 Driver svghk (S.V.G. - Spectral vs Generation / Sheng Mo Shiji (M68k label V101HK) (ARM label V101HK, ROM 06/20/05 S.V.G V100)): *working_arcade*arcade*clones-arcade*fighter
 Driver svgpcb (S.V.G. - Spectral vs Generation / Sheng Mo Shiji (M68k label V100JP) (ARM label V100JP, ROM 05/12/05 S.V.G V100) (Japan, JAMMA PCB)): *working_arcade*arcade*clones-arcade*fighter
 Driver svgtw (S.V.G. - Spectral vs Generation / Sheng Mo Shiji (M68k label V101TW) (ARM label V101TW, ROM 06/20/05 S.V.G V100)): *arcade*clones-arcade*fighter
-Driver svi318 (SVI-318 (PAL)): *computer*non-arcade
+Driver svi318 (SVI-318 (PAL)): *forum*computer*non-arcade
 Driver svi318n (SVI-318 (NTSC)): *computer*non-arcade
 Driver svi328 (SVI-328 (PAL)): *computer*non-arcade
 Driver svi328n (SVI-328 (NTSC)): *computer*non-arcade
@@ -34980,11 +34980,11 @@ Driver svi738dk (SVI-738 (Denmark) (MSX1)): *computer*non-arcade
 Driver svi738pl (SVI-738 (Poland) (MSX1)): *computer*non-arcade
 Driver svi738sp (SVI-738 (Spain) (MSX1)): *computer*non-arcade
 Driver svi738sw (SVI-738 (Swedish) (MSX1)): *computer*non-arcade
-Driver svision (Super Vision): *handheld*non-arcade
+Driver svision (Super Vision): *forum*handheld*non-arcade
 Driver svisionn (Super Vision (NTSC TV Link Colored)): *handheld*non-arcade
 Driver svisionp (Super Vision (PAL TV Link Colored)): *handheld*non-arcade
 Driver svisions (Super Vision (PeT Communication Simulation)): *handheld*non-arcade
-Driver svmu (Visual Memory Unit): *handheld*non-arcade
+Driver svmu (Visual Memory Unit): *forum*handheld*non-arcade
 Driver svolley (Super Volleyball (Japan)): *originals_arcade*working_arcade*arcade
 Driver svolleybl (Super Volleyball (bootleg)): *arcade*bootlegs*clones-arcade
 Driver svolleyk (Super Volleyball (Korea)): *working_arcade*arcade*clones-arcade
@@ -35644,7 +35644,7 @@ Driver ti990_4v (TI Model 990/4 Microcomputer System with Video Display Terminal
 Driver ti99_224 (TI-99/2 BASIC Computer (24 KiB ROM)): *computer*non-arcade
 Driver ti99_232 (TI-99/2 BASIC Computer (32 KiB ROM)): *computer*non-arcade
 Driver ti99_4 (TI-99/4 Home Computer (US)): *computer*non-arcade
-Driver ti99_4a (TI-99/4A Home Computer (US)): *computer*non-arcade
+Driver ti99_4a (TI-99/4A Home Computer (US)): *forum*computer*non-arcade
 Driver ti99_4ae (TI-99/4A Home Computer (Europe)): *computer*non-arcade
 Driver ti99_4e (TI-99/4 Home Computer (Europe)): *computer*non-arcade
 Driver ti99_4ev (TI-99/4A Home Computer with EVPC): *computer*non-arcade
@@ -36191,7 +36191,7 @@ Driver trs80dt1 (TRS-80 DT-1 Data Terminal): *computer*non-arcade
 Driver trs80l2 (TRS-80 Model I (Level II Basic)): *computer*non-arcade
 Driver trs80m16 (TRS-80 Model 16): *computer*non-arcade
 Driver trs80m2 (TRS-80 Model II): *computer*non-arcade
-Driver trs80m3 (TRS-80 Model III): *computer*non-arcade
+Driver trs80m3 (TRS-80 Model III): *forum*computer*non-arcade
 Driver trs80m4 (TRS-80 Model 4): *computer*non-arcade
 Driver trs80m4p (TRS-80 Model 4P): *computer*non-arcade
 Driver trs80pc3 (TRS-80 Pocket Computer PC-3): *calculator*non-arcade
@@ -36374,7 +36374,7 @@ Driver turtshipkn (Turtle Ship (Korea, 88/9)): *working_arcade*arcade*clones-arc
 Driver turtshipko (Turtle Ship (Korea, older)): *working_arcade*arcade*clones-arcade
 Driver tutankhm (Tutankham): *originals_arcade*working_arcade*arcade*cabinets*maze
 Driver tutankhms (Tutankham (Stern Electronics)): *working_arcade*arcade*cabinets*clones-arcade*maze
-Driver tutor (Tomy Tutor): *computer*non-arcade
+Driver tutor (Tomy Tutor): *forum*computer*non-arcade
 Driver tutstomb (Tut's Tomb): *originals_arcade*working_arcade*arcade
 Driver tv21 (T.V. 21): *originals_arcade*arcade*casino
 Driver tv21_3 (T.V. 21 III): *originals_arcade*arcade*casino
@@ -36394,7 +36394,7 @@ Driver tvbg6a (TV Board Games 6-in-1: Silly 6 Pins, Candy Land, Hungry Hungry Hi
 Driver tvbg6b (TV Board Games 6-in-1: Simon, Battleship, Mouse Trap, Checkers, Link-a-Line, Roll Over): *handheld*non-arcade
 Driver tvboyii (TV Boy II (PAL)): *game-console*non-arcade
 Driver tvc4000 (TVC-4000): *game-console*non-arcade
-Driver tvc64 (TVC 64): *computer*non-arcade
+Driver tvc64 (TVC 64): *forum*computer*non-arcade
 Driver tvc64p (TVC 64+): *computer*non-arcade
 Driver tvc64pru (TVC 64+ (Russian)): *computer*non-arcade
 Driver tvcapcom (Tatsunoko Vs Capcom : Cross Generation of Heroes): *originals_arcade*arcade*fighter
@@ -37104,7 +37104,7 @@ Driver vbowlhk (Virtua Bowling (Hong Kong, V101HJS)): *working_arcade*arcade*clo
 Driver vbowlj (Virtua Bowling (Japan, V100JCM)): *working_arcade*arcade*clones-arcade*freeplay
 Driver vboy (Virtual Boy): *game-console*non-arcade
 Driver vbrc (Voice Bridge Challenger): *board-game*non-arcade*screenless
-Driver vc4000 (Interton Electronic VC 4000): *game-console*non-arcade
+Driver vc4000 (Interton Electronic VC 4000): *forum*game-console*non-arcade
 Driver vc6000 (VC 6000): *game-console*non-arcade
 Driver vcarn (Video Carnival 1999 / Super Royal Card (Version 0.11)): *originals_arcade*working_arcade*arcade*casino
 Driver vcc (Voice Chess Challenger): *board-game*non-arcade*screenless
@@ -37123,7 +37123,7 @@ Driver vdogdeme (V-Dog (prototype, earlier)): *multi-game*non-arcade
 Driver vdogdemo (V-Dog (prototype)): *misc*non-arcade
 Driver vec1200 (Vector 1200): *computer*non-arcade
 Driver vector (Vector): *originals_arcade*arcade*mechanical-arcade*screenless
-Driver vector06 (Vector 06c): *computer*non-arcade
+Driver vector06 (Vector 06c): *forum*computer*non-arcade
 Driver vector1 (Vector 1+ (DD drive)): *computer*non-arcade
 Driver vector4 (Vector 4): *computer*non-arcade
 Driver vectrex (Vectrex): *game-console*non-arcade
@@ -37194,7 +37194,7 @@ Driver vfremix (Virtua Fighter Remix (JUETBKAL 950428 V1.000)): *originals_arcad
 Driver vfurlong (Net@Select: Horse Racing - Victory Furlong): *originals_arcade*arcade
 Driver vfx (VFX): *non-arcade*screenless
 Driver vfxsd (VFX-SD): *non-arcade*screenless
-Driver vg5k (VG-5000): *computer*non-arcade
+Driver vg5k (VG-5000): *forum*computer*non-arcade
 Driver vg8000 (VG-8000 (MSX1)): *computer*non-arcade
 Driver vg8010 (VG-8010 (MSX1)): *computer*non-arcade
 Driver vg8010f (VG-8010F (MSX1)): *computer*non-arcade
