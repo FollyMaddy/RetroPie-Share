@@ -79,14 +79,17 @@ function subgui_add-mamedev-systems_all() {
 
 function subgui_add-mamedev-systems_sort() {
 #we can add up to 5 options per list to sort on
+#
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
-",*** these are the first test lists ***,,,"
+",*** next lines are added to test the code ***,,,"
 ",Non-arcade upon descriptions,,choose_add descriptions *non-arcade,"
 ",Cabinets upon descriptions,,choose_add descriptions *cabinets,"
 ",MSX upon descriptions,,choose_add descriptions MSX,"
-",SONY MSX upon descriptions,,choose_add descriptions MSX HB-F,"
+",(and equal test 2 opt.)SONY MSX upon descriptions,,choose_add descriptions MSX HB-F,"
+",(not equal test 2 opt.)MSX but no HB types upon descriptions,,choose_add descriptions HB! MSX,"
+",(not equal test 1 opt.)arcade upon descriptions,,choose_add descriptions *non-arcade!,"
     )
     build_menu_add-mamedev-systems
 }
@@ -192,7 +195,7 @@ function subgui_add-mamedev-systems_downloads_gamelists() {
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
     while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";curl https://drive.google.com/embeddedfolderview?id=1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m#list|sed 's/https/\nhttps/g'|grep folders|sed 's/folders\//folders\"/g;s/>/"/g;s/</"/g'|while read line;do echo "\",Download/update only for '$(echo $line|cut -d '"' -f50)',,download_from_google_drive $(echo $line|cut -d '"' -f2) /home/$user/RetroPie/roms/$(echo $line|cut -d '"' -f50),\"";done)
     fi
-    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
     build_menu_add-mamedev-systems
 }
 
@@ -239,17 +242,17 @@ function choose_add() {
     #because we need a combination of "or" and "and" I found more information in the next link
     #more info https://www.shellhacks.com/grep-or-grep-and-grep-not-match-multiple-patterns/
     #using awk we can combined (and)&& (or)||
-    #I added up to 5 options ($2 -$6) to sort on multiple patterns in one go
-    #if options are empty, they aren't used
-    IFS=$'\n' csv=($(awk "/$2/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")));unset IFS
+    #(fast)sorting (and equal to) is possible on patterns up to 5 options ($2 -$6)
+    #(slower)sorting (not equal to) is possible on patterns for one option ($2) adding an ! after the pattern 
+    IFS=$'\n' csv=($(sort -t"," -d -k 3 --ignore-case<<<$(awk "$([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
     #this is an aternative but much slower
-    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -k 3 --ignore-case;unset IFS)
+    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 3 --ignore-case;unset IFS)
     else
     #here we store the sorted mamedev_csv values in the csv array
     #we sort on the second colunm which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${mamedev_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${mamedev_csv[*]}"));unset IFS
     #this is an aternative but much slower
-    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -k 2 --ignore-case;unset IFS)
+    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 2 --ignore-case;unset IFS)
     fi
     build_menu_add-mamedev-systems $1
 }
@@ -276,11 +279,11 @@ function choose_add_forum() {
     if [[ $1 == descriptions* ]];then
     #here we store the sorted mamedev_forum_csv values in the csv array
     #we sort on the third column which contain the descriptions of the sytems
-    IFS=$'\n' csv=($(sort -t"," -k 3 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 3 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
     else
     #here we store the sorted mamedev_forum_csv values in the csv array
     #we sort on the second column which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
     fi
     build_menu_add-mamedev-systems $1
 }
