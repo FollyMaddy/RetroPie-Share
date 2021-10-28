@@ -27,6 +27,11 @@ rp_module_section="config"
 local mamedev_csv=()
 local mamedev_forum_csv=()
 local gamelists_csv=()
+local download_csv=()
+local download_read
+
+local system_read
+
 
 function depends_add-mamedev-systems() {
     getDepends curl python3
@@ -37,31 +42,93 @@ function gui_add-mamedev-systems() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
+",v HELP > required : install both (advice : install the binaries),,,"
 ",Install mame,,package_setup mame,"
 ",Install lr-mess,,package_setup lr-mess,"
 ",,,,"
-",Selection of systems and downloads > Submenu,,subgui_add-mamedev-systems_forum,"
+",v HELP > optional : to use the script offline,,,"
+",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems_sorted_info -o /opt/retropie/emulators/mame/mame0236_systems_sorted_info,"
+",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0236_systems_sorted_info,"
 ",,,,"
-",Sorted data lists > Submenu,,subgui_add-mamedev-systems_sort,"
+",v HELP > install handheld / plug&play and the required downloads,,,"
+",Handheld / plug&play and downloads > Submenu,,subgui_add-mamedev-systems_forum,"
 ",,,,"
+",v HELP > install systems with extra functions,,,"
+",Systems with extras > Submenu,,subgui_add-mamedev-systems_extras,"
+",,,,"
+",v HELP > install from predefined sorted lists,,,"
+",Systems sorted > Submenu,,subgui_add-mamedev-systems_sort,"
+",,,,"
+",v HELP > search on pattern(s) and install from your own list,,,"
+",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,"
+",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,"
+",,,,"
+",v HELP > install from lists with all systems,,,"
 ",All systems > Submenu,,subgui_add-mamedev-systems_all,"
+",,,,"
+",v HELP > downloads (fill in the correct website !),,,"
+",Downloads > Submenu,,subgui_add-mamedev-systems_downloads_wget,"
     )
     build_menu_add-mamedev-systems
 }
 
+
+function mame_data_read() {
+    #here we read the systems and descriptions from mame into an array
+    #by using the if function the data can be re-used, without reading it every time
+    if [[ -z ${mamedev_csv[@]} ]]; then
+        if [[ -f /opt/retropie/emulators/mame/mame0236_systems_sorted_info ]]; then 
+    clear
+    echo "Get mame0236 data:/opt/retropie/emulators/mame/mame0236_systems_sorted_info"
+    echo "For speed, data will be re-used within this session"
+    echo "Be patient for 20 seconds" 
+    # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
+    # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
+    # Now using this : lines that start with "D" using => grep ^[D]
+    #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0236_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+        else
+    echo "Get mame0236 data:RetroPie-Share repository"
+    echo "For speed, data will be re-used within this session"
+    echo "Be patient for 20 seconds" 
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+        fi
+    fi
+}
+
+
 function subgui_add-mamedev-systems_forum() {
     local csv=()
     csv=(
-",menu_item,empty,to_do,"
-",Handhelds / Plug & play,,choose_handheld_add descriptions,"
-",Systems: with extra options,,choose_extra_options_add descriptions,"
-",Systems: with/without extra options + full/semi automatic boot,,choose_autoboot_add descriptions,"
-",Systems: without extra options : forum list,,subgui_add-mamedev-systems_forum_list,"
+",menu_item_handheld_description,to_do driver_used_for_installation,"
+",All in One Handheld and Plug and Play,,run_generator_script ablmini,"
+",Classic Handheld Systems,,run_generator_script alnattck,"
+",Game and Watch,,run_generator_script gnw_ball,"
+",JAKKS Pacific TV Games,,run_generator_script jak_batm,"
+",Konami Handheld,,run_generator_script kbilly,"
+",Tiger Handheld Electronics,,run_generator_script taddams,"
+",Tiger R-Zone,,run_generator_script rzbatfor,"
 ",,,,"
 ",Select downloads,,subgui_add-mamedev-systems_downloads,"
     )
     build_menu_add-mamedev-systems
 }
+
+
+function subgui_add-mamedev-systems_extras() {
+    local csv=()
+    csv=(
+",menu_item,empty,to_do,"
+",v HELP > systems + extra hardware (working better than default),,,"
+",Systems: with extra options,,choose_extra_options_add descriptions,"
+",,,,"
+",v HELP > experimental ! : install systems with autoboot function,,,"
+",Systems: full/semi automatic boot (with/without extra options),,choose_autoboot_add descriptions,"
+    )
+    build_menu_add-mamedev-systems
+}
+
 
 function subgui_add-mamedev-systems_all() {
     local csv=()
@@ -83,57 +150,41 @@ function subgui_add-mamedev-systems_sort() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
-",*** next lines are added to test the code ***,,,"
 ",Forum list upon descriptions,,choose_add descriptions *forum,"
-",Forum list upon systems,,choose_add systems *forum,"
+",Forum list upon system names,,choose_add systems *forum,"
 ",,,,"
 ",Non-arcade upon descriptions,,choose_add descriptions *non-arcade,"
-",Non-arcade upon systems,,choose_add systems *non-arcade,"
+",Non-arcade upon system names,,choose_add systems *non-arcade,"
 ",,,,"
-",Cabinets upon descriptions,,choose_add descriptions *cabinets,"
-",Cabinets upon systems,,choose_add systems *cabinets,"
+",Game consoles upon descriptions,,choose_add descriptions *game-console,"
+",Game consoles upon system names,,choose_add systems *game-console,"
 ",,,,"
-",MSX upon descriptions,,choose_add descriptions MSX,"
-",MSX upon systems,,choose_add systems MSX,"
+",Atari upon descriptions,,choose_add descriptions *non-arcade Atari,"
+",Atari upon system names,,choose_add systems *non-arcade Atari,"
 ",,,,"
-",(and equal test 2 opt.)SONY MSX upon descriptions,,choose_add descriptions MSX HB-F,"
-",(and equal test 2 opt.)SONY MSX upon systems,,choose_add systems MSX HB-F,"
+",Commodore upon descriptions,,choose_add descriptions *non-arcade Commodore,"
+",Commodore upon system names,,choose_add systems *non-arcade Commodore,"
 ",,,,"
-
-",(not equal test 2 opt.)MSX but no HB types upon descriptions,,choose_add descriptions HB! MSX,"
-",(not equal test 2 opt.)MSX but no HB types upon systems,,choose_add systems HB! MSX,"
+",Nintendo upon descriptions,,choose_add descriptions *non-arcade Nintendo,"
+",Nintendo upon system names,,choose_add systems *non-arcade Nintendo,"
 ",,,,"
-",(not equal test 1 opt.)arcade upon descriptions,,choose_add descriptions *non-arcade!,"
-",(not equal test 1 opt.)arcade upon systems,,choose_add systems *non-arcade!,"
+",MSX upon descriptions,,choose_add descriptions *non-arcade MSX,"
+",MSX upon system names,,choose_add systems *non-arcade MSX,"
+",,,,"
+",Sega upon descriptions,,choose_add descriptions *non-arcade Sega,"
+",Sega upon system names,,choose_add systems *non-arcade Sega,"
     )
     build_menu_add-mamedev-systems
-}
 
-
-function subgui_add-mamedev-systems_forum_list() {
-    local csv=()
-    csv=(
-",menu_item,empty,to_do,"
-",Forum list upon descriptions,,choose_add_forum descriptions,"
-",Forum list upon system names,,choose_add_forum,"
-    )
-    build_menu_add-mamedev-systems
-}
-
-
-function choose_handheld_add() {
-    local csv=()
-    csv=(
-",menu_item_handheld_description,to_do driver_used_for_installation,"
-",All in One Handheld and Plug and Play,,run_generator_script ablmini,"
-",Classic Handheld Systems,,run_generator_script alnattck,"
-",Game and Watch,,run_generator_script gnw_ball,"
-",JAKKS Pacific TV Games,,run_generator_script jak_batm,"
-",Konami Handheld,,run_generator_script kbilly,"
-",Tiger Handheld Electronics,,run_generator_script taddams,"
-",Tiger R-Zone,,run_generator_script rzbatfor,"
-    )
-    build_menu_add-mamedev-systems
+#preserved-test-lines
+#",Cabinets upon descriptions,,choose_add descriptions *cabinets,"
+#",Cabinets upon systems,,choose_add systems *cabinets,"
+#",(and equal test 2 opt.)SONY MSX upon descriptions,,choose_add descriptions MSX HB-F,"
+#",(and equal test 2 opt.)SONY MSX upon systems,,choose_add systems MSX HB-F,"
+#",(not equal test 2 opt.)MSX but no HB types upon descriptions,,choose_add descriptions HB! MSX,"
+#",(not equal test 2 opt.)MSX but no HB types upon systems,,choose_add systems HB! MSX,"
+#",(not equal test 1 opt.)arcade upon descriptions,,choose_add descriptions *non-arcade!,"
+#",(not equal test 1 opt.)arcade upon systems,,choose_add systems *non-arcade!,"
 }
 
 
@@ -228,24 +279,78 @@ function subgui_add-mamedev-systems_alphabetical_order_selection() {
 }
 
 
+function subgui_add-mamedev-systems_search() {
+    local csv=()
+    local system_or_description=$1
+    local search
+
+    search=$(dialog \
+--default-item "$default" \
+--backtitle "$__backtitle" \
+--title "Insert up to 5 search patterns" \
+--form "" \
+22 76 16 \
+"Search pattern(s):" 1 1 "" 1 22 76 100 \
+2>&1 >/dev/tty \
+)
+
+    csv=(
+",menu_item,empty,to_do,"
+",Display your own sorted list,,choose_add $system_or_description $search,"
+    )
+    build_menu_add-mamedev-systems
+}
+
+
+function subgui_add-mamedev-systems_downloads_wget() {
+    local csv=()
+    local website_url=""
+    local website_path="download"
+    local rompack_name="mame-0.231-merged"
+    local destination_path="/home/$user/RetroPie/download"
+    local reserved=""
+    local manual_input
+
+    manual_input=$(\
+dialog \
+--default-item "$default" \
+--backtitle "$__backtitle" \
+--title "Insert the options" \
+--form "" \
+22 76 16 \
+"Website url >X (https://X/):" 1 1 "$website_url" 1 30 76 100 \
+"Website path >X (/X/):" 2 1 "$website_path" 2 30 76 100 \
+"rompack name:" 3 1 "$rompack_name" 3 30 76 100 \
+"destination path:" 4 1 "$destination_path" 4 30 76 100 \
+"reserved:" 5 1 "$reserved" 5 30 76 100 \
+2>&1 >/dev/tty \
+)
+
+    website_url=$(echo "$manual_input" | sed -n 1p)
+    website_path=$(echo "$manual_input" | sed -n 2p)
+    rompack_name=$(echo "$manual_input" | sed -n 3p)
+    destination_path=$(echo "$manual_input" | sed -n 4p)
+    reserved=$(echo "$manual_input" | sed -n 5p)
+
+    clear
+    if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
+    echo "reading the website data"
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read download_read;do download_csv+=("$download_read");done < <(echo \",,,,\";curl https://$website_url/$website_path/$rompack_name|grep "View Contents"|cut -d '"' -f2|while read line;do echo "\",Get '$line',,download_file_with_wget $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
+    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${download_csv[*]}"));unset IFS
+    else
+    csv=( 
+",,,,"
+",error : insert the correct website : try again !,,," 
+)
+    fi
+    build_menu_add-mamedev-systems
+}
+
+
 function choose_add() {
     local csv=()
-    #here we read the systems and descriptions from mame into an array
-    #by using the if function the data can be re-used, without reading it every time
-    if [[ -z ${mamedev_csv[@]} ]]; then
-    local system_read
-    # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
-    # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
-    # Now using this : lines that start with "D" using => grep ^[D]
-    clear
-    echo "Extracting data from mame0228-mame0236 have issues on 32bit OSes"
-    echo "Now we are reading, mame0236 data, from the RetroPie-Share"
-    echo "For speed, data will be re-used within this session"
-    echo "Be patient for 20 seconds" 
-    #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
-    fi
+    mame_data_read
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
     #here we store the sorted mamedev_csv values in the csv array
@@ -256,19 +361,24 @@ function choose_add() {
     #like this (for one and the other ): grep -P '^(?=.*pattern1)(?=.*pattern2)'
     #because we need a combination of "or" and "and" I found more information in the next link
     #more info https://www.shellhacks.com/grep-or-grep-and-grep-not-match-multiple-patterns/
-    #using awk we can combined (and)&& (or)||
+    #using awk we can combined (and)&& (or)|| and also ignore case sensitive
     #(fast)sorting (and equal to) is possible on patterns up to 5 options ($2 -$6)
     #(slower)sorting (not equal to) is possible on patterns for one option ($2) adding an ! after the pattern 
-    IFS=$'\n' csv=($(sort -t"," -d -k 3 --ignore-case<<<$(awk "$([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 3 --ignore-case<<<$(awk "{IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
     #this is an aternative but much slower
     #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 3 --ignore-case;unset IFS)
     else
     #here we store the sorted mamedev_csv values in the csv array
     #we sort on the second colunm which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case<<<$(awk "$([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case<<<$(awk " {IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
     #this is an aternative but much slower
     #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 2 --ignore-case;unset IFS)
     fi
+
+    #when the csv array is not filled, if searching patterns are not found, index 1 and above are empty
+    #here we add an extra line into index 1, so an empty dialog will appear without any errors  
+    [[ -z ${csv[1]} ]] && csv+=( "\",error : search pattern is not found : try again !,,,\"" )
+
     build_menu_add-mamedev-systems $1
 }
 
@@ -1148,6 +1258,27 @@ python3 - https://drive.google.com/drive/folders/$1 -m -P "$2"
 chown -R $user:$user "$2"
 #rm /tmp/gdrivedl.py
 }
+
+
+function download_file_with_wget() {
+clear
+echo "getting your desired file"
+mkdir -p $3
+#$1=filename $2=from_link $3=to_path
+if [ ! -f "$3/$1" ]; then
+    wget -nv -O $3/$1 https://$2/$1
+    #doesn't work, perhaps the command or redirecting is the problem
+    # curl -L -O https://$2/$1 --create-dirs -o $3/$1
+    sleep 10
+else 
+    read -r -p "File exists !, do you want to overwrite it ? [Y/N] " response
+       if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]];then 
+           wget -nv -O $3/$1 https://$2/$1
+       fi
+fi
+chown -R $user:$user "$3"
+}
+
 
 function create_lr-mess_overlays() {
 clear
