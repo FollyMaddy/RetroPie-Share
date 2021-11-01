@@ -1,0 +1,18 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+breakout,"Breakout [TTL]","1976",Atari,-,-,-,YES,NO,NO,NO,NO,pong.cpp,BUONO,RASTER,"90",896,252,VERTICAL,pong.cpp
+ckidzo,"Ckidzo [TTL]","1976",Meadows,-,-,-,YES,NO,NO,NO,NO,meadwttl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,meadwttl.cpp
+cleanswp,"Clean Sweep [TTL]","1974",Ramtek,-,-,-,YES,NO,NO,NO,NO,ramtek.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,ramtek.cpp
+"fun4","Fun Four (set 1) [TTL]","1976","Bailey International",-,-,-,YES,NO,NO,NO,NO,bailey.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,bailey.cpp
+"fun4a","Fun Four (set 2) [TTL]","1976","Bailey International","fun4","fun4",-,YES,NO,NO,NO,NO,bailey.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,bailey.cpp
+hockyrmt,"Hockey (Ramtek) [TTL]","1973",Ramtek,-,-,-,YES,NO,NO,NO,NO,ramtek.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,ramtek.cpp
+"mead4in1","Meadows 4 in 1 [TTL]","1976",Meadows,-,-,-,YES,NO,NO,NO,NO,meadwttl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,meadwttl.cpp
+pongf,"Pong (Rev E) [TTL]","1972",Atari,pong,pong,-,YES,NO,NO,NO,NO,pong.cpp,BUONO,RASTER,"0",454,262,HORIZONTAL,pong.cpp
+pong,"Pong (Rev E) external [TTL]","1972",Atari,-,-,-,YES,NO,NO,NO,NO,pong.cpp,BUONO,RASTER,"0",454,262,HORIZONTAL,pong.cpp
+pongd,"Pong Doubles [TTL]","1973",Atari,-,-,-,YES,NO,NO,NO,NO,pong.cpp,BUONO,RASTER,"0",454,262,HORIZONTAL,pong.cpp
+rebound,"Rebound (Rev B) [TTL]","1974",Atari,-,-,-,YES,NO,NO,NO,NO,pong.cpp,BUONO,RASTER,"0",454,262,HORIZONTAL,pong.cpp
+soccrrmt,"Soccer (Ramtek) [TTL]","1973",Ramtek,-,-,-,YES,NO,NO,NO,NO,ramtek.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,ramtek.cpp
+ttblock,"T.T Block [TTL]","1977",Taito,-,-,-,YES,NO,NO,NO,NO,taitottl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,taitottl.cpp
+"take5","Take 5 [TTL]","1975","Fun Games",-,-,-,YES,NO,NO,NO,NO,fungames.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,fungames.cpp
+vollyrmt,"Volly (Ramtek) [TTL]","1973",Ramtek,-,-,-,YES,NO,NO,NO,NO,ramtek.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,ramtek.cpp
+wipeormt,"Wipeout (Ramtek) [TTL]","1974",Ramtek,-,-,-,YES,NO,NO,NO,NO,ramtek.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,ramtek.cpp
+zzblock,"Zun Zun Block [TTL]","1979",Taito,-,-,-,YES,NO,NO,NO,NO,taitottl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,taitottl.cpp

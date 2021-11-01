@@ -1,0 +1,2 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+dcfish,"Fish Life Amazon Playful Edition (Japan)","2000",Sega,-,-,-,YES,NO,NO,NO,YES,dccons.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,dccons.cpp

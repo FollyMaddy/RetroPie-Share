@@ -1,0 +1,1255 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"88games","'88 Games","1988",Konami,-,-,-,YES,NO,NO,NO,NO,"88games.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"88games.cpp"
+"1on1gov","1 on 1 Government (Japan)","2000",Tecmo,"coh1002m",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+"10yard85","10-Yard Fight '85 (US, Taito license)","1985","Irem (Taito license)","10yard","10yard",-,YES,NO,NO,NO,NO,"m58.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"m58.cpp"
+"10yardj","10-Yard Fight (Japan)","1983",Irem,"10yard","10yard",-,YES,NO,NO,NO,NO,"m58.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"m58.cpp"
+"10yard","10-Yard Fight (World, set 1)","1983",Irem,-,-,-,YES,NO,NO,NO,NO,"m58.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"m58.cpp"
+"cprogolf18","18 Challenge Pro Golf (DECO Cassette) (Japan)","1982","Data East Corporation",cprogolf,cprogolf,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+progolf,"18 Holes Pro Golf (set 1)","1981","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,progolf.cpp,INCOMPLETO,RASTER,"270",256,256,VERTICAL,progolf.cpp
+progolfa,"18 Holes Pro Golf (set 2)","1981","Data East Corporation",progolf,progolf,-,YES,NO,NO,NO,NO,progolf.cpp,PRELIMINARE,RASTER,"270",256,256,VERTICAL,progolf.cpp
+"spikes91","1991 Spikes (Italian bootleg, set 1)","1991",bootleg,pspikes,pspikes,-,YES,NO,NO,NO,NO,aerofgt.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,aerofgt.cpp
+"spikes91b","1991 Spikes (Italian bootleg, set 2)","1991",bootleg,pspikes,pspikes,-,YES,NO,NO,NO,NO,aerofgt.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,aerofgt.cpp
+openice,"2 On 2 Open Ice Challenge (rev 1.21)","1995",Midway,-,-,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+openicea,"2 On 2 Open Ice Challenge (rev 1.2A)","1995",Midway,openice,openice,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+"2020bb","2020 Super Baseball (set 1)","1991","SNK / Pallas",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"2020bba","2020 Super Baseball (set 2)","1991","SNK / Pallas","2020bb","2020bb",-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"2020bbh","2020 Super Baseball (set 3)","1991","SNK / Pallas","2020bb","2020bb",-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"3countb","3 Count Bout / Fire Suplex (NGM-043 ~ NGH-043)","1993",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"3on3dunk","3 On 3 Dunk Madness (US, prototype? 1997/02/04)","1996","Video System Co.",-,-,-,YES,NO,NO,NO,NO,inufuku.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,inufuku.cpp
+"bowl3d","3-D Bowling","1978","Meadows Games, Inc.",-,-,"bowl3d",YES,NO,NO,NO,NO,meadows.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,meadows.cpp
+"720gr1","720 Degrees (German, rev 1)","1986","Atari Games","720","720",-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"720g","720 Degrees (German, rev 2)","1986","Atari Games","720","720",-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"720r1","720 Degrees (rev 1)","1986","Atari Games","720","720",-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"720r2","720 Degrees (rev 2)","1986","Atari Games","720","720",-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"720r3","720 Degrees (rev 3)","1986","Atari Games","720","720",-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"720","720 Degrees (rev 4)","1986","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"9ballsht","9-Ball Shootout (set 1)","1993","E-Scape EnterMedia (Bundra license)",-,-,-,YES,NO,NO,NO,NO,coolpool.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,coolpool.cpp
+"9ballsht2","9-Ball Shootout (set 2)","1993","E-Scape EnterMedia (Bundra license)","9ballsht","9ballsht",-,YES,NO,NO,NO,NO,coolpool.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,coolpool.cpp
+"9ballsht3","9-Ball Shootout (set 3)","1993","E-Scape EnterMedia (Bundra license)","9ballsht","9ballsht",-,YES,NO,NO,NO,NO,coolpool.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,coolpool.cpp
+"9ballshtc","9-Ball Shootout Championship","1993","E-Scape EnterMedia (Bundra license)","9ballsht","9ballsht",-,YES,NO,NO,NO,NO,coolpool.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,coolpool.cpp
+aceattac,"Ace Attacker (FD1094 317-0059)","1988",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+aceattaca,"Ace Attacker (Japan, System 16A, FD1094 317-0060)","1988",Sega,aceattac,aceattac,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16a.cpp"
+koshien,"Ah Eikou no Koshien (Japan)","1990","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+airtrixo,"Air Trix (original)","2000",Sega,airtrix,airtrix,-,YES,NO,NO,NO,NO,hikaru.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,hikaru.cpp
+airtrix,"Air Trix (Rev A)","2000",Sega,hikaru,-,-,YES,NO,NO,NO,NO,hikaru.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,hikaru.cpp
+airwlkrs,"Air Walkers","1997","Data East",-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+albatross,"Albatross (US Prototype?)","1989",Nasco,suprgolf,suprgolf,-,YES,NO,NO,NO,NO,suprgolf.cpp,PRELIMINARE,RASTER,"0",256,192,HORIZONTAL,suprgolf.cpp
+aafbb,"All American Football (rev B)","1989","Leland Corporation",aafb,aafb,-,YES,NO,NO,NO,NO,leland.cpp,PRELIMINARE,RASTER,"270",320,240,VERTICAL,leland.cpp
+aafbc,"All American Football (rev C)","1989","Leland Corporation",aafb,aafb,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+"aafbd2p","All American Football (rev D, 2 Players)","1989","Leland Corporation",aafb,aafb,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+aafb,"All American Football (rev E)","1989","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+alleymas,"Alley Master","1986",Cinematronics,-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+alpinerjc,"Alpine Racer (Rev. AR1 Ver.C, Japan)","1994",Namco,alpinerd,alpinerd,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+alpinerc,"Alpine Racer (Rev. AR2 Ver.C, World)","1994",Namco,alpinerd,alpinerd,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+alpinerd,"Alpine Racer (Rev. AR2 Ver.D, World)","1994",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+"alpinr2a","Alpine Racer 2 (Rev. ARS2 Ver.A, World)","1996",Namco,"alpinr2b","alpinr2b",-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+"alpinr2b","Alpine Racer 2 (Rev. ARS2 Ver.B, World)","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+alpine,"Alpine Ski (set 1)","1982","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,taitosj.cpp,BUONO,RASTER,"270",256,224,VERTICAL,taitosj.cpp
+alpinea,"Alpine Ski (set 2)","1982","Taito Corporation",alpine,alpine,-,YES,NO,NO,NO,NO,taitosj.cpp,BUONO,RASTER,"270",256,224,VERTICAL,taitosj.cpp
+alpinesa,"Alpine Surfer (Rev. AF2 Ver.A, World)","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+amerihok,Ameri-Hockey,"199?",Ameri,-,-,-,YES,NO,NO,YES,NO,amerihok.cpp,PRELIMINARE,-,"0",0,0,-,amerihok.cpp
+horshoes,"American Horseshoes (US)","1990","Taito America Corporation",-,-,-,YES,NO,NO,NO,NO,taito_l.cpp,BUONO,RASTER,"270",320,224,VERTICAL,taito_l.cpp
+asoccer,"American Soccer","1987",Universal,idsoccer,idsoccer,-,YES,NO,NO,NO,NO,docastle.cpp,PRELIMINARE,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+amerdart,"AmeriDarts (set 1)","1989",Ameri,-,-,-,YES,NO,NO,NO,NO,coolpool.cpp,BUONO,RASTER,"0",322,241,HORIZONTAL,coolpool.cpp
+"amerdart2","AmeriDarts (set 2)","1989",Ameri,amerdart,amerdart,-,YES,NO,NO,NO,NO,coolpool.cpp,BUONO,RASTER,"0",322,241,HORIZONTAL,coolpool.cpp
+"amerdart3","AmeriDarts (set 3)","1989",Ameri,amerdart,amerdart,-,YES,NO,NO,NO,NO,coolpool.cpp,BUONO,RASTER,"0",322,241,HORIZONTAL,coolpool.cpp
+cadanglr,"Angler Dangler (DECO Cassette) (US)","1982","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+aking,"Angler King (Japan, AG1 Ver. A)","1998",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+anmlbskta,"Animal Basket (19 Jan 2005)","2005","MOSS / Sammy",anmlbskt,anmlbskt,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+anmlbskt,"Animal Basket (24 Jan 2005)","2005","MOSS / Sammy",awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+appoooh,Appoooh,"1984","Sanritsu / Sega",-,-,-,YES,NO,NO,NO,NO,appoooh.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,appoooh.cpp
+archrivlb,"Arch Rivals (rev 2.0 5/03/89, 8-way joystick bootleg)","1989",bootleg,archrivl,archrivl,-,YES,NO,NO,NO,NO,"mcr68.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr68.cpp"
+archrivla,"Arch Rivals (rev 2.0 5/03/89)","1989","Bally Midway",archrivl,archrivl,-,YES,NO,NO,NO,NO,"mcr68.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr68.cpp"
+archrivl,"Arch Rivals (rev 4.0 6/29/89)","1989","Bally Midway",-,-,-,YES,NO,NO,NO,NO,"mcr68.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr68.cpp"
+arlingtna,"Arlington Horse Racing (v1.21-D)","1991","Strata/Incredible Technologies",arlingtn,arlingtn,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",400,240,HORIZONTAL,"itech8.cpp"
+arlingtn,"Arlington Horse Racing (v1.40-D)","1991","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",400,240,HORIZONTAL,"itech8.cpp"
+"armchmp2o","Arm Champs II (ver 1.7)","1992",Jaleco,"armchmp2","armchmp2",-,YES,NO,NO,NO,NO,cischeat.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,cischeat.cpp
+"armchmp2o2","Arm Champs II (ver 2.6)","1992",Jaleco,"armchmp2","armchmp2",-,YES,NO,NO,NO,NO,cischeat.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,cischeat.cpp
+"armchmp2","Arm Champs II (ver 2.7)","1992",Jaleco,-,-,-,YES,NO,NO,NO,NO,cischeat.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,cischeat.cpp
+armwrest,"Arm Wrestling","1985",Nintendo,-,-,-,YES,NO,NO,NO,NO,punchout.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,punchout.cpp
+mt_tgolf,"Arnold Palmer Tournament Golf (Mega-Tech)","1989",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+ashnojoe,"Ashita no Joe (Japan)","1990","Taito Corporation / Wave",scessjoe,scessjoe,-,YES,NO,NO,NO,NO,ashnojoe.cpp,BUONO,RASTER,"0",288,208,HORIZONTAL,ashnojoe.cpp
+"atarifb4","Atari 4 Player Football","1979",Atari,atarifb,atarifb,-,YES,NO,NO,NO,NO,atarifb.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,atarifb.cpp
+abaseb,"Atari Baseball (set 1)","1979",Atari,-,-,-,YES,NO,NO,NO,NO,atarifb.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,atarifb.cpp
+"abaseb2","Atari Baseball (set 2)","1979",Atari,abaseb,abaseb,-,YES,NO,NO,NO,NO,atarifb.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,atarifb.cpp
+bsktball,"Atari Basketball","1979",Atari,-,-,-,YES,NO,NO,NO,NO,bsktball.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,bsktball.cpp
+"atarifb1","Atari Football (revision 1)","1978",Atari,atarifb,atarifb,-,YES,NO,NO,NO,NO,atarifb.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,atarifb.cpp
+atarifb,"Atari Football (revision 2)","1978",Atari,-,-,-,YES,NO,NO,NO,NO,atarifb.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,atarifb.cpp
+"atarifb2","Atari Football II","1978",Atari,atarifb,atarifb,-,YES,NO,NO,NO,NO,atarifb.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,atarifb.cpp
+soccer,"Atari Soccer","1980",Atari,-,-,-,YES,NO,NO,NO,NO,atarifb.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,atarifb.cpp
+atlantol,"Atlant Olimpic (Italian bootleg)","1996",bootleg,trackfld,trackfld,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+bssoccer,"Back Street Soccer (KRB-0031 PCB)","1996","SunA (Unico license)",-,-,-,YES,NO,NO,NO,NO,"suna16.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"suna16.cpp"
+bssoccera,"Back Street Soccer (KRB-0032A PCB)","1996","SunA (Unico license)",bssoccer,bssoccer,-,YES,NO,NO,NO,NO,"suna16.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"suna16.cpp"
+bangbead,"Bang Bead","2000",Visco,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+barbball,"Barroom Baseball (prototype)","1983",Atari,-,-,-,YES,NO,NO,NO,NO,"bartop52.cpp",PRELIMINARE,RASTER,"0",336,225,HORIZONTAL,"bartop52.cpp"
+pc_bball,"Baseball (PlayChoice-10)","1984","Nintendo of America","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"bstars2","Baseball Stars 2","1992",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+bstarsh,"Baseball Stars Professional (NGH-002)","1990",SNK,bstars,bstars,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+bstars,"Baseball Stars Professional (NGM-002)","1990",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+pc_bstar,"Baseball Stars: Be a Champ! (PlayChoice-10)","1989","SNK (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"basebal2","Baseball: The Season II","1987",Cinematronics,-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+pc_bload,"Bases Loaded (Prototype, PlayChoice-10)","1990","Jaleco (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+basketbal,"Basket Ball (8-way joystick bootleg of Arch Rivals)","1989",bootleg,archrivl,archrivl,-,YES,NO,NO,NO,NO,"mcr68.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr68.cpp"
+bassangl,"Bass Angler (GE765 VER. JAA)","1998",Konami,fbaitbc,fbaitbc,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"bassang2","Bass Angler 2 (GE865 VER. JAA)","1998",Konami,"fbait2bc","fbait2bc",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+flipshot,"Battle Flip Shot","1998",Visco,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"wbbc97","Beach Festival World Championship 1997","1997",Comad,-,-,-,YES,NO,NO,NO,NO,aerofgt.cpp,BUONO,RASTER,"0",342,240,HORIZONTAL,aerofgt.cpp
+beachspi,"Beach Spikers (GDS-0014)","2001","CRI / Sega","naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+btchamp,"Beat the Champ (GV053 UAA01)","1996",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+bbbxing,"Best Bout Boxing (ver 1.3)","1994",Jaleco,-,-,-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+bestleag,"Best League (bootleg of Big Striker, Italian Serie A)","1993",bootleg,bigstrik,bigstrik,-,YES,NO,NO,NO,NO,bestleag.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,bestleag.cpp
+bestleaw,"Best League (bootleg of Big Striker, World Cup)","1993",bootleg,bigstrik,bigstrik,-,YES,NO,NO,NO,NO,bestleag.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,bestleag.cpp
+bigevglfj,"Big Event Golf (Japan)","1986","Taito Corporation",bigevglf,bigevglf,-,YES,NO,NO,NO,NO,bigevglf.cpp,BUONO,RASTER,"270",256,224,VERTICAL,bigevglf.cpp
+bigevglf,"Big Event Golf (US)","1986","Taito America Corporation",-,-,-,YES,NO,NO,NO,NO,bigevglf.cpp,BUONO,RASTER,"270",256,224,VERTICAL,bigevglf.cpp
+bigstrik,"Big Striker","1992",Jaleco,-,-,-,YES,NO,NO,NO,NO,"megasys1.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"megasys1.cpp"
+bigstrkba,"Big Striker (bootleg w/Italian teams)","1992",bootleg,bigstrik,bigstrik,-,YES,NO,NO,NO,NO,bigstrkb.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,bigstrkb.cpp
+bigstrkb,"Big Striker (bootleg)","1992",bootleg,bigstrik,bigstrik,-,YES,NO,NO,NO,NO,bigstrkb.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,bigstrkb.cpp
+bikkuri,"Bikkuri Pro Wrestling (Japan 881221, Ver 1.05)","1988",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+billlist,"Billard List","1995",D.G.R.M.,pokechmp,pokechmp,-,YES,NO,NO,NO,NO,pokechmp.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pokechmp.cpp
+bilyard,Billiard,"198?",Terminal,-,-,-,YES,NO,NO,NO,NO,"tiamc1.cpp",BUONO,RASTER,"0",256,256,HORIZONTAL,"tiamc1.cpp"
+realbrko,"Billiard Academy Real Break (Europe, older)","1998",Nakanihon,realbrk,realbrk,-,YES,NO,NO,NO,NO,realbrk.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,realbrk.cpp
+realbrk,"Billiard Academy Real Break (Europe)","1998",Nakanihon,-,-,-,YES,NO,NO,NO,NO,realbrk.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,realbrk.cpp
+realbrkj,"Billiard Academy Real Break (Japan)","1998",Nakanihon,realbrk,realbrk,-,YES,NO,NO,NO,NO,realbrk.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,realbrk.cpp
+realbrkk,"Billiard Academy Real Break (Korea)","1998",Nakanihon,realbrk,realbrk,-,YES,NO,NO,NO,NO,realbrk.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,realbrk.cpp
+bking,"Birdie King","1982","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,bking.cpp,BUONO,RASTER,"270",256,224,VERTICAL,bking.cpp
+"bking2","Birdie King 2","1983","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,bking.cpp,BUONO,RASTER,"90",256,224,VERTICAL,bking.cpp
+"bking3","Birdie King 3","1984","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,bking.cpp,BUONO,RASTER,"90",256,224,VERTICAL,bking.cpp
+birdtry,"Birdie Try (Japan revision 2, revision 1 MCU)","1988","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,"dec0.cpp",BUONO,RASTER,"270",256,240,VERTICAL,"dec0.cpp"
+birdtrya,"Birdie Try (Japan revision 2)","1988","Data East Corporation",birdtry,birdtry,-,YES,NO,NO,NO,NO,"dec0.cpp",BUONO,RASTER,"270",256,240,VERTICAL,"dec0.cpp"
+bladestle,"Blades of Steel (version E, Trackball)","1987",Konami,bladestl,bladestl,-,YES,NO,NO,NO,NO,bladestl.cpp,BUONO,RASTER,"90",256,224,VERTICAL,bladestl.cpp
+bladestll,"Blades of Steel (version L, Trackball)","1987",Konami,bladestl,bladestl,-,YES,NO,NO,NO,NO,bladestl.cpp,BUONO,RASTER,"90",256,224,VERTICAL,bladestl.cpp
+bladestl,"Blades of Steel (version T, Joystick)","1987",Konami,-,-,-,YES,NO,NO,NO,NO,bladestl.cpp,BUONO,RASTER,"90",256,224,VERTICAL,bladestl.cpp
+ar_blast,"Blastaball (Arcadia, V 2.1)","1988","Arcadia Systems",ar_bios,-,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+blzntrnd,"Blazing Tornado","1994","Human Amusement",-,-,-,YES,NO,NO,NO,NO,metro.cpp,INCOMPLETO,RASTER,"0",304,224,HORIZONTAL,metro.cpp
+bodyslam,"Body Slam (8751 317-0015)","1986",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+bootcamp,"Boot Camp (set 1)","1987",Konami,combatsc,combatsc,-,YES,NO,NO,NO,NO,combatsc.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,combatsc.cpp
+bootcampa,"Boot Camp (set 2)","1987",Konami,combatsc,combatsc,-,YES,NO,NO,NO,NO,combatsc.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,combatsc.cpp
+"bottom9n","Bottom of the Ninth (version N)","1989",Konami,"bottom9","bottom9",-,YES,NO,NO,NO,NO,"bottom9.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"bottom9.cpp"
+"bottom9","Bottom of the Ninth (version T)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"bottom9.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"bottom9.cpp"
+bowlrama,"Bowl-O-Rama Rev 1.0","1991","P&P Marketing",-,-,-,YES,NO,NO,NO,NO,capbowl.cpp,BUONO,RASTER,"270",360,240,VERTICAL,capbowl.cpp
+bowler,"Bowling Alley","1978",Midway,-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",INCOMPLETO,RASTER,"90",260,224,VERTICAL,"mw8080bw.cpp"
+bowltry,"Bowling Try!","200?",Atlus,-,-,-,YES,NO,NO,YES,NO,bowltry.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,bowltry.cpp
+boxer,"Boxer (prototype)","1978",Atari,-,-,-,YES,NO,NO,NO,NO,boxer.cpp,PRELIMINARE,RASTER,"0",240,240,HORIZONTAL,boxer.cpp
+boxingm,"Boxing Mania: Ashita no Joe (ver JAA)","2001",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+bullfgtr,"Bull Fighter","1984","Alpha Denshi Co.",-,-,equites,YES,NO,NO,NO,NO,equites.cpp,INCOMPLETO,RASTER,"90",256,208,VERTICAL,equites.cpp
+bullfgtrs,"Bull Fighter (Sega)","1984","Alpha Denshi Co. (Sega license)",bullfgtr,bullfgtr,equites,YES,NO,NO,NO,NO,equites.cpp,INCOMPLETO,RASTER,"90",256,208,VERTICAL,equites.cpp
+bullfgt,"Bullfight (315-5065)","1984","Coreland / Sega",-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"system1.cpp"
+bullsdrt,"Bulls Eye Darts","1985","Shinkai Inc. (Magic Electronics Inc. license)",-,-,-,YES,NO,NO,NO,NO,centiped.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,centiped.cpp
+bullsdrtg,"Bulls Eye Darts (Galaxian conversion)","1985","Senko Industries",bullsdrt,bullsdrt,-,YES,NO,NO,NO,NO,galaxold.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+mt_calga,"California Games (Mega-Tech)","1991",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+cbasebal,"Capcom Baseball (Japan)","1989",Capcom,-,-,-,YES,NO,NO,NO,NO,cbasebal.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,cbasebal.cpp
+capbowl,"Capcom Bowling (set 1)","1988","Incredible Technologies / Capcom",-,-,-,YES,NO,NO,NO,NO,capbowl.cpp,BUONO,RASTER,"270",360,245,VERTICAL,capbowl.cpp
+"capbowl2","Capcom Bowling (set 2)","1988","Incredible Technologies / Capcom",capbowl,capbowl,-,YES,NO,NO,NO,NO,capbowl.cpp,BUONO,RASTER,"270",360,245,VERTICAL,capbowl.cpp
+"capbowl3","Capcom Bowling (set 3)","1988","Incredible Technologies / Capcom",capbowl,capbowl,-,YES,NO,NO,NO,NO,capbowl.cpp,BUONO,RASTER,"270",360,245,VERTICAL,capbowl.cpp
+"capbowl4","Capcom Bowling (set 4)","1988","Incredible Technologies / Capcom",capbowl,capbowl,-,YES,NO,NO,NO,NO,capbowl.cpp,BUONO,RASTER,"270",360,245,VERTICAL,capbowl.cpp
+cscluba,"Capcom Sports Club (Asia 970722)","1997",Capcom,csclub,csclub,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+"csclub1d","Capcom Sports Club (Euro 970722 Phoenix Edition) (bootleg)","1997",bootleg,csclub,csclub,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+"csclub1","Capcom Sports Club (Euro 970722)","1997",Capcom,csclub,csclub,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+csclub,"Capcom Sports Club (Euro 971017)","1997",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+csclubh,"Capcom Sports Club (Hispanic 970722)","1997",Capcom,csclub,csclub,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+csclubjy,"Capcom Sports Club (Japan 970722, yellow case)","1997",Capcom,csclub,csclub,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+csclubj,"Capcom Sports Club (Japan 970722)","1997",Capcom,csclub,csclub,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+carpolo,"Car Polo","1977",Exidy,-,-,-,YES,NO,NO,NO,NO,carpolo.cpp,PRELIMINARE,RASTER,"0",240,256,HORIZONTAL,carpolo.cpp
+carket,"Carket Ball","1996",SemiCom,-,-,-,YES,NO,NO,NO,NO,tumbleb.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,tumbleb.cpp
+cencourt,"Center Court (World, 4 Players, prototype) (MC-8123B)","1988",Sega,passsht,passsht,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+champbas,"Champion Base Ball","1983","Alpha Denshi Co. (Sega license)",-,-,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,champbas.cpp
+champbasj,"Champion Base Ball (Japan set 1)","1983","Alpha Denshi Co.",champbas,champbas,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,champbas.cpp
+champbasja,"Champion Base Ball (Japan set 2)","1983","Alpha Denshi Co.",champbas,champbas,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,champbas.cpp
+champbasjb,"Champion Base Ball (Japan set 3)","1983","Alpha Denshi Co.",champbas,champbas,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,champbas.cpp
+"champbb2j","Champion Base Ball Part-2 (Japan)","1983","Alpha Denshi Co.","champbb2","champbb2",-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,champbas.cpp
+"champbb2","Champion Base Ball Part-2 (set 1)","1983","Alpha Denshi Co. (Sega license)",-,-,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,champbas.cpp
+chboxing,"Champion Boxing","1984",Sega,-,-,-,YES,NO,NO,NO,NO,"sg1000a.cpp",BUONO,RASTER,"0",280,216,HORIZONTAL,"sg1000a.cpp"
+crgolfc,"Champion Golf","1984","Nasco Japan",crgolf,crgolf,-,YES,NO,NO,NO,NO,crgolf.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,crgolf.cpp
+crgolfbt,"Champion Golf (bootleg)","1984",bootleg,crgolf,crgolf,-,YES,NO,NO,NO,NO,crgolf.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,crgolf.cpp
+chwrestl,"Champion Pro Wrestling","1985",Sega,-,-,-,YES,NO,NO,NO,NO,"sg1000a.cpp",BUONO,RASTER,"0",280,216,HORIZONTAL,"sg1000a.cpp"
+champwrj,"Champion Wrestler (Japan)","1989","Taito Corporation",champwr,champwr,-,YES,NO,NO,NO,NO,taito_l.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_l.cpp
+champwru,"Champion Wrestler (US)","1989","Taito America Corporation",champwr,champwr,-,YES,NO,NO,NO,NO,taito_l.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_l.cpp
+champwr,"Champion Wrestler (World)","1989","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,taito_l.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_l.cpp
+champbwl,"Championship Bowling","1989","Seta / Romstar Inc.",-,-,-,YES,NO,NO,NO,NO,champbwl.cpp,BUONO,RASTER,"270",384,240,VERTICAL,champbwl.cpp
+chkun,"Chance Kun (Japan)","1988",Peni,-,-,-,YES,NO,NO,NO,NO,timeplt.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,timeplt.cpp
+cltchitrjd,"Clutch Hitter (Japan) (bootleg of FD1094 317-0175 set)","1991",bootleg,cltchitr,cltchitr,-,YES,NO,NO,NO,NO,"segas18.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas18.cpp"
+cltchitrj,"Clutch Hitter (Japan) (FD1094 317-0175)","1991",Sega,cltchitr,cltchitr,-,YES,NO,NO,NO,NO,"segas18.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas18.cpp"
+cltchitrd,"Clutch Hitter (US) (bootleg of FD1094 317-0176 set)","1991",bootleg,cltchitr,cltchitr,-,YES,NO,NO,NO,NO,"segas18.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas18.cpp"
+cltchitr,"Clutch Hitter (US) (FD1094 317-0176)","1991",Sega,-,-,-,YES,NO,NO,NO,NO,"segas18.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas18.cpp"
+combatscb,"Combat School (bootleg)","1988","bootleg (Datsu)",combatsc,combatsc,-,YES,NO,NO,NO,NO,combatsc.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,combatsc.cpp
+combatscj,"Combat School (Japan trackball)","1987",Konami,combatsc,combatsc,-,YES,NO,NO,NO,NO,combatsc.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,combatsc.cpp
+combatsc,"Combat School (joystick)","1988",Konami,-,-,-,YES,NO,NO,NO,NO,combatsc.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,combatsc.cpp
+combatsct,"Combat School (trackball)","1987",Konami,combatsc,combatsc,-,YES,NO,NO,NO,NO,combatsc.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,combatsc.cpp
+comebaby,"Come On Baby","2000",ExPotato,-,-,-,YES,NO,NO,NO,YES,comebaby.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,comebaby.cpp
+compgolfo,"Competition Golf Final Round (Japan, old version)","1985","Data East",compgolf,compgolf,-,YES,NO,NO,NO,NO,compgolf.cpp,BUONO,RASTER,"0",248,240,HORIZONTAL,compgolf.cpp
+compgolf,"Competition Golf Final Round (revision 3)","1986","Data East",-,-,-,YES,NO,NO,NO,NO,compgolf.cpp,BUONO,RASTER,"0",248,240,HORIZONTAL,compgolf.cpp
+cbaj,"Cool Boarders Arcade Jam (Export)","1998","UEP Systems","coh1002m",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+coolpool,"Cool Pool","1992",Catalina,-,-,-,YES,NO,NO,NO,NO,coolpool.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,coolpool.cpp
+clbowl,"Coors Light Bowling","1989","Incredible Technologies / Capcom",capbowl,capbowl,-,YES,NO,NO,NO,NO,capbowl.cpp,BUONO,RASTER,"270",360,245,VERTICAL,capbowl.cpp
+csmasho,"Cosmic Smash","2000",Sega,csmash,csmash,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+csmash,"Cosmic Smash (Rev A)","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+countryc,"Country Club","1988",SNK,-,-,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"0",288,216,HORIZONTAL,snk.cpp
+ccclass,"Country Club Classic (v1.10 03-apr-1997)","1997","Creative Electronics And Software",-,-,-,YES,NO,NO,NO,NO,cesclass.cpp,PRELIMINARE,LCD,"0",256,64,HORIZONTAL,cesclass.cpp
+cricket,Cricket,"1995","Daryde S. L.",-,-,-,YES,NO,NO,YES,NO,daryde.cpp,PRELIMINARE,-,"0",0,0,-,daryde.cpp
+crgolfa,"Crowns Golf (834-5419-03)","1984","Nasco Japan",crgolf,crgolf,-,YES,NO,NO,NO,NO,crgolf.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,crgolf.cpp
+crgolf,"Crowns Golf (834-5419-04)","1984","Nasco Japan",-,-,-,YES,NO,NO,NO,NO,crgolf.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,crgolf.cpp
+crgolfb,"Crowns Golf (set 3)","1984","Nasco Japan",crgolf,crgolf,-,YES,NO,NO,NO,NO,crgolf.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,crgolf.cpp
+crgolfhi,"Crowns Golf in Hawaii","1985","Nasco Japan",-,-,-,YES,NO,NO,NO,NO,crgolf.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,crgolf.cpp
+curvebal,"Curve Ball","1984",Mylstar,-,-,-,YES,NO,NO,NO,NO,gottlieb.cpp,BUONO,RASTER,"270",256,240,VERTICAL,gottlieb.cpp
+cyberbalp,"Cyberball (prototype)","1988","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+"cyberbal1","Cyberball (rev 1)","1988","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+"cyberbal2","Cyberball (rev 2)","1988","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+cyberbal,"Cyberball (rev 4)","1988","Atari Games",-,-,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+"cyberbal2p1","Cyberball 2072 (2 player, rev 1)","1989","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+"cyberbal2p2","Cyberball 2072 (2 player, rev 2)","1989","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+"cyberbal2p3","Cyberball 2072 (2 player, rev 3)","1989","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+"cyberbal2p","Cyberball 2072 (2 player, rev 4)","1989","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+ddboy,"Dam Dam Boy (on dedicated PCB)","1994",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,konmedal.cpp
+ddboya,"Dam Dam Boy (on Tsukande Toru Chicchi PCB)","1994",Konami,ddboy,ddboy,-,YES,NO,NO,NO,NO,konmedal.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,konmedal.cpp
+drdmania,"Dardomania (v2.1)","1994",Sleic,-,-,-,YES,NO,NO,YES,NO,drdmania.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,drdmania.cpp
+darkhleg,"Dark Horse Legend (GX706 VER. JAA)","1998",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+nss_aten,"David Crane's Amazing Tennis (Nintendo Super System)","1992","Absolute Entertainment Inc.",nss,-,-,YES,NO,NO,NO,NO,nss.cpp,PRELIMINARE,RASTER,"0",288,216,HORIZONTAL,nss.cpp
+decathlto,"Decathlete (JUET 960424 V1.000)","1996",Sega,decathlt,decathlt,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+decathlt,"Decathlete (JUET 960709 V1.001)","1996",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+derbyoc,"Derby Owners Club (Japan, Rev B)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"derbyo2k","Derby Owners Club 2000 Ver.2 (Japan, Rev A)","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"derbyoc2","Derby Owners Club II Ver.2.1 (Japan, Rev B)","2001",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+drbyocwa,"Derby Owners Club World Edition (Rev A)","2001",Sega,derbyocw,derbyocw,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+drbyocwb,"Derby Owners Club World Edition (Rev B)","2001",Sega,derbyocw,derbyocw,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+drbyocwc,"Derby Owners Club World Edition (Rev C)","2001",Sega,derbyocw,derbyocw,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+derbyocw,"Derby Owners Club World Edition EX (Rev D)","2005",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"dibif727","Diana Bifuca (v7.27)","199?","Compumatic / Bifuca",dibifuca,dibifuca,-,YES,NO,NO,YES,NO,microdar.cpp,PRELIMINARE,-,"0",0,0,-,microdar.cpp
+"dibif743","Diana Bifuca (v7.43)","199?","Compumatic / Bifuca",dibifuca,dibifuca,-,YES,NO,NO,YES,NO,microdar.cpp,PRELIMINARE,-,"0",0,0,-,microdar.cpp
+dibifuca,"Diana Bifuca (v9.25)","199?","Compumatic / Bifuca",-,-,-,YES,NO,NO,YES,NO,microdar.cpp,PRELIMINARE,-,"0",0,0,-,microdar.cpp
+"diola827","Diana Olakoa (v8.27)","1997","Compumatic / Olakoa",diolakoa,diolakoa,-,YES,NO,NO,YES,NO,microdar.cpp,PRELIMINARE,-,"0",0,0,-,microdar.cpp
+diolakoa,"Diana Olakoa (v8.38)","1997","Compumatic / Olakoa",-,-,-,YES,NO,NO,YES,NO,microdar.cpp,PRELIMINARE,-,"0",0,0,-,microdar.cpp
+dirtypig,"Dirty Pigskin Football","2006",Sammy,awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+dotrone,"Discs of Tron (Environmental)","1983","Bally Midway",dotron,dotron,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"0",512,480,HORIZONTAL,mcr.cpp
+dotron,"Discs of Tron (Upright, 10/4/83)","1983","Bally Midway",-,-,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"0",512,480,HORIZONTAL,mcr.cpp
+dotrona,"Discs of Tron (Upright, 9/22/83)","1983","Bally Midway",dotron,dotron,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"0",512,480,HORIZONTAL,mcr.cpp
+dokaben,"Dokaben (Japan)","1989",Capcom,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+"dokaben2","Dokaben 2 (Japan)","1989",Capcom,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+ddribble,"Double Dribble","1986",Konami,-,-,-,YES,NO,NO,NO,NO,ddribble.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,ddribble.cpp
+pc_dbldr,"Double Dribble (PlayChoice-10)","1987","Konami (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+ddribblep,"Double Dribble (prototype?)","1986",Konami,ddribble,ddribble,-,YES,NO,NO,NO,NO,ddribble.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,ddribble.cpp
+dplay,"Double Play","1977",Midway,-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",BUONO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+"dsoccr94j","Dream Soccer '94 (Japan, M92 hardware)","1994",Irem,"dsoccr94","dsoccr94",-,YES,NO,NO,NO,NO,"m92.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m92.cpp"
+"dsoccr94k","Dream Soccer '94 (Korea, M107 hardware)","1994","Irem (Data East Corporation license)","dsoccr94","dsoccr94",-,YES,NO,NO,NO,NO,"m107.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m107.cpp"
+"dsoccr94","Dream Soccer '94 (World, M107 hardware)","1994","Irem (Data East Corporation license)",-,-,-,YES,NO,NO,NO,NO,"m107.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m107.cpp"
+driblingbr,"Dribbling (bootleg, Brazil)","1983","bootleg (Videomac)",dribling,dribling,-,YES,NO,NO,NO,NO,dribling.cpp,PRELIMINARE,RASTER,"0",256,216,HORIZONTAL,dribling.cpp
+driblingo,"Dribbling (Olympia)","1983","Model Racing (Olympia license)",dribling,dribling,-,YES,NO,NO,NO,NO,dribling.cpp,PRELIMINARE,RASTER,"0",256,216,HORIZONTAL,dribling.cpp
+dribling,"Dribbling (set 1)","1983","Model Racing",-,-,-,YES,NO,NO,NO,NO,dribling.cpp,PRELIMINARE,RASTER,"0",256,216,HORIZONTAL,dribling.cpp
+driblinga,"Dribbling (set 2)","1983","Model Racing",dribling,dribling,-,YES,NO,NO,NO,NO,dribling.cpp,PRELIMINARE,RASTER,"0",256,216,HORIZONTAL,dribling.cpp
+dumpmtmt,"Dump Matsumoto (Japan, 8751 317-0011a)","1986",Sega,bodyslam,bodyslam,-,YES,NO,NO,NO,NO,"segas16a.cpp",PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+"ddream95","Dunk Dream '95 (Japan 1.4, EAM)","1995","Data East Corporation","hoops96","hoops96",-,YES,NO,NO,NO,NO,deco_mlc.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,deco_mlc.cpp
+dunkmniajc,"Dunk Mania (Japan, DM1/VER.C)","1995",Namco,dunkmnia,dunkmnia,-,YES,NO,NO,NO,NO,"namcos11.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos11.cpp"
+dunkmnia,"Dunk Mania (World, DM2/VER.C)","1995",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos11.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos11.cpp"
+dunkshoto,"Dunk Shot (FD1089A 317-0022)","1986",Sega,dunkshot,dunkshot,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+dunkshota,"Dunk Shot (Rev A, FD1089A 317-0022)","1987",Sega,dunkshot,dunkshot,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+dunkshot,"Dunk Shot (Rev C, FD1089A 317-0022)","1987",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+dcclubj,"Dynamic Country Club (Japan, ROM Based)","1991",Sega,dcclub,dcclub,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+dcclubfd,"Dynamic Country Club (US, Floppy Based, FD1094 317-0058-09d)","1991",Sega,dcclub,dcclub,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+dcclub,"Dynamic Country Club (World, ROM Based)","1991",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+dynashot,"Dynamic Shoot Kyousou","1988",Jaleco,-,-,-,YES,NO,NO,NO,NO,homerun.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,homerun.cpp
+dynamski,"Dynamic Ski","1984","Taiyo System (Nichibutsu license)",-,-,-,YES,NO,NO,NO,NO,shangkid.cpp,BUONO,RASTER,"90",288,224,VERTICAL,shangkid.cpp
+dynabb,"Dynamite Baseball","1996",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+"dybb99","Dynamite Baseball '99 (Japan, Rev B)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"dynabb97","Dynamite Baseball 97 (Revision A)","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+dybbnao,"Dynamite Baseball NAOMI (Japan)","1998",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+dleaguej,"Dynamite League (Japan)","1990","Taito Corporation",dleague,dleague,-,YES,NO,NO,NO,NO,taito_h.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,taito_h.cpp
+dleague,"Dynamite League (US)","1990","Taito America Corporation",-,-,-,YES,NO,NO,NO,NO,taito_h.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,taito_h.cpp
+eaglshotj,"Eagle Shot Golf (Japan, bootleg?)","1994",Sammy,eaglshot,eaglshot,-,YES,NO,NO,NO,NO,ssv.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,ssv.cpp
+eaglshot,"Eagle Shot Golf (US)","1994",Sammy,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,ssv.cpp
+"8ballact","Eight Ball Action (DK conversion)","1984","Seatongrove Ltd (Magic Electronics USA license)",-,-,-,YES,NO,NO,NO,NO,dkong.cpp,BUONO,RASTER,"270",256,224,VERTICAL,dkong.cpp
+"8ballact2","Eight Ball Action (DKJr conversion)","1984","Seatongrove Ltd (Magic Electronics USA license)","8ballact","8ballact",-,YES,NO,NO,NO,NO,dkong.cpp,BUONO,RASTER,"270",256,224,VERTICAL,dkong.cpp
+"8bpm","Eight Ball Action (Pac-Man conversion)","1985","Seatongrove Ltd (Magic Electronics USA license)","8ballact","8ballact",-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",256,224,VERTICAL,pacman.cpp
+"11beat","Eleven Beat","1998",Hudson,"aleck64",-,-,YES,NO,NO,NO,NO,"aleck64.cpp",INCOMPLETO,RASTER,"0",640,240,HORIZONTAL,"aleck64.cpp"
+esckids,"Escape Kids (Asia, 4 Players)","1991",Konami,-,-,-,YES,NO,NO,NO,NO,vendetta.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,vendetta.cpp
+esckidsj,"Escape Kids (Japan, 2 Players)","1991",Konami,esckids,esckids,-,YES,NO,NO,NO,NO,vendetta.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,vendetta.cpp
+"euroch92","Euro Champ '92 (World)","1992","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+eurogael,"Euro League (Gaelco bootleg, Modular System)","1989","bootleg (Gaelco / Ervisa)","twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90b.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90b.cpp"
+"twcup90b1","Euro League (Italian hack of Tecmo World Cup '90, set 1)","1989",bootleg,"twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90b.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90b.cpp"
+"twcup90ba","Euro League (Italian hack of Tecmo World Cup '90, set 2)","1989",bootleg,"twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90b.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90b.cpp"
+evosocc,"Evolution Soccer","2001",Evoga,crysbios,-,-,YES,NO,NO,NO,NO,crystal.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,crystal.cpp
+exctleagd,"Excite League (bootleg of FD1094 317-0079 set)","1988",bootleg,exctleag,exctleag,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+exctleag,"Excite League (FD1094 317-0079)","1988",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+excthour,"Exciting Hour","1985","Technos Japan (Taito license)",matmania,matmania,-,YES,NO,NO,NO,NO,matmania.cpp,BUONO,RASTER,"270",256,240,VERTICAL,matmania.cpp
+exctsccr,"Exciting Soccer","1983","Alpha Denshi Co.",-,-,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"270",256,224,VERTICAL,champbas.cpp
+exctsccra,"Exciting Soccer (alternate music)","1983","Alpha Denshi Co.",exctsccr,exctsccr,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"270",256,224,VERTICAL,champbas.cpp
+exctsccrb,"Exciting Soccer (bootleg)","1983","bootleg (Kazutomi)",exctsccr,exctsccr,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"270",256,224,VERTICAL,champbas.cpp
+exctsccrjo,"Exciting Soccer (Japan, older)","1983","Alpha Denshi Co.",exctsccr,exctsccr,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"270",256,224,VERTICAL,champbas.cpp
+exctsccrj,"Exciting Soccer (Japan)","1983","Alpha Denshi Co.",exctsccr,exctsccr,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"270",256,224,VERTICAL,champbas.cpp
+exctsccru,"Exciting Soccer (US)","1983","Alpha Denshi Co.",exctsccr,exctsccr,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"270",256,224,VERTICAL,champbas.cpp
+"exctscc2","Exciting Soccer II","1984","Alpha Denshi Co.",-,-,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"270",256,224,VERTICAL,champbas.cpp
+ebases,"Extra Bases","1980","Dave Nutting Associates / Midway",-,-,-,YES,NO,NO,NO,NO,astrocde.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,astrocde.cpp
+einning,"Extra Inning / Ball Park II","1978","Midway / Taito",-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",BUONO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+extdwnhl,"Extreme Downhill (v1.5)","1995","Sammy Industries Japan",-,-,-,YES,NO,NO,NO,NO,seta.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,seta.cpp
+faceoff,"Face Off (Japan 2 Players)","1988",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"180",288,224,HORIZONTAL,"namcos1.cpp"
+fastfred,"Fast Freddie","1982","Kaneko (Atari license)",flyboy,flyboy,-,YES,NO,NO,NO,NO,fastfred.cpp,BUONO,RASTER,"90",256,224,VERTICAL,fastfred.cpp
+"hustlerb2","Fatsy Gambler (Video Hustler bootleg)","1981",bootleg,hustler,hustler,-,YES,NO,NO,NO,NO,scobra.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scobra.cpp
+fieldday,"Field Day","1984","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"40love.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"40love.cpp"
+fghtbskt,"Fighting Basketball","1984","Paradise Co. Ltd.",-,-,-,YES,NO,NO,NO,NO,"m63.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"m63.cpp"
+cfghtice,"Fighting Ice Hockey (DECO Cassette) (US)","1984","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+fghtmna,"Fighting Mania (QG918 VER. AAA)","2000",Konami,fghtmn,fghtmn,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fghtmn,"Fighting Mania (QG918 VER. EAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fghtmnk,"Fighting Mania (QG918 VER. KAA)","2000",Konami,fghtmn,fghtmn,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fghtmnu,"Fighting Mania (QG918 VER. UAA)","2000",Konami,fghtmn,fghtmn,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fsoccerj,"Fighting Soccer (Japan)","1988",SNK,fsoccer,fsoccer,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"0",400,224,HORIZONTAL,snk.cpp
+fsoccerba,"Fighting Soccer (Joystick hack bootleg, alt)","1988",bootleg,fsoccer,fsoccer,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"0",400,224,HORIZONTAL,snk.cpp
+fsoccerb,"Fighting Soccer (Joystick hack bootleg)","1988",bootleg,fsoccer,fsoccer,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"0",400,224,HORIZONTAL,snk.cpp
+fsoccer,"Fighting Soccer (version 4)","1988",SNK,-,-,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"0",400,224,HORIZONTAL,snk.cpp
+finlarch,"Final Arch (J 950714 V1.001)","1995",Sega,smleague,smleague,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+finalbj,"Final Blow (Japan)","1988","Taito Corporation",finalb,finalb,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+finalbu,"Final Blow (US)","1988","Taito America Corporation",finalb,finalb,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+finalb,"Final Blow (World)","1988","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+finfurl,"Final Furlong (World, FF2 Ver. A)","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+"finfurl2j","Final Furlong 2 (Japan)","1998",Namco,"finfurl2","finfurl2",-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+"finfurl2","Final Furlong 2 (World)","1998",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+fbaitbc,"Fisherman's Bait - A Bass Challenge (GE765 VER. UAB)","1998",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fbaitmca,"Fisherman's Bait - Marlin Challenge (GX889 VER. AA)","1999",Konami,fbaitmc,fbaitmc,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fbaitmc,"Fisherman's Bait - Marlin Challenge (GX889 VER. EA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fbaitmcj,"Fisherman's Bait - Marlin Challenge (GX889 VER. JA)","1999",Konami,fbaitmc,fbaitmc,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fbaitmcu,"Fisherman's Bait - Marlin Challenge (GX889 VER. UA)","1999",Konami,fbaitmc,fbaitmc,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"fbait2bc","Fisherman's Bait 2 - A Bass Challenge (GE865 VER. UAB)","1998",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+fishfren,"Fishin' Frenzy (prototype)","1995","Time Warner Interactive",-,-,-,YES,NO,NO,NO,NO,jaguar.cpp,BUONO,RASTER,"0",360,240,HORIZONTAL,jaguar.cpp
+cfishing,"Fishing (DECO Cassette) (Japan)","1982","Data East Corporation",cadanglr,cadanglr,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+"fmaniac3","Fishing Maniac 3","2002","Saero Entertainment",-,-,-,YES,NO,NO,NO,NO,dgpix.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,dgpix.cpp
+fishingm,"Fishing Master (971107 JPN)","1997",Capcom,-,-,-,YES,NO,NO,NO,NO,ggconnie.cpp,PRELIMINARE,RASTER,"0",1088,242,HORIZONTAL,ggconnie.cpp
+fiveside,"Five a Side Soccer (ver UAA)","1995",Konami,-,-,-,YES,NO,NO,NO,NO,ultrsprt.cpp,INCOMPLETO,RASTER,"90",512,400,VERTICAL,ultrsprt.cpp
+flyboy,Fly-Boy,"1982",Kaneko,-,-,-,YES,NO,NO,NO,NO,fastfred.cpp,BUONO,RASTER,"90",256,224,VERTICAL,fastfred.cpp
+flyboyb,"Fly-Boy (bootleg)","1982",bootleg,flyboy,flyboy,-,YES,NO,NO,NO,NO,fastfred.cpp,BUONO,RASTER,"90",256,224,VERTICAL,fastfred.cpp
+"flyball1","Flyball (rev 1)","1976",Atari,flyball,flyball,-,YES,NO,NO,NO,NO,flyball.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,flyball.cpp
+flyball,"Flyball (rev 2)","1976",Atari,-,-,-,YES,NO,NO,NO,NO,flyball.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,flyball.cpp
+footchmp,"Football Champ / Euro Football Champ (World)","1990","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+footchmpbl,"Football Champ / Euro Football Champ (World) (bootleg)","1992",bootleg,footchmp,footchmp,-,YES,NO,NO,NO,NO,"taito_f2.cpp",PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+fbfrenzy,"Football Frenzy (NGM-034 ~ NGH-034)","1992",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+footbpow,"Football Power (Version 1.2)","1999",Gaelco,-,-,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+"40lovej","Forty-Love (Japan)","1984","Taito Corporation","40love","40love",-,YES,NO,NO,NO,NO,"40love.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"40love.cpp"
+"40love","Forty-Love (World)","1984","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"40love.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"40love.cpp"
+suprslam,"From TV Animation Slam Dunk - Super Slams","1995","Banpresto / Toei Animation / Video System Co.",-,-,-,YES,NO,NO,NO,NO,suprslam.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,suprslam.cpp
+fhboxers,"Funky Head Boxers (JUETBKAL 951218 V1.000)","1995",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+gfootbal,"Gaelco Football","2002","Gaelco / Zigurat",-,-,-,YES,NO,NO,NO,NO,atvtrack.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,atvtrack.cpp
+glpracr,"Gallop Racer (English Ver 10.17.K)","1996",Tecmo,"coh1000c",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+glpracrj,"Gallop Racer (Japanese Ver 9.01.12)","1996",Tecmo,glpracr,glpracr,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+"glpracr2","Gallop Racer 2 (Export)","1997",Tecmo,"coh1002m",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+"glpracr2j","Gallop Racer 2 (Japan)","1997",Tecmo,"glpracr2","glpracr2",-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+"glpracr2l","Gallop Racer 2 Link HW (Japan)","1997",Tecmo,"glpracr2","glpracr2",-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+"glpracr3","Gallop Racer 3 (Export)","1999",Tecmo,"coh1002m",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+"glpracr3j","Gallop Racer 3 (Japan)","1999",Tecmo,"glpracr3","glpracr3",-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+galhustl,"Gals Hustler","1997","ACE International",pgalvip,pgalvip,-,YES,NO,NO,NO,NO,"expro02.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"expro02.cpp"
+gekpuryb,"Gekitou Pro Yakyuu Mizushima Shinji All Stars vs. Pro Yakyuu (Rev B) (GDT-0008B)","2003","Sega / Wow Entertainment",gekpurya,gekpurya,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+gekpurya,"Gekitou Pro Yakyuu Mizushima Shinji All Stars vs. Pro Yakyuu (Rev C) (GDT-0008C)","2003","Sega / Wow Entertainment",triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+getbass,"Get Bass: Sega Bass Fishing (Japan)","1997",Sega,bassdx,bassdx,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+getbassdx,"Get Bass: Sega Bass Fishing Deluxe (Japan)","1997",Sega,bassdx,bassdx,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+getbassur,"Get Bass: Sega Bass Fishing Upright (Japan)","1997",Sega,bassdx,bassdx,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"gram2000","Giant Gram 2000","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"ggram2","Giant Gram: All Japan Pro Wrestling 2 (Japan)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+gimeabrk,"Gimme A Break (7/7/85)","1985",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+gogold,"Go For The Gold (Japan)","1988","Taito Corporation",recordbr,recordbr,-,YES,NO,NO,NO,NO,taito_h.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,taito_h.cpp
+gogostrk,"Go Go Strike","2007","American Alpha / Paokai",-,-,-,YES,NO,NO,NO,YES,fruitpc.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,fruitpc.cpp
+goaltogo,"Goal To Go","1983","Stern Electronics",-,-,-,YES,NO,NO,NO,YES,cliffhgr.cpp,PRELIMINARE,RASTER,"0",704,480,HORIZONTAL,cliffhgr.cpp
+"goal92","Goal! '92","1992",bootleg,cupsoc,cupsoc,-,YES,NO,NO,NO,NO,"goal92.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"goal92.cpp"
+"goalx3","Goal! Goal! Goal!","1995",Visco,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+gghost,"Goalie Ghost","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+goldmedlb,"Gold Medalist (bootleg, Alpha68k III PCB)","1988",bootleg,goldmedl,goldmedl,-,YES,NO,NO,NO,NO,"alpha68k.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"alpha68k.cpp"
+goldmedl,"Gold Medalist (set 1, Alpha68k II PCB)","1988",SNK,-,-,-,YES,NO,NO,NO,NO,"alpha68k.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"alpha68k.cpp"
+goldmedla,"Gold Medalist (set 2, Alpha68k III PCB)","1988",SNK,goldmedl,goldmedl,-,YES,NO,NO,NO,NO,"alpha68k.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"alpha68k.cpp"
+goldartp,"Goldart (Portugal)","1994","Covielsa / Gaelco",goldart,goldart,-,YES,NO,NO,NO,NO,goldart.cpp,PRELIMINARE,RASTER,"0",384,288,HORIZONTAL,goldart.cpp
+goldart,"Goldart (Spain)","1994","Covielsa / Gaelco",-,-,-,YES,NO,NO,NO,NO,goldart.cpp,PRELIMINARE,RASTER,"0",384,288,HORIZONTAL,goldart.cpp
+gpgolfa,"Golden Par Golf (Joystick, V1.0)","1991","Strata/Incredible Technologies",gpgolf,gpgolf,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+gpgolf,"Golden Par Golf (Joystick, V1.1)","1992","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+"gt97v120","Golden Tee '97 (v1.20)","1997","Incredible Technologies","gt97","gt97",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt97v121","Golden Tee '97 (v1.21)","1997","Incredible Technologies","gt97","gt97",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt97s121","Golden Tee '97 (v1.21S)","1997","Incredible Technologies","gt97","gt97",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt97v122","Golden Tee '97 (v1.22)","1997","Incredible Technologies","gt97","gt97",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt97","Golden Tee '97 (v1.30)","1997","Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt97t240","Golden Tee '97 Tournament (v2.40)","1997","Incredible Technologies","gt97","gt97",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt97t243","Golden Tee '97 Tournament (v2.43)","1997","Incredible Technologies","gt97","gt97",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt98v100","Golden Tee '98 (v1.00)","1998","Incredible Technologies","gt98","gt98",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt98s100","Golden Tee '98 (v1.00S)","1998","Incredible Technologies","gt98","gt98",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt98","Golden Tee '98 (v1.10)","1998","Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt98t302","Golden Tee '98 Tournament (v3.02)","1998","Incredible Technologies","gt98","gt98",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt98t303","Golden Tee '98 Tournament (v3.03)","1998","Incredible Technologies","gt98","gt98",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt99","Golden Tee '99 (v1.00)","1999","Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt99s100","Golden Tee '99 (v1.00S)","1999","Incredible Technologies","gt99","gt99",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt99t400","Golden Tee '99 Tournament (v4.00)","1999","Incredible Technologies","gt99","gt99",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt2k","Golden Tee 2K (v1.00)","2000","Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt2kp100","Golden Tee 2K (v1.00) (alt protection)","2000","Incredible Technologies","gt2k","gt2k",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt2ks100","Golden Tee 2K (v1.00S)","2000","Incredible Technologies","gt2k","gt2k",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt2kt500","Golden Tee 2K Tournament (v5.00)","2000","Incredible Technologies","gt2k","gt2k",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dv14","Golden Tee 3D Golf (v1.4)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dv15","Golden Tee 3D Golf (v1.5)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dv16","Golden Tee 3D Golf (v1.6)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dv17","Golden Tee 3D Golf (v1.7)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dv18","Golden Tee 3D Golf (v1.8)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dl191","Golden Tee 3D Golf (v1.91L)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dl192","Golden Tee 3D Golf (v1.92L)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3ds192","Golden Tee 3D Golf (v1.92S)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3d","Golden Tee 3D Golf (v1.93N)","1995","Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dl19","Golden Tee 3D Golf (v1.9L)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dt211","Golden Tee 3D Golf Tournament (v2.11)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gt3dt231","Golden Tee 3D Golf Tournament (v2.31)","1995","Incredible Technologies","gt3d","gt3d",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+gtclassc,"Golden Tee Classic (v1.00)","2001","Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+gtclasscp,"Golden Tee Classic (v1.00) (alt protection)","2001","Incredible Technologies",gtclassc,gtclassc,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+gtclasscs,"Golden Tee Classic (v1.00S)","2001","Incredible Technologies",gtclassc,gtclassc,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+gtdiamond,"Golden Tee Diamond Edition Tournament (v3.05T ELC)","1998","Incredible Technologies","gt98","gt98",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"gtfore01","Golden Tee Fore! (v1.00.25)","2000","Incredible Technologies",iteagle,-,-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore02","Golden Tee Fore! 2002 (v2.01.06)","2001","Incredible Technologies",iteagle,-,-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore03a","Golden Tee Fore! 2003 (v3.00.09)","2002","Incredible Technologies","gtfore03","gtfore03",-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore03","Golden Tee Fore! 2003 (v3.00.10)","2002","Incredible Technologies",iteagle,-,-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore04a","Golden Tee Fore! 2004 (v4.00.00)","2003","Incredible Technologies","gtfore04","gtfore04",-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore04","Golden Tee Fore! 2004 Extra (v4.00.08)","2003","Incredible Technologies",iteagle,-,-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore05c","Golden Tee Fore! 2005 Extra (v5.00.00)","2004","Incredible Technologies","gtfore05","gtfore05",-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore05b","Golden Tee Fore! 2005 Extra (v5.01.00)","2004","Incredible Technologies","gtfore05","gtfore05",-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore05a","Golden Tee Fore! 2005 Extra (v5.01.02)","2004","Incredible Technologies","gtfore05","gtfore05",-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore05","Golden Tee Fore! 2005 Extra (v5.01.06)","2004","Incredible Technologies",iteagle,-,-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtfore06","Golden Tee Fore! 2006 Complete (v6.00.01)","2005","Incredible Technologies",iteagle,-,-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+"gtgj31","Golden Tee Golf (Joystick, v3.1)","1990","Strata/Incredible Technologies",gtg,gtg,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+gtg,"Golden Tee Golf (Joystick, v3.3)","1990","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+"gtgt1","Golden Tee Golf (Trackball, v1.0)","1989","Strata/Incredible Technologies",gtg,gtg,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+gtgt,"Golden Tee Golf (Trackball, v2.0)","1989","Strata/Incredible Technologies",gtg,gtg,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+"gtg2j","Golden Tee Golf II (Joystick, V1.0)","1991","Strata/Incredible Technologies","gtg2","gtg2",-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+"gtg2t","Golden Tee Golf II (Trackball, V1.1)","1989","Strata/Incredible Technologies","gtg2","gtg2",-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+"gtg2","Golden Tee Golf II (Trackball, V2.2)","1992","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+gtroyal,"Golden Tee Royal Edition Tournament (v4.02T EDM)","1999","Incredible Technologies","gt99","gt99",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+gtsupreme,"Golden Tee Supreme Edition Tournament (v5.10T ELC S)","2002","Incredible Technologies","gt2k","gt2k",-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+pc_golf,"Golf (PlayChoice-10)","1984",Nintendo,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+glfgreatj,"Golfing Greats (Japan, version J)","1991",Konami,glfgreat,glfgreat,-,YES,NO,NO,NO,NO,tmnt.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+glfgreatu,"Golfing Greats (US, version K)","1991",Konami,glfgreat,glfgreat,-,YES,NO,NO,NO,NO,tmnt.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+glfgreat,"Golfing Greats (World, version L)","1991",Konami,-,-,-,YES,NO,NO,NO,NO,tmnt.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+"ggreats2","Golfing Greats 2 (ver JAC)","1994",Konami,opengolf,opengolf,-,YES,NO,NO,NO,NO,konamigx.cpp,PRELIMINARE,RASTER,"0",384,224,HORIZONTAL,konamigx.cpp
+"gonefsh2","Gone Fishing 2","200?",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+mp_gslam,"Grand Slam (Mega Play)","1993",Sega,megaplay,-,-,YES,NO,NO,NO,NO,megaplay.cpp,INCOMPLETO,RASTER,"0",1280,224,HORIZONTAL,megaplay.cpp
+gstrikera,"Grand Striker (Americas)","1993",Human,gstriker,gstriker,-,YES,NO,NO,NO,NO,gstriker.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,gstriker.cpp
+gstriker,"Grand Striker (Europe, Oceania)","1993",Human,-,-,-,YES,NO,NO,NO,NO,gstriker.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,gstriker.cpp
+gstrikerj,"Grand Striker (Japan)","1993",Human,gstriker,gstriker,-,YES,NO,NO,NO,NO,gstriker.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,gstriker.cpp
+"gstrik2","Grand Striker 2 (Europe and Oceania)","1996","Human Amusement",-,-,-,YES,NO,NO,NO,NO,metro.cpp,INCOMPLETO,RASTER,"0",304,224,HORIZONTAL,metro.cpp
+"gstrik2j","Grand Striker 2 (Japan)","1996","Human Amusement","gstrik2","gstrik2",-,YES,NO,NO,NO,NO,metro.cpp,INCOMPLETO,RASTER,"0",304,224,HORIZONTAL,metro.cpp
+mt_gfoot,"Great Football (Mega-Tech, SMS based)","1987",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+mt_ggolf,"Great Golf (Mega-Tech, SMS based)","1987",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"gslgr94u","Great Sluggers '94","1994",Namco,-,-,-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+"gslgr94j","Great Sluggers '94 (Japan)","1994",Namco,"gslgr94u","gslgr94u",-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+gslugrsj,"Great Sluggers (Japan)","1993",Namco,-,-,-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+mt_gsocr,"Great Soccer (Mega-Tech, SMS based)","198?",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"gsword2","Great Swordsman (Japan?)","1984","Allumer / Taito Corporation",gsword,gsword,-,YES,NO,NO,NO,NO,gsword.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,gsword.cpp
+gsword,"Great Swordsman (World?)","1984","Allumer / Taito Corporation",-,-,-,YES,NO,NO,NO,NO,gsword.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,gsword.cpp
+gridiron,"Gridiron Fight","1985",Tehkan,-,-,-,YES,NO,NO,NO,NO,tehkanwc.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tehkanwc.cpp
+grmatch,"Grudge Match (Yankee Game Technology)","1989","Yankee Game Technology",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",400,240,HORIZONTAL,"itech8.cpp"
+hangplt,"Hang Pilot (ver JAB)","1997",Konami,-,-,-,YES,NO,NO,NO,NO,gticlub.cpp,INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,gticlub.cpp
+hangpltu,"Hang Pilot (ver UAA)","1997",Konami,hangplt,hangplt,-,YES,NO,NO,NO,NO,gticlub.cpp,INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,gticlub.cpp
+harddunkj,"Hard Dunk (Japan)","1994",Sega,harddunk,harddunk,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+harddunk,"Hard Dunk (World)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+hpuncher,"Hard Puncher (Japan)","1988",Konami,fround,fround,-,YES,NO,NO,NO,NO,"twin16.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"twin16.cpp"
+"hardyard10","Hard Yardage (v1.00)","1993","Strata/Incredible Technologies",hardyard,hardyard,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"hardyard11","Hard Yardage (v1.10)","1993","Strata/Incredible Technologies",hardyard,hardyard,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+hardyard,"Hard Yardage (v1.20)","1993","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+hattrick,"Hat Trick","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+"hthero93u","Hat Trick Hero '93 (Ver 1.0A 1993/02/28)","1993","Taito Corporation",cupfinal,cupfinal,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+"hthero93","Hat Trick Hero '93 (Ver 1.0J 1993/02/28)","1993","Taito Corporation",cupfinal,cupfinal,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+"hthero94","Hat Trick Hero '94 (Ver 2.2A 1994/05/26)","1994","Taito America Corporation","intcup94","intcup94",-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+"hthero95u","Hat Trick Hero '95 (Ver 2.5A 1994/11/03)","1994","Taito America Corporation",pwrgoal,pwrgoal,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+"hthero95","Hat Trick Hero '95 (Ver 2.5J 1994/11/03)","1994","Taito Corporation",pwrgoal,pwrgoal,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+"hthero95a","Hat Trick Hero '95 (Ver 2.6Asia 1994/11/17)","1994","Taito Corporation Japan",pwrgoal,pwrgoal,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+hthero,"Hat Trick Hero (Japan)","1990","Taito Corporation",footchmp,footchmp,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+"heatof11","Heat of Eleven '98 (ver EAA)","1998",Konami,-,-,-,YES,NO,NO,NO,YES,"konamim2.cpp",PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,"konamim2.cpp"
+hvysmsha,"Heavy Smash (Asia version -4)","1993","Data East Corporation",hvysmsh,hvysmsh,-,YES,NO,NO,NO,NO,"deco156.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"deco156.cpp"
+hvysmsh,"Heavy Smash (Europe version -2)","1993","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,"deco156.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"deco156.cpp"
+hvysmshj,"Heavy Smash (Japan version -2)","1993","Data East Corporation",hvysmsh,hvysmsh,-,YES,NO,NO,NO,NO,"deco156.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"deco156.cpp"
+hwchampjd,"Heavyweight Champ (Japan) (bootleg of FD1094 317-0046 set)","1987",bootleg,hwchamp,hwchamp,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+hwchampj,"Heavyweight Champ (Japan) (FD1094 317-0046)","1987",Sega,hwchamp,hwchamp,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+hwchamp,"Heavyweight Champ (set 1)","1987",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+hwchampa,"Heavyweight Champ (set 2)","1987",Sega,hwchamp,hwchamp,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+herbiedk,"Herbie at the Olympics (DK conversion)","1984","Century Electronics / Seatongrove Ltd",huncholy,huncholy,-,YES,NO,NO,NO,NO,dkong.cpp,BUONO,RASTER,"270",256,224,VERTICAL,dkong.cpp
+hexpoola,"Hex Pool (Senko)","1985","Senko Industries",racknrol,racknrol,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+hexpool,"Hex Pool (Shinkai)","1986","Senko Industries (Shinkai Inc. license)",racknrol,racknrol,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+hiimpactp,"High Impact Football (prototype, revision0 proto 8.6 12/09/90)","1990",Williams,hiimpact,hiimpact,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"hiimpact1","High Impact Football (rev LA1 12/16/90)","1990",Williams,hiimpact,hiimpact,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"hiimpact2","High Impact Football (rev LA2 12/26/90)","1990",Williams,hiimpact,hiimpact,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"hiimpact3","High Impact Football (rev LA3 12/27/90)","1990",Williams,hiimpact,hiimpact,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"hiimpact4","High Impact Football (rev LA4 02/04/91)","1990",Williams,hiimpact,hiimpact,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+hiimpact,"High Impact Football (rev LA5 02/15/91)","1990",Williams,-,-,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+hipoly,"Hipoly (bootleg of Hyper Olympic)","1983",bootleg,trackfld,trackfld,-,YES,NO,NO,NO,NO,trackfld.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+hiticej,"Hit the Ice (Japan)","1990","Taito Corporation (licensed from Midway)",hitice,hitice,-,YES,NO,NO,NO,NO,taito_b.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_b.cpp
+hiticerb,"Hit the Ice (US, with riser board)","1990","Taito Corporation (Williams license)",hitice,hitice,-,YES,NO,NO,NO,NO,taito_b.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_b.cpp
+hitice,"Hit the Ice (US)","1990","Taito Corporation (Williams license)",-,-,-,YES,NO,NO,NO,NO,taito_b.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_b.cpp
+hoccer,"Hoccer (set 1)","1983","Eastern Micro Electronics, Inc.",-,-,-,YES,NO,NO,NO,NO,marineb.cpp,BUONO,RASTER,"90",256,224,VERTICAL,marineb.cpp
+"hoccer2","Hoccer (set 2)","1983","Eastern Micro Electronics, Inc.",hoccer,hoccer,-,YES,NO,NO,NO,NO,marineb.cpp,BUONO,RASTER,"90",256,224,VERTICAL,marineb.cpp
+hrclass,"Home Run Classic (v1.21 12-feb-1997)","1997","Creative Electronics And Software",-,-,-,YES,NO,NO,NO,NO,cesclass.cpp,PRELIMINARE,LCD,"0",256,64,HORIZONTAL,cesclass.cpp
+"hoops96","Hoops '96 (Europe/Asia 2.0)","1996","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,deco_mlc.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,deco_mlc.cpp
+"hoops95","Hoops (Europe/Asia 1.7)","1995","Data East Corporation","hoops96","hoops96",-,YES,NO,NO,NO,NO,deco_mlc.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,deco_mlc.cpp
+"hstennis10","Hot Shots Tennis (V1.0)","1990","Strata/Incredible Technologies",hstennis,hstennis,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"90",400,240,VERTICAL,"itech8.cpp"
+hstennis,"Hot Shots Tennis (V1.1)","1990","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"90",400,240,VERTICAL,"itech8.cpp"
+huncholy,"Hunchback Olympic","1984","Century Electronics / Seatongrove Ltd",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+hncholms,"Hunchback Olympic (Scramble hardware)","1984","Century Electronics / Seatongrove Ltd",huncholy,huncholy,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+hyperath,"Hyper Athlete (GV021 Japan 1.00)","1996",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+hyprolym,"Hyper Olympic","1983",Konami,trackfld,trackfld,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+"hpolym84","Hyper Olympic '84","1984",Konami,hyperspt,hyperspt,-,YES,NO,NO,NO,NO,hyperspt.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,hyperspt.cpp
+hyprolymb,"Hyper Olympic (bootleg, set 1)","1983",bootleg,trackfld,trackfld,-,YES,NO,NO,NO,NO,trackfld.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+hyprolymba,"Hyper Olympic (bootleg, set 2)","1983",bootleg,trackfld,trackfld,-,YES,NO,NO,NO,NO,trackfld.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+naganoj,"Hyper Olympic in Nagano (GX720 JAA)","1998",Konami,"nagano98","nagano98",-,YES,NO,NO,NO,YES,konamigv.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+hyperspt,"Hyper Sports","1984","Konami (Centuri license)",-,-,-,YES,NO,NO,NO,NO,hyperspt.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,hyperspt.cpp
+hypersptb,"Hyper Sports (bootleg)","1984",bootleg,hyperspt,hyperspt,-,YES,NO,NO,NO,NO,hyperspt.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,hyperspt.cpp
+hypsptsp,"Hyper Sports Special (Japan)","1988",Konami,"88games","88games",-,YES,NO,NO,NO,NO,"88games.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"88games.cpp"
+inyourfa,"In Your Face (North America, prototype)","1991",Jaleco,-,-,-,YES,NO,NO,NO,NO,"megasys1.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"megasys1.cpp"
+idsoccer,"Indoor Soccer (set 1)","1985",Universal,-,-,-,YES,NO,NO,NO,NO,docastle.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+idsoccera,"Indoor Soccer (set 2)","1985",Universal,idsoccer,idsoccer,-,YES,NO,NO,NO,NO,docastle.cpp,PRELIMINARE,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+"intcup94","International Cup '94 (Ver 2.2O 1994/05/26)","1994","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+vshoot,"J-League Soccer V-Shoot (Japan)","1994",Namco,-,-,-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+"powyak96","Jikkyou Powerful Pro Yakyuu '96 (GV017 Japan 1.03)","1996",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+"jppyex98","Jikkyou Powerful Pro Yakyuu EX '98 (GC811 VER. JAA)","1998",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+powyakex,"Jikkyou Powerful Pro Yakyuu EX (GX802 VER. JAB)","1998",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+jitsupro,"Jitsuryoku!! Pro Yakyuu (Japan)","1989",Jaleco,-,-,-,YES,NO,NO,NO,NO,"megasys1.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"megasys1.cpp"
+mt_stf,"Joe Montana II: Sports Talk Football (Mega-Tech)","1991",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"teamqb2","John Elway's Team Quarterback (rev 2)","1988","Leland Corporation",teamqb,teamqb,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+teamqb,"John Elway's Team Quarterback (rev 3)","1988","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+josvolly,"Joshi Volleyball","1983","Allumer / Taito Corporation",-,-,-,YES,NO,NO,NO,NO,gsword.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,gsword.cpp
+sgmastj,"Jumbo Ozaki Super Masters Golf (Japan, Floppy Based, FD1094 317-0058-05b)","1989",Sega,sgmast,sgmast,-,YES,NO,NO,NO,NO,"segas24.cpp",INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+sgmastc,"Jumbo Ozaki Super Masters Golf (World, Floppy Based, FD1094 317-0058-05c)","1989",Sega,sgmast,sgmast,-,YES,NO,NO,NO,NO,"segas24.cpp",INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+jumpshot,"Jump Shot","1985","Bally Midway",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+jumpshotp,"Jump Shot Engineering Sample","1985","Bally Midway",jumpshot,jumpshot,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"kick4csh","Kick '4' Cash (Export)","2004",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+kicknrunu,"Kick and Run (US)","1986","Taito America Corp",kicknrun,kicknrun,-,YES,NO,NO,NO,NO,kikikai.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,kikikai.cpp
+kicknrun,"Kick and Run (World)","1986","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,kikikai.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,kikikai.cpp
+kickball,"Kick Ball","1998","Seoung Youn",-,-,-,YES,NO,NO,NO,NO,aerofgt.cpp,INCOMPLETO,RASTER,"0",352,240,HORIZONTAL,aerofgt.cpp
+kickgoal,"Kick Goal (set 1)","1995",TCH,-,-,-,YES,NO,NO,NO,NO,kickgoal.cpp,BUONO,RASTER,"0",368,224,HORIZONTAL,kickgoal.cpp
+kickgoala,"Kick Goal (set 2)","1995",TCH,kickgoal,kickgoal,-,YES,NO,NO,NO,NO,kickgoal.cpp,BUONO,RASTER,"0",368,224,HORIZONTAL,kickgoal.cpp
+kickoff,"Kick Off - Jaleco Cup (Japan)","1988",Jaleco,-,-,-,YES,NO,NO,NO,NO,"megasys1.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"megasys1.cpp"
+kickoffb,"Kick Off - World Cup (bootleg)","1988","bootleg (Comodo)",kickoff,kickoff,-,YES,NO,NO,NO,NO,"megasys1.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"megasys1.cpp"
+kingofbj,"King of Boxer (Japan)","1985","Woodplace Inc.",kingofb,kingofb,-,YES,NO,NO,NO,NO,kingobox.cpp,BUONO,RASTER,"90",256,224,VERTICAL,kingobox.cpp
+kingofb,"King of Boxer (World)","1985","Woodplace Inc.",-,-,-,YES,NO,NO,NO,NO,kingobox.cpp,BUONO,RASTER,"90",256,224,VERTICAL,kingobox.cpp
+kingpin,Kingpin,"1983","ACL Manufacturing",-,-,-,YES,NO,NO,NO,NO,kingpin.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,kingpin.cpp
+"kd2001","Knock Down 2001 (Japan, KD11 Ver. B)","2001",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+"konami88","Konami '88","1988",Konami,"88games","88games",-,YES,NO,NO,NO,NO,"88games.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"88games.cpp"
+"opengolf2","Konami's Open Golf Championship (ver EAD)","1994",Konami,opengolf,opengolf,-,YES,NO,NO,NO,NO,konamigx.cpp,PRELIMINARE,RASTER,"0",384,224,HORIZONTAL,konamigx.cpp
+opengolf,"Konami's Open Golf Championship (ver EAE)","1994",Konami,konamigx,-,-,YES,NO,NO,NO,NO,konamigx.cpp,PRELIMINARE,RASTER,"0",384,224,HORIZONTAL,konamigx.cpp
+pingpong,"Konami's Ping-Pong","1985",Konami,-,-,-,YES,NO,NO,NO,NO,pingpong.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pingpong.cpp
+bmcbowl,"Konkyuu no Hoshi","1994",BMC,-,-,-,YES,NO,NO,NO,NO,bmcbowl.cpp,INCOMPLETO,RASTER,"0",280,232,HORIZONTAL,bmcbowl.cpp
+krzybowl,"Krazy Bowl","1994","American Sammy",-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"270",304,240,VERTICAL,seta.cpp
+kurdart,"Kursaal Darts","199?","K7 Kursaal",-,-,-,YES,NO,NO,YES,NO,daryde.cpp,PRELIMINARE,-,"0",0,0,-,daryde.cpp
+ksayakyu,Kusayakyuu,"1985","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,ksayakyu.cpp,BUONO,RASTER,"180",256,224,HORIZONTAL,ksayakyu.cpp
+kyukaidk,"Kyuukai Douchuuki (Japan, new version (Rev B))","1990",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+kyukaidko,"Kyuukai Douchuuki (Japan, old version)","1990",Namco,kyukaidk,kyukaidk,-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+kyustrkr,"Last Striker / Kyuukyoku no Striker","1989","East Technology",-,-,-,YES,NO,NO,NO,NO,taito_x.cpp,BUONO,RASTER,"180",384,240,HORIZONTAL,taito_x.cpp
+ar_ldrb,"Leader Board (Arcadia, set 1, V 2.5)","1988","Arcadia Systems",ar_bios,-,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+ar_ldrba,"Leader Board (Arcadia, set 2, V 2.4)","1988","Arcadia Systems",ar_ldrb,ar_ldrb,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+ar_ldrbb,"Leader Board (Arcadia, set 3)","1988","Arcadia Systems",ar_ldrb,ar_ldrb,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+lbowling,"League Bowling (NGM-019 ~ NGH-019)","1990",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+fitegolfu,"Lee Trevino's Fighting Golf (US, Ver 2, set 1)","1988",SNK,fitegolf,fitegolf,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"0",288,216,HORIZONTAL,snk.cpp
+fitegolfua,"Lee Trevino's Fighting Golf (US, Ver 2, set 2)","1988",SNK,fitegolf,fitegolf,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"0",288,216,HORIZONTAL,snk.cpp
+fitegolf,"Lee Trevino's Fighting Golf (World?)","1988",SNK,-,-,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"0",288,216,HORIZONTAL,snk.cpp
+lbgrande,"Libero Grande (World, LG2/VER.A)","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+machbrkrj,"Mach Breakers - Numan Athletics 2 (Japan, MB1)","1995",Namco,machbrkr,machbrkr,-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+machbrkr,"Mach Breakers (World, MB2)","1995",Namco,-,-,-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+ar_fasta,"Magic Johnson's Fast Break (Arcadia, V 2.7)","1988","Arcadia Systems",ar_fast,ar_fast,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+ar_fast,"Magic Johnson's Fast Break (Arcadia, V 2.8)","1988","Arcadia Systems",ar_bios,-,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+magicbal,"Magicball Fighting (Korea)","1994",SemiCom,-,-,-,YES,NO,NO,NO,NO,tumbleb.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,tumbleb.cpp
+mainsnk,"Main Event (1984)","1984",SNK,-,-,-,YES,NO,NO,NO,NO,mainsnk.cpp,BUONO,RASTER,"180",288,216,HORIZONTAL,mainsnk.cpp
+mstadium,"Main Stadium (Japan)","1989",Konami,"bottom9","bottom9",-,YES,NO,NO,NO,NO,"bottom9.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"bottom9.cpp"
+mjleague,"Major League","1985",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16a.cpp"
+majtitlej,"Major Title (Japan)","1990",Irem,majtitle,majtitle,-,YES,NO,NO,NO,NO,"m72.cpp",BUONO,RASTER,"0",384,256,HORIZONTAL,"m72.cpp"
+majtitle,"Major Title (World)","1990",Irem,-,-,-,YES,NO,NO,NO,NO,"m72.cpp",BUONO,RASTER,"0",384,256,HORIZONTAL,"m72.cpp"
+"majtitl2j","Major Title 2 (Japan)","1992",Irem,"majtitl2","majtitl2",-,YES,NO,NO,NO,NO,"m92.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m92.cpp"
+"majtitl2a","Major Title 2 (World, set 1, alt sound CPU)","1992",Irem,"majtitl2","majtitl2",-,YES,NO,NO,NO,NO,"m92.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m92.cpp"
+"majtitl2","Major Title 2 (World, set 1)","1992",Irem,-,-,-,YES,NO,NO,NO,NO,"m92.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m92.cpp"
+"majtitl2b","Major Title 2 (World, set 2)","1992",Irem,"majtitl2","majtitl2",-,YES,NO,NO,NO,NO,"m92.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m92.cpp"
+maniach,"Mania Challenge (set 1)","1986","Technos Japan (Taito America license)",-,-,-,YES,NO,NO,NO,NO,matmania.cpp,BUONO,RASTER,"270",256,240,VERTICAL,matmania.cpp
+"maniach2","Mania Challenge (set 2)","1986","Technos Japan (Taito America license)",maniach,maniach,-,YES,NO,NO,NO,NO,matmania.cpp,BUONO,RASTER,"270",256,240,VERTICAL,matmania.cpp
+mt_mlh,"Mario Lemieux Hockey (Mega-Tech)","1991",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+pc_moglf,"Mario's Open Golf (PlayChoice-10)","1991",Nintendo,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+mastrglf,"Master's Golf","1985",Nasco,-,-,-,YES,NO,NO,NO,NO,crgolf.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,crgolf.cpp
+matmania,"Mat Mania","1985","Technos Japan (Taito America license)",-,-,-,YES,NO,NO,NO,NO,matmania.cpp,BUONO,RASTER,"270",256,240,VERTICAL,matmania.cpp
+mayhem,"Mayhem 2002","1985",Cinematronics,-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+medlanes,"Meadows Lanes","1977","Meadows Games, Inc.",-,-,-,YES,NO,NO,NO,NO,lazercmd.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,lazercmd.cpp
+mermaid,Mermaid,"1982","Sanritsu / Rock-Ola",-,-,-,YES,NO,NO,NO,NO,mermaid.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,mermaid.cpp
+"mexico86","Mexico 86 (bootleg of Kick and Run) (set 1)","1986",bootleg,kicknrun,kicknrun,-,YES,NO,NO,NO,NO,kikikai.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,kikikai.cpp
+"mexico86a","Mexico 86 (bootleg of Kick and Run) (set 2)","1986",bootleg,kicknrun,kicknrun,-,YES,NO,NO,NO,NO,kikikai.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,kikikai.cpp
+pc_miket,"Mike Tyson's Punch-Out!! (PlayChoice-10)","1987",Nintendo,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"minigolf2","Mini Golf (10/8/85)","1985",Bally/Sente,minigolf,minigolf,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+minigolf,"Mini Golf (11/25/85)","1985",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+mgolf,"Mini Golf (Atari, prototype)","1978",Atari,-,-,-,YES,NO,NO,NO,NO,mgolf.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,mgolf.cpp
+mirderby,"Miracle Derby - Ascot","1988","Home Data?",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,PRELIMINARE,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+mocapb,"Mocap Boxing (ver AAB)","2001",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"90",1024,768,VERTICAL,viper.cpp
+mocapbj,"Mocap Boxing (ver JAA)","2001",Konami,mocapb,mocapb,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"90",1024,768,VERTICAL,viper.cpp
+mocapglf,"Mocap Golf (ver UAA)","2001",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"90",1024,768,VERTICAL,viper.cpp
+homerun,"Moero!! Pro Yakyuu Homerun Kyousou","1988",Jaleco,nhomerun,nhomerun,homerun,YES,NO,NO,NO,NO,homerun.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,homerun.cpp
+semibase,"MuHanSeungBu (SemiCom Baseball) (Korea)","1997","SemiCom / DMD",-,-,-,YES,NO,NO,NO,NO,tumbleb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,tumbleb.cpp
+mbombrdj,"Muscle Bomber Duo: Heat Up Warriors (Japan 931206)","1993",Capcom,mbombrd,mbombrd,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+mbombrd,"Muscle Bomber Duo: Ultimate Team Battle (World 931206)","1993",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+mbomberj,"Muscle Bomber: The Body Explosion (Japan 930713)","1993",Capcom,slammast,slammast,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+musclhit,"Muscle Ranking Kinniku Banzuke Spray Hitter","2000","Konami / TBS",-,-,-,YES,NO,NO,NO,YES,konamigs.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,konamigs.cpp
+mvpjd,"MVP (set 1, Japan) (bootleg of FD1094 317-0142 set)","1989",bootleg,mvp,mvp,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+mvpj,"MVP (set 1, Japan) (FD1094 317-0142)","1989",Sega,mvp,mvp,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+mvpd,"MVP (set 2, US) (bootleg of FD1094 317-0143 set)","1989",bootleg,mvp,mvp,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+mvp,"MVP (set 2, US) (FD1094 317-0143)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+mysticm,"Mystic Marathon","1983",Williams,-,-,-,YES,NO,NO,NO,NO,williams.cpp,PRELIMINARE,RASTER,"0",276,240,HORIZONTAL,williams.cpp
+mysticmp,"Mystic Marathon (prototype)","1983",Williams,mysticm,mysticm,-,YES,NO,NO,NO,NO,williams.cpp,PRELIMINARE,RASTER,"0",276,240,HORIZONTAL,williams.cpp
+"nagano98","Nagano Winter Olympics '98 (GX720 EAA)","1998",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+"nbahangtl11","NBA Hangtime (ver L1.1 4/16/96)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+"nbahangtl12","NBA Hangtime (ver L1.2 8/29/96)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+nbahangt,"NBA Hangtime (ver L1.3 10/10/96)","1996",Midway,-,-,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+"nbahangtm11","NBA Hangtime (ver M1.1 4/16/96)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+"nbahangtm12","NBA Hangtime (ver M1.2 8/29/96)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+"nbahangtm13","NBA Hangtime (ver M1.3 10/10/96)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+"nbajamr1","NBA Jam (rev 1.00 2/1/93)","1993",Midway,nbajam,nbajam,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+"nbajamr2","NBA Jam (rev 2.00 2/10/93)","1993",Midway,nbajam,nbajam,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+nbajam,"NBA Jam (rev 3.01 4/07/93)","1993",Midway,-,-,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+nbajamexa,"NBA Jam Extreme (ver. 1.04)","1996",Acclaim,nbajamex,nbajamex,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+nbajamex,"NBA Jam Extreme (ver. 1.10I)","1996",Acclaim,"coh1000a",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+nbajamten,"NBA Jam T.E. Nani Edition (rev 5.2 8/11/95, prototype)","1995",Midway,nbajamte,nbajamte,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+"nbajamte1","NBA Jam TE (rev 1.00 1/17/94)","1994",Midway,nbajamte,nbajamte,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+"nbajamte2a","NBA Jam TE (rev 2.0 1/28/94)","1994",Midway,nbajamte,nbajamte,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+"nbajamte2","NBA Jam TE (rev 2.1 2/06/94)","1994",Midway,nbajamte,nbajamte,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+"nbajamte3a","NBA Jam TE (rev 3.0 2/26/94)","1994",Midway,nbajamte,nbajamte,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+"nbajamte3","NBA Jam TE (rev 3.0 3/04/94)","1994",Midway,nbajamte,nbajamte,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+"nbajamte4","NBA Jam TE (rev 4.0 3/03/94)","1994",Midway,nbajamte,nbajamte,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+nbajamte,"NBA Jam TE (rev 4.0 3/23/94)","1994",Midway,-,-,-,YES,NO,NO,NO,NO,midtunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midtunit.cpp
+nbamhtp,"NBA Maximum Hangtime (ver L0.9 10/30/96)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+"nbamhtl10","NBA Maximum Hangtime (ver L1.0 11/08/96)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+nbamht,"NBA Maximum Hangtime (ver L1.03 06/09/97)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+"nbamhtm10","NBA Maximum Hangtime (ver M1.0 11/08/96)","1996",Midway,nbahangt,nbahangt,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+nbapbpa,"NBA Play By Play (ver AAB)","1998",Konami,nbapbp,nbapbp,-,YES,NO,NO,NO,NO,hornet.cpp,INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,hornet.cpp
+nbapbp,"NBA Play By Play (ver JAA)","1998",Konami,-,-,-,YES,NO,NO,NO,NO,hornet.cpp,INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,hornet.cpp
+nbashowt,"NBA Showtime NBA on NBC (ver 2.0, Apr 25 1999)","1999","Midway Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+nss_ncaa,"NCAA Basketball (Nintendo Super System)","1992","Sculptured Software Inc.",nss,-,-,YES,NO,NO,NO,NO,nss.cpp,PRELIMINARE,RASTER,"0",288,216,HORIZONTAL,nss.cpp
+neckneck,"Neck-n-Neck (v1.2)","1992","Bundra Games/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",400,240,HORIZONTAL,"itech8.cpp"
+nkdodgeb,"Nekketsu Koukou Dodgeball Bu (Japan, bootleg)","1987",bootleg,spdodgeb,spdodgeb,-,YES,NO,NO,NO,NO,spdodgeb.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,spdodgeb.cpp
+nkdodge,"Nekketsu Koukou Dodgeball Bu (Japan)","1987","Technos Japan",spdodgeb,spdodgeb,-,YES,NO,NO,NO,NO,spdodgeb.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,spdodgeb.cpp
+turfmast,"Neo Turf Masters / Big Tournament Golf","1996",Nazca,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"neocup98","Neo-Geo Cup '98 - The Road to the Victory","1998",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+vfurlong,"Net@Select: Horse Racing - Victory Furlong","2005","Progress / Sammy",awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"netchu02","Netchuu Pro Yakyuu 2002 (NPY1 Ver. A)","2002",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+nhomerun,"NEW Moero!! Pro Yakyuu Homerun Kyousou","1988",Jaleco,-,-,homerun,YES,NO,NO,NO,NO,homerun.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,homerun.cpp
+nprobowl,"New Pro Bowl","1996","Zuck / Able Corp",-,-,-,YES,NO,NO,YES,NO,"toaplan2.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"toaplan2.cpp"
+newtangl,"New Tropical Angel","1983",Irem,troangel,troangel,-,YES,NO,NO,NO,NO,"m57.cpp",BUONO,RASTER,"0",240,240,HORIZONTAL,"m57.cpp"
+"blitz99a","NFL Blitz '99 (ver 1.2, Aug 28 1998)","1998","Midway Games","blitz99","blitz99",-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+"blitz99","NFL Blitz '99 (ver 1.30, Sep 22 1998)","1998","Midway Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+blitz,"NFL Blitz (ver 1.21, Dec 5 1987)","1997","Midway Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+"blitz2k","NFL Blitz 2000 Gold Edition (ver 1.2, Sep 22 1999)","1999","Midway Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+nflclsfb,"NFL Classic Football (US, NCF3 Ver.A.)","2003",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+nflfoot,"NFL Football","1983","Bally Midway",-,-,-,YES,NO,NO,NO,YES,mcr.cpp,PRELIMINARE,RASTER,"0",512,480,HORIZONTAL,mcr.cpp
+pc_wcup,"Nintendo World Cup (PlayChoice-10)","1990","Technos Japan (Nintendo license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+numanathj,"Numan Athletics (Japan)","1993",Namco,numanath,numanath,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+numanath,"Numan Athletics (World)","1993",Namco,-,-,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+otwalls,"Off the Wall (Sente)","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+olihockey,"Olimpic Hockey (EM Bubble Hockey, set 1)","1985",Inor,-,-,-,YES,NO,NO,YES,NO,chexx.cpp,PRELIMINARE,-,"0",0,0,-,chexx.cpp
+olihockeya,"Olimpic Hockey (EM Bubble Hockey, set 2)","1985",Inor,olihockey,olihockey,-,YES,NO,NO,YES,NO,chexx.cpp,PRELIMINARE,-,"0",0,0,-,chexx.cpp
+ollie,"Ollie King (GDX-0007)","2003","Sega / Amusement Vision",chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"k7_olym30","Olympic Darts K7 (v3.00)","1994","K7 Kursaal / NMI Electronics","k7_olym","k7_olym",-,YES,NO,NO,YES,NO,"4enlinea.cpp",PRELIMINARE,RASTER,"0",640,200,HORIZONTAL,"4enlinea.cpp"
+"k7_olym","Olympic Darts K7 (v3.11)","1994","K7 Kursaal / NMI Electronics",-,-,-,YES,NO,NO,YES,NO,"4enlinea.cpp",PRELIMINARE,RASTER,"0",640,200,HORIZONTAL,"4enlinea.cpp"
+"olysoc92","Olympic Soccer '92 (set 1)","1992","Seibu Kaihatsu",cupsoc,cupsoc,-,YES,NO,NO,NO,NO,legionna.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,legionna.cpp
+"olysoc92a","Olympic Soccer '92 (set 2)","1992","Seibu Kaihatsu",cupsoc,cupsoc,-,YES,NO,NO,NO,NO,legionna.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,legionna.cpp
+"olysoc92b","Olympic Soccer '92 (set 3)","1992","Seibu Kaihatsu",cupsoc,cupsoc,-,YES,NO,NO,NO,NO,legionna.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,legionna.cpp
+coozumou,"Oozumou - The Grand Sumo (DECO Cassette) (Japan)","1984","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+orbatak,"Orbatak (prototype)","1995","American Laser Games","3dobios",-,-,YES,NO,NO,NO,YES,"3do.cpp",PRELIMINARE,RASTER,"0",1280,240,HORIZONTAL,"3do.cpp"
+paddlema,"Paddle Mania","1988",SNK,-,-,-,YES,NO,NO,NO,NO,"alpha68k_i.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"alpha68k_i.cpp"
+pandart,"Panther Darts","1999","Daryde S. L.",-,-,-,YES,NO,NO,YES,NO,daryde.cpp,PRELIMINARE,-,"0",0,0,-,daryde.cpp
+pturn,"Parallel Turn","1984",Jaleco,-,-,-,YES,NO,NO,NO,NO,pturn.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,pturn.cpp
+passshtb,"Passing Shot (2 Players) (bootleg)","1988",bootleg,passsht,passsht,-,YES,NO,NO,NO,NO,"system16.cpp",PRELIMINARE,RASTER,"270",320,224,VERTICAL,"system16.cpp"
+"passht4b","Passing Shot (4 Players) (bootleg)","1988",bootleg,passsht,passsht,-,YES,NO,NO,NO,NO,"system16.cpp",PRELIMINARE,RASTER,"270",320,224,VERTICAL,"system16.cpp"
+"passsht16a","Passing Shot (Japan, 4 Players, System 16A) (FD1094 317-0071)","1988",Sega,passsht,passsht,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16a.cpp"
+passshtjd,"Passing Shot (Japan, 4 Players) (bootleg of FD1094 317-0070 set)","1988",bootleg,passsht,passsht,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+passshtj,"Passing Shot (Japan, 4 Players) (FD1094 317-0070)","1988",Sega,passsht,passsht,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+passshtd,"Passing Shot (World, 2 Players) (bootleg of FD1094 317-0080 set)","1988",bootleg,passsht,passsht,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+passsht,"Passing Shot (World, 2 Players) (FD1094 317-0080)","1988",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+passshtad,"Passing Shot (World, 4 Players) (bootleg of FD1094 317-0074 set)","1988",bootleg,passsht,passsht,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+passshta,"Passing Shot (World, 4 Players) (FD1094 317-0074)","1988",Sega,passsht,passsht,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+pblbeach,"Pebble Beach - The Great Shot (JUE 950913 V0.990)","1995","T&E Soft",stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+pkunwarj,"Penguin-Kun Wars (Japan)","1985",UPL,pkunwar,pkunwar,-,YES,NO,NO,NO,NO,"nova2001.cpp",BUONO,RASTER,"0",256,192,HORIZONTAL,"nova2001.cpp"
+pkunwar,"Penguin-Kun Wars (US)","1985",UPL,-,-,-,YES,NO,NO,NO,NO,"nova2001.cpp",BUONO,RASTER,"0",256,192,HORIZONTAL,"nova2001.cpp"
+pbillrd,"Perfect Billiard","1987","Nihon System (United Artists license)",-,-,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,freekick.cpp
+pbillrdbl,"Perfect Billiard (bootleg)","1987",bootleg,pbillrd,pbillrd,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,freekick.cpp
+pbillrds,"Perfect Billiard (MC-8123, 317-0030)","1987","Nihon System (Sega license)",pbillrd,pbillrd,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,freekick.cpp
+pbillrdsa,"Perfect Billiard (MC-8123, 317-5008)","1987","Nihon System (Sega license)",pbillrd,pbillrd,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,freekick.cpp
+photof,"Photo Finish (bootleg?)","1991","Jaleco / Casio",wwjgtin,wwjgtin,-,YES,NO,NO,NO,NO,lasso.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,lasso.cpp
+pigskinb,"Pigskin 621AD (rev 1.1 6/05/90)","1990",Midway,pigskin,pigskin,-,YES,NO,NO,NO,NO,"mcr68.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr68.cpp"
+pigskin,"Pigskin 621AD (rev 1.1K 8/01/90)","1990",Midway,-,-,-,YES,NO,NO,NO,NO,"mcr68.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr68.cpp"
+pigskina,"Pigskin 621AD (rev 2.0 7/06/90)","1990",Midway,pigskin,pigskin,-,YES,NO,NO,NO,NO,"mcr68.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr68.cpp"
+"ppmast93","Ping Pong Masters '93","1993","Electronic Devices S.R.L.",-,-,-,YES,NO,NO,NO,NO,"ppmast93.cpp",INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,"ppmast93.cpp"
+ppking,"Ping-Pong King","1985","Taito America Corporation",-,-,-,YES,NO,NO,NO,NO,gladiatr.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,gladiatr.cpp
+pitchhit,"Pitch Hitter - Baseball Challenge","1993","National Sports Games",-,-,-,YES,NO,NO,YES,NO,"nsg6809.cpp",PRELIMINARE,-,"0",0,0,-,"nsg6809.cpp"
+pkscram,"PK Scramble","1993","Cosmo Electronics Corporation",-,-,-,YES,NO,NO,NO,NO,pkscram.cpp,BUONO,RASTER,"0",256,192,HORIZONTAL,pkscram.cpp
+pgoal,"Pleasure Goal / Futsal - 5 on 5 Mini Soccer (NGM-219)","1996",Saurus,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+pcktgal,"Pocket Gal (Japan)","1987","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,pcktgal.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pcktgal.cpp
+pcktgalb,"Pocket Gal (Yada East bootleg)","1987",bootleg,pcktgal,pcktgal,-,YES,NO,NO,NO,NO,pcktgal.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pcktgal.cpp
+"pcktgal2","Pocket Gal 2 (English)","1989","Data East Corporation",pcktgal,pcktgal,-,YES,NO,NO,NO,NO,pcktgal.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pcktgal.cpp
+"pcktgal2j","Pocket Gal 2 (Japanese)","1989","Data East Corporation",pcktgal,pcktgal,-,YES,NO,NO,NO,NO,pcktgal.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pcktgal.cpp
+pktgaldxa,"Pocket Gal Deluxe (Asia v3.00)","1992","Data East Corporation",pktgaldx,pktgaldx,-,YES,NO,NO,NO,NO,pktgaldx.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,pktgaldx.cpp
+pktgaldxb,"Pocket Gal Deluxe (Euro v3.00, bootleg)","1992",bootleg,pktgaldx,pktgaldx,-,YES,NO,NO,NO,NO,pktgaldx.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,pktgaldx.cpp
+pktgaldx,"Pocket Gal Deluxe (Euro v3.00)","1992","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,pktgaldx.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,pktgaldx.cpp
+pktgaldxj,"Pocket Gal Deluxe (Japan v3.00)","1993","Data East Corporation (Nihon System license)",pktgaldx,pktgaldx,-,YES,NO,NO,NO,NO,pktgaldx.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,pktgaldx.cpp
+pgalvip,"Pocket Gals V.I.P (set 1)","1996","ACE International / Afega",-,-,-,YES,NO,NO,NO,NO,"expro02.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"expro02.cpp"
+pgalvipa,"Pocket Gals V.I.P (set 2)","1997",-,pgalvip,pgalvip,-,YES,NO,NO,NO,NO,"expro02.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"expro02.cpp"
+pokechmp,"Poke Champ (set 1)","1995",D.G.R.M.,-,-,-,YES,NO,NO,NO,NO,pokechmp.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pokechmp.cpp
+pokechmpa,"Poke Champ (set 2)","1995",D.G.R.M.,pokechmp,pokechmp,-,YES,NO,NO,NO,NO,pokechmp.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pokechmp.cpp
+poolshrk,Poolshark,"1977",Atari,-,-,-,YES,NO,NO,NO,NO,poolshrk.cpp,BUONO,RASTER,"0",255,232,HORIZONTAL,poolshrk.cpp
+poundforj,"Pound for Pound (Japan)","1990",Irem,poundfor,poundfor,-,YES,NO,NO,NO,NO,"m72.cpp",BUONO,RASTER,"270",384,256,VERTICAL,"m72.cpp"
+poundforu,"Pound for Pound (US)","1990","Irem America",poundfor,poundfor,-,YES,NO,NO,NO,NO,"m72.cpp",BUONO,RASTER,"270",384,256,VERTICAL,"m72.cpp"
+poundfor,"Pound for Pound (World)","1990",Irem,-,-,-,YES,NO,NO,NO,NO,"m72.cpp",BUONO,RASTER,"270",384,256,VERTICAL,"m72.cpp"
+pwrkick,"Power Kick (Japan)","1994",Sunwise,-,-,-,YES,NO,NO,NO,NO,"toaplan2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"toaplan2.cpp"
+powrplay,"Power Play","1985",Cinematronics,-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+"psmash3","Power Smash 3 / Virtua Tennis 3 (Export)","2006",Sega,lindbios,-,-,YES,NO,NO,NO,YES,lindbergh.cpp,PRELIMINARE,-,"0",0,0,-,lindbergh.cpp
+pspikesb,"Power Spikes (bootleg)","1991",bootleg,pspikes,pspikes,-,YES,NO,NO,NO,NO,aerofgt.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,aerofgt.cpp
+pspikesc,"Power Spikes (China)","1991",bootleg,pspikes,pspikes,-,YES,NO,NO,NO,NO,aerofgt.cpp,INCOMPLETO,RASTER,"0",352,240,HORIZONTAL,aerofgt.cpp
+pspikesba,"Power Spikes (Italian bootleg)","1991","bootleg (Playmark?)",pspikes,pspikes,-,YES,NO,NO,NO,NO,aerofgt.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,aerofgt.cpp
+pspikesk,"Power Spikes (Korea)","1991","Video System Co.",pspikes,pspikes,-,YES,NO,NO,NO,NO,aerofgt.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,aerofgt.cpp
+pspikesu,"Power Spikes (US)","1991","Video System Co.",pspikes,pspikes,-,YES,NO,NO,NO,NO,aerofgt.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,aerofgt.cpp
+pspikes,"Power Spikes (World)","1991","Video System Co.",-,-,-,YES,NO,NO,NO,NO,aerofgt.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,aerofgt.cpp
+"pspikes2","Power Spikes II (NGM-068)","1994","Video System Co.",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+pubball,"Power Up Baseball (prototype)","1996","Midway / Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+pbillian,Prebillian,"1986","Kaneko / Taito",-,-,-,YES,NO,NO,NO,NO,superqix.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,superqix.cpp
+pbillianb,"Prebillian (bootleg)","1987","bootleg (Game Corp.)",pbillian,pbillian,-,YES,NO,NO,NO,NO,superqix.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,superqix.cpp
+prmrsocr,"Premier Soccer (ver EAB)","1993",Konami,-,-,-,YES,NO,NO,NO,NO,tmnt.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+prmrsocrj,"Premier Soccer (ver JAB)","1993",Konami,prmrsocr,prmrsocr,-,YES,NO,NO,NO,NO,tmnt.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+primglex,"Prime Goal EX (Japan, PG1/VER.A)","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos11.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos11.cpp"
+prmtmfgt,"Prime Time Fighter (Ver 2.1A 1993/05/21) (New Version)","1993","Taito America Corporation",trstar,trstar,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+prmtmfgto,"Prime Time Fighter (Ver 2.1A 1993/05/21) (Old Version)","1993","Taito America Corporation",trstar,trstar,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+tryout,"Pro Baseball Skill Tryout (Japan)","1985","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,tryout.cpp,BUONO,RASTER,"90",256,240,VERTICAL,tryout.cpp
+cprobowl,"Pro Bowling (DECO Cassette) (US)","1983","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+pesta,"Pro Evolution Soccer The Arcade (ver EAA)","2002",Konami,kpython,-,-,YES,NO,NO,NO,YES,kpython.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,kpython.cpp
+prosoccr,"Pro Soccer","1983","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,liberate.cpp,BUONO,RASTER,"270",240,256,VERTICAL,liberate.cpp
+cpsoccerj,"Pro Soccer (DECO Cassette) (Japan)","1983","Data East Corporation",cpsoccer,cpsoccer,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+cpsoccer,"Pro Soccer (DECO Cassette) (US)","1983","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+prosport,"Pro Sports - Bowling, Tennis, and Golf","1983","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,liberate.cpp,INCOMPLETO,RASTER,"270",256,240,VERTICAL,liberate.cpp
+prosporta,"Pro Sports - Bowling, Tennis, and Golf (USA)","1983","Data East Corporation (Digital Controls license)",prosport,prosport,-,YES,NO,NO,NO,NO,liberate.cpp,INCOMPLETO,RASTER,"270",256,240,VERTICAL,liberate.cpp
+cptennisj,"Pro Tennis (DECO Cassette) (Japan)","1982","Data East Corporation",cptennis,cptennis,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+cptennis,"Pro Tennis (DECO Cassette) (US)","1982","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+protenn,"Pro Tennis (Japan)","1982","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",240,240,VERTICAL,btime.cpp
+wldcourt,"Pro Tennis World Court (Japan)","1988",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"180",288,224,HORIZONTAL,"namcos1.cpp"
+pc_pwrst,"Pro Wrestling (PlayChoice-10)","1986",Nintendo,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"ws89","Pro Yakyuu World Stadium '89 (Japan)","1989",Namco,ws,ws,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"180",288,224,HORIZONTAL,"namcos1.cpp"
+"ws90","Pro Yakyuu World Stadium '90 (Japan)","1990",Namco,ws,ws,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"180",288,224,HORIZONTAL,"namcos1.cpp"
+ws,"Pro Yakyuu World Stadium (Japan)","1988",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"180",288,224,HORIZONTAL,"namcos1.cpp"
+propcyclj,"Prop Cycle (Rev. PR1 Ver.A, Japan)","1996",Namco,propcycl,propcycl,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+propcycl,"Prop Cycle (Rev. PR2 Ver.A, World)","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+pubtimed,"Pub Time Darts","1987","Merit-Nomac Industries",-,-,-,YES,NO,NO,YES,NO,pubtimed.cpp,PRELIMINARE,-,"0",0,0,-,pubtimed.cpp
+"pnchmn2","Punch Mania 2: Hokuto no Ken (GQA09 JAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+pnchmna,"Punch Mania: Hokuto no Ken (GQ918 VER. JAB ALT CD)","2000",Konami,fghtmn,fghtmn,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+pnchmn,"Punch Mania: Hokuto no Ken (GQ918 VER. JAB)","2000",Konami,fghtmn,fghtmn,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+punchita,"Punch-Out!! (Italian bootleg)","1984",bootleg,punchout,punchout,-,YES,NO,NO,NO,NO,punchout.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,punchout.cpp
+punchoutj,"Punch-Out!! (Japan)","1984",Nintendo,punchout,punchout,-,YES,NO,NO,NO,NO,punchout.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,punchout.cpp
+punchouta,"Punch-Out!! (Rev A)","1984",Nintendo,punchout,punchout,-,YES,NO,NO,NO,NO,punchout.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,punchout.cpp
+punchout,"Punch-Out!! (Rev B)","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,punchout.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,punchout.cpp
+punkshotj,"Punk Shot (Japan 2 Players)","1990",Konami,punkshot,punkshot,-,YES,NO,NO,NO,NO,tmnt.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+"punkshot2","Punk Shot (US 2 Players)","1990",Konami,punkshot,punkshot,-,YES,NO,NO,NO,NO,tmnt.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+punkshot,"Punk Shot (US 4 Players)","1990",Konami,-,-,-,YES,NO,NO,NO,NO,tmnt.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+"punkshot2e","Punk Shot (World 2 Players)","1990",Konami,punkshot,punkshot,-,YES,NO,NO,NO,NO,tmnt.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,tmnt.cpp
+quarterbc,"Quarterback (rev 1, cocktail)","1987","Leland Corporation",quarterb,quarterb,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+quarterba,"Quarterback (rev 2)","1987","Leland Corporation",quarterb,quarterb,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+quarterb,"Quarterback (rev 5)","1987","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+rackemup,"Rack 'em Up (program code L)","1987",Konami,-,-,-,YES,NO,NO,NO,NO,battlnts.cpp,BUONO,RASTER,"90",256,224,VERTICAL,battlnts.cpp
+racknrol,"Rack + Roll","1986","Senko Industries (Status license from Shinkai Inc.)",-,-,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,galaxold.cpp
+radikaldrt,"Radikal Darts (Diana Version 7.29.25)","2011?","Gaelco Darts",-,-,-,YES,NO,NO,NO,YES,radikaldarts.cpp,PRELIMINARE,RASTER,"0",1440,900,HORIZONTAL,radikaldarts.cpp
+raizpinj,"Raizin Ping Pong (V2.01J)","2002",Taito,raizpin,raizpin,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+raizpin,"Raizin Ping Pong (V2.01O)","2002",Taito,taitotz,-,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+rltennis,"Reality Tennis (set 1)","1993",TCH,-,-,-,YES,NO,NO,NO,NO,rltennis.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,rltennis.cpp
+rltennisa,"Reality Tennis (set 2)","1993",TCH,rltennis,rltennis,-,YES,NO,NO,NO,NO,rltennis.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,rltennis.cpp
+recordbr,"Recordbreaker (World)","1988","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,taito_h.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,taito_h.cpp
+"relief3","Relief Pitcher (Rev B, 10 Apr 1992 / 08 Apr 1992)","1992","Atari Games",relief,relief,-,YES,NO,NO,NO,NO,relief.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,relief.cpp
+"relief2","Relief Pitcher (Rev C, 26 Apr 1992 / 08 Apr 1992)","1992","Atari Games",relief,relief,-,YES,NO,NO,NO,NO,relief.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,relief.cpp
+relief,"Relief Pitcher (Rev D, 07 Jun 1992 / 28 May 1992)","1992","Atari Games",-,-,-,YES,NO,NO,NO,NO,relief.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,relief.cpp
+"rimrockn12b","Rim Rockin' Basketball (V1.2, bootleg)","1991",bootleg,rimrockn,rimrockn,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"itech8.cpp"
+"rimrockn12","Rim Rockin' Basketball (V1.2)","1991","Strata/Incredible Technologies",rimrockn,rimrockn,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"itech8.cpp"
+"rimrockn16","Rim Rockin' Basketball (V1.6)","1991","Strata/Incredible Technologies",rimrockn,rimrockn,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"itech8.cpp"
+"rimrockn20","Rim Rockin' Basketball (V2.0)","1991","Strata/Incredible Technologies",rimrockn,rimrockn,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"itech8.cpp"
+rimrockn,"Rim Rockin' Basketball (V2.2)","1991","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"itech8.cpp"
+ringfgt,"Ring Fighter (set 1)","1984","Kaneko (Taito license)",vsgongf,vsgongf,-,YES,NO,NO,NO,NO,tsamurai.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,tsamurai.cpp
+"ringfgt2","Ring Fighter (set 2)","1984","Kaneko (Taito license)",vsgongf,vsgongf,-,YES,NO,NO,NO,NO,tsamurai.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,tsamurai.cpp
+ringking,"Ring King (US set 1)","1985","Woodplace Inc. (Data East USA license)",kingofb,kingofb,-,YES,NO,NO,NO,NO,kingobox.cpp,BUONO,RASTER,"90",256,224,VERTICAL,kingobox.cpp
+"ringking2","Ring King (US set 2)","1985","Woodplace Inc. (Data East USA license)",kingofb,kingofb,-,YES,NO,NO,NO,NO,kingobox.cpp,BUONO,RASTER,"90",256,224,VERTICAL,kingobox.cpp
+"ringking3","Ring King (US set 3)","1985","Woodplace Inc. (Data East USA license)",kingofb,kingofb,-,YES,NO,NO,NO,NO,kingobox.cpp,BUONO,RASTER,"90",256,224,VERTICAL,kingobox.cpp
+ringkingw,"Ring King (US, Woodplace Inc.)","1985","Woodplace Inc.",kingofb,kingofb,-,YES,NO,NO,NO,NO,kingobox.cpp,BUONO,RASTER,"90",256,224,VERTICAL,kingobox.cpp
+ringohja,"Ring no Ohja (Japan 2 Players ver. N)","1988",Konami,mainevt,mainevt,-,YES,NO,NO,NO,NO,mainevt.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,mainevt.cpp
+ringdesta,"Ring of Destruction: Slammasters II (Asia 940831)","1994",Capcom,ringdest,ringdest,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+ringdestb,"Ring of Destruction: Slammasters II (Brazil 940902)","1994",Capcom,ringdest,ringdest,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+ringdstd,"Ring of Destruction: Slammasters II (Euro 940902 Phoenix Edition) (bootleg)","1994",bootleg,ringdest,ringdest,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+ringdest,"Ring of Destruction: Slammasters II (Euro 940902)","1994",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+ringdesth,"Ring of Destruction: Slammasters II (Hispanic 940902)","1994",Capcom,ringdest,ringdest,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+ringrageu,"Ring Rage (Ver 2.3A 1992/08/09)","1992","Taito America Corporation",ringrage,ringrage,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+ringragej,"Ring Rage (Ver 2.3J 1992/08/09)","1992","Taito Corporation",ringrage,ringrage,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+ringrage,"Ring Rage (Ver 2.3O 1992/08/09)","1992","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+ripcord,"Rip Cord","1979",Exidy,-,-,ripcord,YES,NO,NO,NO,NO,circus.cpp,INCOMPLETO,RASTER,"0",248,256,HORIZONTAL,circus.cpp
+robowres,"Robo Wres 2001","1986","Sanritsu / Sega",-,-,-,YES,NO,NO,NO,NO,appoooh.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,appoooh.cpp
+robowresb,"Robo Wres 2001 (bootleg)","1986",bootleg,robowres,robowres,-,YES,NO,NO,NO,NO,appoooh.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,appoooh.cpp
+robotbwl,"Robot Bowl","1977",Exidy,-,-,robotbwl,YES,NO,NO,NO,NO,circus.cpp,INCOMPLETO,RASTER,"0",248,256,HORIZONTAL,circus.cpp
+rollergj,"Rollergames (Japan)","1991",Konami,rollerg,rollerg,-,YES,NO,NO,NO,NO,rollerg.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,rollerg.cpp
+rollerg,"Rollergames (US)","1991",Konami,-,-,-,YES,NO,NO,NO,NO,rollerg.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,rollerg.cpp
+runguna,"Run and Gun (ver EAA 1993 10.4)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+rungunad,"Run and Gun (ver EAA 1993 10.4) (dual screen with demux adapter)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+rungun,"Run and Gun (ver EAA 1993 10.8)","1993",Konami,-,-,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+rungund,"Run and Gun (ver EAA 1993 10.8) (dual screen with demux adapter)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+rungunb,"Run and Gun (ver EAA 1993 9.10, prototype?)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+rungunbd,"Run and Gun (ver EAA 1993 9.10, prototype?) (dual screen with demux adapter)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+rungunud,"Run and Gun (ver UAB 1993 10.12, dedicated twin cabinet)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+rungunua,"Run and Gun (ver UBA 1993 10.8)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+rungunuad,"Run and Gun (ver UBA 1993 10.8) (dual screen with demux adapter)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+"rungun2","Run and Gun 2 (ver UAA)","1996",Konami,konamigx,-,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",384,224,HORIZONTAL,konamigx.cpp
+rushhero,"Rushing Heroes (ver UAB)","1996",Konami,konamigx,-,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",384,224,HORIZONTAL,konamigx.cpp
+slampic,"Saturday Night Slam Masters (bootleg with PIC16C57, set 1)","1993",bootleg,slammast,slammast,-,YES,NO,NO,NO,NO,"cps1bl_pic.cpp",PRELIMINARE,RASTER,"0",384,224,HORIZONTAL,"cps1bl_pic.cpp"
+"slampic2","Saturday Night Slam Masters (bootleg with PIC16C57, set 2)","1993",bootleg,slammast,slammast,-,YES,NO,NO,NO,NO,"cps1bl_pic.cpp",PRELIMINARE,RASTER,"0",384,224,HORIZONTAL,"cps1bl_pic.cpp"
+slammastu,"Saturday Night Slam Masters (USA 930713)","1993",Capcom,slammast,slammast,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+slammast,"Saturday Night Slam Masters (World 930713)","1993",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+scrpndx,"Scorpion DX","1996",Merit,-,-,-,YES,NO,NO,YES,NO,meritsdx.cpp,PRELIMINARE,-,"0",0,0,-,meritsdx.cpp
+cscrtry,"Scrum Try (DECO Cassette) (US) (set 1)","1984","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+"cscrtry2","Scrum Try (DECO Cassette) (US) (set 2)","1984","Data East Corporation",cscrtry,cscrtry,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+seabass,"Sea Bass Fishing (JUET 971110 V0.001)","1997","A wave inc. (Able license)",stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+basschalo,"Sega Bass Fishing Challenge","2009",Sega,basschal,basschal,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+basschal,"Sega Bass Fishing Challenge Version A","2009",Sega,awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+bassdx,"Sega Bass Fishing Deluxe (USA)","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"scg06nt","Sega Club Golf 2006 Next Tours (Rev A) (GDX-0018A)","2005",Sega,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"scg05ntb","Sega Golf Club Network Pro Tour 2005 (Rev B) (GDX-0010B)","2004",Sega,"scg05nt","scg05nt",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"scg05nt","Sega Golf Club Network Pro Tour 2005 (Rev C) (GDX-0010C)","2004",Sega,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+smarinef,"Sega Marine Fishing","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+skisuprg,"Sega Ski Super G","1996",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+segawski,"Sega Water Ski (Japan, Revision A)","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+cupsocsb,"Seibu Cup Soccer :Selection: (bootleg, set 1)","1992",bootleg,cupsoc,cupsoc,-,YES,NO,NO,NO,NO,seicupbl.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,seicupbl.cpp
+"cupsocsb2","Seibu Cup Soccer :Selection: (bootleg, set 2)","1992",bootleg,cupsoc,cupsoc,-,YES,NO,NO,NO,NO,seicupbl.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,seicupbl.cpp
+"cupsocsb3","Seibu Cup Soccer :Selection: (bootleg, set 3)","1992",bootleg,cupsoc,cupsoc,-,YES,NO,NO,NO,NO,seicupbl.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,seicupbl.cpp
+"cupsocsb4","Seibu Cup Soccer :Selection: (bootleg, set 4)","1992",bootleg,cupsoc,cupsoc,-,YES,NO,NO,NO,NO,seicupbl.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,seicupbl.cpp
+cupsocs,"Seibu Cup Soccer :Selection: (set 1)","1992","Seibu Kaihatsu",cupsoc,cupsoc,-,YES,NO,NO,NO,NO,legionna.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,legionna.cpp
+"cupsocs2","Seibu Cup Soccer :Selection: (set 2)","1992","Seibu Kaihatsu",cupsoc,cupsoc,-,YES,NO,NO,NO,NO,legionna.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,legionna.cpp
+cupsoc,"Seibu Cup Soccer (set 1)","1992","Seibu Kaihatsu",-,-,-,YES,NO,NO,NO,NO,legionna.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,legionna.cpp
+cupsoca,"Seibu Cup Soccer (set 2)","1992","Seibu Kaihatsu",cupsoc,cupsoc,-,YES,NO,NO,NO,NO,legionna.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,legionna.cpp
+cupsocb,"Seibu Cup Soccer (set 3)","1992","Seibu Kaihatsu",cupsoc,cupsoc,-,YES,NO,NO,NO,NO,legionna.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,legionna.cpp
+"toukon3","Shin Nihon Pro Wrestling Toukon Retsuden 3 Arcade Edition (Japan, TR1/VER.A)","1997","Namco / Tomy",-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+"toukon4","Shin Nihon Pro Wrestling Toukon Retsuden 4 Arcade Edition (Japan, TRF1 Ver.A)","2000",Namco,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shootbul,"Shoot the Bull","1985","Bally Midway",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+shootopl,"Shootout Pool","2002",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shootpl,"Shootout Pool Prize (Export) / Shootout Pool The Medal (Japan, Rev A)","2003",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shootplm,"Shootout Pool Prize (Export) / Shootout Pool The Medal (Japan) Version B","2004",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shootplmp,"Shootout Pool Prize (Export) / Shootout Pool The Medal (Japan) Version B (prototype)","2004",Sega,shootplm,shootplm,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shuffle,Shuffleboard,"1978",Midway,-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",INCOMPLETO,RASTER,"90",260,224,VERTICAL,"mw8080bw.cpp"
+"shufshot135","Shuffleshot (v1.35)","1997","Strata/Incredible Technologies",shufshot,shufshot,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"shufshot137","Shuffleshot (v1.37)","1997","Strata/Incredible Technologies",shufshot,shufshot,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"shufshot138","Shuffleshot (v1.38)","1997","Strata/Incredible Technologies",shufshot,shufshot,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"shufshot139","Shuffleshot (v1.39)","1997","Strata/Incredible Technologies",shufshot,shufshot,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+shufshot,"Shuffleshot (v1.40)","1997","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"shuuz2","Shuuz (version 7.1)","1990","Atari Games",shuuz,shuuz,-,YES,NO,NO,NO,NO,shuuz.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,shuuz.cpp
+shuuz,"Shuuz (version 8.0)","1990","Atari Games",-,-,-,YES,NO,NO,NO,NO,shuuz.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,shuuz.cpp
+sidepcktb,"Side Pocket (bootleg)","1986",bootleg,sidepckt,sidepckt,-,YES,NO,NO,NO,NO,sidepckt.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,sidepckt.cpp
+sidepcktj,"Side Pocket (Japan, Cocktail)","1986","Data East Corporation",sidepckt,sidepckt,-,YES,NO,NO,NO,NO,sidepckt.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,sidepckt.cpp
+sidepckt,"Side Pocket (World)","1986","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,sidepckt.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,sidepckt.cpp
+silvland,"Silver Land","1981",Falcon,rpatrol,rpatrol,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+simpbowl,"Simpsons Bowling (GQ829 UAA)","2000",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+cskater,"Skater (DECO Cassette) (Japan)","1983","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+skichamp,"Ski Champ (Japan)","1998",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+skimaxx,Skimaxx,"1996","Kyle Hodgetts / ICE",-,-,-,YES,NO,NO,NO,NO,skimaxx.cpp,INCOMPLETO,RASTER,"0",640,240,HORIZONTAL,skimaxx.cpp
+mwskinso,"Skins Game (1.04)","2000",Midway,mwskins,mwskins,-,YES,NO,NO,NO,YES,atlantis.cpp,PRELIMINARE,RASTER,"0",400,256,HORIZONTAL,atlantis.cpp
+mwskinsa,"Skins Game (1.06, alt)","2000",Midway,mwskins,mwskins,-,YES,NO,NO,NO,YES,atlantis.cpp,PRELIMINARE,RASTER,"0",400,256,HORIZONTAL,atlantis.cpp
+mwskins,"Skins Game (1.06)","2000",Midway,-,-,-,YES,NO,NO,NO,YES,atlantis.cpp,PRELIMINARE,RASTER,"0",400,256,HORIZONTAL,atlantis.cpp
+nss_skin,"Skins Game (Nintendo Super System)","1992",Irem,nss,-,-,YES,NO,NO,NO,NO,nss.cpp,PRELIMINARE,RASTER,"0",288,216,HORIZONTAL,nss.cpp
+mwskinst,"Skins Game Tournament Edition","2000",Midway,mwskins,mwskins,-,YES,NO,NO,NO,YES,atlantis.cpp,PRELIMINARE,RASTER,"0",400,256,HORIZONTAL,atlantis.cpp
+skydiver,"Sky Diver","1978",Atari,-,-,-,YES,NO,NO,NO,NO,skydiver.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,skydiver.cpp
+slmdunkj,"Slam Dunk (ver JAA 1993 10.8)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+slmdunkjd,"Slam Dunk (ver JAA 1993 10.8) (dual screen with demux adapter)","1993",Konami,rungun,rungun,-,YES,NO,NO,NO,NO,rungun.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,rungun.cpp
+"slamdnk2","Slam Dunk 2 (ver JAA)","1996",Konami,"rungun2","rungun2",-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",384,224,HORIZONTAL,konamigx.cpp
+slapshtr,"Slap Shooter","1986",Sega,-,-,-,YES,NO,NO,NO,NO,segae.cpp,BUONO,RASTER,"0",256,192,HORIZONTAL,segae.cpp
+slapshotj,"Slap Shot (Ver 2.2 J)","1994","Taito Corporation",slapshot,slapshot,-,YES,NO,NO,NO,NO,slapshot.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,slapshot.cpp
+slapshot,"Slap Shot (Ver 3.0 O)","1994","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,slapshot.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,slapshot.cpp
+scptour,"Smash Court Pro Tournament (SCP1)","2002",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+snowboara,"Snow Board Championship (Version 2.0)","1996",Gaelco,snowboar,snowboar,-,YES,NO,NO,NO,NO,"gaelco2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"gaelco2.cpp"
+snowboar,"Snow Board Championship (Version 2.1)","1996",Gaelco,-,-,-,YES,NO,NO,NO,NO,"gaelco2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"gaelco2.cpp"
+socbrawlh,"Soccer Brawl (NGH-031)","1991",SNK,socbrawl,socbrawl,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+socbrawl,"Soccer Brawl (NGM-031)","1991",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+soccerssa,"Soccer Superstars (ver AAA)","1994",Konami,soccerss,soccerss,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+soccerss,"Soccer Superstars (ver EAC)","1994",Konami,konamigx,-,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+soccerssja,"Soccer Superstars (ver JAA)","1994",Konami,soccerss,soccerss,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+soccerssj,"Soccer Superstars (ver JAC)","1994",Konami,soccerss,soccerss,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+soccerssu,"Soccer Superstars (ver UAC)","1994",Konami,soccerss,soccerss,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+soulsurf,"Soul Surfer (Rev A)","2002",Sega,"naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+spdball,"Speed Ball - Contest at Neonworld (prototype)","1985",Williams,-,-,-,YES,NO,NO,NO,NO,williams.cpp,BUONO,RASTER,"0",292,240,HORIZONTAL,williams.cpp
+speedspn,"Speed Spin","1994",TCH,-,-,-,YES,NO,NO,NO,NO,speedspn.cpp,BUONO,RASTER,"180",384,240,HORIZONTAL,speedspn.cpp
+spiker,Spiker,"1986",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+"spiker2","Spiker (5/5/86)","1986",Bally/Sente,spiker,spiker,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+"spiker3","Spiker (6/9/86)","1986",Bally/Sente,spiker,spiker,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+sprtdart,"Sport Dart TV","1993","Compumatic / Desarrollos y Recambios S.L.",-,-,-,YES,NO,NO,YES,NO,"4enlinea.cpp",PRELIMINARE,RASTER,"0",640,200,HORIZONTAL,"4enlinea.cpp"
+"sfish2j","Sport Fishing 2 (J 951201 V1.100)","1995",Sega,"sfish2","sfish2",-,YES,NO,NO,NO,YES,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"sfish2","Sport Fishing 2 (UET 951106 V1.10e)","1995",Sega,-,-,-,YES,NO,NO,NO,YES,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+sprtjam,"Sports Jam (GDS-0003)","2000",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+nbanfl,"SportStation: NBA Showtime NBA on NBC (ver 2.1, Sep 22 1999) / NFL Blitz 2000 Gold Edition (ver 1.5, Sep 22 1999)","1999","Midway Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+nbagold,"SportStation: NBA Showtime NBA on NBC Gold Edition (ver 3.0, Feb 18 2000) / NFL Blitz 2000 Gold Edition","2000","Midway Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+ar_bowl,"SportTime Bowling (Arcadia, V 2.1)","1988","Arcadia Systems",ar_bios,-,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+ar_airh,"SportTime Table Hockey (Arcadia, set 1, V 2.1)","1988","Arcadia Systems",ar_bios,-,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+"ar_airh2","SportTime Table Hockey (Arcadia, set 2)","1988","Arcadia Systems",ar_airh,ar_airh,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+squaitsa,"Squash (Itisa)","1984",Itisa,-,-,-,YES,NO,NO,NO,NO,bagman.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,bagman.cpp
+squash,"Squash (Ver. 1.0)","1992",Gaelco,-,-,-,YES,NO,NO,NO,NO,gaelco.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,gaelco.cpp
+"stadhr96","Stadium Hero '96 (Europe, EAJ)","1996","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,deco_mlc.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,deco_mlc.cpp
+"stadhr96j","Stadium Hero '96 (Japan, EAD)","1996","Data East Corporation","stadhr96","stadhr96",-,YES,NO,NO,NO,NO,deco_mlc.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,deco_mlc.cpp
+"stadhr96j2","Stadium Hero '96 (Japan?, EAE)","1996","Data East Corporation","stadhr96","stadhr96",-,YES,NO,NO,NO,NO,deco_mlc.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,deco_mlc.cpp
+"stadhr96u","Stadium Hero '96 (USA, EAH)","1996","Data East Corporation","stadhr96","stadhr96",-,YES,NO,NO,NO,NO,deco_mlc.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,deco_mlc.cpp
+stadhero,"Stadium Hero (Japan)","1988","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,stadhero.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,stadhero.cpp
+stakwin,"Stakes Winner / Stakes Winner - GI Kinzen  Seiha e no Michi","1995",Saurus,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+stakwindev,"Stakes Winner / Stakes Winner - GI Kinzen  Seiha e no Michi (early development board)","1995",Saurus,stakwin,stakwin,-,YES,NO,NO,NO,NO,neogeo.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"stakwin2","Stakes Winner 2","1996",Saurus,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+sss,"Steep Slope Sliders (JUET 981110 V1.000)","1998","Capcom / Cave / Victor Interactive Software",stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"stonebal2o","Stone Ball (2 Players, v1-20 21/10/1994)","1994","Art & Magic",stonebal,stonebal,-,YES,NO,NO,NO,NO,artmagic.cpp,BUONO,RASTER,"0",320,256,HORIZONTAL,artmagic.cpp
+"stonebal2","Stone Ball (2 Players, v1-20 7/11/1994)","1994","Art & Magic",stonebal,stonebal,-,YES,NO,NO,NO,NO,artmagic.cpp,BUONO,RASTER,"0",320,256,HORIZONTAL,artmagic.cpp
+stonebal,"Stone Ball (4 Players, v1-20 13/12/1994)","1994","Art & Magic",-,-,-,YES,NO,NO,NO,NO,artmagic.cpp,BUONO,RASTER,"0",320,256,HORIZONTAL,artmagic.cpp
+stratabs,"Strata Bowling (V1 4T, Super Strike Bowling type PCB)","1990","Strata/Incredible Technologies",stratab,stratab,-,YES,NO,NO,NO,NO,"itech8.cpp",PRELIMINARE,RASTER,"270",256,240,VERTICAL,"itech8.cpp"
+"stratab1","Strata Bowling (V1)","1990","Strata/Incredible Technologies",stratab,stratab,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"270",256,240,VERTICAL,"itech8.cpp"
+stratab,"Strata Bowling (V3)","1990","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"270",256,240,VERTICAL,"itech8.cpp"
+sfootbal,"Street Football (11/12/86)","1986",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+strhoop,"Street Hoop / Street Slam / Dunk Dream (DEM-004 ~ DEH-004)","1994","Data East Corporation",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+strnskil,"Strength & Skill","1984","Sun Electronics",-,-,-,YES,NO,NO,NO,NO,markham.cpp,BUONO,RASTER,"0",240,224,HORIZONTAL,markham.cpp
+sbowling,"Strike Bowling","1982","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,sbowling.cpp,INCOMPLETO,RASTER,"90",240,224,VERTICAL,sbowling.cpp
+strkzone,"Strike Zone Baseball","1988","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+scessjoe,"Success Joe (World)","1990","Taito Corporation / Wave",-,-,-,YES,NO,NO,NO,NO,ashnojoe.cpp,BUONO,RASTER,"0",288,208,HORIZONTAL,ashnojoe.cpp
+dblplay,"Super Baseball Double Play Home Run Derby","1987","Leland Corporation / Tradewest",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+sbaskete,"Super Basketball (version E, encrypted)","1984",Konami,sbasketb,sbasketb,-,YES,NO,NO,NO,NO,sbasketb.cpp,BUONO,RASTER,"90",256,224,VERTICAL,sbasketb.cpp
+sbasketg,"Super Basketball (version G, encrypted)","1984",Konami,sbasketb,sbasketb,-,YES,NO,NO,NO,NO,sbasketb.cpp,BUONO,RASTER,"90",256,224,VERTICAL,sbasketb.cpp
+sbasketh,"Super Basketball (version H, unprotected)","1984",Konami,sbasketb,sbasketb,-,YES,NO,NO,NO,NO,sbasketb.cpp,BUONO,RASTER,"90",256,224,VERTICAL,sbasketb.cpp
+sbasketb,"Super Basketball (version I, encrypted)","1984",Konami,-,-,-,YES,NO,NO,NO,NO,sbasketb.cpp,BUONO,RASTER,"90",256,224,VERTICAL,sbasketb.cpp
+sbasebalj,"Super Champion Baseball (Japan)","1989","Alpha Denshi Co.",sbasebal,sbasebal,-,YES,NO,NO,NO,NO,"alpha68k.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"alpha68k.cpp"
+sbasebal,"Super Champion Baseball (US)","1989","Alpha Denshi Co. (SNK of America license)",-,-,-,YES,NO,NO,NO,NO,"alpha68k.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"alpha68k.cpp"
+suprgolfj,"Super Crowns Golf (Japan)","1989",Nasco,suprgolf,suprgolf,-,YES,NO,NO,NO,NO,suprgolf.cpp,INCOMPLETO,RASTER,"0",256,192,HORIZONTAL,suprgolf.cpp
+suprgolf,"Super Crowns Golf (World)","1989",Nasco,-,-,-,YES,NO,NO,NO,NO,suprgolf.cpp,INCOMPLETO,RASTER,"0",256,192,HORIZONTAL,suprgolf.cpp
+scfinalsoc,"Super Cup Finals (Ver 2.1O 1993/11/19, F3 Cartridge)","1993","Taito Corporation Japan",scfinals,scfinals,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+scfinalso,"Super Cup Finals (Ver 2.1O 1993/11/19, single PCB)","1993","Taito Corporation Japan",scfinals,scfinals,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+scfinals,"Super Cup Finals (Ver 2.2O 1994/01/13, single PCB)","1993","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+sderbys,"Super Derby (satellite board)","1984",Sega,-,-,-,YES,NO,NO,NO,NO,"sg1000a.cpp",PRELIMINARE,RASTER,"0",280,216,HORIZONTAL,"sg1000a.cpp"
+"sderby2","Super Derby II","1985",Sega,-,-,-,YES,NO,NO,NO,NO,"sderby2.cpp",PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,"sderby2.cpp"
+"sderby2s","Super Derby II (satellite board)","1985",Sega,-,-,-,YES,NO,NO,NO,NO,"sg1000a.cpp",PRELIMINARE,RASTER,"0",280,216,HORIZONTAL,"sg1000a.cpp"
+spdodgeb,"Super Dodge Ball (US)","1987","Technos Japan",-,-,-,YES,NO,NO,NO,NO,spdodgeb.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,spdodgeb.cpp
+sdodgeb,"Super Dodge Ball / Kunio no Nekketsu Toukyuu Densetsu","1996","Technos Japan",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+sdtennis,"Super Doubles Tennis","1983","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",256,240,VERTICAL,btime.cpp
+csdtenis,"Super Doubles Tennis (DECO Cassette) (Japan)","1983","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+speglsht,"Super Eagle Shot","1994",Seta,-,-,-,YES,NO,NO,NO,NO,speglsht.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,speglsht.cpp
+sfchampu,"Super Football Champ (Ver 2.4A)","1995",Taito,sfchamp,sfchamp,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+sfchampj,"Super Football Champ (Ver 2.4J)","1995",Taito,sfchamp,sfchamp,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+sfchampo,"Super Football Champ (Ver 2.4O)","1995",Taito,sfchamp,sfchamp,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+sfchamp,"Super Football Champ (Ver 2.5O)","1995",Taito,"coh1000t",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+"shimpactp4","Super High Impact (prototype, proto 4.0 09/10/91)","1991",Midway,shimpact,shimpact,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"shimpactp5","Super High Impact (prototype, proto 5.0 09/15/91)","1991",Midway,shimpact,shimpact,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"shimpactp6","Super High Impact (prototype, proto 6.0 09/23/91)","1991",Midway,shimpact,shimpact,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+shimpact,"Super High Impact (rev LA1 09/30/91)","1991",Midway,-,-,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+suprleag,"Super League (FD1094 317-0045)","1987",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+smleague,"Super Major League (U 960108 V1.000)","1995",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+sgmast,"Super Masters Golf (World?, Floppy Based, FD1094 317-0058-05d?)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+"smbombr1","Super Muscle Bomber: The International Blowout (Japan 940808)","1994",Capcom,ringdest,ringdest,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+smbomb,"Super Muscle Bomber: The International Blowout (Japan 940831)","1994",Capcom,ringdest,ringdest,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+"spool3","Super Pool III (English)","1989","Data East Corporation",pcktgal,pcktgal,-,YES,NO,NO,NO,NO,pcktgal.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pcktgal.cpp
+"spool3i","Super Pool III (I-Vics)","1990","Data East Corporation (I-Vics license)",pcktgal,pcktgal,-,YES,NO,NO,NO,NO,pcktgal.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pcktgal.cpp
+spnchoutj,"Super Punch-Out!! (Japan)","1984",Nintendo,spnchout,spnchout,-,YES,NO,NO,NO,NO,punchout.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,punchout.cpp
+spnchouta,"Super Punch-Out!! (Rev A)","1984",Nintendo,spnchout,spnchout,-,YES,NO,NO,NO,NO,punchout.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,punchout.cpp
+spnchout,"Super Punch-Out!! (Rev B)","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,punchout.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,punchout.cpp
+mt_srbb,"Super Real Basketball (Mega-Tech)","1989",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+ssideki,"Super Sidekicks / Tokuten Ou","1992",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"ssideki2","Super Sidekicks 2 - The World Championship / Tokuten Ou 2 - Real Fight Football (NGM-061 ~ NGH-061)","1994",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"ssideki3","Super Sidekicks 3 - The Next Glory / Tokuten Ou 3 - Eikou e no Michi","1995",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+sslam,"Super Slam (set 1)","1993",Playmark,-,-,-,YES,NO,NO,NO,NO,sslam.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,sslam.cpp
+sslama,"Super Slam (set 2)","1993",Playmark,sslam,sslam,-,YES,NO,NO,NO,NO,sslam.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,sslam.cpp
+sslamb,"Super Slam (set 3)","1993",Playmark,sslam,sslam,-,YES,NO,NO,NO,NO,sslam.cpp,BUONO,RASTER,"0",304,240,HORIZONTAL,sslam.cpp
+nss_ssoc,"Super Soccer (Nintendo Super System)","1992","Human Inc.",nss,-,-,YES,NO,NO,NO,NO,nss.cpp,PRELIMINARE,RASTER,"0",288,216,HORIZONTAL,nss.cpp
+nss_sten,"Super Tennis (Nintendo Super System)","1991",Nintendo,nss,-,-,YES,NO,NO,NO,NO,nss.cpp,PRELIMINARE,RASTER,"0",288,216,HORIZONTAL,nss.cpp
+svfo,"Super Visual Football: European Sega Cup","1994",Sega,svf,svf,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+svf,"Super Visual Football: European Sega Cup (Rev A)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+svs,"Super Visual Soccer: Sega Cup (US, Rev A)","1994",Sega,svf,svf,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+"svolly91","Super Volley '91 (Japan)","1991","Video System Co.",pspikes,pspikes,-,YES,NO,NO,NO,NO,aerofgt.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,aerofgt.cpp
+svolleybl,"Super Volleyball (bootleg)","1991",bootleg,svolley,svolley,-,YES,NO,NO,NO,NO,rpunch.cpp,PRELIMINARE,RASTER,"0",288,216,HORIZONTAL,rpunch.cpp
+svolley,"Super Volleyball (Japan)","1989","V-System Co.",-,-,-,YES,NO,NO,NO,NO,rpunch.cpp,BUONO,RASTER,"0",288,216,HORIZONTAL,rpunch.cpp
+svolleyk,"Super Volleyball (Korea)","1989","V-System Co.",svolley,svolley,-,YES,NO,NO,NO,NO,rpunch.cpp,BUONO,RASTER,"0",288,216,HORIZONTAL,rpunch.cpp
+svolleyu,"Super Volleyball (US)","1989","V-System Co. (Data East license)",svolley,svolley,-,YES,NO,NO,NO,NO,rpunch.cpp,BUONO,RASTER,"0",288,216,HORIZONTAL,rpunch.cpp
+swcourtj,"Super World Court (Japan)","1992",Namco,swcourt,swcourt,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+swcourtb,"Super World Court (World, bootleg)","1994","bootleg (Playmark?)",swcourt,swcourt,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+swcourt,"Super World Court (World)","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+"sws92","Super World Stadium '92 (Japan)","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"sws92g","Super World Stadium '92 Gekitouban (Japan)","1992",Namco,"sws92","sws92",-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"sws93","Super World Stadium '93 (Japan)","1993",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"sws95","Super World Stadium '95 (Japan)","1995",Namco,-,-,-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+"sws96","Super World Stadium '96 (Japan)","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+"sws97","Super World Stadium '97 (Japan)","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"namconb1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namconb1.cpp"
+"sws98","Super World Stadium '98 (Japan, SS81/VER.A)","1998",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+"sws99","Super World Stadium '99 (Japan, SS91/VER.A3)","1999",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+sws,"Super World Stadium (Japan)","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"sws2000","Super World Stadium 2000 (Japan, SS01/VER.A)","2000",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+"sws2001","Super World Stadium 2001 (Japan, SS11/VER.A)","2001",Namco,"sws2000","sws2000",-,YES,NO,NO,NO,NO,"namcos12.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+"surfplnt30","Surf Planet (Version 3.0)","1997",Gaelco,surfplnt,surfplnt,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+"surfplnt40","Surf Planet (Version 4.0)","1997","Gaelco (Atari license)",surfplnt,surfplnt,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+surfplnt,"Surf Planet (Version 4.1)","1997","Gaelco (Atari license)",-,-,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+swimmer,"Swimmer (set 1)","1982",Tehkan,-,-,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+swimmera,"Swimmer (set 2)","1982",Tehkan,swimmer,swimmer,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+swimmerb,"Swimmer (set 3)","1982",Tehkan,swimmer,swimmer,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+ssozumo,"Syusse Oozumou (Japan)","1984","Technos Japan",-,-,-,YES,NO,NO,NO,NO,ssozumo.cpp,BUONO,RASTER,"270",256,240,VERTICAL,ssozumo.cpp
+ttchamp,"Table Tennis Champions","1995",Gamart,-,-,-,YES,NO,NO,NO,NO,ttchamp.cpp,BUONO,RASTER,"0",320,200,HORIZONTAL,ttchamp.cpp
+ttchampa,"Table Tennis Champions (Palencia Elektronik license)","1995","Gamart (Palencia Elektronik license)",ttchamp,ttchamp,-,YES,NO,NO,NO,NO,ttchamp.cpp,BUONO,RASTER,"0",320,200,HORIZONTAL,ttchamp.cpp
+tagteam,"Tag Team Wrestling","1983","Technos Japan (Data East license)",bigprowr,bigprowr,-,YES,NO,NO,NO,NO,tagteam.cpp,BUONO,RASTER,"270",256,240,VERTICAL,tagteam.cpp
+tbasebal,"Taikyoku Base Ball","1983","Alpha Denshi Co.","champbb2","champbb2",-,YES,NO,NO,NO,NO,champbas.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,champbas.cpp
+cupfinal,"Taito Cup Finals (Ver 1.0O 1993/02/28)","1993","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+pwrgoal,"Taito Power Goal (Ver 2.5O 1994/11/03)","1994","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+tgtball,"Target Ball","1995","Yun Sung","tgtbal96","tgtbal96",-,YES,NO,NO,NO,NO,paradise.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,paradise.cpp
+"tgtbal96","Target Ball '96","1996","Yun Sung",-,-,-,YES,NO,NO,NO,NO,paradise.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,paradise.cpp
+tgtballn,"Target Ball (With Nudity)","1995","Yun Sung","tgtbal96","tgtbal96",-,YES,NO,NO,NO,NO,paradise.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,paradise.cpp
+teamht,"Team Hat Trick","1985",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+techbowl,"Technical Bowling (J 971212 V1.000)","1997",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+tbowlj,"Tecmo Bowl (Japan)","1987",Tecmo,tbowl,tbowl,-,YES,NO,NO,NO,NO,tbowl.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tbowl.cpp
+pc_tbowl,"Tecmo Bowl (PlayChoice-10)","1989","Tecmo (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+tbowlp,"Tecmo Bowl (World, prototype?)","1987",Tecmo,tbowl,tbowl,-,YES,NO,NO,NO,NO,tbowl.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tbowl.cpp
+tbowl,"Tecmo Bowl (World, set 1)","1987",Tecmo,-,-,-,YES,NO,NO,NO,NO,tbowl.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tbowl.cpp
+tbowla,"Tecmo Bowl (World, set 2)","1987",Tecmo,tbowl,tbowl,-,YES,NO,NO,NO,NO,tbowl.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tbowl.cpp
+"twcup90a","Tecmo World Cup '90 (Euro set 1)","1989",Tecmo,"twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90.cpp"
+"twcup90b","Tecmo World Cup '90 (Euro set 2)","1989",Tecmo,"twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90.cpp"
+"twcup90c","Tecmo World Cup '90 (Euro set 3)","1989",Tecmo,"twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90.cpp"
+"twcup90t","Tecmo World Cup '90 (trackball set 1)","1989",Tecmo,"twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90.cpp"
+"twcup90","Tecmo World Cup '90 (World set 1)","1989",Tecmo,-,-,-,YES,NO,NO,NO,NO,"wc90.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90.cpp"
+"twcup94","Tecmo World Cup '94 (set 1)","1994",Tecmo,-,-,-,YES,NO,NO,NO,NO,gstriker.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,gstriker.cpp
+"twcup94a","Tecmo World Cup '94 (set 2)","1994",Tecmo,"twcup94","twcup94",-,YES,NO,NO,NO,NO,gstriker.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,gstriker.cpp
+"twcup94b","Tecmo World Cup '94 (set 3)","1994",Tecmo,"twcup94","twcup94",-,YES,NO,NO,NO,NO,gstriker.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,gstriker.cpp
+"twcup98","Tecmo World Cup '98 (JUET 980410 V1.000)","1998",Tecmo,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+mp_twcup,"Tecmo World Cup (Mega Play)","1993",Sega,megaplay,-,-,YES,NO,NO,NO,NO,megaplay.cpp,INCOMPLETO,RASTER,"0",1280,224,HORIZONTAL,megaplay.cpp
+twcupmil,"Tecmo World Cup Millennium (Japan)","2000",Tecmo,"coh1002m",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+"twsoc96","Tecmo World Soccer '96","1996",Tecmo,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"twsoc98","Tecmo World Soccer '98 (JUET 980410 V1.000)","1998",Tecmo,"twcup98","twcup98",-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+tecnodar,Tecnodarts,"1991","Automatics Pasqual",-,-,-,YES,NO,NO,YES,NO,tecnodar.cpp,PRELIMINARE,RASTER,"0",280,216,HORIZONTAL,tecnodar.cpp
+tecnodargr,"Tecnodarts (Recreativos G.R. license)","1991","Automatics Pasqual / Recreativos G.R.",tecnodar,tecnodar,-,YES,NO,NO,YES,NO,tecnodar.cpp,PRELIMINARE,RASTER,"0",280,216,HORIZONTAL,tecnodar.cpp
+teedoff,"Tee'd Off (Japan)","1986",Tecmo,-,-,-,YES,NO,NO,NO,NO,tehkanwc.cpp,BUONO,RASTER,"90",256,224,VERTICAL,tehkanwc.cpp
+tehkanwch,"Tehkan World Cup (1986 year hack)","1986",hack,tehkanwc,tehkanwc,-,YES,NO,NO,NO,NO,tehkanwc.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tehkanwc.cpp
+tehkanwc,"Tehkan World Cup (set 1)","1985",Tehkan,-,-,-,YES,NO,NO,NO,NO,tehkanwc.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tehkanwc.cpp
+tehkanwcb,"Tehkan World Cup (set 2, bootleg?)","1985",Tehkan,tehkanwc,tehkanwc,-,YES,NO,NO,NO,NO,tehkanwc.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tehkanwc.cpp
+tehkanwcc,"Tehkan World Cup (set 3, bootleg)","1985",bootleg,tehkanwc,tehkanwc,-,YES,NO,NO,NO,NO,tehkanwc.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,tehkanwc.cpp
+tehkanwcd,"Tehkan World Cup (set 4, earlier)","1985",Tehkan,tehkanwc,tehkanwc,-,YES,NO,NO,NO,NO,tehkanwc.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tehkanwc.cpp
+protennb,"Tennis (bootleg of Pro Tennis)","1982",bootleg,protenn,protenn,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",240,240,VERTICAL,btime.cpp
+pc_tenis,"Tennis (PlayChoice-10)","1983",Nintendo,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+bigprowr,"The Big Pro Wrestling!","1983","Technos Japan",-,-,-,YES,NO,NO,NO,NO,tagteam.cpp,BUONO,RASTER,"270",256,240,VERTICAL,tagteam.cpp
+billiard,"The Billiards (Video Hustler bootleg)","1981",bootleg,hustler,hustler,-,YES,NO,NO,NO,NO,scobra.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scobra.cpp
+froundl,"The Final Round (version L)","1988",Konami,fround,fround,-,YES,NO,NO,NO,NO,"twin16.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"twin16.cpp"
+fround,"The Final Round (version M)","1988",Konami,-,-,-,YES,NO,NO,NO,NO,"twin16.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"twin16.cpp"
+guiness,"The Guiness (Japan)","1984","Sun Electronics",strnskil,strnskil,-,YES,NO,NO,NO,NO,markham.cpp,BUONO,RASTER,"0",240,224,HORIZONTAL,markham.cpp
+thehustlj,"The Hustler (Japan, program code J)","1987",Konami,rackemup,rackemup,-,YES,NO,NO,NO,NO,battlnts.cpp,BUONO,RASTER,"90",256,224,VERTICAL,battlnts.cpp
+thehustl,"The Hustler (Japan, program code M)","1987",Konami,rackemup,rackemup,-,YES,NO,NO,NO,NO,battlnts.cpp,BUONO,RASTER,"90",256,224,VERTICAL,battlnts.cpp
+skingame,"The Irem Skins Game (US set 1)","1992","Irem America","majtitl2","majtitl2",-,YES,NO,NO,NO,NO,"m92.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m92.cpp"
+"skingame2","The Irem Skins Game (US set 2)","1992","Irem America","majtitl2","majtitl2",-,YES,NO,NO,NO,NO,"m92.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m92.cpp"
+jleague,"The J.League 1994 (Japan, Rev A)","1994",Sega,svf,svf,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+jleagueo,"The J.League 1994 (Japan)","1994",Sega,svf,svf,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+kouyakyu,"The Koukou Yakyuu","1985","Alpha Denshi Co.",-,-,equites,YES,NO,NO,NO,NO,equites.cpp,INCOMPLETO,RASTER,"0",256,208,HORIZONTAL,equites.cpp
+"mainevt2p","The Main Event (2 Players ver. X)","1988",Konami,mainevt,mainevt,-,YES,NO,NO,NO,NO,mainevt.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,mainevt.cpp
+mainevto,"The Main Event (4 Players ver. F)","1988",Konami,mainevt,mainevt,-,YES,NO,NO,NO,NO,mainevt.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,mainevt.cpp
+mainevt,"The Main Event (4 Players ver. Y)","1988",Konami,-,-,-,YES,NO,NO,NO,NO,mainevt.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,mainevt.cpp
+thetogyu,"The Togyu (315-5065, Japan)","1984","Coreland / Sega",bullfgt,bullfgt,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"system1.cpp"
+"ssideki4","The Ultimate 11 - The SNK Football Championship / Tokuten Ou - Honoo no Libero","1996",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+undoukai,"The Undoukai (Japan)","1984","Taito Corporation",fieldday,fieldday,-,YES,NO,NO,NO,NO,"40love.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"40love.cpp"
+titlefj,"Title Fight (Japan)","1992",Sega,titlef,titlef,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+titlefu,"Title Fight (US)","1992",Sega,titlef,titlef,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+titlef,"Title Fight (World)","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+mt_tlbba,"Tommy Lasorda Baseball (Mega-Tech)","1989",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"toobin2e","Toobin' (Europe, rev 2)","1988","Atari Games",toobin,toobin,-,YES,NO,NO,NO,NO,toobin.cpp,BUONO,RASTER,"270",512,384,VERTICAL,toobin.cpp
+toobine,"Toobin' (Europe, rev 3)","1988","Atari Games",toobin,toobin,-,YES,NO,NO,NO,NO,toobin.cpp,BUONO,RASTER,"270",512,384,VERTICAL,toobin.cpp
+toobing,"Toobin' (German, rev 3)","1988","Atari Games",toobin,toobin,-,YES,NO,NO,NO,NO,toobin.cpp,BUONO,RASTER,"270",512,384,VERTICAL,toobin.cpp
+"toobin1","Toobin' (rev 1)","1988","Atari Games",toobin,toobin,-,YES,NO,NO,NO,NO,toobin.cpp,BUONO,RASTER,"270",512,384,VERTICAL,toobin.cpp
+"toobin2","Toobin' (rev 2)","1988","Atari Games",toobin,toobin,-,YES,NO,NO,NO,NO,toobin.cpp,BUONO,RASTER,"270",512,384,VERTICAL,toobin.cpp
+toobin,"Toobin' (rev 3)","1988","Atari Games",-,-,-,YES,NO,NO,NO,NO,toobin.cpp,BUONO,RASTER,"270",512,384,VERTICAL,toobin.cpp
+tpgolf,"Top Player's Golf (NGM-003 ~ NGH-003)","1990",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+trstarj,"Top Ranking Stars (Ver 2.1J 1993/05/21) (New Version)","1993","Taito Corporation",trstar,trstar,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+trstaroj,"Top Ranking Stars (Ver 2.1J 1993/05/21) (Old Version)","1993","Taito Corporation",trstar,trstar,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+trstar,"Top Ranking Stars (Ver 2.1O 1993/05/21) (New Version)","1993","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+trstaro,"Top Ranking Stars (Ver 2.1O 1993/05/21) (Old Version)","1993","Taito Corporation Japan",trstar,trstar,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+topshoot,"Top Shooter","1995","Sun Mixing",-,-,-,YES,NO,NO,NO,NO,megadriv_acbl.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_acbl.cpp
+topskatr,"Top Skater (Export, Revision A)","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+topskatrj,"Top Skater (Japan)","1997",Sega,topskatr,topskatr,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+topskatru,"Top Skater (USA, Revision A)","1997",Sega,topskatr,topskatr,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+topskatruo,"Top Skater (USA)","1997",Sega,topskatr,topskatr,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+tornbase,"Tornado Baseball / Ball Park","1976","Dave Nutting Associates / Midway / Taito",-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",INCOMPLETO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+touchgoe,"Touch & Go (earlier revision)","1995",Gaelco,touchgo,touchgo,-,YES,NO,NO,NO,NO,"gaelco2.cpp",INCOMPLETO,RASTER,"0",480,240,HORIZONTAL,"gaelco2.cpp"
+touchgok,"Touch & Go (Korea, unprotected)","1995",Gaelco,touchgo,touchgo,-,YES,NO,NO,NO,NO,"gaelco2.cpp",INCOMPLETO,RASTER,"0",480,240,HORIZONTAL,"gaelco2.cpp"
+touchgon,"Touch & Go (Non North America)","1995",Gaelco,touchgo,touchgo,-,YES,NO,NO,NO,NO,"gaelco2.cpp",INCOMPLETO,RASTER,"0",480,240,HORIZONTAL,"gaelco2.cpp"
+touchgo,"Touch & Go (World)","1995",Gaelco,-,-,-,YES,NO,NO,NO,NO,"gaelco2.cpp",INCOMPLETO,RASTER,"0",480,240,HORIZONTAL,"gaelco2.cpp"
+tdfeverj,"TouchDown Fever (Japan)","1987",SNK,tdfever,tdfever,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"90",400,224,VERTICAL,snk.cpp
+tdfever,"TouchDown Fever (US)","1987",SNK,-,-,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"90",400,224,VERTICAL,snk.cpp
+"tdfever2","TouchDown Fever 2","1988",SNK,tdfever,tdfever,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"90",400,224,VERTICAL,snk.cpp
+"tdfever2b","TouchDown Fever 2 (bootleg)","1988",bootleg,tdfever,tdfever,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"90",400,224,VERTICAL,snk.cpp
+"cyberbalt1","Tournament Cyberball 2072 (rev 1)","1989","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+cyberbalt,"Tournament Cyberball 2072 (rev 2)","1989","Atari Games",cyberbal,cyberbal,-,YES,NO,NO,NO,NO,cyberbal.cpp,BUONO,RASTER,"0",672,240,HORIZONTAL,cyberbal.cpp
+cprogolfj,"Tournament Pro Golf (DECO Cassette) (Japan)","1981","Data East Corporation",cprogolf,cprogolf,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+cprogolf,"Tournament Pro Golf (DECO Cassette) (US)","1981","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+trackfld,"Track & Field","1983",Konami,-,-,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+trackfldu,"Track & Field (Centuri, unencrypted)","1983","Konami (Centuri license)",trackfld,trackfld,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+trackfldc,"Track & Field (Centuri)","1983","Konami (Centuri license)",trackfld,trackfld,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+trackfldnz,"Track & Field (NZ bootleg?)","1982","bootleg? (Goldberg Enterprizes Inc.)",trackfld,trackfld,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+pc_tkfld,"Track & Field (PlayChoice-10)","1987","Konami (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+tripool,"Tri-Pool (Casino Tech)","1981","Noma (Casino Tech license)",-,-,-,YES,NO,NO,NO,NO,jack.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,jack.cpp
+tripoola,"Tri-Pool (Costal Games)","1981","Noma (Costal Games license)",tripool,tripool,-,YES,NO,NO,NO,NO,jack.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,jack.cpp
+troangel,"Tropical Angel","1983",Irem,-,-,-,YES,NO,NO,NO,NO,"m57.cpp",BUONO,RASTER,"0",240,240,HORIZONTAL,"m57.cpp"
+twinbskt,"Twin Basket","1995","Automatics Pasqual",-,-,-,YES,NO,NO,YES,NO,twinbskt.cpp,PRELIMINARE,-,"0",0,0,-,twinbskt.cpp
+"vball2pjb","U.S. Championship V'ball (bootleg of Japan set)","1988",bootleg,vball,vball,-,YES,NO,NO,NO,NO,vball.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vball.cpp
+vballb,"U.S. Championship V'ball (bootleg of US set)","1988",bootleg,vball,vball,-,YES,NO,NO,NO,NO,vball.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vball.cpp
+"vball2pj","U.S. Championship V'ball (Japan)","1988","Technos Japan",vball,vball,-,YES,NO,NO,NO,NO,vball.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vball.cpp
+vball,"U.S. Championship V'ball (US)","1988","Technos Japan",-,-,-,YES,NO,NO,NO,NO,vball.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vball.cpp
+usclssic,"U.S. Classic","1989",Seta,-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"270",384,240,VERTICAL,seta.cpp
+ultennis,"Ultimate Tennis","1993","Art & Magic",-,-,-,YES,NO,NO,NO,NO,artmagic.cpp,BUONO,RASTER,"0",320,256,HORIZONTAL,artmagic.cpp
+ultennisj,"Ultimate Tennis (v 1.4, Japan)","1993","Art & Magic (Banpresto license)",ultennis,ultennis,-,YES,NO,NO,NO,NO,artmagic.cpp,BUONO,RASTER,"0",320,256,HORIZONTAL,artmagic.cpp
+prospdp,"Unknown Compumatic ProSPDP based darts machine","1997",Compumatic,-,-,-,YES,NO,NO,YES,NO,microdar.cpp,PRELIMINARE,-,"0",0,0,-,microdar.cpp
+"v0bowl","unknown VRender0+ bowling game","200?","A1 Amusement One",-,-,-,YES,NO,NO,NO,NO,"v0bowl.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"v0bowl.cpp"
+upyoural,"Up Your Alley","1986",Cinematronics,alleymas,alleymas,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+vgoalsoc,"V Goal Soccer (Europe)","1994",Tecmo,-,-,-,YES,NO,NO,NO,NO,gstriker.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,gstriker.cpp
+vgoalsca,"V Goal Soccer (US/Japan/Korea)","1994",Tecmo,vgoalsoc,vgoalsoc,-,YES,NO,NO,NO,NO,gstriker.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,gstriker.cpp
+vsnetscra,"Versus Net Soccer (ver AAA)","1996",Konami,vsnetscr,vsnetscr,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+vsnetscreb,"Versus Net Soccer (ver EAB)","1996",Konami,vsnetscr,vsnetscr,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+vsnetscr,"Versus Net Soccer (ver EAD)","1996",Konami,konamigx,-,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+vsnetscrj,"Versus Net Soccer (ver JAB)","1996",Konami,vsnetscr,vsnetscr,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+vsnetscru,"Versus Net Soccer (ver UAB)","1996",Konami,vsnetscr,vsnetscr,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",576,224,HORIZONTAL,konamigx.cpp
+victnine,"Victorious Nine","1984",Taito,-,-,-,YES,NO,NO,NO,NO,flstory.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,flstory.cpp
+"8ball","Video Eight Ball","1982","Century Electronics",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+"8ball1","Video Eight Ball (Rev.1)","1982","Century Electronics","8ball","8ball",-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+hustler,"Video Hustler","1981",Konami,-,-,-,YES,NO,NO,NO,NO,scobra.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scobra.cpp
+hustlerb,"Video Hustler (bootleg, set 1)","1981","bootleg (Digimatic)",hustler,hustler,-,YES,NO,NO,NO,NO,scobra.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scobra.cpp
+"hustlerb4","Video Hustler (bootleg, set 2)","1981",bootleg,hustler,hustler,-,YES,NO,NO,NO,NO,scobra.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scobra.cpp
+"hustlerb5","Video Hustler (bootleg, set 3)","1981",bootleg,hustler,hustler,-,YES,NO,NO,NO,NO,scobra.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scobra.cpp
+"hustlerb6","Video Hustler (bootleg, set 4)","1981",bootleg,hustler,hustler,-,YES,NO,NO,NO,NO,scobra.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,scobra.cpp
+hustlerd,"Video Hustler (Dynamo Games)","1981","Konami (Dynamo Games license)",hustler,hustler,-,YES,NO,NO,NO,NO,scobra.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scobra.cpp
+vpool,"Video Pool (bootleg on Moon Cresta hardware)","1981",bootleg,hustler,hustler,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+"hustlerb3","Video Pool (Video Hustler bootleg)","1981","bootleg (Videotron)",hustler,hustler,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+vathlete,"Virtua Athletics / Virtua Athlete (GDS-0019)","2001",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+vathletep,"Virtua Athletics / Virtua Athlete (prototype)","2001",Sega,vathlete,vathlete,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+vbowlhk,"Virtua Bowling (Hong Kong, V101HJS)","1996","IGS / Tai Tin Amusement",vbowl,vbowl,-,YES,NO,NO,NO,NO,"igs011.cpp",INCOMPLETO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+vbowlj,"Virtua Bowling (Japan, V100JCM)","1996","IGS / Alta",vbowl,vbowl,-,YES,NO,NO,NO,NO,"igs011.cpp",INCOMPLETO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+vbowl,"Virtua Bowling (World, V101XCM)","1996",IGS,-,-,-,YES,NO,NO,NO,NO,"igs011.cpp",INCOMPLETO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+dygolf,"Virtua Golf / Dynamic Golf (Rev A) (GDS-0009A)","2001",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+virnbao,"Virtua NBA","2000",Sega,virnba,virnba,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+virnbapa,"Virtua NBA (prototype, 15.11)","1999",Sega,virnba,virnba,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+virnbap,"Virtua NBA (prototype)","1999",Sega,virnba,virnba,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+virnba,"Virtua NBA (USA)","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+vstrikero,"Virtua Striker","1994",Sega,vstriker,vstriker,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+vstriker,"Virtua Striker (Revision A)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+"vs29815","Virtua Striker 2 '98 (Step 1.5)","1998",Sega,"vs298","vs298",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs298","Virtua Striker 2 '98 (Step 2.0)","1998",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs299a","Virtua Striker 2 '99 (Export, USA, Revision A)","1998",Sega,"vs2v991","vs2v991",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs299","Virtua Striker 2 '99 (Export, USA)","1998",Sega,"vs2v991","vs2v991",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs29915a","Virtua Striker 2 '99 (Step 1.5, Export, USA)","1998",Sega,"vs2v991","vs2v991",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs2v991","Virtua Striker 2 '99.1 (Export, USA, Revision B)","1998",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs299j","Virtua Striker 2 '99.1 (Japan, Revision B)","1998",Sega,"vs2v991","vs2v991",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs29915","Virtua Striker 2 '99.1 (Step 1.5, Export, USA, Revision B)","1998",Sega,"vs2v991","vs2v991",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs29915j","Virtua Striker 2 '99.1 (Step 1.5, Japan, Revision B)","1998",Sega,"vs2v991","vs2v991",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs215","Virtua Striker 2 (Step 1.5, Export, USA)","1997",Sega,"vs2","vs2",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs215o","Virtua Striker 2 (Step 1.5, Japan)","1997",Sega,"vs2","vs2",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs2","Virtua Striker 2 (Step 2.0, Export, USA)","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"vs2_2ko","Virtua Striker 2 Ver. 2000","1999",Sega,"vs2_2k","vs2_2k",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"vs2_2k","Virtua Striker 2 Ver. 2000 (Rev C)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"vs2002ex","Virtua Striker 2002 (Export) (GDT-0002)","2002","Sega / Amusement Vision",triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs2002j","Virtua Striker 2002 (Japan) (GDT-0001)","2002","Sega / Amusement Vision",triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs2002t3","Virtua Striker 2002 (Type 3) (GDT-0012)","2004","Sega / Amusement Vision",triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vstrik3","Virtua Striker 3 (GDS-0006)","2001",Sega,"naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"vstrik3c","Virtua Striker 3 (World, Rev B)","2001","Amusement Vision / Sega","naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"vstrik3co","Virtua Striker 3 (World)","2001","Amusement Vision / Sega","vstrik3c","vstrik3c",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"vs4e","Virtua Striker 4 (Asia, Rev B) (GDT-0014B)","2005",Sega,"vs4","vs4",-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs4eo","Virtua Striker 4 (Asia) (GDT-0014)","2004",Sega,"vs4","vs4",-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs4","Virtua Striker 4 (Export, Rev A) (GDT-0015A)","2005",Sega,triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs4o","Virtua Striker 4 (Export) (GDT-0015)","2004",Sega,"vs4","vs4",-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs4jc","Virtua Striker 4 (Japan, Rev C) (GDT-0013C)","2004",Sega,"vs4j","vs4j",-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs4j","Virtua Striker 4 (Japan, Rev E) (GDT-0013E)","2005",Sega,triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs42k6ex","Virtua Striker 4 Ver.2006 (Export) (GDT-0021)","2006",Sega,triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs42006b","Virtua Striker 4 Ver.2006 (Japan, Rev B) (GDT-0020B)","2006",Sega,"vs42006","vs42006",-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"vs42006","Virtua Striker 4 Ver.2006 (Japan, Rev D) (GDT-0020D)","2006",Sega,triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+vtennis,"Virtua Tennis / Power Smash","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+vtennisg,"Virtua Tennis / Power Smash (GDS-0011)","2001",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"vtenis2c","Virtua Tennis 2 / Power Smash 2 (Rev A)","2001",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"vtennis2","Virtua Tennis 2 / Power Smash 2 (Rev A) (GDS-0015A)","2001",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"vtennis3","Virtua Tennis 3 (Japan)","2006",Sega,lindbios,-,-,YES,NO,NO,NO,YES,lindbergh.cpp,PRELIMINARE,-,"0",0,0,-,lindbergh.cpp
+virtpool,"Virtual Pool","1998","Incredible Technologies",iteagle,-,-,YES,NO,NO,NO,YES,iteagle.cpp,BUONO,RASTER,"0",512,384,HORIZONTAL,iteagle.cpp
+pc_vball,"Volley Ball (PlayChoice-10)","1986",Nintendo,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"vs10yardj","Vs 10-Yard Fight (Japan)","1984",Irem,"10yard","10yard",-,YES,NO,NO,NO,NO,"m58.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"m58.cpp"
+"vs10yardu","Vs 10-Yard Fight (US, Taito license)","1984","Irem (Taito license)","10yard","10yard",-,YES,NO,NO,NO,NO,"m58.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"m58.cpp"
+"vs10yard","Vs 10-Yard Fight (World, 11/05/84)","1984",Irem,"10yard","10yard",-,YES,NO,NO,NO,NO,"m58.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"m58.cpp"
+vsgongf,"VS Gong Fight","1984",Kaneko,-,-,-,YES,NO,NO,NO,NO,tsamurai.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,tsamurai.cpp
+rbibb,"Vs. Atari R.B.I. Baseball (set 1)","1986",Namco,-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+rbibba,"Vs. Atari R.B.I. Baseball (set 2)","1986",Namco,rbibb,rbibb,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vsbballjb,"Vs. BaseBall (Japan, set BA A-1)","1984","Nintendo Co., Ltd.",vsbball,vsbball,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vsbballja,"Vs. BaseBall (Japan, set BA A-2)","1984","Nintendo Co., Ltd.",vsbball,vsbball,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vsbballj,"Vs. BaseBall (Japan, set BA A-3)","1984","Nintendo Co., Ltd.",vsbball,vsbball,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vsbball,"Vs. BaseBall (US, set BA E-1)","1984","Nintendo of America",-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+hotsmash,"Vs. Hot Smash","1987","Kaneko / Taito",-,-,-,YES,NO,NO,NO,NO,superqix.cpp,BUONO,RASTER,"90",256,224,VERTICAL,superqix.cpp
+vsslalom,"Vs. Slalom","1986","Rare Coin-It Inc.",-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vssoccer,"Vs. Soccer (set SC4-2 A)","1985",Nintendo,-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vssoccera,"Vs. Soccer (set SC4-3 ?)","1985",Nintendo,vssoccer,vssoccer,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+ladygolf,"Vs. Stroke & Match Golf (Ladies Version, set LG4 ?)","1984",Nintendo,smgolf,smgolf,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+ladygolfe,"Vs. Stroke & Match Golf (Ladies Version, set LG4 E)","1984",Nintendo,smgolf,smgolf,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+smgolfb,"Vs. Stroke & Match Golf (Men Version, set GF4-2 ?)","1984",Nintendo,smgolf,smgolf,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+smgolf,"Vs. Stroke & Match Golf (Men Version, set GF4-2 F)","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+smgolfj,"Vs. Stroke & Match Golf (Men Version) (Japan, set GF3 B)","1984","Nintendo Co., Ltd.",smgolf,smgolf,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+tkoboxng,"Vs. T.K.O. Boxing","1987","Namco / Data East USA",-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vstennisa,"Vs. Tennis (Japan/USA, set 2)","1984","Nintendo Co., Ltd.",vstennis,vstennis,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vstennisb,"Vs. Tennis (Japan/USA, set 3)","1984","Nintendo Co., Ltd.",vstennis,vstennis,-,YES,NO,NO,NO,NO,vsnes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vstennis,"Vs. Tennis (Japan/USA, set TE A-3)","1984","Nintendo Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+wwjgtin,"Wai Wai Jockey Gate-In!","1984","Jaleco / Casio",-,-,-,YES,NO,NO,NO,NO,lasso.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,lasso.cpp
+wmatch,"Water Match (315-5064)","1984",Sega,-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"270",479,224,VERTICAL,"system1.cpp"
+waterski,"Water Ski","1983","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,taitosj.cpp,BUONO,RASTER,"270",256,224,VERTICAL,taitosj.cpp
+"wg3dh","Wayne Gretzky's 3D Hockey (ver 1.3)","1996","Atari Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+"wg3dhfe","Wayne Gretzky's 3D Hockey Fatality Edition (prototype)","1996","Atari Games","wg3dh","wg3dh",-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+wjammers,"Windjammers / Flying Power Disc","1994","Data East Corporation",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+winspike,"Winning Spike (ver EAA)","1997",Konami,konamigx,-,-,YES,NO,NO,NO,NO,konamigx.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,konamigx.cpp
+winspikej,"Winning Spike (ver JAA)","1997",Konami,winspike,winspike,-,YES,NO,NO,NO,NO,konamigx.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,konamigx.cpp
+winterht,"Winter Heat (JUET 971012 V1.000)","1997",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"wondl96","Wonder League '96 (Korea)","1996",SemiCom,-,-,-,YES,NO,NO,NO,NO,tumbleb.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,tumbleb.cpp
+wlstar,"Wonder League Star - Sok-Magicball Fighting (Korea)","1995",Mijin,-,-,-,YES,NO,NO,NO,NO,tumbleb.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,tumbleb.cpp
+wbeachvl,"World Beach Volley (set 1, PIC16C57 audio CPU)","1995",Playmark,-,-,-,YES,NO,NO,NO,NO,playmark.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,playmark.cpp
+wbeachvla,"World Beach Volley (set 1, S87C751 audio CPU)","1995",Playmark,wbeachvl,wbeachvl,-,YES,NO,NO,NO,NO,playmark.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,playmark.cpp
+"wbeachvl2","World Beach Volley (set 2)","1995",Playmark,wbeachvl,wbeachvl,-,YES,NO,NO,NO,NO,playmark.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,playmark.cpp
+"wbeachvl3","World Beach Volley (set 3)","1995",Playmark,wbeachvl,wbeachvl,-,YES,NO,NO,NO,NO,playmark.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,playmark.cpp
+mt_wcsoc,"World Championship Soccer (Mega-Tech)","1989",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"wcbowl10","World Class Bowling (v1.0)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl11","World Class Bowling (v1.1)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl12","World Class Bowling (v1.2)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl13","World Class Bowling (v1.3)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl13j","World Class Bowling (v1.3J, Japan)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl14","World Class Bowling (v1.4)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl15","World Class Bowling (v1.5)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl16","World Class Bowling (v1.6)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl161","World Class Bowling (v1.61)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl165","World Class Bowling (v1.65)","1995","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+wcbowl,"World Class Bowling (v1.66)","1995","Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+wcbowldx,"World Class Bowling Deluxe (v2.00)","1999","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl130","World Class Bowling Tournament (v1.30)","1997","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wcbowl140","World Class Bowling Tournament (v1.40)","1997","Incredible Technologies",wcbowl,wcbowl,-,YES,NO,NO,NO,NO,"itech32.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+"wccf310j","World Club Champion Football European Clubs 2004-2005 (Asia) (CDV-10013)","2005",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wccf331e","World Club Champion Football European Clubs 2004-2005 Ver.1.1 (Export) (CDV-10015)","2005",Sega,"wccf322e","wccf322e",-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wccf322e","World Club Champion Football European Clubs 2004-2005 Ver.3.22 (Export) (CDV-10015P)","2005",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wccf420e","World Club Champion Football European Clubs 2005-2006 (Export) (CDV-10027)","2006",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wccf1dup","World Club Champion Football Serie A 2001-2002 DIMM FIRM Ver.3.03 (CDP-10003)","2002","Hitmaker / Sega",naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wccf116","World Club Champion Football Serie A 2001-2002 Ver.2 (Japan) (CDP-10001C)","2003","Hitmaker / Sega",naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wccf2chk","World Club Champion Football Serie A 2002-2003 Drive Checker (CDV-10007)","2004","Hitmaker / Sega",naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wccf212e","World Club Champion Football Serie A 2002-2003 Ver.2.12 (Italy) (CDV-10002)","2004","Hitmaker / Sega",naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wccf234j","World Club Champion Football Serie A 2002-2003 Ver.2.34 (Japan) (CDV-10008)","2004","Hitmaker / Sega",naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+wcombatu,"World Combat / Warzaid (ver UCD:B)","2002",Konami,wcombat,wcombat,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"twcup90bb","World Cup '90 (European hack, different title)","1989",bootleg,"twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90b.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90b.cpp"
+"wcvol95","World Cup Volley '95 (Asia v1.0)","1995","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,"deco156.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"deco156.cpp"
+"wcvol95j","World Cup Volley '95 (Japan v1.0)","1995","Data East Corporation","wcvol95","wcvol95",-,YES,NO,NO,NO,NO,"deco156.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"deco156.cpp"
+"wcvol95x","World Cup Volley '95 Extra Version (Asia v2.0B)","1995","Data East Corporation","wcvol95","wcvol95",-,YES,NO,NO,NO,NO,"deco156.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"deco156.cpp"
+ar_dart,"World Darts (Arcadia, set 1, V 2.1)","1987","Arcadia Systems",ar_bios,-,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+"ar_dart2","World Darts (Arcadia, set 2)","1987","Arcadia Systems",ar_dart,ar_dart,-,YES,NO,NO,NO,NO,arsystems.cpp,PRELIMINARE,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+wldkicksj,"World Kicks (Japan, WK1 Ver.A)","2000",Namco,wldkicks,wldkicks,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+wldkicksu,"World Kicks (US, WK3 Ver.A)","2000",Namco,wldkicks,wldkicks,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+wldkicks,"World Kicks (World, WK2 Ver.A)","2000",Namco,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+wldkickspj,"World Kicks PCB (Japan, WKC1 Ver.A)","2000",Namco,wldkicks,wldkicks,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+wldkickspw,"World Kicks PCB (World, WKC2 Ver.A)","2000",Namco,wldkicks,wldkicks,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wpksocv2","World PK Soccer V2 (ver 1.1)","1996",Jaleco,-,-,-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+"smlg99","World Series 99 / Super Major League 99","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+wsbbgd,"World Series Baseball / Super Major League (GDS-0010)","2001",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"wseries0","World Series: The Season (rev 0)","1985",Cinematronics,wseries,wseries,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+wseries,"World Series: The Season (rev 1)","1985",Cinematronics,-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+"wsf3","World Soccer Finals (rev 3)","1990","Leland Corporation",wsf,wsf,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+wsf,"World Soccer Finals (rev 4)","1990","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+"wswe2k3","World Soccer Winning Eleven Arcade Game 2003","2003",Konami,kpython,-,-,YES,NO,NO,NO,YES,kpython.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,kpython.cpp
+wswe,"World Soccer Winning Eleven Arcade Game Style","2002",Konami,kpython,-,-,YES,NO,NO,NO,YES,kpython.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,kpython.cpp
+wtennis,"World Tennis","1982",bootleg,-,-,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",240,240,VERTICAL,btime.cpp
+ar_socc,"World Trophy Soccer (Arcadia, V 3.0)","1989","Arcadia Systems",ar_bios,-,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+"twcup90b2","Worldcup '90 (hack)","1989",bootleg,"twcup90","twcup90",-,YES,NO,NO,NO,NO,"wc90b.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"wc90b.cpp"
+mt_wwar,"Wrestle War (Mega-Tech)","1991",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"wrestwar1d","Wrestle War (set 1, Japan) (bootleg of FD1094 317-0090 set)","1989",bootleg,wrestwar,wrestwar,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+"wrestwar1","Wrestle War (set 1, Japan) (FD1094 317-0090)","1989",Sega,wrestwar,wrestwar,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+"wrestwar2d","Wrestle War (set 2, World) (bootleg of FD1094 317-0102 set)","1989",bootleg,wrestwar,wrestwar,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+"wrestwar2","Wrestle War (set 2, World) (FD1094 317-0102)","1989",Sega,wrestwar,wrestwar,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+wrestwar,"Wrestle War (set 3, World) (8751 317-0103)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+wwfroyal,"WWF Royal Rumble","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+wwfsstarb,"WWF Superstars (bootleg)","1989",bootleg,wwfsstar,wwfsstar,-,YES,NO,NO,NO,NO,wwfsstar.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,wwfsstar.cpp
+wwfsstar,"WWF Superstars (Europe)","1989","Technos Japan",-,-,-,YES,NO,NO,NO,NO,wwfsstar.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,wwfsstar.cpp
+wwfsstarj,"WWF Superstars (Japan)","1989","Technos Japan",wwfsstar,wwfsstar,-,YES,NO,NO,NO,NO,wwfsstar.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,wwfsstar.cpp
+"wwfsstaru4","WWF Superstars (US revision 4)","1989","Technos Japan",wwfsstar,wwfsstar,-,YES,NO,NO,NO,NO,wwfsstar.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,wwfsstar.cpp
+"wwfsstaru6","WWF Superstars (US revision 6)","1989","Technos Japan",wwfsstar,wwfsstar,-,YES,NO,NO,NO,NO,wwfsstar.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,wwfsstar.cpp
+"wwfsstaru7","WWF Superstars (US revision 7)","1989","Technos Japan",wwfsstar,wwfsstar,-,YES,NO,NO,NO,NO,wwfsstar.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,wwfsstar.cpp
+wwfwfestj,"WWF WrestleFest (Japan)","1991","Technos Japan (Tecmo license)",wwfwfest,wwfwfest,-,YES,NO,NO,NO,NO,"ddragon3.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"ddragon3.cpp"
+wwfwfestk,"WWF WrestleFest (Korea)","1991","Technos Japan (Tecmo license)",wwfwfest,wwfwfest,-,YES,NO,NO,NO,NO,"ddragon3.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"ddragon3.cpp"
+wwfwfestub,"WWF WrestleFest (US bootleg)","1991",bootleg,wwfwfest,wwfwfest,-,YES,NO,NO,NO,NO,"ddragon3.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"ddragon3.cpp"
+wwfwfestu,"WWF WrestleFest (US, rev 2)","1991","Technos Japan",wwfwfest,wwfwfest,-,YES,NO,NO,NO,NO,"ddragon3.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"ddragon3.cpp"
+"wwfwfestu1","WWF WrestleFest (US)","1991","Technos Japan",wwfwfest,wwfwfest,-,YES,NO,NO,NO,NO,"ddragon3.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"ddragon3.cpp"
+wwfwfest,"WWF WrestleFest (World)","1991","Technos Japan (Tecmo license)",-,-,-,YES,NO,NO,NO,NO,"ddragon3.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"ddragon3.cpp"
+wwfmaniap,"WWF: Wrestlemania (proto 2.01 06/07/95)","1995",Midway,wwfmania,wwfmania,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+wwfmaniac,"WWF: Wrestlemania (rev 1.1 07/11/95)","1995",Midway,wwfmania,wwfmania,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+wwfmaniab,"WWF: Wrestlemania (rev 1.20 08/02/95)","1995",Midway,wwfmania,wwfmania,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+wwfmania,"WWF: Wrestlemania (rev 1.30 08/10/95)","1995",Midway,-,-,-,YES,NO,NO,NO,NO,midwunit.cpp,BUONO,RASTER,"0",400,254,HORIZONTAL,midwunit.cpp
+xtheball,"X the Ball","1991",Rare,-,-,-,YES,NO,NO,NO,NO,xtheball.cpp,BUONO,RASTER,"0",512,224,HORIZONTAL,xtheball.cpp
+yachtmn,Yachtsman,"1982","Sanritsu / Esco",mermaid,mermaid,-,YES,NO,NO,NO,NO,mermaid.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,mermaid.cpp
+kingyoch,"Yataimura Kingyosukui (4-player, China, Ver 1.000)","2009",Sega,kingyo,kingyo,-,YES,NO,NO,NO,YES,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+znpwfv,"Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000)","1997",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+znpwfvt,"Zen Nippon Pro-Wrestling Featuring Virtua (T 971123 V1.000)","1997",Sega,znpwfv,znpwfv,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp

@@ -1,0 +1,22 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+antiairc,"Anti-Aircraft [TTL]","1975",Atari,-,-,-,YES,NO,NO,NO,NO,atarittl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,atarittl.cpp
+attckexd,"Attack (set 1) [TTL]","1977",Exidy,-,-,-,YES,NO,NO,NO,NO,exidyttl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,exidyttl.cpp
+"attckexd2","Attack (set 2) [TTL]","1977",Exidy,attckexd,attckexd,-,YES,NO,NO,NO,NO,exidyttl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,exidyttl.cpp
+avenger,"Avenger [TTL]","1975",Electra,-,-,-,YES,NO,NO,NO,NO,electra.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,electra.cpp
+bazookabr,"Bazooka (Brazil) [TTL]","1977","Taito do Brasil",bazooka,bazooka,-,YES,NO,NO,NO,NO,pse.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,pse.cpp
+bazooka,"Bazooka [TTL]","1976","Project Support Engineering",-,-,-,YES,NO,NO,NO,NO,pse.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,pse.cpp
+biplane,"Biplane [TTL]","1975","Fun Games",-,-,-,YES,NO,NO,NO,NO,fungames.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,fungames.cpp
+"biplane4","Biplane 4 [TTL]","1976","Fun Games",-,-,-,YES,NO,NO,NO,NO,fungames.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,fungames.cpp
+bombaway,"Bombs Away [TTL]","1976",Meadows,-,-,-,YES,NO,NO,NO,NO,meadwttl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,meadwttl.cpp
+cgunship,"Cobra Gunship [TTL]","1976",Meadows,-,-,-,YES,NO,NO,NO,NO,meadwttl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,meadwttl.cpp
+dpatrola,"Desert Patrol (set 2) [TTL]","1977","Project Support Engineering (Telegames license)",dpatrol,dpatrol,-,YES,NO,NO,NO,NO,pse.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,pse.cpp
+dpatrol,"Desert Patrol [TTL]","1977","Project Support Engineering",-,-,-,YES,NO,NO,NO,NO,pse.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,pse.cpp
+gametree,"Game Tree [TTL]","1978","Project Support Engineering",-,-,-,YES,NO,NO,NO,NO,pse.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,pse.cpp
+gunman,"Gunman [TTL]","1977",Taito,-,-,-,YES,NO,NO,NO,NO,taitottl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,taitottl.cpp
+jetfight,"Jet Fighter/Jet Fighter Cocktail/Launch Aircraft (set 1) [TTL]","1975",Atari,-,-,-,YES,NO,NO,NO,NO,atarittl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,atarittl.cpp
+jetfighta,"Jet Fighter/Jet Fighter Cocktail/Launch Aircraft (set 2) [TTL]","1975",Atari,jetfight,jetfight,-,YES,NO,NO,NO,NO,atarittl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,atarittl.cpp
+missilex,"Missile-X [TTL]","1977",Taito,-,-,-,YES,NO,NO,NO,NO,taitottl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,taitottl.cpp
+outlaw,"Outlaw [TTL]","1976",Atari,-,-,-,YES,NO,NO,NO,NO,atarittl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,atarittl.cpp
+qwakttl,"Qwak!/Quack [TTL]","1974",Atari,-,-,-,YES,NO,NO,NO,NO,atarittl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,atarittl.cpp
+sharkusb,"Shark [TTL]","1975","US Billiards Inc.",-,-,-,YES,NO,NO,NO,NO,usbilliards.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,usbilliards.cpp
+sharkjaw,"Shark JAWS [TTL]","1975","Atari/Horror Games",-,-,-,YES,NO,NO,NO,NO,atarittl.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,atarittl.cpp

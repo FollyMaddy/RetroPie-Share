@@ -1,0 +1,72 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+spacfurybl,"Advisor (Italian bootleg of Space Fury)","1981",bootleg,spacfury,spacfury,-,YES,NO,NO,NO,NO,"segag80v.cpp",INCOMPLETO,VECTOR,"180",0,0,-,"segag80v.cpp"
+amidarc,"Amidar (Cirsa bootleg)","1982","bootleg (Cirsa)",amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"r800","ASCII R800",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/cpu/z80/r800.cpp"
+asukaja,"Asuka & Asuka (Japan)","1988","Taito Corporation",asuka,asuka,-,YES,NO,NO,NO,NO,asuka.cpp,BUONO,RASTER,"270",320,240,VERTICAL,asuka.cpp
+bucanera,"Buccaneer (set 2)","1981","hack (Video Research)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"gt913","Casio GT913F",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/cpu/h8/gt913.cpp"
+"gt913_io_hle","Casio GT913F I/O (HLE)",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/machine/gt913_io.cpp"
+"gt913_intc","Casio GT913F interrupt controller",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/cpu/h8/h8_intc.cpp"
+"gt913_kbd_hle","Casio GT913F keyboard controller (HLE)",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/machine/gt913_kbd.cpp"
+"gt913_sound_hle","Casio GT913F sound (HLE)",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/machine/gt913_snd.cpp"
+cityatta,"City Attack (Petaco S.A., bootleg of Pleiads)","1981","bootleg (Petaco S.A.)",pleiads,pleiads,-,YES,NO,NO,NO,NO,phoenix.cpp,INCOMPLETO,RASTER,"90",256,208,VERTICAL,phoenix.cpp
+"cosmica2a","Cosmic Alien (early version II?)","1979",Universal,cosmica,cosmica,cosmica,YES,NO,NO,NO,NO,cosmic.cpp,INCOMPLETO,RASTER,"270",256,192,VERTICAL,cosmic.cpp
+"cosmica22","Cosmic Alien (version II, set 2)","1979",Universal,cosmica,cosmica,cosmica,YES,NO,NO,NO,NO,cosmic.cpp,INCOMPLETO,RASTER,"270",256,192,VERTICAL,cosmic.cpp
+"cosmica23","Cosmic Alien (version II, set 3)","1979",Universal,cosmica,cosmica,cosmica,YES,NO,NO,NO,NO,cosmic.cpp,INCOMPLETO,RASTER,"270",256,192,VERTICAL,cosmic.cpp
+"ctk551","CTK-551","1999",Casio,-,-,-,YES,NO,NO,NO,NO,"ctk551.cpp",PRELIMINARE,LCD,"0",48,16,HORIZONTAL,"ctk551.cpp"
+cscet,"Elite Champion Challenger (Travemünde TM version)","1981","Fidelity Electronics",csce,csce,-,YES,NO,NO,NO,NO,fidel_csc.cpp,BUONO,-,"0",0,0,-,fidel_csc.cpp
+boatrace,"Exciting Boat Race","1993",Sega,-,-,-,YES,NO,NO,YES,NO,speedbsk.cpp,PRELIMINARE,LCD,"0",121,19,HORIZONTAL,speedbsk.cpp
+floritas,"Floritas (Moon Cresta bootleg)","1980",bootleg,mooncrst,mooncrst,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+floritasm,"Floritas (Multivideo Spanish Moon Cresta bootleg)","1980","bootleg (Multivideo)",mooncrst,mooncrst,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"guttangts3","Guttang Gottong (Sede 3 bootleg on Galaxian hardware)","1982","bootleg (Sede 3)",locomotn,locomotn,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+xga_copro,"IBM XGA Coprocessor",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/video/pc_vga.cpp
+icecoldf,"Ice Cold Beer (set 2)","1983",Taito,icecold,icecold,-,YES,NO,NO,YES,NO,icecold.cpp,PRELIMINARE,-,"0",0,0,-,icecold.cpp
+komemokos,"Komemokos ('Pac-Man (Cirsa, Spanish bootleg)' hack)","199?",hack,puckman,puckman,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+"ks32","KS-32","1992",Ensoniq,"sq2","sq2",-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+jlasvegas,"Las Vegas (Jeutel, set 1)","198?",Jeutel,-,-,-,YES,NO,NO,NO,NO,tmspoker.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,tmspoker.cpp
+jlasvegasa,"Las Vegas (Jeutel, set 2)","198?",Jeutel,jlasvegas,jlasvegas,-,YES,NO,NO,NO,NO,tmspoker.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,tmspoker.cpp
+"laser128o","Laser 128 (original hardware)","1987","Video Technology","apple2c","apple2c",-,YES,NO,NO,NO,NO,"apple2e.cpp",BUONO,RASTER,"0",560,192,HORIZONTAL,"apple2e.cpp"
+luna,Luna,"1989?",Omron,-,-,-,YES,NO,NO,NO,NO,"luna_68k.cpp",PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,"luna_68k.cpp"
+manpuku,"Manpuku Suizokukan","2013",Sega,segasp,-,-,YES,NO,NO,NO,NO,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+meteora,"Meteor (Alca bootleg of Moon Cresta)","1980?","bootleg (Alca)",mooncrst,mooncrst,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"ms1600","Micro-SEP 1600","1987","ILCE / SEP",coco,coco,-,YES,NO,NO,NO,NO,"coco12.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"coco12.cpp"
+"nes_900218","NES Cart 900218 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/vrc_clones.cpp
+"nes_bmc_810305c","NES Cart BMC 81-03-05-C PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+"nes_bmc_830506c","NES Cart BMC 830506C PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/vrc_clones.cpp
+"nes_bmc_970630c","NES Cart BMC 970630C PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/multigame.cpp
+"nes_bmc_el86xc","NES Cart BMC EL860947C/EL861121C PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+"nes_bmc_f600","NES Cart BMC F600 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+"nes_bmc_gn91b","NES Cart BMC GN-91B PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/multigame.cpp
+"nes_bmc_jy208","NES Cart BMC JY-208 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+"nes_bmc_k3033","NES Cart BMC K-3033 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+"nes_bmc_l6in1","NES Cart BMC L6IN1 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+"nes_bmc_nc20mb","NES Cart BMC NC-20MB PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/multigame.cpp
+nes_resettxrom,"NES Cart BMC RESET-TXROM PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+"nes_bmc_sfc12","NES Cart BMC SFC-12 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+"nes_bmc_420y2k","NES Cart BMC Y2K 420 in 1 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/multigame.cpp
+nes_cocoma,"NES Cart Cocoma Core Pro PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc3_clones.cpp"
+nes_farid_slrom,"NES Cart Farid SLROM 8 in 1 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc1_clones.cpp"
+nes_farid_unrom,"NES Cart Farid UNROM 8 in 1 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/multigame.cpp
+"nes_huang2","NES Cart Huang-2 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/somari.cpp
+"nes_3014","NES Cart Sachen 3014 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/sachen.cpp
+nes_dpcmcart,"NES Cart Sealie DPCMcart PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/sealie.cpp
+"nes_srpg5in1","NES Cart Super RPG 5 in 1 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc1_clones.cpp"
+nes_szrom,"NES Cart SZROM (MMC-1) PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/nes/mmc1.cpp"
+"nes_ax40g","NES Cart UNL-AX-40G PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/vrc_clones.cpp
+"nes_th21311","NES Cart UNL-TH2131-1 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/vrc_clones.cpp
+"nes_2yudb","NES Cart Yu Yu Hakusho - Dragon Ball Z 2 in 1 PCB",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/bus/nes/vrc_clones.cpp
+"oti111_vga","Oak Technologies Spitfire 64111",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,src/devices/video/pc_vga.cpp
+pacmanblci,"Pac-Man (Cirsa, Spanish bootleg on Galaxian hardware)","1981","bootleg (Cirsa)",puckman,puckman,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+"pc6001mk2sr","PC-6001mkIISR (Japan)","1984",NEC,-,-,-,YES,NO,NO,NO,NO,"pc6001.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"pc6001.cpp"
+"pc6601sr","PC-6601SR ""Mr. PC"" (Japan)","1984",NEC,"pc6001","pc6001",-,YES,NO,NO,NO,NO,"pc6001.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"pc6001.cpp"
+"pengo6","Pengo (set 6, encrypted)","1982",Sega,pengo,pengo,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+"rs232_patch_box","RS-232 Patch Box",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/rs232/patchbox.cpp"
+"sun4_25","SPARCstation ELC (Sun 4/25)","1992","Sun Microsystems","sun4_300","sun4_300",-,YES,NO,NO,NO,NO,"sun4.cpp",PRELIMINARE,RASTER,"0",1152,900,HORIZONTAL,"sun4.cpp"
+speedbsk,"Speed Basketball","1992",Sega,-,-,-,YES,NO,NO,YES,NO,speedbsk.cpp,PRELIMINARE,LCD,"0",121,19,HORIZONTAL,speedbsk.cpp
+"sfz2alr1","Street Fighter Zero 2 Alpha (Asia 960805)","1996",Capcom,"sfz2al","sfz2al",-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+"smoto13","Super Rider (v1.3)","1996",Subsino,"smoto20","smoto20",-,YES,NO,NO,NO,NO,subsino.cpp,BUONO,RASTER,"0",512,224,HORIZONTAL,subsino.cpp
+trthuball,"Thunder Ball","1983",Tronica,trsrescue,trsrescue,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1599,1080,HORIZONTAL,"hh_sm510.cpp"
+"a2laser128o","VTech Laser 128 Internal Device (original hardware)",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/bus/a2bus/laser128.cpp"
+winspikea,"Winning Spike (ver AAA)","1997",Konami,winspike,winspike,-,YES,NO,NO,NO,NO,konamigx.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,konamigx.cpp
+kingyo,"Yataimura Kingyosukui (1-player, Japan, Ver 1.005)","2009",Sega,segasp,-,-,YES,NO,NO,NO,NO,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+"ez80","Zilog eZ80",-,-,-,-,-,NO,YES,NO,NO,NO,-,BUONO,-,"0",0,0,-,"src/devices/cpu/z80/ez80.cpp"

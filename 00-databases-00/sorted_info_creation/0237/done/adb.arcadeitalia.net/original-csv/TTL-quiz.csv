@@ -1,0 +1,2 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+trivia,"Trivia (Rev B) [TTL]","1975",Ramtek,-,-,-,YES,NO,NO,NO,NO,ramtek.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,ramtek.cpp

@@ -1,0 +1,23 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+ampscarp,"AMPS Car Phone","1998",Motorola,-,-,-,YES,NO,NO,NO,NO,ampscarp.cpp,PRELIMINARE,-,"0",0,0,-,ampscarp.cpp
+"eurit30","Eurit 30","1996",Ascom,-,-,-,YES,NO,NO,NO,NO,eurit.cpp,PRELIMINARE,LCD,"0",120,16,HORIZONTAL,eurit.cpp
+"iphone2g","iPhone (A1203)","2007",Apple,-,-,-,YES,NO,NO,NO,NO,"iphone2g.cpp",PRELIMINARE,RASTER,"0",320,480,HORIZONTAL,"iphone2g.cpp"
+tonto,"Merlin M1800 Tonto","1984","British Telecom Business Systems",-,-,-,YES,NO,NO,NO,NO,ql.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,ql.cpp
+minicom,"Minicom IV (1997-08-11)","1997",Ultratec,-,-,-,YES,NO,NO,NO,NO,minicom.cpp,PRELIMINARE,-,"0",0,0,-,minicom.cpp
+"mcom4_02","Minicom IV (2002-04-19)","2002",Ultratec,-,-,-,YES,NO,NO,NO,NO,minicom.cpp,PRELIMINARE,-,"0",0,0,-,minicom.cpp
+"noki3210","Nokia 3210","1999",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki3310","Nokia 3310","2000",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki3330","Nokia 3330","2001",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki3410","Nokia 3410","2002",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki5210","Nokia 5210","2002",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki6210","Nokia 6210","2000",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki6250","Nokia 6250","2000",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki7110","Nokia 7110","1999",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki8210","Nokia 8210","1999",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki8250","Nokia 8250","2000",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki8850","Nokia 8850","1999",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+"noki8890","Nokia 8890","2000",Nokia,-,-,-,YES,NO,NO,NO,NO,"nokia_3310.cpp",PRELIMINARE,LCD,"0",84,48,HORIZONTAL,"nokia_3310.cpp"
+teletup,TeleTUP,"2000","Alcatel / Telefonica",-,-,-,YES,NO,NO,NO,NO,"cit1500.cpp",PRELIMINARE,-,"0",0,0,-,"cit1500.cpp"
+"ti630","TI630 telephone","1999",Intelbras,-,-,-,YES,NO,NO,NO,NO,"ti630.cpp",PRELIMINARE,LCD,"0",96,18,HORIZONTAL,"ti630.cpp"
+icatel,"TPCI (Brazilian public payphone)","1995",Icatel,-,-,-,YES,NO,NO,NO,NO,icatel.cpp,PRELIMINARE,LCD,"0",96,18,HORIZONTAL,icatel.cpp
+trmavia,"TRMA VIA","2001","Alcatel / Telefonica",-,-,-,YES,NO,NO,NO,NO,"cit1500.cpp",PRELIMINARE,-,"0",0,0,-,"cit1500.cpp"

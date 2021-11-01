@@ -1,0 +1,281 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+bridgeca,"Advanced Bridge Challenger","1979","Fidelity Electronics",vbrc,vbrc,-,YES,NO,NO,NO,NO,fidel_card.cpp,INCOMPLETO,-,"0",0,0,-,fidel_card.cpp
+uvc,"Advanced Voice Chess Challenger","1980","Fidelity Electronics",vcc,vcc,-,YES,NO,NO,NO,NO,fidel_vcc.cpp,BUONO,-,"0",0,0,-,fidel_vcc.cpp
+"arbv2","ARB V2 Sargon 4.0","2012","hack (Steve Braid)",arb,arb,-,YES,NO,NO,NO,NO,ave_arb.cpp,BUONO,-,"0",0,0,-,ave_arb.cpp
+arb,"Auto Response Board","1980","AVE Micro Systems",-,-,-,YES,NO,NO,NO,NO,ave_arb.cpp,BUONO,-,"0",0,0,-,ave_arb.cpp
+avrmax,"AVR-Max Chess Computer (English)","2009",Elektor,-,-,-,YES,NO,NO,NO,NO,avrmax.cpp,BUONO,-,"0",0,0,-,avrmax.cpp
+avrmaxg,"AVR-Max-Schachzwerg (German)","2009",Elektor,avrmax,avrmax,-,YES,NO,NO,NO,NO,avrmax.cpp,BUONO,-,"0",0,0,-,avrmax.cpp
+backgamc,"Backgammon Challenger","1979","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_cc7.cpp",BUONO,-,"0",0,0,-,"fidel_cc7.cpp"
+bbcbc,"BBC Bridge Companion","1985",Unicard,-,-,-,YES,NO,NO,NO,NO,bbcbc.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,bbcbc.cpp
+borisa,"Boris (rev. 00)","1978","Applied Concepts",boris,boris,-,YES,NO,NO,NO,NO,aci_boris.cpp,BUONO,-,"0",0,0,-,aci_boris.cpp
+boris,"Boris (rev. 01)","1978","Applied Concepts",-,-,-,YES,NO,NO,NO,NO,aci_boris.cpp,BUONO,-,"0",0,0,-,aci_boris.cpp
+borisdpl,"Boris Diplomat","1979","Applied Concepts",-,-,-,YES,NO,NO,NO,NO,aci_borisdpl.cpp,BUONO,-,"0",0,0,-,aci_borisdpl.cpp
+bridgec,"Bridge Challenger","1979","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_card.cpp,INCOMPLETO,-,"0",0,0,-,fidel_card.cpp
+"bridgec3","Bridge Challenger III","1982","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_card.cpp,INCOMPLETO,-,"0",0,0,-,fidel_card.cpp
+csc,"Champion Sensory Chess Challenger","1981","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_csc.cpp,BUONO,-,"0",0,0,-,fidel_csc.cpp
+"checkc4","Checker Challenger (model ACR, 4 levels)","1978","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_cc10.cpp",BUONO,-,"0",0,0,-,"fidel_cc10.cpp"
+"checkc2","Checker Challenger (model CR, 2 levels)","1978","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_checkc2.cpp",BUONO,-,"0",0,0,-,"fidel_checkc2.cpp"
+"ch2001","Chess 2001","1984","CXG Systems / Newcrest Technology",-,-,-,YES,NO,NO,NO,NO,"cxg_ch2001.cpp",BUONO,-,"0",0,0,-,"cxg_ch2001.cpp"
+"cc1","Chess Challenger","1977","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_cc1.cpp",BUONO,-,"0",0,0,-,"fidel_cc1.cpp"
+"cc10","Chess Challenger ""10"" (model CCX, rev. B)","1978","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_cc10.cpp",BUONO,-,"0",0,0,-,"fidel_cc10.cpp"
+"cc10a","Chess Challenger ""10"" (model CCX)","1978","Fidelity Electronics","cc10","cc10",-,YES,NO,NO,NO,NO,"fidel_cc10.cpp",BUONO,-,"0",0,0,-,"fidel_cc10.cpp"
+"cc7","Chess Challenger ""7"" (set 1)","1980","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_cc7.cpp",BUONO,-,"0",0,0,-,"fidel_cc7.cpp"
+"cc7a","Chess Challenger ""7"" (set 2)","1979","Fidelity Electronics","cc7","cc7",-,YES,NO,NO,NO,NO,"fidel_cc7.cpp",BUONO,-,"0",0,0,-,"fidel_cc7.cpp"
+"cc10c","Chess Challenger (model UCC10, 10 levels)","1979","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_cc1.cpp",BUONO,-,"0",0,0,-,"fidel_cc1.cpp"
+"cc3","Chess Challenger (upgraded version, 3 levels)","1977","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_cc1.cpp",BUONO,-,"0",0,0,-,"fidel_cc1.cpp"
+"cc2150","Chess Champion 2150","1988","Saitek / Tandy Corporation",simultano,simultano,-,YES,NO,NO,NO,NO,saitek_simultano.cpp,BUONO,SVG,"0",436,540,HORIZONTAL,saitek_simultano.cpp
+"ccdelta1","Chess Champion: Delta-1","1980","SciSys / Novag",-,-,-,YES,NO,NO,NO,NO,"saitek_delta1.cpp",BUONO,-,"0",0,0,-,"saitek_delta1.cpp"
+"ccmk5","Chess Champion: Mark V","1981","SciSys / Philidor Software",-,-,-,YES,NO,NO,NO,NO,"saitek_mark5.cpp",BUONO,SVG,"0",628,720,HORIZONTAL,"saitek_mark5.cpp"
+"ccmk6","Chess Champion: Mark VI/Philidor","1982","SciSys / Philidor Software","ccmk5","ccmk5",-,YES,NO,NO,NO,NO,"saitek_mark5.cpp",BUONO,SVG,"0",628,720,HORIZONTAL,"saitek_mark5.cpp"
+"ccmk1","Chess Champion: MK I","1978","bootleg (Novag)",cmpchess,cmpchess,-,YES,NO,NO,NO,NO,compuchess.cpp,BUONO,-,"0",0,0,-,compuchess.cpp
+"ccmk2","Chess Champion: MK II (ver. 1)","1979",Novag,chmate,chmate,-,YES,NO,NO,NO,NO,chessmate.cpp,BUONO,-,"0",0,0,-,chessmate.cpp
+"ccmk2a","Chess Champion: MK II (ver. 2)","1979",Novag,chmate,chmate,-,YES,NO,NO,NO,NO,chessmate.cpp,BUONO,-,"0",0,0,-,chessmate.cpp
+"ssystem3","Chess Champion: Super System III","1979","SciSys / Novag",-,-,-,YES,NO,NO,NO,NO,"saitek_ssystem3.cpp",BUONO,SVG,"0",706,720,HORIZONTAL,"saitek_ssystem3.cpp"
+"ssystem4","Chess Champion: Super System IV","1980",SciSys,-,-,-,YES,NO,NO,NO,NO,"saitek_ssystem3.cpp",BUONO,SVG,"0",960,364,HORIZONTAL,"saitek_ssystem3.cpp"
+ccompan,"Chess Companion","1982",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_ccompan.cpp,BUONO,-,"0",0,0,-,saitek_ccompan.cpp
+chesstrvi,"Chess Intercontinental Traveler","1982",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_chesstrv.cpp,BUONO,-,"0",0,0,-,saitek_chesstrv.cpp
+"cp2000","Chess Partner 2000","1980","SciSys / Novag",-,-,-,YES,NO,NO,NO,NO,"saitek_cp2000.cpp",BUONO,-,"0",0,0,-,"saitek_cp2000.cpp"
+chesstrv,"Chess Traveler","1980","SciSys / Novag",-,-,-,YES,NO,NO,NO,NO,saitek_chesstrv.cpp,BUONO,-,"0",0,0,-,saitek_chesstrv.cpp
+chessmst,"Chess-Master (set 1)","1984","VEB Mikroelektronik ""Karl Marx"" Erfurt",-,-,-,YES,NO,NO,NO,NO,chessmst.cpp,BUONO,-,"0",0,0,-,chessmst.cpp
+chessmsta,"Chess-Master (set 2)","1984","VEB Mikroelektronik ""Karl Marx"" Erfurt",chessmst,chessmst,-,YES,NO,NO,NO,NO,chessmst.cpp,PRELIMINARE,-,"0",0,0,-,chessmst.cpp
+chessmstdm,"Chess-Master Diamond","1987","VEB Mikroelektronik ""Karl Marx"" Erfurt",-,-,-,YES,NO,NO,NO,NO,chessmstdm.cpp,BUONO,-,"0",0,0,-,chessmstdm.cpp
+chmate,Chessmate,"1978",Commodore,-,-,-,YES,NO,NO,NO,NO,chessmate.cpp,BUONO,-,"0",0,0,-,chessmate.cpp
+"tascr30g","ChessSystem R30 (Gideon 3.1, prototype)","1993",Tasc,"tascr30","tascr30",-,YES,NO,NO,NO,NO,tasc.cpp,INCOMPLETO,LCD,"0",240,64,HORIZONTAL,tasc.cpp
+"tascr30a","ChessSystem R30 (The King 2.20)","1993",Tasc,"tascr30","tascr30",-,YES,NO,NO,NO,NO,tasc.cpp,INCOMPLETO,LCD,"0",240,64,HORIZONTAL,tasc.cpp
+"tascr30b","ChessSystem R30 (The King 2.23, TM version)","1993",Tasc,"tascr30","tascr30",-,YES,NO,NO,NO,NO,tasc.cpp,INCOMPLETO,LCD,"0",240,64,HORIZONTAL,tasc.cpp
+"tascr30","ChessSystem R30 (The King 2.50)","1995",Tasc,-,-,-,YES,NO,NO,NO,NO,tasc.cpp,INCOMPLETO,LCD,"0",240,64,HORIZONTAL,tasc.cpp
+chesstera,"Chesster Challenger","1990","Fidelity Electronics",chesster,chesster,-,YES,NO,NO,NO,NO,fidel_chesster.cpp,BUONO,-,"0",0,0,-,fidel_chesster.cpp
+chesster,"Chesster Challenger (v1.3)","1990","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_chesster.cpp,BUONO,-,"0",0,0,-,fidel_chesster.cpp
+cmpchess,CompuChess,"1977","DataCash Systems / Staid",-,-,-,YES,NO,NO,NO,NO,compuchess.cpp,BUONO,-,"0",0,0,-,compuchess.cpp
+"cmpchess2","CompuChess: The Second Edition","1978","DataCash Systems / Staid",-,-,-,YES,NO,NO,NO,NO,compuchess.cpp,BUONO,-,"0",0,0,-,compuchess.cpp
+cncchess,"Computer Chess (Conic, model 7011)","1979",Conic,-,-,-,YES,NO,NO,NO,NO,compuchess.cpp,INCOMPLETO,-,"0",0,0,-,compuchess.cpp
+"cncchess2","Computer Chess (Conic, model 7012)","1980",Conic,-,-,-,YES,NO,NO,NO,NO,"conic_cchess2.cpp",BUONO,-,"0",0,0,-,"conic_cchess2.cpp"
+mchess,"Computer Chess (Mattel)","1980",Mattel,-,-,-,YES,NO,NO,NO,NO,mattelchess.cpp,BUONO,SVG,"0",977,1080,HORIZONTAL,mattelchess.cpp
+concstd,"Conchess (standard)","1982","Consumenta Computer / Loproc",-,-,-,YES,NO,NO,NO,NO,conchess.cpp,BUONO,-,"0",0,0,-,conchess.cpp
+"concply5","Conchess Plymate 5.5MHz","1985","Systemhuset / Loproc",-,-,-,YES,NO,NO,NO,NO,conchess.cpp,BUONO,-,"0",0,0,-,conchess.cpp
+"concply8","Conchess Plymate 8.0MHz","1985","Systemhuset / Loproc","concply5","concply5",-,YES,NO,NO,NO,NO,conchess.cpp,BUONO,-,"0",0,0,-,conchess.cpp
+concplyv,"Conchess Plymate Victoria","1990","Systemhuset / Loproc",-,-,-,YES,NO,NO,NO,NO,conchess.cpp,BUONO,-,"0",0,0,-,conchess.cpp
+const,Constellation,"1983",Novag,-,-,-,YES,NO,NO,NO,NO,novag_const.cpp,BUONO,-,"0",0,0,-,novag_const.cpp
+"const36","Constellation 3.6MHz (set 1)","1984",Novag,const,const,-,YES,NO,NO,NO,NO,novag_const.cpp,BUONO,-,"0",0,0,-,novag_const.cpp
+"const36a","Constellation 3.6MHz (set 2)","1986",Novag,const,const,-,YES,NO,NO,NO,NO,novag_const.cpp,BUONO,-,"0",0,0,-,novag_const.cpp
+cexpert,"Constellation Expert","1985",Novag,-,-,-,YES,NO,NO,NO,NO,novag_cexpert.cpp,BUONO,-,"0",0,0,-,novag_cexpert.cpp
+cfortea,"Constellation Forte (version A)","1986",Novag,-,-,-,YES,NO,NO,NO,NO,novag_cforte.cpp,BUONO,-,"0",0,0,-,novag_cforte.cpp
+cforteb,"Constellation Forte (version B)","1986",Novag,cfortea,cfortea,-,YES,NO,NO,NO,NO,novag_cforte.cpp,BUONO,-,"0",0,0,-,novag_cforte.cpp
+constq,"Constellation Quattro","1986",Novag,const,const,-,YES,NO,NO,NO,NO,novag_const.cpp,BUONO,-,"0",0,0,-,novag_const.cpp
+damesc,"Dame Sensory Challenger","1981","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_dames.cpp,BUONO,-,"0",0,0,-,fidel_dames.cpp
+debutm,Debut-M,"1994",Energopribor,-,-,-,YES,NO,NO,NO,NO,debut.cpp,BUONO,-,"0",0,0,-,debut.cpp
+"fdes2000","Designer 2000","1988","Fidelity Electronics",fexcelp,fexcelp,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+"fdes2000d","Designer 2000 Display","1988","Fidelity Electronics","fdes2100d","fdes2100d",-,YES,NO,NO,NO,NO,fidel_desdis.cpp,BUONO,-,"0",0,0,-,fidel_desdis.cpp
+"fdes2100","Designer 2100","1988","Fidelity Electronics",fexcelp,fexcelp,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+"fdes2100d","Designer 2100 Display","1988","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_desdis.cpp,BUONO,-,"0",0,0,-,fidel_desdis.cpp
+"fdes2265","Designer Mach III Master 2265","1989","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_desdis.cpp,BUONO,-,"0",0,0,-,fidel_desdis.cpp
+"fdes2325","Designer Mach IV 68020 Master 2325","1991","Fidelity Electronics","fdes2265","fdes2265",-,YES,NO,NO,NO,NO,fidel_desdis.cpp,BUONO,-,"0",0,0,-,fidel_desdis.cpp
+prodigy,"Destiny Prodigy","1982","Applied Concepts",-,-,-,YES,NO,NO,NO,NO,aci_prodigy.cpp,BUONO,-,"0",0,0,-,aci_prodigy.cpp
+"diablo68","Diablo 68000 (set 1)","1991",Novag,-,-,-,YES,NO,NO,NO,NO,novag_diablo.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_diablo.cpp
+"diablo68a","Diablo 68000 (set 2)","1991",Novag,"diablo68","diablo68",-,YES,NO,NO,NO,NO,novag_diablo.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_diablo.cpp
+feldo,"Eldorado Chess Challenger","1990","Fidelity Electronics / CXG Systems",-,-,-,YES,NO,NO,NO,NO,fidel_eldorado.cpp,BUONO,-,"0",0,0,-,fidel_eldorado.cpp
+feleg,"Elegance Chess Challenger (model 6085)","1986","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_as12.cpp",INCOMPLETO,-,"0",0,0,-,"fidel_as12.cpp"
+felega,"Elegance Chess Challenger (model AS12)","1985","Fidelity Electronics",feleg,feleg,-,YES,NO,NO,NO,NO,"fidel_as12.cpp",INCOMPLETO,-,"0",0,0,-,"fidel_as12.cpp"
+feasbu,"Elite A/S Challenger (Budapest program, model EAS)","1983","Fidelity Electronics",feas,feas,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+feasbua,"Elite A/S Challenger (Budapest program, model EWC)","1983","Fidelity Electronics",feas,feas,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+feasgla,"Elite A/S Challenger (Glasgow program, set 1)","1984","Fidelity Electronics",feas,feas,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+feasglaa,"Elite A/S Challenger (Glasgow program, set 2)","1984","Fidelity Electronics",feas,feas,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+feasglab,"Elite A/S Challenger (Glasgow program, set 3)","1984","Fidelity Electronics",feas,feas,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+feas,"Elite A/S Challenger (original program)","1983","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+feag,"Elite Avant Garde (model 6081)","1986","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+"feagv2","Elite Avant Garde (model 6114-2)","1989","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"feagv3","Elite Avant Garde (model 6114-3)","1989","Fidelity Electronics","feagv2","feagv2",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"feagv5","Elite Avant Garde (model 6114-5)","1989","Fidelity Electronics","feagv2","feagv2",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"feagv10","Elite Avant Garde (model 6117-10)","1990","Fidelity Electronics","feagv2","feagv2",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",INCOMPLETO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"feagv11","Elite Avant Garde (model 6117-11)","2002","hack (Wilfried Bucke)","feagv2","feagv2",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",INCOMPLETO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"feagv7","Elite Avant Garde (model 6117-7, set 1)","1990","Fidelity Electronics","feagv2","feagv2",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"feagv7a","Elite Avant Garde (model 6117-7, set 2)","1990","Fidelity Electronics","feagv2","feagv2",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"feagv9","Elite Avant Garde (model 6117-9)","1990","Fidelity Electronics","feagv2","feagv2",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"feag2100","Elite Avant Garde 2100 (set 1)","1986","Fidelity Electronics",feag,feag,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+"feag2100a","Elite Avant Garde 2100 (set 2)","1986","Fidelity Electronics",feag,feag,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+csce,"Elite Champion Challenger","1981","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_csc.cpp,BUONO,-,"0",0,0,-,fidel_csc.cpp
+"fex68k","Excel 68000 (set 1)","1987","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"fex68ka","Excel 68000 (set 2)","1987","Fidelity Electronics","fex68k","fex68k",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"fex68kb","Excel 68000 (set 3)","1987","Fidelity Electronics","fex68k","fex68k",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"fex68km2","Excel 68000 Mach II (rev. C+, set 1)","1988","Fidelity Electronics","fex68k","fex68k",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"fex68km2a","Excel 68000 Mach II (rev. C+, set 2)","1988","Fidelity Electronics","fex68k","fex68k",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"fex68km3","Excel 68000 Mach III Master","1988","Fidelity Electronics","fex68k","fex68k",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+"fex68km4","Excel 68000 Mach IV 68020 Master 2325","1989","Fidelity Electronics","fex68k","fex68k",-,YES,NO,NO,NO,NO,"fidel_eag68k.cpp",BUONO,-,"0",0,0,-,"fidel_eag68k.cpp"
+fexceld,"Excel Display","1987","Fidelity Electronics",fexcel,fexcel,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+exchess,"Executive Chess","1981",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_exchess.cpp,BUONO,SVG,"0",680,720,HORIZONTAL,saitek_exchess.cpp
+gincribc,"Gin & Cribbage Challenger","1982","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_card.cpp,INCOMPLETO,-,"0",0,0,-,fidel_card.cpp
+granits,"Granit S","1986","hack (RCS)",fexcelp,fexcelp,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+ggm,"Great Game Machine","1980","Applied Concepts",-,-,-,YES,NO,NO,NO,NO,aci_ggm.cpp,BUONO,-,"0",0,0,-,aci_ggm.cpp
+"intel02","Intellect-02","1985","BREA Research Institute",-,-,-,YES,NO,NO,NO,NO,"intellect02.cpp",BUONO,-,"0",0,0,-,"intellect02.cpp"
+intchess,"Intelligent Chess","1980","SciSys / Intelligent Games",-,-,-,YES,NO,NO,NO,NO,saitek_intchess.cpp,INCOMPLETO,RASTER,"0",160,128,HORIZONTAL,saitek_intchess.cpp
+coronaa,"Kasparov Corona (ver. C)","1988",Saitek,corona,corona,-,YES,NO,NO,NO,NO,saitek_corona.cpp,BUONO,-,"0",0,0,-,saitek_corona.cpp
+corona,"Kasparov Corona (ver. D+)","1990",Saitek,-,-,-,YES,NO,NO,NO,NO,saitek_corona.cpp,BUONO,-,"0",0,0,-,saitek_corona.cpp
+galileo,"Kasparov Galileo","1988",Saitek,leonardo,leonardo,-,YES,NO,NO,NO,NO,saitek_leonardo.cpp,BUONO,LCD,"0",99,16,HORIZONTAL,saitek_leonardo.cpp
+leonardo,"Kasparov Leonardo (set 1)","1986",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_leonardo.cpp,BUONO,LCD,"0",99,16,HORIZONTAL,saitek_leonardo.cpp
+leonardoa,"Kasparov Leonardo (set 2)","1986",SciSys,leonardo,leonardo,-,YES,NO,NO,NO,NO,saitek_leonardo.cpp,BUONO,LCD,"0",99,16,HORIZONTAL,saitek_leonardo.cpp
+renaissa,"Kasparov Renaissance (set 1)","1989",Saitek,-,-,-,YES,NO,NO,NO,NO,saitek_renaissance.cpp,BUONO,LCD,"0",99,16,HORIZONTAL,saitek_renaissance.cpp
+renaissaa,"Kasparov Renaissance (set 2)","1989",Saitek,renaissa,renaissa,-,YES,NO,NO,NO,NO,saitek_renaissance.cpp,BUONO,LCD,"0",99,16,HORIZONTAL,saitek_renaissance.cpp
+simultanoa,"Kasparov Simultano (ver. B)","1989",Saitek,simultano,simultano,-,YES,NO,NO,NO,NO,saitek_simultano.cpp,BUONO,SVG,"0",436,540,HORIZONTAL,saitek_simultano.cpp
+simultano,"Kasparov Simultano (ver. C)","1989",Saitek,-,-,-,YES,NO,NO,NO,NO,saitek_simultano.cpp,BUONO,SVG,"0",436,540,HORIZONTAL,saitek_simultano.cpp
+stratos,"Kasparov Stratos (set 1)","1987",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_stratos.cpp,BUONO,-,"0",0,0,-,saitek_stratos.cpp
+stratosa,"Kasparov Stratos (set 2)","1987",SciSys,stratos,stratos,-,YES,NO,NO,NO,NO,saitek_stratos.cpp,BUONO,-,"0",0,0,-,saitek_stratos.cpp
+tkinga,"Kasparov Turbo King (ver. B, set 1)","1988",Saitek,stratos,stratos,-,YES,NO,NO,NO,NO,saitek_stratos.cpp,BUONO,-,"0",0,0,-,saitek_stratos.cpp
+tkingb,"Kasparov Turbo King (ver. B, set 2)","1988",Saitek,stratos,stratos,-,YES,NO,NO,NO,NO,saitek_stratos.cpp,BUONO,-,"0",0,0,-,saitek_stratos.cpp
+tking,"Kasparov Turbo King (ver. D)","1990",Saitek,stratos,stratos,-,YES,NO,NO,NO,NO,saitek_stratos.cpp,BUONO,-,"0",0,0,-,saitek_stratos.cpp
+"tstar432","Kasparov Turbostar 432","1985",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_superstar.cpp,BUONO,-,"0",0,0,-,saitek_superstar.cpp
+kishona,"Kishon Chesster (v2.2)","1991","Fidelity Electronics",chesster,chesster,-,YES,NO,NO,NO,NO,fidel_chesster.cpp,BUONO,-,"0",0,0,-,fidel_chesster.cpp
+kishon,"Kishon Chesster (v2.3)","1991","Fidelity Electronics",chesster,chesster,-,YES,NO,NO,NO,NO,fidel_chesster.cpp,BUONO,-,"0",0,0,-,fidel_chesster.cpp
+regence,"La Régence","1982","France Double R",-,-,-,YES,NO,NO,NO,NO,regence.cpp,BUONO,-,"0",0,0,-,regence.cpp
+ckmaster,"Master (Chess King)","1984","Chess King",-,-,-,YES,NO,NO,NO,NO,cking_master.cpp,BUONO,-,"0",0,0,-,cking_master.cpp
+mephisto,Mephisto,"1980","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+"mephisto1x","Mephisto 1X","1981","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+academy,"Mephisto Academy (English)","1989","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_academy.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_academy.cpp
+academyga,"Mephisto Academy (German, 04-10-88)","1989","Hegener + Glaser",academy,academy,-,YES,NO,NO,NO,NO,mephisto_academy.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_academy.cpp
+academyg,"Mephisto Academy (German, 06-03-89)","1989","Hegener + Glaser",academy,academy,-,YES,NO,NO,NO,NO,mephisto_academy.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_academy.cpp
+"alm16","Mephisto Almeria 16 Bit","1988","Hegener + Glaser","alm32","alm32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"alm32","Mephisto Almeria 32 Bit","1988","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+amsterd,"Mephisto Amsterdam","1985","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_amsterdam.cpp,BUONO,-,"0",0,0,-,mephisto_amsterdam.cpp
+amsterda,"Mephisto Amsterdam (Glasgow hardware)","1985","Hegener + Glaser",amsterd,amsterd,-,YES,NO,NO,NO,NO,mephisto_glasgow.cpp,BUONO,-,"0",0,0,-,mephisto_glasgow.cpp
+"berl16l","Mephisto Berlin 68000 (London upgrade)","1996","Richard Lang","berl16","berl16",-,YES,NO,NO,NO,NO,mephisto_berlin.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_berlin.cpp
+"berl16a","Mephisto Berlin 68000 (v0.02)","1992","Hegener + Glaser","berl16","berl16",-,YES,NO,NO,NO,NO,mephisto_berlin.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_berlin.cpp
+"berl16","Mephisto Berlin 68000 (v0.03)","1992","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_berlin.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_berlin.cpp
+berlinp,"Mephisto Berlin Professional 68020","1994","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_berlin.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_berlin.cpp
+berlinpl,"Mephisto Berlin Professional 68020 (London upgrade)","1996","Richard Lang",berlinp,berlinp,-,YES,NO,NO,NO,NO,mephisto_berlin.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_berlin.cpp
+bup,"Mephisto Blitz- und Problemlösungs-Modul (set 1)","1985","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+bupa,"Mephisto Blitz- und Problemlösungs-Modul (set 2)","1985","Hegener + Glaser",bup,bup,-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"dallas16","Mephisto Dallas 68000","1986","Hegener + Glaser","dallas32","dallas32",-,YES,NO,NO,NO,NO,mephisto_amsterdam.cpp,BUONO,-,"0",0,0,-,mephisto_amsterdam.cpp
+"dallas16a","Mephisto Dallas 68000 (Glasgow hardware)","1986","Hegener + Glaser","dallas32","dallas32",-,YES,NO,NO,NO,NO,mephisto_glasgow.cpp,BUONO,-,"0",0,0,-,mephisto_glasgow.cpp
+"dallas32","Mephisto Dallas 68020","1986","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_amsterdam.cpp,BUONO,-,"0",0,0,-,mephisto_amsterdam.cpp
+"mephisto2e","Mephisto ESB II","1981","Hegener + Glaser","mephisto2","mephisto2",-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+"gen32l","Mephisto Genius 68030 (London upgrade)","1996","Richard Lang","gen32","gen32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"gen32a","Mephisto Genius 68030 (v4.00)","1993","Hegener + Glaser","gen32","gen32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"gen32","Mephisto Genius 68030 (v4.01)","1993","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"mephisto2","Mephisto II (set 1)","1981","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+"mephisto2a","Mephisto II (set 2)","1981","Hegener + Glaser","mephisto2","mephisto2",-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+"mephisto3","Mephisto III (set 1)","1983","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+"mephisto3a","Mephisto III (set 2)","1983","Hegener + Glaser","mephisto3","mephisto3",-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+"mephisto3b","Mephisto III (set 3)","1983","Hegener + Glaser","mephisto3","mephisto3",-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+"mephisto3c","Mephisto III (set 4)","1983","Hegener + Glaser","mephisto3","mephisto3",-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+glasgow,"Mephisto III-S Glasgow","1984","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_glasgow.cpp,BUONO,-,"0",0,0,-,mephisto_glasgow.cpp
+mephistoj,"Mephisto Junior (1982 version)","1982","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_brikett.cpp,BUONO,-,"0",0,0,-,mephisto_brikett.cpp
+"lond16","Mephisto London 16 Bit","1996","Richard Lang","lond32","lond32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"lond32","Mephisto London 32 Bit","1996","Richard Lang",-,-,-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"lond32t","Mephisto London 68030","1996",Saitek,"lond32","lond32",-,YES,NO,NO,NO,NO,mephisto_modular_tm.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_modular_tm.cpp
+"lyon16","Mephisto Lyon 16 Bit","1990","Hegener + Glaser","lyon32","lyon32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"lyon32","Mephisto Lyon 32 Bit","1990","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"lyon32t","Mephisto Lyon 68030","1990","Hegener + Glaser","lyon32","lyon32",-,YES,NO,NO,NO,NO,mephisto_modular_tm.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_modular_tm.cpp
+"mega4","Mephisto Mega IV (set 1)","1988","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_smondial.cpp,BUONO,-,"0",0,0,-,mephisto_smondial.cpp
+"mega4a","Mephisto Mega IV (set 2)","1988","Hegener + Glaser","mega4","mega4",-,YES,NO,NO,NO,NO,mephisto_smondial.cpp,BUONO,-,"0",0,0,-,mephisto_smondial.cpp
+milanoa,"Mephisto Milano (v1.01)","1991","Hegener + Glaser",milano,milano,-,YES,NO,NO,NO,NO,mephisto_milano.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_milano.cpp
+milano,"Mephisto Milano (v1.02)","1991","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_milano.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_milano.cpp
+mmirage,"Mephisto Mirage","1984","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mm1.cpp",BUONO,-,"0",0,0,-,"mephisto_mm1.cpp"
+"mm1","Mephisto MM I (ver. A)","1983","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mm1.cpp",BUONO,-,"0",0,0,-,"mephisto_mm1.cpp"
+"mm1b","Mephisto MM I (ver. B)","1983","Hegener + Glaser","mm1","mm1",-,YES,NO,NO,NO,NO,"mephisto_mm1.cpp",BUONO,-,"0",0,0,-,"mephisto_mm1.cpp"
+"mm2","Mephisto MM II (set 1, v4.00 1 EPROM)","1984","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm2a","Mephisto MM II (set 2, v4.00 2 EPROMs)","1984","Hegener + Glaser","mm2","mm2",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm2b","Mephisto MM II (set 3, v3.00)","1984","Hegener + Glaser","mm2","mm2",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm2c","Mephisto MM II (set 4)","1984","Hegener + Glaser","mm2","mm2",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm2d","Mephisto MM II (set 5)","1984","Hegener + Glaser","mm2","mm2",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm4tk","Mephisto MM IV (TurboKit)","1987",hack,"mm4","mm4",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",INCOMPLETO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm4b","Mephisto MM IV (v6.00)","1987","Hegener + Glaser","mm4","mm4",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm4a","Mephisto MM IV (v7.00)","1987","Hegener + Glaser","mm4","mm4",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm4","Mephisto MM IV (v7.10)","1987","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm5p","Mephisto MM V (Portorose TM version)","1989","Hegener + Glaser","mm5","mm5",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",INCOMPLETO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm5a","Mephisto MM V (v5.0)","1990","Hegener + Glaser","mm5","mm5",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"mm5","Mephisto MM V (v5.1)","1990","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+modena,"Mephisto Modena (set 1)","1992","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_modena.cpp,BUONO,-,"0",0,0,-,mephisto_modena.cpp
+modenaa,"Mephisto Modena (set 2)","1992","Hegener + Glaser",modena,modena,-,YES,NO,NO,NO,NO,mephisto_modena.cpp,BUONO,-,"0",0,0,-,mephisto_modena.cpp
+modenab,"Mephisto Modena (set 3)","1992","Hegener + Glaser",modena,modena,-,YES,NO,NO,NO,NO,mephisto_modena.cpp,BUONO,-,"0",0,0,-,mephisto_modena.cpp
+mondial,"Mephisto Mondial","1985","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_mondial.cpp,BUONO,-,"0",0,0,-,mephisto_mondial.cpp
+"mondl68k","Mephisto Mondial 68000XL","1988","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mondial68k.cpp",BUONO,-,"0",0,0,-,"mephisto_mondial68k.cpp"
+"mondial2","Mephisto Mondial II","1987","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mondial2.cpp",BUONO,-,"0",0,0,-,"mephisto_mondial2.cpp"
+monteca,"Mephisto Monte Carlo (ver. MC2)","1987","Hegener + Glaser",montec,montec,-,YES,NO,NO,NO,NO,mephisto_montec.cpp,BUONO,-,"0",0,0,-,mephisto_montec.cpp
+montec,"Mephisto Monte Carlo (ver. MC3)","1987","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_montec.cpp,BUONO,-,"0",0,0,-,mephisto_montec.cpp
+"montec4le","Mephisto Monte Carlo IV - Limited Edition","1990","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_montec.cpp,BUONO,-,"0",0,0,-,mephisto_montec.cpp
+montreux,"Mephisto Montreux","1995","Saitek / Tasc",-,-,-,YES,NO,NO,NO,NO,"saitek_risc2500.cpp",BUONO,LCD,"0",73,9,HORIZONTAL,"saitek_risc2500.cpp"
+nshort,"Mephisto Nigel Short","1993","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_milano.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_milano.cpp
+polgara,"Mephisto Polgar (v1.10)","1989","Hegener + Glaser",polgar,polgar,-,YES,NO,NO,NO,NO,mephisto_polgar.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_polgar.cpp
+polgar,"Mephisto Polgar (v1.50)","1990","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_polgar.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_polgar.cpp
+"polgar10","Mephisto Polgar 10 MHz (v10.0)","1990","Hegener + Glaser",polgar,polgar,-,YES,NO,NO,NO,NO,mephisto_polgar.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_polgar.cpp
+"polgar101","Mephisto Polgar 10 MHz (v10.1)","1990","Hegener + Glaser",polgar,polgar,-,YES,NO,NO,NO,NO,mephisto_polgar.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_polgar.cpp
+"port16","Mephisto Portorose 16 Bit (v1.01)","1989","Hegener + Glaser","port32","port32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"port32b","Mephisto Portorose 32 Bit (v1.01)","1989","Hegener + Glaser","port32","port32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"port32a","Mephisto Portorose 32 Bit (v1.03)","1989","Hegener + Glaser","port32","port32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"port32","Mephisto Portorose 32 Bit (v1.04)","1989","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"port32t","Mephisto Portorose 68030","1989","Hegener + Glaser","port32","port32",-,YES,NO,NO,NO,NO,mephisto_modular_tm.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_modular_tm.cpp
+"rebel5","Mephisto Rebell 5,0 (set 1)","1986","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+"rebel5a","Mephisto Rebell 5,0 (set 2)","1986","Hegener + Glaser","rebel5","rebel5",-,YES,NO,NO,NO,NO,"mephisto_mm2.cpp",BUONO,-,"0",0,0,-,"mephisto_mm2.cpp"
+mrisc,"Mephisto Risc 1MB","1992","Hegener + Glaser / Tasc",-,-,-,YES,NO,NO,NO,NO,mephisto_risc.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_risc.cpp
+"mrisc2","Mephisto Risc II","1994","Hegener + Glaser / Tasc",mrisc,mrisc,-,YES,NO,NO,NO,NO,mephisto_risc.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_risc.cpp
+"roma16","Mephisto Roma 68000","1987","Hegener + Glaser","roma32","roma32",-,YES,NO,NO,NO,NO,mephisto_amsterdam.cpp,BUONO,-,"0",0,0,-,mephisto_amsterdam.cpp
+"roma16a","Mephisto Roma 68000 (Glasgow hardware)","1987","Hegener + Glaser","roma32","roma32",-,YES,NO,NO,NO,NO,mephisto_glasgow.cpp,BUONO,-,"0",0,0,-,mephisto_glasgow.cpp
+"roma32","Mephisto Roma 68020","1987","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_amsterdam.cpp,BUONO,-,"0",0,0,-,mephisto_amsterdam.cpp
+smondial,"Mephisto Super Mondial (ver. A)","1986","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_smondial.cpp,BUONO,-,"0",0,0,-,mephisto_smondial.cpp
+smondialab,"Mephisto Super Mondial (ver. AB)","1986","Hegener + Glaser",smondial,smondial,-,YES,NO,NO,NO,NO,mephisto_smondial.cpp,BUONO,-,"0",0,0,-,mephisto_smondial.cpp
+smondialb,"Mephisto Super Mondial (ver. B)","1986","Hegener + Glaser",smondial,smondial,-,YES,NO,NO,NO,NO,mephisto_smondial.cpp,BUONO,-,"0",0,0,-,mephisto_smondial.cpp
+"smondial2","Mephisto Super Mondial II","1988","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_smondial.cpp,BUONO,-,"0",0,0,-,mephisto_smondial.cpp
+"lond32t8","Mephisto TM London","1996",Saitek,"lond32","lond32",-,YES,NO,NO,NO,NO,mephisto_modular_tm.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_modular_tm.cpp
+"lyon32t8","Mephisto TM Lyon","1990","Hegener + Glaser","lyon32","lyon32",-,YES,NO,NO,NO,NO,mephisto_modular_tm.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_modular_tm.cpp
+"van32t8","Mephisto TM Vancouver","1991","Hegener + Glaser","van32","van32",-,YES,NO,NO,NO,NO,mephisto_modular_tm.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_modular_tm.cpp
+"van16","Mephisto Vancouver 16 Bit","1991","Hegener + Glaser","van32","van32",-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"van32","Mephisto Vancouver 32 Bit","1991","Hegener + Glaser",-,-,-,YES,NO,NO,NO,NO,mephisto_modular.cpp,INCOMPLETO,LCD,"0",97,19,HORIZONTAL,mephisto_modular.cpp
+"van32t","Mephisto Vancouver 68030","1991","Hegener + Glaser","van32","van32",-,YES,NO,NO,NO,NO,mephisto_modular_tm.cpp,BUONO,LCD,"0",97,19,HORIZONTAL,mephisto_modular_tm.cpp
+nmicro,"Micro Chess","1981",Novag,-,-,-,YES,NO,NO,NO,NO,novag_micro.cpp,BUONO,-,"0",0,0,-,novag_micro.cpp
+"nmicro2","Micro II (Novag)","1982",Novag,-,-,-,YES,NO,NO,NO,NO,"novag_micro2.cpp",BUONO,-,"0",0,0,-,"novag_micro2.cpp"
+smchess,"Mini Chess","1981",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_minichess.cpp,BUONO,-,"0",0,0,-,saitek_minichess.cpp
+miniscco,"Mini Sensory Chess Challenger (1981 version)","1981","Fidelity Electronics",miniscc,miniscc,-,YES,NO,NO,NO,NO,fidel_msc.cpp,BUONO,-,"0",0,0,-,fidel_msc.cpp
+miniscc,"Mini Sensory Chess Challenger (1982 version)","1982","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_sc6.cpp",BUONO,-,"0",0,0,-,"fidel_sc6.cpp"
+fphantom,"Phantom Chess Challenger","1988","Fidelity Electronics",-,-,-,YES,NO,NO,YES,NO,fidel_phantom.cpp,PRELIMINARE,-,"0",0,0,-,fidel_phantom.cpp
+prtchess,"Portachess (1985 version)","1985","CXG Systems / Newcrest Technology",scptchess,scptchess,-,YES,NO,NO,NO,NO,cxg_scptchess.cpp,BUONO,-,"0",0,0,-,cxg_scptchess.cpp
+prschess,"President Chess","1982",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_prschess.cpp,BUONO,-,"0",0,0,-,saitek_prschess.cpp
+fpresbu,"Prestige Challenger (Budapest program)","1983","Fidelity Electronics",fpres,fpres,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+fpres,"Prestige Challenger (original program)","1982","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_elite.cpp,INCOMPLETO,-,"0",0,0,-,fidel_elite.cpp
+savant,Savant,"1981",Novag,-,-,-,YES,NO,NO,NO,NO,novag_savant.cpp,BUONO,SVG,"0",958,1080,HORIZONTAL,novag_savant.cpp
+"savant2","Savant II","1982",Novag,savant,savant,-,YES,NO,NO,NO,NO,novag_savant.cpp,BUONO,SVG,"0",958,1080,HORIZONTAL,novag_savant.cpp
+"slc1","Schach- und Lerncomputer SLC 1","1989","Dieter Scheuschner",-,-,-,YES,NO,NO,NO,NO,"slc1.cpp",BUONO,-,"0",0,0,-,"slc1.cpp"
+"sc2a","Schachcomputer SC 2","1981","VEB Funkwerk Erfurt","sc2","sc2",-,YES,NO,NO,NO,NO,"sc2.cpp",BUONO,-,"0",0,0,-,"sc2.cpp"
+"sc2","Schachcomputer SC 2 (rev. E)","1981","VEB Funkwerk Erfurt",-,-,-,YES,NO,NO,NO,NO,"sc2.cpp",BUONO,-,"0",0,0,-,"sc2.cpp"
+"scorpio68","Scorpio 68000","1991",Novag,-,-,-,YES,NO,NO,NO,NO,novag_diablo.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_diablo.cpp
+schess,"Sensor Chess","1981",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_schess.cpp,BUONO,-,"0",0,0,-,saitek_schess.cpp
+scptchess,"Sensor Computachess (1981 version)","1981","CXG Systems / White & Allcock",-,-,-,YES,NO,NO,NO,NO,cxg_scptchess.cpp,BUONO,-,"0",0,0,-,cxg_scptchess.cpp
+"fscc9ps","Sensory 9 Playmatic S","1983","Fidelity Deutschland","fscc9","fscc9",-,YES,NO,NO,NO,NO,"fidel_sc9.cpp",BUONO,-,"0",0,0,-,"fidel_sc9.cpp"
+"fscc12b","Sensory Chess Challenger ""12 B"" (model 6086)","1984","Fidelity Electronics","fscc12","fscc12",-,YES,NO,NO,NO,NO,"fidel_sc12.cpp",INCOMPLETO,-,"0",0,0,-,"fidel_sc12.cpp"
+"fscc12","Sensory Chess Challenger ""12"" (model SC12)","1984","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_sc12.cpp",INCOMPLETO,-,"0",0,0,-,"fidel_sc12.cpp"
+"fscc6","Sensory Chess Challenger ""6""","1982","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_sc6.cpp",BUONO,-,"0",0,0,-,"fidel_sc6.cpp"
+"fscc8","Sensory Chess Challenger ""8""","1980","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_sc8.cpp",BUONO,-,"0",0,0,-,"fidel_sc8.cpp"
+"fscc9b","Sensory Chess Challenger ""9"" (rev. B)","1982","Fidelity Electronics","fscc9","fscc9",-,YES,NO,NO,NO,NO,"fidel_sc9.cpp",BUONO,-,"0",0,0,-,"fidel_sc9.cpp"
+"fscc9c","Sensory Chess Challenger ""9"" (rev. C)","1982","Fidelity Electronics","fscc9","fscc9",-,YES,NO,NO,NO,NO,"fidel_sc9.cpp",BUONO,-,"0",0,0,-,"fidel_sc9.cpp"
+"fscc9","Sensory Chess Challenger ""9"" (rev. D)","1982","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_sc9.cpp",BUONO,-,"0",0,0,-,"fidel_sc9.cpp"
+"sphinx40","Sphinx 40","1987","CXG Systems / Newcrest Technology",-,-,-,YES,NO,NO,NO,NO,"cxg_sphinx40.cpp",BUONO,-,"0",0,0,-,"cxg_sphinx40.cpp"
+scmder,"Sphinx Commander (v2.00)","1989","CXG Systems / Newcrest Technology",-,-,-,YES,NO,NO,NO,NO,cxg_dominator.cpp,BUONO,-,"0",0,0,-,cxg_dominator.cpp
+sdtor,"Sphinx Dominator (v2.05)","1989","CXG Systems / Newcrest Technology",-,-,-,YES,NO,NO,NO,NO,cxg_dominator.cpp,BUONO,-,"0",0,0,-,cxg_dominator.cpp
+"super9cc","Super ""9"" Sensory Chess Challenger","1983","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_csc.cpp,BUONO,-,"0",0,0,-,fidel_csc.cpp
+supercon,"Super Constellation","1984",Novag,-,-,-,YES,NO,NO,NO,NO,novag_const.cpp,BUONO,-,"0",0,0,-,novag_const.cpp
+sexperta,"Super Expert (version A, set 1)","1988",Novag,-,-,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+"sexperta1","Super Expert (version A, set 2)","1987",Novag,sexperta,sexperta,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+"sexperta2","Super Expert (version A, set 3)","1987",Novag,sexperta,sexperta,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+sexpertb,"Super Expert (version B)","1988",Novag,sexperta,sexperta,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+"sexpertc1","Super Expert (version C, v3.0)","1990",Novag,sexperta,sexperta,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+sexpertc,"Super Expert (version C, v3.6)","1990",Novag,sexperta,sexperta,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+sfortea,"Super Forte (version A, set 1)","1987",Novag,-,-,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+"sfortea1","Super Forte (version A, set 2)","1987",Novag,sfortea,sfortea,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+"sfortea2","Super Forte (version A, set 3)","1987",Novag,sfortea,sfortea,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+sforteb,"Super Forte (version B)","1988",Novag,sfortea,sfortea,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+"sfortec1","Super Forte (version C, v1.2)","1990",Novag,sfortea,sfortea,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+sfortec,"Super Forte (version C, v3.6)","1990",Novag,sfortea,sfortea,-,YES,NO,NO,NO,NO,novag_sexpert.cpp,BUONO,LCD,"0",97,10,HORIZONTAL,novag_sexpert.cpp
+nsnova,"Super Nova (Novag, v1.05)","1990",Novag,-,-,-,YES,NO,NO,NO,NO,novag_snova.cpp,BUONO,SVG,"0",480,147,HORIZONTAL,novag_snova.cpp
+"ssensor4","Super Sensor IV","1981",Novag,-,-,-,YES,NO,NO,NO,NO,novag_const.cpp,BUONO,-,"0",0,0,-,novag_const.cpp
+"sstar28k","Superstar 28K","1983",SciSys,-,-,-,YES,NO,NO,NO,NO,saitek_superstar.cpp,BUONO,-,"0",0,0,-,saitek_superstar.cpp
+"sstar36k","Superstar 36K","1985",SciSys,"tstar432","tstar432",-,YES,NO,NO,NO,NO,saitek_superstar.cpp,BUONO,-,"0",0,0,-,saitek_superstar.cpp
+supremo,Supremo,"1988",Novag,-,-,-,YES,NO,NO,NO,NO,novag_snova.cpp,PRELIMINARE,SVG,"0",480,147,HORIZONTAL,novag_snova.cpp
+fexcela,"The Excellence (model 6080)","1985","Fidelity Electronics",fexcel,fexcel,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+fexcel,"The Excellence (model 6080B)","1987","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+"fexcel12","The Excellence (model EP12, set 1)","1985","Fidelity Electronics",fexcel,fexcel,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+"fexcel124","The Excellence (model EP12, set 2)","1985","Fidelity Electronics",fexcel,fexcel,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+gambit,"The Gambit (1989 version)","1989","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,"fidel_sc6.cpp",BUONO,-,"0",0,0,-,"fidel_sc6.cpp"
+fexcelp,"The Par Excellence","1986","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+fexcelpb,"The Par Excellence (rev. B)","1986","Fidelity Electronics",fexcelp,fexcelp,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+vbrc,"Voice Bridge Challenger","1979","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_card.cpp,INCOMPLETO,-,"0",0,0,-,fidel_card.cpp
+vcc,"Voice Chess Challenger","1979","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_vcc.cpp,BUONO,-,"0",0,0,-,fidel_vcc.cpp
+fexcelv,"Voice Excellence","1987","Fidelity Electronics",fexcel,fexcel,-,YES,NO,NO,NO,NO,fidel_excel.cpp,BUONO,-,"0",0,0,-,fidel_excel.cpp
+vsc,"Voice Sensory Chess Challenger","1980","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_vsc.cpp,BUONO,-,"0",0,0,-,fidel_vsc.cpp

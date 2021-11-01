@@ -1,0 +1,194 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"korg707","707 Performing Synthesizer","1987",Korg,-,-,-,YES,NO,NO,NO,NO,"korgds8.cpp",PRELIMINARE,LCD,"0",120,16,HORIZONTAL,"korgds8.cpp"
+hohnadam,"ADAM Advanced Digital/Analog Musical Instrument","1994",Hohner,-,-,-,YES,NO,NO,NO,NO,hohnadam.cpp,PRELIMINARE,-,"0",0,0,-,hohnadam.cpp
+"alesqs7","Alesis QS7 musical keyboard","1996",Alesis,-,-,-,YES,NO,NO,NO,NO,alesis_qs.cpp,PRELIMINARE,-,"0",0,0,-,alesis_qs.cpp
+"ajuno1","Alpha Juno-1 (JU-1) Programmable Polyphonic Synthesizer","1985",Roland,-,-,-,YES,NO,NO,NO,NO,alphajuno.cpp,PRELIMINARE,LCD,"0",96,8,HORIZONTAL,alphajuno.cpp
+"ajuno2","Alpha Juno-2 (JU-2) Programmable Polyphonic Synthesizer","1986",Roland,-,-,-,YES,NO,NO,NO,NO,alphajuno.cpp,PRELIMINARE,LCD,"0",96,8,HORIZONTAL,alphajuno.cpp
+"an1x","AN1x Control Synthesizer","1997",Yamaha,-,-,-,YES,NO,NO,NO,NO,"yman1x.cpp",PRELIMINARE,SVG,"0",1280,386,HORIZONTAL,"yman1x.cpp"
+discmate,"Arbiter Discmate A-02","1988","Arbiter Leisure",bbcm,bbcm,bbc,YES,NO,NO,NO,NO,bbc.cpp,PRELIMINARE,RASTER,"0",640,256,HORIZONTAL,bbc.cpp
+"asr10","ASR-10","1992",Ensoniq,-,-,-,YES,NO,NO,NO,NO,esqasr.cpp,PRELIMINARE,-,"0",0,0,-,esqasr.cpp
+asrx,ASR-X,"1997",Ensoniq,-,-,-,YES,NO,NO,NO,NO,esqasr.cpp,PRELIMINARE,-,"0",0,0,-,esqasr.cpp
+"ax80","AX80","1984",Akai,-,-,-,YES,NO,NO,NO,NO,"akaiax80.cpp",PRELIMINARE,-,"0",0,0,-,"akaiax80.cpp"
+bassstr,"BassStation Rack Analogue Synthesizer Module","1995",Novation,-,-,-,YES,NO,NO,NO,NO,basssta.cpp,PRELIMINARE,-,"0",0,0,-,basssta.cpp
+"gx700","Boss GX-700 Guitar Effects Processor","1996",Roland,-,-,-,YES,NO,NO,NO,NO,"boss_sx700.cpp",PRELIMINARE,-,"0",0,0,-,"boss_sx700.cpp"
+"se70","Boss SE-70 Super Effects Processor","1993",Roland,-,-,-,YES,NO,NO,NO,NO,"boss_se70.cpp",PRELIMINARE,-,"0",0,0,-,"boss_se70.cpp"
+"sx700","Boss SX-700 Studio Effects Processor","1996",Roland,-,-,-,YES,NO,NO,NO,NO,"boss_sx700.cpp",PRELIMINARE,-,"0",0,0,-,"boss_sx700.cpp"
+carnaval,"Carnaval - Jugando con Fuego","1997","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu68k.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"emu68k.cpp"
+casiorom,"Casio ROM Pack Software List holder","198?",Casio,-,-,-,YES,NO,NO,NO,NO,casio_rompack.cpp,PRELIMINARE,-,"0",0,0,-,casio_rompack.cpp
+"cd100b","CD-100B LaserStar","1992","Rowe International",-,-,-,YES,NO,NO,YES,NO,"cd100.cpp",PRELIMINARE,-,"0",0,0,-,"cd100.cpp"
+"cm32l","CM-32L","1989",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_mt32.cpp",PRELIMINARE,LCD,"0",119,89,HORIZONTAL,"roland_mt32.cpp"
+"cm32p","CM-32P","1989",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_cm32p.cpp",PRELIMINARE,LCD,"0",95,71,HORIZONTAL,"roland_cm32p.cpp"
+"cmi2x","CMI IIx","1983",Fairlight,-,-,-,YES,NO,NO,NO,NO,cmi.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,cmi.cpp
+"cz101","CZ-101","1984",Casio,-,-,-,YES,NO,NO,NO,NO,"cz101.cpp",PRELIMINARE,LCD,"0",97,19,HORIZONTAL,"cz101.cpp"
+"d10","D-10 Multi Timbral Linear Synthesizer","1988",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_d10.cpp",PRELIMINARE,LCD,"0",95,71,HORIZONTAL,"roland_d10.cpp"
+"d110","D-110 Multi Timbral Sound Module","1988",Roland,"d10","d10",-,YES,NO,NO,NO,NO,"roland_d10.cpp",PRELIMINARE,LCD,"0",95,71,HORIZONTAL,"roland_d10.cpp"
+"d50o","D-50 Linear Synthesizer (Ver. 1.xx)","1987",Roland,"d50","d50",-,YES,NO,NO,NO,NO,"roland_d50.cpp",PRELIMINARE,-,"0",0,0,-,"roland_d50.cpp"
+"d50","D-50 Linear Synthesizer (Ver. 2.xx)","1987",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_d50.cpp",PRELIMINARE,-,"0",0,0,-,"roland_d50.cpp"
+"d550","D-550 Linear Synthesizer","1987",Roland,"d50","d50",-,YES,NO,NO,NO,NO,"roland_d50.cpp",PRELIMINARE,-,"0",0,0,-,"roland_d50.cpp"
+"dps1","DPS-1","1979","Ithaca InterSystems",-,-,-,YES,NO,NO,NO,NO,"dps1.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"dps1.cpp"
+"dpsv55","DPS-V55 Multi-Effect Processor","1998",Sony,-,-,-,YES,NO,NO,NO,NO,"dpsv55.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"dpsv55.cpp"
+drumsta,"Drum Station","1995",Novation,-,-,-,YES,NO,NO,NO,NO,drumsta.cpp,PRELIMINARE,-,"0",0,0,-,drumsta.cpp
+"ds8","DS-8 Digital Synthesizer","1986",Korg,-,-,-,YES,NO,NO,NO,NO,"korgds8.cpp",PRELIMINARE,LCD,"0",240,16,HORIZONTAL,"korgds8.cpp"
+"dss1","DSS-1 Digital Sampling Synthesizer","1986",Korg,-,-,-,YES,NO,NO,NO,NO,"korgdss1.cpp",PRELIMINARE,LCD,"0",120,16,HORIZONTAL,"korgdss1.cpp"
+dssmsrk,"DSS-1 Digital Sampling Synthesizer (Memory/SCSI Retrofit)","1987","Korg / Sound Logic","dss1","dss1",-,YES,NO,NO,NO,NO,"korgdss1.cpp",PRELIMINARE,LCD,"0",120,16,HORIZONTAL,"korgdss1.cpp"
+"dvp1","DVP-1 Digital Voice Processor","1985",Korg,-,-,-,YES,NO,NO,NO,NO,"korgdvp1.cpp",PRELIMINARE,-,"0",0,0,-,"korgdvp1.cpp"
+"dw8000","DW-8000 Programmable Digital Waveform Synthesizer","1985",Korg,-,-,-,YES,NO,NO,NO,NO,"korgdw8k.cpp",PRELIMINARE,-,"0",0,0,-,"korgdw8k.cpp"
+"dw8000ex","DW-8000-EX Programmable Digital Waveform Synthesizer","1985","Korg / Musitronics","dw8000","dw8000",-,YES,NO,NO,NO,NO,"korgdw8k.cpp",PRELIMINARE,-,"0",0,0,-,"korgdw8k.cpp"
+"dx100","DX100 Digital Programmable Algorithm Synthesizer","1985",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymdx100.cpp",PRELIMINARE,LCD,"0",97,21,HORIZONTAL,"ymdx100.cpp"
+"dx11","DX11 Digital Programmable Algorithm Synthesizer","1988",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymdx11.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"ymdx11.cpp"
+ekarag,"e-kara (Europe, includes 3 songs)","2002","Takara / SSD Company LTD",ekara,ekara,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ekaraj,"e-kara (Japan)","2000","Takara / SSD Company LTD",ekara,ekara,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ekaras,"e-kara (Spain, includes 3 songs)","2002","Takara / SSD Company LTD / newgent",ekara,ekara,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ekara,"e-kara (US?, NTSC, set 1)","2000","Takara / SSD Company LTD / Hasbro",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ekaraa,"e-kara (US?, NTSC, set 2)","2000","Takara / SSD Company LTD / Hasbro",ekara,ekara,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ekaramix,"e-kara Mix (Japan)","200?","Takara / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ekaraphs,"e-kara Pro Headset (US, includes 3 songs)","2002","Takara / SSD Company LTD",ekara,ekara,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+easykara,"Easy Karaoke Groove Station","2004","IVL Technologies",-,-,-,YES,NO,NO,NO,NO,easy_karaoke.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,easy_karaoke.cpp
+ekusera,Ekusera,"1982",P.I.C,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+emax,"Emax Digital Sampling Keyboard","1986","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,emax.cpp,PRELIMINARE,LCD,"0",96,16,HORIZONTAL,emax.cpp
+"emax2","Emax II 16-Bit Digital Sound System","1989","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,emax.cpp,PRELIMINARE,LCD,"0",96,16,HORIZONTAL,emax.cpp
+emaxp,"Emax Plus Digital Sampling Keyboard","198?","E-mu Systems",emax,emax,-,YES,NO,NO,NO,NO,emax.cpp,PRELIMINARE,LCD,"0",96,16,HORIZONTAL,emax.cpp
+"emu2","Emulator II","1984","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu2.cpp",PRELIMINARE,-,"0",0,0,-,"emu2.cpp"
+"emu3","Emulator Three Digital Sound Production System","1987","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu3.cpp",PRELIMINARE,LCD,"0",120,36,HORIZONTAL,"emu3.cpp"
+eps,EPS,"1988",Ensoniq,-,-,-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+"eps16p","EPS-16 Plus","1990",Ensoniq,eps,eps,-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+"esq1","ESQ-1 Digital Wave Synthesizer","1986",Ensoniq,-,-,-,YES,NO,NO,NO,NO,"esq1.cpp",PRELIMINARE,-,"0",0,0,-,"esq1.cpp"
+esqm,"ESQ-M Digital Wave Synthesizer Module","1986",Ensoniq,"esq1","esq1",-,YES,NO,NO,NO,NO,"esq1.cpp",PRELIMINARE,-,"0",0,0,-,"esq1.cpp"
+evio,"Evio (Japan)","2003","Tomy / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"ex8000","EX-8000 Programmable Polyphonic Synthe Module","1985",Korg,"dw8000","dw8000",-,YES,NO,NO,NO,NO,"korgdw8k.cpp",PRELIMINARE,-,"0",0,0,-,"korgdw8k.cpp"
+"fb01","FB-01 FM Sound Generator","1986",Yamaha,-,-,-,YES,NO,NO,NO,NO,"fb01.cpp",BUONO,LCD,"0",96,9,HORIZONTAL,"fb01.cpp"
+flash,"Flash (Ideal)","1980","Ideal Toy Corporation",-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+"rp200","GEM RealPiano RP200","1999",Generalmusic,-,-,-,YES,NO,NO,NO,NO,gem_rp.cpp,PRELIMINARE,-,"0",0,0,-,gem_rp.cpp
+"gm1000","GM-1000 GM Sound Module","1994","Suzuki (Hammond license)",-,-,-,YES,NO,NO,NO,NO,"gm1000.cpp",PRELIMINARE,LCD,"0",144,16,HORIZONTAL,"gm1000.cpp"
+"gr700","GR-700 Guitar Synthesizer","1984",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_jx3p.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jx3p.cpp"
+"hs80","HS-80 Programmable Polyphonic Synthesizer","1986",Roland,"ajuno2","ajuno2",-,YES,NO,NO,NO,NO,alphajuno.cpp,PRELIMINARE,LCD,"0",96,8,HORIZONTAL,alphajuno.cpp
+"ht6000","HT-6000","1987",Casio,-,-,-,YES,NO,NO,NO,NO,"ht6000.cpp",PRELIMINARE,-,"0",0,0,-,"ht6000.cpp"
+icanpian,"I Can Play Piano","2006",Fisher-Price,-,-,-,YES,NO,NO,NO,NO,"spg2xx_ican.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_ican.cpp"
+"jd800","JD-800 Programmable Synthesizer","1991",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_jd800.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jd800.cpp"
+"juno106","Juno-106 Programmable Polyphonic Synthesizer","1984",Roland,-,-,-,YES,NO,NO,NO,NO,"juno106.cpp",PRELIMINARE,-,"0",0,0,-,"juno106.cpp"
+"juno6","Juno-6 (JU-6) Polyphonic Synthesizer","1982",Roland,-,-,-,YES,NO,NO,NO,NO,"juno6.cpp",PRELIMINARE,-,"0",0,0,-,"juno6.cpp"
+"jv880","JV-880 Multi Timbral Synthesizer Module","1992",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_jv80.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jv80.cpp"
+"jx10","JX-10 Super JX Polyphonic Synthesizer","1986",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_jx8p.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jx8p.cpp"
+"jx3p","JX-3P Programmable Preset Polyphonic Synthesizer","1983",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_jx3p.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jx3p.cpp"
+"jx8po","JX-8P Polyphonic Synthesizer (Ver. 2.x)","1985",Roland,"jx8p","jx8p",-,YES,NO,NO,NO,NO,"roland_jx8p.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jx8p.cpp"
+"jx8p","JX-8P Polyphonic Synthesizer (Ver. 3.x)","1985",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_jx8p.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jx8p.cpp"
+"k1","K1 Digital Multi-Dimensional Synthesizer","1988","Kawai Musical Instrument Manufacturing",-,-,-,YES,NO,NO,NO,NO,"kawai_k1.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_k1.cpp"
+"k1m","K1m Digital Multi-Dimensional Synthesizer Module","1988","Kawai Musical Instrument Manufacturing","k1","k1",-,YES,NO,NO,NO,NO,"kawai_k1.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_k1.cpp"
+"k1r","K1r Digital Multi-Dimensional Synthesizer Module","1988","Kawai Musical Instrument Manufacturing","k1","k1",-,YES,NO,NO,NO,NO,"kawai_k1.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_k1.cpp"
+"k1rii","K1rII Digital Multi-Dimensional Synthesizer Module","1989","Kawai Musical Instrument Manufacturing",-,-,-,YES,NO,NO,NO,NO,"kawai_k1.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_k1.cpp"
+"k2000","K2000","1990","Kurzweil Music Systems",-,-,-,YES,NO,NO,NO,NO,"krz2000.cpp",PRELIMINARE,LCD,"0",240,64,HORIZONTAL,"krz2000.cpp"
+"k4","K4 16-bit Digital Synthesizer","1989","Kawai Musical Instrument Manufacturing",-,-,-,YES,NO,NO,NO,NO,"kawai_k4.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_k4.cpp"
+"k4r","K4r 16-bit Digital Synthesizer Module","1989","Kawai Musical Instrument Manufacturing","k4","k4",-,YES,NO,NO,NO,NO,"kawai_k4.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_k4.cpp"
+"k5","K5 Digital Multi-Dimensional Synthesizer","1987","Kawai Musical Instrument Manufacturing",-,-,-,YES,NO,NO,NO,NO,"kawai_k5.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_k5.cpp"
+"k5m","K5m Digital Multi-Dimensional Synthesizer Module","1987","Kawai Musical Instrument Manufacturing","k5","k5",-,YES,NO,NO,NO,NO,"kawai_k5.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_k5.cpp"
+"ksp10","KSP10 Digital Piano","199?","Kawai Musical Instruments Manufacturing",-,-,-,YES,NO,NO,NO,NO,"kawai_ksp10.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_ksp10.cpp"
+"kt76","KT-76","1996",Ensoniq,-,-,-,YES,NO,NO,NO,NO,esqkt.cpp,INCOMPLETO,-,"0",0,0,-,esqkt.cpp
+"korgm1ex","M1 EX Music Workstation (v1.29)","1988",Korg,"korgm1","korgm1",-,YES,NO,NO,NO,NO,"korgm1.cpp",PRELIMINARE,LCD,"0",240,16,HORIZONTAL,"korgm1.cpp"
+"korgm1","M1 Music Workstation (Rev 19)","1988",Korg,-,-,-,YES,NO,NO,NO,NO,"korgm1.cpp",PRELIMINARE,LCD,"0",240,16,HORIZONTAL,"korgm1.cpp"
+"korgm1p1","M1 Plus+1 Music Workstation","1993","InVision Interactive","korgm1","korgm1",-,YES,NO,NO,NO,NO,"korgm1.cpp",PRELIMINARE,LCD,"0",240,16,HORIZONTAL,"korgm1.cpp"
+"korgm1rex","M1R EX Music Workstation (v1.12)","1988",Korg,"korgm1","korgm1",-,YES,NO,NO,NO,NO,"korgm1.cpp",PRELIMINARE,LCD,"0",240,16,HORIZONTAL,"korgm1.cpp"
+"korgm1r","M1R Music Workstation (v1.06)","1988",Korg,"korgm1","korgm1",-,YES,NO,NO,NO,NO,"korgm1.cpp",PRELIMINARE,LCD,"0",240,16,HORIZONTAL,"korgm1.cpp"
+machdrum,"Machinedrum SPS-1 MK2","2007",Elektron,-,-,-,YES,NO,NO,NO,NO,elektronmono.cpp,PRELIMINARE,-,"0",0,0,-,elektronmono.cpp
+"mc300","MC-300 Micro Composer","1988",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_mc50.cpp",PRELIMINARE,-,"0",0,0,-,"roland_mc50.cpp"
+"mc50","MC-50 Micro Composer","1990",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_mc50.cpp",PRELIMINARE,-,"0",0,0,-,"roland_mc50.cpp"
+"mc50mk2","MC-50mkII Micro Composer","1992",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_mc50.cpp",PRELIMINARE,-,"0",0,0,-,"roland_mc50.cpp"
+microkorg,"microKORG Synthesizer/Vocoder","2002",Korg,-,-,-,YES,NO,NO,NO,NO,microkorg.cpp,PRELIMINARE,-,"0",0,0,-,microkorg.cpp
+"24cdjuke","Midcoin Juke Box 24CD","1988",Midcoin,-,-,-,YES,NO,NO,NO,NO,"24cdjuke.cpp",PRELIMINARE,-,"0",0,0,-,"24cdjuke.cpp"
+minijook,MiniJook,"199?","Sound Leisure",-,-,-,YES,NO,NO,YES,NO,"cdsys5.cpp",PRELIMINARE,-,"0",0,0,-,"cdsys5.cpp"
+enmirage,"Mirage DMS-8","1984",Ensoniq,-,-,-,YES,NO,NO,NO,NO,enmirage.cpp,PRELIMINARE,-,"0",0,0,-,enmirage.cpp
+"mks100","MKS-100 Digital Sampler","1987",Roland,"s10","s10",-,YES,NO,NO,NO,NO,"roland_s10.cpp",PRELIMINARE,LCD,"0",96,8,HORIZONTAL,"roland_s10.cpp"
+"mks30","MKS-30 Planet-S MIDI Sound Module","1984",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_jx3p.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jx3p.cpp"
+"mks50","MKS-50 Synthesizer Module","1987",Roland,-,-,-,YES,NO,NO,NO,NO,alphajuno.cpp,PRELIMINARE,LCD,"0",96,8,HORIZONTAL,alphajuno.cpp
+"mks7","MKS-7 Super Quartet","1985",Roland,-,-,-,YES,NO,NO,NO,NO,"juno106.cpp",PRELIMINARE,-,"0",0,0,-,"juno106.cpp"
+"mks70","MKS-70 Super JX Polyphonic Synthesizer","1987",Roland,"jx10","jx10",-,YES,NO,NO,NO,NO,"roland_jx8p.cpp",PRELIMINARE,-,"0",0,0,-,"roland_jx8p.cpp"
+"mmt8","MMT-8","1987",Alesis,-,-,-,YES,NO,NO,NO,NO,alesis.cpp,PRELIMINARE,LCD,"0",96,18,HORIZONTAL,alesis.cpp
+monomach,"Monomachine SFX6 MK2","2004",Elektron,-,-,-,YES,NO,NO,NO,NO,elektronmono.cpp,PRELIMINARE,-,"0",0,0,-,elektronmono.cpp
+"mpc3000","MPC-3000","1994","Akai / Roger Linn",-,-,-,YES,NO,NO,NO,NO,"mpc3000.cpp",PRELIMINARE,LCD,"0",240,64,HORIZONTAL,"mpc3000.cpp"
+"mpc60","MPC60 MIDI Production Center","1987","Akai Electric",-,-,-,YES,NO,NO,NO,NO,"mpc60.cpp",PRELIMINARE,LCD,"0",240,64,HORIZONTAL,"mpc60.cpp"
+"mr61","MR-61 Workstation","1996",Ensoniq,-,-,-,YES,NO,NO,NO,NO,esqmr.cpp,PRELIMINARE,-,"0",0,0,-,esqmr.cpp
+mrrack,MR-Rack,"1996",Ensoniq,-,-,-,YES,NO,NO,NO,NO,esqmr.cpp,PRELIMINARE,-,"0",0,0,-,esqmr.cpp
+"mt32","MT-32","1987",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_mt32.cpp",PRELIMINARE,LCD,"0",119,89,HORIZONTAL,"roland_mt32.cpp"
+"mu5","MU-5","1994",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymmu5.cpp",PRELIMINARE,SVG,"0",800,435,HORIZONTAL,"ymmu5.cpp"
+"mu100","MU100","1997",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymmu100.cpp",PRELIMINARE,SVG,"0",1280,386,HORIZONTAL,"ymmu100.cpp"
+"mu100r","MU100 Rackable version","1997",Yamaha,"mu100","mu100",-,YES,NO,NO,NO,NO,"ymmu100.cpp",PRELIMINARE,SVG,"0",1280,386,HORIZONTAL,"ymmu100.cpp"
+"mu100b","MU100B","1998",Yamaha,"mu100","mu100",-,YES,NO,NO,NO,NO,"ymmu100.cpp",PRELIMINARE,SVG,"0",1280,386,HORIZONTAL,"ymmu100.cpp"
+"mu50","MU50","1995",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymmu50.cpp",PRELIMINARE,SVG,"0",1280,386,HORIZONTAL,"ymmu50.cpp"
+"mu80","MU80","1994",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymmu80.cpp",PRELIMINARE,SVG,"0",1280,386,HORIZONTAL,"ymmu80.cpp"
+"orbit9090","Orbit 9090 - The Dance Planet","1996","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu68k.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"emu68k.cpp"
+phatt,"Planet Phatt - The Swing System","1997","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu68k.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"emu68k.cpp"
+"poly61","Poly-61 Programmable Polyphonic Synthesizer","1982",Korg,-,-,-,YES,NO,NO,NO,NO,polysix.cpp,PRELIMINARE,-,"0",0,0,-,polysix.cpp
+"poly800","Poly-800 Programmable Polyphonic Synthesizer","1984",Korg,-,-,-,YES,NO,NO,NO,NO,"poly800.cpp",PRELIMINARE,-,"0",0,0,-,"poly800.cpp"
+"poly800mdk","Poly-800 Programmable Polyphonic Synthesizer (MIDI Dump Kit)","1984",Korg,-,-,-,YES,NO,NO,NO,NO,"poly800.cpp",PRELIMINARE,-,"0",0,0,-,"poly800.cpp"
+"poly800ii","Poly-800II Programmable Polyphonic Synthesizer","1986",Korg,-,-,-,YES,NO,NO,NO,NO,"poly800.cpp",PRELIMINARE,-,"0",0,0,-,"poly800.cpp"
+polysix,"Polysix Programmable Polyphonic Synthesizer","1980",Korg,-,-,-,YES,NO,NO,NO,NO,polysix.cpp,PRELIMINARE,-,"0",0,0,-,polysix.cpp
+powernin,"Power Ninja Action Challenge","2009","Linus Åkesson",-,-,-,YES,NO,NO,NO,NO,lft_chiptune.cpp,BUONO,-,"0",0,0,-,lft_chiptune.cpp
+"pr100","PR-100 Digital Sequencer","1987",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_pr100.cpp",PRELIMINARE,-,"0",0,0,-,"roland_pr100.cpp"
+procuss,"Pro/Cussion Maximum Percussion Module","1991","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu68k.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"emu68k.cpp"
+"prpht600","Prophet-600","1983","Sequential Circuits",-,-,-,YES,NO,NO,NO,NO,"prophet600.cpp",PRELIMINARE,-,"0",0,0,-,"prophet600.cpp"
+"proteus1","Proteus/1 16-Bit Multi-Timbral Digital Sound Module","1989","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu68k.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"emu68k.cpp"
+proteusxr,"Proteus/1 XR 16-Bit Multi-Timbral Digital Sound Module","1989","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu68k.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"emu68k.cpp"
+"psr16","PSR-16","1988",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ympsr16.cpp",PRELIMINARE,-,"0",0,0,-,"ympsr16.cpp"
+"psr340","PSR-340 PortaSound","1994",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ympsr340.cpp",PRELIMINARE,SVG,"0",800,384,HORIZONTAL,"ympsr340.cpp"
+"psr36","PSR-36","1988",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ympsr16.cpp",PRELIMINARE,-,"0",0,0,-,"ympsr16.cpp"
+"psr40","PSR-40","1985",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ympsr40.cpp",PRELIMINARE,-,"0",0,0,-,"ympsr40.cpp"
+"psr60","PSR-60 PortaSound","1985",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ympsr60.cpp",PRELIMINARE,-,"0",0,0,-,"ympsr60.cpp"
+"psr70","PSR-70 PortaSound","1985",Yamaha,"psr60","psr60",-,YES,NO,NO,NO,NO,"ympsr60.cpp",PRELIMINARE,-,"0",0,0,-,"ympsr60.cpp"
+"pss680","PSS-680","1988",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ympsr16.cpp",PRELIMINARE,-,"0",0,0,-,"ympsr16.cpp"
+"r100","R-100 Digital Drum Machine","1987","Kawai Musical Instrument Manufacturing",-,-,-,YES,NO,NO,NO,NO,"kawai_r100.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_r100.cpp"
+"r8","R-8 Human Rhythm Composer (v2.02)","1989",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_r8.cpp",PRELIMINARE,-,"0",0,0,-,"roland_r8.cpp"
+"r8mk2","R-8 Mk II Human Rhythm Composer (v1.0.3)","1992",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_r8.cpp",PRELIMINARE,-,"0",0,0,-,"roland_r8.cpp"
+"r8m","R-8M Total Percussion Sound Module (v1.04)","1990",Roland,"r8","r8",-,YES,NO,NO,NO,NO,"roland_r8.cpp",PRELIMINARE,-,"0",0,0,-,"roland_r8.cpp"
+"ra30","RA-30 Realtime Arranger","1995",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_ra30.cpp",PRELIMINARE,-,"0",0,0,-,"roland_ra30.cpp"
+"rz1","RZ-1","1986",Casio,-,-,-,YES,NO,NO,NO,NO,"rz1.cpp",INCOMPLETO,LCD,"0",97,10,HORIZONTAL,"rz1.cpp"
+"s10","S-10 Digital Sampling Keyboard","1986",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_s10.cpp",PRELIMINARE,LCD,"0",96,8,HORIZONTAL,"roland_s10.cpp"
+"s220","S-220 Digital Sampler","1987",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_s10.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"roland_s10.cpp"
+"s50","S-50 Digital Sampling Keyboard","1987",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_s50.cpp",PRELIMINARE,RASTER,"0",336,252,HORIZONTAL,"roland_s50.cpp"
+"s550","S-550 Digital Sampler","1987",Roland,"s50","s50",-,YES,NO,NO,NO,NO,"roland_s50.cpp",PRELIMINARE,RASTER,"0",336,252,HORIZONTAL,"roland_s50.cpp"
+"sd1","SD-1 (21 voice)","1990",Ensoniq,-,-,-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+"sd132","SD-1 (32 voice)","1991",Ensoniq,"sd1","sd1",-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+"sk1","SK-1","1985",Casio,-,-,-,YES,NO,NO,NO,NO,"sk1.cpp",PRELIMINARE,-,"0",0,0,-,"sk1.cpp"
+"sk10","SK-10","1987",Casio,-,-,-,YES,NO,NO,NO,NO,"sk1.cpp",PRELIMINARE,-,"0",0,0,-,"sk1.cpp"
+"sk2","SK-2","1988",Casio,-,-,-,YES,NO,NO,NO,NO,"sk1.cpp",PRELIMINARE,-,"0",0,0,-,"sk1.cpp"
+"sk5","SK-5","1987",Casio,-,-,-,YES,NO,NO,NO,NO,"sk1.cpp",PRELIMINARE,-,"0",0,0,-,"sk1.cpp"
+"sc55","Sound Canvas SC-55","1991",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_sc55.cpp",PRELIMINARE,-,"0",0,0,-,"roland_sc55.cpp"
+"sc88vl","SoundCanvas SC-88VL","1995",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_sc88.cpp",PRELIMINARE,-,"0",0,0,-,"roland_sc88.cpp"
+"sq1","SQ-1","1990",Ensoniq,-,-,-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+"sq2","SQ-2","1991",Ensoniq,-,-,-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+"sq80","SQ-80 Cross Wave Synthesizer","1988",Ensoniq,-,-,-,YES,NO,NO,NO,NO,"esq1.cpp",PRELIMINARE,-,"0",0,0,-,"esq1.cpp"
+sqrack,SQ-Rack,"1990",Ensoniq,"sq1","sq1",-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+sbasssta,"Super Bass Station","1997",Novation,-,-,-,YES,NO,NO,NO,NO,basssta.cpp,PRELIMINARE,-,"0",0,0,-,basssta.cpp
+slsstars,"SuperStars (CD jukebox)","199?","Sound Leisure",-,-,-,YES,NO,NO,YES,NO,slsstars.cpp,PRELIMINARE,-,"0",0,0,-,slsstars.cpp
+"sx240","SX-240 8-Voice Programmable Polyphonic Synthesizer","1984","Kawai Musical Instrument Manufacturing",-,-,-,YES,NO,NO,NO,NO,"kawai_sx240.cpp",PRELIMINARE,-,"0",0,0,-,"kawai_sx240.cpp"
+"sy35","SY35 Music Synthesizer","1992",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymsy35.cpp",PRELIMINARE,-,"0",0,0,-,"ymsy35.cpp"
+synthex,Synthex,"1981",Elka,-,-,-,YES,NO,NO,NO,NO,synthex.cpp,PRELIMINARE,-,"0",0,0,-,synthex.cpp
+"tb303","TB-303 Bass Line","1982",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_tb303.cpp",PRELIMINARE,-,"0",0,0,-,"roland_tb303.cpp"
+"tg100","TG100","1991",Yamaha,-,-,-,YES,NO,NO,NO,NO,"tg100.cpp",PRELIMINARE,-,"0",0,0,-,"tg100.cpp"
+hwchiptn,"The Hardware Chiptune Project","2007","Linus Åkesson / kryo",-,-,-,YES,NO,NO,NO,NO,lft_chiptune.cpp,BUONO,-,"0",0,0,-,lft_chiptune.cpp
+"tr505","TR-505 Rhythm Composer","1986",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_tr505.cpp",PRELIMINARE,-,"0",0,0,-,"roland_tr505.cpp"
+"tr606","TR-606 Drumatix","1982",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_tr606.cpp",PRELIMINARE,-,"0",0,0,-,"roland_tr606.cpp"
+"tr707","TR-707 Rhythm Composer","1985",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_tr707.cpp",PRELIMINARE,-,"0",0,0,-,"roland_tr707.cpp"
+"tr727","TR-727 Rhythm Composer","1985",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_tr707.cpp",PRELIMINARE,-,"0",0,0,-,"roland_tr707.cpp"
+"tr909","TR-909 Rhythm Composer","1984",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_tr909.cpp",PRELIMINARE,-,"0",0,0,-,"roland_tr909.cpp"
+"ts10","TS-10","1993",Ensoniq,-,-,-,YES,NO,NO,NO,NO,esqkt.cpp,PRELIMINARE,-,"0",0,0,-,esqkt.cpp
+"ts12","TS-12","1993",Ensoniq,-,-,-,YES,NO,NO,NO,NO,esqkt.cpp,PRELIMINARE,-,"0",0,0,-,esqkt.cpp
+"tx81z","TX81Z FM Tone Generator","1987",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymtx81z.cpp",PRELIMINARE,LCD,"0",97,21,HORIZONTAL,"ymtx81z.cpp"
+"u20","U-20 RS-PCM Keyboard","1989",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_u20.cpp",PRELIMINARE,-,"0",0,0,-,"roland_u20.cpp"
+"u220","U-220 RS-PCM Sound Module","1989",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_u20.cpp",PRELIMINARE,-,"0",0,0,-,"roland_u20.cpp"
+vfx,VFX,"1989",Ensoniq,-,-,-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+vfxsd,VFX-SD,"1989",Ensoniq,-,-,-,YES,NO,NO,NO,NO,"esq5505.cpp",PRELIMINARE,-,"0",0,0,-,"esq5505.cpp"
+vgmplay,"VGM player","2016",MAME,-,-,-,YES,NO,NO,NO,NO,vgmplay.cpp,INCOMPLETO,RASTER,"0",256,768,HORIZONTAL,vgmplay.cpp
+vintkeys,"Vintage Keys Classic Analog Keyboards","1993","E-mu Systems",-,-,-,YES,NO,NO,NO,NO,"emu68k.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"emu68k.cpp"
+virusa,"Virus A","1997",Access,-,-,-,YES,NO,NO,NO,NO,acvirus.cpp,PRELIMINARE,-,"0",0,0,-,acvirus.cpp
+virusb,"Virus B (Ver. T)","1999",Access,-,-,-,YES,NO,NO,NO,NO,acvirus.cpp,PRELIMINARE,-,"0",0,0,-,acvirus.cpp
+virusc,"Virus C","2002",Access,-,-,-,YES,NO,NO,NO,NO,acvirus.cpp,PRELIMINARE,-,"0",0,0,-,acvirus.cpp
+viruscl,"Virus Classic","2004",Access,-,-,-,YES,NO,NO,NO,NO,acvirus.cpp,PRELIMINARE,-,"0",0,0,-,acvirus.cpp
+virusrck,"Virus Rack (Ver. T)","2001",Access,-,-,-,YES,NO,NO,NO,NO,acvirus.cpp,PRELIMINARE,-,"0",0,0,-,acvirus.cpp
+virusrckxl,"Virus Rack XL","2002",Access,-,-,-,YES,NO,NO,NO,NO,acvirus.cpp,PRELIMINARE,-,"0",0,0,-,acvirus.cpp
+"vl70","VL70-m","1996",Yamaha,-,-,-,YES,NO,NO,NO,NO,"ymvl70.cpp",PRELIMINARE,SVG,"0",1280,386,HORIZONTAL,"ymvl70.cpp"
+"vx600","VX600 Programmable Matrix Synthesizer","1988",Akai,-,-,-,YES,NO,NO,NO,NO,"akaivx600.cpp",PRELIMINARE,-,"0",0,0,-,"akaivx600.cpp"
+"w30","W-30 Music Workstation","1988",Roland,-,-,-,YES,NO,NO,NO,NO,"roland_s50.cpp",PRELIMINARE,LCD,"0",240,64,HORIZONTAL,"roland_s50.cpp"
+korgwsad,"WaveStation A/D","1991",Korg,-,-,-,YES,NO,NO,NO,NO,korgws.cpp,PRELIMINARE,-,"0",0,0,-,korgws.cpp
+korgwsex,"WaveStation EX","1992",Korg,-,-,-,YES,NO,NO,NO,NO,korgws.cpp,PRELIMINARE,-,"0",0,0,-,korgws.cpp
+korgwssr,"WaveStation SR","1992",Korg,-,-,-,YES,NO,NO,NO,NO,korgws.cpp,PRELIMINARE,-,"0",0,0,-,korgws.cpp
+"xbase09","XBase 09 Midi Controlled Analogue Drum Module","1997",JoMoX,-,-,-,YES,NO,NO,NO,NO,"xbase09.cpp",PRELIMINARE,-,"0",0,0,-,"xbase09.cpp"
+"korgz3","Z3 Guitar Synthesizer","1988",Korg,-,-,-,YES,NO,NO,NO,NO,"korgz3.cpp",PRELIMINARE,-,"0",0,0,-,"korgz3.cpp"

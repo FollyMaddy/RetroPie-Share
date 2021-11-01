@@ -1,0 +1,290 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+qos,"A Question of Sport (set 1, 39-960-107)","1992",BFM,-,-,-,YES,NO,NO,NO,NO,bfcobra.cpp,INCOMPLETO,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+qosa,"A Question of Sport (set 2, 39-960-099)","1992",BFM,qos,qos,-,YES,NO,NO,NO,NO,bfcobra.cpp,INCOMPLETO,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+qosb,"A Question of Sport (set 3, 39-960-089)","1992",BFM,qos,qos,-,YES,NO,NO,NO,NO,bfcobra.cpp,INCOMPLETO,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+abcheck,"Abnormal Check","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcond1.cpp",PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,"namcond1.cpp"
+"v4addlad20","Adders and Ladders (v2.0) (MPU4 Video)","1989",Barcrest,"v4addlad","v4addlad",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4addlad","Adders and Ladders (v2.1) (MPU4 Video)","1989",Barcrest,"v4bios",-,-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+hatena,"Adventure Quiz 2 - Hatena? no Daibouken (Japan 900228)","1990",Capcom,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+"cworld2ja","Adventure Quiz Capcom World 2 (Japan 920611, B-Board 90629B-3, no battery)","1992",Capcom,"cworld2j","cworld2j",-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+"cworld2jb","Adventure Quiz Capcom World 2 (Japan 920611, B-Board 91634B-2)","1992",Capcom,"cworld2j","cworld2j",-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+"cworld2j","Adventure Quiz Capcom World 2 (Japan 920611)","1992",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+atehate,"Athena no Hatena?","1993",Athena,-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,seta.cpp
+bbchall,"Baby Boom Challenge","1986","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+bkrtmaq,"Bakuretsu Quiz Ma-Q Dai Bouken (Japan)","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+beeline,"Beeline (39-360-075)","1991",BFM,-,-,-,YES,NO,NO,NO,NO,bfcobra.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+bigbucks,"Big Bucks","1986","Dynasoft Inc.",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+cworld,"Capcom World (Japan)","1989",Capcom,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+cashquiz,"Cash Quiz (Type B, Version 5)","1986",Zilec-Zenitone,-,-,-,YES,NO,NO,NO,NO,pingpong.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,pingpong.cpp
+ultrchmph,"Cheng Ba Shi Jie - Chao Shi Kong Guan Jun (Taiwan)","1995",Nakanihon,nettoqc,nettoqc,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+marukodq,"Chibi Maruko-chan: Maruko Deluxe Quiz","1995",Takara,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"cluedo2","Cluedo (prod. 2)","1995",JPM,cluedo,cluedo,-,YES,NO,NO,NO,NO,jpmimpct.cpp,INCOMPLETO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+"cluedo2c","Cluedo (prod. 2C)","1995",JPM,cluedo,cluedo,-,YES,NO,NO,NO,NO,jpmimpct.cpp,INCOMPLETO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+cluedo,"Cluedo (prod. 2D)","1995",JPM,-,-,-,YES,NO,NO,NO,NO,jpmimpct.cpp,INCOMPLETO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+cluedod,"Cluedo (prod. 2D) (Protocol)","1995",JPM,cluedo,cluedo,-,YES,NO,NO,NO,NO,jpmimpct.cpp,INCOMPLETO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+atamanot,"Computer Quiz Atama no Taisou (Japan)","1983","Yachiyo Denki / Uni Enterprize",-,-,-,YES,NO,NO,NO,NO,ssingles.cpp,PRELIMINARE,RASTER,"90",256,256,VERTICAL,ssingles.cpp
+coronatn,"Coronation Street Quiz Game","1999",JPM,-,-,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+coronatnd,"Coronation Street Quiz Game (Protocol)","1999",JPM,coronatn,coronatn,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+danchiq,"Danchi de Quiz: Okusan Yontaku Desuyo! (J 001128 V1.200)","2000",Altron,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+dquizgo,"Date Quiz Go Go (Korea)","1998","SemiCom / AceVer",-,-,-,YES,NO,NO,NO,NO,tumbleb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,tumbleb.cpp
+"dquizgo2","Date Quiz Go Go Episode 2","2000",SemiCom,-,-,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+"dtrvwz5","Deluxe Trivia ? Whiz (6221-70, U5-0A Edition 5)","1987",Merit,-,-,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+mdhorse,"Derby Quiz My Dream Horse (Japan, MDH1/VER.A2)","1998","MOSS / Namco",-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+keithlcy,"Dramatic Adventure Quiz Keith & Lucy (Japan)","1993",Visco,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",336,238,HORIZONTAL,ssv.cpp
+enmadaio,"Enma Daio (Japan)","1993","Toaplan / Taito",-,-,-,YES,NO,NO,NO,NO,"toaplan2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"toaplan2.cpp"
+escounts,"Every Second Counts (39-360-053)","1990",BFM,-,-,-,YES,NO,NO,NO,NO,bfcobra.cpp,INCOMPLETO,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+fax,FAX,"1983",Exidy,-,-,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"fax2","FAX 2","1983",Exidy,fax,fax,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+findout,"Find Out (Version 4.04)","1987",Elettronolo,-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+fbcrazy,"Football Crazy (Video Quiz)","1997",BFM,-,-,-,YES,NO,NO,NO,YES,rastersp.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,rastersp.cpp
+funquiza,"Fun World Quiz (German, 12-11-1990)","1990","Fun World",-,-,-,YES,NO,NO,NO,NO,funworld.cpp,BUONO,RASTER,"0",384,232,HORIZONTAL,funworld.cpp
+funquizb,"Fun World Quiz (German, 27-04-1990)","1990","Fun World",-,-,-,YES,NO,NO,NO,NO,funworld.cpp,BUONO,RASTER,"0",384,232,HORIZONTAL,funworld.cpp
+funquiz,"Fun World Quiz (German)","199?","Fun World",-,-,-,YES,NO,NO,NO,NO,funworld.cpp,BUONO,RASTER,"0",384,232,HORIZONTAL,funworld.cpp
+garogun,"Garogun Seroyang (Korea)","2000","Yun Sung",-,-,-,YES,NO,NO,NO,NO,"nmg5.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"nmg5.cpp"
+guab,"Give us a Break","1986",JPM,-,-,-,YES,NO,NO,NO,NO,guab.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,guab.cpp
+ryorioh,"Gourmet Battle Quiz Ryohrioh CooKing (Japan)","1998",Visco,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ssv.cpp
+hangman,Hangman,"1984","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+hngmnjpm,"Hangman (JPM)","1998",JPM,-,-,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+hngmnjpmd,"Hangman (JPM) (Protocol)","1998",JPM,hngmnjpm,hngmnjpm,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+"hayaosi2","Hayaoshi Quiz Grand Champion Taikai","1994",Jaleco,-,-,-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+"hayaosi3a","Hayaoshi Quiz Nettou Namahousou (ver 1.2)","1994",Jaleco,"hayaosi3","hayaosi3",-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+"hayaosi3","Hayaoshi Quiz Nettou Namahousou (ver 1.5)","1994",Jaleco,-,-,-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+"hayaosi1","Hayaoshi Quiz Ouza Ketteisen - The King Of Quiz","1993",Jaleco,-,-,-,YES,NO,NO,NO,NO,"megasys1.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"megasys1.cpp"
+hyhoo,"Hayaoshi Taisen Quiz Hyhoo (Japan)","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,hyhoo.cpp,BUONO,RASTER,"90",512,224,VERTICAL,hyhoo.cpp
+"hyhoo2","Hayaoshi Taisen Quiz Hyhoo 2 (Japan)","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,hyhoo.cpp,BUONO,RASTER,"90",512,224,VERTICAL,hyhoo.cpp
+inquiztr,Inquizitor,"1989",BFM,-,-,-,YES,NO,NO,NO,NO,bfcobra.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+kaiunqz,"Kaiun Quiz (Japan, KW1/VER.A)","1999",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+introdon,"Karaoke Quiz Intro Don Don! (J 960213 V1.000)","1996","Sunsoft / Success",stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+kirameki,"Kirameki Star Road (Ver 2.10J 1997/08/29)","1997","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+myangel,"Kosodate Quiz My Angel (Japan)","1996","MOSS / Namco",-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",INCOMPLETO,RASTER,"0",376,240,HORIZONTAL,"seta2.cpp"
+"myangel2","Kosodate Quiz My Angel 2 (Japan)","1997","MOSS / Namco",-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",INCOMPLETO,RASTER,"0",376,240,HORIZONTAL,"seta2.cpp"
+"myangel3","Kosodate Quiz My Angel 3 (Japan, KQT1/VER.A)","1998","MOSS / Namco",-,-,-,YES,NO,NO,NO,NO,"namcos11.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos11.cpp"
+keyboard,"La Keyboard (GDS-0017)","2001",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"lsrquiz2i","Laser Quiz 2 Italy (v1.0)","1995","CD Express",cubo,-,-,YES,NO,NO,NO,YES,cubo.cpp,PRELIMINARE,RASTER,"0",724,567,HORIZONTAL,cubo.cpp
+lsrquizg,"Laser Quiz Greece","1995","CD Express",cubo,-,-,YES,NO,NO,NO,YES,cubo.cpp,PRELIMINARE,RASTER,"0",724,567,HORIZONTAL,cubo.cpp
+lsrquiz,"Laser Quiz Italy","1995","CD Express",cubo,-,-,YES,NO,NO,NO,YES,cubo.cpp,PRELIMINARE,RASTER,"0",724,567,HORIZONTAL,cubo.cpp
+"ldquiz4","LD Quiz dai 4-dan - Kotaetamon Gachi! (Japan)","1992",Nichibutsu,-,-,-,YES,NO,NO,NO,YES,nichild.cpp,PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,nichild.cpp
+livequiz,"Live Quiz Show","1999",Andamiro,-,-,-,YES,NO,NO,NO,NO,midas.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,midas.cpp
+magzun,"Magical Zunou Power (J 961031 V1.000)","1996",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+marstv,"Mars TV (Japan)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+mastboyo,"Master Boy (1987, Z80 hardware, Covielsa, set 1)","1987","Gaelco (Covielsa license)",-,-,-,YES,NO,NO,NO,NO,mastboyo.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,mastboyo.cpp
+mastboyoa,"Master Boy (1987, Z80 hardware, Covielsa, set 2)","1987","Gaelco (Covielsa license)",mastboyo,mastboyo,-,YES,NO,NO,NO,NO,mastboyo.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,mastboyo.cpp
+mastboyob,"Master Boy (1987, Z80 hardware, Ichi-Funtel, set 1)","1987","Gaelco (Ichi-Funtel license)",mastboyo,mastboyo,-,YES,NO,NO,NO,NO,mastboyo.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,mastboyo.cpp
+mastboyoc,"Master Boy (1987, Z80 hardware, Ichi-Funtel, set 2)","1987","Gaelco (Ichi-Funtel license)",mastboyo,mastboyo,-,YES,NO,NO,NO,NO,mastboyo.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,mastboyo.cpp
+mastboyi,"Master Boy (Italian, PCB Rev A, set 1)","1991",Gaelco,mastboy,mastboy,-,YES,NO,NO,NO,NO,mastboy.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,mastboy.cpp
+mastboyia,"Master Boy (Italian, PCB Rev A, set 2)","1991",Gaelco,mastboy,mastboy,-,YES,NO,NO,NO,NO,mastboy.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,mastboy.cpp
+mastboya,"Master Boy (Spanish, PCB Rev A, hack?)","1991",Gaelco,mastboy,mastboy,-,YES,NO,NO,NO,NO,mastboy.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,mastboy.cpp
+mastboy,"Master Boy (Spanish, PCB Rev A)","1991",Gaelco,-,-,-,YES,NO,NO,NO,NO,mastboy.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,mastboy.cpp
+"quiz18k","Miyasu Nonki no Quiz 18-Kin","1992",EIM,-,-,-,YES,NO,NO,NO,NO,welltris.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,welltris.cpp
+"monopoly3","Monopoly (JPM) (Version 3) (SYSTEM5 VIDEO)","1994",JPM,monopoly,monopoly,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",BUONO,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+"monopoly4","Monopoly (JPM) (Version 4) (SYSTEM5 VIDEO)","1994",JPM,monopoly,monopoly,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",BUONO,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+monopolyd,"Monopoly (JPM) (Version 4H, Protocol) (SYSTEM5 VIDEO)","1994",JPM,monopoly,monopoly,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",BUONO,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+monopoly,"Monopoly (JPM) (Version 4H) (SYSTEM5 VIDEO)","1994",JPM,-,-,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",BUONO,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+monoplcld,"Monopoly Classic (JPM) (Version 5, Protocol) (SYSTEM5 VIDEO)","1995",JPM,monopoly,monopoly,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",BUONO,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+monoplcl,"Monopoly Classic (JPM) (Version 5) (SYSTEM5 VIDEO)","1995",JPM,monopoly,monopoly,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",BUONO,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+"monopldx1","Monopoly Deluxe (JPM) (Version 1) (SYSTEM5 VIDEO)","1995",JPM,monopldx,monopldx,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",PRELIMINARE,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+monopldxd,"Monopoly Deluxe (JPM) (Version 6, Protocol) (SYSTEM5 VIDEO)","1995",JPM,monopldx,monopldx,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",BUONO,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+monopldx,"Monopoly Deluxe (JPM) (Version 6) (SYSTEM5 VIDEO)","1995",JPM,-,-,-,YES,NO,NO,NO,NO,"jpmsys5.cpp",BUONO,RASTER,"0",508,254,HORIZONTAL,"jpmsys5.cpp"
+macha,"Monoshiri Quiz Osyaberi Macha (Japan)","1983",Logitec,-,-,-,YES,NO,NO,NO,NO,jangou.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,jangou.cpp
+quizhuhu,"Moriguchi Hiroko no Quiz de Hyuu!Hyuu! (Ver 2.2J 1995/05/25)","1995","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",PRELIMINARE,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+"rocktrv2","MTV Rock-N-Roll Trivia (Part 2)","1986","Triumph Software Inc.",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"nametune2","Name That Tune (Bally, 3/23/86)","1986",Bally/Sente,nametune,nametune,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+nametune,"Name That Tune (Bally, set 1)","1986",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+nettoqc,"Nettoh Quiz Champion (Japan)","1995",Nakanihon,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+quiztou,"Nettou! Gekitou! Quiztou!! (Japan)","1993",Namco,-,-,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+"nsupertr3","New Super Triv III","1988","Status Games","supertr3","supertr3",-,YES,NO,NO,NO,NO,"statriv2.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+nouryoku,"Nouryoku Koujou Iinkai","1995",Tecmo,-,-,-,YES,NO,NO,NO,NO,"nmk16.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"nmk16.cpp"
+nouryokup,"Nouryoku Koujou Iinkai (prototype)","1995",Tecmo,nouryoku,nouryoku,-,YES,NO,NO,NO,NO,"nmk16.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"nmk16.cpp"
+akamaru,"Panel & Variety Akamaru Q Jousyou Dont-R","1996","Dynax (Nakanihon license)",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+phrcrazea,"Phraze Craze (6221-40, U5-0)","1986",Merit,phrcraze,phrcraze,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+phrcraze,"Phraze Craze (6221-40, U5-0A)","1986",Merit,-,-,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+phrcrazec,"Phraze Craze (6221-40, U5-3 Expanded Questions)","1986",Merit,phrcraze,phrcraze,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+phrcrazeb,"Phraze Craze (6221-40, U5-3A Expanded Questions)","1986",Merit,phrcraze,phrcraze,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+phrcrazev,"Phraze Craze (6221-45, U5-2 Vertical)","1986",Merit,phrcraze,phrcraze,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"90",512,256,VERTICAL,merit.cpp
+popspops,"Pop's Pop's","1999",Afega,-,-,-,YES,NO,NO,NO,NO,"nmk16.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"nmk16.cpp"
+profpac,"Professor Pac-Man","1983","Dave Nutting Associates / Bally Midway",-,-,-,YES,NO,NO,NO,NO,astrocde.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,astrocde.cpp
+triviaqz,"Professor Trivia (set 1)","1985","Intermatic Manufacturing",-,-,-,YES,NO,NO,NO,NO,triviaquiz.cpp,PRELIMINARE,RASTER,"0",280,216,HORIZONTAL,triviaquiz.cpp
+"triviaqz2","Professor Trivia (set 2)","1985","Intermatic Manufacturing",triviaqz,triviaqz,-,YES,NO,NO,NO,NO,triviaquiz.cpp,PRELIMINARE,RASTER,"0",280,216,HORIZONTAL,triviaquiz.cpp
+promutrv,"Progressive Music Trivia (Question set 1)","1985","Enerdyne Technologies Inc.",-,-,-,YES,NO,NO,NO,NO,ettrivia.cpp,BUONO,RASTER,"270",256,224,VERTICAL,ettrivia.cpp
+promutrva,"Progressive Music Trivia (Question set 2)","1985","Enerdyne Technologies Inc.",promutrv,promutrv,-,YES,NO,NO,NO,NO,ettrivia.cpp,BUONO,RASTER,"270",256,224,VERTICAL,ettrivia.cpp
+promutrvb,"Progressive Music Trivia (Question set 3)","1985","Enerdyne Technologies Inc.",promutrv,promutrv,-,YES,NO,NO,NO,NO,ettrivia.cpp,BUONO,RASTER,"270",256,224,VERTICAL,ettrivia.cpp
+promutrvc,"Progressive Music Trivia (Question set 4)","1985","Enerdyne Technologies Inc.",promutrv,promutrv,-,YES,NO,NO,NO,NO,ettrivia.cpp,BUONO,RASTER,"270",256,224,VERTICAL,ettrivia.cpp
+"quaquiz2","Quadro Quiz II","1985","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+"quiz211","Quiz (Revision 2.11)","1991",Elettronolo,-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+quiz,"Quiz (Revision 2)","1986",Elettronolo,-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+qadjr,"Quiz & Dragons: Capcom Quiz Game (Japan Resale Ver. 940921)","1994",Capcom,qad,qad,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+qad,"Quiz & Dragons: Capcom Quiz Game (USA 920701)","1992",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+inufuku,"Quiz & Variety Sukusuku Inufuku (Japan)","1998","Video System Co.",-,-,-,YES,NO,NO,NO,NO,inufuku.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,inufuku.cpp
+"quiz365t","Quiz 365 (Hong Kong & Taiwan)","1994","Nakanihon / Taito","quiz365","quiz365",-,YES,NO,NO,NO,NO,ddenlovr.cpp,PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+"quiz365","Quiz 365 (Japan)","1994",Nakanihon,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+qmegamis,"Quiz Ah Megamisama","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+sukuinuf,"Quiz and Variety Suku Suku Inufuku 2 (IN2 Ver. A)","2004",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+quizmoon,"Quiz Bisyoujo Senshi Sailor Moon - Chiryoku Tairyoku Toki no Un","1997",Banpresto,-,-,-,YES,NO,NO,NO,NO,macrossp.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,macrossp.cpp
+quizchq,"Quiz Channel Question (Japan, Ver 1.00)","1993",Nakanihon,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+quizchql,"Quiz Channel Question (Taiwan?, Ver 1.23)","1993","Nakanihon (Laxan license)",quizchq,quizchq,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+qzchikyu,"Quiz Chikyu Bouei Gun (Japan)","1991","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+qcrayon,"Quiz Crayon Shinchan (Japan)","1993","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+quizdais,"Quiz Daisousa Sen - The Last Count Down (NGM-023 ~ NGH-023)","1991",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+hotdebut,"Quiz de Idol! Hot Debut (Japan)","2000","MOSS / Psikyo",-,-,-,YES,NO,NO,NO,NO,"psikyo4.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"psikyo4.cpp"
+quizdna,"Quiz DNA no Hanran (Japan)","1992",Face,-,-,-,YES,NO,NO,NO,NO,quizdna.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,quizdna.cpp
+qdrmfgp,"Quiz Do Re Mi Fa Grand Prix (Japan)","1994",Konami,-,-,-,YES,NO,NO,NO,YES,qdrmfgp.cpp,INCOMPLETO,RASTER,"0",384,224,HORIZONTAL,qdrmfgp.cpp
+"qdrmfgp2","Quiz Do Re Mi Fa Grand Prix 2 - Shin-Kyoku Nyuukadayo (Japan)","1995",Konami,-,-,-,YES,NO,NO,NO,YES,qdrmfgp.cpp,INCOMPLETO,RASTER,"0",384,224,HORIZONTAL,qdrmfgp.cpp
+"quizf1","Quiz F1 1-2 Finish (Japan)","1992",Irem,-,-,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",384,256,HORIZONTAL,"m90.cpp"
+gakupara,"Quiz Gakuen Paradise (Japan)","1991",NMK,-,-,-,YES,NO,NO,NO,NO,quizdna.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,quizdna.cpp
+qgakumon,"Quiz Gakumon no Susume (Japan ver. JA1 Type H)","1993",Konami,-,-,-,YES,NO,NO,NO,NO,tmnt.cpp,BUONO,RASTER,"0",304,224,HORIZONTAL,tmnt.cpp
+gekiretu,"Quiz Gekiretsu Scramble (Japan)","1992",Face,-,-,-,YES,NO,NO,NO,NO,quizdna.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,quizdna.cpp
+qgh,"Quiz Ghost Hunter (Japan, ROM Based)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+quizhq,"Quiz H.Q. (Japan)","1990","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+qjinsei,"Quiz Jinsei Gekijoh (Japan)","1992","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+quizqgd,"Quiz Keitai Q mode (GDL-0017)","2002","Amedio (Taito license)",naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+quizkofk,"Quiz King of Fighters (Korea)","1996","Saurus / Viccom (SNK license)",quizkof,quizkof,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+quizkof,"Quiz King of Fighters (SAM-080 ~ SAH-080)","1995","Saurus (SNK license)",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+qzkklogy,"Quiz Kokology","1992",Tecmo,-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,seta.cpp
+"qzkklgy2","Quiz Kokology 2","1993",Tecmo,-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,seta.cpp
+"quizdai2","Quiz Meitantei Neo & Geo - Quiz Daisousa Sen part 2 (NGM-042 ~ NGH-042)","1992",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+quizmeku,"Quiz Mekurumeku Story (Japan, ROM Based)","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+qgundam,"Quiz Mobile Suit Gundam: Monsenshi (QG1 Ver. A)","2006",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+qndream,"Quiz Nanairo Dreams: Nijiirochou no Kiseki (Japan 96086)","1996",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+quizo,"Quiz Olympic (set 1)","1985","Seoul Coin Corp.",-,-,-,YES,NO,NO,NO,NO,quizo.cpp,BUONO,RASTER,"0",320,200,HORIZONTAL,quizo.cpp
+quizoa,"Quiz Olympic (set 2)","1985","Seoul Coin Corp.",quizo,quizo,-,YES,NO,NO,NO,NO,quizo.cpp,BUONO,RASTER,"0",320,200,HORIZONTAL,quizo.cpp
+quizpani,"Quiz Panicuru Fantasy","1993",NMK,-,-,-,YES,NO,NO,NO,NO,quizpani.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,quizpani.cpp
+quizpun,"Quiz Punch","1988","Space Computer",-,-,-,YES,NO,NO,NO,NO,"quizpun2.cpp",PRELIMINARE,RASTER,"270",384,256,VERTICAL,"quizpun2.cpp"
+"quizpun2","Quiz Punch II","1989","Space Computer",-,-,-,YES,NO,NO,NO,NO,"quizpun2.cpp",PRELIMINARE,RASTER,"270",384,256,VERTICAL,"quizpun2.cpp"
+qzquest,"Quiz Quest - Hime to Yuusha no Monogatari (Japan)","1991","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+qrouka,"Quiz Rouka Ni Tattenasai (Japan, ROM Based)","1991",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+quizdaisk,"Quiz Salibtamjeong - The Last Count Down (Korean localized Quiz Daisousa Sen)","1995","SNK / Viccom",quizdais,quizdais,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+qsangoku,"Quiz Sangokushi (Japan)","1991",Capcom,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+qzshowby,"Quiz Sekai wa SHOW by shobai (Japan)","1993","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,taito_b.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,taito_b.cpp
+quizshow,"Quiz Show","1976","Atari (Kee Games)",-,-,-,YES,NO,NO,NO,NO,quizshow.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,quizshow.cpp
+qsww,"Quiz Syukudai wo Wasuremashita (Japan, Floppy Based, FD1094 317-0058-08b)","1991",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+qtheater,"Quiz Theater - 3tsu no Monogatari (Ver 2.3J 1994/11/10)","1994","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+"qtono1","Quiz Tonosama no Yabou (Japan)","1991",Capcom,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+"qtono2j","Quiz Tonosama no Yabou 2: Zenkoku-ban (Japan 950123)","1995",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+qtorimon,"Quiz Torimonochou (Japan)","1990","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+quiztvqq,"Quiz TV Gassyuukoku Q&Q (Japan)","1992",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",336,239,HORIZONTAL,dynax.cpp
+"quizard_10","Quizard (v1.0, German, i8751 DE 11 D3)","1995","TAB Austria",quizard,quizard,-,YES,NO,NO,NO,YES,cdi.cpp,INCOMPLETO,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard_12","Quizard (v1.2, German, i8751 DE 11 D3)","1995","TAB Austria",quizard,quizard,-,YES,NO,NO,NO,YES,cdi.cpp,INCOMPLETO,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard_17","Quizard (v1.7, German, i8751 DE 11 D3)","1995","TAB Austria",quizard,quizard,-,YES,NO,NO,NO,YES,cdi.cpp,INCOMPLETO,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+quizard,"Quizard (v1.8, German, i8751 DE 11 D3)","1995","TAB Austria",cdibios,-,-,YES,NO,NO,NO,YES,cdi.cpp,INCOMPLETO,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard2_22","Quizard 2 (v2.2, German, i8751 DN 122 D3)","1995","TAB Austria","quizard2","quizard2",-,YES,NO,NO,NO,YES,cdi.cpp,INCOMPLETO,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard2","Quizard 2 (v2.3, German, i8751 DN 122 D3)","1995","TAB Austria",cdibios,-,-,YES,NO,NO,NO,YES,cdi.cpp,INCOMPLETO,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard3_32","Quizard 3 (v3.2, German, i8751 DE 132 D3)","1996","TAB Austria","quizard3","quizard3",-,YES,NO,NO,NO,YES,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard3a","Quizard 3 (v3.4, German, i8751 DE 132 A1)","1995","TAB Austria","quizard3","quizard3",-,YES,NO,NO,NO,YES,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard3","Quizard 3 (v3.4, German, i8751 DE 132 D3)","1995","TAB Austria",cdibios,-,-,YES,NO,NO,NO,YES,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard4_40","Quizard 4 Rainbow (v4.0, German, i8751 DE 142 D3)","1997","TAB Austria","quizard4","quizard4",-,YES,NO,NO,NO,YES,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard4_41","Quizard 4 Rainbow (v4.1, German, i8751 DE 142 D3)","1998","TAB Austria","quizard4","quizard4",-,YES,NO,NO,NO,YES,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard4cz","Quizard 4 Rainbow (v4.2, Czech, i8751 TS142 CZ1)","1998","TAB Austria","quizard4","quizard4",-,YES,NO,NO,NO,YES,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"quizard4","Quizard 4 Rainbow (v4.2, German, i8751 DE 142 D3)","1998","TAB Austria",cdibios,-,-,YES,NO,NO,NO,YES,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+quizmstr,"Quizmaster (German)","1985","Loewen Spielautomaten",-,-,-,YES,NO,NO,NO,NO,coinmstr.cpp,PRELIMINARE,RASTER,"0",368,256,HORIZONTAL,coinmstr.cpp
+quizvadr,"Quizvaders (39-360-078)","1991",BFM,-,-,-,YES,NO,NO,NO,NO,bfcobra.cpp,INCOMPLETO,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+"reelfun1","Reel Fun (Version 7.01)","1986","Grayhound Electronics",reelfun,reelfun,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+reelfun,"Reel Fun (Version 7.03)","1986","Grayhound Electronics",-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+revlatns,Revelations,"1994","Nova Productions",-,-,-,YES,NO,NO,NO,YES,cops.cpp,PRELIMINARE,RASTER,"0",704,480,HORIZONTAL,cops.cpp
+rtriv,"Romar Triv","198?",Romar,-,-,-,YES,NO,NO,NO,NO,thepit.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,thepit.cpp
+scrabble,"Scrabble (rev. F)","1997",JPM,-,-,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+scrabbled,"Scrabble (rev. F) (Protocol)","1997",JPM,scrabble,scrabble,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+ultrchmp,"Se Gye Hweng Dan Ultra Champion (Korea)","1995",Nakanihon,nettoqc,nettoqc,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+sexappl,"Sex Appeal (Version 6.02)","1992","Grayhound Electronics",-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+sextriv,"Sex Triv","1985","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+"sextriv1","Sexual Trivia (Version 1.02SB, set 1)","1985","Kinky Kit and Game Co.",-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"sextriv2","Sexual Trivia (Version 1.02SB, set 2)","1985","Kinky Kit and Game Co.","sextriv1","sextriv1",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"v4skltrk","Skill Trek (v1.1) (MPU4 Video, set 1)","1990",Barcrest,"v4bios",-,-,YES,NO,NO,NO,NO,"mpu4vid.cpp",PRELIMINARE,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4skltrka","Skill Trek (v1.1) (MPU4 Video, set 2)","1990",Barcrest,"v4skltrk","v4skltrk",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",PRELIMINARE,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+kokoroj,"Soreike Kokology (Rev A)","1992",Sega,-,-,-,YES,NO,NO,NO,YES,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+"kokoroj2","Soreike Kokology Vol. 2 - Kokoro no Tanteikyoku","1993",Sega,-,-,-,YES,NO,NO,NO,YES,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+sprtauth,"Sports Authority","1992","Classic Games",-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+staraudi,"Star Audition","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"seta2.cpp"
+sunaq,"SunA Quiz 6000 Academy (940620-6)","1994",SunA,-,-,-,YES,NO,NO,NO,NO,"suna16.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"suna16.cpp"
+"supnudg2","Super Nudger II - P173 (Version 5.21)","1989",Coinmaster,-,-,-,YES,NO,NO,NO,NO,coinmstr.cpp,PRELIMINARE,RASTER,"0",368,256,HORIZONTAL,coinmstr.cpp
+striv,"Super Triv (English questions)","1985","Nova du Canada",-,-,-,YES,NO,NO,NO,NO,jack.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,jack.cpp
+strivf,"Super Triv (French questions)","1985","Nova du Canada",striv,striv,-,YES,NO,NO,NO,NO,jack.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,jack.cpp
+"supertr2","Super Triv II","1986","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+"supertr3","Super Triv III","1988","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+supertr,"Super Triv Quiz I","1985","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+strvmstr,"Super Trivia Master","1986","Enerdyne Technologies Inc.",-,-,-,YES,NO,NO,NO,NO,ettrivia.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,ettrivia.cpp
+tenup,"Ten Up","1988",JPM,-,-,-,YES,NO,NO,NO,NO,guab.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,guab.cpp
+bigjoke,"The Big Joke (Version 0.00)","1987","Grayhound Electronics",-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+tictacv,"Tic Tac Trivia (6221-22, U5-0 Vertical)","1985",Merit,tictac,tictac,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"90",512,256,VERTICAL,merit.cpp
+tictac,"Tic Tac Trivia (6221-23, U5-0C Horizontal)","1985",Merit,-,-,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+tmosh,"Tokimeki Memorial Oshiete Your Heart (GQ673 JAA)","1997",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+tmoshs,"Tokimeki Memorial Oshiete Your Heart Seal Version (GE755 JAA)","1997",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+tmoshspa,"Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAA)","1997",Konami,tmoshsp,tmoshsp,-,YES,NO,NO,NO,YES,konamigv.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+tmoshsp,"Tokimeki Memorial Oshiete Your Heart Seal Version Plus (GE756 JAB)","1997",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+trailblz,"Trail Blazer","1987",Coinmaster,-,-,-,YES,NO,NO,NO,NO,coinmstr.cpp,PRELIMINARE,RASTER,"0",368,256,HORIZONTAL,coinmstr.cpp
+trebltop,"Treble Top (39-360-070)","1991",BFM,-,-,-,YES,NO,NO,NO,NO,bfcobra.cpp,INCOMPLETO,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+"statriv5se","Triv Five Special Edition","1985","Status Games","statriv4","statriv4",-,YES,NO,NO,NO,NO,"statriv2.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+"statriv4","Triv Four","1985","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+trivquiz,"Triv Quiz","1984","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+"statriv2","Triv Two","1984","Status Games",-,-,-,YES,NO,NO,NO,NO,"statriv2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"statriv2.cpp"
+"statriv2v","Triv Two (Vertical)","1985","Status Games","statriv2","statriv2",-,YES,NO,NO,NO,NO,"statriv2.cpp",BUONO,RASTER,"90",256,256,VERTICAL,"statriv2.cpp"
+trvwzhb,"Trivia ? Whiz (6221-00, Alt Gen trivia)","1985",Merit,trvwzh,trvwzh,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+trvwzha,"Trivia ? Whiz (6221-00, with Sex trivia)","1985",Merit,trvwzh,trvwzh,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+trvwzh,"Trivia ? Whiz (6221-00)","1985",Merit,-,-,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+trvwzv,"Trivia ? Whiz (6221-02, Vertical)","1985",Merit,trvwzh,trvwzh,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"90",512,256,VERTICAL,merit.cpp
+"trvwz3v","Trivia ? Whiz (6221-04, Edition 3 Vertical)","1985",Merit,"trvwz3h","trvwz3h",-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"90",512,256,VERTICAL,merit.cpp
+"trvwz2a","Trivia ? Whiz (6221-05, Edition 2 Alt Sex trivia)","1985",Merit,"trvwz2","trvwz2",-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"90",512,256,VERTICAL,merit.cpp
+"trvwz2","Trivia ? Whiz (6221-05, Edition 2)","1985",Merit,-,-,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"90",512,256,VERTICAL,merit.cpp
+"trvwz3ha","Trivia ? Whiz (6221-05, Edition 3 Sex trivia III)","1985",Merit,"trvwz3h","trvwz3h",-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+"trvwz3h","Trivia ? Whiz (6221-05, Edition 3)","1985",Merit,-,-,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,merit.cpp
+"trvwz4a","Trivia ? Whiz (6221-13, U5-0B Edition 4 Alt Sex trivia)","1985",Merit,"trvwz4","trvwz4",-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"90",512,256,VERTICAL,merit.cpp
+"trvwz4","Trivia ? Whiz (6221-13, U5-0B Edition 4)","1985",Merit,-,-,-,YES,NO,NO,NO,NO,merit.cpp,BUONO,RASTER,"90",512,256,VERTICAL,merit.cpp
+gtsersa,"Trivia (Alt revision questions set 1)","1984","Greyhound Electronics","gtsers1","gtsers1",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+gtsersb,"Trivia (Alt revision questions set 2)","1984","Greyhound Electronics","gtsers1","gtsers1",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers1","Trivia (Questions Series 1)","1984","Greyhound Electronics",-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers10","Trivia (Questions Series 10)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers11a","Trivia (Questions Series 11 Alt Question Rom)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers11","Trivia (Questions Series 11)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers12a","Trivia (Questions Series 12 Alt Question Rom)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers12","Trivia (Questions Series 12)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers14a","Trivia (Questions Series 14 Alt Question Rom)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers14","Trivia (Questions Series 14)","1986","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers15","Trivia (Questions Series 15)","1986","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers2","Trivia (Questions Series 2)","1984","Greyhound Electronics","gtsers1","gtsers1",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers3","Trivia (Questions Series 3)","1984","Greyhound Electronics","gtsers1","gtsers1",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers4","Trivia (Questions Series 4)","1984","Greyhound Electronics","gtsers1","gtsers1",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers5","Trivia (Questions Series 5)","1984","Greyhound Electronics","gtsers1","gtsers1",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers7","Trivia (Questions Series 7)","1984","Greyhound Electronics","gtsers1","gtsers1",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers8a","Trivia (Questions Series 8 Alt Question Rom)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers8","Trivia (Questions Series 8)","1984","Greyhound Electronics",-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gtsers9","Trivia (Questions Series 9)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gt507uk","Trivia (UK Version 5.07)","1986","Grayhound Electronics",-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gt103a1","Trivia (Unsorted question roms)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gt103aa","Trivia (Version 1.03a Alt questions 1)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gt103ab","Trivia (Version 1.03a Alt questions 2)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gt103asxa","Trivia (Version 1.03a Sex questions, Alt revision questions)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+"gt103asx","Trivia (Version 1.03a Sex questions)","1984","Greyhound Electronics","gtsers8","gtsers8",-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+trvchlng,"Trivia Challenge","1985","Joyland (Senko license)",-,-,-,YES,NO,NO,NO,NO,galaxold.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+trvgns,"Trivia Genius","1985",bootleg,trvmstr,trvmstr,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+trvhang,"Trivia Hangup (question set 1)","1984","SMS Manufacturing Corp.",-,-,-,YES,NO,NO,NO,NO,smsmcorp.cpp,BUONO,RASTER,"0",432,256,HORIZONTAL,smsmcorp.cpp
+trvhanga,"Trivia Hangup (question set 2)","1984","SMS Manufacturing Corp.",-,-,-,YES,NO,NO,NO,NO,smsmcorp.cpp,PRELIMINARE,RASTER,"0",432,256,HORIZONTAL,smsmcorp.cpp
+trvmadns,"Trivia Madness - Series A Question set","1985","Thunderhead Inc.",-,-,-,YES,NO,NO,NO,NO,trvmadns.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,trvmadns.cpp
+trvmadnsa,"Trivia Madness - Series B Question set","1985","Thunderhead Inc.",trvmadns,trvmadns,-,YES,NO,NO,NO,NO,trvmadns.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,trvmadns.cpp
+trvmstr,"Trivia Master (set 1)","1985","Enerdyne Technologies Inc.",-,-,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+trvmstra,"Trivia Master (set 2)","1985","Enerdyne Technologies Inc.",trvmstr,trvmstr,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+trvmstrb,"Trivia Master (set 3)","1985","Enerdyne Technologies Inc.",trvmstr,trvmstr,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+trvmstrc,"Trivia Master (set 4)","1985","Enerdyne Technologies Inc.",trvmstr,trvmstr,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+trvquest,"Trivia Quest","1984","Sunn / Techstar",-,-,-,YES,NO,NO,NO,NO,trvquest.cpp,BUONO,RASTER,"90",256,256,VERTICAL,trvquest.cpp
+trivrus,"Trivia R Us (v1.07)","2009",AGT,-,-,-,YES,NO,NO,NO,NO,trivrus.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,trivrus.cpp
+trivialpo,"Trivial Pursuit","1996",JPM,trivialp,trivialp,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+triviasp,"Trivial Pursuit (All Star Sports Edition)","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+triviabb,"Trivial Pursuit (Baby Boomer Edition) (3/20/85)","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+"triviag2","Trivial Pursuit (Genus II Edition)","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+trivialp,"Trivial Pursuit (New Edition) (prod. 1D)","1996",JPM,-,-,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+trivialpd,"Trivial Pursuit (New Edition) (prod. 1D) (Protocol)","1996",JPM,trivialp,trivialp,-,YES,NO,NO,NO,NO,jpmimpct.cpp,BUONO,RASTER,"0",400,300,HORIZONTAL,jpmimpct.cpp
+"trivia12","Trivial Pursuit (Think Tank - Genus Edition) (12/14/84)","1984",Bally/Sente,"triviag1","triviag1",-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+"triviag1","Trivial Pursuit (Think Tank - Genus Edition) (set 1)","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+"triviaes2","Trivial Pursuit (Volumen II, Spanish, Maibesa license)","1987","Bally/Sente (Maibesa license)",triviaes,triviaes,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+triviaes,"Trivial Pursuit (Volumen III, Spanish, Maibesa license)","1987","Bally/Sente (Maibesa license)",-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+"triviaes4","Trivial Pursuit (Volumen IV, Spanish, Maibesa hardware)","1988","Bally/Sente (Maibesa license)",-,-,-,YES,NO,NO,NO,NO,balsente.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+"triviaes5","Trivial Pursuit (Volumen V, Spanish, Maibesa hardware)","19??","Bally/Sente (Maibesa license)",-,-,-,YES,NO,NO,NO,NO,balsente.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+triviayp,"Trivial Pursuit (Young Players Edition)","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+quizvid,"Video Quiz","1986",bootleg,-,-,-,YES,NO,NO,NO,NO,gei.cpp,INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,gei.cpp
+weddingr,"Wedding Rhapsody (GX624 JAA)","1997",Konami,konamigv,-,-,YES,NO,NO,NO,YES,konamigv.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,konamigv.cpp
+wfortune,"Wheel Of Fortune (set 1)","1989",GameTek,-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+wfortunea,"Wheel Of Fortune (set 2)","1989",GameTek,wfortune,wfortune,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"itech8.cpp"
+wizzquiz,"Wizz Quiz (Konami version)","1985","Zilec-Zenitone (Konami license)",-,-,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+wizzquiza,"Wizz Quiz (version 4)","1985",Zilec-Zenitone,wizzquiz,wizzquiz,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,trackfld.cpp
+xsedae,"X Se Dae Quiz (Korea)","1995","Dream Island",-,-,-,YES,NO,NO,NO,NO,"raiden2.cpp",PRELIMINARE,RASTER,"0",320,256,HORIZONTAL,"raiden2.cpp"
+"xday2","X-Day 2 (Japan)","1995",Namco,-,-,-,YES,NO,NO,NO,NO,"namcona1.cpp",INCOMPLETO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+yesnoj,"Yes/No Sinri Tokimeki Chart","1992","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+yuyugogo,"Yuuyu no Quiz de GO!GO! (Japan)","1990","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"

@@ -1,0 +1,97 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+alien,"Alien: The Arcade Medal Edition","2005",Capcom,-,-,-,YES,NO,NO,NO,YES,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+aminosan,"Aminosan (satellite)","2010",Sega,segasp,-,-,YES,NO,NO,NO,NO,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+bingoc,"Bingo Circus (Rev. A 891001)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,bingoc.cpp,PRELIMINARE,RASTER,"0",256,192,HORIZONTAL,bingoc.cpp
+bingpty,"Bingo Party Multicart (Rev B) (M1 Satellite board)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,"segam1.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"segam1.cpp"
+bingowav,"Bingo Wave","1994",Taito,-,-,-,YES,NO,NO,NO,NO,bingowav.cpp,PRELIMINARE,-,"0",0,0,-,bingowav.cpp
+buttobi,"Buttobi Striker","1994",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,konmedal.cpp
+captflag,"Captain Flag (Japan)","1993",Jaleco,-,-,-,YES,NO,NO,NO,NO,cischeat.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,cischeat.cpp
+"crossmg2","Cross Magic Mark 2","1996",Konami,-,-,-,YES,NO,NO,YES,NO,"konmedal68k.cpp",PRELIMINARE,RASTER,"0",320,480,HORIZONTAL,"konmedal68k.cpp"
+dkbattle,"Dinoking Battle","2005","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,dinoking.cpp,PRELIMINARE,-,"0",0,0,-,dinoking.cpp
+dkkids,"Dinoking Kids","2004","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,dinoking.cpp,PRELIMINARE,-,"0",0,0,-,dinoking.cpp
+dobouchn,"Dobou-Chan (ver JAA)","1996",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal68k.cpp",PRELIMINARE,RASTER,"0",360,224,HORIZONTAL,"konmedal68k.cpp"
+dokodemo,"Doko Demo Issho: Toro's Fishing","2006","Sony / Capcom",-,-,-,YES,NO,NO,NO,YES,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+dkbanana,"Donkey Kong Banana Kingdom (host)","2007",Capcom,-,-,-,YES,NO,NO,NO,YES,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+dkbanans,"Donkey Kong Banana Kingdom (satellite)","2007",Capcom,dkbanana,dkbanana,-,YES,NO,NO,NO,YES,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+dragntra,"Dragon Treasure (Rev A) (GDS-0030A)","2003",Sega,dragntr,dragntr,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+dragntr,"Dragon Treasure (Rev B) (GDS-0030B)","2003",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"dragntr2","Dragon Treasure 2 (Rev A) (GDS-0037A)","2004",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"dragntr3","Dragon Treasure 3 (Rev A) (GDS-0041A)","2005",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+fanzonem,"Fantasy Zone (medal game, REV.A) (J 990202 V1.000)","1999",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+fruitsmg,"Fruits Magic - The Magic Party","1996",Konami,-,-,-,YES,NO,NO,YES,NO,"konmedal68k.cpp",PRELIMINARE,RASTER,"0",320,480,HORIZONTAL,"konmedal68k.cpp"
+fuusenpn,"Fuusen Pentai","1993",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,konmedal.cpp
+gegemdb,"Gegege no Kitaro Yokai Yokocho Matsuri De Batoru Ja (GYM1 Ver.A)","2007",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+giclasex,"GI-Classic EX (satellite terminal)","1998",Konami,-,-,-,YES,NO,NO,NO,NO,giclassic.cpp,PRELIMINARE,RASTER,"0",600,384,HORIZONTAL,giclassic.cpp
+giclassvr,"GI-Classic EX (server)","1998",Konami,-,-,-,YES,NO,NO,NO,NO,giclassic.cpp,PRELIMINARE,RASTER,"0",100,100,HORIZONTAL,giclassic.cpp
+ggconnie,"Go! Go! Connie chan Jaka Jaka Janken","1996",Eighting,-,-,-,YES,NO,NO,NO,NO,ggconnie.cpp,PRELIMINARE,RASTER,"0",1088,242,HORIZONTAL,ggconnie.cpp
+patocar,"Hashire Patrol Car (J 990326 V1.000)","2001",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+itazuram,"Itazura Monkey","2000",Sammy,sammymdl,-,-,YES,NO,NO,NO,NO,"sigmab98.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"sigmab98.cpp"
+acchi,"Janken Game Acchi Muite Hoi! (Japan 1.3)","1995","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,deco_mlc.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,deco_mlc.cpp
+jankenmn,"Janken Man Kattara Ageru","1991",Sunwise,-,-,-,YES,NO,NO,NO,NO,jankenmn.cpp,BUONO,-,"0",0,0,-,jankenmn.cpp
+kattobas,"Kattobase Power Pro Kun","1998",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal68k.cpp",INCOMPLETO,RASTER,"0",360,224,HORIZONTAL,"konmedal68k.cpp"
+keroro,"Keroro Gunso Chikyu Shinryaku Shirei Dearimasu! (KRG1 Ver.A)","2006",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+koropens,"Korokoro Pensuke","1997",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal68k.cpp",INCOMPLETO,RASTER,"0",360,224,HORIZONTAL,"konmedal68k.cpp"
+kurukuru,"Kuru Kuru Pyon Pyon (Japan)","1990","Success / Taiyo Jidoki",-,-,-,YES,NO,NO,NO,NO,kurukuru.cpp,BUONO,RASTER,"0",543,465,HORIZONTAL,kurukuru.cpp
+mariorou,"Mario Roulette","1991",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,konmedal.cpp
+metabee,"Metabee Shot","2001","Natsume / Banpresto",-,-,-,YES,NO,NO,NO,NO,metro.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,metro.cpp
+mirworld,"Mirage World (satellite)","2007",Sega,segasp,-,-,YES,NO,NO,NO,NO,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+ochaken,"Ocha-Ken Hot Medal","2007",Sega,segasp,-,-,YES,NO,NO,NO,NO,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+lufykzku,"Otakara Itadaki Luffy Kaizoku-Dan! (Japan, v1.02)","2001","Banpresto / Eiichiro Oda / Shueisha - Fuji TV - Toho Animation",-,-,-,YES,NO,NO,NO,NO,"sigmab98.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"sigmab98.cpp"
+paccarn,Pac-Carnival,"1996",Namco,-,-,-,YES,NO,NO,NO,NO,cave.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,cave.cpp
+pacmball,"Pacman BALL (PMB2 Ver.A.)","2003",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+psrockmn,"Panic Shot Rockman","1992",Capcom,-,-,-,YES,NO,NO,YES,NO,psrockman.cpp,PRELIMINARE,-,"0",0,0,-,psrockman.cpp
+patapata,"Pata Pata Panic","1993",Atlus,-,-,-,YES,NO,NO,NO,NO,patapata.cpp,BUONO,RASTER,"0",480,352,HORIZONTAL,patapata.cpp
+pingu,"Pingu's Ice Block","2006","Pygos Group / Capcom",-,-,-,YES,NO,NO,NO,YES,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+kzaurus,"Pittanko Zaurus","1995",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal68k.cpp",INCOMPLETO,RASTER,"0",360,224,HORIZONTAL,"konmedal68k.cpp"
+pwrchanc,"Powerful Chance","1999",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal68k.cpp",PRELIMINARE,RASTER,"0",360,224,HORIZONTAL,"konmedal68k.cpp"
+pyenaget,"Pye-nage Taikai","2000",Sammy,sammymdl,-,-,YES,NO,NO,NO,NO,"sigmab98.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"sigmab98.cpp"
+ppj,"Pyon Pyon Jump (V1.40, Japan)","1991","Success / Taiyo Jidoki",-,-,-,YES,NO,NO,NO,NO,kurukuru.cpp,BUONO,RASTER,"0",543,465,HORIZONTAL,kurukuru.cpp
+rascot,"Royal Ascot (Japan, terminal?)","1991",Sega,-,-,-,YES,NO,NO,NO,NO,segaxbd.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+"rascot2","Royal Ascot II","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+runpuppy,"Run Run Puppy","2000",Konami,-,-,-,YES,NO,NO,NO,YES,konamigs.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,konamigs.cpp
+scudhamm,"Scud Hammer","1994",Jaleco,-,-,-,YES,NO,NO,NO,NO,cischeat.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,cischeat.cpp
+sekaikh,"Sekai Kaseki Hakken (Japan, SKH1 Ver.A)","2004",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+shuriboy,"Shuriken Boy","1993",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,konmedal.cpp
+slimekun,"Slime Kun","1991",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,konmedal.cpp
+sbmjb,"Sonic Blast Man's Janken Battle (main ver. 1.1, video ver. 1.0)","1998","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,sbmjb.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,sbmjb.cpp
+sackids,"Soreyuke Anpanman Crayon Kids (J 001026 V1.000)","2000",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+spcpokan,"Space Pokan","1999",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal68k.cpp",PRELIMINARE,RASTER,"0",360,224,HORIZONTAL,"konmedal68k.cpp"
+shorsel,"Star Horse (live and backup)","2000",Sega,shorse,shorse,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorsem,"Star Horse (main screens)","2000",Sega,shorse,shorse,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorse,"Star Horse (satellite)","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+"shors2k1","Star Horse 2001 (satellite, Rev B)","2002",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+"shors2k2l","Star Horse 2002 (live)","2002",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"shors2k2m","Star Horse 2002 (main screens)","2002",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"shors2k2s","Star Horse 2002 (sound and backup, Rev A)","2002",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"shors2k2","Star Horse 2002 (sound, Export/Taiwan)","2002",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorsepb,"Star Horse Progress (backup data)","2000",Sega,shorsep,shorsep,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorsepl,"Star Horse Progress (live, Rev A)","2003",Sega,shorsep,shorsep,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorsepm,"Star Horse Progress (main screens, Rev B)","2003",Sega,shorsep,shorsep,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorsep,"Star Horse Progress (satellite, Rev A)","2003",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+shorseps,"Star Horse Progress (sound & backup, Rev A)","2003",Sega,shorsep,shorsep,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorseprl,"Star Horse Progress Returns (live and voice)","2009",Sega,shorsepr,shorsepr,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorseprvl,"Star Horse Progress Returns (main screen left)","2009",Sega,shorsepr,shorsepr,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorseprvr,"Star Horse Progress Returns (main screen right)","2009",Sega,shorsepr,shorsepr,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shorsepr,"Star Horse Progress Returns (satellite)","2009",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+shorseprs,"Star Horse Progress Returns (sound)","2009",Sega,shorsepr,shorsepr,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+masmario,"Super Mario Fushigi no Korokoro Party (center)","2004","Nintendo / Capcom",-,-,-,YES,NO,NO,NO,NO,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+masmarios,"Super Mario Fushigi no Korokoro Party (satellite)","2004","Nintendo / Capcom",-,-,-,YES,NO,NO,NO,NO,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+"masmario2","Super Mario Fushigi no Korokoro Party 2","2005","Nintendo / Capcom",-,-,-,YES,NO,NO,NO,YES,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+marioun,"Super Mario World - Mario Undoukai","1993",Banpresto,-,-,-,YES,NO,NO,NO,NO,banprestoms.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,banprestoms.cpp
+smf,"Super Medal Fighters (Japan 970228)","1997","Eighting (Capcom license)",-,-,-,YES,NO,NO,NO,NO,ggconnie.cpp,PRELIMINARE,RASTER,"0",1088,242,HORIZONTAL,ggconnie.cpp
+tdoboon,"Taihou de Doboon","2000",Sammy,sammymdl,-,-,YES,NO,NO,NO,NO,"sigmab98.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"sigmab98.cpp"
+tekkenbs,"Tekken Battle Scratch","1998",Namco,-,-,-,YES,NO,NO,NO,NO,cave.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,cave.cpp
+tekkencw,"Tekken Card World","1997",Namco,-,-,-,YES,NO,NO,NO,NO,cave.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,cave.cpp
+tvdenwad,"Terebi Denwa Doraemon","1991",Banpresto,-,-,-,YES,NO,NO,NO,NO,banprestoms.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,banprestoms.cpp
+tjumpman,"Tobikose! Jumpman","1999",Namco,-,-,-,YES,NO,NO,NO,NO,cave.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,cave.cpp
+tsukande,"Tsukande Toru Chicchi","1995",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,konmedal.cpp
+tsupenta,"Tsurikko Penta","1991",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,konmedal.cpp
+tsururin,"Tsururin Kun","1990",Konami,-,-,-,YES,NO,NO,NO,NO,konmedal.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,konmedal.cpp
+unkkonmd,"unknown Konami medal game (game code GS662)","1997",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal68k.cpp",PRELIMINARE,RASTER,"0",360,224,HORIZONTAL,"konmedal68k.cpp"
+"gs471","unknown medal game GS471","1997",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal020.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"konmedal020.cpp"
+"unks10md","unknown Namco System 10 medal game (MTL1 SPR0B)","200?",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+unomedal,"UNO the Medal","2009",Sega,segasp,-,-,YES,NO,NO,NO,NO,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+waijockey,"Wai Wai Jockey","1993",Konami,-,-,-,YES,NO,NO,NO,NO,"quickpick5.cpp",PRELIMINARE,RASTER,"0",368,228,HORIZONTAL,"quickpick5.cpp"
+westdrm,"Western Dream","1992",Sega,-,-,-,YES,NO,NO,YES,NO,segacoin.cpp,PRELIMINARE,-,"0",0,0,-,segacoin.cpp
+wontame,"Won! Tertainment Happy Channel (Ver E)","2008","Capcom / Tomy",-,-,-,YES,NO,NO,NO,YES,alien.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,alien.cpp
+ymcapsul,"Yu-Gi-Oh Monster Capsule","1999",Konami,-,-,-,YES,NO,NO,NO,NO,"konmedal68k.cpp",INCOMPLETO,RASTER,"0",360,224,HORIZONTAL,"konmedal68k.cpp"

@@ -1,0 +1,16 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"la120","DECwriter III (LA120)","1978","Digital Equipment Corporation",-,-,-,YES,NO,NO,NO,NO,decwritr.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,decwritr.cpp
+diablo,"Diablo HyType II Series 1300 CPU","1976","Diablo Systems Inc",-,-,-,YES,NO,NO,NO,NO,"diablo1300.cpp",PRELIMINARE,-,"0",0,0,-,"diablo1300.cpp"
+"hprotr8a","Henry Prot CARD I (REV.08A)","2006",HENRY,"hprot1","hprot1",-,YES,NO,NO,NO,NO,"hprot1.cpp",PRELIMINARE,LCD,"0",96,18,HORIZONTAL,"hprot1.cpp"
+"hprot2r6","Henry Prot CARD II (REV.6)","2003",HENRY,"hprot1","hprot1",-,YES,NO,NO,NO,NO,"hprot1.cpp",PRELIMINARE,LCD,"0",96,18,HORIZONTAL,"hprot1.cpp"
+"hprot1","Henry Prot I v19 (REV.1)","2002",HENRY,-,-,-,YES,NO,NO,NO,NO,"hprot1.cpp",PRELIMINARE,LCD,"0",96,18,HORIZONTAL,"hprot1.cpp"
+lwriter,LaserWriter,"1985","Apple Computer",-,-,-,YES,NO,NO,NO,NO,lwriter.cpp,PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,lwriter.cpp
+"lwriter2nt","LaserWriter II NT","1988","Apple Computer",-,-,-,YES,NO,NO,NO,NO,lwriter.cpp,PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,lwriter.cpp
+lwriterplus,"LaserWriter Plus","1986","Apple Computer",-,-,-,YES,NO,NO,NO,NO,lwriter.cpp,PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,lwriter.cpp
+"metamaq2","Metamaquina 2 desktop 3d printer","2012",Metamaquina,-,-,-,YES,NO,NO,NO,NO,rambo.cpp,PRELIMINARE,-,"0",0,0,-,rambo.cpp
+"mps1000","MPS-1000 Printer","1986","Commodore Business Machines",-,-,-,YES,NO,NO,NO,NO,"mps1230.cpp",PRELIMINARE,-,"0",0,0,-,"mps1230.cpp"
+"mps1230","MPS-1230 NLQ Printer","1988","Commodore Business Machines",-,-,-,YES,NO,NO,NO,NO,"mps1230.cpp",PRELIMINARE,-,"0",0,0,-,"mps1230.cpp"
+"mt735","MT735",????,Brother,-,-,-,YES,NO,NO,NO,NO,"mt735.cpp",PRELIMINARE,-,"0",0,0,-,"mt735.cpp"
+"ds348","Print Plus DS348 - Dot matrix printer","1998","Sigtron Daruma",-,-,-,YES,NO,NO,NO,NO,daruma.cpp,PRELIMINARE,-,"0",0,0,-,daruma.cpp
+"os214","Rabbit Printer (model OS-214)","1996",Argox,-,-,-,YES,NO,NO,NO,NO,argox.cpp,PRELIMINARE,-,"0",0,0,-,argox.cpp
+"replica1","Replicator 1 desktop 3d printer","2012",Makerbot,-,-,-,YES,NO,NO,NO,NO,replicator.cpp,PRELIMINARE,LCD,"0",120,36,HORIZONTAL,replicator.cpp

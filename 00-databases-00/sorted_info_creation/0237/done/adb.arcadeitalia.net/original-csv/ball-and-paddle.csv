@@ -1,0 +1,163 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"arknoid2b","Arkanoid - Revenge of DOH (Japan bootleg)","1987",bootleg,"arknoid2","arknoid2",-,YES,NO,NO,NO,NO,tnzs.cpp,BUONO,RASTER,"270",256,224,VERTICAL,tnzs.cpp
+"arknoid2j","Arkanoid - Revenge of DOH (Japan)","1987","Taito Corporation","arknoid2","arknoid2",-,YES,NO,NO,NO,NO,tnzs.cpp,BUONO,RASTER,"270",256,224,VERTICAL,tnzs.cpp
+"arknoid2u","Arkanoid - Revenge of DOH (US)","1987","Taito America Corporation (Romstar license)","arknoid2","arknoid2",-,YES,NO,NO,NO,NO,tnzs.cpp,BUONO,RASTER,"270",256,224,VERTICAL,tnzs.cpp
+"arknoid2","Arkanoid - Revenge of DOH (World)","1987","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,tnzs.cpp,BUONO,RASTER,"270",256,224,VERTICAL,tnzs.cpp
+arkgcbl,"Arkanoid (bootleg on Block hardware, set 1)","1986",bootleg,arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkgcbla,"Arkanoid (bootleg on Block hardware, set 2)","1986",bootleg,arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+"ark1ball","Arkanoid (bootleg with MCU, harder)","1986",bootleg,arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkanoidjbl,"Arkanoid (bootleg with MCU, set 1)","1986",bootleg,arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+"arkanoidjbl2","Arkanoid (bootleg with MCU, set 2)","1986","bootleg (Beta)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkangc,"Arkanoid (Game Corporation bootleg, set 1)","1986","bootleg (Game Corporation)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+"arkangc2","Arkanoid (Game Corporation bootleg, set 2)","1986","bootleg (Game Corporation)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkanoidja,"Arkanoid (Japan, newer w/level select)","1986","Taito Corporation",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkanoidj,"Arkanoid (Japan, newer)","1986","Taito Corporation",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkanoidjb,"Arkanoid (Japan, older)","1986","Taito Corporation",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+"arktayt2","Arkanoid (Tayto bootleg, harder)","1986","bootleg (Tayto)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkatayt,"Arkanoid (Tayto bootleg)","1986","bootleg (Tayto)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkanoidu,"Arkanoid (US, newer)","1986","Taito America Corporation (Romstar license)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkanoiduo,"Arkanoid (US, older)","1986","Taito America Corporation (Romstar license)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkanoid,"Arkanoid (World, older)","1986","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+arkretrnu,"Arkanoid Returns (Ver 2.02A 1997/02/10)","1997","Taito Corporation",arkretrn,arkretrn,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+arkretrnj,"Arkanoid Returns (Ver 2.02J 1997/02/10)","1997","Taito Corporation",arkretrn,arkretrn,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+arkretrn,"Arkanoid Returns (Ver 2.02O 1997/02/10)","1997","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+avalnche,Avalanche,"1978",Atari,-,-,-,YES,NO,NO,NO,NO,avalnche.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,avalnche.cpp
+balcube,"Bal Cube","1996",Metro,-,-,-,YES,NO,NO,NO,NO,metro.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,metro.cpp
+arkblock,"Block (Game Corporation bootleg, set 1)","1986","bootleg (Game Corporation)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+"arkbloc2","Block (Game Corporation bootleg, set 2)","1986","bootleg (Game Corporation)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+"arkbloc3","Block (Game Corporation bootleg, set 3)","1986","bootleg (Game Corporation)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+"block2","Block 2 (S.P.A. Co. bootleg)","1986","bootleg (S.P.A. Co.)",arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+blockbl,"Block Block (bootleg)","1991",bootleg,block,block,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"270",384,240,VERTICAL,mitchell.cpp
+blockj,"Block Block (Japan 910910)","1991",Capcom,block,block,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"270",384,240,VERTICAL,mitchell.cpp
+"blockr2","Block Block (World 910910)","1991",Capcom,block,block,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"270",384,240,VERTICAL,mitchell.cpp
+"blockr1","Block Block (World 911106 Joystick)","1991",Capcom,block,block,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"270",384,240,VERTICAL,mitchell.cpp
+block,"Block Block (World 911219 Joystick)","1991",Capcom,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"270",384,240,VERTICAL,mitchell.cpp
+blockcar,"Block Carnival / Thunder & Lightning 2","1992",Visco,-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"90",384,240,VERTICAL,seta.cpp
+blockcarb,"Block Carnival / Thunder & Lightning 2 (bootleg)","1992",bootleg,blockcar,blockcar,-,YES,NO,NO,NO,NO,seta.cpp,INCOMPLETO,RASTER,"90",384,240,VERTICAL,seta.cpp
+blockgalb,"Block Gal (bootleg)","1987",bootleg,blockgal,blockgal,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"90",512,224,VERTICAL,"system1.cpp"
+blockgal,"Block Gal (MC-8123B, 317-0029)","1987","Sega / Vic Tokai",-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"90",512,224,VERTICAL,"system1.cpp"
+blokpong,"Block Pong-Pong","2004","MOSS / Sammy",awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+blocken,"Blocken (Japan)","1994","Visco / KID",-,-,-,YES,NO,NO,NO,NO,"shangha3.cpp",INCOMPLETO,RASTER,"0",384,224,HORIZONTAL,"shangha3.cpp"
+blocktax,"Blockout (TAX)","2002","TAX / Game Revival",-,-,-,YES,NO,NO,NO,NO,blocktax.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,blocktax.cpp
+bombbee,"Bomb Bee","1979",Namco,-,-,-,YES,NO,NO,NO,NO,warpwarp.cpp,BUONO,RASTER,"90",272,224,VERTICAL,warpwarp.cpp
+brkblast,"Brick Blast (bootleg of Wall Crash)","1984","bootleg (Fadesa)",wallc,wallc,-,YES,NO,NO,NO,NO,wallc.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,wallc.cpp
+"brickzn11","Brick Zone (v1.1, Spinner)","1992",SunA,brickzn,brickzn,-,YES,NO,NO,NO,NO,"suna8.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"suna8.cpp"
+"brickznv4","Brick Zone (v4.0, Spinner)","1992",SunA,brickzn,brickzn,-,YES,NO,NO,NO,NO,"suna8.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"suna8.cpp"
+"brickznv5","Brick Zone (v5.0, Joystick)","1992",SunA,brickzn,brickzn,-,YES,NO,NO,NO,NO,"suna8.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"suna8.cpp"
+brickzn,"Brick Zone (v6.0, Joystick)","1992",SunA,-,-,-,YES,NO,NO,NO,NO,"suna8.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"suna8.cpp"
+cannonb,"Cannon Ball (bootleg on Crazy Kong hardware) (set 1, buggy)","1985","bootleg (Soft)",cannonbp,cannonbp,-,YES,NO,NO,NO,NO,cclimber.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,cclimber.cpp
+"cannonb2","Cannon Ball (bootleg on Crazy Kong hardware) (set 2, buggy)","1985","bootleg (TV Game Gruenberg)",cannonbp,cannonbp,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"90",256,224,VERTICAL,cclimber.cpp
+"cannonb3","Cannon Ball (bootleg on Crazy Kong hardware) (set 3, no bonus game)","1985","bootleg (Soft)",cannonbp,cannonbp,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"90",256,224,VERTICAL,cclimber.cpp
+cannonbp,"Cannon Ball (Pac-Man Hardware)","1985",Novomatic,-,-,-,YES,NO,NO,NO,NO,pacman.cpp,PRELIMINARE,RASTER,"90",288,224,VERTICAL,pacman.cpp
+cball,"Cannonball (Atari, prototype)","1976",Atari,-,-,-,YES,NO,NO,NO,NO,cball.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,cball.cpp
+cascade,Cascade,"1978","bootleg? (Sidam)",avalnche,avalnche,-,YES,NO,NO,NO,NO,avalnche.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,avalnche.cpp
+catchp,"Catch (prototype)","1977",Atari,-,-,-,YES,NO,NO,NO,NO,avalnche.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,avalnche.cpp
+circus,"Circus / Acrobat TV","1977","Exidy / Taito",-,-,circus,YES,NO,NO,NO,NO,circus.cpp,INCOMPLETO,RASTER,"0",248,256,HORIZONTAL,circus.cpp
+circuso,"Circus / Acrobat TV (older)","1977","Exidy / Taito",circus,circus,circus,YES,NO,NO,NO,NO,circus.cpp,INCOMPLETO,RASTER,"0",248,256,HORIZONTAL,circus.cpp
+"clowns1","Clowns (rev. 1)","1978",Midway,clowns,clowns,clowns,YES,NO,NO,NO,NO,"mw8080bw.cpp",INCOMPLETO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+clowns,"Clowns (rev. 2)","1978",Midway,-,-,clowns,YES,NO,NO,NO,NO,"mw8080bw.cpp",INCOMPLETO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+cgraplop,"Cluster Buster (DECO Cassette) (US)","1983","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+crazybal,"Crazy Balls [TTL]","1978","Electronic Games Systems",-,-,-,YES,NO,NO,NO,NO,crazybal.cpp,PRELIMINARE,RASTER,"0",455,262,HORIZONTAL,crazybal.cpp
+cclownz,"Crazzy Clownz (Version 1.0)","1999","LAI Games",-,-,-,YES,NO,NO,NO,NO,lethalj.cpp,BUONO,RASTER,"0",512,236,HORIZONTAL,lethalj.cpp
+cubybop,"Cuby Bop (location test)","199?","Hot-B Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,taito_l.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,taito_l.cpp
+cutieq,"Cutie Q","1979",Namco,-,-,-,YES,NO,NO,NO,NO,warpwarp.cpp,BUONO,RASTER,"90",272,224,VERTICAL,warpwarp.cpp
+dominob,"Domino Block","1996","Wonwoo Systems",-,-,-,YES,NO,NO,NO,NO,dominob.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,dominob.cpp
+"dominobv2","Domino Block ver.2","1996","Wonwoo Systems",dominob,dominob,-,YES,NO,NO,NO,NO,dominob.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,dominob.cpp
+fgoal,"Field Goal (set 1)","1979",Taito,-,-,-,YES,NO,NO,NO,NO,fgoal.cpp,PRELIMINARE,RASTER,"90",256,240,VERTICAL,fgoal.cpp
+fgoala,"Field Goal (set 2)","1979",Taito,fgoal,fgoal,-,YES,NO,NO,NO,NO,fgoal.cpp,PRELIMINARE,RASTER,"90",256,240,VERTICAL,fgoal.cpp
+cflyball,"Flying Ball (DECO Cassette) (US)","1985","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+"freekickb1","Free Kick (bootleg set 1)","1987",bootleg,freekick,freekick,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+"freekickb2","Free Kick (bootleg set 2)","1987",bootleg,freekick,freekick,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+"freekickb3","Free Kick (bootleg set 3)","1987",bootleg,freekick,freekick,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+freekick,"Free Kick (NS6201-A 1987.10)","1987","Nihon System (Merit license)",-,-,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+freekicka,"Free Kick (NS6201-A 1987.9)","1987","Nihon System",freekick,freekick,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+blockch,"G.T. Block Challenger","1978","Sun Electronics / Gifu Tokki",-,-,-,YES,NO,NO,NO,NO,blockch.cpp,PRELIMINARE,RASTER,"270",384,256,VERTICAL,blockch.cpp
+geebeeb,"Gee Bee (Europe)","1978","Namco (F.lli Bertolino license)",geebee,geebee,-,YES,NO,NO,NO,NO,warpwarp.cpp,BUONO,RASTER,"90",272,224,VERTICAL,warpwarp.cpp
+geebee,"Gee Bee (Japan)","1978",Namco,-,-,-,YES,NO,NO,NO,NO,warpwarp.cpp,BUONO,RASTER,"90",272,224,VERTICAL,warpwarp.cpp
+geebeea,"Gee Bee (UK)","1978","Namco (Alca license)",geebee,geebee,-,YES,NO,NO,NO,NO,warpwarp.cpp,BUONO,RASTER,"90",272,224,VERTICAL,warpwarp.cpp
+geebeeg,"Gee Bee (US)","1978","Namco (Gremlin license)",geebee,geebee,-,YES,NO,NO,NO,NO,warpwarp.cpp,BUONO,RASTER,"90",272,224,VERTICAL,warpwarp.cpp
+gemcrush,"Gemcrush (Japan, prototype)","1996","Star Fish",-,-,-,YES,NO,NO,NO,NO,dfruit.cpp,BUONO,RASTER,"270",320,224,VERTICAL,dfruit.cpp
+ghoxjo,"Ghox (joystick, older)","1991",Toaplan,ghox,ghox,-,YES,NO,NO,NO,NO,"toaplan2.cpp",BUONO,RASTER,"270",320,240,VERTICAL,"toaplan2.cpp"
+ghoxj,"Ghox (joystick)","1991",Toaplan,ghox,ghox,-,YES,NO,NO,NO,NO,"toaplan2.cpp",BUONO,RASTER,"270",320,240,VERTICAL,"toaplan2.cpp"
+ghox,"Ghox (spinner)","1991",Toaplan,-,-,-,YES,NO,NO,NO,NO,"toaplan2.cpp",BUONO,RASTER,"270",320,240,VERTICAL,"toaplan2.cpp"
+gigasb,"Gigas (bootleg)","1986",bootleg,gigas,gigas,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+gigas,"Gigas (MC-8123, 317-5002)","1986",Sega,-,-,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+"gigasm2b","Gigas Mark II (bootleg)","1986",bootleg,"gigasm2","gigasm2",-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+"gigasm2","Gigas Mark II (MC-8123, 317-5002)","1986",Sega,-,-,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+goindolj,"Goindol (Japan)","1987",SunA,goindol,goindol,-,YES,NO,NO,NO,NO,goindol.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,goindol.cpp
+goindolu,"Goindol (US)","1987",SunA,goindol,goindol,-,YES,NO,NO,NO,NO,goindol.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,goindol.cpp
+goindol,"Goindol (World)","1987",SunA,-,-,-,YES,NO,NO,NO,NO,goindol.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,goindol.cpp
+cgraplopj,"Graplop (DECO Cassette) (Japan)","1983","Data East Corporation",cgraplop,cgraplop,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+"cgraplop2","Graplop (DECO Cassette) (US) (Prototype?)","1983","Data East Corporation",cgraplop,cgraplop,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+gnbarich,Gunbarich,"2001",Psikyo,-,-,-,YES,NO,NO,NO,NO,psikyosh.cpp,BUONO,RASTER,"270",320,224,VERTICAL,psikyosh.cpp
+gypsyjug,"Gypsy Juggler","1978","Meadows Games, Inc.",-,-,-,YES,NO,NO,NO,NO,meadows.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,meadows.cpp
+spinkick,"Hec's Spinkick","1988",Haesung/Seojin,sfkick,sfkick,-,YES,NO,NO,NO,NO,sfkick.cpp,BUONO,RASTER,"90",543,465,VERTICAL,sfkick.cpp
+homo,Homo,"1987",bootleg,goindol,goindol,-,YES,NO,NO,NO,NO,goindol.cpp,BUONO,RASTER,"90",256,224,VERTICAL,goindol.cpp
+jmpbreak,"Jumping Break (set 1)","1999","F2 System",-,-,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+jmpbreaka,"Jumping Break (set 2)","1999","F2 System",jmpbreak,jmpbreak,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+jpopnics,"Jumping Pop (Nics, Korean hack of Plump Pop)","1992",Nics,-,-,-,YES,NO,NO,NO,NO,tnzs.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,tnzs.cpp
+kickc,"Kick (cocktail)","1981",Midway,kick,kick,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+kick,"Kick (upright)","1981",Midway,-,-,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+kickman,"Kickman (upright)","1981",Midway,kick,kick,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+lagirl,"LA Girl","1992",bootleg,plgirls,plgirls,-,YES,NO,NO,NO,NO,taito_l.cpp,BUONO,RASTER,"270",320,224,VERTICAL,taito_l.cpp
+madball,"Mad Ball V2.0","1998","Yun Sung",-,-,-,YES,NO,NO,NO,NO,paradise.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,paradise.cpp
+madballn,"Mad Ball V2.0 (With Nudity)","1997","Yun Sung",madball,madball,-,YES,NO,NO,NO,NO,paradise.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,paradise.cpp
+jongbou,"Mahjong Block Jongbou (Japan)","1987",SNK,-,-,-,YES,NO,NO,NO,NO,"alpha68k_n.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"alpha68k_n.cpp"
+mmagic,"Monkey Magic","1979",Nintendo,-,-,mmagic,YES,NO,NO,NO,NO,mmagic.cpp,INCOMPLETO,RASTER,"270",256,192,VERTICAL,mmagic.cpp
+offtwallc,"Off the Wall (2-player cocktail)","1991","Atari Games",offtwall,offtwall,-,YES,NO,NO,NO,NO,offtwall.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,offtwall.cpp
+offtwall,"Off the Wall (2/3-player upright)","1991","Atari Games",-,-,-,YES,NO,NO,NO,NO,offtwall.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,offtwall.cpp
+oigas,"Oigas (bootleg)","1986",bootleg,gigas,gigas,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+omega,Omega,"1986","Nihon System",-,-,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+omegaa,"Omega (earlier)","1986","Nihon System",omega,omega,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"270",256,224,VERTICAL,freekick.cpp
+ooparts,"OOPArts (prototype, joystick hack)","1992",hack,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"270",256,224,VERTICAL,"segac2.cpp"
+packbang,"Pack'n Bang Bang (prototype)","1994",Kaneko,-,-,-,YES,NO,NO,NO,NO,"kaneko16.cpp",INCOMPLETO,RASTER,"90",256,224,VERTICAL,"kaneko16.cpp"
+"paddle2","Paddle 2 (bootleg on Block hardware)","1988",bootleg,arkanoid,arkanoid,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+peekaboo,"Peek-a-Boo! (Japan, ver. 1.1)","1993",Jaleco,-,-,-,YES,NO,NO,NO,NO,"megasys1.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"megasys1.cpp"
+peekaboou,"Peek-a-Boo! (North America, ver 1.0)","1993",Jaleco,peekaboo,peekaboo,-,YES,NO,NO,NO,NO,"megasys1.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"megasys1.cpp"
+peggle,"Peggle (Joystick, v1.0)","1991","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"90",400,240,VERTICAL,"itech8.cpp"
+pegglet,"Peggle (Trackball, v1.0)","1991","Strata/Incredible Technologies",peggle,peggle,-,YES,NO,NO,NO,NO,"itech8.cpp",BUONO,RASTER,"90",400,240,VERTICAL,"itech8.cpp"
+plgirls,"Play Girls","1992","Hot-B Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,taito_l.cpp,BUONO,RASTER,"270",320,224,VERTICAL,taito_l.cpp
+playball,"PlayBall! (prototype)","1983",Williams,-,-,-,YES,NO,NO,NO,NO,williams.cpp,BUONO,RASTER,"270",292,232,VERTICAL,williams.cpp
+plumppop,"Plump Pop (Japan)","1987","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,tnzs.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tnzs.cpp
+poosho,"Poosho Poosho","1999","F2 System",-,-,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+popbounc,"Pop 'n Bounce / Gapporin","1997","Video System Co.",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+pokerout,"Potten's Poker stealth with Breakout front game","19??",-,-,-,-,YES,NO,NO,NO,NO,pokerout.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,pokerout.cpp
+powerbal,"Power Balls","1994",Playmark,-,-,-,YES,NO,NO,NO,NO,powerbal.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,powerbal.cpp
+powerbals,"Power Balls (Super Slam conversion)","1994",Playmark,powerbal,powerbal,-,YES,NO,NO,NO,NO,sslam.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,sslam.cpp
+puchicarj,"Puchi Carat (Ver 2.02J 1997/10/29)","1997","Taito Corporation",puchicar,puchicar,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+puchicar,"Puchi Carat (Ver 2.02O 1997/10/29)","1997","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+puchicaru,"Puchi Carat (Ver 2.04A 1997/11/08)","1997","Taito America Corporation",puchicar,puchicar,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,"taito_f3.cpp"
+quester,"Quester (Japan)","1987",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"90",288,224,VERTICAL,"namcos1.cpp"
+questers,"Quester Special Edition (Japan)","1987",Namco,quester,quester,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"90",288,224,VERTICAL,"namcos1.cpp"
+reaktor,"Reaktor (Track & Field conversion)","1987",Zilec,-,-,-,YES,NO,NO,NO,NO,trackfld.cpp,BUONO,RASTER,"90",256,224,VERTICAL,trackfld.cpp
+ridleofp,"Riddle of Pythagoras (Japan)","1986","Sega / Nasco",-,-,-,YES,NO,NO,NO,NO,segae.cpp,BUONO,RASTER,"90",256,192,VERTICAL,segae.cpp
+sarukani,"Saru-Kani-Hamu-Zou (Japan)","1997","Kaneko / Mediaworks",vblokbrk,vblokbrk,-,YES,NO,NO,NO,NO,suprnova.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,suprnova.cpp
+snakjack,"Snacks'n Jaxson","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+spacwalk,"Space Walk","1978",Midway,-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",INCOMPLETO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+springbd,"Springboard (bootleg of Circus)","1977","bootleg (Sub-Electro)",circus,circus,circus,YES,NO,NO,NO,NO,circus.cpp,INCOMPLETO,RASTER,"0",248,256,HORIZONTAL,circus.cpp
+sflush,"Straight Flush","1979",Taito,-,-,-,YES,NO,NO,NO,NO,"8080bw.cpp",PRELIMINARE,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+superbar,"Super Bar","1994",Promat,wiggie,wiggie,-,YES,NO,NO,NO,NO,seta.cpp,INCOMPLETO,RASTER,"270",384,240,VERTICAL,seta.cpp
+sbrkoutc,"Super Breakout (Canyon and Vertical Breakout, prototype)","1978",Atari,sbrkout,sbrkout,-,YES,NO,NO,NO,NO,sbrkout.cpp,BUONO,RASTER,"270",256,224,VERTICAL,sbrkout.cpp
+sbrkoutct,"Super Breakout (Cocktail, prototype)","1978",Atari,sbrkout,sbrkout,-,YES,NO,NO,NO,NO,sbrkout.cpp,BUONO,RASTER,"270",256,224,VERTICAL,sbrkout.cpp
+"sbrkout3","Super Breakout (rev 03)","1978",Atari,sbrkout,sbrkout,-,YES,NO,NO,NO,NO,sbrkout.cpp,BUONO,RASTER,"270",256,224,VERTICAL,sbrkout.cpp
+sbrkout,"Super Breakout (rev 04)","1978",Atari,-,-,-,YES,NO,NO,NO,NO,sbrkout.cpp,BUONO,RASTER,"270",256,224,VERTICAL,sbrkout.cpp
+sfkick,"Super Free Kick (set 1)","1988","Haesung/HJ Corp",-,-,-,YES,NO,NO,NO,NO,sfkick.cpp,BUONO,RASTER,"90",543,465,VERTICAL,sfkick.cpp
+sfkicka,"Super Free Kick (set 2)","198?",Haesung,sfkick,sfkick,-,YES,NO,NO,NO,NO,sfkick.cpp,BUONO,RASTER,"90",543,465,VERTICAL,sfkick.cpp
+tblkkuzu,"The Block Kuzushi (Japan)","2000","Tamsoft / D3 Publisher","coh1002m",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+thunderl,"Thunder & Lightning","1990",Seta,-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"270",384,240,VERTICAL,seta.cpp
+thunderlbl,"Thunder & Lightning (bootleg with Tetris sound, set 1)","1991","bootleg (Hyogo)",thunderl,thunderl,-,YES,NO,NO,NO,NO,seta.cpp,INCOMPLETO,RASTER,"270",384,240,VERTICAL,seta.cpp
+"thunderlbl2","Thunder & Lightning (bootleg with Tetris sound, set 2)","1990",bootleg,thunderl,thunderl,-,YES,NO,NO,NO,NO,seta.cpp,INCOMPLETO,RASTER,"270",384,240,VERTICAL,seta.cpp
+tattack,"Time Attacker","1983?",Shonan,-,-,tattack,YES,NO,NO,NO,NO,tattack.cpp,INCOMPLETO,RASTER,"270",200,232,VERTICAL,tattack.cpp
+arkatour,"Tournament Arkanoid (US)","1987","Taito America Corporation (Romstar license)",-,-,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"90",256,224,VERTICAL,arkanoid.cpp
+twinsqua,"Twin Squash","1991",Sega,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+vblokbrka,"VS Block Breaker (Asia)","1997","Kaneko / Mediaworks",vblokbrk,vblokbrk,-,YES,NO,NO,NO,NO,suprnova.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,suprnova.cpp
+vblokbrk,"VS Block Breaker (Europe)","1997","Kaneko / Mediaworks",skns,-,-,YES,NO,NO,NO,NO,suprnova.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,suprnova.cpp
+wallc,"Wall Crash (set 1)","1984",Midcoin,-,-,-,YES,NO,NO,NO,NO,wallc.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,wallc.cpp
+wallca,"Wall Crash (set 2)","1984",Midcoin,wallc,wallc,-,YES,NO,NO,NO,NO,wallc.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,wallc.cpp
+wallst,"Wall Street","1982","Century Electronics",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+warlords,Warlords,"1980",Atari,-,-,-,YES,NO,NO,NO,NO,centiped.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,centiped.cpp
+wiggie,"Wiggie Waggie","1994",Promat,-,-,-,YES,NO,NO,NO,NO,seta.cpp,INCOMPLETO,RASTER,"270",384,240,VERTICAL,seta.cpp
+wink,"Wink (set 1)","1985",Midcoin,-,-,-,YES,NO,NO,NO,NO,wink.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,wink.cpp
+winka,"Wink (set 2)","1985",Midcoin,wink,wink,-,YES,NO,NO,NO,NO,wink.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,wink.cpp
+zipzap,"Zip & Zap (Explicit)","1995","Barko Corp",-,-,-,YES,NO,NO,NO,NO,"expro02.cpp",INCOMPLETO,RASTER,"90",256,224,VERTICAL,"expro02.cpp"
+zipzapa,"Zip & Zap (Less Explicit)","1995","Barko Corp",zipzap,zipzap,-,YES,NO,NO,NO,NO,"expro02.cpp",INCOMPLETO,RASTER,"90",256,224,VERTICAL,"expro02.cpp"

@@ -1,0 +1,254 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"19in1","19 in 1 MAME bootleg (BAR-V000)","2004",bootleg,"39in1","39in1",-,YES,NO,NO,NO,NO,"39in1.cpp",PRELIMINARE,RASTER,"90",296,480,VERTICAL,"39in1.cpp"
+"unkra200","200 in 1 Retro Arcade","201?",-,"mc_tv200","mc_tv200",-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"39in1","39 in 1 MAME bootleg (GNO-V000)","2004",bootleg,-,-,-,YES,NO,NO,NO,NO,"39in1.cpp",INCOMPLETO,RASTER,"90",296,480,VERTICAL,"39in1.cpp"
+"4in1","4 Fun in 1","1981","Armenia / Food and Fun",-,-,-,YES,NO,NO,NO,NO,galaxold.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+"4in1a","4 in 1 MAME bootleg (set 1, ver 3.00, PLZ-V014)","2004",bootleg,"39in1","39in1",-,YES,NO,NO,NO,NO,"39in1.cpp",PRELIMINARE,RASTER,"90",296,480,VERTICAL,"39in1.cpp"
+"4in1b","4 in 1 MAME bootleg (set 2, PLZ-V001)","2004",bootleg,"39in1","39in1",-,YES,NO,NO,NO,NO,"39in1.cpp",PRELIMINARE,RASTER,"90",296,480,VERTICAL,"39in1.cpp"
+"48in1","48 in 1 MAME bootleg (set 1, ver 3.09, HPH-V000)","2004",bootleg,"39in1","39in1",-,YES,NO,NO,NO,NO,"39in1.cpp",PRELIMINARE,RASTER,"90",296,480,VERTICAL,"39in1.cpp"
+"48in1b","48 in 1 MAME bootleg (set 2, ver 3.09, HPH-V000, alt flash)","2004",bootleg,"39in1","39in1",-,YES,NO,NO,NO,NO,"39in1.cpp",PRELIMINARE,RASTER,"90",296,480,VERTICAL,"39in1.cpp"
+"48in1a","48 in 1 MAME bootleg (set 3, ver 3.02, HPH-V000)","2004",bootleg,"39in1","39in1",-,YES,NO,NO,NO,NO,"39in1.cpp",PRELIMINARE,RASTER,"90",296,480,VERTICAL,"39in1.cpp"
+"60in1","60 in 1 MAME bootleg (ver 3.00, ICD-V000)","2004",bootleg,"39in1","39in1",-,YES,NO,NO,NO,NO,"39in1.cpp",PRELIMINARE,RASTER,"90",296,480,VERTICAL,"39in1.cpp"
+"99bottles","99 Bottles of Beer","1999","Bally Gaming Co.",gammagic,gammagic,-,YES,NO,NO,NO,YES,gammagic.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,gammagic.cpp
+alphaho,"Alpha Fighter / Head On","19??","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+animechmp,"Anime Champ (GCA07 VER. JAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+arcadecl,"Arcade Classics (prototype)","1992","Atari Games",-,-,-,YES,NO,NO,NO,NO,arcadecl.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,arcadecl.cpp
+bestri,"Bestri (Korea, set 1)","1998","F2 System",-,-,-,YES,NO,NO,NO,NO,crospang.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,crospang.cpp
+bestria,"Bestri (Korea, set 2)","1998","F2 System",bestri,bestri,-,YES,NO,NO,NO,NO,crospang.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,crospang.cpp
+bingomana,"Bingo Mania (A03)","1993","HP Automaten",bingoman,bingoman,-,YES,NO,NO,NO,NO,bingoman.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,bingoman.cpp
+bingoman,"Bingo Mania (P03-P07-P14)","1993","HP Automaten",-,-,-,YES,NO,NO,NO,NO,bingoman.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,bingoman.cpp
+bishi,"Bishi Bashi Championship Mini Game Senshuken (ver JAA, 3 Players)","1996",Konami,-,-,-,YES,NO,NO,NO,NO,bishi.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,bishi.cpp
+carhntds,"Car Hunt / Deep Scan (France)","1979",Sega,-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+"cmmb103","Centipede / Millipede / Missile Command (rev 1.03)","2001","Cosmodog / Team Play (licensed from Infogrames via Midway Games West)",-,-,-,YES,NO,NO,NO,NO,cmmb.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,cmmb.cpp
+"cmmb162","Centipede / Millipede / Missile Command / Let's Go Bowling (rev 1.62)","2002","Cosmodog / Team Play (licensed from Infogrames via Midway Games West)",-,-,-,YES,NO,NO,NO,NO,cmmb.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,cmmb.cpp
+"cham24","Chameleon 24","2002",bootleg,-,-,-,YES,NO,NO,NO,NO,"cham24.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"cham24.cpp"
+"cbrs8","CoolBoy RS-8 168 in 1","201?",CoolBoy,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"cps3booto","CPS3 Multi-game bootleg for HD6417095 type SH2 (older)","1999",bootleg,"cps3boot","cps3boot",-,YES,NO,NO,NO,YES,"cps3.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps3.cpp"
+"cps3boot","CPS3 Multi-game bootleg for HD6417095 type SH2 (V4)","1999",bootleg,-,-,-,YES,NO,NO,NO,YES,"cps3.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps3.cpp"
+decomult,"Deco Cassette System Multigame (ROM based)","2008","bootleg (David Widel)",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+"cybar120","Defender M2500P 120-in-1","2009","Defender / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+"deluxe4u","Deluxe 4 U (ver. 0107, 07/01/2000)","2000",ESD,"deluxe5","deluxe5",-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+"deluxe5","Deluxe 5 (ver. 0107, 07/01/2000, set 1)","2000",ESD,-,-,-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+"deluxe5a","Deluxe 5 (ver. 0107, 07/01/2000, set 2)","2000",ESD,"deluxe5","deluxe5",-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+"deluxe5b","Deluxe 5 (ver. 0107, 07/01/2000, set 3)","2000",ESD,"deluxe5","deluxe5",-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+dvnimbus,"DVTech Nimbus 176 in 1","201?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"europl01","EuroPlay 2001","2001","Sleic / Petaco",-,-,-,YES,NO,NO,NO,YES,startouch.cpp,PRELIMINARE,-,"0",0,0,-,startouch.cpp
+famibox,FamicomBox,"1986",Nintendo,-,-,-,YES,NO,NO,NO,NO,famibox.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,famibox.cpp
+fourplay,"Four Play","2002",Macro,-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+funcube,"Funcube (v1.5)","2000",Namco,-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"seta2.cpp"
+"funcube2","Funcube 2 (v1.1)","2001",Namco,-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"seta2.cpp"
+"funcube3","Funcube 3 (v1.1)","2001",Namco,-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"seta2.cpp"
+"funcube4","Funcube 4 (v1.0)","2001",Namco,-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"seta2.cpp"
+"funcube5","Funcube 5 (v1.0)","2002",Namco,-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"seta2.cpp"
+"galgame2","Galaxy Games StarPak 2","1998","Creative Electronics & Software / Namco",galgbios,-,-,YES,NO,NO,NO,NO,galgames.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,galgames.cpp
+"galgame3","Galaxy Games StarPak 3","1998","Creative Electronics & Software / Atari",galgbios,-,-,YES,NO,NO,NO,NO,galgames.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,galgames.cpp
+"galgame4","Galaxy Games StarPak 4 (prototype)","1998","Creative Electronics & Software",galgbios,-,-,YES,NO,NO,NO,NO,galgames.cpp,INCOMPLETO,RASTER,"0",400,256,HORIZONTAL,galgames.cpp
+gamefgtr,"Game Fighter (bootleg)","1993",bootleg,gameboy,gameboy,-,YES,NO,NO,NO,NO,gb.cpp,INCOMPLETO,LCD,"0",160,144,HORIZONTAL,gb.cpp
+gammagic,"Game Magic","1999","Bally Gaming Co.",-,-,-,YES,NO,NO,NO,YES,gammagic.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,gammagic.cpp
+gamecstl,GameCristal,"2002",Cristaltec,-,-,-,YES,NO,NO,NO,YES,gamecstl.cpp,PRELIMINARE,RASTER,"0",640,200,HORIZONTAL,gamecstl.cpp
+"gamecst2","GameCristal (version 2.613)","2002",Cristaltec,gamecstl,gamecstl,-,YES,NO,NO,NO,YES,gamecstl.cpp,PRELIMINARE,RASTER,"0",640,200,HORIZONTAL,gamecstl.cpp
+gmfamily,"Games Family","200?",bootleg,-,-,-,YES,NO,NO,NO,YES,gfamily.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,gfamily.cpp
+gjspace,"Gekitoride-Jong Space (10011 Ver.A)","2001","Namco / Metro",-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+gmgalax,"Ghostmuncher Galaxian (bootleg)","1981",bootleg,-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+gbbchmp,"Great Bishi Bashi Champ (GBA48 VER. JAB)","2002",Konami,"sys573",-,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"happy6100cn","Huanle Liuhe Yi (Happy 6-in-1) (M68K ver. V100, ARM ver. V100CN)","2004",IGS,"happy6","happy6",-,YES,NO,NO,NO,NO,pgm.cpp,INCOMPLETO,RASTER,"0",448,224,HORIZONTAL,pgm.cpp
+"happy6101","Huanle Liuhe Yi (Happy 6-in-1) (M68K ver. V100, ARM ver. V101CN)","2004",IGS,"happy6","happy6",-,YES,NO,NO,NO,NO,pgm.cpp,INCOMPLETO,RASTER,"0",448,224,HORIZONTAL,pgm.cpp
+"happy6100hk","Huanle Liuhe Yi (Happy 6-in-1) (M68K ver. V100HK, ARM ver. V100HK)","2004",IGS,"happy6","happy6",-,YES,NO,NO,NO,NO,pgm.cpp,INCOMPLETO,RASTER,"0",448,224,HORIZONTAL,pgm.cpp
+"happy6","Huanle Liuhe Yi (Happy 6-in-1) (M68K ver. V101, ARM ver. V102CN)","2004",IGS,pgm,-,-,YES,NO,NO,NO,NO,pgm.cpp,INCOMPLETO,RASTER,"0",448,224,HORIZONTAL,pgm.cpp
+"ii32in1","InterAct 32-in-1","200?",Intec,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"ii8in1","InterAct 8-in-1","200?",Intec,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+invcarht,"Invinco / Car Hunt (Germany)","1979",Sega,-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+invds,"Invinco / Deep Scan","1979",Sega,-,-,invinco,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+"invho2","Invinco / Head On 2 (set 1)","1979",Sega,-,-,invinco,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+"invho2a","Invinco / Head On 2 (set 2)","1979",Sega,"invho2","invho2",invinco,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+"konam80a","Konami 80's AC Special (GC826 VER. AAA)","1998",Konami,"konam80s","konam80s",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"90",640,480,VERTICAL,"ksys573.cpp"
+"konam80s","Konami 80's AC Special (GC826 VER. EAA)","1998",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"90",640,480,VERTICAL,"ksys573.cpp"
+"konam80k","Konami 80's AC Special (GC826 VER. KAA)","1998",Konami,"konam80s","konam80s",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"90",640,480,VERTICAL,"ksys573.cpp"
+"konam80u","Konami 80's AC Special (GC826 VER. UAA)","1998",Konami,"konam80s","konam80s",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"90",640,480,VERTICAL,"ksys573.cpp"
+"konam80j","Konami 80's Gallery (GC826 VER. JAA)","1998",Konami,"konam80s","konam80s",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"90",640,480,VERTICAL,"ksys573.cpp"
+"megat5a","Megatouch 5 (9255-60-01 R0C, Standard version)","1997",Merit,"megat5","megat5",-,YES,NO,NO,NO,NO,meritm.cpp,PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat5","Megatouch 5 (9255-60-01 R0I, Standard version)","1997",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat5nj","Megatouch 5 (9255-60-07 R0N, New Jersey version)","1998",Merit,"megat5","megat5",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat5g","Megatouch 5 (9255-60-50 R0G, Bi-Lingual GER/ENG version)","1998",Merit,"megat5","megat5",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat5t","Megatouch 5 Tournament Edition (9255-70-01 R0C, Standard version)","1998",Merit,"megat5","megat5",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat5tg","Megatouch 5 Turnier Version (9255-70-50 R0D, Bi-Lingual GER/ENG version)","1998",Merit,"megat5","megat5",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat6","Megatouch 6 (9255-80-01 R0A, Standard version)","1998",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat7e","Megatouch 7 Encore Edition (9255-90-01 R00, Standard version)","2000",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3d","Megatouch III (9255-20-01 R0A, Standard version)","1995",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3c","Megatouch III (9255-20-01 R0B, Standard version)","1995",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3b","Megatouch III (9255-20-01 R0F, Standard version)","1995",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3a","Megatouch III (9255-20-01 R0K, Standard version)","1995",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3","Megatouch III (9255-20-01 R0N, Standard version)","1996",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3caa","Megatouch III (9255-20-06 R0D, California version)","1995",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3ca","Megatouch III (9255-20-06 R0N, California version)","1996",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3nj","Megatouch III (9255-20-07 R0G, New Jersey version)","1995",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3te","Megatouch III Tournament Edition (9255-30-01 R0E, Standard version)","1996",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat3tg","Megatouch III Turnier Edition (9255-30-50 R0F, Bi-Lingual GER/ENG version)","1996",Merit,"megat3","megat3",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4d","Megatouch IV (9255-40-01 R0, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4c","Megatouch IV (9255-40-01 R0A, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4b","Megatouch IV (9255-40-01 R0B, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4a","Megatouch IV (9255-40-01 R0D, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4","Megatouch IV (9255-40-01 R0E, Standard version)","1996",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4tea","Megatouch IV Tournament Edition (9255-50-01 R0A, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4te","Megatouch IV Tournament Edition (9255-50-01 R0D, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+alphahob,"Missile / Circuit (bootleg of Alpha Fighter / Head On)","19??",bootleg,alphaho,alphaho,-,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+"mog_m320","MOGIS M320 246 in 1 Handheld","2016",MOGIS,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"20pacgalr0","Ms. Pac-Man/Galaga - 20th Anniversary Class of 1981 Reunion (V1.00)","2000","Namco / Cosmodog","20pacgal","20pacgal",-,YES,NO,NO,NO,NO,"20pacgal.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"20pacgal.cpp"
+"20pacgalr1","Ms. Pac-Man/Galaga - 20th Anniversary Class of 1981 Reunion (V1.01)","2000","Namco / Cosmodog","20pacgal","20pacgal",-,YES,NO,NO,NO,NO,"20pacgal.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"20pacgal.cpp"
+"20pacgalr2","Ms. Pac-Man/Galaga - 20th Anniversary Class of 1981 Reunion (V1.02)","2000","Namco / Cosmodog","20pacgal","20pacgal",-,YES,NO,NO,NO,NO,"20pacgal.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"20pacgal.cpp"
+"20pacgalr3","Ms. Pac-Man/Galaga - 20th Anniversary Class of 1981 Reunion (V1.03)","2000","Namco / Cosmodog","20pacgal","20pacgal",-,YES,NO,NO,NO,NO,"20pacgal.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"20pacgal.cpp"
+"20pacgalr4","Ms. Pac-Man/Galaga - 20th Anniversary Class of 1981 Reunion (V1.04)","2000","Namco / Cosmodog","20pacgal","20pacgal",-,YES,NO,NO,NO,NO,"20pacgal.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"20pacgal.cpp"
+"20pacgal","Ms. Pac-Man/Galaga - 20th Anniversary Class of 1981 Reunion (V1.08)","2000","Namco / Cosmodog",-,-,-,YES,NO,NO,NO,NO,"20pacgal.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"20pacgal.cpp"
+"nmg5","Multi 5 / New Multi Game 5 (set 1)","1998","Yun Sung",-,-,-,YES,NO,NO,NO,NO,"nmg5.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"nmg5.cpp"
+"nmg5a","Multi 5 / New Multi Game 5 (set 2, censored)","1998","Yun Sung","nmg5","nmg5",-,YES,NO,NO,NO,NO,"nmg5.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"nmg5.cpp"
+"nmg5e","Multi 5 / New Multi Game 5 (set 3, earlier)","1997","Yun Sung","nmg5","nmg5",-,YES,NO,NO,NO,NO,"nmg5.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"nmg5.cpp"
+mchampdx,"Multi Champ Deluxe (ver. 0106, 06/01/2000)","2000",ESD,-,-,-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+mchampdxb,"Multi Champ Deluxe (ver. 1114, 14/11/1999)","1999",ESD,mchampdx,mchampdx,-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+mchampdxa,"Multi Champ Deluxe (ver. 1126, 26/11/1999)","1999",ESD,mchampdx,mchampdx,-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+multigam,"Multi Game (set 1)","1992",-,-,-,-,YES,NO,NO,NO,NO,multigam.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,multigam.cpp
+multigmb,"Multi Game (set 2)","1992",-,multigam,multigam,-,YES,NO,NO,NO,NO,multigam.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,multigam.cpp
+multigmt,"Multi Game (Tung Sheng Electronics)","1992","Tung Sheng Electronics",-,-,-,YES,NO,NO,NO,NO,multigam.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,multigam.cpp
+"multigm2","Multi Game 2","1992","Seo Jin",-,-,-,YES,NO,NO,NO,NO,multigam.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,multigam.cpp
+"am_mg24a","Multi Game I (unknown V2.4)","2000","Amatic Trading GmbH",-,-,-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"am_mg24","Multi Game I (V.Ger 2.4)","2000","Amatic Trading GmbH",-,-,-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"multigm3","Multi Game III","1992","Seo Jin",-,-,-,YES,NO,NO,NO,NO,multigam.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,multigam.cpp
+"am_mg31i","Multi Game III (S.Ita 3.1)","2000","Amatic Trading GmbH","am_mg35i","am_mg35i",-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"am_mg33i","Multi Game III (S.Ita 3.3)","2000","Amatic Trading GmbH","am_mg35i","am_mg35i",-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"am_mg34i","Multi Game III (S.Ita 3.4)","2000","Amatic Trading GmbH","am_mg35i","am_mg35i",-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"am_mg35i","Multi Game III (S.Ita 3.5)","2000","Amatic Trading GmbH",-,-,-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"am_mg3","Multi Game III (V.Ger 3.5)","2000","Amatic Trading GmbH",-,-,-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"am_mg3a","Multi Game III (V.Ger 3.64)","2000","Amatic Trading GmbH",-,-,-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"ma6710","Multi-Action 6710-13","1989",Merit,-,-,-,YES,NO,NO,NO,NO,"merit3xx.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"merit3xx.cpp"
+"ma7551","Multi-Action 7551","199?",Merit,-,-,-,YES,NO,NO,NO,NO,"merit3xx.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"merit3xx.cpp"
+"ma7556","Multi-Action 7556","199?",Merit,-,-,-,YES,NO,NO,NO,NO,"merit3xx.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"merit3xx.cpp"
+"ma7558","Multi-Action 7558","199?",Merit,-,-,-,YES,NO,NO,NO,NO,"merit3xx.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"merit3xx.cpp"
+multiped,"Multipede (Centipede/Millipede multigame kit)","2002","hack (Braze Technologies)",-,-,-,YES,NO,NO,NO,NO,centiped.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,centiped.cpp
+"ncv1","Namco Classic Collection Vol.1","1995",Namco,-,-,-,YES,NO,NO,NO,NO,"namcond1.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"namcond1.cpp"
+"ncv1j","Namco Classic Collection Vol.1 (Japan, v1.00)","1995",Namco,"ncv1","ncv1",-,YES,NO,NO,NO,NO,"namcond1.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"namcond1.cpp"
+"ncv1j2","Namco Classic Collection Vol.1 (Japan, v1.03)","1995",Namco,"ncv1","ncv1",-,YES,NO,NO,NO,NO,"namcond1.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"namcond1.cpp"
+"ncv2","Namco Classic Collection Vol.2","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcond1.cpp",PRELIMINARE,RASTER,"90",288,224,VERTICAL,"namcond1.cpp"
+"ncv2j","Namco Classic Collection Vol.2 (Japan)","1996",Namco,"ncv2","ncv2",-,YES,NO,NO,NO,NO,"namcond1.cpp",PRELIMINARE,RASTER,"90",288,224,VERTICAL,"namcond1.cpp"
+namcostr,"Namco Stars","2000",Namco,-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,"seta2.cpp"
+"3in1semi","New HyperMan (3-in-1 with Cookie & Bibi & HyperMan)","1998","SemiCom / XESS",-,-,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+"pss62","New Super 3D Golf Simulation - Waialae no Kiseki / Super Mahjong 2 (Super Famicom Box)","1994","T&E Soft / I'Max",sfcbox,-,-,YES,NO,NO,NO,NO,sfcbox.cpp,PRELIMINARE,RASTER,"0",384,192,HORIZONTAL,sfcbox.cpp
+odeontw,"Odeon Twister (v1.4)","19??","CD Express",cubo,-,-,YES,NO,NO,NO,YES,cubo.cpp,PRELIMINARE,RASTER,"0",724,567,HORIZONTAL,cubo.cpp
+"odeontw2","Odeon Twister 2 (v202.19)","1999","CD Express",cubo,-,-,YES,NO,NO,NO,YES,cubo.cpp,PRELIMINARE,RASTER,"0",724,567,HORIZONTAL,cubo.cpp
+"25pacmano","Pac-Man - 25th Anniversary Edition (Rev 2.00)","2005","Namco / Cosmodog","25pacman","25pacman",-,YES,NO,NO,NO,NO,"20pacgal.cpp",INCOMPLETO,RASTER,"90",288,224,VERTICAL,"20pacgal.cpp"
+"25pacman","Pac-Man - 25th Anniversary Edition (Rev 3.00)","2006","Namco / Cosmodog",-,-,-,YES,NO,NO,NO,NO,"20pacgal.cpp",PRELIMINARE,RASTER,"90",288,224,VERTICAL,"20pacgal.cpp"
+mt_parlg,"Parlour Games (Mega-Tech, SMS based)","1987",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"pitboss2","Pit Boss II (9221-01C)","1988",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+pitbossma,"Pit Boss Megastar (9243-00-01)","1994",Merit,pitbossm,pitbossm,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+pitbossm,"Pit Boss Megastar (9244-00-01)","1994",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+megat,"Pit Boss Megatouch (9234-20-01)","1994",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat2b","Pit Boss Megatouch II (9255-10-01 R0D, Standard version)","1994",Merit,"megat2","megat2",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat2a","Pit Boss Megatouch II (9255-10-01 R0E, Standard version)","1994",Merit,"megat2","megat2",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat2","Pit Boss Megatouch II (9255-10-01 R0G, Standard version)","1994",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat2mn","Pit Boss Megatouch II (9255-10-02 R0G, Minnesota version)","1994",Merit,"megat2","megat2",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat2caa","Pit Boss Megatouch II (9255-10-06 R0E, California version)","1994",Merit,"megat2","megat2",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat2ca","Pit Boss Megatouch II (9255-10-06 R0G, California version)","1994",Merit,"megat2","megat2",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+pitbosssa,"Pit Boss Superstar (9221-10-00A)","1990",Merit,pitbosss,pitbosss,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+pitbosss,"Pit Boss Superstar (9221-10-00B)","1990",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+pitbosssc,"Pit Boss Superstar (9221-12-01, California version)","1992",Merit,pitbosss,pitbosss,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+pitbosssm,"Pit Boss Superstar (9221-12-02, Minnesota version)","1992",Merit,pitbosss,pitbosss,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"pbss330","Pit Boss Superstar III 30 (9233-00-01, Standard version)","1993",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"pbss330ca","Pit Boss Superstar III 30 (9233-00-06, California version)","1993",Merit,"pbss330","pbss330",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"pbst30a","Pit Boss Supertouch 30 (9234-00-01)","1993",Merit,"pbst30","pbst30",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"pbst30","Pit Boss Supertouch 30 (9234-10-01)","1994",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+polyplay,"Poly-Play (ZRE)","1986","VEB Polytechnik Karl-Marx-Stadt",-,-,-,YES,NO,NO,NO,NO,polyplay.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,polyplay.cpp
+"pjoyn50","PowerJoy Navigator 50 in 1","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"pjoys30","PowerJoy Supermax 30 in 1","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"pjoys60","PowerJoy Supermax 60 in 1","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+pclubys,"Puzzle Club (Yun Sung, set 1)","2000","Yun Sung",-,-,-,YES,NO,NO,NO,NO,"nmg5.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"nmg5.cpp"
+pclubysa,"Puzzle Club (Yun Sung, set 2)","2000","Yun Sung",pclubys,pclubys,-,YES,NO,NO,NO,NO,"nmg5.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"nmg5.cpp"
+"4in1boot","Puzzle King (PacMan 2, Tetris, HyperMan 2, Snow Bros.)","2002","K1 Soft",-,-,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+rollingc,"Rolling Crash / Moon Base","1979",Nichibutsu,-,-,invaders,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+sspacaho,"Space Attack / Head On","1979",Sega,-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+invqix,"Space Invaders / Qix Silver Anniversary Edition (Ver. 2.03)","2003","Taito / Namco",-,-,-,YES,NO,NO,NO,NO,invqix.cpp,BUONO,RASTER,"270",257,241,VERTICAL,invqix.cpp
+"invmultim1a","Space Invaders Multigame (M8.01A)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"invmultim2a","Space Invaders Multigame (M8.02A)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"invmultim2c","Space Invaders Multigame (M8.02C)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"invmultim3a","Space Invaders Multigame (M8.03A)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+invmulti,"Space Invaders Multigame (M8.03D)","2002","hack (Braze Technologies)",-,-,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+invmultip,"Space Invaders Multigame (prototype)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"invmultis1a","Space Invaders Multigame (S0.81A)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"invmultis2a","Space Invaders Multigame (S0.82A)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"invmultis3a","Space Invaders Multigame (S0.83A)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"invmultit3d","Space Invaders Multigame (T8.03D)","2002","hack (Braze Technologies)",invmulti,invmulti,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"streetgr3","Street Games (Revision 3)","1993","New Image Technologies",streetg,streetg,-,YES,NO,NO,NO,NO,pcat_nit.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,pcat_nit.cpp
+streetg,"Street Games (Revision 4)","1993","New Image Technologies",-,-,-,YES,NO,NO,NO,NO,pcat_nit.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,pcat_nit.cpp
+"streetg2r5","Street Games II (Revision 5)","1993","New Image Technologies","streetg2","streetg2",-,YES,NO,NO,NO,NO,pcat_nit.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,pcat_nit.cpp
+"streetg2","Street Games II (Revision 7C)","1993","New Image Technologies",-,-,-,YES,NO,NO,NO,NO,pcat_nit.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,pcat_nit.cpp
+superabco,"Super ABC (Pac-Man multigame kit, Mar. 08 1999)","1999","hack (Two-Bit Score)",superabc,superabc,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+superabc,"Super ABC (Pac-Man multigame kit, Sep. 03 1999)","1999","hack (Two-Bit Score)",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"sarc110","Super Arcade 101-in-1 (set 1)","200?",-,-,-,-,YES,NO,NO,NO,NO,megadriv_vt_hybrid.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,megadriv_vt_hybrid.cpp
+"sarc110a","Super Arcade 101-in-1 (set 2)","200?",-,"sarc110","sarc110",-,YES,NO,NO,NO,NO,megadriv_vt_hybrid.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,megadriv_vt_hybrid.cpp
+"pss64","Super Donkey Kong / Super Bomberman 2 (Super Famicom Box)","199?","Nintendo / Hudson Soft",sfcbox,-,-,YES,NO,NO,NO,NO,sfcbox.cpp,PRELIMINARE,RASTER,"0",384,192,HORIZONTAL,sfcbox.cpp
+"pss63","Super Donkey Kong / Super Tetris 2 + Bombliss (Super Famicom Box)","1994","Nintendo / BPS",sfcbox,-,-,YES,NO,NO,NO,NO,sfcbox.cpp,PRELIMINARE,RASTER,"0",384,192,HORIZONTAL,sfcbox.cpp
+smssgame,"Super Game (Sega Master System Multi-game bootleg)","199?","Sono Corp Japan",-,-,-,YES,NO,NO,NO,NO,sms_bootleg.cpp,PRELIMINARE,RASTER,"0",268,224,HORIZONTAL,sms_bootleg.cpp
+smssgamea,"Super Game (Sega Master System Multi-game bootleg) (alt games)","1990","Seo Jin (TV-Tuning license)",-,-,-,YES,NO,NO,NO,NO,sms_bootleg.cpp,PRELIMINARE,RASTER,"0",268,224,HORIZONTAL,sms_bootleg.cpp
+"supergm3","Super Game III","1996",-,-,-,-,YES,NO,NO,NO,NO,multigam.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,multigam.cpp
+"sgmt1","Super Game Mega Type 1","1994",-,-,-,-,YES,NO,NO,NO,NO,multigam.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,multigam.cpp
+"pss61","Super Mario Kart / Super Mario Collection / Star Fox (Super Famicom Box)","1994",Nintendo,sfcbox,-,-,YES,NO,NO,NO,NO,sfcbox.cpp,PRELIMINARE,RASTER,"0",384,192,HORIZONTAL,sfcbox.cpp
+"megat4sb","Super Megatouch IV (9255-41-01 R0C, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4sa","Super Megatouch IV (9255-41-01 R0E, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4s","Super Megatouch IV (9255-41-01 R0G, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4smn","Super Megatouch IV (9255-41-02 R0C, Minnesota version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4snj","Super Megatouch IV (9255-41-07 R0G, New Jersey version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4st","Super Megatouch IV Tournament Edition (9255-51-01 R0B, Standard version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"megat4stg","Super Megatouch IV Turnier Version (9255-51-50 R0A, Bi-Lingual GER/ENG version)","1996",Merit,"megat4","megat4",-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+spitboss,"Super Pit Boss (9221-02A)","1988",Merit,-,-,-,YES,NO,NO,NO,NO,meritm.cpp,INCOMPLETO,RASTER,"0",543,465,HORIZONTAL,meritm.cpp
+"sy888b","SY-888B 288 in 1 Handheld","2016","SY Corp",-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"3wondersb","Three Wonders (bootleg)","1991",bootleg,"3wonders","3wonders",-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+"3wondersh","Three Wonders (hack)","1991",bootleg,"3wonders","3wonders",-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+"3wondersu","Three Wonders (USA 910520)","1991",Capcom,"3wonders","3wonders",-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+"3wondersr1","Three Wonders (World 910513)","1991",Capcom,"3wonders","3wonders",-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+"3wonders","Three Wonders (World 910520)","1991",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+tmdo,"Touchmaster (v2.2-01 Standard)","1996","Midway Games Inc. / CES Inc.",tm,tm,-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+tm,"Touchmaster (v3.00 Euro)","1996","Midway Games Inc. / CES Inc.",-,-,-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm2kb","Touchmaster 2000 (v4.00 Standard)","1996","Midway Games Inc.","tm2k","tm2k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm2ka","Touchmaster 2000 (v4.02 Standard)","1996","Midway Games Inc.","tm2k","tm2k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm2kspeval","Touchmaster 2000 (v4.XX3 Spanish Evaluation)","1996","Midway Games Inc.","tm2k","tm2k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm2k","Touchmaster 2000 Plus (v4.63 Standard)","1996","Midway Games Inc.",-,-,-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm3ka","Touchmaster 3000 (v5.01 Standard)","1997","Midway Games Inc.","tm3k","tm3k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm3ksp","Touchmaster 3000 (v5.02 Spanish)","1997","Midway Games Inc.","tm3k","tm3k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm3k","Touchmaster 3000 (v5.02 Standard)","1997","Midway Games Inc.",-,-,-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm3keval","Touchmaster 3000 (v5.XX Standard AMOA Evaluation)","1997","Midway Games Inc.","tm3k","tm3k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm4kmn","Touchmaster 4000 (v6.01 Minnesota)","1998","Midway Games Inc.","tm4k","tm4k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm4kb","Touchmaster 4000 (v6.01 Standard)","1998","Midway Games Inc.","tm4k","tm4k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm4kca","Touchmaster 4000 (v6.02 California)","1998","Midway Games Inc.","tm4k","tm4k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm4kuk","Touchmaster 4000 (v6.02 England)","1998","Midway Games Inc.","tm4k","tm4k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm4ka","Touchmaster 4000 (v6.02 Standard)","1998","Midway Games Inc.","tm4k","tm4k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm4knj","Touchmaster 4000 (v6.03 New Jersey)","1998","Midway Games Inc.","tm4k","tm4k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm4k","Touchmaster 4000 (v6.03 Standard)","1998","Midway Games Inc.",-,-,-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm5ka","Touchmaster 5000 (v7.01 Standard)","1998","Midway Games Inc.","tm5k","tm5k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm5kca","Touchmaster 5000 (v7.10 California)","1998","Midway Games Inc.","tm5k","tm5k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm5kmn","Touchmaster 5000 (v7.10 Minnesota)","1998","Midway Games Inc.","tm5k","tm5k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm5k","Touchmaster 5000 (v7.10 Standard)","1998","Midway Games Inc.",-,-,-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm5kuk","Touchmaster 5000 (v7.11 U.K.)","1998","Midway Games Inc.","tm5k","tm5k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm7kmna","Touchmaster 7000 (v8.00 Minnesota)","1999","Midway Games Inc.","tm7k","tm7k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm7ka","Touchmaster 7000 (v8.00 Standard)","1999","Midway Games Inc.","tm7k","tm7k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm7kde","Touchmaster 7000 (v8.04 Germany)","1999","Midway Games Inc.","tm7k","tm7k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm7kmn","Touchmaster 7000 (v8.04 Minnesota)","1999","Midway Games Inc.","tm7k","tm7k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm7k","Touchmaster 7000 (v8.04 Standard)","1999","Midway Games Inc.",-,-,-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm7knj","Touchmaster 7000 (v8.05 New Jersey)","1999","Midway Games Inc.","tm7k","tm7k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm7keval","Touchmaster 7000 (v8.1X ASI Standard Evaluation)","1999","Midway Games Inc.","tm7k","tm7k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm8k902","Touchmaster 8000 (v9.02 Standard)","2000","Midway Games Inc.","tm8k","tm8k",-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"tm8k","Touchmaster 8000 (v9.04 Standard)","2000","Midway Games Inc.",-,-,-,YES,NO,NO,NO,NO,tmaster.cpp,BUONO,RASTER,"0",400,256,HORIZONTAL,tmaster.cpp
+"bonanzar2","Touchstar Bonanza (Revision 2)","1994","New Image Technologies",bonanza,bonanza,-,YES,NO,NO,NO,NO,pcat_nit.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,pcat_nit.cpp
+bonanza,"Touchstar Bonanza (Revision 3)","1994","New Image Technologies",-,-,-,YES,NO,NO,NO,NO,pcat_nit.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,pcat_nit.cpp
+tourtabl,"Tournament Table (set 1)","1978",Atari,-,-,-,YES,NO,NO,NO,NO,tourtabl.cpp,BUONO,RASTER,"0",160,200,HORIZONTAL,tourtabl.cpp
+"tourtab2","Tournament Table (set 2)","1978",Atari,tourtabl,tourtabl,-,YES,NO,NO,NO,NO,tourtabl.cpp,BUONO,RASTER,"0",160,200,HORIZONTAL,tourtabl.cpp
+trisport,Tri-Sports,"1989","Bally Midway",-,-,-,YES,NO,NO,NO,NO,"mcr68.cpp",BUONO,RASTER,"270",512,480,VERTICAL,"mcr68.cpp"
+"tron5","Tron (5/12)","1982","Bally Midway",tron,tron,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+"tron4","Tron (6/15)","1982","Bally Midway",tron,tron,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+"tron3","Tron (6/17)","1982","Bally Midway",tron,tron,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+"tron2","Tron (6/25)","1982","Bally Midway",tron,tron,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+tron,"Tron (8/9)","1982","Bally Midway",-,-,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+tronger,"Tron (Germany)","1982","Bally Midway",tron,tron,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+vdogdeme,"V-Dog (prototype, earlier)","200?",VRT,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+vgtablet,"VG Pocket Tablet (VG-4000)","2006","Performance Designed Products (licensed by Konami) / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+videight,"Video Eight","2001",Macro,-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+wmg,"Williams Multigame","2001","hack (Clay Cowgill)",-,-,-,YES,NO,NO,NO,NO,wmg.cpp,BUONO,RASTER,"0",292,240,HORIZONTAL,wmg.cpp
+senwld,"Win, Lose or Draw (Senario)","2005",Senario,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"wonder3","Wonder 3 (Japan 910520)","1991",Capcom,"3wonders","3wonders",-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+zdog,"ZDog (44 in 1)","200?","Hummer Technology Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"

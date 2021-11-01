@@ -1,0 +1,44 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+aliencr,"Alien Crush (United Amusements PC Engine)","1989","Hudson Soft",-,-,-,YES,NO,NO,NO,NO,uapce.cpp,INCOMPLETO,RASTER,"0",1088,242,HORIZONTAL,uapce.cpp
+brkball,"Break Ball","1994",BFM/ATOD,-,-,-,YES,NO,NO,NO,NO,bfcobra.cpp,INCOMPLETO,RASTER,"0",512,256,HORIZONTAL,bfcobra.cpp
+flipjack,"Flipper Jack","1983?","Jackson Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,flipjack.cpp,INCOMPLETO,RASTER,"270",256,192,VERTICAL,flipjack.cpp
+galspnbl,"Gals Pinball","1996",Comad,-,-,-,YES,NO,NO,NO,NO,galspnbl.cpp,BUONO,RASTER,"90",512,224,VERTICAL,galspnbl.cpp
+gcpinbal,"Grand Cross v1.02F","1994","Excellent System",-,-,-,YES,NO,NO,NO,NO,gcpinbal.cpp,INCOMPLETO,RASTER,"270",320,224,VERTICAL,gcpinbal.cpp
+hotpinbl,"Hot Pinball","1995","Comad & New Japan System",-,-,-,YES,NO,NO,NO,NO,galspnbl.cpp,BUONO,RASTER,"90",512,224,VERTICAL,galspnbl.cpp
+musicbal,"Music Ball","1988","Tecfri / Desystem S.A.",-,-,-,YES,NO,NO,NO,NO,speedbal.cpp,BUONO,RASTER,"270",256,224,VERTICAL,speedbal.cpp
+pkgnsh,"Pachinko Gindama Shoubu (Japan)","1998","Nakanihon / Dynax",-,-,-,YES,NO,NO,NO,NO,realbrk.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,realbrk.cpp
+pkgnshdx,"Pachinko Gindama Shoubu DX (Japan)","1998","Nakanihon / Dynax",-,-,-,YES,NO,NO,NO,NO,realbrk.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,realbrk.cpp
+sxyreact,"Pachinko Sexy Reaction (Japan)","1998",Sammy,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",338,240,HORIZONTAL,ssv.cpp
+"sxyreac2","Pachinko Sexy Reaction 2 (Japan)","1999",Sammy,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ssv.cpp
+panicrg,"Panic Road (Germany)","1986","Seibu Kaihatsu (Tuning license)",panicr,panicr,-,YES,NO,NO,NO,NO,panicr.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,panicr.cpp
+panicr,"Panic Road (Japan)","1986","Seibu Kaihatsu (Taito license)",-,-,-,YES,NO,NO,NO,NO,panicr.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,panicr.cpp
+pbaction,"Pinball Action (set 1)","1985",Tehkan,-,-,-,YES,NO,NO,NO,NO,pbaction.cpp,BUONO,RASTER,"90",256,224,VERTICAL,pbaction.cpp
+"pbaction2","Pinball Action (set 2, encrypted)","1985",Tehkan,pbaction,pbaction,-,YES,NO,NO,NO,NO,pbaction.cpp,BUONO,RASTER,"90",256,224,VERTICAL,pbaction.cpp
+"pbaction3","Pinball Action (set 3, encrypted)","1985",Tehkan,pbaction,pbaction,-,YES,NO,NO,NO,NO,pbaction.cpp,BUONO,RASTER,"90",256,224,VERTICAL,pbaction.cpp
+"pbaction4","Pinball Action (set 4, encrypted)","1985",Tehkan,pbaction,pbaction,-,YES,NO,NO,NO,NO,pbaction.cpp,BUONO,RASTER,"90",256,224,VERTICAL,pbaction.cpp
+pbactiont,"Pinball Action (Tecfri license)","1985","Tehkan (Tecfri license)",pbaction,pbaction,-,YES,NO,NO,NO,NO,pbaction.cpp,BUONO,RASTER,"90",256,224,VERTICAL,pbaction.cpp
+"pbchmp95","Pinball Champ '95","1995","Veltmeijer Automaten",witch,witch,-,YES,NO,NO,NO,NO,witch.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,witch.cpp
+pinbos,"Pinbo (bootleg)","1985","bootleg (Strike)",pinbo,pinbo,-,YES,NO,NO,NO,NO,lasso.cpp,BUONO,RASTER,"90",256,224,VERTICAL,lasso.cpp
+pinbo,"Pinbo (set 1)","1984",Jaleco,-,-,-,YES,NO,NO,NO,NO,lasso.cpp,BUONO,RASTER,"90",256,224,VERTICAL,lasso.cpp
+pinboa,"Pinbo (set 2)","1984",Jaleco,pinbo,pinbo,-,YES,NO,NO,NO,NO,lasso.cpp,BUONO,RASTER,"90",256,224,VERTICAL,lasso.cpp
+pc_pinbt,"PinBot (PlayChoice-10)","1988","Rare (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+pwrflip,"Power Flipper Pinball Shooting v1.33","1994","Excellent System",-,-,-,YES,NO,NO,NO,NO,gcpinbal.cpp,INCOMPLETO,RASTER,"270",320,224,VERTICAL,gcpinbal.cpp
+solarwar,"Solar War","1979",Atari,-,-,-,YES,NO,NO,NO,NO,videopin.cpp,BUONO,RASTER,"270",304,256,VERTICAL,videopin.cpp
+speedbal,"Speed Ball (set 1)","1987","Tecfri / Desystem S.A.",-,-,-,YES,NO,NO,NO,NO,speedbal.cpp,BUONO,RASTER,"270",256,224,VERTICAL,speedbal.cpp
+speedbala,"Speed Ball (set 2)","1987","Tecfri / Desystem S.A.",speedbal,speedbal,-,YES,NO,NO,NO,NO,speedbal.cpp,BUONO,RASTER,"270",256,224,VERTICAL,speedbal.cpp
+spbactnj,"Super Pinball Action (Japan)","1991",Tecmo,spbactn,spbactn,-,YES,NO,NO,NO,NO,spbactn.cpp,INCOMPLETO,RASTER,"90",512,224,VERTICAL,spbactn.cpp
+spbactnp,"Super Pinball Action (prototype)","1989",Tecmo,spbactn,spbactn,-,YES,NO,NO,NO,NO,spbactn.cpp,PRELIMINARE,RASTER,"90",512,224,VERTICAL,spbactn.cpp
+spbactn,"Super Pinball Action (US)","1991",Tecmo,-,-,-,YES,NO,NO,NO,NO,spbactn.cpp,INCOMPLETO,RASTER,"90",512,224,VERTICAL,spbactn.cpp
+superwng,"Super Wing","1985",Wing,-,-,-,YES,NO,NO,NO,NO,superwng.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,superwng.cpp
+"timescan1","Time Scanner (set 1, System 16A, FD1089B 317-0024)","1987",Sega,timescan,timescan,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16a.cpp"
+timescan,"Time Scanner (set 2, System 16B)","1987",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"segas16b.cpp"
+mag_time,"Time Scanner (TS 2.0, Magnet System)","1987","EFO SA / Cedar",cedmag,-,-,YES,NO,NO,NO,NO,cedar_magnet.cpp,INCOMPLETO,RASTER,"90",248,192,VERTICAL,cedar_magnet.cpp
+tomagic,"Tom Tom Magic","1997","Hobbitron T.K.Trading Co. Ltd.",-,-,-,YES,NO,NO,NO,NO,"nmk16.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"nmk16.cpp"
+videopin,"Video Pinball (16 PROMs version)","1979",Atari,-,-,-,YES,NO,NO,NO,NO,videopin.cpp,BUONO,RASTER,"270",304,256,VERTICAL,videopin.cpp
+videopina,"Video Pinball (4 ROMs version)","1979",Atari,videopin,videopin,-,YES,NO,NO,NO,NO,videopin.cpp,BUONO,RASTER,"270",304,256,VERTICAL,videopin.cpp
+vspinbalj,"Vs. Pinball (Japan, set PN3 B)","1984","Nintendo Co., Ltd.",vspinbal,vspinbal,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+vspinbal,"Vs. Pinball (US, set PN4 E-1)","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+witch,Witch,"1992","Vic Tokai (Excellent System license)",-,-,-,YES,NO,NO,NO,NO,witch.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,witch.cpp
+witchs,"Witch (Sega license)","1992","Vic Tokai (Sega license)",witch,witch,-,YES,NO,NO,NO,NO,witch.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,witch.cpp
+witchb,"Witch (with ranking)","1992","Vic Tokai (Excellent System license)",witch,witch,-,YES,NO,NO,NO,NO,witch.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,witch.cpp
+witchstar,"Witch Star","1994","Fovis Korea Co. Ltd.",witch,witch,-,YES,NO,NO,NO,NO,witch.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,witch.cpp

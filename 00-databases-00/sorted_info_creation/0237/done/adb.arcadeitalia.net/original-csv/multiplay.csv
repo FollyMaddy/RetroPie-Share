@@ -1,0 +1,103 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+bcstry,"B.C. Story (set 1)","1997","SemiCom / Tirano",-,-,-,YES,NO,NO,NO,NO,tumbleb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,tumbleb.cpp
+bcstrya,"B.C. Story (set 2)","1997","SemiCom / Tirano",bcstry,bcstry,-,YES,NO,NO,NO,NO,tumbleb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,tumbleb.cpp
+coolmini,"Cool Minigame Collection","1999",SemiCom,-,-,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+coolminii,"Cool Minigame Collection (Italy)","1999",SemiCom,coolmini,coolmini,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+"qcrayon2","Crayon Shinchan Orato Asobo (Japan)","1993","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+sanjeon,"DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000)","1999","Sega / Deniam",sasissu,sasissu,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+daiskiss,"Daisu-Kiss (ver JAA)","1996",Konami,konamigx,-,-,YES,NO,NO,NO,NO,konamigx.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,konamigx.cpp
+gchgchmp,"Gachaga Champ (GE877 VER. JAB)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"usg182","Games V18.2","1989","U.S. Games",usgames,usgames,-,YES,NO,NO,NO,NO,usgames.cpp,BUONO,RASTER,"0",400,248,HORIZONTAL,usgames.cpp
+"usg185","Games V18.5","1990","U.S. Games",usgames,usgames,-,YES,NO,NO,NO,NO,usgames.cpp,BUONO,RASTER,"0",400,248,HORIZONTAL,usgames.cpp
+"usg187c","Games V18.7C","1991","U.S. Games",usgames,usgames,-,YES,NO,NO,NO,NO,usgames.cpp,BUONO,RASTER,"0",400,248,HORIZONTAL,usgames.cpp
+usgames,"Games V25.4X","1992","U.S. Games",-,-,-,YES,NO,NO,NO,NO,usgames.cpp,BUONO,RASTER,"0",400,248,HORIZONTAL,usgames.cpp
+ginkun,"Ganbare Ginkun","1995",Tecmo,-,-,-,YES,NO,NO,NO,NO,"tecmo16.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"tecmo16.cpp"
+gotcha,"Got-cha Mini Game Festival","1997","Dongsung / Para",-,-,-,YES,NO,NO,NO,NO,gotcha.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,gotcha.cpp
+hndlchmp,"Handle Champ (GQ710 97/12/18 VER. SAA)","1997",Konami,strgchmp,strgchmp,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"hypbbc2p","Hyper Bishi Bashi Champ - 2 Player (GX908 1999/08/24 VER. JAA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"hypbbc2pk","Hyper Bishi Bashi Champ - 2 Player (GX908 1999/08/24 VER. KAA)","1999",Konami,"hypbbc2p","hypbbc2p",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+hyperbbck,"Hyper Bishi Bashi Champ (GE876 VER. KAA)","1998",Konami,hyperbbc,hyperbbc,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+hyperbbca,"Hyper Bishi Bashi Champ (GQ876 VER. AAA)","1998",Konami,hyperbbc,hyperbbc,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+hyperbbc,"Hyper Bishi Bashi Champ (GQ876 VER. EAA)","1998",Konami,"sys573",-,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+sotsugyok,"Jor-eop Jeungmyeongseo (Korea)","1996",Mitchell,sotsugyo,sotsugyo,-,YES,NO,NO,NO,NO,funkyjet.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,funkyjet.cpp
+mcheonru,"Ma Cheon Ru","1999","SemiCom / AceVer",-,-,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+mgcldate,"Magical Date / Magical Date - Dokidoki Kokuhaku Daisakusen (Ver 2.02J)","1996",Taito,mgcldtex,mgcldtex,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+mgcldtex,"Magical Date EX / Magical Date - Sotsugyou Kokuhaku Daisakusen (Ver 2.01J)","1997",Taito,"coh1000t",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+maruchan,"Maru-Chan de Goo! (J 971216 V1.000)","1997","Sega / Toyosuisan",stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+mtchxlti,"MegaTouch XL Titanium (Version r0?, cracked)","2002",bootleg,-,-,-,YES,NO,NO,NO,YES,mtouchxl.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,mtouchxl.cpp
+moremore,"More More","1999","SemiCom / Exit",-,-,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+moremorp,"More More Plus","1999","SemiCom / Exit",-,-,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+multchmpk,"Multi Champ (Korea, older)","1998",ESD,multchmp,multchmp,-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+multchmpa,"Multi Champ (World, older)","1998",ESD,multchmp,multchmp,-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+multchmp,"Multi Champ (World, ver. 2.5)","1999",ESD,-,-,-,YES,NO,NO,NO,NO,"esd16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+"multi96","Multi Game '96 (Italy)","1996","Barko Corp.",twinadv,twinadv,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+salmankt,"Net@Select: Salaryman Kintaro","2004","Yuki Enterprise / Sammy",awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+officeye,"Office Yeo In Cheon Ha (version 1.2)","2001",Danbi,-,-,-,YES,NO,NO,NO,NO,crystal.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,crystal.cpp
+otenamih,"Otenami Haiken (V2.04J 1999/02/01 18:00:00)","1999",Success,"coh3002t",-,-,YES,NO,NO,NO,YES,taitogn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,taitogn.cpp
+otenamhf,"Otenami Haiken Final (V2.07JC 2005/04/20 15:36)","2005","Success / Warashi","coh3002t",-,-,YES,NO,NO,NO,YES,taitogn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,taitogn.cpp
+panicprkj,"Panic Park (Japan, PNP1 Ver. B, set 1)","1997",Namco,panicprk,panicprk,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+"panicprkj2","Panic Park (Japan, PNP1 Ver. B, set 2)","1997",Namco,panicprk,panicprk,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+panicprk,"Panic Park (World, PNP2 Ver. A)","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+"pasha2","Pasha Pasha 2","1998","Dong Sung",-,-,-,YES,NO,NO,NO,NO,"pasha2.cpp",INCOMPLETO,RASTER,"0",384,240,HORIZONTAL,"pasha2.cpp"
+ppchamp,"Pasha Pasha Champ Mini Game Festival (Korea, set 1)","1997","Dongsung / Para",gotcha,gotcha,-,YES,NO,NO,NO,NO,gotcha.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,gotcha.cpp
+ppchampa,"Pasha Pasha Champ Mini Game Festival (Korea, set 2)","1997","Dongsung / Para",gotcha,gotcha,-,YES,NO,NO,NO,NO,gotcha.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,gotcha.cpp
+thuntk,"Puzzle & Action: BoMulEul Chajara (JUET 970125 V2.00K)","1997","Sega / Deniam",sandor,sandor,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+ichirj,"Puzzle & Action: Ichidant-R (Japan)","1994",Sega,ichir,ichir,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+ichirjbl,"Puzzle & Action: Ichidant-R (Japan) (bootleg)","1994",bootleg,ichir,ichir,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+ichirk,"Puzzle & Action: Ichidant-R (Korea)","1994",Sega,ichir,ichir,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+ichir,"Puzzle & Action: Ichidant-R (World)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+sandor,"Puzzle & Action: Sando-R (J 951114 V1.000)","1995",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+tantr,"Puzzle & Action: Tant-R (Japan)","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+tantrbl,"Puzzle & Action: Tant-R (Japan) (bootleg set 1)","1992",bootleg,tantr,tantr,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+"tantrbl2","Puzzle & Action: Tant-R (Japan) (bootleg set 2)","1994",bootleg,tantr,tantr,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+"tantrbl3","Puzzle & Action: Tant-R (Japan) (bootleg set 3)","1994",bootleg,tantr,tantr,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+"tantrbl4","Puzzle & Action: Tant-R (Japan) (bootleg set 4)","1992",bootleg,tantr,tantr,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+tantrkor,"Puzzle & Action: Tant-R (Korea)","1993",Sega,tantr,tantr,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+thunt,"Puzzle & Action: Treasure Hunt (JUET 970901 V2.00E)","1997",Sega,sandor,sandor,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+puzzlove,PuzzLove,"1994",Para,-,-,-,YES,NO,NO,NO,NO,silvmil.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,silvmil.cpp
+puzzlovek,"PuzzLove (Korea)","1994",Para,puzzlove,puzzlove,-,YES,NO,NO,NO,NO,silvmil.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,silvmil.cpp
+royalcrd_msx,"Royal Card (stealth with MSX multigame)","1991",bootleg,royalcrd,royalcrd,-,YES,NO,NO,NO,NO,funworld.cpp,PRELIMINARE,RASTER,"0",384,232,HORIZONTAL,funworld.cpp
+royalcrd_nes,"Royal Card (stealth with NES multigame)","1991",bootleg,royalcrd,royalcrd,-,YES,NO,NO,NO,NO,funworld.cpp,PRELIMINARE,RASTER,"0",384,232,HORIZONTAL,funworld.cpp
+salarymc,"Salary Man Champ (GCA18 VER. JAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+sotsugyo,"Sotsugyo Shousho (Japan)","1995","Mitchell (Atlus license)",-,-,-,YES,NO,NO,NO,NO,funkyjet.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,funkyjet.cpp
+strgchmp,"Steering Champ (GQ710 97/12/18 VER. UAA)","1997",Konami,"sys573",-,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+stepchmp,"Step Champ (GQ930 VER. JA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,NO,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+sbishi,"Super Bishi Bashi Championship (ver JAA, 2 Players)","1998",Konami,-,-,-,YES,NO,NO,NO,NO,bishi.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,bishi.cpp
+sbishika,"Super Bishi Bashi Championship (ver KAA, 3 Players)","1998",Konami,sbishi,sbishi,-,YES,NO,NO,NO,NO,bishi.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,bishi.cpp
+sbishik,"Super Bishi Bashi Championship (ver KAB, 3 Players)","1998",Konami,sbishi,sbishi,-,YES,NO,NO,NO,NO,bishi.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,bishi.cpp
+"usg32","Super Duper Casino (California V3.2)","1987","U.S. Games",-,-,-,YES,NO,NO,NO,NO,usgames.cpp,BUONO,RASTER,"0",400,248,HORIZONTAL,usgames.cpp
+"usg82","Super Ten V8.2","1988","U.S. Games",superten,superten,-,YES,NO,NO,NO,NO,usgames.cpp,BUONO,RASTER,"0",400,248,HORIZONTAL,usgames.cpp
+superten,"Super Ten V8.3","1988","U.S. Games",-,-,-,YES,NO,NO,NO,NO,usgames.cpp,BUONO,RASTER,"0",400,248,HORIZONTAL,usgames.cpp
+"usg83x","Super Ten V8.3X","1988","U.S. Games",superten,superten,-,YES,NO,NO,NO,NO,usgames.cpp,BUONO,RASTER,"0",400,248,HORIZONTAL,usgames.cpp
+sasissu,"Taisen Tanto-R Sashissu!! (J 980216 V1.000)","1998",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+tenkomorja,"Tenkomori Shooting (Japan, TKM1/VER.A1)","1998",Namco,tenkomor,tenkomor,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"90",640,480,VERTICAL,"namcos12.cpp"
+tenkomor,"Tenkomori Shooting (World, TKM2/VER.A1)","1998",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"90",640,480,VERTICAL,"namcos12.cpp"
+"v4cmaze_amld","The Crystal Maze (v0.1, AMLD) (MPU4 Video)","1993",Barcrest,"v4cmaze","v4cmaze",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmazed","The Crystal Maze (v1.1) (MPU4 Video)","1993",Barcrest,"v4cmaze","v4cmaze",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmazeb","The Crystal Maze (v1.2) (MPU4 Video)","1993",Barcrest,"v4cmaze","v4cmaze",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmazec","The Crystal Maze (v1.3 alt) (MPU4 Video)","1993",Barcrest,"v4cmaze","v4cmaze",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",PRELIMINARE,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmazedat","The Crystal Maze (v1.3, Datapak) (MPU4 Video)","1993",Barcrest,"v4cmaze","v4cmaze",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",PRELIMINARE,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze","The Crystal Maze (v1.3) (MPU4 Video)","1993",Barcrest,"v4bios",-,-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze3c","The Crystal Maze Team Challenge (v0.6) (MPU4 Video)","1994",Barcrest,"v4cmaze3","v4cmaze3",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",PRELIMINARE,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze3b","The Crystal Maze Team Challenge (v0.8) (MPU4 Video)","1994",Barcrest,"v4cmaze3","v4cmaze3",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze3d","The Crystal Maze Team Challenge (v0.9, Datapak) (MPU4 Video)","1994",Barcrest,"v4cmaze3","v4cmaze3",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",PRELIMINARE,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze3","The Crystal Maze Team Challenge (v0.9) (MPU4 Video)","1994",Barcrest,"v4bios",-,-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze3_amld","The Crystal Maze Team Challenge (v1.2, AMLD) (MPU4 Video)","1994",Barcrest,"v4cmaze3","v4cmaze3",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze2c","The New Crystal Maze Featuring Ocean Zone (v?.?) (MPU4 Video)","1993",Barcrest,"v4cmaze2","v4cmaze2",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",PRELIMINARE,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze2_amld","The New Crystal Maze Featuring Ocean Zone (v0.1, AMLD) (MPU4 Video)","1993",Barcrest,"v4cmaze2","v4cmaze2",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze2b","The New Crystal Maze Featuring Ocean Zone (v2.0) (MPU4 Video)","1993",Barcrest,"v4cmaze2","v4cmaze2",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze2d","The New Crystal Maze Featuring Ocean Zone (v2.2, Datapak) (MPU4 Video)","1993",Barcrest,"v4cmaze2","v4cmaze2",-,YES,NO,NO,NO,NO,"mpu4vid.cpp",PRELIMINARE,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+"v4cmaze2","The New Crystal Maze Featuring Ocean Zone (v2.2) (MPU4 Video)","1993",Barcrest,"v4bios",-,-,YES,NO,NO,NO,NO,"mpu4vid.cpp",INCOMPLETO,RASTER,"0",504,296,HORIZONTAL,"mpu4vid.cpp"
+tondemo,"Tondemo Crisis (Japan)","1999",Tecmo,"coh1002m",-,-,YES,NO,NO,NO,NO,zn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+tduno,"Touch de Uno! / Unou Nouryoku Check Machine (Japan)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"tduno2","Touch de Uno! 2 (Japan)","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+twinadvk,"Twin Adventure (Korea)","1995","Barko Corp.",twinadv,twinadv,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+twinadv,"Twin Adventure (World)","1995","Barko Corp.",-,-,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+chocovdr,"Uchuu Daisakusen: Chocovader Contactee (Japan, CVC1 Ver.A)","2002",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+vlcunk,"unknown VLC multigame","2000","VLC Inc.",-,-,-,YES,NO,NO,NO,NO,"vlc34010.cpp",PRELIMINARE,RASTER,"0",248,248,HORIZONTAL,"vlc34010.cpp"
+wwallyjad,"Wally wo Sagase! (rev A, Japan) (bootleg of FD1094 317-0197A set)","1992",bootleg,wwallyj,wwallyj,-,YES,NO,NO,NO,NO,"segas18.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas18.cpp"
+wwallyja,"Wally wo Sagase! (rev A, Japan) (FD1094 317-0197A)","1992",Sega,wwallyj,wwallyj,-,YES,NO,NO,NO,NO,"segas18.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas18.cpp"
+wwallyjd,"Wally wo Sagase! (rev B, Japan) (bootleg of FD1094 317-0197B set)","1992",bootleg,wwallyj,wwallyj,-,YES,NO,NO,NO,NO,"segas18.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas18.cpp"
+wwallyj,"Wally wo Sagase! (rev B, Japan) (FD1094 317-0197B)","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"segas18.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas18.cpp"
+yorijori,"Yori Jori Kuk Kuk","2002","Golden Bell Entertainment",-,-,-,YES,NO,NO,NO,NO,vamphalf.cpp,PRELIMINARE,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+zokuoten,"Zoku Otenamihaiken (V2.03J 2001/02/16 16:00)","2001",Success,"coh3002t",-,-,YES,NO,NO,NO,YES,taitogn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,taitogn.cpp

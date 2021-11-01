@@ -1,0 +1,17 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+animaljrs,"Animalandia Jr. (Spanish)","1993","Nakanihon / East Technology (Taito license)",animaljr,animaljr,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+critcrsh,"Critter Crusher (EA 951204 V1.000)","1995",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+animaljr,"Exciting Animal Land Jr. (USA, Canada, Mexico)","1993","Nakanihon / East Technology (Taito license)",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+hammer,Hammer,"2000",Andamiro,-,-,-,YES,NO,NO,NO,NO,midas.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,midas.cpp
+hamboy,"Hammer Boy","1990","Dinamic / Inder",-,-,-,YES,NO,NO,NO,NO,megaphx.cpp,INCOMPLETO,RASTER,"0",337,245,HORIZONTAL,megaphx.cpp
+kenseim,"Ken Sei Mogura: Street Fighter II (Japan 940418, Ver 1.00)","1994","Capcom / Togo / Sigma",-,-,-,YES,NO,NO,NO,NO,kenseim.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,kenseim.cpp
+mogura,"Mogura Desse (Japan)","1991",Konami,-,-,-,YES,NO,NO,NO,NO,mogura.cpp,BUONO,RASTER,"0",320,256,HORIZONTAL,mogura.cpp
+mole,"Mole Attack","1982","Yachiyo Electronics, Ltd.",-,-,-,YES,NO,NO,NO,NO,mole.cpp,BUONO,RASTER,"0",320,200,HORIZONTAL,mole.cpp
+mmpanic,"Monkey Mole Panic (USA)","1992","Nakanihon / East Technology (Taito license)",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+ppsatan,"Poka Poka Satan (Japan)","1996","Kato Seisakujo Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,cave.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,cave.cpp
+stompin,"Stompin' (4/4/86)","1986",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+tatacot,"Tatacot (JA 951128 V1.000)","1995",Sega,critcrsh,critcrsh,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+funkyfig,"The First Funky Fighter (USA, Canada, Mexico / Japan, set 1)","1993","Nakanihon / East Technology (Taito license)",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+funkyfiga,"The First Funky Fighter (USA, Canada, Mexico / Japan, set 2)","1993","Nakanihon / East Technology (Taito license)",funkyfig,funkyfig,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+urachamu,"Urachacha Mudaeri (Korea)","2002",GamToU,crysbios,-,-,YES,NO,NO,NO,NO,crystal.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,crystal.cpp
+animaljrj,"Waiwai Animal Land Jr. (Japan)","1993","Nakanihon / East Technology (Taito license)",animaljr,animaljr,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp

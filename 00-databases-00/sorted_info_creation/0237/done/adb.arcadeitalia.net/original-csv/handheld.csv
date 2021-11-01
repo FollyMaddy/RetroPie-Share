@@ -1,0 +1,852 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+tgoldeye,"007: GoldenEye (handheld)","1995","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1461,1080,HORIZONTAL,"hh_sm510.cpp"
+"sen101","101 Games in 1 (Senario, NES/Famicom bootlegs)","2009",Senario,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"f2pbball","2 Player Baseball (Fonas)","1979",Fonas,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"senario25","25 Video Games - All in 1 Video System (Senario)","200?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+"f3in1","3 in 1: Football, Basketball, Soccer","1979",Fonas,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"abl4play","4 Player System - 10 in 1","200?","Advance Bright Ltd",-,-,-,YES,NO,NO,NO,NO,trkfldch.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,trkfldch.cpp
+"sudo6in1","6-in-1 Sudoku Plug & Play","200?","Nice Code",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"7in1ss","7 in 1 Sports Stadium","1982","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+airblsjs,"Air-Blaster Joystick (AB1500, PAL)","2005","Advance Bright Ltd",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+alnattck,"Alien Attack","1981",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,700,HORIZONTAL,"hh_hmcs40.cpp"
+alnchase,"Alien Chase","1984",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",365,1080,HORIZONTAL,"hh_ucom4.cpp"
+taltbeast,"Altered Beast (handheld)","1990","Tiger Electronics (licensed from Sega)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1455,1080,HORIZONTAL,"hh_sm510.cpp"
+amaztron,Amaze-A-Tron,"1978",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",INCOMPLETO,-,"0",0,0,-,"hh_tms1k.cpp"
+"tapollo13","Apollo 13 (handheld)","1995","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1467,1080,HORIZONTAL,"hh_sm510.cpp"
+supreme,"Arcade Classics Mini Handheld Arcade (Supreme 150)","201?","Fizz Creations",-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_spi.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_spi.cpp"
+arrball,"Arrange Ball","1980","A-One LSI",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+astrocmd,"Astro Command","1982",Epoch,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,525,HORIZONTAL,"hh_ucom4.cpp"
+auslalom,Autoslalom,"1990",Elektronika,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1732,1080,HORIZONTAL,"hh_sm510.cpp"
+tbttf,"Back to the Future (handheld)","1992","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1466,1080,HORIZONTAL,"hh_sm510.cpp"
+bankshot,"Bank Shot - Electronic Pool","1980","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+rad_bdp,"Barbie Dance Party","2002","Radica / Mattel / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+mbaskb,"Basketball (Mattel)","1978",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_cops1.cpp",BUONO,-,"0",0,0,-,"hh_cops1.cpp"
+bassmate,"Bassmate Computer","1984","Telko / Nintendo",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,636,HORIZONTAL,"hh_sm510.cpp"
+tbatman,"Batman (handheld)","1989","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1442,1080,HORIZONTAL,"hh_sm510.cpp"
+tbatfor,"Batman Forever - Double Dose of Doom (handheld)","1995","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1493,1080,HORIZONTAL,"hh_sm510.cpp"
+tbatmana,"Batman: The Animated Series (handheld)","1992","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1478,1080,HORIZONTAL,"hh_sm510.cpp"
+tbtoads,"Battletoads (handheld)","1991","Tiger Electronics (licensed from Rare/Tradewest)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1454,1080,HORIZONTAL,"hh_sm510.cpp"
+"bbl380","BBL380 - 180 in 1","201?",BaoBaoLong,-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_spi.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_spi.cpp"
+beijuehh,"Beijue 16 Bit Handheld Games 220-in-1 (Game Boy style case)","201?",Beijue,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_rom.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_rom.cpp"
+senbbs,"Big Bonus Slots (Senario, Plug and Play)","2005",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_senario.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario.cpp"
+jak_bbh,"Big Buck Hunter Pro (JAKKS Pacific TV Game)","2009","JAKKS Pacific Inc",-,-,-,YES,NO,NO,NO,NO,"spg29x.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"spg29x.cpp"
+jak_bbsf,"Big Buck Safari (JAKKS Pacific TV Game)","2011","JAKKS Pacific Inc",-,-,-,YES,NO,NO,NO,NO,"spg29x.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"spg29x.cpp"
+bittboy,"BittBoy Mini FC 300 in 1","2017",BittBoy,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+ebknight,"Black Knight Pinball (Entex)","1982",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+kblades,"Blades of Steel (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1516,1080,HORIZONTAL,"hh_sm510.cpp"
+brainbaf,"Brain Baffler","1979",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+tbreakup,"Break Up (Tomy)","1979",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+kbucky,"Bucky O'Hare (handheld)","1991",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1490,1080,HORIZONTAL,"hh_sm510.cpp"
+bbtime,"Burger Time (Bandai)","1983",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",379,1080,HORIZONTAL,"hh_hmcs40.cpp"
+buzztime,"Buzztime Home Trivia System","2004",Cadaco,-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+"c2color","C2 Color (China)","201?","Baiyi Animation",-,-,-,YES,NO,NO,NO,NO,"c2color.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"c2color.cpp"
+jak_camp,"Camp Rock - Guitar Video Game (JAKKS Pacific TV Game)","2008","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+jak_capc,"Capcom 3-in-1 (1942, Commando, Ghosts'n Goblins) (JAKKS Pacific TV Game, Game-Key Ready) (29 MAR 2005 B)","2005","JAKKS Pacific Inc / Capcom / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_care,"Care Bears TV Games (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Backbone Entertainment",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+carlecfg,"Carl Edwards' Chase For Glory","200?","Excalibur Electronics Inc",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+sudelan,"Carol Vorderman's Sudoku Plug & Play TV Game (All in 1 / Play Vision)","2005","All in 1 Products Ltd / Play Vision",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+"jak_car2","Cars 2 (JAKKS Pacific TV Game)","200?","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+"cars2lap","CARS 2 Laptop (Germany)","2012",VTech,-,-,-,YES,NO,NO,NO,NO,inteladv.cpp,PRELIMINARE,-,"0",0,0,-,inteladv.cpp
+tcaveman,"Caveman (Tomy)","1982",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,559,HORIZONTAL,"hh_ucom4.cpp"
+wfcentro,"Centro TV de Diseno Artistico (Spain)","200?",WinFun,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+"epo_epp3","Challenge Ai-chan! Excite Ping Pong (Japan)","2006","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+tcfball,"Championship Football (model 60-2150)","1980","Tandy Corporation",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+tcfballa,"Championship Football (model 60-2151)","1980","Tandy Corporation",tcfball,tcfball,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+tomcpin,"Champiyon Pinball (Japan)","2003","Tomy / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+jak_capb,"Classic Arcade Pinball (JAKKS Pacific TV Game)","2004","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg110.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg110.cpp"
+bmcfball,"Classic Football (Bambino)","1982",Bambino,ssfball,ssfball,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,482,HORIZONTAL,"hh_ucom4.cpp"
+jjstrip,"Club Jenna Presents: Jenna Jameson's Strip Poker","200?","Shiggles Inc.",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+cdlyoko,"Code Lyoko (25-in-1 handheld)","2011","Ingo Devices SL / Senca",-,-,-,YES,NO,NO,NO,NO,"spg2xx_senca.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senca.cpp"
+cnsector,"Code Name: Sector","1977","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+knd,"Codename: Kids Next Door - Operation: P.L.U.G.G.U.H.S.","2005","Tech2Go / One Man Band",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+"efootb4","Color Football 4 (Entex)","1980",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,SVG,"0",1920,904,HORIZONTAL,"hh_tms1k.cpp"
+"comp4","Comp IV","1977","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+mcompgin,"Computer Gin","1979",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,-,"0",0,0,-,"hh_ucom4.cpp"
+compmahj,"Computer Mah-jong Yakuman","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,compmahj.cpp,PRELIMINARE,-,"0",0,0,-,compmahj.cpp
+"rad_bb3p","Connectv Baseball 3","2005","Radica / FarSight Studios","rad_bb3","rad_bb3",-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+rad_baskp,"Connectv Basketball","2005","Radica / FarSight Studios",rad_bask,rad_bask,-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+rad_bassp,"ConnecTV Bass Fishin' (PAL)","2001","Radica / SSD Company LTD",rad_bass,rad_bass,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_boxp,"ConnecTV Boxin' (PAL)","200?","Radica / SSD Company LTD",rad_box,rad_box,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_crdnp,"ConnecTV Card Night (PAL)","200?","Radica / SSD Company LTD",rad_crdn,rad_crdn,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_crik,"Connectv Cricket (PAL)","2006",Radica,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+rad_foot,"Connectv Football","2006","Radica / Medialink",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+"rad_hnt3p","Connectv Huntin' 3","2005","Radica / V-Tac Technology Co Ltd.","rad_hnt3","rad_hnt3",-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+rad_mtrkp,"ConnecTV Monster Truck (PAL)","2003","Radica / SSD Company LTD",rad_mtrk,rad_mtrk,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_rsgp,"Connectv Real Swing Golf","2005","Radica / FarSight Studios",rad_rsg,rad_rsg,-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+rad_skatp,"Connectv Skateboarder (PAL)","2006",Radica,rad_skat,rad_skat,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+rad_snowp,"ConnecTV Snowboarder (Blue) (PAL)","2001","Radica / SSD Company LTD",rad_snow,rad_snow,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_ssxp,"ConnecTV SSX Snowboarder (PAL)","2004","Radica / Electronics Arts / SSD Company LTD",rad_ssx,rad_ssx,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_pingp,"ConnecTV Table Tennis (PAL)","2000","Radica / SSD Company LTD / Simmer Technology",rad_ping,rad_ping,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+kcontra,"Contra (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1505,1080,HORIZONTAL,"hh_sm510.cpp"
+copycat,"Copy Cat (model 7-520)","1979","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"copycatm2","Copy Cat (model 7-522)","1989","Tiger Electronics",copycat,copycat,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+tccombat,"Cosmic Combat","1980",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",300,1080,HORIZONTAL,"hh_ucom4.cpp"
+sencosmo,"Cosmo Girl (Senario, Plug and Play)","2005",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_senario.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario.cpp"
+bcclimbr,"Crazy Climber (Bandai)","1982",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",310,1080,HORIZONTAL,"hh_ucom4.cpp"
+gckong,"Crazy Kong (Gakken)","1982",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",479,1080,HORIZONTAL,"hh_hmcs40.cpp"
+lxcap,"Cyber Arcade Pocket (JL1895)","201?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"jl2050","Cyber Console Center 200-in-1 (JL2050)","200?","LexiBook / JungleTac / NiceCode",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+"cybikov1","Cybiko Classic (V1)","2000","Cybiko Inc",-,-,-,YES,NO,NO,NO,NO,cybiko.cpp,INCOMPLETO,LCD,"0",160,100,HORIZONTAL,cybiko.cpp
+"cybikov2","Cybiko Classic (V2)","2000","Cybiko Inc","cybikov1","cybikov1",-,YES,NO,NO,NO,NO,cybiko.cpp,INCOMPLETO,LCD,"0",160,100,HORIZONTAL,cybiko.cpp
+cybikoxt,"Cybiko Xtreme","2001","Cybiko Inc","cybikov1","cybikov1",-,YES,NO,NO,NO,NO,cybiko.cpp,INCOMPLETO,LCD,"0",160,100,HORIZONTAL,cybiko.cpp
+"dcat16","D-CAT16 (Mega Drive handheld)","200?",Firecore,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+mdallas,"Dalla$ (J.R. handheld)","1981",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+"dnce2000","Dance 2000 / Hot 2000 (Jin Bao TV Dancing Carpet, SY-2000-04)","200?","Shenzhen Soyin Electric Appliance Ind. Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+ddrdismx,"Dance Dance Revolution Disney Mix","2006","Majesco (licensed from Konami, Disney)",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+ddrfammt,"Dance Dance Revolution Family Mat (Japan)","2001","Takara / Konami / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+dancexpt,"Dancing Expert","200?",Daidaixing,-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+mbdtower,"Dark Tower (Milton Bradley)","1981","Milton Bradley",-,-,-,YES,NO,NO,YES,NO,"hh_tms1k.cpp",PRELIMINARE,-,"0",0,0,-,"hh_tms1k.cpp"
+dataman,DataMan,"1977","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"ds2","DataSlim 2","2000",Citizen,"rex6000","rex6000",-,YES,NO,NO,NO,NO,"rex6000.cpp",PRELIMINARE,LCD,"0",240,120,HORIZONTAL,"rex6000.cpp"
+jak_dchp,"DC Super Heroes The Watchtower Hero Portal","200?","JAKKS Pacific Inc",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl32612.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl32612.cpp"
+decathln,"Decathlon (set 1)","200?","Advance Bright Ltd / V-Tac Technology Co Ltd.",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+decathlna,"Decathlon (set 2, SM570, ABL TV Game)","200?","Advance Bright Ltd / V-Tac Technology Co Ltd.",decathln,decathln,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+"sentx6pd","Deluxe TV Poker - Texas Hold'em, Blackjack & Video Poker (US)","2004",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_senario_poker.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario_poker.cpp"
+tdennis,"Dennis the Menace (handheld)","1993","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1467,1080,HORIZONTAL,"hh_sm510.cpp"
+"dnv200fs","Denver (GMP-270CMK2) (Family Sport 200-in-1)","200?","Denver / Senca",-,-,-,YES,NO,NO,NO,NO,"spg2xx_senca.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senca.cpp"
+"denv150","Denver Game Console GMP-240C 150-in-1","201?",Denver,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+bdesignm,"Design Master Denshi Mangajuku","1995",Bandai,-,-,-,YES,NO,NO,NO,NO,bandai_design_master.cpp,PRELIMINARE,LCD,"0",160,150,HORIZONTAL,bandai_design_master.cpp
+dsgnwrld,"Designer's World (Version 1.0, Dec 20 2005)","2005",Hasbro,-,-,-,YES,NO,NO,NO,NO,"spg2xx_dreamlife.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_dreamlife.cpp"
+gdigdug,"Dig Dug (Gakken)","1983",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",476,1080,HORIZONTAL,"hh_hmcs40.cpp"
+rad_digi,"Digi Makeover (Girl Tech)","2005",Radica,-,-,-,YES,NO,NO,NO,NO,"spg2xx_digimake.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_digimake.cpp"
+"dphh8213","Digital Pocket Hand Held System 20-in-1 - Model 8213","201?",-,-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_rom.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_rom.cpp"
+"dphh8630","Digital Pocket Hand Held System 230-in-1 - Model 8630 / Model 8633","201?",-,-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_spi.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_spi.cpp"
+jak_disn,"Disney (JAKKS Pacific TV Game, Game-Key Ready) (08 FEB 2005 A)","2005","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_disf,"Disney Friends (JAKKS Pacific TV Game, Game-Key Ready) (17 MAY 2005 A)","2005","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+discpal,"Disney Game It! Classic Pals","200?","Performance Designed Products / Disney / Jungle Soft",-,-,-,YES,NO,NO,NO,NO,"spg2xx_lexibook.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_lexibook.cpp"
+jak_dpr,"Disney Princess (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / 5000ft, Inc",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_dprs,"Disney Princesses (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / 5000ft, Inc",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+ditto,Ditto,"1981","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+bdoramon,"Dokodemo Dorayaki Doraemon","1983",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,668,HORIZONTAL,"hh_hmcs40.cpp"
+cdkong,"Donkey Kong (Coleco)","1982",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",605,1080,HORIZONTAL,"hh_hmcs40.cpp"
+dorapdc,"Dora l'exploratrice - Pocket Dream Console (VideoJet, France)","2013","Conny / VideoJet",-,-,-,YES,NO,NO,NO,NO,"spg2xx_pdc.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_pdc.cpp"
+jsc_dora,"Dora the Explorer - Dora Saves the Mermaids (Sharp Cookie) (PAL, UK)","2007","JAKKS Pacific Inc / Child Guidance / Handheld Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_sharp.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_sharp.cpp"
+doraglob,"Dora the Explorer - Dora TV Adventure Globe","2007",VTech,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+doraphon,"Dora the Explorer - Dora TV Explorer Phone / Boots's Special Day","2006",VTech,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+doraglobg,"Dora the Explorer - Doras Abenteuer-Globus (Germany)","2007",VTech,doraglob,doraglob,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+jak_dora,"Dora the Explorer - Nursery Rhyme Adventure (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Handheld Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_dorr,"Dora the Explorer - Race to Play Park (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Handheld Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+epo_dmon,"Doraemon Wakuwaku Kuukihou (Japan)","2002","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+dbdancem,"Double Dance Mania - Techno Light Edition","2006",Senario,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"ddmmeg12","Double Dance Mania: Mega 12","200?",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_wiwi.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_wiwi.cpp"
+ddmsup,"Double Dance Mania: Supreme / Dance Supreme","200?",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_wiwi.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_wiwi.cpp"
+msidd,"Double Dragon - 30 Years Anniversary (Plug & Play)","2017","MSI / Arc System Works",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+tddragon,"Double Dragon (handheld)","1989","Tiger Electronics (licensed from Technos/Tradewest)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1467,1080,HORIZONTAL,"hh_sm510.cpp"
+"tddragon3","Double Dragon 3 - The Rosetta Stone (handheld)","1991","Tiger Electronics (licensed from Technos)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1514,1080,HORIZONTAL,"hh_sm510.cpp"
+kdribble,"Double Dribble (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1524,1080,HORIZONTAL,"hh_sm510.cpp"
+ablmini,"Double Players Mini Joystick 80-in-1 (MJ8500, ABL TV Game)","2006","Advance Bright Ltd",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+drdunk,"Dr. Dunk","1979",Kmart,-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+edracula,"Dracula (Epoch)","1982",Epoch,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,526,HORIZONTAL,"hh_ucom4.cpp"
+jak_dbz,"Dragon Ball Z (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Handheld Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+dreamlif,"Dream Life (Version 1.0, Feb 07 2005)","2005",Hasbro,-,-,-,YES,NO,NO,NO,NO,"spg2xx_dreamlife.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_dreamlife.cpp"
+dreamlss,"Dream Life Superstar (Version 0.3, Mar 16 2007)","2007","Hasbro / Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+jak_ddhp,"DreamWorks Dragons Hero Portal","200?","JAKKS Pacific Inc",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl32612.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl32612.cpp"
+jak_dwmno,"Dreamworks Movie Night (JAKKS Pacific TV Game, Apr 24 2006, test program)","2006","JAKKS Pacific Inc / Amaze Entertainment",jak_dwmn,jak_dwmn,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_dwmn,"Dreamworks Movie Night (JAKKS Pacific TV Game, Oct 18 2006, prototype)","2006","JAKKS Pacific Inc / Amaze Entertainment",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+bambball,"Dribble Away Basketball","1979",Bambino,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,478,HORIZONTAL,"hh_hmcs40.cpp"
+nds,DS,"2004",Nintendo,-,-,-,YES,NO,NO,NO,NO,nds.cpp,PRELIMINARE,-,"0",0,0,-,nds.cpp
+jak_duck,"Duck Commander (JAKKS Pacific TV Game)","2013","JAKKS Pacific Inc / Merge Interactive",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+dunksunk,"Dunk 'n Sunk","1979",Kmart,-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+"egame150","E-Game! 150-in-1","201?",-,"denv150","denv150",-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+epitch,"e-pitch (Japan)","2003","Takara / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_madf,"EA Sports Madden Football (NTSC)","2003","Radica / Electronics Arts / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ctstein,"Einstein (Castle Toy)","1979","Castle Toy",-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+"us2pfball","Electronic 2-Player Football","1981","U.S. Games",-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+ebball,"Electronic Baseball (Entex)","1979",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"ebball2","Electronic Baseball 2 (Entex)","1979",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"ebball3","Electronic Baseball 3 (Entex)","1980",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+cnbaskb,"Electronic Basketball (Conic)","1979",Conic,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"ebaskb2","Electronic Basketball 2 (Entex)","1980",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+elecdet,"Electronic Detective","1979","Ideal Toy Corporation",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+cnfball,"Electronic Football (Conic, TMS1000 version)","1979",Conic,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+efball,"Electronic Football (Epoch)","1980",Epoch,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,-,"0",0,0,-,"hh_ucom4.cpp"
+"cnfball2","Electronic Football II (Conic)","1979",Conic,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+eleciq,"Electronic I.Q.","1979",Conic,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+lightfgt,"Electronic Lightfight - The Games of Dueling Lights","1981","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+mastmind,"Electronic Master Mind (Invicta)","1979",Invicta,-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+pbmastm,"Electronic Master Mind (Parker Brothers)","1978","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+milton,"Electronic Milton","1980","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,"milton6805.cpp",BUONO,-,"0",0,0,-,"milton6805.cpp"
+cmsport,"Electronic Multisport","1979",Conic,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+cqback,"Electronic Quarterback","1978",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+epo_bowl,"Excite Bowling (Japan)","2002","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2000.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2000.cpp"
+epo_ebox,"Excite Boxing (Japan)","2002","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2000.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2000.cpp"
+epo_efdx,"Excite Fishing DX (Japan)","200?","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+epo_epp,"Excite Ping Pong (Japan)","2000","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+epo_tfit,"Excite Sports Tennis x Fitness (Japan)","2004","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+"exsprt48","Excite Sports Wireless Interactive TV Game - 48-in-1 (NTSC)","200?",Excite,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+epo_esdx,"Excite Stadium DX (Japan)","2002","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"spi7000","ExpertPad PI-7000","1993",Sharp,-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+exospace,"Explorers of Space","1989","bootleg (Elektronika)",gnw_mmouse,gnw_mmouse,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1756,1080,HORIZONTAL,"hh_sm510.cpp"
+fapocket,"Family Pocket 638 in 1","2017",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"jak_fan4","Fantastic Four (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Digital Eclipse",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+fcpocket,"FC Pocket 600 in 1","2016",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt32.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt32.cpp"
+mgtfit,"Fitness Konsole (NC1470)","200?",MGT,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+fixitflx,"Fix It Felix Jr. (mini arcade)","2017","Basic Fun",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_spi_direct.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_spi_direct.cpp"
+ttfball,"Football (Toytronic, set 1)","1979",Toytronic,-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",INCOMPLETO,-,"0",0,0,-,"hh_pic16.cpp"
+ttfballa,"Football (Toytronic, set 2)","1979",Toytronic,ttfball,ttfball,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+"mfootb2","Football 2 (Mattel)","1978",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+fordrace,"Ford Racing","2006","Excalibur Electronics",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+foxsport,"Fox Sports 7 in 1 Sports Games Plug n' Play","200?","Excalibur Electronics",-,-,-,YES,NO,NO,NO,NO,"spg2xx_wiwi.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_wiwi.cpp"
+bfriskyt,"Frisky Tom (Bandai)","1982",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,675,HORIZONTAL,"hh_hmcs40.cpp"
+cfrogger,"Frogger (Coleco)","1981",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_melps4.cpp",BUONO,SVG,"0",500,1080,HORIZONTAL,"hh_melps4.cpp"
+msifrog,"Frogger (MSI Plug & Play, white joystick)","2016","MSI / Konami",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+smartfps,"Fun 2 Learn Smart Fit Park (Spain)","2009",Fisher-Price,smartfp,smartfp,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_rom.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_rom.cpp"
+smartfp,"Fun 2 Learn Smart Fit Park (UK)","2009",Fisher-Price,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_rom.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_rom.cpp"
+funjacks,"Funtronics: Jacks","1979",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+funrlgl,"Funtronics: Red Light Green Light","1979",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+funtag,"Funtronics: Tag","1980",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+cgalaxn,"Galaxian (Coleco)","1982",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",INCOMPLETO,SVG,"0",526,1080,HORIZONTAL,"hh_hmcs40.cpp"
+"egalaxn2","Galaxian 2 (Entex)","1981",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",505,1080,HORIZONTAL,"hh_hmcs40.cpp"
+"galaxy2b","Galaxy II (VFD Rev. B)","1981",Epoch,"galaxy2","galaxy2",-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",306,1080,HORIZONTAL,"hh_ucom4.cpp"
+"galaxy2","Galaxy II (VFD Rev. D)","1981",Epoch,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",304,1080,HORIZONTAL,"hh_ucom4.cpp"
+"ginv1000","Galaxy Invader 1000","1981",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,SVG,"0",226,1080,HORIZONTAL,"hh_tms1k.cpp"
+gamate,Gamate,"1990","Bit Corp",-,-,-,YES,NO,NO,NO,NO,gamate.cpp,BUONO,LCD,"0",160,150,HORIZONTAL,gamate.cpp
+gnw_ball,"Game & Watch: Ball","1980",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1671,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_bfight,"Game & Watch: Balloon Fight (Crystal Screen)","1986",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1771,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_bfightn,"Game & Watch: Balloon Fight (New Wide Screen)","1988",Nintendo,gnw_bfight,gnw_bfight,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1549,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_bjack,"Game & Watch: Black Jack","1985",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,648,HORIZONTAL,"hh_sm510.cpp"
+gnw_bsweep,"Game & Watch: Bomb Sweeper","1987",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,619,HORIZONTAL,"hh_sm510.cpp"
+gnw_chef,"Game & Watch: Chef","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1666,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_climber,"Game & Watch: Climber (Crystal Screen)","1986",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1756,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_climbern,"Game & Watch: Climber (New Wide Screen)","1988",Nintendo,gnw_climber,gnw_climber,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1677,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_cgrab,"Game & Watch: Crab Grab","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",609,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_dkong,"Game & Watch: Donkey Kong","1982",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,633,HORIZONTAL,"hh_sm510.cpp"
+gnw_dkcirc,"Game & Watch: Donkey Kong Circus","1984",Nintendo,gnw_mmousep,gnw_mmousep,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,1107,HORIZONTAL,"hh_sm510.cpp"
+"gnw_dkong2","Game & Watch: Donkey Kong II","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,618,HORIZONTAL,"hh_sm510.cpp"
+gnw_dkjr,"Game & Watch: Donkey Kong Jr. (New Wide Screen)","1982",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1647,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_dkjrp,"Game & Watch: Donkey Kong Jr. (Panorama Screen)","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,1049,HORIZONTAL,"hh_sm510.cpp"
+gnw_egg,"Game & Watch: Egg","1981",Nintendo,gnw_mmouse,gnw_mmouse,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1690,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_fires,"Game & Watch: Fire (Silver)","1980",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1646,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_fire,"Game & Watch: Fire (Wide Screen)","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1624,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_fireatk,"Game & Watch: Fire Attack","1982",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1655,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_flagman,"Game & Watch: Flagman","1980",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1511,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_gcliff,"Game & Watch: Gold Cliff","1988",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,619,HORIZONTAL,"hh_sm510.cpp"
+gnw_ghouse,"Game & Watch: Green House","1982",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,637,HORIZONTAL,"hh_sm510.cpp"
+gnw_helmet,"Game & Watch: Helmet (CN-17 version)","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1657,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_judge,"Game & Watch: Judge (green version)","1980",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1647,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_lboat,"Game & Watch: Life Boat","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1028,720,HORIZONTAL,"hh_sm510.cpp"
+gnw_lion,"Game & Watch: Lion","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1646,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_manholeg,"Game & Watch: Manhole (Gold)","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1667,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_manhole,"Game & Watch: Manhole (New Wide Screen)","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1560,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_mario,"Game & Watch: Mario Bros.","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1130,720,HORIZONTAL,"hh_sm510.cpp"
+gnw_mariotj,"Game & Watch: Mario The Juggler","1991",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1630,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_mbaway,"Game & Watch: Mario's Bombs Away","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,1031,HORIZONTAL,"hh_sm510.cpp"
+gnw_mariocm,"Game & Watch: Mario's Cement Factory (New Wide Screen)","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1647,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_mariocmt,"Game & Watch: Mario's Cement Factory (Table Top)","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,1046,HORIZONTAL,"hh_sm510.cpp"
+gnw_mickdon,"Game & Watch: Mickey & Donald","1982",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,618,HORIZONTAL,"hh_sm510.cpp"
+gnw_mmousep,"Game & Watch: Mickey Mouse (Panorama Screen)","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,1122,HORIZONTAL,"hh_sm510.cpp"
+gnw_mmouse,"Game & Watch: Mickey Mouse (Wide Screen)","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1684,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_octopus,"Game & Watch: Octopus","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1586,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_opanic,"Game & Watch: Oil Panic","1982",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,615,HORIZONTAL,"hh_sm510.cpp"
+gnw_pchute,"Game & Watch: Parachute","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1602,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_pinball,"Game & Watch: Pinball","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,643,HORIZONTAL,"hh_sm510.cpp"
+gnw_popeyep,"Game & Watch: Popeye (Panorama Screen)","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,1043,HORIZONTAL,"hh_sm510.cpp"
+gnw_popeye,"Game & Watch: Popeye (Wide Screen)","1981",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1604,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_rshower,"Game & Watch: Rain Shower","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1073,720,HORIZONTAL,"hh_sm510.cpp"
+gnw_sbuster,"Game & Watch: Safe Buster","1988",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,634,HORIZONTAL,"hh_sm510.cpp"
+gnw_snoopyp,"Game & Watch: Snoopy (Panorama Screen)","1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,1020,HORIZONTAL,"hh_sm510.cpp"
+gnw_stennis,"Game & Watch: Snoopy Tennis","1982",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1581,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_ssparky,"Game & Watch: Spitball Sparky","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",627,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_squish,"Game & Watch: Squish","1986",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,643,HORIZONTAL,"hh_sm510.cpp"
+gnw_smb,"Game & Watch: Super Mario Bros. (Crystal Screen)","1986",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1768,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_smbn,"Game & Watch: Super Mario Bros. (New Wide Screen)","1988",Nintendo,gnw_smb,gnw_smb,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1677,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_tfish,"Game & Watch: Tropical Fish","1985",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1572,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_tbridge,"Game & Watch: Turtle Bridge","1982",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1587,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_vermin,"Game & Watch: Vermin","1980",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1650,1080,HORIZONTAL,"hh_sm510.cpp"
+gnw_zelda,"Game & Watch: Zelda","1989",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",960,645,HORIZONTAL,"hh_sm510.cpp"
+gameboy,"Game Boy","1990",Nintendo,-,-,-,YES,NO,NO,NO,NO,gb.cpp,INCOMPLETO,LCD,"0",160,144,HORIZONTAL,gb.cpp
+gba,"Game Boy Advance","2001",Nintendo,-,-,-,YES,NO,NO,NO,NO,gba.cpp,INCOMPLETO,LCD,"0",240,160,HORIZONTAL,gba.cpp
+gbcolor,"Game Boy Color","1998",Nintendo,-,-,-,YES,NO,NO,NO,NO,gb.cpp,INCOMPLETO,LCD,"0",160,144,HORIZONTAL,gb.cpp
+gbpocket,"Game Boy Pocket","1996",Nintendo,gameboy,gameboy,-,YES,NO,NO,NO,NO,gb.cpp,INCOMPLETO,LCD,"0",160,144,HORIZONTAL,gb.cpp
+gamegear,"Game Gear (Europe/America)","1991",Sega,-,-,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",160,144,HORIZONTAL,sms.cpp
+gamegeaj,"Game Gear (Japan)","1990",Sega,gamegear,gamegear,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",160,144,HORIZONTAL,sms.cpp
+gmaster,"Game Master","1990",Hartung,-,-,-,YES,NO,NO,NO,NO,gmaster.cpp,PRELIMINARE,LCD,"0",61,64,HORIZONTAL,gmaster.cpp
+gamepock,"Game Pocket Computer","1984",Epoch,-,-,-,YES,NO,NO,NO,NO,gamepock.cpp,BUONO,LCD,"0",75,64,HORIZONTAL,gamepock.cpp
+"gprnrs1","Game Prince RS-1","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"gprnrs16","Game Prince RS-16","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"grobot9","Game Robot 9","1980","Takatoku Toys",-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,-,"0",0,0,-,"hh_ucom4.cpp"
+sporzbx,"Game Sporz Wireless Boxing","2004","Macro Winners",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+sporzpp,"Game Sporz Wireless Duet Play Ping-Pong","2004","Macro Winners",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+gamecom,Game.com,"1997",Tiger,-,-,-,YES,NO,NO,NO,NO,gamecom.cpp,INCOMPLETO,LCD,"0",200,160,HORIZONTAL,gamecom.cpp
+"gamekin3","GameKing 3","2003",TimeTop,-,-,-,YES,NO,NO,NO,NO,gameking.cpp,PRELIMINARE,LCD,"0",160,160,HORIZONTAL,gameking.cpp
+gameking,"GameKing GM-218","2003",TimeTop,-,-,-,YES,NO,NO,NO,NO,gameking.cpp,PRELIMINARE,LCD,"0",48,32,HORIZONTAL,gameking.cpp
+kgarfld,"Garfield (handheld)","1991",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1500,1080,HORIZONTAL,"hh_sm510.cpp"
+tgaunt,"Gauntlet (handheld)","1989","Tiger Electronics (licensed from Tengen)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1425,1080,HORIZONTAL,"hh_sm510.cpp"
+tak_geig,"Geigeki Go Go Shooting (Japan)","2002","Takara / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"rad_gen1","Genesis Collection Volume 1 (Radica, Arcade Legends) (USA)","2004","Radica / Sega",-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+"rad_gen2","Genesis Collection Volume 2 (Radica, Arcade Legends) (USA)","2004","Radica / Sega",-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+gizmondo,Gizmondo,"2005","Tiger Telematics",-,-,-,YES,NO,NO,NO,NO,gizmondo.cpp,PRELIMINARE,LCD,"0",320,240,HORIZONTAL,gizmondo.cpp
+jsc_gdg,"Go Diego Go! - Aztec ABC Adventure (Sharp Cookie) (PAL, UK)","2007","JAKKS Pacific Inc / Child Guidance / Pronto Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_sharp.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_sharp.cpp"
+tvgogo,"GoGo TV Video Vision","2005",Toyquest,-,-,-,YES,NO,NO,NO,NO,"spg2xx_tvgogo.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_tvgogo.cpp"
+tgoldnaxe,"Golden Axe (handheld)","1990","Tiger Electronics (licensed from Sega)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1456,1080,HORIZONTAL,"hh_sm510.cpp"
+majgnc,"Golden Nugget Casino","200?","Majesco / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+jak_gtg,"Golden Tee Golf (JAKKS Pacific TV Game)","200?","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+rad_gtg,"Golden Tee Golf: Home Edition","2006","Radica / FarSight Studios (licensed from Incredible Technologies)",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+gormiti,"Gormiti Game Arena (Spain)","2013","Giochi Preziosi",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_rom.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_rom.cpp"
+"gp2x","GP2X","2005","Game Park Holdings",-,-,-,YES,NO,NO,NO,NO,"gp2x.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"gp2x.cpp"
+"gp32","GP32","2001","Game Park Holdings",-,-,-,YES,NO,NO,NO,NO,"gp32.cpp",PRELIMINARE,LCD,"270",240,320,VERTICAL,"gp32.cpp"
+kgradius,"Gradius (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1420,1080,HORIZONTAL,"hh_sm510.cpp"
+snspellit,"Grillo Parlante (Italy)","1982","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+guitrbus,"Guitar Buster","2012",WinFun,-,-,-,YES,NO,NO,NO,NO,"spg2xx_wiwi.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_wiwi.cpp"
+guitarfv,"Guitar Fever (2007.07.03 Ver 2.7)","2007","Advance Bright Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+taikeegr,"Guitar Rock (PAL)","2007",TaiKee,-,-,-,YES,NO,NO,NO,NO,"spg2xx_shredmjr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_shredmjr.cpp"
+guitarstp,"Guitar Star (Europe, PAL)","200?",-,-,-,-,YES,NO,NO,NO,NO,"spg2xx_shredmjr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_shredmjr.cpp"
+guitarst,"Guitar Star (US, Senario, NTSC)","200?",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_shredmjr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_shredmjr.cpp"
+guitarss,"Guitar Super Star ('Fender Stratocaster' style)","200?",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+guitarssa,"Guitar Super Star (red 'Gibson Flying V' style)","200?",Senario,guitarss,guitarss,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+gssytts,"Guitar Super Star: You Take The Stage","2009",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+epo_guru,"Gururin World (Japan)","2005","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+hccbaskb,"Half Court Computer Basketball","1979","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+pvmilfin,"Haluatko miljonääriksi? (Finland)","2006","Play Vision",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+"bkid218","Handheld Game Console BC-19 - 218 in 1","200?",BornKid,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl162xx_lcdtype.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl162xx_lcdtype.cpp"
+"ts_handy11","Handy Boy 11-in-1 (TV Play Power)","2001?","Techno Source / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+"jak_hmg2","Hannah Montana G2 Deluxe - All in One (JAKKS Pacific TV Game)","2008","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+jak_hmhsm,"Hannah Montana G2 Deluxe / High School Musical G2 Deluxe - Two in One (JAKKS Pacific TV Game)","2008","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+jak_hmpt,"Hannah Montana Pop Tour - Guitar Video Game (JAKKS Pacific TV Game) (May 16 2008)","2008","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+"h2hbaseb","Head to Head: Electronic Baseball","1980",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"h2hbaskbc","Head to Head: Electronic Basketball (COP420L version)","1980",Coleco,"h2hbaskb","h2hbaskb",-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+"h2hbaskb","Head to Head: Electronic Basketball (TMS1000 version)","1979",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"h2hboxing","Head to Head: Electronic Boxing","1981",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"h2hfootb","Head to Head: Electronic Football","1979",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"h2hhockeyc","Head to Head: Electronic Hockey (COP420L version)","1980",Coleco,"h2hhockey","h2hhockey",-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+"h2hhockey","Head to Head: Electronic Hockey (TMS1000 version)","1979",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"h2hsoccerc","Head to Head: Electronic Soccer (COP420L version)","1980",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+ghalien,"Heiankyo Alien (Gakken)","1980",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,699,HORIZONTAL,"hh_hmcs40.cpp"
+"hs36blk","HengSheng 36-in-1 (Black pad)","2010",HengSheng,-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+"hs36red","HengSheng 36-in-1 (Red pad)","2010",HengSheng,-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+"jak_hsmg2","High School Musical G2 Deluxe - All in One (JAKKS Pacific TV Game)","2008","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+"hkb502","HKB-502 268-in-1 (set 1)","201?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"hkb502a","HKB-502 268-in-1 (set 2)","201?",-,"hkb502","hkb502",-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+mhockeya,"Hockey (Mattel, export version)","1978",Mattel,mhockey,mhockey,-,YES,NO,NO,NO,NO,"hh_cops1.cpp",BUONO,-,"0",0,0,-,"hh_cops1.cpp"
+mhockey,"Hockey (Mattel, US version)","1978",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_cops1.cpp",BUONO,-,"0",0,0,-,"hh_cops1.cpp"
+thalone,"Home Alone (handheld)","1992","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1448,1080,HORIZONTAL,"hh_sm510.cpp"
+"thalone2","Home Alone 2 - Lost in New York (handheld)","1992","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1454,1080,HORIZONTAL,"hh_sm510.cpp"
+thook,"Hook (handheld)","1991","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1489,1080,HORIZONTAL,"hh_sm510.cpp"
+horocomp,"Horoscope Computer","1979",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+"hotwhl2p","Hot Wheels (2 player, pad controllers)","2006",Mattel,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+icanguit,"I Can Play Guitar","2007",Fisher-Price,-,-,-,YES,NO,NO,NO,NO,"spg2xx_ican.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_ican.cpp"
+lchicken,"I Took a Lickin' From a Chicken","1980",LJN,-,-,-,YES,NO,NO,YES,NO,"hh_cop400.cpp",PRELIMINARE,-,"0",0,0,-,"hh_cop400.cpp"
+tinday,"Independence Day (handheld)","1996","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1463,1080,HORIZONTAL,"hh_sm510.cpp"
+"intg5410","InterAct Complete Video Game - 111 Games & 42 Songs (G5410)","200?",Intec,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"itvg48","Interactive TV Games 48-in-1 (PAL)","200?",TaiKee,"exsprt48","exsprt48",-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"itvg49","Interactive TV Games 49-in-1 (PAL)","2009","TaiKee / Waixing",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"
+ginv,"Invader (Gakken, cyan version)","1980",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,SVG,"0",236,1080,HORIZONTAL,"hh_tms1k.cpp"
+"ginv2000","Invader 2000","1982",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,SVG,"0",364,1080,HORIZONTAL,"hh_tms1k.cpp"
+invspace,"Invader From Space","1980",Epoch,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",289,1080,HORIZONTAL,"hh_ucom4.cpp"
+vinvader,"Invaders (VTech)","1981",VTech,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",233,1080,HORIZONTAL,"hh_hmcs40.cpp"
+iquest,"IQuest 4.0 (US)","2004",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_iquest.cpp,PRELIMINARE,RASTER,"0",90,64,HORIZONTAL,leapfrog_iquest.cpp
+xavjmat,"Jackie Chan J-Mat Fitness (XaviXPORT)","2005","SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+gjackpot,"Jackpot: Gin Rummy & Black Jack","1980",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+jarajal,"Jara-Ja Land (Japan, home version)","2003","Takara / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+tjdredd,"Judge Dredd (handheld)","1995","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1444,1080,HORIZONTAL,"hh_sm510.cpp"
+juicebox,"Juice Box","2004",Mattel,-,-,-,YES,NO,NO,NO,NO,juicebox.cpp,BUONO,LCD,"0",240,160,HORIZONTAL,juicebox.cpp
+gjungler,"Jungler (Gakken)","1982","Gakken / Konami",-,-,-,YES,NO,NO,NO,NO,"hh_melps4.cpp",BUONO,SVG,"0",481,1080,HORIZONTAL,"hh_melps4.cpp"
+tjpark,"Jurassic Park (handheld)","1993","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1454,1080,HORIZONTAL,"hh_sm510.cpp"
+jak_just,"Justice League (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Taniko",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+bkrankp,"Karaoke Ranking Party (Japan)","200?",Bandai,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_spi.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_spi.cpp"
+tkarnov,"Karnov (handheld)","1989","Tiger Electronics (licensed from Data East)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1477,1080,HORIZONTAL,"hh_sm510.cpp"
+tkazaam,"Kazaam (handheld)","1996","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1452,1080,HORIZONTAL,"hh_sm510.cpp"
+drgqst,"Kenshin Dragon Quest: Yomigaerishi Densetsu no Ken","2003","Square Enix / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2000.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2000.cpp"
+ablkickb,"Kick Boxing (BJ8888, ABL TV Game)","2006","Advance Bright Ltd / Coleco / V-Tac Technology Co Ltd.",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+bmsoccer,"Kick The Goal Soccer","1979",Bambino,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",271,1080,HORIZONTAL,"hh_ucom4.cpp"
+kingman,Kingman,"1982",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",374,1080,HORIZONTAL,"hh_hmcs40.cpp"
+bmboxing,"Knock-Em Out Boxing","1979",Bambino,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,529,HORIZONTAL,"hh_hmcs40.cpp"
+majkon,"Konami Collector's Series Arcade Advanced","2004","Majesco (licensed from Konami) / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+snspellfr,"La Dictée Magique (France)","1980","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+lantutor,"Language Tutor (patent)","1979","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispeak.cpp,PRELIMINARE,-,"0",0,0,-,tispeak.cpp
+leboom,"Le Boom","1980",Lakeside,-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+tntellfr,"Le Livre Magique (France)","1981","Texas Instruments",tntell,tntell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+leappad,LeapPad,"2001",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_leappad.cpp,PRELIMINARE,-,"0",0,0,-,leapfrog_leappad.cpp
+leapster,Leapster,"2003",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapster.cpp,PRELIMINARE,LCD,"0",160,160,HORIZONTAL,leapster.cpp
+"leapster2","Leapster 2","2009",LeapFrog,leapster,leapster,-,YES,NO,NO,NO,NO,leapster.cpp,PRELIMINARE,LCD,"0",160,160,HORIZONTAL,leapster.cpp
+leapexpr,"Leapster Explorer","2010",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_leapster_explorer.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,leapfrog_leapster_explorer.cpp
+leapsterlmx,"Leapster L-MAX","2005",LeapFrog,leapster,leapster,-,YES,NO,NO,NO,NO,leapster.cpp,PRELIMINARE,LCD,"0",160,160,HORIZONTAL,leapster.cpp
+ltv_naru,"Let's TV Play Naruto","2006","Bandai / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix2.cpp",PRELIMINARE,RASTER,"0",640,400,HORIZONTAL,"xavix2.cpp"
+ltv_tam,"Let's! TV Play Chou Ninki Spot! Korogashi-Houdai Tamagotchi Resort (Japan)","2006","Bandai / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"namcons1","Let's! TV Play Classic - Namco Nostalgia 1 (Japan)","2006","Bandai / SSD Company LTD / Namco",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"namcons2","Let's! TV Play Classic - Namco Nostalgia 2 (Japan)","2006","Bandai / SSD Company LTD / Namco",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"taitons1","Let's! TV Play Classic - Taito Nostalgia 1 (Japan)","2006","Bandai / SSD Company LTD / Taito",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"taitons2","Let's! TV Play Classic - Taito Nostalgia 2 (Japan)","2006","Bandai / SSD Company LTD / Taito",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ltleappad,"Little Touch LeapPad","2005",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_leappad.cpp,PRELIMINARE,-,"0",0,0,-,leapfrog_leappad.cpp
+kloneran,"Lone Ranger (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1497,1080,HORIZONTAL,"hh_sm510.cpp"
+lynx,Lynx,"1989",Atari,-,-,-,YES,NO,NO,NO,NO,lynx.cpp,BUONO,LCD,"0",160,102,HORIZONTAL,lynx.cpp
+machiman,"Machine Man","1984",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1534,1080,HORIZONTAL,"hh_hmcs40.cpp"
+mrangbat,"Mahou Taiketsu Magiranger - Magimat de Dance & Battle (Japan)","2005","Bandai / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+maniac,Maniac,"1979","Ideal Toy Corporation",-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+motmarco,Marco,"1995",Motorola,-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+mmonty,"Master Monty","1987",Ritam,-,-,-,YES,NO,NO,NO,NO,monty.cpp,BUONO,LCD,"0",49,33,HORIZONTAL,monty.cpp
+matchme,"Match Me","1980",Kingsford,-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+matchnum,"Match Number","1979","A-One LSI",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+mathmarv,"Math Marvel","1980","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+mattelcs,"Mattel Classic Sports","2005",Mattel,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+tmchammer,"MC Hammer: U Can't Touch This (handheld)","1991","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1471,1080,HORIZONTAL,"hh_sm510.cpp"
+"rad_md1","Mega Drive Collection Volume 1 (Radica, Arcade Legends) (Europe)","2004","Radica / Sega","rad_gen1","rad_gen1",-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+"rad_md2","Mega Drive Collection Volume 2 (Radica, Arcade Legends) (UK)","2004","Radica / Sega","rad_gen2","rad_gen2",-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+megaduck,"Mega Duck / Cougar Boy","1993","Welback Holdings (Timlex International) / Creatronic / Videojet / Cougar USA",-,-,-,YES,NO,NO,NO,NO,gb.cpp,INCOMPLETO,LCD,"0",160,144,HORIZONTAL,gb.cpp
+"msimm2","Mega Man 2 (MSI Plug & Play)","2017","MSI / Capcom",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+megapad,"Megapad 31-in-1","200?",Waixing,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+melodym,"Melody Madness","1980",GAF,-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+memoquiz,Memoquiz,"1978","M.E.M. Belgium",-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+merlin,"Merlin - The Electronic Wizard","1978","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+merrycook,"Merry Cook","1989","bootleg (Elektronika)",gnw_chef,gnw_chef,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1679,1080,HORIZONTAL,"hh_sm510.cpp"
+newtonmp,MessagePad,"1993","Apple Computer",-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+"mp110","MessagePad 110","1994","Apple Computer",-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+"mp120","MessagePad 120","1995","Apple Computer",-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+"mp130","MessagePad 130","1996","Apple Computer",-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+"mp2000","MessagePad 2000","1997","Apple Computer",-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+"mp2100","MessagePad 2100","1997","Apple Computer",-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+"mgt20in1","MGT 20-in-1 TV-Spielekonsole (Germany)","2009",MGT,-,-,-,YES,NO,NO,NO,NO,"spg2xx_mysprtch.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_mysprtch.cpp"
+gnw_boxing,"Micro Vs. System: Boxing","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,524,HORIZONTAL,"hh_sm510.cpp"
+"gnw_dkong3","Micro Vs. System: Donkey Kong 3","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,563,HORIZONTAL,"hh_sm510.cpp"
+gnw_dkhockey,"Micro Vs. System: Donkey Kong Hockey","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1920,579,HORIZONTAL,"hh_sm510.cpp"
+micronic,"Micronic 1000","1987","Victor Micronic",-,-,-,YES,NO,NO,NO,NO,micronic.cpp,PRELIMINARE,LCD,"0",120,64,HORIZONTAL,micronic.cpp
+microvsn,Microvision,"1979","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,microvsn.cpp,BUONO,LCD,"0",16,16,HORIZONTAL,microvsn.cpp
+"marc101","Millennium Arcade 101 (M489) (Game Station 2 101-in-1)","2014","Millennium 2000 GmbH",-,-,-,YES,NO,NO,NO,NO,"spg2xx_wiwi.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_wiwi.cpp"
+"marc250","Millennium Arcade 250 (M527)","2015","Millennium 2000 GmbH",-,-,-,YES,NO,NO,NO,NO,"spg2xx_wiwi.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_wiwi.cpp"
+"m505neo","Millennium M505 Arcade Neo Portable Spielkonsole (Family Sport 100-in-1)","2012","Millennium 2000 GmbH / Senca",-,-,-,YES,NO,NO,NO,NO,"spg2xx_senca.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senca.cpp"
+"m521neo","Millennium M521 Arcade Neo 2.0 (Family Sport 220-in-1)","2012","Millennium 2000 GmbH / Senca",-,-,-,YES,NO,NO,NO,NO,"spg2xx_senca.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senca.cpp"
+"gcs2mgp","Mini Game Player 48-in-1","200?","Jungle's Soft",-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+mvbfree,"Mini-Vid: Break Free","1979",Mego,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,-,"0",0,0,-,"hh_ucom4.cpp"
+"mini2440","Mini2440","2009",FriendlyARM,-,-,-,YES,NO,NO,NO,NO,"mini2440.cpp",BUONO,LCD,"0",240,320,HORIZONTAL,"mini2440.cpp"
+pballpup,"Mission: Paintball Powered Up","2006","Hasbro / Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+miuchiz,"MIUCHIZ Virtual Companions","2006","MGA Entertainment",-,-,-,YES,NO,NO,NO,NO,miuchiz.cpp,PRELIMINARE,LCD,"0",68,98,HORIZONTAL,miuchiz.cpp
+"miwi2_16","MiWi2 16-in-1 + Drum Master","200?","Macro Winners",-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"miwi2_7","MiWi2 7-in-1 Sports","200?","Macro Winners",-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"mk90","MK-90","1988",Elektronika,-,-,-,YES,NO,NO,NO,NO,"mk90.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"mk90.cpp"
+mobigo,MobiGo,"2010",VTech,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_mobigo.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_mobigo.cpp"
+mobigos,"MobiGo (Spain)","2010",VTech,mobigo,mobigo,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_mobigo.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_mobigo.cpp"
+"mobigo2","MobiGo 2 (Germany)","2012",VTech,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_mobigo.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_mobigo.cpp"
+monkeysee,"Monkey See (1982 version)","1982","Tandy Corporation",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+mononcol,"Monon Color","2011",M&D,-,-,-,YES,NO,NO,NO,NO,monon_color.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,monon_color.cpp
+monty,"Monty Plays Scrabble","1983",Ritam,-,-,-,YES,NO,NO,NO,NO,monty.cpp,BUONO,LCD,"0",49,33,HORIZONTAL,monty.cpp
+tmkombat,"Mortal Kombat (handheld)","1993","Tiger Electronics (licensed from Midway)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1468,1080,HORIZONTAL,"hh_sm510.cpp"
+jak_mk,"Mortal Kombat (JAKKS Pacific TV Game)","2004","JAKKS Pacific Inc / Digital Eclipse",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks.cpp"
+tiktokmm,"Moving Music (MM-TV110)","200?","TikTokTech Ltd. / 3T Games / Senario",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+cmspacmn,"Ms. Pac-Man (Coleco)","1983",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",481,1080,HORIZONTAL,"hh_hmcs40.cpp"
+bfmpac,"Ms. Pac-Man (mini arcade)","2017","Basic Fun",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_spi_direct.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_spi_direct.cpp"
+msimpac,"Ms. Pac-Man (MSI Plug & Play)","2016","MSI / Bandai Namco",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+jak_mpac,"Ms. Pac-Man 5-in-1 (Ms. Pac-Man, Pole Position, Galaga, Xevious, Mappy) (JAKKS Pacific TV Game, Game-Key Ready) (07 FEB 2005 A SKU F)","2005","JAKKS Pacific Inc / Namco / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_mpacw,"Ms. Pac-Man 7-in-1 (Wireless) (Ms. Pac-Man, Pole Position, Galaga, Xevious, Mappy, New Rally X, Bosconian) (18 AUG 2004 A)","2004","JAKKS Pacific Inc / Namco / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks.cpp"
+"dgun2573","My Arcade Gamer V Portable Gaming System (DGUN-2573) (set 1, newer)","2015",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt32.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt32.cpp"
+"dgun2573a","My Arcade Gamer V Portable Gaming System (DGUN-2573) (set 2, older)","2015",dreamGEAR,"dgun2573","dgun2573",-,YES,NO,NO,NO,NO,"nes_vt32.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt32.cpp"
+"dgun2572","My Arcade Wireless Video Game Station 200-in-1 (DGUN-2572)","201?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,vt_unknown.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,vt_unknown.cpp
+"my1stddr","My First Dance Dance Revolution (US)","2006",Konami,-,-,-,YES,NO,NO,NO,NO,trkfldch.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,trkfldch.cpp
+mfleappad,"My First LeapPad","2002",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_leappad.cpp,PRELIMINARE,-,"0",0,0,-,leapfrog_leappad.cpp
+mysprtch,"My Sports Challenge (5-in-1 version)","200?","Senario / V-Tac Technology Co Ltd.",-,-,-,YES,NO,NO,NO,NO,"spg2xx_mysprtch.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_mysprtch.cpp"
+mysptqvc,"My Sports Challenge (6-in-1 version, QVC license)","200?","Senario / V-Tac Technology Co Ltd. (QVC license)",-,-,-,YES,NO,NO,NO,NO,"spg2xx_mysprtch.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_mysprtch.cpp"
+mysprtcp,"My Sports Challenge Plus / Wireless Sports Plus","200?","Senario / V-Tac Technology Co Ltd.",-,-,-,YES,NO,NO,NO,NO,"spg2xx_mysprtch.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_mysprtch.cpp"
+mywicodx,"My Wico Deluxe (Family Sport 85-in-1)","200?","<unknown> / Senca",-,-,-,YES,NO,NO,NO,NO,"spg2xx_senca.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senca.cpp"
+mywicogt,"My Wico Guitar","200?","<unknown> / Senca",-,-,-,YES,NO,NO,NO,NO,"spg2xx_senca.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senca.cpp"
+msinamco,"Namco Classics Vol.1 (3-in-1) (MSI Plug & Play)","2018","MSI / Bandai Namco",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+ctntune,"Name That Tune (Castle Toy)","1980","Castle Toy",-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,-,"0",0,0,-,"hh_ucom4.cpp"
+ngp,"NeoGeo Pocket","1998",SNK,-,-,-,YES,NO,NO,NO,NO,ngp.cpp,BUONO,LCD,"0",160,152,HORIZONTAL,ngp.cpp
+ngpc,"NeoGeo Pocket Color","1999",SNK,ngp,ngp,-,YES,NO,NO,NO,NO,ngp.cpp,BUONO,LCD,"0",160,152,HORIZONTAL,ngp.cpp
+newtnotp,"Newton Notepad (prototype)","1992","Apple Computer",-,-,-,YES,NO,NO,NO,NO,newton.cpp,PRELIMINARE,-,"0",0,0,-,newton.cpp
+knfl,"NFL Football (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1449,1080,HORIZONTAL,"hh_sm510.cpp"
+jak_nick,"Nicktoons (JAKKS Pacific TV Game, Game-Key Ready)","2004","JAKKS Pacific Inc / Handheld Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+tnmarebc,"Nightmare Before Christmas (handheld)","1993","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1456,1080,HORIZONTAL,"hh_sm510.cpp"
+tomplc,"Nihon Isshuu - Boku wa Plarail Untenshi (Japan)","2004","Tomy / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+tgaiden,"Ninja Gaiden (handheld)","1989","Tiger Electronics (licensed from Tecmo)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1476,1080,HORIZONTAL,"hh_sm510.cpp"
+nupogodi,"Nu, pogodi!","1984","bootleg (Elektronika)",gnw_mmouse,gnw_mmouse,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1715,1080,HORIZONTAL,"hh_sm510.cpp"
+ban_onep,"One Piece Punch Battle (Japan)","2004","Bandai / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2000.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2000.cpp"
+topaliens,"Operation: Aliens (handheld)","1994","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1450,1080,HORIZONTAL,"hh_sm510.cpp"
+oplayer,"OPlayer Mobile Game Console (MGS03-white) (Family Sport 100-in-1)","200?","OPlayer / Senca",-,-,-,YES,NO,NO,NO,NO,"spg2xx_senca.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senca.cpp"
+"psion1","Organiser I","1984",Psion,-,-,-,YES,NO,NO,NO,NO,psion.cpp,PRELIMINARE,LCD,"0",96,8,HORIZONTAL,psion.cpp
+psioncm,"Organiser II CM","1986",Psion,-,-,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",96,18,HORIZONTAL,psion.cpp
+psionla,"Organiser II LA","1986",Psion,psioncm,psioncm,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",96,18,HORIZONTAL,psion.cpp
+psionlam,"Organiser II LAM","1986",Psion,psioncm,psioncm,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",96,18,HORIZONTAL,psion.cpp
+psionlz,"Organiser II LZ","1989",Psion,-,-,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",120,36,HORIZONTAL,psion.cpp
+"psionlz64","Organiser II LZ64","1989",Psion,psionlz,psionlz,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",120,36,HORIZONTAL,psion.cpp
+"psionlz64s","Organiser II LZ64S","1989",Psion,psionlz,psionlz,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",120,36,HORIZONTAL,psion.cpp
+"psionp200","Organiser II P200","1986",Psion,psioncm,psioncm,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",96,18,HORIZONTAL,psion.cpp
+"psionp350","Organiser II P350","1986",Psion,psioncm,psioncm,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",96,18,HORIZONTAL,psion.cpp
+"psionp464","Organiser II P464","1989",Psion,psionlz,psionlz,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",120,36,HORIZONTAL,psion.cpp
+psionxp,"Organiser II XP","1986",Psion,psioncm,psioncm,-,YES,NO,NO,NO,NO,psion.cpp,INCOMPLETO,LCD,"0",96,18,HORIZONTAL,psion.cpp
+rad_orun,"Out Run 2019 (Radica Plug & Play, UK)","2004","Radica / Sega",-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+tmpacman,"Pac Man (Tomy)","1982",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,508,HORIZONTAL,"hh_ucom4.cpp"
+"epacman2","Pac Man 2 (Entex, cyan Pacman)","1981",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",505,1080,HORIZONTAL,"hh_hmcs40.cpp"
+"epacman2r","Pac Man 2 (Entex, red Pacman)","1981",Entex,"epacman2","epacman2",-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",505,1080,HORIZONTAL,"hh_hmcs40.cpp"
+"cpacmanr1","Pac-Man (Coleco, Rev. 28)","1981",Coleco,cpacman,cpacman,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",484,1080,HORIZONTAL,"hh_hmcs40.cpp"
+cpacman,"Pac-Man (Coleco, Rev. 29)","1981",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",484,1080,HORIZONTAL,"hh_hmcs40.cpp"
+mapacman,"Pac-Man (Micro Arcade)","2017","Super Impulse",-,-,-,YES,NO,NO,NO,NO,generalplus_gpl_unknown.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,generalplus_gpl_unknown.cpp
+bfpacman,"Pac-Man (mini arcade)","2018","Basic Fun",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_spi_direct.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_spi_direct.cpp"
+paccon,"Pac-Man Connect & Play (Feb 14 2012 10:46:23)","2012",Bandai,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+packmon,"Packri Monster","1981",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,680,HORIZONTAL,"hh_hmcs40.cpp"
+pairmtch,"Pair Match","1984",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,-,"0",0,0,-,"hh_hmcs40.cpp"
+parcade,"Palace Arcade","2017",Hasbro,-,-,-,YES,NO,NO,NO,NO,generalplus_gpl_unknown.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,generalplus_gpl_unknown.cpp
+palmiii,"Palm III","1998","3Com","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+palmiiic,"Palm IIIc","1998","Palm Inc","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+"palmm100","Palm m100","2000","Palm Inc","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+"palmm130","Palm m130","2000","Palm Inc","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+"palmm505","Palm m505","2001","Palm Inc","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+"palmm515","Palm m515","2001","Palm Inc","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+palmpers,"Palm Pilot Personal","1997","U.S. Robotics","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+palmpro,"Palm Pilot Pro","1997","U.S. Robotics","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+palmv,"Palm V","1999","3Com","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+palmvx,"Palm Vx","1999","Palm Inc","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+"palmz22","Palm Z22","2005",Palm,-,-,-,YES,NO,NO,NO,NO,"palmz22.cpp",PRELIMINARE,LCD,"0",160,160,HORIZONTAL,"palmz22.cpp"
+"palmf31","Palmtronic F-31","1977",Canon,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"palmmd8","Palmtronic MD-8 (Multi 8)","1977",Canon,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+pasogo,PasoGo,"1996",KOEI,-,-,-,YES,NO,NO,NO,NO,pasogo.cpp,PRELIMINARE,LCD,"0",320,240,HORIZONTAL,pasogo.cpp
+"pdc100","PDC100 - Pocket Dream Console (Anncia, US)","2008","Conny / Anncia",-,-,-,YES,NO,NO,NO,NO,"spg2xx_pdc.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_pdc.cpp"
+"pdc150t","PDC150 Tactile - Pocket Dream Console (VideoJet, France)","2011","Conny / VideoJet",-,-,-,YES,NO,NO,NO,NO,"spg2xx_pdc.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_pdc.cpp"
+"pdc200","PDC200 - Pocket Dream Console (VideoJet, France)","2012","Conny / VideoJet",-,-,-,YES,NO,NO,NO,NO,"spg2xx_pdc.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_pdc.cpp"
+"pdc40t","PDC40 Tactile - Pocket Dream Console (VideoJet, France)","2011","Conny / VideoJet",-,-,-,YES,NO,NO,NO,NO,"spg2xx_pdc.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_pdc.cpp"
+"pdc50","PDC50 - Pocket Dream Console (VideoJet, France)","2010","Conny / VideoJet",-,-,-,YES,NO,NO,NO,NO,"spg2xx_pdc.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_pdc.cpp"
+"pdt3100","PDT 3100 (v1.10-00)","1998",Symbol,-,-,-,YES,NO,NO,NO,NO,"pdt3100.cpp",PRELIMINARE,-,"0",0,0,-,"pdt3100.cpp"
+bpengo,"Pengo (Bandai)","1983",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,759,HORIZONTAL,"hh_hmcs40.cpp"
+"pda600","PenPad PDA 600","1993","Amstrad plc",-,-,-,YES,NO,NO,NO,NO,"pda600.cpp",PRELIMINARE,LCD,"0",240,320,HORIZONTAL,"pda600.cpp"
+"pbem2017","Pense Bem (2017)","2017",TecToy,-,-,-,YES,NO,NO,NO,NO,pensebem.cpp,PRELIMINARE,SVG,"0",1490,1080,HORIZONTAL,pensebem.cpp
+jak_pf,"Phineas and Ferb: Best Game Ever! (JAKKS Pacific TV Motion Game)","2010","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+"pilot1k","Pilot 1000","1996","U.S. Robotics",-,-,-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+"pilot5k","Pilot 5000","1996","U.S. Robotics","pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+ablpinb,"Pinball (P8002, ABL TV Game)","2005","Advance Bright Ltd",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+ablping,"Ping Pong / Table Tennis / Super Ping Pong (PP1100, ABL TV Game)","2006","Advance Bright Ltd",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+rad_bb,"Play TV Baseball (NTSC)","2000","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"rad_bb2","Play TV Baseball 2 (NTSC)","2002","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"rad_bb3","Play TV Baseball 3","2005","Radica / FarSight Studios",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+rad_bask,"Play TV Basketball","2005","Radica / FarSight Studios",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+rad_bass,"Play TV Bass Fishin' (NTSC)","2001","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_box,"Play TV Boxin' (NTSC)","200?","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_hnt,"Play TV Buckmasters Huntin' (NTSC)","2000","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"rad_hnt2","Play TV Buckmasters Huntin' 2 (NTSC)","2003","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_crdn,"Play TV Card Night (NTSC)","200?","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_fb,"Play TV Football (NTSC)","200?","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"rad_fb2","Play TV Football 2","2007",Radica,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+"rad_hnt3","Play TV Huntin' 3","2005","Radica / V-Tac Technology Co Ltd.",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+rad_mtrk,"Play TV Monster Truck (NTSC)","2003","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_opus,"Play TV Opus (NTSC)","2000","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_ping,"Play TV Ping Pong (NTSC)","2000","Radica / SSD Company LTD / Simmer Technology",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_rsg,"Play TV Real Swing Golf","2005","Radica / FarSight Studios",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a14.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a14.cpp"
+rad_rh,"Play TV Rescue Heroes (NTSC)","200?","Radica / Fisher-Price / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_skat,"Play TV Skateboarder (NTSC)","2006",Radica,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+rad_snow,"Play TV Snowboarder (Blue) (NTSC)","2001","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_sbw,"Play TV Snowboarder (White) (NTSC)","2006","Radica / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_socr,"Play TV Soccer","2002","Radica / Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rad_ssx,"Play TV SSX Snowboarder (NTSC)","2004","Radica / Electronics Arts / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+beambox,"Playskool Heroes Transformers Rescue Bots Beam Box (Spain)","200?",Hasbro,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+rockstar,"Plug 'N' Play Rockstar Guitar / Guitar Rock (PAL)","2007","Ultimate Products / TaiKee",-,-,-,YES,NO,NO,NO,NO,"spg2xx_shredmjr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_shredmjr.cpp"
+"ppgc200g","Plug & Play Game Controller with 200 Games (Supreme 200)","201?","Fizz Creations",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+papsudok,"Plug and Play Sudoku Game (NES based)","200?","Nice Code",-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+"vjpp2","Plug Play TV Games 2 (4-in-1) (VideoJet, France)","200?","Conny / VideoJet",-,-,-,YES,NO,NO,NO,NO,"spg2xx_pdc.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_pdc.cpp"
+"plus1","Plus One","1980","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",INCOMPLETO,-,"0",0,0,-,"hh_cop400.cpp"
+pokemini,"Pokemon Mini","2001",Nintendo,-,-,-,YES,NO,NO,NO,NO,pokemini.cpp,PRELIMINARE,LCD,"0",96,64,HORIZONTAL,pokemini.cpp
+gpoker,"Poker (Gakken, 1979 version)","1979",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+popira,"Popira (Japan)","2000","Takara / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"popira2","Popira 2 (Japan)","2002","Takara / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"pgs268","Portable Game Station 268-in-1","200?",-,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+phpball,"Power House Pinball","1980",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+jak_prft,"Power Rangers Force In Time (JAKKS Pacific TV Motion Game)","2009","JAKKS Pacific Inc / Santa Cruz Games",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+jak_prhp,"Power Rangers Super Megaforce Hero Portal","200?","JAKKS Pacific Inc",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl32612.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl32612.cpp"
+"pjoypj001","PowerJoy (PJ001, NES based plug & play)","200?","Trump Grand",-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+pabball,"Pro-Action Baseball","1979","Caprice / Calfax",-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",PRELIMINARE,-,"0",0,0,-,"hh_pic16.cpp"
+uspbball,"Programmable Baseball","1981","U.S. Games",-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",PRELIMINARE,-,"0",0,0,-,"hh_pic16.cpp"
+pbqbert,"Q*Bert (Parker Brothers)","1983","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",603,1080,HORIZONTAL,"hh_hmcs40.cpp"
+qfire,Quickfire,"1979",Electroplay,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+quizwizc,"Quiz Wiz Challenger","1981",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+rzbatfor,"R-Zone: Batman Forever","1995","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,rzone.cpp,BUONO,SVG,"0",1368,1080,HORIZONTAL,rzone.cpp
+rztoshden,"R-Zone: Battle Arena Toshinden","1996","Tiger Electronics (licensed from Takara)",-,-,-,YES,NO,NO,NO,NO,rzone.cpp,BUONO,SVG,"0",1392,1080,HORIZONTAL,rzone.cpp
+"rzindy500","R-Zone: Indy 500","1996","Tiger Electronics (licensed from Sega)",-,-,-,YES,NO,NO,NO,NO,rzone.cpp,BUONO,SVG,"0",1425,1080,HORIZONTAL,rzone.cpp
+rbbrite,"Rainbow Brite (mini-arcade)","2018",Coleco,-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+raisedvl,"Raise The Devil Pinball","1980",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+rcapnp,"RCA NS-500 30-in-1","200?","RCA / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+rdqa,"Reader's Digest Q&A - Computer Question & Answer Game","1980","Selchow & Righter",-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+epo_eppk,"Real Ping Pong (Korea)","2000","Epoch / SSD Company LTD / Sonokong",epo_epp,epo_epp,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+rminitv,"Retro 'Mini TV' Console 300-in-1","2015","Orb Gaming",-,-,-,YES,NO,NO,NO,NO,"nes_vt32.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt32.cpp"
+"ragc153","Retro Arcade Game Controller 153-in-1","201?",Orb,-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_spi.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_spi.cpp"
+"110dance","Retro Dance Mat (110 song Super StepMania + 9-in-1 games) (PAL)","200?",-,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"retro400","Retro FC 400-in-1","201?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"rfcp168","Retro FC Plus 168 in 1 Handheld","201?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"rhhc152","Retro Handheld Console 152-in-1","201?",Orb,-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_spi.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_spi.cpp"
+"rtvgc300","Retro TV Game Console - 300 Games","2016",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"rtvgc300fz","Retro TV Game Console - Frozen - 300 Games","2017",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"rex6000","REX 6000","2000","Xircom / Intel",-,-,-,YES,NO,NO,NO,NO,"rex6000.cpp",PRELIMINARE,LCD,"0",240,120,HORIZONTAL,"rex6000.cpp"
+trobhood,"Robin Hood (handheld)","1991","Tiger Electronics",tgaunt,tgaunt,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1468,1080,HORIZONTAL,"hh_sm510.cpp"
+"trobocop2","Robocop 2 (handheld)","1990","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1487,1080,HORIZONTAL,"hh_sm510.cpp"
+"trobocop3","Robocop 3 (handheld)","1992","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1464,1080,HORIZONTAL,"hh_sm510.cpp"
+robotech,Robotech,"2018",Coleco,-,-,-,YES,NO,NO,NO,NO,gba.cpp,PRELIMINARE,LCD,"0",240,160,HORIZONTAL,gba.cpp
+rockpin,"Rocket Pinball","1979","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+bmsafari,"Safari (Bambino)","1981",Bambino,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",248,1080,HORIZONTAL,"hh_ucom4.cpp"
+jak_sdoo,"Scooby-Doo! and the Mystery of the Castle (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Jolliford Management",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jsc_sdoo,"Scooby-Doo! and The Pirate's Puzzles (Sharp Cookie) (PAL, UK)","2007","JAKKS Pacific Inc / Child Guidance / Handheld Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_sharp.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_sharp.cpp"
+scrabsen,"Scrabble Sensor - Electronic Word Game","1978","Selchow & Righter",-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+tmscramb,"Scramble (Tomy)","1982",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,556,HORIZONTAL,"hh_ucom4.cpp"
+lexiseal,"Seal 50-in-1","200?","Lexibook / Sit Up Limited / JungleTac",-,-,-,YES,NO,NO,NO,NO,"spg2xx_lexibook.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_lexibook.cpp"
+sag,"Select-A-Game Machine","1981",Entex,-,-,-,YES,NO,NO,NO,NO,sag.cpp,BUONO,-,"0",0,0,-,sag.cpp
+rad_ssoc,"Sensible Soccer plus [Cannon Fodder, Mega lo Mania] (Radica, Arcade Legends) (UK)","2004","Radica / Sensible Software / Sega",-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+shtscore,"Shoot n' Score","200?","Halsall / time4toys.com / Electronic Games",-,-,-,YES,NO,NO,NO,NO,trkfldch.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,trkfldch.cpp
+shredmjr,"Shredmaster Jr (NTSC)","2007",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"spg2xx_shredmjr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_shredmjr.cpp"
+trshutvoy,"Shuttle Voyage","1983",Tronica,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1496,1080,HORIZONTAL,"hh_sm510.cpp"
+simon,"Simon (Rev A)","1978","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+simonf,"Simon (Rev F)","1979","Milton Bradley",simon,simon,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+jak_sspop,"Sing Scene Pop (JAKKS Pacific TV Game)","2009","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+sstarkar,"Singing Star Karaoke (World) / Karao Kids (Spain)","200?",Taikee,-,-,-,YES,NO,NO,NO,NO,"spg110.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg110.cpp"
+rad_sktv,"Skannerz TV","2007",Radica,-,-,-,YES,NO,NO,NO,NO,"spg2xx_skannerztv.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_skannerztv.cpp"
+tskelwarr,"Skeleton Warriors - The Dark Crusade (handheld)","1994","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1444,1080,HORIZONTAL,"hh_sm510.cpp"
+smartvad,"SmarTV Adventures","2005","WinFun / KidConnection",-,-,-,YES,NO,NO,NO,NO,"spg2xx_smarttv.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_smarttv.cpp"
+msoccer,"Soccer (Mattel)","1978",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_cops1.cpp",BUONO,-,"0",0,0,-,"hh_cops1.cpp"
+tsonic,"Sonic The Hedgehog (handheld)","1992","Tiger Electronics (licensed from Sega)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1517,1080,HORIZONTAL,"hh_sm510.cpp"
+"tsonic2","Sonic The Hedgehog 2 (handheld)","1993","Tiger Electronics (licensed from Sega)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1475,1080,HORIZONTAL,"hh_sm510.cpp"
+pockstat,"Sony PocketStation","1999","Sony Computer Entertainment Inc",-,-,-,YES,NO,NO,NO,NO,pockstat.cpp,BUONO,LCD,"0",32,32,HORIZONTAL,pockstat.cpp
+esbattle,"Space Battle (Entex)","1979",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+spacebridge,"Space Bridge","1989","bootleg (Elektronika)",gnw_fire,gnw_fire,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1673,1080,HORIZONTAL,"hh_sm510.cpp"
+"tsharr2","Space Harrier II (handheld)","1990","Tiger Electronics (licensed from Sega)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1493,1080,HORIZONTAL,"hh_sm510.cpp"
+einvaderc,"Space Invader (Entex, COP444L version)","1981",Entex,einvader,einvader,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,SVG,"0",919,1080,HORIZONTAL,"hh_cop400.cpp"
+einvader,"Space Invader (Entex, TMS1100 version)","1980",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,SVG,"0",945,1080,HORIZONTAL,"hh_tms1k.cpp"
+msisinv,"Space Invaders (MSI Plug & Play)","2016","MSI / Taito",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+taspinv,"Space Invaders (Tiny Arcade)","2017","Super Impulse",-,-,-,YES,NO,NO,NO,NO,generalplus_gpl_unknown.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,generalplus_gpl_unknown.cpp
+rad_sinv,"Space Invaders [Lunar Rescue, Colony 7, Qix, Phoenix] (Radica, Arcade Legends TV Game)","2004","Radica (licensed from Taito)",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+tsjam,"Space Jam (handheld)","1996","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1421,1080,HORIZONTAL,"hh_sm510.cpp"
+splasfgt,"Space Laser Fight","1980",Bambino,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,476,HORIZONTAL,"hh_ucom4.cpp"
+trspacmis,"Space Mission (Tronica)","1982",Tronica,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1601,1080,HORIZONTAL,"hh_sm510.cpp"
+trsrescue,"Space Rescue","1982",Tronica,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1533,1080,HORIZONTAL,"hh_sm510.cpp"
+snmath,"Speak & Math (US, 1980 version)","1980","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snmatha,"Speak & Math (US, 1986 version)","1986","Texas Instruments",snmath,snmath,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snmathp,"Speak & Math (US, patent)","1980","Texas Instruments",snmath,snmath,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspelljp,"Speak & Spell (Japan)","1979","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspellsp,"Speak & Spell (Spanish, prototype)","1981","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspelluk,"Speak & Spell (UK, 1978 version)","1978","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspelluka,"Speak & Spell (UK, 1981 version)","1981","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspellua,"Speak & Spell (US, 1978 version)","1978","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspell,"Speak & Spell (US, 1979 version)","1979","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspellub,"Speak & Spell (US, 1980 version)","1980","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspellp,"Speak & Spell (US, patent)","1978","Texas Instruments",snspell,snspell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspellc,"Speak & Spell Compact (US, 1981 version)","1981","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspellca,"Speak & Spell Compact (US, 1982 version)","1982","Texas Instruments",snspellc,snspellc,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+snspellcuk,"Speak & Write (UK)","1982","Texas Instruments",snspellc,snspellc,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+senspeed,"Speed Racer (Senario)","2008",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+trspider,"Spider (Tronica)","1982",Tronica,trspacmis,trspacmis,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1597,1080,HORIZONTAL,"hh_sm510.cpp"
+tspidman,"Spider-Man (handheld, Tiger 1991 version)","1991","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1440,1080,HORIZONTAL,"hh_sm510.cpp"
+jak_spdm,"Spider-Man (JAKKS Pacific TV Game, Game-Key Ready)","2004","JAKKS Pacific Inc / Digital Eclipse",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_spdmo,"Spider-Man (JAKKS Pacific TV Game) (older hardware, set 1)","2004","JAKKS Pacific Inc / Digital Eclipse",jak_spdm,jak_spdm,-,YES,NO,NO,NO,NO,"spg110.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg110.cpp"
+jak_spdmoa,"Spider-Man (JAKKS Pacific TV Game) (older hardware, set 2)","2004","JAKKS Pacific Inc / Digital Eclipse",jak_spdm,jak_spdm,-,YES,NO,NO,NO,NO,"spg110.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg110.cpp"
+lxspidaj,"Spider-Man Super TV Air Jet (Lexibook Junior, JG6000SP)","2007",Lexibook,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+jak_smwm,"Spider-Man Web Master (JAKKS Pacific TV Motion Game)","2009","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+splitsec,"Split Second","1980","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+jak_sbfc,"SpongeBob SquarePants - The Fry Cook Games (JAKKS Pacific TV Game, Game-Key Ready) (AUG 18 2005 21:31:56)","2005","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+"jak_s500","SpongeBob SquarePants Bikini Bottom 500 (JAKKS Pacific TV Motion Game)","2009","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+jak_sbjd,"SpongeBob SquarePants Jellyfish Dodge (JAKKS Pacific TV Game) (Apr 5 2007)","2007","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks.cpp"
+senstriv,"Sports Trivia Professional Edition (Senario, Plug and Play)","2005",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_senario.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario.cpp"
+"spt1500","SPT 1500","19??",Symbol,"pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+"spt1700","SPT 1700","19??",Symbol,"pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+"spt1740","SPT 1740","19??",Symbol,"pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+msthawk,"Star Hawk (Mattel)","1982",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,696,HORIZONTAL,"hh_hmcs40.cpp"
+starwbc,"Star Wars - Electronic Battle Command","1979",Kenner,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+starwbcp,"Star Wars - Electronic Battle Command (patent)","1979",Kenner,starwbc,starwbc,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+jak_swot,"Star Wars - Original Trilogy (JAKKS Pacific TV Game, prototype)","2006","JAKKS Pacific Inc / Amaze Entertainment",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_sithp,"Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready, prototype)","2005","JAKKS Pacific Inc / Griptonite Games",jak_sith,jak_sith,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+jak_sith,"Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Griptonite Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+swclone,"Star Wars - The Clone Wars","2008","Hasbro / Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+jak_swbstrik,"Star Wars Blaster Strike","200?","JAKKS Pacific Inc",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl32612.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl32612.cpp"
+jak_swc,"Star Wars Clone Trooper (JAKKS Pacific TV Game)","2013","JAKKS Pacific Inc / Merge Interactive",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+estargte,"Stargate (Entex)","1982",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,854,HORIZONTAL,"hh_hmcs40.cpp"
+talkingbb,"Starting Lineup Talking Baseball","1988","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,talkingbb.cpp,BUONO,-,"0",0,0,-,talkingbb.cpp
+stopthief,"Stop Thief - Electronic Cops and Robbers (Electronic Crime Scanner)","1979","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+stopthiefp,"Stop Thief - Electronic Cops and Robbers (Electronic Crime Scanner) (patent)","1979","Parker Brothers",stopthief,stopthief,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+storiode,"Storio (DE, German, 2011-10-17)","2011",VTech,vreader,vreader,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+storioesa,"Storio (ES, Spanish, 2011-06-17?)","2011",VTech,vreader,vreader,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+storioes,"Storio (ES, Spanish, 2011-10-17)","2011",VTech,vreader,vreader,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+storiofr,"Storio (FR, French, 2011-10-17)","2011",VTech,vreader,vreader,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+storio,"Storio (GB, English, 2011-10-17)","2011",VTech,vreader,vreader,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+storionl,"Storio (NL, Dutch, 2011-10-17)","2011",VTech,vreader,vreader,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+pi_stry,"Story Reader","200?","Publications International Ltd",-,-,-,YES,NO,NO,NO,NO,pubint_storyreader.cpp,PRELIMINARE,-,"0",0,0,-,pubint_storyreader.cpp
+"pi_stry2","Story Reader 2.0","200?","Publications International Ltd",-,-,-,YES,NO,NO,NO,NO,pubint_storyreader.cpp,PRELIMINARE,-,"0",0,0,-,pubint_storyreader.cpp
+"tsf2010","Street Fighter 2010 - The Final Fight (handheld)","1990","Tiger Electronics (licensed from Capcom)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1465,1080,HORIZONTAL,"hh_sm510.cpp"
+"tsfight2","Street Fighter II (handheld)","1993","Tiger Electronics (licensed from Capcom)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1444,1080,HORIZONTAL,"hh_sm510.cpp"
+"msi_sf2","Street Fighter II: Special Champion Edition (MSI Plug & Play) (Europe)","2018","MSI / Capcom / Sega",-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+"rad_sf2p","Street Fighter II: Special Champion Edition [Ghouls'n Ghosts] (Radica, Arcade Legends) (UK)","2004","Radica / Capcom / Sega","rad_sf2","rad_sf2",-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+"rad_sf2","Street Fighter II: Special Champion Edition [Ghouls'n Ghosts] (Radica, Arcade Legends) (USA)","2004","Radica / Capcom / Sega",-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+tstrider,"Strider (handheld)","1990","Tiger Electronics (licensed from Capcom)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1479,1080,HORIZONTAL,"hh_sm510.cpp"
+subwars,"Sub Wars (LED version)","1979","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+sudopptv,"Sudoku Plug & Play TV Game '6 Intelligent Games'","200?","Smart Planet",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+gscobra,"Super Cobra (Gakken, green version)","1982",Gakken,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,852,HORIZONTAL,"hh_hmcs40.cpp"
+epo_sdb,"Super Dash Ball (Japan)","2004","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2000.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"xavix_2000.cpp"
+tsddragon,"Super Double Dragon (handheld)","1993","Tiger Electronics (licensed from Technos)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1503,1080,HORIZONTAL,"hh_sm510.cpp"
+"supergb2","Super Game Boy 2","1998",Nintendo,gameboy,gameboy,-,YES,NO,NO,NO,NO,gb.cpp,INCOMPLETO,LCD,"0",256,224,HORIZONTAL,gb.cpp
+snotecu,"Super Note Club µ (Japan)","1998",Bandai,-,-,-,YES,NO,NO,NO,NO,prestige.cpp,PRELIMINARE,LCD,"0",160,80,HORIZONTAL,prestige.cpp
+mduckspa,"Super Quique / Mega Duck (Spain)","199?","Cefa Toys",-,-,-,YES,NO,NO,NO,NO,gb.cpp,PRELIMINARE,LCD,"0",160,144,HORIZONTAL,gb.cpp
+ssimon,"Super Simon","1979","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+rad_sonicp,"Super Sonic Gold (Radica Plug & Play) (UK)","2004","Radica / Sega",rad_sonic,rad_sonic,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+rad_sonic,"Super Sonic Gold (Radica Plug & Play) (USA)","2004","Radica / Sega",-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+"einvader2","Super Space Invader 2 (Entex, black version)","1982",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",469,1080,HORIZONTAL,"hh_hmcs40.cpp"
+"ssports4","Super Sports-4","1980","U.S. Games",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+svision,"Super Vision","1992",Watara,-,-,-,YES,NO,NO,NO,NO,svision.cpp,BUONO,LCD,"0",160,160,HORIZONTAL,svision.cpp
+svisionn,"Super Vision (NTSC TV Link Colored)","1993",Watara,svision,svision,-,YES,NO,NO,NO,NO,svision.cpp,BUONO,LCD,"0",160,160,HORIZONTAL,svision.cpp
+svisionp,"Super Vision (PAL TV Link Colored)","1993",Watara,svision,svision,-,YES,NO,NO,NO,NO,svision.cpp,BUONO,LCD,"0",160,160,HORIZONTAL,svision.cpp
+svisions,"Super Vision (PeT Communication Simulation)","1992",Watara,svision,svision,-,YES,NO,NO,NO,NO,svision.cpp,BUONO,LCD,"0",160,160,HORIZONTAL,svision.cpp
+smastmind,"Super-Sonic Electronic Master Mind","1979",Invicta,-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+ssfball,"Superstar Football (Bambino)","1979",Bambino,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,482,HORIZONTAL,"hh_ucom4.cpp"
+talkingfb,"Superstar Lineup Talking Football","1989","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,talkingfb.cpp,BUONO,-,"0",0,0,-,talkingfb.cpp
+tswampt,"Swamp Thing (handheld)","1991","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1450,1080,HORIZONTAL,"hh_sm510.cpp"
+"sy889","SY-889 300 in 1 Handheld","2017","SY Corp",-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+tactix,"Tactix (Castle Toy)","1980","Castle Toy",-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,-,"0",0,0,-,"hh_ucom4.cpp"
+taikodp,"Taiko De Popira (Japan)","2003","Takara / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+wrinkles,"Talking Wrinkles","1986","Coleco / Ganz",-,-,-,YES,NO,NO,NO,NO,wrinkles.cpp,PRELIMINARE,-,"0",0,0,-,wrinkles.cpp
+tama,"Tamagotchi (USA)","1997",Bandai,-,-,-,YES,NO,NO,NO,NO,"tamag1.cpp",BUONO,LCD,"0",32,16,HORIZONTAL,"tamag1.cpp"
+"tandy12","Tandy-12: Computerized Arcade","1981","Tandy Corporation",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"techni4","Technigame Super 4-in-1 Sports (PAL)","201?",Technigame,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+tmntpdc,"Teenage Mutant Ninja Turtles - Pocket Dream Console (VideoJet, France)","2013","Conny / VideoJet",-,-,-,YES,NO,NO,NO,NO,"spg2xx_pdc.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_pdc.cpp"
+ktmnt,"Teenage Mutant Ninja Turtles (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1505,1080,HORIZONTAL,"hh_sm510.cpp"
+jak_tmnthp,"Teenage Mutant Ninja Turtles Hero Portal","200?","JAKKS Pacific Inc",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl32612.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl32612.cpp"
+tmntbftc,"Teenage Mutant Ninja Turtles: Battle for the City","2005","Tech2Go / WayForward",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+tmntmutm,"Teenage Mutant Ninja Turtles: Mutant and Monster Mayhem","2005","Tech2Go / WayForward",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+itvphone,"Teléfono interactivo de TV (Spain)","2007","Taikee / Oregon Scientific / V-Tac Technology Co Ltd.",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+telestry,Telestory,"2006","JAKKS Pacific Inc / Toymax",-,-,-,YES,NO,NO,NO,NO,"spg2xx_telestory.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_telestory.cpp"
+tmtennis,"Tennis (Tomy)","1980",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",1920,417,HORIZONTAL,"hh_ucom4.cpp"
+rad_tetr,"Tetris (Radica, Arcade Legends TV Game)","2004","Radica (licensed from Elorg / The Tetris Company)",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+taddams,"The Addams Family (handheld)","1992","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1464,1080,HORIZONTAL,"hh_sm510.cpp"
+kbilly,"The Adventures of Bayou Billy (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1490,1080,HORIZONTAL,"hh_sm510.cpp"
+jsc_spid,"The Amazing Spider-Man - Great Math Caper (Sharp Cookie) (NTSC, US)","2007","JAKKS Pacific Inc / Child Guidance / Pronto Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_sharp.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_sharp.cpp"
+senapren,"The Apprentice (Senario, Plug and Play)","2005",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_senario.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario.cpp"
+jak_batm,"The Batman (JAKKS Pacific TV Game)","2004","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks.cpp"
+tflash,"The Flash (handheld)","1991","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1444,1080,HORIZONTAL,"hh_sm510.cpp"
+tdummies,"The Incredible Crash Dummies (handheld)","1993","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1441,1080,HORIZONTAL,"hh_sm510.cpp"
+nytsudo,"The New York Times Sudoku","200?","Excalibur / Nice Code",-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+otrail,"The Oregon Trail","2017","Basic Fun",-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+senpmate,"The Perfect Mate (Senario, Plug and Play)","2005",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_senario.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario.cpp"
+trockteer,"The Rocketeer (handheld)","1991","Tiger Electronics","trobocop2","trobocop2",-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1463,1080,HORIZONTAL,"hh_sm510.cpp"
+tshadow,"The Shadow (handheld)","1994","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1484,1080,HORIZONTAL,"hh_sm510.cpp"
+jak_wdbg,"The Walking Dead: Battleground (JAKKS Pacific TV Game)","2014","JAKKS Pacific Inc / Super Happy Fun Fun",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+jak_wdzh,"The Walking Dead: Zombie Hunter (JAKKS Pacific TV Game)","2012","JAKKS Pacific Inc / Merge Interactive",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+tigarden,"Thief in Garden","1983",Tronica,trshutvoy,trshutvoy,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1515,1080,HORIZONTAL,"hh_sm510.cpp"
+jsc_thomu,"Thomas & Friends - Learning Circus Express (Sharp Cookie) (NTSC, US)","2007","JAKKS Pacific Inc / Child Guidance / Pronto Games",jsc_thom,jsc_thom,-,YES,NO,NO,NO,NO,"spg2xx_jakks_sharp.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_sharp.cpp"
+jsc_thom,"Thomas & Friends - Learning Circus Express (Sharp Cookie) (PAL, UK)","2007","JAKKS Pacific Inc / Child Guidance / Pronto Games",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_sharp.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_sharp.cpp"
+tmy_thom,"Thomas and Friends (Tomy)","2005","Tomy / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+avigo,"TI Avigo 10 PDA","1997","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,avigo.cpp,BUONO,LCD,"0",160,266,HORIZONTAL,avigo.cpp
+avigo_fr,"TI Avigo 10 PDA (French)","1997","Texas Instruments",avigo,avigo,-,YES,NO,NO,NO,NO,avigo.cpp,BUONO,LCD,"0",160,266,HORIZONTAL,avigo.cpp
+avigo_de,"TI Avigo 10 PDA (German)","1997","Texas Instruments",avigo,avigo,-,YES,NO,NO,NO,NO,avigo.cpp,BUONO,LCD,"0",160,266,HORIZONTAL,avigo.cpp
+avigo_it,"TI Avigo 10 PDA (Italian)","1997","Texas Instruments",avigo,avigo,-,YES,NO,NO,NO,NO,avigo.cpp,BUONO,LCD,"0",160,266,HORIZONTAL,avigo.cpp
+avigo_es,"TI Avigo 10 PDA (Spanish)","1997","Texas Instruments",avigo,avigo,-,YES,NO,NO,NO,NO,avigo.cpp,BUONO,LCD,"0",160,266,HORIZONTAL,avigo.cpp
+jak_tink,"Tinker Bell and the Lost Treasure (JAKKS Pacific TV Motion Game)","2009","JAKKS Pacific Inc / Santa Cruz Games",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+tcarnavi,"Tomica Carnavi Drive (Japan)","2003","Tomy / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+ktopgun,"Top Gun (handheld)","1989",Konami,-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1515,1080,HORIZONTAL,"hh_sm510.cpp"
+"tc4","Total Control 4","1981",Coleco,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+totspies,"Totally Spies! (France)","2006","Senario / Marathon - Mystery Animation Inc.",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+tntelluk,"Touch & Tell (UK)","1981","Texas Instruments",tntell,tntell,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+tntellp,"Touch & Tell (US, patent)","1980","Texas Instruments",tntell,tntell,-,YES,NO,NO,NO,NO,tispeak.cpp,PRELIMINARE,-,"0",0,0,-,tispeak.cpp
+tntell,"Touch & Tell (US)","1981","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+touchme,"Touch Me (handheld, Rev 2)","1979",Atari,-,-,-,YES,NO,NO,NO,NO,"hh_pic16.cpp",BUONO,-,"0",0,0,-,"hh_pic16.cpp"
+jak_totm,"Toy Story - Toys on the Move (JAKKS Pacific TV Motion Game)","200?","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+jak_tsm,"Toy Story Mania (JAKKS Pacific TV Game)","2010","JAKKS Pacific Inc / Schell Games",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+trkfldch,"Track & Field Challenge","2007",Konami,-,-,-,YES,NO,NO,NO,NO,trkfldch.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,trkfldch.cpp
+"ttransf2","Transformers - Generation 2 (handheld)","1993","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1476,1080,HORIZONTAL,"hh_sm510.cpp"
+"ftri1","Tri-1 (Fonas)","1979",Fonas,-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,-,"0",0,0,-,"hh_pps41.cpp"
+jak_ths,"Triple Header Sports (JAKKS Pacific TV Motion Game)","2009","JAKKS Pacific Inc / Super Happy Fun Fun",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+tmtron,"Tron (Tomy)","1982",Tomy,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,662,HORIZONTAL,"hh_hmcs40.cpp"
+turboex,"Turbo Extreme (US)","2004",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_iquest.cpp,PRELIMINARE,RASTER,"0",64,32,HORIZONTAL,leapfrog_iquest.cpp
+dturbogt,"Turbo GT 50-in-1","200?","dreamGEAR / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+ttwistbq,"Turbo Twist Brain Quest (US)","2002",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_iquest.cpp,PRELIMINARE,RASTER,"0",64,8,HORIZONTAL,leapfrog_iquest.cpp
+ttwistfb,"Turbo Twist Fact Blaster (US)","200?",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_iquest.cpp,PRELIMINARE,RASTER,"0",64,8,HORIZONTAL,leapfrog_iquest.cpp
+ttwistm,"Turbo Twist Math (US)","2002",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_iquest.cpp,PRELIMINARE,RASTER,"0",64,8,HORIZONTAL,leapfrog_iquest.cpp
+ttwistsp,"Turbo Twist Spelling (US)","2000",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_iquest.cpp,PRELIMINARE,RASTER,"0",64,8,HORIZONTAL,leapfrog_iquest.cpp
+ttwistvc,"Turbo Twist Vocabulator (US)","2001",LeapFrog,-,-,-,YES,NO,NO,NO,NO,leapfrog_iquest.cpp,PRELIMINARE,RASTER,"0",64,8,HORIZONTAL,leapfrog_iquest.cpp
+eturtles,"Turtles (Entex)","1982",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",484,1080,HORIZONTAL,"hh_hmcs40.cpp"
+"tvbg3c","TV Board Games 3-in-1: Boggle, Connect 4, Roll Over","2007","NSI International / Mammoth Toys (Licensed by Hasbro)",-,-,-,YES,NO,NO,NO,NO,"elan_ep3a19a.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"elan_ep3a19a.cpp"
+"tvbg3a","TV Board Games 3-in-1: Silly 6 Pins, Hungry Hungry Hippos, Match 'em","2007","NSI International / Mammoth Toys (Licensed by Hasbro)",-,-,-,YES,NO,NO,NO,NO,"elan_ep3a19a.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"elan_ep3a19a.cpp"
+"tvbg3b","TV Board Games 3-in-1: Simon, Battleship, Checkers","2007","NSI International / Mammoth Toys (Licensed by Hasbro)",-,-,-,YES,NO,NO,NO,NO,"elan_ep3a19a.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"elan_ep3a19a.cpp"
+"tvbg6a","TV Board Games 6-in-1: Silly 6 Pins, Candy Land, Hungry Hungry Hippos, Match 'em, Mixin' Pics, Checkers","2007","NSI International / Mammoth Toys (Licensed by Hasbro)",-,-,-,YES,NO,NO,NO,NO,"elan_ep3a19a.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"elan_ep3a19a.cpp"
+"tvbg6b","TV Board Games 6-in-1: Simon, Battleship, Mouse Trap, Checkers, Link-a-Line, Roll Over","2007","NSI International / Mammoth Toys (Licensed by Hasbro)",-,-,-,YES,NO,NO,NO,NO,"elan_ep3a19a.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"elan_ep3a19a.cpp"
+"dancmix3","TV Dance Mat 4 Games in 1 (Mix Party 3 / Dance Mix 3)","201?",Venom,-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+tvlinkp,"TV Link PAL","199?",Watara,svision,svision,-,YES,NO,NO,NO,NO,svision.cpp,BUONO,LCD,"0",160,160,HORIZONTAL,svision.cpp
+polmega,"TV MegaMax active power game system 30-in-1 (MegaMax GPD001SDG)","2004","Polaroid / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"tvsprt10","TV Sports 10-in-1 / Decathlon Athletic Sport Games","2006","Simba / V-Tac Technology Co Ltd.",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+tvtchspd,"TV Touch Games: Spider-Man in Villain Round-Up","2012","JAKKS Pacific Inc / Code Mystics",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_tvtouch.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_tvtouch.cpp"
+tvtchsb,"TV Touch Games: SpongeBob SquarePants Jellyfish Dodge","2012","JAKKS Pacific Inc / Code Mystics",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_tvtouch.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_tvtouch.cpp"
+tvtchsw,"TV Touch Games: Star Wars Original Trilogy","2012","JAKKS Pacific Inc / Code Mystics",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_tvtouch.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_tvtouch.cpp"
+conyfght,"TV Virtual Fighter / Free Fight Kung Fu (Conny / Big Ben)","200?","Conny / Big Ben",-,-,-,YES,NO,NO,NO,NO,"spg110.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg110.cpp"
+conyteni,"TV Virtual Tennis","2003",Conny,-,-,-,YES,NO,NO,NO,NO,"spg110.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg110.cpp"
+has_wamg,"TV Wild Adventure Mini Golf (NTSC)","200?","Hasbro / Milton Bradley / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+udance,U-Dance,"2008","Tiger / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+ufombs,"UFO Master-Blaster Station","1979",Bambino,-,-,-,YES,NO,NO,NO,NO,"hh_ucom4.cpp",BUONO,SVG,"0",243,1080,HORIZONTAL,"hh_ucom4.cpp"
+"gm235upc","Ultimate Pocket Console GM-235","200?",TimeTop,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"sudelan3","Ultimate Sudoku TV Edition 3-in-1 (All in 1 / Senario)","2006","All in 1 Products Ltd / Senario",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+jak_umdf,"Ultimotion - Disney Fairies Sleeping Beauty & TinkerBell (JAKKS Pacific TV Game)","2008","JAKKS Pacific Inc / Handheld Games",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+bultrman,"Ultraman Monster Battle","1983",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,673,HORIZONTAL,"hh_hmcs40.cpp"
+timaze,"unknown electronic maze game (patent)","1979","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+unkeinv,"unknown electronic Space Invaders game (patent)","1980","Gordon Barlow Design",-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+vbaby,V.Baby,"200?",VTech,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+vreadercaen,"V.Reader (CA, English, 2011-10-17)","2011",VTech,vreader,vreader,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+vreadercafr,"V.Reader (CA, French, 2011-10-17)","2011",VTech,vreader,vreader,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+vreader,"V.Reader (US, English, 2011-10-17)","2011",VTech,-,-,-,YES,NO,NO,NO,NO,storio.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,storio.cpp
+vsmilebfp,"V.Smile Baby (France, with 'En Ville avec l'ourson Patoune')","2005",VTech,vsmileb,vsmileb,-,YES,NO,NO,NO,NO,vsmileb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vsmileb.cpp
+vsmilebf,"V.Smile Baby (France, with 'Winnie et ses amis dans la Foret des Reves Bleus')","2005",VTech,vsmileb,vsmileb,-,YES,NO,NO,NO,NO,vsmileb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vsmileb.cpp
+vsmilebg,"V.Smile Baby (Germany, with 'Puuhs Hundert-Morgen-Wald')","2005",VTech,vsmileb,vsmileb,-,YES,NO,NO,NO,NO,vsmileb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vsmileb.cpp
+vsmilebs,"V.Smile Baby (Spain, with 'Aventuras en el Bosque de los Cien Acres')","2005",VTech,vsmileb,vsmileb,-,YES,NO,NO,NO,NO,vsmileb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vsmileb.cpp
+vsmilebsw,"V.Smile Baby (Sweden)","2005",VTech,vsmileb,vsmileb,-,YES,NO,NO,NO,NO,vsmileb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vsmileb.cpp
+vsmileb,"V.Smile Baby (USA)","2005",VTech,-,-,-,YES,NO,NO,NO,NO,vsmileb.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vsmileb.cpp
+"ventur25","Venturer '25 Games' 25-in-1","200?","<unknown> / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+vgpocket,"VG Pocket (VG-2000)","2005","Performance Designed Products / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+"vgcap35","VG Pocket Caplet Fast Acting 35-in-1","2006","Performance Designed Products (licensed by Taito / Data East) / JungleTac",-,-,-,YES,NO,NO,NO,NO,"spg2xx_lexibook.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_lexibook.cpp"
+vgcaplet,"VG Pocket Caplet Fast Acting 50-in-1","2006","Performance Designed Products (licensed by Taito / Data East) / JungleTac",-,-,-,YES,NO,NO,NO,NO,"spg2xx_lexibook.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_lexibook.cpp"
+vgpmini,"VG Pocket Mini (VG-1500)","200?","Performance Designed Products / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+vpainter,"Video Painter (PAL)","1991","Video Technology",-,-,-,YES,NO,NO,NO,NO,socrates.cpp,PRELIMINARE,RASTER,"0",264,230,HORIZONTAL,socrates.cpp
+tvindictr,"Vindicators (handheld)","1989","Tiger Electronics (licensed from Tengen)",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1459,1080,HORIZONTAL,"hh_sm510.cpp"
+conyping,"Virtual Ping Pong (Conny / SDW Games)","2003","Conny / SDW Games",-,-,-,YES,NO,NO,NO,NO,"spg110.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg110.cpp"
+protpp,"Virtual Ping Pong (Protocol)","200?",Protocol,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+vtvppong,"Virtual TV Ping Pong","200?",-,-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+vtvsocr,"Virtual TV Soccer","200?",-,-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+visor,"Visor Edge","2001",Handspring,"pilot1k","pilot1k",-,YES,NO,NO,NO,NO,palm.cpp,PRELIMINARE,LCD,"0",160,220,HORIZONTAL,palm.cpp
+svmu,"Visual Memory Unit","1998",Sega,-,-,-,YES,NO,NO,NO,NO,svmu.cpp,PRELIMINARE,LCD,"0",384,256,HORIZONTAL,svmu.cpp
+vocaid,Vocaid,"1982","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+"v200","Voyage 200 PLT","2002","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,"ti89.cpp",PRELIMINARE,LCD,"0",240,128,HORIZONTAL,"ti89.cpp"
+"vsmaxx15","Vs Maxx 15-in-1","2004?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+"vsmaxx17","Vs Maxx 17-in-1","2004","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"vsmaxx25","Vs Maxx 25-in-1 (SH6578 hardware)","2004?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+"vsmax25v","Vs Maxx 25-in-1 (VT03 hardware)","200?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"maxx6in1","Vs Maxx 6-in-1 Casino / Senario Card & Casino Games","200?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+"sentx6puk","Vs Maxx Texas Hold'em TV Poker - 6 Player Edition (UK)","2004","Senario / Play Vision","sentx6p","sentx6p",-,YES,NO,NO,NO,NO,"spg2xx_senario_poker.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario_poker.cpp"
+"sentx6p","Vs Maxx Texas Hold'em TV Poker - 6 Player Edition (US)","2004",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_senario_poker.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario_poker.cpp"
+"vsmaxtx2","Vs Maxx TX-2 50-in-1","200?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+vsmaxxvd,"Vs Maxx Video Extreme 50-in-1 (with Speed Racer and Snood)","2004","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"vsmaxx77","Vs Maxx Wireless 77-in-1","200?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+vsplus,"Vs Power Plus 30-in-1","200?","<unknown> / JungleTac",-,-,-,YES,NO,NO,NO,NO,"spg2xx_lexibook.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_lexibook.cpp"
+jak_wall,"Wall-E (JAKKS Pacific TV Game) (Dec 18 2007 11:34:25)","2008","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks.cpp"
+twworld,"Wayne's World (handheld)","1992","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1429,1080,HORIZONTAL,"hh_sm510.cpp"
+jak_wof,"Wheel of Fortune (JAKKS Pacific TV Game, Game-Key Ready) (Jul 11 2005 ORIG)","2005","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+wiwcs,"Where in the World is Carmen Sandiego? (handheld)","2018","Basic Fun",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_spi_direct.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_spi_direct.cpp"
+comil,"Who Wants to Be a Millionaire? (Character Options, Plug and Play, UK)","2008","Character Options",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+pvmil,"Who Wants to Be a Millionaire? (Play Vision, Plug and Play, UK)","2006","Play Vision",-,-,-,YES,NO,NO,NO,NO,"spg2xx_playvision.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_playvision.cpp"
+senmil,"Who Wants to Be a Millionaire? (Senario, Plug and Play, US)","2005?",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx_senario.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senario.cpp"
+ablwikid,"Wikid Joystick 14-in-1","200?","Advance Bright Ltd. / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+wildfire,"Wildfire (patent)","1979","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_amis2k.cpp",INCOMPLETO,-,"0",0,0,-,"hh_amis2k.cpp"
+jak_pooh,"Winnie the Pooh - Piglet's Special Day (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / Backbone Entertainment",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+sporztn,"Wireless Tennis (PAL, Play Vision)","2004","Macro Winners (Play Vision license)",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+abltenni,"Wireless Tennis (WT2000, ABL TV Game)","2006","Advance Bright Ltd / V-Tac Technology Co Ltd.",-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+"wiwi18","WiWi 18-in-1 Sports Game","200?","Hamy System",-,-,-,YES,NO,NO,NO,NO,"spg2xx_wiwi.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_wiwi.cpp"
+wizatron,Wiz-A-Tron,"1977","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+wswan,WonderSwan,"1999",Bandai,-,-,-,YES,NO,NO,NO,NO,wswan.cpp,INCOMPLETO,LCD,"0",224,144,HORIZONTAL,wswan.cpp
+wscolor,"WonderSwan Color","2000",Bandai,wswan,wswan,-,YES,NO,NO,NO,NO,wswan.cpp,INCOMPLETO,LCD,"0",224,144,HORIZONTAL,wswan.cpp
+mwcbaseb,"World Championship Baseball","1980",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",1920,478,HORIZONTAL,"hh_hmcs40.cpp"
+mwcfootb,"World Championship Football","1980",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_pps41.cpp",BUONO,SVG,"0",1920,571,HORIZONTAL,"hh_pps41.cpp"
+pvwwcas,"Worldwide Casino Tour 12-in-1","2005","Play Vision / Taikee / V-Tac",-,-,-,YES,NO,NO,NO,NO,"elan_eu3a05.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"elan_eu3a05.cpp"
+wowwg,"Wow Wireless Gaming (PAL)","200?",Wow,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+jak_wwe,"WWE (JAKKS Pacific TV Game, Game-Key Ready)","2005","JAKKS Pacific Inc / HotGen Ltd",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+msiwwe,"WWE Wrestlemania Steel Cage Challenge (Plug & Play) (set 1)","2017",MSI,-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+msiwwea,"WWE Wrestlemania Steel Cage Challenge (Plug & Play) (set 2)","2017",MSI,msiwwe,msiwwe,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+jak_xmenp,"X-Men - Mutant Reign (JAKKS Pacific TV Game, prototype)","2005","JAKKS Pacific Inc / Amaze Entertainment",-,-,-,YES,NO,NO,NO,NO,"spg2xx_jakks_gkr.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_jakks_gkr.cpp"
+txmenpx,"X-Men - Project X (handheld)","1993","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1464,1080,HORIZONTAL,"hh_sm510.cpp"
+txmen,"X-Men (handheld)","1991","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_sm510.cpp",BUONO,SVG,"0",1467,1080,HORIZONTAL,"hh_sm510.cpp"
+xavbaseb,"XaviX Baseball (XaviXPORT)","2004","SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+xavbassf,"XaviX Bass Fishing (XaviXPORT)","2004","SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+xavbowl,"XaviX Bowling (XaviXPORT)","2004","SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+xavbox,"XaviX Boxing (XaviXPORT)","2004","SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+xavmusic,"XaviX Music & Circuit (XaviXPORT)","2007","SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+"xing48","Xing Wireless Interactive TV Game 'Wi TV Zone' 48-in-1 (Europe, PAL)","200?",Xing,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"xl25","XL 25","1983","Vulcan Electronics",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+zackman,Zackman,"1983",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",487,1080,HORIZONTAL,"hh_hmcs40.cpp"
+"zsl5500","Zaurus SL-5500 ""Collie""","2002",Sharp,-,-,-,YES,NO,NO,NO,NO,zaurus.cpp,PRELIMINARE,-,"0",0,0,-,zaurus.cpp
+"zsl5600","Zaurus SL-5600 / SL-B500 ""Poodle""","2002",Sharp,-,-,-,YES,NO,NO,NO,NO,zaurus.cpp,PRELIMINARE,RASTER,"0",296,480,HORIZONTAL,zaurus.cpp
+"zslc1000","Zaurus SL-C3000 ""Akita"" (Japan)","200?",Sharp,-,-,-,YES,NO,NO,NO,NO,zaurus.cpp,PRELIMINARE,RASTER,"0",296,480,HORIZONTAL,zaurus.cpp
+"zslc3000","Zaurus SL-C3000 ""Spitz"" (Japan)","200?",Sharp,-,-,-,YES,NO,NO,NO,NO,zaurus.cpp,PRELIMINARE,RASTER,"0",296,480,HORIZONTAL,zaurus.cpp
+"zslc500","Zaurus SL-C500","2002",Sharp,-,-,-,YES,NO,NO,NO,NO,zaurus.cpp,PRELIMINARE,RASTER,"0",296,480,HORIZONTAL,zaurus.cpp
+"zslc750","Zaurus SL-C750 ""Shepherd"" (Japan)","2003",Sharp,-,-,-,YES,NO,NO,NO,NO,zaurus.cpp,PRELIMINARE,RASTER,"0",296,480,HORIZONTAL,zaurus.cpp
+"zslc760","Zaurus SL-C760 ""Husky"" (Japan)","2004",Sharp,-,-,-,YES,NO,NO,NO,NO,zaurus.cpp,PRELIMINARE,RASTER,"0",296,480,HORIZONTAL,zaurus.cpp
+bzaxxon,"Zaxxon (Bandai)","1982",Bandai,-,-,-,YES,NO,NO,NO,NO,"hh_hmcs40.cpp",BUONO,SVG,"0",613,1080,HORIZONTAL,"hh_hmcs40.cpp"
+zippityuk,"Zippity (UK)","201?",LeapFrog,zippity,zippity,-,YES,NO,NO,NO,NO,"generalplus_gpl32612.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl32612.cpp"
+zippity,"Zippity (US)","201?",LeapFrog,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl32612.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl32612.cpp"
+"zone100","Zone 100","200?","Ultimate Products (HK) Ltd / Jungle's Soft",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"
+"zon32bit","Zone 32-bit Gaming Console System (Family Sport 41-in-1)","200?","Ultimate Products (HK) Ltd / Senca",-,-,-,YES,NO,NO,NO,NO,"spg2xx_senca.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_senca.cpp"
+"zone3d","Zone 3D","201?",Zone,-,-,-,YES,NO,NO,NO,YES,"spg29x.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"spg29x.cpp"
+"zone7in1","Zone 7-in-1 Sports (NTSC)","200?","Ultimate Products Ltd.",-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"zone7in1p","Zone 7-in-1 Sports (PAL)","200?","Ultimate Products Ltd.","zone7in1","zone7in1",-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+zonemini,"Zone Mini","200?","Ultimate Products Ltd. / Waixing",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"

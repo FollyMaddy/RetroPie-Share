@@ -1,0 +1,2 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"innotab2","InnoTAB 2 (UK)","2011",VTech,-,-,-,YES,NO,NO,NO,NO,vtech_innotab.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,vtech_innotab.cpp

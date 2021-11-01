@@ -1,0 +1,518 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"2001tgm","2001: The Game Machine","1978",Waddingtons,-,-,-,YES,NO,NO,NO,NO,gamemachine.cpp,INCOMPLETO,-,"0",0,0,-,gamemachine.cpp
+jantotsu,"4nin-uchi Mahjong Jantotsu","1983",Sanritsu,-,-,-,YES,NO,NO,NO,NO,jantotsu.cpp,BUONO,RASTER,"270",256,224,VERTICAL,jantotsu.cpp
+"7mezzo","7 e Mezzo","198?",-,-,-,-,YES,NO,NO,NO,NO,magicfly.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,magicfly.cpp
+"7jigen","7jigen no Youseitachi - Mahjong 7 Dimensions (Japan)","1990",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,INCOMPLETO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+abunai,"Abunai Houkago - Mou Matenai (Japan 890325)","1989","Green Soft",-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+aimode,"Ai-mode - Pet Shiiku (Japan)","1999",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+mjapinky,"Almond Pinky [BET] (Japan)","1988",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+apparel,"Apparel Night (Japan 860929)","1986","Central Denshi",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+ataxxe,"Ataxx (Europe)","1990","Leland Corporation",ataxx,ataxx,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+ataxxj,"Ataxx (Japan)","1990","Leland Corporation (Capcom license)",ataxx,ataxx,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+ataxxa,"Ataxx (rev 4)","1990","Leland Corporation",ataxx,ataxx,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+ataxx,"Ataxx (rev 5)","1990","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+hnageman,"AV Hanafuda Hana no Ageman (Japan 900716)","1990","Nichibutsu / AV Japan",-,-,-,YES,NO,NO,NO,YES,"nbmj8891.cpp",PRELIMINARE,RASTER,"180",512,240,HORIZONTAL,"nbmj8891.cpp"
+hnxmasev,"AV Hanafuda Hana no Christmas Eve (Japan 901204)","1990","Nichibutsu / AV Japan",-,-,-,YES,NO,NO,NO,YES,"nbmj8891.cpp",PRELIMINARE,RASTER,"180",512,240,HORIZONTAL,"nbmj8891.cpp"
+"av2mj1bb","AV2Mahjong No.1 Bay Bridge no Seijo (Japan)","1991","Miki Syouji / AV Japan",-,-,-,YES,NO,NO,NO,YES,"nbmj8991.cpp",PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,"nbmj8991.cpp"
+"av2mj2rg","AV2Mahjong No.2 Rouge no Kaori (Japan)","1991","Miki Syouji / AV Japan",-,-,-,YES,NO,NO,NO,YES,"nbmj8991.cpp",PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,"nbmj8991.cpp"
+backgamn,Backgammon,"1990",Merkur,-,-,-,YES,NO,NO,NO,NO,manohman.cpp,PRELIMINARE,-,"0",0,0,-,manohman.cpp
+bakatono,"Bakatonosama Mahjong Manyuuki (MOM-002 ~ MOH-002)","1991","Monolith Corp.",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+bijokkog,"Bijokko Gakuen (Japan 880116)","1988",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,LCD,"180",480,64,HORIZONTAL,"nbmj8688.cpp"
+bijokkoy,"Bijokko Yume Monogatari (Japan 870925)","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,LCD,"180",480,64,HORIZONTAL,"nbmj8688.cpp"
+bikiniko,"BiKiNikko - Okinawa de Ippai Shichaimashita (Japan)","1999",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+bishjan,"Bishou Jan (Japan, Ver. 203)","1999",Subsino,-,-,-,YES,NO,NO,NO,NO,"subsino2.cpp",PRELIMINARE,RASTER,"0",512,240,HORIZONTAL,"subsino2.cpp"
+"psailor1","Bishoujo Janshi Pretty Sailor 18-kin (Japan)","1994",Sphinx,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+"psailor2","Bishoujo Janshi Pretty Sailor 2 (Japan)","1994",Sphinx,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+"blktch2","Black Touch II (Korea)","1993",-,-,-,-,YES,NO,NO,NO,NO,shanghai.cpp,BUONO,RASTER,"0",384,280,HORIZONTAL,shanghai.cpp
+chalgirl,"Challenge Girl (Falcon bootleg)","1984?",bootleg,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"7toitsu",Chi-Toitsu,"1988",Yuga,mgakuen,mgakuen,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+ccasino,"Chinese Casino [BET] (Japan)","1987","V-System Co.",-,-,-,YES,NO,NO,NO,NO,ojankohs.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,ojankohs.cpp
+citylove,"City Love (Japan 860908)","1986",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+mcitylov,"City Love [BET] (Japan 860904)","1986",Nichibutsu,citylove,citylove,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+"csplayh7","Cosplay Tengoku 7 - Super Kogal Ranking (Japan)","1999",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+crzyddz,"Crazy Dou Di Zhu","2004?",Sealy,-,-,-,YES,NO,NO,NO,NO,sealy.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,sealy.cpp
+crystalg,"Crystal Gal (Japan 860512)","1986",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+"crystal2","Crystal Gal 2 (Japan 860620)","1986",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+dbc,"Da Ban Cheng (Hong Kong, V027H)","1995",IGS,lhb,lhb,-,YES,NO,NO,NO,NO,"igs011.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+"dai2kaku","Dai-Dai-Kakumei (Japan)","2004",SystemBit,-,-,-,YES,NO,NO,NO,NO,realbrk.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,realbrk.cpp
+daisyari,"Daisyarin [BET] (Japan)","1989","Best System",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+dakkochn,"DakkoChan House (MC-8123B, 317-5014)","1987","White Board",-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"system1.cpp"
+danchih,"Danchi de Hanafuda (J 990607 V1.400)","1999","Altron (Tecmo license)",stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+shangril,"Dengen Tenshi Taisen Janshi Shangri-la","1999","Marvelous Ent.",naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+otatidai,"Disco Mahjong Otachidai no Okite (Japan)","1995",Sphinx,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+ddenlovrb,"Don Den Lover Vol. 1 - Heukbaeg-euro Jeonghaja (Korea, bootleg)","1995",bootleg,ddenlovj,ddenlovj,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+ddenlovrk,"Don Den Lover Vol. 1 - Heukbaeg-euro Jeonghaja (Korea)","1995",Dynax,ddenlovj,ddenlovj,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+ddenlovj,"Don Den Lover Vol. 1 - Shiro Kuro Tsukeyo! (Japan)","1995",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+ddenlovr,"Don Den Lover Vol. 1 (Hong Kong)","1996",Dynax,ddenlovj,ddenlovj,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+dondenmj,"Don Den Mahjong [BET] (Japan)","1986","Dyna Electronics",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+ddz,"Dou Di Zhu","200?",IGS?,-,-,-,YES,NO,NO,NO,NO,ddz.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,ddz.cpp
+cdsteljn,"DS Telejan (DECO Cassette) (Japan)","1981","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+nichisel,"DVD Select (Japan)","2000",Nichibutsu,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+ejanhs,"E Jong High School (Japan)","1996","Seibu Kaihatsu",-,-,-,YES,NO,NO,NO,NO,seibuspi.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,seibuspi.cpp
+"ejsakura12","E-Jan Sakurasou (Japan, SYS386F V1.2)","1999","Seibu Kaihatsu",ejsakura,ejsakura,-,YES,NO,NO,NO,NO,seibuspi.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,seibuspi.cpp
+ejsakura,"E-Jan Sakurasou (Japan, SYS386F V2.0)","1999","Seibu Kaihatsu",-,-,-,YES,NO,NO,NO,NO,seibuspi.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,seibuspi.cpp
+emjjoshi,"E-Touch Mahjong Series #2: Joshiryou de NE! (Japan)","1999","Seibu Kaihatsu / CATS",-,-,-,YES,NO,NO,NO,YES,seibucats.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,seibucats.cpp
+emjscanb,"E-Touch Mahjong Series #6: Scandal Blue - Midara na Daishou (Japan)","2001","Seibu Kaihatsu / CATS",-,-,-,YES,NO,NO,NO,YES,seibucats.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,seibucats.cpp
+emjtrapz,"E-Touch Mahjong Series #7: Trap Zone - Yokubou no Kaisoku Densha (Japan)","2001","Seibu Kaihatsu / CATS",-,-,-,YES,NO,NO,NO,YES,seibucats.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,seibucats.cpp
+finalgdr,"Final Godori (Korea, version 2.20.5915)","2001",SemiCom,-,-,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+"ron2","Futari Mahjong Ron II","1981",Sanritsu,-,-,-,YES,NO,NO,NO,NO,ron.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,ron.cpp
+fuudol,"Fuudol (Japan)","2000",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+chinsan,"Ganbare Chinsan Ooshoubu (MC-8123A, 317-5012)","1987",Sanritsu,-,-,-,YES,NO,NO,NO,NO,chinsan.cpp,BUONO,RASTER,"0",464,224,HORIZONTAL,chinsan.cpp
+gionbana,"Gionbana (Japan 890120)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mgion,"Gionbana [BET] (Japan 890207)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+"go2000","Go 2000","2000",SunA?,-,-,-,YES,NO,NO,NO,NO,"go2000.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"go2000.cpp"
+"gfire2","Golden Fire II","1992","Topis Corp",-,-,-,YES,NO,NO,NO,NO,mosaic.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,mosaic.cpp
+gomoku,"Gomoku Narabe Renju","1981",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,gomoku.cpp,BUONO,RASTER,"90",256,224,VERTICAL,gomoku.cpp
+goodejan,"Good E Jong -Kachinuki Mahjong Syoukin Oh!!- (set 1)","1991","Seibu Kaihatsu (Tecmo license)",-,-,-,YES,NO,NO,NO,NO,goodejan.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,goodejan.cpp
+goodejana,"Good E Jong -Kachinuki Mahjong Syoukin Oh!!- (set 2)","1991","Seibu Kaihatsu (Tecmo license)",goodejan,goodejan,-,YES,NO,NO,NO,NO,goodejan.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,goodejan.cpp
+hanaawas,"Hana Awase","1982","Seta Kikaku, Ltd.",-,-,-,YES,NO,NO,NO,NO,hanaawas.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,hanaawas.cpp
+hnfubuki,"Hana Fubuki [BET] (Japan)","1987",Dynax,hnayayoi,hnayayoi,-,YES,NO,NO,NO,NO,hnayayoi.cpp,BUONO,RASTER,"0",512,243,HORIZONTAL,hnayayoi.cpp
+hjingia,"Hana Jingi (Japan, Bet, alt.)","1990",Dynax,hjingi,hjingi,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+hjingi,"Hana Jingi (Japan, Bet)","1990",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+hkagerou,"Hana Kagerou [BET] (Japan)","1997","Nakanihon / Dynax",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+hanakanz,"Hana Kanzashi (Japan)","1996",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+hnkochou,"Hana Kochou (Japan, Bet)","1989",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,224,HORIZONTAL,dynax.cpp
+hanamai,"Hana no Mai (Japan)","1988",Dynax,hnkochou,hnkochou,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,224,HORIZONTAL,dynax.cpp
+hnoridur,"Hana Oriduru (Japan)","1989",Dynax,hjingi,hjingi,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+hanaojia,"Hana to Ojisan [BET] (ver 1.00, 1991/08/23)","1991",Nichibutsu,hanaoji,hanaoji,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+hanaoji,"Hana to Ojisan [BET] (ver 1.01, 1991/12/09)","1991",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+hanayara,"Hana wo Yaraneba! (Japan)","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",336,239,HORIZONTAL,dynax.cpp
+hnayayoi,"Hana Yayoi (Japan)","1987","Dyna Electronics",-,-,-,YES,NO,NO,NO,NO,hnayayoi.cpp,BUONO,RASTER,"0",512,243,HORIZONTAL,hnayayoi.cpp
+hginga,"Hanafuda Hana Ginga [BET] (Japan)","1994",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+hgokou,"Hanafuda Hana Gokou [BET] (Japan)","1995","Dynax (Alba license)",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+hgokbang,"Hanafuda Hana Gokou Bangaihen [BET] (Japan)","1995",Dynax,hgokou,hgokou,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+htengoku,"Hanafuda Hana Tengoku [BET] (Japan)","1992",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"180",336,240,HORIZONTAL,ddenlovr.cpp
+hanaroku,Hanaroku,"1988",Alba,-,-,-,YES,NO,NO,NO,NO,albazc.cpp,INCOMPLETO,RASTER,"0",384,224,HORIZONTAL,albazc.cpp
+heuksun,"Heuk Sun Baek Sa (Korea)","1997","Oksan / F2 System",-,-,-,YES,NO,NO,NO,NO,crospang.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,crospang.cpp
+hipai,"Hi Pai Paradise","2003","Aruze / Seta","aleck64",-,-,YES,NO,NO,NO,NO,"aleck64.cpp",INCOMPLETO,RASTER,"0",640,240,HORIZONTAL,"aleck64.cpp"
+"hipai2","Hi Pai Paradise 2","2004","Aruze / Seta / Paon","aleck64",-,-,YES,NO,NO,NO,NO,"aleck64.cpp",INCOMPLETO,RASTER,"0",640,240,HORIZONTAL,"aleck64.cpp"
+himesiki,"Himeshikibu (Japan)","1989",Hi-Soft,-,-,-,YES,NO,NO,NO,NO,himesiki.cpp,BUONO,RASTER,"90",256,192,VERTICAL,himesiki.cpp
+housemnq,"House Mannequin (Japan 870217)","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,LCD,"180",480,64,HORIZONTAL,"nbmj8688.cpp"
+"housemn2","House Mannequin Roppongi Live hen (Japan 870418)","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,LCD,"180",480,64,HORIZONTAL,"nbmj8688.cpp"
+ichiban,"Ichi Ban Jyan","199?",Excel,-,-,-,YES,NO,NO,NO,NO,ichiban.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,ichiban.cpp
+"suchie3","Idol Janshi Suchie-Pai 3 (Japan)","1999",Jaleco,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"suchie2o","Idol Janshi Suchie-Pai II (ver 1.0)","1994",Jaleco,"suchie2","suchie2",-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+"suchie2","Idol Janshi Suchie-Pai II (ver 1.1)","1994",Jaleco,-,-,-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+suchiesp,"Idol Janshi Suchie-Pai Special (Japan)","1993",Jaleco,-,-,-,YES,NO,NO,NO,NO,jalmah.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,jalmah.cpp
+"froman2b","Idol Mahjong Final Romance 2 (Neo-Geo, bootleg of CD version)","1995",bootleg,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+idhimitu,"Idol no Himitsu [BET] (Japan 890304)","1989","Digital Soft",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+fromance,"Idol-Mahjong Final Romance (Japan)","1991","Video System Co.",-,-,-,YES,NO,NO,NO,NO,fromance.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,fromance.cpp
+idolmj,"Idol-Mahjong Housoukyoku (Japan)","1988","System Service",-,-,-,YES,NO,NO,NO,NO,fromance.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,fromance.cpp
+iemoto,"Iemoto (Japan 871020)","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+iemotom,"Iemoto [BET] (Japan 871118)","1987",Nichibutsu,iemoto,iemoto,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+imekura,"Imekura Mahjong (Japan)","1994","Sphinx / AV Japan",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+ippatsu,"Ippatsu Gyakuten [BET] (Japan)","1986","Public Software / Paradais",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+jjparads,"Jan Jan Paradise","1996","Electro Design",skns,-,-,YES,NO,NO,NO,NO,suprnova.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,suprnova.cpp
+"jjparad2","Jan Jan Paradise 2","1997","Electro Design",skns,-,-,YES,NO,NO,NO,NO,suprnova.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,suprnova.cpp
+janoh,"Jan Oh (set 1)","1984",Toaplan,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+janoha,"Jan Oh (set 2)","1984",Toaplan,janoh,janoh,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+jangtaku,"Jang Taku (V 1.3)","1986","Dyna Computer",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+jangou,"Jangou [BET] (Japan)","1983",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,jangou.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,jangou.cpp
+jngolady,"Jangou Lady (Japan)","1984",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,jangou.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,jangou.cpp
+"janptr96","Janputer '96 (Japan)","1996",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+janptrsp,"Janputer Special (Japan)","1997",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+janshi,Janshi,"1992",Eagle,-,-,-,YES,NO,NO,NO,NO,"pinkiri8.cpp",PRELIMINARE,RASTER,"0",496,256,HORIZONTAL,"pinkiri8.cpp"
+janshin,"Janshin Densetsu - Quest of Jongmaster","1994",Aicom,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+jansou,"Jansou (set 1)","1985","Dyna Computer",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+jansoua,"Jansou (V 1.1)","1985","Dyna Computer",jansou,jansou,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"janyoup2","Janyou Part II (ver 7.03, July 1 1983)","1983","Cosmo Denshi",royalmj,royalmj,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+cultures,"Jibun wo Migaku Culture School Mahjong Hen","1994",Face,-,-,-,YES,NO,NO,NO,NO,cultures.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,cultures.cpp
+jituroku,"Jitsuroku Maru-chi Mahjong (Japan)","1993",Windom,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+jongshin,"Jong Shin (Japan)","1986","Dyna Electronics",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+jantouki,"Jong Tou Ki (Japan)","1990",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"0",512,240,HORIZONTAL,dynax.cpp
+janyuki,"Jong Yu Ki (Japan)","1988",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"0",512,240,HORIZONTAL,dynax.cpp
+jongkyo,Jongkyo,"1985",Kiwako,-,-,-,YES,NO,NO,NO,NO,jongkyo.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,jongkyo.cpp
+jongpute,Jongputer,"1981","Alpha Denshi Co.",-,-,-,YES,NO,NO,NO,NO,"route16.cpp",PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,"route16.cpp"
+jsk,"Joryuu Syougi Kyoushitsu (Japan)","1997",Visco,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ssv.cpp
+junai,"Junai - Manatsu no First Kiss (Japan)","1998",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+"junai2","Junai 2 - White Love Story (Japan)","1998",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+jyangoku,"Jyangokushi: Haoh no Saihai (Japan 990527)","1999",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps2.cpp"
+kanatuen,"Kanatsuen no Onna [BET] (Japan 880905)","1988",Panac,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+gostop,"Kankoku Hanafuda Go-Stop","2001",Visco,-,-,-,YES,NO,NO,NO,NO,"simple_st0016.cpp",BUONO,RASTER,"0",384,384,HORIZONTAL,"simple_st0016.cpp"
+mayumi,"Kiki-Ippatsu Mayumi-chan","1988","Victory L.L.C.",-,-,-,YES,NO,NO,NO,NO,chinsan.cpp,BUONO,RASTER,"0",464,224,HORIZONTAL,chinsan.cpp
+kisekaeh,"Kisekae Hanafuda","1995",I'Max,macsbios,-,-,YES,NO,NO,NO,NO,macs.cpp,PRELIMINARE,RASTER,"0",1024,1024,HORIZONTAL,macs.cpp
+kisekaem,"Kisekae Mahjong","1995",I'Max,macsbios,-,-,YES,NO,NO,NO,NO,macs.cpp,PRELIMINARE,RASTER,"0",1024,1024,HORIZONTAL,macs.cpp
+kotbinyo,"Kkot Bi Nyo (Korea)","1997","Dynax / Shinwhajin",hanakanz,hanakanz,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",335,240,HORIZONTAL,ddenlovr.cpp
+kotbinsp,"Kkot Bi Nyo Special (Korea)","1997","Dynax / Shinwhajin",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",335,240,HORIZONTAL,ddenlovr.cpp
+klondkp,"KlonDike+","1999",Eolith,-,-,-,YES,NO,NO,NO,NO,"eolith16.cpp",BUONO,RASTER,"0",320,200,HORIZONTAL,"eolith16.cpp"
+koikoi,"Koi Koi Part 2","1982",Kiwako,-,-,-,YES,NO,NO,NO,NO,koikoi.cpp,PRELIMINARE,RASTER,"270",256,256,VERTICAL,koikoi.cpp
+koikois,"Koi Koi Shimasho","1995",Visco,-,-,-,YES,NO,NO,NO,NO,"simple_st0016.cpp",INCOMPLETO,RASTER,"0",384,384,HORIZONTAL,"simple_st0016.cpp"
+"koikois2","Koi Koi Shimasho 2 - Super Real Hanafuda (Japan)","1997",Visco,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ssv.cpp
+konhaji,"Konnano Hajimete! (Japan)","2001","Nichibutsu/Love Factory",nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+klxyj,"Kuai Le Xi You Ji","200?",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+kyuhito,"Kyukyoku no Hito [BET] (Japan 880824)","1988","Roller Tron",kanatuen,kanatuen,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+kothello,"Kyuukyoku no Othello","1990",Success,-,-,-,YES,NO,NO,NO,NO,shanghai.cpp,INCOMPLETO,RASTER,"0",384,280,HORIZONTAL,shanghai.cpp
+ladymakr,"Lady Maker [BET] (Japan)","1991",Nichibutsu,mjlstory,mjlstory,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+shabdama,"LD Mahjong #4 Shabon-Dama (Japan)","1991",Nichibutsu,-,-,-,YES,NO,NO,NO,YES,nichild.cpp,PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,nichild.cpp
+livegal,"Live Gal [BET] (Japan 870530)","1987","Central Denshi",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,LCD,"180",480,64,HORIZONTAL,"nbmj8688.cpp"
+"lhbv33c","Long Hu Bang (China, V033C)","1995",IGS,lhb,lhb,-,YES,NO,NO,NO,NO,"igs011.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+lhb,"Long Hu Bang (China, V035C)","1995",IGS,-,-,-,YES,NO,NO,NO,NO,"igs011.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+"lhb2","Long Hu Bang II (Hong Kong, V185H)","1996",IGS,-,-,-,YES,NO,NO,NO,NO,"igs011.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+"lhzb3","Long Hu Zheng Ba 3","200?",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+"lhzb4","Long Hu Zheng Ba 4","200?",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+"janjans1","Lovely Pop Mahjong JangJang Shimasho (Japan)","1996",Visco,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ssv.cpp
+"janjans2","Lovely Pop Mahjong JangJang Shimasho 2 (Japan)","2000",Visco,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ssv.cpp
+magspeed,"Magical Speed","1994",Allumer,-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,seta.cpp
+"4psimasy","Mahjong 4P Simasyo (Japan)","1994","Sphinx / AV Japan",-,-,-,YES,NO,NO,NO,NO,niyanpai.cpp,BUONO,RASTER,"0",640,240,HORIZONTAL,niyanpai.cpp
+akiss,"Mahjong Angel Kiss (ver 1.0)","1995",Jaleco,-,-,-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+mjangels,"Mahjong Angels - Comic Theater Vol.2 (Japan)","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",336,239,HORIZONTAL,dynax.cpp
+bakuhatu,"Mahjong Bakuhatsu Junjouden (Japan)","1991",Nichibutsu,mjgottsu,mjgottsu,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+bananadr,"Mahjong Banana Dream [BET] (Japan 891124)","1989","Digital Soft",-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+cafebrk,"Mahjong Cafe Break","1999","Nakanihon / Dynax",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+cafedoll,"Mahjong Cafe Doll (Japan)","1993",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+cafepara,"Mahjong Cafe Paradise","1999",Techno-Top,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+cafetime,"Mahjong Cafe Time","1992",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+mjcamera,"Mahjong Camera Kozou (set 1) (Japan 881109)","1988","Miki Syouji",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+mjcamerb,"Mahjong Camera Kozou (set 2) (Japan 881109)","1989","Miki Syouji",-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8891.cpp"
+mmcamera,"Mahjong Camera Kozou [BET] (Japan 890509)","1989","Miki Syouji",mjcamerb,mjcamerb,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8891.cpp"
+mcnpshnt,"Mahjong Campus Hunting (Japan)","1990",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+mjzoomin,"Mahjong Channel Zoom In (Japan)","1990",Jaleco,-,-,-,YES,NO,NO,NO,NO,jalmah.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,jalmah.cpp
+chinmoku,"Mahjong Chinmoku no Hentai (Japan 900511)","1990",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mjchuuka,"Mahjong Chuukanejyo [BET] (China)","1998",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+cmehyou,"Mahjong Circuit no Mehyou (Japan)","1992","Nichibutsu / Kawakusu",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mjclinic,"Mahjong Clinic (Japan, set 1)","1988","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+mjclinica,"Mahjong Clinic (Japan, set 2)","1988","Home Data",mjclinic,mjclinic,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+mjclub,"Mahjong Club [BET] (Japan)","1986?",Xex,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"club90s","Mahjong CLUB 90's (set 1) (Japan 900919)","1990",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+"club90sa","Mahjong CLUB 90's (set 2) (Japan 900919)","1990",Nichibutsu,"club90s","club90s",-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+"mjcomv1","Mahjong Comic Gekijou Vol.1 (Japan)","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",336,239,HORIZONTAL,dynax.cpp
+dtoyoken,"Mahjong Dai Touyouken [BET] (Japan)","1996","Dynax / Sigma",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,239,HORIZONTAL,ddenlovr.cpp
+daimyojn,"Mahjong Daimyojin [BET] (Japan, T017-PB-00)","2002","Dynax / Techno-Top / Techno-Planning",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",335,240,HORIZONTAL,ddenlovr.cpp
+daireika,"Mahjong Daireikai (Japan)","1989","Jaleco / NMK",-,-,-,YES,NO,NO,NO,NO,jalmah.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,jalmah.cpp
+daiyogen,"Mahjong Daiyogen (Japan)","1990","Video System Co.",-,-,-,YES,NO,NO,NO,NO,fromance.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,fromance.cpp
+mjderngr,"Mahjong Derringer (Japan)","1989",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"mjdialq2a","Mahjong Dial Q2 (Japan, alt.)","1991",Dynax,"mjdialq2","mjdialq2",-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",256,240,HORIZONTAL,dynax.cpp
+"mjdialq2","Mahjong Dial Q2 (Japan)","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",256,240,HORIZONTAL,dynax.cpp
+mjdiplob,"Mahjong Diplomat [BET] (Japan)","1987",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+dokyusei,"Mahjong Doukyuusei","1995","Make Software / Elf / Media Trading",-,-,-,YES,NO,NO,NO,NO,metro.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,metro.cpp
+dokyusp,"Mahjong Doukyuusei Special","1995","Make Software / Elf / Media Trading",-,-,-,YES,NO,NO,NO,NO,metro.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,metro.cpp
+dunhuang,"Mahjong Dunhuang","1995",Spirit,-,-,-,YES,NO,NO,NO,NO,dunhuang.cpp,BUONO,RASTER,"0",496,224,HORIZONTAL,dunhuang.cpp
+mjembase,"Mahjong Electromagnetic Base","1989",Dynax,mjelctrn,mjelctrn,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+"mjelct3a","Mahjong Electron Base (parts 2 & 3, alt., Japan)","1990",Dynax,mjelctrn,mjelctrn,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+"mjelct3","Mahjong Electron Base (parts 2 & 3, Japan)","1990",Dynax,mjelctrn,mjelctrn,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+mjelctrb,"Mahjong Electron Base (parts 2 & 4, Japan, bootleg)","1993",bootleg,mjelctrn,mjelctrn,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+mjelctrn,"Mahjong Electron Base (parts 2 & 4, Japan)","1993",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+mjegolf,"Mahjong Erotica Golf (Japan)","1994","Fujic / AV Japan",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mjflove,"Mahjong Fantasic Love (Japan)","1996",Nakanihon,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+mfightcc,"Mahjong Fight Club (ver JAC)","2002",Konami,mfightc,mfightc,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+mfightc,"Mahjong Fight Club (ver JAD)","2002",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+finalbny,"Mahjong Final Bunny [BET] (Japan)","1991",Nichibutsu,vanilla,vanilla,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+mjfocus,"Mahjong Focus (Japan 890313)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mjfocusm,"Mahjong Focus [BET] (Japan 890510)","1989",Nichibutsu,mjfocus,mjfocus,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8891.cpp"
+mjfriday,"Mahjong Friday (Japan)","1989",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",256,240,HORIZONTAL,dynax.cpp
+mfunclub,"Mahjong Fun Club - Idol Saizensen (Japan)","1989","Video System Co.",-,-,-,YES,NO,NO,NO,NO,fromance.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,fromance.cpp
+"mgmen89","Mahjong G-MEN'89 (Japan 890425)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mjgtaste,"Mahjong G-Taste","2002",Psikyo,-,-,-,YES,NO,NO,NO,NO,psikyosh.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,psikyosh.cpp
+mjgaiden,"Mahjong Gaiden [BET] (Japan 870803)","1987","Central Denshi",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+mgakuen,"Mahjong Gakuen","1988",Yuga,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+"mgakuen2","Mahjong Gakuen 2 Gakuen-chou no Fukushuu","1989",Face,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+gakusai,"Mahjong Gakuensai (Japan)","1997",MakeSoft,-,-,-,YES,NO,NO,NO,NO,metro.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,metro.cpp
+"gakusai2","Mahjong Gakuensai 2 (Japan)","1998",MakeSoft,-,-,-,YES,NO,NO,NO,NO,metro.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,metro.cpp
+"gal10ren","Mahjong Gal 10-renpatsu (Japan)","1993",Fujic,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+galkaika,"Mahjong Gal no Kaika (Japan)","1989","Nichibutsu / T.R.Tec",-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+galkoku,"Mahjong Gal no Kokuhaku (Japan)","1989","Nichibutsu / T.R.Tec",-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+mjgalpri,"Mahjong Gal-pri - World Gal-con Grandprix (Japan)","1998",Nichibutsu/Just&Just,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+gekisha,"Mahjong Gekisha","1989",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",254,240,HORIZONTAL,dynax.cpp
+mjgnight,"Mahjong Gorgeous Night [BET] (Japan, TSM003-01)","2000",Techno-Top,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+mjgottsu,"Mahjong Gottsu ee-kanji (Japan)","1991",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+hanamomb,"Mahjong Hana no Momoko gumi (Japan 881125)","1988",Nichibutsu,hanamomo,hanamomo,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8891.cpp"
+hanamomo,"Mahjong Hana no Momoko gumi (Japan 881201)","1988",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8891.cpp"
+"csplayh5","Mahjong Hanafuda Cosplay Tengoku 5 (Japan)","1998",Nichibutsu,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+"csplayh6","Mahjong Hanafuda Cosplay Tengoku 6 - Junai-hen (Japan)","1999",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+hotgmcki,"Mahjong Hot Gimmick Integral (Japan)","2001",Psikyo,-,-,-,YES,NO,NO,NO,NO,"psikyo4.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"psikyo4.cpp"
+mhgaiden,"Mahjong Hourouki Gaiden (Japan)","1987","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+mjhokite,"Mahjong Hourouki Okite (Japan)","1988","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+hourouki,"Mahjong Hourouki Part 1 - Seisyun Hen (Japan)","1987","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,INCOMPLETO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+mhhonban,"Mahjong Housoukyoku Honbanchuu (Japan)","1994",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,niyanpai.cpp,BUONO,RASTER,"0",640,240,HORIZONTAL,niyanpai.cpp
+hyouban,"Mahjong Hyouban Musume [BET] (Japan)","1989","Nichibutsu / T.R.Tec",galkoku,galkoku,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+hypreact,"Mahjong Hyper Reaction (Japan)","1995",Sammy,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",338,240,HORIZONTAL,ssv.cpp
+"hypreac2","Mahjong Hyper Reaction 2 (Japan)","1997",Sammy,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",338,240,HORIZONTAL,ssv.cpp
+mjifb,"Mahjong If...? [BET]","1990",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"mjifb2","Mahjong If...? [BET](2921)","1990",Dynax,mjifb,mjifb,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"mjifb3","Mahjong If...? [BET](2931)","1990",Dynax,mjifb,mjifb,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+mjikaga,"Mahjong Ikaga Desu ka (Japan)","1991?",Mitchell,-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+janbari,"Mahjong Janjan Baribari (Japan)","1992","Nichibutsu / Yubis / AV Japan",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+janshinp,"Mahjong Janshin Plus [BET] (Japan)","1996","Dynax / Sigma",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,239,HORIZONTAL,ddenlovr.cpp
+mjlstory,"Mahjong Jikken Love Story (Japan)","1991",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+jogakuen,"Mahjong Jogakuen (Japan)","1992?",Windom,-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+jongtei,"Mahjong Jong-Tei [BET] (Japan, NM532-01)","1999",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+mjjoship,"Mahjong Joshi Pro-wres -Give up 5 byou mae- (Japan)","1988","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+kaguya,"Mahjong Kaguyahime [BET] (Japan 880521)","1988","Miki Syouji",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+"kaguya2","Mahjong Kaguyahime Sono2 [BET] (Japan 890829)","1989","Miki Syouji",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+"kaguya2f","Mahjong Kaguyahime Sono2 Fukkokuban [BET] (Japan 010808)","2001","Miki Syouji","kaguya2","kaguya2",-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+kakumei,"Mahjong Kakumei (Japan)","1990",Jaleco,-,-,-,YES,NO,NO,NO,NO,jalmah.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,jalmah.cpp
+"kakumei2","Mahjong Kakumei 2 - Princess League (Japan)","1992",Jaleco,-,-,-,YES,NO,NO,NO,NO,jalmah.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,jalmah.cpp
+mkeibaou,"Mahjong Keibaou (Japan)","1993",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mjkinjas,"Mahjong Kinjirareta Asobi (Japan)","1991","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+koinomp,"Mahjong Koi no Magic Potion (Japan)","1992",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mjkoiura,"Mahjong Koi Uranai (Japan set 1)","1992",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mkoiuraa,"Mahjong Koi Uranai (Japan set 2)","1992",Nichibutsu,mjkoiura,mjkoiura,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mjkojink,"Mahjong Kojinkyouju (Private Teacher) (Japan)","1989","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+mahretsu,"Mahjong Kyo Retsuden (NGM-004 ~ NGH-004)","1990",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+mjkjidai,"Mahjong Kyou Jidai (Japan)","1986",Sanritsu,-,-,-,YES,NO,NO,NO,NO,mjkjidai.cpp,INCOMPLETO,RASTER,"0",464,224,HORIZONTAL,mjkjidai.cpp
+mjlaman,"Mahjong La Man (Japan)","1993","Nichibutsu / AV Japan",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+lemnangl,"Mahjong Lemon Angel (Japan)","1990","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+"lhzb2","Mahjong Long Hu Zhengba 2 (set 1)","1998",IGS,-,-,-,YES,NO,NO,NO,NO,"igs017.cpp",PRELIMINARE,RASTER,"0",512,240,HORIZONTAL,"igs017.cpp"
+"lhzb2a","Mahjong Long Hu Zhengba 2 (VS221M)","1998",IGS,"lhzb2","lhzb2",-,YES,NO,NO,NO,NO,"igs017.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs017.cpp"
+lovehous,"Mahjong Love House [BET] (Japan 901024)","1990",Nichibutsu,"club90s","club90s",-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mjmaglmp,"Mahjong Magic Lamp (v. JAA02)","2000",BMC,-,-,-,YES,NO,NO,NO,NO,bmcpokr.cpp,BUONO,RASTER,"0",480,240,HORIZONTAL,bmcpokr.cpp
+mgcs,"Mahjong Man Guan Caishen (V103CS)","1998",IGS,-,-,-,YES,NO,NO,NO,NO,"igs017.cpp",PRELIMINARE,RASTER,"0",512,240,HORIZONTAL,"igs017.cpp"
+mgdha,"Mahjong Man Guan Daheng (Taiwan, V123T1)","1997",IGS,mgdh,mgdh,-,YES,NO,NO,NO,NO,"igs017.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs017.cpp"
+mgdh,"Mahjong Man Guan Daheng (Taiwan, V125T1)","1997",IGS,-,-,-,YES,NO,NO,NO,NO,"igs017.cpp",INCOMPLETO,RASTER,"0",512,240,HORIZONTAL,"igs017.cpp"
+mjmania,"Mahjong Mania - Kairakukan e Youkoso (Japan)","1999",Sphinx/Just&Just,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+mogitate,"Mahjong Mogitate (Japan)","1998","Nichibutsu/Just&Just/NVS/Astro System/AV Japan",nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+momotaro,"Mahjong Momotarou [BET] (Japan, T027-RB-01)","2004",Techno-Top,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,PRELIMINARE,RASTER,"0",335,240,HORIZONTAL,ddenlovr.cpp
+mjnanpaa,"Mahjong Nanpa Story (Japan 890712)","1989",Brooks,mjnanpas,mjnanpas,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mjnanpas,"Mahjong Nanpa Story (Japan 890713)","1989",Brooks,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mjnanpau,"Mahjong Nanpa Story (Ura) (Japan 890805)","1989",Brooks,mjnanpas,mjnanpas,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mjnatsu,"Mahjong Natsu Monogatari (Japan)","1989","Video System Co.",-,-,-,YES,NO,NO,NO,NO,fromance.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,fromance.cpp
+nkishusp,"Mahjong Nenrikishu SP (Japan, V250J)","1998","IGS / Alta","lhb2","lhb2",-,YES,NO,NO,NO,NO,"igs011.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+ntopstar,"Mahjong Nerae! Top Star (Japan)","1990",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+nerutona,"Mahjong Neruton Haikujiradan (Japan, Rev. A?)","1990","Dynax / Yukiyoshi Tokoro",neruton,neruton,-,YES,NO,NO,NO,NO,dynax.cpp,INCOMPLETO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+neruton,"Mahjong Neruton Haikujiradan (Japan, Rev. B?)","1990","Dynax / Yukiyoshi Tokoro",-,-,-,YES,NO,NO,NO,NO,dynax.cpp,INCOMPLETO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+mahjngoh,"Mahjong Oh (V2.06J 1999/11/23 08:52:22)","1999","Warashi / Mahjong Kobo / Taito","coh3002t",-,-,YES,NO,NO,NO,YES,taitogn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,taitogn.cpp
+ougonhai,"Mahjong Ougon no Hai","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,PRELIMINARE,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+ougonhaib,"Mahjong Ougon no Hai (bootleg)","1991",bootleg,ougonhai,ougonhai,-,YES,NO,NO,NO,NO,dynax.cpp,PRELIMINARE,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+patimono,"Mahjong Pachinko Monogatari (Japan)","1992",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+pstadium,"Mahjong Panic Stadium (Japan)","1990",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+ponchin,"Mahjong Pon Chin Kan (Japan set 1)","1991",Visco,-,-,-,YES,NO,NO,NO,NO,"srmp2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"srmp2.cpp"
+ponchina,"Mahjong Pon Chin Kan (Japan set 2)","1991",Visco,ponchin,ponchin,-,YES,NO,NO,NO,NO,"srmp2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"srmp2.cpp"
+mjprivat,"Mahjong Private (Japan)","1991",Matoba,-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+mjnquest,"Mahjong Quest (Japan)","1990","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+mjnquestb,"Mahjong Quest (No Nudity)","1990","Taito Corporation",mjnquest,mjnquest,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"taito_f2.cpp"
+majrjhdx,"Mahjong Raijinhai DX","1996",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,PRELIMINARE,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+mjreach,"Mahjong Reach (bootleg)","1994","bootleg / Dynax",-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+"mjreach1","Mahjong Reach Ippatsu [BET] (Japan)","1998","Nihon System",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+renaiclb,"Mahjong Ren-ai Club (Japan)","1993",Fujic,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mrokumei,"Mahjong Rokumeikan (Japan)","1988","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,INCOMPLETO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+ryukobou,"Mahjong Ryukobou (Japan, V030J)","1995","IGS / Alta",lhb,lhb,-,YES,NO,NO,NO,NO,"igs011.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+sailorws,"Mahjong Sailor Wars (Japan set 1)","1993",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+sailorwa,"Mahjong Sailor Wars (Japan set 2)","1993",Nichibutsu,sailorws,sailorws,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+sailorwr,"Mahjong Sailor Wars-R [BET] (Japan)","1993",Nichibutsu,sailorws,sailorws,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+msjiken,"Mahjong Satsujin Jiken (Japan 881017)","1988",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"270",512,224,VERTICAL,"nbmj8891.cpp"
+mscoutm,"Mahjong Scout Man (Japan)","1994","Sphinx / AV Japan",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+sryudens,"Mahjong Seiryu Densetsu [BET] (Japan, NM502)","1996","Dynax / Face",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,239,HORIZONTAL,ddenlovr.cpp
+mjsenka,"Mahjong Senka (Japan)","1986",Visco,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+mjsenpu,"Mahjong Senpu","2002","Oriental Soft",-,-,-,YES,NO,NO,NO,NO,mjsenpu.cpp,BUONO,RASTER,"0",512,240,HORIZONTAL,mjsenpu.cpp
+mjsikakb,"Mahjong Shikaku (Japan 880722)","1988",Nichibutsu,mjsikaku,mjsikaku,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+mjsikakd,"Mahjong Shikaku (Japan 880802)","1988",Nichibutsu,mjsikaku,mjsikaku,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+mjsikakc,"Mahjong Shikaku (Japan 880806)","1988",Nichibutsu,mjsikaku,mjsikaku,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+mjsikaku,"Mahjong Shikaku (Japan 880908)","1988",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+mmsikaku,"Mahjong Shikaku [BET] (Japan 880929)","1988",Nichibutsu,mjsikaku,mjsikaku,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+mjdejavu,"Mahjong Shinkirou Deja Vu (Japan)","1989",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"mjdejav2","Mahjong Shinkirou Deja Vu 2 (Japan)","1989",Dynax,mjdejavu,mjdejavu,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+mjsiyoub,"Mahjong Shiyou (Japan)","1986",Visco,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"slqz2","Mahjong Shuang Long Qiang Zhu 2 (VS203J)","1998",IGS,-,-,-,YES,NO,NO,NO,NO,"igs017.cpp",PRELIMINARE,RASTER,"0",512,240,HORIZONTAL,"igs017.cpp"
+"slqz3","Mahjong Shuang Long Qiang Zhu 3 (China, VS107C)","1999",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+mjsister,"Mahjong Sisters (Japan)","1986",Toaplan,-,-,-,YES,NO,NO,NO,NO,mjsister.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,mjsister.cpp
+"majs101b","Mahjong Studio 101 [BET] (Japan)","1988",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"sdmg2","Mahjong Super Da Man Guan II (China, V754C)","1997",IGS,-,-,-,YES,NO,NO,NO,NO,"igs017.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs017.cpp"
+mjschuka,"Mahjong Super Dai Chuuka Ken [BET] (Japan, D115)","1995",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+tenkai,"Mahjong Tenkaigen","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+tenkaibb,"Mahjong Tenkaigen (bootleg b)","1991",bootleg,tenkai,tenkai,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+tenkaicb,"Mahjong Tenkaigen (bootleg c)","1991",bootleg,tenkai,tenkai,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+tenkaie,"Mahjong Tenkaigen (set 2)","1991",Dynax,tenkai,tenkai,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+"tenkai2b","Mahjong Tenkaigen Part 2 (bootleg)","1991",bootleg,tenkai,tenkai,-,YES,NO,NO,NO,NO,dynax.cpp,PRELIMINARE,RASTER,"0",508,240,HORIZONTAL,dynax.cpp
+mjtensin,"Mahjong Tensinhai (Japan)","1995",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+mjdchuka,"Mahjong The Dai Chuuka Ken [BET] (China, D111)","1995",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+mladyhtr,"Mahjong The Lady Hunter (Japan 900509)","1990",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mjmyornt,"Mahjong The Mysterious Orient [BET] (Japan, v1.00)","1992",Dynax,"mjmyorn2","mjmyorn2",-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+"mjmyorn2","Mahjong The Mysterious Orient Part 2 ~ Exotic Dream ~ [BET] (Japan, v1.00)","1993",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+mjmyuniv,"Mahjong The Mysterious Universe [BET] (Japan, D85)","1994",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+mjmyster,"Mahjong The Mysterious World [BET] (Japan, set 1)","1994",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+mjmywrld,"Mahjong The Mysterious World [BET] (Japan, set 2)","1994",Dynax,mjmyster,mjmyster,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+tjsb,"Mahjong Tian Jiang Shen Bing (V137C)","1997",IGS,-,-,-,YES,NO,NO,NO,NO,"igs017.cpp",PRELIMINARE,RASTER,"0",512,240,HORIZONTAL,"igs017.cpp"
+"triplew1","Mahjong Triple Wars (Japan)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+"triplew2","Mahjong Triple Wars 2 (Japan)","1990",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+uchuuai,"Mahjong Uchuu yori Ai wo komete (Japan)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+mjuraden,"Mahjong Uranai Densetsu (Japan)","1992","Nichibutsu / Yubis",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+vanilla,"Mahjong Vanilla Syndrome (Japan)","1991",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+mjvegasa,"Mahjong Vegas (Japan, unprotected)","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+mjvegas,"Mahjong Vegas (Japan)","1991",Dynax,mjvegasa,mjvegasa,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+vitaminc,"Mahjong Vitamin C (Japan)","1989","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+wcatcher,"Mahjong Wakuwaku Catcher (Japan)","1993",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+"majxtal7","Mahjong X-Tal 7 - Crystal Mahjong / Mahjong Diamond 7 (Japan)","1990",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,INCOMPLETO,RASTER,"180",508,240,HORIZONTAL,dynax.cpp
+mjyarou,"Mahjong Yarou [BET] (Japan, set 1)","1986","Visco / Video System",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+"mjyarou2","Mahjong Yarou [BET] (Japan, set 2)","1986","Visco / Video System",mjyarou,mjyarou,-,YES,NO,NO,NO,NO,royalmah.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+yarunara,"Mahjong Yarunara (Japan)","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",336,239,HORIZONTAL,dynax.cpp
+yosimoto,"Mahjong Yoshimoto Gekijou (Japan)","1994","Nichibutsu / Yoshimoto Kougyou",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+yosimotm,"Mahjong Yoshimoto Gekijou [BET] (Japan)","1994","Nichibutsu / Yoshimoto Kougyou",yosimoto,yosimoto,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mjyuugi,"Mahjong Yuugi (Japan set 1)","1990",Visco,-,-,-,YES,NO,NO,NO,NO,"srmp2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"srmp2.cpp"
+mjyuugia,"Mahjong Yuugi (Japan set 2)","1990",Visco,mjyuugi,mjyuugi,-,YES,NO,NO,NO,NO,"srmp2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"srmp2.cpp"
+mjyougo,"Mahjong-yougo no Kisotairyoku (Japan)","1989","Home Data",-,-,-,YES,NO,NO,NO,NO,homedata.cpp,BUONO,RASTER,"0",432,224,HORIZONTAL,homedata.cpp
+korinai,"Mahjong-zukino Korinai Menmen (Japan 880425)","1988",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+korinaim,"Mahjong-zukino Korinai Menmen [BET] (Japan 880920)","1988",Nichibutsu,korinai,korinai,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+maiko,"Maikobana (Japan 900802)","1990",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+mmaiko,"Maikobana [BET] (Japan 900911)","1990",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+makaijan,"Makaijan [BET] (Japan)","1987",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+mgfx,"Man Guan Fu Xing","2000",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+manohman,"Mann, oh-Mann","199?",Merkur,-,-,-,YES,NO,NO,NO,NO,manohman.cpp,PRELIMINARE,-,"0",0,0,-,manohman.cpp
+mayjinsn,Mayjinsen,"1994",Seta,-,-,-,YES,NO,NO,NO,NO,"simple_st0016.cpp",PRELIMINARE,RASTER,"0",384,384,HORIZONTAL,"simple_st0016.cpp"
+"mayjisn2","Mayjinsen 2","1994",Seta,-,-,-,YES,NO,NO,NO,NO,"simple_st0016.cpp",BUONO,RASTER,"0",384,384,HORIZONTAL,"simple_st0016.cpp"
+"mayjin3","Mayjinsen 3","2000","Seta / Able Corporation","aleck64",-,-,YES,NO,NO,NO,NO,"aleck64.cpp",INCOMPLETO,RASTER,"0",640,240,HORIZONTAL,"aleck64.cpp"
+mmehyou,"Medal Mahjong Circuit no Mehyou [BET] (Japan)","1992","Nichibutsu / Kawakusu",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mjgottub,"Medal Mahjong Gottsu ee-kanji [BET] (Japan)","1991",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+mjanbari,"Medal Mahjong Janjan Baribari [BET] (Japan)","1992","Nichibutsu / Yubis / AV Japan",janbari,janbari,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+mmmbanc,"Medal Mahjong Moukari Bancho (2007/06/05 MASTER VER.)","2007","Cave (AMI license)",-,-,-,YES,NO,NO,NO,NO,"cv1k.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"cv1k.cpp"
+pachiten,"Medal Mahjong Pachi-Slot Tengoku [BET] (Japan)","1993","Nichibutsu / AV Japan / Miki Syouji",-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+meijinsn,"Meijinsen (set 1)","1986",SNK,-,-,-,YES,NO,NO,NO,NO,meijinsn.cpp,BUONO,RASTER,"0",232,224,HORIZONTAL,meijinsn.cpp
+meijinsna,"Meijinsen (set 2)","1986",SNK,meijinsn,meijinsn,-,YES,NO,NO,NO,NO,meijinsn.cpp,BUONO,RASTER,"0",232,224,HORIZONTAL,meijinsn.cpp
+menghong,"Meng Hong Lou","2004?",Sealy,-,-,-,YES,NO,NO,NO,NO,menghong.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,menghong.cpp
+minasan,"Minasan no Okagesamadesu! Dai Sugoroku Taikai (MOM-001 ~ MOH-001)","1990","Monolith Corp.",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+mirage,"Mirage Youjuu Mahjongden (Japan)","1994",Mitchell,-,-,-,YES,NO,NO,NO,NO,mirage.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,mirage.cpp
+mcontest,"Miss Mahjong Contest (Japan)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+musobana,"Musoubana (Japan)","1995","Nichibutsu / Yubis",-,-,-,YES,NO,NO,NO,NO,niyanpai.cpp,BUONO,RASTER,"0",640,240,HORIZONTAL,niyanpai.cpp
+natsuiro,"Natsuiro Mahjong (Japan)","1989","Video System Co.",mjnatsu,mjnatsu,-,YES,NO,NO,NO,NO,fromance.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,fromance.cpp
+ngpgal,"Nekketsu Grand-Prix Gal (Japan)","1991",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+nmsengen,"Nekketsu Mahjong Sengen! AFTER 5 (Japan)","1991","Video System Co.",-,-,-,YES,NO,NO,NO,NO,fromance.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,fromance.cpp
+janputer,"New Double Bet Mahjong (bootleg of Royal Mahjong) [BET]","1981","bootleg (Paradise Denshi Ltd. / Mes)",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+ngtbunny,"Night Bunny (Japan 840601 MRN 2-10)","1984",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,nightgal.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,nightgal.cpp
+nightgal,"Night Gal (Japan 840920 AG 1-00)","1984",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,nightgal.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,nightgal.cpp
+ngalsumr,"Night Gal Summer [BET] (Japan 850702 NGS 0-01)","1985",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,nightgal.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,nightgal.cpp
+nightlov,"Night Love (Japan 860705)","1986","Central Denshi",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",PRELIMINARE,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+peepshow,"Nozokimeguri Mahjong Peep Show (Japan 890404)","1989",AC,mjfocus,mjfocus,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+nuretemi,"Nurete Mitaino... - Net Idol Hen (Japan)","2000","Nichibutsu/Love Factory",nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+ojankoca,"Ojanko Club (Japan, Program Ver. 1.2)","1986","V-System Co.",ojankoc,ojankoc,-,YES,NO,NO,NO,NO,ojankohs.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,ojankohs.cpp
+ojankoc,"Ojanko Club (Japan, Program Ver. 1.3, set 1)","1986","V-System Co.",-,-,-,YES,NO,NO,NO,NO,ojankohs.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,ojankohs.cpp
+ojankocb,"Ojanko Club (Japan, Program Ver. 1.3, set 2)","1986","V-System Co.",ojankoc,ojankoc,-,YES,NO,NO,NO,NO,ojankohs.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,ojankohs.cpp
+ojankohs,"Ojanko High School (Japan)","1988","V-System Co.",-,-,-,YES,NO,NO,NO,NO,ojankohs.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,ojankohs.cpp
+ojankoy,"Ojanko Yakata (Japan)","1986","V-System Co.",-,-,-,YES,NO,NO,NO,NO,ojankohs.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,ojankohs.cpp
+"ojanko2","Ojanko Yakata 2bankan (Japan)","1987","V-System Co.",-,-,-,YES,NO,NO,NO,NO,ojankohs.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,ojankohs.cpp
+ojousan,"Ojousan (Japan 871204)","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+ojousanm,"Ojousan [BET] (Japan 870108)","1987",Nichibutsu,ojousan,ojousan,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+omotesnd,"Omotesandou (Japan 890215)","1989","Anime Tec",-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"nbmj8891.cpp"
+openmj,"Open Mahjong [BET] (Japan)","1981?","Sapporo Mechanic",royalmj,royalmj,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+orangeci,"Orange Club - Maru-hi Ippatsu Kaihou [BET] (Japan 880221)","1988","Daiichi Denshi",orangec,orangec,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+orangec,"Orange Club - Maruhi Kagai Jugyou (Japan 880213)","1988","Daiichi Denshi",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+othello,"Othello (version 3.0)","1984",Success,-,-,-,YES,NO,NO,NO,NO,othello.cpp,PRELIMINARE,RASTER,"0",384,512,HORIZONTAL,othello.cpp
+othldrby,"Othello Derby (Japan)","1995",Sunwise,-,-,-,YES,NO,NO,NO,NO,"toaplan2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"toaplan2.cpp"
+othellos,"Othello Shiyouyo (J 980423 V1.002)","1998",Success,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+urashima,"Otogizoushi Urashima Mahjong (Japan)","1989",UPL,-,-,-,YES,NO,NO,NO,NO,jalmah.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,jalmah.cpp
+otonano,"Otona no Mahjong (Japan 880628)","1988",Apple,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+pastelg,"Pastel Gal (Japan 851224)","1985",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,pastelg.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,pastelg.cpp
+"pinkiri8","Pinkiri 8","1994",Alta,-,-,-,YES,NO,NO,NO,NO,"pinkiri8.cpp",PRELIMINARE,RASTER,"0",496,256,HORIZONTAL,"pinkiri8.cpp"
+pokoachu,"PokoaPoka Onsen de CHU - Bijin 3 Shimai ni Kiotsukete! (Japan)","1999",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+kiwame,"Pro Mahjong Kiwame","1994",Athena,-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"0",448,240,HORIZONTAL,seta.cpp
+kiwames,"Pro Mahjong Kiwame S (J 951020 V1.208)","1995",Athena,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+ptrmj,"PT Reach Mahjong (Japan)","1979",Irem,-,-,ptrmj,YES,NO,NO,NO,NO,"m14.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"m14.cpp"
+qlgs,"Que Long Gao Shou","1999",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+qmhayaku,"Quiz-Mahjong Hayaku Yatteyo! (Japan)","1991",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+rmgoldyh,"Real Mahjong Gold Yumehai / Super Real Mahjong GOLD part.2 [BET] (Japan)","1988","Seta (Alba license)","srmp3","srmp3",-,YES,NO,NO,NO,NO,"srmp2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"srmp2.cpp"
+rmhaihai,"Real Mahjong Haihai (Japan, newer)","1985",Alba,-,-,-,YES,NO,NO,NO,NO,rmhaihai.cpp,BUONO,RASTER,"0",448,224,HORIZONTAL,rmhaihai.cpp
+"rmhaihai2","Real Mahjong Haihai (Japan, older)","1985",Alba,rmhaihai,rmhaihai,-,YES,NO,NO,NO,NO,rmhaihai.cpp,BUONO,RASTER,"0",448,224,HORIZONTAL,rmhaihai.cpp
+rmhaihib,"Real Mahjong Haihai [BET] (Japan)","1985",Alba,rmhaihai,rmhaihai,-,YES,NO,NO,NO,NO,rmhaihai.cpp,BUONO,RASTER,"0",448,224,HORIZONTAL,rmhaihai.cpp
+rmhaijin,"Real Mahjong Haihai Jinji Idou Hen (Japan)","1986",Alba,-,-,-,YES,NO,NO,NO,NO,rmhaihai.cpp,BUONO,RASTER,"0",448,224,HORIZONTAL,rmhaihai.cpp
+rmhaisei,"Real Mahjong Haihai Seichouhen (Japan)","1986",Visco,-,-,-,YES,NO,NO,NO,NO,rmhaihai.cpp,BUONO,RASTER,"0",448,224,HORIZONTAL,rmhaihai.cpp
+renaimj,"Renai Mahjong Idol Gakuen (Japan)","1999",Nichibutsu/eic,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+renju,"Renju Kizoku","1994",Visco,-,-,-,YES,NO,NO,NO,NO,"simple_st0016.cpp",BUONO,RASTER,"0",384,384,HORIZONTAL,"simple_st0016.cpp"
+nekkyoku,"Rettou Juudan Nekkyoku Janshi - Higashi Nippon Hen (Japan)","1988","Video System Co.",-,-,-,YES,NO,NO,NO,NO,fromance.cpp,INCOMPLETO,RASTER,"0",352,240,HORIZONTAL,fromance.cpp
+"seljan2","Return Of Sel Jan II [BET] (Japan, NM557)","1996","Dynax / Face",-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,INCOMPLETO,RASTER,"0",336,239,HORIZONTAL,ddenlovr.cpp
+ronjan,"Ron Jan","1991","Wing Co., Ltd",ronjans,ronjans,-,YES,NO,NO,NO,NO,"pinkiri8.cpp",PRELIMINARE,RASTER,"0",496,256,HORIZONTAL,"pinkiri8.cpp"
+ronjans,"Ron Jan Super","1994","Wing Co., Ltd",-,-,-,YES,NO,NO,NO,NO,"pinkiri8.cpp",PRELIMINARE,RASTER,"0",496,256,HORIZONTAL,"pinkiri8.cpp"
+"rkjanoh2","Royal King Jang Oh 2 (v4.00 1984 Jun 10th)","1984","SNK / Dyna Corp",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+royalmah,"Royal Mahjong (Falcon bootleg, v1.01)","1982",bootleg,royalmj,royalmj,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+royalmj,"Royal Mahjong (Japan, v1.13)","1981",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+royalngt,"Royal Night [BET] (Japan 840220 RN 2-00)","1984","Royal Denshi",ngtbunny,ngtbunny,-,YES,NO,NO,NO,NO,nightgal.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,nightgal.cpp
+royalqn,"Royal Queen [BET] (Japan 841010 RQ 0-07)","1984","Royal Denshi",-,-,-,YES,NO,NO,NO,NO,nightgal.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,nightgal.cpp
+ryuuha,"Ryuuha [BET] (Japan 871027)","1987","Central Denshi",iemoto,iemoto,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+kirarast,"Ryuusei Janshi Kirara Star","1996",Jaleco,-,-,-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+scandal,"Scandal Mahjong (Japan 890213)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8891.cpp"
+scandalm,"Scandal Mahjong [BET] (Japan 890217)","1989",Nichibutsu,scandal,scandal,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8891.cpp"
+secolove,"Second Love (Japan 861201)","1986",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+"mj2c","Sega Network Taisen Mahjong MJ 2 (Rev C) (GDX-0006C)","2004",Sega,"mj2","mj2",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj2f","Sega Network Taisen Mahjong MJ 2 (Rev F) (GDX-0006F)","2005",Sega,"mj2","mj2",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj2","Sega Network Taisen Mahjong MJ 2 (Rev G) (GDX-0006G)","2005",Sega,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj3c","Sega Network Taisen Mahjong MJ 3 (Rev C) (GDX-0017C)","2005",Sega,"mj3","mj3",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj3d","Sega Network Taisen Mahjong MJ 3 (Rev D) (GDX-0017D)","2006",Sega,"mj3","mj3",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj3","Sega Network Taisen Mahjong MJ 3 (Rev F) (GDX-0017F)","2006",Sega,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj3evoa","Sega Network Taisen Mahjong MJ 3 Evolution (Rev A) (GDX-0021A)","2007",Sega,"mj3evo","mj3evo",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj3evo","Sega Network Taisen Mahjong MJ 3 Evolution (Rev B) (GDX-0021B)","2007",Sega,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj3evoup","Sega Network Taisen Mahjong MJ 3 Evolution Firmware Update (GDX-0023)","2006",Sega,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"mj1","Sega Yonin Uchi Mahjong MJ (Update Disc Ver.1.008, Japan) (CDP-10002B)","2002",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+seiha,"Seiha (Japan 870725)","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+seiham,"Seiha [BET] (Japan 870723)","1987",Nichibutsu,seiha,seiha,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+seljan,"Sel-Jan [BET] (Japan)","1983","Jem / Dyna Corp",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+sengokmj,"Sengoku Mahjong [BET] (Japan)","1991",Sigma,-,-,-,YES,NO,NO,NO,NO,sengokmj.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,sengokmj.cpp
+sengomjk,"Sengoku Mahjong Kurenai Otome-tai (Japan)","1998",Nichibutsu/Just&Just,nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+sexygal,"Sexy Gal (Japan 850501 SXG 1-00)","1985",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,nightgal.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,nightgal.cpp
+sgaltrop,"Sexy Gal Tropical [BET] (Japan 850805 SXG T-02)","1985",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,nightgal.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,nightgal.cpp
+rbspm,"Shizhan Ding Huang Maque (Version 4.1)","1998",GMS,-,-,-,YES,NO,NO,NO,NO,rbmk.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,rbmk.cpp
+rbmk,"Shizhan Majiang Wang (Version 8.8)","1998",GMS,-,-,-,YES,NO,NO,NO,NO,rbmk.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,rbmk.cpp
+shougi,Shougi,"1982","Alpha Denshi Co. (Tehkan license)",-,-,-,YES,NO,NO,NO,NO,shougi.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,shougi.cpp
+moshougi,"Shougi no Tatsujin - Master of Shougi","1995","ADK / SNK",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+"shougi2","Shougi Part II","1982","Alpha Denshi Co. (Tehkan license)",-,-,-,YES,NO,NO,NO,NO,shougi.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,shougi.cpp
+ar_spot,"Spot (Arcadia, V 2.0)","1990","Arcadia Systems",ar_bios,-,-,YES,NO,NO,NO,NO,arsystems.cpp,BUONO,RASTER,"0",724,483,HORIZONTAL,arsystems.cpp
+"sjryuko1","Sukeban Jansi Ryuko (set 1, System 16A, FD1089B 317-5021)","1987","White Board",sjryuko,sjryuko,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+sjryuko,"Sukeban Jansi Ryuko (set 2, System 16B, FD1089B 317-5021)","1988","White Board",-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+"csplayh1","Super CD Dai8dan Mahjong Hanafuda Cosplay Tengoku (Japan)","1995","Sphinx/AV Japan/Astro System Japan",-,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+sddz,"Super Dou Di Zhu","200?",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+cjddzsp,"Super Dou Di Zhu Special (V122CN)","200?",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m036.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m036.cpp"
+hparadis,"Super Hana Paradise (Japan)","1994",Dynax,-,-,-,YES,NO,NO,NO,NO,ddenlovr.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ddenlovr.cpp
+marukin,"Super Marukin-Ban (Japan 901017)","1990",Yuga,-,-,-,YES,NO,NO,NO,NO,mitchell.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,mitchell.cpp
+sothello,"Super Othello","1986","Success / Fujiwara",-,-,-,YES,NO,NO,NO,NO,sothello.cpp,BUONO,RASTER,"0",543,465,HORIZONTAL,sothello.cpp
+"srmp5","Super Real Mahjong P5","1994",Seta,-,-,-,YES,NO,NO,NO,NO,"srmp5.cpp",INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,"srmp5.cpp"
+"srmp6","Super Real Mahjong P6 (Japan)","1995",Seta,-,-,-,YES,NO,NO,NO,NO,"srmp6.cpp",INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,"srmp6.cpp"
+"srmp7","Super Real Mahjong P7 (Japan)","1997",Seta,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,INCOMPLETO,RASTER,"0",336,239,HORIZONTAL,ssv.cpp
+"srmp1","Super Real Mahjong Part 1 (Japan)","1987",Seta,-,-,-,YES,NO,NO,NO,NO,"srmp2.cpp",BUONO,RASTER,"0",448,224,HORIZONTAL,"srmp2.cpp"
+"srmp2","Super Real Mahjong Part 2 (Japan)","1987",Seta,-,-,-,YES,NO,NO,NO,NO,"srmp2.cpp",BUONO,RASTER,"0",448,224,HORIZONTAL,"srmp2.cpp"
+"srmp3","Super Real Mahjong Part 3 (Japan)","1988",Seta,-,-,-,YES,NO,NO,NO,NO,"srmp2.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"srmp2.cpp"
+"srmp4o","Super Real Mahjong PIV (Japan, older set)","1993",Seta,"srmp4","srmp4",-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ssv.cpp
+"srmp4","Super Real Mahjong PIV (Japan)","1993",Seta,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,ssv.cpp
+srmvs,"Super Real Mahjong VS","1999",Seta,"aleck64",-,-,YES,NO,NO,NO,NO,"aleck64.cpp",INCOMPLETO,RASTER,"0",640,240,HORIZONTAL,"aleck64.cpp"
+sweetgal,"Sweet Gal (Japan 850510 SWG 1-02)","1985",Nichibutsu,sexygal,sexygal,-,YES,NO,NO,NO,NO,nightgal.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,nightgal.cpp
+swinggal,"Swing Gal [BET] (Japan 871221)","1987","Digital Denshi",-,-,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+ttmahjng,"T.T Mahjong","1981","Alpha Denshi Co. (Taito license)",jongpute,jongpute,-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"0",256,256,HORIZONTAL,"route16.cpp"
+tahjong,"Tahjong Yakitori (ver. 2-1)","1985","Bally Pond / Nasco",royalmj,royalmj,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+hotgmck,"Taisen Hot Gimmick (Japan)","1997",Psikyo,-,-,-,YES,NO,NO,NO,NO,"psikyo4.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"psikyo4.cpp"
+"hotgmck3","Taisen Hot Gimmick 3 Digital Surfing (Japan)","1999",Psikyo,-,-,-,YES,NO,NO,NO,NO,"psikyo4.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"psikyo4.cpp"
+"hotgm4ev","Taisen Hot Gimmick 4 Ever (Japan)","2000",Psikyo,-,-,-,YES,NO,NO,NO,NO,"psikyo4.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"psikyo4.cpp"
+hgkairak,"Taisen Hot Gimmick Kairakuten (Japan)","1998",Psikyo,-,-,-,YES,NO,NO,NO,NO,"psikyo4.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"psikyo4.cpp"
+hotgmkmp,"Taisen Hot Gimmick Mix Party","2005",XNauts,-,-,-,YES,NO,NO,NO,YES,taitotx.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,taitotx.cpp
+"fromanc2","Taisen Idol-Mahjong Final Romance 2 (Japan, newer)","1995","Video System Co.",-,-,-,YES,NO,NO,NO,NO,"fromanc2.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"fromanc2.cpp"
+"fromanc2o","Taisen Idol-Mahjong Final Romance 2 (Japan, older)","1995","Video System Co.","fromanc2","fromanc2",-,YES,NO,NO,NO,NO,"fromanc2.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"fromanc2.cpp"
+"fromanc4","Taisen Mahjong Final Romance 4 (Japan)","1998","Video System Co.",-,-,-,YES,NO,NO,NO,NO,"fromanc2.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"fromanc2.cpp"
+fromancr,"Taisen Mahjong Final Romance R (Japan)","1995","Video System Co.",-,-,-,YES,NO,NO,NO,NO,"fromanc2.cpp",BUONO,RASTER,"0",352,240,HORIZONTAL,"fromanc2.cpp"
+tcl,"Taiwan Chess Legend","1995",Uniwang,-,-,-,YES,NO,NO,NO,NO,goldstar.cpp,PRELIMINARE,RASTER,"0",512,224,HORIZONTAL,goldstar.cpp
+taiwanmb,"Taiwan Mahjong [BET] (Japan 881208)","1988","Miki Syouji",-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8891.cpp"
+teljan,"Tel Jan","1999","Electro Design",skns,-,-,YES,NO,NO,NO,NO,suprnova.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,suprnova.cpp
+telmahjn,"Telephone Mahjong (Japan 890111)","1988",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8891.cpp",BUONO,RASTER,"270",512,240,VERTICAL,"nbmj8891.cpp"
+themj,"The Mah-jong (Japan, set 1)","1987",Visco,-,-,-,YES,NO,NO,NO,NO,rmhaihai.cpp,BUONO,RASTER,"0",448,224,HORIZONTAL,rmhaihai.cpp
+"themj2","The Mah-jong (Japan, set 2)","1987",Visco,themj,themj,-,YES,NO,NO,NO,NO,rmhaihai.cpp,BUONO,RASTER,"0",448,224,HORIZONTAL,rmhaihai.cpp
+thenanpa,"The Nanpa (Japan)","1999","Nichibutsu/Love Factory/eic",nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+tokimbsj,"Tokimeki Bishoujo [BET] (Japan)","1989",Nichibutsu,tokyogal,tokyogal,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+tmmjprd,"Tokimeki Mahjong Paradise - Dear My Love","1997","Media / Sonnet",-,-,-,YES,NO,NO,NO,NO,tmmjprd.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,tmmjprd.cpp
+tmpdoki,"Tokimeki Mahjong Paradise - Doki Doki Hen","1998","Media / Sonnet",tmmjprd,tmmjprd,-,YES,NO,NO,NO,NO,tmmjprd.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,tmmjprd.cpp
+mahmajn,"Tokoro San no MahMahjan (Japan, ROM Based)","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+"mahmajn2","Tokoro San no MahMahjan 2 (Japan, ROM Based)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+tokyogal,"Tokyo Gal Zukan (Japan)","1989",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,"nbmj8991.cpp",BUONO,RASTER,"180",640,240,HORIZONTAL,"nbmj8991.cpp"
+tonpuu,"Ton Puu Mahjong [BET] (Japan)","200?",ANES,-,-,-,YES,NO,NO,NO,NO,anes.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,anes.cpp
+tontonb,"Tonton [BET] (Japan, set 1)","1987",Dynax,-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+torarech,"Torarechattano - AV Kantoku Hen (Japan)","2000","Nichibutsu/Love Factory/M Friend",nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+totmejan,"Tottemo E Jong","1991","Seibu Kaihatsu (Tecmo license)",-,-,-,YES,NO,NO,NO,NO,goodejan.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,goodejan.cpp
+touryuu,"Touryuumon (V1.1)?","2005","Yuki Enterprise",-,-,-,YES,NO,NO,NO,NO,ghosteo.cpp,INCOMPLETO,RASTER,"0",320,256,HORIZONTAL,ghosteo.cpp
+trucocl,"Truco Clemente","1991","Miky SRL",-,-,-,YES,NO,NO,NO,NO,trucocl.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,trucocl.cpp
+truco,Truco-Tron,"198?","Playtronic SRL",-,-,-,YES,NO,NO,NO,NO,truco.cpp,BUONO,RASTER,"0",256,192,HORIZONTAL,truco.cpp
+tsuwaku,"Tsuugakuro no Yuuwaku (Japan)","2000","Nichibutsu/Love Factory/Just&Just",nichidvd,-,-,YES,NO,NO,NO,YES,"csplayh5.cpp",PRELIMINARE,RASTER,"0",543,465,HORIZONTAL,"csplayh5.cpp"
+ultramhm,"Ultra Maru-hi Mahjong (Japan)","1993",Apple,-,-,-,YES,NO,NO,NO,NO,"nbmj9195.cpp",BUONO,RASTER,"0",640,240,HORIZONTAL,"nbmj9195.cpp"
+usagiym,"Usagi - Yamashiro Mahjong Hen (Japan) (GDL-0022)","2003","Warashi / Mahjong Kobo / Taito",naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+usagi,"Usagi (V2.02J 2001/10/02 12:41:19)","2001","Warashi / Mahjong Kobo / Taito","coh3002t",-,-,YES,NO,NO,NO,YES,taitogn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,taitogn.cpp
+usagiol,"Usagi Online (v2.04J)","2005","Taito Corporation/Warashi",-,-,-,YES,NO,NO,NO,YES,taitotx.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,taitotx.cpp
+vipclub,"Vip Club - Maru-hi Ippatsu Kaihou [BET] (Japan 880310)","1988","Daiichi Denshi",orangec,orangec,-,YES,NO,NO,NO,NO,"nbmj8688.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"nbmj8688.cpp"
+vmahjong,"Virtual Mahjong (J 961214 V1.000)","1997",Micronet,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+myfairld,"Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000)","1998",Micronet,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+vscompmj,"VS Computer Mahjong","1981",Nichibutsu,jongpute,jongpute,-,YES,NO,NO,NO,NO,"route16.cpp",PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,"route16.cpp"
+ryourano,"VS Mahjong Otome Ryouran (revision 1)","1998","Electro Design",ryouran,ryouran,-,YES,NO,NO,NO,NO,suprnova.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,suprnova.cpp
+ryouran,"VS Mahjong Otome Ryouran (revision 2)","1998","Electro Design",skns,-,-,YES,NO,NO,NO,NO,suprnova.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,suprnova.cpp
+vsmjtria,"VS Mahjong Triangle","1986",Dyna,-,-,-,YES,NO,NO,NO,NO,vsmjtria.cpp,PRELIMINARE,RASTER,"0",448,224,HORIZONTAL,vsmjtria.cpp
+"bnstars1","Vs. Janshi Brandnew Stars","1997",Jaleco,-,-,-,YES,NO,NO,NO,NO,bnstars.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,bnstars.cpp
+bnstars,"Vs. Janshi Brandnew Stars (Ver 1.1, MegaSystem32 Version)","1997",Jaleco,"bnstars1","bnstars1",-,YES,NO,NO,NO,NO,"ms32.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+vsmahjng,"Vs. Mahjong (Japan)","1984","Nintendo Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+"mj4simai","Wakakusamonogatari Mahjong Yonshimai (Japan)","1996","Maboroshi Ware",-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"seta2.cpp"
+wlcc,"Wanli Changcheng (China, V638C)","1996",IGS,xymg,xymg,-,YES,NO,NO,NO,NO,"igs011.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+warahana,"Warai no Hana Tenshi (Japan)","1991",Dynax,-,-,-,YES,NO,NO,NO,NO,dynax.cpp,BUONO,RASTER,"180",336,239,HORIZONTAL,dynax.cpp
+suzume,"Watashiha Suzumechan (Japan)","1986","Dyna Electronics",-,-,-,YES,NO,NO,NO,NO,royalmah.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,royalmah.cpp
+xymg,"Xingyun Man Guan (China, V651C)","1996",IGS,-,-,-,YES,NO,NO,NO,NO,"igs011.cpp",BUONO,RASTER,"0",512,240,HORIZONTAL,"igs011.cpp"
+yujan,Yu-Jan,"1999","Yubis / T.System",macsbios,-,-,YES,NO,NO,NO,NO,macs.cpp,BUONO,RASTER,"0",1024,1024,HORIZONTAL,macs.cpp
+yuka,Yu-Ka,"1999","Yubis / T.System",macsbios,-,-,YES,NO,NO,NO,NO,macs.cpp,BUONO,RASTER,"0",1024,1024,HORIZONTAL,macs.cpp
+yumefuda,"Yumefuda [BET]","1991",Alba,-,-,-,YES,NO,NO,NO,NO,albazg.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,albazg.cpp
+zokumahj,"Zoku Mahjong Housoukyoku (Japan)","199?",Nichibutsu?,mhhonban,mhhonban,-,YES,NO,NO,NO,NO,niyanpai.cpp,BUONO,RASTER,"0",640,240,HORIZONTAL,niyanpai.cpp

@@ -1,0 +1,762 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+flagrall,"'96 Flag Rally","1996",Promat?,-,-,-,YES,NO,NO,NO,NO,"1945kiii.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"1945kiii.cpp"
+"005","005","1981",Sega,-,-,"005",YES,NO,NO,NO,NO,"segag80r.cpp",INCOMPLETO,RASTER,"270",256,224,VERTICAL,"segag80r.cpp"
+"600","600","1981",Konami,turtles,turtles,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+abscam,Abscam,"1981","GL (US Billiards license)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+actionhw,"Action Hollywood","1995",TCH,-,-,-,YES,NO,NO,NO,NO,kickgoal.cpp,INCOMPLETO,RASTER,"0",352,240,HORIZONTAL,kickgoal.cpp
+superbon,"Agent Super Bond (Super Cobra conversion)","1985","Signatron USA",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+alibaba,"Ali Baba and 40 Thieves","1982",Sega,-,-,-,YES,NO,NO,NO,NO,pacman.cpp,PRELIMINARE,RASTER,"90",288,224,VERTICAL,pacman.cpp
+alienar,"Alien Arena","1985","Duncan Brown",-,-,-,YES,NO,NO,NO,NO,williams.cpp,BUONO,RASTER,"0",292,240,HORIZONTAL,williams.cpp
+alienaru,"Alien Arena (Stargate upgrade)","1985","Duncan Brown",alienar,alienar,-,YES,NO,NO,NO,NO,williams.cpp,BUONO,RASTER,"0",292,240,HORIZONTAL,williams.cpp
+mt_asyn,"Alien Syndrome (Mega-Tech, SMS based)","1987",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+aliensynjo,"Alien Syndrome (set 1, Japan, old, System 16A, FD1089A 317-0033)","1987",Sega,aliensyn,aliensyn,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+"aliensyn2","Alien Syndrome (set 2, System 16A, FD1089A 317-0033)","1987",Sega,aliensyn,aliensyn,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+"aliensyn3","Alien Syndrome (set 3, System 16B, FD1089A 317-0033)","1987",Sega,aliensyn,aliensyn,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+aliensyn,"Alien Syndrome (set 4, System 16B, unprotected)","1987",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+"aliensyn5","Alien Syndrome (set 5, System 16A, FD1089B 317-0037)","1987",Sega,aliensyn,aliensyn,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+aliensynj,"Alien Syndrome (set 6, Japan, new, System 16B, FD1089A 317-0033)","1987",Sega,aliensyn,aliensyn,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+"aliensyn7","Alien Syndrome (set 7, System 16B, MC-8123B 317-00xx)","1987",Sega,aliensyn,aliensyn,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+aligatoruna,"Alligator Hunt (unprotected, set 2)","1994",Gaelco,aligator,aligator,-,YES,NO,NO,NO,NO,"gaelco2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"gaelco2.cpp"
+maze,"Amazing Maze","1976",Midway,-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",BUONO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+anteatergg,"Ameisenbaer (German bootleg on Galaxian hardware)","1982",bootleg,anteater,anteater,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+anteaterg,"Ameisenbaer (German)","1982","Tago Electronics (TV-Tuning license from Free Enterprise Games)",anteater,anteater,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+amidar,Amidar,"1982",Konami,-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+amidarb,"Amidar (bootleg)","1982",bootleg,amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"amidar1","Amidar (older)","1981",Konami,amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+amidaro,"Amidar (Olympia)","1982","Konami (Olympia license)",amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+amidars,"Amidar (Scramble hardware)","1982",Konami,amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+amidaru,"Amidar (Stern Electronics)","1982","Konami (Stern Electronics license)",amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+amigo,"Amigo (bootleg of Amidar, set 1)","1982",bootleg,amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"amigo2","Amigo (bootleg of Amidar, set 2)","1982",bootleg,amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,INCOMPLETO,RASTER,"90",512,224,VERTICAL,galaxian.cpp
+anteater,Anteater,"1982","Tago Electronics",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+armora,"Armor Attack","1980",Cinematronics,-,-,-,YES,NO,NO,NO,NO,cinemat.cpp,BUONO,VECTOR,"180",0,0,-,cinemat.cpp
+armorap,"Armor Attack (prototype)","1980",Cinematronics,armora,armora,-,YES,NO,NO,NO,NO,cinemat.cpp,BUONO,VECTOR,"180",0,0,-,cinemat.cpp
+armorar,"Armor Attack (Rock-Ola)","1980","Cinematronics (Rock-Ola license)",armora,armora,-,YES,NO,NO,NO,NO,cinemat.cpp,BUONO,VECTOR,"180",0,0,-,cinemat.cpp
+armorcar,"Armored Car (set 1)","1981","Stern Electronics",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"armorcar2","Armored Car (set 2)","1981","Stern Electronics",armorcar,armorcar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+atompunk,"Atomic Punk (US)","1991","Irem America (licensed from Hudson Soft)",dynablst,dynablst,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+banbam,BanBam,"1984","Sun Electronics",-,-,-,YES,NO,NO,NO,NO,markham.cpp,PRELIMINARE,RASTER,"0",240,224,HORIZONTAL,markham.cpp
+baracuda,Barracuda,"1981","hack (Coinex)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+barricad,Barricade,"1976",Ramtek,-,-,-,YES,NO,NO,NO,NO,hitme.cpp,INCOMPLETO,RASTER,"0",256,192,HORIZONTAL,hitme.cpp
+berzerkf,"Berzerk (French Speech, revision RC31)","1980","Stern Electronics",berzerk,berzerk,-,YES,NO,NO,NO,NO,berzerk.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,berzerk.cpp
+berzerkg,"Berzerk (German Speech, revision RC32)","1980","Stern Electronics",berzerk,berzerk,-,YES,NO,NO,NO,NO,berzerk.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,berzerk.cpp
+berzerkb,"Berzerk (revision RC28)","1980","Stern Electronics",berzerk,berzerk,-,YES,NO,NO,NO,NO,berzerk.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,berzerk.cpp
+berzerka,"Berzerk (revision RC31)","1980","Stern Electronics",berzerk,berzerk,-,YES,NO,NO,NO,NO,berzerk.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,berzerk.cpp
+berzerk,"Berzerk (revision RC31A)","1980","Stern Electronics",-,-,-,YES,NO,NO,NO,NO,berzerk.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,berzerk.cpp
+berzerks,"Berzerk (Spanish Speech, revision RC32)","1980","Stern Electronics (Sonic License)",berzerk,berzerk,-,YES,NO,NO,NO,NO,berzerk.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,berzerk.cpp
+bbonk,"Bigfoot Bonkers","1976","Meadows Games, Inc.",-,-,-,YES,NO,NO,NO,NO,lazercmd.cpp,BUONO,RASTER,"0",256,230,HORIZONTAL,lazercmd.cpp
+blasto,Blasto,"1978",Gremlin,-,-,blockade,YES,NO,NO,NO,NO,blockade.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,blockade.cpp
+blockade,Blockade,"1976",Gremlin,-,-,blockade,YES,NO,NO,NO,NO,blockade.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,blockade.cpp
+blueprntj,"Blue Print (Jaleco)","1982","Zilec Electronics / Jaleco",blueprnt,blueprnt,-,YES,NO,NO,NO,NO,blueprnt.cpp,BUONO,RASTER,"270",256,224,VERTICAL,blueprnt.cpp
+blueprnt,"Blue Print (Midway)","1982","Zilec Electronics / Bally Midway",-,-,-,YES,NO,NO,NO,NO,blueprnt.cpp,BUONO,RASTER,"270",256,224,VERTICAL,blueprnt.cpp
+bballoon,"BnB Arcade","2003",Eolith,-,-,-,YES,NO,NO,NO,NO,ghosteo.cpp,INCOMPLETO,RASTER,"0",320,256,HORIZONTAL,ghosteo.cpp
+bomblord,"Bomber Lord (bootleg)","1992",bootleg,bbmanw,bbmanw,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+bombrman,"Bomber Man (Japan)","1991","Irem (licensed from Hudson Soft)",dynablst,dynablst,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+bbmanwja,"Bomber Man World (Japan, revised sound hardware)","1992",Irem,bbmanw,bbmanw,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+bbmanwj,"Bomber Man World (Japan)","1992",Irem,bbmanw,bbmanw,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+bbmanw,"Bomber Man World / New Dyna Blaster - Global Quest","1992",Irem,-,-,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+boobhack,"Booby Kids (Italian manufactured graphic hack / bootleg of Kid no Hore Hore Daisakusen (bootleg))","1987",bootleg,horekid,horekid,-,YES,NO,NO,NO,NO,terracre.cpp,BUONO,RASTER,"270",256,224,VERTICAL,terracre.cpp
+borenchj,"Borench (Japan)","1990",Sega,borench,borench,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+borench,"Borench (set 1)","1990",Sega,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+borencha,"Borench (set 2)","1990",Sega,borench,borench,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+"botanic2","Botanic (English / Spanish, Bagman conversion)","1983",Itisa,botanic,botanic,-,YES,NO,NO,NO,NO,bagman.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,bagman.cpp
+botanic,"Botanic (English / Spanish)","1983",Itisa,-,-,-,YES,NO,NO,NO,NO,bagman.cpp,BUONO,RASTER,"90",256,224,VERTICAL,bagman.cpp
+botanicf,"Botanic (French)","1984","Itisa (Valadon Automation license)",botanic,botanic,-,YES,NO,NO,NO,NO,bagman.cpp,BUONO,RASTER,"270",256,224,VERTICAL,bagman.cpp
+cbdash,"Boulder Dash (DECO Cassette) (US)","1985","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+mf_bdash,"Boulder Dash (Max-A-Flex)","1984","Exidy / First Star Software",maxaflex,-,-,YES,NO,NO,NO,NO,maxaflex.cpp,BUONO,RASTER,"0",336,225,HORIZONTAL,maxaflex.cpp
+bouldashj,"Boulder Dash / Boulder Dash Part 2 (Japan)","1990","Data East Corporation (licensed from First Star)",bouldash,bouldash,-,YES,NO,NO,NO,NO,"dec0.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"dec0.cpp"
+bouldash,"Boulder Dash / Boulder Dash Part 2 (World)","1990","Data East Corporation (licensed from First Star)",-,-,-,YES,NO,NO,NO,NO,"dec0.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"dec0.cpp"
+boxyboya,"Boxy Boy (SB?)","1990",Namco,boxyboy,boxyboy,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos1.cpp"
+boxyboy,"Boxy Boy (World, SB2)","1990",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos1.cpp"
+breywood,"Breywood (Japan revision 2)","1986","Data East Corporation",shackled,shackled,-,YES,NO,NO,NO,NO,"dec8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"dec8.cpp"
+brickyrd,Brickyard,"1976",Ramtek,barricad,barricad,-,YES,NO,NO,NO,NO,hitme.cpp,INCOMPLETO,RASTER,"0",256,192,HORIZONTAL,hitme.cpp
+brix,Brix,"1982","Cinematronics / Advanced Microcomputer Systems",zzyzzyxx,zzyzzyxx,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+brixian,Brixian,"1993","Cheil Computer System",-,-,-,YES,NO,NO,NO,NO,arkanoid.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,arkanoid.cpp
+bubbles,Bubbles,"1982",Williams,-,-,-,YES,NO,NO,NO,NO,williams.cpp,BUONO,RASTER,"0",292,240,HORIZONTAL,williams.cpp
+bubblesp,"Bubbles (prototype version)","1982",Williams,bubbles,bubbles,-,YES,NO,NO,NO,NO,williams.cpp,BUONO,RASTER,"0",292,240,HORIZONTAL,williams.cpp
+bubblesr,"Bubbles (Solid Red label)","1982",Williams,bubbles,bubbles,-,YES,NO,NO,NO,NO,williams.cpp,BUONO,RASTER,"0",292,240,HORIZONTAL,williams.cpp
+bucaner,"Buccaneer (set 1)","1981","hack (Video Research)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+burglarx,"Burglar X","1997",Unico,-,-,-,YES,NO,NO,NO,NO,unico.cpp,BUONO,RASTER,"0",384,224,HORIZONTAL,unico.cpp
+calipso,Calipso,"1982","Tago Electronics",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+calorie,"Calorie Kun vs Moguranian","1986",Sega,-,-,-,YES,NO,NO,NO,NO,calorie.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,calorie.cpp
+calorieb,"Calorie Kun vs Moguranian (bootleg)","1986",bootleg,calorie,calorie,-,YES,NO,NO,NO,NO,calorie.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,calorie.cpp
+"car2","Car 2 (bootleg of Head On 2)","1979","bootleg (RZ Bologna)","headon2","headon2",-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+catapult,Catapult,"1982","Epos Corporation",-,-,-,YES,NO,NO,NO,NO,epos.cpp,PRELIMINARE,RASTER,"270",272,236,VERTICAL,epos.cpp
+ctrpllrp,"Caterpillar Pacman Hack","1982",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+cavelon,Cavelon,"1983",Jetsoft,-,-,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+changes,Changes,"1982",Orca,-,-,-,YES,NO,NO,NO,NO,marineb.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,marineb.cpp
+changesa,"Changes (EME license)","1982","Orca (Eastern Micro Electronics, Inc. license)",changes,changes,-,YES,NO,NO,NO,NO,marineb.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,marineb.cpp
+checkmat,Checkmate,"1977","Dave Nutting Associates / Midway",-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",INCOMPLETO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+cheesech,"Cheese Chase","1994","Art & Magic",-,-,-,YES,NO,NO,NO,NO,artmagic.cpp,BUONO,RASTER,"0",320,256,HORIZONTAL,artmagic.cpp
+"ladybugb2","Coccinelle (bootleg of Lady Bug, set 2)","1981","bootleg (Model Racing)",ladybug,ladybug,-,YES,NO,NO,NO,NO,ladybug.cpp,BUONO,RASTER,"270",240,192,VERTICAL,ladybug.cpp
+cocoloco,"Coco Loco (set 1)","1981","Petaco S.A.",-,-,-,YES,NO,NO,NO,NO,cocoloco.cpp,BUONO,RASTER,"90",256,256,VERTICAL,cocoloco.cpp
+cocolocoa,"Coco Loco (set 2)","1981","Recel S.A.",cocoloco,cocoloco,-,YES,NO,NO,NO,NO,cocoloco.cpp,BUONO,RASTER,"90",256,256,VERTICAL,cocoloco.cpp
+cocolocob,"Coco Loco (set 3)","1981","Petaco S.A.",cocoloco,cocoloco,-,YES,NO,NO,NO,NO,cocoloco.cpp,BUONO,RASTER,"90",256,256,VERTICAL,cocoloco.cpp
+pacmanpe,"Come Come (Petaco SA bootleg of Puck Man)","1980","bootleg (Petaco SA)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmanbhe,"Come-Cocos (Ms. Pac-Man) ('Made in Greece' Herle SA bootleg)","1991","bootleg (Herle SA)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmanbcc,"Come-Cocos (Ms. Pac-Man) ('Made in Greece' Tecnausa bootleg)","1991","bootleg (Tecnausa)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmanblt,"Come-Cocos (Ms. Pac-Man) ('Made in Greece' Triunvi bootleg, set 1)","1992","bootleg (Triunvi)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"mspacmanblt2","Come-Cocos (Ms. Pac-Man) ('Made in Greece' Triunvi bootleg, set 2)","1992","bootleg (Triunvi)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmanbco,"Come-Cocos (Ms. Pac-Man) (Cocamatic bootleg)","1992","bootleg (Cocamatic)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,INCOMPLETO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+comotion,CoMOTION,"1976",Gremlin,-,-,blockade,YES,NO,NO,NO,NO,blockade.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,blockade.cpp
+countrunb,"Counter Run (bootleg set 1)","1988",bootleg,countrun,countrun,-,YES,NO,NO,NO,NO,freekick.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,freekick.cpp
+"countrunb2","Counter Run (bootleg set 2)","1988",bootleg,countrun,countrun,-,YES,NO,NO,NO,NO,freekick.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,freekick.cpp
+countrun,"Counter Run (NS6201-A 1988.3)","1988","Nihon System (Sega license)",-,-,-,YES,NO,NO,NO,NO,freekick.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,freekick.cpp
+crkdownj,"Crack Down (Japan, Floppy Based, FD1094 317-0058-04b Rev A)","1989",Sega,crkdown,crkdown,-,YES,NO,NO,NO,NO,"segas24.cpp",INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+mt_crack,"Crack Down (Mega-Tech)","1990",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+crkdownu,"Crack Down (US, Floppy Based, FD1094 317-0058-04d)","1989",Sega,crkdown,crkdown,-,YES,NO,NO,NO,NO,"segas24.cpp",INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+crkdown,"Crack Down (World, Floppy Based, FD1094 317-0058-04c)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+crash,Crash,"1979",Exidy,-,-,crash,YES,NO,NO,NO,NO,circus.cpp,INCOMPLETO,RASTER,"0",248,256,HORIZONTAL,circus.cpp
+crasha,"Crash (alt)","1979",Exidy,crash,crash,crash,YES,NO,NO,NO,NO,circus.cpp,INCOMPLETO,RASTER,"0",248,256,HORIZONTAL,circus.cpp
+hocrash,"Crash (bootleg of Head On)","1979","bootleg (Fraber)",headon,headon,-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+crashrd,"Crash Road (bootleg of Space Chaser)","1979","bootleg (Centromatic)",schaser,schaser,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+crbaloon,"Crazy Balloon (set 1)","1980","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,crbaloon.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,crbaloon.cpp
+"crbaloon2","Crazy Balloon (set 2)","1980","Taito Corporation",crbaloon,crbaloon,-,YES,NO,NO,NO,NO,crbaloon.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,crbaloon.cpp
+crazywar,"Crazy War","2002",Eolith,-,-,-,YES,NO,NO,NO,NO,vegaeo.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vegaeo.cpp
+crockman,Crock-Man,"1980","bootleg (Rene Pierre)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+crockmnf,"Crock-Man (Marti Colls bootleg of Rene Pierre Crock-Man)","1980","bootleg (Marti Colls)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+crushbl,"Crush Roller (bootleg set 1)","1981",bootleg,crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"crushbl2","Crush Roller (bootleg set 2)","1981",bootleg,crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"crushbl3","Crush Roller (bootleg set 3)","1981",bootleg,crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+crushs,"Crush Roller (bootleg set 4)","1981","bootleg (Sidam)",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+crushrlf,"Crush Roller (Famare SA PCB)","1981",bootleg,crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+crush,"Crush Roller (set 1)","1981","Alpha Denshi Co. / Kural Samno Electric, Ltd.",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"crush2","Crush Roller (set 2)","1981","Alpha Denshi Co. / Kural Esco Electric, Ltd.",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"crush3","Crush Roller (set 3)","1981","Alpha Denshi Co. / Kural Electric, Ltd.",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"crush4","Crush Roller (set 4)","1981","Alpha Denshi Co. / Kural Electric, Ltd.",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"crush5","Crush Roller (set 5)","1981","Alpha Denshi Co. / Kural TWT",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+ccastlesj,"Crystal Castles (joystick version)","1983",Atari,ccastles,ccastles,-,YES,NO,NO,NO,NO,ccastles.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,ccastles.cpp
+"ccastles1","Crystal Castles (version 1)","1983",Atari,ccastles,ccastles,-,YES,NO,NO,NO,NO,ccastles.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,ccastles.cpp
+"ccastles2","Crystal Castles (version 2)","1983",Atari,ccastles,ccastles,-,YES,NO,NO,NO,NO,ccastles.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,ccastles.cpp
+ccastlesf,"Crystal Castles (version 3, French)","1983",Atari,ccastles,ccastles,-,YES,NO,NO,NO,NO,ccastles.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,ccastles.cpp
+ccastlesg,"Crystal Castles (version 3, German)","1983",Atari,ccastles,ccastles,-,YES,NO,NO,NO,NO,ccastles.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,ccastles.cpp
+ccastlesp,"Crystal Castles (version 3, Spanish)","1983",Atari,ccastles,ccastles,-,YES,NO,NO,NO,NO,ccastles.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,ccastles.cpp
+"ccastles3","Crystal Castles (version 3)","1983",Atari,ccastles,ccastles,-,YES,NO,NO,NO,NO,ccastles.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,ccastles.cpp
+ccastles,"Crystal Castles (version 4)","1983",Atari,-,-,-,YES,NO,NO,NO,NO,ccastles.cpp,BUONO,RASTER,"0",256,232,HORIZONTAL,ccastles.cpp
+dacholer,Dacholer,"1983",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,dacholer.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,dacholer.cpp
+dngrtrck,"Danger Track (Rally X bootleg)","1980","bootleg (Petaco)",rallyx,rallyx,rallyx,YES,NO,NO,NO,NO,rallyx.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,rallyx.cpp
+ddungeon,"Dangerous Dungeons (set 1)","1992","The Game Room",-,-,-,YES,NO,NO,NO,NO,ddragon.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,ddragon.cpp
+ddungeone,"Dangerous Dungeons (set 2)","1992","East Coast Coin Company",ddungeon,ddungeon,-,YES,NO,NO,NO,NO,ddragon.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,ddragon.cpp
+darksealj,"Dark Seal (Japan revision 4)","1990","Data East Corporation",darkseal,darkseal,-,YES,NO,NO,NO,NO,darkseal.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,darkseal.cpp
+"darkseal1","Dark Seal (World revision 1)","1990","Data East Corporation",darkseal,darkseal,-,YES,NO,NO,NO,NO,darkseal.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,darkseal.cpp
+darkseal,"Dark Seal (World revision 3)","1990","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,darkseal.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,darkseal.cpp
+dazzler,Dazzler,"1982","Century Electronics",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+desterth,"Destination Earth (bootleg of Lunar Rescue)","1979",bootleg,lrescue,lrescue,lrescue,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+devilfsh,"Devil Fish","1982",Artic,-,-,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+devilfsg,"Devil Fish (Galaxian hardware, bootleg?)","1984","Vision / Artic",devilfsh,devilfsh,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+dharma,"Dharma Doujou","1994",Metro,-,-,-,YES,NO,NO,NO,NO,metro.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,metro.cpp
+dharmag,"Dharma Doujou (Germany)","1994",Metro,dharma,dharma,-,YES,NO,NO,NO,NO,metro.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,metro.cpp
+dharmaj,"Dharma Doujou (Japan)","1994",Metro,dharma,dharma,-,YES,NO,NO,NO,NO,metro.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,metro.cpp
+dharmak,"Dharma Doujou (Korea)","1994",Metro,dharma,dharma,-,YES,NO,NO,NO,NO,metro.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,metro.cpp
+diamond,"Diamond Run","1989","KH Video",-,-,-,YES,NO,NO,NO,NO,gng.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,gng.cpp
+"digdugat1","Dig Dug (Atari, rev 1)","1982","Namco (Atari license)",digdug,digdug,-,YES,NO,NO,NO,NO,galaga.cpp,BUONO,RASTER,"90",288,224,VERTICAL,galaga.cpp
+digdugat,"Dig Dug (Atari, rev 2)","1982","Namco (Atari license)",digdug,digdug,-,YES,NO,NO,NO,NO,galaga.cpp,BUONO,RASTER,"90",288,224,VERTICAL,galaga.cpp
+digsid,"Dig Dug (manufactured by Sidam)","1982","Namco (Sidam license)",digdug,digdug,-,YES,NO,NO,NO,NO,galaga.cpp,BUONO,RASTER,"90",288,224,VERTICAL,galaga.cpp
+"digdug1","Dig Dug (rev 1)","1982",Namco,digdug,digdug,-,YES,NO,NO,NO,NO,galaga.cpp,BUONO,RASTER,"90",288,224,VERTICAL,galaga.cpp
+digdug,"Dig Dug (rev 2)","1982",Namco,-,-,-,YES,NO,NO,NO,NO,galaga.cpp,BUONO,RASTER,"90",288,224,VERTICAL,galaga.cpp
+"digdug2","Dig Dug II (New Ver.)","1985",Namco,-,-,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+"digdug2o","Dig Dug II (Old Ver.)","1985",Namco,"digdug2","digdug2",-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+digger,Digger,"1980",Sega,-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+diggerc,"Digger (CVS)","1982","Century Electronics",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+diggerma,"Digger Man (prototype)","2000","Kyle Hodgetts",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+dingo,Dingo,"1983","Ashby Computers and Graphics Ltd. (Jaleco license)",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+dingoe,"Dingo (encrypted)","1983","Ashby Computers and Graphics Ltd.",dingo,dingo,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+disco,"Disco No.1","1982","Data East",-,-,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",240,240,VERTICAL,btime.cpp
+discof,"Disco No.1 (Rev.F)","1982","Data East",disco,disco,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",240,240,VERTICAL,btime.cpp
+dorunrunc,"Do! Run Run (Do's Castle hardware, set 1)","1984",Universal,dorunrun,dorunrun,-,YES,NO,NO,NO,NO,docastle.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+dorunrunca,"Do! Run Run (Do's Castle hardware, set 2)","1984",Universal,dorunrun,dorunrun,-,YES,NO,NO,NO,NO,docastle.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+dorunrun,"Do! Run Run (set 1)","1984",Universal,-,-,-,YES,NO,NO,NO,NO,docastle.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+"dorunrun2","Do! Run Run (set 2)","1984",Universal,dorunrun,dorunrun,-,YES,NO,NO,NO,NO,docastle.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+dodgem,Dodgem,"1979",Zaccaria,-,-,-,YES,NO,NO,NO,NO,"zac2650.cpp",INCOMPLETO,RASTER,"0",720,768,HORIZONTAL,"zac2650.cpp"
+domino,"Domino Man","1982","Bally Midway",-,-,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"0",512,480,HORIZONTAL,mcr.cpp
+dominos,Dominos,"1977",Atari,-,-,-,YES,NO,NO,NO,NO,"sprint2.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"sprint2.cpp"
+"dominos4","Dominos 4 (Cocktail)","1977",Atari,dominos,dominos,-,YES,NO,NO,NO,NO,"sprint2.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"sprint2.cpp"
+dommy,Dommy,"1983","Technos Japan",-,-,-,YES,NO,NO,NO,NO,scregg.cpp,BUONO,RASTER,"270",240,240,VERTICAL,scregg.cpp
+dorachan,"Dora-chan (Japan)","1980","Alpha Denshi Co. / Craul Denshi",-,-,-,YES,NO,NO,NO,NO,dorachan.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,dorachan.cpp
+dorodon,"Dorodon (set 1)","1982","UPL (Falcon license?)",-,-,-,YES,NO,NO,NO,NO,ladybug.cpp,BUONO,RASTER,"270",240,192,VERTICAL,ladybug.cpp
+"dorodon2","Dorodon (set 2)","1982","UPL (Falcon license?)",dorodon,dorodon,-,YES,NO,NO,NO,NO,ladybug.cpp,BUONO,RASTER,"270",240,192,VERTICAL,ladybug.cpp
+dotrikun,"Dottori Kun (new version)","1990",Sega,-,-,-,YES,NO,NO,NO,NO,dotrikun.cpp,BUONO,RASTER,"0",128,192,HORIZONTAL,dotrikun.cpp
+"dotrikun2","Dottori Kun (old version)","1990",Sega,dotrikun,dotrikun,-,YES,NO,NO,NO,NO,dotrikun.cpp,BUONO,RASTER,"0",128,192,HORIZONTAL,dotrikun.cpp
+dotriman,"Dottori-Man Jr.","2016","hack (Chris Covell)",dotrikun,dotrikun,-,YES,NO,NO,NO,NO,dotrikun.cpp,BUONO,RASTER,"0",128,192,HORIZONTAL,dotrikun.cpp
+dungeonmu,"Dungeon Magic (Ver 2.1A 1994/02/18)","1993","Taito America Corporation",lightbr,lightbr,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+dungeonm,"Dungeon Magic (Ver 2.1O 1994/02/18)","1993","Taito Corporation Japan",lightbr,lightbr,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+dynablst,"Dynablaster / Bomber Man","1991","Irem (licensed from Hudson Soft)",-,-,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+dynablstb,"Dynablaster / Bomber Man (bootleg, set 1)","1992","bootleg (Seitu)",dynablst,dynablst,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+"dynablstb2","Dynablaster / Bomber Man (bootleg, set 2)","1992","bootleg (Seitu)",dynablst,dynablst,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+"dynablstb3","Dynablaster / Bomber Man (bootleg, set 3)","1992","bootleg (Seitu)",dynablst,dynablst,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+eggor,Eggor,"1983",Telko,-,-,-,YES,NO,NO,NO,NO,pacman.cpp,PRELIMINARE,RASTER,"90",288,224,VERTICAL,pacman.cpp
+eggs,"Eggs (USA)","1983","Technos Japan (Universal USA license)",scregg,scregg,-,YES,NO,NO,NO,NO,scregg.cpp,BUONO,RASTER,"270",240,240,VERTICAL,scregg.cpp
+embargo,Embargo,"1977",Cinematronics,-,-,-,YES,NO,NO,NO,NO,embargo.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,embargo.cpp
+escmars,"Escape from Mars (bootleg of Lunar Rescue)","1980",bootleg,lrescue,lrescue,lrescue,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+eprom,"Escape from the Planet of the Robot Monsters (set 1)","1989","Atari Games",-,-,-,YES,NO,NO,NO,NO,eprom.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,eprom.cpp
+"eprom2","Escape from the Planet of the Robot Monsters (set 2)","1989","Atari Games",eprom,eprom,-,YES,NO,NO,NO,NO,eprom.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,eprom.cpp
+exvaniaj,"Exvania (Japan)","1992",Namco,exvania,exvania,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+exvania,"Exvania (World)","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+eyesb,"Eyes (bootleg set 1)","1982",bootleg,eyes,eyes,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+eyeszacb,"Eyes (bootleg set 2, decrypted)","1982",bootleg,eyes,eyes,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+eyeszac,"Eyes (Italy)","1982","Techstar (Zaccaria license)",eyes,eyes,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+eyes,"Eyes (US set 1)","1982","Techstar (Rock-Ola license)",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"eyes2","Eyes (US set 2)","1982","Techstar (Rock-Ola license)",eyes,eyes,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+fantasyg,"Fantasy (Germany, set 1)","1981",SNK,fantasyu,fantasyu,fantasy,YES,NO,NO,NO,NO,"snk6502.cpp",INCOMPLETO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+"fantasyg2","Fantasy (Germany, set 2)","1981",SNK,fantasyu,fantasyu,fantasy,YES,NO,NO,NO,NO,"snk6502.cpp",INCOMPLETO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+fantasyj,"Fantasy (Japan)","1981",SNK,fantasyu,fantasyu,fantasy,YES,NO,NO,NO,NO,"snk6502.cpp",INCOMPLETO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+fantasyu,"Fantasy (US)","1981","SNK (Rock-Ola license)",-,-,fantasy,YES,NO,NO,NO,NO,"snk6502.cpp",INCOMPLETO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+fantstry,"Fantasy Story (set 1)","2002","Z Soft",-,-,-,YES,NO,NO,NO,NO,"esd16.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+fantstrya,"Fantasy Story (set 2)","2002","Z Soft",fantstry,fantstry,-,YES,NO,NO,NO,NO,"esd16.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"esd16.cpp"
+farmer,"Farmers Rebellion","1985","Sun Electronics",ikki,ikki,-,YES,NO,NO,NO,NO,ikki.cpp,BUONO,RASTER,"0",240,224,HORIZONTAL,ikki.cpp
+fastlane,"Fast Lane","1987",Konami,-,-,-,YES,NO,NO,NO,NO,fastlane.cpp,BUONO,RASTER,"90",280,224,VERTICAL,fastlane.cpp
+fasttrack,"Fast Track","1989","Mr Game",motrshow,motrshow,-,YES,NO,NO,YES,NO,mrgame.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,mrgame.cpp
+fball,"Fire Ball (FM Work)","1992","FM Work",-,-,-,YES,NO,NO,NO,NO,lwings.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,lwings.cpp
+fitter,Fitter,"1981","Taito Corporation",roundup,roundup,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+fitterbl,"Fitter (bootleg of Round-Up)","1981",bootleg,roundup,roundup,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+foolrace,"Fool Race","1979?","EFG Sanremo",-,-,-,YES,NO,NO,NO,NO,headonb.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,headonb.cpp
+freeze,Freeze,"1984",Cinematronics,-,-,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+frenzy,"Frenzy (revision RA1)","1981","Stern Electronics",-,-,-,YES,NO,NO,NO,NO,berzerk.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,berzerk.cpp
+friskyt,"Frisky Tom (set 1)","1981",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,seicross.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,seicross.cpp
+friskyta,"Frisky Tom (set 2)","1981",Nichibutsu,friskyt,friskyt,-,YES,NO,NO,NO,NO,seicross.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,seicross.cpp
+friskytb,"Frisky Tom (set 3)","1981",Nichibutsu,friskyt,friskyt,-,YES,NO,NO,NO,NO,seicross.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,seicross.cpp
+froggers,Frog,"1981",bootleg,frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+frogg,"Frog (bootleg on Galaxian hardware)","1981",bootleg,frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+frogf,"Frog (Falcon bootleg)","1981","bootleg (Falcon)",frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+frogger,Frogger,"1981",Konami,-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+froggeram,"Frogger (bootleg on Amigo? hardware)","1981",bootleg,frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+froggrs,"Frogger (Coin Music, bootleg on Scramble hardware)","1981","bootleg (Coin Music)",frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+froggervd,"Frogger (Hermatic, bootleg on Scramble hardware from Video Dens)","1981","bootleg (Hermatic)",frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+froggermc,"Frogger (Moon Cresta hardware)","1981","Konami (Sega license)",frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"froggers1","Frogger (Sega set 1)","1981","Konami (Sega license)",frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"froggers2","Frogger (Sega set 2)","1981","Konami (Sega license)",frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"froggers3","Frogger (Sega set 3)","1981","Konami (Sega license)",frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+froggerv,"Frogger (Videotron bootleg)","1981","bootleg (Videotron / Gamepack)",frogger,frogger,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+funystrp,"Funny Strip","199?","Microhard / MagicGames",-,-,-,YES,NO,NO,NO,NO,splash.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,splash.cpp
+grescue,"Galaxy Rescue","1979","Taito (Universal license?)",lrescue,lrescue,lrescue,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"gatedoom1","Gate of Doom (US revision 1)","1990","Data East Corporation",darkseal,darkseal,-,YES,NO,NO,NO,NO,darkseal.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,darkseal.cpp
+gatedoom,"Gate of Doom (US revision 4)","1990","Data East Corporation",darkseal,darkseal,-,YES,NO,NO,NO,NO,darkseal.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,darkseal.cpp
+"gauntlet2pg1","Gauntlet (2 Players, German, rev 1)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntlet2pg","Gauntlet (2 Players, German, rev 4)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntlet2pj2","Gauntlet (2 Players, Japanese, rev 2)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntlet2pj","Gauntlet (2 Players, Japanese, rev 5)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntlet2pr3","Gauntlet (2 Players, rev 3)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntlet2p","Gauntlet (2 Players, rev 6)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+gauntletg,"Gauntlet (German, rev 10)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletgr3","Gauntlet (German, rev 3)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletgr6","Gauntlet (German, rev 6)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletgr8","Gauntlet (German, rev 8)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletj12","Gauntlet (Japanese, rev 12)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+gauntletj,"Gauntlet (Japanese, rev 13)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+pc_gntlt,"Gauntlet (PlayChoice-10)","1985","Atari / Tengen (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"gauntletr1","Gauntlet (rev 1)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+gauntlet,"Gauntlet (rev 14)","1985","Atari Games",-,-,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletr2","Gauntlet (rev 2)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletr4","Gauntlet (rev 4)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletr5","Gauntlet (rev 5)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletr7","Gauntlet (rev 7)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntletr9","Gauntlet (rev 9)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+gauntlets,"Gauntlet (Spanish, rev 15)","1985","Atari Games",gauntlet,gauntlet,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntdl24","Gauntlet Dark Legacy (version DL 2.4)","1999","Midway Games",gauntdl,gauntdl,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+gauntdl,"Gauntlet Dark Legacy (version DL 2.52)","1999","Midway Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+"gaunt2","Gauntlet II","1986","Atari Games",-,-,-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gaunt22pg","Gauntlet II (2 Players, German)","1986","Atari Games","gaunt2","gaunt2",-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gaunt22p1","Gauntlet II (2 Players, rev 1)","1986","Atari Games","gaunt2","gaunt2",-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gaunt22p","Gauntlet II (2 Players, rev 2)","1986","Atari Games","gaunt2","gaunt2",-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gaunt2g","Gauntlet II (German)","1986","Atari Games","gaunt2","gaunt2",-,YES,NO,NO,NO,NO,gauntlet.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,gauntlet.cpp
+"gauntleg12","Gauntlet Legends (version 1.2)","1998","Atari Games",gauntleg,gauntleg,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+gauntleg,"Gauntlet Legends (version 1.6)","1998","Atari Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+ghostmun,"Ghost Muncher","1981","bootleg (Leisure and Allied)",puckman,puckman,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+goldbug,"Gold Bug","1982","Century Electronics",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+imsorryj,"Gonbee no I'm Sorry (315-5110, Japan)","1985","Coreland / Sega",imsorry,imsorry,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"system1.cpp"
+ironfortc,"Gongtit Jiucoi Iron Fortress (Hong Kong)","1998","Eolith (Excellent Competence Ltd. license)",ironfort,ironfort,-,YES,NO,NO,NO,NO,eolith.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,eolith.cpp
+gorkans,Gorkans,"1983",Techstar,mrtnt,mrtnt,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+gotya,"Got-Ya (12/24/1981)","1981",Game-A-Tron,thehand,thehand,thehand,YES,NO,NO,NO,NO,gotya.cpp,INCOMPLETO,RASTER,"270",288,224,VERTICAL,gotya.cpp
+grobda,"Grobda (New Ver.)","1984",Namco,-,-,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+"grobda2","Grobda (Old Ver. set 1)","1984",Namco,grobda,grobda,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+"grobda3","Grobda (Old Ver. set 2)","1984",Namco,grobda,grobda,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+guzzler,Guzzler,"1983",Tehkan,-,-,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"90",256,224,VERTICAL,cclimber.cpp
+guzzlers,"Guzzler (Swimmer Conversion)","1983",Tehkan,guzzler,guzzler,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"90",256,224,VERTICAL,cclimber.cpp
+hangly,"Hangly-Man (set 1)","1981","hack (Igleck)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"hangly2","Hangly-Man (set 2)","1981","hack (Igleck)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"hangly3","Hangly-Man (set 3)","1981","hack (Igleck)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+hardhat,"Hard Hat","1982",Exidy,-,-,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"headon1","Head On (1 player)","1979",Gremlin,headon,headon,-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+headon,"Head On (2 players)","1979",Gremlin,-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+headonmz,"Head On (bootleg, alt maze)","1979",bootleg,headon,headon,-,YES,NO,NO,NO,NO,vicdual.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+headoni,"Head On (Irem, M-15 Hardware)","1979",Irem,-,-,ipminvad,YES,NO,NO,NO,NO,"m10.cpp",PRELIMINARE,RASTER,"270",256,224,VERTICAL,"m10.cpp"
+headons,"Head On (Sidam bootleg, set 1)","1979","bootleg (Sidam)",headon,headon,-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+headonsa,"Head On (Sidam bootleg, set 2)","1979","bootleg (Sidam)",headon,headon,-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+"headon2","Head On 2","1979",Sega,-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+"headon2s","Head On 2 (Sidam bootleg)","1979","bootleg (Sidam)","headon2","headon2",-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+headonn,"Head On N","1979",Nintendo,headon,headon,-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+heartatk,"Heart Attack","1983","Century Electronics",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+heiankyo,"Heiankyo Alien","1979","Denki Onkyo",-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+hero,Hero,"1984","Century Electronics / Seatongrove Ltd",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+herodku,"Hero in the Castle of Doom (DK conversion not encrypted)","1984","Seatongrove Ltd (Crown license)",hero,hero,-,YES,NO,NO,NO,NO,dkong.cpp,BUONO,RASTER,"270",256,224,VERTICAL,dkong.cpp
+herodk,"Hero in the Castle of Doom (DK conversion)","1984","Seatongrove Ltd (Crown license)",hero,hero,-,YES,NO,NO,NO,NO,dkong.cpp,BUONO,RASTER,"270",256,224,VERTICAL,dkong.cpp
+hotshock,"Hot Shocker","1982","E.G. Felaco (Domino license)",-,-,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+hotshockb,"Hot Shocker (early revision?)","1982","E.G. Felaco",hotshock,hotshock,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+hustle,Hustle,"1977",Gremlin,-,-,blockade,YES,NO,NO,NO,NO,blockade.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,blockade.cpp
+hyperpac,"Hyper Pacman","1995",SemiCom,-,-,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+hyperpacb,"Hyper Pacman (bootleg)","1995",bootleg,hyperpac,hyperpac,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+imsorry,"I'm Sorry (315-5110, US)","1985","Coreland / Sega",-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"system1.cpp"
+igmo,IGMO,"1984","Epos Corporation",-,-,-,YES,NO,NO,NO,NO,epos.cpp,BUONO,RASTER,"270",272,236,VERTICAL,epos.cpp
+ikki,"Ikki (Japan)","1985","Sun Electronics",-,-,-,YES,NO,NO,NO,NO,ikki.cpp,BUONO,RASTER,"0",240,224,HORIZONTAL,ikki.cpp
+indytempc,"Indiana Jones and the Temple of Doom (cocktail)","1985","Atari Games",indytemp,indytemp,-,YES,NO,NO,NO,NO,"atarisy1.cpp",INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+indytempd,"Indiana Jones and the Temple of Doom (German)","1985","Atari Games",indytemp,indytemp,-,YES,NO,NO,NO,NO,"atarisy1.cpp",INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+indytemp,"Indiana Jones and the Temple of Doom (set 1)","1985","Atari Games","atarisy1",-,-,YES,NO,NO,NO,NO,"atarisy1.cpp",INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+"indytemp2","Indiana Jones and the Temple of Doom (set 2)","1985","Atari Games",indytemp,indytemp,-,YES,NO,NO,NO,NO,"atarisy1.cpp",INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+"indytemp3","Indiana Jones and the Temple of Doom (set 3)","1985","Atari Games",indytemp,indytemp,-,YES,NO,NO,NO,NO,"atarisy1.cpp",INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+"indytemp4","Indiana Jones and the Temple of Doom (set 4)","1985","Atari Games",indytemp,indytemp,-,YES,NO,NO,NO,NO,"atarisy1.cpp",INCOMPLETO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+inferno,"Inferno (Williams)","1984",Williams,-,-,-,YES,NO,NO,NO,NO,williams.cpp,BUONO,RASTER,"0",276,240,HORIZONTAL,williams.cpp
+intrepidb,"Intrepid (Elsys bootleg, set 1)","1984","bootleg (Elsys)",intrepid,intrepid,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+"intrepidb3","Intrepid (Elsys bootleg, set 2)","1984","bootleg (Elsys)",intrepid,intrepid,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+"intrepidb2","Intrepid (Loris bootleg)","1984","bootleg (Loris)",intrepid,intrepid,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+intrepid,"Intrepid (set 1)","1983","Nova Games Ltd.",-,-,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+"intrepid2","Intrepid (set 2)","1983","Nova Games Ltd.",intrepid,intrepid,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+ironfort,"Iron Fortress","1998",Eolith,-,-,-,YES,NO,NO,NO,NO,eolith.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,eolith.cpp
+jackler,"Jackler (Jungler bootleg)","1982",bootleg,jungler,jungler,-,YES,NO,NO,NO,NO,rallyx.cpp,BUONO,RASTER,"90",288,224,VERTICAL,rallyx.cpp
+joinem,Joinem,"1983","Global Corporation",-,-,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+jollyjgr,"Jolly Jogger","1982","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,jollyjgr.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jollyjgr.cpp
+journey,Journey,"1983","Bally Midway",-,-,journey,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"90",512,480,VERTICAL,mcr.cpp
+joyman,Joyman,"1982",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+jrpacman,"Jr. Pac-Man (11/9/83)","1983","Bally Midway",-,-,-,YES,NO,NO,NO,NO,jrpacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,jrpacman.cpp
+jrpacmbl,"Jr. Pac-Man (Pengo hardware)","1983",bootleg,jrpacman,jrpacman,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+jrpacmanf,"Jr. Pac-Man (speedup hack)","1983",hack,jrpacman,jrpacman,-,YES,NO,NO,NO,NO,jrpacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,jrpacman.cpp
+jungler,Jungler,"1981",Konami,-,-,-,YES,NO,NO,NO,NO,rallyx.cpp,BUONO,RASTER,"90",288,224,VERTICAL,rallyx.cpp
+junglero,"Jungler (Olympia)","1981","Konami (Olympia license)",jungler,jungler,-,YES,NO,NO,NO,NO,rallyx.cpp,BUONO,RASTER,"90",288,224,VERTICAL,rallyx.cpp
+junglers,"Jungler (Stern Electronics)","1981","Konami (Stern Electronics license)",jungler,jungler,-,YES,NO,NO,NO,NO,rallyx.cpp,BUONO,RASTER,"90",288,224,VERTICAL,rallyx.cpp
+jungsub,"Jungler (Subelectro, bootleg on Scramble hardware)","1981","bootleg (Subelectro)",jungler,jungler,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+kamikcab,"Kamikaze Cabbie","1984","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,liberate.cpp,BUONO,RASTER,"270",256,240,VERTICAL,liberate.cpp
+kickboy,"Kick Boy","1983",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,dacholer.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,dacholer.cpp
+horekid,"Kid no Hore Hore Daisakusen","1987",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,terracre.cpp,BUONO,RASTER,"270",256,224,VERTICAL,terracre.cpp
+horekidb,"Kid no Hore Hore Daisakusen (bootleg)","1987",bootleg,horekid,horekid,-,YES,NO,NO,NO,NO,terracre.cpp,BUONO,RASTER,"270",256,224,VERTICAL,terracre.cpp
+kittenk,"Kitten Kaboodle","1988",Konami,-,-,-,YES,NO,NO,NO,NO,nemesis.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,nemesis.cpp
+phklad,"Klad / Labyrinth (Photon System)","19??",-,-,-,-,YES,NO,NO,NO,NO,photon.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,photon.cpp
+kngtmare,"Knightmare (prototype)","1983",Gottlieb,-,-,-,YES,NO,NO,NO,NO,gottlieb.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,gottlieb.cpp
+knockout,"Knock Out!! (bootleg, set 1)","1982","bootleg? (KKK)",triplep,triplep,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+knockoutb,"Knock Out!! (bootleg, set 2)","1982",bootleg,triplep,triplep,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+knockoutc,"Knock Out!! (bootleg, set 3)","1982","bootleg (ESG)",triplep,triplep,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+rockragej,"Koi no Hotrock (Japan)","1986",Konami,rockrage,rockrage,-,YES,NO,NO,NO,NO,rockrage.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,rockrage.cpp
+komocomo,"Komo Como (Topmar, bootleg?)","1995",bootleg,maddonna,maddonna,-,YES,NO,NO,NO,NO,oneshot.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,oneshot.cpp
+korosuke,"Korosuke Roller (Japan)","1981","Alpha Denshi Co. / Kural Electric, Ltd.",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"kram3","Kram (encrypted)","1982","Taito America Corporation",kram,kram,-,YES,NO,NO,NO,NO,qix.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,qix.cpp
+kram,"Kram (set 1)","1982","Taito America Corporation",-,-,-,YES,NO,NO,NO,NO,qix.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,qix.cpp
+"kram2","Kram (set 2)","1982","Taito America Corporation",kram,kram,-,YES,NO,NO,NO,NO,qix.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,qix.cpp
+ladybug,"Lady Bug","1981",Universal,-,-,-,YES,NO,NO,NO,NO,ladybug.cpp,BUONO,RASTER,"270",240,192,VERTICAL,ladybug.cpp
+ladybugg,"Lady Bug (bootleg on Galaxian hardware)","1983",bootleg,ladybug,ladybug,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+ladybugb,"Lady Bug (bootleg set 1)","1981",bootleg,ladybug,ladybug,-,YES,NO,NO,NO,NO,ladybug.cpp,BUONO,RASTER,"270",240,192,VERTICAL,ladybug.cpp
+ladyfrog,"Lady Frog","1990","Mondial Games",-,-,-,YES,NO,NO,NO,NO,ladyfrog.cpp,BUONO,RASTER,"90",256,224,VERTICAL,ladyfrog.cpp
+lastfght,"Last Fighting","2000",Subsino,-,-,-,YES,NO,NO,NO,NO,lastfght.cpp,PRELIMINARE,RASTER,"0",512,240,HORIZONTAL,lastfght.cpp
+lazercmd,"Lazer Command","1976","Meadows Games, Inc.",-,-,-,YES,NO,NO,NO,NO,lazercmd.cpp,BUONO,RASTER,"0",256,230,HORIZONTAL,lazercmd.cpp
+lightbrj,"Light Bringer (Ver 2.1J 1994/02/18)","1993","Taito Corporation",lightbr,lightbr,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+lightbr,"Light Bringer (Ver 2.2O 1994/04/08)","1993","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,"taito_f3.cpp",INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,"taito_f3.cpp"
+lnc,Lock'n'Chase,"1981","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",240,240,VERTICAL,btime.cpp
+clocknchj,"Lock'n'Chase (DECO Cassette) (Japan)","1981","Data East Corporation",clocknch,clocknch,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+clocknch,"Lock'n'Chase (DECO Cassette) (US)","1981","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+lbeach,"Long Beach","1979","Seletron / Olympia",-,-,-,YES,NO,NO,NO,NO,lbeach.cpp,PRELIMINARE,RASTER,"0",480,232,HORIZONTAL,lbeach.cpp
+looper,Looper,"1982",Orca,changes,changes,-,YES,NO,NO,NO,NO,marineb.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,marineb.cpp
+losttomb,"Lost Tomb (easy)","1982","Stern Electronics",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+losttombh,"Lost Tomb (hard)","1982","Stern Electronics",losttomb,losttomb,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+loverboy,"Lover Boy","1983","G.T Enterprise Inc",-,-,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+lrescue,"Lunar Rescue","1979",Taito,-,-,lrescue,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+lrescuem,"Lunar Rescue (Model Racing bootleg, set 1)","1979","bootleg (Model Racing)",lrescue,lrescue,lrescue,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"lrescuem2","Lunar Rescue (Model Racing bootleg, set 2)","1979","bootleg (Model Racing)",lrescue,lrescue,lrescue,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"lupin3","Lupin III (set 1)","1980",Taito,-,-,"lupin3",YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+"lupin3a","Lupin III (set 2)","1980",Taito,"lupin3","lupin3","lupin3",YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+machomou,"Macho Mouse","1982",Techstar,-,-,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+maddonna,"Mad Donna (Tuning, set 1)","1995","Promat (Tuning license)",-,-,-,YES,NO,NO,NO,NO,oneshot.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,oneshot.cpp
+maddonnab,"Mad Donna (Tuning, set 2)","1995","Promat (Tuning license)",maddonna,maddonna,-,YES,NO,NO,NO,NO,oneshot.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,oneshot.cpp
+mbrush,"Magic Brush (bootleg of Crush Roller)","1981","bootleg (Olympia)",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mgcrystlj,"Magical Crystals (Japan, 92/01/13)","1991","Kaneko (Atlus license)",mgcrystl,mgcrystl,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"kaneko16.cpp"
+mgcrystlo,"Magical Crystals (World, 91/12/10)","1991",Kaneko,mgcrystl,mgcrystl,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"kaneko16.cpp"
+mgcrystl,"Magical Crystals (World, 92/01/10)","1991",Kaneko,-,-,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"kaneko16.cpp"
+maketrax,"Make Trax (US set 1)","1981","Alpha Denshi Co. / Kural (Williams license)",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"270",288,224,VERTICAL,pacman.cpp
+maketrxb,"Make Trax (US set 2)","1981","Alpha Denshi Co. / Kural (Williams license)",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"270",288,224,VERTICAL,pacman.cpp
+mandingarf,"Mandanga (bootleg of Mandinga on Galaxian hardware, set 1)","1982","bootleg (Recreativos Franco S.A.)",amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+mandingac,"Mandanga (bootleg of Mandinga on Galaxian hardware, set 2)","1982","bootleg (Centromatic)",amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+mandinga,"Mandinga (Artemi bootleg of Amidar)","1982","bootleg (Artemi)",amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+mandingaeg,"Mandinga (Electrogame S.A. bootleg of Amidar)","1982","bootleg (Electrogame S.A.)",amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+marble,"Marble Madness (set 1)","1984","Atari Games","atarisy1",-,-,YES,NO,NO,NO,NO,"atarisy1.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+"marble2","Marble Madness (set 2)","1984","Atari Games",marble,marble,-,YES,NO,NO,NO,NO,"atarisy1.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+"marble3","Marble Madness (set 3)","1984","Atari Games",marble,marble,-,YES,NO,NO,NO,NO,"atarisy1.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+"marble4","Marble Madness (set 4)","1984","Atari Games",marble,marble,-,YES,NO,NO,NO,NO,"atarisy1.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+"marble5","Marble Madness (set 5 - LSI Cartridge)","1984","Atari Games",marble,marble,-,YES,NO,NO,NO,NO,"atarisy1.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarisy1.cpp"
+"mmaze2","Marchen Maze (Japan, hack?)","1988",Namco,mmaze,mmaze,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"180",288,224,HORIZONTAL,"namcos1.cpp"
+mmaze,"Marchen Maze (Japan)","1988",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"180",288,224,HORIZONTAL,"namcos1.cpp"
+marinedt,"Marine Date","1981",Taito,-,-,-,YES,NO,NO,NO,NO,marinedt.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,marinedt.cpp
+marvins,"Marvin's Maze","1983",SNK,-,-,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"270",288,216,VERTICAL,snk.cpp
+mazebl,"Maze (Trog rev LA4 3/11/91 bootleg)","1990",bootleg,trog,trog,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+mazeinv,"Maze Invaders (prototype)","1981",Atari,-,-,-,YES,NO,NO,NO,NO,centiped.cpp,BUONO,RASTER,"270",256,240,VERTICAL,centiped.cpp
+mofflott,"Maze of Flott (Japan)","1989","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,asuka.cpp,BUONO,RASTER,"270",320,240,VERTICAL,asuka.cpp
+mazerbla,"Mazer Blazer (set 1)","1983","Stern Electronics",-,-,-,YES,NO,NO,NO,NO,mazerbla.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,mazerbla.cpp
+mazerblaa,"Mazer Blazer (set 2)","1983","Stern Electronics",mazerbla,mazerbla,-,YES,NO,NO,NO,NO,mazerbla.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,mazerbla.cpp
+merlinmm,"Merlins Money Maze","1986",Zilec-Zenitone,-,-,-,YES,NO,NO,NO,NO,pingpong.cpp,BUONO,RASTER,"90",256,224,VERTICAL,pingpong.cpp
+mikie,Mikie,"1984",Konami,-,-,-,YES,NO,NO,NO,NO,mikie.cpp,BUONO,RASTER,"270",256,224,VERTICAL,mikie.cpp
+mikiehs,"Mikie (High School Graffiti)","1984",Konami,mikie,mikie,-,YES,NO,NO,NO,NO,mikie.cpp,BUONO,RASTER,"270",256,224,VERTICAL,mikie.cpp
+mineswpr,Minesweeper,"1977",Amutech,-,-,blockade,YES,NO,NO,NO,NO,blockade.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,blockade.cpp
+"mineswpr4","Minesweeper (4-Player)","1977",Amutech,mineswpr,mineswpr,blockade,YES,NO,NO,NO,NO,blockade.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,blockade.cpp
+mspacmanbgd,"Miss Pukman ('Made in Greece' Datamat bootleg)","1992","bootleg (Datamat)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+moguchan,"Mogu Chan (bootleg?)","1982","Orca (Eastern Commerce Inc. license)",-,-,-,YES,NO,NO,NO,NO,zodiack.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,zodiack.cpp
+monymony,"Money Money (set 1)","1983",Zaccaria,-,-,-,YES,NO,NO,NO,NO,zaccaria.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,zaccaria.cpp
+"monymony2","Money Money (set 2)","1983",Zaccaria,monymony,monymony,-,YES,NO,NO,NO,NO,zaccaria.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,zaccaria.cpp
+headonch,"Monita to Rimoko no Head On Channel (prototype, hack)","1994",hack,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+mlander,"Moon Lander (bootleg of Lunar Rescue)","1980","bootleg (Leisure Time Electronics)",lrescue,lrescue,lrescue,YES,NO,NO,NO,NO,"8080bw.cpp",BUONO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+mquake,Moonquake,"1987",Sente,-,-,-,YES,NO,NO,NO,NO,mquake.cpp,PRELIMINARE,RASTER,"0",724,483,HORIZONTAL,mquake.cpp
+mtrapb,"Mouse Trap (bootleg)","1981",bootleg,mtrap,mtrap,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"mtrap2","Mouse Trap (version 2)","1981",Exidy,mtrap,mtrap,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"mtrap3","Mouse Trap (version 3)","1981",Exidy,mtrap,mtrap,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"mtrapb2","Mouse Trap (version 4, bootleg)","1981",bootleg,mtrap,mtrap,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"mtrap4","Mouse Trap (version 4)","1981",Exidy,mtrap,mtrap,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+mtrap,"Mouse Trap (version 5)","1981",Exidy,-,-,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+mrdo,"Mr. Do!","1982",Universal,-,-,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+mrdobl,"Mr. Do! (bootleg)","1982",bootleg,mrdo,mrdo,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+mrdofix,"Mr. Do! (bugfixed)","1982","Universal (Taito license)",mrdo,mrdo,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+mrdofabr,"Mr. Do! (Fabremar bootleg)","1982","bootleg (Fabremar)",mrdo,mrdo,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+mrdoy,"Mr. Do! (prototype)","1982",Universal,mrdo,mrdo,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+mrdot,"Mr. Do! (Taito)","1982","Universal (Taito license)",mrdo,mrdo,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+mrdu,"Mr. Du!","1982",bootleg,mrdo,mrdo,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+mrkicker,"Mr. Kicker (F-E1-16-010 PCB)","2001",SemiCom,-,-,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+mrkickera,"Mr. Kicker (SEMICOM-003b PCB)","2001",SemiCom,mrkicker,mrkicker,-,YES,NO,NO,NO,NO,vamphalf.cpp,PRELIMINARE,RASTER,"0",320,236,HORIZONTAL,vamphalf.cpp
+mrlo,"Mr. Lo!","1982",bootleg,mrdo,mrdo,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+mrtnt,"Mr. TNT","1983","Techstar (Telko license)",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mrsdyna,"Mrs. Dynamite","1982",Universal,-,-,-,YES,NO,NO,NO,NO,ladybug.cpp,BUONO,RASTER,"270",240,192,VERTICAL,ladybug.cpp
+mspactwin,"Ms Pac Man Twin (Argentina)","1992","hack (Susilu)",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmat,"Ms. Pac Attack","1981",hack,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacman,"Ms. Pac-Man","1981","Midway / General Computer Corporation",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmanbg,"Ms. Pac-Man ('Made in Greece' bootleg, set 1)","198?",bootleg,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"mspacmanbg2","Ms. Pac-Man ('Made in Greece' bootleg, set 2)","1997",bootleg,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmancr,"Ms. Pac-Man (bootleg on Crush Roller Hardware)","1981",bootleg,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmbe,"Ms. Pac-Man (bootleg, encrypted)","1981",bootleg,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmab,"Ms. Pac-Man (bootleg, set 1)","1981",bootleg,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"mspacmab2","Ms. Pac-Man (bootleg, set 2)","1981",bootleg,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"mspacmab3","Ms. Pac-Man (bootleg, set 3)","1981",bootleg,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"mspacmab4","Ms. Pac-Man (bootleg, set 4)","1981",bootleg,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmanbi,"Ms. Pac-Man (Impeuropex bootleg)","1993","bootleg (Impeuropex)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmbmc,"Ms. Pac-Man (Marti Colls bootleg)","1982","bootleg (Marti Colls)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmbn,"Ms. Pac-Man (Novatronic bootleg)","1981","bootleg (Novatronic)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacmnf,"Ms. Pac-Man (speedup hack)","1981",hack,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+msheartb,"Ms. Pac-Man Heart Burn","1989","hack (Two-Bit Score)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacii,"Ms. Pac-Man II (Orca bootleg set 1)","1981","bootleg (Orca)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"mspacii2","Ms. Pac-Man II (Orca bootleg set 2)","1981","bootleg (Orca)",mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mspacpls,"Ms. Pac-Man Plus","1981",hack,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mschamps,"Ms. Pacman Champion Edition / Super Zola-Puc Gal","1995",hack,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mschamp,"Ms. Pacman Champion Edition / Zola-Puc Gal","1992",hack,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mustachei,"Mustache Boy (Italy)","1987","Seibu Kaihatsu (IG SPA license)",mustache,mustache,-,YES,NO,NO,NO,NO,mustache.cpp,BUONO,RASTER,"90",240,248,VERTICAL,mustache.cpp
+mustache,"Mustache Boy (Japan)","1987","Seibu Kaihatsu (March license)",-,-,-,YES,NO,NO,NO,NO,mustache.cpp,BUONO,RASTER,"90",240,248,VERTICAL,mustache.cpp
+alibabab,"Mustafa and 40 Thieves (bootleg)","1982",bootleg,alibaba,alibaba,-,YES,NO,NO,NO,NO,pacman.cpp,PRELIMINARE,RASTER,"90",288,224,VERTICAL,pacman.cpp
+mystston,"Mysterious Stones - Dr. John's Adventure","1984","Technos Japan",-,-,-,YES,NO,NO,NO,NO,mystston.cpp,BUONO,RASTER,"270",256,240,VERTICAL,mystston.cpp
+myststono,"Mysterious Stones - Dr. Kick in Adventure","1984","Technos Japan",mystston,mystston,-,YES,NO,NO,NO,NO,mystston.cpp,BUONO,RASTER,"270",256,240,VERTICAL,mystston.cpp
+myststonoi,"Mysterious Stones - Dr. Kick in Adventure (Itisa PCB)","1984","Technos Japan",mystston,mystston,-,YES,NO,NO,NO,NO,mystston.cpp,BUONO,RASTER,"270",256,240,VERTICAL,mystston.cpp
+natodef,"NATO Defense","1982","Pacific Novelty",-,-,natodef,YES,NO,NO,NO,NO,thief.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,thief.cpp
+natodefa,"NATO Defense (alternate mazes)","1982","Pacific Novelty",natodef,natodef,natodef,YES,NO,NO,NO,NO,thief.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,thief.cpp
+naughtyb,"Naughty Boy","1982",Jaleco,-,-,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+naughtyba,"Naughty Boy (bootleg, set 1)","1982",bootleg,naughtyb,naughtyb,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+naughtybb,"Naughty Boy (bootleg, set 2)","1982",bootleg,naughtyb,naughtyb,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+naughtybc,"Naughty Boy (Cinematronics)","1982","Jaleco (Cinematronics license)",naughtyb,naughtyb,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+neobombe,"Neo Bomberman","1997",Hudson,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+neomrdo,"Neo Mr. Do!","1996",Visco,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+netwars,"Net Wars","1983","Orca (Esco Trading Co license)",-,-,-,YES,NO,NO,NO,NO,espial.cpp,BUONO,RASTER,"90",256,224,VERTICAL,espial.cpp
+newapunk,"New Atomic Punk - Global Quest (US)","1992","Irem America",bbmanw,bbmanw,-,YES,NO,NO,NO,NO,"m90.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"m90.cpp"
+newpuckx,"New Puck-X","1980",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+nrallyx,"New Rally X","1981",Namco,-,-,rallyx,YES,NO,NO,NO,NO,rallyx.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,rallyx.cpp
+nrallyxb,"New Rally X (bootleg?)","1981",Namco,nrallyx,nrallyx,rallyx,YES,NO,NO,NO,NO,rallyx.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,rallyx.cpp
+"newsin7","New Sinbad 7 (set 1)","1983","ATW USA, Inc.",-,-,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+"newsin7a","New Sinbad 7 (set 2)","1982","ATW USA, Inc","newsin7","newsin7",-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+"newpuc2","Newpuc2 (set 1)","1980",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"newpuc2b","Newpuc2 (set 2)","1980",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+nibblerp,"Nibbler (rev 6, Pioneer Balloon conversion)","1982",Rock-Ola,nibbler,nibbler,-,YES,NO,NO,NO,NO,"snk6502.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+"nibbler6","Nibbler (rev 6)","1982",Rock-Ola,nibbler,nibbler,-,YES,NO,NO,NO,NO,"snk6502.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+"nibbler7","Nibbler (rev 7)","1982",Rock-Ola,nibbler,nibbler,-,YES,NO,NO,NO,NO,"snk6502.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+nibblero,"Nibbler (rev 8, Olympia)","1983","Rock-Ola (Olympia license)",nibbler,nibbler,-,YES,NO,NO,NO,NO,"snk6502.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+"nibbler8","Nibbler (rev 8)","1982",Rock-Ola,nibbler,nibbler,-,YES,NO,NO,NO,NO,"snk6502.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+nibbler,"Nibbler (rev 9, set 1)","1982",Rock-Ola,-,-,-,YES,NO,NO,NO,NO,"snk6502.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+nibblera,"Nibbler (rev 9, set 2)","1982",Rock-Ola,nibbler,nibbler,-,YES,NO,NO,NO,NO,"snk6502.cpp",BUONO,RASTER,"90",256,224,VERTICAL,"snk6502.cpp"
+nightmare,"Night Mare (Spain)","1982",E.F.O.,-,-,-,YES,NO,NO,NO,NO,nightmare.cpp,PRELIMINARE,RASTER,"90",280,216,VERTICAL,nightmare.cpp
+olibochu,Oli-Boo-Chu,"1981","Irem / GDI",-,-,-,YES,NO,NO,NO,NO,olibochu.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,olibochu.cpp
+olmandingo,"Olivmandingo (Spanish bootleg of Mandinga on Galaxian hardware, set 1)","1982",bootleg,amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+olmandingc,"Olivmandingo (Spanish bootleg of Mandinga on Galaxian hardware, set 2)","1982","bootleg (Calfesa)",amidar,amidar,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+outline,Outline,"1982","Century Electronics",radarzon,radarzon,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+pacnpal,"Pac & Pal","1983",Namco,-,-,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+"pacnpal2","Pac & Pal (older)","1983",Namco,pacnpal,pacnpal,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+pacmanfm,"Pac Man (FAMARE S.A. bootleg of Puck Man)","1980","bootleg (FAMARE S.A.)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmanug,"Pac Man (U.Games bootleg of Puck Man)","1980","bootleg (U.Games)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacgal,"Pac-Gal (set 1)","1981",hack,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"pacgal2","Pac-Gal (set 2)","1981",bootleg,mspacman,mspacman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmanbl,"Pac-Man (bootleg on Galaxian hardware, set 1)","1981",bootleg,puckman,puckman,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+pacmanbla,"Pac-Man (bootleg on Galaxian hardware, set 2)","1981",bootleg,puckman,puckman,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+pacmanblb,"Pac-Man (bootleg on Moon Alien 'AL-10A1' hardware)","1981",bootleg,puckman,puckman,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"pac90","Pac-Man (bootleg on World Cup '90 hardware)","199?","bootleg (Macro)",puckman,puckman,-,YES,NO,NO,NO,NO,"wc90.cpp",INCOMPLETO,RASTER,"90",256,224,VERTICAL,"wc90.cpp"
+pacmanvg,"Pac-Man (bootleg, Video Game SA)","1980","bootleg (Video Game SA)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmanblc,"Pac-Man (Calfesa, Spanish bootleg on Galaxian hardware)","1981","bootleg (Calfesa)",puckman,puckman,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+pacheart,"Pac-Man (Hearts)","1981",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmanjpm,"Pac-Man (JPM bootleg)","1981","bootleg (JPM)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmod,"Pac-Man (Midway, harder)","1981","Namco (Midway license)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmanf,"Pac-Man (Midway, speedup hack)","1980",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacman,"Pac-Man (Midway)","1980","Namco (Midway license)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmanso,"Pac-Man (SegaSA / Sonic)","1980","Namco (Sonic license)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmanblv,"Pac-Man (Video Dens, Spanish bootleg on Galaxian hardware)","1981","bootleg (Video Dens)",puckman,puckman,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+pacnchmp,"Pac-Man & Chomp Chomp","1983",Namco,pacnpal,pacnpal,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+pacplus,"Pac-Man Plus","1982","Namco (Midway license)",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmania,Pac-Mania,"1987",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"270",288,224,VERTICAL,"namcos1.cpp"
+pacmaniao,"Pac-Mania (111187 sound program)","1987",Namco,pacmania,pacmania,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"270",288,224,VERTICAL,"namcos1.cpp"
+pacmaniaj,"Pac-Mania (Japan)","1987",Namco,pacmania,pacmania,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"90",288,224,VERTICAL,"namcos1.cpp"
+clubpacma,"Pacman Club (Argentina)","1990","hack (Miky SRL)",clubpacm,clubpacm,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+clubpacm,"Pacman Club / Club Lambada (Argentina)","1989","hack (Miky SRL)",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacuman,"Pacu-Man (Spanish bootleg of Puck Man)","1980","bootleg (Recreativos Franco S.A.)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+paintrlr,"Paint Roller (bootleg of Crush Roller)","1981",bootleg,crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+painter,"Painter (hack of Crush Roller)","1984","hack (Monshine Ent. Co.)",crush,crush,-,YES,NO,NO,NO,NO,pacman.cpp,INCOMPLETO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+ppcar,"Pang Pang Car","1999",Icarus,-,-,-,YES,NO,NO,NO,NO,ssfindo.cpp,PRELIMINARE,RASTER,"0",735,292,HORIZONTAL,ssfindo.cpp
+panzer,"Panzer (bootleg of Spectar)","1980","bootleg (Proel)",spectar,spectar,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+paperboyp,"Paperboy (prototype)","1983","Atari Games",paperboy,paperboy,-,YES,NO,NO,NO,NO,"atarisy2.cpp",PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"paperboyr1","Paperboy (rev 1)","1984","Atari Games",paperboy,paperboy,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"paperboyr2","Paperboy (rev 2)","1984","Atari Games",paperboy,paperboy,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+paperboy,"Paperboy (rev 3)","1984","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+pass,Pass,"1992",Oksan,-,-,-,YES,NO,NO,NO,NO,pass.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,pass.cpp
+pastelis,"Pastel Island (Japan, prototype)","1993",Visco,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,INCOMPLETO,RASTER,"0",352,240,HORIZONTAL,ssv.cpp
+pengojpm,"Pengo (bootleg on Pac-Man hardware, set 1)","1981",bootleg,pengo,pengo,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pengopac,"Pengo (bootleg on Pac-Man hardware, set 2)","1981",bootleg,pengo,pengo,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pengob,"Pengo (bootleg)","1982",bootleg,pengo,pengo,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+"pengomc1","Pengo (Marti Colls bootleg on Pac-Man hardware, set 1)","1982","bootleg (Marti Colls)",pengo,pengo,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+"pengomc2","Pengo (Marti Colls bootleg on Pac-Man hardware, set 2)","1982","bootleg (Marti Colls)",pengo,pengo,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pengo,"Pengo (set 1 rev C, encrypted)","1982",Sega,-,-,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+"pengo2","Pengo (set 2, encrypted)","1982",Sega,pengo,pengo,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+"pengo2u","Pengo (set 2, rev A, not encrypted)","1982",Sega,pengo,pengo,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+"pengo3u","Pengo (set 3, not encrypted)","1982",Sega,pengo,pengo,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+"pengo4","Pengo (set 4, encrypted)","1982",Sega,pengo,pengo,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+"pengo5","Pengo (set 5, encrypted)","1982",Sega,pengo,pengo,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+penky,Penky,"1996","Yun Sung",-,-,-,YES,NO,NO,NO,NO,paradise.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,paradise.cpp
+penkyi,"Penky (Italian)","1996","Yun Sung (Impeuropex license)",penky,penky,-,YES,NO,NO,NO,NO,paradise.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,paradise.cpp
+penta,Penta,"1982","bootleg (Grinbee Shouji)",pengo,pengo,-,YES,NO,NO,NO,NO,pengo.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pengo.cpp
+"pepper27","Pepper II (version 7)","1982",Exidy,"pepper2","pepper2",-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"pepper2","Pepper II (version 8)","1982",Exidy,-,-,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+perfrman,"Performan (Japan)","1985","Toaplan / Data East Corporation",-,-,-,YES,NO,NO,NO,NO,slapfght.cpp,BUONO,RASTER,"270",256,240,VERTICAL,slapfght.cpp
+perfrmanu,"Performan (US)","1985","Toaplan / Data East USA",perfrman,perfrman,-,YES,NO,NO,NO,NO,slapfght.cpp,BUONO,RASTER,"270",256,240,VERTICAL,slapfght.cpp
+pettanp,"Pettan Pyuu (Japan)","1984","Sun Electronics",banbam,banbam,-,YES,NO,NO,NO,NO,markham.cpp,PRELIMINARE,RASTER,"0",240,224,HORIZONTAL,markham.cpp
+phantom,"Phantom (bootleg of Spectar)","1980","bootleg (Proel)",spectar,spectar,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+phantoma,"Phantomas (bootleg of Spectar)","1980","bootleg (Jeutel)",spectar,spectar,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+pinguinos,"Pinguinos (Spanish bootleg on Pac-Man hardware)","1982","bootleg (Aincar)",pengo,pengo,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+piranha,Piranha,"1981","GL (US Billiards license)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+piranhah,"Piranha (hack)","1981",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+piranhao,"Piranha (older)","1981","GL (US Billiards license)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+higemaru,"Pirate Ship Higemaru","1984",Capcom,-,-,-,YES,NO,NO,NO,NO,higemaru.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,higemaru.cpp
+piratetr,"Pirate Treasure","1982","Tong Electronic",-,-,-,YES,NO,NO,NO,NO,gameplan.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,gameplan.cpp
+poizone,Poizone,"1991",Eterna,-,-,-,YES,NO,NO,NO,NO,ertictac.cpp,INCOMPLETO,RASTER,"0",735,292,HORIZONTAL,ertictac.cpp
+"polyplay2c","Poly-Play (ZRE-PP - Czech)","1989","VEB Polytechnik Karl-Marx-Stadt","polyplay2","polyplay2",-,YES,NO,NO,NO,NO,polyplay.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,polyplay.cpp
+"polyplay2","Poly-Play (ZRE-PP)","1989","VEB Polytechnik Karl-Marx-Stadt",-,-,-,YES,NO,NO,NO,NO,polyplay.cpp,BUONO,RASTER,"0",512,256,HORIZONTAL,polyplay.cpp
+popflamen,"Pop Flamer (bootleg on Naughty Boy PCB)","1982",Jaleco,popflame,popflame,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+popflameb,"Pop Flamer (hack?)","1982",Jaleco,popflame,popflame,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+popflamea,"Pop Flamer (not protected)","1982",Jaleco,popflame,popflame,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+popflame,"Pop Flamer (protected)","1982",Jaleco,-,-,-,YES,NO,NO,NO,NO,naughtyb.cpp,BUONO,RASTER,"90",288,224,VERTICAL,naughtyb.cpp
+popeyeman,Popeye-Man,"1981",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pwrshovla,"Power Shovel ni Norou!! - Power Shovel Simulator (v2.07J, alt)","1999",Taito,pwrshovl,pwrshovl,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+pwrshovl,"Power Shovel ni Norou!! - Power Shovel Simulator (v2.07J)","1999",Taito,taitotz,-,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+psurge,"Power Surge","1988","Vision Electronics",-,-,-,YES,NO,NO,NO,NO,timeplt.cpp,BUONO,RASTER,"270",256,224,VERTICAL,timeplt.cpp
+prikura,"Princess Clara Daisakusen (J 960910 V1.000)","1996",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+puckmanb,"Puck Man (bootleg set 1)","1980",bootleg,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+puckmanh,"Puck Man (bootleg set 2)","1980","bootleg (Falcom?)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+puckman,"Puck Man (Japan set 1)","1980",Namco,-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+puckmod,"Puck Man (Japan set 2)","1981",Namco,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+pacmansp,"Puck Man (Spanish, 'Made in Greece' bootleg)","198?","bootleg (Video Game SA)",puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+puckmanf,"Puck Man (speedup hack)","1980",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+puckpepl,"Puck People","199?",Microhard,funystrp,funystrp,-,YES,NO,NO,NO,NO,splash.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,splash.cpp
+puckpkmn,"Puckman Pockimon (set 1)","2000",Genie,-,-,-,YES,NO,NO,NO,NO,puckpkmn.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,puckpkmn.cpp
+puckpkmna,"Puckman Pockimon (set 2)","2000",IBS,puckpkmn,puckpkmn,-,YES,NO,NO,NO,NO,puckpkmn.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,puckpkmn.cpp
+puckpkmnb,"Puckman Pockimon (set 3)","2000","Sun Mixing",puckpkmn,puckpkmn,-,YES,NO,NO,NO,NO,puckpkmn.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,puckpkmn.cpp
+pulsar,Pulsar,"1981",Sega,-,-,pulsar,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+pushman,"Pushman (Korea, set 1)","1990",Comad,-,-,-,YES,NO,NO,NO,NO,tigeroad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tigeroad.cpp
+pushmana,"Pushman (Korea, set 2)","1990",Comad,pushman,pushman,-,YES,NO,NO,NO,NO,tigeroad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tigeroad.cpp
+pushmant,"Pushman (Top Tronic license)","1990","Comad (Top Tronic license)",pushman,pushman,-,YES,NO,NO,NO,NO,tigeroad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tigeroad.cpp
+puzznic,"Puzznic (World)","1989","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,taito_l.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,taito_l.cpp
+phpython,"Python (Photon System)","1989?",-,-,-,-,YES,NO,NO,NO,NO,photon.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,photon.cpp
+quaak,"Quaak (bootleg of Frogger)","1981",bootleg,frogger,frogger,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+quarteta,"Quartet (8751 315-5194)","1986",Sega,quartet,quartet,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+quartet,"Quartet (Rev A, 8751 315-5194)","1986",Sega,-,-,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+"quartet2","Quartet 2 (8751 317-0010)","1986",Sega,quartet,quartet,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+"quartet2a","Quartet 2 (unprotected)","1986",Sega,quartet,quartet,-,YES,NO,NO,NO,NO,"segas16a.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16a.cpp"
+radarzon,"Radar Zone","1982","Century Electronics",-,-,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+"radarzon1","Radar Zone (Rev.1)","1982","Century Electronics",radarzon,radarzon,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+radarzont,"Radar Zone (Tuni)","1982","Century Electronics (Tuni Electro Service Inc)",radarzon,radarzon,-,YES,NO,NO,NO,NO,cvs.cpp,INCOMPLETO,RASTER,"90",240,248,VERTICAL,cvs.cpp
+"raiders5","Raiders5","1985",UPL,-,-,-,YES,NO,NO,NO,NO,"nova2001.cpp",BUONO,RASTER,"0",256,192,HORIZONTAL,"nova2001.cpp"
+"raiders5t","Raiders5 (Japan, set 1)","1985","UPL (Taito license)","raiders5","raiders5",-,YES,NO,NO,NO,NO,"nova2001.cpp",BUONO,RASTER,"0",256,192,HORIZONTAL,"nova2001.cpp"
+"raiders5ta","Raiders5 (Japan, set 2, bootleg?)","1985","UPL (Taito license)","raiders5","raiders5",-,YES,NO,NO,NO,NO,"nova2001.cpp",BUONO,RASTER,"0",256,192,HORIZONTAL,"nova2001.cpp"
+raimaisjo,"Raimais (Japan, first revision)","1988","Taito Corporation",raimais,raimais,-,YES,NO,NO,NO,NO,taito_l.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,taito_l.cpp
+raimaisj,"Raimais (Japan)","1988","Taito Corporation",raimais,raimais,-,YES,NO,NO,NO,NO,taito_l.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,taito_l.cpp
+raimais,"Raimais (World)","1988","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,taito_l.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,taito_l.cpp
+rallyxa,"Rally X","1980",Namco,rallyx,rallyx,rallyx,YES,NO,NO,NO,NO,rallyx.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,rallyx.cpp
+rallyx,"Rally X (32k Ver.?)","1980",Namco,-,-,rallyx,YES,NO,NO,NO,NO,rallyx.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,rallyx.cpp
+rallyxm,"Rally X (Midway)","1980","Namco (Midway license)",rallyx,rallyx,rallyx,YES,NO,NO,NO,NO,rallyx.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,rallyx.cpp
+rallyxmr,"Rally X (Model Racing bootleg)","1980","bootleg (Model Racing)",rallyx,rallyx,rallyx,YES,NO,NO,NO,NO,rallyx.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,rallyx.cpp
+rallys,"Rallys (bootleg of Spectar, set 1)","1980","bootleg (Novar)",spectar,spectar,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+rallysa,"Rallys (bootleg of Spectar, set 2)","1980","bootleg (Musik Box Brescia)",spectar,spectar,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+reactor,Reactor,"1982",Gottlieb,-,-,-,YES,NO,NO,NO,NO,gottlieb.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,gottlieb.cpp
+resclunar,"Rescate Lunar (Spanish bootleg of Lunar Rescue)","1980","bootleg (Niemer S.A.)",lrescue,lrescue,lrescue,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+ringball,"Ring Ball (Ver. 2.6)","1995",Microhard,funystrp,funystrp,-,YES,NO,NO,NO,NO,splash.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,splash.cpp
+rockduck,"Rock Duck (prototype?)","1983","Datel SAS",-,-,-,YES,NO,NO,NO,NO,scregg.cpp,PRELIMINARE,RASTER,"270",240,240,VERTICAL,scregg.cpp
+rockragea,"Rock'n Rage (prototype?)","1986",Konami,rockrage,rockrage,-,YES,NO,NO,NO,NO,rockrage.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,rockrage.cpp
+rockrage,"Rock'n Rage (World)","1986",Konami,-,-,-,YES,NO,NO,NO,NO,rockrage.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,rockrage.cpp
+rompers,"Rompers (Japan, new version (Rev B))","1989",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"90",288,224,VERTICAL,"namcos1.cpp"
+romperso,"Rompers (Japan, old version)","1989",Namco,rompers,rompers,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"90",288,224,VERTICAL,"namcos1.cpp"
+"clapapa2","Rootin' Tootin' (DECO Cassette) (US)","1983","Data East Corporation",clapapa,clapapa,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+clapapa,"Rootin' Tootin' / La-Pa-Pa (DECO Cassette) (US)","1983","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+roundup,Round-Up,"1981","Taito Corporation (Amenip/Centuri license)",-,-,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+"route16bl","Route 16 (bootleg)","1981","bootleg (Leisure and Allied)","route16","route16",-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"270",256,256,VERTICAL,"route16.cpp"
+"route16a","Route 16 (Centuri license, set 1)","1981","Tehkan / Sun Electronics (Centuri license)","route16","route16",-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"270",256,256,VERTICAL,"route16.cpp"
+"route16b","Route 16 (Centuri license, set 2)","1981","Tehkan / Sun Electronics (Centuri license)","route16","route16",-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"270",256,256,VERTICAL,"route16.cpp"
+"route16c","Route 16 (Centuri license, set 3, bootleg?)","1981","Tehkan / Sun Electronics (Centuri license)","route16","route16",-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"270",256,256,VERTICAL,"route16.cpp"
+"route16","Route 16 (Sun Electronics, set 1)","1981","Sun Electronics",-,-,-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"270",256,256,VERTICAL,"route16.cpp"
+"route16d","Route 16 (Sun Electronics, set 2)","1981","Sun Electronics","route16","route16",-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"270",256,256,VERTICAL,"route16.cpp"
+routex,"Route X (bootleg, set 1)","1981",bootleg,"route16","route16",-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"270",256,256,VERTICAL,"route16.cpp"
+routexa,"Route X (bootleg, set 2)","1981",bootleg,"route16","route16",-,YES,NO,NO,NO,NO,"route16.cpp",BUONO,RASTER,"270",256,256,VERTICAL,"route16.cpp"
+rugrats,"Rug Rats","1983",Nichibutsu,wiping,wiping,-,YES,NO,NO,NO,NO,wiping.cpp,BUONO,RASTER,"90",288,224,VERTICAL,wiping.cpp
+rumba,"Rumba Lumber","1984",Taito,-,-,-,YES,NO,NO,NO,NO,flstory.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,flstory.cpp
+runaway,"Runaway (Atari, prototype)","1982",Atari,-,-,-,YES,NO,NO,NO,NO,runaway.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,runaway.cpp
+runaways,"Runaway (Sun Electronics, Japan)","1979","Sun Electronics",-,-,"dai3wksi",YES,NO,NO,NO,NO,"dai3wksi.cpp",PRELIMINARE,RASTER,"270",256,240,VERTICAL,"dai3wksi.cpp"
+safarirj,"Safari Rally (Japan)","1979",SNK,safarir,safarir,safarir,YES,NO,NO,NO,NO,safarir.cpp,INCOMPLETO,RASTER,"90",256,208,VERTICAL,safarir.cpp
+safarir,"Safari Rally (World)","1979","SNK (Taito license)",-,-,safarir,YES,NO,NO,NO,NO,safarir.cpp,INCOMPLETO,RASTER,"90",256,208,VERTICAL,safarir.cpp
+ssanchan,"Sanrin San Chan (Japan, 315-5xxx)","1984",Sega,spatter,spatter,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",479,224,HORIZONTAL,"system1.cpp"
+savanna,"Savanna (Jungler bootleg)","1982","bootleg (Olympia)",jungler,jungler,-,YES,NO,NO,NO,NO,rallyx.cpp,BUONO,RASTER,"90",288,224,VERTICAL,rallyx.cpp
+scregg,"Scrambled Egg","1983","Technos Japan",-,-,-,YES,NO,NO,NO,NO,scregg.cpp,BUONO,RASTER,"270",240,240,VERTICAL,scregg.cpp
+selfeena,"Sel Feena","1991","East Technology",-,-,-,YES,NO,NO,NO,NO,taito_b.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,taito_b.cpp
+shackled,"Shackled (US)","1986","Data East USA",-,-,-,YES,NO,NO,NO,NO,"dec8.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"dec8.cpp"
+mikiek,"Shin-ip Sawon - Seok Dol-i","1984",bootleg,mikie,mikie,-,YES,NO,NO,NO,NO,mikie.cpp,BUONO,RASTER,"270",256,224,VERTICAL,mikie.cpp
+mikiej,"Shinnyuushain Tooru-kun","1984",Konami,mikie,mikie,-,YES,NO,NO,NO,NO,mikie.cpp,BUONO,RASTER,"270",256,224,VERTICAL,mikie.cpp
+shocking,Shocking,"1997","Yun Sung",-,-,-,YES,NO,NO,NO,NO,"yunsun16.cpp",BUONO,RASTER,"0",380,224,HORIZONTAL,"yunsun16.cpp"
+shockingk,"Shocking (Korea, set 1)","1997","Yun Sung",shocking,shocking,-,YES,NO,NO,NO,NO,"yunsun16.cpp",BUONO,RASTER,"0",380,224,HORIZONTAL,"yunsun16.cpp"
+shockingko,"Shocking (Korea, set 2)","1997","Yun Sung",shocking,shocking,-,YES,NO,NO,NO,NO,"yunsun16.cpp",BUONO,RASTER,"0",380,224,HORIZONTAL,"yunsun16.cpp"
+sidetrac,"Side Trak","1979",Exidy,-,-,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+smash,"Smash (Crash bootleg)","1979",bootleg,crash,crash,crash,YES,NO,NO,NO,NO,circus.cpp,INCOMPLETO,RASTER,"0",248,256,HORIZONTAL,circus.cpp
+snapper,"Snapper (Korea)","1990",Philko,-,-,-,YES,NO,NO,NO,NO,"segas16b.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"segas16b.cpp"
+koroleva,"Snezhnaja Koroleva","198?",Terminal,-,-,-,YES,NO,NO,NO,NO,"tiamc1.cpp",BUONO,RASTER,"0",256,256,HORIZONTAL,"tiamc1.cpp"
+solarfox,"Solar Fox (upright)","1981","Bally Midway",-,-,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"270",512,480,VERTICAL,mcr.cpp
+pc_sjetm,"Solar Jetman (PlayChoice-10)","1990",Rare,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+schasercv,"Space Chaser (CV version - set 1)","1979",Taito,schaser,schaser,invaders,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+schaserm,"Space Chaser (Model Racing bootleg)","1979","bootleg (Model Racing)",schaser,schaser,-,YES,NO,NO,NO,NO,"8080bw.cpp",BUONO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+schaser,"Space Chaser (set 1)","1979",Taito,-,-,-,YES,NO,NO,NO,NO,"8080bw.cpp",BUONO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+schasera,"Space Chaser (set 2)","1979",Taito,schaser,schaser,-,YES,NO,NO,NO,NO,"8080bw.cpp",BUONO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+schaserb,"Space Chaser (set 3)","1979",Taito,schaser,schaser,-,YES,NO,NO,NO,NO,"8080bw.cpp",BUONO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+schaserc,"Space Chaser (set 4)","1979",Taito,schaser,schaser,-,YES,NO,NO,NO,NO,"8080bw.cpp",INCOMPLETO,RASTER,"270",260,224,VERTICAL,"8080bw.cpp"
+spattera,"Spatter (315-5099)","1984",Sega,spatter,spatter,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"system1.cpp"
+spatter,"Spatter (315-5xxx)","1984",Sega,-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",479,224,HORIZONTAL,"system1.cpp"
+"spectar1","Spectar (revision 1?)","1980",Exidy,spectar,spectar,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+spectarrf,"Spectar (revision 2, bootleg)","1984","bootleg (Recreativos Franco)",spectar,spectar,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+spectar,"Spectar (revision 3)","1980",Exidy,-,-,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+startrks,"Star Trek (Head On hardware)","198?","bootleg (Sidam)",-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+stlforce,"Steel Force","1994","Electronic Devices Italy / Ecogames S.L. Spain",-,-,-,YES,NO,NO,NO,NO,stlforce.cpp,BUONO,RASTER,"0",366,240,HORIZONTAL,stlforce.cpp
+streakng,"Streaking (set 1)","1980",Shoei,-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,INCOMPLETO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+streaknga,"Streaking (set 2)","1980",Shoei,streakng,streakng,-,YES,NO,NO,NO,NO,galaxian.cpp,INCOMPLETO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+schick,"Super Chick","1988",Microhard,-,-,-,YES,NO,NO,NO,NO,schick.cpp,PRELIMINARE,RASTER,"90",288,224,VERTICAL,schick.cpp
+supcrash,"Super Crash (bootleg of Head On)","1979","bootleg (VGG)",headon,headon,-,YES,NO,NO,NO,NO,vicdual.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,vicdual.cpp
+supduck,"Super Duck","1992",Comad,-,-,-,YES,NO,NO,NO,NO,supduck.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,supduck.cpp
+suprlocoo,"Super Locomotive","1982",Sega,suprloco,suprloco,-,YES,NO,NO,NO,NO,suprloco.cpp,BUONO,RASTER,"0",240,224,HORIZONTAL,suprloco.cpp
+suprloco,"Super Locomotive (Rev.A)","1982",Sega,-,-,-,YES,NO,NO,NO,NO,suprloco.cpp,BUONO,RASTER,"0",240,224,HORIZONTAL,suprloco.cpp
+superpac,"Super Pac-Man","1982",Namco,-,-,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+superpacm,"Super Pac-Man (Midway)","1982","Namco (Bally Midway license)",superpac,superpac,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+spiero,"Super Pierrot (Japan)","1987",Universal,dorunrun,dorunrun,-,YES,NO,NO,NO,NO,docastle.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+stoffy,"Super Toffy","1994",Midas,-,-,-,YES,NO,NO,NO,NO,ddragon.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,ddragon.cpp
+stoffyu,"Super Toffy (Unico license)","1994","Midas (Unico license)",stoffy,stoffy,-,YES,NO,NO,NO,NO,ddragon.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,ddragon.cpp
+gogomile,"Susume! Mile Smile / Go Go! Mile Smile (newer)","1995",Fuuki,-,-,-,YES,NO,NO,NO,NO,"fuukifg2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"fuukifg2.cpp"
+gogomileo,"Susume! Mile Smile / Go Go! Mile Smile (older)","1995",Fuuki,gogomile,gogomile,-,YES,NO,NO,NO,NO,"fuukifg2.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"fuukifg2.cpp"
+csweetht,"Sweet Heart (DECO Cassette) (US)","1982","Data East Corporation","cdiscon1","cdiscon1",-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+ssingles,"Swinging Singles (US)","1983","Yachiyo Denki (Entertainment Enterprises, Ltd. license)",-,-,-,YES,NO,NO,NO,NO,ssingles.cpp,PRELIMINARE,RASTER,"90",256,256,VERTICAL,ssingles.cpp
+ttfitter,"T.T Fitter (Japan)","1981","Taito Corporation",roundup,roundup,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+talbot,Talbot,"1982","Alpha Denshi Co. (Volt Electronics license)",-,-,-,YES,NO,NO,NO,NO,champbas.cpp,BUONO,RASTER,"270",256,224,VERTICAL,champbas.cpp
+"tank8","Tank 8 (set 1)","1976","Atari (Kee Games)",-,-,-,YES,NO,NO,NO,NO,"tank8.cpp",BUONO,RASTER,"0",480,464,HORIZONTAL,"tank8.cpp"
+"tank8a","Tank 8 (set 2)","1976","Atari (Kee Games)","tank8","tank8",-,YES,NO,NO,NO,NO,"tank8.cpp",PRELIMINARE,RASTER,"0",480,464,HORIZONTAL,"tank8.cpp"
+"tank8b","Tank 8 (set 3)","1976","Atari (Kee Games)","tank8","tank8",-,YES,NO,NO,NO,NO,"tank8.cpp",PRELIMINARE,RASTER,"0",480,464,HORIZONTAL,"tank8.cpp"
+"tank8c","Tank 8 (set 4)","1976","Atari (Kee Games)","tank8","tank8",-,YES,NO,NO,NO,NO,"tank8.cpp",PRELIMINARE,RASTER,"0",480,464,HORIZONTAL,"tank8.cpp"
+"tank8d","Tank 8 (set 5)","1976","Atari (Kee Games)","tank8","tank8",-,YES,NO,NO,NO,NO,"tank8.cpp",PRELIMINARE,RASTER,"0",480,464,HORIZONTAL,"tank8.cpp"
+tankbatt,"Tank Battalion","1980",Namco,-,-,-,YES,NO,NO,NO,NO,tankbatt.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,tankbatt.cpp
+tankbattb,"Tank Battalion (bootleg)","1980",bootleg,tankbatt,tankbatt,-,YES,NO,NO,NO,NO,tankbatt.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,tankbatt.cpp
+tankbust,"Tank Busters","1985","Valadon Automation",-,-,-,YES,NO,NO,NO,NO,tankbust.cpp,BUONO,RASTER,"90",320,240,VERTICAL,tankbust.cpp
+tankfrceb,"Tank Force (bootleg)","199?",bootleg,tankfrce,tankfrce,-,YES,NO,NO,NO,NO,"namcos1b.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"namcos1b.cpp"
+tankfrcej,"Tank Force (Japan)","1991",Namco,tankfrce,tankfrce,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos1.cpp"
+tankfrce,"Tank Force (US, 2 Players)","1991",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos1.cpp"
+"tankfrce4","Tank Force (US, 4 Players)","1991",Namco,tankfrce,tankfrce,-,YES,NO,NO,NO,NO,"namcos1.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos1.cpp"
+targ,Targ,"1980",Exidy,-,-,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+targc,"Targ (cocktail?)","1980",Exidy,targ,targ,targ,YES,NO,NO,NO,NO,exidy.cpp,INCOMPLETO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+taxidriv,"Taxi Driver","1984","Graphic Techno",-,-,-,YES,NO,NO,NO,NO,taxidriv.cpp,INCOMPLETO,RASTER,"90",256,208,VERTICAL,taxidriv.cpp
+tenspot,"Ten Spot","1982","Thomas Automatics",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,PRELIMINARE,RASTER,"270",768,224,VERTICAL,galaxian.cpp
+robby,"The Adventures of Robby Roto!","1981","Dave Nutting Associates / Bally Midway",-,-,-,YES,NO,NO,NO,NO,astrocde.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,astrocde.cpp
+anteateruk,"The Anteater (UK)","1982","Tago Electronics (Free Enterprise Games license)",anteater,anteater,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+berenstn,"The Berenstain Bears in Big Paw's Cave","1984","Enter-Tech, Ltd.",-,-,-,YES,NO,NO,NO,NO,tugboat.cpp,PRELIMINARE,RASTER,"90",240,224,VERTICAL,tugboat.cpp
+elecyoyo,"The Electric Yo-Yo (set 1)","1982","Taito America Corporation",-,-,-,YES,NO,NO,NO,NO,qix.cpp,BUONO,RASTER,"270",256,256,VERTICAL,qix.cpp
+"elecyoyo2","The Electric Yo-Yo (set 2)","1982","Taito America Corporation",elecyoyo,elecyoyo,-,YES,NO,NO,NO,NO,qix.cpp,BUONO,RASTER,"270",256,256,VERTICAL,qix.cpp
+thehand,"The Hand","1981",T.I.C.,-,-,thehand,YES,NO,NO,NO,NO,gotya.cpp,INCOMPLETO,RASTER,"270",288,224,VERTICAL,gotya.cpp
+thehole,"The Hole (bootleg of The Pit)","1982",bootleg,thepit,thepit,-,YES,NO,NO,NO,NO,thepit.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,thepit.cpp
+irrmaze,"The Irritating Maze / Ultra Denryu Iraira Bou","1997","SNK / Saurus",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+thepit,"The Pit","1982","Zilec Electronics",-,-,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+thepitm,"The Pit (bootleg on Moon Quasar hardware)","198?","bootleg (KZH)",thepit,thepit,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+thepitj,"The Pit (Japan)","1982","Zilec Electronics (Taito license)",thepit,thepit,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+"thepitu1","The Pit (US set 1)","1982","Zilec Electronics (Centuri license)",thepit,thepit,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+"thepitu2","The Pit (US set 2)","1982","Zilec Electronics (Centuri license)",thepit,thepit,-,YES,NO,NO,NO,NO,thepit.cpp,BUONO,RASTER,"90",256,224,VERTICAL,thepit.cpp
+roishtar,"The Return of Ishtar","1986",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos86.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos86.cpp"
+todruaga,"The Tower of Druaga (New Ver.)","1984",Namco,-,-,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+todruagao,"The Tower of Druaga (Old Ver.)","1984",Namco,todruaga,todruaga,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+todruagas,"The Tower of Druaga (Sidam)","1984","bootleg? (Sidam)",todruaga,todruaga,-,YES,NO,NO,NO,NO,mappy.cpp,BUONO,RASTER,"90",288,224,VERTICAL,mappy.cpp
+thief,Thief,"1981","Pacific Novelty",-,-,thief,YES,NO,NO,NO,NO,thief.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,thief.cpp
+timetunl,"Time Tunnel","1982","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,taitosj.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,taitosj.cpp
+tinklpit,"Tinkle Pit (Japan)","1993",Namco,-,-,-,YES,NO,NO,NO,NO,"namcona1.cpp",BUONO,RASTER,"0",304,224,HORIZONTAL,"namcona1.cpp"
+titanpac,"Titan (Pac-Man hack)","1981",hack,puckman,puckman,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",288,224,VERTICAL,pacman.cpp
+toffy,Toffy,"1993",Midas,-,-,-,YES,NO,NO,NO,NO,ddragon.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,ddragon.cpp
+toggle,"Toggle (prototype)","1985",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+toucheme,"Touche Me (set 1)","19??",-,-,-,-,YES,NO,NO,NO,NO,ladyfrog.cpp,BUONO,RASTER,"90",256,224,VERTICAL,ladyfrog.cpp
+touchemea,"Touche Me (set 2, harder)","19??",-,toucheme,toucheme,-,YES,NO,NO,NO,NO,ladyfrog.cpp,BUONO,RASTER,"90",256,224,VERTICAL,ladyfrog.cpp
+toypop,Toypop,"1986",Namco,-,-,-,YES,NO,NO,NO,NO,toypop.cpp,BUONO,RASTER,"180",288,224,HORIZONTAL,toypop.cpp
+tranqgun,"Tranquillizer Gun","1980",Sega,-,-,-,YES,NO,NO,NO,NO,vicdual.cpp,BUONO,RASTER,"270",256,224,VERTICAL,vicdual.cpp
+tisland,"Treasure Island","1981","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,btime.cpp,PRELIMINARE,RASTER,"270",240,240,VERTICAL,btime.cpp
+"ctisland3","Treasure Island (DECO Cassette) (Region D)","1981","Data East Corporation",ctisland,ctisland,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+ctisland,"Treasure Island (DECO Cassette) (US) (set 1)","1981","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+"ctisland2","Treasure Island (DECO Cassette) (US) (set 2)","1981","Data East Corporation",ctisland,ctisland,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+trikitri,"Triki Triki (Lover Boy bootleg)","1993","bootleg (DDT Enterprise Inc)",loverboy,loverboy,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+triplep,"Triple Punch (set 1)","1982","K.K. International",-,-,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+triplepa,"Triple Punch (set 2)","1982","K.K. International",triplep,triplep,-,YES,NO,NO,NO,NO,scramble.cpp,BUONO,RASTER,"90",256,224,VERTICAL,scramble.cpp
+"trogpa4","Trog (prototype, rev 4.00 7/27/90)","1990",Midway,trog,trog,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"trogpa5","Trog (prototype, rev PA5-PAC 8/28/90)","1990",Midway,trog,trog,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"trogpa6","Trog (prototype, rev PA6-PAC 9/09/90)","1990",Midway,trog,trog,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"trog3a","Trog (rev LA3 2/10/91)","1990",Midway,trog,trog,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"trog3","Trog (rev LA3 2/14/91)","1990",Midway,trog,trog,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+"trog4","Trog (rev LA4 3/11/91)","1990",Midway,trog,trog,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+trog,"Trog (rev LA5 3/29/91)","1990",Midway,-,-,-,YES,NO,NO,NO,NO,midyunit.cpp,BUONO,RASTER,"0",410,256,HORIZONTAL,midyunit.cpp
+turpin,Turpin,"1981","Konami (Sega license)",turtles,turtles,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+turpins,"Turpin (bootleg on Super Cobra hardware)","1981",bootleg,turtles,turtles,-,YES,NO,NO,NO,NO,galaxian.cpp,INCOMPLETO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+turtles,Turtles,"1981","Konami (Stern Electronics license)",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+tutankhm,Tutankham,"1982",Konami,-,-,-,YES,NO,NO,NO,NO,tutankhm.cpp,INCOMPLETO,RASTER,"90",768,224,VERTICAL,tutankhm.cpp
+tutankhms,"Tutankham (Stern Electronics)","1982","Konami (Stern Electronics license)",tutankhm,tutankhm,-,YES,NO,NO,NO,NO,tutankhm.cpp,INCOMPLETO,RASTER,"90",768,224,VERTICAL,tutankhm.cpp
+twinbrat,"Twin Brats (set 1)","1995","Elettronica Video-Games S.R.L.",-,-,-,YES,NO,NO,NO,NO,stlforce.cpp,BUONO,RASTER,"0",328,240,HORIZONTAL,stlforce.cpp
+twinbrata,"Twin Brats (set 2)","1995","Elettronica Video-Games S.R.L.",twinbrat,twinbrat,-,YES,NO,NO,NO,NO,stlforce.cpp,BUONO,RASTER,"0",328,240,HORIZONTAL,stlforce.cpp
+twinbratb,"Twin Brats (set 3)","1995","Elettronica Video-Games S.R.L.",twinbrat,twinbrat,-,YES,NO,NO,NO,NO,stlforce.cpp,BUONO,RASTER,"0",328,240,HORIZONTAL,stlforce.cpp
+twinkle,"Twinkle (set 1)","1997","SemiCom / Tirano",-,-,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+twinklea,"Twinkle (set 2)","1997","SemiCom / Tirano",twinkle,twinkle,-,YES,NO,NO,NO,NO,snowbros.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,snowbros.cpp
+tylz,"Tylz (prototype)","1982",Mylstar,-,-,-,YES,NO,NO,NO,NO,gottlieb.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,gottlieb.cpp
+ucytokyu,"Uchuu Tokkyuu Medalian","1997",Sigma,-,-,-,YES,NO,NO,NO,NO,"sigmab98.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"sigmab98.cpp"
+ufosensib,"Ufo Senshi Yohko Chan (bootleg, not encrypted)","1988",bootleg,ufosensi,ufosensi,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"system1.cpp"
+ufosensi,"Ufo Senshi Yohko Chan (MC-8123, 317-0064)","1988",Sega,-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"system1.cpp"
+pc_ftqst,"Uncle Fester's Quest: The Addams Family (PlayChoice-10)","1989","Sunsoft (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+unclepoo,"Uncle Poo","1983",Diatec,-,-,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,240,VERTICAL,jack.cpp
+upndown,"Up'n Down (315-5030)","1983",Sega,-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"270",512,224,VERTICAL,"system1.cpp"
+upndownu,"Up'n Down (not encrypted)","1983",Sega,upndown,upndown,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"270",512,224,VERTICAL,"system1.cpp"
+vanvan,"Van-Van Car","1983",Sanritsu,-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"270",256,224,VERTICAL,pacman.cpp
+vanvank,"Van-Van Car (Karateco set 1)","1983","Sanritsu (Karateco license?)",vanvan,vanvan,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"270",256,224,VERTICAL,pacman.cpp
+vanvanb,"Van-Van Car (Karateco set 2)","1983","Sanritsu (Karateco license?)",vanvan,vanvan,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"270",256,224,VERTICAL,pacman.cpp
+"venture4","Venture (version 4)","1981",Exidy,venture,venture,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+venture,"Venture (version 5 set 1)","1981",Exidy,-,-,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"venture5b","Venture (version 5 set 2, bootleg)","1981",bootleg,venture,venture,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+"venture5a","Venture (version 5 set 2)","1981",Exidy,venture,venture,-,YES,NO,NO,NO,NO,exidy.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,exidy.cpp
+btlecity,"Vs. Battle City","1985",Namco,-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+wiping,Wiping,"1982",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,wiping.cpp,BUONO,RASTER,"90",288,224,VERTICAL,wiping.cpp
+wits,"Wit's (Japan)","1989","Athena (Visco license)",-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,seta.cpp
+wow,"Wizard of Wor","1980","Dave Nutting Associates / Midway",-,-,-,YES,NO,NO,NO,NO,astrocde.cpp,INCOMPLETO,RASTER,"0",352,240,HORIZONTAL,astrocde.cpp
+wowg,"Wizard of Wor (with German Language ROM)","1980","Dave Nutting Associates / Midway",wow,wow,-,YES,NO,NO,NO,NO,astrocde.cpp,INCOMPLETO,RASTER,"0",352,240,HORIZONTAL,astrocde.cpp
+xybotsf,"Xybots (French, rev 3)","1987","Atari Games",xybots,xybots,-,YES,NO,NO,NO,NO,xybots.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,xybots.cpp
+xybotsg,"Xybots (German, rev 3)","1987","Atari Games",xybots,xybots,-,YES,NO,NO,NO,NO,xybots.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,xybots.cpp
+"xybots0","Xybots (rev 0)","1987","Atari Games",xybots,xybots,-,YES,NO,NO,NO,NO,xybots.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,xybots.cpp
+"xybots1","Xybots (rev 1)","1987","Atari Games",xybots,xybots,-,YES,NO,NO,NO,NO,xybots.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,xybots.cpp
+xybots,"Xybots (rev 2)","1987","Atari Games",-,-,-,YES,NO,NO,NO,NO,xybots.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,xybots.cpp
+yamyam,"Yam! Yam!?","1990",Dooyong,-,-,-,YES,NO,NO,NO,NO,gundealr.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,gundealr.cpp
+yankeedo,"Yankee DO!","1982",hack,mrdo,mrdo,-,YES,NO,NO,NO,NO,mrdo.cpp,BUONO,RASTER,"270",240,192,VERTICAL,mrdo.cpp
+yellowcbb,"Yellow Cab (bootleg)","1984",bootleg,kamikcab,kamikcab,-,YES,NO,NO,NO,NO,liberate.cpp,BUONO,RASTER,"270",256,240,VERTICAL,liberate.cpp
+yellowcbj,"Yellow Cab (Japan)","1984","Data East Corporation",kamikcab,kamikcab,-,YES,NO,NO,NO,NO,liberate.cpp,BUONO,RASTER,"270",256,240,VERTICAL,liberate.cpp
+zaryavos,"Zarya Vostoka","1984","Nova Games of Canada",-,-,-,YES,NO,NO,NO,NO,thepit.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,thepit.cpp
+czeroize,"Zeroize (DECO Cassette) (US)","1983","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+zigzagb,"Zig Zag (bootleg Dig Dug conversion on Galaxian hardware, set 1)","1982","bootleg (LAX)",-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+"zigzagb2","Zig Zag (bootleg Dig Dug conversion on Galaxian hardware, set 2)","1982","bootleg (LAX)",zigzagb,zigzagb,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"90",768,224,VERTICAL,galaxian.cpp
+dzigzag,"Zig Zag (Dig Dug hardware)","1982",bootleg,digdug,digdug,-,YES,NO,NO,NO,NO,galaga.cpp,BUONO,RASTER,"90",288,224,VERTICAL,galaga.cpp
+zzyzzyxx,"Zzyzzyxx (set 1)","1982","Cinematronics / Advanced Microcomputer Systems",-,-,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+"zzyzzyxx2","Zzyzzyxx (set 2)","1982","Cinematronics / Advanced Microcomputer Systems",zzyzzyxx,zzyzzyxx,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp

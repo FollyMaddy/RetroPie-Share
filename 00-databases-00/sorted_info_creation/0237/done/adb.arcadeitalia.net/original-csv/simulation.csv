@@ -1,0 +1,2 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+dogstdx,"dogstation Deluxe","2002",Konami,kpython,-,-,YES,NO,NO,NO,YES,kpython.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,kpython.cpp

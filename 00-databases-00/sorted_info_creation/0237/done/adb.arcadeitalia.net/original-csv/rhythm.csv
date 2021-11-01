@@ -1,0 +1,215 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"bm1stmix","beatmania (ver JA-B)","1997",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bm2ndmxa","beatmania 2nd MIX (ver JA-A)","1998",Konami,"bm2ndmix","bm2ndmix",-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bm2ndmix","beatmania 2nd MIX (ver JA-B)","1998",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bm3rdmix","beatmania 3rd MIX (ver JA-A)","1998",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bm4thmix","beatmania 4th MIX (ver JA-A)","1999",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bm5thmix","beatmania 5th MIX (ver JA-A)","1999",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bm6thmix","beatmania 6th MIX (ver JA-A)","2001",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bm7thmix","beatmania 7th MIX (ver JA-B)","2001",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+bmclubmx,"beatmania Club MIX (ver JA-A)","2000",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+bmcmxaac,"beatmania complete MIX (ver AA-C)","1999",Konami,bmcompmx,bmcompmx,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+bmcompmx,"beatmania complete MIX (ver JA-B)","1999",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bmcompm2","beatmania complete MIX 2 (ver JA-A)","2000",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+bmcorerm,"beatmania CORE REMIX (ver JA-A)","2000",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+bmdct,"beatmania featuring Dreams Come True (ver JA-A)","2000",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+bmiidxa,"beatmania IIDX (863 JAA)","1999",Konami,bmiidx,bmiidx,-,YES,NO,NO,NO,YES,twinkle.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+bmiidx,"beatmania IIDX (863 JAB)","1999",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx2","beatmania IIDX 2nd style (GC985 JAA)","1999",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx3a","beatmania IIDX 3rd style (GC992 JAA)","2000",Konami,"bmiidx3","bmiidx3",-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx3b","beatmania IIDX 3rd style (GC992 JAB)","2000",Konami,"bmiidx3","bmiidx3",-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx3","beatmania IIDX 3rd style (GC992 JAC)","2000",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx4","beatmania IIDX 4th style (GCA03 JAA)","2000",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx5","beatmania IIDX 5th style (GCA17 JAA)","2001",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx6a","beatmania IIDX 6th style (GCB4U JAA)","2001",Konami,"bmiidx6","bmiidx6",-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx6","beatmania IIDX 6th style (GCB4U JAB)","2001",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx7a","beatmania IIDX 7th style (GCB44 JAA)","2002",Konami,"bmiidx7","bmiidx7",-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx7","beatmania IIDX 7th style (GCB44 JAB)","2002",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidx8","beatmania IIDX 8th style (GCC44 JAA)","2002",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+bmiidxs,"beatmania IIDX Substream (983 JAA)","1999",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+bmiidxsa,"beatmania IIDX Substream (983-AA JAA)","1999",Konami,bmiidxs,bmiidxs,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bmiidxc2","beatmania IIDX Substream with DDR 2nd Club Version 2 (984 A01 BM)","1999",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+bmiidxca,"beatmania IIDX with DDR 2nd Club Version (896 JAA)","1999",Konami,bmiidxc,bmiidxc,-,YES,NO,NO,NO,YES,twinkle.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+bmiidxc,"beatmania IIDX with DDR 2nd Club Version (896 JAB)","1999",Konami,"gq863",-,-,YES,NO,NO,NO,YES,twinkle.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,twinkle.cpp
+"bm3","Beatmania III","2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"bm36th","Beatmania III Append 6th Mix","2001",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"bm37th","Beatmania III Append 7th Mix","2002",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"bm3core","Beatmania III Append Core Remix","2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"bm3final","Beatmania III The Final","2003",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+bmfinal,"beatmania THE FINAL (ver JA-A)","2002",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bs4thmix","beatstage 4th MIX (ver KA-A)","1999",Konami,"bm4thmix","bm4thmix",-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"bam2","Bust a Move 2 - Dance Tengoku Mix (Japanese ROM ver. 1999/07/17 10:00:00)","1999","Metro / Enix / Namco","coh1002e",-,-,YES,NO,NO,NO,YES,zn.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,zn.cpp
+crackndj,"Crackin' DJ","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"crakndj2","Crackin' DJ Part 2 (Japan)","2001",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+ddrj,"Dance Dance Revolution - Internet Ranking Ver (GC845 VER. JBA)","1998",Konami,dstage,dstage,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrja,"Dance Dance Revolution (GC845 VER. JAA)","1998",Konami,dstage,dstage,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrjb,"Dance Dance Revolution (GC845 VER. JAB)","1998",Konami,dstage,dstage,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddra,"Dance Dance Revolution (GN845 VER. AAA)","1999",Konami,dstage,dstage,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddru,"Dance Dance Revolution (GN845 VER. UAA)","1999",Konami,dstage,dstage,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr2mla","Dance Dance Revolution 2nd Mix - Link Ver (GE885 VER. JAA)","1999",Konami,"ddr2m","ddr2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr2ml","Dance Dance Revolution 2nd Mix - Link Ver (GE885 VER. JAB)","1999",Konami,"ddr2m","ddr2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr2m","Dance Dance Revolution 2nd Mix (GN895 VER. JAA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr2mc","Dance Dance Revolution 2nd Mix with beatmaniaIIDX CLUB VERSiON (GE896 VER. JAA)","1999",Konami,"ddr2m","ddr2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr2mc2","Dance Dance Revolution 2nd Mix with beatmaniaIIDX substream CLUB VERSiON 2 (GE984 VER. JAA)","1999",Konami,"ddr2m","ddr2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr3mka","Dance Dance Revolution 3rd Mix - Ver.Korea (GN887 VER. KAA)","2000",Konami,"ddr3mk","ddr3mk",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr3mk","Dance Dance Revolution 3rd Mix - Ver.Korea2 (GN887 VER. KBA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr3ma","Dance Dance Revolution 3rd Mix (GN887 VER. AAA)","1999",Konami,"ddr3mk","ddr3mk",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr3mj","Dance Dance Revolution 3rd Mix (GN887 VER. JAA)","1999",Konami,"ddr3mk","ddr3mk",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr3mp","Dance Dance Revolution 3rd Mix Plus (G*A22 VER. JAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr4m","Dance Dance Revolution 4th Mix (G*A33 VER. AAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr4mj","Dance Dance Revolution 4th Mix (G*A33 VER. JAA)","2000",Konami,"ddr4m","ddr4m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr4mp","Dance Dance Revolution 4th Mix Plus (G*A34 VER. JAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr4mps","Dance Dance Revolution 4th Mix Plus Solo (G*A34 VER. JBA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr4ms","Dance Dance Revolution 4th Mix Solo (G*A33 VER. ABA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr4msj","Dance Dance Revolution 4th Mix Solo (G*A33 VER. JBA)","2000",Konami,"ddr4ms","ddr4ms",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddr5m","Dance Dance Revolution 5th Mix (G*A27 VER. JAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrbocd,"Dance Dance Revolution Best of Cool Dancers (GE892 VER. JAA)","1999",Konami,"ddr2m","ddr2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrextrm,"Dance Dance Revolution Extreme (G*C36 VER. JAA)","2002",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrkara,"Dance Dance Revolution Karaoke Mix (GQ921 VER. JBB)","1999",Konami,dstage,dstage,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrkids,"Dance Dance Revolution Kids (GQAN4 JAA)","2000",Konami,-,-,-,YES,NO,NO,NO,YES,konamigs.cpp,INCOMPLETO,RASTER,"0",400,300,HORIZONTAL,konamigs.cpp
+"ddrs2k","Dance Dance Revolution Solo 2000 (GC905 VER. AAA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddrs2kj","Dance Dance Revolution Solo 2000 (GC905 VER. JAA)","1999",Konami,"ddrs2k","ddrs2k",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrsbm,"Dance Dance Revolution Solo Bass Mix (GQ894 VER. JAA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrstraw,"Dance Dance Revolution Strawberry Shortcake","2006","Majesco (licensed from Konami)",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+ddrusa,"Dance Dance Revolution USA (G*A44 VER. UAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dncfrks,"Dance Freaks (G*874 VER. KAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dmx,"Dance Maniax (G*874 VER. JAA)","2000",Konami,dncfrks,dncfrks,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"dmx2m","Dance Maniax 2nd Mix (G*A39 VER. JAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"dmx2majp","Dance Maniax 2nd Mix Append J-Paradise (G*A38 VER. JAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dfeverg,"Dancing Fever Gold (J 000821 V2.001)","2001",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+dstage,"Dancing Stage - Internet Ranking Ver (GC845 VER. EBA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dstagea,"Dancing Stage (GN845 VER. EAA)","1999",Konami,dstage,dstage,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dsem,"Dancing Stage Euro Mix (G*936 VER. EAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"dsem2","Dancing Stage Euro Mix 2 (G*C23 VER. EAA)","2002",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dsfdr,"Dancing Stage Featuring Disney's Rave (GCA37JAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dsfdcta,"Dancing Stage featuring Dreams Come True (GC910 VER. JAA)","1999",Konami,dsfdct,dsfdct,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dsfdct,"Dancing Stage featuring Dreams Come True (GC910 VER. JCA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+dsftkd,"Dancing Stage featuring TRUE KiSS DESTiNATiON (G*884 VER. JAA)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+ddrmax,"DDR Max - Dance Dance Revolution 6th Mix (G*B19 VER. JAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ddrmax2","DDR Max 2 - Dance Dance Revolution 7th Mix (G*B20 VER. JAA)","2002",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+drmna,"DrumMania (GQ881 VER. JAD ALT CD)","1999",Konami,pcnfrk,pcnfrk,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+drmn,"DrumMania (GQ881 VER. JAD)","1999",Konami,pcnfrk,pcnfrk,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+drmnu,"DrumMania (GQ881 VER. UAB)","1999",Konami,pcnfrk,pcnfrk,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn10m","DrumMania 10th Mix (G*D40 VER. JAA)","2004",Konami,"pcnfrk10m","pcnfrk10m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn2m","DrumMania 2nd Mix (GE912 VER. JAB)","1999",Konami,"pcnfrk2m","pcnfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn2mpu","DrumMania 2nd Mix Session Power Up Kit (GE912 VER. JAB)","1999",Konami,"pcnfrk2m","pcnfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn3m","DrumMania 3rd Mix (G*A23 VER. JAA)","2000",Konami,"pcnfrk3m","pcnfrk3m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn4m","DrumMania 4th Mix (G*A25 VER. JAA)","2001",Konami,"pcnfrk4m","pcnfrk4m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn5m","DrumMania 5th Mix (G*B05 VER. JAA)","2001",Konami,"pcnfrk5m","pcnfrk5m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn6m","DrumMania 6th Mix (G*B16 VER. JAA)","2001",Konami,"pcnfrk6m","pcnfrk6m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn7ma","DrumMania 7th Mix (G*C07 VER. JAA)","2002",Konami,"pcnfrk7m","pcnfrk7m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn7m","DrumMania 7th Mix power-up ver. (G*C07 VER. JBA)","2002",Konami,"pcnfrk7m","pcnfrk7m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn8m","DrumMania 8th Mix (G*C38 VER. JAA)","2003",Konami,"pcnfrk8m","pcnfrk8m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"drmn9m","DrumMania 9th Mix (G*D09 VER. JAA)","2003",Konami,"pcnfrk9m","pcnfrk9m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"ez2d2m","Ez2dancer 2nd Move","2001","Amuse World",-,-,-,YES,NO,NO,NO,YES,"ez2d.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ez2d.cpp"
+flsbeats,"Flash Beats","1998",Sega,-,-,-,YES,NO,NO,NO,NO,flashbeats.cpp,PRELIMINARE,-,"0",0,0,-,flashbeats.cpp
+gtrfrksac,"Guitar Freaks (GQ886 VER. AAC)","1999",Konami,gtrfrks,gtrfrks,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+gtrfrksc,"Guitar Freaks (GQ886 VER. EAC)","1999",Konami,gtrfrks,gtrfrks,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+gtrfrksjc,"Guitar Freaks (GQ886 VER. JAC)","1999",Konami,gtrfrks,gtrfrks,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+gtrfrksuc,"Guitar Freaks (GQ886 VER. UAC)","1999",Konami,gtrfrks,gtrfrks,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtfrk10ma","Guitar Freaks 10th Mix (G*D10 VER. JAA)","2003",Konami,"gtfrk10m","gtfrk10m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtfrk10m","Guitar Freaks 10th Mix (G*D10 VER. JAB)","2003",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtfrk10mb","Guitar Freaks 10th Mix eAmusement (G*D10 VER. JBA)","2003",Konami,"gtfrk10m","gtfrk10m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtfrk11m","Guitar Freaks 11th Mix (G*D39 VER. JAA)","2004",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk2maa","Guitar Freaks 2nd Mix (GQ883 VER. AAA)","1999",Konami,"gtrfrk2m","gtrfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk2ma","Guitar Freaks 2nd Mix (GQ883 VER. EAA)","1999",Konami,"gtrfrk2m","gtrfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk2mja","Guitar Freaks 2nd Mix (GQ883 VER. JAA)","1999",Konami,"gtrfrk2m","gtrfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk2mka","Guitar Freaks 2nd Mix (GQ883 VER. KAA)","1999",Konami,"gtrfrk2m","gtrfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk2mua","Guitar Freaks 2nd Mix (GQ883 VER. UAA)","1999",Konami,"gtrfrk2m","gtrfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk2ml1","Guitar Freaks 2nd Mix Link Kit 1 (GE929 VER. JAA)","1999",Konami,"gtrfrk2m","gtrfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk2ml2","Guitar Freaks 2nd Mix Link Kit 2 (GC929 VER. JBB)","1999",Konami,"gtrfrk2m","gtrfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk2m","Guitar Freaks 2nd Mix Ver 1.01 (GQ883 VER. JAD)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtfrk3mb","Guitar Freaks 3rd Mix - security cassette versionup (949JAZ02)","2000",Konami,"gtrfrk3m","gtrfrk3m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtfrk3ma","Guitar Freaks 3rd Mix (GE949 VER. JAB)","2000",Konami,"gtrfrk3m","gtrfrk3m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk3m","Guitar Freaks 3rd Mix (GE949 VER. JAC)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk4m","Guitar Freaks 4th Mix (G*A24 VER. JAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk5m","Guitar Freaks 5th Mix (G*A26 VER. JAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk6m","Guitar Freaks 6th Mix (G*B06 VER. JAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk7m","Guitar Freaks 7th Mix (G*B17 VER. JAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk8ma","Guitar Freaks 8th Mix (G*C08 VER. JAA)","2002",Konami,"gtrfrk8m","gtrfrk8m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk8m","Guitar Freaks 8th Mix power-up ver. (G*C08 VER. JBA)","2002",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"gtrfrk9m","Guitar Freaks 9th Mix (G*C39 VER. JAA)","2003",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+gtrfrksa,"Guitar Freaks Ver 1.01 (GQ886 VER. AAD)","1999",Konami,gtrfrks,gtrfrks,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+gtrfrks,"Guitar Freaks Ver 1.01 (GQ886 VER. EAD)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+gtrfrksj,"Guitar Freaks Ver 1.01 (GQ886 VER. JAD)","1999",Konami,gtrfrks,gtrfrks,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+gtrfrksu,"Guitar Freaks Ver 1.01 (GQ886 VER. UAD)","1999",Konami,gtrfrks,gtrfrks,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+hmcompmx,"hiphopmania complete MIX (ver UA-B)","1999",Konami,bmcompmx,bmcompmx,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"hmcompm2","hiphopmania complete MIX 2 (ver UA-A)","2000",Konami,"bmcompm2","bmcompm2",-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+kbh,"Keyboardheaven (Korea)","2000",Konami,kbm,kbm,-,YES,NO,NO,NO,YES,firebeat.cpp,INCOMPLETO,RASTER,"270",640,480,VERTICAL,firebeat.cpp
+kbm,Keyboardmania,"2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,firebeat.cpp
+"kbm2nd","Keyboardmania 2nd Mix","2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,firebeat.cpp
+"kbm3rd","Keyboardmania 3rd Mix","2001",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,firebeat.cpp
+lovebero,"Love And Berry - 1st-2nd Collection (Export, Ver 1.003)","2006",Sega,lovebery,lovebery,-,YES,NO,NO,NO,NO,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+lovebery,"Love And Berry - 1st-2nd Collection (Export, Ver 2.000)","2006",Sega,segasp,-,-,YES,NO,NO,NO,NO,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+"loveber3cn","Love And Berry - 3rd-5th Collection (China, Ver 1.001) (MDA-C0071)","2010",Sega,"loveber3","loveber3",-,YES,NO,NO,NO,YES,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+"loveber3","Love And Berry - 3rd-5th Collection (USA, Export, Ver 1.002) (MDA-C0042)","2007",Sega,segasp,-,-,YES,NO,NO,NO,YES,segasp.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segasp.cpp
+mamboagg,"Mambo A Go-Go (GQA40 VER. JAB)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+mamboagga,"Mambo A Go-Go e-Amusement (GQA40 VER. JRB)","2001",Konami,mamboagg,mamboagg,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+mrtlbeat,"Martial Beat (G*B47 VER. JBA)","2002",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+pacapp,"Paca Paca Passion (Japan, PPP1/VER.A2)","1998","Produce / Namco",-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+"pacapp2","Paca Paca Passion 2 (Japan, PKS1/VER.A)","1999","Produce / Namco",-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+pacappsp,"Paca Paca Passion Special (Japan, PSP1/VER.A)","1999","Produce / Namco",-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+ppd,ParaParaDancing,"2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+ppp,ParaParaParadise,"2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"ppp1mp","ParaParaParadise 1st Mix Plus","2000",Konami,ppp,ppp,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"ppp2nda","ParaParaParadise 2nd Mix (AAA)","2001",Konami,"ppp2nd","ppp2nd",-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"ppp2nd","ParaParaParadise 2nd Mix (JAA)","2001",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"ppp11","ParaParaParadise v1.1","2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+pcnfrka,"Percussion Freaks (GQ881 VER. AAB)","1999",Konami,pcnfrk,pcnfrk,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+pcnfrk,"Percussion Freaks (GQ881 VER. EAB)","1999",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+pcnfrkk,"Percussion Freaks (GQ881 VER. KAB)","1999",Konami,pcnfrk,pcnfrk,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk10m","Percussion Freaks 10th Mix eAmusement (G*D40 VER. ACA)","2004",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk2m","Percussion Freaks 2nd Mix (GE912 VER. AAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk2mk","Percussion Freaks 2nd Mix (GE912 VER. KAA)","2000",Konami,"pcnfrk2m","pcnfrk2m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk3m","Percussion Freaks 3rd Mix (G*A23 VER. AAA)","2000",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk3mk","Percussion Freaks 3rd Mix (G*A23 VER. KAA)","2000",Konami,"pcnfrk3m","pcnfrk3m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk4m","Percussion Freaks 4th Mix (G*A25 VER. AAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk4mk","Percussion Freaks 4th Mix (G*A25 VER. KAA)","2001",Konami,"pcnfrk4m","pcnfrk4m",-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk5m","Percussion Freaks 5th Mix (G*B05 VER. AAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk5mk","Percussion Freaks 5th Mix (G*B05 VER. KAA)","2001",Konami,"pcnfrk5m","pcnfrk5m",-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk6m","Percussion Freaks 6th Mix (G*B16 VER. AAA)","2001",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk7m","Percussion Freaks 7th Mix (G*C07 VER. AAA)","2002",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk8m","Percussion Freaks 8th Mix (G*C38 VER. AAA)","2003",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"pcnfrk9m","Percussion Freaks 9th Mix eAmusement (G*D09 VER. ABA)","2003",Konami,"sys573",-,-,YES,NO,NO,NO,YES,"ksys573.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"popn1","Pop'n Music 1 (ver AA-A, HDD 1.00)","1998",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"popn1j","Pop'n Music 1 (ver JA-A, HDD 1.00)","1998",Konami,"popn1","popn1",-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"popn1k","Pop'n Music 1 (ver KA-A, HDD 1.01)","1998",Konami,"popn1","popn1",-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"popn2","Pop'n Music 2 (ver JA-A)","1999",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"popn3","Pop'n Music 3 (ver JA-A)","1999",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+"popn4","Pop'n Music 4","2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"popn5","Pop'n Music 5","2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"popn6","Pop'n Music 6","2001",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"popn7","Pop'n Music 7","2001",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"popn8","Pop'n Music 8","2002",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"popn9","Pop'n Music 9 (ver JAB)","2003",Konami,kpython,-,-,YES,NO,NO,NO,YES,kpython.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,kpython.cpp
+popnanm,"Pop'n Music Animelo","2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"popnanm2","Pop'n Music Animelo 2","2001",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+popnmt,"Pop'n Music Mickey Tunes","2000",Konami,-,-,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+"popnmt2","Pop'n Music Mickey Tunes!","2000",Konami,popnmt,popnmt,-,YES,NO,NO,NO,YES,firebeat.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,firebeat.cpp
+popnstex,"Pop'n Stage EX (ver JB-A)","1999",Konami,-,-,-,YES,NO,NO,NO,YES,djmain.cpp,INCOMPLETO,RASTER,"0",488,384,HORIZONTAL,djmain.cpp
+puyoda,"Puyo Puyo Da! (Japan)","1999",Compile,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+rhnation,"Rhythm Nation (v01.00.04, boot v3.1.5)","2003","ICE/Play Mechanix",-,-,-,YES,NO,NO,NO,YES,"vp101.cpp",PRELIMINARE,RASTER,"0",400,240,HORIZONTAL,"vp101.cpp"
+rhytngk,"Rhythm Tengoku (Japan)","2007","Sega / Nintendo - J.P ROOM",naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"rockn3","Rock'n 3 (Japan)","1999",Jaleco,-,-,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"tetrisp2.cpp"
+"rockn4","Rock'n 4 (Japan, prototype)","2000","Jaleco / PCCWJ",-,-,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"tetrisp2.cpp"
+rocknms,"Rock'n MegaSession (Japan)","1999",Jaleco,-,-,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",INCOMPLETO,RASTER,"270",320,224,VERTICAL,"tetrisp2.cpp"
+rockna,"Rock'n Tread (Japan, alternate)","1999",Jaleco,rockn,rockn,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"tetrisp2.cpp"
+rockn,"Rock'n Tread (Japan)","1999",Jaleco,-,-,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"tetrisp2.cpp"
+"rockn2","Rock'n Tread 2 (Japan)","1999",Jaleco,-,-,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"tetrisp2.cpp"
+sambaa,"Samba De Amigo (Rev A)","1999",Sega,samba,samba,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+samba,"Samba De Amigo (Rev B)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+sambap,"Samba De Amigo (USA, prototype)","1999",Sega,samba,samba,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"samba2k","Samba de Amigo ver. 2000 (Japan)","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shaktam,"Shakatto Tambourine (Rev B) (GDS-0002B)","2000",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shaktamb,"Shakatto Tambourine Cho Powerup Chu (2K1 AUT) (GDS-0016)","2001",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+shaktmsp,"Shakatto Tambourine Motto Norinori Shinkyoku Tsuika (2K1 SPR) (GDS-0013)","2001",Sega,naomigd,-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"step3","Stepping 3 Superior","1999",Jaleco,-,-,-,YES,NO,NO,NO,YES,"tetrisp2.cpp",PRELIMINARE,RASTER,"270",352,240,VERTICAL,"tetrisp2.cpp"
+stepstag,"Stepping Stage Special","1999",Jaleco,-,-,-,YES,NO,NO,NO,YES,"tetrisp2.cpp",PRELIMINARE,RASTER,"270",352,240,VERTICAL,"tetrisp2.cpp"
+"taiko10","Taiko no Tatsujin 10 (T101001-NA-A)","2007",Namco,"sys256",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+"taiko6","Taiko no Tatsujin 6 (Japan, TK61 Ver.A)","2004",Namco,-,-,-,YES,NO,NO,NO,YES,"namcos10.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos10.cpp"
+"taiko7","Taiko no Tatsujin 7 (TK71-NA-A)","2005",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+"taiko8","Taiko no Tatsujin 8 (TK8100-1-NA-A)","2006",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+"taiko9","Taiko no Tatsujin 9 (TK91001-NA-A)","2006",Namco,"sys256",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+vjdash,"VJ Visual & Music Slap","1999",Jaleco,-,-,-,YES,NO,NO,NO,YES,"tetrisp2.cpp",PRELIMINARE,RASTER,"0",352,240,HORIZONTAL,"tetrisp2.cpp"
+wontmuch,"Won!Tertainment Music Channel (v1.00)","2006",Capcom,-,-,-,YES,NO,NO,NO,YES,taitotx.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,taitotx.cpp
+zdrum,"Zooty Drum","2000","PARA Enterprises",-,-,-,YES,NO,NO,NO,YES,"pasha2.cpp",PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,"pasha2.cpp"
