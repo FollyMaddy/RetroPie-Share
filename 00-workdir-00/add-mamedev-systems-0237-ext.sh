@@ -27,8 +27,7 @@ rp_module_section="config"
 local mamedev_csv=()
 local mamedev_forum_csv=()
 local gamelists_csv=()
-local download_csv=()
-local download_read
+
 
 local system_read
 
@@ -47,8 +46,8 @@ function gui_add-mamedev-systems() {
 ",Install lr-mess,,package_setup lr-mess,"
 ",,,,"
 ",v HELP > optional : to use the script offline,,,"
-",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems_sorted_info -o /opt/retropie/emulators/mame/mame0236_systems_sorted_info,"
-",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0236_systems_sorted_info,"
+",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0237_systems_sorted_info -o /opt/retropie/emulators/mame/mame0237_systems_sorted_info,"
+",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0237_systems_sorted_info,"
 ",,,,"
 ",v HELP > install handheld / plug&play and the required downloads,,,"
 ",Handheld / plug&play and downloads > Submenu,,subgui_add-mamedev-systems_forum,"
@@ -66,8 +65,9 @@ function gui_add-mamedev-systems() {
 ",v HELP > install from lists with all systems,,,"
 ",All systems > Submenu,,subgui_add-mamedev-systems_all,"
 ",,,,"
-",v HELP > downloads (fill in the correct website !),,,"
-",Downloads > Submenu,,subgui_add-mamedev-systems_downloads_wget,"
+",v HELP > browse and get online files ),,,"
+",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,"
+",^ HELP > only available with the correct input !),,,"
     )
     build_menu_add-mamedev-systems
 }
@@ -77,9 +77,9 @@ function mame_data_read() {
     #here we read the systems and descriptions from mame into an array
     #by using the if function the data can be re-used, without reading it every time
     if [[ -z ${mamedev_csv[@]} ]]; then
-        if [[ -f /opt/retropie/emulators/mame/mame0236_systems_sorted_info ]]; then 
+        if [[ -f /opt/retropie/emulators/mame/mame0237_systems_sorted_info ]]; then 
     clear
-    echo "Get mame0236 data:/opt/retropie/emulators/mame/mame0236_systems_sorted_info"
+    echo "Get mame0237 data:/opt/retropie/emulators/mame/mame0237_systems_sorted_info"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
@@ -87,12 +87,12 @@ function mame_data_read() {
     # Now using this : lines that start with "D" using => grep ^[D]
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0236_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0237_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         else
-    echo "Get mame0236 data:RetroPie-Share repository"
+    echo "Get mame0237 data:RetroPie-Share repository"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0236_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0237_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         fi
     fi
 }
@@ -150,41 +150,42 @@ function subgui_add-mamedev-systems_sort() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
-",Forum list upon descriptions,,choose_add descriptions *forum,"
-",Forum list upon system names,,choose_add systems *forum,"
+",Forum list upon descriptions,,choose_add descriptions @forum,"
+",Forum list upon system names,,choose_add systems @forum,"
 ",,,,"
-",Non-arcade upon descriptions,,choose_add descriptions *non-arcade,"
-",Non-arcade upon system names,,choose_add systems *non-arcade,"
+",Non-arcade upon descriptions,,choose_add descriptions @non-arcade,"
+",Non-arcade upon system names,,choose_add systems @non-arcade,"
 ",,,,"
-",Game consoles upon descriptions,,choose_add descriptions *game-console,"
-",Game consoles upon system names,,choose_add systems *game-console,"
+",Game consoles upon descriptions,,choose_add descriptions @game-console,"
+",Game consoles upon system names,,choose_add systems @game-console,"
 ",,,,"
-",Atari upon descriptions,,choose_add descriptions *non-arcade Atari,"
-",Atari upon system names,,choose_add systems *non-arcade Atari,"
+",Atari upon descriptions,,choose_add descriptions @non-arcade Atari,"
+",Atari upon system names,,choose_add systems @non-arcade Atari,"
 ",,,,"
-",Commodore upon descriptions,,choose_add descriptions *non-arcade Commodore,"
-",Commodore upon system names,,choose_add systems *non-arcade Commodore,"
+",Commodore upon descriptions,,choose_add descriptions @non-arcade Commodore,"
+",Commodore upon system names,,choose_add systems @non-arcade Commodore,"
 ",,,,"
-",Nintendo upon descriptions,,choose_add descriptions *non-arcade Nintendo,"
-",Nintendo upon system names,,choose_add systems *non-arcade Nintendo,"
+",Nintendo upon descriptions,,choose_add descriptions @non-arcade Nintendo,"
+",Nintendo upon system names,,choose_add systems @non-arcade Nintendo,"
 ",,,,"
-",MSX upon descriptions,,choose_add descriptions *non-arcade MSX,"
-",MSX upon system names,,choose_add systems *non-arcade MSX,"
+",MSX upon descriptions,,choose_add descriptions @non-arcade MSX,"
+",MSX upon system names,,choose_add systems @non-arcade MSX,"
 ",,,,"
-",Sega upon descriptions,,choose_add descriptions *non-arcade Sega,"
-",Sega upon system names,,choose_add systems *non-arcade Sega,"
+",Sega upon descriptions,,choose_add descriptions @non-arcade Sega,"
+",Sega upon system names,,choose_add systems @non-arcade Sega,"
     )
     build_menu_add-mamedev-systems
 
 #preserved-test-lines
-#",Cabinets upon descriptions,,choose_add descriptions *cabinets,"
-#",Cabinets upon systems,,choose_add systems *cabinets,"
+#",Cabinets upon descriptions,,choose_add descriptions @cabinets,"
+#",Cabinets upon systems,,choose_add systems @cabinets,"
 #",(and equal test 2 opt.)SONY MSX upon descriptions,,choose_add descriptions MSX HB-F,"
 #",(and equal test 2 opt.)SONY MSX upon systems,,choose_add systems MSX HB-F,"
 #",(not equal test 2 opt.)MSX but no HB types upon descriptions,,choose_add descriptions HB! MSX,"
 #",(not equal test 2 opt.)MSX but no HB types upon systems,,choose_add systems HB! MSX,"
-#",(not equal test 1 opt.)arcade upon descriptions,,choose_add descriptions *non-arcade!,"
-#",(not equal test 1 opt.)arcade upon systems,,choose_add systems *non-arcade!,"
+#",(not equal test 1 opt.)arcade upon descriptions,,choose_add descriptions @non-arcade!,"
+#",(not equal test 1 opt.)arcade upon systems,,choose_add systems @non-arcade!,"
+
 }
 
 
@@ -302,14 +303,35 @@ function subgui_add-mamedev-systems_search() {
 }
 
 
-function subgui_add-mamedev-systems_downloads_wget() {
+function subgui_add-mamedev-systems_downloads_wget_A() {
+#we can add up to 5 options per list to sort on
+#
     local csv=()
-    local website_url=""
-    local website_path="download"
-    local rompack_name="mame-0.231-merged"
-    local destination_path="/home/$user/RetroPie/download"
+    csv=(
+",menu_item,empty,to_do,"
+",mame-0.231-merged > RetroPie/BIOS/mame,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
+",mame-sl > RetroPie/downloads/mame-sl,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download/mame-sl mame-sl/mame-sl/ download,"
+    )
+    build_menu_add-mamedev-systems
+
+#preserve the one file links
+#",MESS-0.151.BIOS.ROMs > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download MESS-0.151.BIOS.ROMs download,"
+#",MAME_0.193_ROMs_bios-devices > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download MAME_0.193_ROMs_bios-devices download,"
+#",Mame0228 + SL > RetroPie/downloads/mame0228-sl,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download/mame0228-sl MAME_0.228_Software_List_ROMs_machines-bios-devices download,"
+
+}
+
+
+function subform_add-mamedev-systems_downloads_wget_A() {
+    local csv=()
+    local download_csv=()
+    local download_read
+    local website_url="$4"
+    local website_path="$3"
+    local rompack_name="$2"
+    local destination_path="$1"
     local reserved=""
-    local manual_input
+    local manual_input=""
 
     manual_input=$(\
 dialog \
@@ -319,7 +341,7 @@ dialog \
 --form "" \
 22 76 16 \
 "Website url >X (https://X/):" 1 1 "$website_url" 1 30 76 100 \
-"Website path >X (/X/):" 2 1 "$website_path" 2 30 76 100 \
+"Website path >X (/X):" 2 1 "$website_path" 2 30 76 100 \
 "rompack name:" 3 1 "$rompack_name" 3 30 76 100 \
 "destination path:" 4 1 "$destination_path" 4 30 76 100 \
 "reserved:" 5 1 "$reserved" 5 30 76 100 \
@@ -1290,7 +1312,7 @@ echo
 classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmcfball" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cpacmanr1" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "ebknight" "edracula" "efball" "efootb4" "egalaxn2" "einvader" "einvader2" "einvaderc" "epacman2" "epacman2r" "esbattle" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "gpoker" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mbaskb" "mchess" "mcompgin" "mfootb2" "mhockey" "msoccer" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
 konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
 tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
-gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bfightn" "gnw_bjack" "gnw_boxing" "gnw_bsweep" "gnw_cgrab" "gnw_chef" "gnw_climber" "gnw_climbern" "gnw_dkcirc" "gnw_dkhockey" "gnw_dkjr" "gnw_dkjrp" "gnw_dkong" "gnw_dkong2" "gnw_dkong3" "gnw_fire" "gnw_fireatk" "gnw_fires" "gnw_flagman" "gnw_gcliff" "gnw_ghouse" "gnw_helmet" "gnw_judge" "gnw_lboat" "gnw_lion" "gnw_manhole" "gnw_manholeg" "gnw_mario" "gnw_mariocm" "gnw_mariocmt" "gnw_mariotj" "gnw_mbaway" "gnw_mickdon" "gnw_mmouse" "gnw_mmousep" "gnw_octopus" "gnw_opanic" "gnw_pchute" "gnw_pinball" "gnw_popeye" "gnw_popeyep" "gnw_rshower" "gnw_sbuster" "gnw_smb" "gnw_smbn" "gnw_snoopyp" "gnw_squish" "gnw_ssparky" "gnw_stennis" "gnw_tbridge" "gnw_tfish" "gnw_vermin" "gnw_zelda" )
+gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bfightn" "gnw_bjack" "gnw_boxing" "gnw_bsweep" "gnw_cgrab" "gnw_chef" "gnw_climber" "gnw_climbern" "gnw_egg" "gnw_dkcirc" "gnw_dkhockey" "gnw_dkjr" "gnw_dkjrp" "gnw_dkong" "gnw_dkong2" "gnw_dkong3" "gnw_fire" "gnw_fireatk" "gnw_fires" "gnw_flagman" "gnw_gcliff" "gnw_ghouse" "gnw_helmet" "gnw_judge" "gnw_lboat" "gnw_lion" "gnw_manhole" "gnw_manholeg" "gnw_mario" "gnw_mariocm" "gnw_mariocmt" "gnw_mariotj" "gnw_mbaway" "gnw_mickdon" "gnw_mmouse" "gnw_mmousep" "gnw_octopus" "gnw_opanic" "gnw_pchute" "gnw_pinball" "gnw_popeye" "gnw_popeyep" "gnw_rshower" "gnw_sbuster" "gnw_smb" "gnw_smbn" "gnw_snoopyp" "gnw_squish" "gnw_ssparky" "gnw_stennis" "gnw_tbridge" "gnw_tfish" "gnw_vermin" "gnw_zelda" )
 
 #create a subarray of the arrays being used for overlays
 #now only two for loops can be use for multiple arrays
