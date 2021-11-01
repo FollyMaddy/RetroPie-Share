@@ -1,0 +1,380 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"mc_dcat8","100 in 1 (D-CAT8 8bit Console, set 1) (v5.01.11-frd, BL 20041217)","2004",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_dcat8a","100 in 1 (D-CAT8 8bit Console, set 2)","2004",-,"mc_dcat8","mc_dcat8",-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_aa2","100 in 1 Arcade Action II (AT-103)","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_110cb","110 in 1 CoolBaby (CoolBoy RS-1S)","200?",CoolBoy,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"1292apvs","1292 Advanced Programmable Video System","1976",Radofin,-,-,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"mc_138cb","138 in 1 CoolBaby (CoolBoy RS-5, PCB060-10009011V1.3)","200?",CoolBoy,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"1392apvs","1392 Advanced Programmable Video System","1976",Radofin,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"mc_tv200","200 in 1 Retro TV Game","201?","Thumbs Up",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_105te","2011 Super HiK 105 in 1 Turbo Edition","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"silv35","35 in 1 Super Twins","200?","SilverLit / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"3do","3DO (NTSC)","1993","The 3DO Company",-,-,-,YES,NO,NO,NO,NO,"3do.cpp",PRELIMINARE,RASTER,"0",1280,240,HORIZONTAL,"3do.cpp"
+"3do_pal","3DO (PAL)","1993","The 3DO Company","3do","3do",-,YES,NO,NO,NO,NO,"3do.cpp",PRELIMINARE,RASTER,"0",1280,240,HORIZONTAL,"3do.cpp"
+"mc_7x6ss","777777 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_8x6ss","888888 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_8x6cb","888888 in 1 (Coolboy AEF-390)","200?",CoolBoy,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_89in1","89 in 1 Mini Game Console (060-92023011V1.0)","201?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mtc9016","9016 Telespiel Computer (Germany)","1978",Mustang,"studio2","studio2",-,YES,NO,NO,NO,NO,"studio2.cpp",BUONO,RASTER,"0",96,288,HORIZONTAL,"studio2.cpp"
+"mc_9x6sa","999999 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)","200?",-,"mc_9x6ss","mc_9x6ss",-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_9x6ss","999999 in 1 (PXP2 Slim Station)","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+beena,"Advanced Pico BEENA","2009",Sega,-,-,-,YES,NO,NO,NO,NO,sega_beena.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,sega_beena.cpp
+advision,"Adventure Vision","1982",Entex,-,-,-,YES,NO,NO,NO,NO,advision.cpp,INCOMPLETO,RASTER,"0",152,83,HORIZONTAL,advision.cpp
+advsnha,"Advision Home Arcade","1983",Advision,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"cd32n","Amiga CD32 (NTSC)","1993",Commodore,"cd32","cd32",-,YES,NO,NO,NO,NO,amiga.cpp,PRELIMINARE,RASTER,"0",724,483,HORIZONTAL,amiga.cpp
+"cd32","Amiga CD32 (PAL)","1993",Commodore,-,-,-,YES,NO,NO,NO,NO,amiga.cpp,PRELIMINARE,RASTER,"0",724,567,HORIZONTAL,amiga.cpp
+"gx4000","Amstrad GX4000","1990","Amstrad plc",-,-,-,YES,NO,NO,NO,NO,amstrad.cpp,BUONO,RASTER,"0",704,144,HORIZONTAL,amstrad.cpp
+"apfm1000","APF M-1000","1978","APF Electronics Inc.",-,-,-,YES,NO,NO,NO,NO,apf.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,apf.cpp
+"apollo80","Apollo 80 (Germany)","1978",Academy,"studio2","studio2",-,YES,NO,NO,NO,NO,"studio2.cpp",BUONO,RASTER,"0",96,288,HORIZONTAL,"studio2.cpp"
+bndarc,"Arcadia (Bandai)","1982",Bandai,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+arcadia,"Arcadia 2001","1982",Emerson,-,-,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"a2600","Atari 2600 (NTSC)","1977",Atari,-,-,-,YES,NO,NO,NO,NO,"a2600.cpp",BUONO,RASTER,"0",176,223,HORIZONTAL,"a2600.cpp"
+"a2600p","Atari 2600 (PAL)","1978",Atari,"a2600","a2600",-,YES,NO,NO,NO,NO,"a2600.cpp",BUONO,RASTER,"0",176,259,HORIZONTAL,"a2600.cpp"
+"a5200","Atari 5200","1982",Atari,-,-,-,YES,NO,NO,NO,NO,"atari400.cpp",BUONO,RASTER,"0",336,225,HORIZONTAL,"atari400.cpp"
+"a7800","Atari 7800 (NTSC)","1986",Atari,-,-,-,YES,NO,NO,NO,NO,"a7800.cpp",BUONO,RASTER,"0",320,224,HORIZONTAL,"a7800.cpp"
+"a7800p","Atari 7800 (PAL)","1986",Atari,"a7800","a7800",-,YES,NO,NO,NO,NO,"a7800.cpp",BUONO,RASTER,"0",320,260,HORIZONTAL,"a7800.cpp"
+"afbm7800","Atari Flashback Mini 7800","2004","Atari / Nice Code",-,-,-,YES,NO,NO,NO,NO,nes_clone.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,nes_clone.cpp
+xegs,"Atari XE Game System","1987",Atari,-,-,-,YES,NO,NO,NO,NO,"atari400.cpp",INCOMPLETO,RASTER,"0",336,225,HORIZONTAL,"atari400.cpp"
+astrocdw,"Bally Computer System","1977","Bally Manufacturing",astrocde,astrocde,-,YES,NO,NO,NO,NO,astrohome.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,astrohome.cpp
+astrocdl,"Bally Home Library Computer","1977","Bally Manufacturing",astrocde,astrocde,-,YES,NO,NO,NO,NO,astrohome.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,astrohome.cpp
+astrocde,"Bally Professional Arcade","1978","Bally Manufacturing",-,-,-,YES,NO,NO,NO,NO,astrohome.cpp,BUONO,RASTER,"0",352,240,HORIZONTAL,astrohome.cpp
+"cdimono1","CD-i (Mono-I) (PAL)","1991",Philips,-,-,-,YES,NO,NO,NO,NO,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"cdimono2","CD-i (Mono-II) (NTSC)","1991",Philips,-,-,-,YES,NO,NO,NO,NO,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"cdi490a","CD-i 490","1991",Philips,-,-,-,YES,NO,NO,NO,NO,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+"cdi910","CD-i 910-17P Mini-MMC (PAL)","1991",Philips,-,-,-,YES,NO,NO,NO,NO,cdi.cpp,PRELIMINARE,RASTER,"0",192,22,HORIZONTAL,cdi.cpp
+cdtvn,"CDTV (NTSC)","1990",Commodore,cdtv,cdtv,-,YES,NO,NO,NO,NO,amiga.cpp,PRELIMINARE,RASTER,"0",724,483,HORIZONTAL,amiga.cpp
+cdtv,"CDTV (PAL)","1990",Commodore,-,-,-,YES,NO,NO,NO,NO,amiga.cpp,PRELIMINARE,RASTER,"0",724,567,HORIZONTAL,amiga.cpp
+cdx,"CDX (USA, NTSC)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+unichamp,"Champion 2711","1977",Unisonic,-,-,-,YES,NO,NO,NO,NO,unichamp.cpp,BUONO,RASTER,"0",174,112,HORIZONTAL,unichamp.cpp
+channelf,"Channel F","1976",Fairchild,-,-,-,YES,NO,NO,NO,NO,channelf.cpp,BUONO,RASTER,"0",204,232,HORIZONTAL,channelf.cpp
+"channlf2","Channel F II","1978",Fairchild,-,-,-,YES,NO,NO,NO,NO,channelf.cpp,BUONO,RASTER,"0",204,232,HORIZONTAL,channelf.cpp
+"czz50","Chuang Zao Zhe 50","1986","Bit Corporation",-,-,-,YES,NO,NO,NO,NO,coleco.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,coleco.cpp
+cpatrolm,"City Patrolman","200?",TimeTop,-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+coleco,"ColecoVision (NTSC)","1982",Coleco,-,-,-,YES,NO,NO,NO,NO,coleco.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,coleco.cpp
+colecop,"ColecoVision (PAL)","1983",Coleco,coleco,coleco,-,YES,NO,NO,NO,NO,coleco.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,coleco.cpp
+"c64dtv","Commodore 64 Direct-to-TV (Version 2 050711) (PAL)","2005","The Toy:Lobster Company",-,-,-,YES,NO,NO,NO,NO,"c64dtv.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"c64dtv.cpp"
+"c64gs","Commodore 64 Games System (PAL)","1990","Commodore Business Machines","c64","c64",-,YES,NO,NO,NO,NO,"c64.cpp",BUONO,RASTER,"0",403,284,HORIZONTAL,"c64.cpp"
+lxcmcy,"Compact Cyber Arcade","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"lxcmc250","Compact Cyber Arcade - 250-in-1 (JL2375)","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxcmcycr,"Compact Cyber Arcade - Cars","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxcmcydp,"Compact Cyber Arcade - Disney Princess","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxcmcyfz,"Compact Cyber Arcade - Frozen","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxcmcysp,"Compact Cyber Arcade - Marvel Ultimate Spider-Man","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxcmcypp,"Compact Cyber Arcade - Paw Patrol","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxcmcypj,"Compact Cyber Arcade - PJ Masks","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxcmcysw,"Compact Cyber Arcade - Star Wars Rebels","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxccatv,"Compact Cyber Arcade TV - 120 in 1 (JL2370)","2012",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxccplan,"Console Colour - Disney's Planes","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+lxccminn,"Console Colour - Minnie Mouse","200?",Lexibook,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"mc_cb280","Coolboy RS-18 (280 in 1)","201?",CoolBoy,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+crvision,CreatiVision,"1982","Video Technology",-,-,-,YES,NO,NO,NO,NO,crvision.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,crvision.cpp
+crvisioj,"CreatiVision (Japan)","1982",Cheryco,crvision,crvision,-,YES,NO,NO,NO,NO,crvision.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,crvision.cpp
+"crvisio2","CreatiVision MK-II (Europe)","1983","Video Technology",crvision,crvision,-,YES,NO,NO,NO,NO,crvision.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,crvision.cpp
+"cx3000tc","CX 3000 Tele Computer","1979",Palson,"vc4000","vc4000",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+lxcyber,"Cyber Arcade 200-in-1","201?",Lexibook,"mc_tv200","mc_tv200",-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+dendy,"Dendy Classic 1","1992",Steepler,"iq501","iq501",-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+"dendy2","Dendy Classic 2","1992",Steepler,"iq502","iq502",-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+didj,Didj,"2008",LeapFrog,-,-,-,YES,NO,NO,NO,NO,"magiceyes_pollux_vr3520f.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"magiceyes_pollux_vr3520f.cpp"
+dina,Dina,"1988",Telegames,"czz50","czz50",-,YES,NO,NO,NO,NO,coleco.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,coleco.cpp
+drpcjr,"Doctor PC Jr","1996",Bung,-,-,-,YES,NO,NO,NO,NO,nes.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+dombikec,"Domyos Bike Concept (Domyos Interactive System)","2008","Decathlon / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix2.cpp",PRELIMINARE,RASTER,"0",640,400,HORIZONTAL,"xavix2.cpp"
+domfitad,"Domyos Fitness Adventure (Domyos Interactive System)","2008","Decathlon / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix2.cpp",PRELIMINARE,RASTER,"0",640,400,HORIZONTAL,"xavix2.cpp"
+domfitch,"Domyos Fitness Challenge (Domyos Interactive System)","2008","Decathlon / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+domdance,"Domyos Fitness Dance (Domyos Interactive System)","2007","Decathlon / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+domfitex,"Domyos Fitness Exercises (Domyos Interactive System)","2008","Decathlon / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+domstepc,"Domyos Step Concept (Domyos Interactive System)","2007","Decathlon / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+dceu,"Dreamcast (Europe, PAL)","1999",Sega,dcjp,dcjp,-,YES,NO,NO,NO,NO,dccons.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,dccons.cpp
+dcjp,"Dreamcast (Japan, NTSC)","1998",Sega,-,-,-,YES,NO,NO,NO,NO,dccons.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,dccons.cpp
+dc,"Dreamcast (USA, NTSC)","1999",Sega,dcjp,dcjp,-,YES,NO,NO,NO,NO,dccons.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,dccons.cpp
+"mc_dg101","dreamGEAR 101 in 1","200?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+mc_dgear,"dreamGEAR 75-in-1","200?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"dgun2500","dreamGEAR Wireless Motion Control with 130 games (DGUN-2500)","200?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+dynavisn,Dynavision,"1982",Yamagiwa,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+elecbowl,"Electronic Bowling (Marx)","1978",Marx,-,-,-,YES,NO,NO,YES,NO,"hh_tms1k.cpp",PRELIMINARE,-,"0",0,0,-,"hh_tms1k.cpp"
+famicom,Famicom,"1983",Nintendo,-,-,-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+fds,"Famicom (w/ Disk System add-on)","1983",Nintendo,famicom,famicom,-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+famitwin,"Famicom Twin","1986",Sharp,famicom,famicom,-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+carmarty,"FM-Towns Car Marty","1994",Fujitsu,fmtmarty,fmtmarty,-,YES,NO,NO,NO,NO,fmtowns.cpp,PRELIMINARE,RASTER,"0",768,512,HORIZONTAL,fmtowns.cpp
+fmtmarty,"FM-Towns Marty","1993",Fujitsu,-,-,-,YES,NO,NO,NO,NO,fmtowns.cpp,PRELIMINARE,RASTER,"0",768,512,HORIZONTAL,fmtowns.cpp
+"fmtmarty2","FM-Towns Marty 2","1993",Fujitsu,fmtmarty,fmtmarty,-,YES,NO,NO,NO,NO,fmtowns.cpp,PRELIMINARE,RASTER,"0",768,512,HORIZONTAL,fmtowns.cpp
+"f1392","Fountain 1392","1979",Fountain,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"fforce2","Fountain Force 2","1979",Fountain,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+fnvision,FunVision,"1982","Video Technology",crvision,crvision,-,YES,NO,NO,NO,NO,crvision.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,crvision.cpp
+gcslottv,"Gachinko Contest! Slot machine TV (Japan)","2002","Takara / Sammy / DCT / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"sms1kr","Gam*Boy I (Korea)","19??",Samsung,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,224,HORIZONTAL,sms.cpp
+"sms1krfm","Gam*Boy I (Korea) (FM)","1989",Samsung,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,224,HORIZONTAL,sms.cpp
+smskr,"Gam*Boy II (Korea)","1991",Samsung,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,RASTER,"0",268,224,HORIZONTAL,sms.cpp
+gcbr,"GameCube (Brazil)","2002",Nintendo,gcjp,gcjp,-,YES,NO,NO,NO,NO,gamecube.cpp,PRELIMINARE,-,"0",0,0,-,gamecube.cpp
+gceu,"GameCube (EUR)","2002",Nintendo,gcjp,gcjp,-,YES,NO,NO,NO,NO,gamecube.cpp,PRELIMINARE,-,"0",0,0,-,gamecube.cpp
+gcjp,"GameCube (Japan)","2001",Nintendo,-,-,-,YES,NO,NO,NO,NO,gamecube.cpp,PRELIMINARE,-,"0",0,0,-,gamecube.cpp
+gcus,"GameCube (USA)","2001",Nintendo,gcjp,gcjp,-,YES,NO,NO,NO,NO,gamecube.cpp,PRELIMINARE,-,"0",0,0,-,gamecube.cpp
+"gtct885","Gaming Tech CT-885","201?","Gaming Tech","mc_tv200","mc_tv200",-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+rbitgen,"Generations (Retro-Bit)","2016",Retro-Bit,-,-,-,YES,NO,NO,NO,NO,"actions_atj2279b.cpp",PRELIMINARE,RASTER,"0",1280,720,HORIZONTAL,"actions_atj2279b.cpp"
+genesis_tmss,"Genesis (USA, NTSC, with TMSS chip)","1990",Sega,genesis,genesis,-,YES,NO,NO,NO,NO,megadriv.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+genesis,"Genesis (USA, NTSC)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+gen_nomd,"Genesis Nomad (USA Genesis handheld)","1995",Sega,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"32x","Genesis with 32X (USA, NTSC)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+bandggcn,"Go! Go! Connie-chan! Asobou Mouse","1997",Bandai,-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+gchinatv,"Golden China TV Game","198?","Golden China",-,-,-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+"mc_hh210","Handheld 210 in 1","201?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+hanihac,"Hanimex Home Arcade Centre","1982",Hanimex,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+hisaturn,HiSaturn,"1995",Hitachi,saturn,saturn,-,YES,NO,NO,NO,NO,saturn.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,saturn.cpp
+dcdev,"HKT-0120 Sega Dreamcast Development Box","1998",Sega,-,-,-,YES,NO,NO,NO,NO,dccons.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,dccons.cpp
+"hmg1292","HMG 1292","1979",Hanimex,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"hmg1392","HMG 1392","1979",Hanimex,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"hmg2650","HMG-2650","1982",Hanimex,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+hyprscan,HyperScan,"2006",Mattel,-,-,-,YES,NO,NO,NO,NO,"spg29x.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"spg29x.cpp"
+imgame,"I'm Game! GP120 (Family Sport 120-in-1)","2012","I'm Game / Senca",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_rom.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_rom.cpp"
+icebox,ICEBOX,"19??","Nutting Associates",-,-,-,YES,NO,NO,NO,NO,icebox.cpp,PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,icebox.cpp
+ingtelma,"Ingelen Tele-Match Processor","1978",Ingelen,"channlf2","channlf2",-,YES,NO,NO,NO,NO,channelf.cpp,BUONO,RASTER,"0",204,290,HORIZONTAL,channelf.cpp
+innotv,InnoTV,"2015",VTech,-,-,-,YES,NO,NO,NO,YES,innotv_innotabmax.cpp,PRELIMINARE,RASTER,"0",1280,720,HORIZONTAL,innotv_innotabmax.cpp
+"intmpt03","Intelligent Game MPT-03","198?","Intelligent Game",-,-,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+intv,Intellivision,"1979",Mattel,-,-,-,YES,NO,NO,NO,NO,intv.cpp,BUONO,RASTER,"0",189,240,HORIZONTAL,intv.cpp
+"intv2","Intellivision II","1982",Mattel,intv,intv,-,YES,NO,NO,NO,NO,intv.cpp,BUONO,RASTER,"0",189,240,HORIZONTAL,intv.cpp
+intvkbd,"Intellivision Keyboard Component (Unreleased)","1981",Mattel,intv,intv,-,YES,NO,NO,NO,NO,intv.cpp,PRELIMINARE,RASTER,"0",189,240,HORIZONTAL,intv.cpp
+intvecs,"Intellivision w/Entertainment Computer System + Intellivoice expansions","1983",Mattel,intv,intv,-,YES,NO,NO,NO,NO,intv.cpp,BUONO,RASTER,"0",189,240,HORIZONTAL,intv.cpp
+intvoice,"Intellivision w/IntelliVoice expansion","1982",Mattel,intv,intv,-,YES,NO,NO,NO,NO,intv.cpp,BUONO,RASTER,"0",189,240,HORIZONTAL,intv.cpp
+"intact89","InterAct Complete Video Game - 89-in-1","200?",Intec,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"ixl2000","Intercord XL 2000 System","198?",Intercord,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"vc4000","Interton Electronic VC 4000","1978",Interton,-,-,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+intervsn,"Intervision 2001","198?",Intervision,ormatu,ormatu,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"iq501","IQ-501","1992","Micro Genius",-,-,-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+"iq502","IQ-502","1992","Micro Genius",-,-,-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+"iq7000","IQ-7000","1988",Sharp,-,-,-,YES,NO,NO,NO,NO,wizard.cpp,PRELIMINARE,LCD,"0",96,64,HORIZONTAL,wizard.cpp
+"itmcmtp3","ITMC MPT-03","198?",ITMC,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+itttelma,"ITT Tele-Match Processor","197?",ITT,"channlf2","channlf2",-,YES,NO,NO,NO,NO,channelf.cpp,BUONO,RASTER,"0",204,290,HORIZONTAL,channelf.cpp
+jaguar,"Jaguar (NTSC)","1993",Atari,-,-,-,YES,NO,NO,NO,NO,jaguar.cpp,PRELIMINARE,RASTER,"0",360,240,HORIZONTAL,jaguar.cpp
+jaguarcd,"Jaguar CD (NTSC)","1995",Atari,jaguar,jaguar,-,YES,NO,NO,NO,NO,jaguar.cpp,PRELIMINARE,RASTER,"0",360,240,HORIZONTAL,jaguar.cpp
+jopac,"Jopac JO7400 (France)","1983","Philips (Brandt license)",videopacp,videopacp,-,YES,NO,NO,NO,NO,"odyssey2.cpp",BUONO,RASTER,"0",360,243,HORIZONTAL,"odyssey2.cpp"
+"joypad65","Joypad 65","200?","WinFun / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt09.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt09.cpp"
+"joysti30","Joystick 30","200?","WinFun / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+jpopira,"Jumping Popira (Japan)","2004","Takara / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,xavix.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,xavix.cpp
+"risc2500a","Kasparov RISC 2500 (v1.03)","1992","Saitek / Tasc","risc2500","risc2500",-,YES,NO,NO,NO,NO,"saitek_risc2500.cpp",BUONO,LCD,"0",73,9,HORIZONTAL,"saitek_risc2500.cpp"
+"risc2500","Kasparov RISC 2500 (v1.04)","1992","Saitek / Tasc",-,-,-,YES,NO,NO,NO,NO,"saitek_risc2500.cpp",BUONO,LCD,"0",73,9,HORIZONTAL,"saitek_risc2500.cpp"
+kiugames,"Kiu Games","200?",VideoJet,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+krokha,Krokha,"1990","SKB Kontur",-,-,-,YES,NO,NO,NO,NO,krokha.cpp,INCOMPLETO,RASTER,"0",384,256,HORIZONTAL,krokha.cpp
+"lnsy1392","Lansay 1392","1979",Lansay,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+laseract,"LaserActive with Genesis Pack PAC-S10 (USA, NTSC)","1993","Pioneer / Sega",-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+laseractj,"LaserActive with Mega Drive Pack PAC-S1 (Japan, NTSC)","1993","Pioneer / Sega",laseract,laseract,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+leapstertv,"Leapster TV","2005",LeapFrog,leapster,leapster,-,YES,NO,NO,NO,NO,leapster.cpp,PRELIMINARE,LCD,"0",160,160,HORIZONTAL,leapster.cpp
+lvision,Leisure-Vision,"1982",Leisure-Dynamics,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+giglnrdo,"Leonardo (GiG Electronics)","1982","GiG Electronics",arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"lpgm240","Let's Play! Game Machine 240 in 1","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"lx_jg7410","Lexibook JG7410 100-in-1","2012","Lexibook / JungleTac",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"
+"lx_jg7415","Lexibook JG7415 120-in-1","2011","Lexibook / JungleTac",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"
+"lx_jg7425","Lexibook JG7425 221-in-1","2015",Lexibook,-,-,-,YES,NO,NO,NO,YES,"spg29x_lexibook_jg7425.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg29x_lexibook_jg7425.cpp"
+casloopy,Loopy,"1995",Casio,-,-,-,YES,NO,NO,NO,NO,casloopy.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,casloopy.cpp
+ttv_lotr,"Lord Of The Rings - Warrior of Middle-Earth","2005","Tiger / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2000.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2000.cpp"
+luxorvec,"Luxor Video Entertainment Computer","197?",Luxor,"channlf2","channlf2",-,YES,NO,NO,NO,NO,channelf.cpp,BUONO,RASTER,"0",204,290,HORIZONTAL,channelf.cpp
+luxorves,"Luxor Video Entertainment System","197?",Luxor,channelf,channelf,-,YES,NO,NO,NO,NO,channelf.cpp,BUONO,RASTER,"0",204,290,HORIZONTAL,channelf.cpp
+"cm1200","M-1200 (?)","1978",Conic,"studio2","studio2",-,YES,NO,NO,NO,NO,"studio2.cpp",BUONO,RASTER,"0",96,288,HORIZONTAL,"studio2.cpp"
+"shmc1200","M1200 Micro Computer (Australia)","1978",Sheen,"studio2","studio2",-,YES,NO,NO,NO,NO,"studio2.cpp",BUONO,RASTER,"0",96,288,HORIZONTAL,"studio2.cpp"
+"m82","M82 Display Unit (NTSC)","198?",Nintendo,nes,nes,-,YES,NO,NO,NO,NO,nes.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+"m82p","M82 Display Unit (PAL)","198?",Nintendo,nes,nes,-,YES,NO,NO,NO,NO,nes.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+"sg1000m3","Mark III","1985",Sega,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,224,HORIZONTAL,sms.cpp
+lx_aven,"Marvel Avengers TV Game Console (32-bit) (Lexibook)","201?",Lexibook,-,-,-,YES,NO,NO,NO,YES,"spg29x_lexibook_jg7425.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg29x_lexibook_jg7425.cpp"
+smsj,"Master System (Japan)","1987",Sega,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,224,HORIZONTAL,sms.cpp
+"sms1","Master System I","1986",Sega,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,224,HORIZONTAL,sms.cpp
+"sms1br","Master System I (Brazil)","1989","Tec Toy",sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,224,HORIZONTAL,sms.cpp
+"sms1paln","Master System I (PAL-N)","19??","Tec Toy",sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,240,HORIZONTAL,sms.cpp
+"sms1pal","Master System I (PAL)","1986",Sega,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,240,HORIZONTAL,sms.cpp
+sms,"Master System II","1990",Sega,-,-,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,RASTER,"0",268,224,HORIZONTAL,sms.cpp
+"sms2br","Master System II (Brazil)","1991","Tec Toy",sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,224,HORIZONTAL,sms.cpp
+"sms2paln","Master System II (PAL-N)","19??","Tec Toy",sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,240,HORIZONTAL,sms.cpp
+smspal,"Master System II (PAL)","1990",Sega,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,RASTER,"0",268,240,HORIZONTAL,sms.cpp
+smsbr,"Master System III Compact (Brazil)","1992","Tec Toy",sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,RASTER,"0",268,224,HORIZONTAL,sms.cpp
+smspaln,"Master System III Compact (PAL-N)","19??","Tec Toy",sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,RASTER,"0",268,240,HORIZONTAL,sms.cpp
+smssdisp,"Master System Store Display Unit","1986",Sega,sms,sms,-,YES,NO,NO,NO,NO,sms.cpp,BUONO,LCD,"0",268,224,HORIZONTAL,sms.cpp
+megadriv,"Mega Drive (Europe, PAL)","1990",Sega,genesis,genesis,-,YES,NO,NO,NO,NO,megadriv.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+megadrij,"Mega Drive (Japan, NTSC)","1988",Sega,genesis,genesis,-,YES,NO,NO,NO,NO,megadriv.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"megadri4","Mega Drive 4 / Guitar Idol (set 1)","2009","Tectoy (licensed from Sega)",-,-,-,YES,NO,NO,NO,NO,titan_soc.cpp,PRELIMINARE,RASTER,"0",320,256,HORIZONTAL,titan_soc.cpp
+"megadri4a","Mega Drive 4 / Guitar Idol (set 2)","2009","Tectoy (licensed from Sega)","megadri4","megadri4",-,YES,NO,NO,NO,NO,titan_soc.cpp,PRELIMINARE,RASTER,"0",320,256,HORIZONTAL,titan_soc.cpp
+"32xe","Mega Drive with 32X (Europe, PAL)","1994",Sega,"32x","32x",-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"32xj","Mega Drive with 32X (Japan, NTSC)","1994",Sega,"32x","32x",-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+megajet,"Mega Jet (Japan Mega Drive handheld)","1993",Sega,gen_nomd,gen_nomd,-,YES,NO,NO,NO,NO,megadriv.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+megacda,"Mega-CD (Asia, PAL)","1991",Sega,segacd,segacd,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+megacd,"Mega-CD (Europe, PAL)","1993",Sega,segacd,segacd,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+megacdj,"Mega-CD (Japan, NTSC)","1991",Sega,segacd,segacd,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"megacd2","Mega-CD 2 (Europe, PAL)","1993",Sega,"segacd2","segacd2",-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"megacd2j","Mega-CD 2 (Japan, NTSC)","1993",Sega,"segacd2","segacd2",-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+aiwamcd,"Mega-CD CSD-G1M (Japan, NTSC)","1994",AIWA,"segacd2","segacd2",-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"32x_mcd","Mega-CD with 32X (Europe, PAL)","1995",Sega,"32x_scd","32x_scd",-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"32x_mcdj","Mega-CD with 32X (Japan, NTSC)","1994",Sega,"32x_scd","32x_scd",-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"arcade10","Mini Arcade Console (Arcade 10-in-1)","201?","Fizz Creations",-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_spi.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_spi.cpp"
+"tkmag220","Mini Arcade Games Console (Family Sport 220-in-1)","201?","TaiKee / Senca",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_rom.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_rom.cpp"
+"red5mam","Mini Arcade Machine (Red5, 'Xtra Game')","201?","Red5",-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"240in1ar","Mini Arcade Machine (Thumbs Up, 240IN1ARC)","201?","Thumbs Up",-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"rd5_240","Mini Arcade Machine 240-in-1 (Red5)","201?","Red5",-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"mpt02h","MPT-02 Jeu TV Programmable (France)","1978",Hanimex,"studio2","studio2",-,YES,NO,NO,NO,NO,"studio2.cpp",BUONO,RASTER,"0",96,288,HORIZONTAL,"studio2.cpp"
+"mpt05","MPT-05","1980",ITMC,-,-,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"mpu1000","MPU-1000","1979",Acetronic,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"mpu2000","MPU-2000","1979",Acetronic,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+mratlus,"Mr. Altus Tele Brain","1983",H.G.S.,plldium,plldium,-,YES,NO,NO,NO,NO,arcadia.cpp,PRELIMINARE,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+bandgpad,"Multi Game Player Gamepad","1997",Bandai,-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+multmega,"Multi-Mega (Europe, PAL)","1994",Sega,cdx,cdx,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+ttv_mx,"MX Dirt Rebel","2005","Tiger / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2000.cpp",INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,"xavix_2000.cpp"
+myarccn,"My Arcade Caveman Ninja","201?",DreamGear,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"dgunl3201","My Arcade Data East Classics - Pixel Classic (308-in-1) (DGUNL-3201)","201?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt32.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt32.cpp"
+"dgunl3202","My Arcade Data East Classics - Pixel Player (308-in-1) (DGUNL-3202)","201?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt32.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt32.cpp"
+"dgun2953","My Arcade Gamer Mini 160-in-1 (DGUN-2953)","201?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_spi.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_spi.cpp"
+"myac220","My Arcade Go Gamer Portable (Family Sport 220-in-1)","201?","dreamGEAR / Senca",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_rom.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_rom.cpp"
+"dgunl3227","My Arcade Pac-Man Pocket Player (DGUNL-3227)","2018",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+"dgun2561","My Arcade Portable Gaming System with 140 Games (DGUN-2561)","2012",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"dgun2593","My Arcade Retro Arcade Machine - 300 Handheld Video Games (DGUN-2593)","2016",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"dgun2577","My Arcade Retro Machine 200-in-1 (DGUN-2577)","201?",DreamGear,"mc_tv200","mc_tv200",-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"dgun2869","My Arcade Retro Micro Controller - 220 Built-In Video Games (DGUN-2869)","201?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+myvision,"My Vision (KH-1000)","1983",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,myvision.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,myvision.cpp
+aes,"Neo-Geo AES (NTSC)","1990",SNK,-,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+neocd,"Neo-Geo CD (NTSC?)","1994",SNK,neocdz,neocdz,-,YES,NO,NO,NO,NO,neogeocd.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,neogeocd.cpp
+neocdzj,"Neo-Geo CDZ (Japan)","1996",SNK,neocdz,neocdz,-,YES,NO,NO,NO,NO,neogeocd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeocd.cpp
+neocdz,"Neo-Geo CDZ (US)","1996",SNK,-,-,-,YES,NO,NO,NO,NO,neogeocd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeocd.cpp
+"n64","Nintendo 64","1996",Nintendo,-,-,-,YES,NO,NO,NO,NO,"n64.cpp",PRELIMINARE,RASTER,"0",3093,525,HORIZONTAL,"n64.cpp"
+"n64dd","Nintendo 64DD","1996",Nintendo,"n64","n64",-,YES,NO,NO,NO,NO,"n64.cpp",PRELIMINARE,RASTER,"0",3093,525,HORIZONTAL,"n64.cpp"
+nespal,"Nintendo Entertainment System (PAL)","1987",Nintendo,nes,nes,-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+nes,"Nintendo Entertainment System / Famicom (NTSC)","1985",Nintendo,-,-,-,YES,NO,NO,NO,NO,nes.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+"njp60in1","NJ Pocket 60-in-1 handheld 'X zero' (NTSC)","200?",-,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+krvnjvtv,"OC Jeu Video TV Karvan","1979",SOE,-,-,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"oc2000","OC-2000","1979",SOE,krvnjvtv,krvnjvtv,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"odyssey2","Odyssey 2 (US)","1979",Magnavox,videopac,videopac,-,YES,NO,NO,NO,NO,"odyssey2.cpp",BUONO,RASTER,"0",360,243,HORIZONTAL,"odyssey2.cpp"
+"odyssey3","Odyssey 3 Command Center (US, prototype)","1983",Philips,videopacp,videopacp,-,YES,NO,NO,NO,NO,"odyssey2.cpp",BUONO,RASTER,"0",360,243,HORIZONTAL,"odyssey2.cpp"
+onyx,"Onyx (Brazil/Prototype)","1982",Microdigital,coleco,coleco,-,YES,NO,NO,NO,NO,coleco.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,coleco.cpp
+ormatu,"Ormatu 2001","198?","Ormatu Electronics",-,-,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"omv1000","Othello Multivision FG-1000","1984","Tsukuda Original","sg1000","sg1000",-,YES,NO,NO,NO,NO,"sg1000.cpp",BUONO,RASTER,"0",280,216,HORIZONTAL,"sg1000.cpp"
+"omv2000","Othello Multivision FG-2000","1984","Tsukuda Original","sg1000","sg1000",-,YES,NO,NO,NO,NO,"sg1000.cpp",BUONO,RASTER,"0",280,216,HORIZONTAL,"sg1000.cpp"
+palestra,"Palestra-02","1978",LPO,-,-,-,YES,NO,NO,NO,NO,palestra.cpp,PRELIMINARE,RASTER,"0",256,315,HORIZONTAL,palestra.cpp
+plldium,"Palladium Video-Computer-Game","198?",Neckermann,-,-,-,YES,NO,NO,NO,NO,arcadia.cpp,PRELIMINARE,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+pce,"PC Engine","1987","NEC / Hudson Soft",-,-,-,YES,NO,NO,NO,NO,pce.cpp,INCOMPLETO,RASTER,"0",1088,242,HORIZONTAL,pce.cpp
+pcfx,PC-FX,"1994",NEC,-,-,-,YES,NO,NO,NO,NO,pcfx.cpp,PRELIMINARE,RASTER,"0",1088,242,HORIZONTAL,pcfx.cpp
+pcfxga,"PC-FX/GA (PC ISA Card)","199?",NEC,pcfx,pcfx,-,YES,NO,NO,NO,NO,pcfx.cpp,PRELIMINARE,RASTER,"0",1088,242,HORIZONTAL,pcfx.cpp
+"pcp8718","PCP 8718 - HD 360 Degrees Rocker Palm Eyecare Console - 788 in 1","200?",PCP,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl162xx_lcdtype.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl162xx_lcdtype.cpp"
+"pcp8728","PCP 8728 - 788 in 1","200?",PCP,-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl162xx_lcdtype.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"generalplus_gpl162xx_lcdtype.cpp"
+prsarcde,"Personal Arcade","1988",Telegames,"czz50","czz50",-,YES,NO,NO,NO,NO,coleco.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,coleco.cpp
+picno,Picno,"1993",Konami,-,-,-,YES,NO,NO,NO,NO,picno.cpp,PRELIMINARE,-,"0",0,0,-,picno.cpp
+"picno2","Picno 2","1993",Konami,-,-,-,YES,NO,NO,NO,NO,picno.cpp,PRELIMINARE,-,"0",0,0,-,picno.cpp
+pico,"Pico (Europe, PAL)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,segapico.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,segapico.cpp
+picoj,"Pico (Japan, NTSC)","1993",Sega,pico,pico,-,YES,NO,NO,NO,NO,segapico.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,segapico.cpp
+picou,"Pico (USA, NTSC)","1994",Sega,pico,pico,-,YES,NO,NO,NO,NO,segapico.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,segapico.cpp
+pippin,"Pippin @mark","1996","Apple / Bandai",-,-,-,YES,NO,NO,NO,NO,macpci.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,macpci.cpp
+"ps2","PlayStation 2","2000",Sony,-,-,-,YES,NO,NO,NO,NO,"ps2sony.cpp",PRELIMINARE,RASTER,"0",640,224,HORIZONTAL,"ps2sony.cpp"
+"dgun806","Plug 'N' Play 25-in-1 (DGUN-806)","2004?",dreamGEAR,-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+"dgun851","Plug 'N' Play 30-in-1 (DGUN-851)","200?","dreamGEAR / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"dgun853","Plug 'N' Play 50-in-1 (DGUN-853)","200?","dreamGEAR / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mc_pg150","Pocket Games 150 in 1","201?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+polyvcg,"Polybrain Video Computer Game","1983",Polybrain,plldium,plldium,-,YES,NO,NO,NO,NO,arcadia.cpp,PRELIMINARE,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+poppympt,"Poppy MPT-03 Tele Computer Spiel","198?",Transonic,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"bbl338","Portable Game Player BBL-338 (BaoBaoLong, 48-in-1)","201?",BaoBaoLong,-,-,-,YES,NO,NO,NO,NO,"st2302u_bbl_rom.cpp",PRELIMINARE,LCD,"0",160,128,HORIZONTAL,"st2302u_bbl_rom.cpp"
+"pp1292","PP-1292 Advanced Programmable Video System","1978","Audio Sonic","1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"pp1392","PP-1392 Advanced Programmable Video System","1978","Audio Sonic","1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+prestmpt,"Prestige Video Computer Game MPT-03","198?",Prestige,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+profweis,"Professor Weiss-Alles","1988","Video Technology / Yeno",socrates,socrates,-,YES,NO,NO,NO,NO,socrates.cpp,PRELIMINARE,RASTER,"0",264,230,HORIZONTAL,socrates.cpp
+"pv1000","PV-1000","1983",Casio,-,-,-,YES,NO,NO,NO,NO,"pv1000.cpp",BUONO,RASTER,"0",256,192,HORIZONTAL,"pv1000.cpp"
+rameses,"Rameses HVC6502 (Oceania)","1982",Hanimex,crvision,crvision,-,YES,NO,NO,NO,NO,crvision.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,crvision.cpp
+react,"Reactor 32-in-1 (NTSC)","2009","Ultimate Products Ltd. / Waixing",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"
+reactmd,"Reactor MD (PAL)","2009","AtGames / Sega / Waixing",-,-,-,YES,NO,NO,NO,NO,megadriv_sunplus_hybrid.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv_sunplus_hybrid.cpp
+"ra145","Retro Arcade 16 Bits Classic Edition Mini TV Game Console - 145 Classic Games - TV Arcade Plug and Play (Mega Drive bootlegs)","2018",-,-,-,-,YES,NO,NO,NO,NO,megadriv_rad.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv_rad.cpp
+"rowtrn2k","Rowtron 2000","198?",Rowtron,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+rwtrntcs,"Rowtron Television Computer System","1979",Rowtron,-,-,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"rs70_648","RS-70 648-in-1","2019",CoolBoy,-,-,-,YES,NO,NO,NO,NO,"monkey_king_3b.cpp",PRELIMINARE,RASTER,"0",1280,720,HORIZONTAL,"monkey_king_3b.cpp"
+sabavdpl,"SABA Videoplay","1977",SABA,channelf,channelf,-,YES,NO,NO,NO,NO,channelf.cpp,BUONO,RASTER,"0",204,290,HORIZONTAL,channelf.cpp
+"sabavpl2","SABA Videoplay 2","1978",SABA,"channlf2","channlf2",-,YES,NO,NO,NO,NO,channelf.cpp,BUONO,RASTER,"0",204,290,HORIZONTAL,channelf.cpp
+"mc_sam60","Samuri (60 in 1)","200?","Hummer Technology Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+saturnjp,"Saturn (Japan)","1994",Sega,saturn,saturn,-,YES,NO,NO,NO,NO,saturn.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,saturn.cpp
+saturnkr,"Saturn (Korea)","1995",Samsung,saturn,saturn,-,YES,NO,NO,NO,NO,saturn.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,saturn.cpp
+saturneu,"Saturn (PAL)","1994",Sega,saturn,saturn,-,YES,NO,NO,NO,NO,saturn.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,saturn.cpp
+saturn,"Saturn (USA)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,saturn.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,saturn.cpp
+"sb486","SB-486","1993",Subor,-,-,-,YES,NO,NO,NO,NO,nes.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,nes.cpp
+"tvg2000","Schmid TVG 2000","1982",Schmid,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+sealvt,"Seal 30-in-1 (VT based, Model FN098134)","200?","Lexibook / Sit Up Limited / Jungle's Soft",zonefusn,zonefusn,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+segacd,"Sega CD (USA, NTSC)","1992",Sega,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"segacd2","Sega CD 2 (USA, NTSC)","1993",Sega,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"32x_scd","Sega CD with 32X (USA, NTSC)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"sg1000","SG-1000","1983",Sega,-,-,-,YES,NO,NO,NO,NO,"sg1000.cpp",BUONO,RASTER,"0",280,216,HORIZONTAL,"sg1000.cpp"
+"sg1000m2","SG-1000 II","1984",Sega,"sg1000","sg1000",-,YES,NO,NO,NO,NO,"sg1000.cpp",BUONO,RASTER,"0",280,216,HORIZONTAL,"sg1000.cpp"
+sheenhvc,"Sheen Home Video Centre 2001","198?",Sheen,ormatu,ormatu,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+socrates,"Socrates Educational Video System","1988","Video Technology",-,-,-,YES,NO,NO,NO,NO,socrates.cpp,PRELIMINARE,RASTER,"0",264,220,HORIZONTAL,socrates.cpp
+socratfc,"Socrates SAITOUT","1988","Video Technology",socrates,socrates,-,YES,NO,NO,NO,NO,socrates.cpp,PRELIMINARE,RASTER,"0",264,220,HORIZONTAL,socrates.cpp
+solargm,"Solar Games 80-in-1 (PAL)","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+psa,"Sony PlayStation (Asia-Pacific)","1995","Sony Computer Entertainment Inc",psj,psj,-,YES,NO,NO,NO,NO,psx.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,psx.cpp
+pse,"Sony PlayStation (Europe)","1995","Sony Computer Entertainment Inc",psj,psj,-,YES,NO,NO,NO,NO,psx.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,psx.cpp
+psj,"Sony PlayStation (Japan)","1994","Sony Computer Entertainment Inc",-,-,-,YES,NO,NO,NO,NO,psx.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,psx.cpp
+psu,"Sony PlayStation (USA)","1995","Sony Computer Entertainment Inc",psj,psj,-,YES,NO,NO,NO,NO,psx.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,psx.cpp
+soundic,"Soundic MPT-03","198?",Soundic,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"dance555","Sports and Dance Fit Games Mat D-555 (PAL)","200?",Subor,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+"mc_sp69","Sports Game 69 in 1","200?",-,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+ttv_sw,"Star Wars Saga Edition - Lightsaber Battle Game","2005","Tiger / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2000.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2000.cpp"
+sfach,"Street Fighter Alpha: Warriors' Dreams (CPS Changer, Publicity USA 950727)","1995",Capcom,sfzch,sfzch,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+sfzbch,"Street Fighter Zero (CPS Changer, Brazil 950727)","1995",Capcom,sfzch,sfzch,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+sfzch,"Street Fighter Zero (CPS Changer, Japan 951020)","1995",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+"studio2","Studio II","1977",RCA,-,-,-,YES,NO,NO,NO,NO,"studio2.cpp",INCOMPLETO,RASTER,"0",100,246,HORIZONTAL,"studio2.cpp"
+supracan,"Super A'Can","1995","Funtech Entertainment",-,-,-,YES,NO,NO,NO,NO,supracan.cpp,PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,supracan.cpp
+scv,"Super Cassette Vision","1984",Epoch,-,-,-,YES,NO,NO,NO,NO,scv.cpp,INCOMPLETO,RASTER,"0",192,222,HORIZONTAL,scv.cpp
+scv_pal,"Super Cassette Vision (PAL)","198?",Yeno,scv,scv,-,YES,NO,NO,NO,NO,scv.cpp,INCOMPLETO,RASTER,"0",192,222,HORIZONTAL,scv.cpp
+"timetp36","Super Game 36-in-1 (TimeTop SuperGame) (PAL)","200?",TimeTop,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"timetp7","Super Game 7-in-1 (TimeTop SuperGame) (PAL)","200?",TimeTop,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+supergb,"Super Game Boy","1994",Nintendo,gameboy,gameboy,-,YES,NO,NO,NO,NO,gb.cpp,INCOMPLETO,LCD,"0",256,224,HORIZONTAL,gb.cpp
+snespal,"Super Nintendo Entertainment System (PAL)","1991",Nintendo,snes,snes,-,YES,NO,NO,NO,NO,snes.cpp,INCOMPLETO,RASTER,"0",512,240,HORIZONTAL,snes.cpp
+snes,"Super Nintendo Entertainment System / Super Famicom (NTSC)","1989",Nintendo,-,-,-,YES,NO,NO,NO,NO,snes.cpp,INCOMPLETO,RASTER,"0",512,225,HORIZONTAL,snes.cpp
+suprpctv,"Super PC TV (Epoch)","200?","Epoch / SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+"spc4000","Super Play Computer 4000","1979",Grundig,"vc4000","vc4000",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+stvboy,"Super TV Boy (PAL)","1995",Akor,-,-,-,YES,NO,NO,NO,NO,tvboy.cpp,BUONO,RASTER,"0",176,259,HORIZONTAL,tvboy.cpp
+intvsrs,"Super Video Arcade","1981",Sears,intv,intv,-,YES,NO,NO,NO,NO,intv.cpp,BUONO,RASTER,"0",189,240,HORIZONTAL,intv.cpp
+"sv8000","Super Vision 8000 (TV Jack 8000)","1979",Bandai,-,-,-,YES,NO,NO,NO,NO,"sv8000.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"sv8000.cpp"
+sgx,SuperGrafx,"1989","NEC / Hudson Soft",pce,pce,-,YES,NO,NO,NO,NO,pce.cpp,INCOMPLETO,RASTER,"0",1088,242,HORIZONTAL,pce.cpp
+tccosmos,"Tele-Computer Cosmos","198?",Mobilar?,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+telefevr,Tele-Fever,"198?",Tchibo,arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+telngtcs,"Teleng Television Computer System","1979",Teleng,rwtrntcs,rwtrntcs,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+tempestm,"Tempest MPT-03","198?",Tempest,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+wofch,"Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)","1994",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+"tup240","Thumbs Up 240-in-1 Mini Arcade Machine","200?","Thumbs Up","lpgm240","lpgm240",-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+"tbbympt3","Tobby MPT-03","198?",Tobby,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"lxts3","Toy Story 3 (Lexibook)","2010",Lexibook,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+trakcvg,"Trakton Computer Video Game","198?",Trakton,plldium,plldium,-,YES,NO,NO,NO,NO,arcadia.cpp,PRELIMINARE,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+dctream,Treamcast,"200?",-,dcjp,dcjp,-,YES,NO,NO,NO,NO,dccons.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,dccons.cpp
+tryomvgc,"Tryom Video Game Center","198?",Tryom,"intmpt03","intmpt03",-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+tunixha,"Tunix Home Arcade","1982","Monaco Leisure",arcadia,arcadia,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+"tg16","TurboGrafx 16","1989","NEC / Hudson Soft",pce,pce,-,YES,NO,NO,NO,NO,pce.cpp,INCOMPLETO,RASTER,"0",1088,242,HORIZONTAL,pce.cpp
+tvboyii,"TV Boy II (PAL)","199?",Systema,-,-,-,YES,NO,NO,NO,NO,tvboy.cpp,BUONO,RASTER,"0",176,259,HORIZONTAL,tvboy.cpp
+lexifit,"TV Fitness Center (Lexibook)","2009",Lexibook,-,-,-,YES,NO,NO,NO,NO,"spg2xx_wiwi.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"spg2xx_wiwi.cpp"
+"tvc4000","TVC-4000","1979",Koerting,"vc4000","vc4000",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"unk1682","unknown VT1682-based 101-in-1 handheld (PAL)","200?",-,-,-,-,YES,NO,NO,NO,NO,"vt1682.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"vt1682.cpp"
+orbituvi,"UVI Compu-Game","198?","Orbit Electronics",-,-,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+vsaturn,V-Saturn,"1995",JVC,saturn,saturn,-,YES,NO,NO,NO,NO,saturn.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,saturn.cpp
+vsmile,V.Smile,"2005",VTech,-,-,-,YES,NO,NO,NO,NO,vsmile.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vsmile.cpp
+vsmilem,"V.Smile Motion","2008",VTech,vsmile,vsmile,-,YES,NO,NO,NO,NO,vsmile.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,vsmile.cpp
+vsmilpro,"V.Smile Pro","2007",VTech,-,-,-,YES,NO,NO,NO,NO,vsmilepro.cpp,PRELIMINARE,-,"0",0,0,-,vsmilepro.cpp
+"vc6000","VC 6000","1979",Prinztronic,"1292apvs","1292apvs",-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+vectrex,Vectrex,"1982","General Consumer Electronics",-,-,-,YES,NO,NO,NO,NO,vectrex.cpp,BUONO,VECTOR,"270",0,0,-,vectrex.cpp
+"mpt02","Victory MPT-02 Home TV Programmer (Austria)","1978",Soundic,"studio2","studio2",-,YES,NO,NO,NO,NO,"studio2.cpp",BUONO,RASTER,"0",96,288,HORIZONTAL,"studio2.cpp"
+vidchal,"Video Challenger","1987","Select Merchandise",-,-,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",PRELIMINARE,-,"0",0,0,-,"hh_cop400.cpp"
+"h21","Video Computer H-21","1982",TRQ,-,-,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+vis,"Video Information System MD-2500","1992",Tandy/Memorex,-,-,-,YES,NO,NO,NO,NO,vis.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,vis.cpp
+vdmaster,"Video Master","198?",Grandstand,orbituvi,orbituvi,-,YES,NO,NO,NO,NO,arcadia.cpp,INCOMPLETO,RASTER,"0",192,262,HORIZONTAL,arcadia.cpp
+vmdtbase,"Videomaster Database Games-Computer","1979",Videomaster,database,database,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+videopacf,"Videopac C52 (France)","1979",Philips,videopac,videopac,-,YES,NO,NO,NO,NO,"odyssey2.cpp",BUONO,RASTER,"0",360,243,HORIZONTAL,"odyssey2.cpp"
+videopac,"Videopac G7000 (Europe)","1978",Philips,-,-,-,YES,NO,NO,NO,NO,"odyssey2.cpp",BUONO,RASTER,"0",360,243,HORIZONTAL,"odyssey2.cpp"
+videopacp,"Videopac+ G7400 (Europe)","1983",Philips,-,-,-,YES,NO,NO,NO,NO,"odyssey2.cpp",BUONO,RASTER,"0",360,243,HORIZONTAL,"odyssey2.cpp"
+vii,Vii,"2007","Jungle Soft / KenSingTon / Siatronics",-,-,-,YES,NO,NO,NO,NO,"spg2xx_vii.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_vii.cpp"
+vboy,"Virtual Boy","1995",Nintendo,-,-,-,YES,NO,NO,NO,NO,vboy.cpp,PRELIMINARE,RASTER,"0",384,224,HORIZONTAL,vboy.cpp
+visicom,"Visicom COM-100 (Japan)","1978",Toshiba,"studio2","studio2",-,YES,NO,NO,NO,NO,"studio2.cpp",INCOMPLETO,RASTER,"0",100,246,HORIZONTAL,"studio2.cpp"
+database,"Voltmace Database","1979",Voltmace,-,-,-,YES,NO,NO,NO,NO,"vc4000.cpp",INCOMPLETO,RASTER,"0",177,270,HORIZONTAL,"vc4000.cpp"
+"max10in1","Vs Maxx 10-in-1 Casino / Senario Card & Casino Games","200?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+"maxx5in1","Vs Maxx 5-in-1 Casino / Senario Card & Casino Games","200?","Senario / JungleTac",-,-,-,YES,NO,NO,NO,NO,"nes_sh6578.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"nes_sh6578.cpp"
+"vz2000","VZ 2000 (Oceania)","1983","Dick Smith Electronics",crvision,crvision,-,YES,NO,NO,NO,NO,crvision.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,crvision.cpp
+"wirels60","Wireless 60","2010","Kids Station Toys Inc / Jungle Soft",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"
+"wlsair60","Wireless Air 60","2010","Jungle Soft / Kids Station Toys Inc",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_nand.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_nand.cpp"
+senwfit,"Wireless Fitness / Dance Fit (Senario)","2009",Senario,-,-,-,YES,NO,NO,NO,NO,"spg2xx.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx.cpp"
+wrlshunt,"Wireless Hunting Video Game System","2011","Hamy / Kids Station Toys Inc",-,-,-,YES,NO,NO,NO,NO,"generalplus_gpl16250_romram.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"generalplus_gpl16250_romram.cpp"
+wizzard,"Wizzard (Oceania)","1982","Dick Smith Electronics",crvision,crvision,-,YES,NO,NO,NO,NO,crvision.cpp,BUONO,RASTER,"0",280,216,HORIZONTAL,crvision.cpp
+wmega,"Wondermega (Japan, NTSC)","1992",Sega,xeye,xeye,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+"wmegam2","Wondermega M2 (Japan, NTSC)","1993",Victor,xeye,xeye,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+wldsoctv,"World Soccer TV Game 10-in-1 (PAL)","200?",Taikee,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+xeye,"X'eye (USA, NTSC)","1993",JVC,-,-,-,YES,NO,NO,NO,NO,megadriv.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megadriv.cpp
+xavtenni,"XaviX Tennis (XaviXPORT)","2004","SSD Company LTD",-,-,-,YES,NO,NO,NO,NO,"xavix_2002.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"xavix_2002.cpp"
+xbox,XBOX,"2001",Microsoft,-,-,-,YES,NO,NO,NO,NO,xbox.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,xbox.cpp
+copera,"Yamaha Mixt Book Player Copera","1993","Yamaha / Sega",-,-,-,YES,NO,NO,NO,NO,segapico.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,segapico.cpp
+zeebo,"Zeebo (Brazil)","2009","Zeebo Inc.",-,-,-,YES,NO,NO,NO,NO,"zeebo_qualcomm_adreno130.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"zeebo_qualcomm_adreno130.cpp"
+lexizeus,"Zeus IG900 20-in-1 (US?)","200?","Lexibook / JungleTac",-,-,-,YES,NO,NO,NO,NO,"spg2xx_lexibook.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_lexibook.cpp"
+"zone40","Zone 40","2009","Ultimate Products Ltd. / Waixing",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"
+"zone60","Zone 60","2010","Ultimate Products (HK) Ltd / Jungle's Soft",-,-,-,YES,NO,NO,NO,NO,"spg2xx_zone.cpp",INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,"spg2xx_zone.cpp"
+zonefusn,"Zone Fusion","200?","Ultimate Products / Jungle's Soft",-,-,-,YES,NO,NO,NO,NO,"nes_vt369_vtunknown.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt369_vtunknown.cpp"
+zudugo,"Zudu-go / 2udu-go","200?","Macro Winners / Waixing",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"

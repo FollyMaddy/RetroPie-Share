@@ -1,0 +1,24 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+angelkds,"Angel Kids (Japan)","1988","Sega / Nasco?",-,-,-,YES,NO,NO,NO,NO,angelkds.cpp,BUONO,RASTER,"90",256,240,VERTICAL,angelkds.cpp
+birdiy,Birdiy,"1983","Mama Top",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"270",288,224,VERTICAL,pacman.cpp
+ccboot,"Crazy Climber (bootleg set 1)","1980",bootleg,cclimber,cclimber,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+"ccboot2","Crazy Climber (bootleg set 2)","1980",bootleg,cclimber,cclimber,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+cclimberj,"Crazy Climber (Japan)","1980",Nichibutsu,cclimber,cclimber,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+ccbootmr,"Crazy Climber (Model Racing bootleg)","1980","bootleg (Model Racing)",cclimber,cclimber,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+cclimbroper,"Crazy Climber (Spanish, Operamatic bootleg)","1980","bootleg (Operamatic)",cclimber,cclimber,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+cclimbrrod,"Crazy Climber (Spanish, Rodmar bootleg)","1980","bootleg (Rodmar)",cclimber,cclimber,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+cclimber,"Crazy Climber (US set 1)","1980",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+cclimbera,"Crazy Climber (US set 2)","1980",Nichibutsu,cclimber,cclimber,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+"cclimbr2a","Crazy Climber 2 (Japan, Harder)","1988",Nichibutsu,"cclimbr2","cclimbr2",-,YES,NO,NO,NO,NO,armedf.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,armedf.cpp
+"cclimbr2","Crazy Climber 2 (Japan)","1988",Nichibutsu,-,-,-,YES,NO,NO,NO,NO,armedf.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,armedf.cpp
+firetrapbl,"Fire Trap (Japan bootleg)","1986",bootleg,firetrap,firetrap,-,YES,NO,NO,NO,NO,firetrap.cpp,BUONO,RASTER,"90",256,240,VERTICAL,firetrap.cpp
+firetrapj,"Fire Trap (Japan)","1986","Woodplace Inc.",firetrap,firetrap,-,YES,NO,NO,NO,NO,firetrap.cpp,BUONO,RASTER,"90",256,240,VERTICAL,firetrap.cpp
+firetrap,"Fire Trap (US, rev A)","1986","Woodplace Inc. (Data East USA license)",-,-,-,YES,NO,NO,NO,NO,firetrap.cpp,BUONO,RASTER,"90",256,240,VERTICAL,firetrap.cpp
+firetrapa,"Fire Trap (US)","1986","Woodplace Inc. (Data East USA license)",firetrap,firetrap,-,YES,NO,NO,NO,NO,firetrap.cpp,BUONO,RASTER,"90",256,240,VERTICAL,firetrap.cpp
+jack,"Jack the Giantkiller (set 1)","1982","Hara Industries (Cinematronics license)",-,-,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+"jack2","Jack the Giantkiller (set 2)","1982","Hara Industries (Cinematronics license)",jack,jack,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+"jack3","Jack the Giantkiller (set 3)","1982","Hara Industries (Cinematronics license)",jack,jack,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp
+nobb,"Noboranka (Japan, bootleg)","1986","bootleg (Game Electronics)",nob,nob,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"270",512,224,VERTICAL,"system1.cpp"
+nob,"Noboranka (Japan)","1986","Coreland / Data East Corporation",-,-,-,YES,NO,NO,NO,NO,"system1.cpp",BUONO,RASTER,"270",512,224,VERTICAL,"system1.cpp"
+rockclim,"Rock Climber","1981",Taito,-,-,-,YES,NO,NO,NO,NO,galaxian_rockclim.cpp,BUONO,RASTER,"180",768,224,HORIZONTAL,galaxian_rockclim.cpp
+treahunt,"Treasure Hunt","1982","Hara Industries",jack,jack,-,YES,NO,NO,NO,NO,jack.cpp,BUONO,RASTER,"90",256,224,VERTICAL,jack.cpp

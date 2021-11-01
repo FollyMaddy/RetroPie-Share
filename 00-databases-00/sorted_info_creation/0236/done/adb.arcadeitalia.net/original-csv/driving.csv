@@ -1,0 +1,794 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+gtmro,"1000 Miglia: Great 1000 Miles Rally (94/05/10)","1994",Kaneko,gtmr,gtmr,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+gtmrb,"1000 Miglia: Great 1000 Miles Rally (94/05/26)","1994",Kaneko,gtmr,gtmr,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+gtmra,"1000 Miglia: Great 1000 Miles Rally (94/06/13)","1994",Kaneko,gtmr,gtmr,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+gtmr,"1000 Miglia: Great 1000 Miles Rally (Taiwan 94/07/18)","1994",Kaneko,-,-,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+"18wheelr","18 Wheeler (deluxe, Rev A)","2000",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"18wheelrt","18 Wheeler (deluxe, Rev T)","2000",Sega,"18wheelr","18wheelr",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"18wheelro","18 Wheeler (deluxe)","2000",Sega,"18wheelr","18wheelr",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"18wheels","18 Wheeler (standard)","2000",Sega,"18wheelr","18wheelr",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"18wheelu","18 Wheeler (upright)","2000",Sega,"18wheelr","18wheelr",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"280zzzap","280-ZZZAP","1976","Dave Nutting Associates / Midway",-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",BUONO,RASTER,"0",260,224,HORIZONTAL,"mw8080bw.cpp"
+"500gp","500 GP (US, 5GP3 Ver. C)","1998",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+abcopjd,"A.B. Cop (Japan) (bootleg of FD1094 317-0169b set)","1990",bootleg,abcop,abcop,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+abcopj,"A.B. Cop (Japan) (FD1094 317-0169b)","1990",Sega,abcop,abcop,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+abcopd,"A.B. Cop (World) (bootleg of FD1094 317-0169b set)","1990",bootleg,abcop,abcop,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+abcop,"A.B. Cop (World) (FD1094 317-0169b)","1990",Sega,-,-,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+acedrvrw,"Ace Driver: Racing Evolution (Rev. AD2, World)","1994",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+victlapj,"Ace Driver: Victory Lap (Rev. ADV1, Japan)","1996",Namco,victlapw,victlapw,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+victlapw,"Ace Driver: Victory Lap (Rev. ADV2, World)","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+airrace,"Air Race (prototype)","1985","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarisy4.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"atarisy4.cpp"
+alpilotj,"Airline Pilots (Japan, Rev A)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+alpilot,"Airline Pilots (World, Rev B)","1999",Sega,airlbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+amspdwy,"American Speedway (set 1)","1987","Enerdyne Technologies Inc.",-,-,-,YES,NO,NO,NO,NO,amspdwy.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,amspdwy.cpp
+amspdwya,"American Speedway (set 2)","1987","Enerdyne Technologies Inc.",amspdwy,amspdwy,-,YES,NO,NO,NO,NO,amspdwy.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,amspdwy.cpp
+apbf,"APB - All Points Bulletin (French)","1987","Atari Games",apb,apb,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+apbg,"APB - All Points Bulletin (German)","1987","Atari Games",apb,apb,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+"apb1","APB - All Points Bulletin (rev 1)","1987","Atari Games",apb,apb,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+"apb2","APB - All Points Bulletin (rev 2)","1987","Atari Games",apb,apb,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+"apb3","APB - All Points Bulletin (rev 3)","1987","Atari Games",apb,apb,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+"apb4","APB - All Points Bulletin (rev 4)","1987","Atari Games",apb,apb,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+"apb5","APB - All Points Bulletin (rev 5)","1987","Atari Games",apb,apb,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+"apb6","APB - All Points Bulletin (rev 6)","1987","Atari Games",apb,apb,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+apb,"APB - All Points Bulletin (rev 7)","1987","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"270",512,384,VERTICAL,"atarisy2.cpp"
+aquajet,"Aqua Jet (Rev. AJ2 Ver.B, World)","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+arctthnd,"Arctic Thunder (v1.002)","2001","Midway Games",-,-,-,YES,NO,NO,NO,YES,midqslvr.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,midqslvr.cpp
+adillorj,"Armadillo Racing (Rev. AM1 Ver.A, Japan)","1997",Namco,adillor,adillor,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+adillor,"Armadillo Racing (Rev. AM2 Ver.A, World)","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+aplarail,"Attack Pla Rail (Japan, AP1/VER.A)","1998","Namco / Tomy",-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+atvtrack,"ATV Track (set 1)","2002",Gaelco,-,-,-,YES,NO,NO,NO,NO,atvtrack.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,atvtrack.cpp
+atvtracka,"ATV Track (set 2)","2002",Gaelco,atvtrack,atvtrack,-,YES,NO,NO,NO,NO,atvtrack.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,atvtrack.cpp
+backfire,"Backfire! (Japan, set 1)","1995","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,backfire.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,backfire.cpp
+backfirea,"Backfire! (Japan, set 2)","1995","Data East Corporation",backfire,backfire,-,YES,NO,NO,NO,NO,backfire.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,backfire.cpp
+badlands,"Bad Lands","1989","Atari Games",-,-,-,YES,NO,NO,NO,NO,badlands.cpp,BUONO,RASTER,"0",336,240,HORIZONTAL,badlands.cpp
+"badlandsb2","Bad Lands (bootleg, alternate)","1989","bootleg (Playmark)",badlands,badlands,-,YES,NO,NO,NO,NO,badlandsbl.cpp,PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,badlandsbl.cpp
+badlandsb,"Bad Lands (bootleg)","1989","bootleg (Playmark)",badlands,badlands,-,YES,NO,NO,NO,NO,badlandsbl.cpp,PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,badlandsbl.cpp
+bandit,"Bandit (US)","1989","Data East USA",-,-,-,YES,NO,NO,NO,NO,"dec0.cpp",PRELIMINARE,RASTER,"90",256,240,VERTICAL,"dec0.cpp"
+batlgear,"Battle Gear (Ver 2.40 A)","1998",Taito,taitotz,-,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+"batlgr2a","Battle Gear 2 (v2.01J)","2000",Taito,"batlgr2","batlgr2",-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+"batlgr2","Battle Gear 2 (v2.04J)","2000",Taito,taitotz,-,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+bigrun,"Big Run (11th Rallye version, Europe?)","1989",Jaleco,-,-,-,YES,NO,NO,NO,NO,cischeat.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cischeat.cpp
+bigrunu,"Big Run (11th Rallye version, US?)","1989",Jaleco,bigrun,bigrun,-,YES,NO,NO,NO,NO,cischeat.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cischeat.cpp
+blmbycaru,"Blomby Car (Version 1P0, not encrypted)","1994","ABM & Gecas",blmbycar,blmbycar,-,YES,NO,NO,NO,NO,blmbycar.cpp,BUONO,RASTER,"0",384,256,HORIZONTAL,blmbycar.cpp
+blmbycar,"Blomby Car (Version 1P0)","1994","ABM & Gecas",-,-,-,YES,NO,NO,NO,NO,blmbycar.cpp,BUONO,RASTER,"0",384,256,HORIZONTAL,blmbycar.cpp
+buggyboyjr,"Buggy Boy Junior/Speed Buggy (upright)","1986",Tatsumi,buggyboy,buggyboy,-,YES,NO,NO,NO,NO,"tx1.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"tx1.cpp"
+buggyboyb,"Buggy Boy/Speed Buggy (cockpit, rev. B)","1986",Tatsumi,buggyboy,buggyboy,-,YES,NO,NO,NO,NO,"tx1.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"tx1.cpp"
+buggyboy,"Buggy Boy/Speed Buggy (cockpit, rev. D)","1985",Tatsumi,-,-,-,YES,NO,NO,NO,NO,"tx1.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"tx1.cpp"
+buggychl,"Buggy Challenge","1984","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,buggychl.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,buggychl.cpp
+buggychlt,"Buggy Challenge (Tecfri)","1984","Taito Corporation (Tecfri license)",buggychl,buggychl,-,YES,NO,NO,NO,NO,buggychl.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,buggychl.cpp
+bnj,"Bump 'n' Jump","1982","Data East USA",brubber,brubber,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",256,240,VERTICAL,btime.cpp
+cbnj,"Bump 'n' Jump (DECO Cassette) (US)","1982","Data East Corporation",cburnrub,cburnrub,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+bnjm,"Bump 'n' Jump (Midway)","1982","Data East USA (Bally Midway license)",brubber,brubber,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",256,240,VERTICAL,btime.cpp
+brubber,"Burnin' Rubber","1982","Data East",-,-,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",256,240,VERTICAL,btime.cpp
+cburnrubj,"Burnin' Rubber (DECO Cassette) (Japan)","1982","Data East Corporation",cburnrub,cburnrub,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+cburnrub,"Burnin' Rubber (DECO Cassette) (US) (set 1)","1982","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+"cburnrub2","Burnin' Rubber (DECO Cassette) (US) (set 2)","1982","Data East Corporation",cburnrub,cburnrub,-,YES,NO,NO,NO,NO,decocass.cpp,BUONO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+calchase,"California Chase","1999","The Game Room",-,-,-,YES,NO,NO,NO,YES,calchase.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,calchase.cpp
+calspeedb,"California Speed (Version 1.0r7a Mar 4 1998, GUTS Mar 3 1998 / MAIN Jan 19 1998)","1998","Atari Games",calspeed,calspeed,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+calspeeda,"California Speed (Version 1.0r8 Mar 10 1998, GUTS Mar 10 1998 / MAIN Mar 10 1998)","1998","Atari Games",calspeed,calspeed,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+calspeed,"California Speed (Version 2.1a Apr 17 1998, GUTS 1.25 Apr 17 1998 / MAIN Apr 17 1998)","1998","Atari Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+caractn,"Car Action (set 1)","1982",bootleg,brubber,brubber,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",256,240,VERTICAL,btime.cpp
+"caractn2","Car Action (set 2)","1982",bootleg,brubber,brubber,-,YES,NO,NO,NO,NO,btime.cpp,BUONO,RASTER,"270",256,240,VERTICAL,btime.cpp
+carjmbre,"Car Jamboree","1983","Omori Electric Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,carjmbre.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,carjmbre.cpp
+cartfury,"CART Fury Championship Racing (ver 1.00)","2000","Midway Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+csprintf,"Championship Sprint (French)","1986","Atari Games",csprint,csprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"csprintg1","Championship Sprint (German, rev 1)","1986","Atari Games",csprint,csprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+csprintg,"Championship Sprint (German, rev 2)","1986","Atari Games",csprint,csprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"csprint1","Championship Sprint (rev 1)","1986","Atari Games",csprint,csprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"csprint2","Championship Sprint (rev 2)","1986","Atari Games",csprint,csprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+csprint,"Championship Sprint (rev 3)","1986","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"csprints1","Championship Sprint (Spanish, rev 1)","1986","Atari Games",csprint,csprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+csprints,"Championship Sprint (Spanish, rev 2)","1986","Atari Games",csprint,csprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+changela,"Change Lanes","1983","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,changela.cpp,BUONO,RASTER,"180",256,224,HORIZONTAL,changela.cpp
+cbombersp,"Chase Bombers (Japan Prototype)","1994","Taito Corporation",cbombers,cbombers,-,YES,NO,NO,NO,NO,undrfire.cpp,INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,undrfire.cpp
+cbombersj,"Chase Bombers (Japan)","1994","Taito Corporation",cbombers,cbombers,-,YES,NO,NO,NO,NO,undrfire.cpp,INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,undrfire.cpp
+cbombers,"Chase Bombers (World)","1994","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,undrfire.cpp,INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,undrfire.cpp
+chasehqju,"Chase H.Q. (Japan, upright?)","1988","Taito Corporation",chasehq,chasehq,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+chasehqj,"Chase H.Q. (Japan)","1988","Taito Corporation",chasehq,chasehq,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+chasehqu,"Chase H.Q. (US)","1988","Taito America Corporation",chasehq,chasehq,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+chasehq,"Chase H.Q. (World)","1988","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+"chasehq2","Chase H.Q. 2 (v2.0.6.JP)","2006","Taito Corporation",-,-,-,YES,NO,NO,NO,YES,taitotx.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,taitotx.cpp
+chqflag,"Chequered Flag","1988",Konami,-,-,-,YES,NO,NO,NO,NO,chqflag.cpp,PRELIMINARE,RASTER,"90",304,224,VERTICAL,chqflag.cpp
+chqflagj,"Chequered Flag (Japan)","1988",Konami,chqflag,chqflag,-,YES,NO,NO,NO,NO,chqflag.cpp,PRELIMINARE,RASTER,"90",304,224,VERTICAL,chqflag.cpp
+choroqhr,"Choro Q Hyper Racing 5 (J 981230 V1.000)","1998","Sega / Takara",stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+cischeat,"Cisco Heat","1990",Jaleco,-,-,-,YES,NO,NO,NO,NO,cischeat.cpp,INCOMPLETO,RASTER,"0",256,216,HORIZONTAL,cischeat.cpp
+clshroad,Clash-Road,"1986","Woodplace Inc.",-,-,-,YES,NO,NO,NO,NO,clshroad.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,clshroad.cpp
+clshroadd,"Clash-Road (Data East license)","1986","Woodplace Inc. (Data East license)",clshroad,clshroad,-,YES,NO,NO,NO,NO,clshroad.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,clshroad.cpp
+clshroads,"Clash-Road (Status license)","1986","Woodplace Inc. (Status Game Corp. license)",clshroad,clshroad,-,YES,NO,NO,NO,NO,clshroad.cpp,BUONO,RASTER,"0",288,224,HORIZONTAL,clshroad.cpp
+clubkcyco,"Club Kart for Cycraft (GDS-0029)","2003",Sega,clubkcyc,clubkcyc,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+clubkcyc,"Club Kart for Cycraft (Rev A) (GDS-0029A)","2003",Sega,"naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+clubkprz,"Club Kart Prize (Export, Japan, Rev A)","2003",Sega,"naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+clubkpzb,"Club Kart Prize Version B (Export, Japan)","2004",Sega,"naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+clubkrto,"Club Kart: European Session","2001",Sega,clubkrt,clubkrt,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"clubk2kp","Club Kart: European Session (2003, prototype, set 1)","2003",Sega,"clubk2k3","clubk2k3",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"clubk2kpa","Club Kart: European Session (2003, prototype, set 2)","2003",Sega,"clubk2k3","clubk2k3",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"clubk2k3","Club Kart: European Session (2003, Rev A)","2003",Sega,"naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+clubkrta,"Club Kart: European Session (Rev A)","2001",Sega,clubkrt,clubkrt,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+clubkrtc,"Club Kart: European Session (Rev C)","2001",Sega,clubkrt,clubkrt,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+clubkrt,"Club Kart: European Session (Rev D)","2001",Sega,"naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"code1db","Code One Dispatch Ver 1.16 (ver UAB)","2000",Konami,"code1d","code1d",-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"code1d","Code One Dispatch Ver 1.21 (ver UAD)","2000",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+contcircj,"Continental Circus (Japan)","1987","Taito Corporation",contcirc,contcirc,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_z.cpp
+contcircu,"Continental Circus (US set 1)","1987","Taito America Corporation",contcirc,contcirc,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_z.cpp
+contcircua,"Continental Circus (US set 2)","1987","Taito America Corporation",contcirc,contcirc,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_z.cpp
+contcirc,"Continental Circus (World)","1987","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,224,HORIZONTAL,taito_z.cpp
+coolridr,"Cool Riders","1995",Sega,-,-,-,YES,NO,NO,NO,NO,coolridr.cpp,INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,coolridr.cpp
+cntsteer,"Counter Steer (Japan)","1985","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,cntsteer.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,cntsteer.cpp
+crzrallyg,"Crazy Rally (Gecas license)","1985","Tecfri (Gecas license)",crzrally,crzrally,-,YES,NO,NO,NO,NO,holeland.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,holeland.cpp
+crzrallyrf,"Crazy Rally (Recreativos Franco license)","1985","Tecfri (Recreativos Franco license)",crzrally,crzrally,-,YES,NO,NO,NO,NO,holeland.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,holeland.cpp
+crzrally,"Crazy Rally (set 1)","1985",Tecfri,-,-,-,YES,NO,NO,NO,NO,holeland.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,holeland.cpp
+crzrallya,"Crazy Rally (set 2)","1985",Tecfri,crzrally,crzrally,-,YES,NO,NO,NO,NO,holeland.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,holeland.cpp
+crzytaxi,"Crazy Taxi","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+crtaxihr,"Crazy Taxi High Roller (Rev B) (GDX-0002B)","2003","Sega / Hitmaker",chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+crusnexod,"Cruis'n Exotica (version 1.0)","1999",Midway,crusnexo,crusnexo,-,YES,NO,NO,NO,NO,midzeus.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,midzeus.cpp
+crusnexoc,"Cruis'n Exotica (version 1.3)","1999",Midway,crusnexo,crusnexo,-,YES,NO,NO,NO,NO,midzeus.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,midzeus.cpp
+crusnexob,"Cruis'n Exotica (version 1.6)","1999",Midway,crusnexo,crusnexo,-,YES,NO,NO,NO,NO,midzeus.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,midzeus.cpp
+crusnexoa,"Cruis'n Exotica (version 2.0)","1999",Midway,crusnexo,crusnexo,-,YES,NO,NO,NO,NO,midzeus.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,midzeus.cpp
+crusnexo,"Cruis'n Exotica (version 2.4)","1999",Midway,-,-,-,YES,NO,NO,NO,NO,midzeus.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,midzeus.cpp
+"crusnusa21","Cruis'n USA (v2.1)","1994",Midway,crusnusa,crusnusa,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnusa40","Cruis'n USA (v4.0)","1994",Midway,crusnusa,crusnusa,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnusa41","Cruis'n USA (v4.1)","1994",Midway,crusnusa,crusnusa,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnusa44","Cruis'n USA (v4.4)","1994",Midway,crusnusa,crusnusa,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+crusnusa,"Cruis'n USA (v4.5)","1994",Midway,-,-,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnwld13","Cruis'n World (v1.3)","1996",Midway,crusnwld,crusnwld,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnwld17","Cruis'n World (v1.7)","1996",Midway,crusnwld,crusnwld,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnwld19","Cruis'n World (v1.9)","1996",Midway,crusnwld,crusnwld,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnwld20","Cruis'n World (v2.0)","1996",Midway,crusnwld,crusnwld,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnwld23","Cruis'n World (v2.3)","1996",Midway,crusnwld,crusnwld,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"crusnwld24","Cruis'n World (v2.4)","1996",Midway,crusnwld,crusnwld,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+crusnwld,"Cruis'n World (v2.5)","1996",Midway,-,-,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+cybrcycc,"Cyber Cycles (Rev. CB2 Ver.C, World)","1995",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+dangcurvj,"Dangerous Curves (Ver 2.2 J)","1995",Taito,dangcurv,dangcurv,-,YES,NO,NO,NO,NO,taitojc.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+dangcurv,"Dangerous Curves (Ver 2.9 O)","1995",Taito,-,-,-,YES,NO,NO,NO,NO,taitojc.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+indyheat,"Danny Sullivan's Indy Heat (rev 1)","1991","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+"daytona93","Daytona USA","1993",Sega,daytona,daytona,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+daytonagtx,"Daytona USA (GTX 2004 Edition)","2003","hack (Kyle Hodgetts)",daytona,daytona,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+daytona,"Daytona USA (Revision A)","1994",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+daytonam,"Daytona USA (To The MAXX)","2001","hack (Kyle Hodgetts)",daytona,daytona,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+daytonat,"Daytona USA (Turbo hack, set 1)","1994?","hack (Kyle Hodgetts)",daytona,daytona,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+daytonata,"Daytona USA (Turbo hack, set 2)","1994?","hack (Kyle Hodgetts)",daytona,daytona,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+daytonas,"Daytona USA (With Saturn Adverts)","1994",Sega,daytona,daytona,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+"daytona2","Daytona USA 2 (Japan, Revision A)","1998",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"dayto2pe","Daytona USA 2 Power Edition (Japan)","1998",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+daytonase,"Daytona USA Special Edition (Revision A)","1994",Sega,daytona,daytona,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+demoderb,"Demolition Derby","1984","Bally Midway",-,-,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"0",512,480,HORIZONTAL,mcr.cpp
+demoderbc,"Demolition Derby (cocktail)","1984","Bally Midway",demoderb,demoderb,-,YES,NO,NO,NO,NO,mcr.cpp,BUONO,RASTER,"0",512,480,HORIZONTAL,mcr.cpp
+demoderm,"Demolition Derby (MCR-3 Mono Board Version)","1984","Bally Midway",demoderb,demoderb,-,YES,NO,NO,NO,NO,"mcr3.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr3.cpp"
+"dendego3","Densha de GO 3! Tsukin-hen (V2.03J)","2000",Taito,taitotz,-,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+dendego,"Densha de GO! (Ver 2.2 J)","1996",Taito,-,-,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+"dendego2","Densha de GO! 2 Kousoku-hen (Ver 2.5 J)","1998",Taito,-,-,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+"dendego23k","Densha de GO! 2 Kousoku-hen 3000-bandai (Ver 2.20 J)","1998",Taito,"dendego2","dendego2",-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+dendegox,"Densha de GO! EX (Ver 2.4 J)","1996",Taito,dendego,dendego,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+dirtdashj,"Dirt Dash (Rev. DT1 Ver.A, Japan)","1995",Namco,dirtdash,dirtdash,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+dirtdash,"Dirt Dash (Rev. DT2 Ver.A, World)","1995",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+dirtdvlsau,"Dirt Devils (Australia, Revision A)","1998",Sega,dirtdvls,dirtdvls,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+dirtdvls,"Dirt Devils (Export, Revision A)","1998",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+dirtdvlsg,"Dirt Devils (Export, Ver. G?)","1998",Sega,dirtdvls,dirtdvls,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+dirtdvlsj,"Dirt Devils (Japan, Revision A)","1998",Sega,dirtdvls,dirtdvls,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+dirtdvlsu,"Dirt Devils (USA, Revision A)","1998",Sega,dirtdvls,dirtdvls,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+dirtfoxj,"Dirt Fox (Japan)","1989",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"90",288,224,VERTICAL,"namcos2.cpp"
+dblaxleul,"Double Axle (US, Rev 1, Linkable)","1991","Taito America Corporation",dblaxle,dblaxle,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+dblaxle,"Double Axle (US, Rev 1)","1991","Taito America Corporation",-,-,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+dblaxleu,"Double Axle (US)","1991","Taito America Corporation",dblaxle,dblaxle,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+downhill,"Downhill Bikers (US, DH3 Ver. A)","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+dragrace,"Drag Race","1977","Atari (Kee Games)",-,-,-,YES,NO,NO,NO,NO,dragrace.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,dragrace.cpp
+"drifto94","Drift Out '94 - The Hard Order (Japan)","1994",Visco,-,-,-,YES,NO,NO,NO,NO,ssv.cpp,BUONO,RASTER,"0",336,238,HORIZONTAL,ssv.cpp
+driftoutct,"Drift Out (Europe, Cameltry conversion)","1991",Visco,driftout,driftout,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"taito_f2.cpp"
+driftout,"Drift Out (Europe)","1991",Visco,-,-,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"taito_f2.cpp"
+driftoutj,"Drift Out (Japan)","1991",Visco,driftout,driftout,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"taito_f2.cpp"
+driveout,"Drive Out (bootleg)","1991",bootleg,driftout,driftout,-,YES,NO,NO,NO,NO,"taito_f2.cpp",BUONO,RASTER,"270",320,224,VERTICAL,"taito_f2.cpp"
+drivedge,"Driver's Edge (v1.6)","1994","Strata/Incredible Technologies",-,-,-,YES,NO,NO,NO,NO,"itech32.cpp",INCOMPLETO,RASTER,"0",384,240,HORIZONTAL,"itech32.cpp"
+driveyes,"Driver's Eyes (Japan) (1992/01/10, Main Ver 2.1, Sub Ver 1.1)","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos21_de.cpp",PRELIMINARE,RASTER,"0",496,480,HORIZONTAL,"namcos21_de.cpp"
+drivfrcb,"Driving Force (Galaxian conversion bootleg)","1985","bootleg (Elsys Software)",drivfrcp,drivfrcp,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+drivfrcsg,"Driving Force (Galaxian conversion, Seatongrove UK, E-0010)","1985","Seatongrove UK",drivfrcp,drivfrcp,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+drivfrcsga,"Driving Force (Galaxian conversion, Seatongrove UK, E-0237)","1985","Seatongrove UK",drivfrcp,drivfrcp,-,YES,NO,NO,NO,NO,galaxold.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+drivfrcg,"Driving Force (Galaxian conversion)","1984","Shinkai Inc. (Magic Electronics USA license)",drivfrcp,drivfrcp,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+drivfrcp,"Driving Force (Pac-Man conversion)","1984","Shinkai Inc. (Magic Electronics Inc. license)",-,-,-,YES,NO,NO,NO,NO,pacman.cpp,BUONO,RASTER,"90",256,224,VERTICAL,pacman.cpp
+sgdrvsim,"Driving Simulator","2007",Sega,"naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+eca,"Emergency Call Ambulance (Export)","1999",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+ecaj,"Emergency Call Ambulance (Japan)","1999",Sega,eca,eca,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+ecap,"Emergency Call Ambulance (US location test?)","1999",Sega,eca,eca,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+ecau,"Emergency Call Ambulance (USA)","1999",Sega,eca,eca,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+endurord,"Enduro Racer (bootleg of Rev A, YM2151, FD1089B 317-0013A set)","1986",bootleg,enduror,enduror,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+"enduror1d","Enduro Racer (bootleg of YM2203, FD1089B 317-0013A set)","1986",bootleg,enduror,enduror,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+endurobl,"Enduro Racer (bootleg set 1)","1986",bootleg,enduror,enduror,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+"endurob2","Enduro Racer (bootleg set 2)","1986",bootleg,enduror,enduror,-,YES,NO,NO,NO,NO,segahang.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+enduror,"Enduro Racer (Rev A, YM2151, FD1089B 317-0013A)","1986",Sega,-,-,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+endurora,"Enduro Racer (Rev A, YM2151, mask ROM sprites, FD1089B 317-0013A)","1986",Sega,enduror,enduror,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+endurorb,"Enduro Racer (YM2151, FD1089B 317-0013A)","1986",Sega,enduror,enduror,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+"enduror1","Enduro Racer (YM2203, FD1089B 317-0013A)","1986",Sega,enduror,enduror,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+pc_ebike,"Excite Bike (PlayChoice-10)","1984",Nintendo,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"f1dream","F-1 Dream","1988","Capcom (Romstar license)",-,-,-,YES,NO,NO,NO,NO,tigeroad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tigeroad.cpp
+"f1dreamb","F-1 Dream (bootleg, set 1)","1988",bootleg,"f1dream","f1dream",-,YES,NO,NO,NO,NO,tigeroad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tigeroad.cpp
+"f1dreamba","F-1 Dream (bootleg, set 2)","1988",bootleg,"f1dream","f1dream",-,YES,NO,NO,NO,NO,tigeroad.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,tigeroad.cpp
+"f1gpb","F-1 Grand Prix (Playmark bootleg)","1991","bootleg (Playmark)","f1gp","f1gp",-,YES,NO,NO,NO,NO,"f1gp.cpp",PRELIMINARE,RASTER,"90",320,240,VERTICAL,"f1gp.cpp"
+"f1gp","F-1 Grand Prix (set 1)","1991","Video System Co.",-,-,-,YES,NO,NO,NO,NO,"f1gp.cpp",BUONO,RASTER,"90",320,240,VERTICAL,"f1gp.cpp"
+"f1gpa","F-1 Grand Prix (set 2)","1991","Video System Co.","f1gp","f1gp",-,YES,NO,NO,NO,NO,"f1gp.cpp",BUONO,RASTER,"90",320,240,VERTICAL,"f1gp.cpp"
+"f1gp2","F-1 Grand Prix Part II","1992","Video System Co.",-,-,-,YES,NO,NO,NO,NO,"f1gp.cpp",BUONO,RASTER,"90",320,224,VERTICAL,"f1gp.cpp"
+"f1gpstr2","F-1 Grand Prix Star II","1993",Jaleco,-,-,-,YES,NO,NO,NO,NO,cischeat.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,cischeat.cpp
+"f1superb","F-1 Super Battle","1994",Jaleco,-,-,-,YES,NO,NO,NO,NO,"ms32.cpp",PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,"ms32.cpp"
+nss_fzer,"F-Zero (Nintendo Super System)","1991",Nintendo,nss,-,-,YES,NO,NO,NO,NO,nss.cpp,PRELIMINARE,RASTER,"0",288,216,HORIZONTAL,nss.cpp
+fzeroaxc,"F-Zero AX (Rev C) (GDT-0004C)","2003","Sega / Amusement Vision / Nintendo",fzeroax,fzeroax,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+fzeroaxd,"F-Zero AX (Rev D) (GDT-0004D)","2003","Sega / Amusement Vision / Nintendo",fzeroax,fzeroax,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+fzeroax,"F-Zero AX (Rev E) (GDT-0004E)","2003","Sega / Amusement Vision / Nintendo",triforce,-,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+fzeroaxm,"F-Zero AX Monster Ride","2003","Sega / Amusement Vision / Nintendo",triforce,-,-,YES,NO,NO,NO,NO,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"f1enj","F1 Exhaust Note (Japan, Rev A)","1991",Sega,"f1en","f1en",-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+"f1enu","F1 Exhaust Note (US, Rev A)","1991",Sega,"f1en","f1en",-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+"f1en","F1 Exhaust Note (World, Rev A)","1991",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+"f1lapj","F1 Super Lap (Japan)","1993",Sega,"f1lap","f1lap",-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+"f1lapt","F1 Super Lap (World, Unprotected)","1993",Sega,"f1lap","f1lap",-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+"f1lap","F1 Super Lap (World)","1993",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+ftspeed,"Faster Than Speed","2004",Sammy,awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"f355","Ferrari F355 Challenge (deluxe, no link)","1999",Sega,"f355dlx",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"f355p","Ferrari F355 Challenge (private show version)","1999",Sega,"f355","f355",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"f355twinp","Ferrari F355 Challenge (twin/deluxe, preview)","1999",Sega,"f355twin","f355twin",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"f355twin","Ferrari F355 Challenge (twin/deluxe)","1999",Sega,"f355bios",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"f355twn2","Ferrari F355 Challenge 2 - International Course Edition (twin/deluxe)","2001",Sega,"f355bios",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+finallapjb,"Final Lap (Japan, Rev B)","1987",Namco,finallap,finallap,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+finallapjc,"Final Lap (Japan, Rev C)","1987",Namco,finallap,finallap,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+finallapc,"Final Lap (Rev C)","1987",Namco,finallap,finallap,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+finallapd,"Final Lap (Rev D)","1987",Namco,finallap,finallap,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+finallap,"Final Lap (Rev E)","1987",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"finalap2","Final Lap 2","1990",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"finalap2j","Final Lap 2 (Japan)","1990",Namco,"finalap2","finalap2",-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"finalap3bl","Final Lap 3 (bootleg)","1992",Namco,"finalap3","finalap3",-,YES,NO,NO,NO,NO,"namcos2.cpp",PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"finalap3jc","Final Lap 3 (Japan, Rev C)","1992",Namco,"finalap3","finalap3",-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"finalap3j","Final Lap 3 (Japan)","1992",Namco,"finalap3","finalap3",-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"finalap3","Final Lap 3 (World, Rev C)","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"finalap3a","Final Lap 3 (World, set 2)","1992",Namco,"finalap3","finalap3",-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"finalapr1","Final Lap R","1994",Namco,finalapr,finalapr,-,YES,NO,NO,NO,NO,namcofl.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,namcofl.cpp
+"finalaprj1","Final Lap R (Japan Rev. B)","1994",Namco,finalapr,finalapr,-,YES,NO,NO,NO,NO,namcofl.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,namcofl.cpp
+finalaprj,"Final Lap R (Japan Rev. C)","1994",Namco,finalapr,finalapr,-,YES,NO,NO,NO,NO,namcofl.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,namcofl.cpp
+finalapr,"Final Lap R (Rev. B)","1994",Namco,-,-,-,YES,NO,NO,NO,NO,namcofl.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,namcofl.cpp
+firetrk,"Fire Truck / Smokey Joe","1978",Atari,-,-,-,YES,NO,NO,NO,NO,firetrk.cpp,BUONO,RASTER,"270",320,240,VERTICAL,firetrk.cpp
+fourtraxj,"Four Trax (Japan)","1989",Namco,fourtrax,fourtrax,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+fourtraxa,"Four Trax (US?, censored banners)","1989","Namco (Atari license?)",fourtrax,fourtrax,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+fourtrax,"Four Trax (World)","1989",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+fullthrl,"Full Throttle (Japan)","1987","Taito Corporation",topspeed,topspeed,-,YES,NO,NO,NO,NO,topspeed.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,topspeed.cpp
+tuningrc,"Gaelco Championship Tuning Race","2005",Gaelco,-,-,-,YES,NO,NO,NO,YES,gaelcopc.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,gaelcopc.cpp
+gekisou,"Gekisou (Japan)","1985","Eastern Corp.",-,-,equites,YES,NO,NO,NO,NO,equites.cpp,INCOMPLETO,RASTER,"90",256,208,VERTICAL,equites.cpp
+getaway,"Get A Way","1979",Universal,-,-,-,YES,NO,NO,NO,NO,getaway.cpp,PRELIMINARE,RASTER,"270",256,240,VERTICAL,getaway.cpp
+gobyrc,"Go By RC (V2.03O 1999/05/25 13:31)","1999",Taito,"coh3002t",-,-,YES,NO,NO,NO,YES,taitogn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,taitogn.cpp
+gpriderjs,"GP Rider (Japan, FD1094 317-0161)","1990",Sega,gprider,gprider,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+gpriderj,"GP Rider (Japan, FD1094 317-0161) (Twin setup)","1990",Sega,gprider,gprider,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+gpriderus,"GP Rider (US, FD1094 317-0162)","1990",Sega,gprider,gprider,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+gprideru,"GP Rider (US, FD1094 317-0162) (Twin setup)","1990",Sega,gprider,gprider,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+gpriders,"GP Rider (World, FD1094 317-0163)","1990",Sega,gprider,gprider,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+gprider,"GP Rider (World, FD1094 317-0163) (Twin setup)","1990",Sega,-,-,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+gpworld,"GP World","1984",Sega,-,-,-,YES,NO,NO,NO,YES,gpworld.cpp,PRELIMINARE,RASTER,"0",704,480,HORIZONTAL,gpworld.cpp
+"polepos2bi","Gran Premio F1 (Italian bootleg of Pole Position II)","1984",bootleg,"polepos2","polepos2",-,YES,NO,NO,NO,NO,polepos.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+"polepos2bs","Gran Premio F1 (Spanish bootleg of Pole Position II)","1984","bootleg (BCN Internacional S.A.)","polepos2","polepos2",-,YES,NO,NO,NO,NO,polepos.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+grally,"Gran Rally (Spanish bootleg of Pole Position II)","1984","bootleg (Niemer)","polepos2","polepos2",-,YES,NO,NO,NO,NO,polepos.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+grchamp,"Grand Champion (set 1)","1981",Taito,-,-,-,YES,NO,NO,NO,NO,grchamp.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,grchamp.cpp
+grchampa,"Grand Champion (set 2)","1981",Taito,grchamp,grchamp,-,YES,NO,NO,NO,NO,grchamp.cpp,PRELIMINARE,RASTER,"270",256,224,VERTICAL,grchamp.cpp
+grchampb,"Grand Champion (set 3)","1981",Taito,grchamp,grchamp,-,YES,NO,NO,NO,NO,grchamp.cpp,INCOMPLETO,RASTER,"270",256,224,VERTICAL,grchamp.cpp
+"f1gpstar2","Grand Prix Star (ver 2.0)","1991",Jaleco,"f1gpstar","f1gpstar",-,YES,NO,NO,NO,NO,cischeat.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,cischeat.cpp
+"f1gpstar3","Grand Prix Star (ver 3.0)","1991",Jaleco,"f1gpstar","f1gpstar",-,YES,NO,NO,NO,NO,cischeat.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,cischeat.cpp
+"f1gpstar","Grand Prix Star (ver 4.0)","1992",Jaleco,-,-,-,YES,NO,NO,NO,NO,cischeat.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,cischeat.cpp
+"gtmr2u","Great 1000 Miles Rally 2 USA (95/05/18)","1995",Kaneko,"gtmr2","gtmr2",-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+gtmre,"Great 1000 Miles Rally: Evolution Model!!! (94/09/06)","1994",Kaneko,gtmr,gtmr,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+gtmrusa,"Great 1000 Miles Rally: U.S.A Version! (94/09/06)","1994",Kaneko,gtmr,gtmr,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+groundfx,"Ground Effects / Super Ground Effects (Japan)","1992","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,groundfx.cpp,INCOMPLETO,RASTER,"0",320,232,HORIZONTAL,groundfx.cpp
+grudgep,"Grudge Match (v00.80, prototype)","198?","Bally Midway",grudge,grudge,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+grudge,"Grudge Match (v00.90, Italy, location test?)","198?","Bally Midway",-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+gticluba,"GTI Club (ver AAA)","1996",Konami,gticlub,gticlub,-,YES,NO,NO,NO,NO,gticlub.cpp,INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,gticlub.cpp
+gticlub,"GTI Club (ver EAA)","1996",Konami,-,-,-,YES,NO,NO,NO,NO,gticlub.cpp,INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,gticlub.cpp
+gticlubj,"GTI Club (ver JAA)","1996",Konami,gticlub,gticlub,-,YES,NO,NO,NO,NO,gticlub.cpp,INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,gticlub.cpp
+gticlubu,"GTI Club (ver UAA)","1996",Konami,gticlub,gticlub,-,YES,NO,NO,NO,NO,gticlub.cpp,INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,gticlub.cpp
+"gticlub2ea","GTI Club: Corso Italiano (ver EAA)","2001",Konami,"gticlub2","gticlub2",-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"gticlub2","GTI Club: Corso Italiano (ver JAB)","2001",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+hndlchmpj,"Handle Champ (GQ710 1997/12/08 VER. JAB)","1997",Konami,strgchmp,strgchmp,-,YES,NO,NO,NO,NO,"ksys573.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"ksys573.cpp"
+"hangon1",Hang-On,"1985",Sega,hangon,hangon,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+"hangon2","Hang-On (Rev A, ride-on)","1985",Sega,hangon,hangon,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+hangon,"Hang-On (Rev A)","1985",Sega,-,-,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+hangonjr,"Hang-On Jr. (Rev. B)","1985",Sega,-,-,-,YES,NO,NO,NO,NO,segae.cpp,BUONO,RASTER,"0",256,192,HORIZONTAL,segae.cpp
+"harddrivb5","Hard Drivin' (cockpit, British, rev 5)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"harddrivb6","Hard Drivin' (cockpit, British, rev 6)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+harddrivb,"Hard Drivin' (cockpit, British, rev 7)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"harddrivg4","Hard Drivin' (cockpit, German, rev 4)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+harddrivg,"Hard Drivin' (cockpit, German, rev 7)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"harddrivj6","Hard Drivin' (cockpit, Japan, rev 6)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+harddrivj,"Hard Drivin' (cockpit, Japan, rev 7)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"harddriv1","Hard Drivin' (cockpit, rev 1)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"harddriv2","Hard Drivin' (cockpit, rev 2)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"harddriv3","Hard Drivin' (cockpit, rev 3)","1988","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+harddriv,"Hard Drivin' (cockpit, rev 7)","1988","Atari Games",-,-,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+harddrivcb,"Hard Drivin' (compact, British, rev 2)","1990","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+harddrivcg,"Hard Drivin' (compact, German, rev 2)","1990","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+"harddrivc1","Hard Drivin' (compact, rev 1)","1990","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+harddrivc,"Hard Drivin' (compact, rev 2)","1990","Atari Games",harddriv,harddriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+hdrivairp,"Hard Drivin's Airborne (prototype, early rev)","1993","Atari Games",hdrivair,hdrivair,-,YES,NO,NO,NO,NO,harddriv.cpp,PRELIMINARE,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+hdrivair,"Hard Drivin's Airborne (prototype)","1993","Atari Games",-,-,-,YES,NO,NO,NO,NO,harddriv.cpp,INCOMPLETO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+harleya,"Harley-Davidson and L.A. Riders (Revision A)","1997",Sega,harley,harley,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+harley,"Harley-Davidson and L.A. Riders (Revision B)","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+hwrace,"High Way Race","1983","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,taitosj.cpp,BUONO,RASTER,"270",256,224,VERTICAL,taitosj.cpp
+hogwild,"Hog Wild (US)","2003",Uniana,-,-,-,YES,NO,NO,NO,YES,unianapc.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,unianapc.cpp
+hotchase,"Hot Chase (set 1)","1988",Konami,-,-,-,YES,NO,NO,NO,NO,wecleman.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,wecleman.cpp
+hotchasea,"Hot Chase (set 2)","1988",Konami,hotchase,hotchase,-,YES,NO,NO,NO,NO,wecleman.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,wecleman.cpp
+hotrodja,"Hot Rod (Japan, 4 Players, Floppy Based, Rev B)","1988",Sega,hotrod,hotrod,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+hotrodj,"Hot Rod (Japan, 4 Players, Floppy Based, Rev C)","1988",Sega,hotrod,hotrod,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+hotrod,"Hot Rod (World, 3 Players, Turbo set 1, Floppy Based)","1988",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+hotroda,"Hot Rod (World, 3 Players, Turbo set 2, Floppy Based)","1988",Sega,hotrod,hotrod,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+hummerxt,"Hummer Extreme","2009",Sega,lindbios,-,-,YES,NO,NO,NO,YES,lindbergh.cpp,PRELIMINARE,-,"0",0,0,-,lindbergh.cpp
+hydrthnd,"Hydro Thunder","1999","Midway Games",-,-,-,YES,NO,NO,NO,YES,midqslvr.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,midqslvr.cpp
+hcrashc,"Hyper Crash (version C)","1987",Konami,hcrash,hcrash,-,YES,NO,NO,NO,NO,nemesis.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,nemesis.cpp
+hcrash,"Hyper Crash (version D)","1987",Konami,-,-,-,YES,NO,NO,NO,NO,nemesis.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,nemesis.cpp
+hyprdriv,"Hyperdrive (ver 1.40, Oct 23 1998)","1998","Midway Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+imolagp,"Imola Grand Prix (set 1)","1983?","RB Bologna",-,-,-,YES,NO,NO,NO,NO,imolagp.cpp,INCOMPLETO,RASTER,"90",208,240,VERTICAL,imolagp.cpp
+imolagpo,"Imola Grand Prix (set 2)","1983?","RB Bologna",imolagp,imolagp,-,YES,NO,NO,NO,NO,imolagp.cpp,INCOMPLETO,RASTER,"90",208,240,VERTICAL,imolagp.cpp
+turbobl,"Indianapolis (bootleg of Turbo)","1981",bootleg,turbo,turbo,turbo,YES,NO,NO,NO,NO,turbo.cpp,INCOMPLETO,RASTER,"270",512,224,VERTICAL,turbo.cpp
+"indy500d","INDY 500 Deluxe (Revision A)","1995",Sega,"indy500","indy500",-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+"indy500","INDY 500 Twin (Revision A, Newer)","1995",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+"indy500to","INDY 500 Twin (Revision A)","1995",Sega,"indy500","indy500",-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+initdexp,"Initial D Arcade Stage (Export, Rev A) (GDS-0025A)","2002",Sega,"naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+initdexpo,"Initial D Arcade Stage (Export) (GDS-0025)","2002",Sega,initdexp,initdexp,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+initd,"Initial D Arcade Stage (Japan, Rev B) (GDS-0020B)","2002",Sega,"naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+initdo,"Initial D Arcade Stage (Japan) (GDS-0020)","2002",Sega,initd,initd,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"initdv2e","Initial D Arcade Stage Ver. 2 (Export) (GDS-0027)","2003",Sega,"initdv2j","initdv2j",-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"initdv2ja","Initial D Arcade Stage Ver. 2 (Japan, Rev A) (GDS-0026A)","2002",Sega,"initdv2j","initdv2j",-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"initdv2j","Initial D Arcade Stage Ver. 2 (Japan, Rev B) (GDS-0026B)","2003",Sega,"naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"initdv2jo","Initial D Arcade Stage Ver. 2 (Japan) (GDS-0026)","2002",Sega,"initdv2j","initdv2j",-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"initdv3e","Initial D Arcade Stage Ver. 3 (Export) (GDS-0033)","2004",Sega,"naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"initdv3jb","Initial D Arcade Stage Ver. 3 (Japan, Rev B) (GDS-0032B)","2004",Sega,"initdv3j","initdv3j",-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"initdv3j","Initial D Arcade Stage Ver. 3 (Japan, Rev C) (GDS-0032C)","2004",Sega,"naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"inidv3ca","Initial D Arcade Stage Ver. 3 Cycraft Edition (Export, Rev A) (GDS-0039A)","2004",Sega,"inidv3cy","inidv3cy",-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"inidv3cy","Initial D Arcade Stage Ver. 3 Cycraft Edition (Export, Rev B) (GDS-0039B)","2006",Sega,"naomi2",-,-,YES,NO,NO,NO,YES,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"initiad4c","Initial D4 (Rev C)","2007",Sega,"initiad4","initiad4",-,YES,NO,NO,NO,YES,lindbergh.cpp,PRELIMINARE,-,"0",0,0,-,lindbergh.cpp
+"initiad4","Initial D4 (Rev D)","2007",Sega,lindbios,-,-,YES,NO,NO,NO,YES,lindbergh.cpp,PRELIMINARE,-,"0",0,0,-,lindbergh.cpp
+"offroad3","Ironman Ivan Stewart's Super Off-Road (rev 3)","1989","Leland Corporation",offroad,offroad,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+offroad,"Ironman Ivan Stewart's Super Off-Road (rev 4)","1989","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+offroadt,"Ironman Ivan Stewart's Super Off-Road Track-Pak","1989","Leland Corporation",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+"offroadt2p","Ironman Ivan Stewart's Super Off-Road Track-Pak (rev 4, 2 Players)","1989","Leland Corporation",offroadt,offroadt,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,leland.cpp
+jambo,"Jambo! Safari (Rev A)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+jetwave,"Jet Wave (EAB, Euro v1.04)","1996",Konami,-,-,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+jetwavej,"Jet Wave (JAB, Japan v1.04)","1996",Konami,jetwave,jetwave,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+joyfulr,"Joyful Road (Japan)","1983",SNK,-,-,-,YES,NO,NO,NO,NO,munchmo.cpp,BUONO,RASTER,"270",320,240,VERTICAL,munchmo.cpp
+jcross,"Jumping Cross (set 1)","1984",SNK,-,-,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"270",288,216,VERTICAL,snk.cpp
+jcrossa,"Jumping Cross (set 2)","1984",SNK,jcross,jcross,-,YES,NO,NO,NO,NO,snk.cpp,BUONO,RASTER,"270",288,216,VERTICAL,snk.cpp
+kartduel,"Kart Duel (Japan, KTD1/VER.A)","2000","Gaps / Namco",-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+kickridr,"Kick Rider","1984",Universal,-,-,-,YES,NO,NO,NO,NO,docastle.cpp,BUONO,RASTER,"0",240,192,HORIZONTAL,docastle.cpp
+kikstart,"Kick Start - Wheelie King","1984","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,taitosj.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,taitosj.cpp
+konamigt,"Konami GT","1985",Konami,-,-,-,YES,NO,NO,NO,NO,nemesis.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,nemesis.cpp
+"rf2","Konami RF2 - Red Fighter","1985",Konami,konamigt,konamigt,-,YES,NO,NO,NO,NO,nemesis.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,nemesis.cpp
+lagunar,"Laguna Racer","1977",Midway,-,-,-,YES,NO,NO,NO,NO,"mw8080bw.cpp",BUONO,RASTER,"90",260,224,VERTICAL,"mw8080bw.cpp"
+landgearja,"Landing Gear (Ver 3.0 J)","1995",Taito,landgear,landgear,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+landgeara,"Landing Gear (Ver 3.1 O)","1995",Taito,landgear,landgear,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+landgearj,"Landing Gear (Ver 4.2 J)","1995",Taito,landgear,landgear,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+landgear,"Landing Gear (Ver 4.2 O)","1995",Taito,-,-,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+landhigh,"Landing High Japan (Ver 2.01 OK)","1999",Taito,taitotz,-,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+landhigha,"Landing High Japan (Ver 2.02 O)","1999",Taito,landhigh,landhigh,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+lgp,"Laser Grand Prix","1983",Taito,-,-,-,YES,NO,NO,NO,YES,lgp.cpp,PRELIMINARE,RASTER,"0",704,480,HORIZONTAL,lgp.cpp
+lgpalt,"Laser Grand Prix (alternate)","1983",Taito,lgp,lgp,-,YES,NO,NO,NO,YES,lgp.cpp,PRELIMINARE,RASTER,"0",704,480,HORIZONTAL,lgp.cpp
+lastkm,"Last KM (Ver 1.0.0275)","1995",Gaelco,-,-,-,YES,NO,NO,NO,NO,gaelco.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,gaelco.cpp
+"lemans24","Le Mans 24 (Japan, Revision B)","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+ledstorm,"Led Storm (US)","1988",Capcom,madgear,madgear,-,YES,NO,NO,NO,NO,lastduel.cpp,BUONO,RASTER,"270",384,240,VERTICAL,lastduel.cpp
+"leds2011p","Led Storm Rally 2011 (US, prototype 12)","1988",Capcom,"leds2011","leds2011",-,YES,NO,NO,NO,NO,lastduel.cpp,BUONO,RASTER,"270",384,240,VERTICAL,lastduel.cpp
+"leds2011u","Led Storm Rally 2011 (US)","1988",Capcom,"leds2011","leds2011",-,YES,NO,NO,NO,NO,lastduel.cpp,BUONO,RASTER,"270",384,240,VERTICAL,lastduel.cpp
+"leds2011","Led Storm Rally 2011 (World)","1988",Capcom,-,-,-,YES,NO,NO,NO,NO,lastduel.cpp,BUONO,RASTER,"270",384,240,VERTICAL,lastduel.cpp
+crshrace,"Lethal Crash Race / Bakuretsu Crash Race (set 1)","1993","Video System Co.",-,-,-,YES,NO,NO,NO,NO,crshrace.cpp,BUONO,RASTER,"270",320,224,VERTICAL,crshrace.cpp
+"crshrace2","Lethal Crash Race / Bakuretsu Crash Race (set 2)","1993","Video System Co.",crshrace,crshrace,-,YES,NO,NO,NO,NO,crshrace.cpp,BUONO,RASTER,"270",320,224,VERTICAL,crshrace.cpp
+shangonle,"Limited Edition Hang-On","1991",Sega,shangon,shangon,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+luckywld,"Lucky & Wild","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+luckywldj,"Lucky & Wild (Japan)","1992",Namco,luckywld,luckywld,-,YES,NO,NO,NO,NO,"namcos2.cpp",BUONO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"llander1","Lunar Lander (rev 1)","1979",Atari,llander,llander,-,YES,NO,NO,NO,NO,asteroid.cpp,BUONO,VECTOR,"0",0,0,-,asteroid.cpp
+llander,"Lunar Lander (rev 2)","1979",Atari,-,-,-,YES,NO,NO,NO,NO,asteroid.cpp,BUONO,VECTOR,"0",0,0,-,asteroid.cpp
+madgearj,"Mad Gear (Japan)","1989",Capcom,madgear,madgear,-,YES,NO,NO,NO,NO,lastduel.cpp,BUONO,RASTER,"270",384,240,VERTICAL,lastduel.cpp
+madgear,"Mad Gear (US)","1989",Capcom,-,-,-,YES,NO,NO,NO,NO,lastduel.cpp,BUONO,RASTER,"270",384,240,VERTICAL,lastduel.cpp
+manxtt,"Manx TT Superbike - DX (Revision D)","1995",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+manxttc,"Manx TT Superbike - Twin (Revision C)","1995",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+mkartagp,"Mario Kart Arcade GP (Japan, MKA1 Ver.A1)","2005","Namco / Nintendo",triforce,-,-,YES,NO,NO,NO,NO,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+mkartagpc,"Mario Kart Arcade GP (Japan, MKA1 Ver.C, update)","2006","Namco / Nintendo",mkartagp,mkartagp,-,YES,NO,NO,NO,YES,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"mkartag2a","Mario Kart Arcade GP 2 (Japan, MK21 Ver.A, alt dump)","2007","Namco / Nintendo","mkartag2","mkartag2",-,YES,NO,NO,NO,NO,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+"mkartag2","Mario Kart Arcade GP 2 (Japan, MK21 Ver.A)","2007","Namco / Nintendo",triforce,-,-,YES,NO,NO,NO,NO,triforce.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,triforce.cpp
+kamenrid,"Masked Riders Club Battle Race","1993","Banpresto / Toei",-,-,-,YES,NO,NO,NO,NO,seta.cpp,BUONO,RASTER,"0",384,240,HORIZONTAL,seta.cpp
+maxrpm,"Max RPM (ver 2)","1986","Bally Midway",-,-,-,YES,NO,NO,NO,NO,"mcr3.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr3.cpp"
+maxspeed,"Maximum Speed","2003","SIMS / Sammy",awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+metalmx,"Metal Maniax (prototype)","1994","Atari Games",-,-,-,YES,NO,NO,NO,NO,metalmx.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,metalmx.cpp
+mlanding,"Midnight Landing (Germany)","1987","Taito America Corporation",-,-,-,YES,NO,NO,NO,NO,mlanding.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,mlanding.cpp
+mlandingj,"Midnight Landing (Japan)","1987","Taito Corporation",mlanding,mlanding,-,YES,NO,NO,NO,NO,mlanding.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,mlanding.cpp
+"midnruna2","Midnight Run: Road Fighter 2 (AAA, Asia v1.10, newer sound program)","1995",Konami,midnrun,midnrun,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+midnruna,"Midnight Run: Road Fighter 2 (AAA, Asia v1.10, older sound program)","1995",Konami,midnrun,midnrun,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+midnrun,"Midnight Run: Road Fighter 2 (EAA, Euro v1.11)","1995",Konami,-,-,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+midnrunj,"Midnight Run: Road Fighter 2 (JAD, Japan v1.10)","1995",Konami,midnrun,midnrun,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+"gtmr2a","Mille Miglia 2: Great 1000 Miles Rally (95/04/04)","1995",Kaneko,"gtmr2","gtmr2",-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+"gtmr2","Mille Miglia 2: Great 1000 Miles Rally (95/05/24)","1995",Kaneko,-,-,-,YES,NO,NO,NO,NO,"kaneko16.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"kaneko16.cpp"
+montecar,"Monte Carlo","1979",Atari,-,-,-,YES,NO,NO,NO,NO,firetrk.cpp,BUONO,RASTER,"270",320,240,VERTICAL,firetrk.cpp
+monzagp,"Monza GP","1981",Olympia,-,-,-,YES,NO,NO,NO,NO,monzagp.cpp,PRELIMINARE,RASTER,"270",560,229,VERTICAL,monzagp.cpp
+monzagpb,"Monza GP (bootleg)","1981",bootleg,monzagp,monzagp,-,YES,NO,NO,NO,NO,monzagp.cpp,PRELIMINARE,RASTER,"270",560,229,VERTICAL,monzagp.cpp
+motofren,"Moto Frenzy","1992","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarigx2.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarigx2.cpp"
+motofrenft,"Moto Frenzy (Field Test Version)","1992","Atari Games",motofren,motofren,-,YES,NO,NO,NO,NO,"atarigx2.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarigx2.cpp"
+motofrenmf,"Moto Frenzy (Mini Deluxe Field Test Version)","1992","Atari Games",motofren,motofren,-,YES,NO,NO,NO,NO,"atarigx2.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarigx2.cpp"
+motofrenmd,"Moto Frenzy (Mini Deluxe)","1992","Atari Games",motofren,motofren,-,YES,NO,NO,NO,NO,"atarigx2.cpp",BUONO,RASTER,"0",336,240,HORIZONTAL,"atarigx2.cpp"
+motogp,"Moto GP (MGP1004-NA-B)","2007",Namco,"sys256",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+"motoxgov1a","Motocross Go! (Japan, MG1 Ver. A, set 1)","1997",Namco,motoxgo,motoxgo,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+"motoxgov1a2","Motocross Go! (Japan, MG1 Ver. A, set 2)","1997",Namco,motoxgo,motoxgo,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+motoxgo,"Motocross Go! (US, MG3 Ver. A)","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+"motoxgov2a","Motocross Go! (World, MG2 Ver. A, set 1)","1997",Namco,motoxgo,motoxgo,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+"motoxgov2a2","Motocross Go! (World, MG2 Ver. A, set 2)","1997",Namco,motoxgo,motoxgo,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+motogonki,Motogonki,"198?",Terminal,-,-,-,YES,NO,NO,NO,NO,istrebiteli.cpp,PRELIMINARE,RASTER,"0",192,256,HORIZONTAL,istrebiteli.cpp
+motoraid,"Motor Raid - Twin","1997",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+motoraiddx,"Motor Raid - Twin/DX","1997",Sega,motoraid,motoraid,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+motorace,"MotoRace USA","1983","Irem (Williams license)",travrusa,travrusa,-,YES,NO,NO,NO,NO,travrusa.cpp,BUONO,RASTER,"270",240,256,VERTICAL,travrusa.cpp
+mototour,"MotoTour / Zippy Race (Tecfri license)","1983","Irem (Tecfri license)",travrusa,travrusa,-,YES,NO,NO,NO,NO,travrusa.cpp,BUONO,RASTER,"270",240,256,VERTICAL,travrusa.cpp
+mnchmobl,"Munch Mobile (US)","1983","SNK (Centuri license)",joyfulr,joyfulr,-,YES,NO,NO,NO,NO,munchmo.cpp,BUONO,RASTER,"270",320,240,VERTICAL,munchmo.cpp
+namenayo,"Namennayo (Japan)","1982",Cat's,-,-,-,YES,NO,NO,NO,NO,galaxian.cpp,BUONO,RASTER,"0",768,224,HORIZONTAL,galaxian.cpp
+sgnascaro,"NASCAR Racing (original)","2000","Sega / Electronic Arts",sgnascar,sgnascar,-,YES,NO,NO,NO,NO,hikaru.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,hikaru.cpp
+sgnascar,"NASCAR Racing (Rev A)","2000","Sega / Electronic Arts",hikaru,-,-,YES,NO,NO,NO,NO,hikaru.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,hikaru.cpp
+nfs,"Need for Speed - 4 Cab Link (2 Discs) (v1.0.1 Rev B)","2003","Global VR",-,-,-,YES,NO,NO,NO,YES,globalvr.cpp,PRELIMINARE,-,"0",0,0,-,globalvr.cpp
+nfsgt,"Need for Speed GT (Hard Drive+2 Discs) (v1.1.0 Rev C)","2004","Global VR",-,-,-,YES,NO,NO,NO,YES,globalvr.cpp,PRELIMINARE,-,"0",0,0,-,globalvr.cpp
+nfsug,"Need For Speed: Underground Install (2 Discs) (v1.1)","2005","Global VR",-,-,-,YES,NO,NO,NO,YES,globalvr.cpp,PRELIMINARE,-,"0",0,0,-,globalvr.cpp
+neodrift,"Neo Drift Out - New Technology","1996",Visco,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+nitedrvr,"Night Driver","1976",Atari,-,-,-,YES,NO,NO,NO,NO,nitedrvr.cpp,INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,nitedrvr.cpp
+"offroadc1","Off Road Challenge (v1.10)","1997",Midway,offroadc,offroadc,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"offroadc3","Off Road Challenge (v1.30)","1997",Midway,offroadc,offroadc,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"offroadc4","Off Road Challenge (v1.40)","1997",Midway,offroadc,offroadc,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+"offroadc5","Off Road Challenge (v1.50)","1997",Midway,offroadc,offroadc,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+offroadc,"Off Road Challenge (v1.63)","1997",Midway,-,-,-,YES,NO,NO,NO,NO,midvunit.cpp,BUONO,RASTER,"0",512,400,HORIZONTAL,midvunit.cpp
+offrthnd,"Offroad Thunder","2000","Midway Games",-,-,-,YES,NO,NO,NO,YES,midqslvr.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,midqslvr.cpp
+outrunb,"Out Run (bootleg)","1986",bootleg,outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+outrundxa,"Out Run (deluxe sitdown earlier version)","1986",Sega,outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+outrundx,"Out Run (deluxe sitdown)","1986",Sega,outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+outrundxeha,"Out Run (deluxe sitdown) (Enhanced Edition v1.0.3)","2013","hack (Chris White)",outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+outrundxeh,"Out Run (deluxe sitdown) (Enhanced Edition v2.0.3)","2020","hack (Chris White)",outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+outrundxj,"Out Run (Japan, deluxe sitdown) (FD1089A 317-0019)","1986",Sega,outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+mt_orun,"Out Run (Mega-Tech, SMS based)","1987",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+outrunra,"Out Run (sitdown/upright, Rev A)","1986",Sega,outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+outrun,"Out Run (sitdown/upright, Rev B)","1986",Sega,-,-,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+outruneha,"Out Run (sitdown/upright, Rev B) (Enhanced Edition v1.1.0)","2014","hack (Chris White)",outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+outruneh,"Out Run (sitdown/upright, Rev B) (Enhanced Edition v2.0.3)","2020","hack (Chris White)",outrun,outrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"outr2","OutRun 2 (Rev A) (GDX-0004A)","2003",Sega,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"outr2sdx","OutRun 2 SP SDX","2006",Sega,lindbios,-,-,YES,NO,NO,NO,YES,lindbergh.cpp,PRELIMINARE,-,"0",0,0,-,lindbergh.cpp
+"outr2sto","OutRun 2 Special Tours (GDX-0014)","2004",Sega,"outr2st","outr2st",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"outr2stj","OutRun 2 Special Tours (Japan, Rev A) (GDX-0011A)","2004",Sega,"outr2st","outr2st",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"outr2stjo","OutRun 2 Special Tours (Japan) (GDX-0011)","2004",Sega,"outr2st","outr2st",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"outr2st","OutRun 2 Special Tours (Rev A) (GDX-0014A)","2004",Sega,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+orunnersj,"OutRunners (Japan)","1992",Sega,orunners,orunners,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+orunnersu,"OutRunners (US)","1992",Sega,orunners,orunners,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+orunners,"OutRunners (World)","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+overdriv,"Over Drive (set 1)","1990",Konami,-,-,-,YES,NO,NO,NO,NO,overdriv.cpp,PRELIMINARE,RASTER,"90",305,224,VERTICAL,overdriv.cpp
+overdriva,"Over Drive (set 2)","1990",Konami,overdriv,overdriv,-,YES,NO,NO,NO,NO,overdriv.cpp,PRELIMINARE,RASTER,"90",305,224,VERTICAL,overdriv.cpp
+overdrivb,"Over Drive (set 3)","1990",Konami,overdriv,overdriv,-,YES,NO,NO,NO,NO,overdriv.cpp,PRELIMINARE,RASTER,"90",305,224,VERTICAL,overdriv.cpp
+overrevba,"Over Rev (Model 2B, Revision A)","1997",Jaleco,overrev,overrev,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+overrevb,"Over Rev (Model 2B, Revision B)","1997",Jaleco,overrev,overrev,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+overrev,"Over Rev (Model 2C, Revision A)","1997",Jaleco,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+overtop,"Over Top","1996",ADK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+mag_pdak,"Paris Dakar (31/03/87, Spanish)","1987","EFO SA / Cedar",cedmag,-,-,YES,NO,NO,NO,NO,cedar_magnet.cpp,INCOMPLETO,RASTER,"0",248,192,HORIZONTAL,cedar_magnet.cpp
+pitnrun,"Pit & Run - F-1 Race (set 1)","1984","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,pitnrun.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,pitnrun.cpp
+pitnruna,"Pit & Run - F-1 Race (set 2)","1984","Taito Corporation",pitnrun,pitnrun,-,YES,NO,NO,NO,NO,pitnrun.cpp,INCOMPLETO,RASTER,"90",256,224,VERTICAL,pitnrun.cpp
+pocketrc,"Pocket Racer (Japan, PKR1/VER.B)","1996",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos11.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos11.cpp"
+"poleposa1","Pole Position (Atari version 1)","1982","Namco (Atari license)",polepos,polepos,-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+"poleposa2","Pole Position (Atari version 2)","1982","Namco (Atari license)",polepos,polepos,-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+poleposj,"Pole Position (Japan)","1982",Namco,polepos,polepos,-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+polepos,"Pole Position (World)","1982",Namco,-,-,-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+"polepos2a","Pole Position II (Atari)","1983","Namco (Atari license)","polepos2","polepos2",-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+"polepos2b","Pole Position II (bootleg)","1983",bootleg,"polepos2","polepos2",-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+"polepos2","Pole Position II (Japan)","1983",Namco,-,-,-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+pdriftl,"Power Drift - Link Version (Japan, Rev A)","1988",Sega,-,-,-,YES,NO,NO,NO,NO,segaybd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaybd.cpp
+pdriftj,"Power Drift (Japan)","1988",Sega,pdrift,pdrift,-,YES,NO,NO,NO,NO,segaybd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaybd.cpp
+pdrifte,"Power Drift (World, Earlier)","1988",Sega,pdrift,pdrift,-,YES,NO,NO,NO,NO,segaybd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaybd.cpp
+pdrift,"Power Drift (World, Rev A)","1988",Sega,-,-,-,YES,NO,NO,NO,NO,segaybd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaybd.cpp
+pdrifta,"Power Drift (World)","1988",Sega,pdrift,pdrift,-,YES,NO,NO,NO,NO,segaybd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaybd.cpp
+powerdrv,"Power Drive","1986","Bally Midway",-,-,-,YES,NO,NO,NO,NO,"mcr3.cpp",BUONO,RASTER,"0",512,480,HORIZONTAL,"mcr3.cpp"
+powsledm,"Power Sled (Main, hack of Relay)","1996",Sega,powsled,powsled,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+powsledr,"Power Sled (Relay, Revision A)","1996",Sega,powsled,powsled,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+powsled,"Power Sled (Slave, Revision A)","1996",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+pwheelsj,"Power Wheels (Japan, Rev 2, Linkable)","1991","Taito Corporation",dblaxle,dblaxle,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+sltpcycl,"Pro Cycle Tele Cardioline (Salter Fitness Bike V.1.0, Checksum 02AB)","1997","Salter Fitness / Gaelco",-,-,-,YES,NO,NO,NO,NO,"gaelco2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"gaelco2.cpp"
+sltpstep,"Pro Stepper Tele Cardioline (Salter Fitness Stepper V.1.0, Checksum F208)","1997","Salter Fitness / Gaelco",-,-,-,YES,NO,NO,NO,NO,"gaelco2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"gaelco2.cpp"
+pc_rcpam,"R.C. Pro-Am (PlayChoice-10)","1987",Rare,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"racedrivb1","Race Drivin' (cockpit, British, rev 1)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"racedrivb4","Race Drivin' (cockpit, British, rev 4)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+racedrivb,"Race Drivin' (cockpit, British, rev 5)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"racedrivg1","Race Drivin' (cockpit, German, rev 2)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"racedrivg4","Race Drivin' (cockpit, German, rev 4)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+racedrivg,"Race Drivin' (cockpit, German, rev 5)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"racedriv1","Race Drivin' (cockpit, rev 1)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"racedriv2","Race Drivin' (cockpit, rev 2)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"racedriv3","Race Drivin' (cockpit, rev 3)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"racedriv4","Race Drivin' (cockpit, rev 4)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+racedriv,"Race Drivin' (cockpit, rev 5)","1990","Atari Games",-,-,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",508,384,HORIZONTAL,harddriv.cpp
+"racedrivcb4","Race Drivin' (compact, British, rev 4)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+racedrivcb,"Race Drivin' (compact, British, rev 5)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+"racedrivcg4","Race Drivin' (compact, German, rev 4)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+racedrivcg,"Race Drivin' (compact, German, rev 5)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+racedrivcp,"Race Drivin' (compact, prototype)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+"racedrivc1","Race Drivin' (compact, rev 1)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+"racedrivc2","Race Drivin' (compact, rev 2)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+"racedrivc4","Race Drivin' (compact, rev 4)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+racedrivc,"Race Drivin' (compact, rev 5)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+racedrivpan,"Race Drivin' Panorama (prototype, rev 2.1)","1990","Atari Games",racedriv,racedriv,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+raceon,"Race On! (World, RO2 Ver. A)","1998",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+racinfrc,"Racin' Force (ver EAC)","1994",Konami,konamigx,-,-,YES,NO,NO,NO,NO,konamigx.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,konamigx.cpp
+racinfrcu,"Racin' Force (ver UAB)","1994",Konami,racinfrc,racinfrc,-,YES,NO,NO,NO,NO,konamigx.cpp,PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,konamigx.cpp
+racingbj,"Racing Beat (Japan)","1991","Taito Corporation",racingb,racingb,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+racingb,"Racing Beat (World)","1991","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,taito_z.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,taito_z.cpp
+racherod,"Racing Hero (bootleg of FD1094 317-0144 set)","1989",bootleg,rachero,rachero,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+rachero,"Racing Hero (FD1094 317-0144)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+racingj,"Racing Jam (JAC)","1998",Konami,-,-,-,YES,NO,NO,NO,NO,nwk-tr.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,nwk-tr.cpp
+racjamdx,"Racing Jam DX","1997",Konami,-,-,-,YES,NO,NO,NO,YES,cobra.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,cobra.cpp
+"racingj2","Racing Jam: Chapter 2 (EAE)","1998",Konami,racingj,racingj,-,YES,NO,NO,NO,NO,nwk-tr.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,nwk-tr.cpp
+"racingj2j","Racing Jam: Chapter 2 (JAE)","1998",Konami,racingj,racingj,-,YES,NO,NO,NO,NO,nwk-tr.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,nwk-tr.cpp
+radmu,"Rad Mobile (US)","1990",Sega,radm,radm,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+radm,"Rad Mobile (World)","1990",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+pc_radrc,"Rad Racer (PlayChoice-10)","1987",Square,"playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+"pc_radr2","Rad Racer II (PlayChoice-10)","1990","Square (Nintendo of America license)","playch10",-,-,YES,NO,NO,NO,NO,"playch10.cpp",BUONO,RASTER,"0",256,240,HORIZONTAL,"playch10.cpp"
+radrj,"Rad Rally (Japan)","1991",Sega,radr,radr,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+radru,"Rad Rally (US)","1991",Sega,radr,radr,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+radr,"Rad Rally (World)","1991",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+radikalba,"Radikal Bikers (Version 2.02, Atari license)","1998","Gaelco (Atari license)",radikalb,radikalb,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+radikalb,"Radikal Bikers (Version 2.02)","1998",Gaelco,-,-,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+rallybik,"Rally Bike / Dash Yarou","1988","Toaplan / Taito Corporation",-,-,-,YES,NO,NO,NO,NO,"toaplan1.cpp",BUONO,RASTER,"270",320,240,VERTICAL,"toaplan1.cpp"
+rapidrvrp,"Rapid River (prototype)","1997",Namco,rapidrvr,rapidrvr,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+rapidrvr,"Rapid River (US, RD3 Ver. C)","1997",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+"rapidrvrv2c","Rapid River (World, RD2 Ver. C)","1997",Namco,rapidrvr,rapidrvr,-,YES,NO,NO,NO,NO,"namcos23.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos23.cpp"
+raveracj,"Rave Racer (Rev. RV1 Ver.B, Japan)","1995",Namco,raveracw,raveracw,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+raveracja,"Rave Racer (Rev. RV1, Japan)","1995",Namco,raveracw,raveracw,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+raveracw,"Rave Racer (Rev. RV2, World)","1995",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+rcdego,"RC De Go (V2.03J 1999/05/22 19:29)","1999",Taito,gobyrc,gobyrc,-,YES,NO,NO,NO,YES,taitogn.cpp,INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,taitogn.cpp
+"redlin2p","Redline Racer (2 players)","1987","Cinematronics (Tradewest license)",-,-,-,YES,NO,NO,NO,NO,leland.cpp,BUONO,RASTER,"270",320,240,VERTICAL,leland.cpp
+ridgeracj,"Ridge Racer (Rev. RR1, Japan)","1993",Namco,ridgerac,ridgerac,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+"ridgerac3","Ridge Racer (Rev. RR2 Ver.B, World, 3-screen?)","1993",Namco,ridgerac,ridgerac,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+ridgeracb,"Ridge Racer (Rev. RR2, World)","1993",Namco,ridgerac,ridgerac,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+ridgerac,"Ridge Racer (Rev. RR3, World)","1993",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+"ridgera2j","Ridge Racer 2 (Rev. RRS1 Ver.B, Japan)","1994",Namco,"ridgera2","ridgera2",-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+"ridgera2ja","Ridge Racer 2 (Rev. RRS1, Japan)","1994",Namco,"ridgera2","ridgera2",-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+"ridgera2","Ridge Racer 2 (Rev. RRS2, World)","1994",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos22.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+ridgeracf,"Ridge Racer Full Scale (World)","1993",Namco,ridgerac,ridgerac,-,YES,NO,NO,NO,NO,"namcos22.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos22.cpp"
+"rrvac1","Ridge Racer V Arcade Battle (RRV1 Ver. A)","2001",Namco,rrvac,rrvac,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+"rrvac2","Ridge Racer V Arcade Battle (RRV2 Ver. A)","2001",Namco,rrvac,rrvac,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+rrvac,"Ridge Racer V Arcade Battle (RRV3 Ver. A)","2001",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+ridhero,"Riding Hero (NGM-006 ~ NGH-006)","1990",SNK,neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+ridheroh,"Riding Hero (set 2)","1990",SNK,ridhero,ridhero,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+ringouto,"Ring Out 4x4","1999",Sega,ringout,ringout,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+ringout,"Ring Out 4x4 (Rev A)","1999",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+rriders,"Ring Riders (Software version v2.2)","2004",Gaelco,-,-,-,YES,NO,NO,NO,YES,gaelcopc.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,gaelcopc.cpp
+rpatrolb,"River Patrol (bootleg)","1981",bootleg,rpatrol,rpatrol,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+rpatroln,"River Patrol (Japan, unprotected)","1981",Orca,rpatrol,rpatrol,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+rpatrol,"River Patrol (Japan)","1981",Orca,-,-,-,YES,NO,NO,NO,NO,cclimber.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,cclimber.cpp
+rblaster,"Road Blaster (Data East LD)","1985","Data East",-,-,-,YES,NO,NO,NO,YES,deco_ld.cpp,PRELIMINARE,RASTER,"0",704,480,HORIZONTAL,deco_ld.cpp
+"roadburn1","Road Burners (ver 1.0)","1999","Atari Games",roadburn,roadburn,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+roadburn,"Road Burners (ver 1.04)","1999","Atari Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+roadfh,"Road Fighter (bootleg GX330 conversion)","1984",bootleg,roadf,roadf,-,YES,NO,NO,NO,NO,hyperspt.cpp,BUONO,RASTER,"90",256,224,VERTICAL,hyperspt.cpp
+roadf,"Road Fighter (set 1)","1984",Konami,-,-,-,YES,NO,NO,NO,NO,hyperspt.cpp,BUONO,RASTER,"90",256,224,VERTICAL,hyperspt.cpp
+"roadf2","Road Fighter (set 2)","1984",Konami,roadf,roadf,-,YES,NO,NO,NO,NO,hyperspt.cpp,BUONO,RASTER,"90",256,224,VERTICAL,hyperspt.cpp
+roadfu,"Road Fighter (set 3, unencrypted)","1984",Konami,roadf,roadf,-,YES,NO,NO,NO,NO,hyperspt.cpp,BUONO,RASTER,"90",256,224,VERTICAL,hyperspt.cpp
+roadriot,"Road Riot 4WD (set 1, 04 Dec 1991)","1991","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarig42.cpp",PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,"atarig42.cpp"
+roadriota,"Road Riot 4WD (set 2, 13 Nov 1991)","1991","Atari Games",roadriot,roadriot,-,YES,NO,NO,NO,NO,"atarig42.cpp",PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,"atarig42.cpp"
+roadriotb,"Road Riot 4WD (set 3, 04 Jun 1991)","1991","Atari Games",roadriot,roadriot,-,YES,NO,NO,NO,NO,"atarig42.cpp",PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,"atarig42.cpp"
+rrrevenga,"Road Riot's Revenge (prototype, Jan 27, 1994, set 1)","1993","Atari Games",rrreveng,rrreveng,-,YES,NO,NO,NO,NO,"atarigx2.cpp",PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,"atarigx2.cpp"
+rrrevengb,"Road Riot's Revenge (prototype, Jan 27, 1994, set 2)","1993","Atari Games",rrreveng,rrreveng,-,YES,NO,NO,NO,NO,"atarigx2.cpp",PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,"atarigx2.cpp"
+rrreveng,"Road Riot's Revenge (prototype, Sep 06, 1994)","1993","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarigx2.cpp",PRELIMINARE,RASTER,"0",336,240,HORIZONTAL,"atarigx2.cpp"
+roadedge,"Roads Edge / Round Trip (rev.B)","1997",SNK,"hng64",-,-,YES,NO,NO,NO,NO,"hng64.cpp",PRELIMINARE,RASTER,"0",512,448,HORIZONTAL,"hng64.cpp"
+rollext,"ROLLing eX.tre.me","1999",Gaelco,-,-,-,YES,NO,NO,NO,NO,rollext.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,rollext.cpp
+roughrac,"Rough Racer (Japan, Floppy Based, FD1094 317-0058-06b)","1990",Sega,-,-,-,YES,NO,NO,NO,NO,"segas24.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"segas24.cpp"
+"roundup5","Round Up 5 - Super Delta Force","1989",Tatsumi,-,-,-,YES,NO,NO,NO,NO,tatsumi.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,tatsumi.cpp
+sfrush,"San Francisco Rush (boot rom L 1.0)","1996","Atari Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+sfrusha,"San Francisco Rush (boot rom L 1.06A)","1996","Atari Games",sfrush,sfrush,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+"sf2049","San Francisco Rush 2049","1999","Atari Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+"sf2049se","San Francisco Rush 2049: Special Edition","2003","Atari Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+"sf2049te","San Francisco Rush 2049: Tournament Edition","2000","Atari Games",-,-,-,YES,NO,NO,NO,YES,vegas.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+"sf2049tea","San Francisco Rush 2049: Tournament Edition Unlocked","2001","Atari Games","sf2049te","sf2049te",-,YES,NO,NO,NO,YES,vegas.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,vegas.cpp
+sfrushrk,"San Francisco Rush: The Rock (boot rom L 1.0, GUTS Oct 6 1997 / MAIN Oct 16 1997)","1997","Atari Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+sfrushrkw,"San Francisco Rush: The Rock (Wavenet, boot rom L 1.38, GUTS Aug 19 1997 / MAIN Aug 19 1997)","1997","Atari Games",sfrushrk,sfrushrk,-,YES,NO,NO,NO,YES,seattle.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+sfrushrkwo,"San Francisco Rush: The Rock (Wavenet, boot rom L 1.38, GUTS Aug 6 1997 / MAIN Aug 5 1997)","1997","Atari Games",sfrushrk,sfrushrk,-,YES,NO,NO,NO,YES,seattle.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+scuddx,"Scud Race Deluxe (Revision A)","1996",Sega,scud,scud,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+scudplusa,"Scud Race Plus Twin/DX","1997",Sega,scud,scud,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+scudplus,"Scud Race Plus Twin/DX (Revision A)","1997",Sega,scud,scud,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+scudau,"Scud Race Twin/DX (Australia)","1996",Sega,scud,scud,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+scud,"Scud Race Twin/DX (Export)","1996",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+segartv,"Sega Race-TV (Export)","2007",Sega,lindbios,-,-,YES,NO,NO,NO,YES,lindbergh.cpp,PRELIMINARE,-,"0",0,0,-,lindbergh.cpp
+"srally2","Sega Rally 2 (Export)","1998",Sega,-,-,-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"srally2p","Sega Rally 2 (prototype, 29 Dec 1997)","1998",Sega,"srally2","srally2",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"srally2pa","Sega Rally 2 (prototype, 8 Dec 1997)","1998",Sega,"srally2","srally2",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+"srally2dx","Sega Rally 2 Deluxe (Export)","1998",Sega,"srally2","srally2",-,YES,NO,NO,NO,NO,"model3.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model3.cpp"
+srallycdxa,"Sega Rally Championship - DX","1995",Sega,srallyc,srallyc,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+srallycdx,"Sega Rally Championship - DX (Revision A)","1995",Sega,srallyc,srallyc,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+srallycc,"Sega Rally Championship - Twin/DX (Revision A)","1995",Sega,srallyc,srallyc,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+srallycb,"Sega Rally Championship - Twin/DX (Revision B)","1995",Sega,srallyc,srallyc,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+srallyc,"Sega Rally Championship - Twin/DX (Revision C)","1995",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+stcc,"Sega Touring Car Championship","1996",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+stcca,"Sega Touring Car Championship (Revision A)","1996",Sega,stcc,stcc,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+stccb,"Sega Touring Car Championship (Revision B)","1996",Sega,stcc,stcc,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+shtrider,"Shot Rider","1985","Seibu Kaihatsu",-,-,-,YES,NO,NO,NO,NO,travrusa.cpp,BUONO,RASTER,"270",240,256,VERTICAL,travrusa.cpp
+shtriderb,"Shot Rider (bootleg)","1985",bootleg,shtrider,shtrider,-,YES,NO,NO,NO,NO,travrusa.cpp,BUONO,RASTER,"270",240,256,VERTICAL,travrusa.cpp
+shtridera,"Shot Rider (Sigma license)","1984","Seibu Kaihatsu (Sigma license)",shtrider,shtrider,-,YES,NO,NO,NO,NO,travrusa.cpp,BUONO,RASTER,"270",240,256,VERTICAL,travrusa.cpp
+sidebsjb,"Side by Side (Ver 2.5 J)","1996",Taito,sidebs,sidebs,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+sidebsja,"Side by Side (Ver 2.6 J)","1996",Taito,sidebs,sidebs,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+sidebs,"Side by Side (Ver 2.7 J)","1996",Taito,-,-,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+"sidebs2u","Side by Side 2 (Ver 2.6 A)","1997",Taito,"sidebs2","sidebs2",-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+"sidebs2","Side by Side 2 (Ver 2.6 OK)","1997",Taito,-,-,-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+"sidebs2ja","Side by Side 2 Evoluzione (Ver 2.4 J)","1997",Taito,"sidebs2","sidebs2",-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+"sidebs2j","Side by Side 2 Evoluzione RR (Ver 3.1 J)","1997",Taito,"sidebs2","sidebs2",-,YES,NO,NO,NO,NO,taitojc.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitojc.cpp
+slipstrm,"Slip Stream (Brazil 950515)","1995",Capcom,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+slipstrmh,"Slip Stream (Hispanic 950515)","1995",Capcom,slipstrm,slipstrm,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+smashdrvs,"Smashing Drive (Spain, Portugal)","2000","Gaelco (Covielsa license)",smashdrv,smashdrv,-,YES,NO,NO,NO,NO,atvtrack.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,atvtrack.cpp
+smashdrvb,"Smashing Drive (UK)","2000","Gaelco (Brent Sales license)",smashdrv,smashdrv,-,YES,NO,NO,NO,NO,atvtrack.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,atvtrack.cpp
+smashdrv,"Smashing Drive (World)","2000",Gaelco,-,-,-,YES,NO,NO,NO,NO,atvtrack.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,atvtrack.cpp
+spcpostn,"Space Position (Japan)","1986","Sega / Nasco",-,-,-,YES,NO,NO,NO,NO,angelkds.cpp,BUONO,RASTER,"90",256,240,VERTICAL,angelkds.cpp
+speeddrv,"Speed Driver","2004",IGS,-,-,-,YES,NO,NO,NO,YES,igspc.cpp,PRELIMINARE,-,"0",0,0,-,igspc.cpp
+speedfrk,"Speed Freak","1979",Vectorbeam,-,-,-,YES,NO,NO,NO,NO,cinemat.cpp,BUONO,VECTOR,"180",0,0,-,cinemat.cpp
+speedrs,"Speed Race (Seletron / Olympia)","1980","Seletron / Olympia",-,-,-,YES,NO,NO,NO,NO,lbeach.cpp,PRELIMINARE,RASTER,"0",480,232,HORIZONTAL,lbeach.cpp
+speedrcr,"Speed Racer","1995",Namco,-,-,-,YES,NO,NO,NO,NO,namcofl.cpp,INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,namcofl.cpp
+ppspeed,"Speed Up (Spanish bootleg of Pole Position)","1983",bootleg,polepos,polepos,-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+"speedup10","Speed Up (Version 1.00)","1996",Gaelco,speedup,speedup,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+"speedup12","Speed Up (Version 1.20)","1996",Gaelco,speedup,speedup,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+speedup,"Speed Up (Version 2.20)","1996",Gaelco,-,-,-,YES,NO,NO,NO,NO,"gaelco3d.cpp",INCOMPLETO,RASTER,"0",576,432,HORIZONTAL,"gaelco3d.cpp"
+"sprint1","Sprint 1","1978","Atari (Kee Games)",-,-,-,YES,NO,NO,NO,NO,"sprint2.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"sprint2.cpp"
+"sprint2h","Sprint 2 (color kit, Italy)","1976",hack,"sprint1","sprint1",-,YES,NO,NO,NO,NO,"sprint2.cpp",PRELIMINARE,RASTER,"0",512,224,HORIZONTAL,"sprint2.cpp"
+"sprint2","Sprint 2 (set 1)","1976","Atari (Kee Games)","sprint1","sprint1",-,YES,NO,NO,NO,NO,"sprint2.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"sprint2.cpp"
+"sprint2a","Sprint 2 (set 2)","1976","Atari (Kee Games)","sprint1","sprint1",-,YES,NO,NO,NO,NO,"sprint2.cpp",BUONO,RASTER,"0",512,224,HORIZONTAL,"sprint2.cpp"
+"sprint4","Sprint 4 (set 1)","1977",Atari,-,-,-,YES,NO,NO,NO,NO,"sprint4.cpp",BUONO,RASTER,"180",256,224,HORIZONTAL,"sprint4.cpp"
+"sprint4a","Sprint 4 (set 2)","1977",Atari,"sprint4","sprint4",-,YES,NO,NO,NO,NO,"sprint4.cpp",BUONO,RASTER,"180",256,224,HORIZONTAL,"sprint4.cpp"
+"sprint8","Sprint 8","1977",Atari,-,-,-,YES,NO,NO,NO,NO,"sprint8.cpp",BUONO,RASTER,"0",496,232,HORIZONTAL,"sprint8.cpp"
+"sprint8a","Sprint 8 (play tag & chase)","1977",Atari,"sprint8","sprint8",-,YES,NO,NO,NO,NO,"sprint8.cpp",BUONO,RASTER,"0",496,232,HORIZONTAL,"sprint8.cpp"
+scrossu,"Stadium Cross (US)","1992",Sega,scross,scross,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+scrossa,"Stadium Cross (World, alt)","1992",Sega,scross,scross,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+scross,"Stadium Cross (World)","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",INCOMPLETO,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+starridr,"Star Rider","1984",Williams,-,-,-,YES,NO,NO,NO,YES,starrider.cpp,PRELIMINARE,-,"0",0,0,-,starrider.cpp
+swracer,"Star Wars: Racer Arcade","2000",Sega,hikaru,-,-,YES,NO,NO,NO,NO,hikaru.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,hikaru.cpp
+stocker,"Stocker (3/19/85)","1984",Bally/Sente,-,-,-,YES,NO,NO,NO,NO,balsente.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,balsente.cpp
+strtdriv,"Street Drivin' (prototype)","1993","Atari Games",-,-,-,YES,NO,NO,NO,NO,harddriv.cpp,BUONO,RASTER,"0",512,288,HORIZONTAL,harddriv.cpp
+styphp,"Stunt Typhoon Plus (Ver 2.04 J)","2000",Taito,taitotz,-,-,YES,NO,NO,NO,YES,taitotz.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,taitotz.cpp
+superbug,"Super Bug","1977","Atari (Kee Games)",-,-,-,YES,NO,NO,NO,NO,firetrk.cpp,BUONO,RASTER,"270",320,240,VERTICAL,firetrk.cpp
+"superchsp2","Super Chase - Criminal Termination (1992/01/18 18:29:18 CHASE 3 VER 1.3O, prototype)","1992","Taito Corporation",superchs,superchs,-,YES,NO,NO,NO,NO,superchs.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,superchs.cpp
+superchsp,"Super Chase - Criminal Termination (1992/10/26 20:24:29 CHASE 3 VER 1.1, prototype)","1992","Taito Corporation",superchs,superchs,-,YES,NO,NO,NO,NO,superchs.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,superchs.cpp
+superchsj,"Super Chase - Criminal Termination (Japan)","1992","Taito Corporation",superchs,superchs,-,YES,NO,NO,NO,NO,superchs.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,superchs.cpp
+superchsu,"Super Chase - Criminal Termination (US)","1992","Taito America Corporation",superchs,superchs,-,YES,NO,NO,NO,NO,superchs.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,superchs.cpp
+superchs,"Super Chase - Criminal Termination (World)","1992","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,superchs.cpp,INCOMPLETO,RASTER,"0",320,240,HORIZONTAL,superchs.cpp
+"sprcros2","Super Cross II (Japan, set 1)","1986","GM Shoji",-,-,-,YES,NO,NO,NO,NO,"sprcros2.cpp",BUONO,RASTER,"0",240,224,HORIZONTAL,"sprcros2.cpp"
+"sprcros2a","Super Cross II (Japan, set 2)","1986","GM Shoji","sprcros2","sprcros2",-,YES,NO,NO,NO,NO,"sprcros2.cpp",BUONO,RASTER,"0",240,224,HORIZONTAL,"sprcros2.cpp"
+spdheatj,"Super Dead Heat (Japan)","1985","Taito Corporation",spdheat,spdheat,-,YES,NO,NO,NO,NO,spdheat.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,spdheat.cpp
+spdheat,"Super Dead Heat (World)","1985","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,spdheat.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,spdheat.cpp
+sformula,"Super Formula (Japan, set 1)","1989","V-System Co.","tail2nos","tail2nos",-,YES,NO,NO,NO,NO,"tail2nos.cpp",BUONO,RASTER,"90",320,240,VERTICAL,"tail2nos.cpp"
+sformulaa,"Super Formula (Japan, set 2)","1989","V-System Co.","tail2nos","tail2nos",-,YES,NO,NO,NO,NO,"tail2nos.cpp",BUONO,RASTER,"90",320,240,VERTICAL,"tail2nos.cpp"
+"sgt24h","Super GT 24h","1996",Jaleco,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+"shangonrb2","Super Hang-On (Hang-On conversion, Beta bootleg)","1987","bootleg (Beta)",shangon,shangon,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+shangonrb,"Super Hang-On (Hang-On conversion, bootleg)","1992",bootleg,shangon,shangon,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+shangonho,"Super Hang-On (Hang-On conversion, Japan, FD1094 317-0039)","1987",Sega,shangon,shangon,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+shangonro,"Super Hang-On (Hang-On conversion, ride-on, Japan, FD1094 317-0038)","1987",Sega,shangon,shangon,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+mt_shang,"Super Hang-On (Mega-Tech)","1989",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"shangon2","Super Hang-On (mini ride-on, Rev A) (FD1089B 317-0034)","1987",Sega,shangon,shangon,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"shangon1","Super Hang-On (mini ride-on) (FD1089B 317-0034)","1987",Sega,shangon,shangon,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"shangon3d","Super Hang-On (sitdown/upright) (bootleg of FD1089B 317-0034 set)","1987",bootleg,shangon,shangon,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"shangon3","Super Hang-On (sitdown/upright) (FD1089B 317-0034)","1987",Sega,shangon,shangon,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+shangon,"Super Hang-On (sitdown/upright) (unprotected)","1987",Sega,-,-,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+smgpja,"Super Monaco GP (Japan, Rev A) (FD1094 317-0124a)","1989",Sega,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+smgpjd,"Super Monaco GP (Japan, Rev B) (bootleg of FD1094 317-0124a set)","1989",bootleg,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+smgpj,"Super Monaco GP (Japan, Rev B) (FD1094 317-0124a)","1989",Sega,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+mt_smgp,"Super Monaco GP (Mega-Tech)","1990",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+"smgpu2d","Super Monaco GP (US, Rev A) (bootleg of FD1094 317-0125a set)","1989",bootleg,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+"smgpu2","Super Monaco GP (US, Rev A) (FD1094 317-0125a)","1989",Sega,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+"smgpu1d","Super Monaco GP (US, Rev B) (bootleg of FD1094 317-0125a set)","1989",bootleg,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+"smgpu1","Super Monaco GP (US, Rev B) (FD1094 317-0125a)","1989",Sega,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+smgpud,"Super Monaco GP (US, Rev C) (bootleg of FD1094 317-0125a set)","1989",bootleg,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+smgpu,"Super Monaco GP (US, Rev C) (FD1094 317-0125a)","1989",Sega,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+"smgp6d","Super Monaco GP (World, Rev A) (bootleg of FD1094 317-0126a set)","1989",bootleg,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+"smgp6","Super Monaco GP (World, Rev A) (FD1094 317-0126a)","1989",Sega,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+smgpd,"Super Monaco GP (World, Rev B) (bootleg of FD1094 317-0126a set)","1989",bootleg,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+smgp,"Super Monaco GP (World, Rev B) (FD1094 317-0126a)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+"smgp5d","Super Monaco GP (World) (bootleg of FD1094 317-0126 set)","1989",bootleg,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+"smgp5","Super Monaco GP (World) (FD1094 317-0126)","1989",Sega,smgp,smgp,-,YES,NO,NO,NO,NO,segaxbd.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaxbd.cpp
+smotor,"Super Motor (prototype)","19??",Duintronic,-,-,-,YES,NO,NO,NO,NO,smotor.cpp,BUONO,RASTER,"0",256,256,HORIZONTAL,smotor.cpp
+sspeedr,"Super Speed Race","1979","Taito (Midway license)",-,-,-,YES,NO,NO,NO,NO,sspeedr.cpp,BUONO,RASTER,"270",376,248,VERTICAL,sspeedr.cpp
+ssrj,"Super Speed Race Junior (Japan)","1985","Taito Corporation",-,-,-,YES,NO,NO,NO,NO,ssrj.cpp,PRELIMINARE,RASTER,"90",272,240,VERTICAL,ssrj.cpp
+ssprintf,"Super Sprint (French)","1986","Atari Games",ssprint,ssprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"ssprintg1","Super Sprint (German, rev 1)","1986","Atari Games",ssprint,ssprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+ssprintg,"Super Sprint (German, rev 2)","1986","Atari Games",ssprint,ssprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"ssprint1","Super Sprint (rev 1)","1986","Atari Games",ssprint,ssprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"ssprint3","Super Sprint (rev 3)","1986","Atari Games",ssprint,ssprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+ssprint,"Super Sprint (rev 4)","1986","Atari Games",-,-,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+ssprints,"Super Sprint (Spanish)","1986","Atari Games",ssprint,ssprint,-,YES,NO,NO,NO,NO,"atarisy2.cpp",BUONO,RASTER,"0",512,384,HORIZONTAL,"atarisy2.cpp"
+"suzuka8hj","Suzuka 8 Hours (Japan, Rev B)","1992",Namco,"suzuka8h","suzuka8h",-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"suzuka8h","Suzuka 8 Hours (World, Rev C)","1992",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"suzuk8h2j","Suzuka 8 Hours 2 (Japan, Rev B)","1993",Namco,"suzuk8h2","suzuk8h2",-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"suzuk8h2","Suzuka 8 Hours 2 (World, Rev B)","1993",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos2.cpp",INCOMPLETO,RASTER,"0",288,224,HORIZONTAL,"namcos2.cpp"
+"tail2nos","Tail to Nose - Great Championship","1989","V-System Co.",-,-,-,YES,NO,NO,NO,NO,"tail2nos.cpp",BUONO,RASTER,"90",320,240,VERTICAL,"tail2nos.cpp"
+technodr,"Techno Drive (Japan, TH1/VER.B)","1998",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos12.cpp",INCOMPLETO,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+bounty,"The Bounty (set 1)","1982",Orca,-,-,-,YES,NO,NO,NO,NO,zodiack.cpp,BUONO,RASTER,"180",256,224,HORIZONTAL,zodiack.cpp
+"bounty2","The Bounty (set 2)","1982",Orca,bounty,bounty,-,YES,NO,NO,NO,NO,zodiack.cpp,PRELIMINARE,RASTER,"180",256,224,HORIZONTAL,zodiack.cpp
+"kingrt66p","The King of Route 66 (prototype)","2002",Sega,"kingrt66","kingrt66",-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"kingrt66","The King of Route 66 (Rev A)","2002",Sega,"naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+trally,"Thrash Rally (ALM-003 ~ ALH-003)","1991","Alpha Denshi Co.",neogeo,-,-,YES,NO,NO,NO,NO,neogeo.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,neogeo.cpp
+thrilldbe,"Thrill Drive (EAB)","1998",Konami,thrilld,thrilld,-,YES,NO,NO,NO,NO,nwk-tr.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,nwk-tr.cpp
+thrilldb,"Thrill Drive (JAB)","1998",Konami,thrilld,thrilld,-,YES,NO,NO,NO,NO,nwk-tr.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,nwk-tr.cpp
+thrilld,"Thrill Drive (JAE)","1998",Konami,-,-,-,YES,NO,NO,NO,NO,nwk-tr.cpp,PRELIMINARE,RASTER,"0",512,400,HORIZONTAL,nwk-tr.cpp
+thrilldbu,"Thrill Drive (ver UFB)","1998",Konami,thrilld,thrilld,-,YES,NO,NO,NO,NO,hornet.cpp,PRELIMINARE,RASTER,"0",512,384,HORIZONTAL,hornet.cpp
+"thrild2ac","Thrill Drive 2 (ver AAA, alt 2)","2001",Konami,"thrild2","thrild2",-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"thrild2ab","Thrill Drive 2 (ver AAA, alt)","2001",Konami,"thrild2","thrild2",-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"thrild2a","Thrill Drive 2 (ver AAA)","2001",Konami,"thrild2","thrild2",-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"thrild2c","Thrill Drive 2 (ver EAA)","2001",Konami,"thrild2","thrild2",-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"thrild2","Thrill Drive 2 (ver EBB)","2001",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+"thrild2j","Thrill Drive 2 (ver JAA)","2001",Konami,"thrild2","thrild2",-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp
+tokyobus,"Tokyo Bus Guide (Japan, Rev A)","1999",Fortyfive,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+tokyocopi,"Tokyo Cop (Italy)","2003",Gaelco,tokyocop,tokyocop,-,YES,NO,NO,NO,YES,gaelcopc.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,gaelcopc.cpp
+tokyocop,"Tokyo Cop (US, dedicated version)","2003",Gaelco,-,-,-,YES,NO,NO,NO,YES,gaelcopc.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,gaelcopc.cpp
+tokyocopk,"Tokyo Cop (US, kit version)","2003",Gaelco,tokyocop,tokyocop,-,YES,NO,NO,NO,YES,gaelcopc.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,gaelcopc.cpp
+toplandj,"Top Landing (Japan)","1988","Taito Corporation",topland,topland,-,YES,NO,NO,NO,NO,taitoair.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitoair.cpp
+topland,"Top Landing (World)","1988","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,taitoair.cpp,INCOMPLETO,RASTER,"0",512,400,HORIZONTAL,taitoair.cpp
+drivfrct,"Top Racer (bootleg of Driving Force)","1984","bootleg (EMT Germany)",drivfrcp,drivfrcp,-,YES,NO,NO,NO,NO,galaxold.cpp,BUONO,RASTER,"90",256,224,VERTICAL,galaxold.cpp
+topracern,"Top Racer (no MB8841 + MB8842)","1982",bootleg,polepos,polepos,-,YES,NO,NO,NO,NO,polepos.cpp,INCOMPLETO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+topracera,"Top Racer (with MB8841 + MB8842, 1983)","1983",bootleg,polepos,polepos,-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+topracer,"Top Racer (with MB8841 + MB8842, 1984)","1984",bootleg,polepos,polepos,-,YES,NO,NO,NO,NO,polepos.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,polepos.cpp
+topspeedu,"Top Speed (US)","1987","Taito America Corporation (Romstar license)",topspeed,topspeed,-,YES,NO,NO,NO,NO,topspeed.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,topspeed.cpp
+topspeed,"Top Speed (World)","1987","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,topspeed.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,topspeed.cpp
+travrusab,"Traverse USA (bootleg, set 1)","1983","bootleg (I.P.)",travrusa,travrusa,-,YES,NO,NO,NO,NO,travrusa.cpp,BUONO,RASTER,"270",240,256,VERTICAL,travrusa.cpp
+"travrusab2","Traverse USA (bootleg, set 2)","1983",bootleg,travrusa,travrusa,-,YES,NO,NO,NO,NO,travrusa.cpp,BUONO,RASTER,"270",240,256,VERTICAL,travrusa.cpp
+travrusa,"Traverse USA / Zippy Race","1983",Irem,-,-,-,YES,NO,NO,NO,NO,travrusa.cpp,BUONO,RASTER,"270",240,256,VERTICAL,travrusa.cpp
+truckk,"Truck Kyosokyoku (Japan, TKK2/VER.A)","2000","Metro / Namco",-,-,-,YES,NO,NO,NO,YES,"namcos12.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcos12.cpp"
+tugboat,Tugboat,"1982","Enter-Tech, Ltd.",-,-,-,YES,NO,NO,NO,NO,tugboat.cpp,INCOMPLETO,RASTER,"90",240,224,VERTICAL,tugboat.cpp
+turboa,"Turbo (encrypted, program 1262-1264)","1981",Sega,turbo,turbo,turbo,YES,NO,NO,NO,NO,turbo.cpp,INCOMPLETO,RASTER,"270",512,224,VERTICAL,turbo.cpp
+turbod,"Turbo (encrypted, program 1363-1365 rev A)","1981",Sega,turbo,turbo,turbo,YES,NO,NO,NO,NO,turbo.cpp,INCOMPLETO,RASTER,"270",512,224,VERTICAL,turbo.cpp
+turboc,"Turbo (encrypted, program 1363-1365 rev B)","1981",Sega,turbo,turbo,turbo,YES,NO,NO,NO,NO,turbo.cpp,INCOMPLETO,RASTER,"270",512,224,VERTICAL,turbo.cpp
+turbob,"Turbo (encrypted, program 1363-1365 rev C)","1981",Sega,turbo,turbo,turbo,YES,NO,NO,NO,NO,turbo.cpp,INCOMPLETO,RASTER,"270",512,224,VERTICAL,turbo.cpp
+turboe,"Turbo (encrypted, program 1363-1365)","1981",Sega,turbo,turbo,turbo,YES,NO,NO,NO,NO,turbo.cpp,INCOMPLETO,RASTER,"270",512,224,VERTICAL,turbo.cpp
+turbo,"Turbo (program 1513-1515)","1981",Sega,-,-,turbo,YES,NO,NO,NO,NO,turbo.cpp,INCOMPLETO,RASTER,"270",512,224,VERTICAL,turbo.cpp
+"toutrun2d","Turbo Out Run (cockpit) (bootleg of FD1094 317-0106 set)","1989",bootleg,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"toutrun3d","Turbo Out Run (cockpit) (bootleg of FD1094 317-0107 set)","1989",bootleg,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"toutrun2","Turbo Out Run (cockpit) (FD1094 317-0106)","1989",Sega,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"toutrun3","Turbo Out Run (cockpit) (FD1094 317-0107)","1989",Sega,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"toutrun1","Turbo Out Run (deluxe cockpit) (FD1094 317-0109)","1989",Sega,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"toutrunj1d","Turbo Out Run (Japan, cockpit) (bootleg of FD1094 317-0101 set)","1989",bootleg,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+"toutrunj1","Turbo Out Run (Japan, cockpit) (FD1094 317-0101)","1989",Sega,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+toutrunjd,"Turbo Out Run (Japan, Out Run upgrade) (bootleg of FD1094 317-0117 set)","1989",bootleg,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+toutrunj,"Turbo Out Run (Japan, Out Run upgrade) (FD1094 317-0117)","1989",Sega,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+toutrund,"Turbo Out Run (Out Run upgrade) (bootleg of FD1094 317-0118 set)","1989",bootleg,toutrun,toutrun,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+toutrun,"Turbo Out Run (Out Run upgrade) (FD1094 317-0118)","1989",Sega,-,-,-,YES,NO,NO,NO,NO,segaorun.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segaorun.cpp
+mt_tout,"Turbo Outrun (Mega-Tech)","1992",Sega,megatech,-,-,YES,NO,NO,NO,NO,megatech.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,megatech.cpp
+turbotag,"Turbo Tag (prototype)","1985","Bally Midway",-,-,-,YES,NO,NO,NO,NO,"mcr3.cpp",BUONO,RASTER,"90",480,480,VERTICAL,"mcr3.cpp"
+"tx1jb","TX-1 (Japan rev. B)","1983",Tatsumi,"tx1","tx1",-,YES,NO,NO,NO,NO,"tx1.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"tx1.cpp"
+"tx1jc","TX-1 (Japan rev. C)","1983",Tatsumi,"tx1","tx1",-,YES,NO,NO,NO,NO,"tx1.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"tx1.cpp"
+"tx1","TX-1 (World)","1983","Tatsumi (Atari/Namco/Taito license)",-,-,-,YES,NO,NO,NO,NO,"tx1.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"tx1.cpp"
+ultarctc,"Ultimate Arctic Thunder","2001","Midway Games",-,-,-,YES,NO,NO,NO,YES,midqslvr.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,midqslvr.cpp
+ultarctcup,"Ultimate Arctic Thunder Update CD ver 1.950 (5/3/04)","2004","Midway Games",ultarctc,ultarctc,-,YES,NO,NO,NO,YES,midqslvr.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,midqslvr.cpp
+vaportrxp,"Vapor TRX (GUTS Apr 10 1998 / MAIN Apr 10 1998)","1998","Atari Games",vaportrx,vaportrx,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+vaportrx,"Vapor TRX (GUTS Jul 2 1998 / MAIN Jul 18 1998)","1998","Atari Games",-,-,-,YES,NO,NO,NO,YES,seattle.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,seattle.cpp
+hangonvf,"VF (bootleg of Hang-On)","1985",bootleg,hangon,hangon,-,YES,NO,NO,NO,NO,segahang.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,segahang.cpp
+vformula,"Virtua Formula","1993",Sega,vr,vr,-,YES,NO,NO,NO,NO,"model1.cpp",INCOMPLETO,RASTER,"0",496,384,HORIZONTAL,"model1.cpp"
+vr,"Virtua Racing","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"model1.cpp",BUONO,RASTER,"0",496,384,HORIZONTAL,"model1.cpp"
+excitebko,"Vs. Excitebike (set EB4-3 ?)","1984",Nintendo,excitebk,excitebk,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+excitebk,"Vs. Excitebike (set EB4-3 E)","1984",Nintendo,-,-,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+excitebkj,"Vs. Excitebike (set EB4-4 A)","1984",Nintendo,excitebk,excitebk,-,YES,NO,NO,NO,NO,vsnes.cpp,BUONO,RASTER,"0",256,240,HORIZONTAL,vsnes.cpp
+waidrive,"WaiWai Drive","2005","MOSS / Sammy",awbios,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"270",640,480,VERTICAL,naomi.cpp
+soniccar,"Waku Waku Sonic Patrol Car","1991",Sega,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+wanganmd,"Wangan Midnight (WMN1 Ver. A)","2001",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+wangmid,"Wangan Midnight Maximum Tune (Export, Rev B) (GDX-0009B)","2004",Namco,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+wangmidj,"Wangan Midnight Maximum Tune (Japan, Rev B) (GDX-0008B)","2004",Namco,wangmid,wangmid,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"wangmid2","Wangan Midnight Maximum Tune 2 (Export, Rev A) (GDX-0016A)","2005",Namco,chihiro,-,-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"wangmid2o","Wangan Midnight Maximum Tune 2 (Export) (GDX-0016)","2005",Namco,"wangmid2","wangmid2",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"wangmid2ja","Wangan Midnight Maximum Tune 2 (Japan, Rev A) (GDX-0015A)","2005",Namco,"wangmid2","wangmid2",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+"wangmid2j","Wangan Midnight Maximum Tune 2 (Japan) (GDX-0015)","2005",Namco,"wangmid2","wangmid2",-,YES,NO,NO,NO,YES,chihiro.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,chihiro.cpp
+wanganmr,"Wangan Midnight R (WMR1 Ver. A)","2002",Namco,"sys246",-,-,YES,NO,NO,NO,YES,"namcops2.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"namcops2.cpp"
+warpsped,"Warp Speed (prototype)","1979?","Meadows Games, Inc.",-,-,-,YES,NO,NO,NO,NO,warpsped.cpp,PRELIMINARE,RASTER,"0",224,192,HORIZONTAL,warpsped.cpp
+waverunr,"Wave Runner (Japan, Revision A)","1996",Sega,-,-,-,YES,NO,NO,NO,NO,"model2.cpp",PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,"model2.cpp"
+wrungp,"Wave Runner GP","2001","CRI / Sega",naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+wrungpo,"Wave Runner GP (USA, Rev A)","2001","CRI / Sega",wrungp,wrungp,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+waveshrk,"Wave Shark (UAB, USA v1.04)","1996",Konami,jetwave,jetwave,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+weclemanc,"WEC Le Mans 24 (v1.26)","1986",Konami,wecleman,wecleman,-,YES,NO,NO,NO,NO,wecleman.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,wecleman.cpp
+weclemanb,"WEC Le Mans 24 (v2.00, hack)","1988",hack,wecleman,wecleman,-,YES,NO,NO,NO,NO,wecleman.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,wecleman.cpp
+weclemana,"WEC Le Mans 24 (v2.00)","1986",Konami,wecleman,wecleman,-,YES,NO,NO,NO,NO,wecleman.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,wecleman.cpp
+wecleman,"WEC Le Mans 24 (v2.01)","1986",Konami,-,-,-,YES,NO,NO,NO,NO,wecleman.cpp,BUONO,RASTER,"0",320,224,HORIZONTAL,wecleman.cpp
+wheelfir,"Wheels & Fire","199?",TCH,-,-,-,YES,NO,NO,NO,NO,wheelfir.cpp,INCOMPLETO,RASTER,"0",336,248,HORIZONTAL,wheelfir.cpp
+wheelrun,"Wheels Runner","19??","International Games",-,-,-,YES,NO,NO,NO,NO,fantland.cpp,BUONO,RASTER,"0",256,224,HORIZONTAL,fantland.cpp
+wldrider,"Wild Riders","2001","Wow Entertainment / Sega","naomi2",-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+windheata,"Winding Heat (AAA, Asia v2.11)","1996",Konami,windheat,windheat,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+windheat,"Winding Heat (EAA, Euro v2.11)","1996",Konami,-,-,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+windheatj,"Winding Heat (JAA, Japan v2.11)","1996",Konami,windheat,windheat,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+windheatu,"Winding Heat (UBC, USA v2.22)","1996",Konami,windheat,windheat,-,YES,NO,NO,NO,NO,"zr107.cpp",INCOMPLETO,RASTER,"0",512,384,HORIZONTAL,"zr107.cpp"
+"winrun91","Winning Run '91 (Japan) (1991/03/05, Main Ver 1.0, Sub Ver 1.0)","1991",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos21.cpp",INCOMPLETO,RASTER,"0",496,480,HORIZONTAL,"namcos21.cpp"
+winrun,"Winning Run (World) (89/06/06, Ver.09)","1988",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos21.cpp",INCOMPLETO,RASTER,"0",496,480,HORIZONTAL,"namcos21.cpp"
+winrungp,"Winning Run Suzuka Grand Prix (Japan) (89/12/03, Ver.02)","1989",Namco,-,-,-,YES,NO,NO,NO,NO,"namcos21.cpp",INCOMPLETO,RASTER,"0",496,480,HORIZONTAL,"namcos21.cpp"
+wgpj,"World Grand Prix (Japan)","1989","Taito Corporation",wgp,wgp,-,YES,NO,NO,NO,NO,wgp.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,wgp.cpp
+wgpjoy,"World Grand Prix (joystick version) (Japan, set 1)","1989","Taito Corporation",wgp,wgp,-,YES,NO,NO,NO,NO,wgp.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,wgp.cpp
+wgpjoya,"World Grand Prix (joystick version) (Japan, set 2)","1989","Taito Corporation",wgp,wgp,-,YES,NO,NO,NO,NO,wgp.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,wgp.cpp
+wgpu,"World Grand Prix (US)","1989","Taito America Corporation",wgp,wgp,-,YES,NO,NO,NO,NO,wgp.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,wgp.cpp
+wgp,"World Grand Prix (World)","1989","Taito Corporation Japan",-,-,-,YES,NO,NO,NO,NO,wgp.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,wgp.cpp
+"wgp2","World Grand Prix 2 (Japan)","1990","Taito Corporation",wgp,wgp,-,YES,NO,NO,NO,NO,wgp.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,wgp.cpp
+wrallyat,"World Rally (US, 930217)","1993","Gaelco (Atari license)",wrally,wrally,-,YES,NO,NO,NO,NO,wrally.cpp,BUONO,RASTER,"0",368,232,HORIZONTAL,wrally.cpp
+wrally,"World Rally (Version 1.0, Checksum 0E56)","1993",Gaelco,-,-,-,YES,NO,NO,NO,NO,wrally.cpp,BUONO,RASTER,"0",368,232,HORIZONTAL,wrally.cpp
+wrallya,"World Rally (Version 1.0, Checksum 3873)","1993",Gaelco,wrally,wrally,-,YES,NO,NO,NO,NO,wrally.cpp,BUONO,RASTER,"0",368,232,HORIZONTAL,wrally.cpp
+wrallyb,"World Rally (Version 1.0, Checksum 8AA2)","1993",Gaelco,wrally,wrally,-,YES,NO,NO,NO,NO,wrally.cpp,BUONO,RASTER,"0",368,232,HORIZONTAL,wrally.cpp
+wrallyc,"World Rally (Version 1.0, Checksum E586)","1993",Gaelco,wrally,wrally,-,YES,NO,NO,NO,NO,wrally.cpp,BUONO,RASTER,"0",368,232,HORIZONTAL,wrally.cpp
+"wrally2a","World Rally 2: Twin Racing (EPROM version)","1995",Gaelco,"wrally2","wrally2",-,YES,NO,NO,NO,NO,"gaelco2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"gaelco2.cpp"
+"wrally2","World Rally 2: Twin Racing (mask ROM version)","1995",Gaelco,-,-,-,YES,NO,NO,NO,NO,"gaelco2.cpp",BUONO,RASTER,"0",384,240,HORIZONTAL,"gaelco2.cpp"
+xrally,"Xtreme Rally / Off Beat Racer!","1998",SNK,"hng64",-,-,YES,NO,NO,NO,NO,"hng64.cpp",PRELIMINARE,RASTER,"0",512,448,HORIZONTAL,"hng64.cpp"
+xtrial,"Xtrial Racing (ver JAB)","2002",Konami,kviper,-,-,YES,NO,NO,NO,YES,viper.cpp,PRELIMINARE,RASTER,"0",1024,768,HORIZONTAL,viper.cpp

@@ -1,0 +1,207 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"4004clk","4004 Nixie Clock","2008","John L. Weinrich",-,-,-,YES,NO,NO,NO,NO,"4004clk.cpp",BUONO,-,"0",0,0,-,"4004clk.cpp"
+"afv_l4","Addams Family Values (Coin Dropper L-4)","1993",Williams,-,-,-,YES,NO,NO,YES,NO,wpc_dcs.cpp,PRELIMINARE,LCD,"0",512,128,HORIZONTAL,wpc_dcs.cpp
+alphie,"Alphie - The Electronic Robot (patent)","1978",Playskool,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+animalc,"Animal Catch","2000",Sammy,sammymdl,-,-,YES,NO,NO,NO,NO,"sigmab98.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"sigmab98.cpp"
+aquastge,"Aqua Stage","1995",Sega,-,-,-,YES,NO,NO,NO,NO,coolridr.cpp,PRELIMINARE,RASTER,"0",496,384,HORIZONTAL,coolridr.cpp
+"as1","AS-1 Controller","1993",Sega,-,-,-,YES,NO,NO,NO,NO,"segas32.cpp",PRELIMINARE,RASTER,"0",416,224,HORIZONTAL,"segas32.cpp"
+"att4425","AT&T Teletype 4425","1983",AT&T,-,-,-,YES,NO,NO,NO,NO,"att4425.cpp",PRELIMINARE,RASTER,"0",720,351,HORIZONTAL,"att4425.cpp"
+banctec,"BancTec ESeries Panel","1989","DALE Electronics",-,-,-,YES,NO,NO,NO,NO,banctec.cpp,PRELIMINARE,RASTER,"0",320,200,HORIZONTAL,banctec.cpp
+bigtrak,"Big Trak","1979","Milton Bradley",-,-,-,YES,NO,NO,YES,NO,"hh_tms1k.cpp",PRELIMINARE,-,"0",0,0,-,"hh_tms1k.cpp"
+boonggab,"Boong-Ga Boong-Ga (Spank'em!)","2001","Taff System",-,-,-,YES,NO,NO,NO,NO,vamphalf.cpp,BUONO,RASTER,"270",320,236,VERTICAL,vamphalf.cpp
+"bp1200","BP-1200","1992","BP Microsystems",-,-,-,YES,NO,NO,NO,NO,bpmmicro.cpp,PRELIMINARE,-,"0",0,0,-,bpmmicro.cpp
+"br8641","Brandt 8641","1986",Brandt,-,-,-,YES,NO,NO,NO,NO,"br8641.cpp",PRELIMINARE,-,"0",0,0,-,"br8641.cpp"
+btorneo,"Bubble Torneo","200?",-,-,-,-,YES,NO,NO,NO,NO,"itgambl2.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"itgambl2.cpp"
+cwheel,"Catherine Wheel","19??",Gamebar,-,-,-,YES,NO,NO,NO,NO,cwheel.cpp,PRELIMINARE,-,"0",0,0,-,cwheel.cpp
+conquer,Conqueror,"198?",-,-,-,-,YES,NO,NO,NO,NO,scramble.cpp,PRELIMINARE,RASTER,"90",256,224,VERTICAL,scramble.cpp
+cowtipp,"Cow Tipping - Shake Cattle & Roll (set 1)","2004","Game Refuge / Team Play",-,-,-,YES,NO,NO,NO,NO,cowtipping.cpp,PRELIMINARE,RASTER,"270",1024,256,VERTICAL,cowtipping.cpp
+cowtippa,"Cow Tipping - Shake Cattle & Roll (set 2)","2004","Game Refuge / Team Play",cowtipp,cowtipp,-,YES,NO,NO,NO,NO,cowtipping.cpp,PRELIMINARE,RASTER,"270",1024,256,VERTICAL,cowtipping.cpp
+dbox,"D-box 1, Kirsch gruppe","1996","Nokia Multimedia",-,-,-,YES,NO,NO,NO,NO,dbox.cpp,PRELIMINARE,-,"0",0,0,-,dbox.cpp
+dectalk,"DECtalk DTC-01","1984","Digital Equipment Corporation",-,-,-,YES,NO,NO,NO,NO,dectalk.cpp,PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,dectalk.cpp
+destiny,"Destiny - The Fortuneteller (USA)","1983","Data East Corporation",-,-,-,YES,NO,NO,NO,NO,deshoros.cpp,PRELIMINARE,LCD,"0",96,18,HORIZONTAL,deshoros.cpp
+"digel804","Digelec 804 EPROM Programmer","1985","Digelec, Inc",-,-,-,YES,NO,NO,NO,NO,"digel804.cpp",PRELIMINARE,-,"0",0,0,-,"digel804.cpp"
+digijet,Digijet,"1985",Volkswagen,-,-,-,YES,NO,NO,NO,NO,digijet.cpp,PRELIMINARE,-,"0",0,0,-,digijet.cpp
+tecnbras,"Dot Matrix Display (70x7 pixels)","200?",Tecnbras,-,-,-,YES,NO,NO,NO,NO,tecnbras.cpp,PRELIMINARE,-,"0",0,0,-,tecnbras.cpp
+"dm500","Dreambox 500","2006","Dream Multimedia","dm7000","dm7000",-,YES,NO,NO,NO,NO,"dm7000.cpp",PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,"dm7000.cpp"
+"dm5620","Dreambox 5620","2004","Dream Multimedia","dm7000","dm7000",-,YES,NO,NO,NO,NO,"dm7000.cpp",PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,"dm7000.cpp"
+"dm7000","Dreambox 7000","2003","Dream Multimedia",-,-,-,YES,NO,NO,NO,NO,"dm7000.cpp",PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,"dm7000.cpp"
+mdndclab,"Dungeons & Dragons - Computer Labyrinth Game","1980",Mattel,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",INCOMPLETO,-,"0",0,0,-,"hh_tms1k.cpp"
+dvk_kcgd,"DVK KCGD","1987",USSR,-,-,-,YES,NO,NO,NO,NO,dvk_kcgd.cpp,PRELIMINARE,RASTER,"0",800,480,HORIZONTAL,dvk_kcgd.cpp
+anzterm,"EF315-I220 Teller Terminal (ANZ)","1986?",Burroughs,-,-,-,YES,NO,NO,NO,NO,anzterm.cpp,PRELIMINARE,RASTER,"0",832,240,HORIZONTAL,anzterm.cpp
+eggsplc,"Eggs Playing Chicken","2002","The Game Room",-,-,-,YES,NO,NO,NO,YES,calchase.cpp,BUONO,RASTER,"0",640,480,HORIZONTAL,calchase.cpp
+arcmania,"Electronic Arcade Mania (Arcade Machine)","1983","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+bship,"Electronic Battleship (1977 version, model 4750A)","1977","Milton Bradley",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",PRELIMINARE,-,"0",0,0,-,"hh_tms1k.cpp"
+bshipb,"Electronic Battleship (1977 version, model 4750B)","1977","Milton Bradley",bship,bship,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",PRELIMINARE,-,"0",0,0,-,"hh_tms1k.cpp"
+"bship82","Electronic Battleship (1982 version)","1982","Milton Bradley",bship,bship,-,YES,NO,NO,NO,NO,"hh_cop400.cpp",BUONO,-,"0",0,0,-,"hh_cop400.cpp"
+esoccer,"Electronic Soccer (Entex)","1979",Entex,-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"eva11","Electronic Voice Alert (11-function)","1983",Chrysler,"eva24","eva24",-,YES,NO,NO,NO,NO,eva.cpp,PRELIMINARE,-,"0",0,0,-,eva.cpp
+"eva24","Electronic Voice Alert (24-function)","1984",Chrysler,-,-,-,YES,NO,NO,NO,NO,eva.cpp,PRELIMINARE,-,"0",0,0,-,eva.cpp
+"ep804","EP804 EPROM Programmer","1982","Wavetek/Digelec, Inc","digel804","digel804",-,YES,NO,NO,NO,NO,"digel804.cpp",PRELIMINARE,-,"0",0,0,-,"digel804.cpp"
+"eurocom2","Eurocom II V7","1981",Eltec,-,-,-,YES,NO,NO,NO,NO,"eurocom2.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"eurocom2.cpp"
+eztouch,"EZ Touch (v116 China)","200?",IGS,-,-,-,YES,NO,NO,NO,YES,igspc.cpp,PRELIMINARE,-,"0",0,0,-,igspc.cpp
+fwheel,"Fortune Wheel","1984?",Sega,-,-,-,YES,NO,NO,NO,NO,fwheel.cpp,PRELIMINARE,RASTER,"0",268,224,HORIZONTAL,fwheel.cpp
+gocowboy,"Go Go Cowboy (English, prize)","2003",Sammy,-,-,-,YES,NO,NO,NO,NO,"sigmab98.cpp",BUONO,RASTER,"0",320,240,HORIZONTAL,"sigmab98.cpp"
+gorodki,Gorodki,"198?",Terminal,-,-,-,YES,NO,NO,NO,NO,"tiamc1.cpp",BUONO,RASTER,"0",256,256,HORIZONTAL,"tiamc1.cpp"
+"lggp40","GP40NW10 dvd writer","2011",LG,-,-,-,YES,NO,NO,NO,NO,lg-dvd.cpp,PRELIMINARE,-,"0",0,0,-,lg-dvd.cpp
+gynotai,"Gynotai (Japan)","1996",Namco,-,-,-,YES,NO,NO,YES,NO,"namcond1.cpp",PRELIMINARE,RASTER,"0",288,224,HORIZONTAL,"namcond1.cpp"
+"hapyfsh2","Happy Fish (V2 PCB, 302-in-1)","201?",bootleg,-,-,-,YES,NO,NO,NO,NO,hapyfish.cpp,PRELIMINARE,LCD,"0",640,480,HORIZONTAL,hapyfish.cpp
+hpierrot,"Happy Pierrot","1996","NTC / NMK",-,-,-,YES,NO,NO,YES,NO,nmkmedal.cpp,PRELIMINARE,-,"0",0,0,-,nmkmedal.cpp
+heromem,"Heroine's Memory","1997",Taito,-,-,-,YES,NO,NO,YES,NO,heromem.cpp,PRELIMINARE,RASTER,"0",320,224,HORIZONTAL,heromem.cpp
+"hp3478a","HP 3478A Multimeter","1983",HP,-,-,-,YES,NO,NO,NO,NO,"hp3478a.cpp",PRELIMINARE,-,"0",0,0,-,"hp3478a.cpp"
+"hr16","HR-16","1987",Alesis,-,-,-,YES,NO,NO,NO,NO,alesis.cpp,PRELIMINARE,LCD,"0",96,18,HORIZONTAL,alesis.cpp
+"hr16b","HR-16B","1989",Alesis,"hr16","hr16",-,YES,NO,NO,NO,NO,alesis.cpp,PRELIMINARE,LCD,"0",96,18,HORIZONTAL,alesis.cpp
+"hxhdci2k","HUMAX HDCI-2000","2008",HUMAX,-,-,-,YES,NO,NO,NO,NO,cxhumax.cpp,PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,cxhumax.cpp
+intrscti,Intersecti,"19??",-,-,-,-,YES,NO,NO,NO,NO,intrscti.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,intrscti.cpp
+inunoos,"Inu no Osanpo / Dog Walking (Japan, Export, Rev A)","2001","Wow Entertainment / Sega",naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+jokrlady,"Joker Lady","1995?","Videos A A",-,-,-,YES,NO,NO,NO,NO,videosaa.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,videosaa.cpp
+joystand,"Joy Stand Private","1997",Yuvo,-,-,-,YES,NO,NO,NO,NO,joystand.cpp,PRELIMINARE,RASTER,"0",376,240,HORIZONTAL,joystand.cpp
+"k28","K28: Talking Learning Computer (model 7-230)","1981","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,"k28.cpp",INCOMPLETO,-,"0",0,0,-,"k28.cpp"
+"k28m2","K28: Talking Learning Computer (model 7-232)","1985","Tiger Electronics",-,-,-,YES,NO,NO,NO,NO,tispeak.cpp,PRELIMINARE,-,"0",0,0,-,tispeak.cpp
+korokoro,"Koro Koro Quest (Japan)","1999",Takumi,-,-,-,YES,NO,NO,NO,NO,cave.cpp,BUONO,RASTER,"0",318,239,HORIZONTAL,cave.cpp
+kungfur,"Kung-Fu Roushi","1987",Namco,-,-,-,YES,NO,NO,NO,NO,kungfur.cpp,BUONO,-,"0",0,0,-,kungfur.cpp
+ladygum,"Lady Gum","1995?","Videos A A",-,-,-,YES,NO,NO,NO,NO,videosaa.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,videosaa.cpp
+lostreas,"Lost Treasure - The Electronic Deep-Sea Diving Game (Electronic Dive-Control Center)","1982","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"m6805evs","M68HC05EVS","1990",Motorola,-,-,-,YES,NO,NO,NO,NO,"m6805evs.cpp",PRELIMINARE,-,"0",0,0,-,"m6805evs.cpp"
+maldaiza,Maldaliza,"2002","Big A Korea",crysbios,-,-,YES,NO,NO,NO,NO,crystal.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,crystal.cpp
+cmanhat,"Manhattan (DECO Cassette) (Japan)","1981","Data East Corporation",decocass,-,-,YES,NO,NO,NO,NO,decocass.cpp,INCOMPLETO,RASTER,"270",256,240,VERTICAL,decocass.cpp
+mmerlin,"Master Merlin","1982","Parker Brothers",-,-,-,YES,NO,NO,NO,NO,"hh_tms1k.cpp",BUONO,-,"0",0,0,-,"hh_tms1k.cpp"
+"ml20","Micrologic 20","1999",Digitek,-,-,-,YES,NO,NO,NO,NO,"ml20.cpp",PRELIMINARE,LCD,"0",97,18,HORIZONTAL,"ml20.cpp"
+micrombc,"Microman Battle Charge (J 990326 V1.000)","1999",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"si5500","Model 5500 Temperature Controller","1986","Scientific Instruments",-,-,-,YES,NO,NO,NO,NO,"si5500.cpp",PRELIMINARE,-,"0",0,0,-,"si5500.cpp"
+monopred,"Monopoly (Coin dropper)","2002",Stern,-,-,-,YES,NO,NO,YES,NO,whitestar.cpp,PRELIMINARE,RASTER,"0",128,32,HORIZONTAL,whitestar.cpp
+mrchalgr,"Mr. Challenger","1979","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispellb.cpp,BUONO,-,"0",0,0,-,tispellb.cpp
+"am_mg4v","Multi Game IV (V.Ger 3.44)","2000","Amatic Trading GmbH",-,-,-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+"am_mg5hu","Multi Game V (AMGHU_V83.65)","200?","Amatic Trading GmbH",-,-,-,YES,NO,NO,NO,NO,amaticmg.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,amaticmg.cpp
+nameclub,"Name Club (J 960315 V1.000)","1996",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"nclubv2","Name Club Ver.2 (J 960315 V1.000)","1996",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"nclubv3","Name Club Ver.3 (J 970723 V1.000)","1997",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+nndmseal,"Nandemo Seal Iinkai","1997","I'Max / Jaleco",-,-,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,"tetrisp2.cpp"
+nndmsealc,"Nandemo Seal Iinkai (alternate ver 1.0)","1997","I'Max / Jaleco",nndmseal,nndmseal,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,"tetrisp2.cpp"
+nndmseala,"Nandemo Seal Iinkai (Astro Boy ver. 1.0?)","1997","I'Max / Jaleco",nndmseal,nndmseal,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,"tetrisp2.cpp"
+nndmsealb,"Nandemo Seal Iinkai (Astro Boy ver. 1.1)","1997","I'Max / Jaleco",nndmseal,nndmseal,-,YES,NO,NO,NO,NO,"tetrisp2.cpp",PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,"tetrisp2.cpp"
+"98best44","Neo Print - '98 NeoPri Best 44 (Japan) (T4i 3.07)","1998",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+npcramen,"Neo Print - Chicken Ramen (Japan)","1996",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+npfpit,"Neo Print - Fuyu Pri Iitoko-dori (Japan) (T4i 3.07)","1999",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+npmillen,"Neo Print - Millennium Multi Shot Edition (World) (T4i 3.07)","1999",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+npotogib,"Neo Print - Otogibanashi (Japan) (T4i 3.00)","1997",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+"npscv1","Neo Print - Senyou Cassette Ver. 1 (Japan)","1996",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+"npsprg98","Neo Print - Spring '98 (T4i 3.07)","1998",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+"npsprgv4","Neo Print - Spring Ver. 4 (Japan) (T4f 1.00)","1997",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+npskv,"Neo Print - Suizokukan Version (Japan) (T4i 2.00)","1997",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+npusagif,"Neo Print - Usagi Frame (Japan) (T4i 3.07)","1997",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+neoprint,"Neo Print (Japan) (T2d)","1996",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+"npssr2","Neo Print Special: Sekai Ryokou 2 (Japan)","1996",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+"npcartv1","Neo Print V1 (World) (E1a)","1996",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+nprsp,"NeopriSP Retro Collection (Japan)","1996",SNK,-,-,-,YES,NO,NO,NO,NO,neoprint.cpp,PRELIMINARE,RASTER,"0",384,240,HORIZONTAL,neoprint.cpp
+supgoal,"Nerae! Super Goal (J 981218 V1.000)","1998",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+pachifev,Pachifever,"1983","Sanki Denshi Kogyo",-,-,-,YES,NO,NO,NO,NO,pachifev.cpp,INCOMPLETO,RASTER,"270",280,216,VERTICAL,pachifev.cpp
+paradar,Paradar,"1995?","Videos A A",-,-,-,YES,NO,NO,NO,NO,videosaa.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,videosaa.cpp
+votrpss,"Personal Speech System","1982",Votrax,-,-,-,YES,NO,NO,NO,NO,votrpss.cpp,INCOMPLETO,RASTER,"0",640,240,HORIZONTAL,votrpss.cpp
+segapm,"Picture Magic","1996",Sega,-,-,-,YES,NO,NO,NO,NO,segapm.cpp,PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,segapm.cpp
+"simldv1000","Pioneer LDV-1000 Simulator","2008",MAME,-,-,-,YES,NO,NO,NO,NO,ldplayer.cpp,BUONO,RASTER,"0",704,480,HORIZONTAL,ldplayer.cpp
+"simpr8210","Pioneer PR-8210 Simulator","2008",MAME,-,-,-,YES,NO,NO,NO,NO,ldplayer.cpp,BUONO,RASTER,"0",704,480,HORIZONTAL,ldplayer.cpp
+piratesh,"Pirate Ship (ver UAA)","1995",Konami,-,-,-,YES,NO,NO,NO,NO,piratesh.cpp,INCOMPLETO,RASTER,"90",288,224,VERTICAL,piratesh.cpp
+"plsonic4","Play Sonic 4","1991","SegaSA / Sonic",-,-,-,YES,NO,NO,NO,NO,"plsonic4.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"plsonic4.cpp"
+pokonyan,"Pokonyan! Balloon (Japan 940322)","1994",Capcom,-,-,-,YES,NO,NO,NO,NO,"cps1.cpp",BUONO,RASTER,"0",384,224,HORIZONTAL,"cps1.cpp"
+instantm,"Polaroid Instant Memories","199?","Capcom / Polaroid",-,-,-,YES,NO,NO,YES,NO,instantm.cpp,PRELIMINARE,-,"0",0,0,-,instantm.cpp
+kpontoon,"Pontoon (Konami)","1993",Konami,-,-,-,YES,NO,NO,NO,NO,kpontoon.cpp,PRELIMINARE,RASTER,"0",528,424,HORIZONTAL,kpontoon.cpp
+portrait,"Portraits (set 1)","1983",Olympia,-,-,-,YES,NO,NO,NO,NO,portrait.cpp,PRELIMINARE,RASTER,"270",432,320,VERTICAL,portrait.cpp
+portraita,"Portraits (set 2)","1983",Olympia,portrait,portrait,-,YES,NO,NO,NO,NO,portrait.cpp,PRELIMINARE,RASTER,"270",432,320,VERTICAL,portrait.cpp
+"pv9234","PowerVu D9234","1997","Scientific Atlanta",-,-,-,YES,NO,NO,NO,NO,"pv9234.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"pv9234.cpp"
+pclubj,"Print Club (Japan Vol.1)","1995",Atlus,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+"pclubjv2","Print Club (Japan Vol.2)","1995",Atlus,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+"pclubjv4","Print Club (Japan Vol.4)","1996",Atlus,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+"pclubjv5","Print Club (Japan Vol.5)","1996",Atlus,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+pclub,"Print Club (World)","1995",Atlus,"pclubjv2","pclubjv2",-,YES,NO,NO,NO,NO,"segac2.cpp",PRELIMINARE,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+"prc297wi","Print Club 2 '97 Winter Ver (J 971017 V1.100, set 1)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"prc297wia","Print Club 2 '97 Winter Ver (J 971017 V1.100, set 2)","1997",Atlus,"prc297wi","prc297wi",-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"prc298au","Print Club 2 '98 Autumn Ver (J 980827 V1.000)","1998",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"prc298sp","Print Club 2 '98 Spring Ver (J 971017 V1.100)","1998",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"prc298su","Print Club 2 '98 Summer Ver (J 980603 V1.100)","1998",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub2","Print Club 2 (U 970921 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"prc2ksu","Print Club 2 2000 Summer (J 000509 V1.000)","2000",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclb2elk","Print Club 2 Earth Limited Kobe (Print Club Custom) (J 970808 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub2fc","Print Club 2 Felix The Cat (Rev. A) (J 970415 V1.100)","1999",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pckobe99","Print Club 2 Kobe Luminaire '99 (Print Club Custom 3) (J 991203 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub2pe","Print Club 2 Pepsiman (J 970618 V1.100)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub2pf","Print Club 2 Puffy (J V1.100)","1998",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub2v3","Print Club 2 Vol. 3 (U 990310 V1.000)","1999",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub26w","Print Club 2 Vol. 6 Winter (J 961210 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub26wa","Print Club 2 Vol. 6 Winter (J 970121 V1.200)","1997",Atlus,"pclub26w","pclub26w",-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub27s","Print Club 2 Vol. 7 Spring (J 970313 V1.100)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"prc28su","Print Club 2 Vol. 8 Summer (J 970616 V1.100)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"prc29au","Print Club 2 Vol. 9 Autumn (J V1.100)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub2wb","Print Club 2 Warner Bros (J 970228 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+pclubor,"Print Club Goukakenran (J 991104 V1.000)","1999",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclub2kc","Print Club Kome Kome Club (J 970203 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+pclove,"Print Club LoveLove (J 970421 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclove2","Print Club LoveLove Ver 2 (J 970825 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+pclubol,"Print Club Olive (J 980717 V1.000)","1999",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+pclubpok,"Print Club Pokemon B (U 991126 V1.000)","1999",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pcpooh2","Print Club Winnie-the-Pooh Vol. 2 (J 971218 V1.000)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pcpooh3","Print Club Winnie-the-Pooh Vol. 3 (J 980406 V1.000)","1998",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"pclubyo2","Print Club Yoshimoto V2 (J 970422 V1.100)","1997",Atlus,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+"prose2ko","Prose 2000/2020 v1.1","1982","Telesensory Systems Inc/Speech Plus","prose2k","prose2k",-,YES,NO,NO,NO,NO,tsispch.cpp,PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,tsispch.cpp
+"prose2k","Prose 2000/2020 v3.4.1","1987","Telesensory Systems Inc/Speech Plus",-,-,-,YES,NO,NO,NO,NO,tsispch.cpp,PRELIMINARE,RASTER,"0",640,240,HORIZONTAL,tsispch.cpp
+"pve500","PVE-500","1995",SONY,-,-,-,YES,NO,NO,NO,NO,"pve500.cpp",PRELIMINARE,-,"0",0,0,-,"pve500.cpp"
+rcorsair,"Red Corsair","1984",Nakasawa,-,-,-,YES,NO,NO,NO,NO,rcorsair.cpp,PRELIMINARE,RASTER,"90",256,256,VERTICAL,rcorsair.cpp
+reversic,"Reversi Sensory Challenger","1981","Fidelity Electronics",-,-,-,YES,NO,NO,NO,NO,fidel_csc.cpp,BUONO,-,"0",0,0,-,fidel_csc.cpp
+"sh4robot",Robot,"20??",-,-,-,-,YES,NO,NO,YES,NO,"sh4robot.cpp",PRELIMINARE,-,"0",0,0,-,"sh4robot.cpp"
+rodent,"Rodent Exterminator","2005","The Game Room",-,-,-,YES,NO,NO,NO,NO,"39in1.cpp",PRELIMINARE,RASTER,"0",296,480,HORIZONTAL,"39in1.cpp"
+"canons80","S-80 (Canon) (electronic typewriter)","1988",Canon,-,-,-,YES,NO,NO,NO,NO,"canon_s80.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"canon_s80.cpp"
+pcipc,"Sandbox PCI PC (440HX)","1998","Hack Inc.",-,-,-,YES,NO,NO,NO,NO,pcipc.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,pcipc.cpp
+"sanfuze2","Sansa Fuze 2","200?",Sandisk,-,-,-,YES,NO,NO,NO,NO,sansa_fuze.cpp,PRELIMINARE,-,"0",0,0,-,sansa_fuze.cpp
+sawatte,Sawatte,"1996?",Sega,-,-,-,YES,NO,NO,NO,NO,sega_sawatte.cpp,PRELIMINARE,-,"0",0,0,-,sega_sawatte.cpp
+cultname,"Seimei-Kantei-Meimei-Ki Cult Name","1996",I'Max,macsbios,-,-,YES,NO,NO,NO,NO,macs.cpp,PRELIMINARE,RASTER,"0",1024,1024,HORIZONTAL,macs.cpp
+gmsshoot,"Sharpshooter (coin pusher)","1989",GameMasters,-,-,-,YES,NO,NO,YES,NO,gamemasters.cpp,PRELIMINARE,-,"0",0,0,-,gamemasters.cpp
+sdwx,"Sheng Dan Wu Xian","2002",IGS,-,-,-,YES,NO,NO,NO,NO,"igs_m027.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"igs_m027.cpp"
+skychal,"Sky Challenger (J 000406 V1.000)","2000",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,INCOMPLETO,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+snowbwar,"Snowball War - WakuWaku Yukigassen","20??",Sealy,-,-,-,YES,NO,NO,NO,YES,sealy_fr.cpp,PRELIMINARE,-,"0",0,0,-,sealy_fr.cpp
+gsspade,Spade,"199?","Guan Shing",-,-,-,YES,NO,NO,YES,NO,gsspade.cpp,PRELIMINARE,-,"0",0,0,-,gsspade.cpp
+snread,"Speak & Read (US)","1980","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispeak.cpp,INCOMPLETO,-,"0",0,0,-,tispeak.cpp
+raaspec,"Spectrum I+","1984","Roy Abel & Associates",-,-,-,YES,NO,NO,NO,NO,vectrex.cpp,PRELIMINARE,VECTOR,"270",0,0,-,vectrex.cpp
+spellb,"Spelling B (1978 version)","1978","Texas Instruments",-,-,-,YES,NO,NO,NO,NO,tispellb.cpp,BUONO,-,"0",0,0,-,tispellb.cpp
+spongbob,"SpongeBob SquarePants Ticket Boom","200?",Sega,-,-,-,YES,NO,NO,NO,NO,segaatom.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,segaatom.cpp
+"sr16","SR-16 (Alesis)","1990",Alesis,-,-,-,YES,NO,NO,NO,NO,alesis.cpp,PRELIMINARE,LCD,"0",48,18,HORIZONTAL,alesis.cpp
+"st1700h","ST-1700 (headphone version)","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1701","ST-1701","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1702","ST-1702","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1703","ST-1703","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1704","ST-1704","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1705","ST-1705","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1706","ST-1706","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1707","ST-1707","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1708","ST-1708","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+"st1714","ST-1714","200?",Saturn,-,-,-,YES,NO,NO,NO,NO,"st17xx.cpp",PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,"st17xx.cpp"
+stress,"Stress Busters (J 981020 V1.000)","1998",Sega,stvbios,-,-,YES,NO,NO,NO,NO,stv.cpp,PRELIMINARE,RASTER,"0",352,224,HORIZONTAL,stv.cpp
+sundance,Sundance,"1979",Cinematronics,-,-,-,YES,NO,NO,NO,NO,cinemat.cpp,BUONO,VECTOR,"270",0,0,-,cinemat.cpp
+bcheetah,"System Control Car: Cheetah","1979",Bandai,-,-,-,YES,NO,NO,YES,NO,"hh_tms1k.cpp",PRELIMINARE,-,"0",0,0,-,"hh_tms1k.cpp"
+tapatune,"Tap a Tune","1994","Moloney Manufacturing Inc. / Creative Electronics and Software",-,-,-,YES,NO,NO,NO,NO,tapatune.cpp,BUONO,RASTER,"0",320,240,HORIZONTAL,tapatune.cpp
+tgtpanic,"Target Panic","1996",Konami,-,-,-,YES,NO,NO,NO,NO,tgtpanic.cpp,BUONO,RASTER,"0",192,192,HORIZONTAL,tgtpanic.cpp
+"tec1","TEC-1","1984","Talking Electronics magazine",-,-,-,YES,NO,NO,NO,NO,"tec1.cpp",BUONO,-,"0",0,0,-,"tec1.cpp"
+tecjmon,"TEC-1A with JMON","1984","Talking Electronics magazine","tec1","tec1",-,YES,NO,NO,NO,NO,"tec1.cpp",BUONO,-,"0",0,0,-,"tec1.cpp"
+telpacfl,"TelePachi Fever Lion (V1.0)","1996",Sunsoft,-,-,-,YES,NO,NO,NO,NO,"seta2.cpp",INCOMPLETO,RASTER,"270",384,240,VERTICAL,"seta2.cpp"
+titanic,"Titanic (Coin dropper)","1998",Sega,-,-,-,YES,NO,NO,YES,NO,whitestar.cpp,PRELIMINARE,RASTER,"0",128,32,HORIZONTAL,whitestar.cpp
+zunou,"Touch De Zunou (Japan, Rev A)","2006",Sega,naomi,-,-,YES,NO,NO,NO,NO,naomi.cpp,PRELIMINARE,RASTER,"0",640,480,HORIZONTAL,naomi.cpp
+"tranz330","Tranz 330","1985",VeriFone,-,-,-,YES,NO,NO,NO,NO,"tranz330.cpp",BUONO,-,"0",0,0,-,"tranz330.cpp"
+votrtnt,"Type 'N Talk","1980",Votrax,-,-,-,YES,NO,NO,NO,NO,votrtnt.cpp,INCOMPLETO,RASTER,"0",640,240,HORIZONTAL,votrtnt.cpp
+"canonts3","Typestar 3","1988",Canon,-,-,-,YES,NO,NO,NO,NO,"canon_s80.cpp",PRELIMINARE,LCD,"0",96,16,HORIZONTAL,"canon_s80.cpp"
+unkct,"unknown Cointek game","199?","Cointek Enterprise Corp",-,-,-,YES,NO,NO,NO,NO,cointek.cpp,PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,cointek.cpp
+marywu,"unknown Labeled 'WU- MARY-1A' Music by: SunKiss Chen",????,-,-,-,-,YES,NO,NO,NO,NO,marywu.cpp,PRELIMINARE,-,"0",0,0,-,marywu.cpp
+vdogdemo,"V-Dog (prototype)","200?",VRT,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+"mgavegas133","Vegas 1 (Ver 1.33 single coin pulse)","1985",MGA,mgavegas,mgavegas,-,YES,NO,NO,YES,NO,mgavegas.cpp,PRELIMINARE,-,"0",0,0,-,mgavegas.cpp
+"mgavegas21","Vegas 1 (Ver 2.1 dual coin pulse, longer)","1985",MGA,mgavegas,mgavegas,-,YES,NO,NO,YES,NO,mgavegas.cpp,PRELIMINARE,-,"0",0,0,-,mgavegas.cpp
+mgavegas,"Vegas 1 (Ver 2.3 dual coin pulse, shorter)","1985",MGA,-,-,-,YES,NO,NO,YES,NO,mgavegas.cpp,PRELIMINARE,-,"0",0,0,-,mgavegas.cpp
+isld_vortex,"Vortex (Island Design)","1995","Island Design",-,-,-,YES,NO,NO,YES,NO,island.cpp,PRELIMINARE,-,"0",0,0,-,island.cpp
+"vp415","VP415","1983",Philips,-,-,-,YES,NO,NO,NO,NO,"vp415.cpp",PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,"vp415.cpp"
+pes,"VPU-01 Speech box","1987","Pacific Educational Systems",-,-,-,YES,NO,NO,NO,NO,pes.cpp,BUONO,RASTER,"0",640,240,HORIZONTAL,pes.cpp
+vtboxing,"VRT VT SDK 'Boxing' (Demo for VT03 Pic32)","200?",VRT,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+vtpinball,"VRT VT SDK 'Pinball' (C-Compiler Demo Program 2)","200?","VRT / OJ-Jungle",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",PRELIMINARE,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+pinkjelly,"VRT VT SDK 'Pink Jelly' (VT03 Demo)","200?","VRT / Simmer Technology Co., Ltd.",-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+vtsndtest,"VRT VT SDK 'VT03 Sound Test' (Sound Generator FMDemo)","200?",VRT,-,-,-,YES,NO,NO,NO,NO,"nes_vt02_vt03.cpp",INCOMPLETO,RASTER,"0",256,240,HORIZONTAL,"nes_vt02_vt03.cpp"
+wwmarine,"Waku Waku Marine","1992",Sega,-,-,-,YES,NO,NO,NO,NO,"segac2.cpp",BUONO,RASTER,"0",256,224,HORIZONTAL,"segac2.cpp"
+waveterm,"Waveterm A","1982",PPG,"eurocom2","eurocom2",-,YES,NO,NO,NO,NO,"eurocom2.cpp",PRELIMINARE,RASTER,"0",512,256,HORIZONTAL,"eurocom2.cpp"
+winner,Winner,"1995?","Videos A A",-,-,-,YES,NO,NO,NO,NO,videosaa.cpp,PRELIMINARE,RASTER,"0",256,256,HORIZONTAL,videosaa.cpp
+wulybuly,"Wully Bully","200?",-,crysbios,-,-,YES,NO,NO,NO,NO,crystal.cpp,PRELIMINARE,RASTER,"0",320,240,HORIZONTAL,crystal.cpp
+"cidx628","X628","200?",ControlID,-,-,-,YES,NO,NO,NO,NO,controlid.cpp,PRELIMINARE,LCD,"0",128,64,HORIZONTAL,controlid.cpp
+zoofari,Zoofari,"2006","ICE/Play Mechanix",-,-,-,YES,NO,NO,NO,YES,"vp101.cpp",PRELIMINARE,RASTER,"0",400,240,HORIZONTAL,"vp101.cpp"

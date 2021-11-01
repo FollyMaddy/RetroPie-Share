@@ -1,0 +1,3 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"cfa3000","Henson CFA 3000 (Master)","1989","Tinsley Medical Instruments",bbcm,bbcm,bbc,YES,NO,NO,NO,NO,bbc.cpp,PRELIMINARE,RASTER,"0",640,256,HORIZONTAL,bbc.cpp
+"micromon7141","Micromon 7141 ECG unit","1995?","Kontron Instruments",-,-,-,YES,NO,NO,NO,NO,micromon.cpp,PRELIMINARE,-,"0",0,0,-,micromon.cpp

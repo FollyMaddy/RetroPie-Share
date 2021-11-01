@@ -1,0 +1,2 @@
+name,description,year,manufacturer,romof,cloneof,sampleof,is_runnable,is_device,is_bios,is_mechanical,use_chds,driver,driver_status,display_type,display_rotate,display_width,display_height,display_orientation,sourcefile
+"dpb7000","DPB-7000","1981",Quantel,-,-,-,YES,NO,NO,NO,NO,"dpb7000.cpp",PRELIMINARE,RASTER,"0",800,768,HORIZONTAL,"dpb7000.cpp"
