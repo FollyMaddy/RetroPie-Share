@@ -8591,7 +8591,7 @@ Driver gnw_dkjrp (Game & Watch: Donkey Kong Jr. (Panorama Screen)): @non-arcade@
 Driver gnw_dkong (Game & Watch: Donkey Kong): @non-arcade@gameandwatch@handheld
 Driver gnw_dkong2 (Game & Watch: Donkey Kong II): @non-arcade@gameandwatch@handheld
 Driver gnw_dkong3 (Micro Vs. System: Donkey Kong 3): @non-arcade@gameandwatch@handheld
-Driver gnw_egg (Game & Watch: Egg): @non-arcade@handheld
+Driver gnw_egg (Game & Watch: Egg): @non-arcade@gameandwatch@handheld
 Driver gnw_fire (Game & Watch: Fire (Wide Screen)): @non-arcade@gameandwatch@handheld
 Driver gnw_fireatk (Game & Watch: Fire Attack): @non-arcade@gameandwatch@handheld
 Driver gnw_fires (Game & Watch: Fire (Silver)): @non-arcade@gameandwatch@handheld
