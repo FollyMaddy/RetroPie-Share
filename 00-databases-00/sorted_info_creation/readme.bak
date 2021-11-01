@@ -1,0 +1,75 @@
+Gedaan in pi@raspberrypi:~/Desktop/RetroPie-Share-main/00-databases-00/progettosnaps.net/236/test $ 
+
+Zo voeg je text toe aan een gezochte text :
+echo "Fred blabla ():)"| sed 's/^Fred .*/& ***/'
+
+
+Zonder aanpassing van het bestand 
+(\: moest erin anders werkte het niet) :
+cat cabinets.ini |sed 's/\r//g'|while read line;do grep -i "Driver $line " mame0236_systems_sorted_info|sed "s/Driver $line .*\:/& *cabinets/" ;done
+
+Met aanpassing van het bestand 
+(\: moest erin anders werkte het niet) 
+(maar als een systeem het meerere keren voorkomt krijg je dubbelle toevoegingen, maar dat geeft niet denk ik) :
+cat cabinets.ini |sed 's/\r//g'|while read line;do grep -i "Driver $line " mame0236_systems_sorted_info|sed -i "s/Driver $line .*\:/& *cabinets/" mame0236_systems_sorted_info ;done
+
+
+
+oplossing (zie automatisch):
+
+
+(niet gebruiken, kan nu automatisch)dit commando gebruiken
+sort=cabinets;cat $sort.ini |sed 's/\r//g'|while read line;do grep -i "Driver $line " mame0236_systems_sorted_info|sed -i "s/Driver $line .*\:/&*$sort/" mame0236_systems_sorted_info ;done
+sort=mess;cat $sort.ini |sed 's/\r//g'|while read line;do grep -i "Driver $line " mame0236_systems_sorted_info|sed -i "s/Driver $line .*\:/&*$sort/" mame0236_systems_sorted_info ;done
+
+
+(zie automatisch) Dit kan aan het eind :
+om de gesorteerde benamingen met een * verbonden in de 3e kolom the krijgen zou er een spatie achter ): moeten komen voordat je gaat matchen.
+sed -i 's/)\:/)\: /g' mame0236_systems_sorted_info
+
+(niet gebruiken) Dit kan aan het eind :
+om de gesorteerde benamingen met een * verbonden in de 3e kolom the krijgen zou er een spatie achter ): moeten komen voordat je gaat matchen.
+#onjuist_waarschijnlijk#sed -i "s/\)\:\*/\)\: \*/g" mame0236_systems_sorted_info
+
+
+(niet gebruiken/overbodig) werkt nog zonder dat er een spatie is toegevoegd :
+for file in $(ls -r *.ini);do echo busy with $file;cat $file |sed 's/\r//g'|while read line;do grep -i "Driver $line " mame0236_systems_sorted_info|sed -i "s/Driver $line .*\:/&*$(basename $file .ini)/" mame0236_systems_sorted_info ;done;done
+
+doen :
+> automatisch :
+voeg automatisch eerst een spatie toe achter de :
+sed -i 's/)\:/)\: /g' mame0237_systems_sorted_info
+
+> automatic to add or append more entry's (if there is already a space behing the ":"):
+(from 0237 adding a "@" instead of a "*" because of compatibitity issus lubuntu)
+#old with )#for file in $(ls -r *.ini);do echo busy with $file;cat $file |sed 's/\r//g'|while read line;do grep -i "Driver $line " mame0237_systems_sorted_info|sed -i "s/Driver $line .*\\)\: /&@$(basename $file .ini)/" mame0237_systems_sorted_info ;done;done
+#ok
+for file in $(ls -r *.ini);do echo busy with $file;cat $file |sed 's/\r//g'|while read line;do grep -i "Driver $line " mame0237_systems_sorted_info|sed -i "s/Driver $line .*)\: /&@$(basename $file .ini)/" mame0237_systems_sorted_info ;done;done
+
+
+afkortingen (wellicht gebruiken om bestand te verkleinen) :
+BL : Bootlegs
+CHDNB :CHD (no BIOS)
+CHDW :CHD Working
+CL :Clones Arcade
+MA :Mechanical Arcade
+NBL :Non Bootlegs
+NMA :Non Mechanical Arcade
+NWA :Not Working Arcade
+OA :Originals Arcade
+(not used) Players
+AWC :Working Arcade Clean
+WA :Working Arcade
+A :arcade
+BA :arcade_BIOS
+NBA :arcade_NOBIOS
+CAB :cabinets
+(not used) category
+(not used) driver
+FP :freeplay
+NA :mess
+MC :monochrome
+(not used) resolution
+SL :screenless
+
+
