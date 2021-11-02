@@ -25,7 +25,11 @@ rp_module_section="config"
 
 
 local mamedev_csv=()
-local mamedev_reduced_csv=()
+local mamedev_forum_csv=()
+local gamelists_csv=()
+
+
+local system_read
 
 
 function depends_add-mamedev-systems() {
@@ -37,57 +41,67 @@ function gui_add-mamedev-systems() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
+",v HELP > required : install both (advice : install the binaries),,,"
 ",Install mame,,package_setup mame,"
 ",Install lr-mess,,package_setup lr-mess,"
 ",,,,"
-",Selection of systems -> Submenu,,subgui_add-mamedev-systems_reduced,"
+",v HELP > optional : to use the script offline,,,"
+",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0237_systems_sorted_info -o /opt/retropie/emulators/mame/mame0237_systems_sorted_info,"
+",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0237_systems_sorted_info,"
 ",,,,"
-",All systems -> Submenu,,subgui_add-mamedev-systems_all,"
-    )
-    build_menu_add-mamedev-systems
-}
-
-function subgui_add-mamedev-systems_reduced() {
-    local csv=()
-    csv=(
-",menu_item,empty,to_do,"
-",Handhelds / Plug & play -> Select and install,,choose_dteam_add descriptions,"
-",Special systems with slotdevices -> Select and install,,choose_folly_add descriptions,"
-",Other systems -> Select and install,,subgui_add-mamedev-systems_reduced_list,"
+",v HELP > install handheld / plug&play and the required downloads,,,"
+",Handheld / plug&play and downloads > Submenu,,subgui_add-mamedev-systems_forum,"
 ",,,,"
-",Select downloads,,subgui_add-mamedev-systems_downloads,"
-    )
-    build_menu_add-mamedev-systems
-}
-
-function subgui_add-mamedev-systems_all() {
-    local csv=()
-    csv=(
-",menu_item,empty,to_do,"
-",All (alphabetical) -> Select and install upon descriptions,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,"
-",All (alphabetical) -> Select and install upon system names,,subgui_add-mamedev-systems_alphabetical_order_selection systems,"
+",v HELP > install systems with extra functions,,,"
+",Systems with extras > Submenu,,subgui_add-mamedev-systems_extras,"
 ",,,,"
-",All -> Select and install upon descriptions,,choose_add descriptions,"
-",All -> Select and install upon system names,,choose_add,"
+",v HELP > install from predefined sorted lists,,,"
+",Systems sorted > Submenu,,subgui_add-mamedev-systems_sort,"
+",,,,"
+",v HELP > search on pattern(s) and install from your own list,,,"
+",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,"
+",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,"
+",,,,"
+",v HELP > install from lists with all systems,,,"
+",All systems > Submenu,,subgui_add-mamedev-systems_all,"
+",,,,"
+",v HELP > browse and get online files ),,,"
+",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,"
+",^ HELP > only available with the correct input !),,,"
     )
     build_menu_add-mamedev-systems
 }
 
-function subgui_add-mamedev-systems_reduced_list() {
-    local csv=()
-    csv=(
-",menu_item,empty,to_do,"
-",Reduced list -> Select and install upon descriptions,,choose_add_reduced descriptions,"
-",Reduced list -> Select and install upon system names,,choose_add_reduced,"
-    )
-    build_menu_add-mamedev-systems
+
+function mame_data_read() {
+    #here we read the systems and descriptions from mame into an array
+    #by using the if function the data can be re-used, without reading it every time
+    if [[ -z ${mamedev_csv[@]} ]]; then
+        if [[ -f /opt/retropie/emulators/mame/mame0237_systems_sorted_info ]]; then 
+    clear
+    echo "Get mame0237 data:/opt/retropie/emulators/mame/mame0237_systems_sorted_info"
+    echo "For speed, data will be re-used within this session"
+    echo "Be patient for 20 seconds" 
+    # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
+    # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
+    # Now using this : lines that start with "D" using => grep ^[D]
+    #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0237_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+        else
+    echo "Get mame0237 data:RetroPie-Share repository"
+    echo "For speed, data will be re-used within this session"
+    echo "Be patient for 20 seconds" 
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0237_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+        fi
+    fi
 }
 
 
-function choose_dteam_add() {
+function subgui_add-mamedev-systems_forum() {
     local csv=()
     csv=(
-",menu_item_dteam_description,to_do driver_used_for_installation,"
+",menu_item_handheld_description,to_do driver_used_for_installation,"
 ",All in One Handheld and Plug and Play,,run_generator_script ablmini,"
 ",Classic Handheld Systems,,run_generator_script alnattck,"
 ",Game and Watch,,run_generator_script gnw_ball,"
@@ -95,19 +109,94 @@ function choose_dteam_add() {
 ",Konami Handheld,,run_generator_script kbilly,"
 ",Tiger Handheld Electronics,,run_generator_script taddams,"
 ",Tiger R-Zone,,run_generator_script rzbatfor,"
+",,,,"
+",Select downloads,,subgui_add-mamedev-systems_downloads,"
     )
     build_menu_add-mamedev-systems
 }
 
 
-function choose_folly_add() {
-#With this csv style we can't use quotes or double quotes 
-#so if we want to add more options in slotoptions or extensions we replace spaces with *
-#later in the run_generator_script they are replaced again with spaces
-#the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedDevice(s) $4=mediadescription $5=media $6=extension(s)
+function subgui_add-mamedev-systems_extras() {
     local csv=()
     csv=(
-",menu_item_dteam_description,to_do driver_used_for_installation,"
+",menu_item,empty,to_do,"
+",v HELP > systems + extra hardware (working better than default),,,"
+",Systems: with extra options,,choose_extra_options_add descriptions,"
+",,,,"
+",v HELP > experimental ! : install systems with autoboot function,,,"
+",Systems: full/semi automatic boot (with/without extra options),,choose_autoboot_add descriptions,"
+    )
+    build_menu_add-mamedev-systems
+}
+
+
+function subgui_add-mamedev-systems_all() {
+    local csv=()
+    csv=(
+",menu_item,empty,to_do,"
+",All (alphabetical) upon descriptions,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,"
+",All (alphabetical) upon system names,,subgui_add-mamedev-systems_alphabetical_order_selection systems,"
+",,,,"
+",All upon descriptions,,choose_add descriptions,"
+",All upon system names,,choose_add,"
+    )
+    build_menu_add-mamedev-systems
+}
+
+
+function subgui_add-mamedev-systems_sort() {
+#we can add up to 5 options per list to sort on
+#
+    local csv=()
+    csv=(
+",menu_item,empty,to_do,"
+",Forum list upon descriptions,,choose_add descriptions @forum,"
+",Forum list upon system names,,choose_add systems @forum,"
+",,,,"
+",Non-arcade upon descriptions,,choose_add descriptions @non-arcade,"
+",Non-arcade upon system names,,choose_add systems @non-arcade,"
+",,,,"
+",Game consoles upon descriptions,,choose_add descriptions @game-console,"
+",Game consoles upon system names,,choose_add systems @game-console,"
+",,,,"
+",Atari upon descriptions,,choose_add descriptions @non-arcade Atari,"
+",Atari upon system names,,choose_add systems @non-arcade Atari,"
+",,,,"
+",Commodore upon descriptions,,choose_add descriptions @non-arcade Commodore,"
+",Commodore upon system names,,choose_add systems @non-arcade Commodore,"
+",,,,"
+",Nintendo upon descriptions,,choose_add descriptions @non-arcade Nintendo,"
+",Nintendo upon system names,,choose_add systems @non-arcade Nintendo,"
+",,,,"
+",MSX upon descriptions,,choose_add descriptions @non-arcade MSX,"
+",MSX upon system names,,choose_add systems @non-arcade MSX,"
+",,,,"
+",Sega upon descriptions,,choose_add descriptions @non-arcade Sega,"
+",Sega upon system names,,choose_add systems @non-arcade Sega,"
+    )
+    build_menu_add-mamedev-systems
+
+#preserved-test-lines
+#",Cabinets upon descriptions,,choose_add descriptions @cabinets,"
+#",Cabinets upon systems,,choose_add systems @cabinets,"
+#",(and equal test 2 opt.)SONY MSX upon descriptions,,choose_add descriptions MSX HB-F,"
+#",(and equal test 2 opt.)SONY MSX upon systems,,choose_add systems MSX HB-F,"
+#",(not equal test 2 opt.)MSX but no HB types upon descriptions,,choose_add descriptions HB! MSX,"
+#",(not equal test 2 opt.)MSX but no HB types upon systems,,choose_add systems HB! MSX,"
+#",(not equal test 1 opt.)arcade upon descriptions,,choose_add descriptions @non-arcade!,"
+#",(not equal test 1 opt.)arcade upon systems,,choose_add systems @non-arcade!,"
+
+}
+
+
+function choose_extra_options_add() {
+#With this csv style we can't use quotes or double quotes 
+#so if we want to add more options , slotdevices or extensions we replace spaces with *
+#later in the run_generator_script they are replaced again with spaces
+#the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+    local csv=()
+    csv=(
+",menu_item_handheld_description,to_do driver_used_for_installation,"
 ",Acorn Archimedes 305 booting RISC-OS 3.10 with floppy support,,run_generator_script aa305 archimedes -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
 ",Acorn Archimedes 310 booting RISC-OS 3.10 with floppy support,,run_generator_script aa310 archimedes -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
 ",Acorn Archimedes 440+4Mb booting RISC-OS 3.10 with floppy support,,run_generator_script aa440 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
@@ -131,17 +220,49 @@ function choose_folly_add() {
 }
 
 
+function choose_autoboot_add() {
+#With this csv style we can't use quotes or double quotes 
+#so if we want to add more options , slotdevices or extensions we replace spaces with *
+#later in the run_generator_script they are replaced again with spaces
+#the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+    local csv=()
+    csv=(
+",menu_item_handheld_description,to_do driver_used_for_installation,"
+",Dragon 32 + ram + cassette + cload (auto) > run (manual),,run_generator_script dragon32 dragon32-autoboot-cload -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
+",Dragon 32 + ram + cassette + cloadm:exec (auto),,run_generator_script dragon32 dragon32-autoboot-cloadm -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
+    )
+    build_menu_add-mamedev-systems
+}
+
+
 function subgui_add-mamedev-systems_downloads() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
-",Download cheats,,download_cheats,"
+",Download/update cheats,,download_cheats,"
 ",,,,"
-",Download ES gamelists with images and videos (+/-50 minutes),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
+",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
+",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
-",Download mame artwork (+/-30 minutes),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
+",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
 ",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
     )
+    build_menu_add-mamedev-systems
+}
+
+
+function subgui_add-mamedev-systems_downloads_gamelists() {
+    local csv=()
+    #here we read the systems and descriptions from mame into an array
+    #by using the if function the data can be re-used, without reading it every time
+    if [[ -z ${gamelists_csv[@]} ]]; then
+    local gamelists_read
+    clear
+    echo "reading the individual gamelist data"
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";curl https://drive.google.com/embeddedfolderview?id=1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m#list|sed 's/https/\nhttps/g'|grep folders|sed 's/folders\//folders\"/g;s/>/"/g;s/</"/g'|while read line;do echo "\",Download/update only for '$(echo $line|cut -d '"' -f50)',,download_from_google_drive $(echo $line|cut -d '"' -f2) /home/$user/RetroPie/roms/$(echo $line|cut -d '"' -f50),\"";done)
+    fi
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
     build_menu_add-mamedev-systems
 }
 
@@ -152,73 +273,164 @@ function subgui_add-mamedev-systems_alphabetical_order_selection() {
     csv=( ",menu_item,empty,to_do," )
     for letter in {#,{A..Z}}
     do 
-      csv+=( "\",$letter -> Select and install upon $system_or_description,,choose_add $system_or_description$letter,\"" )
+      csv+=( "\",$letter upon $system_or_description,,choose_add $system_or_description$letter,\"" )
       #echo ${csv[@]}; sleep 10
     done
     build_menu_add-mamedev-systems
 }
 
 
+function subgui_add-mamedev-systems_search() {
+    local csv=()
+    local system_or_description=$1
+    local search
+
+    search=$(dialog \
+--default-item "$default" \
+--backtitle "$__backtitle" \
+--title "Insert up to 5 search patterns" \
+--form "" \
+22 76 16 \
+"Search pattern(s):" 1 1 "" 1 22 76 100 \
+2>&1 >/dev/tty \
+)
+
+    csv=(
+",menu_item,empty,to_do,"
+",Display your own sorted list,,choose_add $system_or_description $search,"
+    )
+    build_menu_add-mamedev-systems
+}
+
+
+function subgui_add-mamedev-systems_downloads_wget_A() {
+#we can add up to 5 options per list to sort on
+#
+    local csv=()
+    csv=(
+",menu_item,empty,to_do,"
+",mame-0.231-merged > RetroPie/BIOS/mame,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
+",mame-sl > RetroPie/downloads/mame-sl,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download/mame-sl mame-sl/mame-sl/ download,"
+    )
+    build_menu_add-mamedev-systems
+
+#preserve the one file links
+#",MESS-0.151.BIOS.ROMs > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download MESS-0.151.BIOS.ROMs download,"
+#",MAME_0.193_ROMs_bios-devices > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download MAME_0.193_ROMs_bios-devices download,"
+#",Mame0228 + SL > RetroPie/downloads/mame0228-sl,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download/mame0228-sl MAME_0.228_Software_List_ROMs_machines-bios-devices download,"
+
+}
+
+
+function subform_add-mamedev-systems_downloads_wget_A() {
+    local csv=()
+    local download_csv=()
+    local download_read
+    local website_url="$4"
+    local website_path="$3"
+    local rompack_name="$2"
+    local destination_path="$1"
+    local reserved=""
+    local manual_input=""
+
+    manual_input=$(\
+dialog \
+--default-item "$default" \
+--backtitle "$__backtitle" \
+--title "Insert the options" \
+--form "" \
+22 76 16 \
+"Website url >X (https://X/):" 1 1 "$website_url" 1 30 76 100 \
+"Website path >X (/X):" 2 1 "$website_path" 2 30 76 100 \
+"rompack name:" 3 1 "$rompack_name" 3 30 76 100 \
+"destination path:" 4 1 "$destination_path" 4 30 76 100 \
+"reserved:" 5 1 "$reserved" 5 30 76 100 \
+2>&1 >/dev/tty \
+)
+
+    website_url=$(echo "$manual_input" | sed -n 1p)
+    website_path=$(echo "$manual_input" | sed -n 2p)
+    rompack_name=$(echo "$manual_input" | sed -n 3p)
+    destination_path=$(echo "$manual_input" | sed -n 4p)
+    reserved=$(echo "$manual_input" | sed -n 5p)
+
+    clear
+    if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
+    echo "reading the website data"
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read download_read;do download_csv+=("$download_read");done < <(echo \",,,,\";curl https://$website_url/$website_path/$rompack_name|grep "View Contents"|cut -d '"' -f2|while read line;do echo "\",Get '$line',,download_file_with_wget $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
+    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${download_csv[*]}"));unset IFS
+    else
+    csv=( 
+",,,,"
+",error : insert the correct website : try again !,,," 
+)
+    fi
+    build_menu_add-mamedev-systems
+}
+
+
 function choose_add() {
     local csv=()
-    #here we read the systems and descriptions from mame into an array
-    #by using the if function the data can be re-used, without reading it every time
-    if [[ -z ${mamedev_csv[@]} ]]; then
-    local system_read
-    # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
-    # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
-    # Now using this : lines that start with "D" using => grep ^[D]
-    clear
-    echo "Extracting data from mame0228-mame0234 have issues on 32bit OSes"
-    echo "Now we are reading, mame0234 data, from the RetroPie-Share"
-    echo "For speed, data will be re-used within this session"
-    echo "Be patient for 20 seconds" 
-    #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    while read system_read;do mamedev_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0234_systems|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
-    fi
+    mame_data_read
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
     #here we store the sorted mamedev_csv values in the csv array
     #we sort on the third colunm which contain the descriptions of the sytems
-    IFS=$'\n' csv=($(sort -t"," -k 3 --ignore-case <<<"${mamedev_csv[*]}"));unset IFS
+    #to get sorted lists from the full array we need to split it in lines withe the sed command and then grep on what we want
+    #to keep the first reserved csv line, that was added with (echo \",,,,\") we need to grep that pattern
+    #like this (for one or the other ): grep 'pattern1\|pattern2'
+    #like this (for one and the other ): grep -P '^(?=.*pattern1)(?=.*pattern2)'
+    #because we need a combination of "or" and "and" I found more information in the next link
+    #more info https://www.shellhacks.com/grep-or-grep-and-grep-not-match-multiple-patterns/
+    #using awk we can combined (and)&& (or)|| and also ignore case sensitive
+    #(fast)sorting (and equal to) is possible on patterns up to 5 options ($2 -$6)
+    #(slower)sorting (not equal to) is possible on patterns for one option ($2) adding an ! after the pattern 
+    IFS=$'\n' csv=($(sort -t"," -d -k 3 --ignore-case<<<$(awk "{IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
     #this is an aternative but much slower
-    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -k 3 --ignore-case;unset IFS)
+    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 3 --ignore-case;unset IFS)
     else
     #here we store the sorted mamedev_csv values in the csv array
     #we sort on the second colunm which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${mamedev_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case<<<$(awk " {IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
     #this is an aternative but much slower
-    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -k 2 --ignore-case;unset IFS)
+    #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 2 --ignore-case;unset IFS)
     fi
+
+    #when the csv array is not filled, if searching patterns are not found, index 1 and above are empty
+    #here we add an extra line into index 1, so an empty dialog will appear without any errors  
+    [[ -z ${csv[1]} ]] && csv+=( "\",error : search pattern is not found : try again !,,,\"" )
+
     build_menu_add-mamedev-systems $1
 }
 
 
-function choose_add_reduced() {
+function choose_add_forum() {
     local csv=()
     #here we read the systems and descriptions from mame into an array
     #by using the if function the data can be re-used, without reading it every time
-    if [[ -z ${mamedev_reduced_csv[@]} ]]; then
+    if [[ -z ${mamedev_forum_csv[@]} ]]; then
     local system_read
     # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
     # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
     # Now using this : lines that start with "D" using => grep ^[D]
     clear
-    echo "Now we are reading a reduced list from the RetroPie-Share"
+    echo "Now we are reading a forum list from the RetroPie-Share"
     echo "For speed, data will be re-used within this session"
     echo "Be patient" 
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    while read system_read;do mamedev_reduced_csv+=("$system_read");done < <(curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame_systems_selection|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read system_read;do mamedev_forum_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame_systems_selection|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
     fi
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
-    #here we store the sorted mamedev_reduced_csv values in the csv array
+    #here we store the sorted mamedev_forum_csv values in the csv array
     #we sort on the third column which contain the descriptions of the sytems
-    IFS=$'\n' csv=($(sort -t"," -k 3 --ignore-case <<<"${mamedev_reduced_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 3 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
     else
-    #here we store the sorted mamedev_reduced_csv values in the csv array
+    #here we store the sorted mamedev_forum_csv values in the csv array
     #we sort on the second column which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${mamedev_reduced_csv[*]}"));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
     fi
     build_menu_add-mamedev-systems $1
 }
@@ -255,13 +467,13 @@ function build_menu_add-mamedev-systems() {
     if [[ $1 == systems# ]]; then
       for i in ${!csv[@]}; do set ${csv[$i]}; [[ $2 != [a-z]* ]] && options+=("$i" "$2");done
     fi
-    if [[ -z $1 ]]; then
+    if [[ -z $1 ]] || [[ $1 == systems ]]; then
     for i in ${!csv[@]}; do set ${csv[$i]}; options+=("$i" "$2");done
     fi
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select ?" 22 76 16)
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -298,7 +510,7 @@ function run_generator_script() {
 
 #
 # Author : @folly
-# Date   : 01/08/2021
+# Date   : 15/10/2021
 #
 # Copyright 2021 @folly
 #
@@ -352,8 +564,8 @@ ext=/ext/RetroPie-Share
 
 #mamedev arrays
 systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
-#added for systems with a extra predefined media and or slot-devices
-ExtraPredefinedDevices=(); RPsystemNames=()
+#added for systems with a extra predefined options, slotdevices and media
+ExtraPredefinedOptions=(); RPsystemNames=()
 
 #retropie arrays
 systemsrp=(); descriptionsrp=()
@@ -382,8 +594,10 @@ creating=
 #a system that can be detected (gameandwatch), already in RetroPie naming for normal matching
 #using @DTEAM naming for compatibitity with possible existing es-themes
 #hoping this will be the future RetroPie naming for these handhelds
+#this is an example command to extract the systems and add them here to the array :
+#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
 all_in1=( "ablmini" "ablpinb" "bittboy" "cybar120" "dgun2573" "dnv200fs" "fapocket" "fcpocket" "fordrace" "gprnrs1" "gprnrs16" "ii32in1" "ii8in1" "intact89" "intg5410" "itvg49" "lexiseal" "lexizeus" "lx_jg7415" "m505neo" "m521neo" "majkon" "mc_105te" "mc_110cb" "mc_138cb" "mc_7x6ss" "mc_89in1" "mc_8x6cb" "mc_8x6ss" "mc_9x6ss" "mc_aa2" "mc_cb280" "mc_dcat8" "mc_dg101" "mc_dgear" "mc_hh210" "mc_sam60" "mc_sp69" "mc_tv200" "megapad" "mgt20in1" "miwi2_7" "mysprtch" "mysprtcp" "mysptqvc" "njp60in1" "oplayer" "pdc100" "pdc150t" "pdc200" "pdc40t" "pdc50" "pjoyn50" "pjoys30" "pjoys60" "ppgc200g" "react" "reactmd" "rminitv" "sarc110" "sudopptv" "sy888b" "sy889" "techni4" "timetp36" "tmntpdc" "unk1682" "vgcaplet" "vgpmini" "vgpocket" "vjpp2" "vsplus" "zdog" "zone7in1" "zudugo" "namcons1" "namcons2" "taitons1" "taitons2" "tak_geig" "namcons1" "namcons2" "taitons1" "taitons2" "tak_geig" "tomcpin" )
-classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "edracula" "efball" "egalaxn2" "einvader" "einvader2" "epacman2" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mcompgin" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
+classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmcfball" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cpacmanr1" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "ebknight" "edracula" "efball" "efootb4" "egalaxn2" "einvader" "einvader2" "einvaderc" "epacman2" "epacman2r" "esbattle" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "gpoker" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mbaskb" "mchess" "mcompgin" "mfootb2" "mhockey" "msoccer" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
 konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
 tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
 
@@ -440,12 +654,12 @@ fi
 
 
 #part 4 : extract system data to array
-#first part from the if function is meant for installing systems with slot-devices or special software cartridges,
-#that can be seen as slot-devices, that can't be extracted from mame with -listslots
-#if added more than one option then we have added extra information about a slot-device and it's usable media
-#then $1=system $2=RPsystemName $3=ExtraPredefinedDevice(s) $4=mediadescription $5=media $6=extension(s)
+#first part from the if function is meant for installing systems with extra options or special software cartridges,
+#that can't be extracted from mame with -listslots
+#if added more than one option then we have added extra information about extra predefined options and it's usable media
+#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$6" ]]; then
-echo read the system/description, ExtraPredefinedDevice and RetroPie system name from commandline options
+echo "read the system/description, ExtraPredefinedOption(s) and RetroPie system name from commandline options"
 systems+=( "$1" )
 #by using the systems name as a description we don't have matches in part 10
 #therefor we can force our own RetroPie name 
@@ -453,10 +667,10 @@ systems+=( "$1" )
 descriptions+=( "$1" )
 RPsystemNames+=( "$2" )
 #normally we would use this :
-#ExtraPredefinedDevices+=( "$3" )
+#ExtraPredefinedOptions+=( "$3" )
 #but with using the front-end quotes can't be used in the csv style used there
 #so, in the front-end, we replace the spaces with a * and filter them out here again
-ExtraPredefinedDevices+=( "$(echo $3|sed 's/*/ /g')" )
+ExtraPredefinedOptions+=( "$(echo $3|sed 's/*/ /g')" )
 else
 # read system(s) using "mame" to extract the data and add them in the systems array
 # some things are filtered with grep
@@ -487,12 +701,12 @@ fi
 
 
 #part 5 : extract all extension data per system to array
-#first part from the if function is meant for installing systems with slot-devices or special software cartridges,
-#that can be seen as slot-devices, that can't be extracted from mame with -listslots
-#if added more than one option then we have added extra information about a slot-device and it's usable media
-#then $1=system $2=RPsystemName $3=ExtraPredefinedDevice(s) $4=mediadescription $5=media $6=extension(s)
+#first part from the if function is meant for installing systems with extra options or special software cartridges,
+#that can't be extracted from mame with -listslots
+#if added more than one option then we have added extra information about extra predefined options and it's usable media
+#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$6" ]]; then
-echo read the slot device media extension from commandline options
+echo read the media extension from commandline options
 #will be the same as extensions in part 6
 allextensions+=( "$(echo $6|sed 's/*/ /g')" )
 else
@@ -516,12 +730,12 @@ fi
 #echo ${allextensions[@]} ${#allextensions[@]}
 
 #part 6 : extract only extension data per media per system to array
-#first part from the if function is meant for installing systems with slot-devices or special software cartridges,
-#that can be seen as slot-devices, that can't be extracted from mame with -listslots
-#if added more than one option then we have added extra information about a slot-device and it's usable media
-#then $1=system $2=RPsystemName $3=ExtraPredefinedDevice(s) $4=mediadescription $5=media $6=extension(s)
+#first part from the if function is meant for installing systems with extra options or special software cartridges,
+#that can't be extracted from mame with -listslots
+#if added more than one option then we have added extra information about extra predefined options and it's usable media
+#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$6" ]]; then
-echo read the slot device media data from commandline options
+echo read the media data from commandline options
 index=0
 mediadescriptions+=( "$4")
 # use the third column if seperated by a space and remove ( ) characters and add - for media
@@ -555,10 +769,10 @@ fi
 
 
 #part 7 : do some filtering and read mamedev system descriptions into (descriptions)
-#first part from the if function is meant for installing systems with slot-devices or special software cartridges,
-#that can be seen as slot-devices, that can't be extracted from mame with -listslots
-#if added more than one option then we have added extra information about a slot-device and it's usable media
-#then $1=system $2=RPsystemName $3=ExtraPredefinedDevice(s) $4=mediadescription $5=media $6=extension(s)
+#first part from the if function is meant for installing systems with extra options or special software cartridges,
+#that can't be extracted from mame with -listslots
+#if added more than one option then we have added extra information about extra predefined options and it's usable media
+#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$6" ]]; then
 echo skip reading computer description from mame
 else
@@ -722,7 +936,7 @@ echo "generate and write the install-<RPname>-from-mamedev-system-<MESSname><-me
 # put everything in a seperate directory
 # !!! .zip is manually added as extension in every generated script !!!
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
-for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]] && cat > "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}.sh" << _EOF_
+for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]] && cat > "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}.sh" << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
@@ -734,8 +948,8 @@ for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]]
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
-rp_module_id="install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}"
-rp_module_name="${descriptions[$index]} $([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo with ${ExtraPredefinedDevices[$index]}) ${mediadescriptions[$index]} support"
+rp_module_id="install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}"
+rp_module_name="${descriptions[$index]} $([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo with ${ExtraPredefinedOptions[$index]}) ${mediadescriptions[$index]} support"
 rp_module_ext="$addextensions ${allextensions[$index]}"
 rp_module_desc="Use lr-mess/mame emulator for (\$rp_module_name)"
 rp_module_help="ROM Extensions: \$rp_module_ext\n
@@ -754,7 +968,7 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/mame/master/L
 rp_module_section="exp"
 rp_module_flags=""
 
-function depends_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}() {
+function depends_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	if [[ ! -f "\$_mess" ]]; then
 		printMsgs dialog "cannot find '\$_mess' !\n\nplease install 'lr-mess' package."
@@ -762,22 +976,22 @@ function depends_install-${newsystems[$index]}-from-mamedev-system-${systems[$in
 	fi
 }
 
-function sources_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}() {
+function sources_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}() {
 	true
 }
 
-function build_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}() {
+function build_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}() {
 	true
 }
 
-function install_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}() {
+function install_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}() {
 	true
 }
 
-function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}() {
+function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
-	#local _system="${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))"
+	#local _system="${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))"
 	local _system="$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)"
 	local _config="\$configdir/\$_system/retroarch.cfg"
 	local _add_config="\$_config.add"
@@ -824,18 +1038,18 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 
 	# add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
 	# all option should work with both mame and lr-mess, although -autoframeskip is better with mame
-	addEmulator 0 "lr-mess-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -autoframeskip -ui_active ${ExtraPredefinedDevices[$index]} ${media[$index]} %ROM%"
-	addEmulator 0 "lr-mess-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-game-specific${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -cfg_directory \$configdir/${newsystems[$index]}/lr-mess/%BASENAME% -autoframeskip -ui_active ${ExtraPredefinedDevices[$index]} ${media[$index]} %ROM%"
+	addEmulator 0 "lr-mess-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+	addEmulator 0 "lr-mess-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-game-specific${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -cfg_directory \$configdir/${newsystems[$index]}/lr-mess/%BASENAME% -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
 	#
-	addEmulator 0 "mame-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -ui_active ${systems[$index]} ${ExtraPredefinedDevices[$index]} ${media[$index]} %ROM%"
-        addEmulator 0 "mame-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip -ui_active ${systems[$index]} ${ExtraPredefinedDevices[$index]} ${media[$index]} %ROM%"
-	addEmulator 0 "mame-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-game-specific${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -cfg_directory \$configdir/\$_system/mame/%BASENAME% -v -c -ui_active ${systems[$index]} ${ExtraPredefinedDevices[$index]} ${media[$index]} %ROM%"
-        addEmulator 0 "mame-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-game-specific${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -cfg_directory \$configdir/\$_system/mame/%BASENAME% -v -c -autoframeskip -ui_active ${systems[$index]} ${ExtraPredefinedDevices[$index]} ${media[$index]} %ROM%"
+	addEmulator 0 "mame-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -ui_active ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+        addEmulator 0 "mame-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip -ui_active ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+	addEmulator 0 "mame-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-game-specific${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -cfg_directory \$configdir/\$_system/mame/%BASENAME% -v -c -ui_active ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+        addEmulator 0 "mame-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-game-specific${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -cfg_directory \$configdir/\$_system/mame/%BASENAME% -v -c -autoframeskip -ui_active ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
 
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
-	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo with extra ExtraPredefinedDevices)" "$addextensions ${allextensions[$index]}"
+	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo with extra ExtraPredefinedOptions)" "$addextensions ${allextensions[$index]}"
 
 	#sort the emulators.cfg file
 	sort -o \$_emulatorscfg \$_emulatorscfg
@@ -855,13 +1069,13 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 _EOF_
 
 #change ownership to normal user
-chown $user:$user "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}.sh" 2>&-
+chown $user:$user "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}.sh" 2>&-
 
 #install directly after generation if the script runs as a function within the front-end module script
 if [[ $generator_script_status != standalone ]];then
 #if not empty (-n) : change ownership to normal user and install 
-   if [[ -n $(ls /home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}.sh 2>&-) ]]; then
-   $scriptdir/retropie_packages.sh install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))${media[$index]}
+   if [[ -n $(ls /home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}.sh 2>&-) ]]; then
+   $scriptdir/retropie_packages.sh install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}
 fi
 
 
@@ -896,7 +1110,7 @@ for index in "${!newsystems[@]}"; do if [[ $creating != ${newsystems[$index]} ]]
 sleep 0.001
 creating=${newsystems[$index]}
 platformextensionsrp=$(grep ${newsystems[$index]}_exts /home/$user/RetroPie-Setup/platforms.cfg /home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2)
-cat > "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd.sh" << _EOF_
+cat > "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd.sh" << _EOF_
 #!/usr/bin/env bash
 
 # This file is part of The RetroPie Project
@@ -909,10 +1123,10 @@ cat > "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${news
 #
 
 
-rp_module_id="install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd"
-rp_module_name="${newsystems[$index]} $([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo with ${ExtraPredefinedDevices[$index]}) with command and game-BIOS support"
+rp_module_id="install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd"
+rp_module_name="${newsystems[$index]} $([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo with ${ExtraPredefinedOptions[$index]}) with command and game-BIOS support"
 rp_module_ext="$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
-rp_module_desc="Use lr-mess and mame emulator for ${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))"
+rp_module_desc="Use lr-mess and mame emulator for ${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))"
 rp_module_help="ROM Extensions: \$rp_module_ext\n
 Above extensions are included for compatibility between different media installs.\n\n
 ROM extensions only supported by this install:\n
@@ -931,7 +1145,7 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/mame/master/L
 rp_module_section="exp"
 rp_module_flags=""
 
-function depends_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd() {
+function depends_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	if [[ ! -f "\$_mess" ]]; then
 		printMsgs dialog "cannot find '\$_mess' !\n\nplease install 'lr-mess' package."
@@ -939,24 +1153,24 @@ function depends_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$
 	fi
 }
 
-function sources_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd() {
+function sources_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd() {
 	true
 }
 
-function build_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd() {
-	true
-}
-
-
-function install_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd() {
+function build_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd() {
 	true
 }
 
 
-function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd() {
+function install_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd() {
+	true
+}
+
+
+function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd() {
 	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
-	#local _system="${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))"
+	#local _system="${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))"
 	local _system="$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)"
 	local _config="\$configdir/\$_system/retroarch.cfg"
 	local _emulatorscfg="\$configdir/\$_system/emulators.cfg"
@@ -1002,7 +1216,7 @@ function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
 	#the system name is also used as description because, for example, handhelds are generated with game system names
-	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo with extra ExtraPredefinedDevices)" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
+	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo with extra ExtraPredefinedOptions)" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
 
 	#sort the emulators.cfg file
 	sort -o \$_emulatorscfg \$_emulatorscfg
@@ -1022,12 +1236,12 @@ function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices
 _EOF_
 
 #change ownership to normal user
-chown $user:$user "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd.sh" 2>&-
+chown $user:$user "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd.sh" 2>&-
 
 #install directly after generation if the script runs as a function within the front-end module script
 if [[ $generator_script_status != standalone ]];then
-   if [[ -n $(ls /home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd.sh 2>&-) ]]; then 
-   $scriptdir/retropie_packages.sh install-${newsystems[$index]}$([[ -n ${ExtraPredefinedDevices[$index]} ]] && echo $(echo _${ExtraPredefinedDevices[$index]} | sed "s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g"))-cmd
+   if [[ -n $(ls /home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd.sh 2>&-) ]]; then 
+   $scriptdir/retropie_packages.sh install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd
    fi
 fi
 
@@ -1067,15 +1281,38 @@ chown -R $user:$user "$2"
 #rm /tmp/gdrivedl.py
 }
 
+
+function download_file_with_wget() {
+clear
+echo "getting your desired file"
+mkdir -p $3
+#$1=filename $2=from_link $3=to_path
+if [ ! -f "$3/$1" ]; then
+    wget -nv -O $3/$1 https://$2/$1
+    #doesn't work, perhaps the command or redirecting is the problem
+    # curl -L -O https://$2/$1 --create-dirs -o $3/$1
+    sleep 10
+else 
+    read -r -p "File exists !, do you want to overwrite it ? [Y/N] " response
+       if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]];then 
+           wget -nv -O $3/$1 https://$2/$1
+       fi
+fi
+chown -R $user:$user "$3"
+}
+
+
 function create_lr-mess_overlays() {
 clear
 echo "extract background files from mame artwork, if available, and create custom retroarch configs for overlay's"
 echo
 #added handheld arrays, used for overlays
-classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "edracula" "efball" "egalaxn2" "einvader" "einvader2" "epacman2" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mcompgin" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
+#this is an example command to extract the systems and add them here to the array :
+#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmcfball" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cpacmanr1" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "ebknight" "edracula" "efball" "efootb4" "egalaxn2" "einvader" "einvader2" "einvaderc" "epacman2" "epacman2r" "esbattle" "esoccer" "estargte" "eturtles" "flash" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "gpoker" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mbaskb" "mchess" "mcompgin" "mfootb2" "mhockey" "msoccer" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
 konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
 tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
-gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bjack" "gnw_boxing" "gnw_bsweep" "gnw_cgrab" "gnw_chef" "gnw_climber" "gnw_dkhockey" "gnw_dkjr" "gnw_dkjrp" "gnw_dkong" "gnw_dkong2" "gnw_dkong3" "gnw_fire" "gnw_fireatk" "gnw_fires" "gnw_flagman" "gnw_gcliff" "gnw_ghouse" "gnw_helmet" "gnw_judge" "gnw_lboat" "gnw_lion" "gnw_manhole" "gnw_manholeg" "gnw_mario" "gnw_mariocm" "gnw_mariocmt" "gnw_mariotj" "gnw_mbaway" "gnw_mickdon" "gnw_mmouse" "gnw_mmousep" "gnw_octopus" "gnw_opanic" "gnw_pchute" "gnw_pinball" "gnw_popeye" "gnw_popeyep" "gnw_rshower" "gnw_sbuster" "gnw_smb" "gnw_snoopyp" "gnw_squish" "gnw_ssparky" "gnw_stennis" "gnw_tbridge" "gnw_tfish" "gnw_vermin" "gnw_zelda" )
+gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bfightn" "gnw_bjack" "gnw_boxing" "gnw_bsweep" "gnw_cgrab" "gnw_chef" "gnw_climber" "gnw_climbern" "gnw_egg" "gnw_dkcirc" "gnw_dkhockey" "gnw_dkjr" "gnw_dkjrp" "gnw_dkong" "gnw_dkong2" "gnw_dkong3" "gnw_fire" "gnw_fireatk" "gnw_fires" "gnw_flagman" "gnw_gcliff" "gnw_ghouse" "gnw_helmet" "gnw_judge" "gnw_lboat" "gnw_lion" "gnw_manhole" "gnw_manholeg" "gnw_mario" "gnw_mariocm" "gnw_mariocmt" "gnw_mariotj" "gnw_mbaway" "gnw_mickdon" "gnw_mmouse" "gnw_mmousep" "gnw_octopus" "gnw_opanic" "gnw_pchute" "gnw_pinball" "gnw_popeye" "gnw_popeyep" "gnw_rshower" "gnw_sbuster" "gnw_smb" "gnw_smbn" "gnw_snoopyp" "gnw_squish" "gnw_ssparky" "gnw_stennis" "gnw_tbridge" "gnw_tfish" "gnw_vermin" "gnw_zelda" )
 
 #create a subarray of the arrays being used for overlays
 #now only two for loops can be use for multiple arrays
@@ -1104,7 +1341,8 @@ input_overlay_enable = true
 input_overlay_opacity = 0.500000
 input_overlay_scale = 1.000000
 _EOF_
-        chown $user:$user "/home/$user/RetroPie/roms/$system/$game.zip.cfg" 
+        cp "/home/$user/RetroPie/roms/$system/$game.zip.cfg" "/home/$user/RetroPie/roms/$system/$game.7z.cfg"
+        chown $user:$user /home/$user/RetroPie/roms/$system/$game.*.cfg
         #
 	cat > "/opt/retropie/configs/all/retroarch/overlay/$game.cfg" << _EOF_
 overlays = 1
