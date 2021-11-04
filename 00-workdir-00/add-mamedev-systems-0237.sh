@@ -286,6 +286,7 @@ function subgui_add-mamedev-systems_search() {
     local search
 
     search=$(dialog \
+--no-cancel \
 --default-item "$default" \
 --backtitle "$__backtitle" \
 --title "Insert up to 5 search patterns" \
@@ -335,6 +336,7 @@ function subform_add-mamedev-systems_downloads_wget_A() {
 
     manual_input=$(\
 dialog \
+--no-cancel \
 --default-item "$default" \
 --backtitle "$__backtitle" \
 --title "Insert the options" \
@@ -361,11 +363,20 @@ dialog \
     while read download_read;do download_csv+=("$download_read");done < <(echo \",,,,\";curl https://$website_url/$website_path/$rompack_name|grep "View Contents"|cut -d '"' -f2|while read line;do echo "\",Get '$line',,download_file_with_wget $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
     IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${download_csv[*]}"));unset IFS
     else
-    csv=( 
+    	if [[ $(echo $website_url|sha1sum) == 9cf96ce8e6a93bd0c165799d9a0e6bb79beb1fb9* ]];then
+	csv=( 
 ",,,,"
-",error : insert the correct website : try again !,,," 
-)
+",Install lr-mess binary from libretro buildbot (for x86/x64),,install-lr-mess-for-x86-x64,"
+",Install mame binary from normal repository (for x86/x64),,install-mame-for-x86-x64,"
+	)
+	else
+	csv=( 
+",,,,"
+",error : wrong input : try again !,,," 
+	)
+	fi
     fi
+    
     build_menu_add-mamedev-systems
 }
 
@@ -969,11 +980,7 @@ rp_module_section="exp"
 rp_module_flags=""
 
 function depends_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}() {
-	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
-	if [[ ! -f "\$_mess" ]]; then
-		printMsgs dialog "cannot find '\$_mess' !\n\nplease install 'lr-mess' package."
-		exit 1
-	fi
+	true
 }
 
 function sources_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}() {
@@ -1146,11 +1153,7 @@ rp_module_section="exp"
 rp_module_flags=""
 
 function depends_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd() {
-	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
-	if [[ ! -f "\$_mess" ]]; then
-		printMsgs dialog "cannot find '\$_mess' !\n\nplease install 'lr-mess' package."
-		exit 1
-	fi
+	true
 }
 
 function sources_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))-cmd() {
@@ -1206,6 +1209,7 @@ function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions
 	addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
 	addEmulator 0 "mame-cmd" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/\$_system -v -c %BASENAME%"
 	addEmulator 0 "mame-cmd-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/\$_system -v -c -autoframeskip %BASENAME%"
+	addEmulator 0 "mame-cmd-frameskip_10" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/\$_system -v -c -frameskip 10 %BASENAME%"
 	addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c \$_system %BASENAME%"
 	addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip \$_system %BASENAME%"
 	#turned these off, seems these commands will not work, but kept for future testing : https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/33
@@ -1299,6 +1303,30 @@ else
        fi
 fi
 chown -R $user:$user "$3"
+}
+
+
+function install-lr-mess-for-x86-x64 () {
+echo "/nGetting lr-mess binary from libretro buildbot/n"
+curl http://buildbot.libretro.com/nightly/linux/$(arch|sed 's/i6/x/')/RetroArch_cores.7z --create-dirs /opt/retropie/libretrocores/lr-mess -o /opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z
+7z e '/opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z' -o/opt/retropie/libretrocores/lr-mess/ 'mame_libretro.so' -r
+chmod 755 /opt/retropie/libretrocores/lr-mess
+mv /opt/retropie/libretrocores/lr-mess/mame_libretro.so /opt/retropie/libretrocores/lr-mess/mess_libretro.so
+$scriptdir/retropie_packages.sh lr-mess sources
+$scriptdir/retropie_packages.sh lr-mess configure 
+$scriptdir/retropie_packages.sh lr-mess clean
+}
+
+
+function install-mame-for-x86-x64 () {
+echo "/nGetting mame binary from normal repository/n"
+getDepends mame
+mkdir -p /opt/retropie/emulators/mame
+cp /usr/games/mame /opt/retropie/emulators/mame/
+echo "do a retropie configure for mame"
+$scriptdir/retropie_packages.sh mame sources
+$scriptdir/retropie_packages.sh mame configure 
+$scriptdir/retropie_packages.sh mame clean
 }
 
 
