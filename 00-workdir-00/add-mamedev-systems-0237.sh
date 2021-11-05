@@ -202,6 +202,9 @@ function choose_extra_options_add() {
 ",Acorn Archimedes 440+4Mb booting RISC-OS 3.10 with floppy support,,run_generator_script aa440 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
 ",Acorn Archimedes 440/1+4Mb booting RISC-OS 3.10 with floppy support,,run_generator_script aa4401 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
 ",APF Imagination Machine with basic and cassette support,,run_generator_script apfimag apfimag_cass basic cassette cass .wav,"
+",Coco with ram and cassette only support,,run_generator_script coco coco -ext*ram cassette cass .wav*.cas,"
+",Coco 2 with ram and cassette only support,,run_generator_script coco2 coco2 -ext*ram cassette cass .wav*.cas,"
+",Coco 3 with ram and cassette only support,,run_generator_script coco3 coco3 -ext*ram cassette cass .wav*.cas,"
 ",Dragon 32 with ram and cassette only support,,run_generator_script dragon32 dragon32 -ext*ram cassette cass .wav*.cas,"
 ",Famicom Family BASIC (V3.0) (J) with cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
 ",Famicom Playbox BASIC (Prototype V0.0) with cassette support,,run_generator_script famicom famicom_pboxbas pboxbas*-exp*fc_keyboard cassette cass .wav,"
@@ -228,9 +231,19 @@ function choose_autoboot_add() {
     local csv=()
     csv=(
 ",menu_item_handheld_description,to_do driver_used_for_installation,"
+",Coco + ram + cassette + cload (auto) > run (manual),,run_generator_script coco coco-autoboot-cload -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
+",Coco + ram + cassette + cloadm:exec (auto),,run_generator_script coco coco-autoboot-cloadm -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
+",Coco 2 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco2 coco2-autoboot-cload -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
+",Coco 2 + ram + cassette + cloadm:exec (auto),,run_generator_script coco2 coco2-autoboot-cloadm -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
+",Coco 3 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco3 coco3-autoboot-cload -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
+",Coco 3 + ram + cassette + cloadm:exec (auto),,run_generator_script coco3 coco3-autoboot-cloadm -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
 ",Dragon 32 + ram + cassette + cload (auto) > run (manual),,run_generator_script dragon32 dragon32-autoboot-cload -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Dragon 32 + ram + cassette + cloadm:exec (auto),,run_generator_script dragon32 dragon32-autoboot-cloadm -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
     )
+
+#preserved test lines:
+#",Electron + cassette + *tape chain\"\"(auto),,run_generator_script electron electron-autoboot-tape-chain -autoboot_delay*2*-autoboot_command**tape\\\\\\nchain\\\"\\\"\\\\\\n cassette cass .wav*.csw*.uef,"
+
     build_menu_add-mamedev-systems
 }
 
@@ -1307,7 +1320,7 @@ chown -R $user:$user "$3"
 
 
 function install-lr-mess-for-x86-x64 () {
-echo "/nGetting lr-mess binary from libretro buildbot/n"
+echo -ne "===/nGetting lr-mess binary from libretro buildbot/n==="
 curl http://buildbot.libretro.com/nightly/linux/$(arch|sed 's/i6/x/')/RetroArch_cores.7z --create-dirs /opt/retropie/libretrocores/lr-mess -o /opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z
 7z e '/opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z' -o/opt/retropie/libretrocores/lr-mess/ 'mame_libretro.so' -r
 chmod 755 /opt/retropie/libretrocores/lr-mess
@@ -1319,7 +1332,7 @@ $scriptdir/retropie_packages.sh lr-mess clean
 
 
 function install-mame-for-x86-x64 () {
-echo "/nGetting mame binary from normal repository/n"
+echo -ne "===/nGetting mame binary from normal repository/n==="
 getDepends mame
 mkdir -p /opt/retropie/emulators/mame
 cp /usr/games/mame /opt/retropie/emulators/mame/
