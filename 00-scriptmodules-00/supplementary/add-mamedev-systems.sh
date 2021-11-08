@@ -258,16 +258,24 @@ function choose_autoboot_add() {
 ",Coco 2 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Coco 2 + ram + cassette + cloadm:exec (auto),,run_generator_script coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
 ",Coco 2 floppy + os-9 dos (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*dos\\\\\\n floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
-",Coco 2 + floppy + load\"%BASENAME%.bas\" + run (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%.bas\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 2 + floppy + load\"%BASENAME%\" + run (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 2 + floppy + run\"%BASENAME%\" (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 3 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Coco 3 + ram + cassette + cloadm:exec (auto),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
 ",Coco 3 + floppy + os-9 dos (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*dos\\\\\\n floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
-",Coco 3 + floppy + load\"%BASENAME%.bas\" + run (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%.bas\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + floppy + load\"%BASENAME%\" + run (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + floppy + run\"%BASENAME%\" (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Dragon 32 + ram + cassette + cload (auto) > run (manual),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Dragon 32 + ram + cassette + cloadm:exec (auto),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
+",Dragon 32 + floppy + run\"%BASENAME%\" (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.bas*.bin,"
 ",Electron + cassette + *tape chain\"\"(auto),,run_generator_script electron electron -autoboot_delay*2*-autoboot_command*\\'\\\\\x2a\\'TAPE\\'\\\\\n\\'CHAIN\\'\\\\\x22\\'\\'\\\\\x22\\'\\'\\\\\n\\' cassette cass .wav*.csw*.uef,"
 ",Electron + cassette + *tape *run(auto),,run_generator_script electron electron -autoboot_delay*2*-autoboot_command*\\'\\\\\x2a\\'TAPE\\'\\\\\n\\'\\'\\\\\x2a\\'RUN\\'\\\\\n\\' cassette cass .wav*.csw*.uef,"
     )
+#preserved-test-lines 
+#,r did not work for the tested bas files, more testing required (does work with coco3) (now using run) (we can add .bas or .bin to the zip or dsk file, then we are more flexible : removed in the working lines)
+#",Dragon 32 + floppy + load\"%BASENAME%.bas\" + run (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%.bas\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+#did not work for the tested bin files, more testing required (we can add .bas or .bin to the zip or dsk file, then we are more flexible : removed in the working lines)
+#",Dragon 32 + floppy + loadm\"%BASENAME%.bin\":exec (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%.bin\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 
     build_menu_add-mamedev-systems
 }
