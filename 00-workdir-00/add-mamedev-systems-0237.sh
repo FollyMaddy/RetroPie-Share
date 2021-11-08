@@ -28,6 +28,7 @@ local mamedev_csv=()
 local mamedev_forum_csv=()
 local gamelists_csv=()
 
+local restricted_download_csv=()
 
 local system_read
 
@@ -68,9 +69,21 @@ function gui_add-mamedev-systems() {
 ",v HELP > browse and get online files ),,,"
 ",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,"
 ",^ HELP > only available with the correct input !),,,"
+",show konamih array,,mame_data_read;IFS=\$'\n' restricted_download_csv=(\$(cut -d \"\$(printf '\x2c')\" -f 2 <<<\$(awk /\$(read input;echo \$input)/<<<\$(sed 's/\" \"/\"\n\"/g'<<<\"\${mamedev_csv[*]}\"))));unset IFS;echo \$2;echo \${restricted_download_csv[*]};for tt in \${!restricted_download_csv[@]};do echo \${restricted_download_csv[\$tt]};sleep 0.3;done,"
     )
     build_menu_add-mamedev-systems
 }
+#preserve test lines created to test "eval $run"
+#",for loop,,for tt in 1 2 3 4;do echo \$tt;sleep 2;done,"
+#",echo test,,echo hallo;sleep 2;echo do 3;sleep 3,"
+#",show tigerh systems,,for th in taddams taltbeast tapollo13 tbatfor tbatman tbatmana tbtoads tbttf tddragon tddragon3 tdennis tdummies tflash tgaiden tgaunt tgoldeye tgoldnaxe thalone thalone2 thook tinday tjdredd tjpark tkarnov tkazaam tmchammer tmkombat tnmarebc topaliens trobhood trobocop2 trobocop3 trockteer tsddragon tsf2010 tsfight2 tshadow tsharr2 tsjam tskelwarr tsonic tsonic2 tspidman tstrider tswampt ttransf2 tvindictr twworld txmen txmenpx ; do echo \$th.zip;sleep 1;done,"
+
+#full working line to extract only @konamih system names, the $ and " have to be escaped and splitting on , can be done using the ascii hex-code representation of the , = > \$(printf '\x2c')
+#https://stackoverflow.com/questions/890262/integer-ascii-value-to-character-in-bash-using-printf
+#https://www.cyberciti.biz/faq/unix-linux-sed-ascii-control-codes-nonprintable/
+#",show konamih array,,mame_data_read;IFS=\$'\n' restricted_download_csv=(\$(cut -d \"\$(printf '\x2c')\" -f 2 <<<\$(awk /@konamih/<<<\$(sed 's/\" \"/\"\n\"/g'<<<\"\${mamedev_csv[*]}\"))));unset IFS;echo \$2;echo \${restricted_download_csv[*]};for tt in \${!restricted_download_csv[@]};do echo \${restricted_download_csv[\$tt]};sleep 0.3;done,"
+#here we can input the string, so we get the output on what we search
+#",show konamih array,,mame_data_read;IFS=\$'\n' restricted_download_csv=(\$(cut -d \"\$(printf '\x2c')\" -f 2 <<<\$(awk /\$(read input;echo \$input)/<<<\$(sed 's/\" \"/\"\n\"/g'<<<\"\${mamedev_csv[*]}\"))));unset IFS;echo \$2;echo \${restricted_download_csv[*]};for tt in \${!restricted_download_csv[@]};do echo \${restricted_download_csv[\$tt]};sleep 0.3;done,"
 
 
 function mame_data_read() {
@@ -228,6 +241,15 @@ function choose_autoboot_add() {
 #so if we want to add more options , slotdevices or extensions we replace spaces with *
 #later in the run_generator_script they are replaced again with spaces
 #the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+#
+# adding a newline can be done in multiple ways => \\'\\\\\n\\' (very good) or => \\\\\\n (works most of the times)
+# adding some special characters isn't always possible the normal way, escaping the char with multiple \
+# this is because the csv line is quoted with doublequotes and the delimiter  , is used to separate the "cells", also an extra * delimiter is used within "cells" to create a virtual 3D "worksheet"
+# adding special characters is possible using ascii hex-code (https://www.cyberciti.biz/faq/unix-linux-sed-ascii-control-codes-nonprintable/)
+# " => \\'\\\\\x22\\'
+# * => \\'\\\\\x2a\\'
+# , => \\'\\\\\x2c\\'
+
     local csv=()
     csv=(
 ",menu_item_handheld_description,to_do driver_used_for_installation,"
@@ -236,15 +258,16 @@ function choose_autoboot_add() {
 ",Coco 2 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Coco 2 + ram + cassette + cloadm:exec (auto),,run_generator_script coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
 ",Coco 2 floppy + os-9 dos (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*dos\\\\\\n floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 2 + floppy + load\"%BASENAME%.bas\" + run (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%.bas\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 3 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Coco 3 + ram + cassette + cloadm:exec (auto),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
 ",Coco 3 + floppy + os-9 dos (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*dos\\\\\\n floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + floppy + load\"%BASENAME%.bas\" + run (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%.bas\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Dragon 32 + ram + cassette + cload (auto) > run (manual),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Dragon 32 + ram + cassette + cloadm:exec (auto),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
+",Electron + cassette + *tape chain\"\"(auto),,run_generator_script electron electron -autoboot_delay*2*-autoboot_command*\\'\\\\\x2a\\'TAPE\\'\\\\\n\\'CHAIN\\'\\\\\x22\\'\\'\\\\\x22\\'\\'\\\\\n\\' cassette cass .wav*.csw*.uef,"
+",Electron + cassette + *tape *run(auto),,run_generator_script electron electron -autoboot_delay*2*-autoboot_command*\\'\\\\\x2a\\'TAPE\\'\\\\\n\\'\\'\\\\\x2a\\'RUN\\'\\\\\n\\' cassette cass .wav*.csw*.uef,"
     )
-
-#preserved test lines:
-#",Electron + cassette + *tape chain\"\"(auto),,run_generator_script electron electron-autoboot-tape-chain -autoboot_delay*2*-autoboot_command**tape\\\\\\nchain\\\"\\\"\\\\\\n cassette cass .wav*.csw*.uef,"
 
     build_menu_add-mamedev-systems
 }
@@ -519,7 +542,7 @@ function build_menu_add-mamedev-systems() {
             joy2keyStop
             joy2keyStart
             unset IFS
-            $run
+	    eval $run
             #next function is done inside the run_generator_script
             #rp_registerAllModules
             #sleep 4
