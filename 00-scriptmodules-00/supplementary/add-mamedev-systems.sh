@@ -69,7 +69,6 @@ function gui_add-mamedev-systems() {
 ",v HELP > browse and get online files ),,,"
 ",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,"
 ",^ HELP > only available with the correct input !),,,"
-",show konamih array,,mame_data_read;IFS=\$'\n' restricted_download_csv=(\$(cut -d \"\$(printf '\x2c')\" -f 2 <<<\$(awk /\$(read input;echo \$input)/<<<\$(sed 's/\" \"/\"\n\"/g'<<<\"\${mamedev_csv[*]}\"))));unset IFS;echo \$2;echo \${restricted_download_csv[*]};for tt in \${!restricted_download_csv[@]};do echo \${restricted_download_csv[\$tt]};sleep 0.3;done,"
     )
     build_menu_add-mamedev-systems
 }
@@ -356,8 +355,18 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
     local csv=()
     csv=(
 ",menu_item,empty,to_do,"
+",v HELP > Browse whole packs and then download files,,,"
 ",mame-0.231-merged > RetroPie/BIOS/mame,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
 ",mame-sl > RetroPie/downloads/mame-sl,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download/mame-sl mame-sl/mame-sl/ download,"
+",,,,"
+",v HELP > Get all files from a specific catagory,,,"
+",all_in1 < mame-0.231-merged > RetroPie/roms/all_in1,,subform_restricted_multi_download_wget_A '/@all_in1/' .7z /home/$user/RetroPie/roms/all_in1 mame-0.231-merged download,"
+",classich < mame-0.231-merged > RetroPie/roms/classich,,subform_restricted_multi_download_wget_A '/@classich/' .7z /home/$user/RetroPie/roms/classich mame-0.231-merged download,"
+",konamih < mame-0.231-merged > RetroPie/roms/konamih,,subform_restricted_multi_download_wget_A '/@konamih/' .7z /home/$user/RetroPie/roms/konamih mame-0.231-merged download,"
+",tigerh < mame-0.231-merged > RetroPie/roms/tigerh,,subform_restricted_multi_download_wget_A '/@tigerh/' .7z /home/$user/RetroPie/roms/tigerh mame-0.231-merged download,"
+",gameandwatch < mame-0.231-merged > RetroPie/roms/gameandwatch,,subform_restricted_multi_download_wget_A '/@gameandwatch/' .7z /home/$user/RetroPie/roms/gameandwatch mame-0.231-merged download,"
+",jakks < mame-0.231-merged > RetroPie/roms/jakks,,subform_restricted_multi_download_wget_A '/@jakks/' .7z /home/$user/RetroPie/roms/jakks mame-0.231-merged download,"
+",tigerrz < mame-0.231-merged > RetroPie/roms/tigerrz,,subform_restricted_multi_download_wget_A '/@tigerrz/' .7z /home/$user/RetroPie/roms/tigerrz mame-0.231-merged download,"
     )
     build_menu_add-mamedev-systems
 
@@ -365,6 +374,9 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 #",MESS-0.151.BIOS.ROMs > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download MESS-0.151.BIOS.ROMs download,"
 #",MAME_0.193_ROMs_bios-devices > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download MAME_0.193_ROMs_bios-devices download,"
 #",Mame0228 + SL > RetroPie/downloads/mame0228-sl,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download/mame0228-sl MAME_0.228_Software_List_ROMs_machines-bios-devices download,"
+#working test with one "not-equal" and one "equal" other combinations don't seem to work
+#",shooter < mame-0.231-merged > RetroPie/roms/shooter,,subform_restricted_multi_download_wget_A '!/1941/&&/@shooter/' .7z /home/$user/RetroPie/roms/shooter mame-0.231-merged download,"
+
 
 }
 
@@ -424,6 +436,59 @@ dialog \
     fi
     
     build_menu_add-mamedev-systems
+}
+
+
+function subform_restricted_multi_download_wget_A() {
+
+    local website_url="$6"
+    local website_path="$5"
+    local rompack_name="$4"
+    local destination_path="$3"
+    local file_extension="$2"
+    local search_input="$1"
+    local manual_input=""
+
+    manual_input=$(\
+dialog \
+--no-cancel \
+--default-item "$default" \
+--backtitle "$__backtitle" \
+--title "Insert the options" \
+--form "" \
+22 76 16 \
+"Website url >X (https://X/):" 1 1 "$website_url" 1 30 76 100 \
+"Website path >X (/X):" 2 1 "$website_path" 2 30 76 100 \
+"rompack name:" 3 1 "$rompack_name" 3 30 76 100 \
+"destination path:" 4 1 "$destination_path" 4 30 76 100 \
+"file extension:" 5 1 "$file_extension" 5 30 76 100 \
+"search input:" 6 1 "$search_input" 6 30 76 100 \
+2>&1 >/dev/tty \
+)
+
+    website_url=$(echo "$manual_input" | sed -n 1p)
+    website_path=$(echo "$manual_input" | sed -n 2p)
+    rompack_name=$(echo "$manual_input" | sed -n 3p)
+    destination_path=$(echo "$manual_input" | sed -n 4p)
+    file_extension=$(echo "$manual_input" | sed -n 5p)
+    search_input=$(echo "$manual_input" | sed -n 6p)
+
+    clear
+    if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
+    mkdir -p $destination_path
+    mame_data_read
+    IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
+    for rd in ${!restricted_download_csv[@]};do 
+    #echo ${restricted_download_csv[$rd]}
+    #sleep 0.3
+    wget -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension
+    done
+    chown -R $user:$user "$destination_path"
+    else 
+    echo "-->> ERROR : WRONG INPUT : TRY AGAIN !"
+    echo "Going back to the menu after 5 seconds"
+    sleep 5
+    fi
 }
 
 
