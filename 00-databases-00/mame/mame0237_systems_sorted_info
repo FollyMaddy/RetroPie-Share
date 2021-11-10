@@ -847,7 +847,7 @@ Driver alienar (Alien Arena): @working_arcade@maze
 Driver alienaru (Alien Arena (Stargate upgrade)): @clones@working_arcade@maze
 Driver aliencha (Alien Challenge (World)): @working_arcade@fighter
 Driver alienchac (Alien Challenge (China)): @clones@working_arcade@fighter
-Driver aliencr (Alien Crush (United Amusements PC Engine)): @working_arcade@adb-arcade
+Driver aliencr (Alien Crush (United Amusements PC Engine)): @working_arcade@pinball_arcade
 Driver alienfnt (Alien Front (Rev T)): @shooter
 Driver alienfnta (Alien Front (Rev A)): @clones@shooter
 Driver alieninv (Alien Invasion): @bootlegs@clones@working_arcade@shooter
@@ -2605,7 +2605,7 @@ Driver brival (Burning Rival (World)): @working_arcade@fighter
 Driver brivalj (Burning Rival (Japan)): @clones@working_arcade@fighter
 Driver brix (Brix): @cabinets@cabinets@clones@working_arcade@maze
 Driver brixian (Brixian): @working_arcade@maze
-Driver brkball (Break Ball): @working_arcade@adb-arcade
+Driver brkball (Break Ball): @working_arcade@pinball_arcade
 Driver brkblast (Brick Blast (bootleg of Wall Crash)): @bootlegs@clones@working_arcade@ball-and-paddle
 Driver brkthru (Break Thru (US)): @cabinets@cabinets@working_arcade@shooter
 Driver brkthruj (Kyohkoh-Toppa (Japan)): @cabinets@cabinets@clones@working_arcade@shooter
@@ -7581,7 +7581,7 @@ Driver flickys1 (Flicky (64k Version, 315-5051, set 2)): @cabinets@cabinets@clon
 Driver flickys2 (Flicky (128k Version, not encrypted)): @cabinets@cabinets@clones@working_arcade@platform
 Driver flickyup (Flicky (64k Version, on Up'n Down boardset)): @clones@working_arcade@platform
 Driver flight2k (Flight 2000): @mechanical@screenless
-Driver flipjack (Flipper Jack): @cabinets@cabinets@working_arcade@adb-arcade
+Driver flipjack (Flipper Jack): @cabinets@cabinets@working_arcade@pinball_arcade
 Driver flipmaze (Flip Maze (V2.04J 1999/09/02 20:00)): @working_arcade@puzzle
 Driver flipshot (Battle Flip Shot): @cabinets@cabinets@working_arcade@sports
 Driver flipull (Flipull (Japan)): @clones@working_arcade@puzzle
@@ -8022,7 +8022,7 @@ Driver galsnewj (Gals Panic (Japan, EXPRO-02 PCB)): @clones@working_arcade@puzzl
 Driver galsnewk (Gals Panic (Korea, EXPRO-02 PCB)): @clones@working_arcade@puzzle
 Driver galsnewt (Gals Panic (Taiwan, EXPRO-02 PCB)): @clones@working_arcade@puzzle
 Driver galsnewu (Gals Panic (US, EXPRO-02 PCB)): @clones@working_arcade@puzzle
-Driver galspnbl (Gals Pinball): @working_arcade@adb-arcade
+Driver galspnbl (Gals Pinball): @working_arcade@pinball_arcade
 Driver galturbo (Galaxian Turbo ('Super Galaxians' hack)): @cabinets@cabinets@clones@working_arcade@shooter
 Driver galwars2 (Galaxy Wars II (Defender bootleg)): @bootlegs@clones@working_arcade@shooter
 Driver galxwars (Galaxy Wars (Universal set 1)): @monochrome@working_arcade@shooter
@@ -8276,7 +8276,7 @@ Driver gchgchmp (Gachaga Champ (GE877 VER. JAB)): @working_arcade@multiplay
 Driver gchinatv (Golden China TV Game): @non-arcade@game-console
 Driver gcjp (GameCube (Japan)): @non-arcade@screenless@game-console
 Driver gckong (Crazy Kong (Gakken)): @non-arcade@classich@handheld
-Driver gcpinbal (Grand Cross v1.02F): @working_arcade@adb-arcade
+Driver gcpinbal (Grand Cross v1.02F): @working_arcade@pinball_arcade
 Driver gcs2mgp (Mini Game Player 48-in-1): @non-arcade@handheld
 Driver gcslottv (Gachinko Contest! Slot machine TV (Japan)): @non-arcade@game-console
 Driver gcus (GameCube (USA)): @non-arcade@screenless@game-console
@@ -9708,7 +9708,7 @@ Driver hotmind (Hot Mind (Hard Times hardware)): @working_arcade@puzzle
 Driver hotminda (Hot Mind (adjustable prize)): @clones@working_arcade@puzzle
 Driver hotmindff (Hot Mind (Fit of Fighting hardware)): @clones@puzzle
 Driver hotnight (Hot Night): @clones@working_arcade@puzzle
-Driver hotpinbl (Hot Pinball): @working_arcade@adb-arcade
+Driver hotpinbl (Hot Pinball): @working_arcade@pinball_arcade
 Driver hotrod (Hot Rod (World, 3 Players, Turbo set 1, Floppy Based)): @working_arcade@driving
 Driver hotroda (Hot Rod (World, 3 Players, Turbo set 2, Floppy Based)): @clones@working_arcade@driving
 Driver hotrodj (Hot Rod (Japan, 4 Players, Floppy Based, Rev C)): @clones@working_arcade@driving
@@ -11755,7 +11755,7 @@ Driver jak_prft (Power Rangers Force In Time (JAKKS Pacific TV Motion Game)): @n
 Driver jak_prhp (Power Rangers Super Megaforce Hero Portal): @non-arcade@handheld
 Driver jak_s500 (SpongeBob SquarePants Bikini Bottom 500 (JAKKS Pacific TV Motion Game)): @non-arcade@handheld
 Driver jak_sbfc (SpongeBob SquarePants - The Fry Cook Games (JAKKS Pacific TV Game, Game-Key Ready) (AUG 18 2005 21:31:56)): @non-arcade@jakks@handheld
-Driver jak_sbjd (SpongeBob SquarePants Jellyfish Dodge (JAKKS Pacific TV Game) (Apr 5 2007)): @new0236@non-arcade@handheld
+Driver jak_sbjd (SpongeBob SquarePants Jellyfish Dodge (JAKKS Pacific TV Game) (Apr 5 2007)): @new0236@non-arcade@jakks@handheld
 Driver jak_sdoo (Scooby-Doo! and the Mystery of the Castle (JAKKS Pacific TV Game, Game-Key Ready)): @non-arcade@jakks@handheld
 Driver jak_sith (Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready)): @non-arcade@jakks@handheld
 Driver jak_sithp (Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready, prototype)): @non-arcade@handheld
@@ -20715,7 +20715,7 @@ Driver mag_day (A Day In Space (31/03/87)): @working_arcade@shooter
 Driver mag_drac (Dracula's Castle (Magnet System)): @platform
 Driver mag_exzi (Exzisus (EX 1.0, Magnet System)): @working_arcade@shooter
 Driver mag_pdak (Paris Dakar (31/03/87, Spanish)): @working_arcade@driving
-Driver mag_time (Time Scanner (TS 2.0, Magnet System)): @working_arcade@adb-arcade
+Driver mag_time (Time Scanner (TS 2.0, Magnet System)): @working_arcade@pinball_arcade
 Driver mag_war (War Mission (WM 04/06/87)): @working_arcade@shooter
 Driver mag_wara (War Mission (WM 09/04/87)): @clones@working_arcade@shooter
 Driver mag_xain (Xain'd Sleena (SC 3.0, Magnet System)): @working_arcade@platform
@@ -22261,7 +22261,7 @@ Driver mushisamb (Mushihime-Sama (2004/10/12 MASTER VER)): @clones@working_arcad
 Driver mushitam (Puzzle! Mushihime-Tama (2005/09/09.MASTER VER)): @working_arcade@puzzle
 Driver mushitama (Puzzle! Mushihime-Tama (2005/09/09 MASTER VER)): @clones@working_arcade@puzzle
 Driver mushmagi (Mushroom Magic (Russia) (Atronic)): 
-Driver musicbal (Music Ball): @cabinets@cabinets@working_arcade@adb-arcade
+Driver musicbal (Music Ball): @cabinets@cabinets@working_arcade@pinball_arcade
 Driver musicsrt (Music Sort (ver. 2.02)): @working_arcade@casino
 Driver musobana (Musoubana (Japan)): @working_arcade@tabletop
 Driver mustache (Mustache Boy (Japan)): @cabinets@cabinets@working_arcade@maze
@@ -23297,8 +23297,8 @@ Driver panich (Space Panic (harder)): @cabinets@cabinets@clones@working_arcade@p
 Driver panicprk (Panic Park (World, PNP2 Ver. A)): @multiplay
 Driver panicprkj (Panic Park (Japan, PNP1 Ver. B, set 1)): @clones@multiplay
 Driver panicprkj2 (Panic Park (Japan, PNP1 Ver. B, set 2)): @clones@multiplay
-Driver panicr (Panic Road (Japan)): @cabinets@cabinets@adb-arcade
-Driver panicrg (Panic Road (Germany)): @cabinets@cabinets@clones@adb-arcade
+Driver panicr (Panic Road (Japan)): @cabinets@cabinets@pinball_arcade
+Driver panicrg (Panic Road (Germany)): @cabinets@cabinets@clones@pinball_arcade
 Driver panicstr (Panic Street (Japan)): @working_arcade@puzzle
 Driver panikuru (Panicuru Panekuru (Japan, PPA1 Ver.A)): @puzzle
 Driver panther (Panther (bootleg?)): @cabinets@cabinets@working_arcade@shooter
@@ -23369,16 +23369,16 @@ Driver pb_l2 (Pin-Bot (L-2)): @clones@mechanical@screenless
 Driver pb_l3 (Pin-Bot (L-3)): @clones@mechanical@screenless
 Driver pb_l5 (Pin-Bot (L-5)): @mechanical@screenless
 Driver pb_p4 (Pin-Bot (P-4)): @clones@mechanical@screenless
-Driver pbaction (Pinball Action (set 1)): @cabinets@cabinets@working_arcade@adb-arcade
-Driver pbaction2 (Pinball Action (set 2, encrypted)): @cabinets@cabinets@clones@working_arcade@adb-arcade
-Driver pbaction3 (Pinball Action (set 3, encrypted)): @cabinets@cabinets@clones@working_arcade@adb-arcade
-Driver pbaction4 (Pinball Action (set 4, encrypted)): @cabinets@cabinets@clones@working_arcade@adb-arcade
-Driver pbactiont (Pinball Action (Tecfri license)): @cabinets@cabinets@clones@working_arcade@adb-arcade
+Driver pbaction (Pinball Action (set 1)): @cabinets@cabinets@working_arcade@pinball_arcade
+Driver pbaction2 (Pinball Action (set 2, encrypted)): @cabinets@cabinets@clones@working_arcade@pinball_arcade
+Driver pbaction3 (Pinball Action (set 3, encrypted)): @cabinets@cabinets@clones@working_arcade@pinball_arcade
+Driver pbaction4 (Pinball Action (set 4, encrypted)): @cabinets@cabinets@clones@working_arcade@pinball_arcade
+Driver pbactiont (Pinball Action (Tecfri license)): @cabinets@cabinets@clones@working_arcade@pinball_arcade
 Driver pballoon (Pioneer Balloon): @cabinets@cabinets@working_arcade@shooter
 Driver pballoonr (Pioneer Balloon (Rock-Ola license)): @cabinets@cabinets@clones@working_arcade@shooter
 Driver pballpup (Mission: Paintball Powered Up): @non-arcade@handheld
 Driver pbancho (Gyakuten!! Puzzle Bancho (Japan)): @working_arcade@puzzle
-Driver pbchmp95 (Pinball Champ '95): @clones@working_arcade@adb-arcade
+Driver pbchmp95 (Pinball Champ '95): @clones@working_arcade@pinball_arcade
 Driver pbem2017 (Pense Bem (2017)): @non-arcade@handheld
 Driver pbillian (Prebillian): @cabinets@cabinets@working_arcade@sports
 Driver pbillianb (Prebillian (bootleg)): @bootlegs@clones@working_arcade@sports
@@ -23537,7 +23537,7 @@ Driver pc_mtoid (Metroid (PlayChoice-10)): @working_arcade@platform
 Driver pc_ngai2 (Ninja Gaiden Episode II: The Dark Sword of Chaos (PlayChoice-10)): @working_arcade@platform
 Driver pc_ngai3 (Ninja Gaiden Episode III: The Ancient Ship of Doom (PlayChoice-10)): @working_arcade@platform
 Driver pc_ngaid (Ninja Gaiden (PlayChoice-10)): @working_arcade@platform
-Driver pc_pinbt (PinBot (PlayChoice-10)): @working_arcade@adb-arcade
+Driver pc_pinbt (PinBot (PlayChoice-10)): @working_arcade@pinball_arcade
 Driver pc_pwbld (Power Blade (PlayChoice-10)): @working_arcade@platform
 Driver pc_pwrst (Pro Wrestling (PlayChoice-10)): @working_arcade@sports
 Driver pc_radr2 (Rad Racer II (PlayChoice-10)): @working_arcade@driving
@@ -24458,9 +24458,9 @@ Driver pilot5k (Pilot 5000): @non-arcade@handheld
 Driver pimbal (Pimbal (Pinball 3000)): @mechanical@screenless
 Driver pimps (P.I.M.P.S.): @non-arcade@computer
 Driver pinball (Pinball): @mechanical@screenless
-Driver pinbo (Pinbo (set 1)): @cabinets@cabinets@working_arcade@adb-arcade
-Driver pinboa (Pinbo (set 2)): @cabinets@cabinets@clones@working_arcade@adb-arcade
-Driver pinbos (Pinbo (bootleg)): @bootlegs@cabinets@cabinets@clones@working_arcade@adb-arcade
+Driver pinbo (Pinbo (set 1)): @cabinets@cabinets@working_arcade@pinball_arcade
+Driver pinboa (Pinbo (set 2)): @cabinets@cabinets@clones@working_arcade@pinball_arcade
+Driver pinbos (Pinbo (bootleg)): @bootlegs@cabinets@cabinets@clones@working_arcade@pinball_arcade
 Driver pinchamp (Pinball Champ): @mechanical@screenless
 Driver pinchamp7 (Pinball Champ (7 digits)): @clones@mechanical@screenless
 Driver pinchamp7g (Pinball Champ (7 digits German speech)): @clones@mechanical@screenless
@@ -24594,8 +24594,8 @@ Driver pjustic (Project Justice / Moero! Justice Gakuen (Rev A)): @fighter
 Driver pk6128c (PK-6128c): @non-arcade@computer
 Driver pk8002 (PK8002 Elf): @non-arcade@computer
 Driver pk88 (Elektronika PK-88): @non-arcade@computer
-Driver pkgnsh (Pachinko Gindama Shoubu (Japan)): @working_arcade@adb-arcade
-Driver pkgnshdx (Pachinko Gindama Shoubu DX (Japan)): @working_arcade@adb-arcade
+Driver pkgnsh (Pachinko Gindama Shoubu (Japan)): @working_arcade@pinball_arcade
+Driver pkgnshdx (Pachinko Gindama Shoubu DX (Japan)): @working_arcade@pinball_arcade
 Driver pkii_dm (unknown poker game PKII/DM): @casino
 Driver pkladies (Poker Ladies): @working_arcade@casino
 Driver pkladiesbl (Poker Ladies (Censored bootleg, encrypted)): @bootlegs@clones@casino
@@ -25390,7 +25390,7 @@ Driver pwerplay (Power Play (Pinball)): @mechanical@screenless
 Driver pwheelsj (Power Wheels (Japan, Rev 2, Linkable)): @clones@working_arcade@driving
 Driver pwp14 (PWP System 14): @non-arcade@computer
 Driver pwrchanc (Powerful Chance): @medal-game
-Driver pwrflip (Power Flipper Pinball Shooting v1.33): @working_arcade@adb-arcade
+Driver pwrflip (Power Flipper Pinball Shooting v1.33): @working_arcade@pinball_arcade
 Driver pwrgoal (Taito Power Goal (Ver 2.5O 1994/11/03)): @working_arcade@sports
 Driver pwrinst2 (Power Instinct 2 (US, Ver. 94/04/08)): @working_arcade@fighter
 Driver pwrinst2j (Gouketsuji Ichizoku 2 (Japan, Ver. 94/04/08)): @clones@working_arcade@fighter
@@ -33405,7 +33405,7 @@ Driver solargm (Solar Games 80-in-1 (PAL)): @non-arcade@game-console
 Driver solaride (Solar Ride): @mechanical@screenless
 Driver solarq (Solar Quest (rev 10 8 81)): @working_arcade@shooter
 Driver solarwap (Solar Wars (Sonic)): @mechanical@screenless
-Driver solarwar (Solar War): @monochrome@working_arcade@adb-arcade
+Driver solarwar (Solar War): @monochrome@working_arcade@pinball_arcade
 Driver soldam (Soldam): @working_arcade@puzzle
 Driver soldamj (Soldam (Japan)): @clones@working_arcade@puzzle
 Driver soldivid (Sol Divide - The Sword Of Darkness): @working_arcade@shooter
@@ -34079,9 +34079,9 @@ Driver spartanxtec (Spartan X (Tecfri hardware bootleg)): @bootlegs@cabinets@cab
 Driver spatter (Spatter (315-5xxx)): @cabinets@cabinets@working_arcade@maze
 Driver spattera (Spatter (315-5099)): @cabinets@cabinets@clones@working_arcade@maze
 Driver spawn (Spawn In the Demon's Hand (Rev B)): @shooter
-Driver spbactn (Super Pinball Action (US)): @working_arcade@adb-arcade
-Driver spbactnj (Super Pinball Action (Japan)): @clones@working_arcade@adb-arcade
-Driver spbactnp (Super Pinball Action (prototype)): @clones@adb-arcade
+Driver spbactn (Super Pinball Action (US)): @working_arcade@pinball_arcade
+Driver spbactnj (Super Pinball Action (Japan)): @clones@working_arcade@pinball_arcade
+Driver spbactnp (Super Pinball Action (prototype)): @clones@pinball_arcade
 Driver spc1000 (SPC-1000): @non-arcade@computer
 Driver spc1500 (SPC-1500): @non-arcade@computer
 Driver spc4000 (Super Play Computer 4000): @non-arcade@game-console
@@ -34156,8 +34156,8 @@ Driver spectrm4 (Spectrum (ver 4)): @clones@mechanical@screenless
 Driver spectrum (ZX Spectrum): @non-arcade@computer
 Driver speechp (Speech+): @non-arcade@screenless@calculator
 Driver speedatk (Speed Attack! (Japan)): @working_arcade@casino
-Driver speedbal (Speed Ball (set 1)): @cabinets@cabinets@working_arcade@adb-arcade
-Driver speedbala (Speed Ball (set 2)): @cabinets@cabinets@clones@working_arcade@adb-arcade
+Driver speedbal (Speed Ball (set 1)): @cabinets@cabinets@working_arcade@pinball_arcade
+Driver speedbala (Speed Ball (set 2)): @cabinets@cabinets@clones@working_arcade@pinball_arcade
 Driver speedbsk (Speed Basketball): @mechanical@new0237@screenless@not-classified
 Driver speeddrp (Speed Drop (Ver. 1.06)): @working_arcade@casino
 Driver speeddrv (Speed Driver): @screenless@driving
@@ -34918,7 +34918,7 @@ Driver supertnk (Super Tank): @working_arcade@shooter
 Driver supertr (Super Triv Quiz I): @quiz
 Driver supertr2 (Super Triv II): @working_arcade@quiz
 Driver supertr3 (Super Triv III): @working_arcade@quiz
-Driver superwng (Super Wing): @cabinets@cabinets@adb-arcade
+Driver superwng (Super Wing): @cabinets@cabinets@pinball_arcade
 Driver superx (Super-X (NTC)): @working_arcade@shooter
 Driver superxm (Super-X (Mitchell)): @clones@working_arcade@shooter
 Driver supgoal (Nerae! Super Goal (J 981218 V1.000)): @working_arcade@misc
@@ -35094,8 +35094,8 @@ Driver sx64p (SX-64 / Executive 64 (PAL)): @non-arcade@computer
 Driver sx700 (Boss SX-700 Studio Effects Processor): @non-arcade@screenless@music
 Driver sxevious (Super Xevious): @cabinets@cabinets@clones@working_arcade@shooter
 Driver sxeviousj (Super Xevious (Japan)): @cabinets@cabinets@clones@working_arcade@shooter
-Driver sxyreac2 (Pachinko Sexy Reaction 2 (Japan)): @working_arcade@adb-arcade
-Driver sxyreact (Pachinko Sexy Reaction (Japan)): @working_arcade@adb-arcade
+Driver sxyreac2 (Pachinko Sexy Reaction 2 (Japan)): @working_arcade@pinball_arcade
+Driver sxyreact (Pachinko Sexy Reaction (Japan)): @working_arcade@pinball_arcade
 Driver sy012 (SY-012 16/25 386MB VER: 5.2): @non-arcade@computer
 Driver sy019hi (SY-019H and SY-019I): @non-arcade@computer
 Driver sy35 (SY35 Music Synthesizer): @non-arcade@screenless@music
@@ -35742,8 +35742,8 @@ Driver timeline (Time Line): @mechanical@screenless
 Driver timeplt (Time Pilot): @cabinets@cabinets@working_arcade@shooter
 Driver timeplta (Time Pilot (Atari)): @cabinets@cabinets@clones@working_arcade@shooter
 Driver timepltc (Time Pilot (Centuri)): @cabinets@cabinets@clones@working_arcade@shooter
-Driver timescan (Time Scanner (set 2, System 16B)): @cabinets@cabinets@working_arcade@adb-arcade
-Driver timescan1 (Time Scanner (set 1, System 16A, FD1089B 317-0024)): @cabinets@cabinets@clones@working_arcade@adb-arcade
+Driver timescan (Time Scanner (set 2, System 16B)): @cabinets@cabinets@working_arcade@pinball_arcade
+Driver timescan1 (Time Scanner (set 1, System 16A, FD1089B 317-0024)): @cabinets@cabinets@clones@working_arcade@pinball_arcade
 Driver timesold (Time Soldiers (US Rev 3)): @working_arcade@shooter
 Driver timesold1 (Time Soldiers (US Rev 1)): @clones@working_arcade@shooter
 Driver timetp36 (Super Game 36-in-1 (TimeTop SuperGame) (PAL)): @non-arcade@all_in1@game-console
@@ -35949,7 +35949,7 @@ Driver tom_12 (Theatre Of Magic (1.2X)): @clones@mechanical@screenless
 Driver tom_12a (Theatre Of Magic (1.2A)): @clones@mechanical@screenless@working_arcade
 Driver tom_13 (Theatre Of Magic (1.3X)): @mechanical@screenless
 Driver tom_14h (Theatre Of Magic (1.4H)): @clones@mechanical@screenless
-Driver tomagic (Tom Tom Magic): @working_arcade@adb-arcade
+Driver tomagic (Tom Tom Magic): @working_arcade@pinball_arcade
 Driver tomahawk (Tomahawk 777 (rev 5)): @cabinets@cabinets@working_arcade@shooter
 Driver tomahawk1 (Tomahawk 777 (rev 1)): @cabinets@cabinets@clones@working_arcade@shooter
 Driver tomcat (TomCat (prototype)): @working_arcade@shooter
@@ -37288,8 +37288,8 @@ Driver videomat (Videomat (Polish bootleg)): @bootlegs@clones@working_arcade@cas
 Driver videopac (Videopac G7000 (Europe)): @non-arcade@game-console
 Driver videopacf (Videopac C52 (France)): @non-arcade@game-console
 Driver videopacp (Videopac+ G7400 (Europe)): @non-arcade@game-console
-Driver videopin (Video Pinball (16 PROMs version)): @monochrome@working_arcade@adb-arcade
-Driver videopina (Video Pinball (4 ROMs version)): @clones@monochrome@working_arcade@adb-arcade
+Driver videopin (Video Pinball (16 PROMs version)): @monochrome@working_arcade@pinball_arcade
+Driver videopina (Video Pinball (4 ROMs version)): @clones@monochrome@working_arcade@pinball_arcade
 Driver videopkr (Video Poker): @working_arcade@casino
 Driver videtrna (Videotron Poker (normal controls)): @clones@working_arcade@casino
 Driver videtron (Videotron Poker (cards selector, set 1)): @working_arcade@casino
@@ -37508,8 +37508,8 @@ Driver vsnetscra (Versus Net Soccer (ver AAA)): @clones@working_arcade@sports
 Driver vsnetscreb (Versus Net Soccer (ver EAB)): @clones@working_arcade@sports
 Driver vsnetscrj (Versus Net Soccer (ver JAB)): @clones@working_arcade@sports
 Driver vsnetscru (Versus Net Soccer (ver UAB)): @clones@working_arcade@sports
-Driver vspinbal (Vs. Pinball (US, set PN4 E-1)): @working_arcade@adb-arcade
-Driver vspinbalj (Vs. Pinball (Japan, set PN3 B)): @clones@working_arcade@adb-arcade
+Driver vspinbal (Vs. Pinball (US, set PN4 E-1)): @working_arcade@pinball_arcade
+Driver vspinbalj (Vs. Pinball (Japan, set PN3 B)): @clones@working_arcade@pinball_arcade
 Driver vsplus (Vs Power Plus 30-in-1): @non-arcade@all_in1@handheld
 Driver vsskykid (Vs. Super SkyKid): @working_arcade@shooter
 Driver vsslalom (Vs. Slalom): @working_arcade@sports
@@ -37840,8 +37840,8 @@ Driver wipeout (Wipeout (rev.2)): @mechanical@screenless
 Driver wiping (Wiping): @cabinets@cabinets@working_arcade@maze
 Driver wirels60 (Wireless 60): @non-arcade@game-console
 Driver wiseguy (Wise Guy): @cabinets@cabinets@clones@working_arcade@puzzle
-Driver witch (Witch): @working_arcade@adb-arcade
-Driver witchb (Witch (with ranking)): @clones@working_arcade@adb-arcade
+Driver witch (Witch): @working_arcade@pinball_arcade
+Driver witchb (Witch (with ranking)): @clones@working_arcade@pinball_arcade
 Driver witchcrd (Witch Card (Video Klein CPU box, set 1)): @working_arcade@casino
 Driver witchcrda (Witch Card (Spanish, witch game, set 1)): @clones@working_arcade@casino
 Driver witchcrdb (Witch Card (Spanish, witch game, set 2)): @clones@working_arcade@casino
@@ -37857,8 +37857,8 @@ Driver witchgme (Witch Game (Video Klein, set 1)): @working_arcade@casino
 Driver witchgmea (Witch Game (Video Klein, set 2)): @clones@casino
 Driver witchjol (Jolli Witch (Export, 6T/12T ver 1.57D)): @working_arcade@casino
 Driver witchryl (Witch Royal (Export version 2.1)): @working_arcade@casino
-Driver witchs (Witch (Sega license)): @clones@working_arcade@adb-arcade
-Driver witchstar (Witch Star): @clones@working_arcade@adb-arcade
+Driver witchs (Witch (Sega license)): @clones@working_arcade@pinball_arcade
+Driver witchstar (Witch Star): @clones@working_arcade@pinball_arcade
 Driver wits (Wit's (Japan)): @cabinets@cabinets@working_arcade@maze
 Driver wivernwg (Wivern Wings): @working_arcade@shooter
 Driver wiwcs (Where in the World is Carmen Sandiego? (handheld)): @non-arcade@handheld
