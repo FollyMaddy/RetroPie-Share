@@ -41,34 +41,27 @@ function depends_add-mamedev-systems() {
 function gui_add-mamedev-systems() {
     local csv=()
     csv=(
-",menu_item,empty,to_do,"
-",v HELP > required : install both (advice : install the binaries),,,"
-",Install mame,,package_setup mame,"
-",Install lr-mess,,package_setup lr-mess,"
-",,,,"
-",v HELP > optional : to use the script offline,,,"
-",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0237_systems_sorted_info -o /opt/retropie/emulators/mame/mame0237_systems_sorted_info,"
-",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0237_systems_sorted_info,"
-",,,,"
-",v HELP > install handheld / plug&play and the required downloads,,,"
-",Handheld / plug&play and downloads > Submenu,,subgui_add-mamedev-systems_forum,"
-",,,,"
-",v HELP > install systems with extra functions,,,"
-",Systems with extras > Submenu,,subgui_add-mamedev-systems_extras,"
-",,,,"
-",v HELP > install from predefined sorted lists,,,"
-",Systems sorted > Submenu,,subgui_add-mamedev-systems_sort,"
-",,,,"
-",v HELP > search on pattern(s) and install from your own list,,,"
-",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,"
-",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,"
-",,,,"
-",v HELP > install from lists with all systems,,,"
-",All systems > Submenu,,subgui_add-mamedev-systems_all,"
-",,,,"
-",v HELP > browse and get online files ),,,"
-",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,"
-",^ HELP > only available with the correct input !),,,"
+",menu_item,,to_do,,,,,help_to_do,"
+",About this script,,dialog --msgbox \"This project makes use of MAME and LR-MESS for emulating.\nMAME and LR-MESS support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to create/install module-scripts on the fly.\n\nThis script combines the work and ideas of many people :\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\" 22 76,,,,,dialog --msgbox \"No help available\" 22 76,"
+",,,,,,,,,"
+",Install MAME ( required by this script ),,package_setup mame,,,,,dialog --msgbox \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\" 22 76,"
+",Install LR-MESS ( should be installed too ),,package_setup lr-mess,,,,,dialog --msgbox \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\" 22 76,"
+",,,,,,,,,"
+",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0237_systems_sorted_info -o /opt/retropie/emulators/mame/mame0237_systems_sorted_info,,,,,dialog --msgbox \"optional : to use the script offline\" 22 76,"
+",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0237_systems_sorted_info,,,,,dialog --msgbox \"optional : to use the script offline\" 22 76,"
+",,,,,,,,,"
+",Handheld / plug&play and downloads > Submenu,,subgui_add-mamedev-systems_forum,,,,,dialog --msgbox \"install handheld / plug&play and the required downloads\" 22 76,"
+",,,,,,,,,"
+",Systems with extras > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog --msgbox \" install systems with extra functions\" 22 76,"
+",,,,,,,,,"
+",Systems sorted > Submenu,,subgui_add-mamedev-systems_sort,,,,,dialog --msgbox \"install from predefined sorted lists\" 22 76,"
+",,,,,,,,,"
+",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,,,,,dialog --msgbox \"search on pattern(s) and install from your own list\" 22 76,"
+",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,,,,,dialog --msgbox \"search on pattern(s) and install from your own list\" 22 76,"
+",,,,,,,,,"
+",All systems > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog --msgbox \"Go to a submenu and choose from different lists showing all systems in by :\n – system names in  alfabetical order\n – descriptions in  alfabetical order\n – system names\n – descriptions\" 22 76,"
+",,,,,,,,,"
+",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog --msgbox \"Browse and get online files.\n(only available with the correct input)\" 22 76,"
     )
     build_menu_add-mamedev-systems
 }
@@ -206,6 +199,7 @@ function choose_extra_options_add() {
 #so if we want to add more options , slotdevices or extensions we replace spaces with *
 #later in the run_generator_script they are replaced again with spaces
 #the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+#example on how we can create the extensions options : /opt/retropie/emulators/mame/mame -listmedia hbf700p|sed 's/  \./*\./g'
     local csv=()
     csv=(
 ",menu_item_handheld_description,to_do driver_used_for_installation,"
@@ -225,8 +219,8 @@ function choose_extra_options_add() {
 ",FM-Towns + 6M ram with floppy1 support,,run_generator_script fmtowns fmtowns -ram*6M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin,"
 ",FM-Towns + 6M ram with cdrom support,,run_generator_script fmtowns fmtowns -ram*6M cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr,"
 ",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
-",MSX2 Sony HB-F700P + fmpac with cartridge2 support,,run_generator_script hbf700p msx fmpac cartridge2 cart2 .rom,"
-",MSX2 Sony HB-F700P + fmpac with disk support,,run_generator_script hbf700p msx fmpac floppydisk flop .dsk,"
+",MSX2 Sony HB-F700P + fmpac with cartridge2 support,,run_generator_script hbf700p msx fmpac cartridge2 cart2 *.mx1*.bin*.rom,"
+",MSX2 Sony HB-F700P + fmpac with disk support,,run_generator_script hbf700p msx fmpac floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm,"
 ",Tandy MC-10 micro color computer + 16k with cass support,,run_generator_script mc10 mc10 -ext*ram cassette cass .wav*.cas*.c10*.k7,"
 ",Tandy MC-10 micro color computer + MCX-128k with cass support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .wav*.cas*.c10*.k7,"
 ",Tandy TRS-80 Model III + DOS in flop1 with flop2 support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1,"
@@ -240,14 +234,18 @@ function choose_autoboot_add() {
 #so if we want to add more options , slotdevices or extensions we replace spaces with *
 #later in the run_generator_script they are replaced again with spaces
 #the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+#example on how we can create the extensions options : /opt/retropie/emulators/mame/mame -listmedia hbf700p|sed 's/  \./*\./g'
 #
 # adding a newline can be done in multiple ways => \\'\\\\\n\\' (very good) or => \\\\\\n (works most of the times)
 # adding some special characters isn't always possible the normal way, escaping the char with multiple \
 # this is because the csv line is quoted with doublequotes and the delimiter  , is used to separate the "cells", also an extra * delimiter is used within "cells" to create a virtual 3D "worksheet"
-# adding special characters is possible using ascii hex-code (https://www.cyberciti.biz/faq/unix-linux-sed-ascii-control-codes-nonprintable/)
+# adding special characters is possible using ascii hex-code 
+# check (https://www.cyberciti.biz/faq/unix-linux-sed-ascii-control-codes-nonprintable/)
+# or (https://www.freecodecamp.org/news/ascii-table-hex-to-ascii-value-character-code-chart-2/)
 # " => \\'\\\\\x22\\'
 # * => \\'\\\\\x2a\\'
 # , => \\'\\\\\x2c\\'
+# : => \\'\\\\\x3a\\'
 
     local csv=()
     csv=(
@@ -269,12 +267,21 @@ function choose_autoboot_add() {
 ",Dragon 32 + floppy + run\"%BASENAME%\" (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.bas*.bin,"
 ",Electron + cassette + *tape chain\"\"(auto),,run_generator_script electron electron -autoboot_delay*2*-autoboot_command*\\'\\\\\x2a\\'TAPE\\'\\\\\n\\'CHAIN\\'\\\\\x22\\'\\'\\\\\x22\\'\\'\\\\\n\\' cassette cass .wav*.csw*.uef,"
 ",Electron + cassette + *tape *run(auto),,run_generator_script electron electron -autoboot_delay*2*-autoboot_command*\\'\\\\\x2a\\'TAPE\\'\\\\\n\\'\\'\\\\\x2a\\'RUN\\'\\\\\n\\' cassette cass .wav*.csw*.uef,"
+",MSX1 Philips VG-8020-20 + cassette + run\"cas:\" + run (auto),,run_generator_script vg802020 msx -autoboot_delay*6*-autoboot_command*run\\'\\\\\x22\\'cas\\'\\\\\x3a\\'\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' cassette cass *.wav*.tap*.cas,"
+",MSX1 Philips VG-8020-20 + cassette + bload\"cas:\" + run (auto),,run_generator_script vg802020 msx -autoboot_delay*6*-autoboot_command*bload\\'\\\\\x22\\'cas\\'\\\\\x3a\\'\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' cassette cass *.wav*.tap*.cas,"
+",MSX2 Sony HB-F700P + disk + run\"%BASENAME%\" (auto),,run_generator_script hbf700p msx -autoboot_delay*5*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk,"
+",MSX2 Sony HB-F700P + disk + bload\"%BASENAME%\" + run (auto),,run_generator_script hbf700p msx -autoboot_delay*5*-autoboot_command*bload\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk,"
+",Sinclair ZX-81 + cassette + load\"\" (auto) > play tape (+ run) (manual),,run_generator_script zx81 zx81 -autoboot_delay*3*-autoboot_command*j\\'\\\\\x22\\'\\'\\\\\x22\\'\\'\\\\\n\\' cassette cass  *.wav*.p*.81*.tzx,"
     )
 #preserved-test-lines 
 #,r did not work for the tested bas files, more testing required (does work with coco3) (now using run) (we can add .bas or .bin to the zip or dsk file, then we are more flexible : removed in the working lines)
 #",Dragon 32 + floppy + load\"%BASENAME%.bas\" + run (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%.bas\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 #did not work for the tested bin files, more testing required (we can add .bas or .bin to the zip or dsk file, then we are more flexible : removed in the working lines)
 #",Dragon 32 + floppy + loadm\"%BASENAME%.bin\":exec (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%.bin\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+#disk basic had to be turned off with shift during testing, not ideal, we can better take an MSX1 for cassette
+#",MSX2 Sony HB-F700P + cassette + bload\"cas:\" + run (auto),,run_generator_script hbf700p msx -autoboot_delay*15*-autoboot_command*bload\\'\\\\\x22\\'cas\\'\\\\\x22\\'\\'\\\\\x3a\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' cassette cass *.wav*.tap*.cas,"
+#choosed this system as alternative,too bad, it has an issue : typing the autoboot is not in sync
+#",MSX1 Toshiba HX-10DP + cassette + bload\"cas:\" + run (auto),,run_generator_script hx10 msx -autoboot_delay*6*-autoboot_command*bload\\'\\\\\x22\\'cas\\'\\\\\x3a\\'\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' cassette cass *.wav*.tap*.cas,"
 
     build_menu_add-mamedev-systems
 }
@@ -356,8 +363,11 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
     csv=(
 ",menu_item,empty,to_do,"
 ",v HELP > Browse whole packs and then download files,,,"
-",mame-0.231-merged > RetroPie/BIOS/mame,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
-",mame-sl > RetroPie/downloads/mame-sl,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download/mame-sl mame-sl/mame-sl/ download,"
+",mame-0.231-merged > RetroPie/BIOS/mame,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
+",mame-sl > RetroPie/downloads/mame-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/download/mame-sl mame-sl/mame-sl/ download,"
+",,,,"
+",v HELP > Browse BIOS files < NOT FOUND in last runcommand.log,,,"
+",BIOS(es) NOT FOUND < mame-0.231-merged > RetroPie/BIOS/mame ,,subform_add-mamedev-systems_downloads_wget_A \"$(echo /\\\<$(cat /dev/shm/runcommand.log |grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\/\\\</g')\" /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
 ",,,,"
 ",v HELP > Get all files from a specific catagory,,,"
 ",all_in1 < mame-0.231-merged > RetroPie/roms/all_in1,,subform_restricted_multi_download_wget_A '/@all_in1/' .7z /home/$user/RetroPie/roms/all_in1 mame-0.231-merged download,"
@@ -371,12 +381,20 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
     build_menu_add-mamedev-systems
 
 #preserve the one file links
-#",MESS-0.151.BIOS.ROMs > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download MESS-0.151.BIOS.ROMs download,"
-#",MAME_0.193_ROMs_bios-devices > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download MAME_0.193_ROMs_bios-devices download,"
-#",Mame0228 + SL > RetroPie/downloads/mame0228-sl,,subform_add-mamedev-systems_downloads_wget_A /home/$user/RetroPie/download/mame0228-sl MAME_0.228_Software_List_ROMs_machines-bios-devices download,"
+#",MESS-0.151.BIOS.ROMs > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/download MESS-0.151.BIOS.ROMs download,"
+#",MAME_0.193_ROMs_bios-devices > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/download MAME_0.193_ROMs_bios-devices download,"
+#",Mame0228 + SL > RetroPie/downloads/mame0228-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/download/mame0228-sl MAME_0.228_Software_List_ROMs_machines-bios-devices download,"
 #working test with one "not-equal" and one "equal" other combinations don't seem to work
 #",shooter < mame-0.231-merged > RetroPie/roms/shooter,,subform_restricted_multi_download_wget_A '!/1941/&&/@shooter/' .7z /home/$user/RetroPie/roms/shooter mame-0.231-merged download,"
 
+#test to get all bios files for non-arcade systems : not a perfect solution yet, but, perhaps, can be used later
+#",v HELP > Get all files from a specific catagory,,,"
+#",BIOS/mame < mame-0.231-merged > RetroPie/BIOS/mame,,subform_restricted_multi_download_wget_A '/@computer/' .7z /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
+
+#exact matching the BIOS ERROR(s) in runcommand.log 
+#we need to add \< for the beginning of the word and a \. for the end of the word to get an exact match
+#the awk command for "a500" then looks like : awk /\<a500\./||/\<a500kbd_us\./
+#https://stackoverflow.com/questions/17960758/how-to-use-awk-to-extract-a-line-with-exact-match
 
 }
 
@@ -385,11 +403,11 @@ function subform_add-mamedev-systems_downloads_wget_A() {
     local csv=()
     local download_csv=()
     local download_read
-    local website_url="$4"
-    local website_path="$3"
-    local rompack_name="$2"
-    local destination_path="$1"
-    local reserved=""
+    local website_url="$5"
+    local website_path="$4"
+    local rompack_name="$3"
+    local destination_path="$2"
+    local search_pattern="$1"
     local manual_input=""
 
     manual_input=$(\
@@ -404,22 +422,33 @@ dialog \
 "Website path >X (/X):" 2 1 "$website_path" 2 30 76 100 \
 "rompack name:" 3 1 "$rompack_name" 3 30 76 100 \
 "destination path:" 4 1 "$destination_path" 4 30 76 100 \
-"reserved:" 5 1 "$reserved" 5 30 76 100 \
+"search pattern:" 5 1 "$search_pattern" 5 30 76 100 \
+"" 6 1 "" 6 0 0 0 \
+"" 7 1 "" 6 0 0 0 \
+"" 8 1 "" 6 0 0 0 \
+"" 9 1 "" 6 0 0 0 \
 2>&1 >/dev/tty \
 )
+#maximum charachters that can be displayed in empty line (6-9) " ===================================================================== "
 
     website_url=$(echo "$manual_input" | sed -n 1p)
     website_path=$(echo "$manual_input" | sed -n 2p)
     rompack_name=$(echo "$manual_input" | sed -n 3p)
     destination_path=$(echo "$manual_input" | sed -n 4p)
-    reserved=$(echo "$manual_input" | sed -n 5p)
+#issue with using cmd : search_pattern=$(echo "$manual_input" | sed -n 5p)
+#if search_pattern is also in the destination_path then all items of the csv are displayed !!!
+#to fix this you had to add a space to get a correct search ( / adam/ that way there isn't a match with /roms/adam !!! )
+#in next command we add a space to fix this issue
+    search_pattern=$(echo "$manual_input" | sed -n 5p | sed 's/\//\/ /')
 
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
     echo "reading the website data"
-    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read download_read;do download_csv+=("$download_read");done < <(echo \",,,,\";curl https://$website_url/$website_path/$rompack_name|grep "View Contents"|cut -d '"' -f2|while read line;do echo "\",Get '$line',,download_file_with_wget $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
-    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<"${download_csv[*]}"));unset IFS
+    while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "View Contents"|cut -d '"' -f2|while read line;do echo "\",Get '$line',,download_file_with_wget $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
+    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
+    #we need to add '",,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    csv=( ",,,," "${csv[@]}" )
+    [[ ${!csv[@]} == 0 ]] && csv=( ",,,," ",no search results found, try again,,," )
     else
     	if [[ $(echo $website_url|sha1sum) == 9cf96ce8e6a93bd0c165799d9a0e6bb79beb1fb9* ]];then
 	csv=( 
@@ -481,7 +510,8 @@ dialog \
     for rd in ${!restricted_download_csv[@]};do 
     #echo ${restricted_download_csv[$rd]}
     #sleep 0.3
-    wget -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension
+    #show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
+    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
     done
     chown -R $user:$user "$destination_path"
     else 
@@ -595,7 +625,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?" 22 76 16)
+        local cmd=(dialog --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -606,12 +636,17 @@ function build_menu_add-mamedev-systems() {
             #this is done because adding the string in the `sed` function will not work
             #and now we can paste the standalone run_generator_script within the function
             #so we can work on one run_generator_script and paste it in when it is updated
-            IFS=","
-            if [[ "$(set ${csv[$choice]};echo $4)" == run_generator_script ]];then 
-            run="$(set ${csv[$choice]};echo $4) $(set ${csv[$choice]};echo $2)"
-            else
-            run="$(set ${csv[$choice]};echo $4)"
-            fi
+	    if [[ $choice == HELP* ]];then
+	        IFS=","
+		run="$(set ${csv[$(echo $choice|cut -d ' ' -f2)]};echo $9)"
+	    else
+		IFS=","
+		if [[ "$(set ${csv[$choice]};echo $4)" == run_generator_script ]];then 
+		run="$(set ${csv[$choice]};echo $4) $(set ${csv[$choice]};echo $2)"
+		else
+		run="$(set ${csv[$choice]};echo $4)"
+		fi
+	    fi
             joy2keyStop
             joy2keyStart
             unset IFS
@@ -1401,16 +1436,17 @@ function download_file_with_wget() {
 clear
 echo "getting your desired file"
 mkdir -p $3
+#show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
 #$1=filename $2=from_link $3=to_path
 if [ ! -f "$3/$1" ]; then
-    wget -nv -O $3/$1 https://$2/$1
+    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O $3/$1 https://$2/$1 2>&1
     #doesn't work, perhaps the command or redirecting is the problem
     # curl -L -O https://$2/$1 --create-dirs -o $3/$1
     sleep 10
 else 
     read -r -p "File exists !, do you want to overwrite it ? [Y/N] " response
        if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]];then 
-           wget -nv -O $3/$1 https://$2/$1
+           wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O $3/$1 https://$2/$1 2>&1
        fi
 fi
 chown -R $user:$user "$3"
