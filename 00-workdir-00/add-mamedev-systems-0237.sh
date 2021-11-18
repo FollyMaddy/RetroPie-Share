@@ -11,7 +11,8 @@
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------
-# INFORMATION ABOUT THE CSV STRUCTURE USED FOR GENERATING A GUI/SUB-GUI :
+# INFORMATION ABOUT THE CSV STRUCTURE
+# USED FOR GENERATING A GUI/SUB-GUI :
 # - the first value isn't used for the menu, that way the menu begins with 1
 # - this first value should be empty or contain a description of the specific column
 # - make sure every line begins and ends with quotes because of possible spaces
@@ -42,26 +43,26 @@ function gui_add-mamedev-systems() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",About this script,,dialog --msgbox \"This project makes use of MAME and LR-MESS for emulating.\nMAME and LR-MESS support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to create/install module-scripts on the fly.\n\nThis script combines the work and ideas of many people :\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\" 22 76,,,,,dialog --msgbox \"No help available\" 22 76,"
+",About this script,,dialog_message \"This project makes use of MAME and LR-MESS for emulating.\nMAME and LR-MESS support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to create/install module-scripts on the fly.\n\nThis script combines the work and ideas of many people :\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\",,,,,dialog_message \"No help available\","
 ",,,,,,,,,"
-",Install MAME ( required by this script ),,package_setup mame,,,,,dialog --msgbox \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\" 22 76,"
-",Install LR-MESS ( should be installed too ),,package_setup lr-mess,,,,,dialog --msgbox \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\" 22 76,"
+",Install MAME    ( required by this script ),,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-MESS ( should be installed too ),,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",,,,,,,,,"
-",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0237_systems_sorted_info -o /opt/retropie/emulators/mame/mame0237_systems_sorted_info,,,,,dialog --msgbox \"optional : to use the script offline\" 22 76,"
-",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0237_systems_sorted_info,,,,,dialog --msgbox \"optional : to use the script offline\" 22 76,"
+",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0237_systems_sorted_info -o /opt/retropie/emulators/mame/mame0237_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally you can use the script offline.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
+",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0237_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
 ",,,,,,,,,"
-",Handheld / plug&play and downloads > Submenu,,subgui_add-mamedev-systems_forum,,,,,dialog --msgbox \"install handheld / plug&play and the required downloads\" 22 76,"
+",Handheld / plug&play and downloads > Submenu,,subgui_add-mamedev-systems_forum,,,,,dialog_message \"install handheld / plug&play and the required downloads\","
 ",,,,,,,,,"
-",Systems with extras > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog --msgbox \" install systems with extra functions\" 22 76,"
+",Systems with extras > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \" install systems with extra functions\","
 ",,,,,,,,,"
-",Systems sorted > Submenu,,subgui_add-mamedev-systems_sort,,,,,dialog --msgbox \"install from predefined sorted lists\" 22 76,"
+",Systems sorted > Submenu,,subgui_add-mamedev-systems_sort,,,,,dialog_message \"install from predefined sorted lists\","
 ",,,,,,,,,"
-",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,,,,,dialog --msgbox \"search on pattern(s) and install from your own list\" 22 76,"
-",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,,,,,dialog --msgbox \"search on pattern(s) and install from your own list\" 22 76,"
+",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,,,,,dialog_message \"search on pattern(s) and install from your own list\","
+",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,,,,,dialog_message \"search on pattern(s) and install from your own list\","
 ",,,,,,,,,"
-",All systems > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog --msgbox \"Go to a submenu and choose from different lists showing all systems in by :\n – system names in  alfabetical order\n – descriptions in  alfabetical order\n – system names\n – descriptions\" 22 76,"
+",All systems > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog_message \"Go to a submenu and choose from different lists showing all systems in by :\n – system names in  alfabetical order\n – descriptions in  alfabetical order\n – system names\n – descriptions\","
 ",,,,,,,,,"
-",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog --msgbox \"Browse and get online files.\n(only available with the correct input)\" 22 76,"
+",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog_message \"Browse and get online files.\n(only available with the correct input)\","
     )
     build_menu_add-mamedev-systems
 }
@@ -106,16 +107,16 @@ function mame_data_read() {
 function subgui_add-mamedev-systems_forum() {
     local csv=()
     csv=(
-",menu_item_handheld_description,to_do driver_used_for_installation,"
-",All in One Handheld and Plug and Play,,run_generator_script ablmini,"
-",Classic Handheld Systems,,run_generator_script alnattck,"
-",Game and Watch,,run_generator_script gnw_ball,"
-",JAKKS Pacific TV Games,,run_generator_script jak_batm,"
-",Konami Handheld,,run_generator_script kbilly,"
-",Tiger Handheld Electronics,,run_generator_script taddams,"
-",Tiger R-Zone,,run_generator_script rzbatfor,"
-",,,,"
-",Select downloads,,subgui_add-mamedev-systems_downloads,"
+",menu_item_handheld_description,,to_do driver_used_for_installation,,,,,help_to_do,"
+",All in One Handheld and Plug and Play,,run_generator_script ablmini,,,,,dialog_message \"HELP\","
+",Classic Handheld Systems,,run_generator_script alnattck,,,,,dialog_message \"HELP\","
+",Game and Watch,,run_generator_script gnw_ball,,,,,dialog_message \"HELP\","
+",JAKKS Pacific TV Games,,run_generator_script jak_batm,,,,,dialog_message \"HELP\","
+",Konami Handheld,,run_generator_script kbilly,,,,,dialog_message \"HELP\","
+",Tiger Handheld Electronics,,run_generator_script taddams,,,,,dialog_message \"HELP\","
+",Tiger R-Zone,,run_generator_script rzbatfor,,,,,dialog_message \"HELP\","
+",,,,,,,,,"
+",Select downloads,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"HELP\","
     )
     build_menu_add-mamedev-systems
 }
@@ -124,12 +125,10 @@ function subgui_add-mamedev-systems_forum() {
 function subgui_add-mamedev-systems_extras() {
     local csv=()
     csv=(
-",menu_item,empty,to_do,"
-",v HELP > systems + extra hardware (working better than default),,,"
-",Systems: with extra options,,choose_extra_options_add descriptions,"
-",,,,"
-",v HELP > experimental ! : install systems with autoboot function,,,"
-",Systems: full/semi automatic boot (with/without extra options),,choose_autoboot_add descriptions,"
+",menu_item,,to_do,,,,,help_to_do,"
+",Systems: with extra options,,choose_extra_options_add descriptions,,,,,dialog_message \"install systems + extra hardware (working better than default)\","
+",,,,,,,,,"
+",Systems: full/semi automatic boot (with/without extra options),,choose_autoboot_add descriptions,,,,,dialog_message \"experimental : install systems with autoboot function\","
     )
     build_menu_add-mamedev-systems
 }
@@ -138,12 +137,12 @@ function subgui_add-mamedev-systems_extras() {
 function subgui_add-mamedev-systems_all() {
     local csv=()
     csv=(
-",menu_item,empty,to_do,"
-",All (alphabetical) upon descriptions,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,"
-",All (alphabetical) upon system names,,subgui_add-mamedev-systems_alphabetical_order_selection systems,"
-",,,,"
-",All upon descriptions,,choose_add descriptions,"
-",All upon system names,,choose_add,"
+",menu_item,,to_do,,,,,help_to_do,"
+",All (alphabetical) upon descriptions,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,,,,,dialog_message \"HELP\","
+",All (alphabetical) upon system names,,subgui_add-mamedev-systems_alphabetical_order_selection systems,,,,,dialog_message \"HELP\","
+",,,,,,,,,"
+",All upon descriptions,,choose_add descriptions,,,,,dialog_message \"HELP\","
+",All upon system names,,choose_add,,,,,dialog_message \"HELP\","
     )
     build_menu_add-mamedev-systems
 }
@@ -154,7 +153,7 @@ function subgui_add-mamedev-systems_sort() {
 #
     local csv=()
     csv=(
-",menu_item,empty,to_do,"
+",menu_item,,to_do,"
 ",Forum list upon descriptions,,choose_add descriptions @forum,"
 ",Forum list upon system names,,choose_add systems @forum,"
 ",,,,"
@@ -257,11 +256,13 @@ function choose_autoboot_add() {
 ",Coco 2 floppy + os-9 dos (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*dos\\\\\\n floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 2 + floppy + load\"%BASENAME%\" + run (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 2 + floppy + run\"%BASENAME%\" (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 2 + floppy + loadm\"%BASENAME%\":exec (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 3 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Coco 3 + ram + cassette + cloadm:exec (auto),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
 ",Coco 3 + floppy + os-9 dos (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*dos\\\\\\n floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 3 + floppy + load\"%BASENAME%\" + run (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 3 + floppy + run\"%BASENAME%\" (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + floppy + loadm\"%BASENAME%\":exec (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Dragon 32 + ram + cassette + cload (auto) > run (manual),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
 ",Dragon 32 + ram + cassette + cloadm:exec (auto),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
 ",Dragon 32 + floppy + run\"%BASENAME%\" (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.bas*.bin,"
@@ -273,7 +274,7 @@ function choose_autoboot_add() {
 ",MSX2 Sony HB-F700P + disk + bload\"%BASENAME%\" + run (auto),,run_generator_script hbf700p msx -autoboot_delay*5*-autoboot_command*bload\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk,"
 ",Sinclair ZX-81 + cassette + load\"\" (auto) > play tape (+ run) (manual),,run_generator_script zx81 zx81 -autoboot_delay*3*-autoboot_command*j\\'\\\\\x22\\'\\'\\\\\x22\\'\\'\\\\\n\\' cassette cass  *.wav*.p*.81*.tzx,"
     )
-#preserved-test-lines 
+#preserved-test-lines (beware they contain extension, which have to be removed !)
 #,r did not work for the tested bas files, more testing required (does work with coco3) (now using run) (we can add .bas or .bin to the zip or dsk file, then we are more flexible : removed in the working lines)
 #",Dragon 32 + floppy + load\"%BASENAME%.bas\" + run (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%.bas\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 #did not work for the tested bin files, more testing required (we can add .bas or .bin to the zip or dsk file, then we are more flexible : removed in the working lines)
@@ -290,7 +291,7 @@ function choose_autoboot_add() {
 function subgui_add-mamedev-systems_downloads() {
     local csv=()
     csv=(
-",menu_item,empty,to_do,"
+",menu_item,,to_do,"
 ",Download/update cheats,,download_cheats,"
 ",,,,"
 ",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
@@ -322,7 +323,7 @@ function subgui_add-mamedev-systems_downloads_gamelists() {
 function subgui_add-mamedev-systems_alphabetical_order_selection() {
     local csv=()
     local system_or_description=$1
-    csv=( ",menu_item,empty,to_do," )
+    csv=( ",menu_item,,to_do," )
     for letter in {#,{A..Z}}
     do 
       csv+=( "\",$letter upon $system_or_description,,choose_add $system_or_description$letter,\"" )
@@ -349,7 +350,7 @@ function subgui_add-mamedev-systems_search() {
 )
 
     csv=(
-",menu_item,empty,to_do,"
+",menu_item,,to_do,"
 ",Display your own sorted list,,choose_add $system_or_description $search,"
     )
     build_menu_add-mamedev-systems
@@ -361,7 +362,7 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 #
     local csv=()
     csv=(
-",menu_item,empty,to_do,"
+",menu_item,,to_do,"
 ",v HELP > Browse whole packs and then download files,,,"
 ",mame-0.231-merged > RetroPie/BIOS/mame,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
 ",mame-sl > RetroPie/downloads/mame-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/download/mame-sl mame-sl/mame-sl/ download,"
@@ -1406,6 +1407,11 @@ if [[ $generator_script_status != standalone ]];then
    rp_registerAllModules
 fi
 #end run_generator_script
+}
+
+
+function dialog_message() {
+dialog --backtitle "$__backtitle" --msgbox "$1" 22 76 2>&1 >/dev/tty
 }
 
 
