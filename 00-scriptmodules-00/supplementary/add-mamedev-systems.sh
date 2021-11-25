@@ -199,31 +199,43 @@ function choose_extra_options_add() {
 #later in the run_generator_script they are replaced again with spaces
 #the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 #example on how we can create the extensions options : /opt/retropie/emulators/mame/mame -listmedia hbf700p|sed 's/  \./*\./g'
+#2nd example on how we can create the extensions options, in this case, with added slotdevice : /opt/retropie/emulators/mame/mame -listmedia apple2ee -sl7 cffa2|sed 's/  \./*\./g'
     local csv=()
     csv=(
 ",menu_item_handheld_description,to_do driver_used_for_installation,"
-",Acorn Archimedes 305 booting RISC-OS 3.10 with floppy support,,run_generator_script aa305 archimedes -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
-",Acorn Archimedes 310 booting RISC-OS 3.10 with floppy support,,run_generator_script aa310 archimedes -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
-",Acorn Archimedes 440+4Mb booting RISC-OS 3.10 with floppy support,,run_generator_script aa440 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
-",Acorn Archimedes 440/1+4Mb booting RISC-OS 3.10 with floppy support,,run_generator_script aa4401 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
-",APF Imagination Machine with basic and cassette support,,run_generator_script apfimag apfimag_cass basic cassette cass .wav,"
-",Coco with ram and cassette only support,,run_generator_script coco coco -ext*ram cassette cass .wav*.cas,"
-",Coco 2 with ram and cassette only support,,run_generator_script coco2 coco2 -ext*ram cassette cass .wav*.cas,"
-",Coco 3 with ram and cassette only support,,run_generator_script coco3 coco3 -ext*ram cassette cass .wav*.cas,"
-",Dragon 32 with ram and cassette only support,,run_generator_script dragon32 dragon32 -ext*ram cassette cass .wav*.cas,"
-",Famicom Family BASIC (V3.0) (J) with cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
-",Famicom Playbox BASIC (Prototype V0.0) with cassette support,,run_generator_script famicom famicom_pboxbas pboxbas*-exp*fc_keyboard cassette cass .wav,"
-",Famicom Family BASIC (V2.1a) (J) with cassette support,,run_generator_script famicom famicom_famibs21a -cart1*'~/RetroPie/BIOS/mame/Family*BASIC*(V2.1a)*(J).zip'*-exp*fc_keyboard cassette cass .wav,"
-",Famicom Disk System with floppy support,,run_generator_script famicom famicom_disksys disksys floppydisk flop .fds,"
-",FM-Towns + 6M ram with floppy1 support,,run_generator_script fmtowns fmtowns -ram*6M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin,"
-",FM-Towns + 6M ram with cdrom support,,run_generator_script fmtowns fmtowns -ram*6M cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr,"
-",Nintendo Datach with cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
-",MSX2 Sony HB-F700P + fmpac with cartridge2 support,,run_generator_script hbf700p msx fmpac cartridge2 cart2 *.mx1*.bin*.rom,"
-",MSX2 Sony HB-F700P + fmpac with disk support,,run_generator_script hbf700p msx fmpac floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm,"
-",Tandy MC-10 micro color computer + 16k with cass support,,run_generator_script mc10 mc10 -ext*ram cassette cass .wav*.cas*.c10*.k7,"
-",Tandy MC-10 micro color computer + MCX-128k with cass support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .wav*.cas*.c10*.k7,"
-",Tandy TRS-80 Model III + DOS in flop1 with flop2 support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1,"
+",Acorn Archimedes 305 booting RISC-OS 3.10 + floppy support,,run_generator_script aa305 archimedes -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
+",Acorn Archimedes 310 booting RISC-OS 3.10 + floppy support,,run_generator_script aa310 archimedes -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
+",Acorn Archimedes 440+4Mb booting RISC-OS 3.10 + floppy support,,run_generator_script aa440 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
+",Acorn Archimedes 440/1+4Mb booting RISC-OS 3.10 + floppy support,,run_generator_script aa4401 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd,"
+",APF Imagination Machine + basic + cassette support,,run_generator_script apfimag apfimag_cass basic cassette cass .wav,"
+",Apple //e(e) + compact flash harddrive support,,run_generator_script apple2ee apple2ee -sl7*cffa2 harddisk hard1 *.chd*.hd *.hdv*.2mg*.hdi,"
+",Apple IIgs(ROM3) + compact flash harddrive support,,run_generator_script apple2gs apple2gs -sl7*cffa2 harddisk hard1 *.chd*.hd *.hdv*.2mg*.hdi,"
+",Coco with ram + cassette support,,run_generator_script coco coco -ext*ram cassette cass .wav*.cas,"
+",Coco 2 + ram + cassette support,,run_generator_script coco2 coco2 -ext*ram cassette cass .wav*.cas,"
+",Coco 2 + ram + floppy 525dd support,,run_generator_script coco2 coco2 -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + ram + cassette support,,run_generator_script coco3 coco3 -ext*ram cassette cass .wav*.cas,"
+",Coco 3 + ram + floppy 525dd support,,run_generator_script coco3 coco3 -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Dragon 32 + ram + cassette support,,run_generator_script dragon32 dragon32 -ext*ram cassette cass .wav*.cas,"
+",Dragon 32 + ram + floppy 525qd support,,run_generator_script dragon32 dragon32 -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",(Tano) Dragon 64 NTSC + ram + cassette support,,run_generator_script tanodr64 dragon64 -ext*ram cassette cass .wav*.cas,"
+",(Tano) Dragon 64 NTSC + ram + dragon_fdc_floppy 525qd support,,run_generator_script tanodr64 dragon64 -ext*multi*-ext:multi:slot1*ram*-ext*dragon_fdc floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Famicom Family BASIC (V3.0) (J) + cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
+",Famicom Playbox BASIC (Prototype V0.0) + cassette support,,run_generator_script famicom famicom_pboxbas pboxbas*-exp*fc_keyboard cassette cass .wav,"
+",Famicom Family BASIC (V2.1a) (J) + cassette support,,run_generator_script famicom famicom_famibs21a -cart1*'~/RetroPie/BIOS/mame/Family*BASIC*(V2.1a)*(J).zip'*-exp*fc_keyboard cassette cass .wav,"
+",Famicom Disk System + floppy support,,run_generator_script famicom famicom_disksys disksys floppydisk flop .fds,"
+",FM-Towns + 6M ram + floppy support,,run_generator_script fmtowns fmtowns -ram*6M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin,"
+",FM-Towns + 6M ram + cdrom support,,run_generator_script fmtowns fmtowns -ram*6M cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr,"
+",Nintendo Datach + cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
+",MSX2 Sony HB-F700P + fmpac + cartridge2 support,,run_generator_script hbf700p msx fmpac cartridge2 cart2 *.mx1*.bin*.rom,"
+",MSX2 Sony HB-F700P + fmpac + floppy support,,run_generator_script hbf700p msx fmpac floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm,"
+",Tandy MC-10 micro color computer + 16k + cassette support,,run_generator_script mc10 mc10 -ext*ram cassette cass .wav*.cas*.c10*.k7,"
+",Tandy MC-10 micro color computer + MCX-128k + cassette support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .wav*.cas*.c10*.k7,"
+",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1,"
     )
+#preserved-test-lines
+#slot-devices are added but not recognised possibly because it boots with version 1 of the basic rom
+#",Coco with ram and floppy 525dd support,,run_generator_script coco coco -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+    
     build_menu_add-mamedev-systems
 }
 
@@ -249,23 +261,40 @@ function choose_autoboot_add() {
     local csv=()
     csv=(
 ",menu_item_handheld_description,to_do driver_used_for_installation,"
-",Coco + ram + cassette + cload (auto) > run (manual),,run_generator_script coco coco -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
-",Coco + ram + cassette + cloadm:exec (auto),,run_generator_script coco coco -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
-",Coco 2 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
-",Coco 2 + ram + cassette + cloadm:exec (auto),,run_generator_script coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
-",Coco 2 floppy + os-9 dos (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*dos\\\\\\n floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco + ram + cassette + cload (auto) > run (manual),,run_generator_script coco coco -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\'\\\\\n\\' cassette cass .wav*.cas,"
+",Coco + ram + cassette + cloadm:exec (auto),,run_generator_script coco coco -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\'\\\\\n\\' cassette cass .wav*.cas,"
+",Coco 2 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\'\\\\\n\\' cassette cass .wav*.cas,"
+",Coco 2 + ram + cassette + cloadm:exec (auto),,run_generator_script coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\'\\\\\n\\' cassette cass .wav*.cas,"
+",Coco 2 + floppy + os-9 dos (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*dos\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 2 + floppy + load\"%BASENAME%\" + run (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 2 + floppy + run\"%BASENAME%\" (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Coco 2 + floppy + loadm\"%BASENAME%\":exec (auto),,run_generator_script coco2 coco2 -autoboot_delay*2*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
-",Coco 3 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
-",Coco 3 + ram + cassette + cloadm:exec (auto),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
-",Coco 3 + floppy + os-9 dos (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*dos\\\\\\n floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
-",Coco 3 + floppy + load\"%BASENAME%\" + run (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
-",Coco 3 + floppy + run\"%BASENAME%\" (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
-",Coco 3 + floppy + loadm\"%BASENAME%\":exec (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
-",Dragon 32 + ram + cassette + cload (auto) > run (manual),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\\\\\n cassette cass .wav*.cas,"
-",Dragon 32 + ram + cassette + cloadm:exec (auto),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\\\\\n cassette cass .wav*.cas,"
-",Dragon 32 + floppy + run\"%BASENAME%\" (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.bas*.bin,"
+",Coco 3 + ram + cassette + cload (auto) > run (manual),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\'\\\\\n\\' cassette cass .wav*.cas,"
+",Coco 3 + ram + cassette + cloadm:exec (auto),,run_generator_script coco3 coco3 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\'\\\\\n\\' cassette cass .wav*.cas,"
+",Coco 3 + floppy 525dd + os-9 dos (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*dos\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + floppy 525dd + load\"%BASENAME%\" + run (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + floppy 525dd + run\"%BASENAME%\" (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + floppy 525dd + loadm\"%BASENAME%\":exec (auto),,run_generator_script coco3 coco3 -autoboot_delay*2*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + ram + floppy 525dd + os-9 dos (auto),,run_generator_script coco3 coco3 -ext*multi*-ext:multi:slot1*ram*-autoboot_delay*2*-autoboot_command*dos\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + ram + floppy 525dd + load\"%BASENAME%\" + run (auto),,run_generator_script coco3 coco3 -ext*multi*-ext:multi:slot1*ram*-autoboot_delay*2*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + ram + floppy 525dd + run\"%BASENAME%\" (auto),,run_generator_script coco3 coco3 -ext*multi*-ext:multi:slot1*ram*-autoboot_delay*2*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Coco 3 + ram + floppy 525dd + loadm\"%BASENAME%\":exec (auto),,run_generator_script coco3 coco3 -ext*multi*-ext:multi:slot1*ram*-autoboot_delay*2*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Dragon 32 + ram + cassette + cload (auto) > run (manual),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\'\\\\\n\\' cassette cass .wav*.cas,"
+",Dragon 32 + ram + cassette + cloadm:exec (auto),,run_generator_script dragon32 dragon32 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\'\\\\\n\\' cassette cass .wav*.cas,"
+",Dragon 32 + floppy 525qd + load\"%BASENAME%\" + run (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Dragon 32 + floppy 525qd + run\"%BASENAME%\" (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.bas*.bin,"
+",Dragon 32 + floppy 525qd + loadm\"%BASENAME%\":exec (auto),,run_generator_script dragon32 dragon32 -autoboot_delay*3*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Dragon 32 + ram + floppy 525qd + load\"%BASENAME%\" + run (auto),,run_generator_script dragon32 dragon32 -ext*multi*-ext:multi:slot1*ram*-autoboot_delay*3*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",Dragon 32 + ram + floppy 525qd + run\"%BASENAME%\" (auto),,run_generator_script dragon32 dragon32 -ext*multi*-ext:multi:slot1*ram*-autoboot_delay*3*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.bas*.bin,"
+",Dragon 32 + ram + floppy 525qd + loadm\"%BASENAME%\":exec (auto),,run_generator_script dragon32 dragon32 -ext*multi*-ext:multi:slot1*ram*-autoboot_delay*3*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",(Tano) Dragon 64 NTSC + ram + cassette + cload (auto) > run (manual),,run_generator_script tanodr64 dragon64 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\\'\\\\\n\\' cassette cass .wav*.cas,"
+",(Tano) Dragon 64 NTSC + ram + cassette + cloadm:exec (auto),,run_generator_script tanodr64 dragon64 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\\'\\\\\n\\' cassette cass .wav*.cas,"
+",(Tano) Dragon 64 NTSC + dfc + floppy 525qd + load\"%BASENAME%\" + run (auto),,run_generator_script tanodr64 dragon64 -ext*multi*-ext:multi:slot1*ram*-ext*dragon_fdc*-autoboot_delay*3*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",(Tano) Dragon 64 NTSC + dfc + floppy 525qd + run\"%BASENAME%\" (auto),,run_generator_script tanodr64 dragon64 -ext*dragon_fdc*-autoboot_delay*3*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.bas*.bin,"
+",(Tano) Dragon 64 NTSC + dfc + floppy 525qd + loadm\"%BASENAME%\":exec (auto),,run_generator_script tanodr64 dragon64 -ext*dragon_fdc*-autoboot_delay*3*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",(Tano) Dragon 64 NTSC + ram + dfc + floppy 525qd + load\"%BASENAME%\" + run (auto),,run_generator_script tanodr64 dragon64 -ext*dragon_fdc*-autoboot_delay*3*-autoboot_command*load\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+",(Tano) Dragon 64 NTSC + ram + dfc + floppy 525qd + run\"%BASENAME%\" (auto),,run_generator_script tanodr64 dragon64 -ext*multi*-ext:multi:slot1*ram*-ext*dragon_fdc*-autoboot_delay*3*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.bas*.bin,"
+",(Tano) Dragon 64 NTSC + ram + dfc + floppy 525qd + loadm\"%BASENAME%\":exec (auto),,run_generator_script tanodr64 dragon64 -ext*multi*-ext:multi:slot1*ram*-ext*dragon_fdc*-autoboot_delay*3*-autoboot_command*loadm\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\':exec\\'\\\\\n\\' floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 ",Electron + cassette + *tape chain\"\"(auto),,run_generator_script electron electron -autoboot_delay*2*-autoboot_command*\\'\\\\\x2a\\'TAPE\\'\\\\\n\\'CHAIN\\'\\\\\x22\\'\\'\\\\\x22\\'\\'\\\\\n\\' cassette cass .wav*.csw*.uef,"
 ",Electron + cassette + *tape *run(auto),,run_generator_script electron electron -autoboot_delay*2*-autoboot_command*\\'\\\\\x2a\\'TAPE\\'\\\\\n\\'\\'\\\\\x2a\\'RUN\\'\\\\\n\\' cassette cass .wav*.csw*.uef,"
 ",MSX1 Philips VG-8020-20 + cassette + run\"cas:\" + run (auto),,run_generator_script vg802020 msx -autoboot_delay*6*-autoboot_command*run\\'\\\\\x22\\'cas\\'\\\\\x3a\\'\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' cassette cass *.wav*.tap*.cas,"
@@ -359,7 +388,7 @@ function subgui_add-mamedev-systems_search() {
 
 function subgui_add-mamedev-systems_downloads_wget_A() {
 #we can add up to 5 options per list to sort on
-#
+#remember : the first search option will be changed by the script to get search options beginning with, if you want a global search  do something like this : '//&&/hdv/'
     local csv=()
     csv=(
 ",menu_item,,to_do,"
@@ -378,8 +407,13 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",gameandwatch < mame-0.231-merged > RetroPie/roms/gameandwatch,,subform_restricted_multi_download_wget_A '/@gameandwatch/' .7z /home/$user/RetroPie/roms/gameandwatch mame-0.231-merged download,"
 ",jakks < mame-0.231-merged > RetroPie/roms/jakks,,subform_restricted_multi_download_wget_A '/@jakks/' .7z /home/$user/RetroPie/roms/jakks mame-0.231-merged download,"
 ",tigerrz < mame-0.231-merged > RetroPie/roms/tigerrz,,subform_restricted_multi_download_wget_A '/@tigerrz/' .7z /home/$user/RetroPie/roms/tigerrz mame-0.231-merged download,"
+",,,,"
+",v Press HELP button,,,"
+",TotalReplay > RetroPie/roms/apple2ee,,subform_add-mamedev-systems_downloads_wget_A '//&&/hdv/' /home/$user/RetroPie/roms/apple2ee TotalReplay download,,,,,dialog_message \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
     )
     build_menu_add-mamedev-systems
+#for adding later
+#",Dreamcast TOSEC > RetroPie/roms/dreamcast,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/roms/dreamcast tosecdcus20190822 download,"
 
 #preserve the one file links
 #",MESS-0.151.BIOS.ROMs > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/download MESS-0.151.BIOS.ROMs download,"
@@ -445,7 +479,7 @@ dialog \
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
     echo "reading the website data"
-    while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "View Contents"|cut -d '"' -f2|while read line;do echo "\",Get '$line',,download_file_with_wget $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
+    while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$line',,download_file_with_wget $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
     IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
     #we need to add '",,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
     csv=( ",,,," "${csv[@]}" )
@@ -796,6 +830,9 @@ bbcmicro_fullname="BBC Micro"
 
 bbcmicro_exts=".ssd"
 bbcmicro_fullname="BBC Master"
+
+dragon64_exts=".wav .cas .prn .ccc .rom .mfi .dfi .hfe .mfm .td0 .imd .d77 .d88 .1dd .cqm .cqi .dsk .dmk .jvc .vdk .sdf .os9"
+dragon64_fullname="Dragon 64"
 _EOF_
 
 #change ownership to normal user
@@ -999,6 +1036,9 @@ descriptionsrp+=( "BBC Micro" )
 #bbcmicro for BBC Master is not in the original platforms.cfg
 systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Master" )
+#dragon64 for Dragon 64 is not in the original platforms.cfg
+systemsrp+=( "dragon64" )
+descriptionsrp+=( "Dragon 64" )
 #testlines
 #echo ${systemsrp[@]}
 #echo ${descriptionsrp[@]}
@@ -1289,7 +1329,7 @@ Put games or game-BIOS files in :\n
 \$romdir/$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)\n
 Notes:\n
 No specific BIOS info can be given here.\n
-When using game-BIOS files,/n
+When using game-BIOS files,\n
 no BIOS is needed in the BIOS directory.\n
 If BIOS files are needed put them in :\n
 \$biosdir/mame\n
@@ -1460,7 +1500,7 @@ chown -R $user:$user "$3"
 
 
 function install-lr-mess-for-x86-x64 () {
-echo -ne "===/nGetting lr-mess binary from libretro buildbot/n==="
+echo -ne "===\nGetting lr-mess binary from libretro buildbot\n==="
 curl http://buildbot.libretro.com/nightly/linux/$(arch|sed 's/i6/x/')/RetroArch_cores.7z --create-dirs /opt/retropie/libretrocores/lr-mess -o /opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z
 7z e '/opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z' -o/opt/retropie/libretrocores/lr-mess/ 'mame_libretro.so' -r
 chmod 755 /opt/retropie/libretrocores/lr-mess
@@ -1472,7 +1512,7 @@ $scriptdir/retropie_packages.sh lr-mess clean
 
 
 function install-mame-for-x86-x64 () {
-echo -ne "===/nGetting mame binary from normal repository/n==="
+echo -ne "===\nGetting mame binary from normal repository\n==="
 getDepends mame
 mkdir -p /opt/retropie/emulators/mame
 cp /usr/games/mame /opt/retropie/emulators/mame/
