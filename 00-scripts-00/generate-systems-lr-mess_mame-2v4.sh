@@ -130,6 +130,9 @@ bbcmicro_fullname="BBC Micro"
 
 bbcmicro_exts=".ssd"
 bbcmicro_fullname="BBC Master"
+
+dragon64_exts=".wav .cas .prn .ccc .rom .mfi .dfi .hfe .mfm .td0 .imd .d77 .d88 .1dd .cqm .cqi .dsk .dmk .jvc .vdk .sdf .os9"
+dragon64_fullname="Dragon 64"
 _EOF_
 
 #change ownership to normal user
@@ -213,6 +216,7 @@ else
 echo "read all available extensions per system"
 for index in "${!systems[@]}"; do 
 # export all supported media per system on unique base
+echo ${systems[$index]}
 allextensions+=( "$(/opt/retropie/emulators/mame/mame -listmedia ${systems[$index]} | grep -o "\...." | tr ' ' '\n' | sort -u | tr '\n' ' ')" )
 done
 fi
@@ -333,6 +337,9 @@ descriptionsrp+=( "BBC Micro" )
 #bbcmicro for BBC Master is not in the original platforms.cfg
 systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Master" )
+#dragon64 for Dragon 64 is not in the original platforms.cfg
+systemsrp+=( "dragon64" )
+descriptionsrp+=( "Dragon 64" )
 #testlines
 #echo ${systemsrp[@]}
 #echo ${descriptionsrp[@]}
