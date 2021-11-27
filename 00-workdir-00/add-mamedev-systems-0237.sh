@@ -301,6 +301,7 @@ function choose_autoboot_add() {
 ",MSX1 Philips VG-8020-20 + cassette + bload\"cas:\" + run (auto),,run_generator_script vg802020 msx -autoboot_delay*6*-autoboot_command*bload\\'\\\\\x22\\'cas\\'\\\\\x3a\\'\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' cassette cass *.wav*.tap*.cas,"
 ",MSX2 Sony HB-F700P + disk + run\"%BASENAME%\" (auto),,run_generator_script hbf700p msx -autoboot_delay*5*-autoboot_command*run\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\n\\' floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk,"
 ",MSX2 Sony HB-F700P + disk + bload\"%BASENAME%\" + run (auto),,run_generator_script hbf700p msx -autoboot_delay*5*-autoboot_command*bload\\'\\\\\x22\\'%BASENAME%\\'\\\\\x22\\'\\'\\\\\x2c\\'r\\'\\\\\n\\' floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk,"
+",Sam Coupe + floppy + boot (auto),,run_generator_script samcoupe samcoupe -autoboot_delay*2*-autoboot_command*\\'\\\\\n\\'boot\\'\\\\\n\\' floppydisk flop1  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mgt,"
 ",Sinclair ZX-81 + cassette + load\"\" (auto) > play tape (+ run) (manual),,run_generator_script zx81 zx81 -autoboot_delay*3*-autoboot_command*j\\'\\\\\x22\\'\\'\\\\\x22\\'\\'\\\\\n\\' cassette cass  *.wav*.p*.81*.tzx,"
     )
 #preserved-test-lines (beware they contain extension, which have to be removed !)
