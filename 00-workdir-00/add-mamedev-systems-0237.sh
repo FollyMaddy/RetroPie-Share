@@ -225,6 +225,8 @@ function choose_extra_options_add() {
 ",Famicom Disk System + floppy support,,run_generator_script famicom famicom_disksys disksys floppydisk flop .fds,"
 ",FM-Towns + 6M ram + floppy support,,run_generator_script fmtowns fmtowns -ram*6M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin,"
 ",FM-Towns + 6M ram + cdrom support,,run_generator_script fmtowns fmtowns -ram*6M cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr,"
+",FM-Towns Marty + 4M ram + floppy support,,run_generator_script fmtmarty fmtmarty -ram*4M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin,"
+",FM-Towns Marty + 4M ram + cdrom support,,run_generator_script fmtmarty fmtmarty -ram*4M cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr,"
 ",Nintendo Datach + cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
 ",MSX2 Sony HB-F700P + fmpac + cartridge2 support,,run_generator_script hbf700p msx fmpac cartridge2 cart2 *.mx1*.bin*.rom,"
 ",MSX2 Sony HB-F700P + fmpac + floppy support,,run_generator_script hbf700p msx fmpac floppydisk flop  *.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm,"
@@ -1395,14 +1397,10 @@ function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions
         
 	addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
 	addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
-	addEmulator 0 "mame-cmd" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/\$_system -v -c %BASENAME%"
-	addEmulator 0 "mame-cmd-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/\$_system -v -c -autoframeskip %BASENAME%"
-	addEmulator 0 "mame-cmd-frameskip_10" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/\$_system -v -c -frameskip 10 %BASENAME%"
-	addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -v -c \$_system %BASENAME%"
-	addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip \$_system %BASENAME%"
-	#turned these off, seems these commands will not work, but kept for future testing : https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/33
-	##addEmulator 0 "mame-basename-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c %BASENAME%"
-	##addEmulator 0 "mame-basename-autoframeskip-test" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/roms/${newsystems[$index]} -v -c -autoframeskip %BASENAME%"
+	
+	addEmulator 0 "mame-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c $([[ ${media[$index]} != "-none" ]] && echo \$_system) %BASENAME%"
+	addEmulator 0 "mame-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo \$_system) %BASENAME%"
+	addEmulator 0 "mame-basename-frameskip_10" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo \$_system) %BASENAME%"
 
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
