@@ -1459,6 +1459,10 @@ clear
 echo "get the cheat.7z and place it in the correct path"
 echo
 wget -N -P /tmp http://cheat.retrogames.com/download/cheat0221.zip
+#cheatpath for lr-mess
+unzip -o /tmp/cheat0221.zip cheat.7z -d /home/$user/RetroPie/BIOS/mame/cheat
+chown -R $user:$user "/home/$user/RetroPie/BIOS/mame/cheat" 
+#cheatpath for mame
 unzip -o /tmp/cheat0221.zip cheat.7z -d /home/$user/RetroPie/roms/mame/cheat
 chown -R $user:$user "/home/$user/RetroPie/roms/mame/cheat" 
 rm /tmp/cheat0221.zip
