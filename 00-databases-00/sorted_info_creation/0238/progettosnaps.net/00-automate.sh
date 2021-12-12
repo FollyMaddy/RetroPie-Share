@@ -61,6 +61,6 @@
  ##for file in $(ls -r *.ini);do sed -i "s/@$(basename $file .ini)@$(basename $file .ini)/@$(basename $file .ini)/g" mame0$1_systems_sorted_info;done
  ##for file in $(ls -r *.ini);do sed -i "s/@$(basename $file .ini)@$(basename $file .ini)/@$(basename $file .ini)/g" mame0$1_systems_sorted_info;done
  
- #add this one manually
- #Driver0229 tbaskb (Electronic Basketball (Tandy)): @classich@electronic_game@handheld@non-arcade
+ #add this 0229 manually
+ #Driver tbaskb (Electronic Basketball (Tandy)): @classich@electronic_game@handheld@non-arcade
  fi
