@@ -411,6 +411,9 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",jakks < mame-0.231-merged > RetroPie/roms/jakks,,subform_restricted_multi_download_wget_A '/@jakks/' .7z /home/$user/RetroPie/roms/jakks mame-0.231-merged download,"
 ",tigerrz < mame-0.231-merged > RetroPie/roms/tigerrz,,subform_restricted_multi_download_wget_A '/@tigerrz/' .7z /home/$user/RetroPie/roms/tigerrz mame-0.231-merged download,"
 ",,,,"
+",pinball ( >40 ) mame-0.231-merged > RetroPie/roms/pinball,,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/pinball mame-0.231-merged download,"
+",shooter (! >3200 !) < mame-0.231-merged > RetroPie/roms/shooter,,subform_restricted_multi_download_wget_A '/@shooter/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/shooter mame-0.231-merged download,"
+",,,,"
 ",v Press HELP button,,,"
 ",TotalReplay > RetroPie/roms/apple2ee,,subform_add-mamedev-systems_downloads_wget_A '//&&/hdv/' /home/$user/RetroPie/roms/apple2ee TotalReplay download,,,,,dialog_message \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
     )
@@ -792,11 +795,20 @@ creating=
 #hoping this will be the future RetroPie naming for these handhelds
 #this is an example command to extract the systems and add them here to the array :
 #classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
-all_in1=( "ablmini" "ablpinb" "bittboy" "cybar120" "dgun2573" "dnv200fs" "fapocket" "fcpocket" "fordrace" "gprnrs1" "gprnrs16" "ii32in1" "ii8in1" "intact89" "intg5410" "itvg49" "lexiseal" "lexizeus" "lx_jg7415" "m505neo" "m521neo" "majkon" "mc_105te" "mc_110cb" "mc_138cb" "mc_7x6ss" "mc_89in1" "mc_8x6cb" "mc_8x6ss" "mc_9x6ss" "mc_aa2" "mc_cb280" "mc_dcat8" "mc_dg101" "mc_dgear" "mc_hh210" "mc_sam60" "mc_sp69" "mc_tv200" "megapad" "mgt20in1" "miwi2_7" "mysprtch" "mysprtcp" "mysptqvc" "njp60in1" "oplayer" "pdc100" "pdc150t" "pdc200" "pdc40t" "pdc50" "pjoyn50" "pjoys30" "pjoys60" "ppgc200g" "react" "reactmd" "rminitv" "sarc110" "sudopptv" "sy888b" "sy889" "techni4" "timetp36" "tmntpdc" "unk1682" "vgcaplet" "vgpmini" "vgpocket" "vjpp2" "vsplus" "zdog" "zone7in1" "zudugo" "namcons1" "namcons2" "taitons1" "taitons2" "tak_geig" "namcons1" "namcons2" "taitons1" "taitons2" "tak_geig" "tomcpin" )
-classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmcfball" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cpacmanr1" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "ebknight" "edracula" "efball" "efootb4" "egalaxn2" "einvader" "einvader2" "einvaderc" "epacman2" "epacman2r" "esbattle" "esoccer" "estargte" "eturtles" "flash" "fowling" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "gpoker" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mbaskb" "mchess" "mcompgin" "mfootb2" "mhockey" "monkeygk" "msoccer" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
-konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
-tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
 
+mame_data_read
+echo "read the mame romset groups, used for RetroPie naming"
+IFS=$'\n' 
+#add new items in part 11 for matching
+all_in1=($(cut -d "," -f 2 <<<$(awk '/@all_in1/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+classich=($(cut -d "," -f 2 <<<$(awk '/@classich/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+konamih=($(cut -d "," -f 2 <<<$(awk '/@konamih/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+tigerh=($(cut -d "," -f 2 <<<$(awk '/@tigerh/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+#
+pinball=($(cut -d "," -f 2 <<<$(awk '/@pinball_arcade/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+#
+unset IFS
 
 #part 1 : prepair some things first
 #for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
@@ -1034,15 +1046,21 @@ descriptionsrp+=( "JAKKS" )
 #because "tigerrz" is not in the RetroPie platforms we add this here for later matching
 systemsrp+=( "tigerrz" )
 descriptionsrp+=( "R-Zone" )
-#bbcmicro for BBC Micro is not in the original platforms.cfg
+#not in the original platforms.cfg
+systemsrp+=( "archimedes" )
+descriptionsrp+=( "Archimedes" )
 systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Micro" )
-#bbcmicro for BBC Master is not in the original platforms.cfg
 systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Master" )
-#dragon64 for Dragon 64 is not in the original platforms.cfg
 systemsrp+=( "dragon64" )
 descriptionsrp+=( "Dragon 64" )
+systemsrp+=( "dragon64" )
+descriptionsrp+=( "Dragon 64" )
+#adding this doesn't work with this type of system to get the correct description in es_systems.cfg, other solution required or we have to do a look up in the arrays somehow
+#systemsrp+=( "konamih" )
+#descriptionsrp+=( "Konami Handheld" )
+
 #testlines
 #echo ${systemsrp[@]}
 #echo ${descriptionsrp[@]}
@@ -1097,7 +1115,7 @@ newsystems+=( "${systems[@]}" )
 #create a subarray "dteam_systems" containing the arrays that have to be used here
 #now only two "for loops" can be use for checking multiple arrays against the RetroPie names
 #note:some systems are not added because they should be recognised in a normal way
-dteam_systems=("all_in1" "classich" "konamih" "tigerh")
+dteam_systems=("all_in1" "classich" "konamih" "tigerh" "pinball" "shooter")
 
 #multiple arrays over one for loop:
 #https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
@@ -1247,7 +1265,7 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
-	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo with extra ExtraPredefinedOptions)" "$addextensions ${allextensions[$index]}"
+	addSystem "\$_system" "${descriptions[$index]}" "$addextensions ${allextensions[$index]}"
 
 	#sort the emulators.cfg file
 	sort -o \$_emulatorscfg \$_emulatorscfg
@@ -1407,7 +1425,7 @@ function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
 	#the system name is also used as description because, for example, handhelds are generated with game system names
-	addSystem "\$_system" "${descriptions[$index]} $([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo with extra ExtraPredefinedOptions)" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
+	addSystem "\$_system" "$(if [[ ${media[$index]} != "-none" ]];then echo ${descriptions[$index]};else echo ${newsystems[$index]};fi)" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
 
 	#sort the emulators.cfg file
 	sort -o \$_emulatorscfg \$_emulatorscfg
@@ -1534,10 +1552,14 @@ echo
 #added handheld arrays, used for overlays
 #this is an example command to extract the systems and add them here to the array :
 #classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
-classich=( "alnattck" "alnchase" "astrocmd" "bambball" "bankshot" "bbtime" "bcclimbr" "bdoramon" "bfriskyt" "bmboxing" "bmcfball" "bmsafari" "bmsoccer" "bpengo" "bultrman" "bzaxxon" "cdkong" "cfrogger" "cgalaxn" "cmspacmn" "cmsport" "cnbaskb" "cnfball" "cnfball2" "cpacman" "cpacmanr1" "cqback" "ebaskb2" "ebball" "ebball2" "ebball3" "ebknight" "edracula" "efball" "efootb4" "egalaxn2" "einvader" "einvader2" "einvaderc" "epacman2" "epacman2r" "esbattle" "esoccer" "estargte" "eturtles" "flash" "fowling" "funjacks" "galaxy2" "gckong" "gdigdug" "ghalien" "ginv" "ginv1000" "ginv2000" "gjungler" "gpoker" "h2hbaseb" "h2hbaskb" "h2hfootb" "h2hhockey" "h2hsoccerc" "hccbaskb" "invspace" "kingman" "machiman" "mbaskb" "mchess" "mcompgin" "mfootb2" "mhockey" "monkeygk" "msoccer" "msthawk" "mwcbaseb" "packmon" "pairmtch" "pbqbert" "phpball" "raisedvl" "rockpin" "splasfgt" "splitsec" "ssfball" "tbaskb" "tbreakup" "tcaveman" "tccombat" "tmpacman" "tmscramb" "tmtennis" "tmtron" "trshutvoy" "trsrescue" "ufombs" "us2pfball" "vinvader" "zackman" )
-konamih=( "kbilly" "kblades" "kbucky" "kcontra" "kdribble" "kgarfld" "kgradius" "kloneran" "knfl" "ktmnt" "ktopgun" )
-tigerh=( "taddams" "taltbeast" "tapollo13" "tbatfor" "tbatman" "tbatmana" "tbtoads" "tbttf" "tddragon" "tddragon3" "tdennis" "tdummies" "tflash" "tgaiden" "tgaunt" "tgoldeye" "tgoldnaxe" "thalone" "thalone2" "thook" "tinday" "tjdredd" "tjpark" "tkarnov" "tkazaam" "tmchammer" "tmkombat" "tnmarebc" "topaliens" "trobhood" "trobocop2" "trobocop3" "trockteer" "tsddragon" "tsf2010" "tsfight2" "tshadow" "tsharr2" "tsjam" "tskelwarr" "tsonic" "tsonic2" "tspidman" "tstrider" "tswampt" "ttransf2" "tvindictr" "twworld" "txmen" "txmenpx" )
-gameandwatch=( "bassmate" "gnw_ball" "gnw_bfight" "gnw_bfightn" "gnw_bjack" "gnw_boxing" "gnw_bsweep" "gnw_cgrab" "gnw_chef" "gnw_climber" "gnw_climbern" "gnw_egg" "gnw_dkcirc" "gnw_dkhockey" "gnw_dkjr" "gnw_dkjrp" "gnw_dkong" "gnw_dkong2" "gnw_dkong3" "gnw_fire" "gnw_fireatk" "gnw_fires" "gnw_flagman" "gnw_gcliff" "gnw_ghouse" "gnw_helmet" "gnw_judge" "gnw_lboat" "gnw_lion" "gnw_manhole" "gnw_manholeg" "gnw_mario" "gnw_mariocm" "gnw_mariocmt" "gnw_mariotj" "gnw_mbaway" "gnw_mickdon" "gnw_mmouse" "gnw_mmousep" "gnw_octopus" "gnw_opanic" "gnw_pchute" "gnw_pinball" "gnw_popeye" "gnw_popeyep" "gnw_rshower" "gnw_sbuster" "gnw_smb" "gnw_smbn" "gnw_snoopyp" "gnw_squish" "gnw_ssparky" "gnw_stennis" "gnw_tbridge" "gnw_tfish" "gnw_vermin" "gnw_zelda" )
+mame_data_read
+IFS=$'\n' 
+classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+tigerh=($(cut -d "," -f 2 <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+gameandwatch=($(cut -d "," -f 2 <<<$(awk /@all_in1/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+unset IFS
+
 
 #create a subarray of the arrays being used for overlays
 #now only two for loops can be use for multiple arrays
