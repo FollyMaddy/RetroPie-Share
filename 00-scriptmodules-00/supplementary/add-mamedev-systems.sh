@@ -754,8 +754,9 @@ user=$(ls /home)
 generator_script_status=standalone
 fi
 
-#uncomment if the scriptmodules have to be created in the `ext` directory, it will use the normal directory if commented
-ext=/ext/RetroPie-Share
+#if a "add-mamedev-systems*.sh" script is found in the ext directory then variable ext will contain the the ext directory as default
+#then the scriptmodules are created in the `ext` directory otherwise it will use the normal directory if the file isn't found over there
+for ms in /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems*;do [[ -f "$ms" ]]&&ext=/ext/RetroPie-Share;done
 
 #mamedev arrays
 systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
