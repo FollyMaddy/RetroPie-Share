@@ -411,8 +411,10 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",jakks < mame-0.231-merged > RetroPie/roms/jakks,,subform_restricted_multi_download_wget_A '/@jakks/' .7z /home/$user/RetroPie/roms/jakks mame-0.231-merged download,"
 ",tigerrz < mame-0.231-merged > RetroPie/roms/tigerrz,,subform_restricted_multi_download_wget_A '/@tigerrz/' .7z /home/$user/RetroPie/roms/tigerrz mame-0.231-merged download,"
 ",,,,"
-",pinball ( >40 ) mame-0.231-merged > RetroPie/roms/pinball,,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/pinball mame-0.231-merged download,"
-",shooter (! >3200 !) < mame-0.231-merged > RetroPie/roms/shooter,,subform_restricted_multi_download_wget_A '/@shooter/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/shooter mame-0.231-merged download,"
+",maze ( 740+ ) mame-0.231-merged > RetroPie/roms/maze,,subform_restricted_multi_download_wget_A '/@maze/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/maze mame-0.231-merged download,"
+",puzzle ( 640+ ) mame-0.231-merged > RetroPie/roms/puzzle,,subform_restricted_multi_download_wget_A '/@puzzle/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/puzzle mame-0.231-merged download,"
+",pinball ( 40+ ) mame-0.231-merged > RetroPie/roms/pinball,,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/pinball mame-0.231-merged download,"
+",shooter (! 2800+ !) < mame-0.231-merged > RetroPie/roms/shooter,,subform_restricted_multi_download_wget_A '/@shooter@/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/shooter mame-0.231-merged download,"
 ",,,,"
 ",v Press HELP button,,,"
 ",TotalReplay > RetroPie/roms/apple2ee,,subform_add-mamedev-systems_downloads_wget_A '//&&/hdv/' /home/$user/RetroPie/roms/apple2ee TotalReplay download,,,,,dialog_message \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
@@ -798,6 +800,8 @@ creating=
 
 mame_data_read
 echo "read the mame romset groups, used for RetroPie naming"
+if [[ -z $groups_read ]];then
+groups_read=1
 IFS=$'\n' 
 #add new items in part 11 for matching
 all_in1=($(cut -d "," -f 2 <<<$(awk '/@all_in1/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
@@ -805,10 +809,13 @@ classich=($(cut -d "," -f 2 <<<$(awk '/@classich/'<<<$(sed 's/\" \"/\"\n\"/g'<<<
 konamih=($(cut -d "," -f 2 <<<$(awk '/@konamih/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 tigerh=($(cut -d "," -f 2 <<<$(awk '/@tigerh/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 #
+maze=($(cut -d "," -f 2 <<<$(awk '/@maze/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 pinball=($(cut -d "," -f 2 <<<$(awk '/@pinball_arcade/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+puzzle=($(cut -d "," -f 2 <<<$(awk '/@puzzle/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 #
 unset IFS
+fi
 
 #part 1 : prepair some things first
 #for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
@@ -1115,7 +1122,7 @@ newsystems+=( "${systems[@]}" )
 #create a subarray "dteam_systems" containing the arrays that have to be used here
 #now only two "for loops" can be use for checking multiple arrays against the RetroPie names
 #note:some systems are not added because they should be recognised in a normal way
-dteam_systems=("all_in1" "classich" "konamih" "tigerh" "pinball" "shooter")
+dteam_systems=("all_in1" "classich" "konamih" "tigerh" "maze" "pinball" "puzzle" "shooter")
 
 #multiple arrays over one for loop:
 #https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
