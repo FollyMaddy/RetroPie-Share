@@ -1397,6 +1397,11 @@ function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions
 	local _emulatorscfg="\$configdir/\$_system/emulators.cfg"
 	local _mameini="/opt/retropie/configs/mame/mame.ini"
     
+	#added for test
+	local _add_config="\$_config.add"
+	local _custom_coreconfig="\$configdir/\$_system/custom-core-options.cfg"
+	local _script="\$scriptdir/scriptmodules/run_mess.sh"
+    
 	mkRomDir "\$_system"
 	ensureSystemretroconfig "\$_system"
     
@@ -1422,10 +1427,27 @@ function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions
 	iniSet "input_ai_service" "t"
 	iniSet "#input_ai_service_btn" "11"
 	chown \$user:\$user "\$configdir/all/retroarch.cfg"
-        
-	addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
-	addEmulator 0 "lr-mess-basename" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %BASENAME%"
 	
+        #plain command
+	#(used for loading .cmd files, amongst others)
+	addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
+	
+	#plain commands
+	#works on the pi
+	#using single-quotes for loading lr-mess options
+	#adding 2 rompaths if available 
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system -c -ui_active %BASENAME%'"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system -c -ui_active -autoframeskip %BASENAME%'"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system -c -ui_active -frameskip 10 %BASENAME%'"
+	
+	#tests for basename loaders using the run_mess script
+	#works ok,but the .cmd files and savestate files are saved in /home/pi
+	#-> turned off <-
+	#(can be used, with adapted run_mess script, for .cmd file generation if needed)
+	#addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-RMS" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system -c -ui_active %BASENAME%"
+	#addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-RMS-autoframeskip" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system -c -ui_active -autoframeskip %BASENAME%"
+	#addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-RMS-frameskip_10" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system -c -ui_active -frameskip 10 %BASENAME%"
+
 	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
 	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
 	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
