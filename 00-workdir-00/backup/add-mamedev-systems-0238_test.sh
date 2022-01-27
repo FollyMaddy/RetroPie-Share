@@ -234,11 +234,14 @@ function choose_extra_options_add() {
 ",Tandy MC-10 micro color computer + MCX-128k + cassette support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .wav*.cas*.c10*.k7,"
 ",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1,"
 ",TI-99/4A Home Computer + speech + keyb_nat + cartridge support,,run_generator_script ti99_4a ti99_4a -ioport*peb*-ioport:peb:slot3*speech*-nat cartridge cart .rpk,"
-",TI-99/4A Home Computer + keyb_nat + flop1 support,,run_generator_script ti99_4a ti99_4a exbasic*-ioport*peb*-ioport*peb*-ioport:peb:slot2*hfdc*-nat floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*,"
+",TI-99/4A Home Computer (32Kb) + superxb + keyb_nat + flop1,,run_generator_script ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*hfdc*-ioport:peb:slot3*32kmem*-nat floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*,"
     )
 #preserved-test-lines
 #slot-devices are added but not recognised possibly because it boots with version 1 of the basic rom
 #",Coco with ram and floppy 525dd support,,run_generator_script coco coco -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
+#replaced with superxb (better exteded basic)
+#",TI-99/4A Home Computer (32Kb) + exbasic + keyb_nat + flop1,,run_generator_script ti99_4a ti99_4a exbasic*-ioport*peb*-ioport*peb*-ioport:peb:slot2*hfdc*-ioport:peb:slot3*32kmem*-nat floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*,"
+
     
     build_menu_add-mamedev-systems
 }
