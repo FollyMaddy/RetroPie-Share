@@ -233,7 +233,7 @@ function choose_extra_options_add() {
 ",Tandy MC-10 micro color computer + 16k + cassette support,,run_generator_script mc10 mc10 -ext*ram cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -16k,"
 ",Tandy MC-10 micro color computer + MCX_128k + cassette support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -MCX_128k,"
 ",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .wav*.cas.mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1 -DOS_in_flop1,"
-",TI-99/4A (32Kb) + speech + keyb_nat + cartridge support,,run_generator_script ti99_4a ti99_4a -ioport*peb*-ioport:peb:slot1*32kmem*-ioport:peb:slot3*speech*-nat cartridge cart .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -speech-keyb_nat,"
+",TI-99/4A (32Kb) + speech + keyb_nat + cartridge support,,run_generator_script ti99_4a ti99_4a -ioport*peb*-ioport:peb:slot1*32kmem*-ioport:peb:slot3*speech*-nat cartridge cart .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-keyb_nat,"
 ",TI-99/4A (32Kb) + speech + keyb_nat + superxb + flop1,,run_generator_script ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot1*32kmem*-ioport:peb:slot2*hfdc*-ioport:peb:slot3*speech*-nat floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-keyb_nat,"
     )
 #preserved-test-lines
