@@ -1448,9 +1448,15 @@ function configure_install-${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions
 	#using single-quotes for loading lr-mess options
 	#adding 2 rompaths if available 
 	#lr-mess option -cfg_directory is not added, it should use the propper directory
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system -c -ui_active %BASENAME%'"
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system -c -ui_active -autoframeskip %BASENAME%'"
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system -c -ui_active -frameskip 10 %BASENAME%'"
+	#
+	#in order to save files we need to add the savepaths to retroarch as options
+	#"-c -ui_active etc" is placed before "-rompath" and a / is added after the last rompath , this way the options are not added in the savestate filename
+	#only issue after is that the savestate filename still contains 1 space in the beginning of the filename and double quotes
+	#to fix this issue of double quotes the basename can be single quoted to remove them in the filename (we still have 1 space !) 
+	#
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -c -ui_active -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -c -ui_active -autoframeskip -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '$([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -c -ui_active -frameskip 10 -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
 	
 	#tests for basename loaders using the run_mess script
 	#works ok,but the .cmd files and savestate files are saved in /home/pi
