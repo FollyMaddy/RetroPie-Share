@@ -48,19 +48,19 @@ function gui_add-mamedev-systems() {
 ",Install MAME    ( required by this script ),,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MESS ( should be installed too ),,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",,,,,,,,,"
-",Save or update database locally (get data offline),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0238_systems_sorted_info -o /opt/retropie/emulators/mame/mame0238_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally you can use the script offline.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
+",Save or update database locally (get data locally),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0238_systems_sorted_info -o /opt/retropie/emulators/mame/mame0238_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script perform faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
 ",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0238_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
 ",,,,,,,,,"
 ",Handheld / plug&play and downloads > Submenu,,subgui_add-mamedev-systems_forum,,,,,dialog_message \"install handheld / plug&play and the required downloads\n\nHandheld systems is a group of portable consoles that are part of MAME Romset.\nThe list of these games can be found in the retropie forum in the tutorial : (Tutorial : Handheld and Plug & Play systems with MAME)\n\nThe 7 systems are :\n - Konami Handheld\n - All in one handheld and Plug & Play\n - Game & Watch (with madrigal and MAME romset)\n - Tiger Handheld\n - Tiger R-Zone\n - Classic Handheld (with madrigal and MAME romset)\n - JAKKS Pacific TV Games -Plug & Play games\","
 ",,,,,,,,,"
-",Systems with extras > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \" install systems with extra functions\","
-",,,,,,,,,"
-",Systems sorted > Submenu,,subgui_add-mamedev-systems_sort,,,,,dialog_message \"install from predefined sorted lists\","
-",,,,,,,,,"
 ",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,,,,,dialog_message \"search on pattern(s) and install from your own list\","
 ",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,,,,,dialog_message \"search on pattern(s) and install from your own list\","
 ",,,,,,,,,"
+",Systems pre-sorted > Submenu,,subgui_add-mamedev-systems_sort,,,,,dialog_message \"install from predefined sorted lists\","
+",,,,,,,,,"
 ",All systems > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog_message \"Go to a submenu and choose from different lists showing all systems in by :\n – system names in  alfabetical order\n – descriptions in  alfabetical order\n – system names\n – descriptions\","
+",,,,,,,,,"
+",Systems with extras > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \" install systems with extra functions\","
 ",,,,,,,,,"
 ",Restricted browser/downloader > Submenu,,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog_message \"Browse and get online files.\n(only available with the correct input)\","
     )
@@ -233,8 +233,8 @@ function choose_extra_options_add() {
 ",Tandy MC-10 micro color computer + 16k + cassette support,,run_generator_script mc10 mc10 -ext*ram cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -16k,"
 ",Tandy MC-10 micro color computer + MCX_128k + cassette support,,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -MCX_128k,"
 ",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .wav*.cas.mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1 -DOS_in_flop1,"
-",TI-99/4A (32Kb) + speech + keyb_nat + cartridge support,,run_generator_script ti99_4a ti99_4a -ioport*peb*-ioport:peb:slot1*32kmem*-ioport:peb:slot3*speech*-nat cartridge cart .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-keyb_nat,"
-",TI-99/4A (32Kb) + speech + keyb_nat + superxb + flop1,,run_generator_script ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot1*32kmem*-ioport:peb:slot2*hfdc*-ioport:peb:slot3*speech*-nat floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-keyb_nat,"
+",TI-99/4A (32Kb) + speech + keyb_nat + cartridge support,,run_generator_script ti99_4a ti99_4a -ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot4*speech*-nat cartridge cart .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-keyb_nat,"
+",TI-99/4A (32Kb) + speech + keyb_nat + superxb + flop1,,run_generator_script ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot4*speech*-nat floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-keyb_nat,"
     )
 #preserved-test-lines
 #slot-devices are added but not recognised possibly because it boots with version 1 of the basic rom
@@ -1271,6 +1271,9 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	# all option should work with both mame and lr-mess, although -autoframeskip is better with mame
 	addEmulator 0 "lr-mess(rm)-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
 	addEmulator 0 "lr-mess(rm)-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame -cfg_directory \$configdir/${newsystems[$index]}/lr-mess/%BASENAME% -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+	#
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame -c -ui_active ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
 	#
 	addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -ui_active ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
         addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -v -c -autoframeskip -ui_active ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
