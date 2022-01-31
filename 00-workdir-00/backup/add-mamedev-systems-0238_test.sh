@@ -52,7 +52,7 @@ function gui_add-mamedev-systems() {
 ",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0238_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
 ",,,,,,,,,"
 ",Choose and install systems with DEFAULT settings > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems in different ways\","
-",Choose and install systems with >EXTRA< settings > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems with extra functions\","
+",Choose and install systems with >EXTRA< settings > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems with extra functions\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
 ",Choose and install CATEGORIES/HANDHELD/PLUG&PLAY > Submenu,,subgui_add-mamedev-systems_forum,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available catagories / handheld / plug&play and the required downloads\n\nHandheld systems is a group of portable consoles that are part of MAME Romset.\nThe list of these games can be found in the retropie forum in the tutorial : (Tutorial : Handheld and Plug & Play systems with MAME)\n\nThe 7 systems are :\n - Konami Handheld\n - All in one handheld and Plug & Play\n - Game & Watch (with madrigal and MAME romset)\n - Tiger Handheld\n - Tiger R-Zone\n - Classic Handheld (with madrigal and MAME romset)\n - JAKKS Pacific TV Games -Plug & Play games\","
 ",,,,,,,,,"
 ",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Browse and get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- create overlays from artwork\","
@@ -111,7 +111,7 @@ function subgui_add-mamedev-systems_forum() {
 ",Tiger Handheld Electronics,,run_generator_script taddams,,,,,dialog_message \"Tiger Handheld Electronics - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\nYou can get artworks and backgrounds for those games with the (Select downloads) menu below\","
 ",Tiger R-Zone,,run_generator_script rzbatfor,,,,,dialog_message \"Tiger R-Zone - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\","
 ",,,,,,,,,"
-",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Browse and get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- create overlays from artwork\","
+",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create overlays from artwork\","
     )
     build_menu_add-mamedev-systems
 }
@@ -121,9 +121,9 @@ function subgui_add-mamedev-systems_extras() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",Systems: with extra options,,choose_extra_options_add descriptions,,,,,dialog_message \"install systems + extra hardware (working better than default)\","
+",Systems: with extra options,,choose_extra_options_add descriptions,,,,,dialog_message \"Install systems with extra hardware that will working better than default.\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
 ",,,,,,,,,"
-",Systems: full/semi automatic boot (with/without extra options),,choose_autoboot_add descriptions,,,,,dialog_message \"experimental : install systems with autoboot function\","
+",Systems: full/semi automatic boot (with/without extra options),,choose_autoboot_add descriptions,,,,,dialog_message \"Experimental : install systems with autoboot function\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
     )
     build_menu_add-mamedev-systems
 }
@@ -133,16 +133,16 @@ function subgui_add-mamedev-systems_all() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",All upon descriptions,,choose_add descriptions,,,,,dialog_message \"HELP\","
-",All upon system names,,choose_add,,,,,dialog_message \"HELP\","
+",Display all upon descriptions,,choose_add descriptions,,,,,dialog_message \"Install one or more systems with default options\","
+",Display all upon system names,,choose_add,,,,,dialog_message \"Install one or more systems with default options\","
 ",,,,,,,,,"
-",All upon descriptions > Alphabetical submenu,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,,,,,dialog_message \"HELP\","
-",All upon system names > Alphabetical submenu,,subgui_add-mamedev-systems_alphabetical_order_selection systems,,,,,dialog_message \"HELP\","
+",Display alphabetical submenu upon descriptions,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,,,,,dialog_message \"Select a list and then install one or more systems with default options\","
+",Display alphabetical submenu upon system names,,subgui_add-mamedev-systems_alphabetical_order_selection systems,,,,,dialog_message \"Select a list and then install one or more systems with default options\","
 ",,,,,,,,,"
-",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,,,,,dialog_message \"search on pattern(s) and install from your own list\","
-",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,,,,,dialog_message \"search on pattern(s) and install from your own list\","
+",SEARCH and display upon descriptions,,subgui_add-mamedev-systems_search descriptions,,,,,dialog_message \"Search and create a list and then install one or more systems with default options\","
+",SEARCH and display upon system names,,subgui_add-mamedev-systems_search systems,,,,,dialog_message \"Search and create a list and then install one or more systems with default options\","
 ",,,,,,,,,"
-",Catagorized > Pre-sorted submenu,,subgui_add-mamedev-systems_sort,,,,,dialog_message \"install from predefined sorted lists\","
+",Display predefined sorted lists,,subgui_add-mamedev-systems_sort,,,,,dialog_message \"Select a list and then install one or more systems with default options\","
     )
     build_menu_add-mamedev-systems
 }
@@ -610,37 +610,6 @@ function choose_add() {
     #here we add an extra line into index 1, so an empty dialog will appear without any errors  
     [[ -z ${csv[1]} ]] && csv+=( "\",error : search pattern is not found : try again !,,,\"" )
 
-    build_menu_add-mamedev-systems $1
-}
-
-
-function choose_add_forum() {
-    local csv=()
-    #here we read the systems and descriptions from mame into an array
-    #by using the if function the data can be re-used, without reading it every time
-    if [[ -z ${mamedev_forum_csv[@]} ]]; then
-    local system_read
-    # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
-    # found a solution here : https://stackoverflow.com/questions/4800214/grep-for-beginning-and-end-of-line
-    # Now using this : lines that start with "D" using => grep ^[D]
-    clear
-    echo "Now we are reading a forum list from the RetroPie-Share"
-    echo "For speed, data will be re-used within this session"
-    echo "Be patient" 
-    #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read system_read;do mamedev_forum_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame_systems_selection|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,,,,\"/')
-    fi
-    #we have to do a global comparison as the alfabetical order contains also a letter in the $1
-    if [[ $1 == descriptions* ]];then
-    #here we store the sorted mamedev_forum_csv values in the csv array
-    #we sort on the third column which contain the descriptions of the sytems
-    IFS=$'\n' csv=($(sort -t"," -d -k 3 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
-    else
-    #here we store the sorted mamedev_forum_csv values in the csv array
-    #we sort on the second column which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${mamedev_forum_csv[*]}"));unset IFS
-    fi
     build_menu_add-mamedev-systems $1
 }
 
