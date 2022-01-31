@@ -48,7 +48,7 @@ function gui_add-mamedev-systems() {
 ",Install MAME    ( required by this script ),,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MESS ( should be installed too ),,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",,,,,,,,,"
-",Save or update database locally (get data locally),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0238_systems_sorted_info -o /opt/retropie/emulators/mame/mame0238_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script will work faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
+",Save or update database locally (get data locally),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0238_systems_sorted_info -o /opt/retropie/emulators/mame/mame0238_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script will work faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\n\nPossible OFFLINE usage:\nIf both files mame0XXX_systems_sorted_info run_mess.sh are already stored locally then you will be able to use the script offline.\n\nWhen is the run_mess.sh script installed ? :\nThis file is locally stored when you have installed your first system.\","
 ",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0238_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
 ",,,,,,,,,"
 ",Choose and install systems with DEFAULT settings > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems in different ways\","
@@ -804,12 +804,14 @@ fi
 #for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
 mkdir -p  /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 chown -R $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share"
+
+#get the run_mess.sh, edited by RusselBcheck, if the specific run_mess.sh isn't saved in ~/RetroPie-Setup/scriptmodules
+if [[ $(sha1sum /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) != 9da9973fc04183e29fcd453d1367bef471f8248c* ]];then
 echo "install @valerino run_mess.sh script (the RusselB version)"
-#get the run_mess.sh edited by RusselB
 wget -q -nv -O /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/run_mess.sh
 #change ownership to normal user
 chown $user:$user "/home/$user/RetroPie-Setup/scriptmodules/run_mess.sh"
-
+fi
 
 #part 2 : platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)
 cat >"/home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg" << _EOF_
