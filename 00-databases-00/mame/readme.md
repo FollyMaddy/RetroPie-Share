@@ -17,4 +17,5 @@ Then I extracted the data on a 64 bit Windows10 with next command (for other ver
 Downloads\MAME\mame0236\mame -listdevices | findstr /B Driver > mame0236_systems
 
 
-
+With 64 bit linux we can do this :
+/opt/retropie/emulators/mame/mame -listdevices|grep ^D > mame0240_systems
