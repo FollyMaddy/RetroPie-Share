@@ -417,7 +417,7 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",mame-0.240-roms-split_202201 > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,"
 ",,,,"
 ",MAME_0.202_Software_List_ROMs_merged > RetroPie/downloads,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download,"
-",LOCKED ! : mame-sl > RetroPie/downloads/mame-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,"
+",MAME_0.240_Software_List : mame-sl > RetroPie/downloads/mame-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,"
 ",,,,"
 ",v HELP > Browse BIOS files < NOT FOUND in last runcommand.log,,,"
 ",BIOS(es) NOT FOUND < mame-0.231-merged > RetroPie/BIOS/mame ,,subform_add-mamedev-systems_downloads_wget_A \"$(echo /\\\<$(cat /dev/shm/runcommand.log |grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\/\\\</g')\" /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,"
