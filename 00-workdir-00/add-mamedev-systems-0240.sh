@@ -1227,10 +1227,10 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	iniConfig " = " "\"" "\$_custom_coreconfig"
 	iniSet "mame_softlists_enable" "disabled"
 	iniSet "mame_softlists_auto_media" "disabled"
-	iniSet "mame_boot_from_cli" "disabled"
+	iniSet "mame_boot_from_cli" "enabled"
         iniSet "mame_mouse_enable" "enabled"
 
-	# this will get loaded too via --append_config
+	# this will get loaded too via --appendconfig
 	iniConfig " = " "\"" "\$_add_config"
 	iniSet "core_options_path" "\$_custom_coreconfig"
 	#iniSet "save_on_exit" "false"
@@ -1262,10 +1262,10 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system  -autoframeskip -cfg_directory \$configdir/\$_system/lr-mess -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
 	addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system  -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
 	#
-	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active ${media[$index]} %ROM%'"
-	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
-	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -c -ui_active ${media[$index]} %ROM%'"
-	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -c -ui_active ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
 	#
 	addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -cfg_directory \$configdir/\$_system/mame -v -c -ui_active ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
         addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -cfg_directory -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system \$configdir/\$_system/mame -v -c -autoframeskip -ui_active ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
@@ -1394,9 +1394,25 @@ function configure_install-${newsystems[$index]}-cmd() {
 	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
 	local _system="$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)"
 	local _config="\$configdir/\$_system/retroarch.cfg"
+	local _add_config_basename="\$_config.add"
 	local _emulatorscfg="\$configdir/\$_system/emulators.cfg"
 	local _mameini="/opt/retropie/configs/mame/mame.ini"
-    
+	local _basename_coreconfig="\$configdir/\$_system/retroarch-core-options.cfg.basename"
+	local _add_config_basename="\$_config.basename"
+
+	# using a custom per-fake-core config for basename loaders using softlist
+	iniConfig " = " "\"" "\$_basename_coreconfig"
+	iniSet "mame_boot_from_cli" "enabled"
+        iniSet "mame_mouse_enable" "enabled"
+
+	# this will get loaded too via --appendconfig
+	iniConfig " = " "\"" "\$_add_config_basename"
+	iniSet "core_options_path" "\$_basename_coreconfig"
+
+	# set permissions for configurations
+ 	chown \$user:\$user "\$_basename_coreconfig" 
+ 	chown \$user:\$user "\$_add_config_basename" 
+
 	#added for test
 	local _add_config="\$_config.add"
 	local _custom_coreconfig="\$configdir/\$_system/custom-core-options.cfg"
@@ -1443,9 +1459,9 @@ function configure_install-${newsystems[$index]}-cmd() {
 	#only issue after is that the savestate filename still contains 1 space in the beginning of the filename and double quotes
 	#to fix this issue of double quotes the basename can be single quoted to remove them in the filename (we still have 1 space !) 
 	#
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -frameskip 10 -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -frameskip 10 -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
 	
 	#tests for basename loaders using the run_mess script
 	#works ok,but the .cmd files and savestate files are saved in /home/pi
@@ -1505,7 +1521,7 @@ fi
 
 #part 14 : add config patches
 # PATCH 1 : cdmono1 => enable 4:3 screen, mouse and all mouse buttons using lr-mess
-if [[ $1 == cdimono1 ]];then 
+if [[ $1 == cdimono1 ]];then
 echo "patch cdimono1 retroarch.cfg for lr-mess to : "
 echo "- assign the mouse buttons as joystick buttons to get mouse working !!!"
 echo "- assign right-alt as grab_mouse_toggle key for matching mouse movements to the host enviroment when running in desktop mode !!!"
@@ -1530,6 +1546,7 @@ echo "patch cdimono1 cdimono1.cfg for lr-mess to : "
 echo "- assign the joystick buttons as mouse buttons to get mouse working !!!"
 echo "- show standard 4:3 screen !!!"
 mv /opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg /opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg.bak 2>&-
+mkdir /opt/retropie/configs/cdimono1/lr-mess 2>&-
 cat >/opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg << _EOF_
 <?xml version="1.0"?>
 <!-- This file is autogenerated; comments and unknown tags will be stripped -->
@@ -1556,12 +1573,13 @@ cat >/opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg << _EOF_
     </system>
 </mameconfig>
 _EOF_
-chown $user:$user "/opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg" 2>&-
+chown -R $user:$user "/opt/retropie/configs/cdimono1/lr-mess" 2>&-
 
 # PATCH 2 : cdmono1 => enable 4:3 screen using mame
 echo "patch cdimono1 cdimono1.cfg for mame to : "
 echo "- show standard 4:3 screen !!!"
 mv /opt/retropie/configs/cdimono1/mame/cdimono1.cfg /opt/retropie/configs/cdimono1/mame/cdimono1.cfg.bak 2>&-
+mkdir /opt/retropie/configs/cdimono1/mame 2>&-
 cat >/opt/retropie/configs/cdimono1/mame/cdimono1.cfg << _EOF_
 <?xml version="1.0"?>
 <!-- This file is autogenerated; comments and unknown tags will be stripped -->
@@ -1580,8 +1598,8 @@ cat >/opt/retropie/configs/cdimono1/mame/cdimono1.cfg << _EOF_
     </system>
 </mameconfig>
 _EOF_
-chown $user:$user "/opt/retropie/configs/cdimono1/mame/cdimono1.cfg" 2>&-
-
+chown -R $user:$user "/opt/retropie/configs/cdimono1/mame" 2>&-
+sleep 1
 fi
 
 #end run_generator_script
