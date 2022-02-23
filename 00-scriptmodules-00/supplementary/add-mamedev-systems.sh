@@ -247,14 +247,19 @@ function choose_extra_options_add() {
 ",TI-99/4A(32Kb) + speech + editass + flop1-35hd,,run_generator_script ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35hd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-35hd,"
 ",TI-99/4A(32Kb) + speech + rxb2021 + flop1-525dd,,run_generator_script ti99_4a ti99_4a -gromport*multi*-cart1*~/RetroPie/roms/ti99_4a/ti99_cart_rpk/rxb2021.rpk*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-rxb2021-f1-525dd,"
 ",TI-99/4A(32Kb) + speech + rxb2021 + flop1-525qd,,run_generator_script ti99_4a ti99_4a -gromport*multi*-cart1*~/RetroPie/roms/ti99_4a/ti99_cart_rpk/rxb2021.rpk*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525qd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-rxb2021-f1-525qd,"
+",Odyssey2 + voice (install odyssey2 and patch default loaders),,run_generator_script odyssey2;cat /opt/retropie/configs/odyssey2/emulators.cfg|grep -v default|awk '/mess/ || /mame/'|sed -i \"s/ %B/ -cart1 voice -cart2 %B/g;s/\/ '%B/ -cart1 voice -cart2 '%B/g;s/ %R/1 voice -cart2 %R/g\" /opt/retropie/configs/odyssey2/emulators.cfg,"
+",Videopac + voice (install videopac and patch default loaders),,run_generator_script videopac;cat /opt/retropie/configs/videopac/emulators.cfg|grep -v default|awk '/mess/ || /mame/'|sed -i \"s/ %B/ -cart1 voice -cart2 %B/g;s/\/ '%B/ -cart1 voice -cart2 '%B/g;s/ %R/1 voice -cart2 %R/g\" /opt/retropie/configs/videopac/emulators.cfg,"
     )
 #preserved-test-lines
 #slot-devices are added but not recognised possibly because it boots with version 1 of the basic rom
 #",Coco with ram and floppy 525dd support,,run_generator_script coco coco -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9,"
 #replaced exbasic with superxb (super extended basic)
 #",TI-99/4A Home Computer (32Kb) + exbasic + flop1,,run_generator_script ti99_4a ti99_4a exbasic*-ioport*peb*-ioport*peb*-ioport:peb:slot2*hfdc*-ioport:peb:slot3*32kmem* floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*,"
+#test Odyssey2 + voice : no sound 
+#",Odyssey2 + voice,,run_generator_script odyssey2 odyssey2 -cart1*voice cartslot2 cart2 .bin*.rom -cart1_voice,"
+#manual basename line that works but above lines create custom media loaders not basename loaders
+#/opt/retropie/emulators/mame/mame -cfg_directory /opt/retropie/configs/odyssey2/mame -rompath /home/pi/RetroPie/BIOS/mame\;/home/pi/RetroPie/roms/odyssey2 -v -c -ui_active videopac -cart1 voice -cart2 beespl
 
-    
     build_menu_add-mamedev-systems
 }
 
