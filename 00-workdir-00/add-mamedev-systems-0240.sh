@@ -1259,7 +1259,7 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	done
         chown \$user:\$user "\$_emulatorscfg"	
 	
-		# create retroarch configuration
+	# create retroarch configuration
 	ensureSystemretroconfig "\$_system"
 
 	# ensure it works without softlists, using a custom per-fake-core config
