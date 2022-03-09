@@ -668,7 +668,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0240.18" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0240.19" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1033,6 +1033,7 @@ systemsrp+=( "$(echo $LINE | cut -d '_' -f 1)" )
 descriptionsrp+=( "$(echo $LINE | \
 sed 's/\"PC\"/\"-PC-\"/g' | \
 sed 's/Apple II/-Apple II-/g' | \
+sed 's/Atari 7800 ProSystem/Atari 7800/g' | \
 sed 's/Atari Jaguar/Jaguar/g' | \
 sed 's/Mega CD/Mega-CD/g' | \
 sed 's/Sega 32X/32X/g' | \
