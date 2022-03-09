@@ -668,7 +668,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0240.17" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1067,6 +1067,12 @@ systemsrp+=( "dragon64" )
 descriptionsrp+=( "Dragon 64" )
 systemsrp+=( "dragon64" )
 descriptionsrp+=( "Dragon 64" )
+systemsrp+=( "msx2" )
+descriptionsrp+=( "MSX2" )
+systemsrp+=( "msx2+" )
+descriptionsrp+=( "MSX2+" )
+systemsrp+=( "msxturbor" )
+descriptionsrp+=( "MSX Turbo-R" )
 #adding this doesn't work with this type of system to get the correct description in es_systems.cfg, other solution required or we have to do a look up in the arrays somehow
 #systemsrp+=( "konamih" )
 #descriptionsrp+=( "Konami Handheld" )
@@ -1103,6 +1109,7 @@ newsystems+=( "${systems[@]}" )
   done
 
   #check the mamedev descriptions against the RetroPie descriptions
+  echo "searching for matching names, when different matches occour then the last name is used !"
   for mamedevindex in "${!descriptions[@]}"; do
     for rpindex in "${!descriptionsrp[@]}"; do
       #create an empty array and split the the retropie name descriptions into seperate "words" in an array
