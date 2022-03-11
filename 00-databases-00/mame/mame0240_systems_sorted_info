@@ -9536,7 +9536,7 @@ Driver hbf500f (HB-F500F (MSX2)): @computer@home_system@non-arcade
 Driver hbf500p (HB-F500P (MSX2)): @computer@home_system@non-arcade
 Driver hbf700d (HB-F700D (Germany) (MSX2)): @computer@home_system@non-arcade
 Driver hbf700f (HB-F700F (MSX2)): @computer@home_system@non-arcade
-Driver hbf700p (HB-F700P (MSX2)): @computer@home_system@non-arcade
+Driver hbf700p (HB-F700P (MSX2)): @computer@forum@home_system@non-arcade
 Driver hbf700s (HB-F700S (Spain) (MSX2)): @computer@home_system@non-arcade
 Driver hbf900 (HB-F900 / 1st released version (Japan) (MSX2)): @computer@home_system@non-arcade
 Driver hbf900a (HB-F900 / 2nd released version (Japan) (MSX2)): @computer@home_system@non-arcade
@@ -37500,7 +37500,7 @@ Driver vg8000 (VG-8000 (MSX1)): @computer@home_system@non-arcade
 Driver vg8010 (VG-8010 (MSX1)): @computer@home_system@non-arcade
 Driver vg8010f (VG-8010F (MSX1)): @computer@home_system@non-arcade
 Driver vg802000 (VG-8020-00 (MSX1)): @computer@home_system@non-arcade
-Driver vg802020 (VG-8020-20 (MSX1)): @computer@home_system@non-arcade
+Driver vg802020 (VG-8020-20 (MSX1)): @computer@forum@home_system@non-arcade
 Driver vg8020f (VG-8020F (MSX1)): @computer@home_system@non-arcade
 Driver vg8230 (VG-8230 (MSX2)): @computer@home_system@non-arcade
 Driver vg8230j (VG-8230J (MSX2)): @computer@home_system@non-arcade
