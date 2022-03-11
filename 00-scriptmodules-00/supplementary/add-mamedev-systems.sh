@@ -111,6 +111,8 @@ function subgui_add-mamedev-systems_forum() {
 ",Tiger Handheld Electronics,,run_generator_script taddams,,,,,dialog_message \"Tiger Handheld Electronics - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\nYou can get artworks and backgrounds for those games with the (Select downloads) menu below\","
 ",Tiger R-Zone,,run_generator_script rzbatfor,,,,,dialog_message \"Tiger R-Zone - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\","
 ",,,,,,,,,"
+",Classic Handheld Systems (+ lr-gw from source),,run_generator_script alnattck;echo -e 'install regular lr-gw from source\ndelete possible old lr-gw line and empty line(s) in /opt/retropie/configs/classich/emulators.cfg\npaste new lr-gw line in /opt/retropie/configs/classich/emulators.cfg';$scriptdir/retropie_packages.sh lr-gw;sed -i -e 's/lr-gw.*//g;/^$/d' /opt/retropie/configs/classich/emulators.cfg;cat /opt/retropie/configs/gameandwatch/emulators.cfg|grep lr-gw >> /opt/retropie/configs/classich/emulators.cfg,,,,,dialog_message \"Non_game & watch from MADrigal Romset and all other manufacturers in the MAME romset such as Coleco_ Entex_ etc. You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum.\n\nYou can get artworks and backgrounds for those games with the (Select downloads) menu below\"," 
+",,,,,,,,,"
 ",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create overlays from artwork\","
     )
     build_menu_add-mamedev-systems
@@ -668,7 +670,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0240.19" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0240.20" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
