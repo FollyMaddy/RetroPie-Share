@@ -233,6 +233,9 @@ function choose_extra_options_add() {
 ",FM-Towns Marty + 4Mb ram + floppy support,,run_generator_script fmtmarty fmtmarty -ram*4M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr*.icm -4Mb,"
 ",FM-Towns Marty + 4Mb ram + cdrom support,,run_generator_script fmtmarty fmtmarty -ram*4M cdrom cdrm .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr*.icm -4Mb,"
 ",Nintendo Datach + cartridge2 support,,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
+",Memotech MTX512 + 512K ram + cassette support,,run_generator_script mtx512 mtx512 -ram*512K cassette cass .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb,"
+",Memotech MTX512 + 512K ram + sdxbas floppy support,,run_generator_script mtx512 mtx512 -ram*512K*-exp*sdxbas floppydisk1 flop1 .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb-sdxbas,"
+",Memotech MTX512 + 512K ram + sdxcpm floppy support,,run_generator_script mtx512 mtx512 -ram*512K*-exp*sdxcpm floppydisk1 flop1 .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb-sdxcpm,"
 ",MSX2 Sony HB-F700P + fmpac + cartridge2 support,,run_generator_script hbf700p msx2 fmpac cartridge2 cart2 .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -fmpac,"
 ",MSX2 Sony HB-F700P + fmpac + floppy support,,run_generator_script hbf700p msx2 fmpac floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -fmpac,"
 ",Tandy MC-10 micro color computer + 16k + cassette support,,run_generator_script mc10 mc10 -ext*ram cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -16k,"
@@ -670,7 +673,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0240.20" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0240.21" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
