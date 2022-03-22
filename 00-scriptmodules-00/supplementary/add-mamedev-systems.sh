@@ -48,8 +48,8 @@ function gui_add-mamedev-systems() {
 ",Install MAME    ( required by this script ),,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MESS ( should be installed too ),,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",,,,,,,,,"
-",Save or update database locally (get data locally),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0240_systems_sorted_info -o /opt/retropie/emulators/mame/mame0240_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script will work faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\n\nPossible OFFLINE usage:\nIf both files mame0XXX_systems_sorted_info run_mess.sh are already stored locally then you will be able to use the script offline.\n\nWhen is the run_mess.sh script installed ? :\nThis file is locally stored when you have installed your first system.\","
-",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0240_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
+",Save or update database locally (get data locally),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0241_systems_sorted_info -o /opt/retropie/emulators/mame/mame0241_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script will work faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\n\nPossible OFFLINE usage:\nIf both files mame0XXX_systems_sorted_info run_mess.sh are already stored locally then you will be able to use the script offline.\n\nWhen is the run_mess.sh script installed ? :\nThis file is locally stored when you have installed your first system.\","
+",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0241_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
 ",,,,,,,,,"
 ",Choose and install systems with DEFAULT settings > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems in different ways\","
 ",Choose and install systems with >EXTRA< settings > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems with extra functions\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
@@ -78,9 +78,9 @@ function mame_data_read() {
     #here we read the systems and descriptions from mame into an array
     #by using the if function the data can be re-used, without reading it every time
     if [[ -z ${mamedev_csv[@]} ]]; then
-        if [[ -f /opt/retropie/emulators/mame/mame0240_systems_sorted_info ]]; then 
+        if [[ -f /opt/retropie/emulators/mame/mame0241_systems_sorted_info ]]; then 
     clear
-    echo "Get mame0240 data:/opt/retropie/emulators/mame/mame0240_systems_sorted_info"
+    echo "Get mame0241 data:/opt/retropie/emulators/mame/mame0241_systems_sorted_info"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
@@ -88,12 +88,12 @@ function mame_data_read() {
     # Now using this : lines that start with "D" using => grep ^[D]
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0240_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0241_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         else
-    echo "Get mame0240 data:RetroPie-Share repository"
+    echo "Get mame0241 data:RetroPie-Share repository"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0240_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0241_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         fi
     fi
 }
@@ -199,6 +199,7 @@ function choose_extra_options_add() {
 #With this csv style we can't use quotes or double quotes 
 #so if we want to add more options , slotdevices or extensions we replace spaces with *
 #later in the run_generator_script they are replaced again with spaces
+#we also need commas sometimes, here we use a # as a comma, in the run_generator_script they are replaced again with a comma
 #the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 #example on how we can create the extensions options : /opt/retropie/emulators/mame/mame -listmedia hbf700p|sed 's/  \./*\./g'
 #2nd example on how we can create the extensions options, in this case, with added slotdevice : /opt/retropie/emulators/mame/mame -listmedia apple2ee -sl7 cffa2|sed 's/  \./*\./g'
@@ -222,6 +223,8 @@ function choose_extra_options_add() {
 ",Dragon 32 + ram + floppy 525qd support,,run_generator_script dragon32 dragon32 -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9 -extra_ram-525qd,"
 ",(Tano) Dragon 64 NTSC + ram + cassette support,,run_generator_script tanodr64 dragon64 -ext*ram cassette cass .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9 -extra_ram,"
 ",(Tano) Dragon 64 NTSC + ram + dragon_fdc_floppy 525qd support,,run_generator_script tanodr64 dragon64 -ext*multi*-ext:multi:slot1*ram*-ext*dragon_fdc floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9 -extra_ram-525qd,"
+",Electron + plus3  floppy adfs support,,run_generator_script electron electron -exp*plus3* floppydisk flop .wav*.csw*.uef*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ssd*.bbc*.img*.dsd*.adf*.ads*.adm*.adl*.rom*.bin -plus3-adfs,"
+",Electron + plus3  floppy dfs210 support,,run_generator_script electron electron -exp*plus3#bios=dfs210 floppydisk flop .wav*.csw*.uef*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ssd*.bbc*.img*.dsd*.adf*.ads*.adm*.adl*.rom*.bin -plus3-dfs210,"
 ",Enterprise 64k + basic21 + exdos13 + floppy support,,run_generator_script ep64 ep64 basic21*-exp*exdos floppydisk flop .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -basic21_exdos,"
 ",Enterprise 128k + basic21 + exdos13 + floppy support,,run_generator_script ep128 ep128 basic21*-exp*exdos floppydisk flop .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -basic21_exdos,"
 ",Famicom Family BASIC (V3.0) (J) + cassette support,,run_generator_script famicom famicom_famibs30 famibs30*-exp*fc_keyboard cassette cass .wav,"
@@ -273,6 +276,7 @@ function choose_autoboot_add() {
 #With this csv style we can't use quotes or double quotes 
 #so if we want to add more options , slotdevices or extensions we replace spaces with *
 #later in the run_generator_script they are replaced again with spaces
+#we also need commas sometimes, here we use a # as a comma, in the run_generator_script they are replaced again with a comma
 #the options after run_generator_script are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 #example on how we can create the extensions options : /opt/retropie/emulators/mame/mame -listmedia hbf700p|sed 's/  \./*\./g'
 #!!! make sure all available extensions of a system are added because extensions are overwritten when installing a system !!!
@@ -675,7 +679,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0240.22" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0241.00" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -896,8 +900,8 @@ RPsystemNames+=( "$2" )
 #normally we would use this :
 #ExtraPredefinedOptions+=( "$3" )
 #but with using the front-end quotes can't be used in the csv style used there
-#so, in the front-end, we replace the spaces with a * and filter them out here again
-ExtraPredefinedOptions+=( "$(echo $3|sed 's/*/ /g')" )
+#so, in the front-end, we replace the spaces with a * and commas with a # and filter them out here again
+ExtraPredefinedOptions+=( "$(echo $3|sed 's/*/ /g;s/#/,/g')" )
 ExtraPredefinedLoaderName+=( "$7" )
 else
 # read system(s) using "mame" to extract the data and add them in the systems array
