@@ -32,6 +32,7 @@ function build_b-em-allegro4() {
     cd $md_build/b-em-263d2d44e53e593d1f51c0be9b9f404447fb33a3
     ./autogen.sh
     ./configure
+    sed -i 's/-mcpu/-fcommon -mcpu/g' src/Makefile; # workaround for compiling with gcc-10/g++-10
     make -j4
 }
 
