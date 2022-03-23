@@ -85,7 +85,7 @@ _EOF_
 
 
     mkRomDir "bbcmicro"
-    addEmulator 0 "b-em-allegro4-BBC_B+8271_FDC" "bbcmicro" "XINIT:$md_inst/b-em-allegro4-multiload.sh -m3 %ROM%"
-    addEmulator 0 "b-em-allegro4-Master_128" "bbcmicro" "XINIT:$md_inst/b-em-allegro4-multiload.sh -m10 %ROM%"
+    addEmulator 0 "b-em-allegro4-BBC_B_8271_FDC-multiload" "bbcmicro" "XINIT:$md_inst/b-em-allegro4-multiload.sh -m3 %ROM%"
+    addEmulator 0 "b-em-allegro4-Master_128-multiload" "bbcmicro" "XINIT:$md_inst/b-em-allegro4-multiload.sh -m10 %ROM%"
     addSystem "bbcmicro" "Acorn BBC micro" ".uef .ssd"
 }
