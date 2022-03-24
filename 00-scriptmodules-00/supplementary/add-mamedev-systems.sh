@@ -362,6 +362,7 @@ function subgui_add-mamedev-systems_downloads() {
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
 ",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
+",Create lr-mess bezels from mame artwork,,create_lr-mess_bezels,"
     )
     build_menu_add-mamedev-systems
 }
@@ -679,7 +680,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0241.00" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0241.01" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1759,6 +1760,65 @@ _EOF_
 overlays = 1
 overlay0_overlay = $game.png
 overlay0_full_screen = false
+overlay0_descs = 0
+_EOF_
+        chown $user:$user "/opt/retropie/configs/all/retroarch/overlay/$game.cfg" 
+        fi 
+    done
+done
+}
+
+
+function create_lr-mess_bezels() {
+clear
+echo "extract bezel files from mame artwork, if available, and create custom retroarch configs for bezels"
+echo
+#added handheld arrays, used for overlays
+#this is an example command to extract the systems and add them here to the array :
+#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+mame_data_read
+IFS=$'\n' 
+classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+tigerh=($(cut -d "," -f 2 <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+gameandwatch=($(cut -d "," -f 2 <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+unset IFS
+
+
+#create a subarray of the arrays being used for overlays
+#now only two for loops can be use for multiple arrays
+systems=("classich" "konamih" "tigerh" "gameandwatch")
+
+#use multiple arrays over one for loop:
+#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
+for system in "${systems[@]}"; do
+    declare -n games="$system"
+    #echo "system name: ${system} with system members: ${games[@]}"
+    for game in "${games[@]}"; do
+        #echo -en "\tworking on name $game of the $system system\n"
+        mkdir -p "/home/$user/RetroPie/roms/$system"
+        chown $user:$user "/home/$user/RetroPie/roms/$system" 
+	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel.png
+        unzip /home/$user/RetroPie/roms/mame/artwork/$game.zip Bezel.png -d /home/$user/RetroPie/roms/mame/artwork 2>/dev/null
+        checkforbezel=$(ls /home/$user/RetroPie/roms/mame/artwork/Bezel.png 2> /dev/null)
+        if [[ -n $checkforbezel ]]
+        then
+        mv /home/$user/RetroPie/roms/mame/artwork/Bezel.png  /opt/retropie/configs/all/retroarch/overlay/$game.png 2>/dev/null
+        chown $user:$user "/opt/retropie/configs/all/retroarch/overlay/$game.png" 
+	#create configs
+	cat > "/home/$user/RetroPie/roms/$system/$game.zip.cfg" << _EOF_
+input_overlay =  /opt/retropie/configs/all/retroarch/overlay/$game.cfg
+input_overlay_enable = true
+input_overlay_opacity = 0.700000
+input_overlay_scale = 1.000000
+_EOF_
+        cp "/home/$user/RetroPie/roms/$system/$game.zip.cfg" "/home/$user/RetroPie/roms/$system/$game.7z.cfg"
+        chown $user:$user /home/$user/RetroPie/roms/$system/$game.*.cfg
+        #
+	cat > "/opt/retropie/configs/all/retroarch/overlay/$game.cfg" << _EOF_
+overlays = 1
+overlay0_overlay = $game.png
+overlay0_full_screen = true
 overlay0_descs = 0
 _EOF_
         chown $user:$user "/opt/retropie/configs/all/retroarch/overlay/$game.cfg" 
