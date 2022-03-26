@@ -47,7 +47,7 @@ function sources_elkulator() {
 function build_elkulator() {
     cd $md_build/elkulator-master
     aclocal -I m4
-    automake -a
+    automake -a -i
     autoconf
     ./configure
     make -j4
