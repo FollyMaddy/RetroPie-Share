@@ -266,7 +266,7 @@ function choose_extra_options_add() {
 #test Odyssey2 + voice : no sound 
 #",Odyssey2 + voice,,run_generator_script odyssey2 odyssey2 -cart1*voice cartslot2 cart2 .bin*.rom -cart1_voice,"
 #manual basename line that works but above lines create custom media loaders not basename loaders
-#/opt/retropie/emulators/mame/mame -cfg_directory /opt/retropie/configs/odyssey2/mame -rompath /home/pi/RetroPie/BIOS/mame\;/home/pi/RetroPie/roms/odyssey2 -v -c -ui_active videopac -cart1 voice -cart2 beespl
+#/opt/retropie/emulators/mame/mame -cfg_directory /opt/retropie/configs/odyssey2/mame -rompath /home/$user/RetroPie/BIOS/mame\;/home/$user/RetroPie/roms/odyssey2 -v -c -ui_active videopac -cart1 voice -cart2 beespl
 
     build_menu_add-mamedev-systems
 }
@@ -361,9 +361,8 @@ function subgui_add-mamedev-systems_downloads() {
 ",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
-",Create lr-mess background-overlays from mame artwork,,create_lr-mess_background-overlays,"
-",Create lr-mess  4:3 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -4:3,"
-",Create lr-mess 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16:9,"
+",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
+",Create lr-mess bezels from mame artwork,,create_lr-mess_bezels,"
     )
     build_menu_add-mamedev-systems
 }
@@ -457,10 +456,10 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",v Press HELP button,,,"
 ",RetroPie/roms/apple2ee < TotalReplay,,subform_add-mamedev-systems_downloads_wget_A '//&&/hdv/' /home/$user/RetroPie/roms/apple2ee TotalReplay download,,,,,dialog_message \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
 ",RetroPie/roms/amstradcpc < R-TYPE 2012 (Easter-Egg),,subform_add-mamedev-systems_downloads_wget_A '//&&/dsk/' /home/$user/RetroPie/roms/amstradcpc r-type-128k download;chown -R $user:$user "/home/$user/RetroPie/roms/amstradcpc",,,,,dialog_message \"NO HELP YET\","
-",RetroPie/roms/ti99_4a < TOSEC_2012_04_23,,subform_add-mamedev-systems_downloads_wget_A '//&&/zip /' /home/$user/RetroPie/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download;clear;unzip -o /home/$user/RetroPie/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d /home/pi/RetroPie/roms/ti99_4a/;chown -R $user:$user "/home/$user/RetroPie/roms/ti99_4a",,,,,dialog_message \"NO HELP YET\","
+",RetroPie/roms/ti99_4a < TOSEC_2012_04_23,,subform_add-mamedev-systems_downloads_wget_A '//&&/zip /' /home/$user/RetroPie/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download;clear;unzip -o /home/$user/RetroPie/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d /home/$user/RetroPie/roms/ti99_4a/;chown -R $user:$user "/home/$user/RetroPie/roms/ti99_4a",,,,,dialog_message \"NO HELP YET\","
     )
     build_menu_add-mamedev-systems
-    #",RetroPie/roms/ti99_4a < TOSEC_2012_04_23,,subform_add-mamedev-systems_downloads_wget_A '//&&/zip /' /home/$user/RetroPie/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download;unzip /home/$user/RetroPie/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d /home/pi/RetroPie/roms/ti99_4a/;chown -R $user:$user "/home/$user/RetroPie/roms/ti99_4a",,,,,dialog_message \"NO HELP YET\","
+    #",RetroPie/roms/ti99_4a < TOSEC_2012_04_23,,subform_add-mamedev-systems_downloads_wget_A '//&&/zip /' /home/$user/RetroPie/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download;unzip /home/$user/RetroPie/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d /home/$user/RetroPie/roms/ti99_4a/;chown -R $user:$user "/home/$user/RetroPie/roms/ti99_4a",,,,,dialog_message \"NO HELP YET\","
     
 #for adding later
 #",Dreamcast TOSEC > RetroPie/roms/dreamcast,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/roms/dreamcast tosecdcus20190822 download,"
@@ -1251,15 +1250,15 @@ function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$
 	addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system  -autoframeskip -cfg_directory \$configdir/\$_system/lr-mess -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
 	addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config \\${systems[$index]} \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system  -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
 	#
-	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active ${media[$index]} %ROM%'"
-	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
-	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -c -ui_active ${media[$index]} %ROM%'"
-	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/$user/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/$user/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/$user/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -c -ui_active ${media[$index]} %ROM%'"
+	addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath /home/$user/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ -cfg_directory \$configdir/\$_system/lr-mess/%BASENAME% -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
 	#
-	addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -statename \$_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
-        addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -autoframeskip -ui_active -statename \$_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
-	addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -cfg_directory \$configdir/\$_system/mame/%BASENAME% -v -c -ui_active -statename \$_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
-        addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -cfg_directory \$configdir/\$_system/mame/%BASENAME% -v -c -autoframeskip -ui_active -statename \$_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+	addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -statename \$_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+        addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -autoframeskip -ui_active -statename \$_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+	addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -cfg_directory \$configdir/\$_system/mame/%BASENAME% -v -c -ui_active -statename \$_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+        addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -cfg_directory \$configdir/\$_system/mame/%BASENAME% -v -c -autoframeskip -ui_active -statename \$_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
 
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
@@ -1441,21 +1440,21 @@ function configure_install-${newsystems[$index]}-cmd() {
 	#only issue after is that the savestate filename still contains 1 space in the beginning of the filename and double quotes
 	#to fix this issue of double quotes the basename can be single quoted to remove them in the filename (we still have 1 space !) 
 	#
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -frameskip 10 -rompath /home/pi/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -rompath /home/$user/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip -rompath /home/$user/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S /home/$user/RetroPie/roms/\$_system -s /home/$user/RetroPie/roms/\$_system -v -L \$_mess 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -frameskip 10 -rompath /home/$user/RetroPie/BIOS/mame;/home/$user/RetroPie/roms/\$_system/ '%BASENAME%''"
 	
 	#tests for basename loaders using the run_mess script
-	#works ok,but the .cmd files and savestate files are saved in /home/pi
+	#works ok,but the .cmd files and savestate files are saved in /home/$user
 	#-> turned off <-
 	#(can be used, with adapted run_mess script, for .cmd file generation if needed)
 	#addEmulator 0 "lr-run_mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system -c -ui_active %BASENAME%"
 	#addEmulator 0 "lr-run_mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system -c -ui_active -autoframeskip %BASENAME%"
 	#addEmulator 0 "lr-run_mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_script \$_retroarch_bin \$_mess \$_config $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system -c -ui_active -frameskip 10 %BASENAME%"
 
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -statename \$_system/%BASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -statename \$_system/%BASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/pi/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -statename \$_system/%BASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -statename \$_system/%BASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -statename \$_system/%BASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;/home/$user/RetroPie/roms/\$_system -v -c -ui_active -statename \$_system/%BASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) %BASENAME%"
 
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
@@ -1594,7 +1593,7 @@ cat >/opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg << _EOF_
             </port>
         </input>
         <image_directories>
-            <device instance="cdrom" directory="/home/pi/RetroPie/roms/cdimono1/" />
+            <device instance="cdrom" directory="/home/$user/RetroPie/roms/cdimono1/" />
         </image_directories>
     </system>
 </mameconfig>
@@ -1604,9 +1603,9 @@ chown -R $user:$user "/opt/retropie/configs/cdimono1/lr-mess" 2>&-
 # PATCH 2 : cdmono1 => enable 4:3 screen using mame
 echo "patch cdimono1 cdimono1.cfg for mame to : "
 echo "- show standard 4:3 screen !!!"
-mv /home/pi/RetroPie/roms/mame/cfg/cdimono1.cfg /home/pi/RetroPie/roms/mame/cfg/cdimono1.cfg.bak 2>&-
-mkdir /home/pi/RetroPie/roms/mame/cfg 2>&-
-cat >/home/pi/RetroPie/roms/mame/cfg/cdimono1.cfg << _EOF_
+mv /home/$user/RetroPie/roms/mame/cfg/cdimono1.cfg /home/$user/RetroPie/roms/mame/cfg/cdimono1.cfg.bak 2>&-
+mkdir /home/$user/RetroPie/roms/mame/cfg 2>&-
+cat >/home/$user/RetroPie/roms/mame/cfg/cdimono1.cfg << _EOF_
 <?xml version="1.0"?>
 <!-- This file is autogenerated; comments and unknown tags will be stripped -->
 <mameconfig version="10">
@@ -1619,12 +1618,12 @@ cat >/home/pi/RetroPie/roms/mame/cfg/cdimono1.cfg << _EOF_
             <feature device="cdimono1" type="sound" status="imperfect" />
         </ui_warnings>
         <image_directories>
-            <device instance="cdrom" directory="/home/pi/RetroPie/roms/cdimono1/" />
+            <device instance="cdrom" directory="/home/$user/RetroPie/roms/cdimono1/" />
         </image_directories>
     </system>
 </mameconfig>
 _EOF_
-chown -R $user:$user "/home/pi/RetroPie/roms/mame/cfg" 2>&-
+chown -R $user:$user "/home/$user/RetroPie/roms/mame/cfg" 2>&-
 sleep 1
 fi
 
@@ -1711,7 +1710,7 @@ $scriptdir/retropie_packages.sh mame clean
 }
 
 
-function create_lr-mess_background-overlays() {
+function create_lr-mess_overlays() {
 clear
 echo "extract background files from mame artwork, if available, and create custom retroarch configs for overlay's"
 echo
@@ -1770,7 +1769,7 @@ done
 }
 
 
-function create_lr-mess_bezel-overlays() {
+function create_lr-mess_bezels() {
 clear
 echo "extract bezel files from mame artwork, if available, and create custom retroarch configs for bezels"
 echo
@@ -1799,12 +1798,12 @@ for system in "${systems[@]}"; do
         #echo -en "\tworking on name $game of the $system system\n"
         mkdir -p "/home/$user/RetroPie/roms/$system"
         chown $user:$user "/home/$user/RetroPie/roms/$system" 
-	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel-16:9.png or Bezel-4:3.png
-        unzip /home/$user/RetroPie/roms/mame/artwork/$game.zip Bezel$1.png -d /home/$user/RetroPie/roms/mame/artwork 2>/dev/null
-        checkforbezel=$(ls /home/$user/RetroPie/roms/mame/artwork/Bezel$1.png 2> /dev/null)
+	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel.png
+        unzip /home/$user/RetroPie/roms/mame/artwork/$game.zip Bezel.png -d /home/$user/RetroPie/roms/mame/artwork 2>/dev/null
+        checkforbezel=$(ls /home/$user/RetroPie/roms/mame/artwork/Bezel.png 2> /dev/null)
         if [[ -n $checkforbezel ]]
         then
-        mv /home/$user/RetroPie/roms/mame/artwork/Bezel$1.png  /opt/retropie/configs/all/retroarch/overlay/$game.png 2>/dev/null
+        mv /home/$user/RetroPie/roms/mame/artwork/Bezel.png  /opt/retropie/configs/all/retroarch/overlay/$game.png 2>/dev/null
         chown $user:$user "/opt/retropie/configs/all/retroarch/overlay/$game.png" 
 	#create configs
 	cat > "/home/$user/RetroPie/roms/$system/$game.zip.cfg" << _EOF_
