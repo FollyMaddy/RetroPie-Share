@@ -361,8 +361,9 @@ function subgui_add-mamedev-systems_downloads() {
 ",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
-",Create lr-mess overlays from mame artwork,,create_lr-mess_overlays,"
-",Create lr-mess bezels from mame artwork,,create_lr-mess_bezels,"
+",Create lr-mess background-overlays from mame artwork,,create_lr-mess_background-overlays,"
+",Create lr-mess  4:3 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -4:3,"
+",Create lr-mess 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16:9,"
     )
     build_menu_add-mamedev-systems
 }
@@ -680,7 +681,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0241.02" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0241.03" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1710,7 +1711,7 @@ $scriptdir/retropie_packages.sh mame clean
 }
 
 
-function create_lr-mess_overlays() {
+function create_lr-mess_background-overlays() {
 clear
 echo "extract background files from mame artwork, if available, and create custom retroarch configs for overlay's"
 echo
@@ -1769,7 +1770,7 @@ done
 }
 
 
-function create_lr-mess_bezels() {
+function create_lr-mess_bezel-overlays() {
 clear
 echo "extract bezel files from mame artwork, if available, and create custom retroarch configs for bezels"
 echo
@@ -1798,12 +1799,12 @@ for system in "${systems[@]}"; do
         #echo -en "\tworking on name $game of the $system system\n"
         mkdir -p "/home/$user/RetroPie/roms/$system"
         chown $user:$user "/home/$user/RetroPie/roms/$system" 
-	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel.png
-        unzip /home/$user/RetroPie/roms/mame/artwork/$game.zip Bezel.png -d /home/$user/RetroPie/roms/mame/artwork 2>/dev/null
-        checkforbezel=$(ls /home/$user/RetroPie/roms/mame/artwork/Bezel.png 2> /dev/null)
+	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel-16:9.png or Bezel-4:3.png
+        unzip /home/$user/RetroPie/roms/mame/artwork/$game.zip Bezel$1.png -d /home/$user/RetroPie/roms/mame/artwork 2>/dev/null
+        checkforbezel=$(ls /home/$user/RetroPie/roms/mame/artwork/Bezel$1.png 2> /dev/null)
         if [[ -n $checkforbezel ]]
         then
-        mv /home/$user/RetroPie/roms/mame/artwork/Bezel.png  /opt/retropie/configs/all/retroarch/overlay/$game.png 2>/dev/null
+        mv /home/$user/RetroPie/roms/mame/artwork/Bezel$1.png  /opt/retropie/configs/all/retroarch/overlay/$game.png 2>/dev/null
         chown $user:$user "/opt/retropie/configs/all/retroarch/overlay/$game.png" 
 	#create configs
 	cat > "/home/$user/RetroPie/roms/$system/$game.zip.cfg" << _EOF_
