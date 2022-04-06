@@ -372,8 +372,8 @@ function subgui_add-mamedev-systems_downloads() {
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
 ",Create lr-mess background-overlays from mame artwork,,create_lr-mess_background-overlays,"
-",Create lr-mess  4:3 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -4:3,"
-",Create lr-mess 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16:9,"
+",Create lr-mess  4:3 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -4-3,"
+",Create lr-mess 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16-9,"
     )
     build_menu_add-mamedev-systems
 }
@@ -724,7 +724,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?               Version 0241.04" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.04" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1869,7 +1869,7 @@ for system in "${systems[@]}"; do
         #echo -en "\tworking on name $game of the $system system\n"
         mkdir -p "/home/$user/RetroPie/roms/$system"
         chown $user:$user "/home/$user/RetroPie/roms/$system" 
-	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel-16:9.png or Bezel-4:3.png
+	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel-16-9.png or Bezel-4-3.png
         unzip /home/$user/RetroPie/roms/mame/artwork/$game.zip Bezel$1.png -d /home/$user/RetroPie/roms/mame/artwork 2>/dev/null
         checkforbezel=$(ls /home/$user/RetroPie/roms/mame/artwork/Bezel$1.png 2> /dev/null)
         if [[ -n $checkforbezel ]]
