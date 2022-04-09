@@ -35,7 +35,7 @@ local system_read
 
 
 function depends_add-mamedev-systems() {
-    getDepends curl python3
+    getDepends curl python3 asciinema
 }
 
 
@@ -59,6 +59,8 @@ function gui_add-mamedev-systems() {
 ",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Browse and get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- create overlays from artwork\","
 ",,,,,,,,,"
 ",Browser/downloader > Submenu (Restricted),,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog_message \"Browse and get online files.\n(only available with the correct input)\","
+",,,,,,,,,"
+",Asciinema Demo TEST,,asciinema play https://asciinema.org/a/484884,,,,,dialog_message \"No help available\","
     )
     build_menu_add-mamedev-systems
 }
@@ -120,8 +122,6 @@ function subgui_add-mamedev-systems_forum() {
 ",Arcade Category => Shooter,@arcade,create_rom_index_file '/@shooter/&&/@working_arcade/' /home/$user/RetroPie/roms/shooter;run_generator_script 1941,,,,,dialog_message \"NO HELP\","
 ",Arcade Category => Slot Machine,@arcade,create_rom_index_file '/@slot_machine/&&/@working_arcade/' /home/$user/RetroPie/roms/slot_machine;run_generator_script 3bagflvt,,,,,dialog_message \"NO HELP\","
 ",Arcade Category => Sport,@arcade,create_rom_index_file '/@sport/&&/@working_arcade/' /home/$user/RetroPie/roms/sport;run_generator_script 10yard,,,,,dialog_message \"NO HELP\","
-
-
 ",,,,,,,,,"
 ",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create overlays from artwork\","
     )
@@ -371,9 +371,10 @@ function subgui_add-mamedev-systems_downloads() {
 ",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
-",Create lr-mess background-overlays from mame artwork,,create_lr-mess_background-overlays,"
-",Create lr-mess  4:3 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -4-3,"
-",Create lr-mess 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16-9,"
+",Create RetroArch background-overlays from mame artwork,,create_lr-mess_background-overlays,"
+",Create RetroArch  4:3 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -4-3,"
+",Create RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16-9,"
+",Create alternative RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays 2-16-9,"
     )
     build_menu_add-mamedev-systems
 }
@@ -451,6 +452,7 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",RetroPie/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,,,,,dialog_message \"NO HELP\","
+",RetroPie/downloads < (NEW-SET)mame-merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-merged mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < UnRenamedFiles-Various,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Get all handheld and plug&play files per category,,,"
@@ -724,7 +726,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.04" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.05" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1490,7 +1492,7 @@ function configure_install-${newsystems[$index]}-cmd() {
 	local _add_config_basename="\$_config.basename"
 
 if [[ $SystemType == non-arcade ]];then
-    #plain command
+	#plain command
 	#(used for loading .cmd files, amongst others)
 	addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
 	
