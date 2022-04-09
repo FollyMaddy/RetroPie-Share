@@ -123,6 +123,8 @@ function subgui_add-mamedev-systems_forum() {
 ",Arcade Category => Slot Machine,@arcade,create_rom_index_file '/@slot_machine/&&/@working_arcade/' /home/$user/RetroPie/roms/slot_machine;run_generator_script 3bagflvt,,,,,dialog_message \"NO HELP\","
 ",Arcade Category => Sport,@arcade,create_rom_index_file '/@sport/&&/@working_arcade/' /home/$user/RetroPie/roms/sport;run_generator_script 10yard,,,,,dialog_message \"NO HELP\","
 ",,,,,,,,,"
+",Forcing Arcade Category => arcade,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/arcade;run_generator_script arcade arcade '' '' 'none' '',"
+",,,,,,,,,"
 ",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create overlays from artwork\","
     )
     build_menu_add-mamedev-systems
@@ -726,7 +728,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.05" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.06" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -947,7 +949,7 @@ fi
 #that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$6" ]]; then
+if [[ -n "$2" ]]; then
 echo "read the system/description, ExtraPredefinedOption(s) and RetroPie system name from commandline options"
 systems+=( "$1" )
 #by using the systems name as a description we don't have matches in part 10
@@ -995,7 +997,7 @@ fi
 #that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$6" ]]; then
+if [[ -n "$2" ]]; then
 echo read the media extension from commandline options
 #will be the same as extensions in part 6
 allextensions+=( "$(echo $6|sed 's/*/ /g')" )
@@ -1024,7 +1026,7 @@ fi
 #that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$6" ]]; then
+if [[ -n "$2" ]]; then
 echo read the media data from commandline options
 index=0
 mediadescriptions+=( "$4")
@@ -1063,7 +1065,7 @@ fi
 #that can't be extracted from mame with -listslots
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$6" ]]; then
+if [[ -n "$2" ]]; then
 echo skip reading computer description from mame
 else
 echo "read computer description(s)"
