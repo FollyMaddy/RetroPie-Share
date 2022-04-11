@@ -56,7 +56,7 @@ function gui_add-mamedev-systems() {
 ",Choose and install systems with >EXTRA< settings > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems with extra functions\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
 ",Choose and install HANDHELD/PLUG&PLAY/CATEGORIES > Submenu,,subgui_add-mamedev-systems_forum,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available catagories / handheld / plug&play and the required downloads\n\nHandheld systems is a group of portable consoles that are part of MAME Romset.\nThe list of these games can be found in the retropie forum in the tutorial : (Tutorial : Handheld and Plug & Play systems with MAME)\n\nThe 7 systems are :\n - Konami Handheld\n - All in one handheld and Plug & Play\n - Game & Watch (with madrigal and MAME romset)\n - Tiger Handheld\n - Tiger R-Zone\n - Classic Handheld (with madrigal and MAME romset)\n - JAKKS Pacific TV Games -Plug & Play games\","
 ",,,,,,,,,"
-",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Browse and get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- create overlays from artwork\","
+",CHEATS/ARTWORK/BEZELS > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Browse and get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- create overlays from artwork\","
 ",,,,,,,,,"
 ",Browser/downloader > Submenu (Restricted),,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog_message \"Browse and get online files.\n(only available with the correct input)\","
 ",,,,,,,,,"
@@ -124,8 +124,9 @@ function subgui_add-mamedev-systems_forum() {
 ",Arcade Category => Sport,@arcade,create_rom_index_file '/@sport/&&/@working_arcade/' /home/$user/RetroPie/roms/sport;run_generator_script 10yard,,,,,dialog_message \"NO HELP\","
 ",,,,,,,,,"
 ",Forcing Arcade Category => arcade,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/arcade;run_generator_script arcade arcade '' '' 'none' '',"
+",Forcing Arcade Category => realistic,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/realistic;run_generator_script realistic realistic '' '' 'none' '',"
 ",,,,,,,,,"
-",Downloads > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create overlays from artwork\","
+",CHEATS/ARTWORK/BEZELS > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create overlays from artwork\","
     )
     build_menu_add-mamedev-systems
 }
@@ -377,6 +378,8 @@ function subgui_add-mamedev-systems_downloads() {
 ",Create RetroArch  4:3 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -4-3,"
 ",Create RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16-9,"
 ",Create alternative RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays 2-16-9,"
+",,,,"
+",Setup Orionsangels Arcade Overlays Part1 > roms/realistic,,download_and_organise_realistic_overlays,"
     )
     build_menu_add-mamedev-systems
 }
@@ -728,7 +731,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.06" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.07" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1725,6 +1728,50 @@ chown -R $user:$user "/home/$user/RetroPie/roms/mame/cheat"
 rm /tmp/cheat0221.zip
 }
 
+
+function download_and_organise_realistic_overlays() {
+download_file_with_wget Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip $(curl http://www.mediafire.com/file/q14d077q2mhcoj9/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip/file|grep href=\"http://download|cut -d \" -f2|cut -d '/' -f-5) /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1
+unzip -u -j /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip "Retroarch/overlays/arcade/*" -d /opt/retropie/configs/all/retroarch/overlay/realistic
+chown -R $user:$user /opt/retropie/configs/all/retroarch/overlay/realistic
+rm -d /opt/retropie/configs/all/retroarch/config/MAME/realistic 2>&1
+unzip -u -j /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip "Retroarch/config/MAME/*" -d /opt/retropie/configs/all/retroarch/config/MAME/realistic
+rm "/opt/retropie/configs/all/retroarch/config/MAME/realistic/Arcade.cfg" 
+rm "/opt/retropie/configs/all/retroarch/config/MAME/realistic/MAME 2014.cfg" 
+chown -R $user:$user /opt/retropie/configs/all/retroarch/config/MAME/realistic
+# we want to convert the viewport values on the fly
+# the original files are made for the resolution 1920x1080
+# so if we want to re-calculate the values when using, for example 1600x900,
+# when the value is extracted, we can do it like this for the width (x) :  $(($value * 1600/1920)) , or for the height (y) : $(($value * 900/1080))
+# with "fbset -s" we can extract the resolution in a linux (without or with desktop enviroment)
+# with "xrandr" we can extract the correct resolution in a linux when changed with xrandr
+# so we check "xrandr" first and if we don't have a value we use "fbset"
+if [[ -n $(xrandr) ]];then echo -e "\nusing xrandr for detecting host resolution\n";else echo -e "\nusing xrandr for detecting host resolution\n";fi
+value_height_y=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f5);else echo $(fbset -s|grep geo|cut -d " " -f7);fi)
+value_width_x=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f4);else echo $(fbset -s|grep geo|cut -d " " -f6);fi)
+for cfg_file in /opt/retropie/configs/all/retroarch/config/MAME/realistic/*.cfg
+do
+ if
+ [[ "$cfg_file"  != *.zip.cfg ]];then
+ echo "patching $(echo $cfg_file|cut -d/ -f10) for "$value_width_x"x"$value_height_y", creating a.zip.cfg and a .7z.cfg"
+ echo aspect_ratio_index = \"23\" >> "$cfg_file"
+ echo video_shader = \"/opt/retropie/configs/all/retroarch/shaders/fake-crt-geom.glslp\" >> "$cfg_file"
+ sed -i 's/\:\\overlays.*\\/\/opt\/retropie\/configs\/all\/retroarch\/overlay\/realistic\//g' "$cfg_file"
+ value=$(cat "$cfg_file"|grep _height|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
+ value=$(cat "$cfg_file"|grep _width|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
+ value=$(cat "$cfg_file"|grep _x|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
+ value=$(cat "$cfg_file"|grep _y|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
+ mv "$cfg_file" "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')"
+ cp "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')" "$(echo $cfg_file|sed 's/\.cfg/\.7z\.cfg/')"
+ fi
+done
+echo -e "\nmove all .zip.cfg and .7z.cfg files to /home/pi/RetroPie/roms/realistic\n"
+sleep 2
+mv -f /opt/retropie/configs/all/retroarch/config/MAME/realistic/* /home/pi/RetroPie/roms/realistic
+chown -R $user:$user /home/pi/RetroPie/roms/realistic
+rm -d /opt/retropie/configs/all/retroarch/config/MAME/realistic 2>&1
+}
+
+
 function download_from_google_drive() {
 clear
 echo "get all gamelist files and put these in the correct path"
@@ -1745,14 +1792,14 @@ mkdir -p $3
 #show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
 #$1=filename $2=from_link $3=to_path
 if [ ! -f "$3/$1" ]; then
-    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O $3/$1 https://$2/$1 2>&1
+    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O $3/$1 $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
     #doesn't work, perhaps the command or redirecting is the problem
     # curl -L -O https://$2/$1 --create-dirs -o $3/$1
     sleep 10
 else 
     read -r -p "File exists !, do you want to overwrite it ? [Y/N] " response
        if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]];then 
-           wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O $3/$1 https://$2/$1 2>&1
+           wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O $3/$1 $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
        fi
 fi
 
