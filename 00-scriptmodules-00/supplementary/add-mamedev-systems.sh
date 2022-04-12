@@ -379,7 +379,7 @@ function subgui_add-mamedev-systems_downloads() {
 ",Create RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16-9,"
 ",Create alternative RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays 2-16-9,"
 ",,,,"
-",Setup Orionsangels Arcade Overlays Part1 > roms/realistic,,download_and_organise_realistic_overlays,"
+",Setup Orionsangels Arcade Overlays Part1 > roms/realistic,@arcade,[[ ! -d /home/$user/RetroPie/roms/realistic ]] && create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/realistic;[[ ! -d /home/$user/RetroPie/roms/realistic ]] && run_generator_script realistic realistic '' '' 'none' '';download_and_organise_realistic_overlays,"
     )
     build_menu_add-mamedev-systems
 }
@@ -731,7 +731,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.07" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.08" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1575,7 +1575,7 @@ fi
 	mkRomDir "\$_system"
 	ensureSystemretroconfig "\$_system"
     
-	echo "enable cheats for lr-mess in \$configdir/all/retroarch-core-options.cfg"
+	echo "enable cheats in \$configdir/all/retroarch-core-options.cfg"
 	iniConfig " = " "\"" "\$configdir/all/retroarch-core-options.cfg"
 	iniSet "mame_cheats_enable" "enabled"
 	chown \$user:\$user "\$configdir/all/retroarch-core-options.cfg"
@@ -1764,11 +1764,11 @@ do
  cp "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')" "$(echo $cfg_file|sed 's/\.cfg/\.7z\.cfg/')"
  fi
 done
-echo -e "\nmove all .zip.cfg and .7z.cfg files to /home/pi/RetroPie/roms/realistic\n"
+echo -e "\nmove all .zip.cfg and .7z.cfg files to /home/<user>/RetroPie/roms/realistic\n"
 sleep 2
-mv -f /opt/retropie/configs/all/retroarch/config/MAME/realistic/* /home/pi/RetroPie/roms/realistic
-chown -R $user:$user /home/pi/RetroPie/roms/realistic
-rm -d /opt/retropie/configs/all/retroarch/config/MAME/realistic 2>&1
+mv -f /opt/retropie/configs/all/retroarch/config/MAME/realistic/* /home/$user/RetroPie/roms/realistic
+chown -R $user:$user /home/$user/RetroPie/roms/realistic
+rm -d /opt/retropie/configs/all/retroarch/config/MAME/realistic
 }
 
 
