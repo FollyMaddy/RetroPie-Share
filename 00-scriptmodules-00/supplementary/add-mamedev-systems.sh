@@ -1733,6 +1733,7 @@ function download_and_organise_realistic_overlays() {
 download_file_with_wget Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip $(curl http://www.mediafire.com/file/q14d077q2mhcoj9/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip/file|grep href=\"http://download|cut -d \" -f2|cut -d '/' -f-5) /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1
 unzip -u -j /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip "Retroarch/overlays/arcade/*" -d /opt/retropie/configs/all/retroarch/overlay/realistic
 chown -R $user:$user /opt/retropie/configs/all/retroarch/overlay/realistic
+rm /opt/retropie/configs/all/retroarch/config/MAME/realistic/* 2>&1
 rm -d /opt/retropie/configs/all/retroarch/config/MAME/realistic 2>&1
 unzip -u -j /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip "Retroarch/config/MAME/*" -d /opt/retropie/configs/all/retroarch/config/MAME/realistic
 rm "/opt/retropie/configs/all/retroarch/config/MAME/realistic/Arcade.cfg" 
