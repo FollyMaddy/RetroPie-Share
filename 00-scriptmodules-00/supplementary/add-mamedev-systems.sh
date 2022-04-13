@@ -43,7 +43,7 @@ function gui_add-mamedev-systems() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",About this script,,dialog_message \"This project makes use of MAME and LR-MESS for emulating.\nMAME and LR-MESS support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to create/install module-scripts on the fly.\n\nThis script combines the work and ideas of many people :\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\",,,,,dialog_message \"No help available\","
+",About this script,,dialog_message \"This project makes use of MAME and LR-MESS for emulating.\nMAME and LR-MESS support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to create/install module-scripts on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- Orionsangel : creating realistic arcade overlays\",,,,,dialog_message \"No help available\","
 ",,,,,,,,,"
 ",Install MAME    ( required by this script ) => ARCADE+NON-ARCADE,,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MESS ( should be installed too ) =>  NON-ARCADE only,,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
@@ -130,7 +130,12 @@ function subgui_add-mamedev-systems_forum() {
     )
     build_menu_add-mamedev-systems
 }
+#working line to generate a custom non-arcade category (does NOT skip reading mame data)
+#",Forcing Non-Arcade Category => customh,@non-arcade,run_generator_script customh customh '' '' 'none' '',"
 
+#working lines to generate a custom arcade/non-arcade categories (adding @skip will skip reading mame data)
+#",Forcing Arcade Category => realistic,@arcade @skip,run_generator_script realistic realistic '' '' 'none' '',"
+#",Forcing Non-Arcade Category => customh,@non-arcade @skip,run_generator_script customh customh '' '' 'none' '',"
 
 function subgui_add-mamedev-systems_extras() {
     local csv=()
@@ -379,7 +384,7 @@ function subgui_add-mamedev-systems_downloads() {
 ",Create RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16-9,"
 ",Create alternative RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays 2-16-9,"
 ",,,,"
-",Setup Orionsangels Arcade Overlays Part1 > roms/realistic,@arcade,[[ ! -d /home/$user/RetroPie/roms/realistic ]] && create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/realistic;[[ ! -d /home/$user/RetroPie/roms/realistic ]] && run_generator_script realistic realistic '' '' 'none' '';download_and_organise_realistic_overlays,"
+",Setup Orionsangels Arcade Overlays Part1 > roms/realistic,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/realistic;run_generator_script realistic realistic '' '' 'none' '';download_and_organise_realistic_overlays,"
     )
     build_menu_add-mamedev-systems
 }
@@ -731,7 +736,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.09" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.10" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -851,11 +856,11 @@ addextensionscmd=".cmd"
 
 #check if the system is arcade or non-arcade for switching between lr-mess and lr-mame
 if [[ ${csv[$choice]} == *@non-arcad* ]]
-then SystemType=non-arcade
-else SystemType=arcade
+then SystemType="non-arcade"
+else SystemType="arcade"
 fi
 #echo ${csv[$choice]}
-echo System driver is detected as $SystemType
+echo System driver is detected as "$SystemType"
 
 #begin with an empty variable for part 13, preventing remembering it from an other session
 creating=
@@ -869,26 +874,29 @@ creating=
 #this is an example command to extract the systems and add them here to the array :
 #classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
 
+if [[ ${csv[$choice]} != *@skip* ]];then
 mame_data_read
 echo "read the mame romset groups, used for RetroPie naming"
-if [[ -z $groups_read ]];then
-groups_read=1
-IFS=$'\n' 
-#add new items in part 11 for matching
-all_in1=($(cut -d "," -f 2 <<<$(awk '/@all_in1/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-classich=($(cut -d "," -f 2 <<<$(awk '/@classich/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-konamih=($(cut -d "," -f 2 <<<$(awk '/@konamih/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-tigerh=($(cut -d "," -f 2 <<<$(awk '/@tigerh/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-#arcade categories
-driving=($(cut -d "," -f 2 <<<$(awk '/@driving@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-maze=($(cut -d "," -f 2 <<<$(awk '/@maze/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-pinball=($(cut -d "," -f 2 <<<$(awk '/@pinball_arcade/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-puzzle=($(cut -d "," -f 2 <<<$(awk '/@puzzle/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-slot_machine=($(cut -d "," -f 2 <<<$(awk '/@slot_machine/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-sport=($(cut -d "," -f 2 <<<$(awk '/@sport/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-#
-unset IFS
+ if [[ -z $groups_read ]];then
+ groups_read=1
+ IFS=$'\n' 
+ #add new items in part 11 for matching
+ all_in1=($(cut -d "," -f 2 <<<$(awk '/@all_in1/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ classich=($(cut -d "," -f 2 <<<$(awk '/@classich/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ konamih=($(cut -d "," -f 2 <<<$(awk '/@konamih/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ tigerh=($(cut -d "," -f 2 <<<$(awk '/@tigerh/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ #arcade categories
+ driving=($(cut -d "," -f 2 <<<$(awk '/@driving@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ maze=($(cut -d "," -f 2 <<<$(awk '/@maze/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ pinball=($(cut -d "," -f 2 <<<$(awk '/@pinball_arcade/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ puzzle=($(cut -d "," -f 2 <<<$(awk '/@puzzle/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ slot_machine=($(cut -d "," -f 2 <<<$(awk '/@slot_machine/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ sport=($(cut -d "," -f 2 <<<$(awk '/@sport/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ #
+ unset IFS
+fi
+else echo skip reading mame data
 fi
 
 #part 1 : prepair some things first
