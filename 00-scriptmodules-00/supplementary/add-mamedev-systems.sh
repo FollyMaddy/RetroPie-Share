@@ -577,8 +577,8 @@ dialog \
     	if [[ $(echo $website_url|sha1sum) == 9cf96ce8e6a93bd0c165799d9a0e6bb79beb1fb9* ]];then
 	csv=( 
 ",,,,"
-",Install lr-mess binary from libretro buildbot (for x86/x64),,install-lr-mess-for-x86-x64,"
-",Install mame binary from normal repository (for x86/x64),,install-mame-for-x86-x64,"
+",Install mame binary from stickfreaks (aarch64/armhf/x86_64),,install-mame-for-arch,"
+",Install lr-mame binary (mamearcade + mess) from libretro buildbot (for x86_64),,install-lr-mame-for-x86_64,"
 	)
 	else
 	csv=( 
@@ -738,7 +738,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.11" 22 76 16)
+        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.12" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1820,7 +1820,7 @@ chown -R $user:$user "$3"
 }
 
 
-function install-lr-mess-for-x86-x64 () {
+function install-lr-mame-for-x86_64 () {
 echo -ne "===\nGetting lr-mess binary from libretro buildbot\n==="
 curl http://buildbot.libretro.com/nightly/linux/$(arch|sed 's/i6/x/')/RetroArch_cores.7z --create-dirs /opt/retropie/libretrocores/lr-mess -o /opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z
 7z e '/opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z' -o/opt/retropie/libretrocores/lr-mess/ 'mame_libretro.so' -r
@@ -1832,7 +1832,18 @@ $scriptdir/retropie_packages.sh lr-mess clean
 }
 
 
-function install-mame-for-x86-x64 () {
+function install-mame-for-arch () {
+echo -ne "===\nGetting mame binary from stickfreaks\n==="
+mkdir -p /opt/retropie/emulators/mame
+wget -c https://stickfreaks.com/mame/$(curl https://stickfreaks.com/mame/|grep $(arch)|cut -d '"' -f8) /opt/retropie/emulators/mame -P /opt/retropie/emulators/mame
+7za x /opt/retropie/emulators/mame/*.7z -o/opt/retropie/emulators/mame/
+
+echo "do a retropie configure for mame"
+$scriptdir/retropie_packages.sh mame configure 
+}
+
+
+function install-mame-from-repository () {
 echo -ne "===\nGetting mame binary from normal repository\n==="
 getDepends mame
 mkdir -p /opt/retropie/emulators/mame
