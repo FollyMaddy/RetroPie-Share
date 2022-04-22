@@ -35,11 +35,21 @@ local system_read
 
 
 function depends_add-mamedev-systems() {
-    getDepends curl python3 asciinema
+    getDepends curl python3 figlet toilet asciinema
 }
 
 
 function gui_add-mamedev-systems() {
+	#figlet and toilet test examples
+	#t=();while read line;do t+=("$line");done < <(toilet -f term -F border HALLO);dialog_message "\n$(printf '%s\\n'  "${t[@]}")"
+    #t=();while read line;do t+=("$line");done < <(toilet -f bigmono9 MSX);dialog_message "\n$(printf '%s\\n'  "${t[@]}")"
+    #! 1 space missing,first line :
+    #t=();while read line;do t+=("$line");done < <(figlet -f block Arcade);dialog_message "\n$(printf '%s\\n'  "${t[@]}")"
+    #! problematic with spaces and special charachters
+    #t=();while read line;do t+=("$line");done < <(figlet Arcade);dialog_message "\n$(printf '%s\\n'  "${t[@]}")"
+    #dialog_message "\n  _|_|                                        _|\n_|    _|  _|  _|_|    _|_|_|    _|_|_|    _|_|_|    _|_|\n_|_|_|_|  _|_|      _|        _|    _|  _|    _|  _|_|_|_|\n_|    _|  _|        _|        _|    _|  _|    _|  _|\n_|    _|  _|          _|_|_|    _|_|_|    _|_|_|    _|_|_|\n\n\n"
+    #clear;figlet WELCOME;figlet TO;figlet MAMEDEV;sleep 2
+    #printf "\e[1;33m";figlet -f block arcade;printf "\e[0m";figlet hallo
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
@@ -51,8 +61,8 @@ function gui_add-mamedev-systems() {
 ",Install LR-MESS ( should be installed too ) =>  NON-ARCADE only,,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MAME ( should be installed too ) =>    ARCADE only,,package_setup lr-mame,,,,,dialog_message \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",,,,,,,,,"
-",Save or update database locally (get data locally),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0241_systems_sorted_info -o /opt/retropie/emulators/mame/mame0241_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script will work faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\n\nPossible OFFLINE usage:\nIf both files mame0XXX_systems_sorted_info run_mess.sh are already stored locally then you will be able to use the script offline.\n\nWhen is the run_mess.sh script installed ? :\nThis file is locally stored when you have installed your first system.\","
-",Delete database locally         (get data on-line),,rm /opt/retropie/emulators/mame/mame0241_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
+",Save or update database locally ( get data locally ),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0241_systems_sorted_info -o /opt/retropie/emulators/mame/mame0241_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script will work faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\n\nPossible OFFLINE usage:\nIf both files mame0XXX_systems_sorted_info run_mess.sh are already stored locally then you will be able to use the script offline.\n\nWhen is the run_mess.sh script installed ? :\nThis file is locally stored when you have installed your first system.\","
+",Delete database locally         ( get data on-line ),,rm /opt/retropie/emulators/mame/mame0241_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
 ",,,,,,,,,"
 ",Choose and install systems with DEFAULT settings > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems in different ways\","
 ",Choose and install systems with >EXTRA< settings > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems with extra functions\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
@@ -60,7 +70,7 @@ function gui_add-mamedev-systems() {
 ",,,,,,,,,"
 ",CHEATS/ARTWORK/BEZELS > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Browse and get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- create overlays from artwork\","
 ",,,,,,,,,"
-",Browser/downloader > Submenu (Restricted),,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog_message \"Browse and get online files.\n(only available with the correct input)\","
+",Browser/downloader > Submenu ( restricted ),,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog_message \"Browse and get online files.\n(only available with the correct input)\","
 ",,,,,,,,,"
 ",Asciinema Demo TEST,,asciinema play https://asciinema.org/a/484884,,,,,dialog_message \"No help available\","
     )
@@ -256,7 +266,7 @@ function choose_extra_options_add() {
 ",FM-Towns Marty + 4Mb ram + floppy support,@non-arcade,run_generator_script fmtmarty fmtmarty -ram*4M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr*.icm -4Mb,"
 ",FM-Towns Marty + 4Mb ram + cdrom support,@non-arcade,run_generator_script fmtmarty fmtmarty -ram*4M cdrom cdrm .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr*.icm -4Mb,"
 ",Nintendo Datach + cartridge2 support,@non-arcade,run_generator_script nes nes_datach datach cartridge2 cart2 .prg,"
-",Memotech MTX512 + 512K ram + cassette support,@non-arcade,run_generator_script mtx512 mtx512 -ram*512K cassette cass .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb,"
+",\Z1Memotech MTX512 + 512K ram + cassette support,@non-arcade,run_generator_script mtx512 mtx512 -ram*512K cassette cass .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb,"
 ",Memotech MTX512 + 512K ram + sdxbas floppy support,@non-arcade,run_generator_script mtx512 mtx512 -ram*512K*-exp*sdxbas floppydisk1 flop1 .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb-sdxbas,"
 ",Memotech MTX512 + 512K ram + sdxcpm floppy support,@non-arcade,run_generator_script mtx512 mtx512 -ram*512K*-exp*sdxcpm floppydisk1 flop1 .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb-sdxcpm,"
 ",MSX2 Sony HB-F700P + fmpac + cartridge2 support,@non-arcade,run_generator_script hbf700p msx2 fmpac cartridge2 cart2 .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -fmpac,"
@@ -738,7 +748,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.12" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.13" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1720,7 +1730,7 @@ fi
 
 
 function dialog_message() {
-dialog --backtitle "$__backtitle" --msgbox "$1" 22 76 2>&1 >/dev/tty
+dialog --colors --backtitle "$__backtitle" --msgbox "$1" 22 76 2>&1 >/dev/tty
 }
 
 
