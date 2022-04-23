@@ -391,12 +391,12 @@ function subgui_add-mamedev-systems_downloads() {
 ",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
-",Create RetroArch background-overlays from mame artwork,,create_lr-mess_background-overlays,"
-",Create RetroArch  4:3 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -4-3,"
-",Create RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays -16-9,"
-",Create alternative RetroArch 16:9 bezel-overlays from mame artwork,,create_lr-mess_bezel-overlays 2-16-9,"
+",Create RetroArch background-overlays from artwork,,create_lr-mess_background-overlays,"
+",\Z1Create RetroArch  4:3 bezel-overlays from artwork,,create_lr-mess_bezel-overlays -4-3,"
+",Create RetroArch 16:9 bezel-overlays from artwork,,create_lr-mess_bezel-overlays -16-9,"
+",Create RetroArch 16:9 bezel-overlays from artwork (+alternatives),,create_lr-mess_bezel-overlays -16-9;create_lr-mess_bezel-overlays 2-16-9,"
 ",,,,"
-",Setup Orionsangels Arcade Overlays Part1 > roms/realistic,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/realistic;run_generator_script realistic realistic '' '' 'none' '';download_and_organise_realistic_overlays,"
+",Setup Orionsangels Realistic Arcade Overlays > roms/realistic,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/realistic;run_generator_script realistic realistic '' '' 'none' '';download_from_google_drive 1m_8-LJpaUFxUtwHCyK4BLo6kiFsvMJmM /home/pi/RetroPie/downloads;organise_realistic_overlays,"
     )
     build_menu_add-mamedev-systems
 }
@@ -748,7 +748,7 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.13" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.14" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1749,16 +1749,10 @@ rm /tmp/cheat0221.zip
 }
 
 
-function download_and_organise_realistic_overlays() {
-download_file_with_wget Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip $(curl http://www.mediafire.com/file/q14d077q2mhcoj9/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip/file|grep href=\"http://download|cut -d \" -f2|cut -d '/' -f-5) /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1
-mkdir -p /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/overlay/realistic
-unzip -u -j /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip "Retroarch/overlays/arcade/*" -d /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/overlay/realistic
-rm /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/config/MAME/realistic/* 2>&1
-mkdir -p /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/config/MAME/realistic
-unzip -u -j /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip "Retroarch/config/MAME/*" -d /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/config/MAME/realistic
-rm "/home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/config/MAME/realistic/Arcade.cfg" 
-rm "/home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/config/MAME/realistic/MAME 2014.cfg" 
-chown -R $user:$user /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1
+function organise_realistic_overlays() {
+rm /home/$user/RetroPie/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/* 2>&1
+unzip -u /home/$user/RetroPie/downloads/Orionsangels_Realistic_Overlays_For_RetroPie.zip -d /home/$user/RetroPie/downloads
+chown -R $user:$user /home/pi/RetroPie/downloads
 # we want to convert the viewport values on the fly
 # the original files are made for the resolution 1920x1080
 # so if we want to re-calculate the values when using, for example 1600x900,
@@ -1769,15 +1763,15 @@ chown -R $user:$user /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays
 if [[ -n $(xrandr) ]];then echo -e "\nusing xrandr for detecting host resolution\n";else echo -e "\nusing xrandr for detecting host resolution\n";fi
 value_height_y=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f5);else echo $(fbset -s|grep geo|cut -d " " -f7);fi)
 value_width_x=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f4);else echo $(fbset -s|grep geo|cut -d " " -f6);fi)
-for cfg_file in /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/config/MAME/realistic/*.cfg
+
+for cfg_file in /home/$user/RetroPie/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/*.cfg
 do
  if
  [[ "$cfg_file"  != *.zip.cfg ]];then
  echo "patching $(echo $cfg_file|cut -d/ -f10) for "$value_width_x"x"$value_height_y", creating a.zip.cfg and a .7z.cfg"
+ sed -i "s|[:]|\/home\/$user\/RetroPie\/downloads\/Orionsangels_Realistic_Overlays_For_RetroPie\/Retroarch|g;s|[\]|\/|g" "$cfg_file"
  echo aspect_ratio_index = \"23\" >> "$cfg_file"
  echo video_shader = \"/opt/retropie/configs/all/retroarch/shaders/fake-crt-geom.glslp\" >> "$cfg_file"
- sed -i 's/\:\\overlays.*\\/\/home\/USER\/RetroPie\/downloads\/Orionsangels\_Arcade\_Overlays\_For\_Retroarch\_Part1\/overlay\/realistic\//g' "$cfg_file"
- sed -i "s/USER/${user}/g" "$cfg_file"
  value=$(cat "$cfg_file"|grep _height|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
  value=$(cat "$cfg_file"|grep _width|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
  value=$(cat "$cfg_file"|grep _x|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
@@ -1788,9 +1782,8 @@ do
 done
 echo -e "\nmove all .zip.cfg and .7z.cfg files to /home/<user>/RetroPie/roms/realistic\n"
 sleep 2
-mv -f /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/config/MAME/realistic/* /home/$user/RetroPie/roms/realistic
+mv -f /home/$user/RetroPie/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/*.cfg /home/$user/RetroPie/roms/realistic
 chown -R $user:$user /home/$user/RetroPie/roms/realistic
-rm -d /home/$user/RetroPie/downloads/Orionsangels_Arcade_Overlays_For_Retroarch_Part1/config/MAME/realistic
 }
 
 
