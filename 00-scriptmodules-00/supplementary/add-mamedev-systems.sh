@@ -748,7 +748,8 @@ function build_menu_add-mamedev-systems() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?             Version 0241.14" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
+	Version 0241.14" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1789,7 +1790,7 @@ chown -R $user:$user /home/$user/RetroPie/roms/realistic
 
 function download_from_google_drive() {
 clear
-echo "get all gamelist files and put these in the correct path"
+echo "get all files and put these in the correct path"
 echo
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | \
 python3 - https://drive.google.com/drive/folders/$1 -m -P "$2"
