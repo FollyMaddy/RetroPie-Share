@@ -127,6 +127,9 @@ function subgui_add-mamedev-systems_forum() {
 ",Tiger Handheld Electronics,@non-arcade,create_rom_index_file '/@tigerh/' /home/$user/RetroPie/roms/tigerh;run_generator_script taddams,,,,,dialog_message \"Tiger Handheld Electronics - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\nYou can get artworks and backgrounds for those games with the (Select downloads) menu below\","
 ",Tiger R-Zone,@non-arcade,create_rom_index_file '/@tigerrz/' /home/$user/RetroPie/roms/tigerrz;run_generator_script rzbatfor,,,,,dialog_message \"Tiger R-Zone - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\","
 ",,,,,,,,,"
+",Sega Mega Play Arcade Category => megaplay,@arcade,create_rom_index_file '/\(Mega Play\)/' /home/$user/RetroPie/roms/megaplay;run_generator_script megaplay megaplay '' '' 'none' '',"
+",Nintendo PlayChoice-10 Arcade Category => playchoice10,@arcade,create_rom_index_file '/\(PlayChoice-10\)/' /home/$user/RetroPie/roms/playchoice10;run_generator_script playchoice10 playchoice10 '' '' 'none' '',"
+",,,,,,,,,"
 ",Arcade Category => Driving,@arcade,create_rom_index_file '/@driving@/&&/@working_arcade/' /home/$user/RetroPie/roms/driving;run_generator_script 280zzzap,,,,,dialog_message \"NO HELP\","
 ",Arcade Category => Maze,@arcade,create_rom_index_file '/@maze/&&/@working_arcade/' /home/$user/RetroPie/roms/maze;run_generator_script 005,,,,,dialog_message \"NO HELP\","
 ",Arcade Category => Pinball,@arcade,create_rom_index_file '/@pinball_arcade/&&/@working_arcade/' /home/$user/RetroPie/roms/pinball;run_generator_script aliencr,,,,,dialog_message \"NO HELP\","
@@ -135,8 +138,8 @@ function subgui_add-mamedev-systems_forum() {
 ",Arcade Category => Slot Machine,@arcade,create_rom_index_file '/@slot_machine/&&/@working_arcade/' /home/$user/RetroPie/roms/slot_machine;run_generator_script 3bagflvt,,,,,dialog_message \"NO HELP\","
 ",Arcade Category => Sport,@arcade,create_rom_index_file '/@sport/&&/@working_arcade/' /home/$user/RetroPie/roms/sport;run_generator_script 10yard,,,,,dialog_message \"NO HELP\","
 ",,,,,,,,,"
-",Forcing Arcade Category => arcade,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/arcade;run_generator_script arcade arcade '' '' 'none' '',"
-",Forcing Arcade Category => realistic,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/realistic;run_generator_script realistic realistic '' '' 'none' '',"
+",Arcade Category => arcade,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/arcade;run_generator_script arcade arcade '' '' 'none' '',"
+",Arcade Category => realistic,@arcade,create_rom_index_file '/@working_arcade/' /home/$user/RetroPie/roms/realistic;run_generator_script realistic realistic '' '' 'none' '',"
 ",,,,,,,,,"
 ",CHEATS/ARTWORK/BEZELS > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create overlays from artwork\","
     )
@@ -487,13 +490,17 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",RetroPie/roms/tigerrz      < mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@tigerrz/' .7z /home/$user/RetroPie/roms/tigerrz mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Get all files from a specific catagory,,,"
-",RetroPie/roms/driving      < ( 740+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@driving@/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/driving mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/maze         < ( 740+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@maze/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/maze mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/pinball      < (  40+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/pinball mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/puzzle       < ( 640+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@puzzle/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/puzzle mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/shooter      < (2800+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@shooter@/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/shooter mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/slot_machine < (1020+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@slot_machine/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/slot_machine mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/sport        < ( 980+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@sport/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/sport mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/megaplay      < (  10+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/\(Mega Play\)/' .7z /home/$user/RetroPie/roms/megaplay mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/playchoice10 < (  70+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/\(PlayChoice-10\)/' .7z /home/$user/RetroPie/roms/playchoice10 mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",,,,"
+",v HELP > Get all files from a specific catagory,,,"
+",RetroPie/roms/driving       < ( 740+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@driving@/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/driving mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/maze          < ( 740+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@maze/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/maze mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/pinball       < (  40+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/pinball mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/puzzle        < ( 640+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@puzzle/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/puzzle mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/shooter       < (2800+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@shooter@/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/shooter mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/slot_machine  < (1020+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@slot_machine/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/slot_machine mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/sport         < ( 980+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@sport/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/sport mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Browse software files and download to RetroPie/roms/,,,"
 ",RetroPie/roms/apple2ee   < TotalReplay,,subform_add-mamedev-systems_downloads_wget_A '//&&/hdv/' /home/$user/RetroPie/roms/apple2ee TotalReplay download,,,,,dialog_message \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
@@ -749,7 +756,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0241.14" 22 76 16)
+	Version 0241.15" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -906,6 +913,9 @@ echo "read the mame romset groups, used for RetroPie naming"
  shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  slot_machine=($(cut -d "," -f 2 <<<$(awk '/@slot_machine/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  sport=($(cut -d "," -f 2 <<<$(awk '/@sport/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ #
+ megaplay=($(cut -d "," -f 2 <<<$(awk '/\(Mega Play\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ playchoice10=($(cut -d "," -f 2 <<<$(awk '/\(PlayChoice-10\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  #
  unset IFS
 fi
@@ -1236,7 +1246,7 @@ newsystems+=( "${systems[@]}" )
 #create a subarray "dteam_systems" containing the arrays that have to be used here
 #now only two "for loops" can be use for checking multiple arrays against the RetroPie names
 #note:some systems are not added because they should be recognised in a normal way
-dteam_systems=("all_in1" "classich" "konamih" "tigerh" "driving" "maze" "pinball" "puzzle" "shooter" "slot_machine" "sport" )
+dteam_systems=("all_in1" "classich" "konamih" "tigerh" "driving" "maze" "pinball" "puzzle" "shooter" "slot_machine" "sport" "megaplay" "playchoice10")
 
 #multiple arrays over one for loop:
 #https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
