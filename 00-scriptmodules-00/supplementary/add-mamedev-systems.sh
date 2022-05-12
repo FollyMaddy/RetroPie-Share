@@ -462,6 +462,9 @@ function subgui_add-mamedev-systems_search() {
 function subgui_add-mamedev-systems_downloads_wget_A() {
 #we can add up to 5 options per list to sort on
 #remember : the first search option will be changed by the script to get search options beginning with, if you want a global search  do something like this : '//&&/hdv/'
+    #rompack name, file extension and rompack link 
+    #local rompack_link_info=( "mame-0.231-merged" ".7z" "mame-0.231-merged" )
+    local rompack_link_info=( "mame-merged \Z2(0.243)" ".zip" "mame-merged/mame-merged/" )
     local csv=()
     csv=(
 ",menu_item,,to_do,"
@@ -469,6 +472,7 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",BIOS/mame < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",BIOS/mame < (NEW-SET)mame-0.231-merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
 ",BIOS/mame < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
+",BIOS/mame < (NEW-SET)mame-merged  \Z2(0.243),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Browse BIOS files < NOT FOUND in last runcommand.log,,,"
 ",BIOS/mame < BIOS(es) NOT FOUND < mame-0.231-merged,,subform_add-mamedev-systems_downloads_wget_A \"$(echo /\\\<$(cat /dev/shm/runcommand.log |grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\/\\\</g')\" /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
@@ -478,33 +482,33 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",RetroPie/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,,,,,dialog_message \"NO HELP\","
-",RetroPie/downloads < (NEW-SET)mame-merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-merged mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
+",RetroPie/downloads < (NEW-SET)mame-merged  \Z2(0.243),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-merged mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < UnRenamedFiles-Various,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Get all handheld and plug&play files per category,,,"
-",RetroPie/roms/all_in1      < mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@all_in1/' .7z /home/$user/RetroPie/roms/all_in1 mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/classich     < mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@classich/' .7z /home/$user/RetroPie/roms/classich mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/gameandwatch < mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@gameandwatch/' .7z /home/$user/RetroPie/roms/gameandwatch mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/jakks        < mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@jakks/' .7z /home/$user/RetroPie/roms/jakks mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/konamih      < mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@konamih/' .7z /home/$user/RetroPie/roms/konamih mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/tigerh       < mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@tigerh/' .7z /home/$user/RetroPie/roms/tigerh mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/tigerrz      < mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@tigerrz/' .7z /home/$user/RetroPie/roms/tigerrz mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/all_in1      < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@all_in1/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/all_in1 ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/classich     < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@classich/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/classich ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/gameandwatch < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@gameandwatch/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/gameandwatch ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/jakks        < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@jakks/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/jakks ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/konamih      < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@konamih/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/konamih ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/tigerh       < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@tigerh/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/tigerh ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/tigerrz      < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@tigerrz/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/tigerrz ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Get all files from a specific catagory,,,"
-",RetroPie/roms/megaplay      < (  10+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/\(Mega Play\)/' .7z /home/$user/RetroPie/roms/megaplay mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/neogeo        < ( 270+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@neogeo/' .7z /home/$user/RetroPie/roms/neogeo mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/nintendovs    < (  50+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@nintendovs/' .7z /home/$user/RetroPie/roms/nintendovs mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/playchoice10  < (  70+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/\(PlayChoice-10\)/' .7z /home/$user/RetroPie/roms/playchoice10 mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/megaplay      < (  10+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/\(Mega Play\)/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/megaplay ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/neogeo        < ( 270+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@neogeo/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/neogeo ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/nintendovs    < (  50+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@nintendovs/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/nintendovs ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/playchoice10  < (  70+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/\(PlayChoice-10\)/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/playchoice10 ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Get all files from a specific catagory,,,"
-",RetroPie/roms/driving       < ( 740+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@driving@/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/driving mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/maze          < ( 740+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@maze/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/maze mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/pinball       < (  40+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/pinball mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/puzzle        < ( 640+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@puzzle/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/puzzle mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/realistic     < ( 280+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@oro/' .7z /home/$user/RetroPie/roms/realistic mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/shooter       < (2800+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@shooter@/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/shooter mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/slot_machine  < (1020+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@slot_machine/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/slot_machine mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/sport         < ( 980+ ) mame-0.231-merged,,subform_restricted_multi_download_wget_A '/@sport/&&/@working_arcade/' .7z /home/$user/RetroPie/roms/sport mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/driving       < ( 740+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@driving@/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/driving ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/maze          < ( 740+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@maze/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/maze ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/pinball       < (  40+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/pinball ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/puzzle        < ( 640+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@puzzle/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/puzzle ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/realistic     < ( 280+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@oro/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/realistic ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/shooter       < (2800+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@shooter@/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/shooter ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/slot_machine  < (1020+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@slot_machine/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/slot_machine ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/sport         < ( 980+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@sport/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/sport ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Browse software files and download to RetroPie/roms/,,,"
 ",RetroPie/roms/apple2ee   < TotalReplay,,subform_add-mamedev-systems_downloads_wget_A '//&&/hdv/' /home/$user/RetroPie/roms/apple2ee TotalReplay download,,,,,dialog_message \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
@@ -760,7 +764,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0243.00" 22 76 16)
+	Version 0243.01" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
