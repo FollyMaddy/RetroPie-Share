@@ -1862,6 +1862,8 @@ mkdir -p /opt/retropie/emulators/mame
 wget -c https://stickfreaks.com/mame/$(curl https://stickfreaks.com/mame/|grep $(arch)|cut -d '"' -f8) /opt/retropie/emulators/mame -P /opt/retropie/emulators/mame
 7za x /opt/retropie/emulators/mame/*.7z -o/opt/retropie/emulators/mame/
 
+echo "install dependancies for mame"
+$scriptdir/retropie_packages.sh mame configure
 echo "do a retropie configure for mame"
 $scriptdir/retropie_packages.sh mame configure 
 }
