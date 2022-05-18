@@ -602,7 +602,7 @@ dialog \
     	if [[ $(echo $website_url|sha1sum) == 9cf96ce8e6a93bd0c165799d9a0e6bb79beb1fb9* ]];then
 	csv=( 
 ",,,,"
-",Install mame binary from stickfreaks (aarch64/armhf/x86_64),,install-mame-for-arch,"
+",Install mame binary from stickfreaks (armhf(armv7l)/aarch64/x86_64),,install-mame-for-arch,"
 ",Install lr-mame binary (mamearcade + mess) from libretro buildbot (for x86_64),,install-lr-mame-for-x86_64,"
 	)
 	else
@@ -1859,7 +1859,7 @@ $scriptdir/retropie_packages.sh lr-mess clean
 function install-mame-for-arch () {
 echo -ne "===\nGetting mame binary from stickfreaks\n==="
 mkdir -p /opt/retropie/emulators/mame
-wget -c https://stickfreaks.com/mame/$(curl https://stickfreaks.com/mame/|grep $(arch)|cut -d '"' -f8) /opt/retropie/emulators/mame -P /opt/retropie/emulators/mame
+wget -c https://stickfreaks.com/mame/$(curl https://stickfreaks.com/mame/|grep $(if [[ $(arch) == armv7l ]]; then echo armhf;else echo $(arch);fi)|cut -d '"' -f8) /opt/retropie/emulators/mame -P /opt/retropie/emulators/mame
 7za x /opt/retropie/emulators/mame/*.7z -o/opt/retropie/emulators/mame/
 
 echo "install dependancies for mame"
