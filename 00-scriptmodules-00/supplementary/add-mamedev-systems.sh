@@ -141,6 +141,7 @@ function subgui_add-mamedev-systems_forum() {
 ",Arcade Category => shooter,@arcade,create_rom_index_file '/@shooter/&&/@working_arcade/' /home/$user/RetroPie/roms/shooter;run_generator_script shooter shooter '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the shooter category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable catagory when istalling a default system.\","
 ",Arcade Category => slot_machine,@arcade,create_rom_index_file '/@slot_machine/&&/@working_arcade/' /home/$user/RetroPie/roms/slot_machine;run_generator_script slot_machine slot_machine '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the slot_machine category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable catagory when istalling a default system.\","
 ",Arcade Category => sport,@arcade,create_rom_index_file '/@sport/&&/@working_arcade/' /home/$user/RetroPie/roms/sport;run_generator_script sport sport '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the sport category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable catagory when istalling a default system.\","
+",Arcade Category => upright (with 270º rotation for lr-mame),@arcade,create_rom_index_file '/@upright/&&/@working_arcade/' /home/$user/RetroPie/roms/upright;run_generator_script upright upright '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the upright category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
 ",,,,,,,,,"
 ",CHEATS/ARTWORK/BEZELS > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
     )
@@ -509,6 +510,7 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",RetroPie/roms/shooter       < (2800+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@shooter@/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/shooter ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/slot_machine  < (1020+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@slot_machine/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/slot_machine ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/sport         < ( 980+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@sport/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/sport ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/upright       < (2440+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@upright/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/sport ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Browse software files and download to RetroPie/roms/,,,"
 ",RetroPie/roms/apple2ee   < TotalReplay,,subform_add-mamedev-systems_downloads_wget_A '//&&/hdv/' /home/$user/RetroPie/roms/apple2ee TotalReplay download,,,,,dialog_message \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
@@ -764,7 +766,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0243.01" 22 76 16)
+	Version 0243.02" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1603,6 +1605,7 @@ fi
 	# this will get loaded too via --appendconfig
 	iniConfig " = " "\"" "\$_add_config_basename"
 	iniSet "core_options_path" "\$_basename_coreconfig"
+	[[ \$_system == upright ]]&&iniSet "screen_orientation" "3"
 
 	# set permissions for configurations
  	chown \$user:\$user "\$_basename_coreconfig" 
