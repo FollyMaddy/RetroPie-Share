@@ -141,7 +141,8 @@ function subgui_add-mamedev-systems_forum() {
 ",Arcade Category => shooter,@arcade,create_rom_index_file '/@shooter/&&/@working_arcade/' /home/$user/RetroPie/roms/shooter;run_generator_script shooter shooter '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the shooter category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable catagory when istalling a default system.\","
 ",Arcade Category => slot_machine,@arcade,create_rom_index_file '/@slot_machine/&&/@working_arcade/' /home/$user/RetroPie/roms/slot_machine;run_generator_script slot_machine slot_machine '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the slot_machine category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable catagory when istalling a default system.\","
 ",Arcade Category => sport,@arcade,create_rom_index_file '/@sport/&&/@working_arcade/' /home/$user/RetroPie/roms/sport;run_generator_script sport sport '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the sport category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable catagory when istalling a default system.\","
-",Arcade Category => upright (with 270º rotation for lr-mame),@arcade,create_rom_index_file '/@upright/&&/@working_arcade/' /home/$user/RetroPie/roms/upright;run_generator_script upright upright '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the upright category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
+",Arcade Category => upright,@arcade,create_rom_index_file '/@upright/&&/@working_arcade/' /home/$user/RetroPie/roms/upright;run_generator_script upright upright '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the upright category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
+",Arcade Category => upright90º (with 90º rotation for lr-mame),@arcade,create_rom_index_file '/@upright/&&/@working_arcade/' /home/$user/RetroPie/roms/upright90º;run_generator_script upright90º upright90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the upright90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
 ",,,,,,,,,"
 ",CHEATS/ARTWORK/BEZELS > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
     )
@@ -766,7 +767,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0243.02" 22 76 16)
+	Version 0243.03" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1605,7 +1606,7 @@ fi
 	# this will get loaded too via --appendconfig
 	iniConfig " = " "\"" "\$_add_config_basename"
 	iniSet "core_options_path" "\$_basename_coreconfig"
-	[[ \$_system == upright ]]&&iniSet "screen_orientation" "3"
+	[[ \$_system == *90º ]]&&iniSet "screen_orientation" "3"
 
 	# set permissions for configurations
  	chown \$user:\$user "\$_basename_coreconfig" 
