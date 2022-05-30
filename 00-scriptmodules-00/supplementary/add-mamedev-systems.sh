@@ -606,7 +606,7 @@ dialog \
 	csv=( 
 ",,,,"
 ",Install mame binary from stickfreaks (armhf(armv7l)/aarch64/x86_64),,install-mame-for-arch,"
-",Install lr-mame binary (mamearcade + mess) from libretro buildbot (for x86_64),,install-lr-mame-for-x86_64,"
+",Install lr-mame/lr-mess binary (x86/x86_64) <= libretro buildbot,,install-lr-mame-for-x86-or-x86_64,"
 	)
 	else
 	csv=( 
@@ -1848,7 +1848,7 @@ chown -R $user:$user "$3"
 }
 
 
-function install-lr-mame-for-x86_64 () {
+function install-lr-mame-for-x86-or-x86_64 () {
 echo -ne "===\nGetting lr-mess binary from libretro buildbot\n==="
 curl http://buildbot.libretro.com/nightly/linux/$(arch|sed 's/i6/x/')/RetroArch_cores.7z --create-dirs /opt/retropie/libretrocores/lr-mess -o /opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z
 7z e '/opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z' -o/opt/retropie/libretrocores/lr-mess/ 'mame_libretro.so' -r
@@ -1857,6 +1857,14 @@ mv /opt/retropie/libretrocores/lr-mess/mame_libretro.so /opt/retropie/libretroco
 $scriptdir/retropie_packages.sh lr-mess sources
 $scriptdir/retropie_packages.sh lr-mess configure 
 $scriptdir/retropie_packages.sh lr-mess clean
+
+#setup mamearcade, uses the same trick as with lr-mess because using cp did not work
+#have to have a second look later
+mkdir /opt/retropie/libretrocores/lr-mame
+7z e '/opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z' -o/opt/retropie/libretrocores/lr-mess/ 'mame_libretro.so' -r
+chmod 755 /opt/retropie/libretrocores/lr-mess
+mv /opt/retropie/libretrocores/lr-mess/mame_libretro.so /opt/retropie/libretrocores/lr-mame/mamearcade_libretro.so
+$scriptdir/retropie_packages.sh lr-mame configure
 }
 
 
