@@ -492,7 +492,7 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",RetroPie/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
-",RetroPie/downloads < (NEW-SET)mame-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,,,,,dialog_message \"NO HELP\","
+",RetroPie/downloads < (NEW-SET)mame-sl  \Z2(0.244),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-merged  \Z2(0.244),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-merged mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < UnRenamedFiles-Various,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download,,,,,dialog_message \"NO HELP\","
 ",,,,"
@@ -786,7 +786,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0243.07" 22 76 16)
+	Version 0243.08" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
