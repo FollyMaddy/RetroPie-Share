@@ -475,7 +475,7 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 #remember : the first search option will be changed by the script to get search options beginning with, if you want a global search  do something like this : '//&&/hdv/'
     #rompack name, file extension and rompack link 
     #local rompack_link_info=( "mame-0.231-merged" ".7z" "mame-0.231-merged" )
-    local rompack_link_info=( "mame-merged \Z2(0.243)" ".zip" "mame-merged/mame-merged/" )
+    local rompack_link_info=( "mame-merged \Z2(0.244)" ".zip" "mame-merged/mame-merged/" )
     local csv=()
     csv=(
 ",menu_item,,to_do,"
@@ -483,17 +483,17 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",BIOS/mame < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",\Z1BIOS/mame < (NEW-SET)mame-0.231-merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
 ",BIOS/mame < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
-",BIOS/mame < (NEW-SET)mame-merged  \Z2(0.243),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
+",BIOS/mame < (NEW-SET)mame-merged  \Z2(0.244),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Browse BIOS files < NOT FOUND in last runcommand.log,,,"
-",BIOS/mame < BIOS(es) NOT FOUND < mame-merged  \Z2(0.243),,subform_add-mamedev-systems_downloads_wget_A \"$(echo /$(cat /dev/shm/runcommand.log |grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the RetroPie-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
+",BIOS/mame < BIOS(es) NOT FOUND < mame-merged  \Z2(0.244),,subform_add-mamedev-systems_downloads_wget_A \"$(echo /$(cat /dev/shm/runcommand.log |grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the RetroPie-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
 ",,,,"
 ",v HELP > Browse software files and download to RetroPie/downloads,,,"
 ",RetroPie/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-sl,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,,,,,dialog_message \"NO HELP\","
-",RetroPie/downloads < (NEW-SET)mame-merged  \Z2(0.243),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-merged mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
+",RetroPie/downloads < (NEW-SET)mame-merged  \Z2(0.244),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-merged mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < UnRenamedFiles-Various,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Get all handheld and plug&play files per category,,,"
@@ -786,7 +786,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0243.06" 22 76 16)
+	Version 0243.07" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
