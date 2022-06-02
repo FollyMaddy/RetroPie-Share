@@ -67,6 +67,27 @@ classich.ini  gameandwatch.ini  konamih.ini  tigerrz.ini
 
 ---
 
+#creating 90º.ini (for games that are displayed vertically)
+
+https://forums.bannister.org/ubbthreads.php?ubb=showflat&Number=120954#Post120954
+
+Make a list of games with the rotation info :
+
+```
+cat /opt/retropie/emulators/mame/mame0243_systems_sorted_info|cut -d " " -f2|while read line;do echo $line $(/opt/retropie/emulators/mame/mame -listxml $line|grep "rotate="|cut -d'"' -f6);done > rotation_info
+
+```
+
+Then make an .ini file with games/systems that have rotation 90 or 270, which are vertically :
+
+```
+cat rotation_info|awk '/90/||/270/'|cut -d " " -f1 > 90º.ini
+```
+
+After that the info from 90º.ini can be added as usual.
+
+---
+
 #add all search patterns to the data file
 
 first : add one space behind each driver line (do this only one time !) :
