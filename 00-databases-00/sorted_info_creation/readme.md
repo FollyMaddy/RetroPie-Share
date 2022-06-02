@@ -4,7 +4,9 @@
 
 create .ini files from .csv files (adb.arcadeitalia.net)
 
+```
 for file in *.csv;do cat $file|cut -d "," -f1|sed 's/"//g' > $(basename $file .csv).ini ;done
+```
 
 ---
 
@@ -71,12 +73,16 @@ first : add one space behind each driver line (do this only one time !) :
 
 (the fresh mame0237_systems(renamed to mame0237_systems_sorted_info) is used)
 
+```
 sed -i 's/)\:/)\: /g' mame0237_systems_sorted_info
+```
 
 then : add or append more entry's, if there is already a space behing the pattern "): " :
 
-(from 0237 : adding a "@" instead of a "*" because of compatibitity issus lubuntu)
+(from 0237 : adding a "@" instead of a "*" because of compatibitity issues lubuntu)
 
+```
 for file in $(ls -r *.ini);do echo busy with $file;cat $file |sed 's/\r//g'|while read line;do grep -i "Driver $line " mame0237_systems_sorted_info|sed -i "s/Driver $line .*)\: /&@$(basename $file .ini)/" mame0237_systems_sorted_info ;done;done
+```
 
 ---
