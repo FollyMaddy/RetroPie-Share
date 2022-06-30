@@ -34,7 +34,7 @@ function gui_add-ext-repos() {
 ",repository,path,to_do,"
 ",FollyMaddy/RetroPie-Share,FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00,download_ext_module_scripts,"
 ",GeorgeMcMullen/rp-box86wine,GeorgeMcMullen/rp-box86wine/tree/main/scriptmodules,download_ext_module_scripts,"
-",zerojay/RetroPie-Extra,zerojay/RetroPie-Extra/tree/master/scriptmodules,download_ext_module_scripts,"
+",Exarkuniv/RetroPie-Extra,Exarkuniv/RetroPie-Extra/tree/master/scriptmodules,download_ext_module_scripts,"
 ",valerino/RetroPie-Setup,valerino/RetroPie-Setup/tree/master/scriptmodules,download_ext_module_scripts,"
     )
     build_menu_add-ext-repos
