@@ -43,9 +43,11 @@ This repository is created for sharing :
    
 ---
    
-## (.sh ) bash script files for automating stuff `( OUTDATED / OBSOLETE )`
+## (.sh ) bash script files for automating stuff 
+
+***( OUTDATED / OBSOLETE / BACKUP / INITIAL REFERENCE OF PROJECT )***
    
-   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00 `( OUTDATED / OBSOLETE )`
+   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00
    
    Read more about the scripts in this thread :
    
