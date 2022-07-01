@@ -2,13 +2,19 @@
 
 This repository is created for sharing :
 
-## (.sh ) bash script files for automating stuff
+## (.sh ) bash script files for automating stuff `( OUTDATED / OBSOLETE )`
    
-   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00
-      
-   - added scripts that can generate module-scripts for RetroPie-setup using lr-mess / MAME
-     
-   - added a script that downloads cheats, artwork and create retroarch overlays for lr-mess / MAME
+   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scripts-00 `( OUTDATED / OBSOLETE )`
+   
+   Read more about the scripts in this thread :
+   
+   https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone
+
+   Or read the backup of the first post of the above thread :
+
+   https://github.com/FollyMaddy/RetroPie-Share/blob/main/readme-post-one-thread.md
+   
+## (.sh ) bash RetroPie module-script files
 
    Read more about the scripts in this thread : 
    
