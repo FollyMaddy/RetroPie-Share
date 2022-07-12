@@ -5,9 +5,9 @@ This repository is created for sharing :
   
 ## (.sh ) bash RetroPie module-script files
 
-   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00 containing :
+   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00
    
-     - https://github.com/FollyMaddy/RetroPie-Share/blob/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh :
+     - https://github.com/FollyMaddy/RetroPie-Share/blob/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh
       
        Read more about the scripts in this thread : 
    
@@ -17,8 +17,8 @@ This repository is created for sharing :
 
        https://github.com/FollyMaddy/RetroPie-Share/blob/main/readme-post-one-thread.md
        
-     - Others that not have been added in this discription yet.
- 
+     - Others that not have been added in this discription yet
+     
 ## (.ips) IPS patch files (for fixing programs/games with a differences patch)
 
    https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-roms-00
