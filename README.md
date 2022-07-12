@@ -5,15 +5,19 @@ This repository is created for sharing :
   
 ## (.sh ) bash RetroPie module-script files
 
-   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00
-
-   Read more about the scripts in this thread : 
+   https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-scriptmodules-00 containing :
    
-   https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone
+     - https://github.com/FollyMaddy/RetroPie-Share/blob/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh :
+      
+       Read more about the scripts in this thread : 
+   
+       https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone
 
-   Or read the backup of the first post of the above thread :
+       Or read the backup of the first post of the above thread :
 
-   https://github.com/FollyMaddy/RetroPie-Share/blob/main/readme-post-one-thread.md
+       https://github.com/FollyMaddy/RetroPie-Share/blob/main/readme-post-one-thread.md
+       
+     - Others that not have been added in this discription yet.
  
 ## (.ips) IPS patch files (for fixing programs/games with a differences patch)
 
