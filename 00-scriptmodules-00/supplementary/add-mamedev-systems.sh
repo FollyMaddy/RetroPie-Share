@@ -402,7 +402,7 @@ function subgui_add-mamedev-systems_downloads() {
 ",menu_item,,to_do,"
 ",Download/update cheats,,download_cheats,"
 ",,,,"
-",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
+",\Z1Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
 ",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,"
@@ -481,7 +481,6 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",menu_item,,to_do,"
 ",v HELP > Browse BIOS files and download to BIOS/mame,,,"
 ",BIOS/mame < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
-",\Z1BIOS/mame < (NEW-SET)mame-0.231-merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.231-merged download,,,,,dialog_message \"NO HELP\","
 ",BIOS/mame < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
 ",BIOS/mame < (NEW-SET)mame-merged  \Z2(0.244),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",,,,"
@@ -786,7 +785,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0243.08" 22 76 16)
+	Version 0243.09" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
