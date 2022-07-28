@@ -95,7 +95,7 @@ function mame_data_read() {
     if [[ -z ${mamedev_csv[@]} ]]; then
         if [[ -f /opt/retropie/emulators/mame/mame0245_systems_sorted_info ]]; then 
     clear
-    echo "Get mame0243 data:/opt/retropie/emulators/mame/mame0245_systems_sorted_info"
+    echo "Get mame0245 data:/opt/retropie/emulators/mame/mame0245_systems_sorted_info"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
@@ -105,7 +105,7 @@ function mame_data_read() {
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
     while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0245_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         else
-    echo "Get mame0243 data:RetroPie-Share repository"
+    echo "Get mame0245 data:RetroPie-Share repository"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0245_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
@@ -146,7 +146,6 @@ function subgui_add-mamedev-systems_forum() {
 ",,,,,,,,,"
 ",Arcade Category => arcade90º,@arcade,create_rom_index_file '/@working_arcade/&&/@90º/' /home/$user/RetroPie/roms/arcade90º;run_generator_script arcade90º arcade90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the arcade90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
 ",Arcade Category => driving90º,@arcade,create_rom_index_file '/@driving@/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/driving90º;run_generator_script driving90º driving90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the driving90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
-",Arcade Category => lightgun90º,@arcade,create_rom_index_file '/@lightgun/&&/@90º/@working_arcade/' /home/$user/RetroPie/roms/lightgun90º;run_generator_script lightgun90º lightgun90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the lightgun category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable catagory when istalling a default system.\","
 ",Arcade Category => maze90º,@arcade,create_rom_index_file '/@maze/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/maze90º;run_generator_script maze90º maze90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the maze90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
 ",Arcade Category => pinball90º,@arcade,create_rom_index_file '/@pinball_arcade/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/pinball90º;run_generator_script pinball90º pinball90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the pinball90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
 ",Arcade Category => puzzle90º,@arcade,create_rom_index_file '/@puzzle/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/puzzle90º;run_generator_script puzzle90º puzzle90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the puzzle90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
@@ -514,7 +513,7 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",,,,"
 ",v HELP > Get all files from a specific catagory,,,"
 ",RetroPie/roms/driving       < ( 600+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@driving@/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/driving ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/lightgun      < (    + ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@lightgun/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/lightgun ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/lightgun      < ( 320+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@lightgun/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/lightgun ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/maze          < ( 750+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@maze/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/maze ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/pinball       < (  40+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/pinball ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/puzzle        < ( 640+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@puzzle/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/puzzle ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
@@ -526,7 +525,6 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",,,,"
 ",v HELP > Get all 90º orientated files from a specific catagory,,,"
 ",RetroPie/roms/driving90º    	< ( 110+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@driving@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/driving90º ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/lightgun90º     < (    + ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@lightgun/&&/@90º/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/lightgun90º ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/maze90º        	< ( 410+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@maze/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/maze90º ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/pinball90º     	< (  20+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@pinball_arcade/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/pinball90º ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/puzzle90º      	< ( 100+ ) ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@puzzle/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/puzzle90º ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
@@ -789,7 +787,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0245.00" 22 76 16)
+	Version 0245.01" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
