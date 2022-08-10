@@ -256,7 +256,8 @@ function choose_extra_options_add() {
 ",Acorn Archimedes 310 booting RISC-OS 3.10 + floppy support,@non-arcade,run_generator_script aa310 archimedes -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd -bios_310,"
 ",Acorn Archimedes 440+4Mb booting RISC-OS 3.10 + floppy support,@non-arcade,run_generator_script aa440 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd -bios_310-4Mb,"
 ",Acorn Archimedes 440/1+4Mb booting RISC-OS 3.10 + floppy support,@non-arcade,run_generator_script aa4401 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd -bios_310-4Mb,"
-",Amstrad CPC6128 + floppy 35ssdd support,@non-arcade,run_generator_script cpc6128 amstradcpc -upd765:0*35ssdd floppydisk1 flop1 .sna*.wav*.cdt*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -35ssdd,"
+",Amstrad CPC6128 + floppy1 35ssdd support,@non-arcade,run_generator_script cpc6128 amstradcpc -upd765:0*35ssdd floppydisk1 flop1 .sna*.wav*.cdt*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -35ssdd,"
+",Amstrad CPC6128p + ParaDOS + floppy1 35ssdd support,@non-arcade,run_generator_script cpc6128p amstradcpc -cart1*~/RetroPie/BIOS/mame/ENGPADOS.CPR*-upd765:0*35ssdd floppydisk1 flop1 .sna*.wav*.cdt*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -parados-35ssdd,"
 ",Amstrad CPC6128P + cartridge support + use gx4000 roms directory,@non-arcade,run_generator_script cpc6128p gx4000 '' cartridge cart .bin*.cpr* -use_gx4000_roms_dir,"
 ",APF Imagination Machine + basic + cassette support,@non-arcade,run_generator_script apfimag apfimag_cass basic cassette cass .wav -basic,"
 ",Apple //e(e) + compact flash harddrive support,@non-arcade,run_generator_script apple2ee apple2ee -sl7*cffa2 harddisk hard1 .mfi*.dfi*.dsk*.do *.po *.rti*.edd*.woz*.nib*.wav*.chd*.hd *.hdv*.2mg*.hdi -compactflash,"
@@ -788,7 +789,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0245.05" 22 76 16)
+	Version 0245.06" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
