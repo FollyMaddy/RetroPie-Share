@@ -303,8 +303,6 @@ function choose_extra_options_add() {
 ",TI-99/4A(32Kb) + speech + editass + flop1-35hd,@non-arcade,run_generator_script ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35hd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-35hd,"
 ",TI-99/4A(32Kb) + speech + rxb2021 + flop1-525dd,@non-arcade,run_generator_script ti99_4a ti99_4a -gromport*multi*-cart1*~/RetroPie/roms/ti99_4a/ti99_cart_rpk/rxb2021.rpk*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-rxb2021-f1-525dd,"
 ",TVC 64 + flop1 support,@non-arcade,run_generator_script tvc64 tvc64 -exp1*hbf floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk,"
-
-
 ",Odyssey2 + voice (install odyssey2 and patch default loaders),@non-arcade,run_generator_script odyssey2;sed -i \"s/ %B/ -cart1 voice -cart2 %B/g;s/\/ '%B/ -cart1 voice -cart2 '%B/g;s/cart %R/cart1 voice -cart2 %R/g\" /opt/retropie/configs/odyssey2/emulators.cfg,"
 ",Videopac + voice (install videopac and patch default loaders),@non-arcade,run_generator_script videopac;sed -i \"s/ %B/ -cart1 voice -cart2 %B/g;s/\/ '%B/ -cart1 voice -cart2 '%B/g;s/cart %R/cart1 voice -cart2 %R/g\" /opt/retropie/configs/videopac/emulators.cfg,"
     )
