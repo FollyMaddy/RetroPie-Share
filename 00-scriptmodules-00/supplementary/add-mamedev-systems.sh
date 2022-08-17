@@ -789,7 +789,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0245.07" 22 76 16)
+	Version 0245.08" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
