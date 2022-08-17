@@ -1371,7 +1371,7 @@ function install_install-${newsystems[$index]}-from-mamedev-system-${systems[$in
 }
 
 function configure_install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}() {
-	local _mess=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
+	local _mess=\$(dirname "\$md_inst")/lr-mess/mamemess_libretro.so
 	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
 	#local _system="${newsystems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))"
 	local _system="$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)"
@@ -1552,7 +1552,7 @@ function install_install-${newsystems[$index]}-cmd() {
 
 function configure_install-${newsystems[$index]}-cmd() {
 	local _retroarch_bin="\$rootdir/emulators/retroarch/bin/retroarch"
-	local _mess_core=\$(dirname "\$md_inst")/lr-mess/mess_libretro.so
+	local _mess_core=\$(dirname "\$md_inst")/lr-mess/mamemess_libretro.so
 	local _mame_core=\$(dirname "\$md_inst")/lr-mame/mamearcade_libretro.so
 	local _system="$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)"
 	local _config="\$configdir/\$_system/retroarch.cfg"
@@ -1875,7 +1875,7 @@ echo -ne "===\nGetting lr-mess binary from libretro buildbot\n==="
 curl http://buildbot.libretro.com/nightly/linux/$(arch|sed 's/i6/x/')/RetroArch_cores.7z --create-dirs /opt/retropie/libretrocores/lr-mess -o /opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z
 7z e '/opt/retropie/libretrocores/lr-mess/RetroArch_cores.7z' -o/opt/retropie/libretrocores/lr-mess/ 'mame_libretro.so' -r
 chmod 755 /opt/retropie/libretrocores/lr-mess
-mv /opt/retropie/libretrocores/lr-mess/mame_libretro.so /opt/retropie/libretrocores/lr-mess/mess_libretro.so
+mv /opt/retropie/libretrocores/lr-mess/mame_libretro.so /opt/retropie/libretrocores/lr-mess/mamemess_libretro.so
 $scriptdir/retropie_packages.sh lr-mess sources
 $scriptdir/retropie_packages.sh lr-mess configure 
 $scriptdir/retropie_packages.sh lr-mess clean
