@@ -61,8 +61,8 @@ function gui_add-mamedev-systems() {
 ",Install LR-MESS ( should be installed too ) =>  NON-ARCADE only,,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MAME ( should be installed too ) =>    ARCADE only,,package_setup lr-mame,,,,,dialog_message \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",,,,,,,,,"
-",Save or update database locally ( get data locally ),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0245_systems_sorted_info -o /opt/retropie/emulators/mame/mame0245_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script will work faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\n\nPossible OFFLINE usage:\nIf both files mame0XXX_systems_sorted_info run_mess.sh are already stored locally then you will be able to use the script offline.\n\nWhen is the run_mess.sh script installed ? :\nThis file is locally stored when you have installed your first system.\","
-",Delete database locally         ( get data on-line ),,rm /opt/retropie/emulators/mame/mame0245_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
+",Save or update database locally ( get data locally ),,curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0247_systems_sorted_info -o /opt/retropie/emulators/mame/mame0247_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to save the online database locally.\nOnce the database is saved locally the script will work faster.\n\nThe database file is save to :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\n\nPossible OFFLINE usage:\nIf both files mame0XXX_systems_sorted_info run_mess.sh are already stored locally then you will be able to use the script offline.\n\nWhen is the run_mess.sh script installed ? :\nThis file is locally stored when you have installed your first system.\","
+",Delete database locally         ( get data on-line ),,rm /opt/retropie/emulators/mame/mame0247_systems_sorted_info,,,,,dialog_message \"Optional :\n\nUse this to remove the database locally and restore to the default mode.\nOnce the local database is remove the script will use the online database again.\n\nThis database file is removed :\n/opt/retropie/emulators/mame/mame0XXX_systems_sorted_info\n(XXX is the relevant version number)\","
 ",,,,,,,,,"
 ",Choose and install systems with DEFAULT settings > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems in different ways\","
 ",Choose and install systems with >EXTRA< settings > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems with extra functions\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
@@ -93,9 +93,9 @@ function mame_data_read() {
     #here we read the systems and descriptions from mame into an array
     #by using the if function the data can be re-used, without reading it every time
     if [[ -z ${mamedev_csv[@]} ]]; then
-        if [[ -f /opt/retropie/emulators/mame/mame0245_systems_sorted_info ]]; then 
+        if [[ -f /opt/retropie/emulators/mame/mame0247_systems_sorted_info ]]; then 
     clear
-    echo "Get mame0245 data:/opt/retropie/emulators/mame/mame0245_systems_sorted_info"
+    echo "Get mame0247 data:/opt/retropie/emulators/mame/mame0247_systems_sorted_info"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
@@ -103,12 +103,12 @@ function mame_data_read() {
     # Now using this : lines that start with "D" using => grep ^[D]
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0245_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0247_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         else
-    echo "Get mame0245 data:RetroPie-Share repository"
+    echo "Get mame0247 data:RetroPie-Share repository"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0245_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0247_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         fi
     fi
 }
@@ -403,7 +403,7 @@ function subgui_add-mamedev-systems_downloads() {
     local csv=()
     csv=(
 ",menu_item,,to_do,"
-",Download/update cheats,,download_cheats,"
+",Download/update cheats \Z2(0.245),,download_cheats,"
 ",,,,"
 ",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
 ",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists,"
@@ -478,24 +478,24 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 #remember : the first search option will be changed by the script to get search options beginning with, if you want a global search  do something like this : '//&&/hdv/'
     #rompack name, file extension and rompack link 
     #local rompack_link_info=( "mame-0.231-merged" ".7z" "mame-0.231-merged" )
-    local rompack_link_info=( "mame-merged \Z2(0.245)" ".zip" "mame-merged/mame-merged/" )
+    local rompack_link_info=( "mame-merged \Z2(0.247)" ".zip" "mame-merged/mame-merged/" )
     local csv=()
     csv=(
 ",menu_item,,to_do,"
 ",v HELP > Browse BIOS files and download to BIOS/mame,,,"
 ",BIOS/mame < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",BIOS/mame < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
-",BIOS/mame < (NEW-SET)mame-merged  \Z2(0.245),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
+",BIOS/mame < (NEW-SET)mame-merged  \Z2(0.247),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Browse BIOS files < NOT FOUND in last runcommand.log,,,"
-",BIOS/mame < BIOS(es) NOT FOUND < mame-merged  \Z2(0.245),,subform_add-mamedev-systems_downloads_wget_A \"$(echo /$(cat /dev/shm/runcommand.log |grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the RetroPie-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
+",BIOS/mame < BIOS(es) NOT FOUND < mame-merged  \Z2(0.247),,subform_add-mamedev-systems_downloads_wget_A \"$(echo /$(cat /dev/shm/runcommand.log |grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" /home/$user/RetroPie/BIOS/mame mame-merged/mame-merged/ download,,,,,dialog_message \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the RetroPie-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
 ",,,,"
 ",v HELP > Browse software files and download to RetroPie/downloads,,,"
 ",RetroPie/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download,,,,,dialog_message \"NO HELP\","
-",RetroPie/downloads < (NEW-SET)mame-sl  \Z2(0.245),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,,,,,dialog_message \"NO HELP\","
-",RetroPie/downloads < (NEW-SET)mame-merged  \Z2(0.245),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-merged mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
+",RetroPie/downloads < (NEW-SET)mame-sl  \Z2(0.247),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-sl mame-sl/mame-sl/ download,,,,,dialog_message \"NO HELP\","
+",RetroPie/downloads < (NEW-SET)mame-merged  \Z2(0.247),,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/mame-merged mame-merged/mame-merged/ download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/downloads < UnRenamedFiles-Various,,subform_add-mamedev-systems_downloads_wget_A '//' /home/$user/RetroPie/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download,,,,,dialog_message \"NO HELP\","
 ",,,,"
 ",v HELP > Get all handheld and plug&play files per category,,,"
@@ -789,7 +789,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0245.08" 22 76 16)
+	Version 0247.00" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1785,14 +1785,15 @@ function download_cheats() {
 clear
 echo "get the cheat.7z and place it in the correct path"
 echo
-wget -N -P /tmp http://cheat.retrogames.com/download/cheat0221.zip
+#see http://www.mamecheat.co.uk/
+wget -N -P /tmp http://cheat.retrogames.com/download/cheat0245.zip
 #cheatpath for lr-mess
-unzip -o /tmp/cheat0221.zip cheat.7z -d /home/$user/RetroPie/BIOS/mame/cheat
+unzip -o /tmp/cheat0245.zip cheat.7z -d /home/$user/RetroPie/BIOS/mame/cheat
 chown -R $user:$user "/home/$user/RetroPie/BIOS/mame/cheat" 
 #cheatpath for mame
-unzip -o /tmp/cheat0221.zip cheat.7z -d /home/$user/RetroPie/roms/mame/cheat
+unzip -o /tmp/cheat0245.zip cheat.7z -d /home/$user/RetroPie/roms/mame/cheat
 chown -R $user:$user "/home/$user/RetroPie/roms/mame/cheat" 
-rm /tmp/cheat0221.zip
+rm /tmp/cheat0245.zip
 }
 
 
