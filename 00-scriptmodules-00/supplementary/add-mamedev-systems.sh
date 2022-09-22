@@ -414,7 +414,7 @@ function subgui_add-mamedev-systems_downloads() {
 ",Create RetroArch 16:9 bezel-overlays from artwork,,create_lr-mess_bezel-overlays -16-9,"
 ",Create RetroArch 16:9 bezel-overlays from artwork (+alternatives),,create_lr-mess_bezel-overlays -16-9;create_lr-mess_bezel-overlays 2-16-9,"
 ",,,,"
-",Setup Orionsangels Realistic Arcade Overlays > roms/realistic,@arcade,create_rom_index_file '/@oro/' /home/$user/RetroPie/roms/realistic;run_generator_script realistic realistic '' '' 'none' '';download_from_google_drive 1m_8-LJpaUFxUtwHCyK4BLo6kiFsvMJmM /home/pi/RetroPie/downloads;organise_realistic_overlays,"
+",Setup Orionsangels Realistic Arcade Overlays > roms/realistic,@arcade,create_rom_index_file '/@oro/' /home/$user/RetroPie/roms/realistic;run_generator_script realistic realistic '' '' 'none' '';download_from_google_drive 1m_8-LJpaUFxUtwHCyK4BLo6kiFsvMJmM /home/$user/RetroPie/downloads;organise_realistic_overlays,"
     )
     build_menu_add-mamedev-systems
 }
@@ -789,7 +789,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0247.00" 22 76 16)
+	Version 0247.01" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1800,7 +1800,7 @@ rm /tmp/cheat0245.zip
 function organise_realistic_overlays() {
 rm /home/$user/RetroPie/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/* 2>&1
 unzip -u /home/$user/RetroPie/downloads/Orionsangels_Realistic_Overlays_For_RetroPie.zip -d /home/$user/RetroPie/downloads
-chown -R $user:$user /home/pi/RetroPie/downloads
+chown -R $user:$user /home/$user/RetroPie/downloads
 # we want to convert the viewport values on the fly
 # the original files are made for the resolution 1920x1080
 # so if we want to re-calculate the values when using, for example 1600x900,
