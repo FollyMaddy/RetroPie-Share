@@ -401,7 +401,8 @@ function subgui_add-mamedev-systems_downloads() {
     local csv=()
     csv=(
 ",menu_item,,to_do,"
-",Download retroarch-joypad-autoconfigs,,download_files_from_github libretro/retroarch-joypad-autoconfig/tree/master/udev /opt/retropie/configs/all/retroarch-joypads cfg;download_files_from_github FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig /opt/retropie/configs/all/retroarch-joypads cfg,"
+",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_files_from_github libretro/retroarch-joypad-autoconfig/tree/master/udev /opt/retropie/configs/all/retroarch-joypads cfg;download_files_from_github FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig /opt/retropie/configs/all/retroarch-joypads cfg,,,,,dialog_message \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n/opt/retropie/configs/all/retroarch-joypads\","
+",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive 139GAqL88Cw2s49WFh3lQWxWQtt8mIVKI /opt/retropie/configs/konamih/lr-mess;download_from_google_drive 1F8A8K4CDDC5wRah_tjR8D6esU4cSVNdK /opt/retropie/configs/tigerh/lr-mess,,,,,dialog_message \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih (/opt/retropie/configs/konamih/lr-mess)\n- tigerh (/opt/retropie/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\","
 ",,,,"
 ",Download/update cheats \Z2(0.245),,download_cheats,"
 ",,,,"
@@ -789,7 +790,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0247.02" 22 76 16)
+	Version 0247.03" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
