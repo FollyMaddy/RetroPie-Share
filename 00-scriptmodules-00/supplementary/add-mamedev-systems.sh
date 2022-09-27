@@ -68,7 +68,7 @@ function gui_add-mamedev-systems() {
 ",Choose and install systems with >EXTRA< settings > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems with extra functions\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
 ",Choose and install HANDHELD/PLUG&PLAY/CATEGORIES > Submenu,,subgui_add-mamedev-systems_forum,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available catagories / handheld / plug&play and the required downloads\n\nHandheld systems is a group of portable consoles that are part of MAME Romset.\nThe list of these games can be found in the retropie forum in the tutorial : (Tutorial : Handheld and Plug & Play systems with MAME)\n\nThe 7 systems are :\n - Konami Handheld\n - All in one handheld and Plug & Play\n - Game & Watch (with madrigal and MAME romset)\n - Tiger Handheld\n - Tiger R-Zone\n - Classic Handheld (with madrigal and MAME romset)\n - JAKKS Pacific TV Games -Plug & Play games\","
 ",,,,,,,,,"
-",CHEATS/ARTWORK/BEZELS > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
+",JOYSTICKS/CHEATS/ARTWORK/BEZELS > Submenu,,dialog_message \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- /opt/retropie/configs/all/retroarch-joypads\n- /home/pi/RetroPie/BIOS/mame/cheat\n- /home/pi/RetroPie/roms/mame/cheat\n- /home/pi/RetroPie/roms/mame/artwork\n- /opt/retropie/configs/all/retroarch/overlay\n- /home/pi/RetroPie/roms/<system>\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
 ",,,,,,,,,"
 ",Browser/downloader > Submenu ( restricted ),,subgui_add-mamedev-systems_downloads_wget_A,,,,,dialog_message \"Browse and get online files.\n(only available with the correct input)\","
 ",,,,,,,,,"
@@ -153,8 +153,6 @@ function subgui_add-mamedev-systems_forum() {
 ",Arcade Category => slot_machine90º,@arcade,create_rom_index_file '/@slot_machine/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/slot_machine90º;run_generator_script slot_machine90º slot_machine90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the slot_machine90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
 ",Arcade Category => sport90º,@arcade,create_rom_index_file '/@sport/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/sport90º;run_generator_script sport90º sport90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the sport90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
 ",Arcade Category => upright90º (with 90º rotation),@arcade,create_rom_index_file '/@upright/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/upright90º;run_generator_script upright90º upright90º '' '' 'none' '',,,,,dialog_message \"This help page gives more info on force installing the upright90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable catagory when istalling a default system !\","
-",,,,,,,,,"
-",CHEATS/ARTWORK/BEZELS > Submenu,,subgui_add-mamedev-systems_downloads,,,,,dialog_message \"Get online files.\n\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
     )
     build_menu_add-mamedev-systems
 }
@@ -403,6 +401,8 @@ function subgui_add-mamedev-systems_downloads() {
     local csv=()
     csv=(
 ",menu_item,,to_do,"
+",Download retroarch-joypad-autoconfigs,,download_files_from_github libretro/retroarch-joypad-autoconfig/tree/master/udev /opt/retropie/configs/all/retroarch-joypads cfg;download_files_from_github FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig /opt/retropie/configs/all/retroarch-joypads cfg,"
+",,,,"
 ",Download/update cheats \Z2(0.245),,download_cheats,"
 ",,,,"
 ",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,"
@@ -789,7 +789,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0247.01" 22 76 16)
+	Version 0247.02" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1845,6 +1845,20 @@ python3 - https://drive.google.com/drive/folders/$1 -m -P "$2"
 #python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P /opt/retropie/configs/all/emulationstation/gamelists
 chown -R $user:$user "$2"
 #rm /tmp/gdrivedl.py
+}
+
+
+function download_files_from_github() {
+clear
+#$1 = github_directory $2=target_directory $3=extension_of_the_multiple_files
+echo "get all files and put these in the correct path"
+echo
+curl -s https://github.com/$1|grep \.$3 | cut -d\" -f 6| while read file
+do 
+echo downloading $file to $2
+curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $file|sed 's/ /%20/g') > "$2/$file"
+chown $user:$user "$2/$file"
+done
 }
 
 
