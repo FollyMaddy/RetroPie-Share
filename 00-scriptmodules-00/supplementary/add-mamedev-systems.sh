@@ -1895,6 +1895,7 @@ curl http://buildbot.libretro.com/nightly/linux/$(arch|sed 's/i6/x/')/RetroArch_
 chmod 755 /opt/retropie/libretrocores/lr-mess
 mv /opt/retropie/libretrocores/lr-mess/mame_libretro.so /opt/retropie/libretrocores/lr-mess/mamemess_libretro.so
 $scriptdir/retropie_packages.sh lr-mess sources
+$scriptdir/retropie_packages.sh lr-mess install
 $scriptdir/retropie_packages.sh lr-mess configure 
 $scriptdir/retropie_packages.sh lr-mess clean
 
