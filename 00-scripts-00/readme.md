@@ -2,7 +2,7 @@
 
 # Searching for the files ? Look in the backup folder !
 
-# Everything is now merged inside : https://github.com/FollyMaddy/RetroPie-Share/blob/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh
+# Everything is now merged inside the module-script : https://github.com/FollyMaddy/RetroPie-Share/blob/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh
 
 # --------------------------------------------------------------
 
