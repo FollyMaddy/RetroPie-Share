@@ -1,3 +1,11 @@
+# BACKUPED / OLD / NOT USED ANYMORE
+
+# If you are searching for the files then they are in the backup folder !
+
+# Everything is now merged inside : https://github.com/FollyMaddy/RetroPie-Share/blob/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh
+
+# --------------------------------------------------------------
+
 # Introduction :
 
 This is how I got started on with this project on 27-11-2020.
@@ -129,11 +137,11 @@ You can do the same without even downloading my repository or scripts  !
 
 You can just run them online ! (make sure you have "curl" installed (sudo apt install curl))
 
-```curl "https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/generate-systems-lr-mess_mame-2v1.sh" | bash -s coleco```
+```curl "https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/backup/generate-systems-lr-mess_mame-2v1.sh" | bash -s coleco```
 
 or
 
-```curl "https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/generate-systems-lr-mess_mame-2v1-ext.sh" | bash -s coleco```
+```curl "https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scripts-00/backup/generate-systems-lr-mess_mame-2v1-ext.sh" | bash -s coleco```
 
 
 # File descriptions :
