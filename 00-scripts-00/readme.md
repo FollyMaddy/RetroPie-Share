@@ -81,9 +81,7 @@ pi@raspberrypi:~ $ cd
 
 pi@raspberrypi:~ $ git clone https://github.com/FollyMaddy/RetroPie-Share.git
 
-pi@raspberrypi:~ $ cd RetroPie-Share/
-
-pi@raspberrypi:~/RetroPie-Share $ cd 00-scripts-00/
+pi@raspberrypi:~ $ cd RetroPie-Share/00-scripts-00/backup
 
 
 # How to run :
