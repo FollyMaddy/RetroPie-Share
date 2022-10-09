@@ -29,7 +29,7 @@ e759e77efd8073c74a04b3907adcca4c6edd1cc8  os300.rom\n\
 2e409b92c97cda34ff25c2951e5f799125fe7e32  sndrom\n\n\
 "
 rp_module_section="exp"
-rp_module_flags=""
+rp_module_flags="!aarch64"
 
 function depends_elkulator() {
     getDepends xorg matchbox-window-manager automake liballegro4-dev zlib1g-dev libalut-dev libopenal-dev autotools-dev xdotool
