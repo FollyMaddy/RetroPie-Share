@@ -179,7 +179,7 @@ function subgui_add-mamedev-systems_all() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",Display all upon descriptions,,if [[ $(arch) == arm* ]] ; then choose_add descriptions; else dialog_message \"This option has issues on X86 and X86_64.\nYou have to use one of the other options.\";fi,,,,,dialog_message \"Install one or more systems with default options\","
+",Display all upon descriptions,,if [[ $(arch) == arm* ]] ; then choose_add descriptions; else dialog_message \"This option has issues on aarch64, X86 and X86_64.\nYou have to use one of the other options.\";fi,,,,,dialog_message \"Install one or more systems with default options\","
 ",Display all upon system names,,choose_add systems,,,,,dialog_message \"Install one or more systems with default options\","
 ",,,,,,,,,"
 ",Display alphabetical submenu upon descriptions,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,,,,,dialog_message \"Select a list and then install one or more systems with default options\","
