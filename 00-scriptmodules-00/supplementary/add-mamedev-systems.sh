@@ -510,9 +510,9 @@ function subgui_add-mamedev-systems_downloads_wget_A() {
 ",v HELP > Get all handheld and plug&play files per category,,,"
 ",RetroPie/roms/all_in1      < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@all_in1/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/all_in1 ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/classich     < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@classich/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/classich ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/gameandwatch < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@gameandwatch/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/gameandwatch ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/gameandwatch < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@gameandwatch/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/gameandwatch ${rompack_link_info[2]} download;dialog_message \"gnw_egg is a clone of gnw_mmouse\ngnw_dkcirc is a clone of gnw_mmousep\n\nAfter clicking ok these roms are copied from the originals and renamed to the correct romname.\";cp /home/$user/RetroPie/roms/gameandwatch/gnw_mmousep.zip /home/$user/RetroPie/roms/gameandwatch/gnw_dkcirc.zip;cp /home/$user/RetroPie/roms/gameandwatch/gnw_mmouse.zip /home/$user/RetroPie/roms/gameandwatch/gnw_egg.zip,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/jakks        < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@jakks/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/jakks ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
-",RetroPie/roms/konamih      < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@konamih/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/konamih ${rompack_link_info[2]} download;dialog_message \"gnw_egg is a clone of gnw_mmouse\ngnw_dkcirc is a clone of gnw_mmousep\n\nAfter clicking ok these roms are copied from the originals and renamed to the correct romname.\";cp /home/$user/RetroPie/roms/gameandwatch/gnw_mmousep.7z /home/$user/RetroPie/roms/gameandwatch/gnw_dkcirc.7z;cp /home/$user/RetroPie/roms/gameandwatch/gnw_mmouse.7z /home/$user/RetroPie/roms/gameandwatch/gnw_egg.7z,,,,,dialog_message \"NO HELP\","
+",RetroPie/roms/konamih      < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@konamih/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/konamih ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/tigerh       < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@tigerh/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/tigerh ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",RetroPie/roms/tigerrz      < ${rompack_link_info[0]},,subform_restricted_multi_download_wget_A '/@tigerrz/' ${rompack_link_info[1]} /home/$user/RetroPie/roms/tigerrz ${rompack_link_info[2]} download,,,,,dialog_message \"NO HELP\","
 ",,,,"
@@ -800,7 +800,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0248.02" 22 76 16)
+	Version 0248.03" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
