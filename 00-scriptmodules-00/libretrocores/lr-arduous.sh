@@ -22,8 +22,8 @@ function sources_lr-arduous() {
 
 function build_lr-arduous() {
     cd build
-    cmake ..
-    make clean
+    cmake .. 
+    #make clean
     make
     md_ret_require="$md_build/build/arduous_libretro.so"
 }
@@ -37,9 +37,10 @@ function install_lr-arduous() {
 function configure_lr-arduous() {
     mkRomDir "arduboy"
 
-    defaultRAConfig "arduboy"
+    ensureSystemretroconfig "arduboy"
 
     addEmulator 1 "$md_id" "arduboy" "$md_inst/arduous_libretro.so"
 
     addSystem "arduboy" "ArduBoy" ".hex .7z .zip"
 }
+    
