@@ -38,6 +38,10 @@ function configure_lr-arduous() {
     mkRomDir "arduboy"
 
     ensureSystemretroconfig "arduboy"
+    
+    # add the per system default settings
+    iniConfig " = " '"' "$configdir/arduboy/retroarch.cfg"
+    iniSet "video_shader" "$configdir/all/retroarch/shaders/handheld/gameboy/gb-pocket-shader.glslp"
 
     addEmulator 1 "$md_id" "arduboy" "$md_inst/arduous_libretro.so"
 
