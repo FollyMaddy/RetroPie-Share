@@ -800,7 +800,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0248.04" 22 76 16)
+	Version 0248.05" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -910,7 +910,7 @@ newsystems=()
 namesfilter="\(brief|------"
 
 #filter on usefull media, otherwise we also get many unusefull scripts
-mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|\(flop|\(cass|dump\)|cdrm\)|\(hard|\(hard1|\(min|\(mout"
+mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|\(flop|\(cass|dump\)|cdrm\)|hard\)|\(hard1|\(min|\(mout"
 
 #string for adding extra extensions in all generated scripts
 addextensions=".zip .7z"
@@ -1211,6 +1211,10 @@ descriptionsrp+=( "R-Zone" )
 #not in the original platforms.cfg
 systemsrp+=( "archimedes" )
 descriptionsrp+=( "Archimedes" )
+systemsrp+=( "archimedes" )
+descriptionsrp+=( "Acorn A" )
+systemsrp+=( "archimedes" )
+descriptionsrp+=( "BBC A" )
 systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Micro" )
 systemsrp+=( "bbcmicro" )
