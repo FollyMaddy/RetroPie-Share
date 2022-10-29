@@ -254,6 +254,8 @@ function choose_extra_options_add() {
 ",Acorn Archimedes 310 booting RISC-OS 3.10 + floppy support,@non-arcade,run_generator_script aa310 archimedes -bios*310 floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd -bios_310,,,,,dialog_message \"NO HELP\","
 ",Acorn Archimedes 440+4Mb booting RISC-OS 3.10 + floppy support,@non-arcade,run_generator_script aa440 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd -bios_310-4Mb,,,,,dialog_message \"NO HELP\","
 ",Acorn Archimedes 440/1+4Mb booting RISC-OS 3.10 + floppy support,@non-arcade,run_generator_script aa4401 archimedes -bios*310*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd -bios_310-4Mb,,,,,dialog_message \"NO HELP\","
+",Acorn Archimedes 5000+4Mb + 1st floppy support + 2nd floppydrive,@non-arcade,run_generator_script aa5000 archimedes -upc:fdc:1*35hd*-ram*4M floppydisk flop .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr -2nd_floppy_4Mb,,,,,dialog_message \"NO HELP\","
+",Acorn Archimedes 5000+4Mb + cdrom support,@non-arcade,run_generator_script aa5000 archimedes -upc:ide:1*cdrom*-ram*4M cdrom cdrm .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.ima*.img*.ufi*.360*.ipf*.adf*.ads*.adm*.adl*.apd*.jfd*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr -cdrom_4Mb,,,,,dialog_message \"NO HELP\","
 ",Amstrad CPC6128 + floppy1 35ssdd support,@non-arcade,run_generator_script cpc6128 amstradcpc -upd765:0*35ssdd floppydisk1 flop1 .sna*.wav*.cdt*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -35ssdd,,,,,dialog_message \"NO HELP\","
 ",Amstrad CPC6128p + ParaDOS + floppy1 35ssdd support,@non-arcade,run_generator_script cpc6128p amstradcpc -cart1*~/RetroPie/BIOS/mame/ENGPADOS.CPR*-upd765:0*35ssdd floppydisk1 flop1 .sna*.wav*.cdt*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -parados-35ssdd,,,,,dialog_message \"NO HELP\","
 ",Amstrad CPC6128P + cartridge support + use gx4000 roms directory,@non-arcade,run_generator_script cpc6128p gx4000 '' cartridge cart .bin*.cpr* -use_gx4000_roms_dir,,,,,dialog_message \"NO HELP\","
@@ -800,7 +802,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0248.05" 22 76 16)
+	Version 0248.06" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1571,7 +1573,7 @@ function configure_install-${newsystems[$index]}-cmd() {
 	local _mame_core=\$(dirname "\$md_inst")/lr-mame/mamearcade_libretro.so
 	local _system="$(if [[ -n ${RPsystemNames[$index]} ]];then echo ${RPsystemNames[$index]};else echo ${newsystems[$index]};fi)"
 	local _config="\$configdir/\$_system/retroarch.cfg"
-	local _add_config_basename="\$_config.add"
+	local _add_config_add="\$_config.add"
 	local _emulatorscfg="\$configdir/\$_system/emulators.cfg"
 	local _mameini="/opt/retropie/configs/mame/mame.ini"
 	local _basename_coreconfig="\$configdir/\$_system/retroarch-core-options.cfg.basename"
@@ -1580,7 +1582,7 @@ function configure_install-${newsystems[$index]}-cmd() {
 if [[ $SystemType == non-arcade ]];then
 	#plain command
 	#(used for loading .cmd files, amongst others)
-	addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config -v -L \$_mess %ROM%"
+	addEmulator 0 "lr-mess-cmd" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_add -v -L \$_mess_core %ROM%"
 	
 	#plain commands
 	#works on the pi
