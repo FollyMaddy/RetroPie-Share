@@ -36,6 +36,7 @@ local system_read
 
 function depends_add-mamedev-systems() {
     getDepends curl python3 figlet toilet asciinema
+    [[ ! -f /opt/retropie/emulators/mame/mame0249_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0249_systems_sorted_info -o /opt/retropie/emulators/mame/mame0249_systems_sorted_info
 }
 
 
@@ -797,7 +798,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0249.01" 22 76 16)
+	Version 0249.02" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
