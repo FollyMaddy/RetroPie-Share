@@ -23337,7 +23337,7 @@ Driver nss_smas (Super Mario All-Stars (Nintendo Super System)): @platform@run,_
 Driver nss_smw (Super Mario World (Nintendo Super System)): @platform@run,_jump_and_scrolling
 Driver nss_ssoc (Super Soccer (Nintendo Super System)): @soccer@sports
 Driver nss_sten (Super Tennis (Nintendo Super System)): @sports@tennis
-Driver nstarfox (Star Fox (Nelsonic)): @lcd_game@non-arcade@watch
+Driver nstarfox (Star Fox (Nelsonic)): @classich@lcd_game@non-arcade@watch@non-arcade
 Driver nstocker (Night Stocker (10/6/86)): @driving_1st_person@lightgun@shooter@working_arcade
 Driver nstocker2 (Night Stocker (8/27/86)): @clones@driving_1st_person@lightgun@shooter@working_arcade
 Driver nstrphnx (New Star's Phoenix (Italian speech)): @electromechanical@mechanical@pinball@screenless
