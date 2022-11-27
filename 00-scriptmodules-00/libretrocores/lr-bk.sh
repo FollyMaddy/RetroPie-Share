@@ -11,7 +11,7 @@
 
 rp_module_id="lr-bk"
 rp_module_desc="BK - bk port for libretro"
-rp_module_help="ROM Extensions: ..chd .iso .zip\n\nCopy your roms to $romdir/bk\n\nCopy your bios roms to $biosdir/bk\n\n"
+rp_module_help="ROM Extensions: .img .bin .7z .zip\n\nCopy your roms to $romdir/bk\n\nCopy your bios roms to $biosdir/bk\n\n"
 rp_module_repo="git https://github.com/libretro/bk-emulator.git master"
 rp_module_section="exp"
 
@@ -37,5 +37,5 @@ function configure_lr-bk() {
     ensureSystemretroconfig "bk"
 
     addEmulator 1 "$md_id" "bk" "$md_inst/bk_libretro.so"
-    addSystem "bk" "BK-0010/BK-0011" ".bin .7z .zip"
+    addSystem "bk" "BK-0010/BK-0011" ".img .bin .7z .zip"
 }
