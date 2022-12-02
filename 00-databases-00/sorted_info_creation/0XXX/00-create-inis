@@ -1,0 +1,24 @@
+#remove old konamih.ini and create a recent one
+rm konamih.ini
+/opt/retropie/emulators/mame/mame -listdevices k*|awk '/\(Konami\)/||/\(handheld\)/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > konamih.ini
+#remove old tigerh.ini and create a recent one
+rm tigerh.ini
+/opt/retropie/emulators/mame/mame -listdevices t*|awk '/\(Tiger\)/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerh.ini
+#remove old tigerrz.ini and create a recent one
+rm tigerrz.ini
+/opt/retropie/emulators/mame/mame -listdevices rz*|awk '/\(R-Zone/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerrz.ini
+#remove old gameandwatch.ini and create a recent one
+rm gameandwatch.ini
+/opt/retropie/emulators/mame/mame -listdevices|awk '/\(Game \& Watch\:/||/\(Bassmate/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > gameandwatch.ini
+#remove old jakks.ini and create a recent one
+rm jakks.ini
+/opt/retropie/emulators/mame/mame -listdevices j*|awk '/\jak\_/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > jakks.ini
+#remove old lightgun.ini and create a recent one
+#Even though lightgun information is available, not all systems can make use of it !
+#For more information, have a look over here :
+#https://retropie.org.uk/forum/topic/32900/how-to-run-atari-7800-on-lr-mess
+rm lightgun.ini
+/opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver; do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver) == *lightgun* ]]&&echo $driver;done|while read lgdriver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $lgdriver|grep "emulation="|cut -d\" -f4) == good ]] && echo $lgdriver;done > lightgun.ini
+
+#neogeo can be extracted from hash !
+#not added yet
