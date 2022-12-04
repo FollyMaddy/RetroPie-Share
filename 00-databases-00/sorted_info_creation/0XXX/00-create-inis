@@ -28,7 +28,8 @@ for preliminarydriver in $preliminarydrivers
 do
 [[ -n $(/opt/retropie/emulators/mame/mame -listdevices $preliminarydriver) ]]&&echo $preliminarydriver >> jakks.ini
 done
-
+#sort the file
+sort -o jakks.ini jakks.ini
 
 #remove old konamih.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
