@@ -23,15 +23,18 @@ Driver gnw_fires (Game & Watch: Fire (Silver)):
 Driver gnw_flagman (Game & Watch: Flagman):
 Driver gnw_gcliff (Game & Watch: Gold Cliff):
 Driver gnw_ghouse (Game & Watch: Green House):
-Driver gnw_helmet (Game & Watch: Helmet (CN-17 version)):
-Driver gnw_judge (Game & Watch: Judge (green version)):
+Driver gnw_helmet (Game & Watch: Helmet (version CN-17)):
+Driver gnw_helmeto (Game & Watch: Helmet (version CN-07)):
+Driver gnw_judge (Game & Watch: Judge (purple version)):
+Driver gnw_judgeo (Game & Watch: Judge (green version)):
 Driver gnw_lboat (Game & Watch: Life Boat):
 Driver gnw_lion (Game & Watch: Lion):
 Driver gnw_manhole (Game & Watch: Manhole (New Wide Screen)):
 Driver gnw_manholeg (Game & Watch: Manhole (Gold)):
 Driver gnw_mario (Game & Watch: Mario Bros.):
 Driver gnw_mariocm (Game & Watch: Mario's Cement Factory (New Wide Screen)):
-Driver gnw_mariocmt (Game & Watch: Mario's Cement Factory (Table Top)):
+Driver gnw_mariocmt (Game & Watch: Mario's Cement Factory (Table Top, version CM-72)):
+Driver gnw_mariocmta (Game & Watch: Mario's Cement Factory (Table Top, version CM-72A)):
 Driver gnw_mariotj (Game & Watch: Mario The Juggler):
 Driver gnw_mbaway (Game & Watch: Mario's Bombs Away):
 Driver gnw_mickdon (Game & Watch: Mickey & Donald):
@@ -55,4 +58,3 @@ Driver gnw_tbridge (Game & Watch: Turtle Bridge):
 Driver gnw_tfish (Game & Watch: Tropical Fish):
 Driver gnw_vermin (Game & Watch: Vermin):
 Driver gnw_zelda (Game & Watch: Zelda):
-
