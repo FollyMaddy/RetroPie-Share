@@ -18,6 +18,17 @@ rm gameandwatch.ini
 #check on good emulation is done because with the tutorial the list had only good roms
 rm jakks.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/\jak\_/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > jakks.ini
+#append manual tested preliminary drivers
+preliminarydrivers=()
+preliminarydrivers=\
+'
+jak_sdoo
+'
+for preliminarydriver in $preliminarydrivers
+do
+[[ -n $(/opt/retropie/emulators/mame/mame -listdevices $preliminarydriver) ]]&&echo $preliminarydriver >> jakks.ini
+done
+
 
 #remove old konamih.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
