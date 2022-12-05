@@ -1,6 +1,8 @@
 echo "Make sure you are running a 64 bit version of mame !"
 
+
 #remove old good.ini and create a recent one (with emulation="good" check)
+rm good.ini
 /opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > good.ini
 
 #remove old 90º.ini and create a recent one (no emulation="good" check)
@@ -67,4 +69,43 @@ rm tigerh.ini
 rm tigerrz.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/\(R-Zone/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerrz.ini
 
-
+#run this after creating a tigerh.ini !
+#remove old classich.ini and create a recent one (with emulation="good" check)
+#check on good emulation is done because with the tutorial the list had only good roms
+#here is an array with all the handheld manufacturers which were in the earlier classich.ini
+#the information is extracted using the -listxml option with mame and grabbing the correct manufaturer line
+#the special charachters and spaces are removed to prevent problems not able to store them correctly in a "cel"
+#the checking meganism does the same thing with the special charachters and spaces so they can be compared correctly
+rm classich.ini
+manufacturers=()
+manufacturers=\
+'
+'Bambino'
+'Bandai'
+'Coleco'
+'ColecoKonami'
+'Conic'
+'Entex'
+'Epoch'
+'Gakken'
+'GakkenKonami'
+'IdealToyCorporation'
+'MattelElectronics'
+'NelsoniclicensedfromNintendo'
+'ParkerBrothers'
+'TigerElectronics'
+'Tomy'
+'Tronica'
+'U.S.Games'
+'VTech'
+'
+/opt/retropie/emulators/mame/mame -listdevices|awk "/Driver/"|cut -d " " -f2|while read driver; do  readmanufacturer="$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/manufacturer>/"|sed 's/^[ \t]*//;s/.manufacturer//g;s/>//g;s/<//g;s/ //g;s/'\('//g;s/'\)'//g;s/\///g')"; handheldinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/sourcefile=\"handheld/"); emulationinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/emulation=\"good/"); for manufacturer in $manufacturers; do [[ $manufacturer == $readmanufacturer ]]&&[[ -n $handheldinfo ]]&&[[ -n $emulationinfo ]]&&echo $driver; done; done > classich.ini
+#append mchess from mattel and do the checks on mattel (not handheld)
+/opt/retropie/emulators/mame/mame -listdevices mchess|awk "/Driver/"|cut -d " " -f2|while read driver; do  readmanufacturer="$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/manufacturer>/"|sed 's/^[ \t]*//;s/.manufacturer//g;s/>//g;s/<//g;s/ //g;s/'\('//g;s/'\)'//g;s/\///g')"; handheldinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/sourcefile=\"mattel/"); emulationinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/emulation=\"good/"); for manufacturer in $manufacturers; do [[ $manufacturer == $readmanufacturer ]]&&[[ -n $handheldinfo ]]&&[[ -n $emulationinfo ]]&&echo $driver; done; done >> classich.ini
+#make sure the tigerh.ini is created earlier then
+#remove tigerh games from the list with this command
+#N does append the next line in the pattern space so whole exact matches are removed including the newline
+#append old driver tbaskb (not in mame database anymore !)
+echo tbaskb >> classich.ini
+cat tigerh.ini |while read driver;do sed -i "N;s/$driver\\n//g" classich.ini ; done
+sort -o classich.ini classich.ini
