@@ -174,7 +174,7 @@ function subgui_add-mamedev-systems_all() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",Display all upon descriptions,,if [[ $(arch) == arm* ]] ; then choose_add descriptions; else dialog_message \"This option has issues on aarch64, X86 and X86_64.\nYou have to use one of the other options.\";fi,,,,,dialog_message \"Install one or more systems with default options\","
+",Display all upon descriptions,,choose_add descriptions,,,,,dialog_message \"Install one or more systems with default options\","
 ",Display all upon system names,,choose_add systems,,,,,dialog_message \"Install one or more systems with default options\","
 ",,,,,,,,,"
 ",Display alphabetical submenu upon descriptions,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,,,,,dialog_message \"Select a list and then install one or more systems with default options\","
@@ -740,13 +740,17 @@ function choose_add() {
     #using awk we can combined (and)&& (or)|| and also ignore case sensitive
     #(fast)sorting (and equal to) is possible on patterns up to 5 options ($2 -$6)
     #(slower)sorting (not equal to) is possible on patterns for one option ($2) adding an ! after the pattern 
-    IFS=$'\n' csv=($(sort -t"," -d -k 3 --ignore-case<<<$(awk "{IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
+    #before sorting it passes an awk command for the second time (read from right to left)
+    #this command adds another column with the lenght of the item we want to sort on
+    #adding this will sort shorter items before longer items
+    #https://stackoverflow.com/questions/36896499/bash-sort-by-number-and-word-length-and-alphabetically  
+    IFS=$'\n' csv=($(sort -t"," -k5,5nr -k3,3 --ignore-case<<<$(awk '{print $0","length($3)}'<<<$(awk "{IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")))));unset IFS
     #this is an aternative but much slower
     #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 3 --ignore-case;unset IFS)
     else
     #here we store the sorted mamedev_csv values in the csv array
     #we sort on the second colunm which contain the system names
-    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case<<<$(awk " {IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}"))));unset IFS
+    IFS=$'\n' csv=($(sort -t"," -k5,5nr -k2,2 --ignore-case<<<$(awk '{print $0","length($2)}'<<<$(awk " {IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")))));unset IFS
     #this is an aternative but much slower
     #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 2 --ignore-case;unset IFS)
     fi
@@ -797,7 +801,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0249.04" 22 76 16)
+	Version 0249.05" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
