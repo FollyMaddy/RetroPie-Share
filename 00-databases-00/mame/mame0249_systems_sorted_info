@@ -8291,7 +8291,7 @@ Driver gamefgtr (Game Fighter (bootleg)): @bootlegs@compilation@multigame@non-ar
 Driver gamegeaj (Game Gear (Japan)): @handheld@home_videogame_console@non-arcade
 Driver gamegear (Game Gear (Europe/America)): @handheld@home_videogame_console@non-arcade
 Driver gamekin3 (GameKing 3): @handheld@home_videogame_console@non-arcade
-Driver gameking (GameKing GM-218): @handheld@home_videogame_console@non-arcade
+Driver gameking (GameKing GM-218): @forum@handheld@home_videogame_console@non-arcade
 Driver gamemach (The Game Machine): @multi-games@non-arcade@screenless@tabletop
 Driver gamepock (Game Pocket Computer): @forum@handheld@home_videogame_console@non-arcade
 Driver gamesnsm (The Games (NSM)): @electromechanical@mechanical@pinball@screenless
@@ -20371,7 +20371,7 @@ Driver m4xtrm__a (X-treme (BWB) (MPU4) (30p stake / £15 jackpot)): @clones@mech
 Driver m4xtrm__b (X-treme (BWB) (MPU4) (25p stake / £15 jackpot)): @clones@mechanical@reels@screenless@slot_machine
 Driver m4zill (Zillionare's Challenge (Pure Leisure) (MPU4) (set 1)): @mechanical@reels@screenless@slot_machine
 Driver m4zilla (Zillionare's Challenge (Pure Leisure) (MPU4) (set 2)): @clones@mechanical@reels@screenless@slot_machine
-Driver m5 (m.5 (Japan)): @computer@home_system@non-arcade
+Driver m5 (m.5 (Japan)): @forum@computer@home_system@non-arcade
 Driver m505neo (Millennium M505 Arcade Neo Portable Spielkonsole (Family Sport 100-in-1)): @all_in1@handheld@multi-games@non-arcade
 Driver m521neo (Millennium M521 Arcade Neo 2.0 (Family Sport 220-in-1) ): @all_in1@handheld@multi-games@non-arcade
 Driver m55050 (Fifty Fifty (Bwb) (MPU5)): @mechanical@reels@screenless@slot_machine
