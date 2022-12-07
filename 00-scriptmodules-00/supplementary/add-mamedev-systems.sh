@@ -174,7 +174,7 @@ function subgui_add-mamedev-systems_all() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",Display all upon descriptions,,choose_add descriptions,,,,,dialog_message \"Install one or more systems with default options\","
+"$(if [[ $(arch) == arm* ]];then echo -e ,Display all upon descriptions,,choose_add descriptions,,,,,dialog_message \\\"Install one or more systems with default options\\\",;else echo -e ,\\Z1Displaying all upon descriptions not available on 64bit OS,,,,,,,,;fi)"
 ",Display all upon system names,,choose_add systems,,,,,dialog_message \"Install one or more systems with default options\","
 ",,,,,,,,,"
 ",Display alphabetical submenu upon descriptions,,subgui_add-mamedev-systems_alphabetical_order_selection descriptions,,,,,dialog_message \"Select a list and then install one or more systems with default options\","
@@ -801,7 +801,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0249.05" 22 76 16)
+	Version 0249.06" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
