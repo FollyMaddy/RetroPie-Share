@@ -16,12 +16,15 @@ cp ../*.ini ./
  else
  mkdir original-data
  
- progettosnaps_files="pS_category_ pS_CatVer_ pS_renameSET_ pS_version_"
- [[ -z $(ls original-data/) ]] && for file in $progettosnaps_files;do
+ progettosnaps_files=()
+ progettosnaps_files="pS_category_ pS_renameSET_ pS_version_"
+ for file in $progettosnaps_files;do
  wget https://www.progettosnaps.net/renameset/packs/$file$version.zip
  mv $file$version.zip original-data
  done
- 
+ wget https://www.progettosnaps.net/catver/packs/pS_CatVer_$version.zip
+ mv pS_CatVer_$version.zip original-data
+
  unzip -p original-data/pS_category_$version.zip folders/Bootlegs.ini >bootlegs.ini
  unzip -p original-data/pS_category_$version.zip folders/cabinets.ini >cabinets.ini
  unzip -p original-data/pS_category_$version.zip "folders/Clones Arcade.ini" >clones.ini
