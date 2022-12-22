@@ -50,7 +50,7 @@ function configure_gsplus-rp-share() {
     {
     	echo '#!/usr/bin/env sh'
     	echo '_PWD=$(pwd)'
-    	echo 'cd /opt/retropie/emulators/gsplus'
+    	echo 'cd /opt/retropie/emulators/gsplus-rp-share'
     	echo './GSplus -config "$1"'
     	echo 'cd "$_PWD"'
     } >> "$md_inst/gsplus.sh"
