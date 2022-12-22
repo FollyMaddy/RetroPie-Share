@@ -255,8 +255,8 @@ function choose_extra_options_add() {
 ",Amstrad CPC6128p + ParaDOS + floppy1 35ssdd support,@non-arcade,run_generator_script cpc6128p amstradcpc -cart1*~/RetroPie/BIOS/mame/ENGPADOS.CPR*-upd765:0*35ssdd floppydisk1 flop1 .sna*.wav*.cdt*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -parados-35ssdd,,,,,dialog_message \"NO HELP\","
 ",Amstrad CPC6128P + cartridge support + use gx4000 roms directory,@non-arcade,run_generator_script cpc6128p gx4000 '' cartridge cart .bin*.cpr* -use_gx4000_roms_dir,,,,,dialog_message \"NO HELP\","
 ",APF Imagination Machine + basic + cassette support,@non-arcade,run_generator_script apfimag apfimag_cass basic cassette cass .wav -basic,,,,,dialog_message \"NO HELP\","
-",Apple //e(e) + compact flash harddrive support,@non-arcade,run_generator_script apple2ee apple2ee -sl7*cffa2 harddisk hard1 .mfi*.dfi*.dsk*.do *.po *.rti*.edd*.woz*.nib*.wav*.chd*.hd *.hdv*.2mg*.hdi -compactflash,,,,,dialog_message \"NO HELP\","
-",Apple IIgs(ROM3) + compact flash harddrive support,@non-arcade,run_generator_script apple2gs apple2gs -sl7*cffa2 harddisk hard1 .mfi*.dfi*.dsk*.do*.po *.rti*.edd*.woz*.nib*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.ima*.img*.ufi*.360*.ipf*.dc42 .woz*.2mg*.chd*.hd *.hdv*.2mg*.hdi -compactflash,,,,,dialog_message \"NO HELP\","
+",Apple //e(e) + compact flash harddrive support,@non-arcade,run_generator_script apple2ee apple2ee -sl7*cffa2 harddisk hard1 .mfi*.dfi*.dsk*.do*.po*.rti*.edd*.woz*.nib*.wav*.chd*.hd*.hdv*.2mg*.hdi -compactflash,,,,,dialog_message \"NO HELP\","
+",Apple IIgs(ROM3) + compact flash harddrive support,@non-arcade,run_generator_script apple2gs apple2gs -sl7*cffa2 harddisk hard1 .mfi*.dfi*.dsk*.do*.po*.rti*.edd*.woz*.nib*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.ima*.img*.ufi*.360*.ipf*.dc42.woz*.chd*.hd*.hdv*.2mg*.hdi -compactflash,,,,,dialog_message \"NO HELP\","
 ",Coco + ram + cassette support,@non-arcade,run_generator_script coco coco -ext*ram cassette cass .wav*.cas*.ccc*.rom -extra_ram,,,,,dialog_message \"NO HELP\","
 ",Coco 2 + ram + cassette support,@non-arcade,run_generator_script coco2 coco2 -ext*ram cassette cass .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd -extra_ram,,,,,dialog_message \"NO HELP\","
 ",Coco 2 + ram + floppy 525dd support,@non-arcade,run_generator_script coco2 coco2 -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd -extra_ram-525dd,,,,,dialog_message \"NO HELP\","
@@ -801,7 +801,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0250.01" 22 76 16)
+	Version 0250.02" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
