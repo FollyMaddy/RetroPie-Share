@@ -76,12 +76,12 @@ Driver 280zzzap (280-ZZZAP): @1st_person@driving@good@monochrome@working_arcade
 Driver 2mindril (Two Minute Drill (Ver 2.93A 1994/02/16)): @electromechanical@mechanical@misc@screenless
 Driver 2spicy (2 Spicy): @gun@screenless@shooter
 Driver 30test (30 Test (remake)): @electromechanical@good@misc@screenless@working_arcade
-Driver 32x (Genesis with 32X (USA, NTSC)): @game_console@home_videogame@non-arcade
-Driver 32x_mcd (Mega-CD with 32X (Europe, PAL)): @game_console@home_videogame@non-arcade
-Driver 32x_mcdj (Mega-CD with 32X (Japan, NTSC)): @game_console@home_videogame@non-arcade
-Driver 32x_scd (Sega CD with 32X (USA, NTSC)): @game_console@home_videogame@non-arcade
-Driver 32xe (Mega Drive with 32X (Europe, PAL)): @game_console@home_videogame@non-arcade
-Driver 32xj (Mega Drive with 32X (Japan, NTSC)): @game_console@home_videogame@non-arcade
+Driver 32x (Genesis with 32X (USA, NTSC)): @game_console@home_videogame@lightgun@non-arcade
+Driver 32x_mcd (Mega-CD with 32X (Europe, PAL)): @game_console@home_videogame@lightgun@non-arcade
+Driver 32x_mcdj (Mega-CD with 32X (Japan, NTSC)): @game_console@home_videogame@lightgun@non-arcade
+Driver 32x_scd (Sega CD with 32X (USA, NTSC)): @game_console@home_videogame@lightgun@non-arcade
+Driver 32xe (Mega Drive with 32X (Europe, PAL)): @game_console@home_videogame@lightgun@non-arcade
+Driver 32xj (Mega Drive with 32X (Japan, NTSC)): @game_console@home_videogame@lightgun@non-arcade
 Driver 386i (386i): @computer@non-arcade@workstation_server
 Driver 386sc (386 SC Rev A2): @business_terminal@computer@non-arcade
 Driver 386sc2c (386 motherboard using the Symphony chipset): @business_terminal@computer@non-arcade
@@ -807,7 +807,7 @@ Driver airtrixo (Air Trix (original)): @clones@skateboarding@sports
 Driver airwlkrs (Air Walkers): @basketball@sports
 Driver airwolf (Airwolf): @cabinets@cocktail@flying_horizontal@good@shooter@upright@working_arcade
 Driver airwolfa (Airwolf (US)): @cabinets@clones@cocktail@flying_horizontal@good@shooter@upright@working_arcade
-Driver aiwamcd (Mega-CD CSD-G1M (Japan, NTSC)): @game_console@home_videogame@non-arcade
+Driver aiwamcd (Mega-CD CSD-G1M (Japan, NTSC)): @game_console@home_videogame@lightgun@non-arcade
 Driver ajax (Ajax): @90º@cabinets@cocktail@flying_vertical@good@shooter@upright@working_arcade
 Driver ajaxj (Ajax (Japan)): @90º@cabinets@clones@cocktail@flying_vertical@good@shooter@upright@working_arcade
 Driver ajofrin (Ajofrin City): @mechanical@reels@screenless@slot_machine
@@ -2559,7 +2559,7 @@ Driver bonuspkr (Bonus Poker): @cards@casino@good@working_arcade
 Driver bonzeadv (Bonze Adventure (World, newer)): @cabinets@cocktail@good@platform@shooter_scrolling@upright@working_arcade
 Driver bonzeadvo (Bonze Adventure (World, older)): @cabinets@clones@cocktail@good@platform@shooter_scrolling@upright@working_arcade
 Driver bonzeadvp (Bonze Adventure (World, prototype, newer)): @cabinets@clones@cocktail@good@platform@shooter_scrolling@upright@working_arcade
-Driver bonzeadvp2 (Bonze Adventure (World, prototype, older)): @clones@new0251@platform@shooter_scrolling@working_arcade
+Driver bonzeadvp2 (Bonze Adventure (World, prototype, older)): @clones@good@new0251@platform@shooter_scrolling@working_arcade
 Driver bonzeadvu (Bonze Adventure (US)): @cabinets@clones@cocktail@good@platform@shooter_scrolling@upright@working_arcade
 Driver boobhack (Booby Kids (Italian manufactured graphic hack / bootleg of Kid no Hore Hore Daisakusen (bootleg))): @90º@bootlegs@cabinets@clones@cocktail@collect@good@maze@upright@working_arcade
 Driver boogwing (Boogie Wings (Euro v1.5, 92.12.07)): @good@misc_horizontal@shooter@working_arcade
@@ -3263,7 +3263,7 @@ Driver cdsteljn (DS Telejan (DECO Cassette) (Japan)): @90º@cabinets@cocktail@go
 Driver cdtekg2 (286 mainboard with Headland G2 chipset): @business_terminal@computer@non-arcade
 Driver cdtv (CDTV (PAL)): @game_console@home_videogame@non-arcade
 Driver cdtvn (CDTV (NTSC)): @game_console@home_videogame@non-arcade
-Driver cdx (CDX (USA, NTSC)): @game_console@home_videogame@non-arcade
+Driver cdx (CDX (USA, NTSC)): @game_console@home_videogame@lightgun@non-arcade
 Driver cec2000 (China Education Computer 2000): @computer@good@home_system@non-arcade
 Driver cece (China Education Computer E): @computer@good@home_system@non-arcade
 Driver cecg (China Education Computer G): @computer@good@home_system@non-arcade
@@ -3680,7 +3680,7 @@ Driver cncchess (Computer Chess (Conic, model 7011)): @board_game@chess_machine@
 Driver cncchess2 (Computer Chess (Conic, model 7012)): @board_game@chess_machine@good@non-arcade@screenless
 Driver cncchess3 (Computer Chess (Conic, model 7013)): @board_game@chess_machine@non-arcade@screenless
 Driver cndypuzl (Candy Puzzle (v1.0)): @good@lightgun@puzzle@toss@working_arcade
-Driver cnebula (Nebula (DECO Cassette) (UK)): @gallery@new0251@shooter@working_arcade
+Driver cnebula (Nebula (DECO Cassette) (UK)): @90º@gallery@good@new0251@shooter@working_arcade
 Driver cnfball (Electronic Football (Conic, TMS1000 version)): @classich@electronic_game@good@handheld@non-arcade@screenless
 Driver cnfball2 (Electronic Football II (Conic)): @classich@electronic_game@good@handheld@non-arcade@screenless
 Driver cnightst (Night Star (DECO Cassette) (US) (set 1)): @90º@cabinets@cocktail@flying_vertical@good@shooter@upright@working_arcade
@@ -4577,7 +4577,7 @@ Driver dbz2bl (Dragon Ball Z 2 - Super Battle (bootleg)): @bootlegs@clones@fight
 Driver dbza (Dragon Ball Z (rev A)): @clones@fighter@good@versus@working_arcade
 Driver dbzvrvs (Dragon Ball Z V.R.V.S. (Japan, Rev A)): @fighter@good@versus@working_arcade
 Driver dc (Dreamcast (USA, NTSC)): @game_console@home_videogame@non-arcade
-Driver dcat16 (D-CAT16 (Mega Drive handheld)): @handheld@home_videogame_console@non-arcade
+Driver dcat16 (D-CAT16 (Mega Drive handheld)): @handheld@home_videogame_console@lightgun@non-arcade
 Driver dcclub (Dynamic Country Club (World, ROM Based)): @golf@good@sports@working_arcade
 Driver dcclubfd (Dynamic Country Club (US, Floppy Based, FD1094 317-0058-09d)): @clones@golf@good@sports@working_arcade
 Driver dcclubj (Dynamic Country Club (Japan, ROM Based)): @clones@golf@good@sports@working_arcade
@@ -4782,9 +4782,9 @@ Driver decathlto (Decathlete (JUET 960424 V1.000)): @clones@sports@track_and_fie
 Driver decmate2 (DECmate II (PC278)): @business_terminal@computer@non-arcade
 Driver decmate3 (DECmate III (PC238)): @business_terminal@computer@non-arcade
 Driver decocass (DECO Cassette System): @90º@bios@cabinets@cocktail@good@screenless@system@upright
-Driver decodark (DECO Cassette System ROM Multigame (Darksoft, v17)): @bootlegs@compilation@multigame@new0251@working_arcade
-Driver decodark15 (DECO Cassette System ROM Multigame (Darksoft, v15)): @bootlegs@clones@compilation@multigame@new0251@working_arcade
-Driver decodark16 (DECO Cassette System ROM Multigame (Darksoft, v16)): @bootlegs@clones@compilation@multigame@new0251@working_arcade
+Driver decodark (DECO Cassette System ROM Multigame (Darksoft, v17)): @90º@bootlegs@compilation@good@multigame@new0251@working_arcade
+Driver decodark15 (DECO Cassette System ROM Multigame (Darksoft, v15)): @90º@bootlegs@clones@compilation@good@multigame@new0251@working_arcade
+Driver decodark16 (DECO Cassette System ROM Multigame (Darksoft, v16)): @90º@bootlegs@clones@compilation@good@multigame@new0251@working_arcade
 Driver decomult (DECO Cassette System ROM Multigame (David Widel)): @90º@bootlegs@cabinets@cocktail@compilation@good@multigame@upright@working_arcade
 Driver dectalk (DECtalk DTC-01): @misc@non-arcade@speech_synthesizer
 Driver deepfrz (Deep Freeze (10282311, NSW/ACT)): @slot_machine@video_slot
@@ -5509,7 +5509,7 @@ Driver dwex (Dragon World 3 EX / Zhongguo Long 3 EX / Dungfong Zi Zyu 3 EX / Chu
 Driver dwex101cn (Dragon World 3 EX / Zhongguo Long 3 EX / Dungfong Zi Zyu 3 EX / Chuugokuryuu 3 EX (ver. 101CN)): @clones@good@match@puzzle@working_arcade
 Driver dwpc (Zhongguo Long Pretty Chance [Dragon World Pretty Chance] (V110 03/19/02 11:13:16, China)): @good@match@puzzle@working_arcade
 Driver dwpc101j (Chuugokuryuu Pretty Chance [Dragon World Pretty Chance] (V101 09/26/01 10:23:26, Japan)): @clones@good@match@puzzle@working_arcade
-Driver dx100 (DX100 Digital Programmable Algorithm Synthesizer): @music@non-arcade@synthesizer
+Driver dx100 (DX100 Digital Programmable Algorithm Synthesizer): @good@music@non-arcade@synthesizer
 Driver dx11 (DX11 Digital Programmable Algorithm Synthesizer): @music@non-arcade@synthesizer
 Driver dx64 (DX-64 (NTSC)): @computer@good@home_system@lightgun@non-arcade
 Driver dx7 (DX7 Digital Programmable Algorithm Synthesizer): @music@non-arcade@synthesizer
@@ -7614,7 +7614,7 @@ Driver ffight (Final Fight (World, set 1)): @25d@fighter@good@working_arcade
 Driver ffight2b (Final Fight 2 (SNES bootleg)): @25d@bootlegs@fighter@good@working_arcade
 Driver ffight3b (Final Fight 3 (SNES bootleg)): @25d@bootlegs@fighter
 Driver ffighta (Final Fight (World, set 2)): @25d@clones@fighter@good@working_arcade
-Driver ffightae (Final Fight 30th Anniversary Edition (World, hack)): @25d@clones@fighter@new0251@working_arcade
+Driver ffightae (Final Fight 30th Anniversary Edition (World, hack)): @25d@clones@fighter@good@new0251@working_arcade
 Driver ffightbl (Final Fight (bootleg)): @25d@bootlegs@clones@fighter@good@working_arcade
 Driver ffightbla (Final Fight (bootleg on Final Crash PCB)): @25d@bootlegs@clones@fighter@good@working_arcade
 Driver ffightblb (Final Fight (bootleg with single OKI)): @25d@bootlegs@clones@fighter@good@working_arcade
@@ -8318,8 +8318,8 @@ Driver gamecom (Game.com): @forum@good@handheld@home_videogame_console@non-arcad
 Driver gamecst2 (GameCristal (version 2.613)): @clones@compilation@multigame
 Driver gamecstl (GameCristal): @compilation@multigame
 Driver gamefgtr (Game Fighter (bootleg)): @bootlegs@compilation@good@multigame@non-arcade
-Driver gamegeaj (Game Gear (Japan)): @good@handheld@home_videogame_console@non-arcade
-Driver gamegear (Game Gear (Europe/America)): @good@handheld@home_videogame_console@non-arcade
+Driver gamegeaj (Game Gear (Japan)): @good@handheld@home_videogame_console@lightgun@non-arcade
+Driver gamegear (Game Gear (Europe/America)): @good@handheld@home_videogame_console@lightgun@non-arcade
 Driver gamekin3 (GameKing 3): @good@handheld@home_videogame_console@non-arcade
 Driver gameking (GameKing GM-218): @forum@good@handheld@home_videogame_console@non-arcade
 Driver gamemach (The Game Machine): @good@multi-games@non-arcade@screenless@tabletop
@@ -8603,9 +8603,9 @@ Driver geminij (Gemini Wing (Japan)): @90º@clones@flying_vertical@good@shooter@
 Driver gen32 (Mephisto Genius 68030 (v4.01)): @board_game@chess_machine@good@non-arcade
 Driver gen32a (Mephisto Genius 68030 (v4.00)): @board_game@chess_machine@good@non-arcade
 Driver gen32l (Mephisto Genius 68030 (London upgrade)): @board_game@chess_machine@good@non-arcade
-Driver gen_nomd (Genesis Nomad (USA Genesis handheld)): @game_console@good@home_videogame@non-arcade
-Driver genesis (Genesis (USA, NTSC)): @game_console@good@home_videogame@non-arcade
-Driver genesis_tmss (Genesis (USA, NTSC, with TMSS chip)): @game_console@good@home_videogame@non-arcade
+Driver gen_nomd (Genesis Nomad (USA Genesis handheld)): @game_console@good@home_videogame@lightgun@non-arcade
+Driver genesis (Genesis (USA, NTSC)): @game_console@good@home_videogame@lightgun@non-arcade
+Driver genesis_tmss (Genesis (USA, NTSC, with TMSS chip)): @game_console@good@home_videogame@lightgun@non-arcade
 Driver genesisp (Genesis): @electromechanical@mechanical@pinball@screenless
 Driver genesispf (Genesis (French)): @clones@electromechanical@mechanical@pinball@screenless
 Driver genesispg (Genesis (German)): @clones@electromechanical@mechanical@pinball@screenless
@@ -9453,7 +9453,7 @@ Driver gunsmokej (Gun.Smoke (Japan, 1985-11-15)): @90º@cabinets@clones@cocktail
 Driver gunsmokeu (Gun.Smoke (USA and Canada, 1986-04-08)): @90º@cabinets@clones@cocktail@good@shooter@upright@walking@working_arcade
 Driver gunsmokeua (Gun.Smoke (USA and Canada, 1986-01-20)): @90º@cabinets@clones@cocktail@good@new0251@shooter@upright@walking@working_arcade
 Driver gunsmokeub (Gun.Smoke (USA and Canada, 1985-11-15, set 1)): @90º@cabinets@clones@cocktail@good@shooter@upright@walking@working_arcade
-Driver gunsmokeuc (Gun.Smoke (USA and Canada, 1985-11-15, set 2)): @clones@shooter@walking@working_arcade
+Driver gunsmokeuc (Gun.Smoke (USA and Canada, 1985-11-15, set 2)): @90º@clones@good@shooter@walking@working_arcade
 Driver gunsur2 (Gun Survivor 2 Biohazard Code: Veronica (World, BHF2 Ver.E)): @gun@shooter
 Driver gunsur2j (Gun Survivor 2 Biohazard Code: Veronica (Japan, BHF1 Ver.E)): @clones@gun@shooter
 Driver gunwars (Gunmen Wars (Japan, GM1 Ver. B)): @3rd_person@shooter
@@ -10113,10 +10113,10 @@ Driver hp86b_004 (HP 86B Opt 004): @business_terminal@computer@good@non-arcade
 Driver hp95lx (HP 95LX): @computer@non-arcade@pocket_pc
 Driver hp9808a (Integral Personal Computer 9808A): @computer@non-arcade@workstation_server
 Driver hp9816 (HP 9816): @business_terminal@computer@non-arcade
-Driver hp9825a (HP 9825A): @business_terminal@computer@new0251@non-arcade
+Driver hp9825a (HP 9825A): @business_terminal@computer@good@new0251@non-arcade
 Driver hp9825b (HP 9825B): @business_terminal@computer@good@non-arcade
 Driver hp9825t (HP 9825T): @business_terminal@computer@good@non-arcade
-Driver hp9831 (HP 9831A): @business_terminal@computer@new0251@non-arcade@screenless
+Driver hp9831 (HP 9831A): @business_terminal@computer@good@new0251@non-arcade@screenless
 Driver hp9835a (9835A): @business_terminal@computer@non-arcade
 Driver hp9835b (9835B): @business_terminal@computer@non-arcade
 Driver hp9845a (9845A): @business_terminal@computer@non-arcade
@@ -12779,14 +12779,14 @@ Driver kma202f (KMA-202F-12R (Winbond chipset)): @business_terminal@computer@non
 Driver kma300g (KMA-300G-25): @business_terminal@computer@non-arcade
 Driver kmc5000 (KMC-5000 (MSX2, Japan)): @computer@good@home_system@non-arcade
 Driver kminus (Kyber Minus): @computer@non-arcade@single_board
-Driver knascar (Bill Elliott's NASCAR Racing (handheld)): @electronic_game@handheld@new0251@non-arcade
+Driver knascar (Bill Elliott's NASCAR Racing (handheld)): @electronic_game@good@handheld@konamih@new0251@non-arcade
 Driver knckhead (Knuckle Heads (World)): @fighter@good@versus@working_arcade
 Driver knckheadj (Knuckle Heads (Japan)): @clones@fighter@good@versus@working_arcade
 Driver knckheadjp (Knuckle Heads (Japan, Prototype?)): @clones@fighter@good@versus@working_arcade
 Driver kncljoe (Knuckle Joe (set 1)): @cabinets@cocktail@fighter@good@platform@upright@working_arcade
 Driver kncljoea (Knuckle Joe (set 2)): @cabinets@clones@cocktail@fighter@good@platform@upright@working_arcade
 Driver knd (Codename: Kids Next Door - Operation: P.L.U.G.G.U.H.S.): @action@good@handheld@non-arcade
-Driver knfl (NFL Football (Konami, handheld)): @electronic_game@good@handheld@konamih@non-arcade
+Driver knfl (NFL Football (Konami, handheld)): @electronic_game@good@handheld@non-arcade
 Driver kngtmare (Knightmare (prototype)): @fighter@good@maze@working_arcade
 Driver knightb (Knight Boy): @90º@bootlegs@cabinets@clones@cocktail@good@shooter@upright@walking@working_arcade
 Driver knights (Knights of the Round (World 911127)): @25d@fighter@good@working_arcade
@@ -12992,7 +12992,7 @@ Driver krybolov (Kot-rybolov (Elektronika)): @bootlegs@electronic_game@good@hand
 Driver krzybowl (Krazy Bowl): @90º@bowling@cabinets@cocktail@good@sports@upright@working_arcade
 Driver ks32 (KS-32): @music@non-arcade@screenless@synthesizer
 Driver ksayakyu (Kusayakyuu): @baseball@cabinets@cocktail@good@sports@upright@working_arcade
-Driver kskatedie (Skate or Die (Konami, handheld)): @electronic_game@handheld@konamih@new0251@non-arcade
+Driver kskatedie (Skate or Die (Konami, handheld)): @electronic_game@good@handheld@konamih@new0251@non-arcade
 Driver ksp10 (KSP10 Digital Piano): @digital_piano@music@non-arcade@screenless
 Driver kt216wb5 (KT216WB5-HI Rev.2): @business_terminal@computer@non-arcade
 Driver kt76 (KT-76): @good@music@non-arcade@screenless@synthesizer
@@ -13120,8 +13120,8 @@ Driver laser500 (Laser 500): @computer@good@home_system@non-arcade
 Driver laser700 (Laser 700): @computer@good@home_system@non-arcade
 Driver laser_turbo_xt (Laser Turbo XT): @business_terminal@computer@good@non-arcade
 Driver laser_xt3 (Laser XT/3): @business_terminal@computer@good@non-arcade
-Driver laseract (LaserActive with Genesis Pack PAC-S10 (USA, NTSC)): @game_console@home_videogame@non-arcade
-Driver laseractj (LaserActive with Mega Drive Pack PAC-S1 (Japan, NTSC)): @game_console@home_videogame@non-arcade
+Driver laseract (LaserActive with Genesis Pack PAC-S10 (USA, NTSC)): @game_console@home_videogame@lightgun@non-arcade
+Driver laseractj (LaserActive with Mega Drive Pack PAC-S1 (Japan, NTSC)): @game_console@home_videogame@lightgun@non-arcade
 Driver laserbas (Laser Base (set 1)): @90º@clones@gallery@good@shooter@working_arcade
 Driver laserbasa (Laser Base (set 2)): @90º@clones@gallery@good@shooter@working_arcade
 Driver laserbat (Laser Battle): @field@good@shooter@working_arcade
@@ -21610,11 +21610,11 @@ Driver megablst (Mega Blast (World)): @cabinets@cocktail@flying_horizontal@good@
 Driver megablstj (Mega Blast (Japan)): @cabinets@clones@cocktail@flying_horizontal@good@shooter@upright@working_arcade
 Driver megablstu (Mega Blast (US)): @cabinets@clones@cocktail@flying_horizontal@good@shooter@upright@working_arcade
 Driver megacard (Mega Card (Ver.0210, encrypted)): @cards@casino@good@working_arcade
-Driver megacd (Mega-CD (Europe, PAL)): @game_console@home_videogame@non-arcade
-Driver megacd2 (Mega-CD 2 (Europe, PAL)): @game_console@home_videogame@non-arcade
-Driver megacd2j (Mega-CD 2 (Japan, NTSC)): @game_console@home_videogame@non-arcade
-Driver megacda (Mega-CD (Asia, PAL)): @game_console@home_videogame@non-arcade
-Driver megacdj (Mega-CD (Japan, NTSC)): @game_console@home_videogame@non-arcade
+Driver megacd (Mega-CD (Europe, PAL)): @game_console@home_videogame@lightgun@non-arcade
+Driver megacd2 (Mega-CD 2 (Europe, PAL)): @game_console@home_videogame@lightgun@non-arcade
+Driver megacd2j (Mega-CD 2 (Japan, NTSC)): @game_console@home_videogame@lightgun@non-arcade
+Driver megacda (Mega-CD (Asia, PAL)): @game_console@home_videogame@lightgun@non-arcade
+Driver megacdj (Mega-CD (Japan, NTSC)): @game_console@home_videogame@lightgun@non-arcade
 Driver megadble (Mega Double Poker (Ver. 1.63 Espagnol)): @cards@casino
 Driver megadblj (Mega Double Poker Jackpot (Ver. 1.26)): @cards@casino
 Driver megadon (Megadon): @90º@field@good@shooter@working_arcade
@@ -21622,12 +21622,12 @@ Driver megadpkr (Mega Double Poker (conversion kit, version 2.3 MD)): @cards@cas
 Driver megadpkrb (Mega Double Poker (conversion kit, version 2.1 MD)): @cards@casino@clones@good@working_arcade
 Driver megadri4 (Mega Drive 4 / Guitar Idol (set 1)): @game_console@home_videogame@non-arcade
 Driver megadri4a (Mega Drive 4 / Guitar Idol (set 2)): @game_console@home_videogame@non-arcade
-Driver megadrij (Mega Drive (Japan, NTSC)): @game_console@good@home_videogame@non-arcade
-Driver megadriv (Mega Drive (Europe, PAL)): @game_console@good@home_videogame@non-arcade
+Driver megadrij (Mega Drive (Japan, NTSC)): @game_console@good@home_videogame@lightgun@non-arcade
+Driver megadriv (Mega Drive (Europe, PAL)): @game_console@good@home_videogame@lightgun@non-arcade
 Driver megaduck (Mega Duck / Cougar Boy): @forum@good@handheld@home_videogame_console@non-arcade
 Driver megaforc (Mega Force (World)): @90º@cabinets@clones@cocktail@flying_vertical@good@shooter@upright@working_arcade
 Driver megaforcu (Mega Force (US)): @90º@cabinets@clones@cocktail@flying_vertical@good@shooter@upright@working_arcade
-Driver megajet (Mega Jet (Japan Mega Drive handheld)): @game_console@good@home_videogame@non-arcade
+Driver megajet (Mega Jet (Japan Mega Drive handheld)): @game_console@good@home_videogame@lightgun@non-arcade
 Driver megakat (Mega Katok 2): @slot_machine@video_slot
 Driver megaline (Mega Lines): @slot_machine@video_slot
 Driver megaman (Mega Man: The Power Battle (CPS1, USA 951006)): @fighter@good@versus_co-op@working_arcade
@@ -22089,7 +22089,7 @@ Driver mjyuugia (Mahjong Yuugi (Japan set 2)): @cabinets@clones@cocktail@good@ma
 Driver mjzoomin (Mahjong Channel Zoom In (Japan)): @good@mahjong@tabletop
 Driver mk (Mortal Kombat (rev 5.0 T-Unit 03/19/93)): @fighter@good@oro@versus@working_arcade
 Driver mk14 (MK-14): @computer@good@non-arcade@screenless@training_board
-Driver mk14vdu (MK-14 VDU): @computer@new0251@non-arcade@training_board
+Driver mk14vdu (MK-14 VDU): @computer@good@new0251@non-arcade@training_board
 Driver mk1forth (Mark 1 FORTH Computer): @computer@good@non-arcade@ttl
 Driver mk2 (Mortal Kombat II (rev L3.1)): @fighter@good@oro@versus@working_arcade
 Driver mk2chal (Mortal Kombat II Challenger (hack)): @clones@fighter@good@versus@working_arcade
@@ -22468,7 +22468,7 @@ Driver mpc900gx (MasterPieCe 900GX Series): @computer@home_system@non-arcade
 Driver mpchoice (Player's Choice (M4C1)): @cabinets@casino@clones@cocktail@counter_top@good@multiplay@working_arcade
 Driver mpchoicea (Player's Choice (M3C1)): @casino@clones@good@multiplay@working_arcade
 Driver mpf1 (Micro Professor 1): @computer@construction_kit@good@non-arcade@screenless
-Driver mpf1_88 (Micro-Professor I/88): @computer@construction_kit@new0251@non-arcade
+Driver mpf1_88 (Micro-Professor I/88): @computer@construction_kit@good@new0251@non-arcade
 Driver mpf1b (Micro Professor 1B): @computer@construction_kit@good@non-arcade@screenless
 Driver mpf1p (Micro Professor 1 Plus): @computer@construction_kit@non-arcade@screenless
 Driver mpf2 (Microprofessor II): @computer@home_system@non-arcade
@@ -22483,7 +22483,7 @@ Driver mpt05 (MPT-05): @game_console@good@home_videogame@non-arcade
 Driver mpu1000 (MPU-1000): @game_console@good@home_videogame@non-arcade
 Driver mpu2000 (MPU-2000): @game_console@good@home_videogame@non-arcade
 Driver mpu9088vf (MPU-9088-VF): @business_terminal@computer@non-arcade
-Driver mpumpkin (Magical Pumpkin: Puroland de Daibouken (Japan 960712)): @driving@race@working_arcade
+Driver mpumpkin (Magical Pumpkin: Puroland de Daibouken (Japan 960712)): @driving@good@race@working_arcade
 Driver mpx16 (MPX-16): @business_terminal@computer@non-arcade
 Driver mpz80 (MPZ80): @computer@non-arcade@single_board
 Driver mquake (Moonquake): @maze@misc
@@ -22658,7 +22658,7 @@ Driver mt32 (MT-32): @music@non-arcade@synthesizer
 Driver mt420 (Micro-Term 420): @business_terminal@computer@non-arcade
 Driver mt5510 (Microterm 5510): @business_terminal@computer@non-arcade
 Driver mt65 (Microtan 65): @business_terminal@computer@good@non-arcade
-Driver mt6809 (Microtan 6809 System): @business_terminal@computer@non-arcade
+Driver mt6809 (Microtan 6809 System): @business_terminal@computer@good@non-arcade
 Driver mt735 (MT735): @non-arcade@printer@screenless@thermal_printer
 Driver mt_aftrb (After Burner (Mega-Tech, SMS based)): @flying_chase_view@shooter
 Driver mt_arrow (Arrow Flash (Mega-Tech)): @flying_horizontal@shooter
@@ -22769,7 +22769,7 @@ Driver multiped (Multipede (Centipede/Millipede multigame kit)): @90º@cabinets@
 Driver multiwin (Multi Win (Ver.0167, encrypted)): @cards@casino@good@working_arcade
 Driver multiwina (Multi Win (Ver.0091, encrypted)): @cards@casino@clones@good@working_arcade
 Driver multiwinb (Multi Win (EPM7032, encrypted)): @cards@casino@clones
-Driver multmega (Multi-Mega (Europe, PAL)): @game_console@home_videogame@non-arcade
+Driver multmega (Multi-Mega (Europe, PAL)): @game_console@home_videogame@lightgun@non-arcade
 Driver multy (Multy): @mechanical@screenless@slot_machine@video_slot
 Driver mundial (Mundial 90): @electromechanical@good@mechanical@pinball@screenless@working_arcade
 Driver mupid2 (Post-Mupid C2A2): @business_terminal@computer@non-arcade@screenless
@@ -23825,8 +23825,8 @@ Driver palamedj (Palamedes (Japan)): @clones@good@puzzle@toss@working_arcade
 Driver palestra (Palestra-02): @game_console@home_videogame@non-arcade
 Driver palmf31 (Palmtronic F-31): @good@handheld@non-arcade@pocket_device_pad_pda@screenless
 Driver palmiii (Palm III): @good@handheld@lightgun@non-arcade@pocket_device_pad_pda
-Driver palmiiic (Palm IIIc): @handheld@lightgun@non-arcade@pocket_device_pad_pda
-Driver palmm100 (Palm m100): @handheld@lightgun@non-arcade@pocket_device_pad_pda
+Driver palmiiic (Palm IIIc): @good@handheld@lightgun@non-arcade@pocket_device_pad_pda
+Driver palmm100 (Palm m100): @good@handheld@lightgun@non-arcade@pocket_device_pad_pda
 Driver palmm130 (Palm m130): @handheld@lightgun@non-arcade@pocket_device_pad_pda
 Driver palmm505 (Palm m505): @handheld@lightgun@non-arcade@pocket_device_pad_pda
 Driver palmm515 (Palm m515): @handheld@lightgun@non-arcade@pocket_device_pad_pda
@@ -24047,15 +24047,15 @@ Driver pc8300 (PC8300): @computer@home_system@non-arcade
 Driver pc8401a (PC-8401A-LS): @computer@laptop_notebook_portable@non-arcade
 Driver pc8500 (PC-8500): @computer@laptop_notebook_portable@non-arcade
 Driver pc8801 (PC-8801): @computer@home_system@non-arcade
-Driver pc8801fa (PC-8801FA): @computer@home_system@non-arcade
-Driver pc8801ma (PC-8801MA): @computer@home_system@non-arcade
-Driver pc8801ma2 (PC-8801MA2): @computer@home_system@non-arcade
+Driver pc8801fa (PC-8801FA): @computer@good@home_system@non-arcade
+Driver pc8801ma (PC-8801MA): @computer@good@home_system@non-arcade
+Driver pc8801ma2 (PC-8801MA2): @computer@good@home_system@non-arcade
 Driver pc8801mc (PC-8801MC): @computer@home_system@non-arcade
-Driver pc8801mh (PC-8801MH): @computer@home_system@non-arcade
+Driver pc8801mh (PC-8801MH): @computer@good@home_system@non-arcade
 Driver pc8801mk2 (PC-8801mkII): @computer@home_system@non-arcade
-Driver pc8801mk2fr (PC-8801mkIIFR): @computer@home_system@non-arcade
-Driver pc8801mk2mr (PC-8801mkIIMR): @computer@home_system@non-arcade
-Driver pc8801mk2sr (PC-8801mkIISR): @computer@home_system@non-arcade
+Driver pc8801mk2fr (PC-8801mkIIFR): @computer@good@home_system@non-arcade
+Driver pc8801mk2mr (PC-8801mkIIMR): @computer@good@home_system@non-arcade
+Driver pc8801mk2sr (PC-8801mkIISR): @computer@good@home_system@non-arcade
 Driver pc88va (PC-88VA): @business_terminal@computer@non-arcade
 Driver pc88va2 (PC-88VA2): @business_terminal@computer@non-arcade
 Driver pc9486 (PC9486): @business_terminal@computer@non-arcade
@@ -26041,7 +26041,7 @@ Driver pwrchanc (Powerful Chance): @action@medal_game
 Driver pwrflip (Power Flipper Pinball Shooting (v1.33)): @90º@good@pinball_arcade@pinball@working_arcade
 Driver pwrgoal (Taito Power Goal (Ver 2.5O 1994/11/03)): @good@soccer@sports@working_arcade
 Driver pwrinst2 (Power Instinct 2 (US, Ver. 94.04.08, set 1)): @fighter@good@new0251@versus@working_arcade
-Driver pwrinst2a (Power Instinct 2 (US, Ver. 94.04.08, set 2)): @clones@fighter@versus@working_arcade
+Driver pwrinst2a (Power Instinct 2 (US, Ver. 94.04.08, set 2)): @clones@fighter@good@versus@working_arcade
 Driver pwrinst2j (Gouketsuji Ichizoku 2 (Japan, Ver. 94.04.08)): @clones@fighter@good@versus@working_arcade
 Driver pwrkick (Power Kick (Japan)): @good@soccer@sports@working_arcade
 Driver pwrshovl (Power Shovel ni Norou!! - Power Shovel Simulator (v2.07J)): @digging@maze
@@ -33172,8 +33172,8 @@ Driver sectionza (Section Z (set 2)): @cabinets@clones@cocktail@flying@good@shoo
 Driver sectrzon (Sector Zone (set 1)): @90º@cabinets@clones@cocktail@driving_horizontal@good@shooter@upright@working_arcade
 Driver sectrzona (Sector Zone (set 3)): @90º@clones@driving_horizontal@good@shooter@working_arcade
 Driver sectrzont (Sector Zone (set 2, Tecfri hardware)): @90º@clones@driving_horizontal@good@shooter@working_arcade
-Driver segacd (Sega CD (USA, NTSC)): @game_console@home_videogame@non-arcade
-Driver segacd2 (Sega CD 2 (USA, NTSC)): @game_console@home_videogame@non-arcade
+Driver segacd (Sega CD (USA, NTSC)): @game_console@home_videogame@lightgun@non-arcade
+Driver segacd2 (Sega CD 2 (USA, NTSC)): @game_console@home_videogame@lightgun@non-arcade
 Driver segajw (Joker's Wild (Rev. B)): @cards@casino@good@working_arcade
 Driver seganinj (Sega Ninja (315-5102)): @cabinets@cocktail@good@shooter@upright@walking@working_arcade
 Driver seganinja (Sega Ninja (315-5113)): @cabinets@clones@cocktail@good@shooter@upright@walking@working_arcade
@@ -33928,7 +33928,7 @@ Driver slsstars (SuperStars (CD jukebox)): @jukebox@music@non-arcade@screenless
 Driver sltblgp1 (Slots (Belgian Cash, Game Card 95-752-008)): @clones@good@slot_machine@video_slot@working_arcade
 Driver sltblgpo (Slots (Belgian Cash, Game Card 95-750-938)): @good@slot_machine@video_slot@working_arcade
 Driver sltblgtk (Slots (Belgian Token, Game Card 95-750-943)): @good@slot_machine@video_slot@working_arcade
-Driver sltblgtka (Slots (Belgian Token, Game Card 95-750-452)): @clones@new0251@slot_machine@video_slot@working_arcade
+Driver sltblgtka (Slots (Belgian Token, Game Card 95-750-452)): @clones@good@new0251@slot_machine@video_slot@working_arcade
 Driver sltpcycl (Pro Cycle Tele Cardioline (Salter Fitness Bike V.1.0, Checksum 02AB)): @driving@good@race_bike@working_arcade
 Driver sltpstep (Pro Stepper Tele Cardioline (Salter Fitness Stepper V.1.0, Checksum F208)): @driving@good@race_bike@working_arcade
 Driver slvrball632 (Silverball (6.32)): @clones@multi-games@screenless@touchscreen
@@ -35031,7 +35031,7 @@ Driver sporzbx (Game Sporz Wireless Boxing): @boxe@good@handheld@non-arcade
 Driver sporzpp (Game Sporz Wireless Duet Play Ping-Pong): @good@handheld@non-arcade@ping_pong
 Driver sporztn (Wireless Tennis (PAL, Play Vision)): @good@handheld@non-arcade@tennis
 Driver spotty (Spotty (Ver. 2.0.2)): @cards@casino@good@working_arcade
-Driver sprachmg (Gerät 32620 (Sprach/Morsegenerator)): @digital_speech_generators@new0251@non-arcade@screenless@utilities
+Driver sprachmg (Gerät 32620 (Sprach/Morsegenerator)): @digital_speech_generators@good@new0251@non-arcade@screenless@utilities
 Driver sprbreak (Spring Break): @electromechanical@mechanical@pinball@screenless
 Driver sprbreaka (Spring Break (alternate set)): @clones@electromechanical@mechanical@pinball@screenless
 Driver sprbreakf (Spring Break (French)): @clones@electromechanical@mechanical@pinball@screenless
@@ -36174,7 +36174,7 @@ Driver teddybb (TeddyBoy Blues (315-5115, New Ver.)): @cabinets@cocktail@good@pl
 Driver teddybbo (TeddyBoy Blues (315-5115, Old Ver.)): @cabinets@clones@cocktail@good@platform@shooter@upright@working_arcade
 Driver teddybbobl (TeddyBoy Blues (Old Ver. bootleg)): @bootlegs@cabinets@clones@cocktail@good@platform@shooter@upright@working_arcade
 Driver teedoff (Tee'd Off (World)): @90º@cabinets@cocktail@golf@good@new0251@sports@upright@working_arcade
-Driver teedoffj (Tee'd Off (Japan)): @clones@golf@sports@working_arcade
+Driver teedoffj (Tee'd Off (Japan)): @90º@clones@golf@good@sports@working_arcade
 Driver teedoffp (Tee'd Off (pinball, rev.3)): @electromechanical@mechanical@pinball@screenless
 Driver teedoffp0 (Tee'd Off (pinball)): @clones@electromechanical@mechanical@pinball@screenless
 Driver teedoffp1 (Tee'd Off (pinball, rev.1)): @clones@electromechanical@mechanical@pinball@screenless
@@ -36264,12 +36264,12 @@ Driver tenspot (Ten Spot): @90º@maze@shooter_small
 Driver tenstrikc (Ten Strike Classic): @bowling@electromechanical@mechanical@screenless
 Driver tenthdeg (Tenth Degree (prototype)): @fighter@good@versus@working_arcade
 Driver tenup (Ten Up): @good@questions_in_english@quiz@working_arcade
-Driver terabrst (Teraburst (1998/07/17 ver UEL)): @gun@shooter
-Driver terabrsta (Teraburst (1998/07/17 ver HEL)): @clones@gun@shooter
-Driver terabrstaa (Teraburst (1998/02/25 ver HAA)): @clones@gun@shooter
-Driver terabrstj (Teraburst (1998/07/17 ver JEL)): @clones@gun@shooter
-Driver terabrstja (Teraburst (1998/02/25 ver JAA)): @clones@gun@shooter
-Driver terabrstua (Teraburst (1998/02/25 ver UAA)): @clones@gun@shooter
+Driver terabrst (Teraburst (1998/07/17 ver UEL)): @gun@lightgun@shooter
+Driver terabrsta (Teraburst (1998/07/17 ver HEL)): @clones@gun@lightgun@shooter
+Driver terabrstaa (Teraburst (1998/02/25 ver HAA)): @clones@gun@lightgun@shooter
+Driver terabrstj (Teraburst (1998/07/17 ver JEL)): @clones@gun@lightgun@shooter
+Driver terabrstja (Teraburst (1998/02/25 ver JAA)): @clones@gun@lightgun@shooter
+Driver terabrstua (Teraburst (1998/02/25 ver UAA)): @clones@gun@lightgun@shooter
 Driver terak (Terak 8510A): @business_terminal@computer@non-arcade
 Driver term2 (Terminator 2 - Judgment Day (rev LA4 08/03/92)): @good@gun@shooter@working_arcade
 Driver term2la1 (Terminator 2 - Judgment Day (rev LA1 11/01/91)): @clones@good@gun@shooter@working_arcade
@@ -38853,8 +38853,8 @@ Driver wlstar (Wonder League Star - Sok-Magicball Fighting (Korea)): @baseball@g
 Driver wmatch (Water Match (315-5064)): @90º@cabinets@cocktail@good@sports@track_and_field@upright@working_arcade
 Driver wmbullet (Bullet): @computer@development_system@non-arcade
 Driver wmbulletf (Bullet (Revision F)): @computer@development_system@non-arcade
-Driver wmega (Wondermega (Japan, NTSC)): @game_console@home_videogame@non-arcade
-Driver wmegam2 (Wondermega M2 (Japan, NTSC)): @game_console@home_videogame@non-arcade
+Driver wmega (Wondermega (Japan, NTSC)): @game_console@home_videogame@lightgun@non-arcade
+Driver wmegam2 (Wondermega M2 (Japan, NTSC)): @game_console@home_videogame@lightgun@non-arcade
 Driver wmg (Williams Multigame): @compilation@good@multigame@working_arcade
 Driver wms (WMS SetUp/Clear Chips (set 1)): @update@utilities
 Driver wmsa (WMS SetUp/Clear Chips (set 2)): @clones@update@utilities
@@ -39138,7 +39138,7 @@ Driver xeviousc (Xevious (Atari, Namco PCB)): @90º@cabinets@clones@cocktail@fly
 Driver xexex (Xexex (ver EAA)): @flying_horizontal@good@shooter@working_arcade
 Driver xexexa (Xexex (ver AAA)): @clones@flying_horizontal@good@shooter@working_arcade
 Driver xexexj (Xexex (ver JAA)): @clones@flying_horizontal@good@shooter@working_arcade
-Driver xeye (X'eye (USA, NTSC)): @game_console@home_videogame@non-arcade
+Driver xeye (X'eye (USA, NTSC)): @game_console@home_videogame@lightgun@non-arcade
 Driver xfiles (The X-Files): @good@match@puzzle@working_arcade
 Driver xfiles2 (X-Files (CPU 2.04, display A2.01)): @clones@electromechanical@mechanical@pinball@screenless
 Driver xfiles20 (X-Files (CPU 2.00, display A2.00)): @clones@electromechanical@mechanical@pinball@screenless
