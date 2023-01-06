@@ -1,76 +1,85 @@
-Driver aa310 (Archimedes 310):
-Driver adam (Adam):
-Driver advision (Adventure Vision):
-Driver alice32 (Alice 32):
-Driver apfm1000 (APF M-1000):
-Driver apogee (Apogee BK-01):
-Driver apple2ee (Apple //e (enhanced)):
-Driver apple2gsr1 (Apple IIgs (ROM01)):
-Driver aquarius (Aquarius (NTSC)):
-Driver arcadia (Emerson Arcadia 2001):
-Driver astrocde (Bally Professional Arcade):
-Driver atom (Atom):
-Driver bbcb (BBC Micro Model B):
-Driver bk0010 (BK 0010):
-Driver casloopy (Casio Loopy):
-Driver cdimono1 (Philips CD-i (Mono-I) (PAL)):
-Driver cgenie (Colour Genie EG2000):
-Driver coco (Color Computer):
-Driver crvision (CreatiVision):
-Driver dragon32 (Dragon 32):
-Driver einstein (Einstein TC-01):
-Driver electron (Acorn Electron):
-Driver ep64 (Enterprise Sixty Four):
-Driver exl100 (EXL 100):
-Driver fm7 (FM-7):
-Driver fm77av (FM-77AV):
-Driver fmtmarty (FM-Towns Marty):
-Driver fmtowns (FM-Towns (Model 1 / 2)):
-Driver galaxy (Galaksija):
-Driver galaxyp (Galaksija plus):
-Driver gamate (Gamate):
-Driver gamecom (Tiger Game.com):
-Driver gamepock (Game Pocket Computer):
-Driver gmaster (Game Master):
-Driver gp32 (GP32):
-Driver gx4000 (Amstrad GX4000):
-Driver hec2hrx (Hector HRX + Disc2):
-Driver interact (Interact Family Computer):
-Driver jupace (Jupiter Ace):
-Driver laser210 (Laser 210):
-Driver lynx48k (Lynx 48k):
-Driver m5p (m.5 (Europe)):
-Driver maclc (Macintosh LC):
-Driver mc10 (MC-10):
-Driver megaduck (Mega Duck / Cougar Boy):
-Driver microvsn (Milton Bradley - Microvision):
-Driver mikrosha (Mikrosha):
-Driver mtx512 (MTX 512):
-Driver mz2500 (MZ-2500):
-Driver mz700 (MZ-700):
-Driver orica (Oric Atmos):
-Driver p2000t (Philips P2000T):
-Driver pc6001 (PC-6001 (Japan)):
-Driver pc6001mk2 (PC-6001mkII (Japan)):
-Driver pegasus (Aamber Pegasus):
-Driver pockstat (Sony Pocket Station):
-Driver pofo (Atari Portfolio):
-Driver pv1000 (Casio PV-1000):
-Driver pv2000 (PV-2000):
-Driver samcoupe (SAM Coupe):
-Driver scv (Super Cassette Vision):
-Driver sf7000 (SC-3000/Super Control Station SF-7000):
-Driver sorcerer (Sorcerer):
-Driver studio2 (RCA Studio II):
-Driver supracan (Super A'Can):
-Driver sv8000 (Super Vision 8000):
-Driver svi318 (SVI-318 (PAL)):
-Driver svision (Super Vision):
-Driver svmu (Dreamcast Visual Memory Unit):
-Driver ti99_4a (TI-99/4A Home Computer (US)):
-Driver trs80m3 (TRS-80 Model III):
-Driver tutor (Tomy Tutor):
-Driver tvc64 (TVC 64):
-Driver vc4000 (Interton Electronic VC 4000):
-Driver vector06 (Vector 06c):
-Driver vg5k (VG-5000):
+Driver aa310 (Archimedes 310): @computer@forum@home_system@non-arcade
+Driver adam (Adam): @computer@forum@good@home_system@non-arcade
+Driver advision (Adventure Vision): @forum@game_console@good@home_videogame@non-arcade
+Driver alice32 (Alice 32): @computer@forum@good@home_system@non-arcade
+Driver apfm1000 (APF M-1000): @forum@game_console@good@home_videogame@non-arcade
+Driver apogee (Apogee BK-01): @computer@forum@good@home_system@non-arcade
+Driver apple2ee (Apple //e (enhanced)): @computer@forum@good@home_system@non-arcade
+Driver apple2gsr1 (Apple IIgs (ROM01)): @computer@forum@good@home_system@non-arcade
+Driver aquarius (Aquarius (NTSC)): @computer@forum@good@home_system@non-arcade
+Driver arcadia (Arcadia 2001): @forum@game_console@good@home_videogame@non-arcade
+Driver astrocde (Bally Professional Arcade): @forum@game_console@good@home_videogame@lightgun@non-arcade
+Driver atom (Atom): @computer@forum@good@home_system@non-arcade
+Driver bbcb (BBC Micro Model B): @computer@forum@good@home_system@non-arcade
+Driver bk0010 (BK 0010): @computer@forum@home_system@non-arcade
+Driver casloopy (Loopy): @forum@game_console@home_videogame@non-arcade
+Driver cdimono1 (CD-i (Mono-I) (PAL)): @forum@game_console@good@home_videogame@non-arcade
+Driver cgenie (Colour Genie EG2000): @computer@forum@good@home_system@non-arcade
+Driver coco (Color Computer): @computer@forum@good@home_system@non-arcade
+Driver coco2 (Color Computer 2): @computer@forum@good@home_system@non-arcade
+Driver coco3 (Color Computer 3 (NTSC)): @computer@forum@good@home_system@lightgun@non-arcade
+Driver coleco (ColecoVision (NTSC)): @forum@game_console@good@home_videogame@non-arcade
+Driver crvision (CreatiVision): @forum@game_console@good@home_videogame@non-arcade
+Driver dragon32 (Dragon 32): @computer@forum@good@home_system@non-arcade
+Driver einstein (Einstein TC-01): @computer@forum@good@home_system@non-arcade
+Driver electron (Acorn Electron): @computer@forum@good@home_system@non-arcade
+Driver ep64 (Enterprise Sixty Four): @computer@forum@good@home_system@non-arcade
+Driver exl100 (EXL 100): @computer@forum@home_system@non-arcade
+Driver fm7 (FM-7): @computer@forum@good@home_system@non-arcade
+Driver fm77av (FM-77AV): @computer@forum@good@home_system@non-arcade
+Driver fmtmarty (FM-Towns Marty): @forum@game_console@home_videogame@non-arcade
+Driver fmtowns (FM-Towns (Model 1 / 2)): @computer@forum@home_system@non-arcade
+Driver galaxy (Galaksija): @computer@forum@good@home_system@non-arcade
+Driver galaxyp (Galaksija plus): @computer@forum@good@home_system@non-arcade
+Driver gamate (Gamate): @forum@good@handheld@home_videogame_console@non-arcade
+Driver gamecom (Game.com): @forum@good@handheld@home_videogame_console@non-arcade
+Driver gameking (GameKing GM-218): @forum@good@handheld@home_videogame_console@non-arcade
+Driver gamepock (Game Pocket Computer): @forum@good@handheld@home_videogame_console@non-arcade
+Driver gmaster (Game Master): @forum@good@handheld@home_videogame_console@non-arcade
+Driver gp32 (GP32): @90º@forum@handheld@home_videogame_console@non-arcade
+Driver gx4000 (Amstrad GX4000): @forum@game_console@good@home_videogame@non-arcade
+Driver hbf700p (HB-F700P (MSX2, Europe)): @computer@forum@good@home_system@non-arcade
+Driver hec2hrx (Hector HRX + Disc2): @computer@forum@good@home_system@non-arcade
+Driver interact (Interact Family Computer): @computer@forum@good@home_system@non-arcade
+Driver jupace (Jupiter Ace): @computer@forum@good@home_system@non-arcade
+Driver laser210 (Laser 210): @computer@forum@good@home_system@non-arcade
+Driver lynx48k (Lynx 48k): @computer@forum@good@home_system@non-arcade
+Driver m5 (m.5 (Japan)): @computer@forum@good@home_system@non-arcade
+Driver m5p (m.5 (Europe)): @computer@forum@good@home_system@non-arcade
+Driver maclc (Macintosh LC): @business_terminal@computer@forum@good@non-arcade
+Driver mc10 (MC-10): @computer@forum@good@home_system@non-arcade
+Driver megaduck (Mega Duck / Cougar Boy): @forum@good@handheld@home_videogame_console@non-arcade
+Driver microvsn (Microvision): @electronic_game@forum@good@handheld@non-arcade
+Driver mikrosha (Mikrosha): @computer@forum@good@home_system@non-arcade
+Driver mtx512 (MTX 512): @computer@forum@good@home_system@non-arcade
+Driver mz2500 (MZ-2500): @business_terminal@computer@forum@good@non-arcade
+Driver mz700 (MZ-700): @business_terminal@computer@forum@good@non-arcade
+Driver orica (Oric Atmos): @computer@forum@good@home_system@non-arcade
+Driver p2000t (Philips P2000T): @computer@forum@good@home_system@non-arcade
+Driver pc6001 (PC-6001 (Japan)): @computer@forum@home_system@non-arcade
+Driver pc6001mk2 (PC-6001mkII (Japan)): @computer@forum@home_system@non-arcade
+Driver pegasus (Aamber Pegasus): @computer@forum@good@home_system@non-arcade
+Driver pockstat (Sony PocketStation): @forum@good@handheld@home_videogame_console@non-arcade
+Driver pofo (Portfolio): @computer@forum@good@laptop_notebook_portable@non-arcade
+Driver pv1000 (PV-1000): @forum@game_console@good@home_videogame@non-arcade
+Driver pv2000 (PV-2000): @computer@forum@home_system@non-arcade
+Driver samcoupe (SAM Coupe): @computer@forum@good@home_system@non-arcade
+Driver sc3000 (SC-3000): @computer@forum@good@home_system@lightgun@non-arcade
+Driver scv (Super Cassette Vision): @forum@game_console@good@home_videogame@non-arcade
+Driver sf7000 (SC-3000/Super Control Station SF-7000): @computer@forum@good@home_system@non-arcade
+Driver sg1000 (SG-1000): @forum@game_console@good@home_videogame@lightgun@non-arcade
+Driver sorcerer (Sorcerer): @computer@forum@good@home_system@non-arcade
+Driver studio2 (Studio II): @forum@game_console@good@home_videogame@non-arcade
+Driver supracan (Super A'Can): @forum@game_console@home_videogame@non-arcade
+Driver sv8000 (Super Vision 8000 (TV Jack 8000)): @forum@game_console@good@home_videogame@non-arcade
+Driver svi318 (SVI-318 (PAL)): @computer@forum@good@home_system@non-arcade
+Driver svision (Super Vision): @forum@good@handheld@home_videogame_console@non-arcade
+Driver svmu (Visual Memory Unit): @forum@handheld@home_videogame_console@non-arcade
+Driver ti99_4a (TI-99/4A Home Computer (US)): @computer@forum@good@home_system@non-arcade
+Driver trs80m3 (TRS-80 Model III): @computer@forum@home_system@non-arcade
+Driver tutor (Tomy Tutor): @computer@forum@good@home_system@non-arcade
+Driver tvc64 (TVC 64): @computer@forum@home_system@non-arcade
+Driver vc4000 (Interton Electronic VC 4000): @forum@game_console@good@home_videogame@non-arcade
+Driver vector06 (Vector 06c): @computer@forum@good@home_system@non-arcade
+Driver vg5k (VG-5000): @computer@forum@home_system@non-arcade
+Driver vg802020 (VG-8020/20 (MSX1, Europe)): @computer@forum@good@home_system@non-arcade
