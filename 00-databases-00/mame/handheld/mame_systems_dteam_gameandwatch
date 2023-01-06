@@ -1,60 +1,60 @@
-Driver bassmate (Bassmate Computer):
-Driver gnw_ball (Game & Watch: Ball):
-Driver gnw_bfight (Game & Watch: Balloon Fight (Crystal Screen)):
-Driver gnw_bfightn (Game & Watch: Balloon Fight (New Wide Screen)):
-Driver gnw_bjack (Game & Watch: Black Jack):
-Driver gnw_boxing (Micro Vs. System: Boxing):
-Driver gnw_bsweep (Game & Watch: Bomb Sweeper):
-Driver gnw_cgrab (Game & Watch: Crab Grab):
-Driver gnw_chef (Game & Watch: Chef):
-Driver gnw_climber (Game & Watch: Climber (Crystal Screen)):
-Driver gnw_climbern (Game & Watch: Climber (New Wide Screen)):
-Driver gnw_dkcirc (Game & Watch: Donkey Kong Circus):
-Driver gnw_dkhockey (Micro Vs. System: Donkey Kong Hockey):
-Driver gnw_dkjr (Game & Watch: Donkey Kong Jr. (New Wide Screen)):
-Driver gnw_dkjrp (Game & Watch: Donkey Kong Jr. (Panorama Screen)):
-Driver gnw_dkong (Game & Watch: Donkey Kong):
-Driver gnw_dkong2 (Game & Watch: Donkey Kong II):
-Driver gnw_dkong3 (Micro Vs. System: Donkey Kong 3):
-Driver gnw_egg (Game & Watch: Egg):
-Driver gnw_fire (Game & Watch: Fire (Wide Screen)):
-Driver gnw_fireatk (Game & Watch: Fire Attack):
-Driver gnw_fires (Game & Watch: Fire (Silver)):
-Driver gnw_flagman (Game & Watch: Flagman):
-Driver gnw_gcliff (Game & Watch: Gold Cliff):
-Driver gnw_ghouse (Game & Watch: Green House):
-Driver gnw_helmet (Game & Watch: Helmet (version CN-17)):
-Driver gnw_helmeto (Game & Watch: Helmet (version CN-07)):
-Driver gnw_judge (Game & Watch: Judge (purple version)):
-Driver gnw_judgeo (Game & Watch: Judge (green version)):
-Driver gnw_lboat (Game & Watch: Life Boat):
-Driver gnw_lion (Game & Watch: Lion):
-Driver gnw_manhole (Game & Watch: Manhole (New Wide Screen)):
-Driver gnw_manholeg (Game & Watch: Manhole (Gold)):
-Driver gnw_mario (Game & Watch: Mario Bros.):
-Driver gnw_mariocm (Game & Watch: Mario's Cement Factory (New Wide Screen)):
-Driver gnw_mariocmt (Game & Watch: Mario's Cement Factory (Table Top, version CM-72)):
-Driver gnw_mariocmta (Game & Watch: Mario's Cement Factory (Table Top, version CM-72A)):
-Driver gnw_mariotj (Game & Watch: Mario The Juggler):
-Driver gnw_mbaway (Game & Watch: Mario's Bombs Away):
-Driver gnw_mickdon (Game & Watch: Mickey & Donald):
-Driver gnw_mmouse (Game & Watch: Mickey Mouse (Wide Screen)):
-Driver gnw_mmousep (Game & Watch: Mickey Mouse (Panorama Screen)):
-Driver gnw_octopus (Game & Watch: Octopus):
-Driver gnw_opanic (Game & Watch: Oil Panic):
-Driver gnw_pchute (Game & Watch: Parachute):
-Driver gnw_pinball (Game & Watch: Pinball):
-Driver gnw_popeye (Game & Watch: Popeye (Wide Screen)):
-Driver gnw_popeyep (Game & Watch: Popeye (Panorama Screen)):
-Driver gnw_rshower (Game & Watch: Rain Shower):
-Driver gnw_sbuster (Game & Watch: Safe Buster):
-Driver gnw_smb (Game & Watch: Super Mario Bros. (Crystal Screen)):
-Driver gnw_smbn (Game & Watch: Super Mario Bros. (New Wide Screen)):
-Driver gnw_snoopyp (Game & Watch: Snoopy (Panorama Screen)):
-Driver gnw_squish (Game & Watch: Squish):
-Driver gnw_ssparky (Game & Watch: Spitball Sparky):
-Driver gnw_stennis (Game & Watch: Snoopy Tennis):
-Driver gnw_tbridge (Game & Watch: Turtle Bridge):
-Driver gnw_tfish (Game & Watch: Tropical Fish):
-Driver gnw_vermin (Game & Watch: Vermin):
-Driver gnw_zelda (Game & Watch: Zelda):
+Driver bassmate (Bassmate Computer): @fishing@gameandwatch@good@handheld@non-arcade
+Driver gnw_ball (Game & Watch: Ball): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_bfight (Game & Watch: Balloon Fight (Crystal Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_bfightn (Game & Watch: Balloon Fight (New Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_bjack (Game & Watch: Black Jack): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_boxing (Micro Vs. System: Boxing): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_bsweep (Game & Watch: Bomb Sweeper): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_cgrab (Game & Watch: Crab Grab): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_chef (Game & Watch: Chef): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_climber (Game & Watch: Climber (Crystal Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_climbern (Game & Watch: Climber (New Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_dkcirc (Game & Watch: Donkey Kong Circus): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_dkhockey (Micro Vs. System: Donkey Kong Hockey): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_dkjr (Game & Watch: Donkey Kong Jr. (New Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_dkjrp (Game & Watch: Donkey Kong Jr. (Panorama Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_dkong (Game & Watch: Donkey Kong): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_dkong2 (Game & Watch: Donkey Kong II): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_dkong3 (Micro Vs. System: Donkey Kong 3): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_egg (Game & Watch: Egg): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_fire (Game & Watch: Fire (Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_fireatk (Game & Watch: Fire Attack): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_fires (Game & Watch: Fire (Silver)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_flagman (Game & Watch: Flagman): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_gcliff (Game & Watch: Gold Cliff): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_ghouse (Game & Watch: Green House): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_helmet (Game & Watch: Helmet (version CN-17)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_helmeto (Game & Watch: Helmet (version CN-07)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_judge (Game & Watch: Judge (purple version)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_judgeo (Game & Watch: Judge (green version)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_lboat (Game & Watch: Life Boat): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_lion (Game & Watch: Lion): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_manhole (Game & Watch: Manhole (New Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_manholeg (Game & Watch: Manhole (Gold)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mario (Game & Watch: Mario Bros.): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mariocm (Game & Watch: Mario's Cement Factory (New Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mariocmt (Game & Watch: Mario's Cement Factory (Table Top, version CM-72)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mariocmta (Game & Watch: Mario's Cement Factory (Table Top, version CM-72A)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mariotj (Game & Watch: Mario The Juggler): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mbaway (Game & Watch: Mario's Bombs Away): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mickdon (Game & Watch: Mickey & Donald): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mmouse (Game & Watch: Mickey Mouse (Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_mmousep (Game & Watch: Mickey Mouse (Panorama Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_octopus (Game & Watch: Octopus): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_opanic (Game & Watch: Oil Panic): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_pchute (Game & Watch: Parachute): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_pinball (Game & Watch: Pinball): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_popeye (Game & Watch: Popeye (Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_popeyep (Game & Watch: Popeye (Panorama Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_rshower (Game & Watch: Rain Shower): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_sbuster (Game & Watch: Safe Buster): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_smb (Game & Watch: Super Mario Bros. (Crystal Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_smbn (Game & Watch: Super Mario Bros. (New Wide Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_snoopyp (Game & Watch: Snoopy (Panorama Screen)): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_squish (Game & Watch: Squish): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_ssparky (Game & Watch: Spitball Sparky): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_stennis (Game & Watch: Snoopy Tennis): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_tbridge (Game & Watch: Turtle Bridge): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_tfish (Game & Watch: Tropical Fish): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_vermin (Game & Watch: Vermin): @electronic_game@gameandwatch@good@handheld@non-arcade
+Driver gnw_zelda (Game & Watch: Zelda): @electronic_game@gameandwatch@good@handheld@non-arcade

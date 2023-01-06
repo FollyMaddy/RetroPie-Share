@@ -1,96 +1,159 @@
-Driver alnattck (Alien Attack):
-Driver alnchase (Alien Chase):
-Driver astrocmd (Astro Command):
-Driver bambball (Dribble Away Basketball):
-Driver bankshot (Bank Shot - Electronic Pool):
-Driver bbtime (Burger Time (Bandai)):
-Driver bcclimbr (Crazy Climber (Bandai)):
-Driver bdoramon (Dokodemo Dorayaki Doraemon):
-Driver bfriskyt (Frisky Tom (Bandai)):
-Driver bmboxing (Knock-Em Out Boxing):
-Driver bmcfball (Classic Football (Bambino)):
-Driver bmsafari (Safari (Bambino)):
-Driver bmsoccer (Kick The Goal Soccer):
-Driver bpengo (Pengo (Bandai)):
-Driver bultrman (Ultraman Monster Battle):
-Driver bzaxxon (Zaxxon (Bandai)):
-Driver cdkong (Donkey Kong (Coleco)):
-Driver cfrogger (Frogger (Coleco)):
-Driver cgalaxn (Galaxian (Coleco)):
-Driver cmspacmn (Ms. Pac-Man (Coleco)):
-Driver cmsport (Electronic Multisport):
-Driver cnbaskb (Electronic Basketball (Conic)):
-Driver cnfball (Electronic Football (Conic, TMS1000 version)):
-Driver cnfball2 (Electronic Football II (Conic)):
-Driver cpacman (Pac-Man (Coleco, Rev. 29)):
-Driver cpacmanr1 (Pac-Man (Coleco, Rev. 28)):
-Driver cqback (Electronic Quarterback):
-Driver ebaskb2 (Electronic Basketball 2 (Entex)):
-Driver ebball (Electronic Baseball (Entex)):
-Driver ebball2 (Electronic Baseball 2 (Entex)):
-Driver ebball3 (Electronic Baseball 3 (Entex)):
-Driver ebknight (Black Knight Pinball (Entex)):
-Driver edracula (Dracula (Epoch)):
-Driver efball (Electronic Football (Epoch)):
-Driver efootb4 (Color Football 4 (Entex)):
-Driver egalaxn2 (Galaxian 2 (Entex)):
-Driver einvader (Space Invader (Entex, TMS1100 version)):
-Driver einvader2 (Super Space Invader 2 (Entex, black version)):
-Driver einvaderc (Space Invader (Entex, COP444L version)):
-Driver epacman2 (Pac Man 2 (Entex, cyan Pacman)):
-Driver epacman2r (Pac Man 2 (Entex, red Pacman)):
-Driver esbattle (Space Battle (Entex)):
-Driver esoccer (Electronic Soccer (Entex)):
-Driver estargte (Stargate (Entex)):
-Driver eturtles (Turtles (Entex)):
-Driver flash (Flash (Ideal)):
-Driver funjacks (Funtronics: Jacks):
-Driver galaxy2 (Galaxy II (VFD Rev. D)):
-Driver gckong (Crazy Kong (Gakken)):
-Driver gdigdug (Dig Dug (Gakken)):
-Driver ghalien (Heiankyo Alien (Gakken)):
-Driver ginv (Invader (Gakken, cyan version)):
-Driver ginv1000 (Galaxy Invader 1000):
-Driver ginv2000 (Invader 2000):
-Driver gjungler (Jungler (Gakken)):
-Driver gpoker (Poker (Gakken, 1979 version)):
-Driver h2hbaseb (Head to Head: Electronic Baseball):
-Driver h2hbaskb (Head to Head: Electronic Basketball (TMS1000 version)):
-Driver h2hfootb (Head to Head: Electronic Football):
-Driver h2hhockey (Head to Head: Electronic Hockey (TMS1000 version)):
-Driver h2hsoccerc (Head to Head: Electronic Soccer (COP420L version)):
-Driver hccbaskb (Half Court Computer Basketball):
-Driver invspace (Invader From Space):
-Driver kingman (Kingman):
-Driver machiman (Machine Man):
-Driver mbaskb (Basketball (Mattel)):
-Driver mchess (Computer Chess (Mattel)):
-Driver mcompgin (Computer Gin):
-Driver mfootb2 (Football 2 (Mattel)):
-Driver mhockey (Hockey (Mattel)):
-Driver msoccer (Soccer (Mattel)):
-Driver msthawk (Star Hawk (Mattel)):
-Driver mwcbaseb (World Championship Baseball):
-Driver packmon (Packri Monster):
-Driver pairmtch (Pair Match):
-Driver pbqbert (Q*Bert (Parker Brothers)):
-Driver phpball (Power House Pinball):
-Driver raisedvl (Raise The Devil Pinball):
-Driver rockpin (Rocket Pinball):
-Driver splasfgt (Space Laser Fight):
-Driver splitsec (Split Second):
-Driver ssfball (Superstar Football (Bambino)):
-Driver0229 tbaskb (Electronic Basketball (Tandy)):
-Driver tbreakup (Break Up (Tomy)):
-Driver tcaveman (Caveman (Tomy)):
-Driver tccombat (Cosmic Combat):
-Driver tmpacman (Pac Man (Tomy)):
-Driver tmscramb (Scramble (Tomy)):
-Driver tmtennis (Tennis (Tomy)):
-Driver tmtron (Tron (Tomy)):
-Driver trshutvoy (Shuttle Voyage):
-Driver trsrescue (Space Rescue):
-Driver ufombs (UFO Master-Blaster Station):
-Driver us2pfball (Electronic 2-Player Football):
-Driver vinvader (Invaders (VTech)):
-Driver zackman (Zackman):
+Driver alnattck (Alien Attack): @classich@electronic_game@good@handheld@non-arcade
+Driver alnchase (Alien Chase): @classich@electronic_game@good@handheld@non-arcade
+Driver amaztron (Amaze-A-Tron): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver astrocmd (Astro Command): @classich@electronic_game@good@handheld@non-arcade
+Driver autorace (Auto Race): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver bambball (Dribble Away Basketball): @classich@electronic_game@good@handheld@non-arcade
+Driver bankshot (Bank Shot - Electronic Pool): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver bbtime (Burger Time (Bandai)): @classich@electronic_game@good@handheld@non-arcade
+Driver bcclimbr (Crazy Climber (Bandai)): @classich@electronic_game@good@handheld@non-arcade
+Driver bcheetah (System Control Car: Cheetah): @classich@good@misc@non-arcade@screenless@toy_cars
+Driver bdoramon (Dokodemo Dorayaki Doraemon): @classich@electronic_game@good@handheld@non-arcade
+Driver bfriskyt (Frisky Tom (Bandai)): @classich@electronic_game@good@handheld@non-arcade
+Driver blastit (Blast It): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver bmboxing (Knock-Em Out Boxing): @classich@electronic_game@good@handheld@non-arcade
+Driver bmcfball (Football Classic (Bambino)): @classich@electronic_game@good@handheld@non-arcade
+Driver bmsafari (Safari (Bambino)): @classich@electronic_game@good@handheld@non-arcade
+Driver bmsoccer (Kick The Goal Soccer): @classich@electronic_game@good@handheld@non-arcade
+Driver bpengo (Pengo (Bandai)): @classich@electronic_game@good@handheld@non-arcade
+Driver brainbaf (Brain Baffler): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver bultrman (Ultraman Monster Battle): @classich@electronic_game@good@handheld@non-arcade
+Driver bzaxxon (Zaxxon (Bandai)): @classich@electronic_game@good@handheld@non-arcade
+Driver cdkong (Donkey Kong (Coleco)): @classich@electronic_game@good@handheld@non-arcade
+Driver cfrogger (Frogger (Coleco)): @classich@electronic_game@good@handheld@non-arcade
+Driver cgalaxn (Galaxian (Coleco)): @classich@electronic_game@good@handheld@non-arcade
+Driver cmspacmn (Ms. Pac-Man (Coleco)): @classich@electronic_game@good@handheld@non-arcade
+Driver cmsport (Electronic Multisport): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver cnbaskb (Electronic Basketball (Conic)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver cnfball (Electronic Football (Conic, TMS1000 version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver cnfball2 (Electronic Football II (Conic)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver cnsector (Code Name: Sector): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver copycat (Copy Cat (model 7-520)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver copycatm2 (Copy Cat (model 7-522)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver cpacman (Pac-Man (Coleco, Rev. 29)): @classich@electronic_game@good@handheld@non-arcade
+Driver cpacmanr1 (Pac-Man (Coleco, Rev. 28)): @classich@electronic_game@good@handheld@non-arcade
+Driver cqback (Electronic Quarterback): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver ditto (Ditto): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver dxfootb (Deluxe Football with Instant Replay): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver ebaskb2 (Electronic Basketball 2 (Entex)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver ebball (Electronic Baseball (Entex)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver ebball2 (Electronic Baseball 2 (Entex)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver ebball3 (Electronic Baseball 3 (Entex)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver ebknight (Black Knight Pinball (Entex)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver edracula (Dracula (Epoch)): @classich@electronic_game@good@handheld@non-arcade
+Driver efball (Electronic Football (Epoch)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver efootb4 (Color Football 4 (Entex)): @classich@electronic_game@good@handheld@non-arcade
+Driver egalaxn2 (Galaxian 2 (Entex)): @classich@electronic_game@good@handheld@non-arcade
+Driver einvader (Space Invader (Entex, TMS1100 version)): @classich@electronic_game@good@handheld@non-arcade
+Driver einvader2 (Super Space Invader 2 (Entex, black version)): @classich@electronic_game@good@handheld@non-arcade
+Driver einvaderc (Space Invader (Entex, COP444L version)): @classich@electronic_game@good@handheld@non-arcade
+Driver elecdet (Electronic Detective): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver eleciq (Electronic I.Q.): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver epacman2 (Pac Man 2 (Entex, cyan Pacman)): @classich@electronic_game@good@handheld@non-arcade
+Driver epacman2r (Pac Man 2 (Entex, red Pacman)): @classich@electronic_game@good@handheld@non-arcade
+Driver esbattle (Space Battle (Entex)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver esoccer (Electronic Soccer (Entex)): @classich@electronic_game@good@misc@non-arcade@screenless
+Driver estargte (Stargate (Entex)): @classich@electronic_game@good@handheld@non-arcade
+Driver eturtles (Turtles (Entex)): @classich@electronic_game@good@handheld@non-arcade
+Driver flash (Flash (Ideal)): @classich@good@music@non-arcade@screenless@sequencer
+Driver funjacks (Funtronics: Jacks): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver funrlgl (Funtronics: Red Light Green Light): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver funtag (Funtronics: Tag): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver fxmcr165 (FX-Micom R-165): @classich@computer@good@microcomputer@non-arcade@screenless
+Driver galaxy2 (Galaxy II (VFD Rev. D)): @classich@electronic_game@good@handheld@non-arcade
+Driver galaxy2b (Galaxy II (VFD Rev. B)): @classich@electronic_game@good@handheld@non-arcade
+Driver gckong (Crazy Kong (Gakken)): @classich@electronic_game@good@handheld@non-arcade
+Driver gdigdug (Dig Dug (Gakken)): @classich@electronic_game@good@handheld@non-arcade
+Driver ghalien (Heiankyo Alien (Gakken)): @classich@electronic_game@good@handheld@non-arcade
+Driver ginv (Invader (Gakken, cyan version)): @classich@electronic_game@good@handheld@non-arcade
+Driver ginv1000 (Galaxy Invader 1000): @classich@electronic_game@good@handheld@non-arcade
+Driver ginv2000 (Invader 2000): @classich@electronic_game@good@handheld@non-arcade
+Driver gjackpot (Jackpot: Gin Rummy & Black Jack): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver gjungler (Jungler (Gakken)): @classich@electronic_game@good@handheld@non-arcade
+Driver gpoker (Poker (Gakken, 1979 version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver gravity (Gravity (Mattel)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver gscobra (Super Cobra (Gakken, green version)): @classich@electronic_game@good@handheld@non-arcade
+Driver h2hbaseb (Head to Head: Electronic Baseball): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver h2hbaskb (Head to Head: Electronic Basketball (TMS1000 version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver h2hbaskbc (Head to Head: Electronic Basketball (COP420L version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver h2hboxing (Head to Head: Electronic Boxing): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver h2hfootb (Head to Head: Electronic Football): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver h2hhockey (Head to Head: Electronic Hockey (TMS1000 version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver h2hhockeyc (Head to Head: Electronic Hockey (COP420L version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver h2hsoccerc (Head to Head: Electronic Soccer (COP420L version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver hccbaskb (Half Court Computer Basketball): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver horocomp (Horoscope Computer): @classich@good@handheld@horoscope@non-arcade@screenless
+Driver horseran (Thoroughbred Horse Race Analyzer): @calculator@classich@good@non-arcade@pocket_computer@screenless
+Driver invspace (Invader From Space): @classich@electronic_game@good@handheld@non-arcade
+Driver kingman (Kingman): @classich@electronic_game@good@handheld@non-arcade
+Driver lafootb (Look Alive! Football): @classich@electronic_game@good@handheld@non-arcade
+Driver lostreas (Lost Treasure - The Electronic Deep-Sea Diving Game (Electronic Dive-Control Center)): @classich@electronic_board_game@good@misc@non-arcade@screenless
+Driver machiman (Machine Man): @classich@electronic_game@good@handheld@non-arcade
+Driver maniac (Maniac): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mbaseb (Baseball (Mattel)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mbaskb (Basketball (Mattel)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mbaskb2 (Basketball 2 (Mattel)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mchess (Computer Chess (Mattel)): @board_game@chess_machine@classich@good@non-arcade
+Driver mcompgin (Computer Gin): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mdallas (Dalla$ (J.R. handheld)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mdndclab (Dungeons & Dragons - Computer Labyrinth Game): @classich@electronic_board_game@good@misc@non-arcade@screenless
+Driver merlin (Merlin - The Electronic Wizard): @classich@good@handheld@home_videogame_console@non-arcade@screenless
+Driver mfootb (Football (Mattel)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mfootb2 (Football 2 (Mattel)): @classich@good@handheld@non-arcade@pocket_electronic_game@screenless
+Driver mhockey (Hockey (Mattel, US version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mhockeya (Hockey (Mattel, export version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver misatk (Missile Attack / Space Alert): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mmarvin (Musical Marvin): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver mmerlin (Master Merlin): @classich@electronic_board_game@good@misc@non-arcade@screenless
+Driver msoccer (Soccer (Mattel)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver msoccer2 (Soccer 2 (Mattel)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver msthawk (Star Hawk (Mattel)): @classich@electronic_game@good@handheld@non-arcade
+Driver mwcbaseb (World Championship Baseball): @classich@electronic_game@good@handheld@non-arcade
+Driver mwcfootb (World Championship Football): @classich@electronic_game@good@handheld@non-arcade
+Driver nstarfox (Star Fox (Nelsonic)): @classich@good@lcd_game@non-arcade@watch
+Driver nummunch (Electronic Number Muncher): @calculator@classich@good@math_game_learning@non-arcade
+Driver packmon (Packri Monster): @classich@electronic_game@good@handheld@non-arcade
+Driver pairmtch (Pair Match): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver pbmastm (Electronic Master Mind (Parker Brothers)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver pbqbert (Q*Bert (Parker Brothers)): @classich@electronic_game@good@handheld@non-arcade
+Driver phpball (Power House Pinball): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver playmaker (Playmaker: Hockey, Soccer, Basketball): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver quizwizc (Quiz Wiz Challenger): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver raisedvl (Raise The Devil Pinball): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver rockpin (Rocket Pinball): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver rzbatfor (R-Zone: Batman Forever): @classich@electronic_game@good@handheld@non-arcade@tigerrz
+Driver scruiser (Space Cruiser (U.S. Games)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver splasfgt (Space Laser Fight): @classich@electronic_game@good@handheld@non-arcade
+Driver splitsec (Split Second): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver ssfball (Super Star Football (Bambino)): @classich@electronic_game@good@handheld@non-arcade
+Driver ssports4 (Super Sports-4): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver stopthief (Stop Thief - Electronic Cops and Robbers (Electronic Crime Scanner)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver stopthiefp (Stop Thief - Electronic Cops and Robbers (Electronic Crime Scanner) (patent)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver subwars (Sub Wars (LED version)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver t7in1ss (7 in 1 Sports Stadium): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver talkingbb (Starting Lineup Talking Baseball): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver talkingfb (Superstar Lineup Talking Football): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver tbreakup (Break Up (Tomy)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver tbttf (Back to the Future (Tiger)): @classich@electronic_game@good@handheld@non-arcade@tigerh
+Driver tc4 (Total Control 4): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver tc7atc (TC7: Air Traffic Control): @classich@good@misc@non-arcade@screenless@tabletop
+Driver tcaveman (Caveman (Tomy)): @classich@electronic_game@good@handheld@non-arcade
+Driver tccombat (Cosmic Combat): @classich@electronic_game@good@handheld@non-arcade
+Driver tigarden (Thief in Garden): @classich@electronic_game@good@handheld@non-arcade
+Driver tinday (Independence Day (Tiger)): @classich@electronic_game@good@handheld@non-arcade@tigerh
+Driver tmpacman (Pac Man (Tomy)): @classich@electronic_game@good@handheld@non-arcade
+Driver tmscramb (Scramble (Tomy)): @classich@electronic_game@good@handheld@non-arcade
+Driver tmtennis (Tennis (Tomy)): @classich@electronic_game@good@handheld@non-arcade
+Driver tmtron (Tron (Tomy)): @classich@electronic_game@good@handheld@non-arcade
+Driver trshutvoy (Shuttle Voyage): @classich@electronic_game@good@handheld@non-arcade
+Driver trspacmis (Space Mission (Tronica)): @classich@electronic_game@good@handheld@non-arcade
+Driver trspider (Spider (Tronica)): @classich@electronic_game@good@handheld@non-arcade
+Driver trsrescue (Space Rescue): @classich@electronic_game@good@handheld@non-arcade
+Driver trthuball (Thunder Ball (Tronica)): @classich@electronic_game@good@handheld@non-arcade
+Driver tshadow (The Shadow (Tiger)): @classich@electronic_game@good@handheld@non-arcade@tigerh
+Driver ufombs (UFO Master-Blaster Station): @classich@electronic_game@good@handheld@non-arcade
+Driver us2pfball (Electronic 2-Player Football): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver vinvader (Invaders (VTech)): @classich@electronic_game@good@handheld@non-arcade
+Driver wildfire (Wildfire (patent)): @classich@electronic_game@good@handheld@non-arcade@screenless
+Driver zackman (Zackman): @classich@electronic_game@good@handheld@non-arcade
+Driver zodiac (Zodiac - The Astrology Computer): @astrological_computer@calculator@classich@good@non-arcade@screenless
