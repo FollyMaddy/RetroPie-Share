@@ -35,8 +35,9 @@ sort -o jakks.ini jakks.ini
 
 #remove old konamih.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
+#use [] for escaping special char as regex expression
 rm konamih.ini
-/opt/retropie/emulators/mame/mame -listdevices|awk '/\(Konami\)/||/\(handheld\)/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > konamih.ini
+/opt/retropie/emulators/mame/mame -listdevices|awk '/\(Konami\)/||/\(Konami[,]/||/\(handheld\)/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > konamih.ini
 
 #remove old lightgun.ini and create a recent one (no emulation="good" check)
 #no check on good or bad rom because we want the info added for both good and preliminary roms
