@@ -37,6 +37,27 @@ local system_read
 function depends_add-mamedev-systems() {
     getDepends curl python3 figlet toilet asciinema
     [[ ! -f /opt/retropie/emulators/mame/mame0251_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0251_systems_sorted_info -o /opt/retropie/emulators/mame/mame0251_systems_sorted_info
+    depends-retroscraper-remote #will be turned off, in the function depends-retroscraper-remote, after one time of use
+}
+
+
+function depends-retroscraper-remote() {
+	#retroscraper-remote needs httpimport as extra library so with this function you also have the dependancies for retroscraper-rpie
+    local pip=$( su $user -c "python3 -c 'import pip'" 2>&1 )
+    local succ="ModuleNotFoundError"
+    echo "$pip"
+    if [[ $pip == *"$succ"* ]]; then
+        su $user -c "wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py"
+        su $user -c "python3 /tmp/get-pip.py"
+    fi
+    su $user -c "python3 -m pip install --user --upgrade pip wheel setuptools"
+    su $user -c "python3 -m pip install --user googletrans==4.0.0rc1 Pillow==9.2.0 requests==2.21.0 httpimport==1.1.0"
+    #turn off checking/updating dependancies for retroscraper-rpie/retroscraper-remote in function depends_add-mamedev-systems
+    #in
+    sed -i 's/depends-retroscraper-remote\s#/#depends-retroscraper-remote#/g' /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh 2>&1
+    #or
+    sed -i 's/depends-retroscraper-remote\s#/#depends-retroscraper-remote#/g' /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh 2>&1
+    #next time, when you update the add-mamedev-systems.sh script, the function depends_add-mamedev-systems will be restored to it's initial state and the check/update will repeat one time again
 }
 
 
@@ -416,11 +437,9 @@ function subgui_add-mamedev-systems_downloads() {
 ",,,,"
 ",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,,,,,dialog_message \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
 ",Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m,,,,,dialog_message \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
-",(Mirror)Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1ij7zF4DE__81EHm7aX2puzTElhRYULkz /home/$user/RetroPie/roms,,,,,dialog_message \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
-",(Mirror)Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists 1ij7zF4DE__81EHm7aX2puzTElhRYULkz,,,,,dialog_message \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
+",Retroscrape/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_retroscraper_gamelists,,,,,dialog_message \"Here you will be able to retroscrape roms creating gamelists with videos and pictures depending on the database of retroscraper.\nThe gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nExisting gamelist files and media are removed before a new retroscrape !\n\nWhen selecting this option you can choose to retroscrape a system folder seperately.\","
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,,,,,dialog_message \"Here you will find the artwork files needed for a lot of handheld games and it's basically only working on MAME standalone. Some artwork files are custom made others are from other sources. Though we changed the background and bezel filenames in the archives so the options 'Create RetroArch xxxxxxxxxxx-overlays' can make use of these artwork files by extracting the overlay pictures and use them for lr-mess and lr-mame in retroarch.\","
-",(Mirror)Download/update mame artwork (+/-30 min.),,download_from_google_drive 1Gnd1vYCdu5AXM63GIrBiGcS94_E54bSC /home/$user/RetroPie/roms/mame/artwork,,,,,dialog_message \"Here you will find the artwork files needed for a lot of handheld games and it's basically only working on MAME standalone. Some artwork files are custom made others are from other sources. Though we changed the background and bezel filenames in the archives so the options 'Create RetroArch xxxxxxxxxxx-overlays' can make use of these artwork files by extracting the overlay pictures and use them for lr-mess and lr-mame in retroarch.\","
 ",Create RetroArch background-overlays from artwork,,create_lr-mess_background-overlays,,,,,dialog_message \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of background filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\","
 ",Create RetroArch 16:9 bezel-overlays from artwork,,create_lr-mess_bezel-overlays -16-9,,,,,dialog_message \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\","
 ",Create RetroArch 16:9 bezel-overlays from artwork (+alternatives),,create_lr-mess_bezel-overlays -16-9;create_lr-mess_bezel-overlays 2-16-9,,,,,dialog_message \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\n\nIn contrary to the regular option this option will get some alternative looking bezels.\","
@@ -432,6 +451,10 @@ function subgui_add-mamedev-systems_downloads() {
 #backup
 #google-drive base directory of @bbilford83 is 1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE
 #",\Z1Create RetroArch  4:3 bezel-overlays from artwork,,create_lr-mess_bezel-overlays -4-3,,,,,dialog_message \"NO HELP\","
+#",(Mirror)Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive 1ij7zF4DE__81EHm7aX2puzTElhRYULkz /home/$user/RetroPie/roms,,,,,dialog_message \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
+#",(Mirror)Download/update gamelists with media per system > Submenu,,subgui_add-mamedev-systems_downloads_gamelists 1ij7zF4DE__81EHm7aX2puzTElhRYULkz,,,,,dialog_message \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
+#",(Mirror)Download/update mame artwork (+/-30 min.),,download_from_google_drive 1Gnd1vYCdu5AXM63GIrBiGcS94_E54bSC /home/$user/RetroPie/roms/mame/artwork,,,,,dialog_message \"Here you will find the artwork files needed for a lot of handheld games and it's basically only working on MAME standalone. Some artwork files are custom made others are from other sources. Though we changed the background and bezel filenames in the archives so the options 'Create RetroArch xxxxxxxxxxx-overlays' can make use of these artwork files by extracting the overlay pictures and use them for lr-mess and lr-mame in retroarch.\","
+
 
 function subgui_add-mamedev-systems_downloads_gamelists() {
     local csv=()
@@ -443,6 +466,26 @@ function subgui_add-mamedev-systems_downloads_gamelists() {
     while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";curl https://drive.google.com/embeddedfolderview?id=$1#list|sed 's/https/\nhttps/g'|grep folders|sed 's/folders\//folders\"/g;s/>/"/g;s/</"/g'|while read line;do echo "\",Download/update only for '$(echo $line|cut -d '"' -f50)',,download_from_google_drive $(echo $line|cut -d '"' -f2) /home/$user/RetroPie/roms/$(echo $line|cut -d '"' -f50),\"";done)
     IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
     build_menu_add-mamedev-systems
+}
+
+
+function subgui_add-mamedev-systems_retroscraper_gamelists() {
+    local csv=()
+    local gamelists_csv=()
+    local gamelists_read
+    clear
+    echo "reading the individual gamelist data"
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 /home/$user/RetroPie/roms|while read line;do echo "\",Retroscrape/update only for '$(echo $line)',,add-mamedev-systems_retroscraper_command $line,\"";done)
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
+    build_menu_add-mamedev-systems
+}
+
+
+function add-mamedev-systems_retroscraper_command() {
+	rm /home/$user/RetroPie/roms/$1/gamelist.xml 2> /dev/null
+	rm -r /home/$user/RetroPie/roms/$1/media/emulationstation 2> /dev/null
+    su $user -c "curl https://raw.githubusercontent.com/zayamatias/retroscraper-remote/main/retroscraper.py|python3 - --systems $1 --relativepaths --mediadir media/emulationstation --nobackup"
 }
 
 
@@ -593,7 +636,7 @@ function subform_add-mamedev-systems_downloads_wget_A() {
     local csv=()
     local download_csv=()
     local download_read
-    local website_url="$5"
+    local website_url="S5"
     local website_path="$4"
     local rompack_name="$3"
     local destination_path="$2"
@@ -811,7 +854,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0251.03" 22 76 16)
+	Version 0251.04" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
