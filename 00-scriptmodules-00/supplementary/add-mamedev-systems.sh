@@ -636,7 +636,7 @@ function subform_add-mamedev-systems_downloads_wget_A() {
     local csv=()
     local download_csv=()
     local download_read
-    local website_url="S5"
+    local website_url="$5"
     local website_path="$4"
     local rompack_name="$3"
     local destination_path="$2"
