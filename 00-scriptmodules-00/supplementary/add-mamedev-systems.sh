@@ -476,7 +476,7 @@ function subgui_add-mamedev-systems_retroscraper_gamelists() {
     clear
     echo "reading the individual gamelist data"
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 /home/$user/RetroPie/roms|while read line;do echo "\",Retroscrape/update only for '$(echo $line)',,add-mamedev-systems_retroscraper_command $line,\"";done)
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 /home/$user/RetroPie/roms|while read line;do echo "\",Retroscrape/update only for $([[ $line == *º ]]&&echo ' ')$(if [[ -f /home/pi/RetroPie/roms/$line/gamelist.xml ]];then printf '%-20s\\\Z3(has gamelist)\n' $line;else printf '%-20s(no  gamelist)\n' $line;fi),,add-mamedev-systems_retroscraper_command $line;dialog_message \"About :\\\n-\(has gamelist\)\\\n-\(no  gamelist\)\\\nThe information will refresh next time you select :\\\nRetroscrape/update gamelists with media per system > Submenu\",\"";done)
     IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
     build_menu_add-mamedev-systems
 }
@@ -854,7 +854,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0251.04" 22 76 16)
+	Version 0251.05" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
