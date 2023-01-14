@@ -854,7 +854,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0251.05" 22 76 16)
+	Version 0251.06" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1264,6 +1264,8 @@ descriptionsrp+=( "JAKKS" )
 systemsrp+=( "tigerrz" )
 descriptionsrp+=( "R-Zone" )
 #not in the original platforms.cfg
+systemsrp+=( "cd32" )
+descriptionsrp+=( "Amiga CD32" )
 systemsrp+=( "archimedes" )
 descriptionsrp+=( "Archimedes" )
 systemsrp+=( "archimedes" )
