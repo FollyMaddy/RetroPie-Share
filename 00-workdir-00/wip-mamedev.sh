@@ -37,7 +37,7 @@ local system_read
 function depends_mamedev() {
     getDepends curl python3
     [[ ! -f /opt/retropie/emulators/mame/mame0251_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0251_systems_sorted_info -o /opt/retropie/emulators/mame/mame0251_systems_sorted_info
-    #retroscraper_remote_depends_mamedev#will be turned off, in the function retroscraper_remote_depends_mamedev , after one time of use
+    retroscraper_remote_depends_mamedev #will be turned off, in the function retroscraper_remote_depends_mamedev , after one time of use
 }
 
 
@@ -365,7 +365,7 @@ function subgui_downloads_mamedev () {
 ",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev /opt/retropie/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig /opt/retropie/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n/opt/retropie/configs/all/retroarch-joypads\","
 ",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 /opt/retropie/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih (/opt/retropie/configs/konamih/lr-mess)\n- tigerh (/opt/retropie/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
 ",,,,"
-",Download/update cheats \Z2(0.245),,download_cheats_mamedev,,,,,show_message_mamedev \"When this script generates and installs a module-script the cheat option in the configs will be turned on in lr-mess/lr-mame and MAME. Together with the cheat file you will be able to use cheats on certain games. The cheat file used can be found on http://www.mamecheat.co.uk\","
+",Download/update cheats \Z2(0.245),,download_cheats_mamedev,,,,,show_message_mamedev \"When this script installs a system or category the cheat option in the configs will be turned on in lr-mess/lr-mame and MAME. Together with the cheat file you will be able to use cheats on certain games. The cheat file used can be found on http://www.mamecheat.co.uk\","
 ",,,,"
 ",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive_mamedev 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
 ",Download/update gamelists with media per system > Submenu,,subgui_download_gamelists_mamedev 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m,,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
@@ -411,7 +411,7 @@ function subgui_retroscraper_gamelists_mamedev() {
 function retroscraper_remote_command_mamedev() {
     rm /home/$user/RetroPie/roms/$1/gamelist.xml 2> /dev/null
     rm -r /home/$user/RetroPie/roms/$1/media/emulationstation 2> /dev/null
-    su $user -c "curl https://raw.githubusercontent.com/zayamatias/retroscraper-remote/main/retroscraper.py|python3 - --systems $1 --relativepaths --mediadir media/emulationstation --nobackup"
+    su $user -c "curl https://raw.githubusercontent.com/zayamatias/retroscraper-remote/main/retroscraper.py|python3 - --systems $1 --recursive --relativepaths --mediadir media/emulationstation --nobackup"
 }
 
 
@@ -815,10 +815,10 @@ namesfilter="\(brief|------"
 #filter on usefull media, otherwise we also get many unusefull scripts
 mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|flop3\)|\(cass|dump\)|cdrm\)|hard\)|\(hard1|\(min|\(mout"
 
-#string for adding extra extensions in all generated scripts
+#string for adding extra extensions 
 addextensions=".zip .7z"
 
-#string for adding extra extensions in all generated command scripts
+#string for adding extra extensions for retroarch cores
 addextensionscmd=".cmd"
 
 #check if the system is arcade or non-arcade for switching between lr-mess and lr-mame
@@ -873,11 +873,11 @@ else echo skip reading mame data
 fi
 
 #part 1 : prepair some things first
-#for making it possible to save /ext/RetroPie-Share/platorms.cfg and the generated module-scripts
+#for making it possible to save /ext/RetroPie-Share/platorms.cfg
 mkdir -p  /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 chown -R $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share"
 
-#get the run_mess.sh, edited by RusselBcheck, if the specific run_mess.sh isn't saved in ~/RetroPie-Setup/scriptmodules
+#get the run_mess.sh, edited by RusselB, and check if the specific run_mess.sh is already in ~/RetroPie-Setup/scriptmodules
 if [[ $(sha1sum /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) != 9da9973fc04183e29fcd453d1367bef471f8248c* ]];then
 echo "install @valerino run_mess.sh script (the RusselB version)"
 wget -q -nv -O /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/run_mess.sh
@@ -919,11 +919,11 @@ _EOF_
 chown $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg"
 
 
-#part 3 : turning off creating all scripts
-#if this part is commented and no option is added while running this scripts, it is possible to generate all possible scripts
+#part 3 : turning off installing when no option is add to the function
+#if no option is added while running this scripts, it is possible to install all all systems
 #because of the time it will consume, it is turned off in this part !
 if [[ -z "$1" ]]; then 
-echo -ne "\ngenerating all possible files is turned off\n"
+echo -ne "\nno option detected, nothing to do\n"
 exit
 fi
 
@@ -1233,16 +1233,11 @@ done
 #  done
 
 
-#part 12 : use all stored data to generate the modulescript containing "lr-mess" and "mame" commands with media option
-# "install" in front of the filename is used for distinquish the files from others in the directory
-# in the script libretro commands index use "lr-*" for compatibility with runcommand.sh 
-# (perhaps adding the future abitity of loading game specific retroarch configs)
+#part 12 : use all stored data to install runcommands for lr-mame, lr-mess and mame with media option
+# in the name of the runcommand "lr-*" is used for compatibility with runcommand.sh 
 # because mame is added and because mame is using this BIOS dir : /home/$user/RetroPie/BIOS/mame
 # the lr-mess command is changed to use the same BIOS dir
-echo "generate and write the install-<RPname>-from-mamedev-system-<MESSname><-media>.sh script file(s)"
-# put everything in a seperate directory
-# !!! .zip is manually added as extension in every generated script !!!
-# used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
+echo "installing runcommands with media option"
 
 	local _retroarch_bin="$rootdir/emulators/retroarch/bin/retroarch"
 	local _mess_core=/opt/retropie/libretrocores/lr-mess/mamemess_libretro.so
@@ -1273,8 +1268,9 @@ echo "generate and write the install-<RPname>-from-mamedev-system-<MESSname><-me
 
 	# ensure custom per-fake-core configs get loaded too via --appendconfig
 	iniConfig " = " "\"" "$_add_config"
-	iniConfig " = " "\"" "$_add_config_basename"
 	iniSet "core_options_path" "$_custom_coreconfig"
+	
+	iniConfig " = " "\"" "$_add_config_basename"
 	iniSet "core_options_path" "$_basename_coreconfig"
 	[[ $_system == *90º ]]&&iniSet "screen_orientation" "3"
 
@@ -1340,22 +1336,12 @@ fi
 done
 
 
-#part 13 : use all stored data to generate the modulescript containing "lr-mess" and "mame" commands for loading handmade .cmd files or to run basenames
+#part 13 : use all stored data to install runcommands for lr-mame, lr-mess and mame for loading handmade .cmd files or to run with basename
 # the none media mamedev system types have no extensions in the mamedev database
 # in order to switch between emulators at retropie rom boot
 # we have to add these extensions
 # otherwise extensions supported by other emulators will not be shown anymore
-
-# because mame is added and because mame is using this BIOS dir : /home/$user/RetroPie/BIOS/mame
-# the lr-mess command is changed to use the same BIOS dir
-
-# "install" in front of the filename is used for distinquish the files from others in the directory
-# in the script libretro commands index use "lr-*" for compatibility with runcommand.sh 
-# (perhaps adding the future abitity of loading game specific retroarch configs)(for example configs for overlays)
-echo "generate and write the install-<RPname>-cmd.sh command script file(s)"
-# put everything in a seperate directory
-# !!! .zip is manually added as extension in every generated script !!!
-# used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
+echo "install basename runcommands and runcommannds for handmade .cmd files"
 # grep function is used to get all extensions compatible with all possible emulation methods so switching within emulationstation is possible
 # grep searches in both platform.cfg and the ext/RetroPie-Share/platforms.cfg , so also extensions are added that are not in platform.cfg 
 # using grep this way can create double extension, but this should not be a problem
@@ -1735,9 +1721,9 @@ function retroscraper_remote_depends_mamedev () {
     su $user -c "python3 -m pip install --user googletrans==4.0.0rc1 Pillow==9.2.0 requests==2.21.0 httpimport==1.1.0"
     #turn off checking/updating dependancies for retroscraper-rpie/retroscraper-remote in function depends_mamedev
     #in
-    sed -i 's/retroscraper_remote_depends_mamedev \s#/#retroscraper_remote_depends_mamedev #/g' /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh 2>&1
+    sed -i 's/retroscraper_remote_depends_mamedev\s#/#retroscraper_remote_depends_mamedev#/g' /home/$user/RetroPie-Setup/scriptmodules/supplementary/wip-mamedev.sh 2>&1
     #or
-    sed -i 's/retroscraper_remote_depends_mamedev \s#/#retroscraper_remote_depends_mamedev #/g' /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh 2>&1
+    sed -i 's/retroscraper_remote_depends_mamedev\s#/#retroscraper_remote_depends_mamedev#/g' /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/wip-mamedev.sh 2>&1
     #next time, when you update the mamedev.sh script, the function depends_mamedev will be restored to it's initial state and the check/update will repeat one time again
 }
 
