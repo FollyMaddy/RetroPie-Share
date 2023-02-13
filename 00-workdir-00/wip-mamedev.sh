@@ -37,7 +37,7 @@ local system_read
 function depends_mamedev() {
     getDepends curl python3
     [[ ! -f /opt/retropie/emulators/mame/mame0251_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0251_systems_sorted_info -o /opt/retropie/emulators/mame/mame0251_systems_sorted_info
-    #retroscraper_remote_depends_mamedev#will be turned off, in the function retroscraper_remote_depends_mamedev , after one time of use
+    retroscraper_remote_depends_mamedev #will be turned off, in the function retroscraper_remote_depends_mamedev , after one time of use
 }
 
 
