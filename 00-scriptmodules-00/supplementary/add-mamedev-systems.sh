@@ -76,12 +76,12 @@ function gui_add-mamedev-systems() {
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
 ",About this script,,dialog_message \"This project makes use of MAME and LR-MESS for emulating.\nMAME and LR-MESS support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to create/install module-scripts on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- Orionsangel : creating realistic arcade overlays\",,,,,dialog_message \"NO HELP\","
-",,,,,,,,,"
 ",Update add-mamedev-systems script and database,,wget -O $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh;chown $user:$user $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0251_systems_sorted_info -o /opt/retropie/emulators/mame/mame0251_systems_sorted_info;rp_registerAllModules;dialog_message \"\n\n\n\n\n\n\n\n------------- Exit and re-load add-mamedev-systems again ! -------------\",,,,,," 
 ",,,,,,,,,"
-",Install MAME    ( required by this script ) => ARCADE+NON-ARCADE,,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-MESS ( should be installed too ) =>  NON-ARCADE only,,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-MAME ( should be installed too ) =>    ARCADE only,,package_setup lr-mame,,,,,dialog_message \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install MAME    ( required by this script ) =>  ARCADE+NON-ARCADE,,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-MESS ( should be installed too ) =>   NON-ARCADE only,,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-MAME ( should be installed too ) =>     ARCADE only,,package_setup lr-mame,,,,,dialog_message \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-GW   (    optional  install    ) => MADRIGALS  HANDHELD,,package_setup lr-gw;if [[ -f /opt/retropie/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-gw/gw_libretro.so --config /opt/retropie/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-gw/gw_libretro.so --config /opt/retropie/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";else delEmulator lr-gw classich;fi,,,,,dialog_message \"no help\","
 ",,,,,,,,,"
 ",Choose and install systems with DEFAULT settings > Submenu,,subgui_add-mamedev-systems_all,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems in different ways\","
 ",Choose and install systems with >EXTRA< settings > Submenu,,subgui_add-mamedev-systems_extras,,,,,dialog_message \"Go into the submenu and choose from different lists displaying the available systems with extra functions\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
@@ -136,8 +136,8 @@ function subgui_add-mamedev-systems_forum() {
     csv=(
 ",menu_item_handheld_description,SystemType,to_do driver_used_for_installation,,,,,help_to_do,"
 ",All in One Handheld and Plug and Play,@non-arcade,create_rom_index_file '/@all_in1/' /home/$user/RetroPie/roms/all_in1;run_generator_script all_in1 all_in1 '' '' 'none' '',,,,,dialog_message \"The name All In One Handheld and Plug & Play was chosen for systems with multiple games like the concept 100 in 1. The ROMs are from the MAME romset collection and you can find the list on (Tutorial: Handheld and Plug & Play systems with MAME) thread on the RetroPie Forum. Most of those games are bootlegs_ mini-games or sport games. The original systems are Handhelds or Plug & Play.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Classic Handheld Systems                  (MAME/lr-mess/lr-gw),@non-arcade,$scriptdir/retropie_packages.sh lr-gw;echo -e '\n\nsetup regular lr-gw from source for gameandwatch and classich\n\ndelete old :\n/opt/retropie/configs/classich/emulators.cfg\n\ncopy lr-gw lines from\n/opt/retropie/configs/gameandwatch/emulators.cfg\nin :\n/opt/retropie/configs/classich/emulators.cfg\n\n';rm /opt/retropie/configs/classich/emulators.cfg 2>&-;cat /opt/retropie/configs/gameandwatch/emulators.cfg|grep lr-gw >> /opt/retropie/configs/classich/emulators.cfg;chown $user:$user /opt/retropie/configs/classich/emulators.cfg 2>&-;create_rom_index_file '/@classich/' /home/$user/RetroPie/roms/classich;run_generator_script classich classich '' '' 'none' '',,,,,dialog_message \"Non_game & watch from MADrigal Romset and all other manufacturers in the MAME romset such as Coleco_ Entex_ etc.\n\nPlease use lr-gw for the MADrigal romset.\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nFor these games you can get artworks and backgrounds by selecting :\nJOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS > Submenu\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Game and Watch                            (MAME/lr-mess/lr-gw),@non-arcade,$scriptdir/retropie_packages.sh lr-gw;create_rom_index_file '/@gameandwatch/' /home/$user/RetroPie/roms/gameandwatch;run_generator_script gameandwatch gameandwatch '' '' 'none' '',,,,,dialog_message \"Set to run all Game & Watch games from MADrigal and MAME romset.\n\nPlease use lr-gw for the MADrigal romset.\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nFor these games you can get artworks and backgrounds by selecting :\nJOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS > Submenu\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+",Classic Handheld Systems,@non-arcade,create_rom_index_file '/@classich/' /home/$user/RetroPie/roms/classich;run_generator_script classich classich '' '' 'none' '',,,,,dialog_message \"Non_game & watch from MADrigal Romset and all other manufacturers in the MAME romset such as Coleco_ Entex_ etc.\n\nPlease use lr-gw for the MADrigal romset.\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nFor these games you can get artworks and backgrounds by selecting :\nJOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS > Submenu\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+",Game and Watch,@non-arcade,create_rom_index_file '/@gameandwatch/' /home/$user/RetroPie/roms/gameandwatch;run_generator_script gameandwatch gameandwatch '' '' 'none' '',,,,,dialog_message \"Set to run all Game & Watch games from MADrigal and MAME romset.\n\nPlease use lr-gw for the MADrigal romset.\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nFor these games you can get artworks and backgrounds by selecting :\nJOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS > Submenu\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
 ",JAKKS Pacific TV Games,@non-arcade,create_rom_index_file '/@classich/' /home/$user/RetroPie/roms/jakks;run_generator_script jakks jakks '' '' 'none' '',,,,,dialog_message \"JAKKS Pacific TV Games - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
 ",Konami Handheld,@non-arcade,create_rom_index_file '/@konamih/' /home/$user/RetroPie/roms/konamih;run_generator_script konamih konamih '' '' 'none' '',,,,,dialog_message \"Konami Handheld - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\nYou can get artworks and backgrounds for those games with the (Select JOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS > Submenu) below\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
 ",Tiger Handheld Electronics,@non-arcade,create_rom_index_file '/@tigerh/' /home/$user/RetroPie/roms/tigerh;run_generator_script tigerh tigerh '' '' 'none' '',,,,,dialog_message \"Tiger Handheld Electronics - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\nYou can get artworks and backgrounds for those games with the (Select JOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS > Submenu) below\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
@@ -854,7 +854,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0251.07" 22 76 16)
+	Version 0251.08" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1038,22 +1038,22 @@ fi
 
 #part 2 : platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)
 cat >"/home/$user/RetroPie-Setup/ext/RetroPie-Share/platforms.cfg" << _EOF_
-tigerh_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+tigerh_exts=""
 tigerh_fullname="Tiger Handheld Electronics"
 
-tigerrz_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+tigerrz_exts=""
 tigerrz_fullname="Tiger R-Zone"
 
-jakks_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+jakks_exts=""
 jakks_fullname="JAKKS Pacific TV Games"
 
-konamih_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+konamih_exts=""
 konamih_fullname="Konami Handheld"
 
-all_in1_exts=".7z .cue .fba .iso .zip .cdi .chd .gdi .sh"
+all_in1_exts=""
 all_in1_fullname="All in One Handheld and Plug and Play"
 
-classich_exts=".mgw .7z"
+classich_exts=".mgw"
 classich_fullname="Classic Handheld Systems"
 
 bbcmicro_exts=".ssd"
