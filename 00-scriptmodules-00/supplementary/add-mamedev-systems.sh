@@ -36,7 +36,7 @@ local system_read
 
 function depends_add-mamedev-systems() {
     getDepends curl python3 figlet toilet asciinema
-    [[ ! -f /opt/retropie/emulators/mame/mame0251_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0251_systems_sorted_info -o /opt/retropie/emulators/mame/mame0251_systems_sorted_info
+    [[ ! -f /opt/retropie/emulators/mame/mame0252_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0252_systems_sorted_info -o /opt/retropie/emulators/mame/mame0252_systems_sorted_info
     depends-retroscraper-remote #will be turned off, in the function depends-retroscraper-remote, after one time of use
 }
 
@@ -76,7 +76,7 @@ function gui_add-mamedev-systems() {
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
 ",About this script,,dialog_message \"This project makes use of MAME and LR-MESS for emulating.\nMAME and LR-MESS support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to create/install module-scripts on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- Orionsangel : creating realistic arcade overlays\",,,,,dialog_message \"NO HELP\","
-",Update add-mamedev-systems script and database,,wget -O $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh;chown $user:$user $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0251_systems_sorted_info -o /opt/retropie/emulators/mame/mame0251_systems_sorted_info;rp_registerAllModules;dialog_message \"\n\n\n\n\n\n\n\n------------- Exit and re-load add-mamedev-systems again ! -------------\",,,,,," 
+",Update add-mamedev-systems script and database,,wget -O $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh;chown $user:$user $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0252_systems_sorted_info -o /opt/retropie/emulators/mame/mame0252_systems_sorted_info;rp_registerAllModules;dialog_message \"\n\n\n\n\n\n\n\n------------- Exit and re-load add-mamedev-systems again ! -------------\",,,,,," 
 ",,,,,,,,,"
 ",Install MAME    ( required by this script ) =>  ARCADE+NON-ARCADE,,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MESS ( should be installed too ) =>   NON-ARCADE only,,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
@@ -110,9 +110,9 @@ function mame_data_read() {
     #here we read the systems and descriptions from mame into an array
     #by using the if function the data can be re-used, without reading it every time
     if [[ -z ${mamedev_csv[@]} ]]; then
-        if [[ -f /opt/retropie/emulators/mame/mame0251_systems_sorted_info ]]; then 
+        if [[ -f /opt/retropie/emulators/mame/mame0252_systems_sorted_info ]]; then 
     clear
-    echo "Get mame0251 data:/opt/retropie/emulators/mame/mame0251_systems_sorted_info"
+    echo "Get mame0252 data:/opt/retropie/emulators/mame/mame0252_systems_sorted_info"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
     # get only the lines that begin with Driver was an issue with "grep Driver" because lines are not starting with "Driver" are detected 
@@ -120,12 +120,12 @@ function mame_data_read() {
     # Now using this : lines that start with "D" using => grep ^[D]
     #here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0251_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat /opt/retropie/emulators/mame/mame0252_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         else
-    echo "Get mame0251 data:RetroPie-Share repository"
+    echo "Get mame0252 data:RetroPie-Share repository"
     echo "For speed, data will be re-used within this session"
     echo "Be patient for 20 seconds" 
-    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0251_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
+    while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0252_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,run_generator_script,/;s/\r/,,,\"/')
         fi
     fi
 }
@@ -854,7 +854,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0251.09" 22 76 16)
+	Version 0252.00" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
