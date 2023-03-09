@@ -756,8 +756,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0252.00" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0252.00)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1722,9 +1721,9 @@ function retroscraper_remote_depends_mamedev () {
     su $user -c "python3 -m pip install --user googletrans==4.0.0rc1 Pillow==9.2.0 requests==2.21.0 httpimport==1.1.0"
     #turn off checking/updating dependancies for retroscraper-rpie/retroscraper-remote in function depends_mamedev
     #in
-    sed -i 's/retroscraper_remote_depends_mamedev\s#/#retroscraper_remote_depends_mamedev#/g' /home/$user/RetroPie-Setup/scriptmodules/supplementary/wip-mamedev.sh 2>&1
+    sed -i 's/retroscraper_remote_depends_mamedev\s#/#retroscraper_remote_depends_mamedev#/g' /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh 2>&1
     #or
-    sed -i 's/retroscraper_remote_depends_mamedev\s#/#retroscraper_remote_depends_mamedev#/g' /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/wip-mamedev.sh 2>&1
+    sed -i 's/retroscraper_remote_depends_mamedev\s#/#retroscraper_remote_depends_mamedev#/g' /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh 2>&1
     #next time, when you update the mamedev.sh script, the function depends_mamedev will be restored to it's initial state and the check/update will repeat one time again
 }
 
