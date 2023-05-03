@@ -37,7 +37,6 @@ local system_read
 function depends_mamedev() {
     getDepends curl python3
     [[ ! -f /opt/retropie/emulators/mame/mame0253_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0253_systems_sorted_info -o /opt/retropie/emulators/mame/mame0253_systems_sorted_info
-    retroscraper_remote_depends_mamedev #will be turned off, in the function retroscraper_remote_depends_mamedev , after one time of use
 }
 
 
@@ -368,7 +367,7 @@ function subgui_downloads_mamedev () {
 ",,,,"
 ",Download/update all ES gamelists with media (+/-30 min.),,download_from_google_drive_mamedev 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m /home/$user/RetroPie/roms,,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
 ",Download/update gamelists with media per system > Submenu,,subgui_download_gamelists_mamedev 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m,,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
-",Retroscrape/update gamelists with media per system > Submenu,,subgui_retroscraper_gamelists_mamedev,,,,,show_message_mamedev \"Here you will be able to retroscrape roms creating gamelists with videos and pictures depending on the database of retroscraper.\nThe gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nExisting gamelist files and media are removed before a new retroscrape !\n\nWhen selecting this option you can choose to retroscrape a system folder seperately.\","
+",Retroscrape/update gamelists with media per system > Submenu,,retroscraper_remote_depends_mamedev;subgui_retroscraper_gamelists_mamedev,,,,,show_message_mamedev \"Here you will be able to retroscrape roms creating gamelists with videos and pictures depending on the database of retroscraper.\nThe gamelists are stored in :\n~/home/pi/RetroPie/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nExisting gamelist files and media are removed before a new retroscrape !\n\nWhen selecting this option you can choose to retroscrape a system folder seperately.\","
 ",,,,"
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive_mamedev 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 /home/$user/RetroPie/roms/mame/artwork,,,,,show_message_mamedev \"Here you will find the artwork files needed for a lot of handheld games and it's basically only working on MAME standalone. Some artwork files are custom made others are from other sources. Though we changed the background and bezel filenames in the archives so the options 'Create RetroArch xxxxxxxxxxx-overlays' can make use of these artwork files by extracting the overlay pictures and use them for lr-mess and lr-mame in retroarch.\","
 ",Create RetroArch background-overlays from artwork,,create_background_overlays_mamedev,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of background filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\","
@@ -756,7 +755,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.00)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.01)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1709,21 +1708,30 @@ done
 
 
 function retroscraper_remote_depends_mamedev () {
-    #retroscraper-remote needs httpimport as extra library so with this function you also have the dependancies for retroscraper-rpie
-    local pip=$( su $user -c "python3 -c 'import pip'" 2>&1 )
-    local succ="ModuleNotFoundError"
-    echo "$pip"
-    if [[ $pip == *"$succ"* ]]; then
+	#install pip if the pip module is not installed
+    if [[ $(su $user -c "python3 -m pip list" 2>&1) == *"No module named pip"* ]]; then
         su $user -c "wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py"
         su $user -c "python3 /tmp/get-pip.py"
     fi
-    su $user -c "python3 -m pip install --user --upgrade pip wheel setuptools"
-    su $user -c "python3 -m pip install --user googletrans==4.0.0rc1 Pillow==9.2.0 requests==2.21.0 httpimport==1.1.0"
-    #turn off checking/updating dependancies for retroscraper-rpie/retroscraper-remote in function depends_mamedev
-    #in
-    sed -i 's/retroscraper_remote_depends_mamedev\s#/#retroscraper_remote_depends_mamedev#/g' /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh 2>&1
-    #or
-    sed -i 's/retroscraper_remote_depends_mamedev\s#/#retroscraper_remote_depends_mamedev#/g' /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh 2>&1
-    #next time, when you update the mamedev.sh script, the function depends_mamedev will be restored to it's initial state and the check/update will repeat one time again
+
+    #update pip if there is a new release
+	[[ $(su $user -c "python3 -m pip list" 2>&1) == *"new release of pip"* ]] && su $user -c "python3 -m pip install --user --upgrade pip"
+
+    #install python modules when not detected as installed
+    #retroscraper-remote needs httpimport as extra library so some dependancies can be used "online"
+    #https://stackoverflow.com/questions/23106621/replace-multiple-consecutive-white-spaces-with-one-comma-in-unix
+	local retroscraper_remote_module
+	local retroscraper_remote_modules=()
+	retroscraper_remote_modules=(
+	wheel==0.40.0
+	setuptools==67.7.2
+	googletrans==4.0.0rc1
+	Pillow==9.2.0
+	requests==2.21.0
+	httpimport==1.1.0
+	)
+	for retroscraper_remote_module in ${retroscraper_remote_modules[@]};do 
+	[[ $(su $user -c "python3 -m pip list|sed 's/ \{1,\}/==/g'") != *$retroscraper_remote_module* ]] && su $user -c "python3 -m pip install --user $retroscraper_remote_module"
+	done
 }
 
