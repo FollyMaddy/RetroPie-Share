@@ -755,7 +755,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.01)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.02)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1714,12 +1714,13 @@ function retroscraper_remote_depends_mamedev () {
         su $user -c "python3 /tmp/get-pip.py"
     fi
 
-    #update pip if there is a new release
+    #update pip if there is a new release (2>&1 is used to redirect stderr to stdout so we can use the if function on the stderr info)
 	[[ $(su $user -c "python3 -m pip list" 2>&1) == *"new release of pip"* ]] && su $user -c "python3 -m pip install --user --upgrade pip"
 
     #install python modules when not detected as installed
     #retroscraper-remote needs httpimport as extra library so some dependancies can be used "online"
     #https://stackoverflow.com/questions/23106621/replace-multiple-consecutive-white-spaces-with-one-comma-in-unix
+	local pip_list_output
 	local retroscraper_remote_module
 	local retroscraper_remote_modules=()
 	retroscraper_remote_modules=(
@@ -1730,8 +1731,12 @@ function retroscraper_remote_depends_mamedev () {
 	requests==2.21.0
 	httpimport==1.1.0
 	)
+	#this command was the first test and filters out the required modules but has no speed advantage vs the used command
+	#pip_list_output=$(su $user -c "python3 -m pip list|sed 's/ \{1,\}/==/g'|awk \"/${retroscraper_remote_modules[0]}/ || /${retroscraper_remote_modules[1]}/ || /${retroscraper_remote_modules[2]}/ || /${retroscraper_remote_modules[3]}/ ||  /${retroscraper_remote_modules[4]}/ || /${retroscraper_remote_modules[5]}/\"")
+	pip_list_output=$(su $user -c "python3 -m pip list|sed 's/ \{1,\}/==/g'")
+	
 	for retroscraper_remote_module in ${retroscraper_remote_modules[@]};do 
-	[[ $(su $user -c "python3 -m pip list|sed 's/ \{1,\}/==/g'") != *$retroscraper_remote_module* ]] && su $user -c "python3 -m pip install --user $retroscraper_remote_module"
+	[[ $pip_list_output != *$retroscraper_remote_module* ]] && su $user -c "python3 -m pip install --user $retroscraper_remote_module"
 	done
 }
 
