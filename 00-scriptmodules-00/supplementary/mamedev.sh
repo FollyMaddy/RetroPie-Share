@@ -755,7 +755,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.02)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.03)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1727,9 +1727,9 @@ function retroscraper_remote_depends_mamedev () {
 	wheel==0.40.0
 	setuptools==67.7.2
 	googletrans==4.0.0rc1
-	Pillow==9.2.0
-	requests==2.21.0
-	httpimport==1.1.0
+	Pillow==9.5.0
+	requests==2.30.0
+	httpimport==1.3.0
 	)
 	#this command was the first test and filters out the required modules but has no speed advantage vs the used command
 	#pip_list_output=$(su $user -c "python3 -m pip list|sed 's/ \{1,\}/==/g'|awk \"/${retroscraper_remote_modules[0]}/ || /${retroscraper_remote_modules[1]}/ || /${retroscraper_remote_modules[2]}/ || /${retroscraper_remote_modules[3]}/ ||  /${retroscraper_remote_modules[4]}/ || /${retroscraper_remote_modules[5]}/\"")
