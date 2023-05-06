@@ -70,7 +70,8 @@ function depends-retroscraper-remote() {
 	
 	for retroscraper_remote_module in ${retroscraper_remote_modules[@]};do 
 	[[ $pip_list_output != *$retroscraper_remote_module* ]] && su $user -c "python3 -m pip install --user $retroscraper_remote_module"
-	done}
+	done
+}
 
 
 function gui_add-mamedev-systems() {
