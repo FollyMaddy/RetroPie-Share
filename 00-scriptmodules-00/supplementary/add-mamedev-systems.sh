@@ -1285,6 +1285,8 @@ systemsrp+=( "archimedes" )
 descriptionsrp+=( "Acorn A" )
 systemsrp+=( "archimedes" )
 descriptionsrp+=( "BBC A" )
+systemsrp+=( "astrocde" )
+descriptionsrp+=( "Bally Professional Arcade" )
 systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Micro" )
 systemsrp+=( "bbcmicro" )
@@ -1403,7 +1405,7 @@ done
 # (perhaps adding the future abitity of loading game specific retroarch configs)
 # because mame is added and because mame is using this BIOS dir : /home/$user/RetroPie/BIOS/mame
 # the lr-mess command is changed to use the same BIOS dir
-echo "generate and write the install-<RPname>-from-mamedev-system-<MESSname><-media>.sh script file(s)"
+echo "generate and write the install-<RPname>-from-mamedev-system-<MAMEname><-media>.sh script file(s)"
 # put everything in a seperate directory
 # !!! .zip is manually added as extension in every generated script !!!
 # used quotes in the next line, if there are spaces in the values of the arrays the file can not be generated, kept it in for debugging
@@ -1422,7 +1424,7 @@ for index in "${!systems[@]}"; do sleep 0.001; [[ -n ${allextensions[$index]} ]]
 rp_module_id="install-${newsystems[$index]}-from-mamedev-system-${systems[$index]}$([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo $(echo _${ExtraPredefinedOptions[$index]} | sed "s/\\\n//g;s/\/.*\///g;s/~//g;s/ /_/g;s/[\(]//g;s/[\)]//g;s/[\"]//g;s/[\']//g;s/-autoboot_delay_._//g;s/-autoboot_command/auto/g;"))${media[$index]}"
 rp_module_name="${descriptions[$index]} $([[ -n ${ExtraPredefinedOptions[$index]} ]] && echo with ${ExtraPredefinedOptions[$index]}) ${mediadescriptions[$index]} support"
 rp_module_ext="$addextensions ${allextensions[$index]}"
-rp_module_desc="Use lr-mess/mame emulator for (\$rp_module_name)"
+rp_module_desc="Use (lr-mame or lr-mess) and mame emulator for (\$rp_module_name)"
 rp_module_help="ROM Extensions: \$rp_module_ext\n
 Above extensions are included for compatibility between different media installs.\n\n
 ROM extensions only supported by this install:\n
@@ -1598,7 +1600,7 @@ cat > "/home/$user/RetroPie-Setup$ext/scriptmodules/libretrocores/install-${news
 rp_module_id="install-${newsystems[$index]}-cmd"
 rp_module_name="${newsystems[$index]} with mame-softlist support"
 rp_module_ext="$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
-rp_module_desc="Use lr-mess and mame emulator for ${newsystems[$index]} and load roms and software supported by the mame database"
+rp_module_desc="Use (lr-mame or lr-mess) and mame emulator for ${newsystems[$index]} and load roms and software supported by the mame database"
 rp_module_help="ROM Extensions: \$rp_module_ext\n
 Above extensions are included for compatibility between different media installs.\n\n
 ROM extensions only supported by this install:\n
