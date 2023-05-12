@@ -34,7 +34,7 @@ echo "\t_biosdir: $_biosdir"
 _cmdarr=()
 _cmdarr+=( "$_system" )
 _cmdarr+=( "-rp" )
-_cmdarr+=( "$_biosdir" )
+_cmdarr+=( "\"$_biosdir\"" )
 _cmdarr+=( "-cfg_directory" )
 _cmdarr+=( "$_cfgdir" )
 
