@@ -149,19 +149,19 @@ function subgui_systems_default_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-"$(if [[ $(arch) == arm* ]];then echo -e ,Display all upon descriptions,,create_systems_list_mamedev descriptions,,,,,show_message_mamedev \\\"Install one or more systems with default options\\\",;else echo -e ,\\Z1Displaying all upon descriptions not available on 64bit OS,,,,,,,,;fi)"
-",Display all upon system names,,create_systems_list_mamedev systems,,,,,show_message_mamedev \"Install one or more systems with default options\","
+",System names : SEARCH and display list,,subgui_search_mamedev systems,,,,,show_message_mamedev \"Search and create a list and then install one or more systems with default options\","
+",System names : Display alphabetical > submenu,,subgui_alphabetical_order_selection_mamedev systems,,,,,show_message_mamedev \"Select a list and then install one or more systems with default options\","
+",System names : Display all,,choose_add systems,,,,,show_message_mamedev \"Install one or more systems with default options\","
 ",,,,,,,,,"
-",Display alphabetical submenu upon descriptions,,subgui_alphabetical_order_selection_mamedev descriptions,,,,,show_message_mamedev \"Select a list and then install one or more systems with default options\","
-",Display alphabetical submenu upon system names,,subgui_alphabetical_order_selection_mamedev systems,,,,,show_message_mamedev \"Select a list and then install one or more systems with default options\","
+",System names : Display predefined sorted lists,,subgui_lists_mamedev,,,,,show_message_mamedev \"Select a list and then install one or more systems with default options\","
 ",,,,,,,,,"
-",SEARCH and display upon descriptions,,subgui_search_mamedev descriptions,,,,,show_message_mamedev \"Search and create a list and then install one or more systems with default options\","
-",SEARCH and display upon system names,,subgui_search_mamedev systems,,,,,show_message_mamedev \"Search and create a list and then install one or more systems with default options\","
-",,,,,,,,,"
-",Display predefined sorted lists,,subgui_lists_mamedev,,,,,show_message_mamedev \"Select a list and then install one or more systems with default options\","
+",System descriptions : SEARCH and display list,,subgui_search_mamedev descriptions,,,,,show_message_mamedev \"Search and create a list and then install one or more systems with default options\","
+",System descriptions : Display alphabetical > submenu,,subgui_alphabetical_order_selection_mamedev descriptions,,,,,show_message_mamedev \"Select a list and then install one or more systems with default options\","
     )
     build_menu_mamedev
 }
+#"$(if [[ $(arch) == arm* ]];then echo -e ,Display all upon descriptions,,create_systems_list_mamedev descriptions,,,,,show_message_mamedev \\\"Install one or more systems with default options\\\",;else echo -e ,\\Z1Displaying all upon descriptions not available on 64bit OS,,,,,,,,;fi)"
+
 
 
 function subgui_lists_mamedev() {
@@ -755,7 +755,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.04)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.05)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
