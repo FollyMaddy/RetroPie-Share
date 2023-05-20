@@ -1199,7 +1199,7 @@ function get_sys_command() {
     COMMAND="${COMMAND//\%CLEANBASENAME\%/$(clean_name "$ROM_BN")}"
     COMMAND="${COMMAND//\%DQUOTE\%/\"}"
     COMMAND="${COMMAND//\%ROMDIR\%/${ROM%/*}}"
-    if [[ ${ROMDIR} == *_* ]];then
+    if [[ ${ROMDIR} == *roms/*/*_* ]];then
     	COMMAND="${COMMAND//\%SOFTLIST\%/${ROMDIR##*/}:}"
     else
     	COMMAND="${COMMAND//\%SOFTLIST\%/}"
