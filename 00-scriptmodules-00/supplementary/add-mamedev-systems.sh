@@ -35,6 +35,7 @@ local system_read
 
 
 function depends_add-mamedev-systems() {
+    mamedev_csv=()
     getDepends curl python3 figlet toilet asciinema
     [[ ! -f /opt/retropie/emulators/mame/mame0253_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0253_systems_sorted_info -o /opt/retropie/emulators/mame/mame0253_systems_sorted_info
 }
@@ -866,7 +867,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0253.05" 22 76 16)
+	Version 0253.07" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1040,8 +1041,8 @@ fi
 mkdir -p  /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
 chown -R $user:$user "/home/$user/RetroPie-Setup/ext/RetroPie-Share"
 
-#get the run_mess.sh, edited by RusselBcheck, if the specific run_mess.sh isn't saved in ~/RetroPie-Setup/scriptmodules
-if [[ $(sha1sum /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) != 9da9973fc04183e29fcd453d1367bef471f8248c* ]];then
+#get the run_mess.sh, edited by RusselB, and check if the specific run_mess.sh is already in ~/RetroPie-Setup/scriptmodules
+if [[ $(sha1sum /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) != ffdd59b2d807fdf4b4b45bcc72dcf5933a5796da* ]];then
 echo "install @valerino run_mess.sh script (the RusselB version)"
 wget -q -nv -O /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/run_mess.sh
 #change ownership to normal user
@@ -1939,11 +1940,11 @@ clear
 #$1 = github_directory $2=target_directory $3=extension_of_the_multiple_files
 echo "get all files and put these in the correct path"
 echo
-curl -s https://github.com/$1|grep \.$3 | cut -d\" -f 6| while read file
+curl -s https://github.com/$1|grep \.$3 | cut -d\" -f 6| while read github_file
 do 
-echo downloading $file to $2
-curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $file|sed 's/ /%20/g') > "$2/$file"
-chown $user:$user "$2/$file"
+echo downloading $github_file to $2
+curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $file|sed 's/ /%20/g') > "$2/$github_file"
+chown $user:$user "$2/$github_file"
 done
 }
 
