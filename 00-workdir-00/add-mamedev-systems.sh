@@ -90,7 +90,7 @@ function gui_add-mamedev-systems() {
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
 ",About this script,,dialog_message \"This project makes use of MAME and LR-MESS for emulating.\nMAME and LR-MESS support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to create/install module-scripts on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- Orionsangel : creating realistic arcade overlays\",,,,,dialog_message \"NO HELP\","
-",Update add-mamedev-systems script and database,,wget -O $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/add-mamedev-systems.sh;chown $user:$user $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0253_systems_sorted_info -o /opt/retropie/emulators/mame/mame0253_systems_sorted_info;rp_registerAllModules;dialog_message \"\n\n\n\n\n\n\n\n------------- Exit and re-load add-mamedev-systems again ! -------------\",,,,,," 
+",Update add-mamedev-systems script and database,,wget -O $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-workdir-00/supplementary/add-mamedev-systems.sh;chown $user:$user $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/add-mamedev-systems.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/add-mamedev-systems.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0253_systems_sorted_info -o /opt/retropie/emulators/mame/mame0253_systems_sorted_info;rp_registerAllModules;dialog_message \"\n\n\n\n\n\n\n\n------------- Exit and re-load add-mamedev-systems again ! -------------\",,,,,," 
 ",,,,,,,,,"
 ",Install MAME    ( required by this script ) =>  ARCADE+NON-ARCADE,,package_setup mame,,,,,dialog_message \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MESS ( should be installed too ) =>   NON-ARCADE only,,package_setup lr-mess,,,,,dialog_message \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
@@ -867,7 +867,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	Version 0253.06" 22 76 16)
+	Version 0253.07" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1946,11 +1946,11 @@ clear
 #$1 = github_directory $2=target_directory $3=extension_of_the_multiple_files
 echo "get all files and put these in the correct path"
 echo
-curl -s https://github.com/$1|grep \.$3 | cut -d\" -f 6| while read file
+curl -s https://github.com/$1|grep \.$3 | cut -d\" -f 6| while read github_file
 do 
-echo downloading $file to $2
-curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $file|sed 's/ /%20/g') > "$2/$file"
-chown $user:$user "$2/$file"
+echo downloading $github_file to $2
+curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $file|sed 's/ /%20/g') > "$2/$github_file"
+chown $user:$user "$2/$github_file"
 done
 }
 
