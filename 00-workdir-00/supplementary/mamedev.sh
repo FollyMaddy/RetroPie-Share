@@ -756,7 +756,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP TEST 0253.07)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP TEST 0253.08)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -884,7 +884,7 @@ chown $user:$user "/home/$user/RetroPie-Setup/scriptmodules/run_mess.sh"
 fi
 
 #install patched runcommand.sh script with extra needed replace tokens
-if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 7ffa61d7e3b0b6fbfc7b7fb606a78f2185b52011* ]];then
+if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 65f5883322aa40fab9b889eccbb2f48b0c582f55* ]];then
 echo "install patched runcommand.sh script with extra needed replace tokens"
 wget -q -nv -O /opt/retropie/supplementary/runcommand/runcommand.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/runcommand.sh
 fi
