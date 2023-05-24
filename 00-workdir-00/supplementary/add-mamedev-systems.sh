@@ -38,6 +38,18 @@ function depends_add-mamedev-systems() {
     mamedev_csv=()
     getDepends curl python3 figlet toilet asciinema
     [[ ! -f /opt/retropie/emulators/mame/mame0253_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0253_systems_sorted_info -o /opt/retropie/emulators/mame/mame0253_systems_sorted_info
+    #get the run_mess.sh, edited by RusselB, and check if the specific run_mess.sh is already in ~/RetroPie-Setup/scriptmodules
+    if [[ $(sha1sum /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) != ffdd59b2d807fdf4b4b45bcc72dcf5933a5796da* ]];then
+    echo "install @valerino run_mess.sh script (the RusselB version)"
+    wget -q -nv -O /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/run_mess.sh
+    #change ownership to normal user
+    chown $user:$user "/home/$user/RetroPie-Setup/scriptmodules/run_mess.sh"
+    fi
+    #install patched runcommand.sh script with extra needed replace tokens
+    if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 65f5883322aa40fab9b889eccbb2f48b0c582f55* ]];then
+    echo "install patched runcommand.sh script with extra needed replace tokens"
+    wget -q -nv -O /opt/retropie/supplementary/runcommand/runcommand.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/runcommand.sh
+    fi
 }
 
 
@@ -328,6 +340,7 @@ function choose_extra_options_add() {
 ",MSX2 Sony HB-F700P + fmpac + floppy support,@non-arcade,run_generator_script hbf700p msx2 fmpac floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -fmpac,,,,,dialog_message \"NO HELP\","
 ",MSX2 Sony HB-F700P + SCC_snatcher + floppy support,@non-arcade,run_generator_script hbf700p msx2 -cart2*snatcher floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -SCC_snatcher,,,,,dialog_message \"NO HELP\","
 ",MSX2 Sony HB-F700P + SCC_sdsnatch + floppy support,@non-arcade,run_generator_script hbf700p msx2 -cart2*sdsnatch floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -SCC_sdsnatch,,,,,dialog_message \"NO HELP\","
+",PC Engine + Super CD-ROM System support (-> HELP),@non-arcade,run_generator_script pce pcecd scdsys cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr -scdsys,,,,,dialog_message \"This will install PC Engine CD (pcecd).\n\nThis BIOS is needed :\nscdsys.zip\nThe file can be found in pce.zip from the mame-sl rompackage.\nThe BIOS file can be placed inside the folder :\n~/RetroPie/BIOS/mame/pce\","
 ",Tandy MC-10 micro color computer + 16k + cassette support,@non-arcade,run_generator_script mc10 mc10 -ext*ram cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -16k,,,,,dialog_message \"NO HELP\","
 ",Tandy MC-10 micro color computer + MCX_128k + cassette support,@non-arcade,run_generator_script mc10 mc10 -ext*mcx128 cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -MCX_128k,,,,,dialog_message \"NO HELP\","
 ",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,@non-arcade,run_generator_script trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .wav*.cas.mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1 -DOS_in_flop1,,,,,dialog_message \"NO HELP\","
@@ -867,7 +880,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	TEST 0253.08" 22 76 16)
+	TEST 0253.09" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
