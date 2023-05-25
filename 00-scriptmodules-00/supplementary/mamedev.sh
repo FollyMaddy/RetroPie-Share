@@ -256,7 +256,7 @@ function subgui_systems_extras_add_options_mamedev() {
 ",MSX2 Sony HB-F700P + fmpac + floppy support,@non-arcade,install_system_mamedev hbf700p msx2 fmpac floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -fmpac,,,,,show_message_mamedev \"NO HELP\","
 ",MSX2 Sony HB-F700P + SCC_snatcher + floppy support,@non-arcade,install_system_mamedev hbf700p msx2 -cart2*snatcher floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -SCC_snatcher,,,,,show_message_mamedev \"NO HELP\","
 ",MSX2 Sony HB-F700P + SCC_sdsnatch + floppy support,@non-arcade,install_system_mamedev hbf700p msx2 -cart2*sdsnatch floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -SCC_sdsnatch,,,,,show_message_mamedev \"NO HELP\","
-",PC Engine + Super CD-ROM System support (-> HELP),@non-arcade,install_system_mamedev pce pcecd scdsys cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr -scdsys,,,,,dialog_message \"This will install PC Engine CD (pcecd).\n\nThis BIOS is needed :\nscdsys.zip\nThe file can be found in pce.zip from the mame-sl rompackage.\nThe BIOS file can be placed inside the folder :\n~/RetroPie/BIOS/mame/pce\","
+",PC Engine + Super CD-ROM System support (-> HELP),@non-arcade,install_system_mamedev pce pce-cd scdsys cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr -scdsys,,,,,dialog_message \"Good to know :\nMame does not have a separate driver for PC Engine CD.\nPC Engine together with the Super CD-ROM System rom will make a :\nPC Engine CD\n\nThis will install PC Engine CD (pce-cd).\n\nThis BIOS is needed :\nscdsys.zip\nThe file can be found in pce.zip from the mame-sl rompackage.\nThe BIOS file can be placed inside the folder :\n~/RetroPie/BIOS/mame/pce\","
 ",Tandy MC-10 micro color computer + 16k + cassette support,@non-arcade,install_system_mamedev mc10 mc10 -ext*ram cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -16k,,,,,show_message_mamedev \"NO HELP\","
 ",Tandy MC-10 micro color computer + MCX_128k + cassette support,@non-arcade,install_system_mamedev mc10 mc10 -ext*mcx128 cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -MCX_128k,,,,,show_message_mamedev \"NO HELP\","
 ",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,@non-arcade,install_system_mamedev trs80m3 trs80m3 -flop1*~/RetroPie/BIOS/mame/trsdos.zip floppydisk2 flop2 .wav*.cas.mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1 -DOS_in_flop1,,,,,show_message_mamedev \"NO HELP\","
@@ -757,7 +757,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.08)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.10)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1136,6 +1136,8 @@ systemsrp+=( "msx2+" )
 descriptionsrp+=( "MSX2+" )
 systemsrp+=( "msxturbor" )
 descriptionsrp+=( "MSX Turbo-R" )
+systemsrp+=( "neogeo-cd" )
+descriptionsrp+=( "Neo-Geo CD" )
 for L in France Germany Italy Netherlands Spain Sweden Switzerland UK USA;do
  systemsrp+=( "atarist" )
  descriptionsrp+=( "ST ($L)" )
