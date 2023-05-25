@@ -757,7 +757,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.10)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 0253.11)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1128,8 +1128,10 @@ systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Master" )
 systemsrp+=( "dragon64" )
 descriptionsrp+=( "Dragon 64" )
-systemsrp+=( "dragon64" )
-descriptionsrp+=( "Dragon 64" )
+systemsrp+=( "sega32-cd" )
+descriptionsrp+=( "Mega-CD with 32X" )
+systemsrp+=( "sega32-cd" )
+descriptionsrp+=( "Sega CD with 32X" )
 systemsrp+=( "msx2" )
 descriptionsrp+=( "MSX2" )
 systemsrp+=( "msx2+" )
