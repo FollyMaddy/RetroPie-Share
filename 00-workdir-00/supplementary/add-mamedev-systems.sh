@@ -880,7 +880,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	TEST 0253.11" 22 76 16)
+	TEST 0253.12" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1046,7 +1046,7 @@ echo "read the mame romset groups, used for RetroPie naming"
  #
  unset IFS
 fi
-else echo skip reading mame data
+else echo "skip reading mame data"
 fi
 
 #part 1 : prepair some things first
@@ -1117,7 +1117,9 @@ fi
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo "read the system/description, ExtraPredefinedOption(s) and RetroPie system name from commandline options"
+echo "read the system driver name from the commandline options"
+echo "read the RetroPie system name from commandline options"
+echo "read the ExtraPredefinedOption(s) from the commandline options"
 systems+=( "$1" )
 #by using the systems name as a description we don't have matches in part 10
 #therefor we can force our own RetroPie name 
@@ -1165,7 +1167,7 @@ fi
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo read the media extension from commandline options
+echo "read the media extension(s) from commandline options"
 #will be the same as extensions in part 6
 allextensions+=( "$(echo $6|sed 's/*/ /g')" )
 else
@@ -1194,7 +1196,7 @@ fi
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo read the media data from commandline options
+echo "read the media data from commandline options"
 index=0
 mediadescriptions+=( "$4")
 # use the third column if seperated by a space and remove ( ) characters and add - for media
@@ -1233,7 +1235,10 @@ fi
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo skip reading computer description from mame
+echo "skip reading computer description from mame"
+echo "skip reading and matching RetroPie names with mamedev names"
+echo "MAME information -> (Skipped)"
+echo "RetroPie install -> $2 (Using predefined system name)"
 else
 echo "read computer description(s)"
 #a manual command example would be :
@@ -1243,7 +1248,7 @@ echo "read computer description(s)"
 #
 # keep the good info and delete text in lines ( "Driver"(cut), "system"(sed), "):"(sed) )
 for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" ); done
-fi
+#fi #expanded if to the end of part 11 skipping parts 7,8,9,10 and 11
 
 #part 8 : read RetroPie systems and descriptions from the platforms.cfg
 echo "read and match RetroPie names with mamedev names"
@@ -1368,23 +1373,25 @@ newsystems+=( "${systems[@]}" )
   done
 
   #check the mamedev descriptions against the RetroPie descriptions
-  echo "searching for matching names, when different matches occour then the last name is used !"
+  #searching for matching names, when different matches occour then the last name is used !
   for mamedevindex in "${!descriptions[@]}"; do
     for rpindex in "${!descriptionsrp[@]}"; do
       #create an empty array and split the the retropie name descriptions into seperate "words" in an array
       splitdescriptionsrp=()
       IFS=$' ' GLOBIGNORE='*' command eval  'splitdescriptionsrp=($(echo ${descriptionsrp[$rpindex]}))'
-      #check if every "word" is in the mess name descriptions * *=globally , " "=exact, 
+      #check if every "word" is in the mamedev descriptions * *=globally , " "=exact, 
       #!!! exact matching does not work here, because many times you are matching 1 "word" against multiple "words" !!!
       if [[ "${descriptions[$mamedevindex]}" == *${splitdescriptionsrp[@]}* ]]; then
         # If descriptions are exactly the same then use the system name of retropie as romdirectory
         # for the other arrays we use the mamedev information
         newsystems[$mamedevindex]=${systemsrp[$rpindex]}
-        echo "match - mamedev(description) - ${descriptions[$mamedevindex]} -- rp(description) - ${descriptionsrp[$rpindex]}"
-        echo "match - mamedev(romdir) - ${systems[$mamedevindex]} -- rp(romdir) - ${newsystems[$mamedevindex]} (RetroPie name is used)"
+        #echo "match - mamedev(description) - ${descriptions[$mamedevindex]} -- rp(description) - ${descriptionsrp[$rpindex]}"
+        #echo "match - mamedev(romdir) - ${systems[$mamedevindex]} -- rp(romdir) - ${newsystems[$mamedevindex]} (RetroPie name is used)"
+	lastdescriptionmatch=${descriptionsrp[$rpindex]}
       fi
     done
   done
+echo "MAME information -> ${systems[$mamedevindex]} (${descriptions[$mamedevindex]})"
 
 
 #part 11 : match the added @DTEAM/RetroPie descriptions to the mamedev descriptions
@@ -1392,7 +1399,7 @@ newsystems+=( "${systems[@]}" )
 #now only two "for loops" can be use for checking multiple arrays against the RetroPie names
 #note:some systems are not added because they should be recognised in a normal way
 dteam_systems=("all_in1" "classich" "konamih" "tigerh" "driving" "maze" "pinball" "puzzle" "shooter" "slot_machine" "sport" "neogeo" "nintendovs" "megaplay" "playchoice10" "deco_cassette")
-
+lastcategorymatch=false
 #multiple arrays over one for loop:
 #https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
 
@@ -1401,17 +1408,22 @@ for mamedevindex in "${!systems[@]}"; do
     declare -n games="$dteam_system"
     #testline#echo "system name: ${dteam_system} with system members: ${games[@]}"
     for game in "${games[@]}"; do
-        #compare array game names with the mess systems ( * *=globally , " "=exact ) 
+        #compare array game names with the mamedev systems ( * *=globally , " "=exact ) 
         #testline#echo "${systems[$mamedevindex]}" == "$game"
         if [[ "${systems[$mamedevindex]}" == "$game" ]]; then
         # If descriptions are exactly the same then use the system name of retropie as romdirectory
-        # for the other arrays we use the mess information
+        # for the other arrays we use the mamedev information
         newsystems[$mamedevindex]=$dteam_system
-        echo "Now using pseudo RetroPie systemname for ${systems[$mamedevindex]} becomes ${newsystems[$mamedevindex]}"
-      fi
+	echo "RetroPie install -> ${newsystems[$mamedevindex]} (using pseudo name/category name)"
+	lastcategorymatch=true
+	fi
     done
   done
 done
+[[ $lastcategorymatch == false ]] && [[ -n $lastdescriptionmatch ]] && echo "RetroPie install -> ${newsystems[$mamedevindex]} ($lastdescriptionmatch)"
+
+  fi  #expanded if from part 7 skipping parts 7,8,9,10 and 11
+
 
 # test line total output
 #for index in "${!systems[@]}"; do echo $index ${systems[$index]} -- ${newsystems[$index]} | more ; echo -ne '\n'; done

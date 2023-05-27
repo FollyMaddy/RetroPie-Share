@@ -737,6 +737,8 @@ function build_menu_mamedev() {
     local default
     local i
     local run
+    local lastdescriptionmatch
+    local lastcategorymatch
     IFS=","
     if [[ $1 == descriptions ]]; then
     for i in ${!csv[@]}; do set ${csv[$i]}; options+=("$i" "$3");done
@@ -769,7 +771,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP TEST 0253.11)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP TEST 0253.12)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -880,7 +882,7 @@ echo "read the mame romset groups, used for RetroPie naming"
  #
  unset IFS
 fi
-else echo skip reading mame data
+else echo "skip reading mame data"
 fi
 
 #part 1 : prepair some things first
@@ -951,7 +953,9 @@ fi
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo "read the system/description, ExtraPredefinedOption(s) and RetroPie system name from commandline options"
+echo "read the system driver name from the commandline options"
+echo "read the RetroPie system name from commandline options"
+echo "read the ExtraPredefinedOption(s) from the commandline options"
 systems+=( "$1" )
 #by using the systems name as a description we don't have matches in part 10
 #therefor we can force our own RetroPie name 
@@ -999,7 +1003,7 @@ fi
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo read the media extension from commandline options
+echo "read the media extension(s) from commandline options"
 #will be the same as extensions in part 6
 allextensions+=( "$(echo $6|sed 's/*/ /g')" )
 else
@@ -1028,7 +1032,7 @@ fi
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo read the media data from commandline options
+echo "read the media data from commandline options"
 index=0
 mediadescriptions+=( "$4")
 # use the third column if seperated by a space and remove ( ) characters and add - for media
@@ -1067,7 +1071,10 @@ fi
 #if added more than one option then we have added extra information about extra predefined options and it's usable media
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
-echo skip reading computer description from mame
+echo "skip reading computer description from mame"
+echo "skip reading and matching RetroPie names with mamedev names"
+echo "MAME information -> (Skipped)"
+echo "RetroPie install -> $2 (Using predefined system name)"
 else
 echo "read computer description(s)"
 #a manual command example would be :
@@ -1077,7 +1084,7 @@ echo "read computer description(s)"
 #
 # keep the good info and delete text in lines ( "Driver"(cut), "system"(sed), "):"(sed) )
 for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" ); done
-fi
+#fi #expanded if to the end of part 11 skipping parts 7,8,9,10 and 11
 
 #part 8 : read RetroPie systems and descriptions from the platforms.cfg
 echo "read and match RetroPie names with mamedev names"
@@ -1202,23 +1209,25 @@ newsystems+=( "${systems[@]}" )
   done
 
   #check the mamedev descriptions against the RetroPie descriptions
-  echo "searching for matching names, when different matches occour then the last name is used !"
+  #searching for matching names, when different matches occour then the last name is used !
   for mamedevindex in "${!descriptions[@]}"; do
     for rpindex in "${!descriptionsrp[@]}"; do
       #create an empty array and split the the retropie name descriptions into seperate "words" in an array
       splitdescriptionsrp=()
       IFS=$' ' GLOBIGNORE='*' command eval  'splitdescriptionsrp=($(echo ${descriptionsrp[$rpindex]}))'
-      #check if every "word" is in the mess name descriptions * *=globally , " "=exact, 
+      #check if every "word" is in the mamedev descriptions * *=globally , " "=exact, 
       #!!! exact matching does not work here, because many times you are matching 1 "word" against multiple "words" !!!
       if [[ "${descriptions[$mamedevindex]}" == *${splitdescriptionsrp[@]}* ]]; then
         # If descriptions are exactly the same then use the system name of retropie as romdirectory
         # for the other arrays we use the mamedev information
         newsystems[$mamedevindex]=${systemsrp[$rpindex]}
-        echo "match - mamedev(description) - ${descriptions[$mamedevindex]} -- rp(description) - ${descriptionsrp[$rpindex]}"
-        echo "match - mamedev(romdir) - ${systems[$mamedevindex]} -- rp(romdir) - ${newsystems[$mamedevindex]} (RetroPie name is used)"
+        #echo "match - mamedev(description) - ${descriptions[$mamedevindex]} -- rp(description) - ${descriptionsrp[$rpindex]}"
+        #echo "match - mamedev(romdir) - ${systems[$mamedevindex]} -- rp(romdir) - ${newsystems[$mamedevindex]} (RetroPie name is used)"
+	lastdescriptionmatch=${descriptionsrp[$rpindex]}
       fi
     done
   done
+echo "MAME information -> ${systems[$mamedevindex]} (${descriptions[$mamedevindex]})"
 
 
 #part 11 : match the added @DTEAM/RetroPie descriptions to the mamedev descriptions
@@ -1226,7 +1235,7 @@ newsystems+=( "${systems[@]}" )
 #now only two "for loops" can be use for checking multiple arrays against the RetroPie names
 #note:some systems are not added because they should be recognised in a normal way
 dteam_systems=("all_in1" "classich" "konamih" "tigerh" "driving" "maze" "pinball" "puzzle" "shooter" "slot_machine" "sport" "neogeo" "nintendovs" "megaplay" "playchoice10" "deco_cassette")
-
+lastcategorymatch=false
 #multiple arrays over one for loop:
 #https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
 
@@ -1235,17 +1244,22 @@ for mamedevindex in "${!systems[@]}"; do
     declare -n games="$dteam_system"
     #testline#echo "system name: ${dteam_system} with system members: ${games[@]}"
     for game in "${games[@]}"; do
-        #compare array game names with the mess systems ( * *=globally , " "=exact ) 
+        #compare array game names with the mamedev systems ( * *=globally , " "=exact ) 
         #testline#echo "${systems[$mamedevindex]}" == "$game"
         if [[ "${systems[$mamedevindex]}" == "$game" ]]; then
         # If descriptions are exactly the same then use the system name of retropie as romdirectory
-        # for the other arrays we use the mess information
+        # for the other arrays we use the mamedev information
         newsystems[$mamedevindex]=$dteam_system
-        echo "Now using pseudo RetroPie systemname for ${systems[$mamedevindex]} becomes ${newsystems[$mamedevindex]}"
-      fi
+	echo "RetroPie install -> ${newsystems[$mamedevindex]} (using pseudo name/category name)"
+	lastcategorymatch=true
+	fi
     done
   done
 done
+[[ $lastcategorymatch == false ]] && [[ -n $lastdescriptionmatch ]] && echo "RetroPie install -> ${newsystems[$mamedevindex]} ($lastdescriptionmatch)"
+
+  fi  #expanded if from part 7 skipping parts 7,8,9,10 and 11
+
 
 # test line total output
 #for index in "${!systems[@]}"; do echo $index ${systems[$index]} -- ${newsystems[$index]} | more ; echo -ne '\n'; done
@@ -1260,7 +1274,6 @@ done
 # in the name of the runcommand "lr-*" is used for compatibility with runcommand.sh 
 # because mame is added and because mame is using this BIOS dir : /home/$user/RetroPie/BIOS/mame
 # the lr-mess command is changed to use the same BIOS dir
-echo "installing runcommands with media option"
 
 	local _retroarch_bin="$rootdir/emulators/retroarch/bin/retroarch"
 	local _mess_core=/opt/retropie/libretrocores/lr-mess/mamemess_libretro.so
@@ -1284,12 +1297,12 @@ echo "installing runcommands with media option"
 	iniSet "mame_softlists_enable" "disabled"
 	iniSet "mame_softlists_auto_media" "disabled"
 	iniSet "mame_boot_from_cli" "enabled"
-        iniSet "mame_mouse_enable" "enabled"
+	iniSet "mame_mouse_enable" "enabled"
 
 	# ensure using a custom per-fake-core config for basename loaders using softlist
 	iniConfig " = " "\"" "$_basename_coreconfig"
 	iniSet "mame_boot_from_cli" "enabled"
-        iniSet "mame_mouse_enable" "enabled"
+	iniSet "mame_mouse_enable" "enabled"
 
 	# ensure custom per-fake-core configs get loaded too via --appendconfig
 	iniConfig " = " "\"" "$_add_config"
@@ -1299,7 +1312,7 @@ echo "installing runcommands with media option"
 	iniSet "core_options_path" "$_basename_coreconfig"
 	[[ $_system == *90º ]]&&iniSet "screen_orientation" "3"
 
-    	echo "enable cheats for lr-mame/lr-mess in $configdir/all/retroarch-core-options.cfg"
+	echo "enable cheats for lr-mame/lr-mess in $configdir/all/retroarch-core-options.cfg"
 	iniConfig " = " "\"" "$configdir/all/retroarch-core-options.cfg"
 	iniSet "mame_cheats_enable" "enabled"
 
@@ -1331,6 +1344,7 @@ echo "installing runcommands with media option"
  	# ensure run_mess.sh script is executable
 	chmod 755 "$_script"
 
+	echo "install runcommands with media option(s) for non-softlist loading, if possible"
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
@@ -1366,7 +1380,8 @@ done
 # in order to switch between emulators at retropie rom boot
 # we have to add these extensions
 # otherwise extensions supported by other emulators will not be shown anymore
-echo "install basename runcommands and runcommannds for handmade .cmd files"
+echo "install basename runcommands for softlist loading"
+echo "install runcommannds for loading handmade .cmd files"
 # grep function is used to get all extensions compatible with all possible emulation methods so switching within emulationstation is possible
 # grep searches in both platform.cfg and the ext/RetroPie-Share/platforms.cfg , so also extensions are added that are not in platform.cfg 
 # using grep this way can create double extension, but this should not be a problem
