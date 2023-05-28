@@ -1220,7 +1220,7 @@ if [[ -n "$2" ]]; then
 echo "skip reading computer description from mame"
 echo "skip reading and matching RetroPie names with mamedev names"
 echo "MAME information -> (Skipped)"
-echo "RetroPie install -> $2 (Using predefined system name)"
+echo "RetroPie install -> $2 (Using predefined pseudo system name / category name)"
 else
 echo "read computer description(s)"
 #a manual command example would be :
@@ -1396,7 +1396,7 @@ for mamedevindex in "${!systems[@]}"; do
         # If descriptions are exactly the same then use the system name of retropie as romdirectory
         # for the other arrays we use the mamedev information
         newsystems[$mamedevindex]=$dteam_system
-	echo "RetroPie install -> ${newsystems[$mamedevindex]} (using pseudo name/category name)"
+	echo "RetroPie install -> ${newsystems[$mamedevindex]} (Using pseudo system name / category name)"
 	lastcategorymatch=true
 	fi
     done
