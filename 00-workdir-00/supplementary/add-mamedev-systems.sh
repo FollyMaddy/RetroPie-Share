@@ -1414,7 +1414,7 @@ for mamedevindex in "${!systems[@]}"; do
         # If descriptions are exactly the same then use the system name of retropie as romdirectory
         # for the other arrays we use the mamedev information
         newsystems[$mamedevindex]=$dteam_system
-	echo "RetroPie install -> ${newsystems[$mamedevindex]} (using pseudo system name / category name)"
+	echo "RetroPie install -> ${newsystems[$mamedevindex]} (Using pseudo system name / category name)"
 	lastcategorymatch=true
 	fi
     done
