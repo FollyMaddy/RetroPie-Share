@@ -1056,7 +1056,7 @@ if [[ -n "$2" ]]; then
 echo "skip reading computer description from mame"
 echo "skip reading and matching RetroPie names with mamedev names"
 echo "MAME information -> (Skipped)"
-echo "RetroPie install -> $2 (Using predefined system name / category name)"
+echo "RetroPie install -> $2 (Using predefined pseudo system name / category name)"
 else
 echo "read computer description(s)"
 #a manual command example would be :
