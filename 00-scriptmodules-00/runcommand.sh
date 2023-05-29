@@ -1200,6 +1200,10 @@ function get_sys_command() {
     COMMAND="${COMMAND//\%DQUOTE\%/\"}"
     COMMAND="${COMMAND//\%ROMDIR\%/${ROM%/*}}"
     if [[ ${ROMDIR} == *roms/*/*_* ]];then
+        [[ ${ROMDIR} == *msx1_bee_card* ]] && \
+        COMMAND="${COMMAND//\%SOFTLIST\%/-cartslot1 beepack ${ROMDIR##*/}:}"
+        [[ ${ROMDIR} == *msx_softcard* ]] && \
+        COMMAND="${COMMAND//\%SOFTLIST\%/-cartslot1 softcard ${ROMDIR##*/}:}"
     	COMMAND="${COMMAND//\%SOFTLIST\%/${ROMDIR##*/}:}"
     else
     	COMMAND="${COMMAND//\%SOFTLIST\%/}"
