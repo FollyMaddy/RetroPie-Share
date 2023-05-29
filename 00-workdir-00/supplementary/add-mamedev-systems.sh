@@ -46,7 +46,7 @@ function depends_add-mamedev-systems() {
     chown $user:$user "/home/$user/RetroPie-Setup/scriptmodules/run_mess.sh"
     fi
     #install patched runcommand.sh script with extra needed replace tokens
-    if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 725f43f31167930e9b0a1fbcc36ac9dc6e61a8b0* ]];then
+    if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 739b6c7e50c6b4e2d048ea85f93ab8c71b1a1d74* ]];then
     echo "install patched runcommand.sh script with extra needed replace tokens"
     wget -q -nv -O /opt/retropie/supplementary/runcommand/runcommand.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/runcommand.sh
     fi
@@ -880,7 +880,7 @@ function build_menu_add-mamedev-systems() {
     unset 'options[0]'; unset 'options[1]' 
     while true; do
         local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	\
-	TEST 0253.13" 22 76 16)
+	TEST 0253.14" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1064,7 +1064,7 @@ chown $user:$user "/home/$user/RetroPie-Setup/scriptmodules/run_mess.sh"
 fi
 
 #install patched runcommand.sh script with extra needed replace tokens
-if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 725f43f31167930e9b0a1fbcc36ac9dc6e61a8b0* ]];then
+if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 739b6c7e50c6b4e2d048ea85f93ab8c71b1a1d74* ]];then
 echo "install patched runcommand.sh script with extra needed replace tokens"
 wget -q -nv -O /opt/retropie/supplementary/runcommand/runcommand.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/runcommand.sh
 fi
@@ -1701,9 +1701,9 @@ if [[ $SystemType == non-arcade ]];then
 	#only issue after is that the savestate filename still contains 1 space in the beginning of the filename and double quotes
 	#to fix this issue of double quotes the basename can be single quoted to remove them in the filename (we still have 1 space !) 
 	#
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%SOFTLIST%%BASENAME%''"
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%SOFTLIST%%BASENAME%''"
-	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -frameskip 10 -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%SOFTLIST%%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% %ADDSLOT% '%SOFTLIST%%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -autoframeskip -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% %ADDSLOT% '%SOFTLIST%%BASENAME%''"
+	addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mess -c -ui_active -frameskip 10 -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% %ADDSLOT% '%SOFTLIST%%BASENAME%''"
 	
 	#tests for basename loaders using the run_mess script
 	#works ok,but the .cmd files and savestate files are saved in /home/$user
@@ -1714,14 +1714,14 @@ if [[ $SystemType == non-arcade ]];then
 	#addEmulator 0 "lr-run_mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_script \$_retroarch_bin \$_mess_core \$_config $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$biosdir/mame\\;/home/$user/RetroPie/roms/\$_system -c -ui_active -frameskip 10 %SOFTLIST%%BASENAME%"
 else
 	#use lr-mame instead of lr-mess
-	addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mame -c -ui_active -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%SOFTLIST%%BASENAME%''"
-	addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mame -c -ui_active -autoframeskip -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%SOFTLIST%%BASENAME%''"
-	addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mame -c -ui_active -frameskip 10 -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%SOFTLIST%%BASENAME%''"
+	addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mame -c -ui_active -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
+	addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mame -c -ui_active -autoframeskip -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
+	addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "\$_retroarch_bin --config \$_config --appendconfig \$_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L \$_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory \$configdir/\$_system/lr-mame -c -ui_active -frameskip 10 -rompath %DQUOTE%/home/$user/RetroPie/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
 fi
 
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$([[ \$_system == *90º ]]&&echo "-rol") %SOFTLIST%%BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$([[ \$_system == *90º ]]&&echo "-rol") %SOFTLIST%%BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$([[ \$_system == *90º ]]&&echo "-rol") %SOFTLIST%%BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$([[ \$_system == *90º ]]&&echo "-rol") %ADDSLOT% %SOFTLIST%%BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$([[ \$_system == *90º ]]&&echo "-rol") %ADDSLOT% %SOFTLIST%%BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "\$_system" "/opt/retropie/emulators/mame/mame -rompath /home/$user/RetroPie/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) \$([[ \$_system == *90º ]]&&echo "-rol") %ADDSLOT% %SOFTLIST%%BASENAME%"
 
 	# add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
