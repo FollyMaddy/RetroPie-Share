@@ -46,7 +46,7 @@ function depends_mamedev() {
     chown $user:$user "/home/$user/RetroPie-Setup/scriptmodules/run_mess.sh"
     fi
     #install patched runcommand.sh script with extra needed replace tokens
-    if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 65f5883322aa40fab9b889eccbb2f48b0c582f55* ]];then
+    if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 725f43f31167930e9b0a1fbcc36ac9dc6e61a8b0* ]];then
     echo "install patched runcommand.sh script with extra needed replace tokens"
     wget -q -nv -O /opt/retropie/supplementary/runcommand/runcommand.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/runcommand.sh
     fi
@@ -900,7 +900,7 @@ chown $user:$user "/home/$user/RetroPie-Setup/scriptmodules/run_mess.sh"
 fi
 
 #install patched runcommand.sh script with extra needed replace tokens
-if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 65f5883322aa40fab9b889eccbb2f48b0c582f55* ]];then
+if [[ $(sha1sum /opt/retropie/supplementary/runcommand/runcommand.sh 2>&-) != 725f43f31167930e9b0a1fbcc36ac9dc6e61a8b0* ]];then
 echo "install patched runcommand.sh script with extra needed replace tokens"
 wget -q -nv -O /opt/retropie/supplementary/runcommand/runcommand.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/runcommand.sh
 fi
