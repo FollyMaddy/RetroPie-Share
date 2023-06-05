@@ -771,7 +771,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP TEST 0253.14)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP TEST 0253.15)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1073,9 +1073,6 @@ fi
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
 echo "skip reading computer description from mame"
-echo "skip reading and matching RetroPie names with mamedev names"
-echo "MAME information -> (Skipped)"
-echo "RetroPie install -> $2 (Using predefined pseudo system name / category name)"
 else
 echo "read computer description(s)"
 #a manual command example would be :
@@ -1085,7 +1082,7 @@ echo "read computer description(s)"
 #
 # keep the good info and delete text in lines ( "Driver"(cut), "system"(sed), "):"(sed) )
 for index in "${!systems[@]}"; do descriptions+=( "$(/opt/retropie/emulators/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" ); done
-#fi #expanded if to the end of part 11 skipping parts 7,8,9,10 and 11
+fi
 
 #part 8 : read RetroPie systems and descriptions from the platforms.cfg
 echo "read and match RetroPie names with mamedev names"
@@ -1228,7 +1225,11 @@ newsystems+=( "${systems[@]}" )
       fi
     done
   done
+if [[ -n "$2" ]]; then
+echo "MAME information -> (Skipped)"
+else
 echo "MAME information -> ${systems[$mamedevindex]} (${descriptions[$mamedevindex]})"
+fi
 
 
 #part 11 : match the added @DTEAM/RetroPie descriptions to the mamedev descriptions
@@ -1257,10 +1258,14 @@ for mamedevindex in "${!systems[@]}"; do
     done
   done
 done
+if [[ -n "$2" ]]; then
+echo "RetroPie install -> $2 (Using predefined pseudo system name / category name)"
+else
 [[ $lastcategorymatch == false ]] && [[ -n $lastdescriptionmatch ]] && echo "RetroPie install -> ${newsystems[$mamedevindex]} ($lastdescriptionmatch)"
-
-  fi  #expanded if from part 7 skipping parts 7,8,9,10 and 11
-
+[[ $lastcategorymatch == false ]] && [[ -z $lastdescriptionmatch ]] && echo "RetroPie install -> ${newsystems[$mamedevindex]}"
+fi
+#reset variable
+lastdescriptionmatch=
 
 # test line total output
 #for index in "${!systems[@]}"; do echo $index ${systems[$index]} -- ${newsystems[$index]} | more ; echo -ne '\n'; done
@@ -1275,6 +1280,7 @@ done
 # in the name of the runcommand "lr-*" is used for compatibility with runcommand.sh 
 # because mame is added and because mame is using this BIOS dir : /home/$user/RetroPie/BIOS/mame
 # the lr-mess command is changed to use the same BIOS dir
+
 
 	local _retroarch_bin="$rootdir/emulators/retroarch/bin/retroarch"
 	local _mess_core=/opt/retropie/libretrocores/lr-mess/mamemess_libretro.so
