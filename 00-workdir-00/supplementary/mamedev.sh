@@ -603,6 +603,58 @@ dialog \
     	if [[ $(echo $website_url|sha1sum) == 9cf96ce8e6a93bd0c165799d9a0e6bb79beb1fb9* ]];then
 	csv=( 
 ",,,,"
+",v Usage is for your own risk ! v,,,"
+",Install rpi1/0 mame binary (channelf apfm1000 ....),,\
+sed -i 's/ \!armv6//g' /home/$user/RetroPie-Setup/scriptmodules/emulators/mame.sh;\
+curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1enP_Fkpj482JJ9LI7s5Y8bamJunwgOnL -m -P "/tmp";\
+rm -d -r /opt/retropie/emulators/mame;\
+unzip /tmp/mame0255-debian10-_source_patched_for_gcc8.3-rpi1_channelf_apfm1000.zip -d /opt/retropie/emulators/;\
+$scriptdir/retropie_packages.sh mame depends;\
+$scriptdir/retropie_packages.sh mame configure;\
+sed -i 's/\!mali/\!mali \!armv6/g' /home/$user/RetroPie-Setup/scriptmodules/emulators/mame.sh;\
+,,,,,show_message_mamedev \"\
+This menu item does the following :\n\
+- patch the mame module-script for using it temporarily on rpi1/0\n\
+- get the mame binary from google-drive\n\
+- extract it from /tmp to /opt/retropie/emulators\n\
+- the binary will vanish from /tmp after next reboot\n\
+- get depends for mame\n\
+- configure mame for retropie\n\
+- Restore the mame module-script\n\n\
+After this install channelf or apfm1000 from within this script.\n\
+Only use the mame standalone runcommands.\n\
+(lr-mess can be installed but is too slow on the rpi1/0)\n\
+If nessasary use the runcommands with -frameskip 10.\n\n\
+This installs a Debian 10 / gcc8.3 / patched source binary.\n\
+The binary should work on both Debian 10 and Debian 11 based OSes.\n\
+\","
+",Install rpi1/0 mame binary (all drivers),,\
+sed -i 's/ \!armv6//g' /home/$user/RetroPie-Setup/scriptmodules/emulators/mame.sh;\
+curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1aOBPSvQPIbfOjkDeWzf1sbD09Q5EzNE7 -m -P "/tmp";\
+rm -d -r /opt/retropie/emulators/mame;\
+unzip /tmp/mame0255-debian10-_source_patched_for_gcc8.3-rpi1-all.zip -d /opt/retropie/emulators/;\
+$scriptdir/retropie_packages.sh mame depends;\
+$scriptdir/retropie_packages.sh mame configure;\
+sed -i 's/\!mali/\!mali \!armv6/g' /home/$user/RetroPie-Setup/scriptmodules/emulators/mame.sh;\
+,,,,,show_message_mamedev \"\
+This menu item does the following :\n\
+- patch the mame module-script for using it temporarily on rpi1/0\n\
+- get the mame binary from google-drive\n\
+- extract it from /tmp to /opt/retropie/emulators\n\
+- the binary will vanish from /tmp after next reboot\n\
+- get depends for mame\n\
+- configure mame for retropie\n\
+- Restore the mame module-script\n\n\
+After this you are able to install any driver from within this script.\n\
+But remember most drivers will run too slow on the rpi1/0.\n\
+Only use the mame standalone runcommands.\n\
+(lr-mess can be installed but is too slow on the rpi1/0)\n\
+If nessasary use the runcommands with -frameskip 10.\n\n\
+This installs a Debian 10 / gcc8.3 / patched source binary.\n\
+The binary should work on both Debian 10 and Debian 11 based OSes.\n\
+\","
+",,,,"
+",v Next lines are very experimental ! v,,,"
 ",Install mame binary from stickfreaks (armhf(armv7l)/aarch64/x86_64),,install-mame-for-arch,"
 ",Install lr-mame/lr-mess binary (x86/x86_64) <= libretro buildbot,,install-lr-mame-for-x86-or-x86_64,"
 	)
