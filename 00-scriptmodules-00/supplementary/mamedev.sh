@@ -37,8 +37,6 @@ local system_read
 function depends_mamedev() {
     mamedev_csv=()
     getDepends curl python3
-    [[ ! -d /opt/retropie/emulators/mame ]] && mkdir /opt/retropie/emulators/mame
-    [[ ! -f /opt/retropie/emulators/mame/mame0255_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0255_systems_sorted_info -o /opt/retropie/emulators/mame/mame0255_systems_sorted_info
 }
 
 
@@ -67,6 +65,9 @@ function gui_mamedev() {
 
 
 function read_data_mamedev() {
+    #make sure there is a database
+    [[ ! -d /opt/retropie/emulators/mame ]] && mkdir -p /opt/retropie/emulators/mame
+    [[ ! -f /opt/retropie/emulators/mame/mame0255_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0255_systems_sorted_info -o /opt/retropie/emulators/mame/mame0255_systems_sorted_info
     #here we read the systems and descriptions from mame into an array
     #by using next if function the data can be re-used, without reading it every time
     if [[ -z ${mamedev_csv[@]} ]]; then
@@ -760,7 +761,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 255.01)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP version 255.02)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
