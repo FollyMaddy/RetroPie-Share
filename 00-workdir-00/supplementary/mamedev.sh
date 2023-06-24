@@ -37,8 +37,6 @@ local system_read
 function depends_mamedev() {
     mamedev_csv=()
     getDepends curl python3
-    [[ ! -d /opt/retropie/emulators/mame ]] && mkdir -p /opt/retropie/emulators/mame
-    [[ ! -f /opt/retropie/emulators/mame/mame0255_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0255_systems_sorted_info -o /opt/retropie/emulators/mame/mame0255_systems_sorted_info
     #get the run_mess.sh, edited by RusselB, and check if the specific run_mess.sh is already in ~/RetroPie-Setup/scriptmodules
     if [[ $(sha1sum /home/$user/RetroPie-Setup/scriptmodules/run_mess.sh 2>&-) != ffdd59b2d807fdf4b4b45bcc72dcf5933a5796da* ]];then
     echo "install @valerino run_mess.sh script (the RusselB version)"
@@ -79,6 +77,9 @@ function gui_mamedev() {
 
 
 function read_data_mamedev() {
+    #make sure there is a database
+    [[ ! -d /opt/retropie/emulators/mame ]] && mkdir -p /opt/retropie/emulators/mame
+    [[ ! -f /opt/retropie/emulators/mame/mame0255_systems_sorted_info ]] &&  curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame0255_systems_sorted_info -o /opt/retropie/emulators/mame/mame0255_systems_sorted_info
     #here we read the systems and descriptions from mame into an array
     #by using next if function the data can be re-used, without reading it every time
     if [[ -z ${mamedev_csv[@]} ]]; then
@@ -824,7 +825,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP TEST 255.01)" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(WIP TEST 255.02)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
