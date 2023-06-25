@@ -655,6 +655,29 @@ This installs a Debian 10 / gcc8.3 / patched source binary.\n\
 The binary should work on both Debian 10 and Debian 11 based OSes.\n\
 \","
 ",,,,"
+",Install x86_gcc10 mame binary (all drivers),,\
+curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1g5b3OaVIuC4GER-si3QuSJ13P1btn0SQ -m -P "/tmp";\
+rm -d -r /opt/retropie/emulators/mame;\
+unzip /tmp/mame_0.255_x86_gcc10.zip -d /opt/retropie/emulators/;\
+$scriptdir/retropie_packages.sh mame depends;\
+$scriptdir/retropie_packages.sh mame configure;\
+,,,,,show_message_mamedev \"\
+This menu item does the following :\n\
+- get the mame binary from google-drive\n\
+- extract it from /tmp to /opt/retropie/emulators\n\
+- the binary will vanish from /tmp after next reboot\n\
+- get depends for mame\n\
+- configure mame for retropie\n\
+After this you are able to install any driver from within this script.\n\
+Depending on your processor drivers can run too slow or run ok.\n\
+If nessasary use the runcommands with -frameskip 10.\n\n\
+This installs a Debian 11 / gcc10 / 32 bits / x86 binary.\n\
+The binary is compiled for x86 prescott architecture.\n\
+For example : atom and pentium processors should work.\n\
+The binary works on Debian 11 based OSes.\n\
+\","
+",,,,"
+",,,,"
 ",v Next lines are very experimental ! v,,,"
 ",Install mame binary from stickfreaks (armhf(armv7l)/aarch64/x86_64),,install-mame-for-arch,"
 ",Install lr-mame/lr-mess binary (x86/x86_64) <= libretro buildbot,,install-lr-mame-for-x86-or-x86_64,"
