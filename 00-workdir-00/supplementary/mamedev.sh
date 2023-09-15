@@ -49,6 +49,7 @@ function depends_mamedev() {
     echo "install patched runcommand.sh script with extra needed replace tokens"
     wget -q -nv -O /opt/retropie/supplementary/runcommand/runcommand.sh https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/runcommand.sh
     fi
+    show_message_mamedev "This version will not be updated anymore.\nPlease use the mamedev.sh script"
 }
 
 
