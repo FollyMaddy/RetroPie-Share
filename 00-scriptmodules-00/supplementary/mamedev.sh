@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0258.01"
+rp_module_version="0258.02"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi)) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+258.02 :\n\
+- improve showing version and used database version\n\
 258.01 :\n\
 - return to RetroPie-Setup after updating the script \n\
 - add showing \"one time update info\"\n\
@@ -540,7 +542,7 @@ function subgui_search_mamedev() {
 
     csv=(
 ",menu_item,,to_do,"
-",Display your own sorted list (version ${rp_module_version_mame} is used),,create_systems_list_mamedev $system_or_description $search,"
+",Display your own sorted list,,create_systems_list_mamedev $system_or_description $search,"
     )
     build_menu_mamedev
 }
@@ -953,7 +955,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "What would you like to select or install ?	(${rp_module_build} ${rp_module_version})" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "Version ${rp_module_version}                                    (using database ${rp_module_version_mame})" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
