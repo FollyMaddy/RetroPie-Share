@@ -37,6 +37,7 @@ local system_read
 function depends_add-mamedev-systems() {
     mamedev_csv=()
     getDepends curl python3 figlet toilet asciinema
+    dialog_message "This version will not be updated anymore.\nPlease use the mamedev.sh script"
 }
 
 
