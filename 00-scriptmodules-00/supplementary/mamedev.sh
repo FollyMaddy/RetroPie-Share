@@ -19,7 +19,6 @@
 # - just use the first and last column in excel/calc for the quotes and you should be fine
 #----------------------------------------------------------------------------------------------------------------------------------------------
 
-
 rp_module_id="mamedev"
 rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
