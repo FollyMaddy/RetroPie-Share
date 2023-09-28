@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0258.03"
+rp_module_version="0258.04"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi)) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+258.04 :\n\
+- change help for the @DTEAM categories using the summary of @bbilford83\n\
 258.03 :\n\
 - xattr fix for showing \"one time update info\"\n\
 258.02 :\n\
@@ -83,7 +85,7 @@ function gui_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",About this script,,show_message_mamedev \"This project makes use of MAME/lr-mame/lr-mess for emulating.\nThey support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to install drivers on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- Orionsangel : creating realistic arcade overlays\",,,,,show_message_mamedev \"NO HELP\","
+",About this script,,show_message_mamedev \"This project makes use of MAME/lr-mame/lr-mess for emulating.\nThey support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to install drivers on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- bbilford83 : joystick configs and summaries and gamelists\n- Orionsangel : creating realistic arcade overlays\",,,,,show_message_mamedev \"NO HELP\","
 ",Update mamedev script and database,,wget -O $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/mamedev.sh;chown $user:$user $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi);xattr -d user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_database_versions[1]}_systems_sorted_info -o /opt/retropie/emulators/mame/mame${rp_module_database_versions[1]}_systems_sorted_info;rp_registerAllModules;show_message_mamedev \"\n\n\n\n\n\n\n\n----------The script has been updated !-----------\n-----Going back into the RetroPie-Setup menu.-----\";break,,,,,," 
 ",,,,,,,,,"
 ",►Install MAME / LR-MESS / LR-MAME,,subgui_installs_mamedev,,,,,,"
@@ -100,6 +102,100 @@ function gui_mamedev() {
 ",►Browser/downloader ( restricted ),,subgui_archive_downloads_mamedev,,,,,show_message_mamedev \"Browse and get online files.\n(only available with the correct input)\","
     )
     build_menu_mamedev
+}
+
+
+function help_categories_mamedev() {
+show_message_mamedev "\
+In this subgui you can choose to install catergories.\n\
+The first set of categories are created and selected by @DTEAM :\n\
+- all_in1\n\
+- classich\n\
+- gameandwatch\n\
+- jakks\n\
+- konamih\n\
+- tigerh\n\
+- tigerrz\n\
+All In One Handheld (and Plug & Play) is used for systems with \
+multiple games like the concept 100 in 1.\n\
+Classic Handheld is used for the non-game & watch from the \
+MADrigal romset and all other manufacturers in the MAME romset such as :\n\
+- Coleco\n\
+- Entex\n\
+- etc.\n\
+Game & Watch is used for the game & watch from the \
+MADrigal romset and the ones in the MAME romset.\n\
+JAKKS Pacific TV Games is used for plug & play games from Jakks Pacific.\n\
+Konami Handheld is used for the handhelds from Konami.\n\
+Tiger Handheld is used for the handhelds from Tiger.\n\
+Tiger R-Zone is used for the R-Zone handheld from Tiger.\n\
+\n\
+Btw. You can use lr-gw for the MADrigal romset.\n\
+You can install it from this script for classich and gameandwatch.\n\
+\n\
+You can find system driver lists on the RetroPie forum :\n\
+Tutorial: Handheld and Plug & Play systems with MAME\n\
+These lists are at the top of this thread kindly created by @DTEAM\n\
+which he seems to be updating every time a new game gets added to mame.\n\
+You can use lr-mess but standalone mame would probably be faster.\n\
+These roms run like typical mame roms where you can get to the mame menu\n\
+(pre-set to tab on a keyboard) to do button mapping, etc.\n\
+For most handheld categories they won't display properly unless\n\
+you have at least the background art set up.\n\
+That is what this (wonderful!) script also can do for you.\n\
+You also have the option of copying over the full (~10mb) .zip of art\n\
+that you can download in the script into the bios/mame/artwork folder.\n\
+For this check out the menu item :\n\
+►ARTWORK/CHEATS/GAMELISTS/JOYSTICKS/OVERLAYS/PATCHES\n\
+\n\
+After installing the artwork/backgrounds the game will load with \
+all the art and display the entire handheld with the screen only \
+taking up a small part of your actual screen.\n\
+In the mame menu you have the ability to change the view to just \
+zoom into the screen or various other partially-zoomed in views \
+which depends on the rom.\n\
+When you change the view and exit the rom then mame will remember.\n\
+Next time you load the game it will load it in that view.\n\
+\n\
+There are also games that work through the lr-gw emulator \
+which is designed to run the MADrigal romset.\n\
+I won't link to the romset to be safe but it's very easy to find.\n\
+Those run very differently from mame.\n\
+They automatically load with full artwork showing the handheld itself.\n\
+While each game has the option to zoom into the screen \
+you can't make it do that by default.\n\
+So you always start with the game displayed in the teenier \
+handheld screen displayed on your big screen.\n\
+When you hit start it will show you what all the \
+different buttons do as mapped to a standard controller layout.\n\
+Select moves around the cursor to choose non-gameplay buttons\n\
+(like start, alarm, game a/b, etc.).\n\
+This is different to mame where you have those buttons mapped \
+to something on your keyboard or controller.\n\
+Confusingly, the lr-gw emulator is NOT limited to gameandwatch roms.\n\
+The madrigal set is partially game & watch roms \
+and partially handhelds made by other companies \
+which is why @DTEAM has them split into \
+the gameandwatch set and the classich set.\n\
+This is undoubtedly correct but people like you and me who \
+used to have the lr-gw set (which pre-dated this script) \
+likely had a single gameandwatch system set up with a bunch \
+of non-gameandwatch games.\n\
+It can take a while to figure this out.\n\
+Even more confusing there are some games that are \"tabletop\" \
+and made by nintendo.\n\
+Some of which (like Mario's Cement Factory) have identical gameplay \
+to the traditional gameandwatch handheld.\n\
+But they weren't watches and weren't labelled under the game & watch brand.\n\
+So they make more sense considered as \"Classic Handheld\".\n\
+(Above contains a part of a rewritten summary of @bbilford83)\n\
+\n\
+The other categories are created from the database by\n\
+using the database of progettosnaps\n\
+\n\
+\Z2Most of these categories are implemented as recognisable category.\n\
+So when you install a system driver from the default system install menu\n\
+it will install and use the detected category name instead.\n"
 }
 
 
@@ -128,13 +224,13 @@ function subgui_categories_mamedev() {
     local csv=()
     csv=(
 ",menu_item_handheld_description,SystemType,to_do driver_used_for_installation,,,,,help_to_do,"
-",All in One Handheld and Plug and Play,@non-arcade,create_00index_file_mamedev '/@all_in1/' /home/$user/RetroPie/roms/all_in1;install_system_mamedev all_in1 all_in1 '' '' 'none' '',,,,,show_message_mamedev \"The name All In One Handheld and Plug & Play was chosen for systems with multiple games like the concept 100 in 1. The ROMs are from the MAME romset collection and you can find the list on (Tutorial: Handheld and Plug & Play systems with MAME) thread on the RetroPie Forum. Most of those games are bootlegs_ mini-games or sport games. The original systems are Handhelds or Plug & Play.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Classic Handheld Systems,@non-arcade,create_00index_file_mamedev '/@classich/' /home/$user/RetroPie/roms/classich;install_system_mamedev classich classich '' '' 'none' '',,,,,dialog_message \"Non_game & watch from MADrigal Romset and all other manufacturers in the MAME romset such as Coleco_ Entex_ etc.\n\nPlease use lr-gw for the MADrigal romset.\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nFor these games you can get artworks and backgrounds by selecting :\nJOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Game and Watch,@non-arcade,create_00index_file_mamedev '/@gameandwatch/' /home/$user/RetroPie/roms/gameandwatch;install_system_mamedev gameandwatch gameandwatch '' '' 'none' '',,,,,dialog_message \"Set to run all Game & Watch games from MADrigal and MAME romset.\n\nPlease use lr-gw for the MADrigal romset.\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nFor these games you can get artworks and backgrounds by selecting :\nJOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",JAKKS Pacific TV Games,@non-arcade,create_00index_file_mamedev '/@classich/' /home/$user/RetroPie/roms/jakks;install_system_mamedev jakks jakks '' '' 'none' '',,,,,show_message_mamedev \"JAKKS Pacific TV Games - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Konami Handheld,@non-arcade,create_00index_file_mamedev '/@konamih/' /home/$user/RetroPie/roms/konamih;install_system_mamedev konamih konamih '' '' 'none' '',,,,,show_message_mamedev \"Konami Handheld - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\nYou can get artworks and backgrounds for those games with the (Select JOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS) below\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Tiger Handheld Electronics,@non-arcade,create_00index_file_mamedev '/@tigerh/' /home/$user/RetroPie/roms/tigerh;install_system_mamedev tigerh tigerh '' '' 'none' '',,,,,show_message_mamedev \"Tiger Handheld Electronics - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\nYou can get artworks and backgrounds for those games with the (Select JOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS) below\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Tiger R-Zone,@non-arcade,create_00index_file_mamedev '/@tigerrz/' /home/$user/RetroPie/roms/tigerrz;install_system_mamedev tigerrz tigerrz '' '' 'none' '',,,,,show_message_mamedev \"Tiger R-Zone - You can get the ROM list on (Tutorial: Handheld and Plug & Play systems with MAME) on RetroPie Forum\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+",All in One Handheld and Plug and Play,@non-arcade,create_00index_file_mamedev '/@all_in1/' /home/$user/RetroPie/roms/all_in1;install_system_mamedev all_in1 all_in1 '' '' 'none' '',,,,,help_categories_mamedev,"
+",Classic Handheld Systems,@non-arcade,create_00index_file_mamedev '/@classich/' /home/$user/RetroPie/roms/classich;install_system_mamedev classich classich '' '' 'none' '',,,,,help_categories_mamedev,"
+",Game & Watch,@non-arcade,create_00index_file_mamedev '/@gameandwatch/' /home/$user/RetroPie/roms/gameandwatch;install_system_mamedev gameandwatch gameandwatch '' '' 'none' '',,,,,help_categories_mamedev,"
+",JAKKS Pacific TV Games,@non-arcade,create_00index_file_mamedev '/@classich/' /home/$user/RetroPie/roms/jakks;install_system_mamedev jakks jakks '' '' 'none' '',,,,,help_categories_mamedev,"
+",Konami Handheld,@non-arcade,create_00index_file_mamedev '/@konamih/' /home/$user/RetroPie/roms/konamih;install_system_mamedev konamih konamih '' '' 'none' '',,,,,help_categories_mamedev,"
+",Tiger Handheld Electronics,@non-arcade,create_00index_file_mamedev '/@tigerh/' /home/$user/RetroPie/roms/tigerh;install_system_mamedev tigerh tigerh '' '' 'none' '',,,,,help_categories_mamedev,"
+",Tiger R-Zone,@non-arcade,create_00index_file_mamedev '/@tigerrz/' /home/$user/RetroPie/roms/tigerrz;install_system_mamedev tigerrz tigerrz '' '' 'none' '',,,,,help_categories_mamedev,"
 ",,,,,,,,,"
 ",DECO cassette Arcade Category => deco_cassette,@arcade,create_00index_file_mamedev '/DECO/' /home/$user/RetroPie/roms/deco_cassette;install_system_mamedev deco_cassette deco_cassette '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the deco_cassette category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
 ",NeoGeo Arcade Category => neogeo,@arcade,create_00index_file_mamedev '/@neogeo/' /home/$user/RetroPie/roms/neogeo;install_system_mamedev neogeo neogeo '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the neogeo category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
