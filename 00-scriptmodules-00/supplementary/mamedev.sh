@@ -309,7 +309,7 @@ If you are not sure how it works then don't use this and press cancel.\n"
     csv=( ",,,," )
     local stickfreaks_read
     clear
-    echo "reading the available databases"
+    echo "reading the available binaries"
     while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl https://stickfreaks.com/mame/|cut -d '"' -f8|grep ^mame_|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line,\"";done)
     while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl https://stickfreaks.com/mame/old/|cut -d '"' -f8|grep ^mame_|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line old/,\"";done)
     build_menu_mamedev
