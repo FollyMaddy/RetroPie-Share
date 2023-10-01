@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0258.04"
+rp_module_version="0258.05"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi)) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+258.05 :\n\
+- show a mame binary list from stickfreaks and be able to install one\n\
 258.04 :\n\
 - change help for the @DTEAM categories using the summary of @bbilford83\n\
 258.03 :\n\
@@ -85,7 +87,7 @@ function gui_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",About this script,,show_message_mamedev \"This project makes use of MAME/lr-mame/lr-mess for emulating.\nThey support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to install drivers on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- bbilford83 : joystick configs and summaries and gamelists\n- Orionsangel : creating realistic arcade overlays\",,,,,show_message_mamedev \"NO HELP\","
+",About this script,,show_message_mamedev \"This project makes use of MAME/lr-mame/lr-mess for emulating.\nThey support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to install drivers on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- bbilford83 : joystick configs and summaries and gamelists\n- Orionsangel : creating realistic arcade overlays\n- stickfreaks : hosting mame binaries\",,,,,show_message_mamedev \"NO HELP\","
 ",Update mamedev script and database,,wget -O $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/mamedev.sh;chown $user:$user $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi);xattr -d user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_database_versions[1]}_systems_sorted_info -o /opt/retropie/emulators/mame/mame${rp_module_database_versions[1]}_systems_sorted_info;rp_registerAllModules;show_message_mamedev \"\n\n\n\n\n\n\n\n----------The script has been updated !-----------\n-----Going back into the RetroPie-Setup menu.-----\";break,,,,,," 
 ",,,,,,,,,"
 ",►Install MAME / LR-MESS / LR-MAME,,subgui_installs_mamedev,,,,,,"
@@ -280,6 +282,36 @@ function subgui_systems_extras_mamedev() {
 ",,,,,,,,,"
 ",►Systems: full/semi automatic boot (with/without extra options),,subgui_systems_extras_add_autoboot_mamedev descriptions,,,,,show_message_mamedev \"Experimental : install systems with autoboot function\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
     )
+    build_menu_mamedev
+}
+
+
+function subgui_stickfreaks_binaries_mamedev() {
+	show_message_mamedev "\
+A list of stickfreak mame binaries will be presented.\n\
+Selecting one will remove your current mame, if installed.\n\
+Then it will download the selected mame and copy it to :\n\
+/opt/retropie/emulators/mame/\n\
+After that it will install dependancies for mame, if not installed.\n\
+Last thing to do is the configuring.\n\
+\n\
+Make sure you pick the correct arch :\n\
+- \"rpi2b\" is not an arch but is for rpi2b using 32 bit OS\n\
+- \"armhf\" is for rpi's with armhf, armv7l or aarch64 cpu using 32 bit OS\n\
+- \"aarch64\" is for aarch64 cpu using 64 bit OS\n\
+Make sure you use the correct OS version :\n\
+- gcc 8 will work on Debian 10 / Buster deratives\n\
+- gcc 10 will work on Debian 11 / Bullseye deratives\n\
+\n\
+If you are not sure how it works then don't use this and press cancel.\n"
+    local csv=()
+    #the first value is reserved for the column descriptions
+    csv=( ",,,," )
+    local stickfreaks_read
+    clear
+    echo "reading the available databases"
+    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl https://stickfreaks.com/mame/|cut -d '"' -f8|grep ^mame_|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line,\"";done)
+    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl https://stickfreaks.com/mame/old/|cut -d '"' -f8|grep ^mame_|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line old/,\"";done)
     build_menu_mamedev
 }
 
@@ -548,12 +580,11 @@ function subgui_databases_mamedev() {
     local database_read
     clear
     echo "reading the available databases"
-    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    #the first value is reserved for the column descriptions and empty in the array rp_module_database_versions
     while read database_read;do csv+=("$database_read");done < <(IFS=$'\n'; echo "${rp_module_database_versions[*]}"|while read line;do echo "\",Set database to $line,,rp_module_version_mame=$line;mamedev_csv=(),\"";done)
     build_menu_mamedev
     #"break" after usage in function build_menu_mamedev
 }
-
 
 
 function subgui_download_gamelists_mamedev() {
@@ -889,12 +920,11 @@ The binary is compiled for x86 prescott architecture.\n\
 For example : atom and pentium processors should work.\n\
 The binary works on Debian 11 based OSes.\n\
 \","
-",,,,"
-",▼\Zr\Z1Usage is for your own risk and very experimental !,,,"
-",\Z1Install mame binary from stickfreaks (armhf(armv7l)/aarch64),,install-mame-for-arch,"
-",\Z1Install lr-mame/lr-mess binary (x86/x86_64) <= libretro buildbot,,install-lr-mame-for-x86-or-x86_64,"
+",\Z6►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
+
 	)
-	
+#",▼\Zr\Z1Usage is for your own risk and very experimental !,,,"
+#",\Z1Install lr-mame/lr-mess binary (x86/x86_64) <= libretro buildbot,,install-lr-mame-for-x86-or-x86_64,"
 	build_menu_mamedev
 }
 
@@ -1092,6 +1122,19 @@ function build_menu_mamedev() {
         fi
     done
     unset IFS
+}
+
+
+function install_mame_from_stickfreaks_mamedev () {
+echo "remove current mame"
+rm -r /opt/retropie/emulators/mame 2>&-
+mkdir -p /opt/retropie/emulators/mame 2>&-
+echo -ne "get mame binary from stickfreaks and install it"
+#$1=mame-binary $2=folder (if older binary then "old/" otherwise empty)
+wget -c https://stickfreaks.com/mame/$2$1 /opt/retropie/emulators/mame -P /opt/retropie/emulators/mame
+7za x /opt/retropie/emulators/mame/*.7z -o/opt/retropie/emulators/mame/
+$scriptdir/retropie_packages.sh mame depends
+$scriptdir/retropie_packages.sh mame configure 
 }
 
 
