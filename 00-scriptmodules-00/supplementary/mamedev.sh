@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0258.06"
+rp_module_version="0258.07"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,10 +45,15 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi)) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+258.07 :\n\
+- show the drive binary list in correct reverse order using 'tac'\n\
+- improve message for gdrive and stickfreaks binary installs\n\
+- add more binaries to gdrive\n\
 258.06 :\n\
 - remove some gdrive binary install items and integrate them into a list\n\
 - show a mame binary list from gdrive and be able to install one\n\
 - mame binaries can now be added to the gdrive without adding new code\n\
+- 'split' the stickfreaks mame binary when installing\n\
 258.05 :\n\
 - show a mame binary list from stickfreaks and be able to install one\n\
 258.04 :\n\
@@ -306,17 +311,16 @@ Make sure you pick the correct arch :\n\
 - \"x86\" is for x86, x86_64 cpu using 32 bit OS\n\
 - \"x86_64\" is for x86_64 cpu using 64 bit OS\n\
 Make sure you use the correct OS version :\n\
-- gcc 8 will work on Debian 10 / Buster deratives\n\
-- gcc 10 will work on Debian 11 / Bullseye deratives\n\
-\n\
-If you are not sure how it works then don't use this and press cancel.\n"
+- gcc8 will work on Debian10/Buster & Debian11/Bullseye deratives\n\
+- gcc9 should work on Debian10/Buster & Debian11/Bullseye deratives\n\
+- gcc10 will work on Debian11/Bullseye deratives\n"
     local csv=()
     #the first value is reserved for the column descriptions
     csv=( ",,,," )
     local gdrive_read
     clear
     echo "reading the available binaries"
-    while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$1#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|sort -k 48|while read line;do echo "\",$(echo $line|cut -d/ -f48),,install_mame_from_gdrive_mamedev $(echo $line|cut -d/ -f48) $(echo $line|cut -d/ -f6),\"";done)
+    while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$1#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|tac|while read line;do echo "\",$(echo $line|cut -d/ -f48),,install_mame_from_gdrive_mamedev $(echo $line|cut -d/ -f48) $(echo $line|cut -d/ -f6),\"";done)
     build_menu_mamedev
 }
 
@@ -335,10 +339,9 @@ Make sure you pick the correct arch :\n\
 - \"armhf\" is for rpi's with armhf, armv7l or aarch64 cpu using 32 bit OS\n\
 - \"aarch64\" is for aarch64 cpu using 64 bit OS\n\
 Make sure you use the correct OS version :\n\
-- gcc 8 will work on Debian 10 / Buster deratives\n\
-- gcc 10 will work on Debian 11 / Bullseye deratives\n\
-\n\
-If you are not sure how it works then don't use this and press cancel.\n"
+- gcc8 will work on Debian10/Buster & Debian11/Bullseye deratives\n\
+- gcc9 should work on Debian10/Buster & Debian11/Bullseye deratives\n\
+- gcc10 will work on Debian11/Bullseye deratives\n"
     local csv=()
     #the first value is reserved for the column descriptions
     csv=( ",,,," )
