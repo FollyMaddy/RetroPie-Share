@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0258.05"
+rp_module_version="0258.06"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,10 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi)) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+258.06 :\n\
+- remove some gdrive binary install items and integrate them into a list\n\
+- show a mame binary list from gdrive and be able to install one\n\
+- mame binaries can now be added to the gdrive without adding new code\n\
 258.05 :\n\
 - show a mame binary list from stickfreaks and be able to install one\n\
 258.04 :\n\
@@ -286,11 +290,42 @@ function subgui_systems_extras_mamedev() {
 }
 
 
+function subgui_gdrive_binaries_mamedev() {
+	show_message_mamedev "\
+A list of mame binaries from my gdrive will be presented.\n\
+Selecting one will remove your current mame, if installed.\n\
+Then it will download the selected mame in /tmp/ and extract it in :\n\
+/opt/retropie/emulators/mame/\n\
+After that it will install dependancies for mame, if not installed.\n\
+Last thing to do is the configuring.\n\
+\n\
+Make sure you pick the correct arch :\n\
+- \"armhf\" is for rpi's with armhf, armv7l or aarch64 cpu using 32 bit OS\n\
+- \"armv7l\" is for rpi's with armv7l or aarch64 cpu using 32 bit OS\n\
+- \"aarch64\" is for aarch64 cpu using 64 bit OS\n\
+- \"x86\" is for x86, x86_64 cpu using 32 bit OS\n\
+- \"x86_64\" is for x86_64 cpu using 64 bit OS\n\
+Make sure you use the correct OS version :\n\
+- gcc 8 will work on Debian 10 / Buster deratives\n\
+- gcc 10 will work on Debian 11 / Bullseye deratives\n\
+\n\
+If you are not sure how it works then don't use this and press cancel.\n"
+    local csv=()
+    #the first value is reserved for the column descriptions
+    csv=( ",,,," )
+    local gdrive_read
+    clear
+    echo "reading the available binaries"
+    while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$1#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|sort -k 48|while read line;do echo "\",$(echo $line|cut -d/ -f48),,install_mame_from_gdrive_mamedev $(echo $line|cut -d/ -f48) $(echo $line|cut -d/ -f6),\"";done)
+    build_menu_mamedev
+}
+
+
 function subgui_stickfreaks_binaries_mamedev() {
 	show_message_mamedev "\
 A list of stickfreak mame binaries will be presented.\n\
 Selecting one will remove your current mame, if installed.\n\
-Then it will download the selected mame and copy it to :\n\
+Then it will download the selected mame, extract it and strip it in :\n\
 /opt/retropie/emulators/mame/\n\
 After that it will install dependancies for mame, if not installed.\n\
 Last thing to do is the configuring.\n\
@@ -882,46 +917,8 @@ If nessasary use the runcommands with -frameskip 10.\n\n\
 This installs a Debian 10 / gcc8.3 / patched source binary.\n\
 The binary should work on Debian 10/11 based OSes.\n\
 \","
-",\Z4Install rpi4 armv7l_gcc9 mame0250 binary,,\
-curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1_fg5hvO_Jp3KdSgzx513K19leWR-dGUe -m -P "/tmp";\
-rm -d -r /opt/retropie/emulators/mame;\
-unzip /tmp/mame0250-gcc9-armv7l-rpi4.zip -d /opt/retropie/emulators/;\
-$scriptdir/retropie_packages.sh mame depends;\
-$scriptdir/retropie_packages.sh mame configure;\
-,,,,,show_message_mamedev \"\
-This menu item does the following :\n\
-- get the mame binary from google-drive\n\
-- extract it from /tmp to /opt/retropie/emulators\n\
-- the binary will vanish from /tmp after next reboot\n\
-- get depends for mame\n\
-- configure mame for retropie\n\
-After this you are able to install any driver from within this script.\n\
-This installs a Debian 10 / gcc9 / 32 bits / armv7l binary.\n\
-The binary should work on Debian 10/11 based OSes.\n\
-\","
-",\Z5Install x86_32_gcc10 mame0255 binary,,\
-curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1g5b3OaVIuC4GER-si3QuSJ13P1btn0SQ -m -P "/tmp";\
-rm -d -r /opt/retropie/emulators/mame;\
-unzip /tmp/mame_0.255_x86_gcc10.zip -d /opt/retropie/emulators/;\
-$scriptdir/retropie_packages.sh mame depends;\
-$scriptdir/retropie_packages.sh mame configure;\
-,,,,,show_message_mamedev \"\
-This menu item does the following :\n\
-- get the mame binary from google-drive\n\
-- extract it from /tmp to /opt/retropie/emulators\n\
-- the binary will vanish from /tmp after next reboot\n\
-- get depends for mame\n\
-- configure mame for retropie\n\
-After this you are able to install any driver from within this script.\n\
-Depending on your processor drivers can run too slow or run ok.\n\
-If nessasary use the runcommands with -frameskip 10.\n\n\
-This installs a Debian 11 / gcc10 / 32 bits / x86 binary.\n\
-The binary is compiled for x86 prescott architecture.\n\
-For example : atom and pentium processors should work.\n\
-The binary works on Debian 11 based OSes.\n\
-\","
-",\Z6►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
-
+",\Z4►Show and install mame from gdrive binary list,,subgui_gdrive_binaries_mamedev 1--8uSe-xs1vFA-yPfw6Ac2XF6zzNzAuP,"
+",\Z4►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
 	)
 #",▼\Zr\Z1Usage is for your own risk and very experimental !,,,"
 #",\Z1Install lr-mame/lr-mess binary (x86/x86_64) <= libretro buildbot,,install-lr-mame-for-x86-or-x86_64,"
@@ -1125,6 +1122,19 @@ function build_menu_mamedev() {
 }
 
 
+function install_mame_from_gdrive_mamedev () {
+echo "remove current mame"
+rm -r /opt/retropie/emulators/mame 2>&-
+mkdir -p /opt/retropie/emulators/mame 2>&-
+echo -ne "get mame binary from gdrive and install it"
+#$1=mame-binary $2=gdrive_file_id
+curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/$2 -m -P "/tmp";\
+unzip /tmp/$1 -d /opt/retropie/emulators/
+$scriptdir/retropie_packages.sh mame depends
+$scriptdir/retropie_packages.sh mame configure 
+}
+
+
 function install_mame_from_stickfreaks_mamedev () {
 echo "remove current mame"
 rm -r /opt/retropie/emulators/mame 2>&-
@@ -1133,6 +1143,7 @@ echo -ne "get mame binary from stickfreaks and install it"
 #$1=mame-binary $2=folder (if older binary then "old/" otherwise empty)
 wget -c https://stickfreaks.com/mame/$2$1 /opt/retropie/emulators/mame -P /opt/retropie/emulators/mame
 7za x /opt/retropie/emulators/mame/*.7z -o/opt/retropie/emulators/mame/
+strip /opt/retropie/emulators/mame/mame
 $scriptdir/retropie_packages.sh mame depends
 $scriptdir/retropie_packages.sh mame configure 
 }
