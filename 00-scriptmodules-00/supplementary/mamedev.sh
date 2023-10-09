@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0259.00"
+rp_module_version="0259.01"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,9 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi)) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+259.01 :\n\
+- fix only writing patched mame cdimono1.cfg when installing cdimodo1\n\
+- show the cdimono1 patch messages in a dialog box\n\
 259.00 :\n\
 - use new database\n\
 258.07 :\n\
@@ -1887,9 +1890,13 @@ done
 # PATCH 1 : cdmono1 => enable 4:3 screen, mouse and all mouse buttons using lr-mess
 if [[ -f /opt/retropie/libretrocores/lr-mess/mamemess_libretro.so ]];then
     if [[ $1 == cdimono1 ]];then
-    echo "patch cdimono1 retroarch.cfg for lr-mess to : "
-    echo "- assign the mouse buttons as joystick buttons to get mouse working !!!"
-    echo "- assign right-alt as grab_mouse_toggle key for matching mouse movements to the host enviroment when running in desktop mode !!!"
+    show_message_mamedev "\
+After pressing ok a patch will be installed for cdimono1.\n\n\
+Patch cdimono1 retroarch.cfg for lr-mess to :\n\
+- assign the mouse buttons as joystick buttons to get mouse working !!!\n\
+- assign right-alt as grab_mouse_toggle key for matching mouse movements to the host enviroment when running in desktop mode !!!\n\n\
+The config is written in :\n\
+/opt/retropie/configs/cdimono1/"
     #using sed here to keep ownership of the retroarch.cfg file correct (solution used with cdimono1.cfg will not work)
     if  [[ "$(cat /opt/retropie/configs/cdimono1/retroarch.cfg)" != *input_player1_b_mbtn* ]]
     then 
@@ -1906,10 +1913,13 @@ if [[ -f /opt/retropie/libretrocores/lr-mess/mamemess_libretro.so ]];then
     # adding 'input_grab_mouse_toggle = shift' line  below info line
     sed -i s/line/line\\ninput\_grab\_mouse\_toggle\ \=\ shift/g "/opt/retropie/configs/cdimono1/retroarch.cfg"
     fi
-
-    echo "patch cdimono1 cdimono1.cfg for lr-mess to : "
-    echo "- assign the joystick buttons as mouse buttons to get mouse working !!!"
-    echo "- show standard 4:3 screen !!!"
+    show_message_mamedev "\
+After pressing ok a patch will be installed for cdimono1.\n\n\
+Patch the mame cdimono1.cfg for lr-mess to :\n\
+- assign the joystick buttons as mouse buttons to get mouse working !!!\n\
+- show standard 4:3 screen !!!\n\n
+The config is written in :\n\
+/opt/retropie/configs/cdimono1/lr-mess"
     mv /opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg /opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg.bak 2>&-
     mkdir /opt/retropie/configs/cdimono1/lr-mess 2>&-
     cat >/opt/retropie/configs/cdimono1/lr-mess/cdimono1.cfg << _EOF_
@@ -1940,10 +1950,16 @@ if [[ -f /opt/retropie/libretrocores/lr-mess/mamemess_libretro.so ]];then
 _EOF_
     chown -R $user:$user "/opt/retropie/configs/cdimono1/lr-mess" 2>&-
 fi
+fi
 
 # PATCH 2 : cdmono1 => enable 4:3 screen using mame
-echo "patch cdimono1 cdimono1.cfg for mame to : "
-echo "- show standard 4:3 screen !!!"
+if [[ $1 == cdimono1 ]];then
+show_message_mamedev "\
+After pressing ok a patch will be installed for cdimono1.\n\n\
+Patch mame cdimono1.cfg for standalone mame to :\n\
+- show standard 4:3 screen !!!\n\n\
+The config is written in :\n\
+/home/$user/RetroPie/roms/mame/cfg"
 mv /home/$user/RetroPie/roms/mame/cfg/cdimono1.cfg /home/$user/RetroPie/roms/mame/cfg/cdimono1.cfg.bak 2>&-
 mkdir /home/$user/RetroPie/roms/mame/cfg 2>&-
 cat >/home/$user/RetroPie/roms/mame/cfg/cdimono1.cfg << _EOF_
@@ -1965,7 +1981,6 @@ cat >/home/$user/RetroPie/roms/mame/cfg/cdimono1.cfg << _EOF_
 </mameconfig>
 _EOF_
 chown -R $user:$user "/home/$user/RetroPie/roms/mame/cfg" 2>&-
-sleep 1
 fi
 }
 
