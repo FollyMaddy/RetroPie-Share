@@ -85,7 +85,7 @@ for directory in "${directories[@]}"; do
  fi
 echo $map
  mkdir -p /home/$user/RetroPie-Setup/ext/$map/scriptmodules/$directory 2>&-
- curl https://github.com/$(echo ${csv[$choice]} | cut -d ',' -f 3)/$directory | grep "\.sh" | cut -d '"' -f 6 | while read file
+ curl https://github.com/$(echo ${csv[$choice]} | cut -d ',' -f 3)/$directory | sed 's/name/name\n/g'| grep "\.sh" | cut -d '"' -f 3 | while read file
   do
    #download if not in original RetroPie-Setup (-z if zero)
    if [[ -z $(find /home/$user/RetroPie-Setup/scriptmodules -name "$file") ]]; then
