@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0259.02"
+rp_module_version="0259.03"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,9 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi)) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+259.03 :\n\
+- fix downloading from github as github changed some stuff\n\
+- fix jakks 0 rom-index 0 file creation\n\
 259.02 :\n\
 - be able to install a cheatfile from a list\n\
 - when mamecheats.co.uk adds newer cheatfiles then they should pop up\n\
@@ -246,7 +249,7 @@ function subgui_categories_mamedev() {
 ",All in One Handheld and Plug and Play,@non-arcade,create_00index_file_mamedev '/@all_in1/' /home/$user/RetroPie/roms/all_in1;install_system_mamedev all_in1 all_in1 '' '' 'none' '',,,,,help_categories_mamedev,"
 ",Classic Handheld Systems,@non-arcade,create_00index_file_mamedev '/@classich/' /home/$user/RetroPie/roms/classich;install_system_mamedev classich classich '' '' 'none' '',,,,,help_categories_mamedev,"
 ",Game & Watch,@non-arcade,create_00index_file_mamedev '/@gameandwatch/' /home/$user/RetroPie/roms/gameandwatch;install_system_mamedev gameandwatch gameandwatch '' '' 'none' '',,,,,help_categories_mamedev,"
-",JAKKS Pacific TV Games,@non-arcade,create_00index_file_mamedev '/@classich/' /home/$user/RetroPie/roms/jakks;install_system_mamedev jakks jakks '' '' 'none' '',,,,,help_categories_mamedev,"
+",JAKKS Pacific TV Games,@non-arcade,create_00index_file_mamedev '/@jakks/' /home/$user/RetroPie/roms/jakks;install_system_mamedev jakks jakks '' '' 'none' '',,,,,help_categories_mamedev,"
 ",Konami Handheld,@non-arcade,create_00index_file_mamedev '/@konamih/' /home/$user/RetroPie/roms/konamih;install_system_mamedev konamih konamih '' '' 'none' '',,,,,help_categories_mamedev,"
 ",Tiger Handheld Electronics,@non-arcade,create_00index_file_mamedev '/@tigerh/' /home/$user/RetroPie/roms/tigerh;install_system_mamedev tigerh tigerh '' '' 'none' '',,,,,help_categories_mamedev,"
 ",Tiger R-Zone,@non-arcade,create_00index_file_mamedev '/@tigerrz/' /home/$user/RetroPie/roms/tigerrz;install_system_mamedev tigerrz tigerrz '' '' 'none' '',,,,,help_categories_mamedev,"
@@ -280,7 +283,7 @@ function subgui_categories_mamedev() {
 ",Arcade Category => shooter90º,@arcade,create_00index_file_mamedev '/@shooter/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/shooter90º;install_system_mamedev shooter90º shooter90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the shooter90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/shooter90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
 ",Arcade Category => slot_machine90º,@arcade,create_00index_file_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/slot_machine90º;install_system_mamedev slot_machine90º slot_machine90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the slot_machine90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/slot_machine90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
 ",Arcade Category => sport90º,@arcade,create_00index_file_mamedev '/@sport/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/sport90º;install_system_mamedev sport90º sport90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sport90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/sport90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => upright90º (with 90º rotation),@arcade,create_00index_file_mamedev '/@upright/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/upright90º;install_system_mamedev upright90º upright90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the upright90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+",Arcade Category => upright90º,@arcade,create_00index_file_mamedev '/@upright/&&/@90º/&&/@working_arcade/' /home/$user/RetroPie/roms/upright90º;install_system_mamedev upright90º upright90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the upright90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in /opt/retropie/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
     )
     build_menu_mamedev
 }
@@ -2083,7 +2086,7 @@ clear
 #$1 = github_directory $2=target_directory $3=extension_of_the_multiple_files
 echo "get all files and put these in the correct path"
 echo
-curl -s https://github.com/$1|grep \.$3 | cut -d\" -f 6| while read github_file
+curl -s https://github.com/$1|sed 's/name/name\n/g'|grep \.$3 | cut -d\" -f 3| while read github_file
 do 
 echo downloading $github_file to $2
 curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $github_file|sed 's/ /%20/g') > "$2/$github_file"
