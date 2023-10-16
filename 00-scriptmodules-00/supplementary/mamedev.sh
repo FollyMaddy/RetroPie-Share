@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0259.03"
+rp_module_version="0259.04"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo /home/$user/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo /home/$user/RetroPie-Setup/scriptmodules/supplementary/mamedev.sh;fi)) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+259.04 :\n\
+- fix error when there is no data removing systems\n\
 259.03 :\n\
 - fix downloading from github as github changed some stuff\n\
 - fix jakks 0 rom-index 0 file creation\n\
@@ -669,11 +671,17 @@ function subgui_download_gamelists_mamedev() {
 
 function subgui_remove_installs_mamedev() {
     local csv=()
+    #the first value is reserved for the column descriptions
+    csv=( ",,,," )
     local installed_system_read
     clear
     echo "reading the available databases"
-    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read installed_system_read;do csv+=("$installed_system_read");done < <(echo \",,,,\";grep -r ^mame- /opt/retropie/configs/*/emulators.cfg|cut -d/ -f5|uniq|while read line;do echo "\",Remove $line,,remove_installs_mamedev $line,\"";done)
+    while read installed_system_read;do csv+=("$installed_system_read");done < <(grep -r ^mame- /opt/retropie/configs/*/emulators.cfg|cut -d/ -f5|uniq|while read line;do echo "\",Remove $line,,remove_installs_mamedev $line,\"";done)
+    if [[ -z ${csv[1]} ]]; then
+    show_message_mamedev "No systems installed, use cancel to go back !"
+    csv+=( ",,,," )
+    break
+    fi
     build_menu_mamedev
     #"break" after usage in function build_menu_mamedev
 }
