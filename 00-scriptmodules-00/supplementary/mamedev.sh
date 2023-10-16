@@ -680,7 +680,6 @@ function subgui_remove_installs_mamedev() {
     if [[ -z ${csv[1]} ]]; then
     show_message_mamedev "No systems installed, use cancel to go back !"
     csv+=( ",,,," )
-    break
     fi
     build_menu_mamedev
     #"break" after usage in function build_menu_mamedev
