@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0259.06"
+rp_module_version="0259.07"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+259.07 :\n\
+- on ArchyPie use archypie_packages.sh instead of retropie_packages.sh\n\
 259.06 :\n\
 - fix showing help for quite some options\n\
 - use variables inside paths for preliminary ArchyPie support\n\
@@ -923,8 +925,8 @@ sed -i 's/ \!armv6//g' $scriptdir/scriptmodules/emulators/mame.sh;\
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1enP_Fkpj482JJ9LI7s5Y8bamJunwgOnL -m -P "/tmp";\
 rm -d -r $emudir/mame;\
 unzip /tmp/mame0255-debian10-_source_patched_for_gcc8.3-rpi1_channelf_apfm1000.zip -d $emudir/;\
-$scriptdir/retropie_packages.sh mame depends;\
-$scriptdir/retropie_packages.sh mame configure;\
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends;\
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame configure;\
 sed -i 's/\!mali/\!mali \!armv6/g' $scriptdir/scriptmodules/emulators/mame.sh;\
 ,,,,,show_message_mamedev \"\
 This menu item does the following :\n\
@@ -947,8 +949,8 @@ sed -i 's/ \!armv6//g' $scriptdir/scriptmodules/emulators/mame.sh;\
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1aOBPSvQPIbfOjkDeWzf1sbD09Q5EzNE7 -m -P "/tmp";\
 rm -d -r $emudir/mame;\
 unzip /tmp/mame0255-debian10-_source_patched_for_gcc8.3-rpi1-all.zip -d $emudir/;\
-$scriptdir/retropie_packages.sh mame depends;\
-$scriptdir/retropie_packages.sh mame configure;\
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends;\
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame configure;\
 sed -i 's/\!mali/\!mali \!armv6/g' $scriptdir/scriptmodules/emulators/mame.sh;\
 ,,,,,show_message_mamedev \"\
 This menu item does the following :\n\
@@ -1180,8 +1182,8 @@ echo -ne "get mame binary from gdrive and install it"
 #$1=mame-binary $2=gdrive_file_id
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/$2 -m -P "/tmp";\
 unzip /tmp/$1 -d $emudir/
-$scriptdir/retropie_packages.sh mame depends
-$scriptdir/retropie_packages.sh mame configure 
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame configure 
 }
 
 
@@ -1194,8 +1196,8 @@ echo -ne "get mame binary from stickfreaks and install it"
 wget -c https://stickfreaks.com/mame/$2$1 $emudir/mame -P $emudir/mame
 7za x $emudir/mame/*.7z -o$emudir/mame/
 strip $emudir/mame/mame
-$scriptdir/retropie_packages.sh mame depends
-$scriptdir/retropie_packages.sh mame configure 
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame configure 
 }
 
 
