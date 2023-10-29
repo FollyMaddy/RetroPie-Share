@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0259.09"
+rp_module_version="0259.10"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+259.10 :\n\
+- small echo fix\n\
 259.09 :\n\
 - suppress error when there is no runcommand.log\n\
 - fix showing correct paths when using ArchyPie\n\
@@ -1184,7 +1186,7 @@ function install_mame_from_gdrive_mamedev () {
 echo "remove current mame"
 rm -r $emudir/mame 2>&-
 mkdir -p $emudir/mame 2>&-
-echo -ne "get mame binary from gdrive and install it"
+echo "get mame binary from gdrive and install it"
 #$1=mame-binary $2=gdrive_file_id
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/$2 -m -P "/tmp";\
 unzip /tmp/$1 -d $emudir/
@@ -1197,7 +1199,7 @@ function install_mame_from_stickfreaks_mamedev () {
 echo "remove current mame"
 rm -r $emudir/mame 2>&-
 mkdir -p $emudir/mame 2>&-
-echo -ne "get mame binary from stickfreaks and install it"
+echo "get mame binary from stickfreaks and install it"
 #$1=mame-binary $2=folder (if older binary then "old/" otherwise empty)
 wget -c https://stickfreaks.com/mame/$2$1 $emudir/mame -P $emudir/mame
 7za x $emudir/mame/*.7z -o$emudir/mame/
@@ -1365,7 +1367,7 @@ chown $user:$user "$scriptdir/ext/RetroPie-Share/platforms.cfg"
 #if no option is added while running this scripts, it is possible to install all all systems
 #because of the time it will consume, it is turned off in this part !
 if [[ -z "$1" ]]; then 
-echo -ne "\nno option detected, nothing to do\n"
+echo "no option detected, nothing to do"
 exit
 fi
 
