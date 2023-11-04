@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.01"
+rp_module_version="0260.02"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.02 :\n\
+- install c64gs (game system) in c64gs, not in c64\n\
 260.01 :\n\
 - install scv_pal in scv\n\
 260.00 :\n\
@@ -1577,6 +1579,8 @@ systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Micro" )
 systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Master" )
+systemsrp+=( "c64gs" )
+descriptionsrp+=( "Commodore 64 Games System (PAL)" )
 systemsrp+=( "dragon64" )
 descriptionsrp+=( "Dragon 64" )
 systemsrp+=( "sega32-cd" )
