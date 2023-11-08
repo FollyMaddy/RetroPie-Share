@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.03"
+rp_module_version="0260.04"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.04 :\n\
+- adding stuff to runcommands that was forgotten in 260.03\n\
 260.03 :\n\
 - add early possibility to install default drivers with extra options\n\
 - install default c64gs with different joystick in port 2\n\
@@ -2005,9 +2007,9 @@ if [[ $SystemType == non-arcade ]];then
 	else
 	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
 	    #addEmulator 0 "lr-mess-cmd" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -v -L $_mess_core %ROM%"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -frameskip 10 -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
+	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
+	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
+	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -frameskip 10 -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
 	    fi
 	fi
 else
@@ -2032,9 +2034,9 @@ fi
 	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
 	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
 	else
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") %BASENAME% -view %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") %BASENAME% -view %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") %BASENAME% -view %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
 	fi
 done
 	#sort the emulators.cfg file
