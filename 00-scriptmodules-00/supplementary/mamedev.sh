@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.02"
+rp_module_version="0260.03"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,10 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.03 :\n\
+- add early possibility to install default drivers with extra options\n\
+- install default c64gs with different joystick in port 2\n\
+- add configure mame function to get full support for ArchyPie\n\
 260.02 :\n\
 - install c64gs (game system) in c64gs, not in c64\n\
 260.01 :\n\
@@ -940,7 +944,7 @@ curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py |
 rm -d -r $emudir/mame;\
 unzip /tmp/mame0255-debian10-_source_patched_for_gcc8.3-rpi1_channelf_apfm1000.zip -d $emudir/;\
 $scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends;\
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame configure;\
+configure_mame_mamedev;\
 sed -i 's/\!mali/\!mali \!armv6/g' $scriptdir/scriptmodules/emulators/mame.sh;\
 ,,,,,show_message_mamedev \"\
 This menu item does the following :\n\
@@ -949,7 +953,7 @@ This menu item does the following :\n\
 - extract it from /tmp to $emudir\n\
 - the binary will vanish from /tmp after next reboot\n\
 - get depends for mame\n\
-- configure mame for retropie\n\
+- configure mame for $(echo $rootdir|cut -d/ -f3)\n\
 - Restore the mame module-script\n\n\
 After this install channelf or apfm1000 from within this script.\n\
 Only use the mame standalone runcommands.\n\
@@ -964,7 +968,7 @@ curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py |
 rm -d -r $emudir/mame;\
 unzip /tmp/mame0255-debian10-_source_patched_for_gcc8.3-rpi1-all.zip -d $emudir/;\
 $scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends;\
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame configure;\
+configure_mame_mamedev;\
 sed -i 's/\!mali/\!mali \!armv6/g' $scriptdir/scriptmodules/emulators/mame.sh;\
 ,,,,,show_message_mamedev \"\
 This menu item does the following :\n\
@@ -973,7 +977,7 @@ This menu item does the following :\n\
 - extract it from /tmp to $emudir\n\
 - the binary will vanish from /tmp after next reboot\n\
 - get depends for mame\n\
-- configure mame for retropie\n\
+- configure mame for $(echo $rootdir|cut -d/ -f3)\n\
 - Restore the mame module-script\n\n\
 After this you are able to install any driver from within this script.\n\
 But remember most drivers will run too slow on the rpi1/0.\n\
@@ -1047,6 +1051,90 @@ dialog \
     echo "Atfer that it will go back to the menu."
     sleep 5
     fi
+}
+
+
+function configure_mame_mamedev() {
+    #duplicate of the function "configure_mame" of the mame.sh module-script from RetroPie to get mamedev.sh fully working on ArchyPie as that function does not do the job correctly
+    local system="mame"
+
+    if [[ "$md_mode" == "install" ]]; then
+        mkRomDir "arcade"
+        mkRomDir "$system"
+
+        # Create required MAME directories underneath the ROM directory
+        local mame_sub_dir
+        for mame_sub_dir in artwork cfg comments diff inp nvram samples scores snap sta; do
+            mkRomDir "$system/$mame_sub_dir"
+        done
+
+        # Create a BIOS directory, where people will be able to store their BIOS files, separate from ROMs
+        mkUserDir "$biosdir/$system"
+
+        # Create the configuration directory for the MAME ini files
+        moveConfigDir "$home/.mame" "$md_conf_root/$system"
+
+        # Create new INI files if they do not already exist
+        # Create MAME config file
+        local temp_ini_mame="$(mktemp)"
+
+        iniConfig " " "" "$temp_ini_mame"
+        iniSet "rompath"            "$romdir/$system;$romdir/arcade;$biosdir/$system"
+        iniSet "hashpath"           "$md_inst/hash"
+        iniSet "samplepath"         "$romdir/$system/samples;$romdir/arcade/samples"
+        iniSet "artpath"            "$romdir/$system/artwork;$romdir/arcade/artwork"
+        iniSet "ctrlrpath"          "$md_inst/ctrlr"
+        iniSet "pluginspath"        "$md_inst/plugins"
+        iniSet "languagepath"       "$md_inst/language"
+
+        iniSet "cfg_directory"      "$romdir/$system/cfg"
+        iniSet "nvram_directory"    "$romdir/$system/nvram"
+        iniSet "input_directory"    "$romdir/$system/inp"
+        iniSet "state_directory"    "$romdir/$system/sta"
+        iniSet "snapshot_directory" "$romdir/$system/snap"
+        iniSet "diff_directory"     "$romdir/$system/diff"
+        iniSet "comment_directory"  "$romdir/$system/comments"
+
+        iniSet "skip_gameinfo" "1"
+        iniSet "plugin" "hiscore"
+        iniSet "samplerate" "44100"
+
+        # Raspberry Pis show improved performance using accelerated mode which enables SDL_RENDERER_TARGETTEXTURE.
+        # On RPI4 it uses OpenGL as a renderer, while on earlier RPIs it uses OpenGLES2 as the renderer. 
+        # X86 Ubuntu by default uses OpenGL as a renderer, but SDL doesn't have target texture enabled as default.
+        # Enabling accel will use target texture on X86 Ubuntu (and likely other X86 Linux platforms).
+        iniSet "video" "accel"
+
+        copyDefaultConfig "$temp_ini_mame" "$md_conf_root/$system/mame.ini"
+        rm "$temp_ini_mame"
+
+        # Create MAME UI config file
+        local temp_ini_ui="$(mktemp)"
+        iniConfig " " "" "$temp_ini_ui"
+        iniSet "scores_directory" "$romdir/$system/scores"
+        copyDefaultConfig "$temp_ini_ui" "$md_conf_root/$system/ui.ini"
+        rm "$temp_ini_ui"
+
+        # Create MAME Plugin config file
+        local temp_ini_plugin="$(mktemp)"
+        iniConfig " " "" "$temp_ini_plugin"
+        iniSet "hiscore" "1"
+        copyDefaultConfig "$temp_ini_plugin" "$md_conf_root/$system/plugin.ini"
+        rm "$temp_ini_plugin"
+
+        # Create MAME Hi Score config file
+        local temp_ini_hiscore="$(mktemp)"
+        iniConfig " " "" "$temp_ini_hiscore"
+        iniSet "hi_path" "$romdir/$system/scores"
+        copyDefaultConfig "$temp_ini_hiscore" "$md_conf_root/$system/hiscore.ini"
+        rm "$temp_ini_hiscore"
+    fi
+
+    addEmulator 0 "$md_id" "arcade" "$md_inst/mame %BASENAME%"
+    addEmulator 1 "$md_id" "$system" "$md_inst/mame %BASENAME%"
+
+    addSystem "arcade"
+    addSystem "$system"
 }
 
 
@@ -1197,7 +1285,7 @@ echo "get mame binary from gdrive and install it"
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/$2 -m -P "/tmp";\
 unzip /tmp/$1 -d $emudir/
 $scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame configure 
+configure_mame_mamedev
 }
 
 
@@ -1211,7 +1299,7 @@ wget -c https://stickfreaks.com/mame/$2$1 $emudir/mame -P $emudir/mame
 7za x $emudir/mame/*.7z -o$emudir/mame/
 strip $emudir/mame/mame
 $scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame configure 
+configure_mame_mamedev
 }
 
 
@@ -1424,9 +1512,21 @@ else
 # use the first column if seperated by a space
 systems+=( "$(echo $LINE)" )
 fi
+#use extra predefined options to alter the default options of a driver when not installing from the section EXTRAS
+#in part 12 the array ExtraPredefinedOptions can be directly used in the runcommands with the media options
+#in part 13 the array ExtraPredefinedOptions can not be directly used in the basename runcommands, here we just use the last element of the array when not installing from the section EXTRAS, $2 is empty
+if [[ -z ${ExtraPredefinedOptions[@]} ]];then
+[[ ${systems[${#systems[@]}-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
+#the idea was to add 2 c64gs joysticks but when loading robocop2 the game got confused
+#[[ ${systems[${#systems[@]}-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy1 joybstr -joy2 joybstr" )
+#both don't work with cartridges as the cartridge has to be in the slot instead of the extra ram
+#[[ ${systems[${#systems[@]}-1]} == coco ]] && ExtraPredefinedOptions+=( "-ext multi -ext:multi:slot1 ram" )
+#[[ ${systems[${#systems[@]}-1]} == coco3 ]] && ExtraPredefinedOptions+=( "-ext multi -ext:multi:slot1 ram" )
+fi
+#
 done < <($emudir/mame/mame -listmedia $1 | grep -v -E "$namesfilter" | grep -E "$mediafilter" | cut -d " " -f 1)
 fi
-
+[[ -n ${ExtraPredefinedOptions[@]} ]] && echo "use extra predefined options for ${systems[${#systems[@]}-1]}"
 
 #part 5 : extract all extension data per system to array
 #first part from the if function is meant for installing systems with extra options or special software cartridges,
@@ -1898,9 +1998,9 @@ if [[ $SystemType == non-arcade ]];then
 	if [[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) == 739b6c7e50c6b4e2d048ea85f93ab8c71b1a1d74* ]];then
 	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
 	    #addEmulator 0 "lr-mess-cmd" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -v -L $_mess_core %ROM%"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% %ADDSLOT% '%SOFTLIST%%BASENAME%''"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% %ADDSLOT% '%SOFTLIST%%BASENAME%''"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -frameskip 10 -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% %ADDSLOT% '%SOFTLIST%%BASENAME%''"
+	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
+	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
+	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -frameskip 10 -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
 	    fi
 	else
 	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
@@ -1928,9 +2028,9 @@ else
 fi
 	# if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
 	if [[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) == 739b6c7e50c6b4e2d048ea85f93ab8c71b1a1d74* ]];then
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") %ADDSLOT% %SOFTLIST%%BASENAME% -view %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME% -view %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
+	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
 	else
 	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") %BASENAME% -view %BASENAME%"
 	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") %BASENAME% -view %BASENAME%"
