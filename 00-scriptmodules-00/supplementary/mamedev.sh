@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.04"
+rp_module_version="0260.05"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.05 :\n\
+- change function configuring mame for working correctly\n\
 260.04 :\n\
 - adding stuff to runcommands that was forgotten in 260.03\n\
 260.03 :\n\
@@ -1057,10 +1059,9 @@ dialog \
 
 
 function configure_mame_mamedev() {
-    #duplicate of the function "configure_mame" of the mame.sh module-script from RetroPie to get mamedev.sh fully working on ArchyPie as that function does not do the job correctly
+    #customized parts of the function "configure_mame" of the mame.sh module-script from RetroPie to get mamedev.sh fully working on ArchyPie as that function does not do the job correctly
     local system="mame"
 
-    if [[ "$md_mode" == "install" ]]; then
         mkRomDir "arcade"
         mkRomDir "$system"
 
@@ -1074,20 +1075,21 @@ function configure_mame_mamedev() {
         mkUserDir "$biosdir/$system"
 
         # Create the configuration directory for the MAME ini files
-        moveConfigDir "$home/.mame" "$md_conf_root/$system"
+        moveConfigDir "$home/.mame" "$configdir/$system"
 
         # Create new INI files if they do not already exist
         # Create MAME config file
         local temp_ini_mame="$(mktemp)"
+        local mameinstalldir="$rootdir/emulators/mame"
 
         iniConfig " " "" "$temp_ini_mame"
         iniSet "rompath"            "$romdir/$system;$romdir/arcade;$biosdir/$system"
-        iniSet "hashpath"           "$md_inst/hash"
+        iniSet "hashpath"           "$mameinstalldir/hash"
         iniSet "samplepath"         "$romdir/$system/samples;$romdir/arcade/samples"
         iniSet "artpath"            "$romdir/$system/artwork;$romdir/arcade/artwork"
-        iniSet "ctrlrpath"          "$md_inst/ctrlr"
-        iniSet "pluginspath"        "$md_inst/plugins"
-        iniSet "languagepath"       "$md_inst/language"
+        iniSet "ctrlrpath"          "$mameinstalldir/ctrlr"
+        iniSet "pluginspath"        "$mameinstalldir/plugins"
+        iniSet "languagepath"       "$mameinstalldir/language"
 
         iniSet "cfg_directory"      "$romdir/$system/cfg"
         iniSet "nvram_directory"    "$romdir/$system/nvram"
@@ -1107,33 +1109,32 @@ function configure_mame_mamedev() {
         # Enabling accel will use target texture on X86 Ubuntu (and likely other X86 Linux platforms).
         iniSet "video" "accel"
 
-        copyDefaultConfig "$temp_ini_mame" "$md_conf_root/$system/mame.ini"
+        copyDefaultConfig "$temp_ini_mame" "$configdir/$system/mame.ini"
         rm "$temp_ini_mame"
 
         # Create MAME UI config file
         local temp_ini_ui="$(mktemp)"
         iniConfig " " "" "$temp_ini_ui"
         iniSet "scores_directory" "$romdir/$system/scores"
-        copyDefaultConfig "$temp_ini_ui" "$md_conf_root/$system/ui.ini"
+        copyDefaultConfig "$temp_ini_ui" "$configdir/$system/ui.ini"
         rm "$temp_ini_ui"
 
         # Create MAME Plugin config file
         local temp_ini_plugin="$(mktemp)"
         iniConfig " " "" "$temp_ini_plugin"
         iniSet "hiscore" "1"
-        copyDefaultConfig "$temp_ini_plugin" "$md_conf_root/$system/plugin.ini"
+        copyDefaultConfig "$temp_ini_plugin" "$configdir/$system/plugin.ini"
         rm "$temp_ini_plugin"
 
         # Create MAME Hi Score config file
         local temp_ini_hiscore="$(mktemp)"
         iniConfig " " "" "$temp_ini_hiscore"
         iniSet "hi_path" "$romdir/$system/scores"
-        copyDefaultConfig "$temp_ini_hiscore" "$md_conf_root/$system/hiscore.ini"
+        copyDefaultConfig "$temp_ini_hiscore" "$configdir/$system/hiscore.ini"
         rm "$temp_ini_hiscore"
-    fi
 
-    addEmulator 0 "$md_id" "arcade" "$md_inst/mame %BASENAME%"
-    addEmulator 1 "$md_id" "$system" "$md_inst/mame %BASENAME%"
+    addEmulator 0 "mame" "arcade" "$mameinstalldir/mame %BASENAME%"
+    addEmulator 1 "mame" "$system" "$mameinstalldir/mame %BASENAME%"
 
     addSystem "arcade"
     addSystem "$system"
