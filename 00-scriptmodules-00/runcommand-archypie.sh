@@ -1190,6 +1190,17 @@ function get_sys_command() {
     COMMAND="${COMMAND//\%ROM\%/\"$ROM\"}"
     COMMAND="${COMMAND//\%BASENAME\%/\"$ROM_BN\"}"
 
+    # extra replace tokens
+    ROMDIR=${ROM%/*}
+    COMMAND="${COMMAND//\%CLEANBASENAME\%/$(clean_name "$ROM_BN")}"
+    COMMAND="${COMMAND//\%DQUOTE\%/\"}"
+    COMMAND="${COMMAND//\%ROMDIR\%/${ROM%/*}}"
+    [[ ${ROMDIR} == *msx1_bee_card* ]] && COMMAND="${COMMAND//\%ADDSLOT\%/-cartslot1 beepack}"
+    [[ ${ROMDIR} == *msx_softcard* ]] && COMMAND="${COMMAND//\%ADDSLOT\%/-cartslot1 softcard}"
+    [[ ${ROMDIR} == *roms/*/*_* ]] && COMMAND="${COMMAND//\%SOFTLIST\%/${ROMDIR##*/}:}"
+    COMMAND="${COMMAND//\%ADDSLOT\%/}"
+    COMMAND="${COMMAND//\%SOFTLIST\%/}"
+
     # special case to get the last 2 folders for quake games for the -game parameter
     # remove everything up to /quake/
     local quake_dir="${ROM##*/quake/}"
