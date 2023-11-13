@@ -47,7 +47,7 @@ function depends_mamedev() {
                                                  One time update info\n\
 260.07 :\n\
 - implement retroscraper option for ArchyPie\n\
-- update python packages used for retroscraper \n\
+- update python packages used for retroscraper\n\
 260.06 :\n\
 - turn off retroscraper option for ArchyPie\n\
 260.05 :\n\
@@ -2420,8 +2420,8 @@ function retroscraper_remote_depends_mamedev () {
 	else
 		#for archypie we need to use a virtual python environment
 		#https://stackoverflow.com/questions/60868540/cant-install-python-modules-with-pip-on-manjaro-linux
-		[[ $($rootdir/python_virtual_environment/bin/python3 -m pip list 2>&1) == *"new release of pip"* ]] && $rootdir/python_virtual_environment/bin/python3 -m pip install --upgrade pip
 		[[ ! -d $rootdir/python_virtual_environment ]] && python3 -m venv $rootdir/python_virtual_environment
+		[[ $($rootdir/python_virtual_environment/bin/python3 -m pip list 2>&1) == *"new release of pip"* ]] && $rootdir/python_virtual_environment/bin/python3 -m pip install --upgrade pip
 		pip_list_output=$(su $user -c "$rootdir/python_virtual_environment/bin/python3 -m pip list|sed 's/ \{1,\}/==/g'")
 		for retroscraper_remote_module in ${retroscraper_remote_modules[@]};do 
 		[[ $pip_list_output != *$retroscraper_remote_module* ]] && $rootdir/python_virtual_environment/bin/python3 -m pip install $retroscraper_remote_module
