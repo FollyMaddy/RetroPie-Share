@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.08"
+rp_module_version="0260.09"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,9 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.09 :\n\
+- install Zemmix MSX1 types as zemmix\n\
+- install Zemmix MSX2 types as zemmix2\n\
 260.08 :\n\
 - be able to install the patched runcommand.sh for ArchyPie\n\
   (full ArchyPie support now)\n\
@@ -1731,6 +1734,12 @@ systemsrp+=( "msxturbor" )
 descriptionsrp+=( "MSX Turbo-R" )
 systemsrp+=( "neogeo-cd" )
 descriptionsrp+=( "Neo-Geo CD" )
+systemsrp+=( "zemmix" )
+descriptionsrp+=( "Zemmix" )
+systemsrp+=( "zemmix2" )
+descriptionsrp+=( "Zemmix CPC-61" )
+systemsrp+=( "zemmix2" )
+descriptionsrp+=( "Zemmix CPG-120" )
 for L in France Germany Italy Netherlands Spain Sweden Switzerland UK USA;do
  systemsrp+=( "atarist" )
  descriptionsrp+=( "ST ($L)" )
