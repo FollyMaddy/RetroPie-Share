@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.09"
+rp_module_version="0260.10"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.10 :\n\
+- turn off first joystick for Zemmix MSX2 types cpc61 and cpg120\n\
 260.09 :\n\
 - install Zemmix MSX1 types as zemmix\n\
 - install Zemmix MSX2 types as zemmix2\n\
@@ -1554,6 +1556,8 @@ fi
 #in part 13 the array ExtraPredefinedOptions can not be directly used in the basename runcommands, here we just use the last element of the array when not installing from the section EXTRAS, $2 is empty
 if [[ -z ${ExtraPredefinedOptions[@]} ]];then
 [[ ${systems[${#systems[@]}-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
+[[ ${systems[${#systems[@]}-1]} == cpc61 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
+[[ ${systems[${#systems[@]}-1]} == cpg120 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
 #the idea was to add 2 c64gs joysticks but when loading robocop2 the game got confused
 #[[ ${systems[${#systems[@]}-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy1 joybstr -joy2 joybstr" )
 #both don't work with cartridges as the cartridge has to be in the slot instead of the extra ram
