@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.10"
+rp_module_version="0260.11"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.11 :\n\
+- fix updating variables after installing run_mess.sh or runcommand.sh\n\
 260.10 :\n\
 - turn off first joystick for Zemmix MSX2 types cpc61 and cpg120\n\
 260.09 :\n\
@@ -1342,6 +1344,7 @@ function install_or_remove_run_mess_script_mamedev() {
     # ensure run_mess.sh script is executable
     chmod 755 "$scriptdir/scriptmodules/run_mess.sh"
     fi
+    rp_registerAllModules
     #"break" after usage in function build_menu_mamedev
 }
 
@@ -1375,6 +1378,7 @@ function install_or_restore_runcommand_script_mamedev() {
 		show_message_mamedev "Something went wrong :\nNo runcommand.sh detected\n\nMake sure you install it from the core packages.\nIf this somehow doesn't work then try to remove it first before installing it again."
 		fi
 	fi
+	rp_registerAllModules
 	#"break" after usage in function build_menu_mamedev
 }
 
