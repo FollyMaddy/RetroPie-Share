@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.13"
+rp_module_version="0260.14"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.14 :\n\
+- get mame ui/artwork usable with low resolution drivers in lr-xxxx\n\
 260.13 :\n\
 - work in progress on autoboot install lines, not advised to use\n\
 260.12 :\n\
@@ -1894,6 +1896,7 @@ if [[ $SystemType == non-arcade ]] && [[ -f $rootdir/libretrocores/lr-mess/mamem
 	ensureSystemretroconfig "$_system"
 	# ensure using a custom per-fake-core config for media loaders without using softlist
 	iniConfig " = " "\"" "$_custom_coreconfig"
+	iniSet "mame_alternate_renderer" "enabled"
 	iniSet "mame_boot_from_cli" "enabled"
 	iniSet "mame_mouse_enable" "enabled"
 	iniSet "mame_rotation_mode" "internal"
@@ -1901,6 +1904,7 @@ if [[ $SystemType == non-arcade ]] && [[ -f $rootdir/libretrocores/lr-mess/mamem
 	iniSet "mame_softlists_auto_media" "disabled"
 	# ensure using a custom per-fake-core config for basename loaders using softlist
 	iniConfig " = " "\"" "$_basename_coreconfig"
+	iniSet "mame_alternate_renderer" "enabled"
 	iniSet "mame_boot_from_cli" "enabled"
 	iniSet "mame_mouse_enable" "enabled"
 	iniSet "mame_rotation_mode" "internal"
@@ -1931,6 +1935,7 @@ if [[ $SystemType == arcade ]] && [[ -f $rootdir/libretrocores/lr-mame/mamearcad
 	ensureSystemretroconfig "$_system"
 	# ensure using a custom per-fake-core config for media loaders without using softlist
 	iniConfig " = " "\"" "$_custom_coreconfig"
+	iniSet "mame_alternate_renderer" "enabled"
 	iniSet "mame_boot_from_cli" "enabled"
 	iniSet "mame_mouse_enable" "enabled"
 	iniSet "mame_rotation_mode" "internal"
@@ -1938,6 +1943,7 @@ if [[ $SystemType == arcade ]] && [[ -f $rootdir/libretrocores/lr-mame/mamearcad
 	iniSet "mame_softlists_auto_media" "disabled"
 	# ensure using a custom per-fake-core config for basename loaders using softlist
 	iniConfig " = " "\"" "$_basename_coreconfig"
+	iniSet "mame_alternate_renderer" "enabled"
 	iniSet "mame_boot_from_cli" "enabled"
 	iniSet "mame_mouse_enable" "enabled"
 	iniSet "mame_rotation_mode" "internal"
