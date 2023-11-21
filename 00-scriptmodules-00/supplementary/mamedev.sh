@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.14"
+rp_module_version="0260.15"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -45,6 +45,8 @@ function depends_mamedev() {
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
     show_message_mamedev "\
                                                  One time update info\n\
+260.15 :\n\
+- ensure a system specific retroarch.cfg is created in ArchyPie\n\
 260.14 :\n\
 - get mame ui/artwork usable with low resolution drivers in lr-xxxx\n\
 260.13 :\n\
@@ -744,7 +746,7 @@ function subgui_remove_installs_mamedev() {
     csv=( ",,,," )
     local installed_system_read
     clear
-    echo "reading the available databases"
+    echo "reading the installed systems"
     while read installed_system_read;do csv+=("$installed_system_read");done < <(grep -r ^mame- $rootdir/configs/*/emulators.cfg|cut -d/ -f5|uniq|while read line;do echo "\",Remove $line,,remove_installs_mamedev $line,\"";done)
     if [[ -z ${csv[1]} ]]; then
     show_message_mamedev "No systems installed, use cancel to go back !"
@@ -1893,7 +1895,11 @@ lastdescriptionmatch=
 	mkRomDir "$_system"
 
 if [[ $SystemType == non-arcade ]] && [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
-	ensureSystemretroconfig "$_system"
+	if [[ $scriptdir == *RetroPie* ]];then
+	    ensureSystemretroconfig "$_system"
+	else
+	    defaultRAConfig "$_system"
+	fi
 	# ensure using a custom per-fake-core config for media loaders without using softlist
 	iniConfig " = " "\"" "$_custom_coreconfig"
 	iniSet "mame_alternate_renderer" "enabled"
@@ -1932,7 +1938,11 @@ if [[ $SystemType == non-arcade ]] && [[ -f $rootdir/libretrocores/lr-mess/mamem
 	iniSet "#input_ai_service_btn" "11"
 fi
 if [[ $SystemType == arcade ]] && [[ -f $rootdir/libretrocores/lr-mame/mamearcade_libretro.so ]];then
-	ensureSystemretroconfig "$_system"
+	if [[ $scriptdir == *RetroPie* ]];then
+	    ensureSystemretroconfig "$_system"
+	else
+	    defaultRAConfig "$_system"
+	fi
 	# ensure using a custom per-fake-core config for media loaders without using softlist
 	iniConfig " = " "\"" "$_custom_coreconfig"
 	iniSet "mame_alternate_renderer" "enabled"
