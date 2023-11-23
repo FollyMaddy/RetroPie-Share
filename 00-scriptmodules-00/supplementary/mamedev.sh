@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.15"
+rp_module_version="0260.16"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -43,8 +43,21 @@ function depends_mamedev() {
     mamedev_csv=()
     getDepends curl python3 $(if [[ $scriptdir == *RetroPie* ]];then xattr;else echo python-xattr;fi)
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
+
+    [[ $scriptdir == *ArchyPie* ]] &&  show_message_mamedev "\
+You are running ArchyPie.\n\
+\n\
+Note that ArchyPie is beta and that some things do not correctly work.\n\
+There are issues with RetroArch not working.\n\
+At least not working on the RPI4 in Manjaro 23 linux.\n\
+So lr-mess and lr-mame won't work too\n\
+"
+
     show_message_mamedev "\
                                                  One time update info\n\
+260.16 :\n\
+- add ArchyPie beta message as not all is working correctly\n\
+- add message, RetroArch is not installed, when installing libretro cores\n\
 260.15 :\n\
 - ensure a system specific retroarch.cfg is created in ArchyPie\n\
 260.14 :\n\
@@ -62,7 +75,6 @@ function depends_mamedev() {
 - install Zemmix MSX2 types as zemmix2\n\
 260.08 :\n\
 - be able to install the patched runcommand.sh for ArchyPie\n\
-  (full ArchyPie support now)\n\
 260.07 :\n\
 - implement retroscraper option for ArchyPie\n\
 - update python packages used for retroscraper\n\
@@ -975,9 +987,9 @@ function subgui_installs_mamedev() {
 	csv=(
 ",,,,,,,,,"
 ",Install MAME    (required install) =>  ARCADE+NON-ARCADE,,package_setup mame,,,,,show_message_mamedev \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-MESS (optional install) =>   NON-ARCADE only,,package_setup lr-mess,,,,,show_message_mamedev \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-MAME (optional install) =>     ARCADE only,,package_setup lr-mame,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
+",Install LR-MESS (optional install) =>   NON-ARCADE only,,if [[ -d /opt/retropie/emulators/retroarch ]];then package_setup lr-mess;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d /opt/retropie/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d /opt/retropie/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
 ",,,,"
 ",▼\Zr\Z1Usage is for your own risk !,,,"
 ",\Z3Install rpi1/0 mame0255 binary (only : channelf apfm1000 ...),,\
