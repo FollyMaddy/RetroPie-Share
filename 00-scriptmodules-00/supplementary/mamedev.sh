@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.16"
+rp_module_version="0260.17"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -55,6 +55,10 @@ So lr-mess and lr-mame won't work too\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+260.17 :\n\
+- show a lr-mess binary list from gdrive and be able to install one\n\
+- show a lr-mame binary list from gdrive and be able to install one\n\
+- re-order items and improve messages\n\
 260.16 :\n\
 - add ArchyPie beta message as not all is working correctly\n\
 - add message, RetroArch is not installed, when installing libretro cores\n\
@@ -380,14 +384,14 @@ function subgui_systems_extras_mamedev() {
 
 
 function subgui_gdrive_binaries_mamedev() {
+	#$1=mame/lr-mess/lr-mame $2=destination-path $3=gdrive-folder-id
 	show_message_mamedev "\
-A list of mame binaries from my gdrive will be presented.\n\
-Selecting one will remove your current mame, if installed.\n\
-Then it will download the selected mame in /tmp/ and extract it in :\n\
-$emudir/mame/\n\
-After that it will install dependancies for mame, if not installed.\n\
-Last thing to do is the configuring.\n\
-\n\
+A list of $1 binaries will be presented, selecting one will :\n\
+- remove your current $1, if installed\n\
+- download the selected $1 in /tmp/\n\
+- extract it to $2/$1\n\
+- install dependancies for $1\n\
+- configure $1\n\
 Make sure you pick the correct arch :\n\
 - \"armhf\" is for rpi's with armhf, armv7l or aarch64 cpu using 32 bit OS\n\
 - \"armv7l\" is for rpi's with armv7l or aarch64 cpu using 32 bit OS\n\
@@ -395,37 +399,41 @@ Make sure you pick the correct arch :\n\
 - \"x86\" is for x86, x86_64 cpu using 32 bit OS\n\
 - \"x86_64\" is for x86_64 cpu using 64 bit OS\n\
 Make sure you use the correct OS version :\n\
-- gcc8 will work on Debian10/Buster & Debian11/Bullseye deratives\n\
-- gcc9 should work on Debian10/Buster & Debian11/Bullseye deratives\n\
-- gcc10 will work on Debian11/Bullseye deratives\n"
+- gcc8 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
+- gcc9 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
+- gcc10 should work on Debian11/Bullseye & Debian12/Bookworm derivatives\n\
+- gcc12 should work on Debian12/Bookworm derivatives\n\
+- gcc12 should work on latest Arch linux derivatives, for ArchyPie\n\
+"
     local csv=()
     #the first value is reserved for the column descriptions
     csv=( ",,,," )
     local gdrive_read
     clear
     echo "reading the available binaries"
-    while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$1#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|tac|while read line;do echo "\",$(echo $line|cut -d/ -f48),,install_mame_from_gdrive_mamedev $(echo $line|cut -d/ -f48) $(echo $line|cut -d/ -f6),\"";done)
+    while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$3#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|tac|while read line;do echo "\",$(echo $line|cut -d/ -f48),,install_binary_from_gdrive_mamedev $1 $2 $(echo $line|cut -d/ -f48) $(echo $line|cut -d/ -f6),\"";done)
     build_menu_mamedev
 }
 
 
 function subgui_stickfreaks_binaries_mamedev() {
 	show_message_mamedev "\
-A list of stickfreak mame binaries will be presented.\n\
-Selecting one will remove your current mame, if installed.\n\
-Then it will download the selected mame, extract it and strip it in :\n\
-$emudir/mame/\n\
-After that it will install dependancies for mame, if not installed.\n\
-Last thing to do is the configuring.\n\
-\n\
+A list of mame binaries will be presented, selecting one will :\n\
+- remove your current mame, if installed\n\
+- download the selected mame in $emudir/mame\n\
+- extract it to $emudir/mame\n\
+- install dependancies for mame\n\
+- configure mame\n\
 Make sure you pick the correct arch :\n\
 - \"rpi2b\" is not an arch but is for rpi2b using 32 bit OS\n\
 - \"armhf\" is for rpi's with armhf, armv7l or aarch64 cpu using 32 bit OS\n\
 - \"aarch64\" is for aarch64 cpu using 64 bit OS\n\
 Make sure you use the correct OS version :\n\
-- gcc8 will work on Debian10/Buster & Debian11/Bullseye deratives\n\
-- gcc9 should work on Debian10/Buster & Debian11/Bullseye deratives\n\
-- gcc10 will work on Debian11/Bullseye deratives\n"
+- gcc8 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
+- gcc9 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
+- gcc10 should work on Debian11/Bullseye & Debian12/Bookworm derivatives\n\
+- gcc12 should work on Debian12/Bookworm derivatives\n\
+"
     local csv=()
     #the first value is reserved for the column descriptions
     csv=( ",,,," )
@@ -991,7 +999,14 @@ function subgui_installs_mamedev() {
 ",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d /opt/retropie/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d /opt/retropie/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
 ",,,,"
-",▼\Zr\Z1Usage is for your own risk !,,,"
+",\Z4►Show and install mame from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1--8uSe-xs1vFA-yPfw6Ac2XF6zzNzAuP,"
+",\Z4►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
+",,,,"
+",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d /opt/retropie/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
+",,,,"
+",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d /opt/retropie/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
+",,,,"
+",▼\Zr\Z1Experimental : Usage is for your own risk !,,,"
 ",\Z3Install rpi1/0 mame0255 binary (only : channelf apfm1000 ...),,\
 sed -i 's/ \!armv6//g' $scriptdir/scriptmodules/emulators/mame.sh;\
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1enP_Fkpj482JJ9LI7s5Y8bamJunwgOnL -m -P "/tmp";\
@@ -1041,8 +1056,6 @@ If nessasary use the runcommands with -frameskip 10.\n\n\
 This installs a Debian 10 / gcc8.3 / patched source binary.\n\
 The binary should work on Debian 10/11 based OSes.\n\
 \","
-",\Z4►Show and install mame from gdrive binary list,,subgui_gdrive_binaries_mamedev 1--8uSe-xs1vFA-yPfw6Ac2XF6zzNzAuP,"
-",\Z4►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
 	)
 #",▼\Zr\Z1Usage is for your own risk and very experimental !,,,"
 #",\Z1Install lr-mame/lr-mess binary (x86/x86_64) <= libretro buildbot,,install-lr-mame-for-x86-or-x86_64,"
@@ -1329,16 +1342,18 @@ function build_menu_mamedev() {
 }
 
 
-function install_mame_from_gdrive_mamedev () {
-echo "remove current mame"
-rm -r $emudir/mame 2>&-
-mkdir -p $emudir/mame 2>&-
-echo "get mame binary from gdrive and install it"
-#$1=mame-binary $2=gdrive_file_id
-curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/$2 -m -P "/tmp";\
-unzip /tmp/$1 -d $emudir/
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends
-configure_mame_mamedev
+function install_binary_from_gdrive_mamedev () {
+#$1=mame/lr-mess/lr-mame $2=destination-path $3=binary-name $4=gdrive_file_id
+echo "remove current $1"
+rm -r $2/$1 2>&-
+mkdir -p $2/$1 2>&-
+echo "get $1 binary from gdrive and install it"
+curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/$4 -m -P "/tmp";\
+[[ $3 == *zip ]] && unzip /tmp/$3 -d $2
+[[ $3 == *7z ]] && 7za x /tmp/$3 -o$2
+$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh $1 depends
+[[ $1 == mame ]] && configure_$1_mamedev
+[[ $1 == lr* ]] && $scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh $1 configure
 }
 
 
