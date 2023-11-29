@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.17"
+rp_module_version="0260.18"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -47,14 +47,21 @@ function depends_mamedev() {
     [[ $scriptdir == *ArchyPie* ]] &&  show_message_mamedev "\
 You are running ArchyPie.\n\
 \n\
-Note that ArchyPie is beta and that some things do not correctly work.\n\
-There are issues with RetroArch not working.\n\
+Note that ArchyPie is beta and that some things do not work correctly.\n\
+There are issues with flags not being passed correctly.\n\
+Therefor RetroArch can be compiled with the wrong flags and not work.\n\
 At least not working on the RPI4 in Manjaro 23 linux.\n\
-So lr-mess and lr-mame won't work too\n\
+\n\
+Flags, now filled with :\n\
+__platform_flags = ${__platform_flags}\n\
+__XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 "
 
     show_message_mamedev "\
                                                  One time update info\n\
+260.18 :\n\
+- edit initial ArchyPie message with detected flags\n\
+- enable updates from 260.17 for ArchyPie\n\
 260.17 :\n\
 - show a lr-mess binary list from gdrive and be able to install one\n\
 - show a lr-mame binary list from gdrive and be able to install one\n\
@@ -402,8 +409,10 @@ Make sure you use the correct OS version :\n\
 - gcc8 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
 - gcc9 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
 - gcc10 should work on Debian11/Bullseye & Debian12/Bookworm derivatives\n\
+- gcc10 should work on latest Arch linux derivatives, for ArchyPie\n\
 - gcc12 should work on Debian12/Bookworm derivatives\n\
 - gcc12 should work on latest Arch linux derivatives, for ArchyPie\n\
+- if gcc12 version is not working then try a gcc10 version\n\
 "
     local csv=()
     #the first value is reserved for the column descriptions
@@ -995,16 +1004,16 @@ function subgui_installs_mamedev() {
 	csv=(
 ",,,,,,,,,"
 ",Install MAME    (required install) =>  ARCADE+NON-ARCADE,,package_setup mame,,,,,show_message_mamedev \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-MESS (optional install) =>   NON-ARCADE only,,if [[ -d /opt/retropie/emulators/retroarch ]];then package_setup lr-mess;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d /opt/retropie/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d /opt/retropie/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
+",Install LR-MESS (optional install) =>   NON-ARCADE only,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-mess;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
 ",,,,"
 ",\Z4►Show and install mame from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1--8uSe-xs1vFA-yPfw6Ac2XF6zzNzAuP,"
 ",\Z4►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
 ",,,,"
-",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d /opt/retropie/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
+",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",,,,"
-",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d /opt/retropie/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
+",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",,,,"
 ",▼\Zr\Z1Experimental : Usage is for your own risk !,,,"
 ",\Z3Install rpi1/0 mame0255 binary (only : channelf apfm1000 ...),,\
