@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.18"
+rp_module_version="0260.19"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -59,6 +59,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+260.19 :\n\
+- add yes/no messagebox function\n\
+- fix reading from stickfreaks website for binaries\n\
+- add message and choice about insecure usage stickfreaks site\n\
 260.18 :\n\
 - edit initial ArchyPie message with detected flags\n\
 - enable updates from 260.17 for ArchyPie\n\
@@ -449,8 +453,8 @@ Make sure you use the correct OS version :\n\
     local stickfreaks_read
     clear
     echo "reading the available binaries"
-    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl https://stickfreaks.com/mame/|cut -d '"' -f8|grep ^mame_|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line,\"";done)
-    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl https://stickfreaks.com/mame/old/|cut -d '"' -f8|grep ^mame_|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line old/,\"";done)
+    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl --insecure https://stickfreaks.com/mame/|grep \"mame_.*7z|cut -d '"' -f2|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line,\"";done)
+    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl --insecure https://stickfreaks.com/mame/old/|grep \"mame_.*7z|cut -d '"' -f2|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line old/,\"";done)
     build_menu_mamedev
 }
 
@@ -1009,7 +1013,17 @@ function subgui_installs_mamedev() {
 ",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
 ",,,,"
 ",\Z4►Show and install mame from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1--8uSe-xs1vFA-yPfw6Ac2XF6zzNzAuP,"
+	)
+if [[ $(curl https://stickfreaks.com/mame/ 2>&1) == *problem* ]];then
+	csv+=(
+",\Z1►Insecure:\Z4►Show and install mame from stickfreaks binary list,,show_message_yesno_mamedev \"Curl says that the connection to the strickfreaks website is insecure.\nProceed at your own risk or cancel by selecting no.\" \"subgui_stickfreaks_binaries_mamedev\","
+	)
+else
+	csv+=(
 ",\Z4►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
+	)
+fi
+	csv+=(
 ",,,,"
 ",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",,,,"
@@ -2264,6 +2278,21 @@ fi
 
 function show_message_mamedev() {
 dialog --colors --backtitle "$__backtitle" --msgbox "$1" 22 76 2>&1 >/dev/tty
+}
+
+
+function show_message_yesno_mamedev() {
+dialog --colors --backtitle "$__backtitle" --yesno "$1" 22 76 2>&1 >/dev/tty
+# Get exit status
+# 0 means user hit [yes] button.
+# 1 means user hit [no] button.
+# 255 means user hit [Esc] key.
+response=$?
+case $response in
+   0) $2;;
+   1) ;;
+   255) echo "[ESC] key pressed.";;
+esac
 }
 
 
