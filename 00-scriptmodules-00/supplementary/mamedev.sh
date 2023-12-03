@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.19"
+rp_module_version="0260.20"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -59,6 +59,11 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+260.20 :\n\
+- remove stickfreaks binaries option\n\
+- add re-packed stickfreaks binaries to gdrive\n\
+- use new gdrive for all mame binaries\n\
+- use the same 7zip structure for all mame binaries\n\
 260.19 :\n\
 - add yes/no messagebox function\n\
 - fix reading from stickfreaks website for binaries\n\
@@ -1012,21 +1017,8 @@ function subgui_installs_mamedev() {
 ",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
 ",,,,"
-",\Z4►Show and install mame from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1--8uSe-xs1vFA-yPfw6Ac2XF6zzNzAuP,"
-	)
-if [[ $(curl https://stickfreaks.com/mame/ 2>&1) == *problem* ]];then
-	csv+=(
-",\Z1►Insecure:\Z4►Show and install mame from stickfreaks binary list,,show_message_yesno_mamedev \"Curl says that the connection to the strickfreaks website is insecure.\nProceed at your own risk or cancel by selecting no.\" \"subgui_stickfreaks_binaries_mamedev\","
-	)
-else
-	csv+=(
-",\Z4►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
-	)
-fi
-	csv+=(
-",,,,"
+",\Z4►Show and install mame    from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1evd5_a2Ia118kf1aqB_cVSJFj2fp6oFQ,"
 ",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
-",,,,"
 ",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",,,,"
 ",▼\Zr\Z1Experimental : Usage is for your own risk !,,,"
