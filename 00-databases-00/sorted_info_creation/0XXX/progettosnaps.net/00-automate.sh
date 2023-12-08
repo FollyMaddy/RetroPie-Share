@@ -74,5 +74,8 @@ cp ../*.ini ./
  ##for file in $(ls -r *.ini);do sed -i "s/@$(basename $file .ini)@$(basename $file .ini)/@$(basename $file .ini)/g" mame0$version\_systems_sorted_info;done
  
  #add this 0229 manually (seems to be a bit problematic but this line should work)
- #Driver tbaskb (Electronic Basketball (Tandy)): @last0229@classich@electronic_game@handheld@non-arcade
+ #Driver tbaskb (Electronic Basketball (Tandy)): @last0229@classich@electronic_game@handheld@non-arcade@
  fi
+ #add 1 @ behing each line so all entry's are uniqe
+ sed -i 's/$/@/' mame0$version\_systems_sorted_info
+ sed -i 's/$/@/'
