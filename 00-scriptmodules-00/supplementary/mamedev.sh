@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0260.21"
+rp_module_version="0260.22"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -59,6 +59,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+260.22 :\n\
+- fix permission issues with stickfreaks binaries\n\
 260.21 :\n\
 - create submenu for downloading gamelists\n\
 260.20 :\n\
@@ -1392,7 +1394,10 @@ curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py |
 [[ $3 == *zip ]] && unzip /tmp/$3 -d $2
 [[ $3 == *7z ]] && 7za x /tmp/$3 -o$2
 $scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh $1 depends
-[[ $1 == mame ]] && configure_$1_mamedev
+if [[ $1 == mame ]];then
+	configure_$1_mamedev
+	chmod -R 755 /opt/retropie/emulators/mame #fix permission issues with stickfreaks binaries
+fi
 [[ $1 == lr* ]] && $scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh $1 configure
 }
 
