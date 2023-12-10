@@ -65,18 +65,38 @@ _EOF_
 
     cat >"$md_inst/b-em-allegro4-multiload.sh" << _EOF_
 #!/bin/bash
+dialog --colors --backtitle "BBC MICRO load information" --msgbox "\
+A reminder :\n\
+\n\
+- this emulator is installed by a third party module-script\n\
+- therefor this emulation is : as is\n\
+  - it works for you or not\n\
+- when running software you can selected the appropriate runcommand\n\
+  - using BBC-B or BBC-Master\n\
+- a script is loaded to detect which computer you have selected\n\
+- the same script will detect the selected media : disk or tape\n\
+- the same script will add simulated key presses at boot\n\
+  - presses Alt + Return at boot to get full-screen\n\
+  - presses keys to autoload the sotware depending on disk or tape\n\
+- then the b-em emulator loads with appropriate options\n\
+- remember : you can use F11 to go into the menu\n\
+- in the menu you are able to quit the emulator\n\
+\n\
+Have fun ;-)\n\
+" 22 76 2>&1 >/dev/tty
+sleep 0.5
 function load_tape() {
 cassload=();cassload=( "quotedbl" "t" "a" "p" "e" "Return" "c" "h" "a" "i" "n" "at" "at" "Return" )
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
 /opt/retropie/emulators/b-em-allegro4/b-em \$1 -tape "\$2"|\
-for index in \${!cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${cassload[\$index]} sleep 0.1 keyup \${cassload[\$index]};done
+for index in \${!cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5 keydown Alt+Return sleep 1 keyup Alt+Return sleep 1.5";fi) keydown \${cassload[\$index]} sleep 0.1 keyup \${cassload[\$index]};done
 }
 function load_disc() {
 #dfs autoload with Shift_L+F12
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/retropie/emulators/b-em-allegro4/b-em \$1 -disc "\$2" | xdotool sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
+/opt/retropie/emulators/b-em-allegro4/b-em \$1 -disc "\$2" | xdotool sleep 1.5 keydown Alt+Return sleep 1 keyup Alt+Return sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
 }
 [[ "\$2" == *.uef ]] && load_tape \$1 "\$2"
 [[ "\$2" == *.ssd ]] && load_disc \$1 "\$2"
