@@ -12,8 +12,12 @@
 rp_module_id="b-em-allegro4"
 rp_module_desc="Acorn BBC emulator"
 rp_module_help="\
-Use F11 for the GUI !\n\
-EXIT the emulator in the GUI or use ctrl+c !\n\n\
+QUIT information:\n\n\
+Press ALT + RETURN to quit full-screen.\n\
+(use above to prevent a crash when quitting)\n\n\
+Press F11 to go into the menu.\n\
+Then use the mouse or press ALT + F and press E to exit.\n\
+Or use ctrl+c instead !\n\n\
 Supported ROMS/MEDIA : .uef .ssd\n\
 ROMS/MEDIA have to be in $romdir/bbcmicro\n\n\
 "
@@ -65,28 +69,18 @@ _EOF_
 
     cat >"$md_inst/b-em-allegro4-multiload.sh" << _EOF_
 #!/bin/bash
-
-dialog --msgbox "\
-QUIT information:\n\n\
-Press ALT + RETURN to quit full-screen.\n\
-(use above to prevent a crash when quitting)\n\n\
-Press F11 to go into the menu.\n\
-Then use the mouse or press ALT + F and press E to exit.\n\n\
-Have fun ;-)\n\
-" 22 76 2>&1 >/dev/tty
-
 function load_tape() {
 cassload=();cassload=( "Shift_L+quoteright" "t" "a" "p" "e" "Return" "c" "h" "a" "i" "n" "at" "at" "Return" )
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/$(echo $rootdir|cut -d/ -f3)/emulators/b-em-allegro4/b-em \$1 -tape "\$2"|\
+/opt/retropie/emulators/b-em-allegro4/b-em \$1 -tape "\$2"|\
 for index in \${!cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5 keydown Alt+Return sleep 1 keyup Alt+Return sleep 1.5";fi) keydown \${cassload[\$index]} sleep 0.1 keyup \${cassload[\$index]};done
 }
 function load_disc() {
 #dfs autoload with Shift_L+F12
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/$(echo $rootdir|cut -d/ -f3)/emulators/b-em-allegro4/b-em \$1 -disc "\$2" | xdotool sleep 1.5 keydown Alt+Return sleep 1 keyup Alt+Return sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
+/opt/retropie/emulators/b-em-allegro4/b-em \$1 -disc "\$2" | xdotool sleep 1.5 keydown Alt+Return sleep 1 keyup Alt+Return sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
 }
 [[ "\$2" == *.uef ]] && load_tape \$1 "\$2"
 [[ "\$2" == *.ssd ]] && load_disc \$1 "\$2"
