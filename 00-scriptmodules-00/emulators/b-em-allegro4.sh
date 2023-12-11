@@ -12,14 +12,10 @@
 rp_module_id="b-em-allegro4"
 rp_module_desc="Acorn BBC emulator"
 rp_module_help="\
-QUIT information:\n\n\
-Press ALT + RETURN to quit full-screen.\n\
-(use above to prevent a crash when quitting)\n\n\
-Press F11 to go into the menu.\n\
-Then use the mouse or press ALT + F and press E to exit.\n\
-Or use ctrl+c instead !\n\n\
 Supported ROMS/MEDIA : .uef .ssd\n\
 ROMS/MEDIA have to be in $romdir/bbcmicro\n\n\
+Press F11 to go into the menu\n\n\
+Exit with Alt + Escape\n\
 "
 rp_module_section="exp"
 rp_module_flags=""
@@ -29,14 +25,53 @@ function depends_b-em-allegro4() {
 }
 
 function sources_b-em-allegro4() {
+    rm -d -r $md_build
     downloadAndExtract "https://github.com/stardot/b-em/archive/263d2d44e53e593d1f51c0be9b9f404447fb33a3.zip" "$md_build"
+    
 }
 
 function build_b-em-allegro4() {
     cd $md_build/b-em-263d2d44e53e593d1f51c0be9b9f404447fb33a3
+    
+    if [[ ! -f PatchFile.done ]];then
+    # workaround for starting in full-screen and adding the Alt + Esc combination to exit with restoring to the original resolution by leaving full-screen first
+    echo patching file src/video.c
+    sed -i 's/int fullscreen = 0;/int fullscreen = 1;/g' src/video.c;
+    cat >"PatchFile" << _EOF_
+--- main.c	2023-12-11 17:24:19.391903834 +0100
++++ main.c	2023-12-11 16:21:55.700289167 +0100
+@@ -220,6 +220,7 @@
+         }
+ 
+         video_init();
++	video_enterfullscreen();
+         mode7_makechars();
+ 
+ #ifndef WIN32
+@@ -350,6 +351,11 @@
+                         tube_reset();
+                 }
+                 resetting = key[KEY_F12];
++                if (key[KEY_ALT] && key[KEY_ESC])
++                {
++                        video_leavefullscreen();
++                        main_close();
++                }
+         }
+         else
+         {
+_EOF_
+    patch src/main.c < PatchFile
+    mv PatchFile PatchFile.done
+    else
+    echo no patch for video.c and main.c is needed !
+    fi
+    
     ./autogen.sh
     ./configure
-    sed -i 's/-mcpu/-fcommon -mcpu/g' src/Makefile; # workaround for compiling with gcc-10/g++-10
+    # workaround for compiling with gcc-10/g++-10
+    echo patching file src/Makefile
+    sed -i 's/-mcpu/-fcommon -mcpu/g' src/Makefile;
     make -j4
 }
 
@@ -74,13 +109,13 @@ cassload=();cassload=( "Shift_L+quoteright" "t" "a" "p" "e" "Return" "c" "h" "a"
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
 /opt/retropie/emulators/b-em-allegro4/b-em \$1 -tape "\$2"|\
-for index in \${!cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5 keydown Alt+Return sleep 1 keyup Alt+Return sleep 1.5";fi) keydown \${cassload[\$index]} sleep 0.1 keyup \${cassload[\$index]};done
+for index in \${!cassload[@]};do xdotool \$(if [[ \$index == 0 ]];then echo "sleep 1.5";fi) keydown \${cassload[\$index]} sleep 0.1 keyup \${cassload[\$index]};done
 }
 function load_disc() {
 #dfs autoload with Shift_L+F12
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-/opt/retropie/emulators/b-em-allegro4/b-em \$1 -disc "\$2" | xdotool sleep 1.5 keydown Alt+Return sleep 1 keyup Alt+Return sleep 1.5 keydown Shift_L+F12 sleep 1 keyup Shift_L+F12
+/opt/retropie/emulators/b-em-allegro4/b-em \$1 -disc "\$2" -autoboot
 }
 [[ "\$2" == *.uef ]] && load_tape \$1 "\$2"
 [[ "\$2" == *.ssd ]] && load_disc \$1 "\$2"
