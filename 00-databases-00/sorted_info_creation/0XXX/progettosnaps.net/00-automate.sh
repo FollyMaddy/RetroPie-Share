@@ -78,4 +78,4 @@ cp ../*.ini ./
  fi
  #add 1 @ behing each line so all entry's are uniqe
  sed -i 's/$/@/' mame0$version\_systems_sorted_info
- sed -i 's/$/@/'
+
