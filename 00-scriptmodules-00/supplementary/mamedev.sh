@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0261.01"
+rp_module_version="0261.02"
 rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
 
 rp_module_database_versions=()
@@ -41,7 +41,7 @@ local system_read
 
 function depends_mamedev() {
     mamedev_csv=()
-    getDepends curl python3 $(if [[ $scriptdir == *RetroPie* ]];then xattr;else echo python-xattr;fi)
+    getDepends curl python3 $(if [[ $scriptdir == *RetroPie* ]];then echo xattr;else echo python-xattr;fi)
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
 
     [[ $scriptdir == *ArchyPie* ]] &&  show_message_mamedev "\
@@ -59,6 +59,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+261.02 :\n\
+- fix dependency install for xattr\n\
 261.01 :\n\
 - redo for ArchyPie : fix permission issues with stickfreaks binaries\n\
 261.00 :\n\
