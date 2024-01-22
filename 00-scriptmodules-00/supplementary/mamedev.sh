@@ -25,8 +25,8 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0261.04"
-rp_module_version_mame="$(echo $rp_module_version|cut -d"." -f1)"
+rp_module_version="0261.05"
+rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
 rp_module_database_versions=( "" $(curl -s https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-databases-00/mame|sed 's/:/\\\n/g'|grep _info\"|grep path|grep -v 023|grep -E -o '[0-9.]+'|sort -r) )
@@ -59,6 +59,12 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+261.05 :\n\
+- add download links of the realistic overlays packs, as comments\n\
+- change the extended folder locations for handheld and p&p overlays :\n\
+  roms/<system>/media/retroarch/overlays\n\
+- download the cheats from the new https location\n\
+- change and use posix instead of the cut command in many cases\n\
 261.04 :\n\
 - fix realistic overlay configs for new RetroArch, when installing\n\
 261.03 :\n\
@@ -1050,13 +1056,13 @@ function subgui_installs_mamedev() {
 	csv=(
 ",,,,,,,,,"
 ",Install MAME    (required install) =>  ARCADE+NON-ARCADE,,package_setup mame,,,,,show_message_mamedev \"Required :\n\nMAME is a standalone emulator and is used to emulate :\n- ARCADE (about 34000)\n- NON-ARCADE (about 4000)\n\nThis script also depends on MAME to extract the media data.\nTherfor MAME must be installed.\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-MESS (optional install) =>   NON-ARCADE only,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-mess;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
-",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
+",Install LR-MESS (optional install) =>   NON-ARCADE only,,if [[ -d $rootdir/emulators/retroarch ]];then package_setup lr-mess;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d $rootdir/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
+",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d $rootdir/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
 ",,,,"
 ",\Z4►Show and install mame    from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1evd5_a2Ia118kf1aqB_cVSJFj2fp6oFQ,"
-",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
-",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d /opt/$(echo $rootdir|cut -d/ -f3)/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
+",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
+",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",,,,"
 ",▼\Zr\Z1Experimental : Usage is for your own risk !,,,"
 ",\Z3Install rpi1/0 mame0255 binary (only : channelf apfm1000 ...),,\
@@ -1064,7 +1070,7 @@ sed -i 's/ \!armv6//g' $scriptdir/scriptmodules/emulators/mame.sh;\
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1enP_Fkpj482JJ9LI7s5Y8bamJunwgOnL -m -P "/tmp";\
 rm -d -r $emudir/mame;\
 unzip /tmp/mame0255-debian10-_source_patched_for_gcc8.3-rpi1_channelf_apfm1000.zip -d $emudir/;\
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends;\
+$scriptdir/${rootdir##*/}_packages.sh mame depends;\
 configure_mame_mamedev;\
 sed -i 's/\!mali/\!mali \!armv6/g' $scriptdir/scriptmodules/emulators/mame.sh;\
 ,,,,,show_message_mamedev \"\
@@ -1074,7 +1080,7 @@ This menu item does the following :\n\
 - extract it from /tmp to $emudir\n\
 - the binary will vanish from /tmp after next reboot\n\
 - get depends for mame\n\
-- configure mame for $(echo $rootdir|cut -d/ -f3)\n\
+- configure mame for ${rootdir##*/}\n\
 - Restore the mame module-script\n\n\
 After this install channelf or apfm1000 from within this script.\n\
 Only use the mame standalone runcommands.\n\
@@ -1088,7 +1094,7 @@ sed -i 's/ \!armv6//g' $scriptdir/scriptmodules/emulators/mame.sh;\
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/1aOBPSvQPIbfOjkDeWzf1sbD09Q5EzNE7 -m -P "/tmp";\
 rm -d -r $emudir/mame;\
 unzip /tmp/mame0255-debian10-_source_patched_for_gcc8.3-rpi1-all.zip -d $emudir/;\
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends;\
+$scriptdir/${rootdir##*/}_packages.sh mame depends;\
 configure_mame_mamedev;\
 sed -i 's/\!mali/\!mali \!armv6/g' $scriptdir/scriptmodules/emulators/mame.sh;\
 ,,,,,show_message_mamedev \"\
@@ -1098,7 +1104,7 @@ This menu item does the following :\n\
 - extract it from /tmp to $emudir\n\
 - the binary will vanish from /tmp after next reboot\n\
 - get depends for mame\n\
-- configure mame for $(echo $rootdir|cut -d/ -f3)\n\
+- configure mame for ${rootdir##*/}\n\
 - Restore the mame module-script\n\n\
 After this you are able to install any driver from within this script.\n\
 But remember most drivers will run too slow on the rpi1/0.\n\
@@ -1403,12 +1409,12 @@ echo "get $1 binary from gdrive and install it"
 curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/$4 -m -P "/tmp";\
 [[ $3 == *zip ]] && unzip /tmp/$3 -d $2
 [[ $3 == *7z ]] && 7za x /tmp/$3 -o$2
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh $1 depends
+$scriptdir/${rootdir##*/}_packages.sh $1 depends
 if [[ $1 == mame ]];then
 	configure_$1_mamedev
-	chmod -R 755 /opt/$(echo $rootdir|cut -d/ -f3)/emulators/mame #fix permission issues with stickfreaks binaries
+	chmod -R 755 $rootdir/emulators/mame #fix permission issues with stickfreaks binaries
 fi
-[[ $1 == lr* ]] && $scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh $1 configure
+[[ $1 == lr* ]] && $scriptdir/${rootdir##*/}_packages.sh $1 configure
 }
 
 
@@ -1421,7 +1427,7 @@ echo "get mame binary from stickfreaks and install it"
 wget -c https://stickfreaks.com/mame/$2$1 $emudir/mame -P $emudir/mame
 7za x $emudir/mame/*.7z -o$emudir/mame/
 strip $emudir/mame/mame
-$scriptdir/$(echo $rootdir|cut -d/ -f3)_packages.sh mame depends
+$scriptdir/${rootdir##*/}_packages.sh mame depends
 configure_mame_mamedev
 }
 
@@ -2332,20 +2338,28 @@ function download_cheats_mamedev() {
 clear
 echo "get the cheat.7z and place it in the correct path"
 echo
-#see http://www.mamecheat.co.uk/
-wget -N -P /tmp http://cheat.retrogames.com/$1
+#see https://www.mamecheat.co.uk/
+#backup of old and still working download link http://cheat.retrogames.com/$1 (18-01-2024)
+wget -N -P /tmp https://www.mamecheat.co.uk/$1
 #cheatpath for lr-mess
-unzip -o /tmp/$(echo $1|cut -d\/ -f2) cheat.7z -d $datadir/BIOS/mame/cheat
+unzip -o /tmp/${1##*/} cheat.7z -d $datadir/BIOS/mame/cheat
 chown -R $user:$user "$datadir/BIOS/mame/cheat" 
 #cheatpath for mame
-unzip -o /tmp/$(echo $1|cut -d\/ -f2) cheat.7z -d $datadir/roms/mame/cheat
+unzip -o /tmp/${1##*/} cheat.7z -d $datadir/roms/mame/cheat
 chown -R $user:$user "$datadir/roms/mame/cheat" 
-rm /tmp/$(echo $1|cut -d\/ -f2)
+rm /tmp/${1##*/}
 }
 
 
 function organise_realistic_overlays_mamedev() {
 rm $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/* 2>&1
+#the original files are hosted here (checked on 16-01-2024):
+#- http://www.mediafire.com/file/q14d077q2mhcoj9/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip/file (594 Mb) (Apr 25, 2020, 4:39 PM)
+#- http://www.mediafire.com/file/s2ps82u7y6ixrgw/Orionsangels_Arcade_Overlays_For_Retroarch_Part2.zip/file (241 Mb) (May 15, 2020, 9:53 PM)
+#- https://www.mediafire.com/file/hccfnym0l26cn78/Orionsangels_Arcade_Overlays_For_Retroarch_Part3.zip/file (168 Mb) (Mar 30, 2021, 6:56 AM)
+#- http://www.mediafire.com/file/5d47jcbkhawuw8v/Orionsangels_Retroarch_Bezel_Collection.zip/file (described as complete archive up until ???) (1.2 Gb)
+#above files can probably be used to update things in the future when needed
+#next file is hosted on gdrive and most likely a selection of parts that were available at the time of creation
 unzip -u $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie.zip -d $datadir/downloads
 chown -R $user:$user $datadir/downloads
 # we want to convert the viewport values on the fly
@@ -2460,34 +2474,31 @@ for system in "${systems[@]}"; do
     #echo "system name: ${system} with system members: ${games[@]}"
     for game in "${games[@]}"; do
         #echo -en "\tworking on name $game of the $system system\n"
-        mkdir -p "$datadir/roms/$system"
-        chown $user:$user "$datadir/roms/$system" 
+        mkdir -p "$datadir/roms/$system/media/retroarch/overlays"
 	#extract Background files,if existing in zip, from mame artwork files // issue not all artwork files have Background.png
         unzip $datadir/roms/mame/artwork/$game.zip Background.png -d $datadir/roms/mame/artwork 2>/dev/null
         checkforbackground=$(ls $datadir/roms/mame/artwork/Background.png 2> /dev/null)
         if [[ -n $checkforbackground ]]
         then
-        mv $datadir/roms/mame/artwork/Background.png  $rootdir/configs/all/retroarch/overlay/$game.png 2>/dev/null
-        chown $user:$user "$rootdir/configs/all/retroarch/overlay/$game.png" 
+        mv $datadir/roms/mame/artwork/Background.png  $datadir/roms/$system/media/retroarch/overlays/$game.png 2>/dev/null
 	#create configs
 	cat > "$datadir/roms/$system/$game.zip.cfg" << _EOF_
-input_overlay =  $rootdir/configs/all/retroarch/overlay/$game.cfg
+input_overlay =  ~/${datadir##*/}/roms/$system/media/retroarch/overlays/$game.cfg
 input_overlay_enable = true
 input_overlay_opacity = 0.500000
 input_overlay_scale = 1.000000
 _EOF_
         cp "$datadir/roms/$system/$game.zip.cfg" "$datadir/roms/$system/$game.7z.cfg"
-        chown $user:$user $datadir/roms/$system/$game.*.cfg
         #
-	cat > "$rootdir/configs/all/retroarch/overlay/$game.cfg" << _EOF_
+	cat > "$datadir/roms/$system/media/retroarch/overlays/$game.cfg" << _EOF_
 overlays = 1
 overlay0_overlay = $game.png
 overlay0_full_screen = false
 overlay0_descs = 0
 _EOF_
-        chown $user:$user "$rootdir/configs/all/retroarch/overlay/$game.cfg" 
         fi 
     done
+chown -R $user:$user "$datadir/roms/$system"
 done
 }
 
@@ -2519,34 +2530,31 @@ for system in "${systems[@]}"; do
     #echo "system name: ${system} with system members: ${games[@]}"
     for game in "${games[@]}"; do
         #echo -en "\tworking on name $game of the $system system\n"
-        mkdir -p "$datadir/roms/$system"
-        chown $user:$user "$datadir/roms/$system" 
+        mkdir -p "$datadir/roms/$system/media/retroarch/bezels"
 	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel-16-9.png or Bezel-4-3.png
         unzip $datadir/roms/mame/artwork/$game.zip Bezel$1.png -d $datadir/roms/mame/artwork 2>/dev/null
         checkforbezel=$(ls $datadir/roms/mame/artwork/Bezel$1.png 2> /dev/null)
         if [[ -n $checkforbezel ]]
         then
-        mv $datadir/roms/mame/artwork/Bezel$1.png  $rootdir/configs/all/retroarch/overlay/$game.png 2>/dev/null
-        chown $user:$user "$rootdir/configs/all/retroarch/overlay/$game.png" 
+        mv $datadir/roms/mame/artwork/Bezel$1.png  $datadir/roms/$system/media/retroarch/bezels/$game.png 2>/dev/null
 	#create configs
 	cat > "$datadir/roms/$system/$game.zip.cfg" << _EOF_
-input_overlay =  $rootdir/configs/all/retroarch/overlay/$game.cfg
+input_overlay =  ~/${datadir##*/}/roms/$system/media/retroarch/bezels/$game.cfg
 input_overlay_enable = true
 input_overlay_opacity = 0.700000
 input_overlay_scale = 1.000000
 _EOF_
         cp "$datadir/roms/$system/$game.zip.cfg" "$datadir/roms/$system/$game.7z.cfg"
-        chown $user:$user $datadir/roms/$system/$game.*.cfg
         #
-	cat > "$rootdir/configs/all/retroarch/overlay/$game.cfg" << _EOF_
+	cat > "$datadir/roms/$system/media/retroarch/bezels/$game.cfg" << _EOF_
 overlays = 1
 overlay0_overlay = $game.png
 overlay0_full_screen = true
 overlay0_descs = 0
 _EOF_
-        chown $user:$user "$rootdir/configs/all/retroarch/overlay/$game.cfg" 
         fi 
     done
+chown -R $user:$user "$datadir/roms/$system"
 done
 }
 
