@@ -5,6 +5,10 @@ echo "Make sure you are running a 64 bit version of mame !"
 rm good.ini
 /opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > good.ini
 
+#remove no_media.ini and create a recent one (create list with drivers that do not use any media like cartridges, cassettes or floppies etc)
+rm no_media.ini
+/opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listmedia $driver) == *\(none\)* ]] && echo $driver;done > no_media.ini
+
 #remove old 90º.ini and create a recent one (no emulation="good" check)
 #no check on good or bad rom because we want the info added for both good and preliminary roms
 #we can sort on good or preliminary later
