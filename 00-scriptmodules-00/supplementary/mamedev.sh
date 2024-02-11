@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0262.00"
+rp_module_version="0262.01"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -58,6 +58,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+262.01 :\n\
+- fix adding predefined options installing a driver from DEFAULT\n\
+- also fixes the c64gs install adding \"-joy2 joybstr\" from DEFAULT\n\
+- add extra ram to FM-Towns drivers when installing from DEFAULT\n\
 262.00 :\n\
 - update to new database\n\
 - remove predefined sorted list : forum category\n\
@@ -1631,7 +1635,7 @@ ExtraPredefinedLoaderName+=( "$7" )
 else
 # read system(s) using "mame" to extract the data and add them in the systems array
 # some things are filtered with grep
-while read LINE; do 
+while read line; do 
 # check for "system" in line
 # an example output for the msx system hbf700p is :
 #hbf700p          printout         (prin)     .prn  
@@ -1646,18 +1650,27 @@ while read LINE; do
 # hbf700p          cartridge1       (cart1)    .mx1  .bin  .rom  
 # hbf700p          cartridge2       (cart2)    .mx1  .bin  .rom  
 # hbf700p          floppydisk       (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
-if [[ -z $LINE ]]; then
+if [[ -z $line ]]; then
 systems+=( "${systems[-1]}" )
-##echo ${systems[-1]} $LINE
+##echo ${systems[-1]} $line
 else
 # use the first column if seperated by a space
-systems+=( "$(echo $LINE)" )
+systems+=( "$(echo $line)" )
 fi
-#use extra predefined options to alter the default options of a driver when not installing from the section EXTRAS
-#in part 12 the array ExtraPredefinedOptions can be directly used in the runcommands with the media options
-#in part 13 the array ExtraPredefinedOptions can not be directly used in the basename runcommands, here we just use the last element of the array when not installing from the section EXTRAS, $2 is empty
-if [[ -z ${ExtraPredefinedOptions[@]} ]];then
-[[ ${systems[${#systems[@]}-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
+#use extra predefined options to alter when installing a driver from DEFAULT not installing from the section EXTRAS
+#here we just check if the last index number of the array systems combined to the ExtraPredefinedOptions is empty using ${ExtraPredefinedOptions[${#systems[@]}-1]} 
+#we still need to calculate the last index of the systems array to see if that value of ExtraPredefinedOptions is empty
+#${systems[${#systems[@]}-1]} is typically an old way so now the new way ${systems[-1]} is used
+#in contrary to installs from the EXTRAS the DEFAULT ones get the added ExtraPredefinedOptions in all runcommands
+#for the installs from EXTRAS only the runcommands with the media options get ExtraPredefinedOptions in part 12, basename runcommands are skipped in part 13
+if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
+[[ ${systems[-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
+# carmarty fmtmarty fmtmarty2
+[[ ${systems[-1]} == *marty  ]] || \
+[[ ${systems[-1]} == *marty2  ]] && ExtraPredefinedOptions+=( "-ram 4M" )
+# fmtowns fmtownsftv fmtownshr fmtownsmx fmtownssj fmtownsux fmtownsv03
+[[ ${systems[-1]} == fmtowns  ]] || \
+[[ ${systems[-1]} == fmtowns*  ]] && ExtraPredefinedOptions+=( "-ram 6M" )
 #next 2 sadly don't work with lr-mess, need to find another solution
 #[[ ${systems[${#systems[@]}-1]} == cpc61 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
 #[[ ${systems[${#systems[@]}-1]} == cpg120 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
@@ -1724,9 +1737,9 @@ else
 # floppydisk          (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
 echo "read compatible extension(s) for the individual media"
 index=0
-while read LINE; do
+while read line; do
 # if any?, remove earlier detected system(s) from the line
-substitudeline=$(echo $LINE | sed "s/${systems[$index]}//g")
+substitudeline=$(echo $line | sed "s/${systems[$index]}//g")
 # use the first column if seperated by a space
 mediadescriptions+=( "$(echo $substitudeline | cut -d " " -f 1)" )
 # use the third column if seperated by a space and remove ( ) characters and add - for media
@@ -1760,9 +1773,9 @@ fi
 
 #part 8 : read RetroPie / ArchyPie systems and descriptions from the platforms.cfg
 echo "read and match $(echo $romdir|cut -d/ -f4) names with mamedev names"
-while read LINE; do
+while read line; do
 # read retropie rom directory names 
-systemsrp+=( "$(echo $LINE | cut -d '_' -f 1)" )
+systemsrp+=( "$(echo $line | cut -d '_' -f 1)" )
 # read retropie full system names
 #
 #sed is used to change descriptions on the fly, 
@@ -1781,7 +1794,7 @@ systemsrp+=( "$(echo $LINE | cut -d '_' -f 1)" )
 #(ProSystem)
 #otherwise we don't have matches for these systems
 #
-descriptionsrp+=( "$(echo $LINE | \
+descriptionsrp+=( "$(echo $line | \
 sed 's/\"PC\"/\"-PC-\"/g' | \
 sed 's/Apple II/-Apple II-/g' | \
 sed 's/Atari 7800 ProSystem/Atari 7800/g' | \
