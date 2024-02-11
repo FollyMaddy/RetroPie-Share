@@ -25,14 +25,13 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0261.05"
+rp_module_version="0262.00"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
 rp_module_database_versions=( "" $(curl -s https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-databases-00/mame|sed 's/:/\\\n/g'|grep _info\"|grep path|grep -v 023|grep -E -o '[0-9.]+'|sort -r) )
 
 local mamedev_csv=()
-local mamedev_forum_csv=()
 local gamelists_csv=()
 
 local restricted_download_csv=()
@@ -59,6 +58,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+262.00 :\n\
+- update to new database\n\
+- remove predefined sorted list : forum category\n\
 261.05 :\n\
 - add download links of the realistic overlays packs, as comments\n\
 - change the extended folder locations for handheld and p&p overlays :\n\
@@ -533,9 +535,6 @@ function subgui_lists_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,"
-",Forum list upon descriptions,,create_systems_list_mamedev descriptions @forum,"
-",Forum list upon system names,,create_systems_list_mamedev systems @forum,"
-",,,,"
 ",Non-arcade upon descriptions,,create_systems_list_mamedev descriptions @non-arcade,"
 ",Non-arcade upon system names,,create_systems_list_mamedev systems @non-arcade,"
 ",,,,"
