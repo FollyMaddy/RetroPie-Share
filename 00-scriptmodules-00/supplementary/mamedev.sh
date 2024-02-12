@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0262.01"
+rp_module_version="0262.02"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -58,6 +58,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+262.02 :\n\
+- full automatic category install                  ( >/= 0262 database )\n\
+- full automatic category restricted roms download ( >/= 0262 database )\n\
 262.01 :\n\
 - fix adding predefined options installing a driver from DEFAULT\n\
 - also fixes the c64gs install adding \"-joy2 joybstr\" from DEFAULT\n\
@@ -340,7 +343,7 @@ it will install and use the detected category name instead.\n"
 
 
 function read_data_mamedev() {
-    clear
+    [[ $1 == clear ]] && clear
     echo "Database version mame${rp_module_version_mame}_systems_sorted_info is used"
     #make sure there is a database
     [[ ! -d $emudir/mame ]] && mkdir -p $emudir/mame
@@ -364,6 +367,17 @@ function subgui_categories_mamedev() {
     local csv=()
     csv=(
 ",menu_item_handheld_description,SystemType,to_do driver_used_for_installation,,,,,help_to_do,"
+    )
+    [[ $(expr $rp_module_version_mame + 0) -gt 261 ]] && \
+    csv+=(
+",\Zr▼ NEW : Fully automated,,,,,,,,"
+",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media/\",,,,,,"
+",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
+",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
+",\Zr▲,,,,,,,,"
+",,,,,,,,,"
+    )
+    csv+=(
 ",All in One Handheld and Plug and Play,@non-arcade,create_00index_file_mamedev '/@all_in1/' $datadir/roms/all_in1;install_system_mamedev all_in1 all_in1 '' '' 'none' '',,,,,help_categories_mamedev,"
 ",Classic Handheld Systems,@non-arcade,create_00index_file_mamedev '/@classich/' $datadir/roms/classich;install_system_mamedev classich classich '' '' 'none' '',,,,,help_categories_mamedev,"
 ",Game & Watch,@non-arcade,create_00index_file_mamedev '/@gameandwatch/' $datadir/roms/gameandwatch;install_system_mamedev gameandwatch gameandwatch '' '' 'none' '',,,,,help_categories_mamedev,"
@@ -933,6 +947,16 @@ function subgui_archive_downloads_mamedev() {
 ",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_single_download_mamedev '//' $datadir/downloads/mame-merged mame-merged/mame-merged/ download,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/downloads < UnRenamedFiles-Various,,subform_archive_single_download_mamedev '//' $datadir/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
+    )
+    [[ $(expr $rp_module_version_mame + 0) -gt 261 ]] && \
+    csv+=(
+",▼\ZrGet all files from automated category lists,,,"
+",►Show non-arcade  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media|ma|oro|working_arcade/\",,,,,,"
+",►Show   arcade    categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
+",►Show  arcade90º  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
+",,,,"
+    )
+    csv+=(
 ",▼\ZrGet all handheld and plug&play files per category,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/all_in1      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@all_in1/' ${rompack_link_info[1]} $datadir/roms/all_in1 ${rompack_link_info[2]} download,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/classich     < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@classich/' ${rompack_link_info[1]} $datadir/roms/classich ${rompack_link_info[2]} download,,,,,show_message_mamedev \"NO HELP\","
@@ -1053,6 +1077,97 @@ dialog \
 }
 
 
+#in this function all vars are with curly brackets
+function subformgui_categories_automated_mamedev() {    
+	show_message_mamedev "\
+After selecting ok a form will be presented with filter variables.\n\
+You have the ability to alter the variables in case you need to.\n\
+So alter the filters or not and select ok afterwards and a list with categories is shown.\n\
+\n\
+The first variable is just to let you know what it is going to do.\n\
+It is used to install categories or to download roms of a category.\n\
+The first filter is used to present good (non-)arcade categories.\n\
+The second is used to eliminate unuseful categories from the list\n\
+\n\
+Be aware that there can be the same categories that are in both.\n\
+Like, for example, 'puzzle' is in both arcade and non-arcade.\n\
+Installing both can give problematic results.\n\
+As basically :\n\
+- lr-mess will only load non-arcade\n\
+- lr-mame will only load arcade\n\
+Advice for now is :\n\
+If they exist in both then use and install only one.\
+"
+	#make sure that there is a database file
+    [[ ! -f ${emudir}/mame/mame${rp_module_version_mame}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_mame}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_mame}_systems_sorted_info
+    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged/" )
+	local csv=()
+	local action="$1"
+	local driver_type="$2"
+    local filter1="$3"
+    local filter2="$4"
+    local manual_input=""
+    local category_read
+    
+    #local category_compatible
+    
+    manual_input=$(\
+dialog \
+--no-cancel \
+--default-item "${default}" \
+--backtitle "${__backtitle}" \
+--title "Insert the options" \
+--form "" \
+22 76 16 \
+"What to do:" 1 1 "${action}" 1 30 76 100 \
+"Driver type:" 2 1 "${driver_type}" 2 30 76 100 \
+"Filter 1:" 3 1 "${filter1}" 3 30 76 100 \
+"Filter 2:" 4 1 "${filter2}" 4 30 76 100 \
+"" 5 1 "" 6 0 0 0 \
+"" 6 1 "" 6 0 0 0 \
+"" 7 1 "" 6 0 0 0 \
+"" 8 1 "" 6 0 0 0 \
+"" 9 1 "" 6 0 0 0 \
+2>&1 >/dev/tty \
+)
+    clear
+    echo "reading the available databases"
+    #the first value is reserved for the column descriptions and empty in the array rp_module_database_versions
+    csv=( "\",,,,\"" )
+	#to keep old databases compatible and have the possibility to remove all manual category install lines,
+	#we need to replace @arcade_system@ with @arcade@ and @oro@ with @realistic@ and remove @working_arcade as we use @good@ to filter out working_arcade drivers
+	#while read category_read;do csv+=("${category_read}");done < <(IFS=$'\n';cat /opt/retropie/emulators/mame/mame${rp_module_database_versions[1]}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@arcade_system@/@arcade@/g;s/@oro@/@realistic@/g;s/@working_arcade@//g;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line;do echo "\",Arcade Category => ${line},@arcade,create_00index_file_mamedev '/@${line}@/&&/@working_arcade/' ${datadir}/roms/${line};install_system_mamedev ${line} ${line} '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";done)
+	if [[ $1 == *install* ]];then
+		while read category_read;do csv+=("${category_read}");done < <(
+		IFS=$'\n'
+		cat /opt/retropie/emulators/mame/mame${rp_module_version_mame}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
+		do
+			[[ -n ${line} ]] && if [[ ${filter1} == *@90º@* ]];then
+				echo "\",Category => ${line}90º,${driver_type},create_00index_file_mamedev '/@${line}@/ && /@good@/ && /@90º@/' ${datadir}/roms/${line}90º;install_system_mamedev ${line}90º ${line}90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}90º\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
+			else
+				echo "\",Category => ${line},${driver_type},create_00index_file_mamedev '/@${line}@/ && /@good@/' ${datadir}/roms/${line};install_system_mamedev ${line} ${line} '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
+			fi
+		done
+		)
+	else
+		while read category_read;do csv+=("${category_read}");done < <(
+		IFS=$'\n'
+		cat /opt/retropie/emulators/mame/mame${rp_module_version_mame}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
+		do
+			[[ -n ${line} ]] && 
+			echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download,,,,,show_message_mamedev \"NO HELP\",\""
+		done
+		)
+	fi
+	#check first 2 lines for debugging, if needed
+	#echo ${csv[0]}
+	#echo ${csv[1]}
+	#read
+    build_menu_mamedev
+}
+
+
+
 function subgui_installs_mamedev() {
 #for dialog colours see "man dialog"
 	local csv=()
@@ -1161,7 +1276,7 @@ dialog \
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
     mkdir -p $destination_path
-    read_data_mamedev
+    read_data_mamedev clear
     IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
     for rd in ${!restricted_download_csv[@]};do 
     #echo ${restricted_download_csv[$rd]}
@@ -1272,7 +1387,7 @@ function create_00index_file_mamedev() {
     local index_file="0 rom-index 0"
     clear
     mkdir -p $destination_path
-    read_data_mamedev
+    read_data_mamedev clear
     IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
 	echo "creating a "$index_file" file for this specific category"
     [[ -f "$destination_path/$index_file" ]] && rm "$destination_path/$index_file" 2>&1
@@ -1285,7 +1400,7 @@ function create_00index_file_mamedev() {
 
 function create_systems_list_mamedev() {
     local csv=()
-    read_data_mamedev
+    read_data_mamedev clear
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
     #here we store the sorted mamedev_csv values in the csv array
@@ -2466,7 +2581,7 @@ echo
 #added handheld arrays, used for overlays
 #this is an example command to extract the systems and add them here to the array :
 #classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
-read_data_mamedev
+read_data_mamedev clear
 IFS=$'\n' 
 classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
@@ -2522,7 +2637,7 @@ echo
 #added handheld arrays, used for overlays
 #this is an example command to extract the systems and add them here to the array :
 #classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
-read_data_mamedev
+read_data_mamedev clear
 IFS=$'\n' 
 classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
