@@ -13,7 +13,7 @@ rp_module_id="supermodel-mechafatnick"
 rp_module_desc="Sega supermodel 3 version by Mechafatnick and Pi-friendly"
 rp_module_help="\
 WARNING: Still under construction\n\n\
-Created in such a way so it should not conflict with other supermodel installs\n\
+Created in such a way so it should not conflict with other supermodel installs\n\n\
 ROM Extensions: .zip\n\n\
 Copy your games to $romdir/supermodel\n\n\
 Supermodel emulator directories and files are added in:\n\
@@ -33,7 +33,7 @@ If you use the regular runcommand then the resolution of the Supermodel.ini file
 Otherwise the resolution is used of the runcommands with the adding the resolution.\n\
 If you know your resolution and you have added it to your ini file,\n\
 or you have selected the runcommand with the proper resolution,\n\
-then changing the video mode should not be nessecary.\n\ 
+then changing the video mode should not be nessecary.\n
 "
 rp_module_section="exp"
 rp_module_flags=""
