@@ -19,7 +19,7 @@ Copy your games to $romdir/supermodel\n\n\
 Supermodel emulator directories and files are added in:\n\
 ~/RetroPie/roms/supermodel/model3emu/mechafatnick\n\
 (NVRAM, Saves, Supermodel.ini and Supermodel.log)\n\n\
-Add these lines to your Supermodel.ini,\n\
+If needed then add these lines to your Supermodel.ini,\n\
 and alter them to your needs under [GLOBAL]:\n\
 XResolution=800 ; Default value 496\n\
 YResolution=600 ; Default value 384\n\
@@ -28,12 +28,12 @@ WideScreen=0\n\
 Stretch=1; Default value 0\n\
 WideBackground=0\n\
 \n\n\
-Select a good equivalent resolution video mode in the RetroPie boot menu to get a proper fullscreen.\n\
-If you use the regular runcommand then the resolution of the Supermodel.ini file is used.\n\
-Otherwise the resolution is used of the runcommands with the adding the resolution.\n\
-If you know your resolution and you have added it to your ini file,\n\
-or you have selected the runcommand with the proper resolution,\n\
-then changing the video mode should not be nessecary.\n
+Select a good equivalent resolution video mode in the RetroPie boot menu to get a proper fullscreen.\
+If you use the regular runcommand then the resolution of the Supermodel.ini file is used.\
+Otherwise the resolution is used of the runcommands with the adding the resolution.\
+If you know your resolution and you have added it to your ini file,\
+or you have selected the runcommand with the proper resolution,\
+then changing the video mode should not be nessecary.\
 "
 rp_module_section="exp"
 rp_module_flags=""
