@@ -13,23 +13,27 @@ rp_module_id="supermodel-mechafatnick"
 rp_module_desc="Sega supermodel 3 version by Mechafatnick and Pi-friendly"
 rp_module_help="\
 WARNING: Still under construction\n\n\
-Notes:\n\
-- Created in such a way so it should not conflict with other supermodel installs\n\
-- Select a good video mode in the RetroPie boot menu to get fullscreen\n\n\
+Created in such a way so it should not conflict with other supermodel installs\n\
 ROM Extensions: .zip\n\n\
 Copy your games to $romdir/supermodel\n\n\
 Supermodel emulator directories and files are added in:\n\
 ~/RetroPie/roms/supermodel/model3emu/mechafatnick\n\
 (NVRAM, Saves, Supermodel.ini and Supermodel.log)\n\n\
 Add these lines to your Supermodel.ini,\n\
-and alter them to your needs:\n\
+and alter them to your needs under [GLOBAL]:\n\
 XResolution=800 ; Default value 496\n\
 YResolution=600 ; Default value 384\n\
-FullScreen=0\n\
+FullScreen=1; Default value 0\n\
 WideScreen=0\n\
-Stretch=1\n\
+Stretch=1; Default value 0\n\
 WideBackground=0\n\
 \n\n\
+Select a good equivalent resolution video mode in the RetroPie boot menu to get a proper fullscreen.\n\
+If you use the regular runcommand then the resolution of the Supermodel.ini file is used.\n\
+Otherwise the resolution is used of the runcommands with the adding the resolution.\n\
+If you know your resolution and you have added it to your ini file,\n\
+or you have selected the runcommand with the proper resolution,\n\
+then changing the video mode should not be nessecary.\n\ 
 "
 rp_module_section="exp"
 rp_module_flags=""
@@ -74,9 +78,12 @@ function configure_supermodel-mechafatnick() {
     mkRomDir "supermodel/model3emu/mechafatnick/NVRAM"
     mkRomDir "supermodel/model3emu/mechafatnick/Saves"
 
+    addEmulator 0 "Supermodel-mechafatnick" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel %ROM%"
     addEmulator 0 "Supermodel-mechafatnick-496x384" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=496,384 %ROM%"
     addEmulator 0 "Supermodel-mechafatnick-800x600" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=800,600 %ROM%"
     addEmulator 0 "Supermodel-mechafatnick-1024x768" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=1024,768 %ROM%"
+    addEmulator 0 "Supermodel-mechafatnick-1600x900" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=1600,900 %ROM%"
+    addEmulator 0 "Supermodel-mechafatnick-1920x1080" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=1920,1080 %ROM%"
   
     addEmulator 0 "TEST auto resolution" "supermodel" "XINIT:pushd /opt/retropie/emulators/supermodel-mechafatnick;./supermodel -res=%XRES%,%YRES% %ROM%"
 
