@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0262.02"
+rp_module_version="0262.03"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -58,6 +58,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+262.03 :\n\
+- use python virtual environment for retroscraper (newer OSes need it)\n\
 262.02 :\n\
 - full automatic category install                  ( >/= 0262 database )\n\
 - full automatic category restricted roms download ( >/= 0262 database )\n\
@@ -856,16 +858,16 @@ function subgui_remove_installs_mamedev() {
 
 
 function subgui_retroscraper_gamelists_mamedev() {
-	retroscraper_remote_depends_mamedev
-	local csv=()
-	local gamelists_csv=()
-	local gamelists_read
-	clear
-	echo "reading the individual gamelist data"
-	#we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-	while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 $datadir/roms|while read line;do echo "\",Retroscrape/update only for $([[ $line == *º ]]&&echo ' ')$(if [[ -f $datadir/roms/$line/gamelist.xml ]];then printf '%-20s\\\Z2(has gamelist)\n' $line;else printf '%-20s(no  gamelist)\n' $line;fi),,retroscraper_remote_command_mamedev $line,\"";done)
-	IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
-	build_menu_mamedev
+    retroscraper_remote_depends_mamedev
+    local csv=()
+    local gamelists_csv=()
+    local gamelists_read
+    clear
+    echo "reading the individual gamelist data"
+    #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 $datadir/roms|while read line;do echo "\",Retroscrape/update only for $([[ $line == *º ]]&&echo ' ')$(if [[ -f $datadir/roms/$line/gamelist.xml ]];then printf '%-20s\\\Z2(has gamelist)\n' $line;else printf '%-20s(no  gamelist)\n' $line;fi),,retroscraper_remote_command_mamedev $line,\"";done)
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
+    build_menu_mamedev
 }
 
 
@@ -879,9 +881,37 @@ function remove_installs_mamedev() {
 function retroscraper_remote_command_mamedev() {
     rm $datadir/roms/$1/gamelist.xml 2> /dev/null
     rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
-    #use python_virtual_environment on ArchyPie
-    su $user -c "curl https://raw.githubusercontent.com/zayamatias/retroscraper-remote/main/retroscraper.py|$([[ $scriptdir != *RetroPie* ]] && echo $rootdir/python_virtual_environment/bin/)python3 - --systems $1 --recursive --relativepaths --mediadir media/emulationstation --nobackup"
+    #use python_virtual_environment
+    su $user -c "curl https://raw.githubusercontent.com/zayamatias/retroscraper-remote/main/retroscraper.py|$rootdir/python_virtual_environment/bin/python3 - --systems $1 --recursive --relativepaths --mediadir media/emulationstation --nobackup"
     #"break" after usage in function build_menu_mamedev so a good list of present gamelists can be viewed
+}
+
+
+function retroscraper_remote_depends_mamedev () {
+    #install python modules when not detected as installed
+    #retroscraper-remote needs httpimport as extra library so some dependancies can be used "online"
+    #https://stackoverflow.com/questions/23106621/replace-multiple-consecutive-white-spaces-with-one-comma-in-unix
+    #looking for latest versions then do : python3 -m pip list --outdated  
+    #looking for installed packages and versions then do : python3 -m pip list 
+    local pip_list_output
+    local retroscraper_remote_module
+    local retroscraper_remote_modules=()
+    retroscraper_remote_modules=(
+    wheel==0.41.3
+    setuptools==68.2.2
+    googletrans==4.0.0rc1
+    Pillow==10.1.0
+    requests==2.31.0
+    httpimport==1.3.1
+    )
+    #use a virtual python environment
+    #https://stackoverflow.com/questions/60868540/cant-install-python-modules-with-pip-on-manjaro-linux
+    [[ ! -d $rootdir/python_virtual_environment ]] && python3 -m venv $rootdir/python_virtual_environment
+    [[ $($rootdir/python_virtual_environment/bin/python3 -m pip list 2>&1) == *"new release of pip"* ]] && $rootdir/python_virtual_environment/bin/python3 -m pip install --upgrade pip
+    pip_list_output=$(su $user -c "$rootdir/python_virtual_environment/bin/python3 -m pip list|sed 's/ \{1,\}/==/g'")
+    for retroscraper_remote_module in ${retroscraper_remote_modules[@]};do 
+    [[ $pip_list_output != *$retroscraper_remote_module* ]] && $rootdir/python_virtual_environment/bin/python3 -m pip install $retroscraper_remote_module
+    done
 }
 
 
@@ -2685,45 +2715,4 @@ chown -R $user:$user "$datadir/roms/$system"
 done
 }
 
-
-function retroscraper_remote_depends_mamedev () {
-	#install python modules when not detected as installed
-	#retroscraper-remote needs httpimport as extra library so some dependancies can be used "online"
-	#https://stackoverflow.com/questions/23106621/replace-multiple-consecutive-white-spaces-with-one-comma-in-unix
-	#looking for latest versions then do : python3 -m pip list --outdated  
-	#looking for installed packages and versions then do : python3 -m pip list 
-	local pip_list_output
-	local retroscraper_remote_module
-	local retroscraper_remote_modules=()
-	retroscraper_remote_modules=(
-	wheel==0.41.3
-	setuptools==68.2.2
-	googletrans==4.0.0rc1
-	Pillow==10.1.0
-	requests==2.31.0
-	httpimport==1.3.1
-	)
-	if [[ $scriptdir == *RetroPie* ]];then
-		#install pip if the pip module is not installed
-		if [[ $(su $user -c "python3 -m pip list" 2>&1) == *"No module named pip"* ]]; then
-			su $user -c "wget https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py"
-			su $user -c "python3 /tmp/get-pip.py"
-		fi
-		#update pip if there is a new release (2>&1 is used to redirect stderr to stdout so we can use the if function on the stderr info)
-		[[ $(su $user -c "python3 -m pip list" 2>&1) == *"new release of pip"* ]] && su $user -c "python3 -m pip install --user --upgrade pip"
-		pip_list_output=$(su $user -c "python3 -m pip list|sed 's/ \{1,\}/==/g'")
-		for retroscraper_remote_module in ${retroscraper_remote_modules[@]};do 
-		[[ $pip_list_output != *$retroscraper_remote_module* ]] && su $user -c "python3 -m pip install --user $retroscraper_remote_module"
-		done
-	else
-		#for archypie we need to use a virtual python environment
-		#https://stackoverflow.com/questions/60868540/cant-install-python-modules-with-pip-on-manjaro-linux
-		[[ ! -d $rootdir/python_virtual_environment ]] && python3 -m venv $rootdir/python_virtual_environment
-		[[ $($rootdir/python_virtual_environment/bin/python3 -m pip list 2>&1) == *"new release of pip"* ]] && $rootdir/python_virtual_environment/bin/python3 -m pip install --upgrade pip
-		pip_list_output=$(su $user -c "$rootdir/python_virtual_environment/bin/python3 -m pip list|sed 's/ \{1,\}/==/g'")
-		for retroscraper_remote_module in ${retroscraper_remote_modules[@]};do 
-		[[ $pip_list_output != *$retroscraper_remote_module* ]] && $rootdir/python_virtual_environment/bin/python3 -m pip install $retroscraper_remote_module
-		done
-	fi
-}
 
