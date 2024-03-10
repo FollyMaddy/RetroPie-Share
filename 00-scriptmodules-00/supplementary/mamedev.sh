@@ -40,7 +40,7 @@ local system_read
 
 function depends_mamedev() {
     mamedev_csv=()
-    getDepends curl python3 $(if [[ $scriptdir == *RetroPie* ]];then echo xattr python3-venv;else echo python-xattr;fi)
+    getDepends curl python3 $(if [[ $scriptdir == *RetroPie* ]];then echo xattr python3-venv unar;else echo python-xattr unarchiver;fi)
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
 
     [[ $scriptdir == *ArchyPie* ]] &&  show_message_mamedev "\
@@ -58,6 +58,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+262.05 :\n\
+- add unar to depedancies\n\
 262.04 :\n\
 - enable for more restricted sources (only with good validation)\n\
 - add Converted_GX4000_Software rompack to the restricted sources\n\
