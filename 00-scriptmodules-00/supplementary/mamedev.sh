@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0262.06"
+rp_module_version="0263.00"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -58,6 +58,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+263.00 :\n\
+- update to new database\n\
 262.06 :\n\
 - add yes/no messages to skip gx4000 things in restricted parts\n\
 262.05 :\n\
