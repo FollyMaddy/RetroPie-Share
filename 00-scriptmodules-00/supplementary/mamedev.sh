@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0263.00"
+rp_module_version="0263.01"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -40,7 +40,12 @@ local system_read
 
 function depends_mamedev() {
     mamedev_csv=()
-    getDepends curl python3 $(if [[ $scriptdir == *RetroPie* ]];then echo xattr python3-venv unar;else echo python-xattr unarchiver;fi)
+    getDepends curl python3 
+    if [[ $scriptdir == *RetroPie* ]];then 
+	getDepends xattr python3-venv unar p7zip-full
+    else 
+	getDepends python-xattr unarchiver
+    fi
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
 
     [[ $scriptdir == *ArchyPie* ]] &&  show_message_mamedev "\
@@ -58,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+263.01 :\n\
+- armbian : fix depends and add p7zip-full\n\
 263.00 :\n\
 - update to new database\n\
 262.06 :\n\
