@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0263.01"
+rp_module_version="0263.02"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+263.02 :\n\
+- add maximum ram of 102K to p2000t and p2000m\n\
 263.01 :\n\
 - armbian : fix depends and add p7zip-full\n\
 263.00 :\n\
@@ -1835,6 +1837,8 @@ if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
 # fmtowns fmtownsftv fmtownshr fmtownsmx fmtownssj fmtownsux fmtownsv03
 [[ ${systems[-1]} == fmtowns  ]] || \
 [[ ${systems[-1]} == fmtowns*  ]] && ExtraPredefinedOptions+=( "-ram 6M" )
+# philips p2000t and p2000m
+[[ ${systems[-1]} == p2000*  ]] && ExtraPredefinedOptions+=( "-ram 102K" )
 #next 2 sadly don't work with lr-mess, need to find another solution
 #[[ ${systems[${#systems[@]}-1]} == cpc61 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
 #[[ ${systems[${#systems[@]}-1]} == cpg120 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
