@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0263.02"
+rp_module_version="0263.03"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -40,7 +40,7 @@ local system_read
 
 function depends_mamedev() {
     mamedev_csv=()
-    getDepends curl python3 
+    getDepends curl python3 wget
     if [[ $scriptdir == *RetroPie* ]];then 
 	getDepends xattr python3-venv unar p7zip-full
     else 
@@ -63,6 +63,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+263.03 :\n\
+- add p2000t to the restricted downloads\n\
+- improve filtering out requested extention downloading from gitub\n\
+- add wget to the depends for barebone linux OSes\n\
 263.02 :\n\
 - add maximum ram of 102K to p2000t and p2000m\n\
 263.01 :\n\
@@ -1057,6 +1061,7 @@ local rarfile
 ",$(echo $romdir|cut -d/ -f4)/roms/gx4000     < Converted_GX4000_Software,,show_message_yesno_mamedev \"Would you like to proceed with downloading gx4000 files in $datadir/roms/gx4000 Converted_GX4000_Software ?\" \"subform_archive_multi_downloads_mamedev '//' rar $datadir/roms/gx4000 Converted_GX4000_Software index.php/Converted_GX4000_Software ???.cpcwiki.??\";show_message_yesno_mamedev \"Would you like to unrar the gx4000 files in $datadir/roms/gx4000/Converted_GX4000_Software ?\nThe rar files will be removed after extracting.\" \"eval for rarfile in $datadir/roms/gx4000/Converted_GX4000_Software/*.rar;do unar -f -D -o \$datadir/roms/gx4000/Converted_GX4000_Software \\\$rarfile;rm \\\$rarfile;done;chown -R $user:$user "$datadir/roms/gx4000"\",,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/msx        < MSXRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/msx MSXRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/msx2       < MSX2RomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/msx2 MSX2RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/p2000t     < Software Preservation Project,,subform_archive_multi_downloads_mamedev '//' cas $datadir/roms/p2000t 'Software Preservation Project' p2000t/software/tree/master/cassettes/games github.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/ti99_4a    < TOSEC_2012_04_23,,subform_archive_single_download_mamedev '//&&/zip /' $datadir/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download archive.???;clear;unzip -o $datadir/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d $datadir/roms/ti99_4a/;chown -R $user:$user "$datadir/roms/ti99_4a",,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse files and download to $(echo $romdir|cut -d/ -f4)/roms/ (not for MAME)\ZR,,,"
@@ -1338,6 +1343,8 @@ dialog \
     done
     elif [[ $(echo $website_url|sha1sum) == 91f709654529299145e9eb45ce1ca1e19796edab* ]];then
 	wget --show-progress --progress=bar:force -T3 -t0 -c -w1 -r -l 1 https://$website_url/$website_path -P $destination_path/$rompack_name -A $file_extension -nd
+    elif [[ $(echo $website_url|sha1sum) == fb27d3b6f43131c8ad026024f3e3b9cfa0686d4c* ]];then
+	download_from_github_mamedev $website_path $destination_path $file_extension
     else 
     echo "-->> ERROR : WRONG INPUT : TRY AGAIN !"
     echo "Waiting for 5 seconds..."
@@ -2595,7 +2602,7 @@ clear
 #$1 = github_directory $2=target_directory $3=extension_of_the_multiple_files
 echo "get all files and put these in the correct path"
 echo
-curl -s https://github.com/$1|sed 's/name/name\n/g'|grep \.$3 | cut -d\" -f 3| while read github_file
+curl -s https://github.com/$1|sed 's/name/name\n/g'|grep \.$3|cut -d\" -f 3|grep \.$3|while read github_file
 do 
 echo downloading $github_file to $2
 curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $github_file|sed 's/ /%20/g') > "$2/$github_file"
