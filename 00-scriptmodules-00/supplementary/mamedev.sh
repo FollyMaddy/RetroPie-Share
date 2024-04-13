@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0264.00"
+rp_module_version="0264.01"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+264.01 :\n\
+- after downloading, copy tgargnf.zip to tsuperman.zip (is a clone of)\n\
 264.00 :\n\
 - update to new database\n\
 263.03 :\n\
@@ -1018,7 +1020,7 @@ local rarfile
 ",$(echo $romdir|cut -d/ -f4)/roms/gameandwatch < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@gameandwatch/' ${rompack_link_info[1]} $datadir/roms/gameandwatch ${rompack_link_info[2]} download archive.???;show_message_mamedev \"gnw_egg is a clone of gnw_mmouse\ngnw_dkcirc is a clone of gnw_mmousep\n\nAfter clicking ok these roms are copied from the originals and renamed to the correct romname.\";cp $datadir/roms/gameandwatch/gnw_mmousep.zip $datadir/roms/gameandwatch/gnw_dkcirc.zip;cp $datadir/roms/gameandwatch/gnw_mmouse.zip $datadir/roms/gameandwatch/gnw_egg.zip;chown -R $user:$user $datadir/roms/gameandwatch,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/jakks        < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@jakks/' ${rompack_link_info[1]} $datadir/roms/jakks ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/konamih      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@konamih/' ${rompack_link_info[1]} $datadir/roms/konamih ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/tigerh       < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerh/' ${rompack_link_info[1]} $datadir/roms/tigerh ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/tigerh       < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerh/' ${rompack_link_info[1]} $datadir/roms/tigerh ${rompack_link_info[2]} download archive.???;show_message_mamedev \"tsuperman is a clone of tgargnf\n\nAfter clicking ok this roms is copied from the original and renamed to the correct romname.\";cp $datadir/roms/tigerh/tgargnf.zip $datadir/roms/tigerh/tsuperman.zip;chown -R $user:$user $datadir/roms/tigerh,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/tigerrz      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerrz/' ${rompack_link_info[1]} $datadir/roms/tigerrz ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all files from a specific category,,,"
