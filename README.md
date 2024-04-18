@@ -33,7 +33,7 @@ This repository is created for sharing :
      
      - https://github.com/FollyMaddy/RetroPie-Share/blob/main/00-scriptmodules-00/emulators/b-em-allegro4.sh
 
-       Easily add mamedev.sh to your RetroPie-Setup with this bash command :
+       Easily add b-em-allegro4.sh to your RetroPie-Setup with this bash command :
 
        ```
        wget --backups=1 https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/emulators/b-em-allegro4.sh -x -nd -np -P ~/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/emulators
@@ -41,7 +41,7 @@ This repository is created for sharing :
        
      - https://github.com/FollyMaddy/RetroPie-Share/blob/main/00-scriptmodules-00/libretrocores/lr-m2000.sh
 
-       Easily add mamedev.sh to your RetroPie-Setup with this bash command :
+       Easily add lr-m2000 to your RetroPie-Setup with this bash command :
 
        ```
        wget --backups=1 https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/libretrocores/lr-m2000.sh -x -nd -np -P ~/RetroPie-Setup/ext/RetroPie-Share/scriptmodules/libretrocores
