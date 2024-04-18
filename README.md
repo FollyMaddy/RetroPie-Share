@@ -27,7 +27,7 @@ This repository is created for sharing :
     
    - Other module-scripts that not have been added in this discription
 
-     These module-scripts are "as is" new and working or old and not working anymore depending on the linux distribution used
+     These module-scripts are "as is", new and working or old and not working anymore, depending on the linux distribution used
 
      My favorites and most up to date ones are :
      
