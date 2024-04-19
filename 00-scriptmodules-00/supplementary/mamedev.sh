@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0264.01"
+rp_module_version="0264.02"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+264.02 :\n\
+- add restricted downloads for x68000\n\
 264.01 :\n\
 - after downloading, copy tgargnf.zip to tsuperman.zip (is a clone of)\n\
 264.00 :\n\
@@ -1067,6 +1069,7 @@ local rarfile
 ",$(echo $romdir|cut -d/ -f4)/roms/msx2       < MSX2RomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/msx2 MSX2RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/p2000t     < Software Preservation Project,,subform_archive_multi_downloads_mamedev '//' cas $datadir/roms/p2000t 'Software Preservation Project' p2000t/software/tree/master/cassettes/games github.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/ti99_4a    < TOSEC_2012_04_23,,subform_archive_single_download_mamedev '//&&/zip /' $datadir/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download archive.???;clear;unzip -o $datadir/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d $datadir/roms/ti99_4a/;chown -R $user:$user "$datadir/roms/ti99_4a",,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/x68000     < SharpX68000RomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/x68000 SharpX68000RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse files and download to $(echo $romdir|cut -d/ -f4)/roms/ (not for MAME)\ZR,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/atarist    < AtariSTRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/atarist AtariSTRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
