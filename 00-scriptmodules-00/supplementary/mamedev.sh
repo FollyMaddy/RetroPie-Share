@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0264.02"
+rp_module_version="0264.03"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+264.03 :\n\
+- show and save single archive downloads without html url encoding\n\
+- add more restricted downloads\n\
 264.02 :\n\
 - add restricted downloads for x68000\n\
 264.01 :\n\
@@ -1059,22 +1062,46 @@ local rarfile
 ",$(echo $romdir|cut -d/ -f4)/roms/upright90º    	 < (1450+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/roms/\ZR,,,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 1PokemonUltraSunEURMULTi83DSPUSSYCAT,,subform_archive_single_download_mamedev '//&&/cia/' $datadir/roms/3ds 1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3ds-cia-eshop,,subform_archive_single_download_mamedev '//&&/rar/' $datadir/roms/3ds 3ds-cia-eshop download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3DSCIA_testitem1,,subform_archive_single_download_mamedev '//&&/rar/' $datadir/roms/3ds 3DSCIA_testitem1 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < nintendo-3ds-complete-collection,,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/3ds nintendo-3ds-complete-collection download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/atarist    < AtariSTRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/atarist AtariSTRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/amiga/cdtv < commodore_amiga_cdtv,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/amiga/cdtv commodore_amiga_cdtv download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/amiga/cd32 < RedumpAmigaCD32,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/amiga/cd32 RedumpAmigaCD32 download archive.???,,,,,show_message_mamedev \NO HELP\,"
 ",$(echo $romdir|cut -d/ -f4)/roms/apple2ee   < TotalReplay,,subform_archive_single_download_mamedev '//&&/hdv/' $datadir/roms/apple2ee TotalReplay download archive.???,,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
 ",$(echo $romdir|cut -d/ -f4)/roms/apple2gs   < TotalReplay,,subform_archive_single_download_mamedev '//&&/hdv/' $datadir/roms/apple2gs TotalReplay download archive.???,,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple IIgs(ROM3)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
-",$(echo $romdir|cut -d/ -f4)/roms/amstradcpc < R-TYPE 2012 (Easter-Egg),,subform_archive_single_download_mamedev '//&&/dsk/' $datadir/roms/amstradcpc r-type-128k download archive.???;chown -R $user:$user "$datadir/roms/amstradcpc",,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/amstradcpc < R-TYPE 2012 (Easter-Egg),,subform_archive_single_download_mamedev '//&&/dsk/' $datadir/roms/amstradcpc r-type-128k download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/bbcb       < AcornBBCMicroRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/bbcb AcornBBCMicroRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < non-redump_philips-cdi,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 non-redump_philips-cdi download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < philips_cd-i,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 philips_cd-i download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < redumpPhilipsCdi,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 redumpPhilipsCdi download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < tosecdcus20190822,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/dreamcast tosecdcus20190822 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Australia),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/australia/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Europe),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-France),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/france/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Germany),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/germany/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Italy),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/italy/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Spain),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/spain/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Japan),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/japan/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Usa),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/usa/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
 ",$(echo $romdir|cut -d/ -f4)/roms/electron   < AcornElectronRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/electron AcornElectronRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/gc         < GamecubeCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/iso/' $datadir/roms/gc GamecubeCollectionByGhostware download archive.???,,,,,show_message_mamedev \NO HELP\,"
 ",$(echo $romdir|cut -d/ -f4)/roms/gx4000     < Converted_GX4000_Software,,show_message_yesno_mamedev \"Would you like to proceed with downloading gx4000 files in $datadir/roms/gx4000 Converted_GX4000_Software ?\" \"subform_archive_multi_downloads_mamedev '//' rar $datadir/roms/gx4000 Converted_GX4000_Software index.php/Converted_GX4000_Software ???.cpcwiki.??\";show_message_yesno_mamedev \"Would you like to unrar the gx4000 files in $datadir/roms/gx4000/Converted_GX4000_Software ?\nThe rar files will be removed after extracting.\" \"eval for rarfile in $datadir/roms/gx4000/Converted_GX4000_Software/*.rar;do unar -f -D -o \$datadir/roms/gx4000/Converted_GX4000_Software \\\$rarfile;rm \\\$rarfile;done;chown -R $user:$user "$datadir/roms/gx4000"\",,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/msx        < MSXRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/msx MSXRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/msx2       < MSX2RomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/msx2 MSX2RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/p2000t     < Software Preservation Project,,subform_archive_multi_downloads_mamedev '//' cas $datadir/roms/p2000t 'Software Preservation Project' p2000t/software/tree/master/cassettes/games github.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/pc98       < NeoKobe-NecPc-98012017-11-17,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/pc98 NeoKobe-NecPc-98012017-11-17 download archive.???,,,,,show_message_mamedev \NO HELP\,"
 ",$(echo $romdir|cut -d/ -f4)/roms/ti99_4a    < TOSEC_2012_04_23,,subform_archive_single_download_mamedev '//&&/zip /' $datadir/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download archive.???;clear;unzip -o $datadir/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d $datadir/roms/ti99_4a/;chown -R $user:$user "$datadir/roms/ti99_4a",,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/x68000     < SharpX68000RomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/x68000 SharpX68000RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",,,,"
-",▼\ZrBrowse files and download to $(echo $romdir|cut -d/ -f4)/roms/ (not for MAME)\ZR,,,"
-",$(echo $romdir|cut -d/ -f4)/roms/atarist    < AtariSTRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/atarist AtariSTRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
     )
     build_menu_mamedev
+#single files, need different approach
+#",$(echo $romdir|cut -d/ -f4)/roms/amiga/cdtv < Amiga_CDTV_TOSEC_2009_04_18,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/amiga Amiga_CDTV_TOSEC_2009_04_18 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/fmtowns    < Neo_Kobe_Fujitsu_FM_Towns_2016-02-25,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/fmtowns Neo_Kobe_Fujitsu_FM_Towns_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/x1         < Neo_Kobe_Sharp_X1_2016-02-25,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/x1 Neo_Kobe_Sharp_X1_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/x1         < Sharp_X1_TOSEC_2012_04_23,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/x1 Sharp_X1_TOSEC_2012_04_23 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+
 }
 
 
@@ -1123,7 +1150,13 @@ dialog \
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
     echo "reading the website data"
-    while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$line',,download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
+    #sed is used to convert html url encoding to utf-8 encoding, for example %20 becomes /x20
+    #this way you don't have to make a large list with codes in sed in order to convert them all
+    #using "echo -e" makes it possible to convert the backslash codes into readable characters again
+    #however, the comma is a problem when using a CSV table using a comma as it will break up the table wrong
+    #therefor, the the code for comma %2C is converted to a different comma code %E2%80%9A
+    #that way a proper lookalike name is presented when showing the list in dialog box
+    while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$(echo -e $(echo $line|sed -r 's/%2C/%E2%80%9A/g;s/%([[:xdigit:]]{2})/\\x\1/g'))',,download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
     IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
     #we need to add '",,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
     csv=( ",,,," "${csv[@]}" )
@@ -2623,20 +2656,18 @@ clear
 echo "getting your desired file"
 mkdir -p $3
 #show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
-#$1=filename $2=from_link $3=to_path
-if [ ! -f "$3/$1" ]; then
-    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O $3/$1 $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
-    #doesn't work, perhaps the command or redirecting is the problem
-    # curl -L -O https://$2/$1 --create-dirs -o $3/$1
-    sleep 10
+#$1=filename $2=weblink $3=to_path
+#sed is used to remove html url encoding, more is described in function subform_archive_single_download_mamedev
+if [[ ! -f "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]]; then
+    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
 else 
-    read -r -p "File exists !, do you want to overwrite it ? [Y/N] " response
-       if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]];then 
-           wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O $3/$1 $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
-       fi
+    read -r -p "File exists or partly exists !, do you want to Overwrite or Continue ? [O/C] " response
+    if [[ "$response" =~ ^([cC])$ ]];then 
+        wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
+    else
+        wget -q --show-progress --progress=bar:force -T3 -t0 -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
+    fi
 fi
-
-[[ "$3" == "$datadir/downloads"* ]] && chown -R $user:$user "$datadir/downloads"
 chown -R $user:$user "$3"
 }
 
