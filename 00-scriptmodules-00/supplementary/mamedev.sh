@@ -1153,8 +1153,9 @@ dialog \
     #sed is used to convert html url encoding to utf-8 encoding, for example %20 becomes /x20
     #this way you don't have to make a large list with codes in sed in order to convert them all
     #using "echo -e" makes it possible to convert the backslash codes into readable characters again
-    #however, the comma is a problem when using a CSV table using a comma as it will break up the table wrong
-    #therefor, the the code for comma %2C is converted to a different comma code %E2%80%9A
+    #however, the comma is a problem when using a CSV and using a comma as separator 
+    #then the comma in the name will break the table
+    #therefor, the code for comma %2C is converted to a different comma code %E2%80%9A
     #that way a proper lookalike name is presented when showing the list in dialog box
     while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$(echo -e $(echo $line|sed -r 's/%2C/%E2%80%9A/g;s/%([[:xdigit:]]{2})/\\x\1/g'))',,download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
     IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
