@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0264.03"
+rp_module_version="0264.04"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+264.04 :\n\
+- fix permissions issue\n\
 264.03 :\n\
 - show and save single archive downloads without html url encoding\n\
 - add more restricted downloads\n\
@@ -2669,7 +2671,8 @@ else
         wget -q --show-progress --progress=bar:force -T3 -t0 -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
     fi
 fi
-chown -R $user:$user "$3"
+[[ $3 == */downloads/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-5)"
+[[ $3 == */roms/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-6)"
 }
 
 
