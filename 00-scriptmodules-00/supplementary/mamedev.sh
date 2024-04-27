@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0264.04"
+rp_module_version="0264.05"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,12 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+264.05 :\n\
+- being able to get all seperate files from a rompack in 1 go\n\
+- being able to get all files from a rompack in 1 zip file\n\
+- with above options : skip existing files (no sanity check !)\n\
+- possible fix not showing databases when switching betwwen them\n\
+- coleco : install sgm module by default (database 0265 or higher)\n\
 264.04 :\n\
 - fix permissions issue\n\
 264.03 :\n\
@@ -836,7 +842,7 @@ function subgui_databases_mamedev() {
     clear
     echo "reading the available databases"
     #the first value is reserved for the column descriptions and empty in the array rp_module_database_versions
-    while read database_read;do csv+=("$database_read");done < <(IFS=$'\n'; echo "${rp_module_database_versions[*]}"|while read line;do echo "\",Set database to $line,,rp_module_version_mame=$line;mamedev_csv=(),\"";done)
+    while read database_read;do csv+=("$database_read");done < <(IFS=$'\n'; echo "${rp_module_database_versions[*]}"|while read line;do echo "\",Set database to $line,,rp_module_version_mame=$line;mamedev_csv=(),\"";done;unset IFS)
     build_menu_mamedev
     #"break" after usage in function build_menu_mamedev
 }
@@ -996,20 +1002,20 @@ local rarfile
     csv=(
 ",menu_item,,to_do,"
 ",▼\ZrBrowse BIOS files and download to BIOS/mame\ZR,,,"
-",BIOS/mame < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_single_download_mamedev '//' $datadir/BIOS/mame MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",BIOS/mame < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_single_download_mamedev '//' $datadir/BIOS/mame mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",BIOS/mame < (NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_single_download_mamedev '//' $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",BIOS/mame < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/BIOS/mame MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",BIOS/mame < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_download_mamedev '//' $datadir/BIOS/mame mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",BIOS/mame < (NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse BIOS files < NOT FOUND in last runcommand.log,,,"
-",BIOS/mame < BIOS(es) NOT FOUND < mame-merged  \Zb\Z2NEWEST,,subform_archive_single_download_mamedev \"$(echo /$(cat /dev/shm/runcommand.log 2>&-|grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the $(echo $romdir|cut -d/ -f4)-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
+",BIOS/mame < BIOS(es) NOT FOUND < mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev \"$(echo /$(cat /dev/shm/runcommand.log 2>&-|grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the $(echo $romdir|cut -d/ -f4)-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
 ",,,,"
 ",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/downloads,,,"
-",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_archive_single_download_mamedev '//' $datadir/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_single_download_mamedev '//' $datadir/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_single_download_mamedev '//' $datadir/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-sl  \Zb\Z2NEWEST,,subform_archive_single_download_mamedev '//' $datadir/downloads/mame-sl mame-sl/mame-sl/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_single_download_mamedev '//' $datadir/downloads/mame-merged mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/downloads < UnRenamedFiles-Various,,subform_archive_single_download_mamedev '//' $datadir/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_download_mamedev '//' $datadir/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-sl  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-sl mame-sl/mame-sl/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-merged mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < UnRenamedFiles-Various,,subform_archive_download_mamedev '//' $datadir/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
     )
     [[ $(expr $rp_module_version_mame + 0) -gt 261 ]] && \
@@ -1064,53 +1070,56 @@ local rarfile
 ",$(echo $romdir|cut -d/ -f4)/roms/upright90º    	 < (1450+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/roms/\ZR,,,"
-",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 1PokemonUltraSunEURMULTi83DSPUSSYCAT,,subform_archive_single_download_mamedev '//&&/cia/' $datadir/roms/3ds 1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3ds-cia-eshop,,subform_archive_single_download_mamedev '//&&/rar/' $datadir/roms/3ds 3ds-cia-eshop download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3DSCIA_testitem1,,subform_archive_single_download_mamedev '//&&/rar/' $datadir/roms/3ds 3DSCIA_testitem1 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/3ds        < nintendo-3ds-complete-collection,,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/3ds nintendo-3ds-complete-collection download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/atarist    < AtariSTRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/atarist AtariSTRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/amiga/cdtv < commodore_amiga_cdtv,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/amiga/cdtv commodore_amiga_cdtv download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/amiga/cd32 < RedumpAmigaCD32,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/amiga/cd32 RedumpAmigaCD32 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/apple2ee   < TotalReplay,,subform_archive_single_download_mamedev '//&&/hdv/' $datadir/roms/apple2ee TotalReplay download archive.???,,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
-",$(echo $romdir|cut -d/ -f4)/roms/apple2gs   < TotalReplay,,subform_archive_single_download_mamedev '//&&/hdv/' $datadir/roms/apple2gs TotalReplay download archive.???,,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple IIgs(ROM3)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
-",$(echo $romdir|cut -d/ -f4)/roms/amstradcpc < R-TYPE 2012 (Easter-Egg),,subform_archive_single_download_mamedev '//&&/dsk/' $datadir/roms/amstradcpc r-type-128k download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/bbcb       < AcornBBCMicroRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/bbcb AcornBBCMicroRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < non-redump_philips-cdi,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 non-redump_philips-cdi download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < philips_cd-i,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 philips_cd-i download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < redumpPhilipsCdi,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 redumpPhilipsCdi download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < tosecdcus20190822,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/dreamcast tosecdcus20190822 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Australia),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/australia/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Europe),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-France),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/france/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Germany),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/germany/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Italy),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/italy/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Spain),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/spain/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Japan),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/japan/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Usa),,subform_archive_single_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/usa/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/electron   < AcornElectronRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/electron AcornElectronRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/gc         < GamecubeCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/iso/' $datadir/roms/gc GamecubeCollectionByGhostware download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 1PokemonUltraSunEURMULTi83DSPUSSYCAT,,subform_archive_download_mamedev '//&&/cia/' $datadir/roms/3ds 1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3ds-cia-eshop,,subform_archive_download_mamedev '//&&/rar/' $datadir/roms/3ds 3ds-cia-eshop download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3DSCIA_testitem1,,subform_archive_download_mamedev '//&&/rar/' $datadir/roms/3ds 3DSCIA_testitem1 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < nintendo-3ds-complete-collection,,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/3ds nintendo-3ds-complete-collection download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/atarist    < AtariSTRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/atarist AtariSTRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/amiga/cdtv < commodore_amiga_cdtv,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga/cdtv commodore_amiga_cdtv download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/amiga/cd32 < RedumpAmigaCD32,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga/cd32 RedumpAmigaCD32 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/apple2ee   < TotalReplay,,subform_archive_download_mamedev '//&&/hdv/' $datadir/roms/apple2ee TotalReplay download archive.???,,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
+",$(echo $romdir|cut -d/ -f4)/roms/apple2gs   < TotalReplay,,subform_archive_download_mamedev '//&&/hdv/' $datadir/roms/apple2gs TotalReplay download archive.???,,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple IIgs(ROM3)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
+",$(echo $romdir|cut -d/ -f4)/roms/amstradcpc < R-TYPE 2012 (Easter-Egg),,subform_archive_download_mamedev '//&&/dsk/' $datadir/roms/amstradcpc r-type-128k download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/bbcb       < AcornBBCMicroRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/bbcb AcornBBCMicroRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < non-redump_philips-cdi,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 non-redump_philips-cdi download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < philips_cd-i,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 philips_cd-i download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < redumpPhilipsCdi,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 redumpPhilipsCdi download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < DreamcastCollectionByGhostwareMulti-region,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/dreamcast DreamcastCollectionByGhostwareMulti-region download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < tosecdcus20190822,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/dreamcast tosecdcus20190822 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Australia),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/australia/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Europe),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-France),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/france/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Germany),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/germany/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Italy),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/italy/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Spain),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/spain/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Japan),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/japan/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Usa),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/usa/ download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/electron   < AcornElectronRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/electron AcornElectronRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/gc         < GamecubeCollectionByGhostware,,subform_archive_download_mamedev '//&&/iso/' $datadir/roms/gc GamecubeCollectionByGhostware download archive.???,,,,,show_message_mamedev \NO HELP\,"
 ",$(echo $romdir|cut -d/ -f4)/roms/gx4000     < Converted_GX4000_Software,,show_message_yesno_mamedev \"Would you like to proceed with downloading gx4000 files in $datadir/roms/gx4000 Converted_GX4000_Software ?\" \"subform_archive_multi_downloads_mamedev '//' rar $datadir/roms/gx4000 Converted_GX4000_Software index.php/Converted_GX4000_Software ???.cpcwiki.??\";show_message_yesno_mamedev \"Would you like to unrar the gx4000 files in $datadir/roms/gx4000/Converted_GX4000_Software ?\nThe rar files will be removed after extracting.\" \"eval for rarfile in $datadir/roms/gx4000/Converted_GX4000_Software/*.rar;do unar -f -D -o \$datadir/roms/gx4000/Converted_GX4000_Software \\\$rarfile;rm \\\$rarfile;done;chown -R $user:$user "$datadir/roms/gx4000"\",,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/msx        < MSXRomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/msx MSXRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/msx2       < MSX2RomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/msx2 MSX2RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/nes        < NintendoMultiRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx NintendoMultiRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/msx        < MSXRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx MSXRomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/msx2       < MSX2RomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx2 MSX2RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/p2000t     < Software Preservation Project,,subform_archive_multi_downloads_mamedev '//' cas $datadir/roms/p2000t 'Software Preservation Project' p2000t/software/tree/master/cassettes/games github.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/pc98       < NeoKobe-NecPc-98012017-11-17,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/pc98 NeoKobe-NecPc-98012017-11-17 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(echo $romdir|cut -d/ -f4)/roms/ti99_4a    < TOSEC_2012_04_23,,subform_archive_single_download_mamedev '//&&/zip /' $datadir/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download archive.???;clear;unzip -o $datadir/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d $datadir/roms/ti99_4a/;chown -R $user:$user "$datadir/roms/ti99_4a",,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/x68000     < SharpX68000RomCollectionByGhostware,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/x68000 SharpX68000RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/pc98       < NeoKobe-NecPc-98012017-11-17,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/pc98 NeoKobe-NecPc-98012017-11-17 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/ti99_4a    < TOSEC_2012_04_23,,subform_archive_download_mamedev '//&&/zip /' $datadir/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download archive.???;clear;unzip -o $datadir/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d $datadir/roms/ti99_4a/;chown -R $user:$user "$datadir/roms/ti99_4a",,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/x68000     < SharpX68000RomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x68000 SharpX68000RomCollectionByGhostware download archive.???,,,,,show_message_mamedev \"NO HELP\","
     )
     build_menu_mamedev
 #single files, need different approach
-#",$(echo $romdir|cut -d/ -f4)/roms/amiga/cdtv < Amiga_CDTV_TOSEC_2009_04_18,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/amiga Amiga_CDTV_TOSEC_2009_04_18 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-#",$(echo $romdir|cut -d/ -f4)/roms/fmtowns    < Neo_Kobe_Fujitsu_FM_Towns_2016-02-25,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/fmtowns Neo_Kobe_Fujitsu_FM_Towns_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-#",$(echo $romdir|cut -d/ -f4)/roms/x1         < Neo_Kobe_Sharp_X1_2016-02-25,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/x1 Neo_Kobe_Sharp_X1_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-#",$(echo $romdir|cut -d/ -f4)/roms/x1         < Sharp_X1_TOSEC_2012_04_23,,subform_archive_single_download_mamedev '//&&/zip/' $datadir/roms/x1 Sharp_X1_TOSEC_2012_04_23 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/amiga/cdtv < Amiga_CDTV_TOSEC_2009_04_18,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga Amiga_CDTV_TOSEC_2009_04_18 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/fmtowns    < Neo_Kobe_Fujitsu_FM_Towns_2016-02-25,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/fmtowns Neo_Kobe_Fujitsu_FM_Towns_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/x1         < Neo_Kobe_Sharp_X1_2016-02-25,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x1 Neo_Kobe_Sharp_X1_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/x1         < Sharp_X1_TOSEC_2012_04_23,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x1 Sharp_X1_TOSEC_2012_04_23 download archive.???,,,,,show_message_mamedev \NO HELP\,"
 
 }
 
 
-function subform_archive_single_download_mamedev() {
+function subform_archive_download_mamedev() {
     local csv=()
     local download_csv=()
     local download_read
+    local get_all="$6"
     local website_url="$5"
     local website_path="$4"
     local rompack_name="$3"
@@ -1131,7 +1140,7 @@ dialog \
 "rompack name:" 3 1 "$rompack_name" 3 30 76 100 \
 "destination path:" 4 1 "$destination_path" 4 30 76 100 \
 "search pattern:" 5 1 "$search_pattern" 5 30 76 100 \
-"" 6 1 "" 6 0 0 0 \
+"get all >(y)es/(c)ompressed:" 6 1 "$get_all" 6 30 76 100 \
 "" 7 1 "" 6 0 0 0 \
 "" 8 1 "" 6 0 0 0 \
 "" 9 1 "" 6 0 0 0 \
@@ -1148,30 +1157,45 @@ dialog \
 #to fix this you had to add a space to get a correct search ( / adam/ that way there isn't a match with /roms/adam !!! )
 #in next command we add a space to fix this issue
     search_pattern=$(echo "$manual_input" | sed -n 5p | sed 's/\//\/ /')
-
+    get_all=$(echo "$manual_input" | sed -n 6p)
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
-    echo "reading the website data"
-    #sed is used to convert html url encoding to utf-8 encoding, for example %20 becomes /x20
-    #this way you don't have to make a large list with codes in sed in order to convert them all
-    #using "echo -e" makes it possible to convert the backslash codes into readable characters again
-    #however, the comma is a problem when using a CSV and using a comma as separator 
-    #then the comma in the name will break the table
-    #therefor, the code for comma %2C is converted to a different comma code %E2%80%9A
-    #that way a proper lookalike name is presented when showing the list in dialog box
-    while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$(echo -e $(echo $line|sed -r 's/%2C/%E2%80%9A/g;s/%([[:xdigit:]]{2})/\\x\1/g'))',,download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
-    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
-    #we need to add '",,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    csv=( ",,,," "${csv[@]}" )
-    [[ ${!csv[@]} == 0 ]] && csv=( ",,,," ",no search results found, try again,,," )
+	#remove the earlier added space in the search pattern with sed as it needs the regular pattern here
+	[[ $get_all == y ]] && curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|awk "$(echo $search_pattern|sed 's/ //g')"|while read line;do if [[ ! -f "$destination_path/$(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]];then download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path;sleep 0.5;else echo $(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g')) [Exists, probably OK];sleep 0.02;fi;done
+	if [[ $get_all == c ]];then
+	    if [[ ! -f "$destination_path/$rompack_name.zip" ]];then
+	    echo "getting your desired file : $rompack_name.zip"
+	    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O "$destination_path/$rompack_name.zip" $([[ $2 != http* ]] && echo https://)$website_url/compress/$rompack_name 2>&1
+	    [[ $destination_path == */downloads/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
+	    [[ $destination_path == */roms/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-6)"
 	else
+	    echo $destination_path/$rompack_name.zip [Exists, probably OK]
+	    sleep 5	
+	fi
+	fi
+	if [[ $get_all != y ]] && [[ $get_all != c ]];then
+	    echo "reading the website data"
+	    #sed is used to convert html url encoding to utf-8 encoding, for example %20 becomes /x20
+	    #this way you don't have to make a large list with codes in sed in order to convert them all
+	    #using "echo -e" makes it possible to convert the backslash codes into readable characters again
+	    #however, the comma is a problem when using a CSV and using a comma as separator 
+	    #then the comma in the name will break the table
+	    #therefor, the code for comma %2C is converted to a different comma code %E2%80%9A
+	    #that way a proper lookalike name is presented when showing the list in dialog box
+	    while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$(echo -e $(echo $line|sed -r 's/%2C/%E2%80%9A/g;s/%([[:xdigit:]]{2})/\\x\1/g'))',,download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
+	    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
+	    #we need to add '",,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+	    csv=( ",,,," "${csv[@]}" )
+	    [[ ${!csv[@]} == 0 ]] && csv=( ",,,," ",no search results found, try again,,," )
+
+	    build_menu_mamedev
+	fi
+    else
 	csv=( 
 ",,,,"
 ",error : wrong input : try again !,,," 
 	)
     fi
-    
-    build_menu_mamedev
 }
 
 
@@ -1881,6 +1905,7 @@ fi
 #for the installs from EXTRAS only the runcommands with the media options get ExtraPredefinedOptions in part 12, basename runcommands are skipped in part 13
 if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
 [[ ${systems[-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
+[[ ${systems[-1]} == coleco ]] && [[ $(expr $rp_module_version_mame + 0) -gt 264 ]] && ExtraPredefinedOptions+=( "-exp sgm" )
 # carmarty fmtmarty fmtmarty2
 [[ ${systems[-1]} == *marty  ]] || \
 [[ ${systems[-1]} == *marty2  ]] && ExtraPredefinedOptions+=( "-ram 4M" )
@@ -2656,11 +2681,11 @@ done
 
 function download_file_mamedev() {
 clear
-echo "getting your desired file"
+echo "getting your desired file : $(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))"
 mkdir -p $3
 #show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
 #$1=filename $2=weblink $3=to_path
-#sed is used to remove html url encoding, more is described in function subform_archive_single_download_mamedev
+#sed is used to remove html url encoding, more is described in function subform_archive_download_mamedev
 if [[ ! -f "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]]; then
     wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
 else 
