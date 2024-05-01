@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0264.05"
+rp_module_version="0265.00"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.00 :\n\
+- update to new database\n\
 264.05 :\n\
 - being able to get all seperate files from a rompack in 1 go\n\
 - being able to get all files from a rompack in 1 zip file\n\
