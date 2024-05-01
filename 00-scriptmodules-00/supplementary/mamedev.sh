@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.00"
+rp_module_version="0265.01"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.01 :\n\
+- colecop : install sgm module by default (database 0265 or higher)\n\
 265.00 :\n\
 - update to new database\n\
 264.05 :\n\
@@ -1907,7 +1909,7 @@ fi
 #for the installs from EXTRAS only the runcommands with the media options get ExtraPredefinedOptions in part 12, basename runcommands are skipped in part 13
 if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
 [[ ${systems[-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
-[[ ${systems[-1]} == coleco ]] && [[ $(expr $rp_module_version_mame + 0) -gt 264 ]] && ExtraPredefinedOptions+=( "-exp sgm" )
+[[ ${systems[-1]} == coleco ]] || [[ ${systems[-1]} == colecop ]] && [[ $(expr $rp_module_version_mame + 0) -gt 264 ]] && ExtraPredefinedOptions+=( "-exp sgm" )
 # carmarty fmtmarty fmtmarty2
 [[ ${systems[-1]} == *marty  ]] || \
 [[ ${systems[-1]} == *marty2  ]] && ExtraPredefinedOptions+=( "-ram 4M" )
