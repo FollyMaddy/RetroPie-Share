@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.02"
+rp_module_version="0265.03"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.03 :\n\
+- fix function subformgui_categories_automated_mamedev\n\
 265.02 :\n\
 - fix permissions issue for BIOS folder\n\
 - replace html encoding only when needed to speed up normal stuff\n\
@@ -419,9 +421,9 @@ function subgui_categories_mamedev() {
     [[ $(expr $rp_module_version_mame + 0) -gt 261 ]] && \
     csv+=(
 ",\Zr▼ NEW : Fully automated,,,,,,,,"
-",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media/\",,,,,,"
-",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
-",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
+",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\",,,,,,"
+",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
+",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
 ",\Zr▲,,,,,,,,"
 ",,,,,,,,,"
     )
@@ -1239,9 +1241,9 @@ If they exist in both then use and install only one.\
 	#make sure that there is a database file
     [[ ! -f ${emudir}/mame/mame${rp_module_version_mame}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_mame}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_mame}_systems_sorted_info
     local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged/" )
-	local csv=()
-	local action="$1"
-	local driver_type="$2"
+    local csv=()
+    local action="$1"
+    local driver_type="$2"
     local filter1="$3"
     local filter2="$4"
     local manual_input=""
@@ -1272,9 +1274,21 @@ dialog \
     echo "reading the available databases"
     #the first value is reserved for the column descriptions and empty in the array rp_module_database_versions
     csv=( "\",,,,\"" )
-	#to keep old databases compatible and have the possibility to remove all manual category install lines,
-	#we need to replace @arcade_system@ with @arcade@ and @oro@ with @realistic@ and remove @working_arcade as we use @good@ to filter out working_arcade drivers
-	#while read category_read;do csv+=("${category_read}");done < <(IFS=$'\n';cat /opt/retropie/emulators/mame/mame${rp_module_database_versions[1]}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@arcade_system@/@arcade@/g;s/@oro@/@realistic@/g;s/@working_arcade@//g;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line;do echo "\",Arcade Category => ${line},@arcade,create_00index_file_mamedev '/@${line}@/&&/@working_arcade/' ${datadir}/roms/${line};install_system_mamedev ${line} ${line} '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";done)
+	#we want backwards compatibility to the old manual install lines
+	#therfor we need to keep some @<tags>@/catergories in the database that aren't particurly usefull for the automatic lists
+	#for example the tag @oro@ is used for the category realistic for the older install lines
+	#oro doesn't say anything so the same tag is also added as @realistic@ now which will be presented in the automatic list
+	#next part of the command will present the lines from the database which we want using filter1 :
+	#cat /opt/retropie/emulators/mame/mame${rp_module_version_mame}_systems_sorted_info|awk "${filter1}"
+	#then sed is used to filer out the categories :
+	#sed 's/Driver.*: //;s/@/\n/g'
+	#after that it is sorted and the duplicates are removed with uniq
+	#with filter2 we filter out the catergories we don't want in the list
+	#
+	#if we also want the category 'arcade' then we need to add this category somehow to the database
+	#'arcade' could be the equivalent of 'working_arcade'
+	#that way we can install the arcade category from the automatic list
+	#athough if somehow the tag @arcade@ is missing then building up the list should be no problem but will miss arcade
 	if [[ $1 == *install* ]];then
 		while read category_read;do csv+=("${category_read}");done < <(
 		IFS=$'\n'
