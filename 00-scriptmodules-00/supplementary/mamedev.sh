@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.03"
+rp_module_version="0265.04"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.04 :\n\
+- add info in message about 'gccXX' as it means gcc version is unknown\n\
 265.03 :\n\
 - fix function subformgui_categories_automated_mamedev\n\
 265.02 :\n\
@@ -537,6 +539,9 @@ Make sure you use the correct OS version :\n\
 - gcc12 should work on Debian12/Bookworm derivatives\n\
 - gcc12 should work on latest Arch linux derivatives, for ArchyPie\n\
 - if gcc12 version is not working then try a gcc10 version\n\
+- gccXX means the gcc version is unknown\n\
+- gccXX most likely will work on the latest OSes\n\
+- gccXX could work on older OSes, just try and see if it works\n\
 "
     local csv=()
     #the first value is reserved for the column descriptions
