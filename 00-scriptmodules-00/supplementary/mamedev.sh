@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.04"
+rp_module_version="0265.05"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.05 :\n\
+- fix permissions issue for tigerrz folder\n\
 265.04 :\n\
 - add info in message about 'gccXX' as it means gcc version is unknown\n\
 265.03 :\n\
@@ -1048,7 +1050,7 @@ local rarfile
 ",$(echo $romdir|cut -d/ -f4)/roms/jakks        < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@jakks/' ${rompack_link_info[1]} $datadir/roms/jakks ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/konamih      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@konamih/' ${rompack_link_info[1]} $datadir/roms/konamih ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/tigerh       < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerh/' ${rompack_link_info[1]} $datadir/roms/tigerh ${rompack_link_info[2]} download archive.???;show_message_mamedev \"tsuperman is a clone of tgargnf\n\nAfter clicking ok this roms is copied from the original and renamed to the correct romname.\";cp $datadir/roms/tigerh/tgargnf.zip $datadir/roms/tigerh/tsuperman.zip;chown -R $user:$user $datadir/roms/tigerh,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/tigerrz      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerrz/' ${rompack_link_info[1]} $datadir/roms/tigerrz ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/tigerrz      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerrz/' ${rompack_link_info[1]} $datadir/roms/tigerrz ${rompack_link_info[2]} download archive.???;chown -R $user:$user $datadir/roms/tigerrz,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all files from a specific category,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/deco_cassette < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/' ${rompack_link_info[1]} $datadir/roms/deco_cassette ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
@@ -1454,6 +1456,10 @@ dialog \
     echo "Atfer that it will go back to the menu."
     sleep 5
     fi
+    #chown commands are in the lines for : all_in1 - tigerrz
+    #[[ $destination_path == */BIOS/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
+	#[[ $destination_path == */downloads/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
+	#[[ $destination_path == */roms/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-6)"
 }
 
 
