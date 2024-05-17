@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.06"
+rp_module_version="0265.07"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.07 :\n\
+- when using a regular pc then use an alternative shader for realistic\n\
 265.06 :\n\
 - fix permissions when multi download function is in use\n\
 265.05 :\n\
@@ -1249,7 +1251,7 @@ If they exist in both then use and install only one.\
 "
 	#make sure that there is a database file
     [[ ! -f ${emudir}/mame/mame${rp_module_version_mame}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_mame}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_mame}_systems_sorted_info
-    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged/" )
+    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
     local csv=()
     local action="$1"
     local driver_type="$2"
@@ -1445,7 +1447,8 @@ dialog \
     #show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
     echo "busy with ${restricted_download_csv[$rd]}$file_extension"
     #display onle the lines "Nothing to do." "Not Found." and progress "%" using awk or grep command : awk '/do\./||/Found\./||/\%/' : grep -E 'do\.|Found\.|%'
-    wget --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1|grep -E 'do\.|Found\.|%'
+    wget --show-progress --progress=bar:force -T4 -t0 -nc -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 
+    #2>&1|grep -E 'do\.|Found\.|%'
     done
     elif [[ $(echo $website_url|sha1sum) == 91f709654529299145e9eb45ce1ca1e19796edab* ]];then
 	wget --show-progress --progress=bar:force -T3 -t0 -c -w1 -r -l 1 https://$website_url/$website_path -P $destination_path/$rompack_name -A $file_extension -nd
@@ -2679,7 +2682,11 @@ do
  sed -i "s|[:]|\/home\/$user\/$(echo $romdir|cut -d/ -f4)\/downloads\/Orionsangels_Realistic_Overlays_For_RetroPie\/Retroarch|g;s|[\]|\/|g" "$cfg_file"
  echo input_overlay_enable = true  >> "$cfg_file"
  echo aspect_ratio_index = \"23\" >> "$cfg_file"
+ if [[ -f $rootdir/configs/all/retroarch/shaders/fake-crt-geom.glslp ]];then
  echo video_shader = \"$rootdir/configs/all/retroarch/shaders/fake-crt-geom.glslp\" >> "$cfg_file"
+ else
+ echo video_shader = \"$rootdir/configs/all/retroarch/shaders/crt/crt-geom.glslp\" >> "$cfg_file"
+ fi
  value=$(cat "$cfg_file"|grep _height|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
  value=$(cat "$cfg_file"|grep _width|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
  value=$(cat "$cfg_file"|grep _x|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
