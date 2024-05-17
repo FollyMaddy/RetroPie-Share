@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.05"
+rp_module_version="0265.06"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.06 :\n\
+- fix permissions when multi download function is in use\n\
 265.05 :\n\
 - fix permissions issue for tigerrz folder\n\
 265.04 :\n\
@@ -1457,9 +1459,9 @@ dialog \
     sleep 5
     fi
     #chown commands are in the lines for : all_in1 - tigerrz
-    #[[ $destination_path == */BIOS/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
-	#[[ $destination_path == */downloads/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
-	#[[ $destination_path == */roms/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-6)"
+    [[ $destination_path == */BIOS/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
+	[[ $destination_path == */downloads/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
+	[[ $destination_path == */roms/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-6)"
 }
 
 
