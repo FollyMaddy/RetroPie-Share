@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.08"
+rp_module_version="0265.09"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.09 :\n\
+- fix test mistake\n\
 265.08 :\n\
 - fix test mistake\n\
 265.07 :\n\
@@ -1449,7 +1451,7 @@ dialog \
     #show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
     echo "busy with ${restricted_download_csv[$rd]}$file_extension"
     #display onle the lines "Nothing to do." "Not Found." and progress "%" using awk or grep command : awk '/do\./||/Found\./||/\%/' : grep -E 'do\.|Found\.|%'
-    wget --show-progress --progress=bar:force -T4 -t0 -nc -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1|grep -E 'do\.|Found\.|%'
+    wget --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1|grep -E 'do\.|Found\.|%'
     done
     elif [[ $(echo $website_url|sha1sum) == 91f709654529299145e9eb45ce1ca1e19796edab* ]];then
 	wget --show-progress --progress=bar:force -T3 -t0 -c -w1 -r -l 1 https://$website_url/$website_path -P $destination_path/$rompack_name -A $file_extension -nd
