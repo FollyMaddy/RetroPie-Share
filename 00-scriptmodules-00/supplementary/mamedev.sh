@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.09"
+rp_module_version="0265.10"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,11 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.10 :\n\
+- improvements in restricted downloads :\n\
+  - improve output when downloading\n\
+  - detect clones and save the associated rom as clonename\n\
+  - remove the clone hacks from the manual download lines\n\
 265.09 :\n\
 - fix test mistake\n\
 265.08 :\n\
@@ -433,9 +438,9 @@ function subgui_categories_mamedev() {
     [[ $(expr $rp_module_version_mame + 0) -gt 261 ]] && \
     csv+=(
 ",\Zr▼ NEW : Fully automated,,,,,,,,"
-",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\",,,,,,"
-",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
-",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
+",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"not needed\",,,,,,"
+",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"not needed\",,,,,,"
+",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"not needed\",,,,,,"
 ",\Zr▲,,,,,,,,"
 ",,,,,,,,,"
     )
@@ -1045,53 +1050,53 @@ local rarfile
     [[ $(expr $rp_module_version_mame + 0) -gt 261 ]] && \
     csv+=(
 ",▼\ZrGet all files from automated category lists,,,"
-",►Show non-arcade  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media|ma|oro|working_arcade/\",,,,,,"
-",►Show   arcade    categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
-",►Show  arcade90º  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\",,,,,,"
+",►Show non-arcade  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media|ma|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show   arcade    categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show  arcade90º  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
 ",,,,"
     )
     csv+=(
 ",▼\ZrGet all handheld and plug&play files per category,,,"
-",$(echo $romdir|cut -d/ -f4)/roms/all_in1      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@all_in1/' ${rompack_link_info[1]} $datadir/roms/all_in1 ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/classich     < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@classich/' ${rompack_link_info[1]} $datadir/roms/classich ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/gameandwatch < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@gameandwatch/' ${rompack_link_info[1]} $datadir/roms/gameandwatch ${rompack_link_info[2]} download archive.???;show_message_mamedev \"gnw_egg is a clone of gnw_mmouse\ngnw_dkcirc is a clone of gnw_mmousep\n\nAfter clicking ok these roms are copied from the originals and renamed to the correct romname.\";cp $datadir/roms/gameandwatch/gnw_mmousep.zip $datadir/roms/gameandwatch/gnw_dkcirc.zip;cp $datadir/roms/gameandwatch/gnw_mmouse.zip $datadir/roms/gameandwatch/gnw_egg.zip;chown -R $user:$user $datadir/roms/gameandwatch,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/jakks        < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@jakks/' ${rompack_link_info[1]} $datadir/roms/jakks ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/konamih      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@konamih/' ${rompack_link_info[1]} $datadir/roms/konamih ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/tigerh       < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerh/' ${rompack_link_info[1]} $datadir/roms/tigerh ${rompack_link_info[2]} download archive.???;show_message_mamedev \"tsuperman is a clone of tgargnf\n\nAfter clicking ok this roms is copied from the original and renamed to the correct romname.\";cp $datadir/roms/tigerh/tgargnf.zip $datadir/roms/tigerh/tsuperman.zip;chown -R $user:$user $datadir/roms/tigerh,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/tigerrz      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerrz/' ${rompack_link_info[1]} $datadir/roms/tigerrz ${rompack_link_info[2]} download archive.???;chown -R $user:$user $datadir/roms/tigerrz,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/all_in1      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@all_in1/' ${rompack_link_info[1]} $datadir/roms/all_in1 ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/classich     < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@classich/' ${rompack_link_info[1]} $datadir/roms/classich ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/gameandwatch < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@gameandwatch/' ${rompack_link_info[1]} $datadir/roms/gameandwatch ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/jakks        < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@jakks/' ${rompack_link_info[1]} $datadir/roms/jakks ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/konamih      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@konamih/' ${rompack_link_info[1]} $datadir/roms/konamih ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/tigerh       < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerh/' ${rompack_link_info[1]} $datadir/roms/tigerh ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/tigerrz      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerrz/' ${rompack_link_info[1]} $datadir/roms/tigerrz ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all files from a specific category,,,"
-",$(echo $romdir|cut -d/ -f4)/roms/deco_cassette < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/' ${rompack_link_info[1]} $datadir/roms/deco_cassette ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/megaplay      < (  10+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(Mega Play\)/' ${rompack_link_info[1]} $datadir/roms/megaplay ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/neogeo        < ( 270+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@neogeo/' ${rompack_link_info[1]} $datadir/roms/neogeo ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/nintendovs    < (  50+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@nintendovs/' ${rompack_link_info[1]} $datadir/roms/nintendovs ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/playchoice10  < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10 ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/deco_cassette < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/' ${rompack_link_info[1]} $datadir/roms/deco_cassette ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/megaplay      < (  10+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(Mega Play\)/' ${rompack_link_info[1]} $datadir/roms/megaplay ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/neogeo        < ( 270+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@neogeo/' ${rompack_link_info[1]} $datadir/roms/neogeo ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/nintendovs    < (  50+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@nintendovs/' ${rompack_link_info[1]} $datadir/roms/nintendovs ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/playchoice10  < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10 ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all files from a specific category,,,"
-",$(echo $romdir|cut -d/ -f4)/roms/driving       < ( 600+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/lightgun      < ( 320+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@lightgun/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/lightgun ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/maze          < ( 750+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/pinball       < (  40+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@pinball_arcade/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/pinball ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/puzzle        < ( 640+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/realistic     < ( 280+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@oro/' ${rompack_link_info[1]} $datadir/roms/realistic ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/shooter       < (2800+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/slot_machine  < (1020+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/sport         < ( 980+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sport/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sport ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/upright       < (2440+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/driving       < ( 600+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/lightgun      < ( 320+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@lightgun/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/lightgun ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/maze          < ( 750+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/pinball       < (  40+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@pinball_arcade/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/pinball ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/puzzle        < ( 640+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/realistic     < ( 280+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@oro/' ${rompack_link_info[1]} $datadir/roms/realistic ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/shooter       < (2800+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/slot_machine  < (1020+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/sport         < ( 980+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sport/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sport ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/upright       < (2440+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all 90º orientated files from a specific category,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/deco_cassette90º < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/&&/90º/' ${rompack_link_info[1]} $datadir/roms/deco_cassette90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/playchoice10_90º < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10_90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all 90º orientated files from a specific category,,,"
-",$(echo $romdir|cut -d/ -f4)/roms/driving90º    	 < ( 110+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/maze90º        	 < ( 410+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/pinball90º     	 < (  20+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@pinball_arcade/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/pinball90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/puzzle90º      	 < ( 100+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/shooter90º     	 < (1030+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/slot_machine90º	 < (   5+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/sport90º      	 < ( 170+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sport/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sport90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/upright90º    	 < (1450+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/driving90º    	 < ( 110+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/maze90º        	 < ( 410+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/pinball90º     	 < (  20+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@pinball_arcade/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/pinball90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/puzzle90º      	 < ( 100+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/shooter90º     	 < (1030+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/slot_machine90º	 < (   5+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/sport90º      	 < ( 170+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sport/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sport90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/upright90º    	 < (1450+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/roms/\ZR,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 1PokemonUltraSunEURMULTi83DSPUSSYCAT,,subform_archive_download_mamedev '//&&/cia/' $datadir/roms/3ds 1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
@@ -1244,6 +1249,11 @@ It is used to install categories or to download roms of a category.\n\
 The first filter is used to present good (non-)arcade categories.\n\
 The second is used to eliminate unuseful categories from the list\n\
 \n\
+The 'detect and save clone name' part can be enabled with 'yes'\n\
+When downloading it will download the regular rom and save it with the clone name,\n\
+as clones are inside the regular rom.\n\
+Clones are only loaded, when loading against the softlist, if the rom has that clonename!\n\
+\n\
 Be aware that there can be the same categories that are in both.\n\
 Like, for example, 'puzzle' is in both arcade and non-arcade.\n\
 Installing both can give problematic results.\n\
@@ -1261,6 +1271,7 @@ If they exist in both then use and install only one.\
     local driver_type="$2"
     local filter1="$3"
     local filter2="$4"
+    local detect_clone_save="$5"    
     local manual_input=""
     local category_read
     
@@ -1278,7 +1289,7 @@ dialog \
 "Driver type:" 2 1 "${driver_type}" 2 30 76 100 \
 "Filter 1:" 3 1 "${filter1}" 3 30 76 100 \
 "Filter 2:" 4 1 "${filter2}" 4 30 76 100 \
-"" 5 1 "" 6 0 0 0 \
+"detect and save clone name:" 5 1 "${detect_clone_save}" 5 30 76 100 \
 "" 6 1 "" 6 0 0 0 \
 "" 7 1 "" 6 0 0 0 \
 "" 8 1 "" 6 0 0 0 \
@@ -1322,7 +1333,7 @@ dialog \
 		cat /opt/retropie/emulators/mame/mame${rp_module_version_mame}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
 			[[ -n ${line} ]] && 
-			echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\",\""
+			echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download archive.??? ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
 		done
 		)
 	fi
@@ -1408,6 +1419,7 @@ The binary should work on Debian 10/11 based OSes.\n\
 
 function subform_archive_multi_downloads_mamedev() {
 
+	local detect_clone_save="$7"
     local website_url="$6"
     local website_path="$5"
     local rompack_name="$4"
@@ -1430,6 +1442,7 @@ dialog \
 "destination path:" 4 1 "$destination_path" 4 30 76 100 \
 "file extension:" 5 1 "$file_extension" 5 30 76 100 \
 "search input:" 6 1 "$search_input" 6 30 76 100 \
+"detect and save clone name:" 7 1 "$detect_clone_save" 7 30 76 100 \
 2>&1 >/dev/tty \
 )
 
@@ -1439,6 +1452,7 @@ dialog \
     destination_path=$(echo "$manual_input" | sed -n 4p)
     file_extension=$(echo "$manual_input" | sed -n 5p)
     search_input=$(echo "$manual_input" | sed -n 6p)
+    detect_clone_save=$(echo "$manual_input" | sed -n 7p)   
 
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
@@ -1451,10 +1465,19 @@ dialog \
     #show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
     echo "busy with ${restricted_download_csv[$rd]}$file_extension"
     #display onle the lines "Nothing to do." "Not Found." and progress "%" using awk or grep command : awk '/do\./||/Found\./||/\%/' : grep -E 'do\.|Found\.|%'
-    wget --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1|grep -E 'do\.|Found\.|%'
+	if [[ $detect_clone_save == yes ]];then
+		if [[ -n $(/opt/retropie/emulators/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6) ]];then
+		echo clone detected, saving $(/opt/retropie/emulators/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension as ${restricted_download_csv[$rd]}$file_extension
+		wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 https://$website_url/$website_path/$rompack_name/$(/opt/retropie/emulators/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension -O $destination_path/${restricted_download_csv[$rd]}$file_extension 2>&1
+		else 
+		wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
+		fi
+	else 
+	wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
+	fi
     done
     elif [[ $(echo $website_url|sha1sum) == 91f709654529299145e9eb45ce1ca1e19796edab* ]];then
-	wget --show-progress --progress=bar:force -T3 -t0 -c -w1 -r -l 1 https://$website_url/$website_path -P $destination_path/$rompack_name -A $file_extension -nd
+	wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -r -l 1 https://$website_url/$website_path -P $destination_path/$rompack_name -A $file_extension -nd 2>&1
     elif [[ $(echo $website_url|sha1sum) == fb27d3b6f43131c8ad026024f3e3b9cfa0686d4c* ]];then
 	download_from_github_mamedev $website_path $destination_path $file_extension
     else 
