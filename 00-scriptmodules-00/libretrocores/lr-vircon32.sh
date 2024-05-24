@@ -21,9 +21,7 @@ function sources_lr-vircon32() {
 }
 
 function build_lr-vircon32() {
-	cd $md_build
 	cmake .
-    make clean
     make
     md_ret_require="$md_build/vircon32_libretro.so"
 }
@@ -32,7 +30,7 @@ function install_lr-vircon32() {
     md_ret_files=(
         'vircon32_libretro.so'
         'README.md'
-        'LICENSE'
+        'LICENSE.md'
     )
 }
 
