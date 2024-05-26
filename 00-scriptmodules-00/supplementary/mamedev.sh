@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.10"
+rp_module_version="0265.11"
 rp_module_version_mame="${rp_module_version%.*}"
 
 rp_module_database_versions=()
@@ -63,6 +63,12 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.11 :\n\
+- be able to install coleco/colecop with and without SGM :\n\
+  - only works with database 0265 or higher\n\
+  - when installing coleco/colecop a choice will be presented\n\
+  - coleco/colecop with SGM is installed in coleco_sgm\n\
+  - coleco/colecop without SGM is installed in coleco\n\
 265.10 :\n\
 - improvements in restricted downloads :\n\
   - improve output when downloading\n\
@@ -1977,7 +1983,22 @@ fi
 #for the installs from EXTRAS only the runcommands with the media options get ExtraPredefinedOptions in part 12, basename runcommands are skipped in part 13
 if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
 [[ ${systems[-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
-[[ ${systems[-1]} == coleco ]] || [[ ${systems[-1]} == colecop ]] && [[ $(expr $rp_module_version_mame + 0) -gt 264 ]] && ExtraPredefinedOptions+=( "-exp sgm" )
+if [[ ${systems[-1]} == coleco ]] || [[ ${systems[-1]} == colecop ]] && [[ $(expr $rp_module_version_mame + 0) -gt 264 ]];then
+echo opening yes/no dialog-box
+sleep 3
+dialog --colors --backtitle "$__backtitle" --yesno "Select (yes) to install coleco/colecop with Super Game Module as :\n'coleco_sgm'\n\nSelect (no) to install just coleco/colecop as :\n'coleco'\n\nRemeber : you have to do TWO installs to have them both installed !" 22 76 2>&1 >/dev/tty
+# Get exit status
+# 0 means user hit [yes] button.
+# 1 means user hit [no] button.
+response=$?
+case $response in
+   0) ExtraPredefinedOptions+=( "-exp sgm" );;
+   1) ;;
+esac
+clear
+echo proceed....
+#in part 10 the description is changed to Coleco+SGM when installing coleco/colecop with Super Game Module
+fi
 # carmarty fmtmarty fmtmarty2
 [[ ${systems[-1]} == *marty  ]] || \
 [[ ${systems[-1]} == *marty2  ]] && ExtraPredefinedOptions+=( "-ram 4M" )
@@ -2153,6 +2174,8 @@ systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Master" )
 systemsrp+=( "c64gs" )
 descriptionsrp+=( "Commodore 64 Games System (PAL)" )
+systemsrp+=( "coleco_sgm" )
+descriptionsrp+=( "Coleco+SGM" )
 systemsrp+=( "dragon64" )
 descriptionsrp+=( "Dragon 64" )
 systemsrp+=( "sega32-cd" )
@@ -2214,8 +2237,12 @@ newsystems+=( "${systems[@]}" )
   for mamedevindex in "${!descriptions[@]}"; do
     if [[ "${descriptions[$mamedevindex]}" == "Adam" ]]; then
        descriptions[$mamedevindex]="ColecoVision Adam"
-       echo "changed in ${descriptions[$mamedevindex]}"
+       echo "description changed in ${descriptions[$mamedevindex]}"
     fi
+    if [[ "${ExtraPredefinedOptions[$mamedevindex]}" == "-exp sgm" ]]; then
+       descriptions[$mamedevindex]="Coleco+SGM"
+       echo "description changed in ${descriptions[$mamedevindex]}"
+    fi    
   done
 
   #check the mamedev descriptions against the RetroPie / ArchyPie descriptions
