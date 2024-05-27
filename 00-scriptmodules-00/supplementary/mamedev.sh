@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.13"
+rp_module_version="0265.14"
 rp_module_version_mame="${rp_module_version%.*}"
 rp_module_database_version=
 rp_module_database_excluded_versions=()
@@ -71,6 +71,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.14 :\n\
+- changed coleco_sgm into coleco_homebrew just like the softlist\n\
+- reduced the code when changing the driver description\n\
 265.13 :\n\
 - add 'ssd' to the mediafilter to install psion drivers\n\
 - add developper notice when system variable is empty\n\
@@ -2001,7 +2004,7 @@ if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
 if [[ ${systems[-1]} == coleco ]] || [[ ${systems[-1]} == colecop ]] && [[ $(expr $rp_module_version_mame + 0) -gt 264 ]];then
 echo opening yes/no dialog-box
 sleep 3
-dialog --colors --backtitle "$__backtitle" --yesno "Select (yes) to install coleco/colecop with Super Game Module as :\n'coleco_sgm'\n\nSelect (no) to install just coleco/colecop as :\n'coleco'\n\nRemeber : you have to do TWO installs to have them both installed !" 22 76 2>&1 >/dev/tty
+dialog --colors --backtitle "$__backtitle" --yesno "Select (yes) to install coleco/colecop with Super Game Module as :\n'coleco_homebrew'\n\nSelect (no) to install just coleco/colecop as :\n'coleco'\n\nRemember : you have to do TWO installs to have them both installed !" 22 76 2>&1 >/dev/tty
 # Get exit status
 # 0 means user hit [yes] button.
 # 1 means user hit [no] button.
@@ -2189,7 +2192,7 @@ systemsrp+=( "bbcmicro" )
 descriptionsrp+=( "BBC Master" )
 systemsrp+=( "c64gs" )
 descriptionsrp+=( "Commodore 64 Games System (PAL)" )
-systemsrp+=( "coleco_sgm" )
+systemsrp+=( "coleco_homebrew" )
 descriptionsrp+=( "Coleco+SGM" )
 systemsrp+=( "dragon64" )
 descriptionsrp+=( "Dragon 64" )
@@ -2250,14 +2253,8 @@ newsystems+=( "${systems[@]}" )
   #here we can change mamedev systems names that normally wouldn't be detected in the next for loop
   #so now they can be detected changed into RetroPie / ArchyPie names
   for mamedevindex in "${!descriptions[@]}"; do
-    if [[ "${descriptions[$mamedevindex]}" == "Adam" ]]; then
-       descriptions[$mamedevindex]="ColecoVision Adam"
-       echo "description changed in ${descriptions[$mamedevindex]}"
-    fi
-    if [[ "${ExtraPredefinedOptions[$mamedevindex]}" == "-exp sgm" ]]; then
-       descriptions[$mamedevindex]="Coleco+SGM"
-       echo "description changed in ${descriptions[$mamedevindex]}"
-    fi    
+    [[ "${descriptions[$mamedevindex]}" == "Adam" ]] && descriptions[$mamedevindex]="ColecoVision Adam"
+    [[ "${ExtraPredefinedOptions[$mamedevindex]}" == "-exp sgm" ]] && descriptions[$mamedevindex]="Coleco+SGM"   
   done
 
   #check the mamedev descriptions against the RetroPie / ArchyPie descriptions
