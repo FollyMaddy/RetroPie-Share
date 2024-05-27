@@ -25,11 +25,19 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.11"
+rp_module_version="0265.12"
 rp_module_version_mame="${rp_module_version%.*}"
-
+rp_module_database_version=
+rp_module_database_excluded_versions=()
+rp_module_database_excluded_versions=( 242 244 254 256 257)
 rp_module_database_versions=()
-rp_module_database_versions=( "" $(curl -s https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-databases-00/mame|sed 's/:/\\\n/g'|grep _info\"|grep path|grep -v 023|grep -E -o '[0-9.]+'|sort -r) )
+#reading from internet seems to fail sometimes, perhaps due to a bad connection
+#rp_module_database_versions=( "" $(curl -s https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-databases-00/mame|sed 's/:/\\\n/g'|grep _info\"|grep path|grep -v 023|grep -E -o '[0-9.]+'|sort -r) )
+#instead using a sequence now with a few exclusions from the array
+#used this information on how to use the seq command : https://stackoverflow.com/questions/169511/how-do-i-iterate-over-a-range-of-numbers-defined-by-variables-in-bash
+#used this information to construct the command : https://stackoverflow.com/questions/3685970/check-if-a-bash-array-contains-a-value
+rp_module_database_versions=( "" $(seq $rp_module_version_mame -1 0240|while read rp_module_database_version;do [[ " ${rp_module_database_excluded_versions[*]} " =~ " ${rp_module_database_version} " ]] || echo "0${rp_module_database_version}";done) )
+
 
 local mamedev_csv=()
 local gamelists_csv=()
@@ -63,6 +71,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.12 :\n\
+- getting database versions not online anymore :\n\
+  - now making use of the range between 240 and the last version\n\
+  - exclude a few versions from an array, which don't exist\n\
 265.11 :\n\
 - be able to install coleco/colecop with and without SGM :\n\
   - only works with database 0265 or higher\n\
