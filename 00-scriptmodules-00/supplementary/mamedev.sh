@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.12"
+rp_module_version="0265.13"
 rp_module_version_mame="${rp_module_version%.*}"
 rp_module_database_version=
 rp_module_database_excluded_versions=()
@@ -71,6 +71,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.13 :\n\
+- add 'ssd' to the mediafilter to install psion drivers\n\
+- add developper notice when system variable is empty\n\
 265.12 :\n\
 - getting database versions not online anymore :\n\
   - now making use of the range between 240 and the last version\n\
@@ -1833,7 +1836,7 @@ newsystems=()
 namesfilter="\(brief|------"
 
 #filter on usefull media, otherwise we also get many unusefull scripts
-mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|flop3\)|\(cass|dump\)|cdrm\)|hard\)|\(hard1|\(min|\(mout"
+mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|flop3\)|\(cass|dump\)|cdrm\)|hard\)|\(hard1|\(min|\(mout|\(ssd"
 
 #string for adding extra extensions 
 addextensions=".zip .7z"
@@ -2280,6 +2283,7 @@ if [[ -n "$2" ]]; then
 echo "MAME information -> (Skipped)"
 else
 echo "MAME information -> ${systems[$mamedevindex]} (${descriptions[$mamedevindex]})"
+[[ -z ${systems[$mamedevindex]} ]] && echo -e "\n!!!\nthe system variable is empty !\nnothing will be installed !\nask the developper to add specific media to the mediafilter !\n!!!\n"
 fi
 
 
