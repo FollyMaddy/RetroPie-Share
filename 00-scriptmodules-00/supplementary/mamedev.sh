@@ -25,8 +25,12 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.14"
-rp_module_version_mame="${rp_module_version%.*}"
+rp_module_version="0265.15"
+rp_module_version_database="${rp_module_version%.*}"
+if [[ -f $emudir/mame/mame ]];then
+ rp_module_version_mame="$($emudir/mame/mame -version)"
+ rp_module_version_mame="${rp_module_version_mame: -5:4}"
+fi
 rp_module_database_version=
 rp_module_database_excluded_versions=()
 rp_module_database_excluded_versions=( 242 244 254 256 257)
@@ -36,7 +40,7 @@ rp_module_database_versions=()
 #instead using a sequence now with a few exclusions from the array
 #used this information on how to use the seq command : https://stackoverflow.com/questions/169511/how-do-i-iterate-over-a-range-of-numbers-defined-by-variables-in-bash
 #used this information to construct the command : https://stackoverflow.com/questions/3685970/check-if-a-bash-array-contains-a-value
-rp_module_database_versions=( "" $(seq $rp_module_version_mame -1 0240|while read rp_module_database_version;do [[ " ${rp_module_database_excluded_versions[*]} " =~ " ${rp_module_database_version} " ]] || echo "0${rp_module_database_version}";done) )
+rp_module_database_versions=( "" $(seq $rp_module_version_database -1 0240|while read rp_module_database_version;do [[ " ${rp_module_database_excluded_versions[*]} " =~ " ${rp_module_database_version} " ]] || echo "0${rp_module_database_version}";done) )
 
 
 local mamedev_csv=()
@@ -69,8 +73,13 @@ __platform_flags = ${__platform_flags}\n\
 __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 "
 
+
     show_message_mamedev "\
                                                  One time update info\n\
+265.15 :\n\
+- make all mame commands uniform using the emudir variable\n\
+- update log notice when system variable is empty\n\
+- add message about mismatch in versions : database VS MAME\n\
 265.14 :\n\
 - changed coleco_sgm into coleco_homebrew just like the softlist\n\
 - reduced the code when changing the driver description\n\
@@ -311,6 +320,9 @@ remove the predefined \"view\" from the config.\n\
 "
     xattr -w user.comment "x" $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi)
     fi
+    
+    
+    [[ -f $emudir/mame/mame ]] && [[ $rp_module_version_database != $rp_module_version_mame ]] && show_message_mamedev "Your standalone MAME version is different than the used MAME database !\nMake sure you switch to the correct database.\nYour standalone MAME version is ${rp_module_version_mame}.\nCheck if that database version is available.\nIf not available then choose a closest one.\nOr update standalone MAME, if possible.\n\nStandalone MAME is used by this script when installing a driver.\nA mismatch can mean that a driver cannot be installed, for example.\n"
 }
 
 
@@ -435,20 +447,20 @@ it will install and use the detected category name instead.\n"
 
 function read_data_mamedev() {
     [[ $1 == clear ]] && clear
-    echo "Database version mame${rp_module_version_mame}_systems_sorted_info is used"
+    echo "Database version mame${rp_module_version_database}_systems_sorted_info is used"
     #make sure there is a database
     [[ ! -d $emudir/mame ]] && mkdir -p $emudir/mame
-    [[ ! -f $emudir/mame/mame${rp_module_version_mame}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_mame}_systems_sorted_info -o $emudir/mame/mame${rp_module_version_mame}_systems_sorted_info
+    [[ ! -f $emudir/mame/mame${rp_module_version_database}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_database}_systems_sorted_info -o $emudir/mame/mame${rp_module_version_database}_systems_sorted_info
     #here we read the systems and descriptions from mame into an array
     #by using next if function the data can be re-used, without reading it every time
     if [[ -z ${mamedev_csv[@]} ]]; then
-        if [[ -f $emudir/mame/mame${rp_module_version_mame}_systems_sorted_info ]]; then 
-	echo "Get mame${rp_module_version_mame} data:$emudir/mame/mame${rp_module_version_mame}_systems_sorted_info"
+        if [[ -f $emudir/mame/mame${rp_module_version_database}_systems_sorted_info ]]; then 
+	echo "Get mame${rp_module_version_database} data:$emudir/mame/mame${rp_module_version_database}_systems_sorted_info"
 	echo "For speed, data will be re-used within this session if possible"
 	echo "Be patient for 20 seconds" 
 	#here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
 	#we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-	while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat $emudir/mame/mame${rp_module_version_mame}_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,install_system_mamedev,/;s/\r/,,,\"/')
+	while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,install_system_mamedev,/;s/\r/,,,\"/')
         fi
     fi
 }
@@ -459,7 +471,7 @@ function subgui_categories_mamedev() {
     csv=(
 ",menu_item_handheld_description,SystemType,to_do driver_used_for_installation,,,,,help_to_do,"
     )
-    [[ $(expr $rp_module_version_mame + 0) -gt 261 ]] && \
+    [[ $(expr $rp_module_version_database + 0) -gt 261 ]] && \
     csv+=(
 ",\Zr▼ NEW : Fully automated,,,,,,,,"
 ",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"not needed\",,,,,,"
@@ -700,7 +712,7 @@ function subgui_systems_extras_add_options_mamedev() {
 ",Coco + ram + cassette support,@non-arcade,install_system_mamedev coco coco -ext*ram cassette cass .wav*.cas*.ccc*.rom -extra_ram,,,,,show_message_mamedev \"NO HELP\","
 ",Coco + ram + floppy 525dd support,@non-arcade,install_system_mamedev coco coco -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd -extra_ram-525dd,,,,,show_message_mamedev \"NO HELP\","
 	)
-[[ $(expr $rp_module_version_mame + 0) -lt 255 ]] && \
+[[ $(expr $rp_module_version_database + 0) -lt 255 ]] && \
     csv+=(
 ",\Zr(<0255)\ZRCoco 2 + ram + cassette support,@non-arcade,install_system_mamedev coco2 coco2 -ext*ram cassette cass .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd -extra_ram,,,,,show_message_mamedev \"NO HELP\","
 ",\Zr(<0255)\ZRCoco 2 + ram + floppy 525dd support,@non-arcade,install_system_mamedev coco2 coco2 -ext*multi*-ext:multi:slot1*ram floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd -extra_ram-525dd,,,,,show_message_mamedev \"NO HELP\","
@@ -793,14 +805,14 @@ function subgui_systems_extras_add_autoboot_mamedev() {
 ",Coco + ram + cassette + cload (auto) > run (manual),@non-arcade,install_system_mamedev coco coco -ext*ram*-autoboot_delay*2*-autoboot_command*cload\'\\\n\' cassette cass .wav*.cas*.ccc*.rom -extra_ram-autoboot-cload,"
 ",Coco + ram + cassette + cloadm:exec (auto),@non-arcade,install_system_mamedev coco coco -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\'\\\n\' cassette cass .wav*.cas*.ccc*.rom -extra_ram-autoboot-cloadm:exec,"
 	)
-[[ $(expr $rp_module_version_mame + 0) -gt 254 ]] && \
+[[ $(expr $rp_module_version_database + 0) -gt 254 ]] && \
     csv+=(
 ",\Zr(>0254)\ZRCoco + floppy + os9 + dos (auto),@non-arcade,install_system_mamedev coco coco -autoboot_delay*2*-autoboot_command*dos\'\\\n\' floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd*.bas*.bin -autoboot-dos-os9,"
 ",\Zr(>0254)\ZRCoco + floppy + load\"%BASENAME%\" + run (auto),@non-arcade,install_system_mamedev coco coco -autoboot_delay*2*-autoboot_command*load\'\\\x22\'%BASENAME%\'\\\x22\'\'\\\x2c\'r\'\\\n\' floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd*.bas*.bin -autoboot-load_BASENAME_-run,"
 ",\Zr(>0254)\ZRCoco + floppy + run\"%BASENAME%\" (auto),@non-arcade,install_system_mamedev coco coco -autoboot_delay*2*-autoboot_command*run\'\\\x22\'%BASENAME%\'\\\x22\'\'\\\n\' floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd*.bas*.bin -autoboot-run_BASENAME_,"
 ",\Zr(>0254)\ZRCoco + floppy + loadm\"%BASENAME%\":exec (auto),@non-arcade,install_system_mamedev coco coco -autoboot_delay*2*-autoboot_command*loadm\'\\\x22\'%BASENAME%\'\\\x22\':exec\'\\\n\' floppydisk1 flop1 .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd*.bas*.bin -autoboot-loadm_BASENAME_:exec,"
 	)
-[[ $(expr $rp_module_version_mame + 0) -lt 255 ]] && \
+[[ $(expr $rp_module_version_database + 0) -lt 255 ]] && \
     csv+=(
 ",\Zr(<0255)\ZRCoco 2 + ram + cassette + cload (auto) > run (manual),@non-arcade,install_system_mamedev coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cload\'\\\n\' cassette cass .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd*.bas*.bin -extra_ram -extra_ram-autoboot-cload,"
 ",\Zr(<0255)\ZRCoco 2 + ram + cassette + cloadm:exec (auto),@non-arcade,install_system_mamedev coco2 coco2 -ext*ram*-autoboot_delay*2*-autoboot_command*cloadm:exec\'\\\n\' cassette cass .wav*.cas*.ccc*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dmk*.jvc*.vdk*.sdf*.os9*.vhd*.bas*.bin -extra_ram -extra_ram-autoboot-cloadm:exec,"
@@ -895,7 +907,7 @@ function subgui_databases_mamedev() {
     clear
     echo "reading the available databases"
     #the first value is reserved for the column descriptions and empty in the array rp_module_database_versions
-    while read database_read;do csv+=("$database_read");done < <(IFS=$'\n'; echo "${rp_module_database_versions[*]}"|while read line;do echo "\",Set database to $line,,rp_module_version_mame=$line;mamedev_csv=(),\"";done;unset IFS)
+    while read database_read;do csv+=("$database_read");done < <(IFS=$'\n'; echo "${rp_module_database_versions[*]}"|while read line;do echo "\",Set database to $line,,rp_module_version_database=$line;mamedev_csv=(),\"";done;unset IFS)
     build_menu_mamedev
     #"break" after usage in function build_menu_mamedev
 }
@@ -1071,7 +1083,7 @@ local rarfile
 ",$(echo $romdir|cut -d/ -f4)/downloads < UnRenamedFiles-Various,,subform_archive_download_mamedev '//' $datadir/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
     )
-    [[ $(expr $rp_module_version_mame + 0) -gt 261 ]] && \
+    [[ $(expr $rp_module_version_database + 0) -gt 261 ]] && \
     csv+=(
 ",▼\ZrGet all files from automated category lists,,,"
 ",►Show non-arcade  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media|ma|oro|working_arcade/\" \"yes\",,,,,,"
@@ -1288,7 +1300,7 @@ Advice for now is :\n\
 If they exist in both then use and install only one.\
 "
 	#make sure that there is a database file
-    [[ ! -f ${emudir}/mame/mame${rp_module_version_mame}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_mame}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_mame}_systems_sorted_info
+    [[ ! -f ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_database}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info
     local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
     local csv=()
     local action="$1"
@@ -1329,7 +1341,7 @@ dialog \
 	#for example the tag @oro@ is used for the category realistic for the older install lines
 	#oro doesn't say anything so the same tag is also added as @realistic@ now which will be presented in the automatic list
 	#next part of the command will present the lines from the database which we want using filter1 :
-	#cat /opt/retropie/emulators/mame/mame${rp_module_version_mame}_systems_sorted_info|awk "${filter1}"
+	#cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"
 	#then sed is used to filer out the categories :
 	#sed 's/Driver.*: //;s/@/\n/g'
 	#after that it is sorted and the duplicates are removed with uniq
@@ -1342,7 +1354,7 @@ dialog \
 	if [[ $1 == *install* ]];then
 		while read category_read;do csv+=("${category_read}");done < <(
 		IFS=$'\n'
-		cat /opt/retropie/emulators/mame/mame${rp_module_version_mame}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
+		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
 			[[ -n ${line} ]] && if [[ ${filter1} == *@90º@* ]];then
 				echo "\",Category => ${line}90º,${driver_type},create_00index_file_mamedev '/@${line}@/ && /@good@/ && /@90º@/' ${datadir}/roms/${line}90º;install_system_mamedev ${line}90º ${line}90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}90º\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
@@ -1354,7 +1366,7 @@ dialog \
 	else
 		while read category_read;do csv+=("${category_read}");done < <(
 		IFS=$'\n'
-		cat /opt/retropie/emulators/mame/mame${rp_module_version_mame}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
+		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
 			[[ -n ${line} ]] && 
 			echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download archive.??? ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
@@ -1490,9 +1502,9 @@ dialog \
     echo "busy with ${restricted_download_csv[$rd]}$file_extension"
     #display onle the lines "Nothing to do." "Not Found." and progress "%" using awk or grep command : awk '/do\./||/Found\./||/\%/' : grep -E 'do\.|Found\.|%'
 	if [[ $detect_clone_save == yes ]];then
-		if [[ -n $(/opt/retropie/emulators/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6) ]];then
-		echo clone detected, saving $(/opt/retropie/emulators/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension as ${restricted_download_csv[$rd]}$file_extension
-		wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 https://$website_url/$website_path/$rompack_name/$(/opt/retropie/emulators/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension -O $destination_path/${restricted_download_csv[$rd]}$file_extension 2>&1
+		if [[ -n $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6) ]];then
+		echo clone detected, saving $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension as ${restricted_download_csv[$rd]}$file_extension
+		wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 https://$website_url/$website_path/$rompack_name/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension -O $destination_path/${restricted_download_csv[$rd]}$file_extension 2>&1
 		else 
 		wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
 		fi
@@ -1697,7 +1709,7 @@ function build_menu_mamedev() {
     #remove option 0 (value 0 and 1) so the menu begins with 1
     unset 'options[0]'; unset 'options[1]' 
     while true; do
-        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "Version ${rp_module_version}                                    (using database ${rp_module_version_mame})" 22 76 16)
+        local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "Version ${rp_module_version}                                    (using database ${rp_module_version_database})" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         if [[ -n "$choice" ]]; then
@@ -1727,7 +1739,7 @@ function build_menu_mamedev() {
             #rp_registerAllModules
             #sleep 4
 	    [[ $run == *"remove_installs_mamedev "* ]] && break
-            [[ $run == *rp_module_version_mame=* ]] && break
+            [[ $run == *rp_module_version_database=* ]] && break
 	    [[ $run == *retroscraper_remote_command* ]] && break
 	    [[ $run == *install_or_remove_run_mess_script_mamedev* ]] && break
 	    [[ $run == *install_or_restore_runcommand_script_mamedev* ]] && break
@@ -2001,7 +2013,7 @@ fi
 #for the installs from EXTRAS only the runcommands with the media options get ExtraPredefinedOptions in part 12, basename runcommands are skipped in part 13
 if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
 [[ ${systems[-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
-if [[ ${systems[-1]} == coleco ]] || [[ ${systems[-1]} == colecop ]] && [[ $(expr $rp_module_version_mame + 0) -gt 264 ]];then
+if [[ ${systems[-1]} == coleco ]] || [[ ${systems[-1]} == colecop ]] && [[ $(expr $rp_module_version_database + 0) -gt 264 ]];then
 echo opening yes/no dialog-box
 sleep 3
 dialog --colors --backtitle "$__backtitle" --yesno "Select (yes) to install coleco/colecop with Super Game Module as :\n'coleco_homebrew'\n\nSelect (no) to install just coleco/colecop as :\n'coleco'\n\nRemember : you have to do TWO installs to have them both installed !" 22 76 2>&1 >/dev/tty
@@ -2280,7 +2292,7 @@ if [[ -n "$2" ]]; then
 echo "MAME information -> (Skipped)"
 else
 echo "MAME information -> ${systems[$mamedevindex]} (${descriptions[$mamedevindex]})"
-[[ -z ${systems[$mamedevindex]} ]] && echo -e "\n!!!\nthe system variable is empty !\nnothing will be installed !\nask the developper to add specific media to the mediafilter !\n!!!\n"
+[[ -z ${systems[$mamedevindex]} ]] && echo -e "\n!!!\nThe system variable is empty !\nNothing will be installed !\nIf you see 'unknown system' then you probably have a mismatch.\nA mismatch between the versions of the database and standalone mame.\nElse ask the developper to add specific media to the mediafilter !\n!!!\n"
 fi
 
 
