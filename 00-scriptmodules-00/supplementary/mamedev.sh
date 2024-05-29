@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.15"
+rp_module_version="0265.16"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  rp_module_version_mame="$($emudir/mame/mame -version)"
@@ -76,6 +76,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.16 :\n\
+- detect Standalone MAME version and change database accordingly\n\
+- show messages about a database VS MAME version mismatch\n\
+- show message when Standalone MAME is not installed\n\
 265.15 :\n\
 - make all mame commands uniform using the emudir variable\n\
 - update log notice when system variable is empty\n\
@@ -320,9 +324,19 @@ remove the predefined \"view\" from the config.\n\
 "
     xattr -w user.comment "x" $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi)
     fi
-    
-    
-    [[ -f $emudir/mame/mame ]] && [[ $rp_module_version_database != $rp_module_version_mame ]] && show_message_mamedev "Your standalone MAME version is different than the used MAME database !\nMake sure you switch to the correct database.\nYour standalone MAME version is ${rp_module_version_mame}.\nCheck if that database version is available.\nIf not available then choose a closest one.\nOr update standalone MAME, if possible.\n\nStandalone MAME is used by this script when installing a driver.\nA mismatch can mean that a driver cannot be installed, for example.\n"
+    if [[ -f $emudir/mame/mame ]];then
+		if [[ ${rp_module_version_database} != ${rp_module_version_mame} ]];then
+			if [[ " ${rp_module_database_versions[*]} " =~ " ${rp_module_version_mame} " ]];then
+				show_message_mamedev "Your standalone MAME version is different than the used MAME database !\nYour standalone MAME version is ${rp_module_version_mame}.\nDatabase version ${rp_module_version_mame} is available and will be set to that version.\n"
+				rp_module_version_database=${rp_module_version_mame}
+			else
+				show_message_mamedev "Your standalone MAME version is different than the used MAME database !\nStandalone MAME is used by this script when installing a driver.\nA mismatch can mean that a driver cannot be installed, for example.\nMake sure you switch to the correct database.\nYour standalone MAME version is ${rp_module_version_mame}.\nSeems your version doesn't have a compatible database.\nCheck if a close database version is available.\nOr just update Standalone MAME to a newer/correct version, if possible.\n\nA list will now be shown so you can pick the closest database.\n\nIt's possible to manually change the database later with selecting :\n►Switch to another mame database version\n"
+				subgui_databases_mamedev
+			fi
+		fi
+	else
+		show_message_mamedev "You haven't installed Stanalone MAME yet !\nMake sure you install Standalone MAME.\nThe script will extract data from Standalone MAME to function correctly.\n"
+	fi
 }
 
 
