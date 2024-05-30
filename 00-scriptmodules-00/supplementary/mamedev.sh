@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.18"
+rp_module_version="0265.19"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.19 :\n\
+- make update 265.18 working on RPI OS\n\
 265.18 :\n\
 - change showing message and form from automated category lists :\n\
   - change message not being able to alter variables\n\
@@ -1313,7 +1315,7 @@ function subformgui_categories_automated_mamedev() {
     
     #local category_compatible
     echo "Hold 'LeftShift' to show message and form." ;sleep 2
-    if [[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep "5c: 2a") == *2a* ]];then
+    if [[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]];then
 	show_message_mamedev "\
 After selecting ok a form will be presented with filter variables.\n\
 You can see the earlier predefined variables.\n\
