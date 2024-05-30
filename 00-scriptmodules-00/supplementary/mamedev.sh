@@ -25,11 +25,16 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.16"
+rp_module_version="0265.17"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
+ #works in terminal but not here ?
+ #rp_module_version_mame="${"${"${$($emudir/mame/mame -version)}"/./}": 0:4}"
+ #extracting the first version number from the output using seperate lines instead (Shell Parameter Expansion)
  rp_module_version_mame="$($emudir/mame/mame -version)"
- rp_module_version_mame="${rp_module_version_mame: -5:4}"
+ rp_module_version_mame="${rp_module_version_mame/./}"
+ rp_module_version_mame="${rp_module_version_mame: 0:4}"
+ [[ ${rp_module_version_mame} != 0* ]] && rp_module_version_mame="UNKNOWN"
 fi
 rp_module_database_version=
 rp_module_database_excluded_versions=()
@@ -76,6 +81,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.17 :\n\
+- improve detecting Standalone MAME version\n\
 265.16 :\n\
 - detect Standalone MAME version and change database accordingly\n\
 - show messages about a database VS MAME version mismatch\n\
