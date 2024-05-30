@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.17"
+rp_module_version="0265.18"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -47,7 +47,6 @@ rp_module_database_versions=()
 #used this information to construct the command : https://stackoverflow.com/questions/3685970/check-if-a-bash-array-contains-a-value
 rp_module_database_versions=( "" $(seq $rp_module_version_database -1 0240|while read rp_module_database_version;do [[ " ${rp_module_database_excluded_versions[*]} " =~ " ${rp_module_database_version} " ]] || echo "0${rp_module_database_version}";done) )
 
-
 local mamedev_csv=()
 local gamelists_csv=()
 
@@ -59,9 +58,9 @@ function depends_mamedev() {
     mamedev_csv=()
     getDepends curl python3 wget
     if [[ $scriptdir == *RetroPie* ]];then 
-	getDepends xattr python3-venv unar p7zip-full
+	getDepends xattr python3-venv unar p7zip-full xxd
     else 
-	getDepends python-xattr unarchiver
+	getDepends python-xattr unarchiver tinyxxd
     fi
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
 
@@ -81,6 +80,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.18 :\n\
+- change showing message and form from automated category lists :\n\
+  - change message not being able to alter variables\n\
+  - only show them holding 'LeftShift' for a few seconds\n\
 265.17 :\n\
 - improve detecting Standalone MAME version\n\
 265.16 :\n\
@@ -1296,10 +1299,26 @@ dialog \
 
 #in this function all vars are with curly brackets
 function subformgui_categories_automated_mamedev() {    
+	#make sure that there is a database file
+    [[ ! -f ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_database}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info
+    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
+    local csv=()
+    local action="$1"
+    local driver_type="$2"
+    local filter1="$3"
+    local filter2="$4"
+    local detect_clone_save="$5"    
+    local manual_input=""
+    local category_read
+    
+    #local category_compatible
+    echo "Hold 'LeftShift' to show message and form." ;sleep 2
+    if [[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep "5c: 2a") == *2a* ]];then
 	show_message_mamedev "\
 After selecting ok a form will be presented with filter variables.\n\
-You have the ability to alter the variables in case you need to.\n\
-So alter the filters or not and select ok afterwards and a list with categories is shown.\n\
+You can see the earlier predefined variables.\n\
+The variables cannot be changed !\n\
+After selecting ok a list with categories is shown.\n\
 \n\
 The first variable is just to let you know what it is going to do.\n\
 It is used to install categories or to download roms of a category.\n\
@@ -1320,20 +1339,6 @@ As basically :\n\
 Advice for now is :\n\
 If they exist in both then use and install only one.\
 "
-	#make sure that there is a database file
-    [[ ! -f ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_database}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info
-    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
-    local csv=()
-    local action="$1"
-    local driver_type="$2"
-    local filter1="$3"
-    local filter2="$4"
-    local detect_clone_save="$5"    
-    local manual_input=""
-    local category_read
-    
-    #local category_compatible
-    
     manual_input=$(\
 dialog \
 --no-cancel \
@@ -1353,6 +1358,7 @@ dialog \
 "" 9 1 "" 6 0 0 0 \
 2>&1 >/dev/tty \
 )
+fi
     clear
     echo "reading the available databases"
     #the first value is reserved for the column descriptions and empty in the array rp_module_database_versions
