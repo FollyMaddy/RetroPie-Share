@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0265.20"
+rp_module_version="0265.21"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.21 :\n\
+- direct and quick driver install\n\
+- possibility to add extras when installing a driver from default\n\
+  - extras added for ep128\n\
 265.20 :\n\
 - add philips cd-i line to restricted\n\
 265.19 :\n\
@@ -667,7 +671,9 @@ function subgui_systems_default_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
+
 ",►System names : SEARCH and display list,,subgui_search_mamedev systems,,,,,show_message_mamedev \"Search and create a list and then install one or more systems with default options\","
+",►System name  : DIRECT and quick driver install,,direct_install_mamedev,,,,,show_message_mamedev \"Insert a correct driver name and install that driver directly without showing a list first.\","
 ",►System names : Display alphabetical,,subgui_alphabetical_order_selection_mamedev systems,,,,,show_message_mamedev \"Select a list and then install one or more systems with default options\","
 ",►System names : Display all,,create_systems_list_mamedev systems,,,,,show_message_mamedev \"Install one or more systems with default options\","
 ",,,,,,,,,"
@@ -957,6 +963,39 @@ Then it will be extracted and overwritten in :\n\
     while read mamecheat_read;do csv+=("$mamecheat_read");done < <(IFS=$'\n'; curl http://cheat.retrogames.com/mame_downloads.htm|grep ">XML"|sed 's/</"/g;s/>/"/g;s/XML //g;s/Release Date: //g'|while read line;do echo "\",$(echo $line|cut -d\" -f7),,download_cheats_mamedev $(echo $line|cut -d\" -f5),\"";done)
     build_menu_mamedev
 }
+
+
+function direct_install_mamedev() {
+    local csv=()
+    local driver_name
+    local system_type
+    local driver_info=()
+
+    driver_name=$(dialog \
+--no-cancel \
+--default-item "$default" \
+--backtitle "$__backtitle" \
+--title "Give your driver name and install it directly" \
+--form "" \
+22 76 16 \
+"Driver name:" 1 1 "" 1 22 76 100 \
+2>&1 >/dev/tty \
+)
+clear
+read_data_mamedev clear
+#get non-arcade/arcade status from database
+IFS=$'\n' driver_info=($(awk "/,$driver_name,/" <<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")));unset IFS
+if [[ ${driver_info[@]} == *@non-arcad* ]]
+then system_type="non-arcade"
+else system_type="arcade"
+fi
+if [[ -z $driver_info || -z $driver_name ]];then
+	show_message_mamedev "The drivername you entered doesn't exist\n\nNot proceeding !"
+else
+	install_system_mamedev $driver_name "" "" "" "" "" "" "" "" "$system_type"
+fi
+}
+
 
 
 function subgui_download_gamelists_mamedev() {
@@ -1687,6 +1726,9 @@ function create_systems_list_mamedev() {
     #this is an aternative but much slower
     #while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 3 --ignore-case;unset IFS)
     else
+    echo $2
+    echo $3
+    read
     #here we store the sorted mamedev_csv values in the csv array
     #we sort on the second colunm which contain the system names
     IFS=$'\n' csv=($(sort -t"," -k5,5nr -k2,2 --ignore-case<<<$(awk '{print $0","length($2)}'<<<$(awk " {IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")))));unset IFS
@@ -1892,10 +1934,12 @@ addextensions=".zip .7z"
 addextensionscmd=".cmd"
 
 #check if the system is arcade or non-arcade for switching between lr-mess and lr-mame
-if [[ ${csv[$choice]} == *@non-arcad* ]]
+#check also when doing a direct install and set when using option 10
+if [[ ${csv[$choice]} == *@non-arcad* || ${10} == *non-arcade* ]]
 then SystemType="non-arcade"
 else SystemType="arcade"
 fi
+
 #echo ${csv[$choice]}
 echo System driver is detected as "$SystemType"
 
@@ -2722,6 +2766,13 @@ cat >$datadir/roms/mame/cfg/cdimono1.cfg << _EOF_
 _EOF_
 chown -R $user:$user "$datadir/roms/mame/cfg" 2>&-
 fi
+echo
+echo ----------------------------------------------------------------
+echo if possible, trying to install extra runcommands for this driver
+echo ----------------------------------------------------------------
+#${10} will be filled with non-arcade or arcade
+[[ -z "$2" ]] && [[ ${systems[-1]} == ep128 ]] && install_system_mamedev ep128 ep128 basic21*-exp*exdos floppydisk flop .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -basic21_exdos 1 '' ${10}
+[[ $8 == 1 ]] && [[ ${systems[-1]} == ep128 ]] && install_system_mamedev ep128 ep128 -exp*exdos*-exp:exdos:u1:1*35dd*-flop1*isdos floppydisk2 flop2 .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -exdos_isdos '' '' ${10}
 }
 
 
