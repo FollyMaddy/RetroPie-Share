@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+265.22 :\n\
+- remove connection timeout\n\
+- when connection fails try only 2 times\n\
 265.21 :\n\
 - direct and quick driver install\n\
 - possibility to add extras when installing a driver from default\n\
@@ -1128,7 +1131,7 @@ function subgui_archive_downloads_mamedev() {
     #remember : the first search option will be changed by the script to get search options beginning with, if you want a global search  do something like this : '//&&/hdv/'
     #rompack name, file extension and rompack link 
     #local rompack_link_info=( "mame-0.231-merged" ".7z" "mame-0.231-merged" )
-    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged/" )
+    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
     local csv=()
 local rarfile
     csv=(
@@ -1300,7 +1303,7 @@ dialog \
 	if [[ $get_all == c ]];then
 	    if [[ ! -f "$destination_path/$rompack_name.zip" ]];then
 	    echo "getting your desired file : $rompack_name.zip"
-	    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O "$destination_path/$rompack_name.zip" $([[ $2 != http* ]] && echo https://)$website_url/compress/$rompack_name 2>&1
+	    wget -q --show-progress --progress=bar:force -t2 -c -w1 -O "$destination_path/$rompack_name.zip" $([[ $2 != http* ]] && echo https://)$website_url/compress/$rompack_name 2>&1
 	    [[ $destination_path == */BIOS/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
 	    [[ $destination_path == */downloads/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
 	    [[ $destination_path == */roms/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-6)"
@@ -1570,21 +1573,22 @@ dialog \
     #echo ${restricted_download_csv[$rd]}
     #sleep 0.3
     #show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
+
     echo "busy with ${restricted_download_csv[$rd]}$file_extension"
     #display onle the lines "Nothing to do." "Not Found." and progress "%" using awk or grep command : awk '/do\./||/Found\./||/\%/' : grep -E 'do\.|Found\.|%'
 	if [[ $detect_clone_save == yes ]];then
 		if [[ -n $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6) ]];then
 		echo clone detected, saving $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension as ${restricted_download_csv[$rd]}$file_extension
-		wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 https://$website_url/$website_path/$rompack_name/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension -O $destination_path/${restricted_download_csv[$rd]}$file_extension 2>&1
+		wget -q --show-progress --progress=bar:force -t2 -c -w1 https://$website_url/$website_path/$rompack_name/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension -O $destination_path/${restricted_download_csv[$rd]}$file_extension 2>&1
 		else 
-		wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
+		wget -q --show-progress --progress=bar:force -t2 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
 		fi
 	else 
-	wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
+	wget -q --show-progress --progress=bar:force -t2 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
 	fi
     done
     elif [[ $(echo $website_url|sha1sum) == 91f709654529299145e9eb45ce1ca1e19796edab* ]];then
-	wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -r -l 1 https://$website_url/$website_path -P $destination_path/$rompack_name -A $file_extension -nd 2>&1
+	wget -q --show-progress --progress=bar:force -t2 -c -w1 -r -l 1 https://$website_url/$website_path -P $destination_path/$rompack_name -A $file_extension -nd 2>&1
     elif [[ $(echo $website_url|sha1sum) == fb27d3b6f43131c8ad026024f3e3b9cfa0686d4c* ]];then
 	download_from_github_mamedev $website_path $destination_path $file_extension
     else 
@@ -2895,13 +2899,13 @@ mkdir -p $3
 #$1=filename $2=weblink $3=to_path
 #sed is used to remove html url encoding, more is described in function subform_archive_download_mamedev
 if [[ ! -f "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]]; then
-    wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
+    wget -q --show-progress --progress=bar:force -t2 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
 else 
     read -r -p "File exists or partly exists !, do you want to Overwrite or Continue ? [O/C] " response
     if [[ "$response" =~ ^([cC])$ ]];then 
-        wget -q --show-progress --progress=bar:force -T3 -t0 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
+        wget -q --show-progress --progress=bar:force -t2 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
     else
-        wget -q --show-progress --progress=bar:force -T3 -t0 -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
+        wget -q --show-progress --progress=bar:force -t2 -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
     fi
 fi
 [[ $3 == */BIOS/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-5)"
