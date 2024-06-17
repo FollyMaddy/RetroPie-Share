@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0266.00"
+rp_module_version="0266.01"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+266.01 :\n\
+- apple2 : install extra 'autostart+joy' runcommand from default\n\
 266.00 :\n\
 - update to new database\n\
 265.22 :\n\
@@ -2774,6 +2776,7 @@ echo ----------------------------------------------------------------
 echo if possible, trying to install extra runcommands for this driver
 echo ----------------------------------------------------------------
 #${10} will be filled with non-arcade or arcade
+[[ -z "$2" ]] && [[ ${systems[-1]} == apple2 ]] && install_system_mamedev apple2 apple2 '-bios autostart -gameio joy' floppydisk1 flop1 '.mfi .dfi .dsk .do .po .rti .edd .woz .nib .wav .flac' -autostart_joy 1 '' ${10}
 [[ -z "$2" ]] && [[ ${systems[-1]} == ep128 ]] && install_system_mamedev ep128 ep128 basic21*-exp*exdos floppydisk flop .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -basic21_exdos 1 '' ${10}
 [[ $8 == 1 ]] && [[ ${systems[-1]} == ep128 ]] && install_system_mamedev ep128 ep128 -exp*exdos*-exp:exdos:u1:1*35dd*-flop1*isdos floppydisk2 flop2 .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -exdos_isdos '' '' ${10}
 }
