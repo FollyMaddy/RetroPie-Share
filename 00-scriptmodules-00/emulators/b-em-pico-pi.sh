@@ -13,31 +13,31 @@ rp_module_id="b-em-pico-pi"
 rp_module_desc="BBC Micro Emulator / the b-em-pico fork of kilograham"
 rp_module_help="ROM Extensions: .ssd\n\nCopy your BBC Micro games to $romdir/bbcmicro\n\n- use F11/WIN-key for the gui\n- use shift+F12 to run the disc\n- use ctrl+c to exit the emulator\n"
 rp_module_section="exp"
-rp_module_flags=""
+rp_module_flags="rpi"
 
 function depends_b-em-pico-pi() {
     getDepends xorg matchbox-window-manager build-essential cmake libdrm-dev libx11-xcb-dev libxcb-dri3-dev libepoxy-dev liballegro5-dev ruby libasound2-dev xdotool
+    
 }
 
 function sources_b-em-pico-pi() {
     downloadAndExtract "https://github.com/raspberrypi/pico-sdk/archive/master.zip" "$md_build"
     downloadAndExtract "https://github.com/raspberrypi/pico-extras/archive/master.zip" "$md_build"
-    #downloadAndExtract "https://github.com/kilograham/b-em/archive/pico.zip" "$md_build"
-    downloadAndExtract "https://github.com/FollyMaddy/b-em/archive/pico.zip" "$md_build"
+    downloadAndExtract "https://github.com/kilograham/b-em/archive/pico.zip" "$md_build"
 }
 
 function build_b-em-pico-pi() {
     rm -r $md_build/b-em-pico/pi_build
     mkdir $md_build/b-em-pico/pi_build
     cd $md_build/b-em-pico/pi_build
-    if isPlatform "rpi4"; then
-    #;-) next line works, makes a working xbeeb and xmaster
-    sudo -u root cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DDRM_PRIME=1 -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
-    #!!! next line doesn't work, xbeeb and xmaster don't work (bus error)
-    #cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DDRM_PRIME=1 -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
+    if [[ $__platform==rpi* && $(echo $__platform|sed 's/rpi//g') -gt 3 ]];then 
+        # for rpi4 or higher : next line works, makes a working xbeeb and xmaster
+        sudo -u root cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DDRM_PRIME=1 -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
+        #!!! next line doesn't work, xbeeb and xmaster don't work (bus error)
+        #cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DDRM_PRIME=1 -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
     else
-    #tested on RPI3, but other platforms could work with this line too
-    sudo -u root cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
+        #tested on RPI3, but other platforms could work with this line too
+        sudo -u root cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
     fi
     make -j4
 }
