@@ -13,7 +13,7 @@ rp_module_id="b-em-pico-pi"
 rp_module_desc="BBC Micro Emulator / the b-em-pico fork of kilograham"
 rp_module_help="ROM Extensions: .ssd\n\nCopy your BBC Micro games to $romdir/bbcmicro\n\n- use F11/WIN-key for the gui\n- use shift+F12 to run the disc\n- use ctrl+c to exit the emulator\n"
 rp_module_section="exp"
-[[ $(getconf LONG_BIT) == 32 && $(arch) == aarch64 ]] && rp_module_flags="!32bit"
+rp_module_flags="rpi $([[ $(getconf LONG_BIT) == 32 && $(arch) == aarch64 ]] && echo !32bit)"
 
 
 function depends_b-em-pico-pi() {
