@@ -13,7 +13,8 @@ rp_module_id="b-em-pico-pi"
 rp_module_desc="BBC Micro Emulator / the b-em-pico fork of kilograham"
 rp_module_help="ROM Extensions: .ssd\n\nCopy your BBC Micro games to $romdir/bbcmicro\n\n- use F11/WIN-key for the gui\n- use shift+F12 to run the disc\n- use ctrl+c to exit the emulator\n"
 rp_module_section="exp"
-rp_module_flags="rpi"
+rp_module_flags="rpi $([[ ${__platform_flags} == *rpi5* ]] && echo 64bit)"
+
 
 function depends_b-em-pico-pi() {
     getDepends xorg matchbox-window-manager build-essential cmake libdrm-dev libx11-xcb-dev libxcb-dri3-dev libepoxy-dev liballegro5-dev ruby libasound2-dev xdotool
@@ -40,6 +41,8 @@ function build_b-em-pico-pi() {
         sudo -u root cmake -DPICO_SDK_PATH=$md_build/pico-sdk-master -DPI_BUILD=1 -DPICO_PLATFORM=host -DX_GUI=1 -DPICO_EXTRAS_PATH=$md_build/pico-extras-master ..
     fi
     make -j4
+    #md_ret_require="$md_build/b-em-pico/pi_build/src/pico/xmaster"
+    #md_ret_require="$md_build/b-em-pico/pi_build/src/pico/xbeeb"
 }
 
 function install_b-em-pico-pi() {
