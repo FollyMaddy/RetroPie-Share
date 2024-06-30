@@ -2,26 +2,31 @@ echo "Make sure you are running a 64 bit version of mame !"
 
 
 #remove old good.ini and create a recent one (with emulation="good" check)
+echo busy with good.ini
 rm good.ini
 /opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > good.ini
 
 #remove no_media.ini and create a recent one (create list with drivers that do not use any media like cartridges, cassettes or floppies etc)
+echo busy with no_media.ini
 rm no_media.ini
 /opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listmedia $driver) == *\(none\)* ]] && echo $driver;done > no_media.ini
 
 #remove old 90º.ini and create a recent one (no emulation="good" check)
 #no check on good or bad rom because we want the info added for both good and preliminary roms
 #we can sort on good or preliminary later
+echo busy with 90º.ini
 rm 90º.ini
 /opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver; do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver) == *rotate=\"90\"* ]]||[[ $(/opt/retropie/emulators/mame/mame -listxml $driver) == *rotate=\"270\"* ]]&&echo $driver;done > 90º.ini
 
 #remove old gameandwatch.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
+echo busy with gameandwatch.ini
 rm gameandwatch.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/gnw\_/||/\(Bassmate/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > gameandwatch.ini
 
 #remove old jakks.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
+echo busy with jakks.ini
 rm jakks.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/\jak\_/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > jakks.ini
 #append manual tested preliminary drivers
@@ -40,6 +45,7 @@ sort -o jakks.ini jakks.ini
 #remove old konamih.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
 #use [] for escaping special char as regex expression
+echo busy with konamih.ini
 rm konamih.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/\(Konami\)/||/\(Konami[,]/||/\(handheld\)/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > konamih.ini
 
@@ -49,6 +55,7 @@ rm konamih.ini
 #even though lightgun information is available, not all systems can make use of it !
 #for more information, have a look over here :
 #https://retropie.org.uk/forum/topic/32900/how-to-run-atari-7800-on-lr-mess
+echo busy with lightgun.ini
 rm lightgun.ini
 /opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver; do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver) == *lightgun* ]]&&echo $driver;done > lightgun.ini
 
@@ -61,16 +68,19 @@ cat /opt/retropie/emulators/mame/hash/neogeo.xml|grep "software name="|cut -d\" 
 #remove old nintendovs.ini and create a recent one (no emulation="good" check)
 #no check on good or bad rom because we want the info added for both good and preliminary roms
 #we can sort on good or preliminary later
+echo busy with nintendovs.ini
 rm nintendovs.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/^Driver/&&/\(Vs. /'|cut -d " " -f2 > nintendovs.ini
 
 #remove old tigerh.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
+echo busy with tigerh.ini
 rm tigerh.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/^D/&&/\(Tiger/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]]&&[[ -n $(/opt/retropie/emulators/mame/mame -listxml $driver| grep sourcefile=\"handheld) ]] && echo $driver;done > tigerh.ini
 
 #remove old tigerrz.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
+echo busy with tigerrz.ini
 rm tigerrz.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/\(R-Zone/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerrz.ini
 
@@ -81,6 +91,7 @@ rm tigerrz.ini
 #the information is extracted using the -listxml option with mame and grabbing the correct manufaturer line
 #the special charachters and spaces are removed to prevent problems not able to store them correctly in a "cel"
 #the checking meganism does the same thing with the special charachters and spaces so they can be compared correctly
+echo busy with classich.ini
 rm classich.ini
 manufacturers=()
 manufacturers=\
