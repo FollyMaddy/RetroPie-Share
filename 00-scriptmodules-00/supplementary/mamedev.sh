@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0266.02"
+rp_module_version="0266.03"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+266.03 :\n\
+- add 48k to Jupiter Ace (jupace) by default\n\
 266.02 :\n\
 - when done, skip extra runcommand installs from default\n\
 266.01 :\n\
@@ -2112,6 +2114,7 @@ clear
 echo proceed....
 #in part 10 the description is changed to Coleco+SGM when installing coleco/colecop with Super Game Module
 fi
+[[ ${systems[-1]} == jupace  ]] && ExtraPredefinedOptions+=( "-ram 48k" )
 # carmarty fmtmarty fmtmarty2
 [[ ${systems[-1]} == *marty  ]] || \
 [[ ${systems[-1]} == *marty2  ]] && ExtraPredefinedOptions+=( "-ram 4M" )
