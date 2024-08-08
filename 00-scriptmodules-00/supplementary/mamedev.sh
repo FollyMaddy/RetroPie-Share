@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.01"
+rp_module_version="0267.02"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.02 :\n\
+- add orion128 install lines to the systems with extras\n\
+  - help is added too !\n\
 267.01 :\n\
 - add 'dpak' to the mediafilter to install psionlz drivers\n\
 267.00 :\n\
@@ -813,6 +816,31 @@ function subgui_systems_extras_add_options_mamedev() {
 ",TI-99/4A(32Kb) + speech + rxb2021 + flop1-525dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a -gromport*multi*-cart1*$datadir/roms/ti99_4a/ti99_cart_rpk/rxb2021.rpk*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-rxb2021-f1-525dd,,,,,show_message_mamedev \"NO HELP\","
 ",TVC 64 + flop1 support,@non-arcade,install_system_mamedev tvc64 tvc64 -exp1*hbf floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk,,,,,show_message_mamedev \"NO HELP\","
 ",Odyssey2 + voice (install odyssey2 and patch default loaders),@non-arcade,install_system_mamedev odyssey2;sed -i \"s/ %B/ -cart1 voice -cart2 %B/g;s/\/ '%B/ -cart1 voice -cart2 '%B/g;s/cart %R/cart1 voice -cart2 %R/g\" $rootdir/configs/odyssey2/emulators.cfg,,,,,show_message_mamedev \"NO HELP\","
+",Orion 128 + romdisk + cassette support,@non-arcade,install_system_mamedev orion128 orion128 -cart*$romdir/RetroPie/roms/orion128/orion_cart/romdisk.zip cassette cass .wav*.flac*.rko*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.odi*.cpm*.img*.bin -romdisk,,,,,show_message_mamedev \"\
+Use 'Scroll Lock' (GAME OFF/ON modus) when needed !\n\n
+You will enter the ROMDISK GUI\n
+Select CH4# and press ENTER (the LOADER will load)\n
+At the BBOA prompt? press A (the cursor should stop flashing)\n
+Press F2 to play the tape\n
+You will see the name of the game you chose at the beginning appear\n
+Press F4 once loading is complete (the LOADER will close)\n
+In the next column you will see the name of the game you loaded\n
+Go right with the cursor arrows and select it and press ENTER\n\n
+romdisk.zip needs to be in :\n
+$romdir/RetroPie/roms/orion128/orion_cart/romdisk.zip\","
+",Orion 128 + romdisk + game1715 in flop1 + flop2 support,@non-arcade,install_system_mamedev orion128 orion128 -cart*$romdir/RetroPie/roms/orion128/orion_cart/romdisk.zip*-flop1*/home/pi/RetroPie/roms/orion128/orion_flop/game1715.zip floppydisk2 flop2 .wav*.flac*.rko*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.odi*.cpm*.img*.bin -romdisk-game1715-in-flop1,,,,,show_message_mamedev \"\
+Use 'Scroll Lock' (GAME OFF/ON modus) when needed !\n\n
+You will enter the ROMDISK GUI\n
+Select Boot# and press ENTER\n
+You will enter directly into the Norton Commander GUI\n
+Press D to change drive press B\n
+(you should have the floppy you chose at the beginning)\n
+The launchable games are the .com ones\n
+Select the one you want and press ENTER\n\n
+romdisk.zip needs to be in :\n
+$romdir/RetroPie/roms/orion128/orion_cart/romdisk.zip\n\n
+game1715.zip needs to be in :\n
+$romdir/RetroPie/roms/orion128/orion_flop/game1715.zip\","
 ",Videopac + voice (install videopac and patch default loaders),@non-arcade,install_system_mamedev videopac;sed -i \"s/ %B/ -cart1 voice -cart2 %B/g;s/\/ '%B/ -cart1 voice -cart2 '%B/g;s/cart %R/cart1 voice -cart2 %R/g\" $rootdir/configs/videopac/emulators.cfg,,,,,show_message_mamedev \"NO HELP\","
     )
 #preserved-test-lines
