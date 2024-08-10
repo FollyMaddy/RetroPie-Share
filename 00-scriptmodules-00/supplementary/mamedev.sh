@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.02"
+rp_module_version="0267.03"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.03 :\n\
+- add sc3000 install line to the systems with extras\n\
+  - help is added too !\n\
+- re-alphabetize extras list\n\
 267.02 :\n\
 - add orion128 install lines to the systems with extras\n\
   - help is added too !\n\
@@ -788,7 +792,6 @@ function subgui_systems_extras_add_options_mamedev() {
 ",FM-Towns + 6M ram + cdrom support,@non-arcade,install_system_mamedev fmtowns fmtowns -ram*6M cdrom cdrm .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr*.icm -6Mb,,,,,show_message_mamedev \"NO HELP\","
 ",FM-Towns Marty + 4Mb ram + floppy support,@non-arcade,install_system_mamedev fmtmarty fmtmarty -ram*4M floppydisk1 flop1 .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr*.icm -4Mb,,,,,show_message_mamedev \"NO HELP\","
 ",FM-Towns Marty + 4Mb ram + cdrom support,@non-arcade,install_system_mamedev fmtmarty fmtmarty -ram*4M cdrom cdrm .mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.bin*.chd*.cue*.toc*.nrg*.gdi*.iso*.cdr*.icm -4Mb,,,,,show_message_mamedev \"NO HELP\","
-",Nintendo Datach + cartridge2 support,@non-arcade,install_system_mamedev nes nes_datach datach cartridge2 cart2 .prg,,,,,show_message_mamedev \"NO HELP\","
 ",\Z1Memotech MTX512 + 512K ram + cassette support,@non-arcade,install_system_mamedev mtx512 mtx512 -ram*512K cassette cass .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb,,,,,show_message_mamedev \"NO HELP\","
 ",Memotech MTX512 + 512K ram + sdxbas floppy support,@non-arcade,install_system_mamedev mtx512 mtx512 -ram*512K*-exp*sdxbas floppydisk1 flop1 .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb-sdxbas,,,,,show_message_mamedev \"NO HELP\","
 ",Memotech MTX512 + 512K ram + sdxcpm floppy support,@non-arcade,install_system_mamedev mtx512 mtx512 -ram*512K*-exp*sdxcpm floppydisk1 flop1 .prn*.mtx*.run*.wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.mfloppy -512kb-sdxcpm,,,,,show_message_mamedev \"NO HELP\","
@@ -800,21 +803,7 @@ function subgui_systems_extras_add_options_mamedev() {
 ",MSX2 Sony HB-F700P + fmpac + floppy support,@non-arcade,install_system_mamedev hbf700p msx2 fmpac floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -fmpac,,,,,show_message_mamedev \"NO HELP\","
 ",MSX2 Sony HB-F700P + SCC_snatcher + floppy support,@non-arcade,install_system_mamedev hbf700p msx2 -cart2*snatcher floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -SCC_snatcher,,,,,show_message_mamedev \"NO HELP\","
 ",MSX2 Sony HB-F700P + SCC_sdsnatch + floppy support,@non-arcade,install_system_mamedev hbf700p msx2 -cart2*sdsnatch floppydisk flop  .wav*.tap*.cas*.mx1*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.dm -SCC_sdsnatch,,,,,show_message_mamedev \"NO HELP\","
-",PC Engine + Super CD-ROM System support (-> HELP),@non-arcade,install_system_mamedev pce pce-cd scdsys cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr -scdsys,,,,,show_message_mamedev \"Good to know :\nMame does not have a separate driver for PC Engine CD.\nPC Engine together with the Super CD-ROM System rom will make a :\nPC Engine CD\n\nThis will install PC Engine CD (pce-cd).\n\nThis BIOS is needed :\nscdsys.zip\nThe file can be found in pce.zip from the mame-sl rompackage.\nThe BIOS file can be placed inside the folder :\n$datadir/BIOS/mame/pce\","
-",Tandy MC-10 micro color computer + 16k + cassette support,@non-arcade,install_system_mamedev mc10 mc10 -ext*ram cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -16k,,,,,show_message_mamedev \"NO HELP\","
-",Tandy MC-10 micro color computer + MCX_128k + cassette support,@non-arcade,install_system_mamedev mc10 mc10 -ext*mcx128 cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -MCX_128k,,,,,show_message_mamedev \"NO HELP\","
-",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,@non-arcade,install_system_mamedev trs80m3 trs80m3 -flop1*$datadir/BIOS/mame/trsdos.zip floppydisk2 flop2 .wav*.cas.mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1 -DOS_in_flop1,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + cartridge support,@non-arcade,install_system_mamedev ti99_4a ti99_4a -ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot4*speech* cartridge cart .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-keyb_nat,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + superxb + flop1-525dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-f1-525dd,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + superxb + flop1-525qd,@non-arcade,install_system_mamedev ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525qd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-f1-525qd,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + superxb + flop1-35dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-f1-35dd,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + superxb + flop1-35hd,@non-arcade,install_system_mamedev ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35hd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-f1-35hd,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + editass + flop1-525dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-525dd,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + editass + flop1-525qd,@non-arcade,install_system_mamedev ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525qd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-525qd,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + editass + flop1-35dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-35dd,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + editass + flop1-35hd,@non-arcade,install_system_mamedev ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35hd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-35hd,,,,,show_message_mamedev \"NO HELP\","
-",TI-99/4A(32Kb) + speech + rxb2021 + flop1-525dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a -gromport*multi*-cart1*$datadir/roms/ti99_4a/ti99_cart_rpk/rxb2021.rpk*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-rxb2021-f1-525dd,,,,,show_message_mamedev \"NO HELP\","
-",TVC 64 + flop1 support,@non-arcade,install_system_mamedev tvc64 tvc64 -exp1*hbf floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk,,,,,show_message_mamedev \"NO HELP\","
+",Nintendo Datach + cartridge2 support,@non-arcade,install_system_mamedev nes nes_datach datach cartridge2 cart2 .prg,,,,,show_message_mamedev \"NO HELP\","
 ",Odyssey2 + voice (install odyssey2 and patch default loaders),@non-arcade,install_system_mamedev odyssey2;sed -i \"s/ %B/ -cart1 voice -cart2 %B/g;s/\/ '%B/ -cart1 voice -cart2 '%B/g;s/cart %R/cart1 voice -cart2 %R/g\" $rootdir/configs/odyssey2/emulators.cfg,,,,,show_message_mamedev \"NO HELP\","
 ",Orion 128 + romdisk + cassette support,@non-arcade,install_system_mamedev orion128 orion128 -cart*$romdir/RetroPie/roms/orion128/orion_cart/romdisk.zip cassette cass .wav*.flac*.rko*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.odi*.cpm*.img*.bin -romdisk,,,,,show_message_mamedev \"\
 Use 'Scroll Lock' (GAME OFF/ON modus) when needed !\n\n
@@ -841,6 +830,36 @@ romdisk.zip needs to be in :\n
 $romdir/RetroPie/roms/orion128/orion_cart/romdisk.zip\n\n
 game1715.zip needs to be in :\n
 $romdir/RetroPie/roms/orion128/orion_flop/game1715.zip\","
+",PC Engine + Super CD-ROM System support (-> HELP),@non-arcade,install_system_mamedev pce pce-cd scdsys cdrom cdrm .chd*.cue*.toc*.nrg*.gdi*.iso*.cdr -scdsys,,,,,show_message_mamedev \"Good to know :\nMame does not have a separate driver for PC Engine CD.\nPC Engine together with the Super CD-ROM System rom will make a :\nPC Engine CD\n\nThis will install PC Engine CD (pce-cd).\n\nThis BIOS is needed :\nscdsys.zip\nThe file can be found in pce.zip from the mame-sl rompackage.\nThe BIOS file can be placed inside the folder :\n$datadir/BIOS/mame/pce\","
+",Sega SC-3000 + basic3 + cassette support,@non-arcade,install_system_mamedev sc3000 sc3000 -cart*basic3 cassette cass .wav*.flac*.bit*.tzx*.bin*.sg*.sc -basic3,,,,,show_message_mamedev \"\
+Use 'Scroll Lock' (GAME OFF/ON modus) when needed !\n\n
+After boot make sure you enable the SK-1100 keyboard\n
+Enable the keyboard in the MAME UI and select :\n
+Input settings\n
+Keyboard selection\n
+Sega SK-1100 keyboard and enable here\n
+This setting will be saved for next time\n\n
+Type LOAD to start loading the tape\n
+Use F2 to start the tape\n
+Type RUN to start the program\n\n
+basic3.zip needs to be in :\n
+$romdir/RetroPie/BIOS/mame/basic3.zip\n
+or in :\n
+$romdir/RetroPie/roms/sc3000/basic3.zip\","
+",Tandy MC-10 micro color computer + 16k + cassette support,@non-arcade,install_system_mamedev mc10 mc10 -ext*ram cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -16k,,,,,show_message_mamedev \"NO HELP\","
+",Tandy MC-10 micro color computer + MCX_128k + cassette support,@non-arcade,install_system_mamedev mc10 mc10 -ext*mcx128 cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -MCX_128k,,,,,show_message_mamedev \"NO HELP\","
+",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,@non-arcade,install_system_mamedev trs80m3 trs80m3 -flop1*$datadir/BIOS/mame/trsdos.zip floppydisk2 flop2 .wav*.cas.mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1 -DOS_in_flop1,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + cartridge support,@non-arcade,install_system_mamedev ti99_4a ti99_4a -ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot4*speech* cartridge cart .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-keyb_nat,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + superxb + flop1-525dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-f1-525dd,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + superxb + flop1-525qd,@non-arcade,install_system_mamedev ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525qd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-f1-525qd,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + superxb + flop1-35dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-f1-35dd,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + superxb + flop1-35hd,@non-arcade,install_system_mamedev ti99_4a ti99_4a superxb*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35hd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-superxb-f1-35hd,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + editass + flop1-525dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-525dd,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + editass + flop1-525qd,@non-arcade,install_system_mamedev ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525qd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-525qd,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + editass + flop1-35dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-35dd,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + editass + flop1-35hd,@non-arcade,install_system_mamedev ti99_4a ti99_4a editass*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*35hd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-editass-f1-35hd,,,,,show_message_mamedev \"NO HELP\","
+",TI-99/4A(32Kb) + speech + rxb2021 + flop1-525dd,@non-arcade,install_system_mamedev ti99_4a ti99_4a -gromport*multi*-cart1*$datadir/roms/ti99_4a/ti99_cart_rpk/rxb2021.rpk*-ioport*peb*-ioport*peb*-ioport:peb:slot2*32kmem*-ioport:peb:slot3*hfdc*-ioport:peb:slot3:hfdc:f1*525dd*-ioport:peb:slot4*speech* floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk -32kb-speech-rxb2021-f1-525dd,,,,,show_message_mamedev \"NO HELP\","
+",TVC 64 + flop1 support,@non-arcade,install_system_mamedev tvc64 tvc64 -exp1*hbf floppydisk1 flop1 .rpk*.wav*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk,,,,,show_message_mamedev \"NO HELP\","
 ",Videopac + voice (install videopac and patch default loaders),@non-arcade,install_system_mamedev videopac;sed -i \"s/ %B/ -cart1 voice -cart2 %B/g;s/\/ '%B/ -cart1 voice -cart2 '%B/g;s/cart %R/cart1 voice -cart2 %R/g\" $rootdir/configs/videopac/emulators.cfg,,,,,show_message_mamedev \"NO HELP\","
     )
 #preserved-test-lines
