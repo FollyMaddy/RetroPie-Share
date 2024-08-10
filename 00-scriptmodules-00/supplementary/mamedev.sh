@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.03"
+rp_module_version="0267.04"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.04 :\n\
+- add m5 install line to the systems with extras\n\
+  - help is added too !\n\
 267.03 :\n\
 - add sc3000 install line to the systems with extras\n\
   - help is added too !\n\
@@ -846,6 +849,14 @@ basic3.zip needs to be in :\n
 $romdir/RetroPie/BIOS/mame/basic3.zip\n
 or in :\n
 $romdir/RetroPie/roms/sc3000/basic3.zip\","
+",Sord M5 + basici + cassette support,@non-arcade,install_system_mamedev m5 m5 -cart1*basici cassette cass .prn*.wav*.flac*.cas*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk.bin*.rom -basici,,,,,show_message_mamedev \"\
+Use 'Scroll Lock' (GAME OFF/ON modus) when needed !\n\n
+For cassettes that load with CHAIN that cannot auto-start correctly\n\n
+Type CHAIN to start loading the tape\n\n
+basici.zip needs to be in :\n
+$romdir/RetroPie/BIOS/mame/basici.zip\n
+or in :\n
+$romdir/RetroPie/roms/m5/basici.zip\","
 ",Tandy MC-10 micro color computer + 16k + cassette support,@non-arcade,install_system_mamedev mc10 mc10 -ext*ram cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -16k,,,,,show_message_mamedev \"NO HELP\","
 ",Tandy MC-10 micro color computer + MCX_128k + cassette support,@non-arcade,install_system_mamedev mc10 mc10 -ext*mcx128 cassette cass .mcc*.rom*.wav*.cas*.c10*.k7 -MCX_128k,,,,,show_message_mamedev \"NO HELP\","
 ",Tandy TRS-80 Model III + DOS in flop1 + flop2 support,@non-arcade,install_system_mamedev trs80m3 trs80m3 -flop1*$datadir/BIOS/mame/trsdos.zip floppydisk2 flop2 .wav*.cas.mfi*.dfi*.imd*.jv3*.dsk*.dmk*.jv1 -DOS_in_flop1,,,,,show_message_mamedev \"NO HELP\","
