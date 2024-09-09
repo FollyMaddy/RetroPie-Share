@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.04"
+rp_module_version="0267.05"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.05 :\n\
+- mame-merged and mame-sl are locked recently, hopefully temporarily\n\
+  - marked both red !\n\
+- replace default mame-merged with mame-0.264-roms-non-merged\n\
 267.04 :\n\
 - add m5 install line to the systems with extras\n\
   - help is added too !\n\
@@ -1201,25 +1205,27 @@ function subgui_archive_downloads_mamedev() {
     #remember : the first search option will be changed by the script to get search options beginning with, if you want a global search  do something like this : '//&&/hdv/'
     #rompack name, file extension and rompack link 
     #local rompack_link_info=( "mame-0.231-merged" ".7z" "mame-0.231-merged" )
-    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
+#has been locked#    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
+    local rompack_link_info=( "mame-0.264-roms-non-merged" ".zip" "\"mame-0.264-roms-non-merged/MAME 0.264 ROMs (non-merged)\"" )
     local csv=()
-local rarfile
+	local rarfile 
     csv=(
 ",menu_item,,to_do,"
 ",▼\ZrBrowse BIOS files and download to BIOS/mame\ZR,,,"
 ",BIOS/mame < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/BIOS/mame MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",BIOS/mame < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_download_mamedev '//' $datadir/BIOS/mame mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",BIOS/mame < (NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",BIOS/mame < (NEW-SET)mame-0.264-roms-non-merged,,subform_archive_download_mamedev '//' $datadir/BIOS/mame \"mame-0.264-roms-non-merged/MAME%200.264%20ROMs%20(non-merged)/\" download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",BIOS/mame < \Z1(NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse BIOS files < NOT FOUND in last runcommand.log,,,"
-",BIOS/mame < BIOS(es) NOT FOUND < mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev \"$(echo /$(cat /dev/shm/runcommand.log 2>&-|grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the $(echo $romdir|cut -d/ -f4)-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
+",BIOS/mame < BIOS(es) NOT FOUND < ${rompack_link_info[0]},,subform_archive_download_mamedev \"$(echo /$(cat /dev/shm/runcommand.log 2>&-|grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" $datadir/BIOS/mame \"mame-0.264-roms-non-merged/MAME%200.264%20ROMs%20(non-merged)/\" download archive.???,,,,,show_message_mamedev \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the $(echo $romdir|cut -d/ -f4)-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
 ",,,,"
 ",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/downloads,,,"
 ",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_download_mamedev '//' $datadir/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-sl  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-sl mame-sl/mame-sl/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-merged mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < \Z1(NEW-SET)mame-sl  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-sl mame-sl/mame-sl/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < \Z1(NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-merged mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/downloads < UnRenamedFiles-Various,,subform_archive_download_mamedev '//' $datadir/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
     )
@@ -1369,7 +1375,7 @@ dialog \
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
 	#remove the earlier added space in the search pattern with sed as it needs the regular pattern here
-	[[ $get_all == y ]] && curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|awk "$(echo $search_pattern|sed 's/ //g')"|while read line;do if [[ ! -f "$destination_path/$(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]];then download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path;sleep 0.5;else echo $(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g')) [Exists, probably OK];sleep 0.02;fi;done
+	[[ $get_all == y ]] && curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|awk "$(echo $search_pattern|sed 's/ //g')"|while read line;do if [[ ! -f "$destination_path/$(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]];then download_file_mamedev $line "$website_url/$website_path/$rompack_name" $destination_path;sleep 0.5;else echo $(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g')) [Exists, probably OK];sleep 0.02;fi;done
 	if [[ $get_all == c ]];then
 	    if [[ ! -f "$destination_path/$rompack_name.zip" ]];then
 	    echo "getting your desired file : $rompack_name.zip"
@@ -1393,9 +1399,9 @@ dialog \
 	    #that way a proper lookalike name is presented when showing the list in dialog box
 		if [[ $decode_html == y ]];then
 			echo -e "\nhtml encoding will be replaced, will take a bit more time\n"
-			while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$(echo -e $(echo $line|sed -r 's/%2C/%E2%80%9A/g;s/%([[:xdigit:]]{2})/\\x\1/g'))',,download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
+			while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$(echo -e $(echo $line|sed -r 's/%2C/%E2%80%9A/g;s/%([[:xdigit:]]{2})/\\x\1/g'))',,download_file_mamedev $line \"$website_url/$website_path/$rompack_name\" $destination_path,\"";done)
 		else
-			while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$line',,download_file_mamedev $line $website_url/$website_path/$rompack_name $destination_path,\"";done)
+			while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$line',,download_file_mamedev $line \"$website_url/$website_path/$rompack_name\" $destination_path,\"";done)
 		fi
 	    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
 	    #we need to add '",,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
@@ -1418,7 +1424,8 @@ dialog \
 function subformgui_categories_automated_mamedev() {    
 	#make sure that there is a database file
     [[ ! -f ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_database}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info
-    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
+#has been locked#    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
+    local rompack_link_info=( "mame-0.264-roms-non-merged" ".zip" "\"mame-0.264-roms-non-merged/MAME 0.264 ROMs (non-merged)\"" )
     local csv=()
     local action="$1"
     local driver_type="$2"
@@ -1649,12 +1656,12 @@ dialog \
 	if [[ $detect_clone_save == yes ]];then
 		if [[ -n $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6) ]];then
 		echo clone detected, saving $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension as ${restricted_download_csv[$rd]}$file_extension
-		wget -q --show-progress --progress=bar:force -t2 -c -w1 https://$website_url/$website_path/$rompack_name/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension -O $destination_path/${restricted_download_csv[$rd]}$file_extension 2>&1
+		wget -q --show-progress --progress=bar:force -t2 -c -w1 "https://$website_url/$website_path/$rompack_name/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension" -O $destination_path/${restricted_download_csv[$rd]}$file_extension 2>&1
 		else 
-		wget -q --show-progress --progress=bar:force -t2 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
+		wget -q --show-progress --progress=bar:force -t2 -c -w1 -P $destination_path "https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension" 2>&1
 		fi
 	else 
-	wget -q --show-progress --progress=bar:force -t2 -c -w1 -P $destination_path https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension 2>&1
+	wget -q --show-progress --progress=bar:force -t2 -c -w1 -P $destination_path "https://$website_url/$website_path/$rompack_name/${restricted_download_csv[$rd]}$file_extension" 2>&1
 	fi
     done
     elif [[ $(echo $website_url|sha1sum) == 91f709654529299145e9eb45ce1ca1e19796edab* ]];then
