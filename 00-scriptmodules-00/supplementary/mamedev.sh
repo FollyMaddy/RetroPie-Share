@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.05"
+rp_module_version="0267.06"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.06 :\n\
+- fix showing and downloading cheats\n\
 267.05 :\n\
 - mame-merged and mame-sl are locked recently, hopefully temporarily\n\
   - marked both red !\n\
@@ -1037,7 +1039,7 @@ Then it will be extracted and overwritten in :\n\
     local mamecheat_read
     clear
     echo "reading the available binaries"
-    while read mamecheat_read;do csv+=("$mamecheat_read");done < <(IFS=$'\n'; curl http://cheat.retrogames.com/mame_downloads.htm|grep ">XML"|sed 's/</"/g;s/>/"/g;s/XML //g;s/Release Date: //g'|while read line;do echo "\",$(echo $line|cut -d\" -f7),,download_cheats_mamedev $(echo $line|cut -d\" -f5),\"";done)
+    while read mamecheat_read;do csv+=("$mamecheat_read");done < <(IFS=$'\n'; curl https://www.mamecheat.co.uk/mame_downloads.htm|grep ">XML"|sed 's/</"/g;s/>/"/g;s/XML //g;s/Release Date: //g'|while read line;do echo "\",$(echo $line|cut -d\" -f7),,download_cheats_mamedev $(echo $line|cut -d\" -f5),\"";done)
     build_menu_mamedev
 }
 
