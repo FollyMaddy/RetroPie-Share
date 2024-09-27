@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.06"
+rp_module_version="0267.07"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,11 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.07 :\n\
+- being able to create links from files in ~/RetroPie/BIOS/mame\n\
+  - links are saved in the roms folder you selected\n\
+- fix showing correct arcade categories using @arcade@\n\
+  - if a database doesn't have @arcade@ then use @working-arcade@\n\
 267.06 :\n\
 - fix showing and downloading cheats\n\
 267.05 :\n\
@@ -408,6 +413,8 @@ function gui_mamedev() {
 ",,,,,,,,,"
 ",►ARTWORK/CHEATS/GAMELISTS/JOYSTICKS/OVERLAYS/PATCHES,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_downloads_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
 ",,,,,,,,,"
+",►Link roms from folder ~/RetroPie/BIOS/mame,,show_message_mamedev \"Warning : files or links are forced overwritten\";subgui_link_roms_mamedev,,,,,show_message_mamedev \"Show categories and ultimately create links from files that are in ~/RetroPie/BIOS/mame.\nMake sure you have downloaded the whole set of roms and placed it in ~/RetroPie/BIOS/mame.\nFor example get the mame-merged set and place all the files in in ~/RetroPie/BIOS/mame\nDoing this will also ensure you have all the bios roms already in the correct directory so there is no need to bios place files inside that folder again.\","
+",,,,,,,,,"
 ",►Browser/downloader ( restricted ),,subgui_archive_downloads_mamedev,,,,,show_message_mamedev \"Browse and get online files.\n(only available with the correct input)\","
     )
     build_menu_mamedev
@@ -537,9 +544,9 @@ function subgui_categories_mamedev() {
     [[ $(expr $rp_module_version_database + 0) -gt 261 ]] && \
     csv+=(
 ",\Zr▼ NEW : Fully automated,,,,,,,,"
-",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"not needed\",,,,,,"
-",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"not needed\",,,,,,"
-",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"not needed\",,,,,,"
+",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"no\",,,,,,"
+",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"no\",,,,,,"
 ",\Zr▲,,,,,,,,"
 ",,,,,,,,,"
     )
@@ -702,7 +709,6 @@ function subgui_systems_default_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-
 ",►System names : SEARCH and display list,,subgui_search_mamedev systems,,,,,show_message_mamedev \"Search and create a list and then install one or more systems with default options\","
 ",►System name  : DIRECT and quick driver install,,direct_install_mamedev,,,,,show_message_mamedev \"Insert a correct driver name and install that driver directly without showing a list first.\","
 ",►System names : Display alphabetical,,subgui_alphabetical_order_selection_mamedev systems,,,,,show_message_mamedev \"Select a list and then install one or more systems with default options\","
@@ -717,6 +723,20 @@ function subgui_systems_default_mamedev() {
 }
 #"$(if [[ $(arch) == arm* ]];then echo -e ,Display all upon descriptions,,create_systems_list_mamedev descriptions,,,,,show_message_mamedev \\\"Install one or more systems with default options\\\",;else echo -e ,\\Z1Displaying all upon descriptions not available on 64bit OS,,,,,,,,;fi)"
 
+
+function subgui_link_roms_mamedev() {
+#we can add up to 5 options per list to sort on
+    local csv=()
+    csv=(
+",menu_item,,to_do,"
+",\Zr▼ NEW : Fully automated,,,,,,,,"
+",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"yes\",,,,,,"
+",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
+",\Zr▲,,,,,,,,"
+    )
+    build_menu_mamedev
+}
 
 
 function subgui_lists_mamedev() {
@@ -1009,6 +1029,7 @@ The runcommands that were installed by the module-scripts used this run_mess.sh 
 ",Create RetroArch 16:9 bezel-overlays from artwork (+alternatives),,create_bezel_overlays_mamedev -16-9;create_bezel_overlays_mamedev 2-16-9,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\n\nIn contrary to the regular option this option will get some alternative looking bezels.\","
 ",,,,"
 ",Setup Orionsangels Realistic Arcade Overlays > roms/realistic,@arcade,create_00index_file_mamedev '/@oro/' $datadir/roms/realistic;install_system_mamedev realistic realistic '' '' 'none' '';download_from_google_drive_mamedev 1m_8-LJpaUFxUtwHCyK4BLo6kiFsvMJmM $datadir/downloads;organise_realistic_overlays_mamedev,,,,,show_message_mamedev \"Orionsangels made a lot of realistic bezels for lr-mame in retroarch. Manually installing was a bit difficult as the files were for windows only. On top of that the configs also had fixed resolutions which is problematic when you don't use the same resolution.\n\nSelecting this option will install the category \"realistic\" in your roms directory. The bezels will be downloaded and patched for linux use and the resolutions will be converted to the resolution that is detected. If you change the resolution of your setup you have to select this option again so the configs are recreated again with the proper resolution settings. Selecting this a second time will skip downloading the bezels if they are still on your computer.\","
+",,,,"
     )
     build_menu_mamedev
 }
@@ -1426,8 +1447,13 @@ dialog \
 function subformgui_categories_automated_mamedev() {    
 	#make sure that there is a database file
     [[ ! -f ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_database}_systems_sorted_info -o ${emudir}/mame/mame${rp_module_version_database}_systems_sorted_info
-#has been locked#    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
-    local rompack_link_info=( "mame-0.264-roms-non-merged" ".zip" "\"mame-0.264-roms-non-merged/MAME 0.264 ROMs (non-merged)\"" )
+	if [[ $1 == *download* ]];then
+		#has been locked#    local rompack_link_info=( "mame-merged \Zb\Z2NEWEST" ".zip" "mame-merged/mame-merged" )
+		local rompack_link_info=( "mame-0.264-roms-non-merged" ".zip" "\"mame-0.264-roms-non-merged/MAME 0.264 ROMs (non-merged)\"" )
+	else
+		#use BIOS/mame folder containing all files to make links in the roms folders
+		local rompack_link_info=( "$biosdir/mame" ".zip" )
+	fi
     local csv=()
     local action="$1"
     local driver_type="$2"
@@ -1443,21 +1469,22 @@ function subformgui_categories_automated_mamedev() {
 	show_message_mamedev "\
 After selecting ok a form will be presented with filter variables.\n\
 You can see the earlier predefined variables.\n\
-The variables cannot be changed !\n\
+The variables can be changed if needed.\n\
 After selecting ok a list with categories is shown.\n\
 \n\
 The first variable is just to let you know what it is going to do.\n\
-It is used to install categories or to download roms of a category.\n\
+It is used to install a category, download or link category roms.\n\
 The first filter is used to present good (non-)arcade categories.\n\
 The second is used to eliminate unuseful categories from the list\n\
 \n\
 The 'detect and save clone name' part can be enabled with 'yes'\n\
-When downloading it will download the regular rom and save it with the clone name,\n\
-as clones are inside the regular rom.\n\
+When saving or linking it will use the clone name.\n\
+Be aware that using it is much slower than using no !.\n\
+Remember : clones are inside the regular roms.\n\
 Clones are only loaded, when loading against the softlist, if the rom has that clonename!\n\
 \n\
-Be aware that there can be the same categories that are in both.\n\
-Like, for example, 'puzzle' is in both arcade and non-arcade.\n\
+Be aware that there can be similar categories in arcade and non-arcade.\n\
+Like, for example, 'puzzle' is in both.\n\
 Installing both can give problematic results.\n\
 As basically :\n\
 - lr-mess will only load non-arcade\n\
@@ -1484,6 +1511,14 @@ dialog \
 "" 9 1 "" 6 0 0 0 \
 2>&1 >/dev/tty \
 )
+
+    action=$(echo "$manual_input" | sed -n 1p)
+    driver_type=$(echo "$manual_input" | sed -n 2p)
+    filter1=$(echo "$manual_input" | sed -n 3p)
+    filter2=$(echo "$manual_input" | sed -n 4p)
+    detect_clone_save=$(echo "$manual_input" | sed -n 5p) 
+
+
 fi
     clear
     echo "reading the available databases"
@@ -1521,8 +1556,8 @@ fi
 		IFS=$'\n'
 		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
-			[[ -n ${line} ]] && 
-			echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download archive.??? ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
+			[[ $1 == *download* ]] && [[ -n ${line} ]] && echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download archive.??? ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
+			[[ $1 == *link* ]] && [[ -n ${line} ]] && echo "\",Create link in $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_link_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${biosdir}/mame ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
 		done
 		)
 	fi
@@ -1677,6 +1712,63 @@ dialog \
     echo "Atfer that it will go back to the menu."
     sleep 5
     fi
+    #chown commands are in the lines for : all_in1 - tigerrz
+    [[ $destination_path == */BIOS/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
+	[[ $destination_path == */downloads/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
+	[[ $destination_path == */roms/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-6)"
+}
+
+
+function subform_link_multi_downloads_mamedev() {
+
+	local detect_clone_save="$5"
+    local rompack_path="$4"
+    local destination_path="$3"
+    local file_extension="$2"
+    local search_input="$1"
+    local manual_input=""
+
+    manual_input=$(\
+dialog \
+--no-cancel \
+--default-item "$default" \
+--backtitle "$__backtitle" \
+--title "Insert the options" \
+--form "" \
+22 76 16 \
+"rompack path:" 1 1 "$rompack_path" 1 30 76 100 \
+"destination path:" 2 1 "$destination_path" 2 30 76 100 \
+"file extension:" 3 1 "$file_extension" 3 30 76 100 \
+"search input:" 4 1 "$search_input" 4 30 76 100 \
+"detect and save clone name:" 5 1 "$detect_clone_save" 5 30 76 100 \
+2>&1 >/dev/tty \
+)
+
+    rompack_path=$(echo "$manual_input" | sed -n 1p)
+    destination_path=$(echo "$manual_input" | sed -n 2p)
+    file_extension=$(echo "$manual_input" | sed -n 3p)
+    search_input=$(echo "$manual_input" | sed -n 4p)
+    detect_clone_save=$(echo "$manual_input" | sed -n 5p)   
+
+    clear
+    mkdir -p $destination_path
+    read_data_mamedev clear
+    IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
+    for rd in ${!restricted_download_csv[@]};do 
+    echo "busy with ${restricted_download_csv[$rd]}$file_extension"
+    #display onle the lines "Nothing to do." "Not Found." and progress "%" using awk or grep command : awk '/do\./||/Found\./||/\%/' : grep -E 'do\.|Found\.|%'
+	if [[ $detect_clone_save == yes ]];then
+		if [[ -n $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6) ]];then
+		echo clone detected, saving $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension as ${restricted_download_csv[$rd]}$file_extension
+		ln -s -f "$rompack_path/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
+		else 
+		ln -s -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
+		fi
+	else 
+		ln -s -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
+	fi
+    done
+
     #chown commands are in the lines for : all_in1 - tigerrz
     [[ $destination_path == */BIOS/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
 	[[ $destination_path == */downloads/* ]] && chown -R $user:$user "$(echo $destination_path|cut -d/ -f-5)"
