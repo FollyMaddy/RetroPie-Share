@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.10"
+rp_module_version="0267.11"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.11 :\n\
+- update python modules for retroscraper fixing issues\n\
+  - httpimport is still on 1.3.1 as 1.4.0 didn't work\n\
 267.10 :\n\
 - rework 267.09 fix for jakks only\n\
 267.09 :\n\
@@ -1180,15 +1183,19 @@ function retroscraper_remote_depends_mamedev () {
     #https://stackoverflow.com/questions/23106621/replace-multiple-consecutive-white-spaces-with-one-comma-in-unix
     #looking for latest versions then do : python3 -m pip list --outdated  
     #looking for installed packages and versions then do : python3 -m pip list 
+    #if above doesn't work then go into the python virtual environment that is installed after trying retroscraper from the script and do the following :
+    #cd /opt/retropie/python_virtual_environment/bin
+    #/python -m pip list --outdated
+    #(updating httpimport==1.4.0 did not work)
     local pip_list_output
     local retroscraper_remote_module
     local retroscraper_remote_modules=()
     retroscraper_remote_modules=(
-    wheel==0.41.3
-    setuptools==68.2.2
+    wheel==0.44.0
+    setuptools==75.1.0
     googletrans==4.0.0rc1
-    Pillow==10.1.0
-    requests==2.31.0
+    Pillow==10.4.0
+    requests==2.32.3
     httpimport==1.3.1
     )
     #use a virtual python environment
