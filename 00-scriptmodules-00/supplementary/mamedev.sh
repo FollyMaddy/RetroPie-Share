@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.08"
+rp_module_version="0267.09"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.09 :\n\
+- add fix for linking jakks roms\n\
+  - it should not influence other things, hopefully\n\
 267.08 :\n\
 - add lines to skip clones when creating links (quicker)\n\
 - only create a link when a main file is present\n\
@@ -1736,7 +1739,9 @@ function subform_link_multi_downloads_mamedev() {
     local rompack_path="$4"
     local destination_path="$3"
     local file_extension="$2"
-    local search_input="$1"
+    #remove @no_media@ from filter to link most jakks roms as many seem to have media but are also in the jakks list
+    #not removing would mean that only a few roms are linked
+    local search_input="$(echo $1|sed 's/ && \/@no_media@\///g')"
     local manual_input=""
 
     manual_input=$(\
