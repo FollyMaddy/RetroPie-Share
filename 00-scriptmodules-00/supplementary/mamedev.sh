@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.07"
+rp_module_version="0267.08"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,12 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.08 :\n\
+- add lines to skip clones when creating links (quicker)\n\
+- only create a link when a main file is present\n\
+- use hardlinks instead of softlinks\n\
+- throughput the filter1 option\n\
+- still an issue using the @no_media@ tag as filter (with jakks)\n\
 267.07 :\n\
 - being able to create links from files in ~/RetroPie/BIOS/mame\n\
   - links are saved in the roms folder you selected\n\
@@ -729,7 +735,12 @@ function subgui_link_roms_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,"
-",\Zr▼ NEW : Fully automated,,,,,,,,"
+",\Zr▼ NEW : Fully automated without clones (much quicker),,,,,,,,"
+",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"no\",,,,,,"
+",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"no\",,,,,,"
+",\Zr▲,,,,,,,,"
+",\Zr▼ NEW : Fully automated with clones (do all but slower),,,,,,,,"
 ",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"yes\",,,,,,"
 ",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
 ",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
@@ -1545,9 +1556,9 @@ fi
 		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
 			[[ -n ${line} ]] && if [[ ${filter1} == *@90º@* ]];then
-				echo "\",Category => ${line}90º,${driver_type},create_00index_file_mamedev '/@${line}@/ && /@good@/ && /@90º@/' ${datadir}/roms/${line}90º;install_system_mamedev ${line}90º ${line}90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}90º\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
+				echo "\",Category => ${line}90º,${driver_type},create_00index_file_mamedev '${filter1} && /@${line}@/ && /@90º@/' ${datadir}/roms/${line}90º;install_system_mamedev ${line}90º ${line}90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}90º\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
 			else
-				echo "\",Category => ${line},${driver_type},create_00index_file_mamedev '/@${line}@/ && /@good@/' ${datadir}/roms/${line};install_system_mamedev ${line} ${line} '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
+				echo "\",Category => ${line},${driver_type},create_00index_file_mamedev '${filter1} && /@${line}@/' ${datadir}/roms/${line};install_system_mamedev ${line} ${line} '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
 			fi
 		done
 		)
@@ -1556,8 +1567,8 @@ fi
 		IFS=$'\n'
 		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
-			[[ $1 == *download* ]] && [[ -n ${line} ]] && echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download archive.??? ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
-			[[ $1 == *link* ]] && [[ -n ${line} ]] && echo "\",Create link in $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_link_multi_downloads_mamedev '/@${line}@/ && /@good@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${biosdir}/mame ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
+			[[ $1 == *download* ]] && [[ -n ${line} ]] && echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '${filter1} && /@${line}@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download archive.??? ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
+			[[ $1 == *link* ]] && [[ -n ${line} ]] && echo "\",Create link in $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_link_multi_downloads_mamedev '${filter1} && /@${line}@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${biosdir}/mame ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
 		done
 		)
 	fi
@@ -1760,12 +1771,15 @@ dialog \
 	if [[ $detect_clone_save == yes ]];then
 		if [[ -n $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6) ]];then
 		echo clone detected, saving $($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension as ${restricted_download_csv[$rd]}$file_extension
-		ln -s -f "$rompack_path/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
-		else 
-		ln -s -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
+		[[ -f "$rompack_path/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension" ]] && \
+		ln -f "$rompack_path/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
+		else
+		[[ -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" ]] && \
+		ln -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
 		fi
-	else 
-		ln -s -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
+	else
+		[[ -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" ]] && \
+		ln -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
 	fi
     done
 
