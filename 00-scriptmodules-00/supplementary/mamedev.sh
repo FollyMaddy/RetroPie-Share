@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.11"
+rp_module_version="0267.12"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.12 :\n\
+- filter fix\n\
+- sport becomes sports\n\
 267.11 :\n\
 - update python modules for retroscraper fixing issues\n\
   - httpimport is still on 1.3.1 as 1.4.0 didn't work\n\
@@ -559,8 +562,8 @@ function subgui_categories_mamedev() {
     csv+=(
 ",\Zr▼ NEW : Fully automated,,,,,,,,"
 ",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"no\",,,,,,"
-",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"no\",,,,,,"
-",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
 ",\Zr▲,,,,,,,,"
 ",,,,,,,,,"
     )
@@ -588,7 +591,7 @@ function subgui_categories_mamedev() {
 ",Arcade Category => realistic,@arcade,create_00index_file_mamedev '/@oro/' $datadir/roms/realistic;install_system_mamedev realistic realistic '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the realistic category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\nThe realistic category is meant for using Orionsangels realistic overlays with lr-mame.\nIt contains the selection of games that will work with these overlays.\n\Z1But installing the realistic category from this section will NOT install the overlays !\nIf you want to install and use these overlays then you have to install it from the (JOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS).\n\nThis category is NOT implemented as recognisable category when istalling a default system !\","
 ",Arcade Category => shooter,@arcade,create_00index_file_mamedev '/@shooter/&&/@working_arcade/' $datadir/roms/shooter;install_system_mamedev shooter shooter '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the shooter category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
 ",Arcade Category => slot_machine,@arcade,create_00index_file_mamedev '/@slot_machine/&&/@working_arcade/' $datadir/roms/slot_machine;install_system_mamedev slot_machine slot_machine '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the slot_machine category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Arcade Category => sport,@arcade,create_00index_file_mamedev '/@sport/&&/@working_arcade/' $datadir/roms/sport;install_system_mamedev sport sport '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sport category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+",Arcade Category => sports,@arcade,create_00index_file_mamedev '/@sports/&&/@working_arcade/' $datadir/roms/sports;install_system_mamedev sports sports '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sports category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
 ",Arcade Category => upright,@arcade,create_00index_file_mamedev '/@upright/&&/@working_arcade/' $datadir/roms/upright;install_system_mamedev upright upright '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the upright category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
 ",,,,,,,,,"
 ",DECO cassette Arcade Category => deco_cassette90º,@arcade,create_00index_file_mamedev '/DECO/&&/@90º/' $datadir/roms/deco_cassette90º;install_system_mamedev deco_cassette90º deco_cassette90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the deco_cassette90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/deco_cassette90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
@@ -601,7 +604,7 @@ function subgui_categories_mamedev() {
 ",Arcade Category => puzzle90º,@arcade,create_00index_file_mamedev '/@puzzle/&&/@90º/&&/@working_arcade/' $datadir/roms/puzzle90º;install_system_mamedev puzzle90º puzzle90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the puzzle90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/puzzle90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
 ",Arcade Category => shooter90º,@arcade,create_00index_file_mamedev '/@shooter/&&/@90º/&&/@working_arcade/' $datadir/roms/shooter90º;install_system_mamedev shooter90º shooter90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the shooter90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/shooter90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
 ",Arcade Category => slot_machine90º,@arcade,create_00index_file_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' $datadir/roms/slot_machine90º;install_system_mamedev slot_machine90º slot_machine90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the slot_machine90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/slot_machine90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => sport90º,@arcade,create_00index_file_mamedev '/@sport/&&/@90º/&&/@working_arcade/' $datadir/roms/sport90º;install_system_mamedev sport90º sport90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sport90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/sport90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+",Arcade Category => sports90º,@arcade,create_00index_file_mamedev '/@sports/&&/@90º/&&/@working_arcade/' $datadir/roms/sports90º;install_system_mamedev sports90º sports90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sports90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/sports90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
 ",Arcade Category => upright90º,@arcade,create_00index_file_mamedev '/@upright/&&/@90º/&&/@working_arcade/' $datadir/roms/upright90º;install_system_mamedev upright90º upright90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the upright90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/upright90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
     )
     build_menu_mamedev
@@ -745,13 +748,13 @@ function subgui_link_roms_mamedev() {
 ",menu_item,,to_do,"
 ",\Zr▼ NEW : Fully automated without clones (much quicker),,,,,,,,"
 ",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"no\",,,,,,"
-",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"no\",,,,,,"
-",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
 ",\Zr▲,,,,,,,,"
 ",\Zr▼ NEW : Fully automated with clones (do all but slower),,,,,,,,"
 ",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"yes\",,,,,,"
-",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
-",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
 ",\Zr▲,,,,,,,,"
     )
     build_menu_mamedev
@@ -1278,9 +1281,9 @@ function subgui_archive_downloads_mamedev() {
     [[ $(expr $rp_module_version_database + 0) -gt 261 ]] && \
     csv+=(
 ",▼\ZrGet all files from automated category lists,,,"
-",►Show non-arcade  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media|ma|oro|working_arcade/\" \"yes\",,,,,,"
-",►Show   arcade    categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
-",►Show  arcade90º  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|ma|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show non-arcade  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show   arcade    categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show  arcade90º  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
 ",,,,"
     )
     csv+=(
@@ -1309,7 +1312,7 @@ function subgui_archive_downloads_mamedev() {
 ",$(echo $romdir|cut -d/ -f4)/roms/realistic     < ( 280+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@oro/' ${rompack_link_info[1]} $datadir/roms/realistic ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/shooter       < (2800+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/slot_machine  < (1020+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/sport         < ( 980+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sport/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sport ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/sports        < ( 980+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sports/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sports ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/upright       < (2440+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all 90º orientated files from a specific category,,,"
@@ -1323,7 +1326,7 @@ function subgui_archive_downloads_mamedev() {
 ",$(echo $romdir|cut -d/ -f4)/roms/puzzle90º      	 < ( 100+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/shooter90º     	 < (1030+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/slot_machine90º	 < (   5+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(echo $romdir|cut -d/ -f4)/roms/sport90º      	 < ( 170+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sport/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sport90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/sports90º      	 < ( 170+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sports/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sports90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/upright90º    	 < (1450+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/roms/\ZR,,,"
@@ -2178,7 +2181,7 @@ echo "read the mame romset groups, used for $(echo $romdir|cut -d/ -f4) naming"
  puzzle=($(cut -d "," -f 2 <<<$(awk '/@puzzle/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  slot_machine=($(cut -d "," -f 2 <<<$(awk '/@slot_machine/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- sport=($(cut -d "," -f 2 <<<$(awk '/@sport/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ sports=($(cut -d "," -f 2 <<<$(awk '/@sports/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  #
  deco_cassette=($(cut -d "," -f 2 <<<$(awk '/DECO/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  neogeo=($(cut -d "," -f 2 <<<$(awk '/@neogeo/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
@@ -2582,7 +2585,7 @@ fi
 #create a subarray "dteam_systems" containing the arrays that have to be used here
 #now only two "for loops" can be use for checking multiple arrays against the RetroPie / ArchyPie names
 #note:some systems are not added because they should be recognised in a normal way
-dteam_systems=("all_in1" "classich" "konamih" "tigerh" "driving" "maze" "pinball" "puzzle" "shooter" "slot_machine" "sport" "neogeo" "nintendovs" "megaplay" "playchoice10" "deco_cassette")
+dteam_systems=("all_in1" "classich" "konamih" "tigerh" "driving" "maze" "pinball" "puzzle" "shooter" "slot_machine" "sports" "neogeo" "nintendovs" "megaplay" "playchoice10" "deco_cassette")
 lastcategorymatch=false
 #multiple arrays over one for loop:
 #https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
