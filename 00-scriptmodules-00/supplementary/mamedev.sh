@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0267.12"
+rp_module_version="0267.13"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+267.13 :\n\
+- filter out mechanical\n\
 267.12 :\n\
 - filter fix\n\
 - sport becomes sports\n\
@@ -562,8 +564,8 @@ function subgui_categories_mamedev() {
     csv+=(
 ",\Zr▼ NEW : Fully automated,,,,,,,,"
 ",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"no\",,,,,,"
-",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
-",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
 ",\Zr▲,,,,,,,,"
 ",,,,,,,,,"
     )
@@ -748,13 +750,13 @@ function subgui_link_roms_mamedev() {
 ",menu_item,,to_do,"
 ",\Zr▼ NEW : Fully automated without clones (much quicker),,,,,,,,"
 ",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"no\",,,,,,"
-",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
-",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
+",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
 ",\Zr▲,,,,,,,,"
 ",\Zr▼ NEW : Fully automated with clones (do all but slower),,,,,,,,"
 ",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"yes\",,,,,,"
-",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
-",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
 ",\Zr▲,,,,,,,,"
     )
     build_menu_mamedev
@@ -1282,8 +1284,8 @@ function subgui_archive_downloads_mamedev() {
     csv+=(
 ",▼\ZrGet all files from automated category lists,,,"
 ",►Show non-arcade  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
-",►Show   arcade    categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
-",►Show  arcade90º  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"/@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show   arcade    categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
+",►Show  arcade90º  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"!/90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
 ",,,,"
     )
     csv+=(
