@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0271.00"
+rp_module_version="0271.01"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -81,6 +81,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
     show_message_mamedev "\
                                                  One time update info\n\
 
+271.01 :\n\
+- fix not showing working_arcade in non-arcade\n\
 271.00 :\n\
 - skip versions 268 269 270\n\
 - add new database\n\
@@ -756,12 +758,12 @@ function subgui_link_roms_mamedev() {
     csv=(
 ",menu_item,,to_do,"
 ",\Zr▼ NEW : Fully automated without clones (much quicker),,,,,,,,"
-",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"no\",,,,,,"
+",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"no\",,,,,,"
 ",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
 ",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
 ",\Zr▲,,,,,,,,"
 ",\Zr▼ NEW : Fully automated with clones (do all but slower),,,,,,,,"
-",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media/\" \"yes\",,,,,,"
+",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"yes\",,,,,,"
 ",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
 ",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
 ",\Zr▲,,,,,,,,"
