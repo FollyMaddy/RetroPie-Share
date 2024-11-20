@@ -30,7 +30,7 @@ cp ../*.ini ./
  unzip -p original-data/pS_category_$version.zip "folders/Clones Arcade.ini" >clones.ini
  unzip -p original-data/pS_category_$version.zip "folders/Mechanical Arcade.ini" >mechanical.ini
  unzip -p original-data/pS_category_$version.zip folders/monochrome.ini >monochrome.ini
- unzip -p original-data/pS_category_$version.zip folders/mess.ini >non-arcade.ini
+ #unzip -p original-data/pS_category_$version.zip folders/mess.ini >non-arcade.ini
  unzip -p original-data/pS_category_$version.zip folders/screenless.ini >screenless.ini
  unzip -p original-data/pS_category_$version.zip "folders/Working Arcade.ini" >working_arcade.ini
   
