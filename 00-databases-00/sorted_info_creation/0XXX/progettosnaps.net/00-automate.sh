@@ -25,8 +25,8 @@ cp ../*.ini ./
  wget https://www.progettosnaps.net/support/packs/pS_version_$version.zip
  mv pS_version_$version.zip original-data
 
- unzip -p original-data/pS_category_$version.zip folders/Bootlegs.ini >bootlegs.ini
- unzip -p original-data/pS_category_$version.zip folders/cabinets.ini >cabinets.ini
+ unzip -p original-data/pS_category_$version.zip folders/bootlegs.ini >bootlegs.ini
+ #unzip -p original-data/pS_category_$version.zip folders/cabinets.ini >cabinets.ini
  unzip -p original-data/pS_category_$version.zip "folders/Clones Arcade.ini" >clones.ini
  unzip -p original-data/pS_category_$version.zip "folders/Mechanical Arcade.ini" >mechanical.ini
  unzip -p original-data/pS_category_$version.zip folders/monochrome.ini >monochrome.ini
