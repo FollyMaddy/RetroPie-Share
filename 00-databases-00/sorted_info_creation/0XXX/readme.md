@@ -19,11 +19,11 @@ I make sure I use a 64 bit binary because you can't extract all data from a 32 b
 An aarch64 binary is always compiled when using an aarch64 OS which I am using now.
 To make a resonably compatible binary for rapsberry pi's I compile/install it like this (takes about 50 min):
 
-cd ~/RetroPie-Setup
+cd \~/RetroPie-Setup
 
 sudo __platform=rpi3 ./retropie_packages.sh mame 
 
-Make sure that there is no source code still in ~/RetroPie-Setup/temp/build/mame otherwise it will not work.
+Make sure that there is no source code still in \~/RetroPie-Setup/temp/build/mame otherwise it will not work.
 Normally there should be no source code but if so then you can remove it from within the retropie-setup (manage packages->experimental packages->mame->clean source folder)
 or
 
@@ -62,7 +62,7 @@ Some inis like realistic.ini will most likely always be the same unless some dri
 Now I will check all inis against the older ones with the program 'meld' (install it with :sudo apt install meld)
 I am still in the folder where the new inis are, then I can run this command and check against the older 267 inis (which I still have on my drive) :
 
-for file in *.ini;do meld $file ~/Downloads/RetroPie-Share-main267/00-databases-00/sorted_info_creation/0XXX/$file;done
+for file in *.ini;do meld $file \~/Downloads/RetroPie-Share-main267/00-databases-00/sorted_info_creation/0XXX/$file;done
 
 After every ini check I can just alter the newest ini and save the changes.
 When I close 'meld','meld' will be opened with another ini for checking until I did all the inis.
@@ -93,9 +93,9 @@ https://github.com/FollyMaddy/RetroPie-Share/commit/d56a97ceacca213d2c069e89a681
 Before we can create the new database we also want the arcade and non-arcade info in the database.
 The info from progrettosnaps doesn't seem to be accurate and also the filters for compiling lr-mame and lr-mess aren't correct on the mame libretro repository.
 So before we proceed we can create these subtarget filter files and arcade and non-arcade.ini files in one go first before creating the database.
-We copy '~/Downloads/RetroPie-Share-main271/00-databases-00/subtarget-filters/subtarget-0267-filters'
+We copy '\~/Downloads/RetroPie-Share-main271/00-databases-00/subtarget-filters/subtarget-0267-filters'
 to 
-'~/Downloads/RetroPie-Share-main271/00-databases-00/subtarget-filters/subtarget-0271-filters'
+'\~/Downloads/RetroPie-Share-main271/00-databases-00/subtarget-filters/subtarget-0271-filters'
 then do the command :
 
 cd '/home/pi/Downloads/RetroPie-Share-main271/00-databases-00/subtarget-filters/subtarget-0271-filters'
@@ -108,7 +108,7 @@ Above script will read if a driver uses coins or not.
 If so, it's arcade.
 If not, it's non-arcade.
 If the script is done we can then upload the folder to the repository for backup.
-Then we can put the ini files also in the folder ~/Downloads/RetroPie-Share-main271/00-databases-00/sorted_info_creation/0XXX
+Then we can put the ini files also in the folder \~/Downloads/RetroPie-Share-main271/00-databases-00/sorted_info_creation/0XXX
 
 Now we can do the next step if the extra needed files are on progettosnaps.net.
 We check on that page for these 4 files for version 271 :
@@ -122,7 +122,7 @@ renameSET
 Version
 
 If they are there we can just do the next step and create the database.
-Before I do I always remove the older progettosnap files in /~/Downloads/RetroPie-Share-main271/00-databases-00/sorted_info_creation/0XXX/progettosnaps.net/original-data
+Before I do I always remove the older progettosnap files in /\~/Downloads/RetroPie-Share-main271/00-databases-00/sorted_info_creation/0XXX/progettosnaps.net/original-data
 so there will be no way that the script will use older files.
 then I goto the next folder :
 
@@ -139,7 +139,7 @@ While the script was busy I added these quickly to the correct inis:
 home_system.ini and computer.ini
 I removed the ones missing h an c.
 (Seems there is an error in the script when extracting inis so will look into that later.)
-When done I do a last file check and I can move it then to the folder '~/Downloads/RetroPie-Share-main271/00-databases-00/mame' and or add it to the repository in that folder.
+When done I do a last file check and I can move it then to the folder '\~/Downloads/RetroPie-Share-main271/00-databases-00/mame' and or add it to the repository in that folder.
 Now when the mamedev.sh module-script is updated it will read that database from the repository automatically.
 Here you can see what has been changed to the mamedev.sh script in order to udate it to the latest database and you can also se how to eliminate the database versions if skipped :
 
