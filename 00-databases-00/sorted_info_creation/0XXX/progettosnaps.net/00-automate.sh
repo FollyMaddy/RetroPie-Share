@@ -17,7 +17,7 @@ cp ../*.ini ./
  mkdir original-data
  
  wget https://www.progettosnaps.net/support/packs/pS_category_$version.zip
- mv pS_category_$version original-data
+ mv pS_category_$version.zip original-data
  wget https://www.progettosnaps.net/catver/packs/pS_CatVer_$version.zip
  mv pS_CatVer_$version.zip original-data
  wget https://www.progettosnaps.net/renameset/packs/pS_renameSET_$version.zip
@@ -30,7 +30,7 @@ cp ../*.ini ./
  unzip -p original-data/pS_category_$version.zip "folders/Clones Arcade.ini" >clones.ini
  unzip -p original-data/pS_category_$version.zip "folders/Mechanical Arcade.ini" >mechanical.ini
  unzip -p original-data/pS_category_$version.zip folders/monochrome.ini >monochrome.ini
- #unzip -p original-data/pS_category_$version.zip folders/mess.ini >non-arcade.ini
+ unzip -p original-data/pS_category_$version.zip folders/mess.ini >non-arcade.ini
  unzip -p original-data/pS_category_$version.zip folders/screenless.ini >screenless.ini
  unzip -p original-data/pS_category_$version.zip "folders/Working Arcade.ini" >working_arcade.ini
   
