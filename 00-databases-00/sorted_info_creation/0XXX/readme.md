@@ -63,7 +63,6 @@ Now I will check all inis against the older ones with the program 'meld' (instal
 I am still in the folder where the new inis are, then I can run this command and check against the older 267 inis (which I still have on my drive) :
 
 for file in *.ini;do meld $file ~/Downloads/RetroPie-Share-main267/00-databases-00/sorted_info_creation/0XXX/$file;done
-for file in *.ini;do meld $file ~/Downloads/RetroPie-Share-main266/00-databases-00/sorted_info_creation/0XXX/$file;done
 
 After every ini check I can just alter the newest ini and save the changes.
 When I close 'meld','meld' will be opened with another ini for checking until I did all the inis.
