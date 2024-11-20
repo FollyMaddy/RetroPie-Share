@@ -40,7 +40,7 @@ I get my latest retropie-share files and extract them and rename the folder like
 So now I can make no mistake knowing which version I am working on.
 I change to that directory and create new ini files:
 
-cd '/home/pi/Downloads/RetroPie-Share-main271/00-databases-00/sorted_info_creation/0XXX'
+cd '\~/Downloads/RetroPie-Share-main271/00-databases-00/sorted_info_creation/0XXX'
 
 bash 00-create-inis
 
@@ -98,7 +98,7 @@ to
 '\~/Downloads/RetroPie-Share-main271/00-databases-00/subtarget-filters/subtarget-0271-filters'
 then do the command :
 
-cd '/home/pi/Downloads/RetroPie-Share-main271/00-databases-00/subtarget-filters/subtarget-0271-filters'
+cd '\~/Downloads/RetroPie-Share-main271/00-databases-00/subtarget-filters/subtarget-0271-filters'
 
 And start the script to create these files (takes about 40 min):
 
@@ -126,7 +126,7 @@ Before I do I always remove the older progettosnap files in /\~/Downloads/RetroP
 so there will be no way that the script will use older files.
 then I goto the next folder :
 
-cd '/home/pi/Downloads/RetroPie-Share-main271/00-databases-00/sorted_info_creation/0XXX/progettosnaps.net' 
+cd '\~/Downloads/RetroPie-Share-main271/00-databases-00/sorted_info_creation/0XXX/progettosnaps.net' 
 
 And run the command to create the new database (takes about 1 hour) :
 
