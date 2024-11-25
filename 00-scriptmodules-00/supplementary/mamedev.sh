@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0271.01"
+rp_module_version="0271.02"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -81,6 +81,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
     show_message_mamedev "\
                                                  One time update info\n\
 
+271.02 :\n\
+- add predefined list for home systems\n\
 271.01 :\n\
 - fix not showing working_arcade in non-arcade\n\
 271.00 :\n\
@@ -782,6 +784,9 @@ function subgui_lists_mamedev() {
 ",,,,"
 ",Game consoles upon descriptions,,create_systems_list_mamedev descriptions @game_console,"
 ",Game consoles upon system names,,create_systems_list_mamedev systems @game_console,"
+",,,,"
+",Home systems upon descriptions,,create_systems_list_mamedev descriptions @home_system,"
+",Home systems upon system names,,create_systems_list_mamedev systems @home_system,"
 ",,,,"
 ",Atari upon descriptions,,create_systems_list_mamedev descriptions @non-arcade Atari,"
 ",Atari upon system names,,create_systems_list_mamedev systems @non-arcade Atari,"
