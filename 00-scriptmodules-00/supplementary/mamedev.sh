@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0271.02"
+rp_module_version="0271.03"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -81,6 +81,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
     show_message_mamedev "\
                                                  One time update info\n\
 
+271.03 :\n\
+- install default astrocd(e)/(l)/(w) with two joysticks\n\
 271.02 :\n\
 - add predefined list for home systems\n\
 271.01 :\n\
@@ -446,10 +448,15 @@ function gui_mamedev() {
 ",,,,,,,,,"
 ",►Link roms from folder ~/RetroPie/BIOS/mame,,show_message_mamedev \"Warning : files or links are forced overwritten\";subgui_link_roms_mamedev,,,,,show_message_mamedev \"Show categories and ultimately create hardlinks from files that are in ~/RetroPie/BIOS/mame.\nMake sure you have downloaded the whole set of roms and placed it in ~/RetroPie/BIOS/mame.\nFor example: get the mame-merged set and place all the files in in ~/RetroPie/BIOS/mame\nBy doing this you will also ensure that all the bios roms are in the correct directory so there will be no need to place bios files inside that folder again.\","
    )
+sleep 0.1
+[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]] &&\
+csv+=(
+",►Browser/downloader ( restricted ),,subgui_archive_downloads_mamedev,,,,,show_message_mamedev \"Browse and get online files.\n(only available with the correct input)\","
+   )
+
     build_menu_mamedev
 }
-#",►Browser/downloader ( restricted ),,subgui_archive_downloads_mamedev,,,,,show_message_mamedev \"Browse and get online files.\n(only available with the correct input)\","
- 
+
 
 function help_categories_mamedev() {
 show_message_mamedev "\
@@ -2329,6 +2336,7 @@ clear
 echo proceed....
 #in part 10 the description is changed to Coleco+SGM when installing coleco/colecop with Super Game Module
 fi
+[[ ${systems[-1]} == astrocd* ]] && ExtraPredefinedOptions+=( "-ctrl2 joy" )
 [[ ${systems[-1]} == jupace  ]] && ExtraPredefinedOptions+=( "-ram 48k" )
 # carmarty fmtmarty fmtmarty2
 [[ ${systems[-1]} == *marty  ]] || \
