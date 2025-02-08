@@ -11,7 +11,7 @@
 
 rp_module_id="sz80"
 rp_module_desc="Sinclair ZX80 emulator"
-rp_module_help="ROM Extensions: .o .p .80\n\nCopy your ZX81 roms to $romdir/zx80\n\n
+rp_module_help="ROM Extensions: .o .p .80\n\nCopy your ZX80 roms to $romdir/zx80\n\n
     Exit          - Exit emulator (F10)\n
     Reset         - Reset emulator (F12)\n\n
 Read the README files for more information\n\n
