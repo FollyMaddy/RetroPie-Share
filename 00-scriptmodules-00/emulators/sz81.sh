@@ -11,7 +11,7 @@
 
 rp_module_id="sz81"
 rp_module_desc="Sinclair ZX81 emulator"
-rp_module_help="ROM Extensions: .o .p .80 .81\n\nCopy your ZX81 roms to $romdir/zx81\n\n
+rp_module_help="ROM Extensions: .o .p .81\n\nCopy your ZX81 roms to $romdir/zx81\n\n
     Exit          - Exit emulator (F10)\n
     Reset         - Reset emulator (F12)\n\n
 Read the README files for more information\n
@@ -41,6 +41,6 @@ function configure_sz81() {
     mkRomDir "zx81"
     defaultRAConfig "zx81"
 
-    addEmulator 1 "$md_id" "zx81" "pushd $md_inst; $md_inst/sz81 -f %ROM%; popd"
-    addSystem "zx81"
+    addEmulator 1 "$md_id" "zx81" "XINIT:pushd $md_inst; $md_inst/sz81 -f %ROM%; popd"
+    addSystem "zx81" "ZX81" ".o .p .81"
 }
