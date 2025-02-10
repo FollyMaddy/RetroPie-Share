@@ -42,5 +42,6 @@ function configure_sz81() {
     defaultRAConfig "zx81"
 
     addEmulator 1 "$md_id" "zx81" "XINIT:pushd $md_inst; $md_inst/sz81 -f %ROM%; popd"
+    addEmulator 0 "${md_id}hero" "zx81" "XINIT:pushd $md_inst; $md_inst/sz81 -f -b %ROM%; popd"
     addSystem "zx81" "ZX81" ".o .p .81"
 }
