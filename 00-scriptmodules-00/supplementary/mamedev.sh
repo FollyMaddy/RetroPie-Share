@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0272.00"
+rp_module_version="0274.00"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -38,7 +38,7 @@ if [[ -f $emudir/mame/mame ]];then
 fi
 rp_module_database_version=
 rp_module_database_excluded_versions=()
-rp_module_database_excluded_versions=( 242 244 254 256 257 268 269 270 )
+rp_module_database_excluded_versions=( 242 244 254 256 257 268 269 270 273)
 rp_module_database_versions=()
 #reading from internet seems to fail sometimes, perhaps due to a bad connection
 #rp_module_database_versions=( "" $(curl -s https://github.com/FollyMaddy/RetroPie-Share/tree/main/00-databases-00/mame|sed 's/:/\\\n/g'|grep _info\"|grep path|grep -v 023|grep -E -o '[0-9.]+'|sort -r) )
@@ -80,7 +80,11 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
-
+274.00 :\n\
+- add new database\n\
+- be able to download audio samples when using 274 or greater\n\
+- tag drivers in database that use arm 'dynarec'\n\
+- tag drivers in database that use audio 'samples'\n\
 272.00 :\n\
 - add new database\n\
 271.03 :\n\
@@ -446,7 +450,16 @@ function gui_mamedev() {
 ",►Switch to another mame database version,,subgui_databases_mamedev,,,,,show_message_mamedev \"If you are running an older MAME / lr-mame / lr-mess version\nthen you can select an older suitable database over here.\nThat way an install will have the best version match.\n\nOnly the databases that were created and suitable can be selected.\nIf you use a version that does not exist then select the closest one.\","
 ",►Choose and remove installs,,subgui_remove_installs_mamedev,,,,,show_message_mamedev \"A most likely list of the installs is presented.\nBy selecting a system or a category you can remove one.\nAfter that you will go back into the menu.\nNext time an updated list is presented again.\n\n- only 'mamedev' runcommands are removed from the emulators.cfg\n- then the emulators.cfg is removed if empty\n- the system is removed from es_systems.cfg if no emulators.cfg is found\n- the config directory is not removed !\","
 ",,,,,,,,,"
+	)
+	[[ $(expr $rp_module_version_database + 0) -lt 274 ]] && \
+    csv+=(
 ",►ARTWORK/CHEATS/GAMELISTS/JOYSTICKS/OVERLAYS/PATCHES,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_downloads_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
+	)
+	[[ $(expr $rp_module_version_database + 0) -gt 273 ]] && \
+    csv+=(
+",►ARTWORK/CHEATS/GAMELISTS/JOYSTICKS/OVERLAYS/PATCHES/SAMPLES,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/BIOS/mame/samples\n- $datadir/roms/mame/samples\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_downloads_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
+	)
+    csv+=(
 ",,,,,,,,,"
 ",►Link roms from folder ~/RetroPie/BIOS/mame,,show_message_mamedev \"Warning : files or links are forced overwritten\";subgui_link_roms_mamedev,,,,,show_message_mamedev \"Show categories and ultimately create hardlinks from files that are in ~/RetroPie/BIOS/mame.\nMake sure you have downloaded the whole set of roms and placed it in ~/RetroPie/BIOS/mame.\nFor example: get the mame-merged set and place all the files in in ~/RetroPie/BIOS/mame\nBy doing this you will also ensure that all the bios roms are in the correct directory so there will be no need to place bios files inside that folder again.\","
    )
@@ -1067,16 +1080,18 @@ The runcommands that were installed by the module-scripts used this run_mess.sh 
 ",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
 ",,,,"
 ",►Download cheatfile from list,,subgui_download_cheat_mamedev,,,,,show_message_mamedev \"When this script installs a system or category the cheat option in the configs will be turned on in lr-mess/lr-mame and MAME. Together with the cheat file you will be able to use cheats on certain games. The cheat file used can be found on http://www.mamecheat.co.uk\","
-",,,,"
 ",►Download gamelists,,subgui_gamelists_mamedev,,,,,show_message_mamedev \"Here you will find the options to use use RetroScraper and to install predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
-",,,,"
+	)
+	[[ $(expr $rp_module_version_database + 0) -gt 273 ]] && \
+    csv+=(
+",Download/update mame audio samples,,download_extra_files_mamedev https://www.progettosnaps.net/samples/packs/ MAME_samples_274.zip samples samples.7z extract_7z,,,,,show_message_mamedev \"Nohelp\","
+	)
+	csv+=(
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive_mamedev 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 $datadir/roms/mame/artwork,,,,,show_message_mamedev \"Here you will find the artwork files needed for a lot of handheld games and it's basically only working on MAME standalone. Some artwork files are custom made others are from other sources. Though we changed the background and bezel filenames in the archives so the options 'Create RetroArch xxxxxxxxxxx-overlays' can make use of these artwork files by extracting the overlay pictures and use them for lr-mess and lr-mame in retroarch.\","
 ",Create RetroArch background-overlays from artwork,,create_background_overlays_mamedev,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of background filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\","
 ",Create RetroArch 16:9 bezel-overlays from artwork,,create_bezel_overlays_mamedev -16-9,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\","
 ",Create RetroArch 16:9 bezel-overlays from artwork (+alternatives),,create_bezel_overlays_mamedev -16-9;create_bezel_overlays_mamedev 2-16-9,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\n\nIn contrary to the regular option this option will get some alternative looking bezels.\","
-",,,,"
 ",Setup Orionsangels Realistic Arcade Overlays > roms/realistic,@arcade,create_00index_file_mamedev '/@oro/' $datadir/roms/realistic;install_system_mamedev realistic realistic '' '' 'none' '';download_from_google_drive_mamedev 1m_8-LJpaUFxUtwHCyK4BLo6kiFsvMJmM $datadir/downloads;organise_realistic_overlays_mamedev,,,,,show_message_mamedev \"Orionsangels made a lot of realistic bezels for lr-mame in retroarch. Manually installing was a bit difficult as the files were for windows only. On top of that the configs also had fixed resolutions which is problematic when you don't use the same resolution.\n\nSelecting this option will install the category \"realistic\" in your roms directory. The bezels will be downloaded and patched for linux use and the resolutions will be converted to the resolution that is detected. If you change the resolution of your setup you have to select this option again so the configs are recreated again with the proper resolution settings. Selecting this a second time will skip downloading the bezels if they are still on your computer.\","
-",,,,"
     )
     build_menu_mamedev
 }
@@ -1099,7 +1114,7 @@ function subgui_download_cheat_mamedev() {
 A list of cheats from mamecheats.co.uk will be presented.\n\
 Selecting one will download the selected cheatfiles in /tmp/\n\
 Then it will be extracted and overwritten in :\n\
-- $datadir/BIOS/mame/cheat (for lr-mess)\n\
+- $datadir/BIOS/mame/cheat (for lr-mame/lr-mess)\n\
 - $datadir/roms/mame/cheat (for mame)"
     local csv=()
     #the first value is reserved for the column descriptions
@@ -1107,7 +1122,7 @@ Then it will be extracted and overwritten in :\n\
     local mamecheat_read
     clear
     echo "reading the available binaries"
-    while read mamecheat_read;do csv+=("$mamecheat_read");done < <(IFS=$'\n'; curl https://www.mamecheat.co.uk/mame_downloads.htm|grep ">XML"|sed 's/</"/g;s/>/"/g;s/XML //g;s/Release Date: //g'|while read line;do echo "\",$(echo $line|cut -d\" -f7),,download_cheats_mamedev $(echo $line|cut -d\" -f5),\"";done)
+    while read mamecheat_read;do csv+=("$mamecheat_read");done < <(IFS=$'\n'; curl https://www.mamecheat.co.uk/mame_downloads.htm|grep ">XML"|sed 's/</"/g;s/>/"/g;s/XML //g;s/Release Date: //g'|while read line;do echo "\",$(echo $line|cut -d\" -f7),,download_extra_files_mamedev https://www.mamecheat.co.uk $(echo $line|cut -d\" -f5) cheat cheat.7z,\"";done)
     build_menu_mamedev
 }
 
@@ -3034,20 +3049,32 @@ esac
 }
 
 
-function download_cheats_mamedev() {
+function download_extra_files_mamedev() {
+#when used for cheats, see https://www.mamecheat.co.uk/
+#when used for samples, see https://www.progettosnaps.net/samples/
 clear
-echo "get the cheat.7z and place it in the correct path"
+echo "get the $3 file and extract the files in the correct paths to :"
+echo "- $datadir/roms/mame/$3"
+echo "- $datadir/BIOS/mame/$3"
 echo
-#see https://www.mamecheat.co.uk/
-#backup of old and still working download link http://cheat.retrogames.com/$1 (18-01-2024)
-wget -N -P /tmp https://www.mamecheat.co.uk/$1
-#cheatpath for lr-mess
-unzip -o /tmp/${1##*/} cheat.7z -d $datadir/BIOS/mame/cheat
-chown -R $user:$user "$datadir/BIOS/mame/cheat" 
-#cheatpath for mame
-unzip -o /tmp/${1##*/} cheat.7z -d $datadir/roms/mame/cheat
-chown -R $user:$user "$datadir/roms/mame/cheat" 
-rm /tmp/${1##*/}
+#$1=weblink $2=filename $3=mame-folder $4=file_within_compressed_file_if_necessary $5=uncompress_extracted__7z_file
+wget -N -P /tmp $1/$2
+#folderpath for mame
+#${2##*/} is used  to get rid of the extra extension for the cheatfile
+unzip -o /tmp/${2##*/} $4 -d $datadir/roms/mame/$3
+if [[ $5 == extract_7z ]];then
+7za -y x $datadir/roms/mame/$3/$4 -o$datadir/roms/mame/$3
+rm $datadir/roms/mame/$3/$4
+fi
+chown -R $user:$user "$datadir/roms/mame/$3" 
+#folderpath for lr-mame/lr-mess
+unzip -o /tmp/${2##*/} $4 -d $datadir/BIOS/mame/$3
+if [[ $5 == extract_7z ]];then
+7za -y x $datadir/BIOS/mame/$3/$4 -o$datadir/BIOS/mame/$3
+rm $datadir/BIOS/mame/$3/$4
+fi
+chown -R $user:$user "$datadir/BIOS/mame/$3" 
+rm /tmp/${2##*/}
 }
 
 
