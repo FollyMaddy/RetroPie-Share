@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0274.00"
+rp_module_version="0274.01"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+274.01 :\n\
+- able to link .7z files\n\
 274.00 :\n\
 - add new database\n\
 - be able to download audio samples when using 274 or greater\n\
@@ -781,16 +783,20 @@ function subgui_link_roms_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,"
-",\Zr▼ NEW : Fully automated without clones (much quicker),,,,,,,,"
-",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"no\",,,,,,"
-",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
-",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\",,,,,,"
-",\Zr▲,,,,,,,,"
-",\Zr▼ NEW : Fully automated with clones (do all but slower),,,,,,,,"
-",►Show all non-arcade categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"yes\",,,,,,"
-",►Show all arcade     categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
-",►Show all arcade 90º categories from database and link roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
-",\Zr▲,,,,,,,,"
+",\Zr▼Link files : Fully automated without clones (much quicker),,,,,,,,"
+",►Show all non-arcade categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"no\" \".zip\",,,,,,"
+",►Show all arcade     categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\" \".zip\",,,,,,"
+",►Show all arcade 90º categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\" \".zip\",,,,,,"
+",►Show all non-arcade categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"no\" \".7z\",,,,,,"
+",►Show all arcade     categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\" \".7z\",,,,,,"
+",►Show all arcade 90º categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\" \".7z\",,,,,,"
+",\Zr▼Link files : Fully automated with clones (do all but slower),,,,,,,,"
+",►Show all non-arcade categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"yes\" \".zip\",,,,,,"
+",►Show all arcade     categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\" \".zip\",,,,,,"
+",►Show all arcade 90º categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\" \".zip\",,,,,,"
+",►Show all non-arcade categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@good@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"yes\" \".7z\",,,,,,"
+",►Show all arcade     categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\" \".7z\",,,,,,"
+",►Show all arcade 90º categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/ && /@good@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\" \".7z\",,,,,,"
     )
     build_menu_mamedev
 }
@@ -1518,7 +1524,7 @@ function subformgui_categories_automated_mamedev() {
 		local rompack_link_info=( "mame-0.264-roms-non-merged" ".zip" "\"mame-0.264-roms-non-merged/MAME 0.264 ROMs (non-merged)\"" )
 	else
 		#use BIOS/mame folder containing all files to make links in the roms folders
-		local rompack_link_info=( "$biosdir/mame" ".zip" )
+		local rompack_link_info=( "$biosdir/mame" "$6" )
 	fi
     local csv=()
     local action="$1"
