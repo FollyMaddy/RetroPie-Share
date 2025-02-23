@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0274.01"
+rp_module_version="0274.02"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+274.02 :\n\
+- add subfunction for adding default extra driver options\n\
+  - extra media options are detected and used for runcommands\n\
+  - add extra ide harddrive for aa5000\n\
 274.01 :\n\
 - able to link .7z files\n\
 274.00 :\n\
@@ -2162,6 +2166,54 @@ function install_or_restore_runcommand_script_mamedev() {
 
 
 function install_system_mamedev() {
+#if this addon doesn't function correctly then revert to 274.01
+#if it does function then the others from the function "install_system_proceed_mamedev" can probably be added over here too at a later stage
+#might be that some from the extra can also be added over here
+
+#this is a subfunction to add extra options to a driver by default before using the install_system_proceed_mamedev function
+#it's created so extra media slotoptions can be added
+#by using this extra media slotoptions are detected for creating proper runcommands
+option1="$1"
+option2="$2"
+option3="$3"
+option4="$4"
+option5="$5"
+option6="$6"
+option7="$7"
+option8="$8"
+option9="$9"
+option10="${10}"
+#
+if [[ -z $3 ]];then
+	[[ $1 == aa5000 ]] && show_message_mamedev "\
+By default an extra ide device is added for archimedes $1.\n\
+This will make the media options -hard1 and -hard2 in the runcommands.\n\
+You can use -hard2 for adding an extra harddrive image.\n\n\
+Use the application !Configure to add the extra ide device.\n\
+After reset you will notice that the harddrive has been added.\
+"
+	[[ $1 == aa5000 ]] && option3="-upc:ide:1 hdd"
+	
+	#make sure the script is not cheching for using other options anymore
+	option8="0"
+	clear
+fi
+#
+install_system_proceed_mamedev \
+"$option1" \
+"$option2" \
+"$option3" \
+"$option4" \
+"$option5" \
+"$option6" \
+"$option7" \
+"$option8" \
+"$option9" \
+"$option10"
+}
+
+
+function install_system_proceed_mamedev() {
 #part 0 : define strings, arrays and handheld/p&p/category platform information
 
 #mamedev arrays
@@ -2179,7 +2231,7 @@ newsystems=()
 namesfilter="\(brief|------"
 
 #filter on usefull media, otherwise we also get many unusefull scripts
-mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|flop3\)|\(cass|dump\)|cdrm\)|hard\)|\(hard1|\(min|\(mout|\(ssd|\(dpak"
+mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|flop3\)|\(cass|dump\)|cdrm\)|hard\)|\(hard1|\(hard2|\(min|\(mout|\(ssd|\(dpak"
 
 #string for adding extra extensions 
 addextensions=".zip .7z"
@@ -2330,10 +2382,12 @@ while read line; do
 # hbf700p          floppydisk       (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
 if [[ -z $line ]]; then
 systems+=( "${systems[-1]}" )
+ExtraPredefinedOptions+=( "$3" )
 ##echo ${systems[-1]} $line
 else
 # use the first column if seperated by a space
 systems+=( "$(echo $line)" )
+ExtraPredefinedOptions+=( "$3" )
 fi
 #use extra predefined options to alter when installing a driver from DEFAULT not installing from the section EXTRAS
 #here we just check if the last index number of the array systems combined to the ExtraPredefinedOptions is empty using ${ExtraPredefinedOptions[${#systems[@]}-1]} 
@@ -2379,7 +2433,7 @@ fi
 #[[ ${systems[${#systems[@]}-1]} == coco3 ]] && ExtraPredefinedOptions+=( "-ext multi -ext:multi:slot1 ram" )
 fi
 #
-done < <($emudir/mame/mame -listmedia $1 | grep -v -E "$namesfilter" | grep -E "$mediafilter" | cut -d " " -f 1)
+done < <($emudir/mame/mame -listmedia $1 $3| grep -v -E "$namesfilter" | grep -E "$mediafilter" | cut -d " " -f 1)
 fi
 [[ -n ${ExtraPredefinedOptions[@]} ]] && echo "use extra predefined options for ${systems[${#systems[@]}-1]}"
 
@@ -2445,7 +2499,7 @@ media+=( "$(echo $substitudeline | cut -d " " -f 2 | sed s/\(/-/g | sed s/\)//g)
 # use the second column if seperated by a ) character and cut off the first space
 extensions+=( "$(echo $substitudeline | cut -d ")" -f 2 | cut -c 2-)" )
 index=$(( $index + 1 ))
-done < <($emudir/mame/mame -listmedia $1 | grep -v -E "$namesfilter" | grep -E "$mediafilter")
+done < <($emudir/mame/mame -listmedia $1 $3| grep -v -E "$namesfilter" | grep -E "$mediafilter")
 fi
 #testline
 #echo testline ${mediadescriptions[@]} ${media[@]} ${extensions[@]} 
