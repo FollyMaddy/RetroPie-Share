@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0274.02"
+rp_module_version="0274.03"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+274.03 :\n\
+- add extra 4M ram and floppydrive for aa5000\n\
 274.02 :\n\
 - add subfunction for adding default extra driver options\n\
   - extra media options are detected and used for runcommands\n\
@@ -2186,13 +2188,17 @@ option10="${10}"
 #
 if [[ -z $3 ]];then
 	[[ $1 == aa5000 ]] && show_message_mamedev "\
-By default an extra ide device is added for archimedes $1.\n\
-This will make the media options -hard1 and -hard2 in the runcommands.\n\
+By default some extras is added for the archimedes $1:\n\
+- 4M of ram\n\
+- an extra floppydrive\n\
+- an extra ide harddrive\n\n\
+This will make the extra media options in the runcommands.\n\
 You can use -hard2 for adding an extra harddrive image.\n\n\
-Use the application !Configure to add the extra ide device.\n\
-After reset you will notice that the harddrive has been added.\
+Use the application !Configure to add the extra devices.\n\
+After reset you will notice that the devices have been added.\n\n\
+Be aware of the fact that games with 2 floppies do not always work when using 2 floppy drives, in that case use 1 floppy drive.\
 "
-	[[ $1 == aa5000 ]] && option3="-upc:ide:1 hdd"
+	[[ $1 == aa5000 ]] && option3="-ram 4M -upc:fdc:1 35hd -upc:ide:1 hdd"
 	
 	#make sure the script is not cheching for using other options anymore
 	option8="0"
