@@ -75,16 +75,15 @@ rm nintendovs.ini
 #remove old tigerh.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
 echo busy with tigerh.ini
-rm tigerh.ini
-/opt/retropie/emulators/mame/mame -listdevices|awk '/^D/&&/\(Tiger/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]]&&[[ -n $(/opt/retropie/emulators/mame/mame -listxml $driver| grep sourcefile=\"handheld) ]] && echo $driver;done > tigerh.ini
+#rm tigerh.ini
+#/opt/retropie/emulators/mame/mame -listdevices|awk '/^D/&&/\(Tiger/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]]&&[[ -n $(/opt/retropie/emulators/mame/mame -listxml $driver| grep sourcefile=\"handheld) ]] && echo $driver;done > tigerh.ini
 
 #remove old tigerrz.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
 echo busy with tigerrz.ini
-rm tigerrz.ini
-/opt/retropie/emulators/mame/mame -listdevices|awk '/\(R-Zone/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerrz.ini
+#rm tigerrz.ini
+#/opt/retropie/emulators/mame/mame -listdevices|awk '/\(R-Zone/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerrz.ini
 
-#run this after creating a tigerh.ini !
 #remove old classich.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
 #here is an array with all the handheld manufacturers which were in the earlier classich.ini
@@ -103,26 +102,32 @@ manufacturers=\
 'Conic'
 'Entex'
 'Epoch'
+'Elektronika'
 'Gakken'
 'GakkenKonami'
+'KmartCorporation'
+'Hasbro'
 'IdealToyCorporation'
 'MattelElectronics'
+'MattelElectronicsTeletapeProductions'
 'NelsoniclicensedfromNintendo'
 'Nelsonic'
 'ParkerBrothers'
+'TandyCorporation'
 'TigerElectronics'
 'Tomy'
 'Tronica'
 'U.S.Games'
 'VTech'
 '
-/opt/retropie/emulators/mame/mame -listdevices|awk "/Driver/"|cut -d " " -f2|while read driver; do  readmanufacturer="$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/manufacturer>/"|sed 's/^[ \t]*//;s/.manufacturer//g;s/>//g;s/<//g;s/ //g;s/'\('//g;s/'\)'//g;s/\///g')"; handheldinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/sourcefile=\"handheld/"); emulationinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/emulation=\"good/"); for manufacturer in $manufacturers; do [[ $manufacturer == $readmanufacturer ]]&&[[ -n $handheldinfo ]]&&[[ -n $emulationinfo ]]&&echo $driver; done; done > classich.ini
-#append mchess from mattel and do the checks on mattel (not handheld)
-/opt/retropie/emulators/mame/mame -listdevices mchess|awk "/Driver/"|cut -d " " -f2|while read driver; do  readmanufacturer="$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/manufacturer>/"|sed 's/^[ \t]*//;s/.manufacturer//g;s/>//g;s/<//g;s/ //g;s/'\('//g;s/'\)'//g;s/\///g')"; handheldinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/sourcefile=\"mattel/"); emulationinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/emulation=\"good/"); for manufacturer in $manufacturers; do [[ $manufacturer == $readmanufacturer ]]&&[[ -n $handheldinfo ]]&&[[ -n $emulationinfo ]]&&echo $driver; done; done >> classich.ini
-#make sure the tigerh.ini is created earlier then
-#remove tigerh games from the list with this command
-#N does append the next line in the pattern space so whole exact matches are removed including the newline
-#append old driver tbaskb (not in mame database anymore !)
-echo tbaskb >> classich.ini
-cat tigerh.ini |while read driver;do sed -i "N;s/$driver\\n//g" classich.ini ; done
+/opt/retropie/emulators/mame/mame -listdevices|awk "/Driver/"|cut -d " " -f2|while read driver; do  readmanufacturer="$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/manufacturer>/"|sed 's/^[ \t]*//;s/.manufacturer//g;s/>//g;s/<//g;s/ //g;s/'\('//g;s/'\)'//g;s/\///g')"; handheldinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/sourcefile=\"handheld/||/tag=\"screen\" type=\"lcd\"/||/tag=\"screen\" type=\"svg\"/"); emulationinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/emulation=\"good/");mediainfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/cartslot/"); for manufacturer in $manufacturers; do [[ $manufacturer == $readmanufacturer ]]&&[[ -n $handheldinfo ]]&&[[ -n $emulationinfo ]]&&[[ -z $mediainfo ]]&&echo $driver; done; done > classich.ini
+#remove selection of drivers
+perl -pi -e "s/comparc\n//g" classich.ini
+perl -pi -e "s/comparca\n//g" classich.ini
+perl -pi -e "s/monkeysee\n//g" classich.ini
+perl -pi -e "s/vclock3\n//g" classich.ini
+#make sure the tigerh.ini tigerrz.ini are created earlier then classich.ini
+#remove tigerh and tigerrz games from the list with this command (old sed command didn't work correctly)
+cat tigerh.ini |while read driver;do perl -pi -e "s/$driver\n//g" classich.ini; done
+cat tigerrz.ini |while read driver;do perl -pi -e "s/$driver\n//g" classich.ini; done
 sort -o classich.ini classich.ini
