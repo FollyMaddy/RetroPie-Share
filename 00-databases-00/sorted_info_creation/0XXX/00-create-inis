@@ -84,6 +84,7 @@ echo busy with tigerrz.ini
 rm tigerrz.ini
 /opt/retropie/emulators/mame/mame -listdevices|awk '/\(R-Zone/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerrz.ini
 
+##adding epo_tetr and gigpets needs to be fixed (screen is raster !)
 #remove old classich.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
 #here is an array with all the handheld manufacturers which were in the earlier classich.ini
