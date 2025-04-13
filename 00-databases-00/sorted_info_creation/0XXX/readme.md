@@ -70,10 +70,11 @@ When I close 'meld','meld' will be opened with another ini for checking until I 
 90º.ini seems ok
 
 classich.ini :
-nstarfox and mchess, which are not detected automatically, need to be added.
-taddams, tbtoads, tinday, tmchammer and tnmarebc are tiger handheld and are in tigerh.ini and can be removed from classich. 
-(I have added commands to remove above tiger drivers but that doesn't seem to work so I still need to do this manually)
-For now classich.ini is after adding and removing still the same as older versions.
+~nstarfox and mchess, which are not detected automatically, need to be added.~ Fixed
+~taddams, tbtoads, tinday, tmchammer and tnmarebc are tiger handheld and are in tigerh.ini and can be removed from classich.~ Fixed
+~(I have added commands to remove above tiger drivers but that doesn't seem to work so I still need to do this manually)~ fixed
+~For now classich.ini is after adding and removing still the same as older versions.~ 
+epo_tetr and gigapets need to be added for detection (screen is raster !)
 
 good.ini seems ok
 
