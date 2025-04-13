@@ -75,14 +75,14 @@ rm nintendovs.ini
 #remove old tigerh.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
 echo busy with tigerh.ini
-#rm tigerh.ini
-#/opt/retropie/emulators/mame/mame -listdevices|awk '/^D/&&/\(Tiger/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]]&&[[ -n $(/opt/retropie/emulators/mame/mame -listxml $driver| grep sourcefile=\"handheld) ]] && echo $driver;done > tigerh.ini
+rm tigerh.ini
+/opt/retropie/emulators/mame/mame -listdevices|awk '/^D/&&/\(Tiger/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]]&&[[ -n $(/opt/retropie/emulators/mame/mame -listxml $driver| grep sourcefile=\"handheld) ]] && echo $driver;done > tigerh.ini
 
 #remove old tigerrz.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
 echo busy with tigerrz.ini
-#rm tigerrz.ini
-#/opt/retropie/emulators/mame/mame -listdevices|awk '/\(R-Zone/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerrz.ini
+rm tigerrz.ini
+/opt/retropie/emulators/mame/mame -listdevices|awk '/\(R-Zone/'|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > tigerrz.ini
 
 #remove old classich.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
