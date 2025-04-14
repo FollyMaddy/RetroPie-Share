@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+276.00 :\n\
+- add new database\n\
 275.00 :\n\
 - add new database\n\
 274.03 :\n\
