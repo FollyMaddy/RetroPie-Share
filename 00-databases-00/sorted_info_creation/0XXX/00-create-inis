@@ -63,6 +63,8 @@ rm lightgun.ini
 #neogeo can be extracted from hash !
 #no check on good or bad rom because we want the info added for both good and preliminary roms
 #we can sort on good or preliminary later
+echo busy with neogeo.ini
+rm neogeo.ini
 cat /opt/retropie/emulators/mame/hash/neogeo.xml|grep "software name="|cut -d\" -f2|sort > neogeo.ini
 
 #remove old nintendovs.ini and create a recent one (no emulation="good" check)
