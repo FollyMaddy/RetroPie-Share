@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0277.00"
+rp_module_version="0277.01"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,12 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+277.01 :\n\
+- add stickfreaks binaries again\n\
+  - curl connection secure again\n\
+  - has armhf and aarch64 binaries\n\
+  - has binaries for Debian13/Trixie\n\
+  - includes programs like tapeconv or chdman\n\
 277.00 :\n\
 - add new database\n\
 276.00 :\n\
@@ -752,12 +758,14 @@ A list of mame binaries will be presented, selecting one will :\n\
 Make sure you pick the correct arch :\n\
 - \"rpi2b\" is not an arch but is for rpi2b using 32 bit OS\n\
 - \"armhf\" is for rpi's with armhf, armv7l or aarch64 cpu using 32 bit OS\n\
+- \"arm64\" is used as a synonym for aarch64 cpu using 64 bit OS\n\
 - \"aarch64\" is for aarch64 cpu using 64 bit OS\n\
 Make sure you use the correct OS version :\n\
 - gcc8 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
 - gcc9 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
 - gcc10 should work on Debian11/Bullseye & Debian12/Bookworm derivatives\n\
-- gcc12 should work on Debian12/Bookworm derivatives\n\
+- gcc12 should work on Debian12/Bookworm & Debian13/Trixie derivatives\n\
+- gcc13 should work on Debian13/Trixie derivatives\n\
 "
     local csv=()
     #the first value is reserved for the column descriptions
@@ -765,8 +773,8 @@ Make sure you use the correct OS version :\n\
     local stickfreaks_read
     clear
     echo "reading the available binaries"
-    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl --insecure https://stickfreaks.com/mame/|grep \"mame_.*7z|cut -d '"' -f2|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line,\"";done)
-    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl --insecure https://stickfreaks.com/mame/old/|grep \"mame_.*7z|cut -d '"' -f2|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line old/,\"";done)
+    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl $1 https://stickfreaks.com/mame/|grep \"mame_.*7z|cut -d '"' -f2|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line,\"";done)
+    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl $1 https://stickfreaks.com/mame/old/|grep \"mame_.*7z|cut -d '"' -f2|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line old/,\"";done)
     build_menu_mamedev
 }
 
@@ -1668,6 +1676,19 @@ function subgui_installs_mamedev() {
 ",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",,,,"
+	)
+if [[ $(curl https://stickfreaks.com/mame/ 2>&1) == *problem* ]];then
+	csv+=(
+",\Z1►Insecure:\Z4►Show and install mame from stickfreaks binary list,,show_message_yesno_mamedev \"Curl says that the connection to the strickfreaks website is insecure.\nProceed at your own risk or cancel by selecting no.\" \"subgui_stickfreaks_binaries_mamedev --insecure\","
+",,,,"
+	)
+else
+	csv+=(
+",\Z4►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
+",,,,"
+	)
+fi
+	csv+=(
 ",▼\Zr\Z1Experimental : Usage is for your own risk !,,,"
 ",\Z3Install rpi1/0 mame0255 binary (only : channelf apfm1000 ...),,\
 sed -i 's/ \!armv6//g' $scriptdir/scriptmodules/emulators/mame.sh;\
