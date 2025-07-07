@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+277.02 :\n\
+- change message\n\
+  - debian12 binaries do not work on debian13\n\
 277.01 :\n\
 - add stickfreaks binaries again\n\
   - curl connection secure again\n\
@@ -764,7 +767,7 @@ Make sure you use the correct OS version :\n\
 - gcc8 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
 - gcc9 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
 - gcc10 should work on Debian11/Bullseye & Debian12/Bookworm derivatives\n\
-- gcc12 should work on Debian12/Bookworm & Debian13/Trixie derivatives\n\
+- gcc12 should work on Debian12/Bookworm derivatives\n\
 - gcc13 should work on Debian13/Trixie derivatives\n\
 "
     local csv=()
