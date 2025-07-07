@@ -6,6 +6,18 @@ echo busy with good.ini
 rm good.ini
 /opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver;do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver|grep "emulation="|cut -d\" -f4) == good ]] && echo $driver;done > good.ini
 
+#remove old model2.ini and create a recent one (no emulation="good" check)
+#no check on good or bad rom because we want the info added for both good and preliminary roms
+echo busy with model2.ini
+rm model2.ini
+/opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver; do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver) == *sega/model2* ]]&&echo $driver;done > model2.ini
+
+#remove old model3.ini and create a recent one (no emulation="good" check)
+#no check on good or bad rom because we want the info added for both good and preliminary roms
+echo busy with model3.ini
+rm model3.ini
+/opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver; do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver) == *sega/model3* ]]&&echo $driver;done > model3.ini
+
 #remove no_media.ini and create a recent one (create list with drivers that do not use any media like cartridges, cassettes or floppies etc)
 echo busy with no_media.ini
 rm no_media.ini
