@@ -30,6 +30,17 @@ echo busy with 90º.ini
 rm 90º.ini
 /opt/retropie/emulators/mame/mame -listdevices|grep ^Driver|cut -d " " -f2|while read driver; do [[ $(/opt/retropie/emulators/mame/mame -listxml $driver) == *rotate=\"90\"* ]]||[[ $(/opt/retropie/emulators/mame/mame -listxml $driver) == *rotate=\"270\"* ]]&&echo $driver;done > 90º.ini
 
+echo busy with elektronikah.ini
+rm elektronikah.ini
+manufacturers=()
+manufacturers=\
+'
+'Elektronika'
+'
+#better command as used with the old classich.ini, it will detect also if parts of the manufacturer is in the manufacturer output of -listxml
+#an example is "bootlegElektronika" will also be detected without adding it to the array.
+/opt/retropie/emulators/mame/mame -listdevices|awk "/Driver/"|cut -d " " -f2|while read driver; do  readmanufacturer="$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/manufacturer>/"|sed 's/^[ \t]*//;s/.manufacturer//g;s/>//g;s/<//g;s/ //g;s/'\('//g;s/'\)'//g;s/\///g')"; handheldinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/sourcefile=\"handheld/||/tag=\"screen\" type=\"lcd\"/||/tag=\"screen\" type=\"svg\"/"); emulationinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/emulation=\"good/");mediainfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/cartslot/"); for manufacturer in $manufacturers; do [[ $readmanufacturer =~ .*$manufacturer.* ]]&&[[ -n $handheldinfo ]]&&[[ -n $emulationinfo ]]&&[[ -z $mediainfo ]]&&echo $driver; done; done > elektronikah.ini
+
 #remove old gameandwatch.ini and create a recent one (with emulation="good" check)
 #check on good emulation is done because with the tutorial the list had only good roms
 echo busy with gameandwatch.ini
@@ -136,6 +147,10 @@ manufacturers=\
 'VTech'
 '
 /opt/retropie/emulators/mame/mame -listdevices|awk "/Driver/"|cut -d " " -f2|while read driver; do  readmanufacturer="$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/manufacturer>/"|sed 's/^[ \t]*//;s/.manufacturer//g;s/>//g;s/<//g;s/ //g;s/'\('//g;s/'\)'//g;s/\///g')"; handheldinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/sourcefile=\"handheld/||/tag=\"screen\" type=\"lcd\"/||/tag=\"screen\" type=\"svg\"/"); emulationinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/emulation=\"good/");mediainfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/cartslot/"); for manufacturer in $manufacturers; do [[ $manufacturer == $readmanufacturer ]]&&[[ -n $handheldinfo ]]&&[[ -n $emulationinfo ]]&&[[ -z $mediainfo ]]&&echo $driver; done; done > classich.ini
+#better command just like with creating elektronikah.ini, it will detect also if parts of the manufacturer is in the manufacturer output of -listxml
+#an example is "U.S.Games Corporation" will also be detected without adding it to the array.
+#however seems there are only a few discutable drivers extra found so keeping the old command for now.
+#/opt/retropie/emulators/mame/mame -listdevices|awk "/Driver/"|cut -d " " -f2|while read driver; do  readmanufacturer="$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/manufacturer>/"|sed 's/^[ \t]*//;s/.manufacturer//g;s/>//g;s/<//g;s/ //g;s/'\('//g;s/'\)'//g;s/\///g')"; handheldinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/sourcefile=\"handheld/||/tag=\"screen\" type=\"lcd\"/||/tag=\"screen\" type=\"svg\"/"); emulationinfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/emulation=\"good/");mediainfo=$(/opt/retropie/emulators/mame/mame -listxml $driver|awk "/cartslot/"); for manufacturer in $manufacturers; do [[ $readmanufacturer =~ .*$manufacturer.* ]]&&[[ -n $handheldinfo ]]&&[[ -n $emulationinfo ]]&&[[ -z $mediainfo ]]&&echo $driver; done; done > classich.ini
 #remove selection of drivers
 perl -pi -e "s/comparc\n//g" classich.ini
 perl -pi -e "s/comparca\n//g" classich.ini
