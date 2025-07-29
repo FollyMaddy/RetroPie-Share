@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0278.00"
+rp_module_version="0278.01"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+278.01 :\n\
+- fix : create good csv lines from the database\n\
+  - last tag needs to end with @\n\
 278.00 :\n\
 - add new database\n\
 - turn off 'upright'\n\
@@ -610,7 +613,9 @@ function read_data_mamedev() {
 	echo "Be patient for 20 seconds" 
 	#here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
 	#we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-	while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,install_system_mamedev,/;s/.$/,,,\"/')
+	#at the end it removes the last char, this is the @ char and not the newline as expected so we need to add the @ again
+	#/r or /n did not do the job properly so it's replaced by .$ and adding the @ again
+	while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,install_system_mamedev,/;s/.$/@,,,\"/')
         fi
     fi
 }
@@ -1874,6 +1879,9 @@ dialog \
     mkdir -p $destination_path
     read_data_mamedev clear
     IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
+	echo ${mamedev_csv[1]}
+	echo ${restricted_download_csv[1]}
+	read
     for rd in ${!restricted_download_csv[@]};do 
     echo "busy with ${restricted_download_csv[$rd]}$file_extension"
     #display onle the lines "Nothing to do." "Not Found." and progress "%" using awk or grep command : awk '/do\./||/Found\./||/\%/' : grep -E 'do\.|Found\.|%'
@@ -1883,6 +1891,7 @@ dialog \
 		[[ -f "$rompack_path/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension" ]] && \
 		ln -f "$rompack_path/$($emudir/mame/mame -listxml "${restricted_download_csv[$rd]}"|awk '/cloneof=/'|cut -d\" -f6)$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
 		else
+		echo "$rompack_path/${restricted_download_csv[$rd]}$file_extension"
 		[[ -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" ]] && \
 		ln -f "$rompack_path/${restricted_download_csv[$rd]}$file_extension" "$destination_path/${restricted_download_csv[$rd]}$file_extension" 2>&1
 		fi
