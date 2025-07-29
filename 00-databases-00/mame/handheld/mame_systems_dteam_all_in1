@@ -1,84 +1,123 @@
-Driver ablmini (Double Players Mini Joystick 80-in-1 (MJ8500, ABL TV Game)): @all_in1@good@handheld@multi-games@non-arcade
-Driver ablpinb (Pinball (P8002, ABL TV Game)): @all_in1@good@handheld@non-arcade@pinball
-Driver bittboy (BittBoy Mini FC 300 in 1): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver cybar120 (Defender M2500P 120-in-1): @all_in1@compilation@good@multigame@non-arcade
-Driver dgun2573 (My Arcade Gamer V Portable Gaming System (DGUN-2573) (set 1, newer)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver dnv200fs (Denver (GMP-270CMK2) (Family Sport 200-in-1)): @all_in1@good@handheld@multi-games@non-arcade
-Driver fapocket (Family Pocket 638 in 1): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver fcpocket (FC Pocket 600 in 1): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver fordrace (Ford Racing): @all_in1@driving@good@handheld@non-arcade
-Driver gprnrs1 (Game Prince RS-1): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver gprnrs16 (Game Prince RS-16): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver ii32in1 (InterAct 32-in-1): @all_in1@compilation@good@multigame@non-arcade
-Driver ii8in1 (InterAct 8-in-1): @all_in1@compilation@good@multigame@non-arcade
-Driver intact89 (InterAct Complete Video Game - 89-in-1): @all_in1@game_console@good@home_videogame@non-arcade
-Driver intg5410 (InterAct Complete Video Game - 111 Games & 42 Songs (G5410)): @all_in1@handheld@multi-games@non-arcade
-Driver itvg49 (Interactive TV Games 49-in-1 (PAL)): @all_in1@good@handheld@multi-games@non-arcade
-Driver lexiseal (Seal 50-in-1): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver lexizeus (Zeus IG900 20-in-1 (US?)): @all_in1@game_console@good@home_videogame@non-arcade
-Driver lx_jg7415 (Lexibook JG7415 120-in-1): @all_in1@game_console@good@home_videogame@non-arcade
-Driver m505neo (Millennium M505 Arcade Neo Portable Spielkonsole (Family Sport 100-in-1)): @all_in1@good@handheld@multi-games@non-arcade
-Driver m521neo (Millennium M521 Arcade Neo 2.0 (Family Sport 220-in-1) ): @all_in1@good@handheld@multi-games@non-arcade
-Driver majkon (Konami Collector's Series Arcade Advanced): @all_in1@console_cartridge@good@handheld@non-arcade
-Driver mc_105te (2011 Super HiK 105 in 1 Turbo Edition): @all_in1@game_console@multi-games@non-arcade
-Driver mc_110cb (110 in 1 CoolBaby (CoolBoy RS-1S)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_138cb (138 in 1 CoolBaby (CoolBoy RS-5, PCB060-10009011V1.3)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_7x6ss (777777 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_89in1 (89 in 1 Mini Game Console (060-92023011V1.0)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_8x6cb (888888 in 1 (Coolboy AEF-390)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_8x6ss (888888 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_9x6ss (999999 in 1 (PXP2 Slim Station)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_aa2 (100 in 1 Arcade Action II (AT-103)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_cb280 (Coolboy RS-18 (280 in 1)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_dcat8 (100 in 1 (D-CAT8 8bit Console, set 1) (v5.01.11-frd, BL 20041217)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_dg101 (dreamGEAR 101 in 1): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_dgear (dreamGEAR 75-in-1): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_hh210 (Handheld 210 in 1): @all_in1@game_console@multi-games@non-arcade
-Driver mc_sam60 (Samuri (60 in 1)): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_sp69 (Sports Game 69 in 1): @all_in1@game_console@good@multi-games@non-arcade
-Driver mc_tv200 (200 in 1 Retro TV Game): @all_in1@game_console@good@multi-games@non-arcade
-Driver megapad (Megapad 31-in-1): @all_in1@handheld@home_videogame_console@non-arcade
-Driver mgt20in1 (MGT 20-in-1 TV-Spielekonsole (Germany)): @all_in1@good@handheld@multi-games@non-arcade
-Driver miwi2_7 (MiWi2 7-in-1 Sports): @all_in1@good@handheld@multi-games@non-arcade
-Driver mysprtch (My Sports Challenge (5-in-1 version)): @all_in1@good@handheld@multi-sport@non-arcade
-Driver mysprtcp (My Sports Challenge Plus / Wireless Sports Plus): @all_in1@good@handheld@multi-sport@non-arcade
-Driver mysptqvc (My Sports Challenge (6-in-1 version, QVC license)): @all_in1@good@handheld@multi-sport@non-arcade
-Driver namcons1 (Let's! TV Play Classic - Namco Nostalgia 1 (Japan)): @all_in1@good@handheld@multi-games@non-arcade
-Driver namcons2 (Let's! TV Play Classic - Namco Nostalgia 2 (Japan)): @all_in1@good@handheld@multi-games@non-arcade
-Driver njp60in1 (NJ Pocket 60-in-1 handheld 'X zero' (NTSC)): @all_in1@game_console@home_videogame@non-arcade
-Driver oplayer (OPlayer Mobile Game Console (MGS03-white) (Family Sport 100-in-1)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver pballpup (Mission: Paintball Powered Up): @all_in1@good@handheld@lightgun@non-arcade@shooter
-Driver pdc100 (PDC100 - Pocket Dream Console (Anncia, US)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver pdc150t (PDC150 Tactile - Pocket Dream Console (VideoJet, France)): @all_in1@good@handheld@home_videogame_console@lightgun@non-arcade
-Driver pdc200 (PDC200 - Pocket Dream Console (VideoJet, France)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver pdc40t (PDC40 Tactile - Pocket Dream Console (VideoJet, France)): @all_in1@good@handheld@home_videogame_console@lightgun@non-arcade
-Driver pdc50 (PDC50 - Pocket Dream Console (VideoJet, France)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver pjoyn50 (PowerJoy Navigator 50 in 1): @all_in1@compilation@good@multigame@non-arcade
-Driver pjoys30 (PowerJoy Supermax 30 in 1): @all_in1@compilation@good@multigame@non-arcade
-Driver pjoys60 (PowerJoy Supermax 60 in 1): @all_in1@compilation@good@multigame@non-arcade
-Driver ppgc200g (Plug & Play Game Controller with 200 Games (Supreme 200)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver react (Reactor 32-in-1 (NTSC)): @all_in1@game_console@good@multi-games@non-arcade
-Driver reactmd (Reactor MD (PAL)): @all_in1@game_console@home_videogame@non-arcade
-Driver rminitv (Retro 'Mini TV' Console 300-in-1): @all_in1@good@handheld@multi-games@non-arcade
-Driver sarc110 (Super Arcade 101-in-1 (set 1)): @all_in1@compilation@multigame@non-arcade
-Driver sudopptv (Sudoku Plug & Play TV Game '6 Intelligent Games'): @all_in1@board_game@good@handheld@non-arcade
-Driver swclone (Star Wars - The Clone Wars): @action@all_in1@good@handheld@lightgun@non-arcade
-Driver sy888b (SY-888B 288 in 1 Handheld): @all_in1@compilation@good@multigame@non-arcade
-Driver sy889 (SY-889 300 in 1 Handheld): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver taitons1 (Let's! TV Play Classic - Taito Nostalgia 1 (Japan)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver taitons2 (Let's! TV Play Classic - Taito Nostalgia 2 (Japan)): @all_in1@good@handheld@multi-games@non-arcade
-Driver tak_geig (Geigeki Go Go Shooting (Japan)): @all_in1@good@handheld@non-arcade@shoot_'em_up
-Driver techni4 (Technigame Super 4-in-1 Sports (PAL)): @all_in1@good@handheld@multi-sport@non-arcade
-Driver timetp36 (Super Game 36-in-1 (TimeTop SuperGame) (PAL)): @all_in1@game_console@good@multi-games@non-arcade
-Driver tmntmutm (Teenage Mutant Ninja Turtles: Mutant and Monster Mayhem): @action@all_in1@good@handheld@lightgun@non-arcade
-Driver tmntpdc (Teenage Mutant Ninja Turtles - Pocket Dream Console (VideoJet, France)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver tomcpin (Champiyon Pinball (Japan)): @all_in1@good@handheld@non-arcade@pinball
-Driver unk1682 (unknown VT1682-based 101-in-1 handheld (PAL)): @all_in1@game_console@home_videogame@non-arcade
-Driver vgcaplet (VG Pocket Caplet Fast Acting 50-in-1): @all_in1@good@handheld@multi-games@non-arcade
-Driver vgpmini (VG Pocket Mini (VG-1500)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver vgpocket (VG Pocket (VG-2000)): @all_in1@good@handheld@home_videogame_console@non-arcade
-Driver vjpp2 (Plug Play TV Games 2 (4-in-1) (VideoJet, France)): @all_in1@good@handheld@multi-games@non-arcade
-Driver vsplus (Vs Power Plus 30-in-1): @all_in1@good@handheld@multi-games@non-arcade
-Driver zdog (ZDog (44 in 1)): @all_in1@compilation@good@multigame@non-arcade
-Driver zone7in1 (Zone 7-in-1 Sports (NTSC)): @all_in1@good@handheld@multi-games@non-arcade
-Driver zudugo (Zudu-go / 2udu-go): @all_in1@game_console@good@home_videogame@non-arcade
+265games (265-in-1 Handheld Game (SPG2xx based))
+88in1joy (Joystick88)
+ablmini (Double Players Mini Joystick 80-in-1 (MJ8500, ABL TV Game))
+ablpinb (Pinball (P8002, ABL TV Game))
+arcade10 (Mini Arcade Console (Arcade 10-in-1))
+backybbs (Backyard Baseball &amp; Soccer)
+ban_krkk (Let's! TV Play Nou to Karada o Kitaeru Taikan Zunou Family Mattore (Japan))
+barbpet (Barbie
+bittboy (BittBoy Mini FC 300 in 1)
+brke23p2 (Brick Game 96 in 1 (E-23 Plus Mark II))
+carled99 (Carl Edwards 99)
+cmpmx10 (Classic Max Pocket Mx-10 - 12 in 1 (vertical))
+cmpmx11 (Classic Max Pocket PCMX11 - 12 in 1 Colour Games Console (horizontal, France))
+cybar120 (Defender M2500P 120-in-1)
+dgun2573 (My Arcade Gamer V Portable Gaming System (DGUN-2573) (set 1, newer))
+dgun2953 (My Arcade Gamer Mini 160-in-1 (DGUN-2953))
+dgun2959 (My Arcade Plug And Play 220 Game Retro Controller (DGUN-2959))
+disppal (Disney Game It! Princess Pals)
+dnv200fs (Denver (GMP-270CMK2) (Family Sport 200-in-1))
+dphh8630 (Digital Pocket Hand Held System 230-in-1 - Model 8630 / Model 8633)
+dreamlif (Dream Life (Version 1.0, Feb 07 2005))
+dsgnwrld (Designer's World (Version 1.0, Dec 20 2005))
+fapocket (Family Pocket 638 in 1)
+fccomp88 (FC Compact 88-in-1 (CC-SFFC-WT) (Japan))
+fcpocket (FC Pocket 600 in 1)
+fordrace (Ford Racing)
+ga888 (Block Game &amp; Echo Key GA888)
+gamezn2 (Game Zone II 128-in-1)
+gprnrs1 (Game Prince RS-1)
+gprnrs16 (Game Prince RS-16)
+gujtv108 (GameU Joint TV Bank 108-in-1 (model AH9069))
+hotwhls (Hot Wheels (steering wheel controller))
+ii32in1 (InterAct 32-in-1)
+ii8in1 (InterAct 8-in-1)
+intact89 (InterAct Complete Video Game - 89-in-1)
+intg5410 (InterAct Complete Video Game - 111 Games &amp; 42 Songs (G5410))
+itvg49 (Interactive TV Games 49-in-1 (PAL))
+lexiseal (Seal 50-in-1)
+lexizeus (Zeus IG900 20-in-1 (US?))
+lpetshop (Littlest Pet Shop)
+lx_jg7415 (Lexibook JG7415 120-in-1)
+lxairjet (Super TV Air Jet 6-in-1 (Lexibook Junior))
+lxnoddy (Noddy's TV Console)
+m505neo (Millennium M505 Arcade Neo Portable Spielkonsole (Family Sport 100-in-1))
+m521neo (Millennium M521 Arcade Neo 2.0 (Family Sport 220-in-1) )
+majkon (Konami Collector's Series Arcade Advanced)
+marc101 (Millennium Arcade 101 (M489) (Game Station 2 101-in-1))
+marc250 (Millennium Arcade 250 (M527))
+mc_105te (2011 Super HiK 105 in 1 Turbo Edition)
+mc_110cb (110 in 1 CoolBaby (CoolBoy RS-1S))
+mc_138cb (138 in 1 CoolBaby (CoolBoy RS-5, PCB060-10009011V1.3))
+mc_7x6ss (777777 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB))
+mc_89in1 (89 in 1 Mini Game Console (060-92023011V1.0))
+mc_8x6cb (888888 in 1 (Coolboy AEF-390))
+mc_8x6ss (888888 in 1 (8 bit Slim Station, NEWPXP-DVT22-A PCB))
+mc_9x6ss (999999 in 1 (PXP2 Slim Station))
+mc_aa2 (100 in 1 Arcade Action II (AT-103))
+mc_cb280 (Coolboy RS-18 (280 in 1))
+mc_dcat8 (100 in 1 (D-CAT8 8bit Console, set 1) (v5.01.11-frd, BL 20041217))
+mc_dg101 (dreamGEAR 101 in 1)
+mc_dgear (dreamGEAR 75-in-1)
+mc_hh210 (Handheld 210 in 1)
+mc_sam60 (Samuri (60 in 1))
+mc_sp69 (Sports Game 69 in 1)
+mc_tv200 (200 in 1 Retro TV Game)
+megapad (Megapad 31-in-1)
+mgt20in1 (MGT 20-in-1 TV-Spielekonsole (Germany))
+miwi2_7 (MiWi2 7-in-1 Sports)
+mylpony (My Little Pony - Grand Puzzleventure)
+mysprtch (My Sports Challenge (5-in-1 version))
+mysprtcp (My Sports Challenge Plus / Wireless Sports Plus)
+mysptqvc (My Sports Challenge (6-in-1 version, QVC license))
+namcons1 (Let's! TV Play Classic - Namco Nostalgia 1 (Japan))
+namcons2 (Let's! TV Play Classic - Namco Nostalgia 2 (Japan))
+njp60in1 (NJ Pocket 60-in-1 handheld 'X zero' (NTSC))
+oplayer (OPlayer Mobile Game Console (MGS03-white) (Family Sport 100-in-1))
+ouipdc (Oui-Oui - Pocket Dream Console (VideoJet, France))
+pballpup (Mission
+pdc100 (PDC100 - Pocket Dream Console (Anncia, US))
+pdc150t (PDC150 Tactile - Pocket Dream Console (VideoJet, France))
+pdc200 (PDC200 - Pocket Dream Console (VideoJet, France))
+pdc30p (PDC30 - Pocket Dream Console (Pink version) (VideoJet, France))
+pdc40t (PDC40 Tactile - Pocket Dream Console (VideoJet, France))
+pdc50 (PDC50 - Pocket Dream Console (VideoJet, France))
+pgs268 (Portable Game Station 268-in-1)
+pjoyn50 (PowerJoy Navigator 50 in 1)
+pjoys30 (PowerJoy Supermax 30 in 1)
+pjoys60 (PowerJoy Supermax 60 in 1)
+ppgc200g (Plug &amp; Play Game Controller with 200 Games (Supreme 200))
+racechl8 (Racing Challenge - 8 Games In 1)
+ragc153 (Retro Arcade Game Controller 153-in-1)
+react (Reactor 32-in-1 (NTSC))
+reactmd (Reactor MD (PAL))
+rhhc152 (Retro Handheld Console 152-in-1)
+rminitv (Retro 'Mini TV' Console 300-in-1)
+rocksock (Rock 'Em Sock 'Em Robots (TV Game))
+sarc110 (Super Arcade 101-in-1 (set 1))
+sudopptv (Sudoku Plug &amp; Play TV Game '6 Intelligent Games')
+supreme (Arcade Classics Mini Handheld Arcade (Supreme 150))
+swclone (Star Wars
+sy888b (SY-888B 288 in 1 Handheld)
+sy889 (SY-889 300 in 1 Handheld)
+taitons1 (Let's! TV Play Classic - Taito Nostalgia 1 (Japan))
+taitons2 (Let's! TV Play Classic - Taito Nostalgia 2 (Japan))
+tak_geig (Geigeki Go Go Shooting (Japan))
+tak_wdg (Webdiver DX W-05 Gladion (Japan))
+techni4 (Technigame Super 4-in-1 Sports (PAL))
+timetp36 (Super Game 36-in-1 (TimeTop SuperGame) (PAL))
+tmntmutm (Teenage Mutant Ninja Turtles
+tmntpdc (Teenage Mutant Ninja Turtles - Pocket Dream Console (VideoJet, France))
+tomcpin (Champiyon Pinball (Japan))
+unk1682 (unknown VT1682-based 101-in-1 handheld (PAL))
+vgcaplet (VG Pocket Caplet Fast Acting 50-in-1)
+vgpmini (VG Pocket Mini (VG-1500))
+vgpocket (VG Pocket (VG-2000))
+vgtablet (VG Pocket Tablet (VG-4000))
+vjpp2 (Plug Play TV Games 2 (4-in-1) (VideoJet, France))
+vsplus (Vs Power Plus 30-in-1)
+wfmotor (Motorcycle 30-in-1)
+whacmole (Whac-A-Mole (TV Game))
+zdog (ZDog (44 in 1))
+zone7in1 (Zone 7-in-1 Sports (NTSC))
+zudugo (Zudu-go / 2udu-go)

@@ -1,30 +1,61 @@
-Driver jak_batm (The Batman (JAKKS Pacific TV Game)): @action@good@handheld@jakks@non-arcade
-Driver jak_capc (Capcom 3-in-1 (1942, Commando, Ghosts'n Goblins) (JAKKS Pacific TV Game, Game-Key Ready) (29 MAR 2005 B)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_care (Care Bears TV Games (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_dbz (Dragon Ball Z (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@non-arcade@pinball
-Driver jak_disf (Disney Friends (JAKKS Pacific TV Game, Game-Key Ready) (17 MAY 2005 A)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_disn (Disney (JAKKS Pacific TV Game, Game-Key Ready) (08 FEB 2005 A)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_dora (Dora the Explorer - Nursery Rhyme Adventure (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_dorr (Dora the Explorer - Race to Play Park (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_dpr (Disney Princess (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_dprs (Disney Princesses (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_dwmn (Dreamworks Movie Night (JAKKS Pacific TV Game, Oct 18 2006, prototype)): @action@good@handheld@jakks@non-arcade
-Driver jak_dwmno (Dreamworks Movie Night (JAKKS Pacific TV Game, Apr 24 2006, test program)): @action@good@handheld@jakks@non-arcade
-Driver jak_fan4 (Fantastic Four (JAKKS Pacific TV Game, Game-Key Ready)): @action@good@handheld@jakks@non-arcade
-Driver jak_just (Justice League (JAKKS Pacific TV Game, Game-Key Ready)): @action@good@handheld@jakks@non-arcade
-Driver jak_mk (Mortal Kombat (JAKKS Pacific TV Game)): @fighting@good@handheld@jakks@non-arcade
-Driver jak_mpac (Ms. Pac-Man 5-in-1 (Ms. Pac-Man, Pole Position, Galaga, Xevious, Mappy) (JAKKS Pacific TV Game, Game-Key Ready) (07 FEB 2005 A SKU F)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_mpacw (Ms. Pac-Man 7-in-1 (Wireless) (Ms. Pac-Man, Pole Position, Galaga, Xevious, Mappy, New Rally X, Bosconian) (18 AUG 2004 A)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_nick (Nicktoons (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_pooh (Winnie the Pooh - Piglet's Special Day (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_sbfc (SpongeBob SquarePants - The Fry Cook Games (JAKKS Pacific TV Game, Game-Key Ready) (AUG 18 2005 21:31:56)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_sbjd (SpongeBob SquarePants Jellyfish Dodge (JAKKS Pacific TV Game) (Apr 5 2007)): @good@handheld@jakks@multi-games@non-arcade
-Driver jak_sdoo (Scooby-Doo! and the Mystery of the Castle (JAKKS Pacific TV Game, Game-Key Ready)): @action@handheld@jakks@non-arcade
-Driver jak_sith (Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready)): @action@good@handheld@jakks@non-arcade
-Driver jak_sithp (Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready, prototype)): @action@good@handheld@jakks@non-arcade
-Driver jak_spdm (Spider-Man (JAKKS Pacific TV Game, Game-Key Ready)): @action@good@handheld@jakks@non-arcade
-Driver jak_swot (Star Wars - Original Trilogy (JAKKS Pacific TV Game, prototype)): @action@good@handheld@jakks@non-arcade
-Driver jak_wall (Wall-E (JAKKS Pacific TV Game) (Dec 18 2007 11:34:25)): @action@good@handheld@jakks@non-arcade
-Driver jak_wof (Wheel of Fortune (JAKKS Pacific TV Game, Game-Key Ready) (Jul 11 2005 ORIG)): @good@handheld@jakks@non-arcade@tv_show
-Driver jak_wwe (WWE (JAKKS Pacific TV Game, Game-Key Ready)): @good@handheld@jakks@non-arcade@wrestling
-Driver jak_xmenp (X-Men - Mutant Reign (JAKKS Pacific TV Game, prototype)): @action@good@handheld@jakks@non-arcade
+jak_1vs (1 Vs 100 (JAKKS Pacific TV Game))
+jak_5thg (Are You Smarter than a 5th Grader? (JAKKS Pacific TV Game))
+jak_avtr (Avatar
+jak_batm (The Batman (JAKKS Pacific TV Game))
+jak_capc (Capcom 3-in-1 (1942, Commando, Ghosts'n Goblins) (JAKKS Pacific TV Game, Game-Key Ready) (29 MAR 2005 B))
+jak_care (Care Bears TV Games (JAKKS Pacific TV Game, Game-Key Ready))
+jak_cind (Cinderella - Once Upon a Midnight (JAKKS Pacific TV Game) (Aug 29 2007 11
+jak_ctah (The Cheetah Girls - Passport to Fame (JAKKS Pacific TV Game) (Aug 1 2007 10
+jak_dbz (Dragon Ball Z (JAKKS Pacific TV Game, Game-Key Ready))
+jak_disf (Disney Friends (JAKKS Pacific TV Game, Game-Key Ready) (17 MAY 2005 A))
+jak_disn (Disney (JAKKS Pacific TV Game, Game-Key Ready) (08 FEB 2005 A))
+jak_dond (Deal or No Deal (JAKKS Pacific TV Game))
+jak_dora (Dora the Explorer - Nursery Rhyme Adventure (JAKKS Pacific TV Game, Game-Key Ready))
+jak_dorr (Dora the Explorer - Race to Play Park (JAKKS Pacific TV Game, Game-Key Ready))
+jak_dpma (Disney Princess Magical Adventures (JAKKS Pacific TV Game))
+jak_dpr (Disney Princess (JAKKS Pacific TV Game, Game-Key Ready))
+jak_dprs (Disney Princesses (JAKKS Pacific TV Game, Game-Key Ready))
+jak_dwa (Dora the Explorer - Dora's World Adventure! (JAKKS Pacific TV Game))
+jak_dwmn (Dreamworks Movie Night (JAKKS Pacific TV Game, Oct 18 2006, prototype))
+jak_dwmno (Dreamworks Movie Night (JAKKS Pacific TV Game, Apr 24 2006, test program))
+jak_fan4 (Fantastic Four (JAKKS Pacific TV Game, Game-Key Ready))
+jak_gdg (Go Diego Go! (JAKKS Pacific TV Game))
+jak_hm1m (Hannah Montana - One in a Million (JAKKS Pacific TV Game) (Aug 13 2007 15
+jak_hmbb (Hannah Montana - Best of Both Worlds (JAKKS Pacific TV Game) (Aug 17 2007 22
+jak_hsm (High School Musical (JAKKS Pacific TV Game) (Dec 19 2007 17
+jak_jpdy (Jeopardy! (JAKKS Pacific TV Game))
+jak_just (Justice League (JAKKS Pacific TV Game, Game-Key Ready))
+jak_marv (Marvel Heroes
+jak_mk (Mortal Kombat (JAKKS Pacific TV Game))
+jak_mpac (Ms. Pac-Man Collection 5-in-1 (JAKKS Pacific TV Game, Game-Key Ready) (07 FEB 2005 A SKU F))
+jak_mpaco (Ms. Pac-Man Collection 5-in-1 (JAKKS Pacific TV Game) (01 APR 2004 A))
+jak_mpacq (Ms. Pac-Man Collection 7-in-1 (JAKKS Pacific TV Game) (QVC version, 12 JUL 2004 A))
+jak_mpacw (Ms. Pac-Man Collection 7-in-1 (JAKKS Pacific TV Game) (wireless, 18 AUG 2004 A))
+jak_nick (Nicktoons (JAKKS Pacific TV Game, Game-Key Ready))
+jak_ntsc (Nicktoons - Summer Camp (JAKKS Pacific TV Game))
+jak_pacg (Arcade Gold featuring Pac-Man (20 APR 2007 A SKU O))
+jak_pix (Disney Pixar Classics (JAKKS Pacific TV Game))
+jak_pooh (Winnie the Pooh - Piglet's Special Day (JAKKS Pacific TV Game, Game-Key Ready))
+jak_potc (Pirates of the Caribbean - Islands of Fortune (JAKKS Pacific TV Game) (Jun 1 2007 12
+jak_powr (Power Rangers S.P.D. (JAKKS Pacific TV Game))
+jak_rapm (Retro Arcade featuring Pac-Man (20 AUG 2008 A SKU N))
+jak_sbfc (SpongeBob SquarePants - The Fry Cook Games (JAKKS Pacific TV Game, Game-Key Ready) (AUG 18 2005 21
+jak_sbjd (SpongeBob SquarePants Jellyfish Dodge (JAKKS Pacific TV Game) (Apr 5 2007))
+jak_sdoo (Scooby-Doo! and the Mystery of the Castle (JAKKS Pacific TV Game, Game-Key Ready))
+jak_sesa (Sesame Street Beat (JAKKS Pacific TV Game) (Aug 23 2006 19
+jak_shrk (Dreamworks Shrek / Over The Hedge (JAKKS Pacific TV Game))
+jak_sith (Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready))
+jak_sithp (Star Wars - Revenge of the Sith (JAKKS Pacific TV Game, Game-Key Ready, prototype))
+jak_slpb (Sleeping Beauty - Tales of Enchantment (JAKKS Pacific TV Game) (Sep 17 2007 14
+jak_spac (Super Pac-Man Collection (26 JAN 2006 A SKU L))
+jak_spd3 (Spider-Man 3 (JAKKS Pacific TV Game))
+jak_spdm (Spider-Man (JAKKS Pacific TV Game, Game-Key Ready))
+jak_spdv (The Amazing Spider-Man in Villain Round-Up (JAKKS Pacific TV Game) (24 Apr 2006 A))
+jak_supm (Superman in Super Villain Showdown (JAKKS Pacific TV Game) (26 Jan 2006 A))
+jak_swot (Star Wars - Original Trilogy (JAKKS Pacific TV Game))
+jak_wall (Wall-E (JAKKS Pacific TV Game) (Dec 18 2007 11
+jak_wof (Wheel of Fortune (JAKKS Pacific TV Game, Game-Key Ready) (Jul 11 2005 ORIG))
+jak_wof2 (Wheel of Fortune - 2nd Edition (JAKKS Pacific TV Game) (Mar 15 2007 PAK2))
+jak_wwe (WWE (JAKKS Pacific TV Game, Game-Key Ready))
+jak_xmen (X-Men - Mutant Reign (JAKKS Pacific TV Game))
+jak_xmenp (X-Men - Mutant Reign (JAKKS Pacific TV Game, prototype))
