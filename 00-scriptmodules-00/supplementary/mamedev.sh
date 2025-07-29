@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0278.01"
+rp_module_version="0278.02"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+278.02 :\n\
+- comment test lines\n\
 278.01 :\n\
 - fix : create good csv lines from the database\n\
   - last tag needs to end with @\n\
@@ -1879,9 +1881,9 @@ dialog \
     mkdir -p $destination_path
     read_data_mamedev clear
     IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
-	echo ${mamedev_csv[1]}
-	echo ${restricted_download_csv[1]}
-	read
+	#echo ${mamedev_csv[1]}
+	#echo ${restricted_download_csv[1]}
+	#read
     for rd in ${!restricted_download_csv[@]};do 
     echo "busy with ${restricted_download_csv[$rd]}$file_extension"
     #display onle the lines "Nothing to do." "Not Found." and progress "%" using awk or grep command : awk '/do\./||/Found\./||/\%/' : grep -E 'do\.|Found\.|%'
