@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0279.00"
+rp_module_version="0279.01"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+279.01 :\n\
+- remove experimental stuff\n\
 279.00 :\n\
 - add new simple database without progettosnaps data\n\
 - change filter showing categories\n\
@@ -695,6 +697,10 @@ function subgui_systems_extras_mamedev() {
 ",menu_item,,to_do,,,,,help_to_do,"
 ",►Systems: with extra options,,subgui_systems_extras_add_options_mamedev descriptions,,,,,show_message_mamedev \"Install systems with extra hardware that will working better than default.\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
 ",,,,,,,,,"
+	)
+sleep 0.1
+[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]] &&\
+	csv+=(
 ",▼\ZrBe warned : not always working correctly and need to be checked !,,,"
 ",\Z1►Systems   : full/semi automatic boot (with/without extra options),,subgui_systems_extras_add_autoboot_mamedev descriptions,,,,,show_message_mamedev \"Experimental : install systems with autoboot function\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
     )
@@ -1695,6 +1701,8 @@ function subgui_installs_mamedev() {
 ",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",,,,"
 	)
+sleep 0.1
+[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]] &&\
 if [[ $(curl https://stickfreaks.com/mame/ 2>&1) == *problem* ]];then
 	csv+=(
 ",\Z1►Insecure:\Z4►Show and install mame from stickfreaks binary list,,show_message_yesno_mamedev \"Curl says that the connection to the strickfreaks website is insecure.\nProceed at your own risk or cancel by selecting no.\" \"subgui_stickfreaks_binaries_mamedev --insecure\","
@@ -1706,6 +1714,8 @@ else
 ",,,,"
 	)
 fi
+sleep 0.1
+[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]] &&\
 	csv+=(
 ",▼\Zr\Z1Experimental : Usage is for your own risk !,,,"
 ",\Z3Install rpi1/0 mame0255 binary (only : channelf apfm1000 ...),,\
