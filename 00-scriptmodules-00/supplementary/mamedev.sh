@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0281.00"
+rp_module_version="0281.01"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+281.01 :\n\
+- update info for Debian-13/Trixie\n\
 281.00 :\n\
 - add new simple database without progettosnaps data\n\
 - remove @good@ filter when creating categories or linking roms\n\
@@ -762,7 +764,9 @@ Make sure you use the correct OS version :\n\
 - gcc10 should work on Debian11/Bullseye & Debian12/Bookworm derivatives\n\
 - gcc10 should work on latest Arch linux derivatives, for ArchyPie\n\
 - gcc12 should work on Debian12/Bookworm derivatives\n\
-- gcc12 should work on latest Arch linux derivatives, for ArchyPie\n\
+- gcc14 should work on Debian13/Trixie derivatives\n\
+- gcc14 probably works on latest Arch linux derivatives, for ArchyPie\n\
+- if gcc14 version is not working then try a gcc12 version\n\
 - if gcc12 version is not working then try a gcc10 version\n\
 - gccXX means the gcc version is unknown\n\
 - gccXX most likely will work on the latest OSes\n\
@@ -797,7 +801,7 @@ Make sure you use the correct OS version :\n\
 - gcc9 should work on Debian10/Buster & Debian11/Bullseye derivatives\n\
 - gcc10 should work on Debian11/Bullseye & Debian12/Bookworm derivatives\n\
 - gcc12 should work on Debian12/Bookworm derivatives\n\
-- gcc13 should work on Debian13/Trixie derivatives\n\
+- gcc14 should work on Debian13/Trixie derivatives\n\
 "
     local csv=()
     #the first value is reserved for the column descriptions
