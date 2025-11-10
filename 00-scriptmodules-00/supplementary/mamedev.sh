@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.01"
+rp_module_version="0282.02"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.02 :\n\
+- toggle some mame.ini options\n\
+- new way of breaking functions after run\n\
+- rename some menu items\n\
 282.01 :\n\
 - update audio samples download to 278\n\
 282.00 :\n\
@@ -502,16 +506,7 @@ function gui_mamedev() {
 ",►Switch to another mame database version,,subgui_databases_mamedev,,,,,show_message_mamedev \"If you are running an older MAME / lr-mame / lr-mess version\nthen you can select an older suitable database over here.\nThat way an install will have the best version match.\n\nOnly the databases that were created and suitable can be selected.\nIf you use a version that does not exist then select the closest one.\","
 ",►Choose and remove installs,,subgui_remove_installs_mamedev,,,,,show_message_mamedev \"A most likely list of the installs is presented.\nBy selecting a system or a category you can remove one.\nAfter that you will go back into the menu.\nNext time an updated list is presented again.\n\n- only 'mamedev' runcommands are removed from the emulators.cfg\n- then the emulators.cfg is removed if empty\n- the system is removed from es_systems.cfg if no emulators.cfg is found\n- the config directory is not removed !\","
 ",,,,,,,,,"
-	)
-	[[ $(expr $rp_module_version_database + 0) -lt 274 ]] && \
-    csv+=(
-",►ARTWORK/CHEATS/GAMELISTS/JOYSTICKS/OVERLAYS/PATCHES,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_downloads_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
-	)
-	[[ $(expr $rp_module_version_database + 0) -gt 273 ]] && \
-    csv+=(
-",►ARTWORK/CHEATS/GAMELISTS/JOYSTICKS/OVERLAYS/PATCHES/SAMPLES,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/BIOS/mame/samples\n- $datadir/roms/mame/samples\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_downloads_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
-	)
-    csv+=(
+",►ADDONS / EXTRAS / CONFIGS,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_addons_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
 ",,,,,,,,,"
 ",►Link roms from folder ~/RetroPie/BIOS/mame,,show_message_mamedev \"Warning : files or links are forced overwritten\";subgui_link_roms_mamedev,,,,,show_message_mamedev \"Show categories and ultimately create hardlinks from files that are in ~/RetroPie/BIOS/mame.\nMake sure you have downloaded the whole set of roms and placed it in ~/RetroPie/BIOS/mame.\nFor example: get the mame-merged set and place all the files in in ~/RetroPie/BIOS/mame\nBy doing this you will also ensure that all the bios roms are in the correct directory so there will be no need to place bios files inside that folder again.\","
    )
@@ -722,6 +717,43 @@ sleep 0.1
 }
 
 
+function subgui_configs_settings_mamedev() {
+    local csv=()
+    csv=(
+",menu_item,,to_do,,,,,help_to_do,"
+",▼\ZrChange mame standalone config (mame.ini)\ZR,,,"
+    )
+	if [[ $(grep -i "^mouse" "$configdir/mame/mame.ini") == "mouse 1" ]];then
+		csv+=(
+",disable mouse in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"0\";#break,,,,,help_to_do,"
+		)
+	else
+		csv+=(
+",enable mouse in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"1\";#break,,,,,help_to_do,"
+		)
+	fi
+#	if [[ $(grep -i "^multimouse" "$configdir/mame/mame.ini") == "multimouse 1" ]];then
+#		csv+=(
+#",disable multimouse in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"multimouse\" \"0\";#break,,,,,help_to_do,"
+#		)
+#	else
+#		csv+=(
+#",enable multimouse in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"multimouse\" \"1\";#break,,,,,help_to_do,"
+#		)
+#	fi
+	if [[ $(grep -i "^keepaspect" "$configdir/mame/mame.ini") == "keepaspect 0" ]];then
+		csv+=(
+",keep aspect ratio in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";#break,,,,,help_to_do,"
+		)
+	else
+		csv+=(
+",don't keep aspect ratio in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";#break,,,,,help_to_do,"
+		)
+	fi
+    build_menu_mamedev
+    #does nothing after break, might be obsolete
+	#chown $user:$user "$configdir/mame/mame.ini"
+}
 
 function subgui_gamelists_mamedev() {
     local csv=()
@@ -1123,10 +1155,11 @@ function subgui_systems_extras_add_autoboot_mamedev() {
 }
 
 
-function subgui_downloads_mamedev () {
+function subgui_addons_mamedev () {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
+",Download a predefined emulationstation es_input.cfg,,download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-emulationstation-00 $rootdir/configs/all/emulationstation cfg,,,,,show_message_mamedev \"Annoyingly everytime when you start with a new $(echo $romdir|cut -d/ -f4) you have to setup your keyboard or joystick again in emulationstation. The es_input.cfg file mentioned in this option can be downloaded to skip the process of configuring the inputs when starting emulationstation for the first time. The es_input.cfg has already several predefined input devices like :\n- keyboard (basic keys : not all keys are added !)\n- Padix Co. Ltd. QZ 501 PREDATOR \n- Nintendo Wiimote\n- PSX controller\n- Usb Gamepad (BigBen_Interactive_Usb_Gamepad)\n- Padix Co. Ltd. 2-axis 8-button gamepad\n- Padix Co. Ltd. 4-axis 4-button joystick w/view finder\n- Padix Co Ltd. 4-axis 4-button joystick\n\nBeware : If your input device isn't in this es_input.cfg then you probably don't want to use this config file.\nHowever more input devices can be committed to the es_input.cfg in the future.\","
 	)
 	if [[ $scriptdir == *RetroPie* ]];then
 		csv+=(
@@ -1138,10 +1171,9 @@ function subgui_downloads_mamedev () {
 		)
 	fi
 	csv+=(
-",$([[ ! -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Install @valerino run_mess.sh script \(the RusselB version\))$([[ -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Remove the Valerino run_mess.sh script \(the RusselB version\)),,install_or_remove_run_mess_script_mamedev,,,,,show_message_mamedev \"This option can do two things.\nIf run_mess.sh is not detected then install it.\nIf run_mess.sh is detected then remove it.\n\nThis is the history of the run_mess.sh script :\n@Valerino started the topic 'new scriptmodules for proper lr-mess integration'. For that purpose he made the run_mess.sh script. He also made module-scripts for various lr-mess drivers so they could be installed seperately.
-The runcommands that were installed by the module-scripts used this run_mess.sh script. Basically collecting the options from the runcommand and then creating a .cmd file which can then be runned by lr-mess. Every time a .cmd file is made and removed afterwards when running a game.\n\nThis script used that same run_mess.sh to be backwards compatible with the work of @Valerino. Later @RusselB improved the script.\nHe said : My improvevement allowed me to specify custom configs including bezels and screen locations etc. per rom.\n\nBasically the run_mess.sh script isn't needed anymore as we now use direct runcommands.\nSo when this run_mess.sh script is not installed the runcommands are not created anymore\nIf however you still want to use the old runcommands using the run_mess.sh script then you can install it and the script will make these older runcommands when installing a driver.\","
 ",,,,"
-",Download a predefined emulationstation es_input.cfg,,download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-emulationstation-00 $rootdir/configs/all/emulationstation cfg,,,,,show_message_mamedev \"Annoyingly everytime when you start with a new $(echo $romdir|cut -d/ -f4) you have to setup your keyboard or joystick again in emulationstation. The es_input.cfg file mentioned in this option can be downloaded to skip the process of configuring the inputs when starting emulationstation for the first time. The es_input.cfg has already several predefined input devices like :\n- keyboard (basic keys : not all keys are added !)\n- Padix Co. Ltd. QZ 501 PREDATOR \n- Nintendo Wiimote\n- PSX controller\n- Usb Gamepad (BigBen_Interactive_Usb_Gamepad)\n- Padix Co. Ltd. 2-axis 8-button gamepad\n- Padix Co. Ltd. 4-axis 4-button joystick w/view finder\n- Padix Co Ltd. 4-axis 4-button joystick\n\nBeware : If your input device isn't in this es_input.cfg then you probably don't want to use this config file.\nHowever more input devices can be committed to the es_input.cfg in the future.\","
+",CHANGE selected config options,,subgui_configs_settings_mamedev,,,,,help_to_do,"
+",,,,"
 ",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
 ",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
 ",,,,"
@@ -1158,6 +1190,10 @@ The runcommands that were installed by the module-scripts used this run_mess.sh 
 ",Create RetroArch 16:9 bezel-overlays from artwork,,create_bezel_overlays_mamedev -16-9,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\","
 ",Create RetroArch 16:9 bezel-overlays from artwork (+alternatives),,create_bezel_overlays_mamedev -16-9;create_bezel_overlays_mamedev 2-16-9,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\n\nIn contrary to the regular option this option will get some alternative looking bezels.\","
 ",Setup Orionsangels Realistic Arcade Overlays > roms/realistic,@arcade,create_00index_file_mamedev '/@oro/' $datadir/roms/realistic;install_system_mamedev realistic realistic '' '' 'none' '';download_from_google_drive_mamedev 1m_8-LJpaUFxUtwHCyK4BLo6kiFsvMJmM $datadir/downloads;organise_realistic_overlays_mamedev,,,,,show_message_mamedev \"Orionsangels made a lot of realistic bezels for lr-mame in retroarch. Manually installing was a bit difficult as the files were for windows only. On top of that the configs also had fixed resolutions which is problematic when you don't use the same resolution.\n\nSelecting this option will install the category \"realistic\" in your roms directory. The bezels will be downloaded and patched for linux use and the resolutions will be converted to the resolution that is detected. If you change the resolution of your setup you have to select this option again so the configs are recreated again with the proper resolution settings. Selecting this a second time will skip downloading the bezels if they are still on your computer.\","
+",,,,"
+",$([[ ! -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Install @valerino run_mess.sh script \(the RusselB version\))$([[ -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Remove the Valerino run_mess.sh script \(the RusselB version\)),,install_or_remove_run_mess_script_mamedev,,,,,show_message_mamedev \"This option can do two things.\nIf run_mess.sh is not detected then install it.\nIf run_mess.sh is detected then remove it.\n\nThis is the history of the run_mess.sh script :\n@Valerino started the topic 'new scriptmodules for proper lr-mess integration'. For that purpose he made the run_mess.sh script. He also made module-scripts for various lr-mess drivers so they could be installed seperately.
+The runcommands that were installed by the module-scripts used this run_mess.sh script. Basically collecting the options from the runcommand and then creating a .cmd file which can then be runned by lr-mess. Every time a .cmd file is made and removed afterwards when running a game.\n\nThis script used that same run_mess.sh to be backwards compatible with the work of @Valerino. Later @RusselB improved the script.\nHe said : My improvevement allowed me to specify custom configs including bezels and screen locations etc. per rom.\n\nBasically the run_mess.sh script isn't needed anymore as we now use direct runcommands.\nSo when this run_mess.sh script is not installed the runcommands are not created anymore\nIf however you still want to use the old runcommands using the run_mess.sh script then you can install it and the script will make these older runcommands when installing a driver.\","
+
     )
     build_menu_mamedev
 }
@@ -2146,11 +2182,15 @@ function build_menu_mamedev() {
             joy2keyStart
             unset IFS
 	    eval $run
+	    echo $run
+		echo press
+	    read
             #next function is done inside the install_system_mamedev
             #rp_registerAllModules
             #sleep 4
 	    [[ $run == *"remove_installs_mamedev "* ]] && break
-            [[ $run == *rp_module_version_database=* ]] && break
+	    [[ $run == *#break* ]] && break
+        [[ $run == *rp_module_version_database=* ]] && break
 	    [[ $run == *retroscraper_remote_command* ]] && break
 	    [[ $run == *install_or_remove_run_mess_script_mamedev* ]] && break
 	    [[ $run == *install_or_restore_runcommand_script_mamedev* ]] && break
