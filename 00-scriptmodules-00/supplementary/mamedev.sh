@@ -81,7 +81,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
     show_message_mamedev "\
                                                  One time update info\n\
 282.02 :\n\
-- toggle some mame.ini options\n\
+- toggle some mame.ini options : early stage\n\
 - new way of breaking functions after run\n\
 - rename some menu items\n\
 282.01 :\n\
@@ -2182,8 +2182,8 @@ function build_menu_mamedev() {
             joy2keyStart
             unset IFS
 	    eval $run
-	    echo $run
-		echo press
+	    #echo $run
+		#echo press
 	    read
             #next function is done inside the install_system_mamedev
             #rp_registerAllModules
