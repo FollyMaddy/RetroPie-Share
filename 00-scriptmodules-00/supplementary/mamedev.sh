@@ -2182,14 +2182,13 @@ function build_menu_mamedev() {
             joy2keyStart
             unset IFS
 	    eval $run
-	    #echo $run
-		#echo press
-	    read
+	    #echo $run;echo press;read #debug
+	    
             #next function is done inside the install_system_mamedev
             #rp_registerAllModules
             #sleep 4
 	    [[ $run == *"remove_installs_mamedev "* ]] && break
-	    [[ $run == *#break* ]] && break
+	    [[ $run == *#break* ]] && return
         [[ $run == *rp_module_version_database=* ]] && break
 	    [[ $run == *retroscraper_remote_command* ]] && break
 	    [[ $run == *install_or_remove_run_mess_script_mamedev* ]] && break
