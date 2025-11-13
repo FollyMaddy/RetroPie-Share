@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.04"
+rp_module_version="0282.05"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.05 :\n\
+- finally : add working refresh\n\
 282.04 :\n\
 - refine changing options for mame\n\
 282.03 :\n\
@@ -723,41 +725,41 @@ sleep 0.1
 
 
 function subgui_configs_settings_mamedev() {
-    local csv=()
+    [[ $1 != refresh ]] && local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
 ",▼\ZrChange mame standalone config (mame.ini)\ZR,,,"
     )
 	if [[ $(grep -i "^keepaspect" "$configdir/mame/mame.ini") == "keepaspect 0" ]];then
 		csv+=(
-",enable aspect ratio			\Z4(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"This will keep the original aspect ratio.\","
+",enable aspect ratio			\Z4(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will keep the original aspect ratio.\","
 		)
 	else
 		csv+=(
-",disable aspect ratio			\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"This will not keep the original aspect ratio.\","
+",disable aspect ratio			\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,,show_message_mamedev \"This will not keep the original aspect ratio.\","
 		)
 	fi
 	if [[ $(grep -i "^mouse" "$configdir/mame/mame.ini") == "mouse 1" ]];then
 		csv+=(
-",disable mouse/multimouse		\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"0\";iniSet \"multimouse\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"This will disable mouse and multimouse support.\","
+",disable mouse/multimouse		\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"0\";iniSet \"multimouse\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will disable mouse and multimouse support.\","
 		)
 	else
 		csv+=(
-",enable mouse/multimouse		\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"1\";iniSet \"multimouse\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"This will enable mouse and multimouse support.\","
+",enable mouse/multimouse		\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"1\";iniSet \"multimouse\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will enable mouse and multimouse support.\","
 		)
 	fi
 	if [[ $(grep -i "^syncrefresh" "$configdir/mame/mame.ini") == "syncrefresh 1" ]];then
 		csv+=(
-",disable syncrefresh			\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"Use the refreshrate of your loaded systemdriver..\","
+",disable syncrefresh			\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Use the refreshrate of your loaded systemdriver..\","
 		)
 	else
 		csv+=(
-",enable syncrefresh			\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"Use the refreshrate of your monitor. This means that the loaded systemdriver's actual refresh rate is ignored; however, the sound code still attempts to keep up with the system's original refresh rate, so you may encounter sound problems.
+",enable syncrefresh			\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Use the refreshrate of your monitor. This means that the loaded systemdriver's actual refresh rate is ignored; however, the sound code still attempts to keep up with the system's original refresh rate, so you may encounter sound problems.
 
 This option is intended mainly for those who have tweaked their video card's settings to provide carefully matched refresh rate options. Note that this option does not work with -video gdi mode..\","
 		)
 	fi
-    build_menu_mamedev
+    [[ $1 != refresh ]] && build_menu_mamedev
 }
 
 function subgui_gamelists_mamedev() {
@@ -1161,18 +1163,18 @@ function subgui_systems_extras_add_autoboot_mamedev() {
 
 
 function subgui_addons_mamedev () {
-    local csv=()
+    [[ $1 != refresh ]] && local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
 ",Download a predefined emulationstation es_input.cfg,,download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-emulationstation-00 $rootdir/configs/all/emulationstation cfg,,,,,show_message_mamedev \"Annoyingly everytime when you start with a new $(echo $romdir|cut -d/ -f4) you have to setup your keyboard or joystick again in emulationstation. The es_input.cfg file mentioned in this option can be downloaded to skip the process of configuring the inputs when starting emulationstation for the first time. The es_input.cfg has already several predefined input devices like :\n- keyboard (basic keys : not all keys are added !)\n- Padix Co. Ltd. QZ 501 PREDATOR \n- Nintendo Wiimote\n- PSX controller\n- Usb Gamepad (BigBen_Interactive_Usb_Gamepad)\n- Padix Co. Ltd. 2-axis 8-button gamepad\n- Padix Co. Ltd. 4-axis 4-button joystick w/view finder\n- Padix Co Ltd. 4-axis 4-button joystick\n\nBeware : If your input device isn't in this es_input.cfg then you probably don't want to use this config file.\nHowever more input devices can be committed to the es_input.cfg in the future.\","
 	)
 	if [[ $scriptdir == *RetroPie* ]];then
 		csv+=(
-",$([[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) != 739b6c7e50c6b4e2d048ea85f93ab8c71b1a1d74* ]] && echo Install patched runcommand.sh with extra replace tokens)$([[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) == 739b6c7e50c6b4e2d048ea85f93ab8c71b1a1d74* ]] && echo Restore to original runcommand.sh),,install_or_restore_runcommand_script_mamedev;#break,,,,,show_message_mamedev \"This option can do two things.\nIf the original runcommand.sh is detected then install the patched runcommand.sh with extra replace tokens.\nIf the patched runcommand.sh is detected then restore to the original runcommand.sh.\n\nIf the patched runcommand.sh is installed the runcommands that are installed by the script will automatically have the extra replace tokens inside.\nIf the original runcommand.sh is installed the runcommands that are installed by the script will not have the extra replace tokens inside !\n\nThe patched runcommand.sh will have the following extra replace tokens or improvements :\n\n%ROMDIR%\nThe %ROMDIR% token can be used to add the rompath in a runcommand.\nWhen using a runcommand using %BASENAME$ the rom can always be found even in a sub-directory. This also makes it possible to categorise roms in different folders within a roms directory.\n\n%DQUOTE% :\nThe %ROMDIR% token does not have double quoting.\nWhy? Because lr-mame and lr-mess can't cope with it.\nFor this reason the %DQUOTE% token is added.\nThe %DQUOTE% token can be placed in other places to get the runcommand working especially when using subdirectories that have spaces in them.\nFor MAME standalone this will work :\n-rompath $datadir/BIOS/mame;%DQUOTE%%ROMDIR%%DQUOTE%\nFor lr-mame and lr-mess this will work :\n-rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE%\nAll other attempts to add double quotes to runcommands in a different way failed so using the %DQUOTE% token seems to only way to go.\n\n%CLEANBASENAME% :\nThe %CLEANBASENAME% token is needed for creating a proper per game config directory so mame system configs can be created per game.\nFor MAME standalone this would not be necessary but lr-mame and lr-mess can't cope with spaces and double quotes in the wrong places.\nTherefor the %CLEANBASENAME% token can be used which removes all spaces and special characters and is without any double quotes.\nThe %CLEANBASENAME% token could also be used to make a clean savestate file\n\n%SOFTLIST% :\nThe %SOFTLIST% token is needed to force proper softlist loading\nFor example pacmania is in msx1_cass and in msx2_cart.\nIf one loads a game with a basename loader for example pacmania which comes from msx2_cart then normally the soflist msx1_cass has priority over msx2_cart.\nSo mame thinks it's pacmania from msx1_cass but it is actually pacmania from msx2_cart.\nTo fix this issue we need to force the correct softlist before the %BASENAME% token.\nThe %SOFTLIST% token is the last folder name where the rom is in plus an extra => :.\nFor pacmania we will have to place it in the folder msx2_cart.\nIn the loader you will see it as %SOFTLIST%%BASENAME% eventually for pacmania it will look like this msx2_cart:pacmania.\nIf the rom is in a rompath without => _ then the %SOFTLIST% token will be empty and mame will guess the correct softlist.\nIf %SOFTLIST% token gets a value for some reason because a _ char is in the path then mame will refuse to load the game.\nA check in the runcommand.log will reveal the issue.\nAlthough it's an improvement for example msx1_bee_card softlist will not benefit from it as it needs the beepack to be inserted as a slot. So softlists that need slot options will still not work with the regular basename loaders.\","
+",$([[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) != 739b6c7e50c6b4e2d048ea85f93ab8c71b1a1d74* ]] && echo Install patched runcommand.sh with extra replace tokens)$([[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) == 739b6c7e50c6b4e2d048ea85f93ab8c71b1a1d74* ]] && echo Restore to original runcommand.sh),,install_or_restore_runcommand_script_mamedev;#refresh,subgui_addons_mamedev,,,,show_message_mamedev \"This option can do two things.\nIf the original runcommand.sh is detected then install the patched runcommand.sh with extra replace tokens.\nIf the patched runcommand.sh is detected then restore to the original runcommand.sh.\n\nIf the patched runcommand.sh is installed the runcommands that are installed by the script will automatically have the extra replace tokens inside.\nIf the original runcommand.sh is installed the runcommands that are installed by the script will not have the extra replace tokens inside !\n\nThe patched runcommand.sh will have the following extra replace tokens or improvements :\n\n%ROMDIR%\nThe %ROMDIR% token can be used to add the rompath in a runcommand.\nWhen using a runcommand using %BASENAME$ the rom can always be found even in a sub-directory. This also makes it possible to categorise roms in different folders within a roms directory.\n\n%DQUOTE% :\nThe %ROMDIR% token does not have double quoting.\nWhy? Because lr-mame and lr-mess can't cope with it.\nFor this reason the %DQUOTE% token is added.\nThe %DQUOTE% token can be placed in other places to get the runcommand working especially when using subdirectories that have spaces in them.\nFor MAME standalone this will work :\n-rompath $datadir/BIOS/mame;%DQUOTE%%ROMDIR%%DQUOTE%\nFor lr-mame and lr-mess this will work :\n-rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE%\nAll other attempts to add double quotes to runcommands in a different way failed so using the %DQUOTE% token seems to only way to go.\n\n%CLEANBASENAME% :\nThe %CLEANBASENAME% token is needed for creating a proper per game config directory so mame system configs can be created per game.\nFor MAME standalone this would not be necessary but lr-mame and lr-mess can't cope with spaces and double quotes in the wrong places.\nTherefor the %CLEANBASENAME% token can be used which removes all spaces and special characters and is without any double quotes.\nThe %CLEANBASENAME% token could also be used to make a clean savestate file\n\n%SOFTLIST% :\nThe %SOFTLIST% token is needed to force proper softlist loading\nFor example pacmania is in msx1_cass and in msx2_cart.\nIf one loads a game with a basename loader for example pacmania which comes from msx2_cart then normally the soflist msx1_cass has priority over msx2_cart.\nSo mame thinks it's pacmania from msx1_cass but it is actually pacmania from msx2_cart.\nTo fix this issue we need to force the correct softlist before the %BASENAME% token.\nThe %SOFTLIST% token is the last folder name where the rom is in plus an extra => :.\nFor pacmania we will have to place it in the folder msx2_cart.\nIn the loader you will see it as %SOFTLIST%%BASENAME% eventually for pacmania it will look like this msx2_cart:pacmania.\nIf the rom is in a rompath without => _ then the %SOFTLIST% token will be empty and mame will guess the correct softlist.\nIf %SOFTLIST% token gets a value for some reason because a _ char is in the path then mame will refuse to load the game.\nA check in the runcommand.log will reveal the issue.\nAlthough it's an improvement for example msx1_bee_card softlist will not benefit from it as it needs the beepack to be inserted as a slot. So softlists that need slot options will still not work with the regular basename loaders.\","
 		)
 	else
 		csv+=(
-",$([[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) != cd620d05484350afa6186ded4e5c3ca59c6d10bd* ]] && echo Install patched runcommand.sh with extra replace tokens)$([[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) == cd620d05484350afa6186ded4e5c3ca59c6d10bd* ]] && echo Restore to original runcommand.sh),,install_or_restore_runcommand_script_mamedev;#break,,,,,show_message_mamedev \"This option can do two things.\nIf the original runcommand.sh is detected then install the patched runcommand.sh with extra replace tokens.\nIf the patched runcommand.sh is detected then restore to the original runcommand.sh.\n\nIf the patched runcommand.sh is installed the runcommands that are installed by the script will automatically have the extra replace tokens inside.\nIf the original runcommand.sh is installed the runcommands that are installed by the script will not have the extra replace tokens inside !\n\nThe patched runcommand.sh will have the following extra replace tokens or improvements :\n\n%ROMDIR%\nThe %ROMDIR% token can be used to add the rompath in a runcommand.\nWhen using a runcommand using %BASENAME$ the rom can always be found even in a sub-directory. This also makes it possible to categorise roms in different folders within a roms directory.\n\n%DQUOTE% :\nThe %ROMDIR% token does not have double quoting.\nWhy? Because lr-mame and lr-mess can't cope with it.\nFor this reason the %DQUOTE% token is added.\nThe %DQUOTE% token can be placed in other places to get the runcommand working especially when using subdirectories that have spaces in them.\nFor MAME standalone this will work :\n-rompath $datadir/BIOS/mame;%DQUOTE%%ROMDIR%%DQUOTE%\nFor lr-mame and lr-mess this will work :\n-rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE%\nAll other attempts to add double quotes to runcommands in a different way failed so using the %DQUOTE% token seems to only way to go.\n\n%CLEANBASENAME% :\nThe %CLEANBASENAME% token is needed for creating a proper per game config directory so mame system configs can be created per game.\nFor MAME standalone this would not be necessary but lr-mame and lr-mess can't cope with spaces and double quotes in the wrong places.\nTherefor the %CLEANBASENAME% token can be used which removes all spaces and special characters and is without any double quotes.\nThe %CLEANBASENAME% token could also be used to make a clean savestate file\n\n%SOFTLIST% :\nThe %SOFTLIST% token is needed to force proper softlist loading\nFor example pacmania is in msx1_cass and in msx2_cart.\nIf one loads a game with a basename loader for example pacmania which comes from msx2_cart then normally the soflist msx1_cass has priority over msx2_cart.\nSo mame thinks it's pacmania from msx1_cass but it is actually pacmania from msx2_cart.\nTo fix this issue we need to force the correct softlist before the %BASENAME% token.\nThe %SOFTLIST% token is the last folder name where the rom is in plus an extra => :.\nFor pacmania we will have to place it in the folder msx2_cart.\nIn the loader you will see it as %SOFTLIST%%BASENAME% eventually for pacmania it will look like this msx2_cart:pacmania.\nIf the rom is in a rompath without => _ then the %SOFTLIST% token will be empty and mame will guess the correct softlist.\nIf %SOFTLIST% token gets a value for some reason because a _ char is in the path then mame will refuse to load the game.\nA check in the runcommand.log will reveal the issue.\nAlthough it's an improvement for example msx1_bee_card softlist will not benefit from it as it needs the beepack to be inserted as a slot. So softlists that need slot options will still not work with the regular basename loaders.\","
+",$([[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) != cd620d05484350afa6186ded4e5c3ca59c6d10bd* ]] && echo Install patched runcommand.sh with extra replace tokens)$([[ $(sha1sum $rootdir/supplementary/runcommand/runcommand.sh 2>&-) == cd620d05484350afa6186ded4e5c3ca59c6d10bd* ]] && echo Restore to original runcommand.sh),,install_or_restore_runcommand_script_mamedev;#refresh,subgui_addons_mamedev,,,,show_message_mamedev \"This option can do two things.\nIf the original runcommand.sh is detected then install the patched runcommand.sh with extra replace tokens.\nIf the patched runcommand.sh is detected then restore to the original runcommand.sh.\n\nIf the patched runcommand.sh is installed the runcommands that are installed by the script will automatically have the extra replace tokens inside.\nIf the original runcommand.sh is installed the runcommands that are installed by the script will not have the extra replace tokens inside !\n\nThe patched runcommand.sh will have the following extra replace tokens or improvements :\n\n%ROMDIR%\nThe %ROMDIR% token can be used to add the rompath in a runcommand.\nWhen using a runcommand using %BASENAME$ the rom can always be found even in a sub-directory. This also makes it possible to categorise roms in different folders within a roms directory.\n\n%DQUOTE% :\nThe %ROMDIR% token does not have double quoting.\nWhy? Because lr-mame and lr-mess can't cope with it.\nFor this reason the %DQUOTE% token is added.\nThe %DQUOTE% token can be placed in other places to get the runcommand working especially when using subdirectories that have spaces in them.\nFor MAME standalone this will work :\n-rompath $datadir/BIOS/mame;%DQUOTE%%ROMDIR%%DQUOTE%\nFor lr-mame and lr-mess this will work :\n-rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE%\nAll other attempts to add double quotes to runcommands in a different way failed so using the %DQUOTE% token seems to only way to go.\n\n%CLEANBASENAME% :\nThe %CLEANBASENAME% token is needed for creating a proper per game config directory so mame system configs can be created per game.\nFor MAME standalone this would not be necessary but lr-mame and lr-mess can't cope with spaces and double quotes in the wrong places.\nTherefor the %CLEANBASENAME% token can be used which removes all spaces and special characters and is without any double quotes.\nThe %CLEANBASENAME% token could also be used to make a clean savestate file\n\n%SOFTLIST% :\nThe %SOFTLIST% token is needed to force proper softlist loading\nFor example pacmania is in msx1_cass and in msx2_cart.\nIf one loads a game with a basename loader for example pacmania which comes from msx2_cart then normally the soflist msx1_cass has priority over msx2_cart.\nSo mame thinks it's pacmania from msx1_cass but it is actually pacmania from msx2_cart.\nTo fix this issue we need to force the correct softlist before the %BASENAME% token.\nThe %SOFTLIST% token is the last folder name where the rom is in plus an extra => :.\nFor pacmania we will have to place it in the folder msx2_cart.\nIn the loader you will see it as %SOFTLIST%%BASENAME% eventually for pacmania it will look like this msx2_cart:pacmania.\nIf the rom is in a rompath without => _ then the %SOFTLIST% token will be empty and mame will guess the correct softlist.\nIf %SOFTLIST% token gets a value for some reason because a _ char is in the path then mame will refuse to load the game.\nA check in the runcommand.log will reveal the issue.\nAlthough it's an improvement for example msx1_bee_card softlist will not benefit from it as it needs the beepack to be inserted as a slot. So softlists that need slot options will still not work with the regular basename loaders.\","
 		)
 	fi
 	csv+=(
@@ -1196,11 +1198,11 @@ function subgui_addons_mamedev () {
 ",Create RetroArch 16:9 bezel-overlays from artwork (+alternatives),,create_bezel_overlays_mamedev -16-9;create_bezel_overlays_mamedev 2-16-9,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\n\nIn contrary to the regular option this option will get some alternative looking bezels.\","
 ",Setup Orionsangels Realistic Arcade Overlays > roms/realistic,@arcade,create_00index_file_mamedev '/@oro/' $datadir/roms/realistic;install_system_mamedev realistic realistic '' '' 'none' '';download_from_google_drive_mamedev 1m_8-LJpaUFxUtwHCyK4BLo6kiFsvMJmM $datadir/downloads;organise_realistic_overlays_mamedev,,,,,show_message_mamedev \"Orionsangels made a lot of realistic bezels for lr-mame in retroarch. Manually installing was a bit difficult as the files were for windows only. On top of that the configs also had fixed resolutions which is problematic when you don't use the same resolution.\n\nSelecting this option will install the category \"realistic\" in your roms directory. The bezels will be downloaded and patched for linux use and the resolutions will be converted to the resolution that is detected. If you change the resolution of your setup you have to select this option again so the configs are recreated again with the proper resolution settings. Selecting this a second time will skip downloading the bezels if they are still on your computer.\","
 ",,,,"
-",$([[ ! -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Install @valerino run_mess.sh script \(the RusselB version\))$([[ -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Remove the Valerino run_mess.sh script \(the RusselB version\)),,install_or_remove_run_mess_script_mamedev;#break,,,,,show_message_mamedev \"This option can do two things.\nIf run_mess.sh is not detected then install it.\nIf run_mess.sh is detected then remove it.\n\nThis is the history of the run_mess.sh script :\n@Valerino started the topic 'new scriptmodules for proper lr-mess integration'. For that purpose he made the run_mess.sh script. He also made module-scripts for various lr-mess drivers so they could be installed seperately.
+",$([[ ! -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Install @valerino run_mess.sh script \(the RusselB version\))$([[ -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Remove the Valerino run_mess.sh script \(the RusselB version\)),,install_or_remove_run_mess_script_mamedev;#refresh,subgui_addons_mamedev,,,,show_message_mamedev \"This option can do two things.\nIf run_mess.sh is not detected then install it.\nIf run_mess.sh is detected then remove it.\n\nThis is the history of the run_mess.sh script :\n@Valerino started the topic 'new scriptmodules for proper lr-mess integration'. For that purpose he made the run_mess.sh script. He also made module-scripts for various lr-mess drivers so they could be installed seperately.
 The runcommands that were installed by the module-scripts used this run_mess.sh script. Basically collecting the options from the runcommand and then creating a .cmd file which can then be runned by lr-mess. Every time a .cmd file is made and removed afterwards when running a game.\n\nThis script used that same run_mess.sh to be backwards compatible with the work of @Valerino. Later @RusselB improved the script.\nHe said : My improvevement allowed me to specify custom configs including bezels and screen locations etc. per rom.\n\nBasically the run_mess.sh script isn't needed anymore as we now use direct runcommands.\nSo when this run_mess.sh script is not installed the runcommands are not created anymore\nIf however you still want to use the old runcommands using the run_mess.sh script then you can install it and the script will make these older runcommands when installing a driver.\","
 
     )
-    build_menu_mamedev
+    [[ $1 != refresh ]] && build_menu_mamedev
 }
 
 
@@ -1281,19 +1283,18 @@ function subgui_download_gamelists_mamedev() {
 
 
 function subgui_remove_installs_mamedev() {
-    local csv=()
+    [[ $1 != refresh ]] && local csv=()
     #the first value is reserved for the column descriptions
     csv=( ",,,," )
     local installed_system_read
     clear
     echo "reading the installed systems"
-    while read installed_system_read;do csv+=("$installed_system_read");done < <(grep -r ^mame- $rootdir/configs/*/emulators.cfg|cut -d/ -f5|uniq|while read line;do echo "\",Remove $line,,remove_installs_mamedev $line;#break,\"";done)
+    while read installed_system_read;do csv+=("$installed_system_read");done < <(grep -r ^mame- $rootdir/configs/*/emulators.cfg|cut -d/ -f5|uniq|while read line;do echo "\",Remove $line,,remove_installs_mamedev $line;#refresh,subgui_remove_installs_mamedev,,,,show_message_mamedev \"No help\",";done)
     if [[ -z ${csv[1]} ]]; then
     show_message_mamedev "No systems installed, use cancel to go back !"
     csv+=( ",,,," )
     fi
-    build_menu_mamedev
-    #"break" after usage in function build_menu_mamedev
+    [[ $1 != refresh ]] && build_menu_mamedev
 }
 
 
@@ -1314,7 +1315,6 @@ function subgui_retroscraper_gamelists_mamedev() {
 function remove_installs_mamedev() {
     cat $rootdir/configs/$1/emulators.cfg|grep -v default|awk '/mame-/||/mess-/'|cut -d= -f1|while read line;do delEmulator $line $1;done
     [[ ! -f $rootdir/configs/$1/emulators.cfg ]] && delSystem $1
-    #"break" after usage in function build_menu_mamedev
 }
 
 
@@ -2187,8 +2187,22 @@ function build_menu_mamedev() {
             joy2keyStart
             unset IFS
 	    eval $run
+	    #debug
 	    #echo $run;echo press;read
+	    
+	    #break the running function
 	    [[ $run == *#break* ]] && break
+	    #refresh the csv array from the running function and update the menu
+	    if [[ $run == *#refresh* ]];then
+			local options=()
+			IFS=","
+			run="$(set ${csv[$choice]};echo $5)"
+			eval $run refresh
+			for i in ${!csv[@]}; do set ${csv[$i]}; options+=("$i" "$2");done
+			#remove option 0 (value 0 and 1) so the menu begins with 1
+			unset 'options[0]'; unset 'options[1]' 
+	    fi
+
         else
             break
         fi
@@ -2241,7 +2255,6 @@ function install_or_remove_run_mess_script_mamedev() {
     chmod 755 "$scriptdir/scriptmodules/run_mess.sh"
     fi
     rp_registerAllModules
-    #"break" after usage in function build_menu_mamedev
 }
 
 
@@ -2275,7 +2288,6 @@ function install_or_restore_runcommand_script_mamedev() {
 		fi
 	fi
 	rp_registerAllModules
-	#"break" after usage in function build_menu_mamedev
 }
 
 
