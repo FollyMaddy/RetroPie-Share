@@ -83,7 +83,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 282.07 :\n\
 - changing config options for mame : add and refine\n\
 282.06 :\n\
-- changing config options for mame : add and refine\n\
+- changing config options for mame : add, refine and fix help\n\
 282.05 :\n\
 - finally : add working refresh\n\
 282.04 :\n\
