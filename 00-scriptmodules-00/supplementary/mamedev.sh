@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.06"
+rp_module_version="0282.07"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,8 +80,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.07 :\n\
+- changing config options for mame : add and refine\n\
 282.06 :\n\
-- changing config options for mame : add, refine and fix help\n\
+- changing config options for mame : add and refine\n\
 282.05 :\n\
 - finally : add working refresh\n\
 282.04 :\n\
@@ -745,11 +747,11 @@ function subgui_configs_settings_mamedev() {
 	
 	if [[ $(grep -i "^keepaspect" "$configdir/mame/mame.ini") == "keepaspect 0" ]];then
 		csv+=(
-",enable  aspect ratio			\Z4(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will keep the original aspect ratio.\","
+",enable  aspect ratio		\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will keep the original aspect ratio.\","
 		)
 	else
 		csv+=(
-",disable aspect ratio			\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will not keep the original aspect ratio.\","
+",disable aspect ratio		\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will not keep the original aspect ratio.\","
 		)
 	fi
 	
@@ -772,14 +774,82 @@ function subgui_configs_settings_mamedev() {
 ",enable  syncrefresh			\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Use the video refreshrate of your monitor.\nThis means that the refreshrate of the loaded systemdriver is ignored. However...\nthe sound code still attempts to keep up with the system's original refresh rate. So you may encounter sound problems.\n\nThis option is intended mainly for those who have tweaked their video card's settings to provide carefully matched refresh rate options.\nNote that this option does not work with -video gdi mode.\","
 		)
 	fi
-	#needs a space behind video accel to get a proper match, probably because the second option of iniSet is missing
-	if [[ $(grep -i "^video accel" "$configdir/mame/mame.ini") == "video accel " ]];then
+	
+	csv+=(
+	",,,,,,,,,"
+		)
+		
+	if [[ $(grep -i "^video accel" "$configdir/mame/mame.ini") == "video accel" ]];then
 		csv+=(
-",disable video acceleration		\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"video accel\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable video acceleration.\","
+",disable default video acceleration	\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"video\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable video rendering using SDL’s 2D acceleration.\","
 		)
 	else
 		csv+=(
-",enable  video acceleration		\Z4(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"video accel\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable video acceleration.\","
+",enable  default video acceleration	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"video\" \"accel\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable video rendering using SDL’s 2D acceleration if possible.\","
+		)
+	fi
+
+	if [[ $(grep -i "^video opengl" "$configdir/mame/mame.ini") == "video opengl" ]];then
+		csv+=(
+",disable opengl video acceleration	\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"video\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable video rendering using OpenGL acceleration.\","
+		)
+	else
+		csv+=(
+",enable  opengl video acceleration	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"video\" \"opengl\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable video rendering using OpenGL acceleration.\","
+		)
+	fi
+	
+	if [[ $(grep -i "^video bgfx" "$configdir/mame/mame.ini") == "video bgfx" ]];then
+		csv+=(
+",disable new bgfx video acceleration	\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"video\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable the new hardware accelerated renderer.\","
+		)
+	else
+		csv+=(
+",enable  new bgfx video acceleration	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"video\" \"bgfx\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable the new hardware accelerated renderer.\","
+		)
+	fi
+	
+	csv+=(
+	",,,,,,,,,"
+		)
+		
+	if [[ $(grep -i "^samplerate 11025" "$configdir/mame/mame.ini") != "samplerate 11025" ]];then
+		csv+=(
+",set samplerate to 11025Hz		\Z1(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"samplerate\" \"11025\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Set samplerate to 11025Hz.\","
+		)
+	else
+		csv+=(
+",samplerate is set to 11025Hz	\Z4(custom  : enabled now),,#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Samplerate is set to 11025Hz.\","
+		)
+	fi
+
+	if [[ $(grep -i "^samplerate 22050" "$configdir/mame/mame.ini") != "samplerate 22050" ]];then
+		csv+=(
+",set samplerate to 22050Hz		\Z1(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"samplerate\" \"22050\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Set samplerate to 22050Hz.\","
+		)
+	else
+		csv+=(
+",samplerate is set to 22050Hz	\Z4(custom  : enabled now),,#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Samplerate is set to 22050Hz.\","
+		)
+	fi
+	
+	if [[ $(grep -i "^samplerate 44100" "$configdir/mame/mame.ini") != "samplerate 44100" ]];then
+		csv+=(
+",set samplerate to 44100Hz		\Z1(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"samplerate\" \"44100\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Set samplerate to 44100Hz.\","
+		)
+	else
+		csv+=(
+",samplerate is set to 44100Hz	\Z4(custom  : enabled now),,#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Samplerate is set to 44100Hz.\","
+		)
+	fi
+	
+	if [[ $(grep -i "^samplerate 48000" "$configdir/mame/mame.ini") != "samplerate 48000" ]];then
+		csv+=(
+",set samplerate to 48000Hz = default	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"samplerate\" \"48000\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Set samplerate to 48000Hz.\","
+		)
+	else
+		csv+=(
+",samplerate is set to 48000Hz	\Z2(default : enabled now),,#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Samplerate is set to 48000Hz.\","
 		)
 	fi
 	
