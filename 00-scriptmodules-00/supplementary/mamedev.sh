@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.03"
+rp_module_version="0282.04"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.04 :\n\
+- refine changing options for mame\n\
 282.03 :\n\
 - remove old breaking commands and add new ones\n\
 - combine option mouse/multimouse change\n\
@@ -726,36 +728,36 @@ function subgui_configs_settings_mamedev() {
 ",menu_item,,to_do,,,,,help_to_do,"
 ",▼\ZrChange mame standalone config (mame.ini)\ZR,,,"
     )
-	if [[ $(grep -i "^mouse" "$configdir/mame/mame.ini") == "mouse 1" ]];then
-		csv+=(
-",disable mouse/multimouse support in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"0\";iniSet \"multimouse\" \"0\";#break,,,,,show_message_mamedev \"This will disable mouse and multimouse support.\","
-		)
-	else
-		csv+=(
-",enable mouse/multimouse support in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"1\";iniSet \"multimouse\" \"1\";#break,,,,,show_message_mamedev \"This will enable mouse and multimouse support.\","
-		)
-	fi
-#	if [[ $(grep -i "^multimouse" "$configdir/mame/mame.ini") == "multimouse 1" ]];then
-#		csv+=(
-#",disable multimouse in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"multimouse\" \"0\";#break,,,,,help_to_do,"
-#		)
-#	else
-#		csv+=(
-#",enable multimouse in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"multimouse\" \"1\";#break,,,,,help_to_do,"
-#		)
-#	fi
 	if [[ $(grep -i "^keepaspect" "$configdir/mame/mame.ini") == "keepaspect 0" ]];then
 		csv+=(
-",keep aspect ratio in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";#break,,,,,help_to_do,"
+",enable aspect ratio			\Z4(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"This will keep the original aspect ratio.\","
 		)
 	else
 		csv+=(
-",don't keep aspect ratio in mame standalone,,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";#break,,,,,help_to_do,"
+",disable aspect ratio			\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"This will not keep the original aspect ratio.\","
+		)
+	fi
+	if [[ $(grep -i "^mouse" "$configdir/mame/mame.ini") == "mouse 1" ]];then
+		csv+=(
+",disable mouse/multimouse		\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"0\";iniSet \"multimouse\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"This will disable mouse and multimouse support.\","
+		)
+	else
+		csv+=(
+",enable mouse/multimouse		\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"1\";iniSet \"multimouse\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"This will enable mouse and multimouse support.\","
+		)
+	fi
+	if [[ $(grep -i "^syncrefresh" "$configdir/mame/mame.ini") == "syncrefresh 1" ]];then
+		csv+=(
+",disable syncrefresh			\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"Use the refreshrate of your loaded systemdriver..\","
+		)
+	else
+		csv+=(
+",enable syncrefresh			\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#break,,,,,show_message_mamedev \"Use the refreshrate of your monitor. This means that the loaded systemdriver's actual refresh rate is ignored; however, the sound code still attempts to keep up with the system's original refresh rate, so you may encounter sound problems.
+
+This option is intended mainly for those who have tweaked their video card's settings to provide carefully matched refresh rate options. Note that this option does not work with -video gdi mode..\","
 		)
 	fi
     build_menu_mamedev
-    #does nothing after break, might be obsolete
-	#chown $user:$user "$configdir/mame/mame.ini"
 }
 
 function subgui_gamelists_mamedev() {
