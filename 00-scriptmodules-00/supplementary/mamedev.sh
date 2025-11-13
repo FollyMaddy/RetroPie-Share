@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.05"
+rp_module_version="0282.06"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,10 +80,12 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.06 :\n\
+- changing config options for mame : add, refine and fix help\n\
 282.05 :\n\
 - finally : add working refresh\n\
 282.04 :\n\
-- refine changing options for mame\n\
+- refine changing config options for mame\n\
 282.03 :\n\
 - remove old breaking commands and add new ones\n\
 - combine option mouse/multimouse change\n\
@@ -513,7 +515,7 @@ function gui_mamedev() {
 ",►Switch to another mame database version,,subgui_databases_mamedev,,,,,show_message_mamedev \"If you are running an older MAME / lr-mame / lr-mess version\nthen you can select an older suitable database over here.\nThat way an install will have the best version match.\n\nOnly the databases that were created and suitable can be selected.\nIf you use a version that does not exist then select the closest one.\","
 ",►Choose and remove installs,,subgui_remove_installs_mamedev,,,,,show_message_mamedev \"A most likely list of the installs is presented.\nBy selecting a system or a category you can remove one.\nAfter that you will go back into the menu.\nNext time an updated list is presented again.\n\n- only 'mamedev' runcommands are removed from the emulators.cfg\n- then the emulators.cfg is removed if empty\n- the system is removed from es_systems.cfg if no emulators.cfg is found\n- the config directory is not removed !\","
 ",,,,,,,,,"
-",►ADDONS / EXTRAS / CONFIGS,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_addons_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
+",►ADDONS / EXTRAS / CONFIGS,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $configdir/mame/mame.ini\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_addons_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
 ",,,,,,,,,"
 ",►Link roms from folder ~/RetroPie/BIOS/mame,,show_message_mamedev \"Warning : files or links are forced overwritten\";subgui_link_roms_mamedev,,,,,show_message_mamedev \"Show categories and ultimately create hardlinks from files that are in ~/RetroPie/BIOS/mame.\nMake sure you have downloaded the whole set of roms and placed it in ~/RetroPie/BIOS/mame.\nFor example: get the mame-merged set and place all the files in in ~/RetroPie/BIOS/mame\nBy doing this you will also ensure that all the bios roms are in the correct directory so there will be no need to place bios files inside that folder again.\","
    )
@@ -729,36 +731,58 @@ function subgui_configs_settings_mamedev() {
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
 ",▼\ZrChange mame standalone config (mame.ini)\ZR,,,"
+",,,,,,,,,"
     )
-	if [[ $(grep -i "^keepaspect" "$configdir/mame/mame.ini") == "keepaspect 0" ]];then
+	if [[ $(grep -i "^cheat " "$configdir/mame/mame.ini") == "cheat 1" ]];then
 		csv+=(
-",enable aspect ratio			\Z4(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will keep the original aspect ratio.\","
+",disable cheats			\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"cheatpath\"  \"\";iniSet \"cheat\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will disable cheats and remove the cheatspath setting.\","
 		)
 	else
 		csv+=(
-",disable aspect ratio			\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,,show_message_mamedev \"This will not keep the original aspect ratio.\","
+",enable  cheats			\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"cheatpath\"  \"$romdir/mame/cheat\";iniSet \"cheat\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will enable cheats and add the cheatpath.\n\nCheats need to be in :\n$romdir/mame/cheat\n\nPS.:\nThere is an option in the script to download and enable the cheats.\nWhat you can do here is partly to get an idea of the overal settings and to manually disable it if needed.\","
 		)
 	fi
+	
+	if [[ $(grep -i "^keepaspect" "$configdir/mame/mame.ini") == "keepaspect 0" ]];then
+		csv+=(
+",enable  aspect ratio			\Z4(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will keep the original aspect ratio.\","
+		)
+	else
+		csv+=(
+",disable aspect ratio			\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"keepaspect\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will not keep the original aspect ratio.\","
+		)
+	fi
+	
 	if [[ $(grep -i "^mouse" "$configdir/mame/mame.ini") == "mouse 1" ]];then
 		csv+=(
 ",disable mouse/multimouse		\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"0\";iniSet \"multimouse\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will disable mouse and multimouse support.\","
 		)
 	else
 		csv+=(
-",enable mouse/multimouse		\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"1\";iniSet \"multimouse\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will enable mouse and multimouse support.\","
+",enable  mouse/multimouse		\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"mouse\" \"1\";iniSet \"multimouse\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will enable mouse and multimouse support.\","
 		)
 	fi
+	
 	if [[ $(grep -i "^syncrefresh" "$configdir/mame/mame.ini") == "syncrefresh 1" ]];then
 		csv+=(
-",disable syncrefresh			\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Use the refreshrate of your loaded systemdriver..\","
+",disable syncrefresh			\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Use the video refreshrate of your loaded systemdriver.\","
 		)
 	else
 		csv+=(
-",enable syncrefresh			\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Use the refreshrate of your monitor. This means that the loaded systemdriver's actual refresh rate is ignored; however, the sound code still attempts to keep up with the system's original refresh rate, so you may encounter sound problems.
-
-This option is intended mainly for those who have tweaked their video card's settings to provide carefully matched refresh rate options. Note that this option does not work with -video gdi mode..\","
+",enable  syncrefresh			\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"syncrefresh\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Use the video refreshrate of your monitor.\nThis means that the refreshrate of the loaded systemdriver is ignored. However...\nthe sound code still attempts to keep up with the system's original refresh rate. So you may encounter sound problems.\n\nThis option is intended mainly for those who have tweaked their video card's settings to provide carefully matched refresh rate options.\nNote that this option does not work with -video gdi mode.\","
 		)
 	fi
+	#needs a space behind video accel to get a proper match, probably because the second option of iniSet is missing
+	if [[ $(grep -i "^video accel" "$configdir/mame/mame.ini") == "video accel " ]];then
+		csv+=(
+",disable video acceleration		\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"video accel\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable video acceleration.\","
+		)
+	else
+		csv+=(
+",enable  video acceleration		\Z4(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"video accel\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable video acceleration.\","
+		)
+	fi
+	
     [[ $1 != refresh ]] && build_menu_mamedev
 }
 
