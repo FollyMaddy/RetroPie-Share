@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.07"
+rp_module_version="0282.08"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.08 :\n\
+- refresh option for automated category install\n\
 282.07 :\n\
 - changing config options for mame : add and refine\n\
 282.06 :\n\
@@ -850,6 +852,22 @@ function subgui_configs_settings_mamedev() {
 	else
 		csv+=(
 ",samplerate is set to 48000Hz	\Z2(default : enabled now),,#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Samplerate is set to 48000Hz.\","
+		)
+	fi
+
+	csv+=(
+",🎮,,,,,,,,"
+",▼\ZrAlternative test look\ZR,,,,,,,,"
+",,,,,,,,,"
+		)
+
+	if [[ $(grep -i "^cheat " "$configdir/mame/mame.ini") == "cheat 1" ]];then
+		csv+=(
+",[O|\ZrI\ZR] cheats			\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"cheatpath\"  \"\";iniSet \"cheat\" \"0\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will disable cheats and remove the cheatspath setting.\","
+		)
+	else
+		csv+=(
+",[\ZrO\ZR|I] cheats			\Z2(default : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"cheatpath\"  \"$romdir/mame/cheat\";iniSet \"cheat\" \"1\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"This will enable cheats and add the cheatpath.\n\nCheats need to be in :\n$romdir/mame/cheat\n\nPS.:\nThere is an option in the script to download and enable the cheats.\nWhat you can do here is partly to get an idea of the overal settings and to manually disable it if needed.\","
 		)
 	fi
 	
@@ -1721,7 +1739,7 @@ function subformgui_categories_automated_mamedev() {
 		#use BIOS/mame folder containing all files to make links in the roms folders
 		local rompack_link_info=( "$biosdir/mame" "$6" )
 	fi
-    local csv=()
+    [[ $6 != refresh ]] && local csv=()
     local action="$1"
     local driver_type="$2"
     local filter1="$3"
@@ -1814,9 +1832,9 @@ fi
 		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
 			[[ -n ${line} ]] && if [[ ${filter1} == *@90º@* ]];then
-				echo "\",Category => ${line}90º,${driver_type},create_00index_file_mamedev '${filter1} && /@${line}@/ && /@90º@/' ${datadir}/roms/${line}90º;install_system_mamedev ${line}90º ${line}90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}90º\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
+				echo "\",$(if [[ -f $configdir/${line}90º/emulators.cfg ]];then echo 'Update ';else echo 'Install';fi ) Category => ${line}90º,${driver_type},create_00index_file_mamedev '${filter1} && /@${line}@/ && /@90º@/' ${datadir}/roms/${line}90º;install_system_mamedev ${line}90º ${line}90º '' '' 'none' '';#refresh,subformgui_categories_automated_mamedev \"$1\" \"$2\" \"$3\" \"$4\" \"$5\" \"refresh\",,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}90º\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
 			else
-				echo "\",Category => ${line},${driver_type},create_00index_file_mamedev '${filter1} && /@${line}@/' ${datadir}/roms/${line};install_system_mamedev ${line} ${line} '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
+				echo "\",$(if [[ -f $configdir/${line}/emulators.cfg ]];then echo 'Update ';else echo 'Install';fi ) Category => ${line},${driver_type},create_00index_file_mamedev '${filter1} && /@${line}@/' ${datadir}/roms/${line};install_system_mamedev ${line} ${line} '' '' 'none' '';#refresh,subformgui_categories_automated_mamedev \"$1\" \"$2\" \"$3\" \"$4\" \"$5\" \"refresh\",,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
 			fi
 		done
 		)
@@ -1834,7 +1852,7 @@ fi
 	#echo ${csv[0]}
 	#echo ${csv[1]}
 	#read
-    build_menu_mamedev
+    [[ $6 != refresh ]] && build_menu_mamedev
 }
 
 
