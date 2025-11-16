@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.08"
+rp_module_version="0282.09"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.09 :\n\
+- improve : detect pressing left-shift\n\
 282.08 :\n\
 - refresh option for automated category install\n\
 282.07 :\n\
@@ -524,7 +526,7 @@ function gui_mamedev() {
 ",►Link roms from folder ~/RetroPie/BIOS/mame,,show_message_mamedev \"Warning : files or links are forced overwritten\";subgui_link_roms_mamedev,,,,,show_message_mamedev \"Show categories and ultimately create hardlinks from files that are in ~/RetroPie/BIOS/mame.\nMake sure you have downloaded the whole set of roms and placed it in ~/RetroPie/BIOS/mame.\nFor example: get the mame-merged set and place all the files in in ~/RetroPie/BIOS/mame\nBy doing this you will also ensure that all the bios roms are in the correct directory so there will be no need to place bios files inside that folder again.\","
    )
 sleep 0.1
-[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]] &&\
+[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]] &&\
 csv+=(
 ",►Browser/downloader ( restricted ),,subgui_archive_downloads_mamedev,,,,,show_message_mamedev \"Browse and get online files.\n(only available with the correct input)\","
    )
@@ -721,7 +723,7 @@ function subgui_systems_extras_mamedev() {
 ",,,,,,,,,"
 	)
 sleep 0.1
-[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]] &&\
+[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]] &&\
 	csv+=(
 ",▼\ZrBe warned : not always working correctly and need to be checked !,,,"
 ",\Z1►Systems   : full/semi automatic boot (with/without extra options),,subgui_systems_extras_add_autoboot_mamedev descriptions,,,,,show_message_mamedev \"Experimental : install systems with autoboot function\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
@@ -1750,7 +1752,7 @@ function subformgui_categories_automated_mamedev() {
     
     #local category_compatible
     echo -e "Hold 'LeftShift' to show message and form.\n(try tapping 'LeftShift' if holding doesn't work !)" ;sleep 2
-    if [[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]];then
+    if [[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]];then
 	show_message_mamedev "\
 After selecting ok a form will be presented with filter variables.\n\
 You can see the earlier predefined variables.\n\
@@ -1873,7 +1875,7 @@ function subgui_installs_mamedev() {
 ",,,,"
 	)
 sleep 0.1
-[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]] &&\
+[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]] &&\
 if [[ $(curl https://stickfreaks.com/mame/ 2>&1) == *problem* ]];then
 	csv+=(
 ",\Z1►Insecure:\Z4►Show and install mame from stickfreaks binary list,,show_message_yesno_mamedev \"Curl says that the connection to the strickfreaks website is insecure.\nProceed at your own risk or cancel by selecting no.\" \"subgui_stickfreaks_binaries_mamedev --insecure\","
@@ -1886,7 +1888,7 @@ else
 	)
 fi
 sleep 0.1
-[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 /dev/input/by-path/*kbd*|grep ": 2a") == *2a* ]] &&\
+[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]] &&\
 	csv+=(
 ",▼\Zr\Z1Experimental : Usage is for your own risk !,,,"
 ",\Z3Install rpi1/0 mame0255 binary (only : channelf apfm1000 ...),,\
