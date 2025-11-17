@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.09"
+rp_module_version="0282.10"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -80,6 +80,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.10 :\n\
+- skip form when refreshing automated category install\n\
+- changing config options for mame : set to experimental\n\
 282.09 :\n\
 - improve : detect pressing left-shift\n\
 282.08 :\n\
@@ -1293,7 +1296,7 @@ function subgui_addons_mamedev () {
 	fi
 	csv+=(
 ",,,,"
-",CHANGE selected config options,,subgui_configs_settings_mamedev,,,,,help_to_do,"
+",Experimental : CHANGE selected config options,,subgui_configs_settings_mamedev,,,,,help_to_do,"
 ",,,,"
 ",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
 ",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
@@ -1751,6 +1754,7 @@ function subformgui_categories_automated_mamedev() {
     local category_read
     
     #local category_compatible
+    if [[ $6 != refresh ]];then
     echo -e "Hold 'LeftShift' to show message and form.\n(try tapping 'LeftShift' if holding doesn't work !)" ;sleep 2
     if [[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]];then
 	show_message_mamedev "\
@@ -1807,7 +1811,7 @@ dialog \
     filter2=$(echo "$manual_input" | sed -n 4p)
     detect_clone_save=$(echo "$manual_input" | sed -n 5p) 
 
-
+fi
 fi
     clear
     echo "reading the available databases"
