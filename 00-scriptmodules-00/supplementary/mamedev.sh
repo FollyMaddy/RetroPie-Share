@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.11"
+rp_module_version="0282.12"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -88,6 +88,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.12 :\n\
+- changing config options for mame : add remaining and refine\n\
 282.11 :\n\
 - add 'Python manager UV' as dependancy install\n\
 - let gdrivedl and retroscrape-remote use Python 3.11 using UV\n\
@@ -801,31 +803,65 @@ function subgui_configs_settings_mamedev() {
 		
 	if [[ $(grep -i "^video accel" "$configdir/mame/mame.ini") == "video accel" ]];then
 		csv+=(
-",disable default video acceleration	\Z2(default : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"video\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable video rendering using SDL’s 2D acceleration.\","
+",disable default video acceleration	\Z2(default : enabled now),,iniConfig \"\" \"\" \"$configdir/mame/mame.ini\";iniDel \"video accel\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable video rendering using SDL’s 2D acceleration.\","
 		)
 	else
 		csv+=(
-",enable  default video acceleration	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"video\" \"accel\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable video rendering using SDL’s 2D acceleration if possible.\","
+",enable  default video acceleration	\Z5(custom  : disabled now),,iniConfig \"\" \"\" \"$configdir/mame/mame.ini\";iniDel \"video opengl\";iniSet \"video accel\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable video rendering using SDL’s 2D acceleration if possible.\","
 		)
 	fi
 
 	if [[ $(grep -i "^video opengl" "$configdir/mame/mame.ini") == "video opengl" ]];then
 		csv+=(
-",disable opengl video acceleration	\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"video\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable video rendering using OpenGL acceleration.\","
+",disable opengl video acceleration	\Z4(custom  : enabled now),,iniConfig \"\" \"\" \"$configdir/mame/mame.ini\";iniDel \"video opengl\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable video rendering using OpenGL acceleration.\","
 		)
 	else
 		csv+=(
-",enable  opengl video acceleration	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"video\" \"opengl\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable video rendering using OpenGL acceleration.\","
+",enable  opengl video acceleration	\Z5(custom  : disabled now),,iniConfig \"\" \"\" \"$configdir/mame/mame.ini\";iniDel \"video accel\";iniSet \"video opengl\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable video rendering using OpenGL acceleration.\","
 		)
 	fi
+
+	csv+=(
+	",,,,,,,,,"
+		)
 	
 	if [[ $(grep -i "^video bgfx" "$configdir/mame/mame.ini") == "video bgfx" ]];then
 		csv+=(
-",disable new bgfx video acceleration	\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"video\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable the new hardware accelerated renderer.\","
+",disable new bgfx video acceleration	\Z4(custom  : enabled now),,iniConfig \"\" \"\" \"$configdir/mame/mame.ini\";iniDel \"video bgfx\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable the new hardware accelerated renderer.\","
 		)
 	else
 		csv+=(
-",enable  new bgfx video acceleration	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"video\" \"bgfx\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable the new hardware accelerated renderer.\","
+",enable  new bgfx video acceleration	\Z5(custom  : disabled now),,iniConfig \"\" \"\" \"$configdir/mame/mame.ini\";iniSet \"video bgfx\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable the new hardware accelerated renderer.\","
+		)
+	fi
+
+	if [[ $(grep -i "^bgfx_path" "$configdir/mame/mame.ini") == "bgfx_path"* ]];then
+		csv+=(
+",disable bgfx_path 			\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"bgfx_path\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable/remove the bgfx_path :\n/opt/retropie/emulators/mame/bgfx\","
+		)
+	else
+		csv+=(
+",enable  bgfx_path			\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"bgfx_path\" \"/opt/retropie/emulators/mame/bgfx\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable/add the bgfx_path :\n/opt/retropie/emulators/mame/bgfx\","
+		)
+	fi
+
+	if [[ $(grep -i "^bgfx_backend" "$configdir/mame/mame.ini") == "bgfx_backend"* ]];then
+		csv+=(
+",disable bgfx_backend :vulkan	\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"bgfx_backend\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable/remove the bgfx_backend : vulkan\","
+		)
+	else
+		csv+=(
+",enable  bgfx_backend :vulkan	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"bgfx_backend\" \"vulkan\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable/add the bgfx_backend : vulkan\","
+		)
+	fi
+
+	if [[ $(grep -i "^bgfx_screen_chains" "$configdir/mame/mame.ini") == "bgfx_screen_chains"* ]];then
+		csv+=(
+",disable bgfx_screen_chains:default	\Z4(custom  : enabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniDel \"bgfx_screen_chains\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Disable/remove bgfx_screen_chains : default\","
+		)
+	else
+		csv+=(
+",enable  bgfx_screen_chains:default	\Z5(custom  : disabled now),,iniConfig \" \" \"\" \"$configdir/mame/mame.ini\";iniSet \"bgfx_screen_chains\" \"default\";chown $user:$user \"$configdir/mame/mame.ini\";#refresh,subgui_configs_settings_mamedev,,,,show_message_mamedev \"Enable/add bgfx_screen_chains : default\","
 		)
 	fi
 	
@@ -874,7 +910,7 @@ function subgui_configs_settings_mamedev() {
 	fi
 
 	csv+=(
-",🎮,,,,,,,,"
+",,,,,,,,,"
 ",▼\ZrAlternative test look\ZR,,,,,,,,"
 ",,,,,,,,,"
 		)
