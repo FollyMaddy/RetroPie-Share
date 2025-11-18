@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0282.10"
+rp_module_version="0282.11"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -62,6 +62,14 @@ function depends_mamedev() {
     else 
 	getDepends python-xattr unarchiver tinyxxd
     fi
+    
+    #install uv python manager as normal user
+    if [[ ! -f /home/$user/.local/bin/uv ]];then
+    echo "Installing Python manager UV"
+    su $user -c "curl -LsSf https://astral.sh/uv/install.sh | sh"
+    su $user -c "source /home/$user/.local/bin/env"
+	fi
+    
     if [[ -z $(xattr -p user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) 2>&-) ]];then
 
     [[ $scriptdir == *ArchyPie* ]] &&  show_message_mamedev "\
@@ -80,6 +88,10 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+282.11 :\n\
+- add 'Python manager UV' as dependancy install\n\
+- let gdrivedl and retroscrape-remote use Python 3.11 using UV\n\
+- mark retroscrape-remote as experimental with issue\n\
 282.10 :\n\
 - skip form when refreshing automated category install\n\
 - changing config options for mame : set to experimental\n\
@@ -532,6 +544,7 @@ sleep 0.1
 [[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]] &&\
 csv+=(
 ",►Browser/downloader ( restricted ),,subgui_archive_downloads_mamedev,,,,,show_message_mamedev \"Browse and get online files.\n(only available with the correct input)\","
+",►Install UV,,install_uv_mamedev,,,,,show_message_mamedev \"Install UV and use older python versions and get python modules easier and faster\","
    )
 
     build_menu_mamedev
@@ -883,9 +896,7 @@ function subgui_gamelists_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",▼\ZrUse RetroScraper-remote by @kiro\ZR,,,"
-",►Retroscrape/update gamelists with media per system,,subgui_retroscraper_gamelists_mamedev,,,,,show_message_mamedev \"Here you will be able to retroscrape roms creating gamelists with videos and pictures depending on the database of retroscraper.\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nExisting gamelist files and media are removed before a new retroscrape !\n\nWhen selecting this option you can choose to retroscrape a system folder seperately.\","
-",,,,,,,,,"
+
 ",▼\ZrGamelists hosted by @DTEAM (Default)\ZR,,,"
 ",►Download/update gamelists with media per system,,subgui_download_gamelists_mamedev 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m,,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
 ",Download/update all ES gamelists with media (+/-30 min.),,show_message_yesno_mamedev \"Would you like to proceed ?\" \"download_from_google_drive_mamedev 1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m $datadir/roms\",,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
@@ -897,6 +908,11 @@ function subgui_gamelists_mamedev() {
 ",▼\ZrGamelists hosted by @bbilford83 (work in progress stuff)\ZR,,,"
 ",►Download/update gamelists with media per system,,subgui_download_gamelists_mamedev 19h16tSYtksWU1EfC92KxJBi-8zYTYkYr,,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
 ",Download/update all ES gamelists with media (+/-30 min.),,show_message_yesno_mamedev \"Would you like to proceed ?\" \"download_from_google_drive_mamedev 19h16tSYtksWU1EfC92KxJBi-8zYTYkYr $datadir/roms\",,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
+",,,,,,,,,"
+",▼\ZrExperimental (has issue : no images downloaded)\ZR,,,"
+",▼\ZrUse RetroScraper-remote by @kiro\ZR,,,"
+",►Retroscrape/update gamelists with media per system,,subgui_retroscraper_gamelists_mamedev,,,,,show_message_mamedev \"Here you will be able to retroscrape roms creating gamelists with videos and pictures depending on the database of retroscraper.\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nExisting gamelist files and media are removed before a new retroscrape !\n\nWhen selecting this option you can choose to retroscrape a system folder seperately.\","
+
     )
     build_menu_mamedev
 }
@@ -1416,7 +1432,7 @@ function subgui_remove_installs_mamedev() {
 
 
 function subgui_retroscraper_gamelists_mamedev() {
-    retroscraper_remote_depends_mamedev
+    #retroscraper_remote_depends_mamedev
     local csv=()
     local gamelists_csv=()
     local gamelists_read
@@ -1439,7 +1455,7 @@ function retroscraper_remote_command_mamedev() {
     rm $datadir/roms/$1/gamelist.xml 2> /dev/null
     rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
     #use python_virtual_environment
-    su $user -c "curl https://raw.githubusercontent.com/zayamatias/retroscraper-remote/main/retroscraper.py|$rootdir/python_virtual_environment/bin/python3 - --systems $1 --recursive --relativepaths --mediadir media/emulationstation --nobackup"
+    su $user -c "curl https://raw.githubusercontent.com/zayamatias/retroscraper-remote/main/retroscraper.py|/home/$user/.local/bin/uv run --python 3.11 --with 'httpimport==1.1.0' --with 'requests==2.21.0' --with 'wheel==0.40.0' --with 'setuptools==67.7.2' --with 'googletrans==4.0.0rc1' --with 'Pillow==9.2.0' - --recursive --relativepaths --mediadir media/emulationstation --nobackup --systems $1"
     #"break" after usage in function build_menu_mamedev so a good list of present gamelists can be viewed
 }
 
@@ -2335,7 +2351,7 @@ echo "remove current $1"
 rm -r $2/$1 2>&-
 mkdir -p $2/$1 2>&-
 echo "get $1 binary from gdrive and install it"
-curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | python3 - https://drive.google.com/file/d/$4 -m -P "/tmp";\
+su $user -c "curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | /home/$user/.local/bin/uv run --python 3.11 - https://drive.google.com/file/d/$4 -m -P \"/tmp\"";\
 [[ $3 == *zip ]] && unzip /tmp/$3 -d $2
 [[ $3 == *7z ]] && 7za x /tmp/$3 -o$2
 $scriptdir/${rootdir##*/}_packages.sh $1 depends
@@ -3440,8 +3456,8 @@ function download_from_google_drive_mamedev() {
 clear
 echo "get all files and put these in the correct path"
 echo
-curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | \
-python3 - https://drive.google.com/drive/folders/$1 -m -P "$2"
+su $user -c "curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | \
+/home/$user/.local/bin/uv run --python 3.11 - https://drive.google.com/drive/folders/$1 -m -P \"$2\""
 #wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
 #python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P $rootdir/configs/all/emulationstation/gamelists
 chown -R $user:$user "$2"
