@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0283.01"
+rp_module_version="0283.02"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -88,6 +88,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+283.02 :\n\
+- remove awk tests\n\
 283.01 :\n\
 - add jaguarcd\n\
 283.00 :\n\
@@ -487,7 +489,7 @@ remove the predefined \"view\" from the config.\n\
 258.02 :\n\
 - improve showing version and used database version\n\
 258.01 :\n\
-- return to $(awk -F'/' '{print $4}' <<< "$romdir")-Setup after updating the script \n\
+- return to $(echo $romdir|cut -d/ -f4)-Setup after updating the script \n\
 - add showing \"one time update info\"\n\
 - change the \"EXTRAS\" lists depending on the selected mame database\n\
 - add help about the install of the patched runcommand.sh\n\
@@ -534,7 +536,7 @@ function gui_mamedev() {
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
 ",About this script,,show_message_mamedev \"This project makes use of MAME/lr-mame/lr-mess for emulating.\nThey support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to install drivers on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- bbilford83 : joystick configs and summaries and gamelists\n- Orionsangel : creating realistic arcade overlays\n- stickfreaks : hosting mame binaries\n- mamecheats : hosting cheatfiles\",,,,,show_message_mamedev \"NO HELP\","
-",Update mamedev script and database,,wget -O $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/mamedev.sh;chown $user:$user $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi);xattr -d user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_database_versions[1]}_systems_sorted_info -o $emudir/mame/mame${rp_module_database_versions[1]}_systems_sorted_info;rp_registerAllModules;show_message_mamedev \"\n\n\n\n\n\n\n\n----------The script has been updated !-----------\n-----Going back into the $(awk -F'/' '{print $4}' <<< "$romdir")-Setup menu.-----\";break,,,,,," 
+",Update mamedev script and database,,wget -O $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/mamedev.sh;chown $user:$user $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi);xattr -d user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi);curl https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_database_versions[1]}_systems_sorted_info -o $emudir/mame/mame${rp_module_database_versions[1]}_systems_sorted_info;rp_registerAllModules;show_message_mamedev \"\n\n\n\n\n\n\n\n----------The script has been updated !-----------\n-----Going back into the $(echo $romdir|cut -d/ -f4)-Setup menu.-----\";break,,,,,," 
 ",,,,,,,,,"
 ",►Install MAME / LR-MESS / LR-MAME,,subgui_installs_mamedev,,,,,,"
 ",,,,,,,,,"
@@ -1043,7 +1045,7 @@ Make sure you use the correct OS version :\n\
     local gdrive_read
     clear
     echo "reading the available binaries"
-    while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$3#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|tac|while read line;do echo "\",$(awk -F'/' '{print $48}' <<< "$line"),,install_binary_from_gdrive_mamedev $1 $2 $(awk -F'/' '{print $48}' <<< "$line") $(awk -F'/' '{print $6}' <<< "$line"),\"";done)
+    while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$3#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|tac|while read line;do echo "\",$(echo $line|cut -d/ -f48),,install_binary_from_gdrive_mamedev $1 $2 $(echo $line|cut -d/ -f48) $(echo $line|cut -d/ -f6),\"";done)
     build_menu_mamedev
 }
 
@@ -1074,8 +1076,8 @@ Make sure you use the correct OS version :\n\
     local stickfreaks_read
     clear
     echo "reading the available binaries"
-    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl $1 https://stickfreaks.com/mame/|grep \"mame_.*7z|awk -F'\"' '{print $2}' |sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line,\"";done)
-    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl $1 https://stickfreaks.com/mame/old/|grep \"mame_.*7z|awk -F'\"' '{print $2}' |sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line old/,\"";done)
+    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl $1 https://stickfreaks.com/mame/|grep \"mame_.*7z|cut -d '"' -f2|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line,\"";done)
+    while read stickfreaks_read;do csv+=("$stickfreaks_read");done < <(IFS=$'\n'; curl $1 https://stickfreaks.com/mame/old/|grep \"mame_.*7z|cut -d '"' -f2|sort -r|while read line;do echo "\",$line,,install_mame_from_stickfreaks_mamedev $line old/,\"";done)
     build_menu_mamedev
 }
 
@@ -1388,7 +1390,7 @@ function subgui_addons_mamedev () {
     [[ $1 != refresh ]] && local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",Download a predefined emulationstation es_input.cfg,,download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-emulationstation-00 $rootdir/configs/all/emulationstation cfg,,,,,show_message_mamedev \"Annoyingly everytime when you start with a new $(awk -F'/' '{print $4}' <<< "$romdir") you have to setup your keyboard or joystick again in emulationstation. The es_input.cfg file mentioned in this option can be downloaded to skip the process of configuring the inputs when starting emulationstation for the first time. The es_input.cfg has already several predefined input devices like :\n- keyboard (basic keys : not all keys are added !)\n- Padix Co. Ltd. QZ 501 PREDATOR \n- Nintendo Wiimote\n- PSX controller\n- Usb Gamepad (BigBen_Interactive_Usb_Gamepad)\n- Padix Co. Ltd. 2-axis 8-button gamepad\n- Padix Co. Ltd. 4-axis 4-button joystick w/view finder\n- Padix Co Ltd. 4-axis 4-button joystick\n\nBeware : If your input device isn't in this es_input.cfg then you probably don't want to use this config file.\nHowever more input devices can be committed to the es_input.cfg in the future.\","
+",Download a predefined emulationstation es_input.cfg,,download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-emulationstation-00 $rootdir/configs/all/emulationstation cfg,,,,,show_message_mamedev \"Annoyingly everytime when you start with a new $(echo $romdir|cut -d/ -f4) you have to setup your keyboard or joystick again in emulationstation. The es_input.cfg file mentioned in this option can be downloaded to skip the process of configuring the inputs when starting emulationstation for the first time. The es_input.cfg has already several predefined input devices like :\n- keyboard (basic keys : not all keys are added !)\n- Padix Co. Ltd. QZ 501 PREDATOR \n- Nintendo Wiimote\n- PSX controller\n- Usb Gamepad (BigBen_Interactive_Usb_Gamepad)\n- Padix Co. Ltd. 2-axis 8-button gamepad\n- Padix Co. Ltd. 4-axis 4-button joystick w/view finder\n- Padix Co Ltd. 4-axis 4-button joystick\n\nBeware : If your input device isn't in this es_input.cfg then you probably don't want to use this config file.\nHowever more input devices can be committed to the es_input.cfg in the future.\","
 	)
 	if [[ $scriptdir == *RetroPie* ]];then
 		csv+=(
@@ -1453,7 +1455,7 @@ Then it will be extracted and overwritten in :\n\
     local mamecheat_read
     clear
     echo "reading the available binaries"
-    while read mamecheat_read;do csv+=("$mamecheat_read");done < <(IFS=$'\n'; curl https://www.mamecheat.co.uk/mame_downloads.htm|grep ">XML"|sed 's/</"/g;s/>/"/g;s/XML //g;s/Release Date: //g'|while read line;do echo "\",$(awk -F'\"' '{print $7}' <<< "$line"),,download_extra_files_mamedev https://www.mamecheat.co.uk $(awk -F'\"' '{print $5}' <<< "$line") cheat cheat.7z,\"";done)
+    while read mamecheat_read;do csv+=("$mamecheat_read");done < <(IFS=$'\n'; curl https://www.mamecheat.co.uk/mame_downloads.htm|grep ">XML"|sed 's/</"/g;s/>/"/g;s/XML //g;s/Release Date: //g'|while read line;do echo "\",$(echo $line|cut -d\" -f7),,download_extra_files_mamedev https://www.mamecheat.co.uk $(echo $line|cut -d\" -f5) cheat cheat.7z,\"";done)
     build_menu_mamedev
 }
 
@@ -1498,7 +1500,7 @@ function subgui_download_gamelists_mamedev() {
     clear
     echo "reading the individual gamelist data"
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";curl https://drive.google.com/embeddedfolderview?id=$1#list|sed 's/https/\nhttps/g'|grep folders|sed 's/folders\//folders\"/g;s/>/"/g;s/</"/g'|while read line;do echo "\",Download/update only for '$(awk -F'\"' '{print $50}' <<< "$line")',,download_from_google_drive_mamedev $(awk -F'\"' '{print $2}' <<< "$line") $datadir/roms/$(awk -F'\"' '{print $50}' <<< "$line"),\"";done)
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";curl https://drive.google.com/embeddedfolderview?id=$1#list|sed 's/https/\nhttps/g'|grep folders|sed 's/folders\//folders\"/g;s/>/"/g;s/</"/g'|while read line;do echo "\",Download/update only for '$(echo $line|cut -d '"' -f50)',,download_from_google_drive_mamedev $(echo $line|cut -d '"' -f2) $datadir/roms/$(echo $line|cut -d '"' -f50),\"";done)
     IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
     build_menu_mamedev
 }
@@ -1636,15 +1638,15 @@ function subgui_archive_downloads_mamedev() {
 ",BIOS/mame < \Z1(NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrBrowse BIOS files < NOT FOUND in last runcommand.log,,,"
-",BIOS/mame < BIOS(es) NOT FOUND < ${rompack_link_info[0]},,subform_archive_download_mamedev \"$(echo /$(cat /dev/shm/runcommand.log 2>&-|grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" $datadir/BIOS/mame \"mame-0.264-roms-non-merged/MAME%200.264%20ROMs%20(non-merged)/\" download archive.???,,,,,show_message_mamedev \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the $(awk -F'/' '{print $4}' <<< "$romdir")-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
+",BIOS/mame < BIOS(es) NOT FOUND < ${rompack_link_info[0]},,subform_archive_download_mamedev \"$(echo /$(cat /dev/shm/runcommand.log 2>&-|grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" $datadir/BIOS/mame \"mame-0.264-roms-non-merged/MAME%200.264%20ROMs%20(non-merged)/\" download archive.???,,,,,show_message_mamedev \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the $(echo $romdir|cut -d/ -f4)-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
 ",,,,"
-",▼\ZrBrowse software files and download to $(awk -F'/' '{print $4}' <<< "$romdir")/downloads,,,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_download_mamedev '//' $datadir/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/downloads < \Z1(NEW-SET)mame-sl  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-sl mame-sl/mame-sl/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/downloads < \Z1(NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-merged mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/downloads < UnRenamedFiles-Various,,subform_archive_download_mamedev '//' $datadir/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/downloads,,,"
+",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_download_mamedev '//' $datadir/downloads/mame-0.240-roms-split_202201 mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < \Z1(NEW-SET)mame-sl  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-sl mame-sl/mame-sl/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < \Z1(NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-merged mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/downloads < UnRenamedFiles-Various,,subform_archive_download_mamedev '//' $datadir/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
     )
     [[ $(expr $rp_module_version_database + 0) -gt 261 ]] && \
@@ -1657,89 +1659,89 @@ function subgui_archive_downloads_mamedev() {
     )
     csv+=(
 ",▼\ZrGet all handheld and plug&play files per category,,,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/all_in1      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@all_in1/' ${rompack_link_info[1]} $datadir/roms/all_in1 ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/classich     < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@classich/' ${rompack_link_info[1]} $datadir/roms/classich ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/gameandwatch < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@gameandwatch/' ${rompack_link_info[1]} $datadir/roms/gameandwatch ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/jakks        < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@jakks/' ${rompack_link_info[1]} $datadir/roms/jakks ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/konamih      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@konamih/' ${rompack_link_info[1]} $datadir/roms/konamih ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/tigerh       < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerh/' ${rompack_link_info[1]} $datadir/roms/tigerh ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/tigerrz      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerrz/' ${rompack_link_info[1]} $datadir/roms/tigerrz ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/all_in1      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@all_in1/' ${rompack_link_info[1]} $datadir/roms/all_in1 ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/classich     < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@classich/' ${rompack_link_info[1]} $datadir/roms/classich ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/gameandwatch < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@gameandwatch/' ${rompack_link_info[1]} $datadir/roms/gameandwatch ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/jakks        < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@jakks/' ${rompack_link_info[1]} $datadir/roms/jakks ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/konamih      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@konamih/' ${rompack_link_info[1]} $datadir/roms/konamih ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/tigerh       < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerh/' ${rompack_link_info[1]} $datadir/roms/tigerh ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/tigerrz      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerrz/' ${rompack_link_info[1]} $datadir/roms/tigerrz ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all files from a specific category,,,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/deco_cassette < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/' ${rompack_link_info[1]} $datadir/roms/deco_cassette ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/megaplay      < (  10+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(Mega Play\)/' ${rompack_link_info[1]} $datadir/roms/megaplay ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/neogeo        < ( 270+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@neogeo/' ${rompack_link_info[1]} $datadir/roms/neogeo ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/nintendovs    < (  50+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@nintendovs/' ${rompack_link_info[1]} $datadir/roms/nintendovs ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/playchoice10  < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10 ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/deco_cassette < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/' ${rompack_link_info[1]} $datadir/roms/deco_cassette ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/megaplay      < (  10+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(Mega Play\)/' ${rompack_link_info[1]} $datadir/roms/megaplay ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/neogeo        < ( 270+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@neogeo/' ${rompack_link_info[1]} $datadir/roms/neogeo ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/nintendovs    < (  50+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@nintendovs/' ${rompack_link_info[1]} $datadir/roms/nintendovs ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/playchoice10  < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10 ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all files from a specific category,,,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/driving       < ( 600+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/lightgun      < ( 320+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@lightgun/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/lightgun ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/maze          < ( 750+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/pinball       < (  40+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@pinball_arcade/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/pinball ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/puzzle        < ( 640+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/realistic     < ( 280+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@oro/' ${rompack_link_info[1]} $datadir/roms/realistic ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/shooter       < (2800+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/slot_machine  < (1020+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/sports        < ( 980+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sports/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sports ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/upright       < (2440+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/driving       < ( 600+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/lightgun      < ( 320+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@lightgun/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/lightgun ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/maze          < ( 750+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/pinball       < (  40+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@pinball_arcade/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/pinball ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/puzzle        < ( 640+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/realistic     < ( 280+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@oro/' ${rompack_link_info[1]} $datadir/roms/realistic ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/shooter       < (2800+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/slot_machine  < (1020+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/sports        < ( 980+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sports/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sports ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/upright       < (2440+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all 90º orientated files from a specific category,,,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/deco_cassette90º < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/&&/90º/' ${rompack_link_info[1]} $datadir/roms/deco_cassette90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/playchoice10_90º < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10_90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/deco_cassette90º < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/&&/90º/' ${rompack_link_info[1]} $datadir/roms/deco_cassette90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/playchoice10_90º < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10_90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
 ",▼\ZrGet all 90º orientated files from a specific category,,,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/driving90º    	 < ( 110+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/maze90º        	 < ( 410+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/pinball90º     	 < (  20+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@pinball_arcade/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/pinball90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/puzzle90º      	 < ( 100+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/shooter90º     	 < (1030+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/slot_machine90º	 < (   5+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/sports90º      	 < ( 170+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sports/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sports90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/upright90º    	 < (1450+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/driving90º    	 < ( 110+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/maze90º        	 < ( 410+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/pinball90º     	 < (  20+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@pinball_arcade/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/pinball90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/puzzle90º      	 < ( 100+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@puzzle/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/puzzle90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/shooter90º     	 < (1030+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@shooter@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/shooter90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/slot_machine90º	 < (   5+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/sports90º      	 < ( 170+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sports/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sports90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/upright90º    	 < (1450+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",,,,"
-",▼\ZrBrowse software files and download to $(awk -F'/' '{print $4}' <<< "$romdir")/roms/\ZR,,,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/3ds        < 1PokemonUltraSunEURMULTi83DSPUSSYCAT,,subform_archive_download_mamedev '//&&/cia/' $datadir/roms/3ds 1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/3ds        < 3ds-cia-eshop,,subform_archive_download_mamedev '//&&/rar/' $datadir/roms/3ds 3ds-cia-eshop download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/3ds        < 3DSCIA_testitem1,,subform_archive_download_mamedev '//&&/rar/' $datadir/roms/3ds 3DSCIA_testitem1 download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/3ds        < nintendo-3ds-complete-collection,,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/3ds nintendo-3ds-complete-collection download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/atarist    < AtariSTRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/atarist AtariSTRomCollectionByGhostware download archive.??? '' y, ,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/amiga/cdtv < commodore_amiga_cdtv,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga/cdtv commodore_amiga_cdtv download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/amiga/cd32 < RedumpAmigaCD32,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga/cd32 RedumpAmigaCD32 download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/apple2ee   < TotalReplay,,subform_archive_download_mamedev '//&&/hdv/' $datadir/roms/apple2ee TotalReplay download archive.??? '' y, ,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/apple2gs   < TotalReplay,,subform_archive_download_mamedev '//&&/hdv/' $datadir/roms/apple2gs TotalReplay download archive.??? '' y, ,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple IIgs(ROM3)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/amstradcpc < R-TYPE 2012 (Easter-Egg),,subform_archive_download_mamedev '//&&/dsk/' $datadir/roms/amstradcpc r-type-128k download archive.??? '' y, ,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/bbcb       < AcornBBCMicroRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/bbcb AcornBBCMicroRomCollectionByGhostware download archive.??? '' y, ,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/cdimono1   < cd-i-1g1r-chd-perfect-collection,,subform_archive_download_mamedev '//&&/chd/' $datadir/roms/cdimono1 philips-cd-i-1g1r-chd-perfect-collection download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/cdimono1   < non-redump_philips-cdi,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 non-redump_philips-cdi download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/cdimono1   < philips_cd-i,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 philips_cd-i download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/cdimono1   < redumpPhilipsCdi,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 redumpPhilipsCdi download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < DreamcastCollectionByGhostwareMulti-region,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/dreamcast DreamcastCollectionByGhostwareMulti-region download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < tosecdcus20190822,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/dreamcast tosecdcus20190822 download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < rr-sega-dreamcast (Australia),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/australia/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < rr-sega-dreamcast (Europe),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < rr-sega-dreamcast (-France),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/france/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < rr-sega-dreamcast (-Germany),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/germany/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < rr-sega-dreamcast (-Italy),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/italy/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < rr-sega-dreamcast (-Spain),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/spain/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < rr-sega-dreamcast (Japan),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/japan/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/dreamcast  < rr-sega-dreamcast (Usa),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/usa/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/electron   < AcornElectronRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/electron AcornElectronRomCollectionByGhostware download archive.??? '' Y,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/gx4000     < Converted_GX4000_Software,,show_message_yesno_mamedev \"Would you like to proceed with downloading gx4000 files in $datadir/roms/gx4000 Converted_GX4000_Software ?\" \"subform_archive_multi_downloads_mamedev '//' rar $datadir/roms/gx4000 Converted_GX4000_Software index.php/Converted_GX4000_Software ???.cpcwiki.??\";show_message_yesno_mamedev \"Would you like to unrar the gx4000 files in $datadir/roms/gx4000/Converted_GX4000_Software ?\nThe rar files will be removed after extracting.\" \"eval for rarfile in $datadir/roms/gx4000/Converted_GX4000_Software/*.rar;do unar -f -D -o \$datadir/roms/gx4000/Converted_GX4000_Software \\\$rarfile;rm \\\$rarfile;done;chown -R $user:$user "$datadir/roms/gx4000"\",,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/nes        < NintendoMultiRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx NintendoMultiRomCollectionByGhostware download archive.??? '' y,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/msx        < MSXRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx MSXRomCollectionByGhostware download archive.??? '' Y,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/msx2       < MSX2RomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx2 MSX2RomCollectionByGhostware download archive.??? '' y,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/p2000t     < Software Preservation Project,,subform_archive_multi_downloads_mamedev '//' cas $datadir/roms/p2000t 'Software Preservation Project' p2000t/software/tree/master/cassettes/games github.???,,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/pc98       < NeoKobe-NecPc-98012017-11-17,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/pc98 NeoKobe-NecPc-98012017-11-17 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/ti99_4a    < TOSEC_2012_04_23,,subform_archive_download_mamedev '//&&/zip /' $datadir/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download archive.???;clear;unzip -o $datadir/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d $datadir/roms/ti99_4a/;chown -R $user:$user "$datadir/roms/ti99_4a",,,,,show_message_mamedev \"NO HELP\","
-",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/x68000     < SharpX68000RomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x68000 SharpX68000RomCollectionByGhostware download archive.??? '' y,,,,,show_message_mamedev \"NO HELP\","
+",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/roms/\ZR,,,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 1PokemonUltraSunEURMULTi83DSPUSSYCAT,,subform_archive_download_mamedev '//&&/cia/' $datadir/roms/3ds 1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3ds-cia-eshop,,subform_archive_download_mamedev '//&&/rar/' $datadir/roms/3ds 3ds-cia-eshop download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3DSCIA_testitem1,,subform_archive_download_mamedev '//&&/rar/' $datadir/roms/3ds 3DSCIA_testitem1 download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/3ds        < nintendo-3ds-complete-collection,,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/3ds nintendo-3ds-complete-collection download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/atarist    < AtariSTRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/atarist AtariSTRomCollectionByGhostware download archive.??? '' y, ,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/amiga/cdtv < commodore_amiga_cdtv,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga/cdtv commodore_amiga_cdtv download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/amiga/cd32 < RedumpAmigaCD32,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga/cd32 RedumpAmigaCD32 download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/apple2ee   < TotalReplay,,subform_archive_download_mamedev '//&&/hdv/' $datadir/roms/apple2ee TotalReplay download archive.??? '' y, ,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple //e (e)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
+",$(echo $romdir|cut -d/ -f4)/roms/apple2gs   < TotalReplay,,subform_archive_download_mamedev '//&&/hdv/' $datadir/roms/apple2gs TotalReplay download archive.??? '' y, ,,,,show_message_mamedev \"Get TotalReplay harddrive image for Apple IIgs(ROM3)\n\nTotal Replay (version 4.01 - released 2021-02-18 - 32 MB disk image)\n\n100s of games at your fingertips as long as your fingertips are on an Apple ][\n\nTotal Replay is a frontend for exploring and playing classic arcade games on an 8-bit Apple ][.\nSome notable features:\n- UI for searching and browsing all games\n- Screensaver mode includes hundreds of screenshots and dozens of self-running demos\n- In-game protections removed (manual lookups / code wheels / etc.)\n- Integrated game help\n- Cheat mode available on most games\n- Super hi-res box art (requires IIgs)\n- All games run directly from ProDOS (no swapping floppies!)\n\nSystem requirements:\n- Total Replay runs on any Apple ][ with 64K RAM and Applesoft in ROM\n- Some games require 128K.\n- Some games require a joystick.\n- Total Replay will automatically filter out games that do not work on your machine.\n\nAdditionally:\n- You will need a mass storage device that can mount a 32 MB ProDOS hard drive image.\n- This is supported by all major emulators.\","
+",$(echo $romdir|cut -d/ -f4)/roms/amstradcpc < R-TYPE 2012 (Easter-Egg),,subform_archive_download_mamedev '//&&/dsk/' $datadir/roms/amstradcpc r-type-128k download archive.??? '' y, ,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/bbcb       < AcornBBCMicroRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/bbcb AcornBBCMicroRomCollectionByGhostware download archive.??? '' y, ,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < cd-i-1g1r-chd-perfect-collection,,subform_archive_download_mamedev '//&&/chd/' $datadir/roms/cdimono1 philips-cd-i-1g1r-chd-perfect-collection download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < non-redump_philips-cdi,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 non-redump_philips-cdi download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < philips_cd-i,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 philips_cd-i download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/cdimono1   < redumpPhilipsCdi,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/cdimono1 redumpPhilipsCdi download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < DreamcastCollectionByGhostwareMulti-region,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/dreamcast DreamcastCollectionByGhostwareMulti-region download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < tosecdcus20190822,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/dreamcast tosecdcus20190822 download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Australia),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/australia/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Europe),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-France),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/france/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Germany),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/germany/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Italy),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/italy/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (-Spain),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/europe/spain/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Japan),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/japan/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/dreamcast  < rr-sega-dreamcast (Usa),,subform_archive_download_mamedev '//&&/7z/' $datadir/roms/dreamcast rr-sega-dreamcast/bin/usa/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/electron   < AcornElectronRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/electron AcornElectronRomCollectionByGhostware download archive.??? '' Y,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/gx4000     < Converted_GX4000_Software,,show_message_yesno_mamedev \"Would you like to proceed with downloading gx4000 files in $datadir/roms/gx4000 Converted_GX4000_Software ?\" \"subform_archive_multi_downloads_mamedev '//' rar $datadir/roms/gx4000 Converted_GX4000_Software index.php/Converted_GX4000_Software ???.cpcwiki.??\";show_message_yesno_mamedev \"Would you like to unrar the gx4000 files in $datadir/roms/gx4000/Converted_GX4000_Software ?\nThe rar files will be removed after extracting.\" \"eval for rarfile in $datadir/roms/gx4000/Converted_GX4000_Software/*.rar;do unar -f -D -o \$datadir/roms/gx4000/Converted_GX4000_Software \\\$rarfile;rm \\\$rarfile;done;chown -R $user:$user "$datadir/roms/gx4000"\",,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/nes        < NintendoMultiRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx NintendoMultiRomCollectionByGhostware download archive.??? '' y,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/msx        < MSXRomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx MSXRomCollectionByGhostware download archive.??? '' Y,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/msx2       < MSX2RomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/msx2 MSX2RomCollectionByGhostware download archive.??? '' y,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/p2000t     < Software Preservation Project,,subform_archive_multi_downloads_mamedev '//' cas $datadir/roms/p2000t 'Software Preservation Project' p2000t/software/tree/master/cassettes/games github.???,,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/pc98       < NeoKobe-NecPc-98012017-11-17,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/pc98 NeoKobe-NecPc-98012017-11-17 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+",$(echo $romdir|cut -d/ -f4)/roms/ti99_4a    < TOSEC_2012_04_23,,subform_archive_download_mamedev '//&&/zip /' $datadir/roms/ti99_4a Texas_Instruments_TI-99_4a_TOSEC_2012_04_23 download archive.???;clear;unzip -o $datadir/roms/ti99_4a/Texas_Instruments_TI-99_4a_TOSEC_2012_04_23.zip -d $datadir/roms/ti99_4a/;chown -R $user:$user "$datadir/roms/ti99_4a",,,,,show_message_mamedev \"NO HELP\","
+",$(echo $romdir|cut -d/ -f4)/roms/x68000     < SharpX68000RomCollectionByGhostware,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x68000 SharpX68000RomCollectionByGhostware download archive.??? '' y,,,,,show_message_mamedev \"NO HELP\","
     )
     build_menu_mamedev
 #single files, need different approach
-#",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/amiga/cdtv < Amiga_CDTV_TOSEC_2009_04_18,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga Amiga_CDTV_TOSEC_2009_04_18 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-#",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/fmtowns    < Neo_Kobe_Fujitsu_FM_Towns_2016-02-25,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/fmtowns Neo_Kobe_Fujitsu_FM_Towns_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-#",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/x1         < Neo_Kobe_Sharp_X1_2016-02-25,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x1 Neo_Kobe_Sharp_X1_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
-#",$(awk -F'/' '{print $4}' <<< "$romdir")/roms/x1         < Sharp_X1_TOSEC_2012_04_23,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x1 Sharp_X1_TOSEC_2012_04_23 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/amiga/cdtv < Amiga_CDTV_TOSEC_2009_04_18,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/amiga Amiga_CDTV_TOSEC_2009_04_18 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/fmtowns    < Neo_Kobe_Fujitsu_FM_Towns_2016-02-25,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/fmtowns Neo_Kobe_Fujitsu_FM_Towns_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/x1         < Neo_Kobe_Sharp_X1_2016-02-25,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x1 Neo_Kobe_Sharp_X1_2016-02-25 download archive.???,,,,,show_message_mamedev \NO HELP\,"
+#",$(echo $romdir|cut -d/ -f4)/roms/x1         < Sharp_X1_TOSEC_2012_04_23,,subform_archive_download_mamedev '//&&/zip/' $datadir/roms/x1 Sharp_X1_TOSEC_2012_04_23 download archive.???,,,,,show_message_mamedev \NO HELP\,"
 
 }
 
@@ -1793,7 +1795,7 @@ dialog \
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
 	#remove the earlier added space in the search pattern with sed as it needs the regular pattern here
-	[[ $get_all == y ]] && curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|awk -F'\"' '{print $2}' |grep -v "/"|grep -v "ia_thumb"|awk "$(echo $search_pattern|sed 's/ //g')"|while read line;do if [[ ! -f "$destination_path/$(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]];then download_file_mamedev $line "$website_url/$website_path/$rompack_name" $destination_path;sleep 0.5;else echo $(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g')) [Exists, probably OK];sleep 0.02;fi;done
+	[[ $get_all == y ]] && curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|awk "$(echo $search_pattern|sed 's/ //g')"|while read line;do if [[ ! -f "$destination_path/$(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]];then download_file_mamedev $line "$website_url/$website_path/$rompack_name" $destination_path;sleep 0.5;else echo $(echo -e $(echo $line|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g')) [Exists, probably OK];sleep 0.02;fi;done
 	if [[ $get_all == c ]];then
 	    if [[ ! -f "$destination_path/$rompack_name.zip" ]];then
 	    echo "getting your desired file : $rompack_name.zip"
@@ -1817,9 +1819,9 @@ dialog \
 	    #that way a proper lookalike name is presented when showing the list in dialog box
 		if [[ $decode_html == y ]];then
 			echo -e "\nhtml encoding will be replaced, will take a bit more time\n"
-			while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|awk -F'\"' '{print $2}' |grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$(echo -e $(echo $line|sed -r 's/%2C/%E2%80%9A/g;s/%([[:xdigit:]]{2})/\\x\1/g'))',,download_file_mamedev $line \"$website_url/$website_path/$rompack_name\" $destination_path,\"";done)
+			while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$(echo -e $(echo $line|sed -r 's/%2C/%E2%80%9A/g;s/%([[:xdigit:]]{2})/\\x\1/g'))',,download_file_mamedev $line \"$website_url/$website_path/$rompack_name\" $destination_path,\"";done)
 		else
-			while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|awk -F'\"' '{print $2}' |grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$line',,download_file_mamedev $line \"$website_url/$website_path/$rompack_name\" $destination_path,\"";done)
+			while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$line',,download_file_mamedev $line \"$website_url/$website_path/$rompack_name\" $destination_path,\"";done)
 		fi
 	    IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
 	    #we need to add '",,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
@@ -2097,7 +2099,7 @@ dialog \
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
     mkdir -p $destination_path
     read_data_mamedev clear
-    IFS=$'\n' restricted_download_csv=($(awk -F',' '{print $2}'  <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
+    IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
     for rd in ${!restricted_download_csv[@]};do 
     #echo ${restricted_download_csv[$rd]}
     #sleep 0.3
@@ -2142,9 +2144,9 @@ function subform_link_multi_downloads_mamedev() {
     local file_extension="$2"
     if [[ $1 == *jakks* ]];then
 		show_message_mamedev "Jakks has been detected. To link most jakks roms the @no_media@ filter has been removed from the filter."
-		# Remove @no_media@ from the filter to link most jakks roms.
-		# Not removing this filter might result in only a few roms being linked.
-		local search_input="$(echo $1|awk '{gsub(/ && \/@no_media@\//,"")}1')"
+		#remove @no_media@ from filter to link most jakks roms as many seem to have media but are also in the jakks list
+		#not removing would mean that only a few roms are linked
+		local search_input="$(echo $1|sed 's/ && \/@no_media@\///g')"
 		else
 		local search_input="$1"
     fi
@@ -2175,7 +2177,7 @@ dialog \
     clear
     mkdir -p $destination_path
     read_data_mamedev clear
-    IFS=$'\n' restricted_download_csv=($(awk -F',' '{print $2}'  <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
+    IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
 	#echo ${mamedev_csv[1]}
 	#echo ${restricted_download_csv[1]}
 	#read
@@ -2296,7 +2298,7 @@ function create_00index_file_mamedev() {
     clear
     mkdir -p $destination_path
     read_data_mamedev clear
-    IFS=$'\n' restricted_download_csv=($(awk -F',' '{print $2}'  <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
+    IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
 	echo "creating a "$index_file" file for this specific category"
     [[ -f "$destination_path/$index_file" ]] && rm "$destination_path/$index_file" 2>&1
     for rd in ${!restricted_download_csv[@]};do    
@@ -2397,7 +2399,7 @@ function build_menu_mamedev() {
             #so we can work on one install_system_mamedev and paste it in when it is updated
 	    if [[ $choice == HELP* ]];then
 	        IFS=","
-		run="$(set ${csv[$(echo $choice|awk -F' ' '{print $2}' )]};echo $9)"
+		run="$(set ${csv[$(echo $choice|cut -d ' ' -f2)]};echo $9)"
 	    else
 		IFS=","
 		if [[ "$(set ${csv[$choice]};echo $4)" == install_system_mamedev ]];then 
@@ -2612,33 +2614,33 @@ creating=
 #using @DTEAM naming for compatibitity with possible existing es-themes
 #hoping this will be the future RetroPie / ArchyPie naming for these handhelds
 #this is an example command to extract the systems and add them here to the array :
-#classich=( "\"$(cat mame_systems_dteam_classich|awk -F' ' '{print $2}' )\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
 
 if [[ ${csv[$choice]} != *@skip* ]];then
 read_data_mamedev
-echo "read the mame romset groups, used for $(awk -F'/' '{print $4}' <<< "$romdir") naming"
+echo "read the mame romset groups, used for $(echo $romdir|cut -d/ -f4) naming"
  if [[ -z $groups_read ]];then
  groups_read=1
  IFS=$'\n' 
  #add new items in part 11 for matching
- all_in1=($(awk -F',' '{print $2}'  <<<$(awk '/@all_in1/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- classich=($(awk -F',' '{print $2}'  <<<$(awk '/@classich/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- konamih=($(awk -F',' '{print $2}'  <<<$(awk '/@konamih/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- tigerh=($(awk -F',' '{print $2}'  <<<$(awk '/@tigerh/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ all_in1=($(cut -d "," -f 2 <<<$(awk '/@all_in1/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ classich=($(cut -d "," -f 2 <<<$(awk '/@classich/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ konamih=($(cut -d "," -f 2 <<<$(awk '/@konamih/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ tigerh=($(cut -d "," -f 2 <<<$(awk '/@tigerh/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  #arcade categories
- driving=($(awk -F',' '{print $2}'  <<<$(awk '/@driving@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- maze=($(awk -F',' '{print $2}'  <<<$(awk '/@maze/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- pinball=($(awk -F',' '{print $2}'  <<<$(awk '/@pinball_arcade/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- puzzle=($(awk -F',' '{print $2}'  <<<$(awk '/@puzzle/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- shooter=($(awk -F',' '{print $2}'  <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- slot_machine=($(awk -F',' '{print $2}'  <<<$(awk '/@slot_machine/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- sports=($(awk -F',' '{print $2}'  <<<$(awk '/@sports/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ driving=($(cut -d "," -f 2 <<<$(awk '/@driving@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ maze=($(cut -d "," -f 2 <<<$(awk '/@maze/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ pinball=($(cut -d "," -f 2 <<<$(awk '/@pinball_arcade/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ puzzle=($(cut -d "," -f 2 <<<$(awk '/@puzzle/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ slot_machine=($(cut -d "," -f 2 <<<$(awk '/@slot_machine/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ sports=($(cut -d "," -f 2 <<<$(awk '/@sports/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  #
- deco_cassette=($(awk -F',' '{print $2}'  <<<$(awk '/DECO/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- neogeo=($(awk -F',' '{print $2}'  <<<$(awk '/@neogeo/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- nintendovs=($(awk -F',' '{print $2}'  <<<$(awk '/@nintendovs/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- megaplay=($(awk -F',' '{print $2}'  <<<$(awk '/\(Mega Play\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- playchoice10=($(awk -F',' '{print $2}'  <<<$(awk '/\(PlayChoice-10\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ deco_cassette=($(cut -d "," -f 2 <<<$(awk '/DECO/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ neogeo=($(cut -d "," -f 2 <<<$(awk '/@neogeo/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ nintendovs=($(cut -d "," -f 2 <<<$(awk '/@nintendovs/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ megaplay=($(cut -d "," -f 2 <<<$(awk '/\(Mega Play\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+ playchoice10=($(cut -d "," -f 2 <<<$(awk '/\(PlayChoice-10\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
  #
  unset IFS
 fi
@@ -2701,7 +2703,7 @@ fi
 #then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 if [[ -n "$2" ]]; then
 echo "read the system driver name from the commandline options"
-echo "read the $(awk -F'/' '{print $4}' <<< "$romdir") system name from commandline options"
+echo "read the $(echo $romdir|cut -d/ -f4) system name from commandline options"
 echo "read the ExtraPredefinedOption(s) from the commandline options"
 systems+=( "$1" )
 #by using the systems name as a description we don't have matches in part 10
@@ -2786,7 +2788,7 @@ fi
 #[[ ${systems[${#systems[@]}-1]} == coco3 ]] && ExtraPredefinedOptions+=( "-ext multi -ext:multi:slot1 ram" )
 fi
 #
-done < <($emudir/mame/mame -listmedia $1 $3| grep -v -E "$namesfilter" | grep -E "$mediafilter" | awk -F' ' '{print $1}' )
+done < <($emudir/mame/mame -listmedia $1 $3| grep -v -E "$namesfilter" | grep -E "$mediafilter" | cut -d " " -f 1)
 fi
 [[ -n ${ExtraPredefinedOptions[@]} ]] && echo "use extra predefined options for ${systems[${#systems[@]}-1]}"
 
@@ -2846,9 +2848,9 @@ while read line; do
 # if any?, remove earlier detected system(s) from the line
 substitudeline=$(echo $line | sed "s/${systems[$index]}//g")
 # use the first column if seperated by a space
-mediadescriptions+=( "$(echo $substitudeline | awk -F' ' '{print $1}' )" )
+mediadescriptions+=( "$(echo $substitudeline | cut -d " " -f 1)" )
 # use the third column if seperated by a space and remove ( ) characters and add - for media
-media+=( "$(echo $substitudeline | awk -F' ' '{print $2}'  | sed s/\(/-/g | sed s/\)//g)" )
+media+=( "$(echo $substitudeline | cut -d " " -f 2 | sed s/\(/-/g | sed s/\)//g)" )
 # use the second column if seperated by a ) character and cut off the first space
 extensions+=( "$(echo $substitudeline | cut -d ")" -f 2 | cut -c 2-)" )
 index=$(( $index + 1 ))
@@ -2877,10 +2879,10 @@ for index in "${!systems[@]}"; do descriptions+=( "$($emudir/mame/mame -listdevi
 fi
 
 #part 8 : read RetroPie / ArchyPie systems and descriptions from the platforms.cfg
-echo "read and match $(awk -F'/' '{print $4}' <<< "$romdir") names with mamedev names"
+echo "read and match $(echo $romdir|cut -d/ -f4) names with mamedev names"
 while read line; do
 # read retropie rom directory names 
-systemsrp+=( "$(echo $line | awk -F'_' '{print $1}' )" )
+systemsrp+=( "$(echo $line | cut -d '_' -f 1)" )
 # read retropie full system names
 #
 #sed is used to change descriptions on the fly, 
@@ -2909,7 +2911,7 @@ sed 's/Sega 32X/32X/g' | \
 sed 's/Commodore Amiga/Amiga/g' | \
 sed 's/ and / \& /g' | \
 sed 's/ and / \& /g' | \
-awk -F'\"' '{print $2}' )" )
+cut -d '"' -f 2)" )
 done < <(cat $scriptdir/platforms.cfg | grep fullname)
 
 
@@ -3057,17 +3059,17 @@ for mamedevindex in "${!systems[@]}"; do
         # If descriptions are exactly the same then use the system name of retropie as romdirectory
         # for the other arrays we use the mamedev information
         newsystems[$mamedevindex]=$dteam_system
-	echo "$(awk -F'/' '{print $4}' <<< "$romdir") install -> ${newsystems[$mamedevindex]} (Using pseudo system name / category name)"
+	echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]} (Using pseudo system name / category name)"
 	lastcategorymatch=true
 	fi
     done
   done
 done
 if [[ -n "$2" ]]; then
-echo "$(awk -F'/' '{print $4}' <<< "$romdir") install -> $2 (Using predefined pseudo system name / category name)"
+echo "$(echo $romdir|cut -d/ -f4) install -> $2 (Using predefined pseudo system name / category name)"
 else
-[[ $lastcategorymatch == false ]] && [[ -n $lastdescriptionmatch ]] && echo "$(awk -F'/' '{print $4}' <<< "$romdir") install -> ${newsystems[$mamedevindex]} ($lastdescriptionmatch)"
-[[ $lastcategorymatch == false ]] && [[ -z $lastdescriptionmatch ]] && echo "$(awk -F'/' '{print $4}' <<< "$romdir") install -> ${newsystems[$mamedevindex]}"
+[[ $lastcategorymatch == false ]] && [[ -n $lastdescriptionmatch ]] && echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]} ($lastdescriptionmatch)"
+[[ $lastcategorymatch == false ]] && [[ -z $lastdescriptionmatch ]] && echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]}"
 fi
 #reset variable
 lastdescriptionmatch=
@@ -3266,7 +3268,7 @@ echo "install basename runcommands for softlist loading"
 ##we have to use an if function to be sure this is only generated and installed once per system
 ##the if function will check if the last created system is not equal to the next system in the array
 for index in "${!newsystems[@]}"; do 
-local platformextensionsrp=$(grep ${newsystems[$index]}_exts $scriptdir/platforms.cfg $scriptdir/ext/RetroPie-Share/platforms.cfg | awk -F'\"' '{print $2}' )
+local platformextensionsrp=$(grep ${newsystems[$index]}_exts $scriptdir/platforms.cfg $scriptdir/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2)
 if [[ $SystemType == non-arcade ]];then
 	#plain commands
 	#lr-xxxx-cmd is used for loading .cmd files, amongst others
@@ -3512,15 +3514,15 @@ chown -R $user:$user $datadir/downloads
 # with "xrandr" we can extract the correct resolution in a linux when changed with xrandr
 # so we check "xrandr" first and if we don't have a value we use "fbset"
 if [[ -n $(xrandr) ]];then echo -e "\nusing xrandr for detecting host resolution\n";else echo -e "\nusing xrandr for detecting host resolution\n";fi
-value_height_y=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|awk -F' ' '{print $5}' );else echo $(fbset -s|grep geo|awk -F' ' '{print $7}' );fi)
-value_width_x=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|awk -F' ' '{print $4}' );else echo $(fbset -s|grep geo|awk -F' ' '{print $6}' );fi)
+value_height_y=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f5);else echo $(fbset -s|grep geo|cut -d " " -f7);fi)
+value_width_x=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f4);else echo $(fbset -s|grep geo|cut -d " " -f6);fi)
 
 for cfg_file in $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/*.cfg
 do
  if
  [[ "$cfg_file"  != *.zip.cfg ]];then
- echo "patching $(echo $cfg_file|awk -F'/' '{print $10}' ) for "$value_width_x"x"$value_height_y", creating a.zip.cfg and a .7z.cfg"
- sed -i "s|[:]|\/home\/$user\/$(awk -F'/' '{print $4}' <<< "$romdir")\/downloads\/Orionsangels_Realistic_Overlays_For_RetroPie\/Retroarch|g;s|[\]|\/|g" "$cfg_file"
+ echo "patching $(echo $cfg_file|cut -d/ -f10) for "$value_width_x"x"$value_height_y", creating a.zip.cfg and a .7z.cfg"
+ sed -i "s|[:]|\/home\/$user\/$(echo $romdir|cut -d/ -f4)\/downloads\/Orionsangels_Realistic_Overlays_For_RetroPie\/Retroarch|g;s|[\]|\/|g" "$cfg_file"
  echo input_overlay_enable = true  >> "$cfg_file"
  echo aspect_ratio_index = \"23\" >> "$cfg_file"
  if [[ -f $rootdir/configs/all/retroarch/shaders/fake-crt-geom.glslp ]];then
@@ -3528,10 +3530,10 @@ do
  else
  echo video_shader = \"$rootdir/configs/all/retroarch/shaders/crt/crt-geom.glslp\" >> "$cfg_file"
  fi
- value=$(cat "$cfg_file"|grep _height|awk -F'\"' '{print $2}' );sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
- value=$(cat "$cfg_file"|grep _width|awk -F'\"' '{print $2}' );sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
- value=$(cat "$cfg_file"|grep _x|awk -F'\"' '{print $2}' );sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
- value=$(cat "$cfg_file"|grep _y|awk -F'\"' '{print $2}' );sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
+ value=$(cat "$cfg_file"|grep _height|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
+ value=$(cat "$cfg_file"|grep _width|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
+ value=$(cat "$cfg_file"|grep _x|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
+ value=$(cat "$cfg_file"|grep _y|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
  mv "$cfg_file" "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')"
  cp "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')" "$(echo $cfg_file|sed 's/\.cfg/\.7z\.cfg/')"
  fi
@@ -3599,13 +3601,13 @@ echo "extract background files from mame artwork, if available, and create custo
 echo
 #added handheld arrays, used for overlays
 #this is an example command to extract the systems and add them here to the array :
-#classich=( "\"$(cat mame_systems_dteam_classich|awk -F' ' '{print $2}' )\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
 read_data_mamedev clear
 IFS=$'\n' 
-classich=($(awk -F',' '{print $2}'  <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-konamih=($(awk -F',' '{print $2}'  <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-tigerh=($(awk -F',' '{print $2}'  <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-gameandwatch=($(awk -F',' '{print $2}'  <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+tigerh=($(cut -d "," -f 2 <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+gameandwatch=($(cut -d "," -f 2 <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 unset IFS
 
 
@@ -3655,13 +3657,13 @@ echo "extract bezel files from mame artwork, if available, and create custom ret
 echo
 #added handheld arrays, used for overlays
 #this is an example command to extract the systems and add them here to the array :
-#classich=( "\"$(cat mame_systems_dteam_classich|awk -F' ' '{print $2}' )\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
 read_data_mamedev clear
 IFS=$'\n' 
-classich=($(awk -F',' '{print $2}'  <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-konamih=($(awk -F',' '{print $2}'  <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-tigerh=($(awk -F',' '{print $2}'  <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-gameandwatch=($(awk -F',' '{print $2}'  <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+tigerh=($(cut -d "," -f 2 <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+gameandwatch=($(cut -d "," -f 2 <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 unset IFS
 
 
