@@ -8,14 +8,26 @@
 #bash awk.sh or ./awk.sh (with execution rights)
 #output sorted data from all drivers
 #bash awk.sh > mame0283_systems_sorted_info or ./awk.sh > mame0283_systems_sorted_info (with execution rights)
+#
+#or get the version from the installed mame without retyping
+#bash awk.sh > $(/opt/retropie/emulators/mame/mame -version|awk -F '[()]' '{print $2}')_systems_sorted_info
 
 #example on how to get all predefined drivers of a category in one line with awk from a created database :
 #cat '/opt/retropie/emulators/mame/mame0282_systems_sorted_info' |awk '{ORS = " "} /@samples@/ {print $2}'
+#
+#or get the version from the installed mame without retyping
+#cat /opt/retropie/emulators/mame/$(/opt/retropie/emulators/mame/mame -version|awk -F '[()]' '{print $2}')_systems_sorted_info |awk '{ORS = " "} /@samples@/ {print $2}'
+
+
 
 #create ini files from a created database file 
 #(needs 2 awk commands to cut out the drivers, not sure why !, could be improved somehow)
 #try to make sure there is no old inis folder or rename the old one
-#mkdir inis;cat awk3.sh |awk '/^# /{print $2}'|while read category;do cat mame0282_systems_sorted_info|awk "/@$category@/"|awk '{print $2}' > inis/$category.ini;done
+#mkdir inis;cat awk.sh |awk '/^# /{print $2}'|while read category;do cat mame0282_systems_sorted_info|awk "/@$category@/"|awk '{print $2}' > inis/$category.ini;done
+#
+#or get the version from the installed mame without retyping
+#mkdir inis;cat awk.sh |awk '/^# /{print $2}'|while read category;do cat $(/opt/retropie/emulators/mame/mame -version|awk -F '[()]' '{print $2}')_systems_sorted_info|awk "/@$category@/"|awk '{print $2}' > inis/$category.ini;done
+
 
 /opt/retropie/emulators/mame/mame -listdevices $1|\
 awk -F '[ ]' '
