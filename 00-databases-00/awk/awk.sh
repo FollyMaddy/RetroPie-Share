@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #for mame version 283
 
 #Make sure you are running a 64 bit version of mame !
