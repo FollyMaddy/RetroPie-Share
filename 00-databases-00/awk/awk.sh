@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-#for mame version 283
+#for mame version 284
+
+#remember: the output of "mame -listxml" can change a bit per version outputting lines not on the same linenumber
+#so if the output of the script is wrong then check if the linenumbers, used in the script, are correct
+#see in the script from linenumber 50
 
 #Make sure you are running a 64 bit version of mame !
 
@@ -46,15 +50,15 @@ awk -F '[<>"]' '
 
 #base info
 #machine name
-{if (NR == 164) _driverinfo = _driverinfo $3 "□"}
-#sourcefile
-{if (NR == 164) _driverinfo = _driverinfo $5 "□"}
-#sampleof
-{if (NR == 164) _sampleof = _sampleof $7}
-#description
 {if (NR == 165) _driverinfo = _driverinfo $3 "□"}
+#sourcefile
+{if (NR == 165) _driverinfo = _driverinfo $5 "□"}
+#sampleof
+{if (NR == 165) _sampleof = _sampleof $7}
+#description
+{if (NR == 166) _driverinfo = _driverinfo $3 "□"}
 #manufacturer
-{if (NR == 167) _driverinfo = _driverinfo $3 "□"}
+{if (NR == 168) _driverinfo = _driverinfo $3 "□"}
 
 #tags
 #begin the tags with a @, mameconfig is at the beginning was just a regular choice can be something else !!!
