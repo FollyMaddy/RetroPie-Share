@@ -135,22 +135,22 @@ if ( " 005 3bagfull astrof battles bbc blockade bowl3d buckrog carnival circus c
 
 ##categories by filters
 
-# atari, rule out drivers that are tagged non-arcade or mechanical
+# atari , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "atari/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "atari" "@"
 
 # bootlegs
 if (_driverarr[3] ~ "bootleg" || _driverarr[4] ~ "bootleg") _tags = _tags "bootlegs" "@"
 
 ##capcom
-# capcom, rule out drivers that are tagged non-arcade or mechanical
+# capcom , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "capcom/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@" && _cache !~ "capcom/cps") _tags = _tags "capcom" "@"
-# cps1, rule out drivers that are tagged non-arcade or mechanical
+# cps1 , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "capcom/cps1" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "cps1" "@"
-# cps2, rule out drivers that are tagged non-arcade or mechanical
+# cps2 , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "capcom/cps2" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "cps2" "@"
-# cps3, rule out drivers that are tagged non-arcade or mechanical
+# cps3 , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "capcom/cps3" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "cps3" "@"
-# dataeast, rule out drivers that are tagged non-arcade or mechanical
+# dataeast , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "dataeast/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "dataeast" "@"
 
 # tigerrz
@@ -221,15 +221,15 @@ if (_cache ~ "lightgun") _tags = _tags "lightgun" "@"
 if (_cache ~ "konami/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "konami" "@"
 
 ##midway
-# midway, rule out drivers that are tagged non-arcade or mechanical and already categorised midway systems
+# midway , rule out drivers that are tagged non-arcade or mechanical and already categorised midway systems
 if (_cache ~ "midway/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@" && _cache !~ "midway/astrocde") _tags = _tags "midway" "@"
 
 ##namco
-# namco, rule out drivers that are tagged non-arcade or mechanical
+# namco , rule out drivers that are tagged non-arcade or mechanical
 if (_driverinfo ~ "Namco" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@bios@" && _tags !~ "@screenless@" && _cache !~ "namco/namcos") _tags = _tags "namco" "@"
-# namcosystem1
+# namcosystem01
 if (_cache ~ "namco/namcos1.cpp" && _tags !~ "@bios@") _tags = _tags "namcosystemxx@namcosystem01" "@"
-# namcosystem2
+# namcosystem02
 if (_cache ~ "namco/namcos2.cpp" && _tags !~ "@bios@") _tags = _tags "namcosystemxx@namcosystem02" "@"
 # namcosystem10
 if (_cache ~ "namco/namcos10" && _tags !~ "@bios@") _tags = _tags "namcosystemxx@namcosystem10" "@"
@@ -245,7 +245,7 @@ if (_cache ~ "namco/namcos22" && _tags !~ "@bios@") _tags = _tags "namcosystemxx
 if (_cache ~ "namco/namcos23" && _tags !~ "@bios@") _tags = _tags "namcosystemxx@namcosystem23" "@"
 
 ##sega
-# atomiswave, rule out drivers that are tagged non-arcade or mechanical
+# atomiswave , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "sega/dc_atomiswave" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "atomiswave" "@"
 # megaplay
 if (_cache ~ "sega/megaplay" && _tags !~ "@bios@") _tags = _tags "megaplay" "@"
@@ -255,17 +255,17 @@ if (_cache ~ "sega/model1.cpp") _tags = _tags "model1" "@"
 if (_cache ~ "sega/model2.cpp") _tags = _tags "model2" "@"
 # model3
 if (_cache ~ "sega/model3.cpp") _tags = _tags "model3" "@"
-# segasystem16, rule out drivers that are tagged non-arcade or mechanical
+# segasystem16 , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "sega/segas16" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "segasystemxx@segasystem16" "@"
-# segasystem18, rule out drivers that are tagged non-arcade or mechanical
+# segasystem18 , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "sega/segas18" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "segasystemxx@segasystem18" "@"
-# segasystem24, rule out drivers that are tagged non-arcade or mechanical
+# segasystem24 , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "sega/segas24" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "segasystemxx@segasystem24" "@"
-# segasystem32, rule out drivers that are tagged non-arcade or mechanical
+# segasystem32 , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "sega/segas32" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "segasystemxx@segasystem32" "@"
-# naomi, rule out drivers that are tagged non-arcade or mechanical
+# naomi , rule out drivers that are tagged non-arcade or mechanical
 if (_cache ~ "sega/naomi" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "naomi" "@"
-# sega, rule out drivers that are tagged non-arcade or mechanical and already categorised sega systems
+# sega , rule out drivers that are tagged non-arcade or mechanical and already categorised sega systems
 if (_cache ~ "sega/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@" && _cache !~ "sega/dc_atomiswave" && _cache !~ "sega/model" && _cache !~ "sega/naomi" && _cache !~ "sega/segas1" && _cache !~ "sega/segas2" && _cache !~ "sega/segas3") _tags = _tags "sega" "@"
 
 # neogeo
