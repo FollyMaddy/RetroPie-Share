@@ -1,0 +1,16 @@
+diff --git a/src/main.c b/src/main.c
+index 2f029a0..0d7e3e3 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -524,8 +524,10 @@ void main_init(int argc, char *argv[])
+     main_setspeed(emuspeed);
+     debug_start(exec_fn, true);
+     // lovebug
+-    if (fullscreen)
++    if (fullscreen) {
++        gui_allegro_destroy(queue, tmp_display);
+         video_enterfullscreen();
++    }
+     // lovebug end
+ }
+ 
