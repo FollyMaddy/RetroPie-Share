@@ -31,8 +31,11 @@ function depends_b-em-a5() {
     local deps=(
         automake
         autotools-dev
-        liballegro-dialog5-dev
         liballegro5-dev
+        liballegro-acodec5-dev
+        liballegro-audio5-dev
+        liballegro-dialog5-dev
+        liballegro-image5-dev
         libalut-dev
         libopenal-dev
         matchbox-window-manager
@@ -83,8 +86,8 @@ function configure_b-em-a5() {
     sed -i 's/displaymode=1/displaymode=0/' "$md_inst/b-em.cfg"
     sed -i 's/fasttape=false/fasttape=true/' "$md_inst/b-em.cfg"
     chown "$__user":"$__group" "$md_inst/b-em.cfg"
-    mv "$md_inst/b-em.cfg" "$configdir/$sys_name/$md_id.cfg"
-    moveConfigFile "$home/.config/b-em/b-em.cfg" "$configdir/$sys_name/$md_id.cfg"
+    moveConfigFile "$md_inst/b-em.cfg" "$configdir/$sys_name/$md_id.cfg"
+    #moveConfigFile "$home/.config/b-em/b-em.cfg" "$configdir/$sys_name/$md_id.cfg"
 
     cat >"$md_inst/b-em-a5-launcher.sh" << _EOF_
 #! /bin/bash
