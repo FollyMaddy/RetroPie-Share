@@ -1,0 +1,80 @@
+diff --git a/src/config.c b/src/config.c
+index af00ce0..8aa8be4 100644
+--- a/src/config.c
++++ b/src/config.c
+@@ -211,8 +211,9 @@ void config_load(ALLEGRO_PATH *path)
+ 
+     vid_fullborders  = get_config_int("video", "fullborders",   1);
+     vid_win_multiplier = get_config_int("video", "winmultipler", 1);
+-    winsizex         = get_config_int("video", "winsizex", 800);
+-    winsizey         = get_config_int("video", "winsizey", 600);
++    // scriptmodule provides these
++    //winsizex         = get_config_int("video", "winsizex", 800);
++    //winsizey         = get_config_int("video", "winsizey", 600);
+ 
+     vid_ledlocation  = get_config_int("video", "ledlocation",   0);
+     vid_ledvisibility = get_config_int("video", "ledvisibility", 2);
+@@ -375,8 +376,8 @@ void config_save(void)
+ 
+         set_config_int("video", "fullborders", vid_fullborders);
+         set_config_int("video", "winmultipler", vid_win_multiplier);
+-        set_config_int("video", "winsizex", winsizex);
+-        set_config_int("video", "winsizey", winsizey);
++        //set_config_int("video", "winsizex", winsizex);
++        //set_config_int("video", "winsizey", winsizey);
+ 
+         set_config_int("video", "displaymode", vid_dtype_user);
+         set_config_int("video", "colourtype", vid_colour_out);
+diff --git a/src/vidalleg.c b/src/vidalleg.c
+index 97baced..a112630 100644
+--- a/src/vidalleg.c
++++ b/src/vidalleg.c
+@@ -36,15 +36,35 @@ static const int y_fudge = 0;
+ static const int y_fudge = 28;
+ #endif
+ 
++static void get_monitor_resolution(int *resx, int *resy) {
++    ALLEGRO_MONITOR_INFO mon_info;
++    int num_adp = al_get_num_video_adapters();
++    if (num_adp < 0) {
++        num_adp = 0;
++    }
++    if (num_adp > 1) {
++        log_warn("vidalleg: get_monitor_resolution, more than one monitor detected. Using first adapter.");
++    }
++    if (al_get_monitor_info(0 /* first adapter */, &mon_info)) {
++        *resx = mon_info.x2 - mon_info.x1;
++        *resy = mon_info.y2 - mon_info.y1;
++        log_debug("vidalleg: video_calc_fullscreen, resx=%d, resx=%d", *resx, *resy);
++    }
++}
++
+ static void video_calc_fullscreen(ALLEGRO_DISPLAY *display)
+ {
+     ALLEGRO_COLOR black = al_map_rgb(0, 0, 0);
+     double aspect = (double)winsizex / (double)winsizey;
+-    log_debug("vidalleg: video_enterfullscreen, new winsizex=%d, winsizey=%d, aspect=%g", winsizex, winsizey, aspect);
++
++    int resx = 800, resy = 600;
++    get_monitor_resolution(&resx, &resy);
++
++    log_debug("vidalleg: video_calc_fullscreen, new winsizex=%d, winsizey=%d, aspect=%g", winsizex, winsizey, aspect);
+     if (aspect > (4.0 / 3.0)) {
+         int value = 4 * winsizey / 3;
+         scr_x_start = (winsizex - value) / 2;
+-        scr_y_start = 0;
++        scr_y_start = (resy - winsizey) / 2;
+         scr_x_size = value;
+         scr_y_size = winsizey;
+         al_set_target_backbuffer(display);
+@@ -55,7 +75,7 @@ static void video_calc_fullscreen(ALLEGRO_DISPLAY *display)
+     }
+     else {
+         int value = 3 * winsizex / 4;
+-        scr_x_start = 0;
++        scr_x_start = (resx - winsizex) / 2;
+         scr_y_start = (winsizey - value) / 2;
+         scr_x_size = winsizex;
+         scr_y_size = value;
+
+

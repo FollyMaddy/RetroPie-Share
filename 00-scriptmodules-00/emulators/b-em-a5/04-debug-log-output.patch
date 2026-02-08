@@ -1,0 +1,34 @@
+diff --git a/src/vidalleg.c b/src/vidalleg.c
+index a112630..f96ffd3 100644
+--- a/src/vidalleg.c
++++ b/src/vidalleg.c
+@@ -84,7 +84,7 @@ static void video_calc_fullscreen(ALLEGRO_DISPLAY *display)
+         // fill the gap between the BBC image and the bottom of the screen.
+         al_draw_filled_rectangle(0, scr_y_start + value, winsizex, winsizey, black);
+     }
+-    log_debug("vidalleg: video_enterfullscreen, scr_x_start=%d, scr_y_start=%d, scr_x_size=%d, scr_y_size=%d", scr_x_start, scr_y_start, scr_x_size, scr_y_size);
++    log_debug("vidalleg: video_calc_fullscreen, scr_x_start=%d, scr_y_start=%d, scr_x_size=%d, scr_y_size=%d", scr_x_start, scr_y_start, scr_x_size, scr_y_size);
+ }
+ 
+ static int fullscreen_pending = 0;
+@@ -95,7 +95,7 @@ static void video_startfullscreen(ALLEGRO_DISPLAY *display)
+     winsizey = al_get_display_height(display);
+     video_calc_fullscreen(display);
+     if (winsizex == save_winsizex || winsizey == save_winsizey) {
+-        log_debug("vidalleg: video_enterfullscreen, no immediate change of size, setting fullscreen_pending");
++        log_debug("vidalleg: video_startfullscreen, no immediate change of size, setting fullscreen_pending");
+         fullscreen_pending = 500;
+     }
+ }
+@@ -148,6 +148,9 @@ void video_set_window_size(bool fudge)
+             x_wanted = BORDER_FULL_X_END_GRA - BORDER_FULL_X_START_GRA;
+             y_wanted = (BORDER_FULL_Y_END_GRA - BORDER_FULL_Y_START_GRA) * 2;
+     }
++    log_debug("vidalleg: video_set_window_size, x_wanted=%d, y_wanted=%d", x_wanted, y_wanted);
++    log_debug("vidalleg: video_set_window_size, vid_win_multiplier=%d", vid_win_multiplier);
++
+     if (vid_win_multiplier > 0) {
+         winsizex = scr_x_size = x_wanted * vid_win_multiplier;
+         winsizey = scr_y_size = y_wanted * vid_win_multiplier;
+
+
