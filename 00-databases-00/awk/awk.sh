@@ -284,6 +284,10 @@ if (_cache ~ "nintendo/playch10" && _tags !~ "@bios@") _tags = _tags "playchoice
 #use predefined selection instead that match the available sample files !
 #if (_cache ~ "sampleof=") _tags = _tags "samples" "@"
 
+# taito , rule out drivers that are tagged non-arcade or mechanical
+if (_driverinfo ~ "Taito" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@bios@" && _tags !~ "@screenless@" && _cache !~ "taito/") _tags = _tags "taito" "@"
+
+
 #print _cache
 #print _driverinfo _tags
 
