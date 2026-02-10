@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0285.00"
+rp_module_version="0285.01"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -88,6 +88,9 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 
     show_message_mamedev "\
                                                  One time update info\n\
+285.01 :\n\
+- add taito to database\n\
+- fix audio samples download and still using 278\n\
 285.00 :\n\
 - add database\n\
 284.00 :\n\
@@ -1417,7 +1420,7 @@ function subgui_addons_mamedev () {
 	)
 	[[ $(expr $rp_module_version_database + 0) -gt 273 ]] && \
     csv+=(
-",Download/update mame audio samples,,download_extra_files_mamedev https://www.progettosnaps.net/samples/packs/ MAME_samples_278.zip samples samples.7z extract_7z,,,,,show_message_mamedev \"Nohelp\","
+",Download/update mame audio samples,,download_extra_files_mamedev https://www.progettosnaps.net/samples/packs/ MAME_samples_278.zip samples "" "",,,,,show_message_mamedev \"Nohelp\","
 	)
 	csv+=(
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive_mamedev 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 $datadir/roms/mame/artwork,,,,,show_message_mamedev \"Here you will find the artwork files needed for a lot of handheld games and it's basically only working on MAME standalone. Some artwork files are custom made others are from other sources. Though we changed the background and bezel filenames in the archives so the options 'Create RetroArch xxxxxxxxxxx-overlays' can make use of these artwork files by extracting the overlay pictures and use them for lr-mess and lr-mame in retroarch.\","
