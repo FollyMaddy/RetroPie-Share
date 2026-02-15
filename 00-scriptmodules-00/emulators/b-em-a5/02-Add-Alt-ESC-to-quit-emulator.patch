@@ -1,0 +1,28 @@
+diff --git a/src/keyboard.c b/src/keyboard.c
+index e9bbb7a..fa84416 100644
+--- a/src/keyboard.c
++++ b/src/keyboard.c
+@@ -686,7 +686,8 @@ const struct key_act_const keyact_const[KEY_ACTION_MAX] = {
+     { "pause",        ALLEGRO_KEY_PGDN,  false, main_key_pause,          do_nothing      },
+     { "full-screen1", ALLEGRO_KEY_F11,   false, toggle_fullscreen_menu, do_nothing      },
+     { "debug-break",  ALLEGRO_KEY_F10,   false, debug_break,             do_nothing      },
+-    { "full-screen2", ALLEGRO_KEY_ENTER, true,  toggle_fullscreen_menu, do_nothing      }
++    { "full-screen2", ALLEGRO_KEY_ENTER, true,  toggle_fullscreen_menu, do_nothing      },
++    { "quit",         ALLEGRO_KEY_ESCAPE,true,  set_quit,                do_nothing      }
+ };
+ 
+ uint8_t keylookup[ALLEGRO_KEY_MAX];
+diff --git a/src/keyboard.h b/src/keyboard.h
+index 6483145..95ce071 100644
+--- a/src/keyboard.h
++++ b/src/keyboard.h
+@@ -3,7 +3,7 @@
+ 
+ extern int kbdips;
+ 
+-#define KEY_ACTION_MAX 6
++#define KEY_ACTION_MAX 7
+ 
+ struct key_act_const {
+     const char *name;
+
