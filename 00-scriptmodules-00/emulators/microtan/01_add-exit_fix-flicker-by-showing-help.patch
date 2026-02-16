@@ -1,0 +1,35 @@
+--- /main.c	2024-02-13 15:34:18.000000000 +0100
++++ /main.c	2026-02-16 16:00:24.272992368 +0100
+@@ -122,6 +122,16 @@
+     struct timespec sleep_time;
+     bool display_overwritten = false;
+ 
++	//prevent flickering when starting program from plain terminal and also show the hotkeys on startup
++    popup_show(renderer,
++         "F1: Display and exit this help\n" \
++         "F2: Select hex keypad input\n" \
++         "F3: Select ASCII keyboard input\n" \
++         "F5: Reset system\n" \
++         "ESC: Exit emulator\n" \
++         "\n"
++    );
++
+     while (is_running)
+     {
+         clock_gettime(CLOCK_MONOTONIC, &start_time);
+@@ -215,10 +225,15 @@
+                                    "F2: Select hex keypad input\n" \
+                                    "F3: Select ASCII keyboard input\n" \
+                                    "F5: Reset system\n" \
++                                   "ESC: Exit emulator\n" \
+                                    "\n"
+                                   );
+                         display_overwritten = true;
+                     }
++                    else if (keycode == SDLK_ESCAPE)
++                    {
++                        return 0;
++                    }
+                     else if (keycode == SDLK_F2)
+                     {
+                         keyboard_use_hex_keypad(true);
