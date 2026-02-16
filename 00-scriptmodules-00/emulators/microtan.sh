@@ -16,6 +16,17 @@ rp_module_licence="Unknown"
 rp_module_repo="git https://github.com/geo255/microtan65.git main"
 rp_module_section="exp"
 
+function depends_microtan() {
+    local deps=(
+        libsdl2-dev
+        libsdl2-2.0-0
+        libsdl2-image-dev
+        libsdl2-mixer-dev
+        libsdl2-ttf-dev
+    )
+    getDepends "${deps[@]}"
+}
+
 function sources_microtan() {
     gitPullOrClone
     applyPatch "$md_data/01_add-exit_fix-flicker-by-showing-help.patch"
