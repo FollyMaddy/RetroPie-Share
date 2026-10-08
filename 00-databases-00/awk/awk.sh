@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#for mame version 284
+#for mame version 289
 
 #remember: the output of "mame -listxml" can change a bit per version outputting lines not on the same linenumber
 #so if the output of the script is wrong then check if the linenumbers, used in the script, are correct
@@ -13,13 +13,13 @@
 #output sorted data from all drivers
 #bash awk.sh or ./awk.sh (with execution rights)
 #output sorted data from all drivers
-#bash awk.sh > mame0283_systems_sorted_info or ./awk.sh > mame0283_systems_sorted_info (with execution rights)
+#bash awk.sh > mame0289_systems_sorted_info or ./awk.sh > mame0289_systems_sorted_info (with execution rights)
 #
 #or get the version from the installed mame without retyping
 #bash awk.sh > $(/opt/retropie/emulators/mame/mame -version|awk -F '[()]' '{print $2}')_systems_sorted_info
 
 #example on how to get all predefined drivers of a category in one line with awk from a created database :
-#cat '/opt/retropie/emulators/mame/mame0282_systems_sorted_info' |awk '{ORS = " "} /@samples@/ {print $2}'
+#cat '/opt/retropie/emulators/mame/mame0289_systems_sorted_info' |awk '{ORS = " "} /@samples@/ {print $2}'
 #
 #or get the version from the installed mame without retyping
 #cat /opt/retropie/emulators/mame/$(/opt/retropie/emulators/mame/mame -version|awk -F '[()]' '{print $2}')_systems_sorted_info |awk '{ORS = " "} /@samples@/ {print $2}'
@@ -29,7 +29,7 @@
 #create ini files from a created database file 
 #(needs 2 awk commands to cut out the drivers, not sure why !, could be improved somehow)
 #try to make sure there is no old inis folder or rename the old one
-#mkdir inis;cat awk.sh |awk '/^# /{print $2}'|while read category;do cat mame0282_systems_sorted_info|awk "/@$category@/"|awk '{print $2}' > inis/$category.ini;done
+#mkdir inis;cat awk.sh |awk '/^# /{print $2}'|while read category;do cat mame0289_systems_sorted_info|awk "/@$category@/"|awk '{print $2}' > inis/$category.ini;done
 #
 #or get the version from the installed mame without retyping
 #mkdir inis;cat awk.sh |awk '/^# /{print $2}'|while read category;do cat $(/opt/retropie/emulators/mame/mame -version|awk -F '[()]' '{print $2}')_systems_sorted_info|awk "/@$category@/"|awk '{print $2}' > inis/$category.ini;done
@@ -144,7 +144,7 @@ if (_screenless ~ "screenless") _tags = _tags "screenless" "@"
 
 ##predefined categories
 # all_in1
-if ( " 265games 88in1joy ablmini ablpinb arcade10 backybbs ban_krkk barbpet bittboy brke23p2 carled99 cmpmx10 cmpmx11 cybar120 cybrtvfe d12power dgun2573 dgun2953 dgun2959 disppal dnv200fs dphh8630 dreamlif dsgnwrld fapocket fccomp88 fcpocket fordrace ga888 gamezn2 gon100 gprnrs1 gprnrs16 gujtv108 hotwhls ii32in1 ii8in1 intact89 intg5410 itvg49 lexiseal lexizeus lpetshop lx_jg7415 lxairjet lxnoddy m505neo m521neo majkon marc101 marc250 mc_105te mc_110cb mc_138cb mc_7x6ss mc_89in1 mc_8x6cb mc_8x6ss mc_9x6ss mc_aa2 mc_cb280 mc_dcat8 mc_dg101 mc_dgear mc_hh210 mc_sam60 mc_sp69 mc_tv200 megapad mgt20in1 miwi2_7 mpntball mpntbalt mylpony mysprtch mysprtcp mysptqvc namcons1 namcons2 njp60in1 oplayer ouipdc pballpup pdc100 pdc150t pdc200 pdc30p pdc40t pdc50 pdcj pgs268 pjoyn50 pjoys30 pjoys60 ppgc200g racechl8 ragc153 react reactmd rhhc152 rminitv rocksock sarc110 spidm2 sudopptv supr200 supreme swclone sy888b sy889 taitons1 taitons2 tak_geig tak_wdg techni4 throwbck tiger108 timetp36 tmntmutm tmntpdc tomcpin typo240 unk1682 vgcaplet vgpmini vgpocket vgtablet vjpp1 vjpp2 vjpp3 vjpp4 vsplus wfmotor whacmole zdog zone7in1 zonekdft zudugo " ~ " " _driverarr[1] " " ) _tags = _tags "all_in1" "@"
+if ( " 265games 88in1joy ablmini ablpinb arcade10 backybbs ban_krkk barbpet bittboy brke23p2 carled99 cmpmx10 cmpmx11 cybar120 cybrtvfe d12power dgun2573 dgun2953 dgun2959 disppal dnv200fs dphh8630 dreamlif dsgnwrld fapocket fccomp88 fcpocket fordrace ga888 gamezn2 gon100 gprnrs1 gprnrs16 gujtv108 hotwhls ii32in1 ii8in1 intact89 intg5410 itvg49 lexiseal lexizeus lpetshop lx_jg7415 lxairjet lxnoddy m505neo m521neo majkon marc101 marc250 mc_105te mc_110cb mc_138cb mc_7x6ss mc_89in1 mc_8x6cb mc_8x6ss mc_9x6ss mc_aa2 mc_cb280 mc_dcat8 mc_dg101 mc_dgear mc_hh210 mc_sam60 mc_sp69 mc_tv200 megapad mgt20in1 miwi2_7 mpntball mpntbalt mylpony mysprtch mysprtcp mysptqvc namcons1 namcons2 njp60in1 oplayer ouipdc pballpup pdc100 pdc150t pdc200 pdc30p pdc40t pdc50 pdcj pgs268 pjoyn50 pjoys30 pjoys60 ppgc200g racechl8 ragc153 react reactmd rhhc152 rminitv rocksock sarc110 spidm2 sudopptv supr200 supreme swclone sy888b sy889 t3in1sa taitons1 taitons2 tak_geig tak_wdg techni4 throwbck tiger108 timetp36 tmntmutm tmntpdc tomcpin typo240 unk1682 vgcaplet vgpmini vgpocket vgtablet vjpp1 vjpp2 vjpp3 vjpp4 vsplus wfmotor whacmole zdog zone7in1 zonekdft zudugo " ~ " " _driverarr[1] " " ) _tags = _tags "all_in1" "@"
 # realistic
 # oro
 if ( " 1941u 1943u 20pacgalr1 3stooges 720 aburner alien3 aliensu altbeast amidar aof aof2 aof3 arkanoidu asteroid astyanax atetris baddudes batcir berzerk bjourney blazstar blueprnt bnj btime bubbles bublbobl burnforc burningf cadash cadashf captavenu captavenuu centiped2 chasehq cheekyms circus cninjabl columns commando congoa crkdown crusnusa crusnwld cstlevna ctribe cyberlip darkadv dbreed ddonpach ddragon ddragon2 ddragon3 ddribble ddsomu ddtodu defender digdug djboy dkong3 dkongjo1 dkongjrj dkongpe dkongx domino dotron drmario dspirit dstlkur1 duckhunt elevator eswatu excitebkj fatfursp fatfury1 fatfury2 fatfury3 ffightu foodf2 forgottnua friskyt frogger gaiden galaga galaxian gaplus garou gauntletr5 ghostb ghoulsu gng goldnaxe gorf gradius3 guardian gyruss hcastle hogalley iceclimba ikari3 inthuntu invaders joust joust2r1 jrpacman jungleh junglek kangaroo kchamp kick kingofb kizuna klax knightsu kof2000 kof2001 kof2002 kof2003 kof94 kof95 kof96 kof97 kof98 kof99 kotm kotm2 kungfum ladybug lastblad lnc lresort lwings maglord mappy marble mario matmania mercsu midres milliped missile2 mk mk2 mk3 mk4 mpatrolw mrdofix mshu mslug mslug2 mslug3 mslug4 mslug5 mslugx mspacman mushisam mvscu mwalku nam1975 narc natodef nbbatman ncombat ncommand neckneck nibbler nvs_machrider orunners oscar osman outrun p47 pacman pacmania pacnchmp pacnpal pang panic paperboy pdrift pengo pitfall2 pitfight polepos pong popeye pow preisle2 puckmod pulstar punchout punisher qbert qbertqub qix rampage rastanu rbff2 rbibb rbtapper redalert ridgerac rmpgwt robocop2 robocopu robotron rocnrope rthunder rtypeu rushatck rygar samsho samsho2 samsho3 samsho4 samsho5 scontra scramble sdodgeb sf2ceuc sf2ua sfa3ur1 shadfrce sharrier shdancer1 shinobi simpsons simpsons4pa sinistar skyskipr smashtv smgolf smgp5 snapjack spidman spyhunt srumbler ssf2t ssf2u stargate stratvox strider superchs superpac suprmrioa svc swimmer tapper tazmania tempest1 timber tkoboxng tmnt tmnt2 toki toobin topgun tron truxton turbo twocrude umk3 vanguard vf viewpoin vigilant vr vsbball vsgradus vsgshoe vsskykid vstennis warlords wh1 wh2 whp wow wrecking xeviousc xmcotau zaxxon zookeep zzyzzyxx " ~ " " _driverarr[1] " " ) _tags = _tags "realistic" "@" "oro" "@"
