@@ -127,9 +127,12 @@ awk -F '[<>"]' '
 
 END\
 {
+	
+#remove amp;
+gsub(/amp;/, "", _driverinfo)
+
 #slit into an array so we can match the drivername with the predefined driverset of a specific category
 split ( _driverinfo, _driverarr , "□")
-
 
 # arcade
 _tags = _tags _arcade "@"
@@ -188,35 +191,42 @@ if (_cache ~ "handheld/rzone" && _tags ~ "@good@") _tags = _tags "tigerrz" "@"
 #do before classich
 if (_cache ~ "handheld/hh_sm510.*svg" && _driverinfo ~ "Tiger Electronics" && _tags ~ "@good@") _tags = _tags "tigerh" "@"
 # classich
-if (_cache ~ "handheld" && _driverinfo ~ "Bambino" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Bandai" && _tags ~ "@good@") _tags = _tags "classich" "@"
-#will not add (quizwizc tc4)
-if (_cache ~ "handheld" && _driverinfo ~ "Coleco" && _tags ~ "@good@" && _driverinfo !~ "quizwizc" && _driverinfo !~ "tc4") _tags = _tags "classich" "@"
-#if (_cache ~ "handheld" && _driverinfo ~ "Coleco / Konami" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Conic" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Entex" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Epoch" && _tags ~ "@good@") _tags = _tags "classich" "@"
+#remove at the end : comparc comparca dreamlif dsgnwrld lpetshop monkeysee quizwizc tc4 vclock3
 #epo_tetr (needs a check if there are more with this info)
-if (_cache ~ "tvgames/spg2xx.*raster" && _driverinfo ~ "Epoch" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Gakken" && _tags ~ "@good@") _tags = _tags "classich" "@"
-#if (_cache ~ "handheld" && _driverinfo ~ "Gakken / Konami" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Kmart Corporation" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Hasbro" && _tags ~ "@good@") _tags = _tags "classich" "@"
 #gigapets (needs a check if there are more with this info)
-if (_cache ~ "tvgames/spg2xx.*raster" && _driverarr[4] == "Hasbro" && _tags ~ "@good@"  && _tags !~ "@all_in1") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Ideal Toy Corporation" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Mattel Electronics" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "svg" && _driverinfo ~ "Mattel Electronics / Teletape Productions" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Nelsonic" && _tags ~ "@good@") _tags = _tags "classich" "@"
-#if (_cache ~ "handheld" && _driverinfo ~ "Nelsonic (licensed from Nintendo)" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Parker Brothers" && _tags ~ "@good@") _tags = _tags "classich" "@"
-#do not add : comparc comparca monkeysee vclock3
-if (_cache ~ "handheld" && _driverinfo ~ "Tandy Corporation"  && _tags ~ "@good@" && _driverinfo !~ "comparc" && _driverinfo !~ "monkeysee" && _driverinfo !~ "vclock3") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Tiger Electronics"  && _tags ~ "@good@" && _tags !~ "@tiger" && _driverinfo !~ "hh_sm510") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Tomy" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "Tronica" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "U.S.Games" && _tags ~ "@good@") _tags = _tags "classich" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "VTech" && _tags ~ "@good@") _tags = _tags "classich" "@"
+#
+#backup filters
+#_cache ~ "handheld" && _driverinfo ~ "Coleco / Konami" && _tags ~ "@good@") || \
+#_cache ~ "handheld" && _driverinfo ~ "Gakken / Konami" && _tags ~ "@good@") || \
+#_cache ~ "handheld" && _driverinfo ~ "Nelsonic (licensed from Nintendo)" && _tags ~ "@good@") || \
+#when a selection for all_in1 already was made
+#_cache ~ "tvgames/spg2xx.*raster" && _driverarr[4] == "Hasbro" && _tags ~ "@good@"  && _tags !~ "@all_in1" || \
+if (\
+_cache ~ "handheld" && _driverinfo ~ "Bambino" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Bandai" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Coleco" && _tags ~ "@good@" && " quizwizc tc4 " !~ " " _driverarr[1] " " || \
+_cache ~ "handheld" && _driverinfo ~ "Conic" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Entex" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Epoch" && _tags ~ "@good@" || \
+_cache ~ "tvgames/spg2xx.*raster" && _driverinfo ~ "Epoch" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Gakken" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Kmart Corporation" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Hasbro" && _tags ~ "@good@" || \
+_cache ~ "tvgames/spg2xx.*raster" && _driverarr[4] == "Hasbro" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Ideal Toy Corporation" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Mattel Electronics" && _tags ~ "@good@" || \
+_cache ~ "svg" && _driverinfo ~ "Mattel Electronics / Teletape Productions" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Nelsonic" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Parker Brothers" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Tandy Corporation"  && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Tiger Electronics"  && _tags ~ "@good@" && _tags !~ "@tiger" && _driverinfo !~ "hh_sm510" || \
+_cache ~ "handheld" && _driverinfo ~ "Tomy" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "Tronica" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "U.S.Games" && _tags ~ "@good@" || \
+_cache ~ "handheld" && _driverinfo ~ "VTech" && _tags ~ "@good@") \
+_tags = _tags "classich" "@"
+#drivers to be removed
+if (" comparc comparca dreamlif dsgnwrld lpetshop monkeysee quizwizc tc4 vclock3 " ~ " " _driverarr[1] " ") gsub(/classich@/, "", _tags)
 
 # deco_cassette
 if (_cache ~ "dataeast/decocass") _tags = _tags "deco_cassette" "@"
@@ -229,8 +239,7 @@ if (_cache ~ "cpu/mips" || _cache ~ "cpu/sh" || _cache ~ "cpu/powerpc" || _cache
 #will also add screenless driver elbaskb
 if (_cache ~ "handheld.*svg" && _driverinfo ~ "Elektronika" && _tags ~ "@good@" || _cache ~ "handheld.*lcd" && _driverinfo ~ "Elektronika" && _tags ~ "@good@" || _driverinfo ~ "elbaskb" ) _tags = _tags "elektronikah" "@"
 # gameandwatch
-if (_driverinfo ~ "bassmate") _tags = _tags "gameandwatch" "@"
-if (_cache ~ "handheld" && _driverinfo ~ "gnw_" && _tags ~ "@good@") _tags = _tags "gameandwatch" "@"
+if (_driverinfo ~ "bassmate" || _cache ~ "handheld" && _driverinfo ~ "gnw_" && _tags ~ "@good@") _tags = _tags "gameandwatch" "@"
 
 # jakks
 #jak_pacg jak_rapm jak_spac
@@ -324,39 +333,37 @@ if (_driverinfo ~ "Taito" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _t
 
 if (\
 " ga888 majkon mc_105te mc_hh210 megapad reactmd sarc110 zudugo " ~ " " _driverarr[1] " " || \
-_driverinfo ~ "Arcade Neo" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "DGUN-" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "DGUNL-" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "Game Prince" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "Fizz Creations" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "in1" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "In 1" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "in 1 " && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "in-1 " && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "in 1□" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "in-1□" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "in 1)" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "in-1)" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "InterAct Complete" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "Lexibook" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "rtvgc300" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "tvgames/spg2" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "tvgames/xavix" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "TV Game)" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "s! TV Play" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "Plug &amp; Play" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "Pocket Video" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "VG Pocket" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
-_driverinfo ~ "zonefusn" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" ) \
+_driverinfo ~ "Arcade Neo" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "DGUN-" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "DGUNL-" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "Game Prince" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "Fizz Creations" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "in1" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "In 1" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "in 1 " && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "in-1 " && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "in 1□" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "in-1□" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "in 1)" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "in-1)" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "InterAct Complete" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "Lexibook" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "rtvgc300" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "tvgames/spg2" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "tvgames/xavix" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "TV Game)" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "s! TV Play" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "Plug & Play" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "Pocket Video" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "VG Pocket" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" || \
+_driverinfo ~ "zonefusn" && _tags !~  "@classich@" && _tags !~  "@jakks@" && _tags !~  "@bootlegs@" && _tags ~ "@good@" && _tags ~ "@non-arcade@" ) \
 _tags = _tags "all_in1" "@"
 
 
 #print _cache
-#print _driverinfo _tags
-
+print _driverinfo _tags
 #print "Driver" " " _driverarr[1] " (" _driverarr[3] ") (" _driverarr[4] "): " _driverarr[5] _tags
-#remove amp;
-gsub(/amp;/, "", _driverarr[3])
+
 print "Driver" " " _driverarr[1] " (" _driverarr[3] "): " _tags
 }
 '	
