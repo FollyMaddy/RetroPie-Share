@@ -2,10 +2,6 @@
 
 #for mame version 290
 
-#remember: the output of "mame -listxml" can change a bit per version outputting lines not on the same linenumber
-#so if the output of the script is wrong then check if the linenumbers, used in the script, are correct
-#see in the script from linenumber 50
-
 #Make sure you are running a 64 bit version of mame !
 
 #output sorted data from a specific driver, for example galaga
@@ -56,20 +52,27 @@ awk -F '[ ]' '
 do
 /opt/retropie/emulators/mame/mame -listxml $driver|\
 awk -v option=$option -F '[<>"]' '
-#/<machine name/ || /<descr/ {if (NR < 200) print $3 NR}
-#next lines use the lineNR for getting the info instead of using filter matching
+#automatically get the linenumbers to find the information, done because the linenumbers can vary between mame versions
+/<machine name/ {if (!found_machine) {found_machine = 1;machine_match = NR;print machine_match}}
+#add linenumber to get the correct linenumbers
+{description_match = machine_match + 1}END{print description_match}
+{manufacturer_match = machine_match + 3}END{print manufacturer_match}
+#or use filters, if needed
+#/<description/ {if (!found_description) {found_description = 1;description_match = NR;print description_match}}
+#/<manufacturer/ {if (!found_manufacturer) {found_manufacturer = 1;manufacturer_match = NR;print manufacturer_match}}
 
+#next lines use the lineNR for getting the info instead of using filter matching
 #base info
 #machine name
-{if (NR == 165) _driverinfo = _driverinfo $3 "□"}
+{if (NR == machine_match) _driverinfo = _driverinfo $3 "□"}
 #sourcefile
-{if (NR == 165) _driverinfo = _driverinfo $5 "□"}
+{if (NR == machine_match) _driverinfo = _driverinfo $5 "□"}
 #sampleof
-{if (NR == 165) _sampleof = _sampleof $7}
+{if (NR == machine_match) _sampleof = _sampleof $7}
 #description
-{if (NR == 166) _driverinfo = _driverinfo $3 "□"}
+{if (NR == description_match) _driverinfo = _driverinfo $3 "□"}
 #manufacturer
-{if (NR == 168) _driverinfo = _driverinfo $3 "□"}
+{if (NR == manufacturer_match) _driverinfo = _driverinfo $3 "□"}
 
 #tags
 #begin the tags with a @, mameconfig is at the beginning was just a regular choice can be something else !!!
