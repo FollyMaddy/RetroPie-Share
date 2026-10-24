@@ -53,13 +53,13 @@ do
 /opt/retropie/emulators/mame/mame -listxml $driver|\
 awk -v option=$option -F '[<>"]' '
 #automatically get the linenumbers to find the information, done because the linenumbers can vary between mame versions
-/<machine name/ {if (!found_machine) {found_machine = 1;machine_match = NR;print machine_match}}
-#add linenumber to get the correct linenumbers
-{description_match = machine_match + 1}END{print description_match}
-{manufacturer_match = machine_match + 3}END{print manufacturer_match}
-#or use filters, if needed
-#/<description/ {if (!found_description) {found_description = 1;description_match = NR;print description_match}}
-#/<manufacturer/ {if (!found_manufacturer) {found_manufacturer = 1;manufacturer_match = NR;print manufacturer_match}}
+/<machine name/ {if (!found_machine) {found_machine = 1;machine_match = NR}}
+/<description/ {if (!found_description) {found_description = 1;description_match = NR}}
+/<manufacturer/ {if (!found_manufacturer) {found_manufacturer = 1;manufacturer_match = NR}}
+#or add linenumber to get the correct linenumbers (does not work correctly!) 
+#{description_match = machine_match + 1}END{print description_match}
+#{manufacturer_match = machine_match + 3}END{print manufacturer_match}
+
 
 #next lines use the lineNR for getting the info instead of using filter matching
 #base info
