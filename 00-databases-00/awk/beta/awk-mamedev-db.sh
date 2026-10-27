@@ -38,7 +38,7 @@ else
 arg=$1
 fi
 
-[[ $option == "-h" ]] && echo -e "help:\n--------------\n-h help\n-v verbose (more driver info)"
+[[ $option == "-h" ]] && echo -e "version:290b7\n\nhelp:\n-h help\n-v verbose (more driver info)"
 
 
 [[ $option != "-h" ]] && \
