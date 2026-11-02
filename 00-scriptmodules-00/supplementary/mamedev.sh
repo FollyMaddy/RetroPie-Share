@@ -59,6 +59,8 @@ function depends_mamedev() {
     getDepends curl python3 wget
     if [[ $scriptdir == *RetroPie* ]];then 
 	getDepends xattr python3-venv unar p7zip-full xxd
+	#next can be removed when dependancies are added to mame.sh
+	[[ ${__platform_arch} == x86_64 ]] && getDepends qt6-base-dev qt6-base-dev-tools
     else 
 	getDepends python-xattr unarchiver tinyxxd
     fi
