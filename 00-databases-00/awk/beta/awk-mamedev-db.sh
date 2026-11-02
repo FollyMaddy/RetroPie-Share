@@ -38,7 +38,7 @@ else
 arg=$1
 fi
 
-[[ $option == "-h" ]] && echo -e "version:290b7\n\nhelp:\n-h help\n-v verbose (more driver info)"
+[[ $option == "-h" ]] && echo -e "version:290b8\n\nhelp:\n-h help\n-v verbose (more driver info)"
 
 
 [[ $option != "-h" ]] && \
@@ -59,17 +59,17 @@ awk -v option=$option -F '[<>"]' '
 #or add linenumber to get the correct linenumbers (does not work correctly!) 
 #{description_match = machine_match + 1}END{print description_match}
 #{manufacturer_match = machine_match + 3}END{print manufacturer_match}
-#joined the commands, this works and is probably quicker / above kept for backup
-/<machine name/ {if (!found_machine) {found_machine = 1;machine_match = NR;description_match = machine_match + 1;manufacturer_match = machine_match + 3}}
+#joined the commands, this works and is probably quicker / above kept for backup / use machine_begin_match otherwise it will conflict with machine_match in finding arcade
+/<machine name/ {if (!found_machine_begin) {found_machine_begin = 1;machine_begin_match = NR;description_match = machine_begin_match + 1;manufacturer_match = machine_begin_match + 3}}
 
 #next lines use the lineNR for getting the info instead of using filter matching
 #base info
 #machine name
-{if (NR == machine_match) _driverinfo = _driverinfo $3 "□"}
+{if (NR == machine_begin_match) _driverinfo = _driverinfo $3 "□"}
 #sourcefile
-{if (NR == machine_match) _driverinfo = _driverinfo $5 "□"}
+{if (NR == machine_begin_match) _driverinfo = _driverinfo $5 "□"}
 #sampleof
-{if (NR == machine_match) _sampleof = _sampleof $7}
+{if (NR == machine_begin_match) _sampleof = _sampleof $7}
 #description
 {if (NR == description_match) _driverinfo = _driverinfo $3 "□"}
 #manufacturer
@@ -105,7 +105,6 @@ awk -v option=$option -F '[<>"]' '
 #old working command to get a fast fix for 0289
 #although working many machine xml entries will not end at 340 but differ a lot, above code fixes that
 #{if (NR < 100 && /input coins/ || NR < 340 && /input players=/ && /coins=/) {if (match($0,"coins=") <= 20) _arcade = "non-arcade";else _arcade = "arcade"}}
-
 
 # bios
 /isbios=/ {if ($7 ~ "yes") _tags = _tags "bios" "@"}
@@ -177,6 +176,12 @@ if ( " 005 3bagfull astrof battles bbc blockade bowl3d buckrog carnival circus c
 ##all_in1
 #filter will be the last in the list as it needs _tags like bootlegs, jakks and good to filter on
 
+# aleck64 , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "aleck64.cpp" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "aleck64" "@"
+
+# amiga_arcadia , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "amiga/arsystems" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "amiga_arcadia" "@"
+
 # atari , rule out drivers that are tagged non-arcade or mechanical
 if (_sources ~ "atari/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "atari" "@"
 
@@ -197,6 +202,9 @@ if (_sources ~ "capcom/cps2" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" &&
 if (_sources ~ "capcom/cps3" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "cps3" "@"
 # dataeast , rule out drivers that are tagged non-arcade or mechanical
 if (_sources ~ "dataeast/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "dataeast" "@"
+
+# cave_cv1k , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "cave/cv1k" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "cave_cv1k" "@"
 
 # cocktail
 if (_driverinfo ~ "ocktail" ) _tags = _tags "cocktail" "@"
@@ -256,23 +264,37 @@ if (_sources ~ "cpu/mips" || _sources ~ "cpu/sh" || _sources ~ "cpu/powerpc" || 
 # elektronikah
 #will also add screenless driver elbaskb
 if (_sources ~ "handheld.*svg" && _driverinfo ~ "Elektronika" && _tags ~ "@good@" || _sources ~ "handheld.*lcd" && _driverinfo ~ "Elektronika" && _tags ~ "@good@" || _driverinfo ~ "elbaskb" ) _tags = _tags "elektronikah" "@"
+
+# funcube , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "funcube.cpp" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "funcube" "@"
+
 # gameandwatch
 if (_driverinfo ~ "bassmate" || _sources ~ "handheld" && _driverinfo ~ "gnw_" && _tags ~ "@good@") _tags = _tags "gameandwatch" "@"
+
+# hyperneogeo64 , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "hng64.cpp" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "hyperneogeo64" "@"
 
 # jakks
 #jak_pacg jak_rapm jak_spac
 #will also add preliminary driver jak_sdoo
 if (_driverinfo ~ "JAKKS Pacific TV Game" && _tags ~ "@good@" || _driverinfo ~ "JAKKS Pacific Inc / Namco / HotGen Ltd" && _tags ~ "@good@" || _driverinfo ~ "jak_sdoo") _tags = _tags "jakks" "@"
 
-# konamih
-#ktmntbb (ok)
-if (_sources ~ "handheld/hh_sm510.*svg" && _driverinfo ~ "Konami"  && _tags ~ "@good@" && _tags !~ "classich" || _sources ~ "handheld.*lcd" && _driverinfo ~ "Konami"  && _tags ~ "@good@" && _tags !~ "classich") _tags = _tags "konamih" "@"
-# lightgun
-if (_sources ~ "lightgun") _tags = _tags "lightgun" "@"
-
 ##konami
 # konami , rule out drivers that are tagged non-arcade or mechanical
 if (_sources ~ "konami/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "konami" "@"
+
+# konami573 , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "ksys573.cpp" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "konami573" "@"
+
+# konami_gx , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "konamigx.cpp" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "konami_gx" "@"
+
+# konamih
+#ktmntbb (ok)
+if (_sources ~ "handheld/hh_sm510.*svg" && _driverinfo ~ "Konami"  && _tags ~ "@good@" && _tags !~ "classich" || _sources ~ "handheld.*lcd" && _driverinfo ~ "Konami"  && _tags ~ "@good@" && _tags !~ "classich") _tags = _tags "konamih" "@"
+
+# lightgun
+if (_sources ~ "lightgun") _tags = _tags "lightgun" "@"
 
 ##midway
 # midway , rule out drivers that are tagged non-arcade or mechanical and already categorised midway systems
@@ -298,6 +320,9 @@ if (_sources ~ "namco/namcos22" && _tags !~ "@bios@") _tags = _tags "namcosystem
 # namcosystem23
 if (_sources ~ "namco/namcos23" && _tags !~ "@bios@") _tags = _tags "namcosystemxx@namcosystem23" "@"
 
+# pgm , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "pgm.cpp" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "pgm" "@"
+
 ##sega
 # atomiswave , rule out drivers that are tagged non-arcade or mechanical
 if (_sources ~ "sega/dc_atomiswave" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "atomiswave" "@"
@@ -319,8 +344,11 @@ if (_sources ~ "sega/segas24" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" &
 if (_sources ~ "sega/segas32" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "segasystemxx@segasystem32" "@"
 # naomi , rule out drivers that are tagged non-arcade or mechanical
 if (_sources ~ "sega/naomi" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "naomi" "@"
+# sega_stv , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "sega/stv" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "sega_stv" "@"
 # sega , rule out drivers that are tagged non-arcade or mechanical and already categorised sega systems
-if (_sources ~ "sega/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@" && _sources !~ "sega/dc_atomiswave" && _sources !~ "sega/model" && _sources !~ "sega/naomi" && _sources !~ "sega/segas1" && _sources !~ "sega/segas2" && _sources !~ "sega/segas3") _tags = _tags "sega" "@"
+if (_sources ~ "sega/" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@" && _sources !~ "sega/dc_atomiswave" && _sources !~ "sega/model" && _sources !~ "sega/naomi" && _sources !~ "sega/segas1" && _sources !~ "sega/segas2" && _sources !~ "sega/segas3" && _sources !~ "sega/stv") _tags = _tags "sega" "@"
+
 
 # neogeo
 #not added (neogeo/midas.cpp (hammer livequiz))
@@ -340,6 +368,9 @@ if (_sources ~ "nintendo/playch10" && _tags !~ "@bios@") _tags = _tags "playchoi
 
 # taito , rule out drivers that are tagged non-arcade or mechanical
 if (_driverinfo ~ "Taito" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@bios@" && _tags !~ "@screenless@" && _sources !~ "taito/") _tags = _tags "taito" "@"
+
+# zn , rule out drivers that are tagged non-arcade or mechanical
+if (_sources ~ "zn.cpp" && _tags ~ "@arcade@" && _tags !~ "@mechanical@" && _tags !~ "@screenless@" && _tags !~ "@bios@") _tags = _tags "zn" "@"
 
 # all_in1
 #use 1 if function to prevent double tags !
