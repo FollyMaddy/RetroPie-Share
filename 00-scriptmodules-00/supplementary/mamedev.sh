@@ -94,6 +94,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 290.pre-beta :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
+- remove retroscraper (server down)\n\
+- add simple gamelist creator\n\
 289.00 :\n\
 - add database\n\
 - exclude 288\n\
@@ -1020,11 +1022,12 @@ function subgui_gamelists_mamedev() {
 ",►Download/update gamelists with media per system,,subgui_download_gamelists_mamedev 19h16tSYtksWU1EfC92KxJBi-8zYTYkYr,,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
 ",Download/update all ES gamelists with media (+/-30 min.),,show_message_yesno_mamedev \"Would you like to proceed ?\" \"download_from_google_drive_mamedev 19h16tSYtksWU1EfC92KxJBi-8zYTYkYr $datadir/roms\",,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
 ",,,,,,,,,"
-",▼\ZrExperimental (has issue : no images downloaded)\ZR,,,"
-",▼\ZrUse RetroScraper-remote by @kiro\ZR,,,"
-",►Retroscrape/update gamelists with media per system,,subgui_retroscraper_gamelists_mamedev,,,,,show_message_mamedev \"Here you will be able to retroscrape roms creating gamelists with videos and pictures depending on the database of retroscraper.\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nExisting gamelist files and media are removed before a new retroscrape !\n\nWhen selecting this option you can choose to retroscrape a system folder seperately.\","
-
+",▼\ZrWorks only for mame arcade categories and database > 290\ZR,,,"
+",►Create basic gamelists with images,,subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev,,,,,show_message_mamedev \"Here you will be able to create gamelists using the mamedev database with pictures (depending on availability on the adb.arcadeitalia.net).\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nExisting gamelist files and media are removed before a new creation !\n\nWhen selecting this option you can choose to create a system folder seperately.\","
     )
+#",▼\ZrExperimental (has issue : no images downloaded)\ZR,,,"
+#",▼\ZrUse RetroScraper-remote by @kiro\ZR,,,"
+#",►Retroscrape/update gamelists with media per system,,subgui_create_on_available_gamelists_mamedev retroscraper_remote_command_mamedev,,,,,show_message_mamedev \"Here you will be able to retroscrape roms creating gamelists with videos and pictures depending on the database of retroscraper.\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nExisting gamelist files and media are removed before a new retroscrape !\n\nWhen selecting this option you can choose to retroscrape a system folder seperately.\","
     build_menu_mamedev
 }
 
@@ -1429,7 +1432,7 @@ function subgui_addons_mamedev () {
 ",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
 ",,,,"
 ",►Download cheatfile from list,,subgui_download_cheat_mamedev,,,,,show_message_mamedev \"When this script installs a system or category the cheat option in the configs will be turned on in lr-mess/lr-mame and MAME. Together with the cheat file you will be able to use cheats on certain games. The cheat file used can be found on http://www.mamecheat.co.uk\","
-",►Download gamelists,,subgui_gamelists_mamedev,,,,,show_message_mamedev \"Here you will find the options to use use RetroScraper and to install predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
+",►Download / create gamelists,,subgui_gamelists_mamedev,,,,,show_message_mamedev \"Here you will find the options to use use RetroScraper and to install predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
 	)
 	[[ $(expr $rp_module_version_database + 0) -gt 273 ]] && \
     csv+=(
@@ -1542,15 +1545,15 @@ function subgui_remove_installs_mamedev() {
 }
 
 
-function subgui_retroscraper_gamelists_mamedev() {
-    #retroscraper_remote_depends_mamedev
+function subgui_create_on_available_gamelists_mamedev() {
     local csv=()
     local gamelists_csv=()
     local gamelists_read
+    local _function_call=$1
     clear
     echo "reading the individual gamelist data"
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 $datadir/roms|while read line;do echo "\",Retroscrape/update only for $([[ $line == *º ]]&&echo ' ')$(if [[ -f $datadir/roms/$line/gamelist.xml ]];then printf '%-20s\\\Z2(has gamelist)\n' $line;else printf '%-20s(no  gamelist)\n' $line;fi),,retroscraper_remote_command_mamedev $line;#break,\"";done)
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 $datadir/roms|while read line;do echo "\",Retroscrape/update only for $([[ $line == *º ]]&&echo ' ')$(if [[ -f $datadir/roms/$line/gamelist.xml ]];then printf '%-20s\\\Z2(has gamelist)\n' $line;else printf '%-20s(no  gamelist)\n' $line;fi),,$1 $line;#break,\"";done)
     IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
     build_menu_mamedev
 }
@@ -1559,6 +1562,40 @@ function subgui_retroscraper_gamelists_mamedev() {
 function remove_installs_mamedev() {
     cat $rootdir/configs/$1/emulators.cfg|grep -v default|awk '/mame-/||/mess-/'|cut -d= -f1|while read line;do delEmulator $line $1;done
     [[ ! -f $rootdir/configs/$1/emulators.cfg ]] && delSystem $1
+}
+
+
+function real_basic_gamelist_creator_command_mamedev() {
+    rm $datadir/roms/$1/gamelist.xml 2> /dev/null
+    rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
+    mkdir -p $datadir/roms/$1/media/emulationstation
+	echo "Images are downloaded from adb.arcadeitalia.net"
+	echo "-----------------------------------------------"
+	echo '<?xml version=\"1.0\"?>' > $datadir/roms/$1/gamelist.xml
+	echo "<gameList>" >> $datadir/roms/$1/gamelist.xml
+	#https://stackoverflow.com/questions/29292268/how-can-i-define-the-variable-for-the-awk-filter
+	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category="$1" '$0 ~ category { print $0 }'|while read line;do
+	shortname=$(echo $line|awk '{ print $2 }')
+	longname=$(echo $line|awk -F'[(:)]' '{ if ($3) print $2 "("$3")";else print $2 }')
+	wget -q --show-progress --progress=bar:force -t2 -c -w1 -P "$datadir/roms/$1/media/emulationstation" https://adb.arcadeitalia.net/media/mame.current/ingames/${shortname}.png
+	echo "	<game>" >> $datadir/roms/$1/gamelist.xml
+	echo "		<path>./${shortname}.zip</path>" >> $datadir/roms/$1/gamelist.xml
+	echo "		<name>${longname}</name>" >> $datadir/roms/$1/gamelist.xml
+	echo "		<image>./media/emulationstation/${shortname}.png</image>" >> $datadir/roms/$1/gamelist.xml
+	echo "	</game>" >> $datadir/roms/$1/gamelist.xml
+	done
+	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category="$1" '$0 ~ category { print $0 }'|while read line;do
+	shortname=$(echo $line|awk '{ print $2 }')
+	longname=$(echo $line|awk -F'[(:)]' '{ if ($3) print $2 "("$3")";else print $2 }')
+	echo "	<game>" >> $datadir/roms/$1/gamelist.xml
+	echo "		<path>./${shortname}.7z</path>" >> $datadir/roms/$1/gamelist.xml
+	echo "		<name>${longname}</name>" >> $datadir/roms/$1/gamelist.xml
+	echo "		<image>./media/emulationstation/${shortname}.png</image>" >> $datadir/roms/$1/gamelist.xml
+	echo "	</game>" >> $datadir/roms/$1/gamelist.xml
+	done
+	echo "</gameList>" >> $datadir/roms/$1/gamelist.xml
+	chown $user:$user "$datadir/roms/$1/gamelist.xml"
+	chown -R $user:$user "$datadir/roms/$1/media"
 }
 
 
