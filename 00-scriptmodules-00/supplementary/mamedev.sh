@@ -1549,7 +1549,6 @@ function subgui_create_on_available_gamelists_mamedev() {
     local csv=()
     local gamelists_csv=()
     local gamelists_read
-    local _function_call=$1
     clear
     echo "reading the individual gamelist data"
     #we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
@@ -1566,32 +1565,37 @@ function remove_installs_mamedev() {
 
 
 function real_basic_gamelist_creator_command_mamedev() {
+	local gamelist_file_extensions=("7z" "zip")
+	local gamelist_folders=("ingames" "marquees")
+	local gamelist_folder
+	local gamelist_file_extension
     rm $datadir/roms/$1/gamelist.xml 2> /dev/null
     rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
-    mkdir -p $datadir/roms/$1/media/emulationstation
+#    for map in images marquees;do
+#		mkdir -p $datadir/roms/$1/media/emulationstation/map
+#	done
 	echo "Images are downloaded from adb.arcadeitalia.net"
 	echo "-----------------------------------------------"
 	echo '<?xml version=\"1.0\"?>' > $datadir/roms/$1/gamelist.xml
 	echo "<gameList>" >> $datadir/roms/$1/gamelist.xml
 	#https://stackoverflow.com/questions/29292268/how-can-i-define-the-variable-for-the-awk-filter
-	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category="$1" '$0 ~ category { print $0 }'|while read line;do
+	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category="$1" '$0 ~ category { print $0 }'|while read line
+	do
 	shortname=$(echo $line|awk '{ print $2 }')
 	longname=$(echo $line|awk -F'[(:)]' '{ if ($3) print $2 "("$3")";else print $2 }')
-	wget -q --show-progress --progress=bar:force -t2 -c -w1 -P "$datadir/roms/$1/media/emulationstation" https://adb.arcadeitalia.net/media/mame.current/ingames/${shortname}.png
-	echo "	<game>" >> $datadir/roms/$1/gamelist.xml
-	echo "		<path>./${shortname}.zip</path>" >> $datadir/roms/$1/gamelist.xml
-	echo "		<name>${longname}</name>" >> $datadir/roms/$1/gamelist.xml
-	echo "		<image>./media/emulationstation/${shortname}.png</image>" >> $datadir/roms/$1/gamelist.xml
-	echo "	</game>" >> $datadir/roms/$1/gamelist.xml
-	done
-	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category="$1" '$0 ~ category { print $0 }'|while read line;do
-	shortname=$(echo $line|awk '{ print $2 }')
-	longname=$(echo $line|awk -F'[(:)]' '{ if ($3) print $2 "("$3")";else print $2 }')
-	echo "	<game>" >> $datadir/roms/$1/gamelist.xml
-	echo "		<path>./${shortname}.7z</path>" >> $datadir/roms/$1/gamelist.xml
-	echo "		<name>${longname}</name>" >> $datadir/roms/$1/gamelist.xml
-	echo "		<image>./media/emulationstation/${shortname}.png</image>" >> $datadir/roms/$1/gamelist.xml
-	echo "	</game>" >> $datadir/roms/$1/gamelist.xml
+		for gamelist_folder in ${gamelist_folders[@]}
+		do
+		wget -q --show-progress --progress=bar:force -t2 -c -w1 -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" https://adb.arcadeitalia.net/media/mame.current/${gamelist_folder}/${shortname}.png
+		done
+		for gamelist_file_extension in ${gamelist_file_extensions[@]}
+		do
+		echo "	<game>" >> $datadir/roms/$1/gamelist.xml
+		echo "		<path>./${shortname}.${gamelist_file_extension}</path>" >> $datadir/roms/$1/gamelist.xml
+		echo "		<name>${longname}</name>" >> $datadir/roms/$1/gamelist.xml
+		echo "		<image>./media/emulationstation/${gamelist_folders[0]}/${shortname}.png</image>" >> $datadir/roms/$1/gamelist.xml
+		echo "		<marquee>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[1]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[1]}/${shortname}.png")</marquee>"  >> $datadir/roms/$1/gamelist.xml
+		echo "	</game>" >> $datadir/roms/$1/gamelist.xml
+		done
 	done
 	echo "</gameList>" >> $datadir/roms/$1/gamelist.xml
 	chown $user:$user "$datadir/roms/$1/gamelist.xml"
