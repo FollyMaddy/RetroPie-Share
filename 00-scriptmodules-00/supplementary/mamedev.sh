@@ -1571,9 +1571,6 @@ function real_basic_gamelist_creator_command_mamedev() {
 	local gamelist_file_extension
     rm $datadir/roms/$1/gamelist.xml 2> /dev/null
     rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
-#    for map in images marquees;do
-#		mkdir -p $datadir/roms/$1/media/emulationstation/map
-#	done
 	echo "Images are downloaded from adb.arcadeitalia.net"
 	echo "-----------------------------------------------"
 	echo '<?xml version=\"1.0\"?>' > $datadir/roms/$1/gamelist.xml
