@@ -56,7 +56,7 @@ local system_read
 
 function depends_mamedev() {
     mamedev_csv=()
-    getDepends curl python3 wget
+    getDepends curl python3 wget ffmpeg
     if [[ $scriptdir == *RetroPie* ]];then 
 	getDepends xattr python3-venv unar p7zip-full xxd
 	#next can be removed when dependancies are added to mame.sh
