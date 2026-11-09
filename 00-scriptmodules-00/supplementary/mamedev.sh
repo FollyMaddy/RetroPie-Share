@@ -96,6 +96,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper (server down)\n\
 - add simple and improved gamelist creator\n\
+- patched gamelist creator (still-video-image + marquee)\n\
 - function YESNO : possibility to do something when selection NO\n
 289.00 :\n\
 - add database\n\
@@ -1024,6 +1025,7 @@ function subgui_gamelists_mamedev() {
 ",Download/update all ES gamelists with media (+/-30 min.),,show_message_yesno_mamedev \"Would you like to proceed ?\" \"download_from_google_drive_mamedev 19h16tSYtksWU1EfC92KxJBi-8zYTYkYr $datadir/roms\",,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
 ",,,,,,,,,"
 ",►Create basic gamelists,,show_message_mamedev \"Experimental!\n\nNotice :\nAfter selecting a category a new gamelist.xml is created.\nThe media will not be deleted so dowloads can skip files that already exist.\n\nIf you want fresh media than manually delete the media folder.\n\nRemember for now :\nWorks only on category with drivers that use no media (carts or flops) !\n\nNewer categories are added from database 290.\nSo if one or more new categories are installed then switch to database 290 !\";show_message_yesno_mamedev \"Select YES if you want to make a gamelist with :\n-images\n-marquees\n-videos\n(if available)\n\nSelect NO if you want to make a gamelist with :\n-images\n-marquees\n(if available) \" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev videos\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev\",,,,,show_message_mamedev \"Here you will be able to create gamelists using the mamedev database with media (depending on availability on the adb.arcadeitalia.net).\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nWhen selecting this option you can select a category to create a gamelist for.\nThe existing gamelist file is overwritten !\","
+",►Create basic gamelists (still-video-image + marquee),,show_message_mamedev \"Experimental!\n\nNotice :\nAfter selecting a category a new gamelist.xml is created.\nThis part runs a patched function creating still-videos from ingame images in order to make it possible that marquees (when available) are displayed too overcoming the gamelist BUG.\nThe media will not be deleted so dowloads can skip files that already exist.\n\nIf you want fresh media than manually delete the media folder.\n\nRemember for now :\nWorks only on category with drivers that use no media (carts or flops) !\n\nNewer categories are added from database 290.\nSo if one or more new categories are installed then switch to database 290 !\";subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_still_video_patch_mamedev,,,,,show_message_mamedev \"Here you will be able to create gamelists using the mamedev database with media (depending on availability on the adb.arcadeitalia.net).\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nWhen selecting this option you can select a category to create a gamelist for.\nThe existing gamelist file is overwritten !\","
     )
 #",▼\ZrExperimental (has issue : no images downloaded)\ZR,,,"
 #",▼\ZrUse RetroScraper-remote by @kiro\ZR,,,"
@@ -1609,6 +1611,53 @@ _EOF_
 		<image>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[0]}/${shortname}.png")</image>
 		<marquee>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[1]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[1]}/${shortname}.png")</marquee>
 		<video>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4")</video>
+	</game> 
+_EOF_
+	done
+	done
+	cat >> $datadir/roms/$1/gamelist.xml << _EOF_
+</gameList>
+_EOF_
+	chown $user:$user "$datadir/roms/$1/gamelist.xml"
+	chown -R $user:$user "$datadir/roms/$1/media"
+}
+
+
+function real_basic_gamelist_creator_still_video_patch_mamedev() {
+	local gamelist_file_extensions=("7z" "zip")
+	local gamelist_folders=("ingames" "marquees")
+	local gamelist_folder
+	local gamelist_file_extension
+	local arcade_italia_link
+    #rm $datadir/roms/$1/gamelist.xml 2> /dev/null
+    #rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
+	echo "Images are downloaded from adb.arcadeitalia.net"
+	echo "-----------------------------------------------"
+	cat > $datadir/roms/$1/gamelist.xml << _EOF_
+<?xml version=\"1.0\"?>
+<gameList>
+_EOF_
+	#https://stackoverflow.com/questions/29292268/how-can-i-define-the-variable-for-the-awk-filter
+	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category="$1" '$0 ~ category { print $0 }'|while read line
+	do
+	shortname=$(echo $line|awk '{ print $2 }')
+	longname=$(echo $line|awk -F'[(:)]' '{ if ($3) print $2 "("$3")";else print $2 }')
+	for gamelist_folder in ${gamelist_folders[@]}
+	do
+	arcade_italia_link="https://adb.arcadeitalia.net/media/mame.current/${gamelist_folder}/${shortname}.png"
+	echo "get ${gamelist_folder/s/} for ${shortname} (if available):"
+	wget -q --show-progress --progress=bar:force -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}"
+	[[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.mp4" 2> /dev/null
+	done
+	for gamelist_file_extension in ${gamelist_file_extensions[@]}
+	do
+	cat >> $datadir/roms/$1/gamelist.xml << _EOF_
+	<game>
+		<path>./${shortname}.${gamelist_file_extension}</path>
+		<name>${longname}</name>
+		<image></image>
+		<marquee>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[1]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[1]}/${shortname}.png")</marquee>
+		<video>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[0]}/${shortname}.mp4")</video>
 	</game> 
 _EOF_
 	done
