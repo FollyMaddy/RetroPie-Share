@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-8 (289)"
+rp_module_version="0290.pre-beta-9 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -91,7 +91,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
     show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-8 :\n\
+290.pre-beta-9 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper (server down)\n\
@@ -1568,10 +1568,10 @@ function remove_installs_mamedev() {
 function real_basic_gamelist_creator_command_mamedev() {
 	local gamelist_file_extensions=("7z" "zip")
 	if [[ $2 == all ]];then
-	local gamelist_folders=("selects" "titles" "ingames" "videos")
+	local gamelist_folders=("selects" "titles" "ingames" "flyers" "videos")
 	else
 	#remember when creating the gamelist and when ${gamelist_folders[2] is empty videos aren't found, even if they exist, this is also what we want here !
-	local gamelist_folders=("selects" "titles" "ingames")
+	local gamelist_folders=("selects" "titles" "ingames" "flyers")
 	fi
 	local gamelist_folder
 	local gamelist_file_extension
@@ -1587,7 +1587,7 @@ function real_basic_gamelist_creator_command_mamedev() {
 <gameList>
 _EOF_
 	#https://stackoverflow.com/questions/29292268/how-can-i-define-the-variable-for-the-awk-filter
-	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category="$1" '$0 ~ category { print $0 }'|while read line
+	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category=@"$1"@ '$0 ~ category { print $0 }'|while read line
 	do
 	shortname=$(echo $line|awk '{ print $2 }')
 	longname=$(echo $line|awk -F'[(:)]' '{ if ($3) print $2 "("$3")";else print $2 }')
@@ -1610,9 +1610,9 @@ _EOF_
 	<game>
 		<path>./${shortname}.${gamelist_file_extension}</path>
 		<name>${longname}</name>
-		<image>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[0]}/${shortname}.png")</image>
+		<image>$([[ ! -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png ]] && [[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[3]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[3]}/${shortname}.png")$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[0]}/${shortname}.png")</image>
 		<marquee>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[1]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[1]}/${shortname}.png")</marquee>
-		<video>$([[ ! -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[3]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4")$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[3]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[3]}/${shortname}.mp4")</video>
+		<video>$([[ ! -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[4]}/${shortname}.mp4 ]] && [[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4")$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[4]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[4]}/${shortname}.mp4")</video>
 	</game> 
 _EOF_
 	done
