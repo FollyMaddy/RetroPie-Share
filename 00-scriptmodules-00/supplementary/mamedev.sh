@@ -1569,10 +1569,10 @@ function remove_installs_mamedev() {
 function real_basic_gamelist_creator_command_mamedev() {
 	local gamelist_file_extensions=("7z" "zip")
 	if [[ $2 == videos ]];then
-	local gamelist_folders=("ingames" "marquees" "videos")
+	local gamelist_folders=("ingames" "titles" "videos")
 	else
 	#remember when creating the gamelist and when ${gamelist_folders[2] is empty videos aren't found, even if they exist, this is also what we want here !
-	local gamelist_folders=("ingames" "marquees")
+	local gamelist_folders=("ingames" "titles")
 	fi
 	local gamelist_folder
 	local gamelist_file_extension
@@ -1597,7 +1597,7 @@ _EOF_
 		else
 		arcade_italia_link="https://adb.arcadeitalia.net/media/mame.current/${gamelist_folder}/${shortname}.png"
 		fi
-		echo "get ${gamelist_folder/s/} for ${shortname} (if available):"
+		echo "get ${gamelist_folder::-1} for ${shortname} (if available or skip when exists):"
 		#wget fix for video filename (adding --content-disposition) : https://www.junian.dev/blog/wget-correct-name/ 
 		#or use : curl --create-dirs -o "$datadir/roms/$1/media/emulationstation/${gamelist_folder}/${shortname}.mp4" "${arcade_italia_link}"
 		wget -q --show-progress --progress=bar:force -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}"
@@ -1625,7 +1625,7 @@ _EOF_
 
 function real_basic_gamelist_creator_still_video_patch_mamedev() {
 	local gamelist_file_extensions=("7z" "zip")
-	local gamelist_folders=("ingames" "marquees")
+	local gamelist_folders=("selects" "titles" "ingames")
 	local gamelist_folder
 	local gamelist_file_extension
 	local arcade_italia_link
@@ -1645,9 +1645,9 @@ _EOF_
 	for gamelist_folder in ${gamelist_folders[@]}
 	do
 	arcade_italia_link="https://adb.arcadeitalia.net/media/mame.current/${gamelist_folder}/${shortname}.png"
-	echo "get ${gamelist_folder/s/} for ${shortname} (if available):"
+	echo "get ${gamelist_folder::-1} for ${shortname} (if available or skip when exists):"
 	wget -q --show-progress --progress=bar:force -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}"
-	[[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.mp4" 2> /dev/null
+	[[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4" 2> /dev/null
 	done
 	for gamelist_file_extension in ${gamelist_file_extensions[@]}
 	do
@@ -1655,9 +1655,9 @@ _EOF_
 	<game>
 		<path>./${shortname}.${gamelist_file_extension}</path>
 		<name>${longname}</name>
-		<image></image>
+		<image>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[0]}/${shortname}.png")</image>
 		<marquee>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[1]}/${shortname}.png ]] && echo "./media/emulationstation/${gamelist_folders[1]}/${shortname}.png")</marquee>
-		<video>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[0]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[0]}/${shortname}.mp4")</video>
+		<video>$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4")</video>
 	</game> 
 _EOF_
 	done
