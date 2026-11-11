@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-9 (289)"
+rp_module_version="0290.pre-beta-10 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -91,7 +91,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
     show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-9 :\n\
+290.pre-beta-10 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper (server down)\n\
@@ -1577,8 +1577,8 @@ function real_basic_gamelist_creator_command_mamedev() {
 	local gamelist_file_extension
 	local arcade_italia_link
 	if [[ $3 == fresh ]];then
-    rm $datadir/roms/$1/gamelist.xml 2> /dev/null
-    rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
+		rm $datadir/roms/$1/gamelist.xml 2> /dev/null
+		rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
     fi
 	echo "Images are downloaded from adb.arcadeitalia.net"
 	echo "-----------------------------------------------"
@@ -1598,10 +1598,14 @@ _EOF_
 		else
 		arcade_italia_link="https://adb.arcadeitalia.net/media/mame.current/${gamelist_folder}/${shortname}.png"
 		fi
-		echo "get ${gamelist_folder::-1} for ${shortname} (if available or skip when exists):"
 		#wget fix for video filename (adding --content-disposition) : https://www.junian.dev/blog/wget-correct-name/ 
 		#or use : curl --create-dirs -o "$datadir/roms/$1/media/emulationstation/${gamelist_folder}/${shortname}.mp4" "${arcade_italia_link}"
-		wget -q --show-progress --progress=bar:force -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}"
+		if wget -q -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}";then
+			echo -e "$1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})\t\t:available" >&2
+		else
+			echo -e "$1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})\t\t:not available" >&2
+		fi
+		#run ffmpeg only if the specific ingame image exists
 		[[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4" 2> /dev/null
 	done
 	for gamelist_file_extension in ${gamelist_file_extensions[@]}
