@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-10 (289)"
+rp_module_version="0290.pre-beta-11 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -91,12 +91,13 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
     show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-10 :\n\
+290.pre-beta-11 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper (server down)\n\
 - add simple and improved gamelist creator\n\
 - function YESNO : possibility to do something when selection NO\n
+- be able to use 2 gdrives for getting and installing mame binaries\n
 289.00 :\n\
 - add database\n\
 - exclude 288\n\
@@ -1035,7 +1036,7 @@ function subgui_gamelists_mamedev() {
 
 
 function subgui_gdrive_binaries_mamedev() {
-	#$1=mame/lr-mess/lr-mame $2=destination-path $3=gdrive-folder-id
+	#$1=mame/lr-mess/lr-mame $2=destination-path $3=1st-gdrive-folder-id $4=2nd-gdrive-folder-id
 	show_message_mamedev "\
 A list of $1 binaries will be presented, selecting one will :\n\
 - remove your current $1, if installed\n\
@@ -1064,12 +1065,19 @@ Make sure you use the correct OS version :\n\
 - gccXX could work on older OSes, just try and see if it works\n\
 "
     local csv=()
-    #the first value is reserved for the column descriptions
-    csv=( ",,,," )
     local gdrive_read
     clear
     echo "reading the available binaries"
+	#$3=1st-gdrive-folder-id
     while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$3#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|tac|while read line;do echo "\",$(echo $line|cut -d/ -f48),,install_binary_from_gdrive_mamedev $1 $2 $(echo $line|cut -d/ -f48) $(echo $line|cut -d/ -f6),\"";done)
+	#$4=2nd-gdrive-folder-id (if -(n)ot empty)
+    [[ -n $4 ]] && while read gdrive_read;do csv+=("$gdrive_read");done < <(IFS=$'\n'; curl https://drive.google.com/embeddedfolderview?id=$4#list|sed 's/https/\nhttps/g;s/>/\//g;s/</\//g;s/\nhttps:\/\/drive-/https:\/\/drive-/g'|grep file|tac|while read line;do echo "\",$(echo $line|cut -d/ -f48),,install_binary_from_gdrive_mamedev $1 $2 $(echo $line|cut -d/ -f48) $(echo $line|cut -d/ -f6),\"";done)
+	#when 2 gdrives are used sorting must be done to get a good sorted list
+	if [[ -n $4 ]];then
+	IFS=$'\n' csv=($(sort -t"," -dr -k 2 --ignore-case <<<"${csv[*]}"));unset IFS
+	fi
+	#the first value is reserved for the column descriptions, must be done after sorting
+	csv=(",,,," "${csv[@]}")
     build_menu_mamedev
 }
 
@@ -2067,7 +2075,7 @@ function subgui_installs_mamedev() {
 ",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d $rootdir/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d $rootdir/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
 ",,,,"
-",\Z4►Show and install mame    from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1evd5_a2Ia118kf1aqB_cVSJFj2fp6oFQ,"
+",\Z4►Show and install mame    from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1evd5_a2Ia118kf1aqB_cVSJFj2fp6oFQ 1-UCK187sDpdHu2WcPW9qMfpLRUPRd1bU,"
 ",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",,,,"
