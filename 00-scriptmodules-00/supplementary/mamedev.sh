@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-11 (289)"
+rp_module_version="0290.pre-beta-13 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
  #works in terminal but not here ?
@@ -91,13 +91,16 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
     show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-11 :\n\
+290.pre-beta-13 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper (server down)\n\
 - add simple and improved gamelist creator\n\
 - function YESNO : possibility to do something when selection NO\n
 - be able to use 2 gdrives for getting and installing mame binaries\n
+- read latest database in the beginning and fix database not in array\n
+- automatically get the available sample pack when downloading\n
+- turn-off cheatfile download (cloudflare block)(needs fixing)\n
 289.00 :\n\
 - add database\n\
 - exclude 288\n\
@@ -540,17 +543,13 @@ remove the predefined \"view\" from the config.\n\
     fi
     if [[ -f $emudir/mame/mame ]];then
 		if [[ ${rp_module_version_database} != ${rp_module_version_mame} ]];then
-			if [[ " ${rp_module_database_versions[*]} " =~ " ${rp_module_version_mame} " ]];then
-				show_message_mamedev "Your standalone MAME version is different than the used MAME database !\nYour standalone MAME version is ${rp_module_version_mame}.\nDatabase version ${rp_module_version_mame} is available and will be set to that version.\n"
-				rp_module_version_database=${rp_module_version_mame}
-			else
-				show_message_mamedev "Your standalone MAME version is different than the used MAME database !\nStandalone MAME is used by this script when installing a driver.\nA mismatch can mean that a driver cannot be installed, for example.\nMake sure you switch to the correct database.\nYour standalone MAME version is ${rp_module_version_mame}.\nSeems your version doesn't have a compatible database.\nCheck if a close database version is available.\nOr just update Standalone MAME to a newer/correct version, if possible.\n\nA list will now be shown so you can pick the closest database.\n\nIt's possible to manually change the database later with selecting :\n►Switch to another mame database version\n"
-				subgui_databases_mamedev
-			fi
+			show_message_mamedev "Your standalone MAME version is different than the used MAME database !\n\nYour standalone MAME version is ${rp_module_version_mame}.\nThe used database version is ${rp_module_version_database}.\n\nIf needed then make sure you change it to match your mame version !\n\nWhen a database doesn't exist, select the closest one !"
 		fi
 	else
 		show_message_mamedev "You haven't installed Stanalone MAME yet !\nMake sure you install Standalone MAME.\nThe script will extract data from Standalone MAME to function correctly.\n"
 	fi
+	#always read the database
+	read_data_mamedev clear
 }
 
 
@@ -681,24 +680,29 @@ it will install and use the detected category name instead.\n"
 
 
 function read_data_mamedev() {
+	mamedev_csv=()
     [[ $1 == clear ]] && clear
     echo "Database version mame${rp_module_version_database}_systems_sorted_info is used"
     #make sure there is a database
     [[ ! -d $emudir/mame ]] && mkdir -p $emudir/mame
-    [[ ! -f $emudir/mame/mame${rp_module_version_database}_systems_sorted_info ]] && curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_database}_systems_sorted_info -o $emudir/mame/mame${rp_module_version_database}_systems_sorted_info
+    if [[ ! -f $emudir/mame/mame${rp_module_version_database}_systems_sorted_info ]];then
+		echo "-> Downloading mame${rp_module_version_database}_systems_sorted_info"
+		curl -s https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-databases-00/mame/mame${rp_module_version_database}_systems_sorted_info -o $emudir/mame/mame${rp_module_version_database}_systems_sorted_info
+	fi
     #here we read the systems and descriptions from mame into an array
-    #by using next if function the data can be re-used, without reading it every time
-    if [[ -z ${mamedev_csv[@]} ]]; then
-        if [[ -f $emudir/mame/mame${rp_module_version_database}_systems_sorted_info ]]; then 
-	echo "Get mame${rp_module_version_database} data:$emudir/mame/mame${rp_module_version_database}_systems_sorted_info"
-	echo "For speed, data will be re-used within this session if possible"
-	echo "Be patient for 20 seconds" 
-	#here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
-	#we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-	#at the end it removes the last char, this is the @ char and not the newline as expected so we need to add the @ again
-	#/r or /n did not do the job properly so it's replaced by .$ and adding the @ again
-	while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,install_system_mamedev,/;s/.$/@,,,\"/')
-        fi
+    #the data can be re-used, without reading it every time
+    if [[ -f $emudir/mame/mame${rp_module_version_database}_systems_sorted_info ]]; then 
+		echo "Get mame${rp_module_version_database} data:$emudir/mame/mame${rp_module_version_database}_systems_sorted_info"
+		echo "For speed, data will be re-used within this session if possible"
+		echo "Be patient for 20 seconds" 
+		#here we use sed to convert the line to csv : the special charachter ) has to be single quoted and backslashed '\)'
+		#we need to add 'echo \",,,,\";', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+		#at the end it removes the last char, this is the @ char and not the newline as expected so we need to add the @ again
+		#/r or /n did not do the job properly so it's replaced by .$ and adding the @ again
+		while read system_read;do mamedev_csv+=("$system_read");done < <(echo \",,,,\";cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|sed 's/,//g;s/Driver /\",/g;s/ ./,/;s/'\)':/,install_system_mamedev,/;s/.$/@,,,\"/')
+	else
+		echo -e "\n\nmame${rp_module_version_database}_systems_sorted_info is not found, check your internet connection !" 
+		sleep 10
     fi
 }
 
@@ -1440,12 +1444,12 @@ function subgui_addons_mamedev () {
 ",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
 ",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
 ",,,,"
-",►Download cheatfile from list,,subgui_download_cheat_mamedev,,,,,show_message_mamedev \"When this script installs a system or category the cheat option in the configs will be turned on in lr-mess/lr-mame and MAME. Together with the cheat file you will be able to use cheats on certain games. The cheat file used can be found on http://www.mamecheat.co.uk\","
+#",►Download cheatfile from list,,subgui_download_cheat_mamedev,,,,,show_message_mamedev \"When this script installs a system or category the cheat option in the configs will be turned on in lr-mess/lr-mame and MAME. Together with the cheat file you will be able to use cheats on certain games. The cheat file used can be found on http://www.mamecheat.co.uk\","
 ",►Download / create gamelists,,subgui_gamelists_mamedev,,,,,show_message_mamedev \"Here you will find the options to use use RetroScraper and to install predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
 	)
 	[[ $(expr $rp_module_version_database + 0) -gt 273 ]] && \
     csv+=(
-",Download/update mame audio samples,,download_extra_files_mamedev https://www.progettosnaps.net/samples/packs/ MAME_samples_278.zip samples '' '',,,,,show_message_mamedev \"No help\","
+",Download/update mame audio samples,,download_extra_files_mamedev https://www.progettosnaps.net/samples/packs/ $(curl -s https://www.progettosnaps.net/samples/|awk -F '[/"]' '/MAME_samples/ {print $7}') samples '' '',,,,,show_message_mamedev \"No help\","
 	)
 	csv+=(
 ",Download/update mame artwork (+/-30 min.),,download_from_google_drive_mamedev 1sm6gdOcaaQaNUtQ9tZ5Q5WQ6m1OD2QY3 $datadir/roms/mame/artwork,,,,,show_message_mamedev \"Here you will find the artwork files needed for a lot of handheld games and it's basically only working on MAME standalone. Some artwork files are custom made others are from other sources. Though we changed the background and bezel filenames in the archives so the options 'Create RetroArch xxxxxxxxxxx-overlays' can make use of these artwork files by extracting the overlay pictures and use them for lr-mess and lr-mame in retroarch.\","
@@ -1468,7 +1472,7 @@ function subgui_databases_mamedev() {
     clear
     echo "reading the available databases"
     #the first value is reserved for the column descriptions and empty in the array rp_module_database_versions
-    while read database_read;do csv+=("$database_read");done < <(IFS=$'\n'; echo "${rp_module_database_versions[*]}"|while read line;do echo "\",Set database to $line,,rp_module_version_database=$line;#break;mamedev_csv=(),\"";done;unset IFS)
+    while read database_read;do csv+=("$database_read");done < <(IFS=$'\n'; echo "${rp_module_database_versions[*]}"|while read line;do echo "\",Set database to $line,,rp_module_version_database=$line;read_data_mamedev;#break,\"";done;unset IFS)
     build_menu_mamedev
     #"break" after usage in function build_menu_mamedev
 }
@@ -1509,7 +1513,7 @@ function direct_install_mamedev() {
 2>&1 >/dev/tty \
 )
 clear
-read_data_mamedev clear
+#read_data_mamedev clear
 #get non-arcade/arcade status from database
 IFS=$'\n' driver_info=($(awk "/,$driver_name,/" <<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")));unset IFS
 if [[ ${driver_info[@]} == *@non-arcad* ]]
@@ -1609,9 +1613,9 @@ _EOF_
 		#wget fix for video filename (adding --content-disposition) : https://www.junian.dev/blog/wget-correct-name/ 
 		#or use : curl --create-dirs -o "$datadir/roms/$1/media/emulationstation/${gamelist_folder}/${shortname}.mp4" "${arcade_italia_link}"
 		if wget -q -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}";then
-			echo -e "$1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})\t\t:available" >&2
+			echo -e "\e[0;32m(V) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})" >&2
 		else
-			echo -e "$1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})\t\t:not available" >&2
+			echo -e "\e[0;31m(X) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})" >&2
 		fi
 		#run ffmpeg only if the specific ingame image exists
 		[[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4" 2> /dev/null
@@ -2193,7 +2197,7 @@ dialog \
     clear
     if [[ $(echo $website_url|sha1sum) == 241013beb0faf19bf5d76d74507eadecdf45348e* ]];then
     mkdir -p $destination_path
-    read_data_mamedev clear
+    #read_data_mamedev clear
     IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
     for rd in ${!restricted_download_csv[@]};do 
     #echo ${restricted_download_csv[$rd]}
@@ -2271,7 +2275,7 @@ dialog \
 
     clear
     mkdir -p $destination_path
-    read_data_mamedev clear
+    #read_data_mamedev clear
     IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
 	#echo ${mamedev_csv[1]}
 	#echo ${restricted_download_csv[1]}
@@ -2392,7 +2396,7 @@ function create_00index_file_mamedev() {
     local index_file="0 rom-index 0"
     clear
     mkdir -p $destination_path
-    read_data_mamedev clear
+    #read_data_mamedev clear
     IFS=$'\n' restricted_download_csv=($(cut -d "," -f 2 <<<$(awk $search_input<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))));unset IFS
 	echo "creating a "$index_file" file for this specific category"
     [[ -f "$destination_path/$index_file" ]] && rm "$destination_path/$index_file" 2>&1
@@ -2405,7 +2409,7 @@ function create_00index_file_mamedev() {
 
 function create_systems_list_mamedev() {
     local csv=()
-    read_data_mamedev clear
+    #read_data_mamedev clear
     #we have to do a global comparison as the alfabetical order contains also a letter in the $1
     if [[ $1 == descriptions* ]];then
     #here we store the sorted mamedev_csv values in the csv array
@@ -2712,7 +2716,7 @@ creating=
 #classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
 
 if [[ ${csv[$choice]} != *@skip* ]];then
-read_data_mamedev
+#read_data_mamedev
 echo "read the mame romset groups, used for $(echo $romdir|cut -d/ -f4) naming"
  if [[ -z $groups_read ]];then
  groups_read=1
@@ -3697,7 +3701,7 @@ echo
 #added handheld arrays, used for overlays
 #this is an example command to extract the systems and add them here to the array :
 #classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
-read_data_mamedev clear
+#read_data_mamedev clear
 IFS=$'\n' 
 classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
@@ -3753,7 +3757,7 @@ echo
 #added handheld arrays, used for overlays
 #this is an example command to extract the systems and add them here to the array :
 #classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
-read_data_mamedev clear
+#read_data_mamedev clear
 IFS=$'\n' 
 classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
