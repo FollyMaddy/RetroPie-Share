@@ -1,22 +1,22 @@
 #!/usr/bin/env bash
 
-# This file is part of The RetroPie Project
+#This file is part of The RetroPie Project
 #
-# The RetroPie Project is the legal property of its developers, whose names are
-# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
+#The RetroPie Project is the legal property of its developers, whose names are
+#too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
 #
-# See the LICENSE.md file at the top-level directory of this distribution and
-# at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
+#See the LICENSE.md file at the top-level directory of this distribution and
+#at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------
-# INFORMATION ABOUT THE CSV STRUCTURE
-# USED FOR GENERATING A GUI/SUB-GUI :
-# - the first value isn't used for the menu, that way the menu begins with 1
-# - this first value should be empty or contain a description of the specific column
-# - make sure every line begins and ends with quotes because of possible spaces
-# - just use the first and last column in excel/calc for the quotes and you should be fine
+#INFORMATION ABOUT THE CSV STRUCTURE
+#USED FOR GENERATING A GUI/SUB-GUI :
+#- the first value isn't used for the menu, that way the menu begins with 1
+#- this first value should be empty or contain a description of the specific column
+#- make sure every line begins and ends with quotes because of possible spaces
+#- just use the first and last column in excel/calc for the quotes and you should be fine
 #----------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-16 (289)"
+rp_module_version="0290.pre-beta-17 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
 	rp_module_version_mame="$($emudir/mame/mame -version)"
@@ -83,7 +83,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 		show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-16 :\n\
+290.pre-beta-17 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper and functions (server down)\n\
@@ -95,7 +95,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 - automatically get the available sample pack when downloading\n
 - old function for mamecheats.co.uk, with cloudflare block, removed\n
 - download the cheatfile 279 another way again\n
-- clean up until line nr 2560\n
+- uniform padding and clean up\n
+- turn-off obsolete menu items (not removed yet)\n
 289.00 :\n\
 - add database\n\
 - exclude 288\n\
@@ -554,8 +555,8 @@ function gui_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",About this script,,show_message_mamedev \"This project makes use of MAME/lr-mame/lr-mess for emulating.\nThey support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to install drivers on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- bbilford83 : joystick configs and summaries and gamelists\n- Orionsangel : creating realistic arcade overlays\n- stickfreaks : hosting mame binaries\n- mamecheats : hosting cheatfiles\",,,,,show_message_mamedev \"NO HELP\","
-",Update mamedev script and database,,wget -O $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/mamedev.sh;chown $user:$user $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]]; then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi);xattr -d user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi);rp_registerAllModules;show_message_mamedev \"\n\n\n\n\n\n\n\n----------The script has been updated !-----------\n-----Going back into the $(echo $romdir|cut -d/ -f4)-Setup menu.-----\";break,,,,,," 
+#",About this script,,show_message_mamedev \"This project makes use of MAME/lr-mame/lr-mess for emulating.\nThey support a lot of devices to be emulated.\nEmulating many of the desired devices was quite difficult.\nSome people made module-scripts to emulate these devices.\nThe making of such a module-script is a very time consuming.\nThis project makes use of our own enhance data and MAME data.\nThis data is then used to install drivers on the fly.\n---This script combines the work and ideas of many people :---\n- Folly : creating this script\n- Valerino : creating the run_mess.sh script\n- RussellB : improved the run_mess.sh script\n- DTEAM : basic structure for handheld and P&P\n- DTEAM : artwork and gamelists on google-drive\n- Matt Huisman : google-drive downloader\n- Dmmarti : google-sheet with info about systems\n- JimmyFromTheBay : testing\n- Jamrom2 : testing\n- bbilford83 : joystick configs and summaries and gamelists\n- Orionsangel : creating realistic arcade overlays\n- stickfreaks : hosting mame binaries\n- mamecheats : hosting cheatfiles\",,,,,show_message_mamedev \"NO HELP\","
+",Update mamedev script and database,,wget -O $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi) https://raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-scriptmodules-00/supplementary/mamedev.sh;chown $user:$user $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi);xattr -d user.comment $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi);rp_registerAllModules;show_message_mamedev \"\n\n\n\n\n\n\n\n----------The script has been updated !-----------\n-----Going back into the $(echo $romdir|cut -d/ -f4)-Setup menu.-----\";break,,,,,," 
 ",,,,,,,,,"
 ",►Install MAME / LR-MESS / LR-MAME,,subgui_installs_mamedev,,,,,,"
 ",,,,,,,,,"
@@ -686,7 +687,7 @@ function read_data_mamedev() {
 	fi
     #here we read the systems and descriptions from mame into an array
     #the data can be re-used, without reading it every time
-    if [[ -f $emudir/mame/mame${rp_module_version_database}_systems_sorted_info ]]; then 
+    if [[ -f $emudir/mame/mame${rp_module_version_database}_systems_sorted_info ]];then 
 		echo "Get mame${rp_module_version_database} data:$emudir/mame/mame${rp_module_version_database}_systems_sorted_info"
 		echo "For speed, data will be re-used within this session if possible"
 		echo "Be patient for 20 seconds" 
@@ -709,50 +710,48 @@ function subgui_categories_mamedev() {
     )
     [[ $(expr $rp_module_version_database + 0) -gt 261 ]] && \
     csv+=(
-",\Zr▼ NEW : Fully automated,,,,,,,,"
 ",►Show all non-arcade categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @non-arcade \"/@non-arcade@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|media|non-arcade/\" \"no\",,,,,,"
 ",►Show all arcade     categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"!/@mechanical@/ && /@arcade@/\" \"! /90º|bios|computer|good|new0*|@ma@|media|oro|working_arcade/\" \"no\",,,,,,"
 ",►Show all arcade 90º categories from database and install one,,subformgui_categories_automated_mamedev \"show list to install category\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/\" \"! /90º|bios|computer|good|new0*|@ma@|media|oro|working_arcade/\" \"no\",,,,,,"
-",\Zr▲,,,,,,,,"
-",,,,,,,,,"
     )
     csv+=(
-",All in One Handheld and Plug and Play,@non-arcade,create_00index_file_mamedev '/@all_in1/' $datadir/roms/all_in1;install_system_mamedev all_in1 all_in1 '' '' 'none' '',,,,,help_categories_mamedev,"
-",Classic Handheld Systems,@non-arcade,create_00index_file_mamedev '/@classich/' $datadir/roms/classich;install_system_mamedev classich classich '' '' 'none' '',,,,,help_categories_mamedev,"
-",Game & Watch,@non-arcade,create_00index_file_mamedev '/@gameandwatch/' $datadir/roms/gameandwatch;install_system_mamedev gameandwatch gameandwatch '' '' 'none' '',,,,,help_categories_mamedev,"
-",JAKKS Pacific TV Games,@non-arcade,create_00index_file_mamedev '/@jakks/' $datadir/roms/jakks;install_system_mamedev jakks jakks '' '' 'none' '',,,,,help_categories_mamedev,"
-",Konami Handheld,@non-arcade,create_00index_file_mamedev '/@konamih/' $datadir/roms/konamih;install_system_mamedev konamih konamih '' '' 'none' '',,,,,help_categories_mamedev,"
-",Tiger Handheld Electronics,@non-arcade,create_00index_file_mamedev '/@tigerh/' $datadir/roms/tigerh;install_system_mamedev tigerh tigerh '' '' 'none' '',,,,,help_categories_mamedev,"
-",Tiger R-Zone,@non-arcade,create_00index_file_mamedev '/@tigerrz/' $datadir/roms/tigerrz;install_system_mamedev tigerrz tigerrz '' '' 'none' '',,,,,help_categories_mamedev,"
-",,,,,,,,,"
-",DECO cassette Arcade Category => deco_cassette,@arcade,create_00index_file_mamedev '/DECO/' $datadir/roms/deco_cassette;install_system_mamedev deco_cassette deco_cassette '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the deco_cassette category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",NeoGeo Arcade Category => neogeo,@arcade,create_00index_file_mamedev '/@neogeo/' $datadir/roms/neogeo;install_system_mamedev neogeo neogeo '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the neogeo category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Sega Mega Play Arcade Category => megaplay,@arcade,create_00index_file_mamedev '/\(Mega Play\)/' $datadir/roms/megaplay;install_system_mamedev megaplay megaplay '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the megaplay category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Nintendo PlayChoice-10 Arcade Category => playchoice10,@arcade,create_00index_file_mamedev '/\(PlayChoice-10\)/' $datadir/roms/playchoice10;install_system_mamedev playchoice10 playchoice10 '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the playchoice10 category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Nintendo VS Arcade Category => nintendovs,@arcade,create_00index_file_mamedev '/@nintendovs/' $datadir/roms/nintendovs;install_system_mamedev nintendovs nintendovs '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the nintendovs category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",,,,,,,,,"
-",Arcade Category => arcade,@arcade,create_00index_file_mamedev '/@working_arcade/' $datadir/roms/arcade;install_system_mamedev arcade arcade '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => driving,@arcade,create_00index_file_mamedev '/@driving@/&&/@working_arcade/' $datadir/roms/driving;install_system_mamedev driving driving '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the driving category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Arcade Category => lightgun,@arcade,create_00index_file_mamedev '/@lightgun/&&/@working_arcade/' $datadir/roms/lightgun;install_system_mamedev lightgun lightgun '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the lightgun category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Arcade Category => maze,@arcade,create_00index_file_mamedev '/@maze/&&/@working_arcade/' $datadir/roms/maze;install_system_mamedev maze maze '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the maze category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Arcade Category => pinball,@arcade,create_00index_file_mamedev '/@pinball_arcade/&&/@working_arcade/' $datadir/roms/pinball;install_system_mamedev pinball pinball '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the pinball category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Arcade Category => puzzle,@arcade,create_00index_file_mamedev '/@puzzle/&&/@working_arcade/' $datadir/roms/puzzle;install_system_mamedev puzzle puzzle '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the puzzle category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Arcade Category => realistic,@arcade,create_00index_file_mamedev '/@oro/' $datadir/roms/realistic;install_system_mamedev realistic realistic '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the realistic category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\nThe realistic category is meant for using Orionsangels realistic overlays with lr-mame.\nIt contains the selection of games that will work with these overlays.\n\Z1But installing the realistic category from this section will NOT install the overlays !\nIf you want to install and use these overlays then you have to install it from the (JOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS).\n\nThis category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => shooter,@arcade,create_00index_file_mamedev '/@shooter/&&/@working_arcade/' $datadir/roms/shooter;install_system_mamedev shooter shooter '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the shooter category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Arcade Category => slot_machine,@arcade,create_00index_file_mamedev '/@slot_machine/&&/@working_arcade/' $datadir/roms/slot_machine;install_system_mamedev slot_machine slot_machine '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the slot_machine category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Arcade Category => sports,@arcade,create_00index_file_mamedev '/@sports/&&/@working_arcade/' $datadir/roms/sports;install_system_mamedev sports sports '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sports category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",,,,,,,,,"
-",DECO cassette Arcade Category => deco_cassette90º,@arcade,create_00index_file_mamedev '/DECO/&&/@90º/' $datadir/roms/deco_cassette90º;install_system_mamedev deco_cassette90º deco_cassette90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the deco_cassette90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/deco_cassette90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",Nintendo PlayChoice-10 Arcade Category => playchoice10_90º,@arcade,create_00index_file_mamedev '/\(PlayChoice-10\)/' $datadir/roms/playchoice10_90º;install_system_mamedev playchoice10_90º playchoice10_90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the playchoice10_90º category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
-",,,,,,,,,"
-",Arcade Category => arcade90º,@arcade,create_00index_file_mamedev '/@working_arcade/&&/@90º/' $datadir/roms/arcade90º;install_system_mamedev arcade90º arcade90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/arcade90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => driving90º,@arcade,create_00index_file_mamedev '/@driving@/&&/@90º/&&/@working_arcade/' $datadir/roms/driving90º;install_system_mamedev driving90º driving90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the driving90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/driving90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => maze90º,@arcade,create_00index_file_mamedev '/@maze/&&/@90º/&&/@working_arcade/' $datadir/roms/maze90º;install_system_mamedev maze90º maze90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the maze90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/maze90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => pinball90º,@arcade,create_00index_file_mamedev '/@pinball_arcade/&&/@90º/&&/@working_arcade/' $datadir/roms/pinball90º;install_system_mamedev pinball90º pinball90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the pinball90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/pinball90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => puzzle90º,@arcade,create_00index_file_mamedev '/@puzzle/&&/@90º/&&/@working_arcade/' $datadir/roms/puzzle90º;install_system_mamedev puzzle90º puzzle90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the puzzle90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/puzzle90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => shooter90º,@arcade,create_00index_file_mamedev '/@shooter/&&/@90º/&&/@working_arcade/' $datadir/roms/shooter90º;install_system_mamedev shooter90º shooter90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the shooter90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/shooter90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => slot_machine90º,@arcade,create_00index_file_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' $datadir/roms/slot_machine90º;install_system_mamedev slot_machine90º slot_machine90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the slot_machine90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/slot_machine90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
-",Arcade Category => sports90º,@arcade,create_00index_file_mamedev '/@sports/&&/@90º/&&/@working_arcade/' $datadir/roms/sports90º;install_system_mamedev sports90º sports90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sports90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/sports90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",,,,,,,,,"
+#",All in One Handheld and Plug and Play,@non-arcade,create_00index_file_mamedev '/@all_in1/' $datadir/roms/all_in1;install_system_mamedev all_in1 all_in1 '' '' 'none' '',,,,,help_categories_mamedev,"
+#",Classic Handheld Systems,@non-arcade,create_00index_file_mamedev '/@classich/' $datadir/roms/classich;install_system_mamedev classich classich '' '' 'none' '',,,,,help_categories_mamedev,"
+#",Game & Watch,@non-arcade,create_00index_file_mamedev '/@gameandwatch/' $datadir/roms/gameandwatch;install_system_mamedev gameandwatch gameandwatch '' '' 'none' '',,,,,help_categories_mamedev,"
+#",JAKKS Pacific TV Games,@non-arcade,create_00index_file_mamedev '/@jakks/' $datadir/roms/jakks;install_system_mamedev jakks jakks '' '' 'none' '',,,,,help_categories_mamedev,"
+#",Konami Handheld,@non-arcade,create_00index_file_mamedev '/@konamih/' $datadir/roms/konamih;install_system_mamedev konamih konamih '' '' 'none' '',,,,,help_categories_mamedev,"
+#",Tiger Handheld Electronics,@non-arcade,create_00index_file_mamedev '/@tigerh/' $datadir/roms/tigerh;install_system_mamedev tigerh tigerh '' '' 'none' '',,,,,help_categories_mamedev,"
+#",Tiger R-Zone,@non-arcade,create_00index_file_mamedev '/@tigerrz/' $datadir/roms/tigerrz;install_system_mamedev tigerrz tigerrz '' '' 'none' '',,,,,help_categories_mamedev,"
+#",,,,,,,,,"
+#",DECO cassette Arcade Category => deco_cassette,@arcade,create_00index_file_mamedev '/DECO/' $datadir/roms/deco_cassette;install_system_mamedev deco_cassette deco_cassette '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the deco_cassette category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",NeoGeo Arcade Category => neogeo,@arcade,create_00index_file_mamedev '/@neogeo/' $datadir/roms/neogeo;install_system_mamedev neogeo neogeo '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the neogeo category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Sega Mega Play Arcade Category => megaplay,@arcade,create_00index_file_mamedev '/\(Mega Play\)/' $datadir/roms/megaplay;install_system_mamedev megaplay megaplay '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the megaplay category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Nintendo PlayChoice-10 Arcade Category => playchoice10,@arcade,create_00index_file_mamedev '/\(PlayChoice-10\)/' $datadir/roms/playchoice10;install_system_mamedev playchoice10 playchoice10 '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the playchoice10 category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Nintendo VS Arcade Category => nintendovs,@arcade,create_00index_file_mamedev '/@nintendovs/' $datadir/roms/nintendovs;install_system_mamedev nintendovs nintendovs '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the nintendovs category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",,,,,,,,,"
+#",Arcade Category => arcade,@arcade,create_00index_file_mamedev '/@working_arcade/' $datadir/roms/arcade;install_system_mamedev arcade arcade '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => driving,@arcade,create_00index_file_mamedev '/@driving@/&&/@working_arcade/' $datadir/roms/driving;install_system_mamedev driving driving '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the driving category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Arcade Category => lightgun,@arcade,create_00index_file_mamedev '/@lightgun/&&/@working_arcade/' $datadir/roms/lightgun;install_system_mamedev lightgun lightgun '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the lightgun category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Arcade Category => maze,@arcade,create_00index_file_mamedev '/@maze/&&/@working_arcade/' $datadir/roms/maze;install_system_mamedev maze maze '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the maze category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Arcade Category => pinball,@arcade,create_00index_file_mamedev '/@pinball_arcade/&&/@working_arcade/' $datadir/roms/pinball;install_system_mamedev pinball pinball '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the pinball category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Arcade Category => puzzle,@arcade,create_00index_file_mamedev '/@puzzle/&&/@working_arcade/' $datadir/roms/puzzle;install_system_mamedev puzzle puzzle '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the puzzle category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Arcade Category => realistic,@arcade,create_00index_file_mamedev '/@oro/' $datadir/roms/realistic;install_system_mamedev realistic realistic '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the realistic category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\nThe realistic category is meant for using Orionsangels realistic overlays with lr-mame.\nIt contains the selection of games that will work with these overlays.\n\Z1But installing the realistic category from this section will NOT install the overlays !\nIf you want to install and use these overlays then you have to install it from the (JOYSTICKS/CHEATS/GAMELISTS/ARTWORK/OVERLAYS).\n\nThis category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => shooter,@arcade,create_00index_file_mamedev '/@shooter/&&/@working_arcade/' $datadir/roms/shooter;install_system_mamedev shooter shooter '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the shooter category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Arcade Category => slot_machine,@arcade,create_00index_file_mamedev '/@slot_machine/&&/@working_arcade/' $datadir/roms/slot_machine;install_system_mamedev slot_machine slot_machine '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the slot_machine category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Arcade Category => sports,@arcade,create_00index_file_mamedev '/@sports/&&/@working_arcade/' $datadir/roms/sports;install_system_mamedev sports sports '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sports category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",,,,,,,,,"
+#",DECO cassette Arcade Category => deco_cassette90º,@arcade,create_00index_file_mamedev '/DECO/&&/@90º/' $datadir/roms/deco_cassette90º;install_system_mamedev deco_cassette90º deco_cassette90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the deco_cassette90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/deco_cassette90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",Nintendo PlayChoice-10 Arcade Category => playchoice10_90º,@arcade,create_00index_file_mamedev '/\(PlayChoice-10\)/' $datadir/roms/playchoice10_90º;install_system_mamedev playchoice10_90º playchoice10_90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the playchoice10_90º category.\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n\nThe created index file contains the list of games.\n\n\Z2This category is implemented as recognisable category when istalling a default system.\","
+#",,,,,,,,,"
+#",Arcade Category => arcade90º,@arcade,create_00index_file_mamedev '/@working_arcade/&&/@90º/' $datadir/roms/arcade90º;install_system_mamedev arcade90º arcade90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the arcade90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/arcade90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => driving90º,@arcade,create_00index_file_mamedev '/@driving@/&&/@90º/&&/@working_arcade/' $datadir/roms/driving90º;install_system_mamedev driving90º driving90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the driving90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/driving90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => maze90º,@arcade,create_00index_file_mamedev '/@maze/&&/@90º/&&/@working_arcade/' $datadir/roms/maze90º;install_system_mamedev maze90º maze90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the maze90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/maze90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => pinball90º,@arcade,create_00index_file_mamedev '/@pinball_arcade/&&/@90º/&&/@working_arcade/' $datadir/roms/pinball90º;install_system_mamedev pinball90º pinball90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the pinball90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/pinball90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => puzzle90º,@arcade,create_00index_file_mamedev '/@puzzle/&&/@90º/&&/@working_arcade/' $datadir/roms/puzzle90º;install_system_mamedev puzzle90º puzzle90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the puzzle90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/puzzle90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => shooter90º,@arcade,create_00index_file_mamedev '/@shooter/&&/@90º/&&/@working_arcade/' $datadir/roms/shooter90º;install_system_mamedev shooter90º shooter90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the shooter90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/shooter90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => slot_machine90º,@arcade,create_00index_file_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' $datadir/roms/slot_machine90º;install_system_mamedev slot_machine90º slot_machine90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the slot_machine90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/slot_machine90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
+#",Arcade Category => sports90º,@arcade,create_00index_file_mamedev '/@sports/&&/@90º/&&/@working_arcade/' $datadir/roms/sports90º;install_system_mamedev sports90º sports90º '' '' 'none' '',,,,,show_message_mamedev \"This help page gives more info on force installing the sports90º category.\nWhen running roms from this directory it will rotate the game 90ºCW.\nSo use a monitor that you can turn !\n\nIt will :\n- create the rom folder\n- associate the mame and lr-mame loaders for this folder or category\n- create a rom index file (0 rom-index 0) inside the specific rom folder\n- add screenrotation in $rootdir/configs/sports90º/retroarch.cfg.basename\n\nThe created index file contains the list of games.\n\n\Z1This category is NOT implemented as recognisable category when istalling a default system !\","
     )
     build_menu_mamedev
 }
@@ -763,11 +762,11 @@ function subgui_systems_extras_mamedev() {
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
 ",►Systems: with extra options,,subgui_systems_extras_add_options_mamedev descriptions,,,,,show_message_mamedev \"Install systems with extra hardware that will working better than default.\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
-",,,,,,,,,"
 	)
 	sleep 0.1
 [[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]] &&\
 	csv+=(
+",,,,,,,,,"
 ",▼\ZrBe warned : not always working correctly and need to be checked !,,,"
 ",\Z1►Systems   : full/semi automatic boot (with/without extra options),,subgui_systems_extras_add_autoboot_mamedev descriptions,,,,,show_message_mamedev \"Experimental : install systems with autoboot function\n\nWARNING:\nSystems with extra hardware can have extra supported file extensions.\nTo keep the supported file extensions always do the extra install after a default install otherwise specific supported file extensions are wiped from the /etc/emulationstation/es_systems.cfg\","
     )
@@ -1064,7 +1063,7 @@ Make sure you use the correct OS version :\n\
 		IFS=$'\n' csv=($(sort -t"," -dr -k 2 --ignore-case <<<"${csv[*]}"));unset IFS
 	fi
 	#the first value is reserved for the column descriptions, must be done after sorting
-	csv=(",,,," "${csv[@]}")
+	csv=(",,,,,,,,," "${csv[@]}")
     build_menu_mamedev
 }
 
@@ -1091,7 +1090,7 @@ Make sure you use the correct OS version :\n\
 "
     local csv=()
     #the first value is reserved for the column descriptions
-    csv=( ",,,," )
+    csv=( ",,,,,,,,," )
     local stickfreaks_read
     clear
     echo "reading the available binaries"
@@ -1150,25 +1149,25 @@ function subgui_lists_mamedev() {
 ",menu_item,,to_do,"
 ",Non-arcade upon descriptions,,create_systems_list_mamedev descriptions @non-arcade,"
 ",Non-arcade upon system names,,create_systems_list_mamedev systems @non-arcade,"
-",,,,"
+",,,,,,,,,"
 ",Game consoles upon descriptions,,create_systems_list_mamedev descriptions @game_console,"
 ",Game consoles upon system names,,create_systems_list_mamedev systems @game_console,"
-",,,,"
+",,,,,,,,,"
 ",Home systems upon descriptions,,create_systems_list_mamedev descriptions @home_system,"
 ",Home systems upon system names,,create_systems_list_mamedev systems @home_system,"
-",,,,"
+",,,,,,,,,"
 ",Atari upon descriptions,,create_systems_list_mamedev descriptions @non-arcade Atari,"
 ",Atari upon system names,,create_systems_list_mamedev systems @non-arcade Atari,"
-",,,,"
+",,,,,,,,,"
 ",Commodore upon descriptions,,create_systems_list_mamedev descriptions @non-arcade Commodore,"
 ",Commodore upon system names,,create_systems_list_mamedev systems @non-arcade Commodore,"
-",,,,"
+",,,,,,,,,"
 ",Nintendo upon descriptions,,create_systems_list_mamedev descriptions @non-arcade Nintendo,"
 ",Nintendo upon system names,,create_systems_list_mamedev systems @non-arcade Nintendo,"
-",,,,"
+",,,,,,,,,"
 ",MSX upon descriptions,,create_systems_list_mamedev descriptions @non-arcade MSX,"
 ",MSX upon system names,,create_systems_list_mamedev systems @non-arcade MSX,"
-",,,,"
+",,,,,,,,,"
 ",Sega upon descriptions,,create_systems_list_mamedev descriptions @non-arcade Sega,"
 ",Sega upon system names,,create_systems_list_mamedev systems @non-arcade Sega,"
     )
@@ -1318,16 +1317,16 @@ function subgui_systems_extras_add_autoboot_mamedev() {
 	#the options after install_system_mamedev are $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
 	#example on how we can create the extensions options : $emudir/mame/mame -listmedia hbf700p|sed 's/  \./*\./g'
 	#!!! make sure all available extensions of a system are added because extensions are overwritten when installing a system !!!
-	# adding a newline can be done like this => \'\\\n\'
-	# adding some special characters isn't always possible the normal way, escaping the char with multiple \
-	# this is because the csv line is quoted with doublequotes and the delimiter  , is used to separate the "cells", also an extra * delimiter is used within "cells" to create a virtual 3D "worksheet"
-	# adding special characters is possible using ascii hex-code 
-	# check (https://www.cyberciti.biz/faq/unix-linux-sed-ascii-control-codes-nonprintable/)
-	# or (https://www.freecodecamp.org/news/ascii-table-hex-to-ascii-value-character-code-chart-2/)
-	# " => \'\\\x22\'
-	# * => \'\\\x2a\'
-	# , => \'\\\x2c\'
-	# : => \'\\\x3a\'
+	#adding a newline can be done like this => \'\\\n\'
+	#adding some special characters isn't always possible the normal way, escaping the char with multiple \
+	#this is because the csv line is quoted with doublequotes and the delimiter  , is used to separate the "cells", also an extra * delimiter is used within "cells" to create a virtual 3D "worksheet"
+	#adding special characters is possible using ascii hex-code 
+	#check (https://www.cyberciti.biz/faq/unix-linux-sed-ascii-control-codes-nonprintable/)
+	#or (https://www.freecodecamp.org/news/ascii-table-hex-to-ascii-value-character-code-chart-2/)
+	#" => \'\\\x22\'
+	#* => \'\\\x2a\'
+	#, => \'\\\x2c\'
+	#: => \'\\\x3a\'
 
     local csv=()
     csv=(
@@ -1409,12 +1408,12 @@ function subgui_addons_mamedev () {
 		)
 	fi
 	csv+=(
-",,,,"
+",,,,,,,,,"
 ",Experimental : CHANGE selected config options,,subgui_configs_settings_mamedev,,,,,help_to_do,"
-",,,,"
+",,,,,,,,,"
 ",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
 ",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
-",,,,"
+",,,,,,,,,"
 
 ",►Download / install cheatfile (279),,download_extra_files_mamedev 17RwDMSkoinMM510YcWTf8o3xsknpn1fy cheat0279.zip cheat cheat.7z,,,,,show_message_mamedev \"When this script installs a system or category the cheat option in the configs will be turned on in lr-mess/lr-mame and MAME. Together with the cheat file you will be able to use cheats on certain games. The cheat file used can be found on http://www.mamecheat.co.uk\","
 ",►Download / create gamelists,,subgui_gamelists_mamedev,,,,,show_message_mamedev \"Here you will find the options to create or install predefined gamelists with videos and pictures. These gamelists give a good preview in emulationstation of the games you can select. In contrary to where the gamelists normally are stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\","
@@ -1429,7 +1428,7 @@ function subgui_addons_mamedev () {
 ",Create RetroArch 16:9 bezel-overlays from artwork,,create_bezel_overlays_mamedev -16-9,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\","
 ",Create RetroArch 16:9 bezel-overlays from artwork (+alternatives),,create_bezel_overlays_mamedev -16-9;create_bezel_overlays_mamedev 2-16-9,,,,,show_message_mamedev \"This option only works if you have downloaded the artwork files for MAME standalone earlier on. A selection of bezel filenames are extracted from the MAME artwork files and overlay configs are created for use with lr-mess/lr-mame in retroarch.\n\nIn contrary to the regular option this option will get some alternative looking bezels.\","
 ",Setup Orionsangels Realistic Arcade Overlays > roms/realistic,@arcade,create_00index_file_mamedev '/@oro/' $datadir/roms/realistic;install_system_mamedev realistic realistic '' '' 'none' '';download_from_google_drive_mamedev 1m_8-LJpaUFxUtwHCyK4BLo6kiFsvMJmM $datadir/downloads;organise_realistic_overlays_mamedev,,,,,show_message_mamedev \"Orionsangels made a lot of realistic bezels for lr-mame in retroarch. Manually installing was a bit difficult as the files were for windows only. On top of that the configs also had fixed resolutions which is problematic when you don't use the same resolution.\n\nSelecting this option will install the category \"realistic\" in your roms directory. The bezels will be downloaded and patched for linux use and the resolutions will be converted to the resolution that is detected. If you change the resolution of your setup you have to select this option again so the configs are recreated again with the proper resolution settings. Selecting this a second time will skip downloading the bezels if they are still on your computer.\","
-",,,,"
+",,,,,,,,,"
 ",$([[ ! -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Install @valerino run_mess.sh script \(the RusselB version\))$([[ -f $scriptdir/scriptmodules/run_mess.sh ]] && echo Remove the Valerino run_mess.sh script \(the RusselB version\)),,install_or_remove_run_mess_script_mamedev;#refresh,subgui_addons_mamedev,,,,show_message_mamedev \"This option can do two things.\nIf run_mess.sh is not detected then install it.\nIf run_mess.sh is detected then remove it.\n\nThis is the history of the run_mess.sh script :\n@Valerino started the topic 'new scriptmodules for proper lr-mess integration'. For that purpose he made the run_mess.sh script. He also made module-scripts for various lr-mess drivers so they could be installed seperately.
 The runcommands that were installed by the module-scripts used this run_mess.sh script. Basically collecting the options from the runcommand and then creating a .cmd file which can then be runned by lr-mess. Every time a .cmd file is made and removed afterwards when running a game.\n\nThis script used that same run_mess.sh to be backwards compatible with the work of @Valerino. Later @RusselB improved the script.\nHe said : My improvevement allowed me to specify custom configs including bezels and screen locations etc. per rom.\n\nBasically the run_mess.sh script isn't needed anymore as we now use direct runcommands.\nSo when this run_mess.sh script is not installed the runcommands are not created anymore\nIf however you still want to use the old runcommands using the run_mess.sh script then you can install it and the script will make these older runcommands when installing a driver.\","
     )
@@ -1497,14 +1496,14 @@ function subgui_download_gamelists_mamedev() {
 function subgui_remove_installs_mamedev() {
     [[ $1 != refresh ]] && local csv=()
     #the first value is reserved for the column descriptions
-    csv=( ",,,," )
+    csv=( ",,,,,,,,," )
     local installed_system_read
     clear
     echo "reading the installed systems"
     while read installed_system_read;do csv+=("$installed_system_read");done < <(grep -r ^mame- $rootdir/configs/*/emulators.cfg|cut -d/ -f5|uniq|while read line;do echo "\",Remove $line,,remove_installs_mamedev $line;#refresh,subgui_remove_installs_mamedev,,,,show_message_mamedev \"No help\",";done)
-    if [[ -z ${csv[1]} ]]; then
+    if [[ -z ${csv[1]} ]];then
     show_message_mamedev "No systems installed, use cancel to go back !"
-    csv+=( ",,,," )
+    csv+=( ",,,,,,,,," )
     fi
     [[ $1 != refresh ]] && build_menu_mamedev
 }
@@ -1646,10 +1645,10 @@ function subgui_archive_downloads_mamedev() {
 ",BIOS/mame < (NEW-SET)mame-0.240-roms-split_202201,,subform_archive_download_mamedev '//' $datadir/BIOS/mame mame-0.240-roms-split_202201/MAME%200.240%20ROMs%20%28split%29/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",BIOS/mame < (NEW-SET)mame-0.264-roms-non-merged,,subform_archive_download_mamedev '//' $datadir/BIOS/mame \"mame-0.264-roms-non-merged/MAME%200.264%20ROMs%20(non-merged)/\" download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",BIOS/mame < \Z1(NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/BIOS/mame mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",,,,"
+",,,,,,,,,"
 ",▼\ZrBrowse BIOS files < NOT FOUND in last runcommand.log,,,"
 ",BIOS/mame < BIOS(es) NOT FOUND < ${rompack_link_info[0]},,subform_archive_download_mamedev \"$(echo /$(cat /dev/shm/runcommand.log 2>&-|grep "NOT FOUND"|sed 's/.*in //g;s/)//g;s/ /\n/g'|sort -u)\\\./|sed 's/ /\\\.\/\|\|\//g')\" $datadir/BIOS/mame \"mame-0.264-roms-non-merged/MAME%200.264%20ROMs%20(non-merged)/\" download archive.???,,,,,show_message_mamedev \"When games don't work they probably miss rom files somewhere. Normally you can find these errors in the /dev/shm/runcommand.log when searching for the lines NOT FOUND. This part will do this automatically for you and it will add the roms in a list when applying the appropriate archive.xxx website information. Remember it will display roms you have and roms you don't have. Select the roms you don't have. These roms will be saved in the BIOS/mame directory. Now try loading the rom again and you will see that it works. ;-)\n\nFor those who run this for solving problems with more games without exiting the script (you can only do this from the X enviroment when you run games and also run the $(echo $romdir|cut -d/ -f4)-Setup simultaneously). To get fresh results you have to exit the restricted area and restart the line again.\","
-",,,,"
+",,,,,,,,,"
 ",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/downloads,,,"
 ",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.202_Software_List_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.202_Software_List_ROMs_merged MAME_0.202_Software_List_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/downloads < (OLD-SET)MAME_0.224_ROMs_merged,,subform_archive_download_mamedev '//' $datadir/downloads/MAME_0.224_ROMs_merged MAME_0.224_ROMs_merged download archive.???,,,,,show_message_mamedev \"NO HELP\","
@@ -1657,7 +1656,7 @@ function subgui_archive_downloads_mamedev() {
 ",$(echo $romdir|cut -d/ -f4)/downloads < \Z1(NEW-SET)mame-sl  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-sl mame-sl/mame-sl/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/downloads < \Z1(NEW-SET)mame-merged  \Zb\Z2NEWEST,,subform_archive_download_mamedev '//' $datadir/downloads/mame-merged mame-merged/mame-merged/ download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/downloads < UnRenamedFiles-Various,,subform_archive_download_mamedev '//' $datadir/downloads/UnRenamedFiles-Various UnRenamedFiles-Various download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",,,,"
+",,,,,,,,,"
     )
     [[ $(expr $rp_module_version_database + 0) -gt 261 ]] && \
     csv+=(
@@ -1665,7 +1664,7 @@ function subgui_archive_downloads_mamedev() {
 ",►Show non-arcade  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @non-arcade \"/@non-arcade@/ && /@no_media@/\" \"!/90º|bios|computer|good|new0*|no_media|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
 ",►Show   arcade    categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"!/@mechanical@/ && /@arcade@/\" \"!/90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
 ",►Show  arcade90º  categories and get roms	< ${rompack_link_info[0]},,subformgui_categories_automated_mamedev \"show list to download category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/\" \"!/90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\",,,,,,"
-",,,,"
+",,,,,,,,,"
     )
     csv+=(
 ",▼\ZrGet all handheld and plug&play files per category,,,"
@@ -1676,14 +1675,14 @@ function subgui_archive_downloads_mamedev() {
 ",$(echo $romdir|cut -d/ -f4)/roms/konamih      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@konamih/' ${rompack_link_info[1]} $datadir/roms/konamih ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/tigerh       < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerh/' ${rompack_link_info[1]} $datadir/roms/tigerh ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/tigerrz      < ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@tigerrz/' ${rompack_link_info[1]} $datadir/roms/tigerrz ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",,,,"
+",,,,,,,,,"
 ",▼\ZrGet all files from a specific category,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/deco_cassette < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/' ${rompack_link_info[1]} $datadir/roms/deco_cassette ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/megaplay      < (  10+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(Mega Play\)/' ${rompack_link_info[1]} $datadir/roms/megaplay ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/neogeo        < ( 270+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@neogeo/' ${rompack_link_info[1]} $datadir/roms/neogeo ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/nintendovs    < (  50+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@nintendovs/' ${rompack_link_info[1]} $datadir/roms/nintendovs ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/playchoice10  < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10 ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",,,,"
+",,,,,,,,,"
 ",▼\ZrGet all files from a specific category,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/driving       < ( 600+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/lightgun      < ( 320+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@lightgun/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/lightgun ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
@@ -1695,11 +1694,11 @@ function subgui_archive_downloads_mamedev() {
 ",$(echo $romdir|cut -d/ -f4)/roms/slot_machine  < (1020+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/sports        < ( 980+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sports/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sports ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/upright       < (2440+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",,,,"
+",,,,,,,,,"
 ",▼\ZrGet all 90º orientated files from a specific category,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/deco_cassette90º < (  60+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/DECO/&&/90º/' ${rompack_link_info[1]} $datadir/roms/deco_cassette90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/playchoice10_90º < (  70+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/\(PlayChoice-10\)/' ${rompack_link_info[1]} $datadir/roms/playchoice10_90º ${rompack_link_info[2]} download archive.???,,,,,show_message_mamedev \"NO HELP\","
-",,,,"
+",,,,,,,,,"
 ",▼\ZrGet all 90º orientated files from a specific category,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/driving90º    	 < ( 110+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@driving@/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/driving90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/maze90º        	 < ( 410+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@maze/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/maze90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
@@ -1709,7 +1708,7 @@ function subgui_archive_downloads_mamedev() {
 ",$(echo $romdir|cut -d/ -f4)/roms/slot_machine90º	 < (   5+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@slot_machine/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/slot_machine90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/sports90º      	 < ( 170+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@sports/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/sports90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
 ",$(echo $romdir|cut -d/ -f4)/roms/upright90º    	 < (1450+ ) ${rompack_link_info[0]},,subform_archive_multi_downloads_mamedev '/@upright/&&/@90º/&&/@working_arcade/' ${rompack_link_info[1]} $datadir/roms/upright90º ${rompack_link_info[2]} download archive.??? yes,,,,,show_message_mamedev \"NO HELP\","
-",,,,"
+",,,,,,,,,"
 ",▼\ZrBrowse software files and download to $(echo $romdir|cut -d/ -f4)/roms/\ZR,,,"
 ",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 1PokemonUltraSunEURMULTi83DSPUSSYCAT,,subform_archive_download_mamedev '//&&/cia/' $datadir/roms/3ds 1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/ download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
 ",$(echo $romdir|cut -d/ -f4)/roms/3ds        < 3ds-cia-eshop,,subform_archive_download_mamedev '//&&/rar/' $datadir/roms/3ds 3ds-cia-eshop download archive.??? '' y, ,,,,show_message_mamedev \NO HELP\,"
@@ -1827,9 +1826,9 @@ dialog \
 				while read download_read;do download_csv+=("$download_read");done < <(curl https://$website_url/$website_path/$rompack_name|grep "<td><a href="|cut -d '"' -f2|grep -v "/"|grep -v "ia_thumb"|while read line;do echo "\",Get '$line',,download_file_mamedev $line \"$website_url/$website_path/$rompack_name\" $destination_path,\"";done)
 			fi
 			IFS=$'\n' csv=($(sort -t"," -k 2 --ignore-case <<<$(awk $search_pattern<<<"${download_csv[*]}")));unset IFS
-			#we need to add '",,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
-			csv=( ",,,," "${csv[@]}" )
-			[[ ${!csv[@]} == 0 ]] && csv=( ",,,," ",no search results found, try again,,," )
+			#we need to add '",,,,,,,,,"', because otherwise the first value isn't displayed as it is reserved for the column descriptions
+			csv=( ",,,,,,,,," "${csv[@]}" )
+			[[ ${!csv[@]} == 0 ]] && csv=( ",,,,,,,,," ",no search results found, try again,,," )
 			build_menu_mamedev
 		fi
     else
@@ -1894,7 +1893,7 @@ As basically :\n\
 Advice for now is :\n\
 If they exist in both then use and install only one.\
 "
-    manual_input=$(\
+			manual_input=$(\
 dialog \
 --no-cancel \
 --default-item "${default}" \
@@ -1914,13 +1913,13 @@ dialog \
 2>&1 >/dev/tty \
 )
 
-    action=$(echo "$manual_input" | sed -n 1p)
-    driver_type=$(echo "$manual_input" | sed -n 2p)
-    filter1=$(echo "$manual_input" | sed -n 3p)
-    filter2=$(echo "$manual_input" | sed -n 4p)
-    detect_clone_save=$(echo "$manual_input" | sed -n 5p) 
+			action=$(echo "$manual_input" | sed -n 1p)
+			driver_type=$(echo "$manual_input" | sed -n 2p)
+			filter1=$(echo "$manual_input" | sed -n 3p)
+			filter2=$(echo "$manual_input" | sed -n 4p)
+			detect_clone_save=$(echo "$manual_input" | sed -n 5p) 
 
-		fi
+			fi
 	fi
     clear
     echo "reading the available databases"
@@ -1946,8 +1945,8 @@ dialog \
 		IFS=$'\n'
 		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
-			#[[ -n ${line} ]] && if [[ ${filter1} == *@90º@* ]];then
-			if [[ -n ${line} ]] && [[ ${filter1} == *@90º@* ]];then
+			#works but first entry is empty ? ->  #if [[ -n ${line} ]] && [[ ${filter1} == *@90º@* ]];then
+			[[ -n ${line} ]] && if [[ ${filter1} == *@90º@* ]];then
 				echo "\",$(if [[ -f $configdir/${line}90º/emulators.cfg ]];then echo 'Update ';else echo 'Install';fi ) Category => ${line}90º,${driver_type},create_00index_file_mamedev '${filter1} && /@${line}@/ && /@90º@/' ${datadir}/roms/${line}90º;install_system_mamedev ${line}90º ${line}90º '' '' 'none' '';#refresh,subformgui_categories_automated_mamedev \"$1\" \"$2\" \"$3\" \"$4\" \"$5\" \"refresh\",,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}90º\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
 			else
 				echo "\",$(if [[ -f $configdir/${line}/emulators.cfg ]];then echo 'Update ';else echo 'Install';fi ) Category => ${line},${driver_type},create_00index_file_mamedev '${filter1} && /@${line}@/' ${datadir}/roms/${line};install_system_mamedev ${line} ${line} '' '' 'none' '';#refresh,subformgui_categories_automated_mamedev \"$1\" \"$2\" \"$3\" \"$4\" \"$5\" \"refresh\",,,,show_message_mamedev \"This help page gives more info on force installing the arcade category :\\\n${line}\\\n\\\nIt will :\\\n- create the rom folder\\\n- associate the mame and lr-mess/lr-mame loaders for this folder or category\\\n- create a rom index file (0 rom-index 0) inside the specific rom folder\\\n\\\nThe created index file contains the list of games.\"";\
@@ -1982,23 +1981,24 @@ function subgui_installs_mamedev() {
 ",Install LR-MESS (optional install) =>   NON-ARCADE only,,if [[ -d $rootdir/emulators/retroarch ]];then package_setup lr-mess;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MESS is a RetroArch core and is used to emulate :\n- NON-ARCADE (about 4000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-MAME (optional install) =>     ARCADE only,,if [[ -d $rootdir/emulators/retroarch ]];then package_setup lr-mame;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"Should be installed :\n\nLR-MAME is a RetroArch core and is used to emulate :\n- ARCADE (about 34000).\n\nTry to install the binary.\nThis is the fastest solution.\n\nWarning : Building from source code can take many many hours.\","
 ",Install LR-GW   (optional install) => MADRIGALS  HANDHELD,,if [[ -d $rootdir/emulators/retroarch ]];then package_setup lr-gw;if [[ -f $rootdir/libretrocores/lr-gw/gw_libretro.so ]];then delEmulator lr-gw gameandwatch;addEmulator 0 lr-gw gameandwatch \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw gameandwatch \".cmd .zip .7z .mgw\";mkRomDir classich;addEmulator 0 lr-gw classich \"$emudir/retroarch/bin/retroarch -L $rootdir/libretrocores/lr-gw/gw_libretro.so --config $rootdir/configs/gameandwatch/retroarch.cfg %ROM%\";addSystem lr-gw classich \".cmd .zip .7z .mgw\";download_file_with_wget emulators.cfg raw.githubusercontent.com/FollyMaddy/RetroPie-Share/main/00-filesystem-00$rootdir/configs/all $rootdir/configs/all;else delEmulator lr-gw classich;fi;else show_message_mamedev \"Please install RetroArch first !\";fi,,,,,show_message_mamedev \"lr-gw is used for running the handheld from the MADrigals romset. (.mgw)\n\nYou can get the ROM list on the RetroPie forum :\nTutorial: Handheld and Plug & Play systems with MAME\n\nAfter installing lr-gw a few patches are applied :\n- lr-gw not being the default runcommand\n- add lr-gw as runcommand to the system category classich\n- add the mame file-extensions\n  (so both mame and lr-gw files can be viewed in emulationstation)\n\nIn order to run MADrigals and mame roms without changing the runcommand on startup we will also add the file $rootdir/all/emulators.cfg. You then will be able to run the mame roms as usual and also play the madigals without changing the runcommand at startup. If somehow you already have this file then be sure you do not overwrite your own config. In that case skip the downloading.\","
-",,,,"
+",,,,,,,,,"
 ",\Z4►Show and install mame    from gdrive binary list,,subgui_gdrive_binaries_mamedev mame $emudir 1evd5_a2Ia118kf1aqB_cVSJFj2fp6oFQ 1z_l_af9ep_zlPSZqlfSKZqbgFvGDWRQA,"
 ",\Z6►Show and install lr-mess from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mess $rootdir/libretrocores 19cs5cvBjo5dgKOzr2gs0BcPrzS1UboTg;else show_message_mamedev \"Please install RetroArch first !\";fi,"
 ",\Z5►Show and install lr-mame from gdrive binary list,,if [[ -d $rootdir/emulators/retroarch ]];then subgui_gdrive_binaries_mamedev lr-mame $rootdir/libretrocores 19LXbhNDSGTaf5OxYQo3ILuUp0UShPMbx;else show_message_mamedev \"Please install RetroArch first !\";fi,"
-",,,,"
 	)
 	sleep 0.1
 	[[ $(timeout 1 $([[ $scriptdir == *ArchyPie* ]] && echo tiny)xxd -a -c 1 $(ls /dev/input/by-path/*kbd|head -n 1)|grep ": 2a") == *2a* ]] &&\
 	if [[ $(curl https://stickfreaks.com/mame/ 2>&1) == *problem* ]];then
 		csv+=(
+",,,,,,,,,"
 ",\Z1►Insecure:\Z4►Show and install mame from stickfreaks binary list,,show_message_yesno_mamedev \"Curl says that the connection to the strickfreaks website is insecure.\nProceed at your own risk or cancel by selecting no.\" \"subgui_stickfreaks_binaries_mamedev --insecure\","
-",,,,"
+",,,,,,,,,"
 	)
 	else
 		csv+=(
+",,,,,,,,,"
 ",\Z4►Show and install mame from stickfreaks binary list,,subgui_stickfreaks_binaries_mamedev,"
-",,,,"
+",,,,,,,,,"
 	)
 	fi
 	sleep 0.1
@@ -2209,20 +2209,20 @@ function configure_mame_mamedev() {
 	mkRomDir "arcade"
 	mkRomDir "$system"
 
-	# Create required MAME directories underneath the ROM directory
+	#Create required MAME directories underneath the ROM directory
 	local mame_sub_dir
-	for mame_sub_dir in artwork cfg comments diff inp nvram samples scores snap sta; do
+	for mame_sub_dir in artwork cfg comments diff inp nvram samples scores snap sta;do
 		mkRomDir "$system/$mame_sub_dir"
 	done
 
-	# Create a BIOS directory, where people will be able to store their BIOS files, separate from ROMs
+	#Create a BIOS directory, where people will be able to store their BIOS files, separate from ROMs
 	mkUserDir "$biosdir/$system"
 
-	# Create the configuration directory for the MAME ini files
+	#Create the configuration directory for the MAME ini files
 	moveConfigDir "$home/.mame" "$configdir/$system"
 
-	# Create new INI files if they do not already exist
-	# Create MAME config file
+	#Create new INI files if they do not already exist
+	#Create MAME config file
 	local temp_ini_mame="$(mktemp)"
 	local mameinstalldir="$rootdir/emulators/mame"
 
@@ -2247,30 +2247,30 @@ function configure_mame_mamedev() {
 	iniSet "plugin" "hiscore"
 	iniSet "samplerate" "44100"
 
-	# Raspberry Pis show improved performance using accelerated mode which enables SDL_RENDERER_TARGETTEXTURE.
-	# On RPI4 it uses OpenGL as a renderer, while on earlier RPIs it uses OpenGLES2 as the renderer. 
-	# X86 Ubuntu by default uses OpenGL as a renderer, but SDL doesn't have target texture enabled as default.
-	# Enabling accel will use target texture on X86 Ubuntu (and likely other X86 Linux platforms).
+	#Raspberry Pis show improved performance using accelerated mode which enables SDL_RENDERER_TARGETTEXTURE.
+	#On RPI4 it uses OpenGL as a renderer, while on earlier RPIs it uses OpenGLES2 as the renderer. 
+	#X86 Ubuntu by default uses OpenGL as a renderer, but SDL doesn't have target texture enabled as default.
+	#Enabling accel will use target texture on X86 Ubuntu (and likely other X86 Linux platforms).
 	iniSet "video" "accel"
 
 	copyDefaultConfig "$temp_ini_mame" "$configdir/$system/mame.ini"
 	rm "$temp_ini_mame"
 
-	# Create MAME UI config file
+	#Create MAME UI config file
 	local temp_ini_ui="$(mktemp)"
 	iniConfig " " "" "$temp_ini_ui"
 	iniSet "scores_directory" "$romdir/$system/scores"
 	copyDefaultConfig "$temp_ini_ui" "$configdir/$system/ui.ini"
 	rm "$temp_ini_ui"
 
-	# Create MAME Plugin config file
+	#Create MAME Plugin config file
 	local temp_ini_plugin="$(mktemp)"
 	iniConfig " " "" "$temp_ini_plugin"
 	iniSet "hiscore" "1"
 	copyDefaultConfig "$temp_ini_plugin" "$configdir/$system/plugin.ini"
 	rm "$temp_ini_plugin"
 
-	# Create MAME Hi Score config file
+	#Create MAME Hi Score config file
 	local temp_ini_hiscore="$(mktemp)"
 	iniConfig " " "" "$temp_ini_hiscore"
 	iniSet "hi_path" "$romdir/$system/scores"
@@ -2323,13 +2323,13 @@ function create_systems_list_mamedev() {
 		#https://stackoverflow.com/questions/36896499/bash-sort-by-number-and-word-length-and-alphabetically  
 		IFS=$'\n' csv=($(sort -t"," -k5,5nr -k3,3 --ignore-case<<<$(awk '{print $0","length($3)}'<<<$(awk "{IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")))));unset IFS
 		#this is an aternative but much slower
-		#while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 3 --ignore-case;unset IFS)
+		#while read system_read;do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 3 --ignore-case;unset IFS)
 	else
 		#here we store the sorted mamedev_csv values in the csv array
 		#we sort on the second colunm which contain the system names
 		IFS=$'\n' csv=($(sort -t"," -k5,5nr -k2,2 --ignore-case<<<$(awk '{print $0","length($2)}'<<<$(awk " {IGNORECASE = 1} $([[ $2 == *\! ]] && echo \!)/"$(echo $2|sed 's/\!//')"/ && /$3/ && /$4/ && /$5/ && /$6/ || /\",,,,\"/"<<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")))));unset IFS
 		#this is an aternative but much slower
-		#while read system_read; do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 2 --ignore-case;unset IFS)
+		#while read system_read;do csv+=("$system_read");done < <(IFS=$'\n';echo "${mamedev_csv[*]}"|sort -t"," -d -k 2 --ignore-case;unset IFS)
 	fi
 
 	#when the csv array is not filled, if searching patterns are not found, index 1 and above are empty
@@ -2348,41 +2348,41 @@ function build_menu_mamedev() {
 	local lastdescriptionmatch
 	local lastcategorymatch
 	IFS=","
-	if [[ $1 == descriptions ]]; then
-		for i in ${!csv[@]}; do set ${csv[$i]}; options+=("$i" "$3");done
+	if [[ $1 == descriptions ]];then
+		for i in ${!csv[@]};do set ${csv[$i]}; options+=("$i" "$3");done
 	fi
 	for letter in {A..Z}
 	do 
-		if [[ $1 == descriptions$letter ]]; then
+		if [[ $1 == descriptions$letter ]];then
 			#not needed here, but ${letter^}* converts letter into uppercase
 			#${letter,}* converts letter into lowercase
 			#so this function check on both uppercase and lowercase
-			for i in ${!csv[@]}; do set ${csv[$i]}; [[ $3 == $letter* ]] || [[ $3 == ${letter,}* ]] && options+=("$i" "$3");done
+			for i in ${!csv[@]};do set ${csv[$i]}; [[ $3 == $letter* ]] || [[ $3 == ${letter,}* ]] && options+=("$i" "$3");done
 		fi
 	done
-	if [[ $1 == descriptions# ]]; then
-		for i in ${!csv[@]}; do set ${csv[$i]}; [[ $3 != [A-Z]* ]] && [[ $3 != [a-z]* ]] && options+=("$i" "$3");done
+	if [[ $1 == descriptions# ]];then
+		for i in ${!csv[@]};do set ${csv[$i]}; [[ $3 != [A-Z]* ]] && [[ $3 != [a-z]* ]] && options+=("$i" "$3");done
 	fi
 	for letter in {A..Z}
 	do 
-		if [[ $1 == systems$letter ]]; then
+		if [[ $1 == systems$letter ]];then
 			#${letter,}* converts letter into lowercase
-			for i in ${!csv[@]}; do set ${csv[$i]}; [[ $2 == ${letter,}* ]] && options+=("$i" "$2");done
+			for i in ${!csv[@]};do set ${csv[$i]}; [[ $2 == ${letter,}* ]] && options+=("$i" "$2");done
 		fi
 	done
-	if [[ $1 == systems# ]]; then
-		for i in ${!csv[@]}; do set ${csv[$i]}; [[ $2 != [a-z]* ]] && options+=("$i" "$2");done
+	if [[ $1 == systems# ]];then
+		for i in ${!csv[@]};do set ${csv[$i]}; [[ $2 != [a-z]* ]] && options+=("$i" "$2");done
 	fi
-	if [[ -z $1 ]] || [[ $1 == systems ]]; then
-		for i in ${!csv[@]}; do set ${csv[$i]}; options+=("$i" "$2");done
+	if [[ -z $1 ]] || [[ $1 == systems ]];then
+		for i in ${!csv[@]};do set ${csv[$i]}; options+=("$i" "$2");done
 	fi
 	#remove option 0 (value 0 and 1) so the menu begins with 1
 	unset 'options[0]'; unset 'options[1]' 
-	while true; do
+	while true;do
 		local cmd=(dialog --colors --no-collapse --help-button --default-item "$default" --backtitle "$__backtitle" --menu "Version ${rp_module_version}                     (using database ${rp_module_version_database})" 22 76 16)
 		local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 		default="$choice"
-		if [[ -n "$choice" ]]; then
+		if [[ -n "$choice" ]];then
 			joy2keyStop
 			joy2keyStart 0x00 0x00 kich1 kdch1 0x20 0x71
 			clear
@@ -2416,7 +2416,7 @@ function build_menu_mamedev() {
 				IFS=","
 				run="$(set ${csv[$choice]};echo $5)"
 				eval $run refresh
-				for i in ${!csv[@]}; do set ${csv[$i]}; options+=("$i" "$2");done
+				for i in ${!csv[@]};do set ${csv[$i]}; options+=("$i" "$2");done
 				#remove option 0 (value 0 and 1) so the menu begins with 1
 				unset 'options[0]'; unset 'options[1]' 
 			fi
@@ -2560,92 +2560,93 @@ Be aware of the fact that games with 2 floppies do not always work when using 2 
 
 
 function install_system_proceed_mamedev() {
-#part 0 : define strings, arrays and handheld/p&p/category platform information
+	#part 0 : define strings, arrays and handheld/p&p/category platform information
 
-#mamedev arrays
-systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
-#added for systems with a extra predefined options, slotdevices and media
-ExtraPredefinedLoaderName=();ExtraPredefinedOptions=(); RPsystemNames=()
+	#mamedev arrays
+	systems=(); uniquesystems=(); mediadescriptions=(); media=(); extensions=(); allextensions=(); descriptions=()
+	#added for systems with a extra predefined options, slotdevices and media
+	ExtraPredefinedLoaderName=();ExtraPredefinedOptions=(); RPsystemNames=()
 
-#retropie arrays
-systemsrp=(); descriptionsrp=()
+	#retropie arrays
+	systemsrp=(); descriptionsrp=()
 
-#create new array while matching
-newsystems=()
+	#create new array while matching
+	newsystems=()
 
-#filter out column names and <none> media
-namesfilter="\(brief|------"
+	#filter out column names and <none> media
+	namesfilter="\(brief|------"
 
-#filter on usefull media, otherwise we also get many unusefull scripts
-mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|flop3\)|\(cass|dump\)|cdrm\)|hard\)|\(hard1|\(hard2|\(min|\(mout|\(ssd|\(dpak"
+	#filter on usefull media, otherwise we also get many unusefull scripts
+	mediafilter="none\)|\(prin|quik\)|\(memc|\(rom1|\(cart|flop\)|flop1\)|flop3\)|\(cass|dump\)|cdrm\)|hard\)|\(hard1|\(hard2|\(min|\(mout|\(ssd|\(dpak"
 
-#string for adding extra extensions 
-addextensions=".zip .7z"
+	#string for adding extra extensions 
+	addextensions=".zip .7z"
 
-#string for adding extra extensions for retroarch cores
-addextensionscmd=".cmd"
+	#string for adding extra extensions for retroarch cores
+	addextensionscmd=".cmd"
 
-#check if the system is arcade or non-arcade for switching between lr-mess and lr-mame
-#check also when doing a direct install and set when using option 10
-if [[ ${csv[$choice]} == *@non-arcad* || ${10} == *non-arcade* ]]
-then SystemType="non-arcade"
-else SystemType="arcade"
-fi
+	#check if the system is arcade or non-arcade for switching between lr-mess and lr-mame
+	#check also when doing a direct install and set when using option 10
+	if [[ ${csv[$choice]} == *@non-arcad* || ${10} == *non-arcade* ]];then
+		SystemType="non-arcade"
+	else
+		SystemType="arcade"
+	fi
 
-#echo ${csv[$choice]}
-echo System driver is detected as "$SystemType"
+	#echo ${csv[$choice]}
+	echo System driver is detected as "$SystemType"
 
-#begin with an empty variable for part 13, preventing remembering it from an other session
-creating=
+	#begin with an empty variable for part 13, preventing remembering it from an other session
+	creating=
 
-#array data for "game system names" of "handhelds" that cannot be detected or matched with the mamedev database
-#systems that cannot be detected (all_in1, classich, konamih, tigerh) (*h is for handheld)
-#systems that can be detected (jakks, tigerrz), these added later in the script for normal matching
-#a system that can be detected (gameandwatch), already in RetroPie / ArchyPie naming for normal matching
-#using @DTEAM naming for compatibitity with possible existing es-themes
-#hoping this will be the future RetroPie / ArchyPie naming for these handhelds
-#this is an example command to extract the systems and add them here to the array :
-#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+	#array data for "game system names" of "handhelds" that cannot be detected or matched with the mamedev database
+	#systems that cannot be detected (all_in1, classich, konamih, tigerh) (*h is for handheld)
+	#systems that can be detected (jakks, tigerrz), these added later in the script for normal matching
+	#a system that can be detected (gameandwatch), already in RetroPie / ArchyPie naming for normal matching
+	#using @DTEAM naming for compatibitity with possible existing es-themes
+	#hoping this will be the future RetroPie / ArchyPie naming for these handhelds
+	#this is an example command to extract the systems and add them here to the array :
+	#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
 
-if [[ ${csv[$choice]} != *@skip* ]];then
-#read_data_mamedev
-echo "read the mame romset groups, used for $(echo $romdir|cut -d/ -f4) naming"
- if [[ -z $groups_read ]];then
- groups_read=1
- IFS=$'\n' 
- #add new items in part 11 for matching
- all_in1=($(cut -d "," -f 2 <<<$(awk '/@all_in1/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- classich=($(cut -d "," -f 2 <<<$(awk '/@classich/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- konamih=($(cut -d "," -f 2 <<<$(awk '/@konamih/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- tigerh=($(cut -d "," -f 2 <<<$(awk '/@tigerh/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- #arcade categories
- driving=($(cut -d "," -f 2 <<<$(awk '/@driving@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- maze=($(cut -d "," -f 2 <<<$(awk '/@maze/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- pinball=($(cut -d "," -f 2 <<<$(awk '/@pinball_arcade/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- puzzle=($(cut -d "," -f 2 <<<$(awk '/@puzzle/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- slot_machine=($(cut -d "," -f 2 <<<$(awk '/@slot_machine/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- sports=($(cut -d "," -f 2 <<<$(awk '/@sports/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- #
- deco_cassette=($(cut -d "," -f 2 <<<$(awk '/DECO/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- neogeo=($(cut -d "," -f 2 <<<$(awk '/@neogeo/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- nintendovs=($(cut -d "," -f 2 <<<$(awk '/@nintendovs/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- megaplay=($(cut -d "," -f 2 <<<$(awk '/\(Mega Play\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- playchoice10=($(cut -d "," -f 2 <<<$(awk '/\(PlayChoice-10\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
- #
- unset IFS
-fi
-else echo "skip reading mame data"
-fi
+	if [[ ${csv[$choice]} != *@skip* ]];then
+	echo "read the mame romset groups, used for $(echo $romdir|cut -d/ -f4) naming"
+		if [[ -z $groups_read ]];then
+			groups_read=1
+			IFS=$'\n' 
+			#add new items in part 11 for matching
+			all_in1=($(cut -d "," -f 2 <<<$(awk '/@all_in1/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			classich=($(cut -d "," -f 2 <<<$(awk '/@classich/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			konamih=($(cut -d "," -f 2 <<<$(awk '/@konamih/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			tigerh=($(cut -d "," -f 2 <<<$(awk '/@tigerh/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			#arcade categories
+			driving=($(cut -d "," -f 2 <<<$(awk '/@driving@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			maze=($(cut -d "," -f 2 <<<$(awk '/@maze/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			pinball=($(cut -d "," -f 2 <<<$(awk '/@pinball_arcade/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			puzzle=($(cut -d "," -f 2 <<<$(awk '/@puzzle/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			shooter=($(cut -d "," -f 2 <<<$(awk '/@shooter@/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			slot_machine=($(cut -d "," -f 2 <<<$(awk '/@slot_machine/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			sports=($(cut -d "," -f 2 <<<$(awk '/@sports/&&/@working_arcade/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
 
-#part 1 : prepair some things first
-#for making it possible to save /ext/RetroPie-Share/platorms.cfg
-mkdir -p  $scriptdir/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
-chown -R $user:$user "$scriptdir/ext/RetroPie-Share"
+			deco_cassette=($(cut -d "," -f 2 <<<$(awk '/DECO/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			neogeo=($(cut -d "," -f 2 <<<$(awk '/@neogeo/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			nintendovs=($(cut -d "," -f 2 <<<$(awk '/@nintendovs/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			megaplay=($(cut -d "," -f 2 <<<$(awk '/\(Mega Play\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+			playchoice10=($(cut -d "," -f 2 <<<$(awk '/\(PlayChoice-10\)/'<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+
+			unset IFS
+		fi
+	else
+		echo "skip reading mame data"
+	fi
+
+	#part 1 : prepair some things first
+	#for making it possible to save /ext/RetroPie-Share/platorms.cfg
+	mkdir -p  $scriptdir/ext/RetroPie-Share/scriptmodules/libretrocores 2>&-
+	chown -R $user:$user "$scriptdir/ext/RetroPie-Share"
 
 
-#part 2 : platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)
-cat >"$scriptdir/ext/RetroPie-Share/platforms.cfg" << _EOF_
+	#part 2 : platform config lines systems that are not in the platform.cfg (no strings, read the same way as info from platform.cfg)
+	cat >"$scriptdir/ext/RetroPie-Share/platforms.cfg" << _EOF_
 tigerh_exts=""
 tigerh_fullname="Tiger Handheld Electronics"
 
@@ -2674,225 +2675,223 @@ dragon64_exts=".wav .cas .prn .ccc .rom .mfi .dfi .hfe .mfm .td0 .imd .d77 .d88 
 dragon64_fullname="Dragon 64"
 _EOF_
 
-#change ownership to normal user
-chown $user:$user "$scriptdir/ext/RetroPie-Share/platforms.cfg"
+	#change ownership to normal user
+	chown $user:$user "$scriptdir/ext/RetroPie-Share/platforms.cfg"
 
 
-#part 3 : turning off installing when no option is add to the function
-#if no option is added while running this scripts, it is possible to install all all systems
-#because of the time it will consume, it is turned off in this part !
-if [[ -z "$1" ]]; then 
-echo "no option detected, nothing to do"
-exit
-fi
+	#part 3 : turning off installing when no option is add to the function
+	#if no option is added while running this scripts, it is possible to install all all systems
+	#because of the time it will consume, it is turned off in this part !
+	if [[ -z "$1" ]];then 
+		echo "no option detected, nothing to do"
+		exit
+	fi
 
 
-#part 4 : extract system data to array
-#first part from the if function is meant for installing systems with extra options or special software cartridges,
-#that can't be extracted from mame with -listslots
-#if added more than one option then we have added extra information about extra predefined options and it's usable media
-#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
-echo "read the system driver name from the commandline options"
-echo "read the $(echo $romdir|cut -d/ -f4) system name from commandline options"
-echo "read the ExtraPredefinedOption(s) from the commandline options"
-systems+=( "$1" )
-#by using the systems name as a description we don't have matches in part 10
-#therefor we can force our own RetroPie / ArchyPie name 
-#and therefor we probably have no conflict with the newsystems name
-descriptions+=( "$1" )
-RPsystemNames+=( "$2" )
-#normally we would use this :
-#ExtraPredefinedOptions+=( "$3" )
-#but with using the front-end quotes can't be used in the csv style used there
-#so, in the front-end, we replace the spaces with a * and commas with a # and filter them out here again
-ExtraPredefinedOptions+=( "$(echo $3|sed 's/*/ /g;s/#/,/g')" )
-ExtraPredefinedLoaderName+=( "$7" )
-else
-# read system(s) using "mame" to extract the data and add them in the systems array
-# some things are filtered with grep
-while read line; do 
-# check for "system" in line
-# an example output for the msx system hbf700p is :
-#hbf700p          printout         (prin)     .prn  
-#                 cassette         (cass)     .wav  .tap  .cas  
-#                 cartridge1       (cart1)    .mx1  .bin  .rom  
-#                 cartridge2       (cart2)    .mx1  .bin  .rom  
-#                 floppydisk       (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
-# if no "sytem" in line place add the last value again, in the system array so it can be properly used in our script, we get this data structure :
-#(systems)
-# hbf700p          printout         (prin)     .prn  
-# hbf700p          cassette         (cass)     .wav  .tap  .cas  
-# hbf700p          cartridge1       (cart1)    .mx1  .bin  .rom  
-# hbf700p          cartridge2       (cart2)    .mx1  .bin  .rom  
-# hbf700p          floppydisk       (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
-if [[ -z $line ]]; then
-systems+=( "${systems[-1]}" )
-ExtraPredefinedOptions+=( "$3" )
-##echo ${systems[-1]} $line
-else
-# use the first column if seperated by a space
-systems+=( "$(echo $line)" )
-ExtraPredefinedOptions+=( "$3" )
-fi
-#use extra predefined options to alter when installing a driver from DEFAULT not installing from the section EXTRAS
-#here we just check if the last index number of the array systems combined to the ExtraPredefinedOptions is empty using ${ExtraPredefinedOptions[${#systems[@]}-1]} 
-#we still need to calculate the last index of the systems array to see if that value of ExtraPredefinedOptions is empty
-#${systems[${#systems[@]}-1]} is typically an old way so now the new way ${systems[-1]} is used
-#in contrary to installs from the EXTRAS the DEFAULT ones get the added ExtraPredefinedOptions in all runcommands
-#for the installs from EXTRAS only the runcommands with the media options get ExtraPredefinedOptions in part 12, basename runcommands are skipped in part 13
-if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
-[[ ${systems[-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
-if [[ ${systems[-1]} == coleco ]] || [[ ${systems[-1]} == colecop ]] && [[ $(expr $rp_module_version_database + 0) -gt 264 ]];then
-echo opening yes/no dialog-box
-sleep 3
-dialog --colors --backtitle "$__backtitle" --yesno "Select (yes) to install coleco/colecop with Super Game Module as :\n'coleco_homebrew'\n\nSelect (no) to install just coleco/colecop as :\n'coleco'\n\nRemember : you have to do TWO installs to have them both installed !" 22 76 2>&1 >/dev/tty
-# Get exit status
-# 0 means user hit [yes] button.
-# 1 means user hit [no] button.
-response=$?
-case $response in
-   0) ExtraPredefinedOptions+=( "-exp sgm" );;
-   1) ;;
-esac
-clear
-echo proceed....
-#in part 10 the description is changed to Coleco+SGM when installing coleco/colecop with Super Game Module
-fi
-[[ ${systems[-1]} == astrocd* ]] && ExtraPredefinedOptions+=( "-ctrl2 joy" )
-[[ ${systems[-1]} == jupace  ]] && ExtraPredefinedOptions+=( "-ram 48k" )
-# carmarty fmtmarty fmtmarty2
-[[ ${systems[-1]} == *marty  ]] || \
-[[ ${systems[-1]} == *marty2  ]] && ExtraPredefinedOptions+=( "-ram 4M" )
-# fmtowns fmtownsftv fmtownshr fmtownsmx fmtownssj fmtownsux fmtownsv03
-[[ ${systems[-1]} == fmtowns  ]] || \
-[[ ${systems[-1]} == fmtowns*  ]] && ExtraPredefinedOptions+=( "-ram 6M" )
-# philips p2000t and p2000m
-[[ ${systems[-1]} == p2000*  ]] && ExtraPredefinedOptions+=( "-ram 102K" )
-#next 2 sadly don't work with lr-mess, need to find another solution
-#[[ ${systems[${#systems[@]}-1]} == cpc61 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
-#[[ ${systems[${#systems[@]}-1]} == cpg120 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
-#the idea was to add 2 c64gs joysticks but when loading robocop2 the game got confused
-#[[ ${systems[${#systems[@]}-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy1 joybstr -joy2 joybstr" )
-#both don't work with cartridges as the cartridge has to be in the slot instead of the extra ram
-#[[ ${systems[${#systems[@]}-1]} == coco ]] && ExtraPredefinedOptions+=( "-ext multi -ext:multi:slot1 ram" )
-#[[ ${systems[${#systems[@]}-1]} == coco3 ]] && ExtraPredefinedOptions+=( "-ext multi -ext:multi:slot1 ram" )
-fi
-#
-done < <($emudir/mame/mame -listmedia $1 $3| grep -v -E "$namesfilter" | grep -E "$mediafilter" | cut -d " " -f 1)
-fi
-[[ -n ${ExtraPredefinedOptions[@]} ]] && echo "use extra predefined options for ${systems[${#systems[@]}-1]}"
+	#part 4 : extract system data to array
+	#first part from the if function is meant for installing systems with extra options or special software cartridges,
+	#that can't be extracted from mame with -listslots
+	#if added more than one option then we have added extra information about extra predefined options and it's usable media
+	#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+	if [[ -n "$2" ]];then
+		echo "read the system driver name from the commandline options"
+		echo "read the $(echo $romdir|cut -d/ -f4) system name from commandline options"
+		echo "read the ExtraPredefinedOption(s) from the commandline options"
+		systems+=( "$1" )
+		#by using the systems name as a description we don't have matches in part 10
+		#therefor we can force our own RetroPie / ArchyPie name 
+		#and therefor we probably have no conflict with the newsystems name
+		descriptions+=( "$1" )
+		RPsystemNames+=( "$2" )
+		#normally we would use this :
+		#ExtraPredefinedOptions+=( "$3" )
+		#but with using the front-end quotes can't be used in the csv style used there
+		#so, in the front-end, we replace the spaces with a * and commas with a # and filter them out here again
+		ExtraPredefinedOptions+=( "$(echo $3|sed 's/*/ /g;s/#/,/g')" )
+		ExtraPredefinedLoaderName+=( "$7" )
+	else
+		#read system(s) using "mame" to extract the data and add them in the systems array
+		#some things are filtered with grep
+		while read line;do 
+			#check for "system" in line
+			#an example output for the msx system hbf700p is :
+			#hbf700p          printout         (prin)     .prn  
+			#                 cassette         (cass)     .wav  .tap  .cas  
+			#                 cartridge1       (cart1)    .mx1  .bin  .rom  
+			#                 cartridge2       (cart2)    .mx1  .bin  .rom  
+			#                 floppydisk       (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
+			#if no "sytem" in line place add the last value again, in the system array so it can be properly used in our script, we get this data structure :
+			#(systems)
+			#hbf700p          printout         (prin)     .prn  
+			#hbf700p          cassette         (cass)     .wav  .tap  .cas  
+			#hbf700p          cartridge1       (cart1)    .mx1  .bin  .rom  
+			#hbf700p          cartridge2       (cart2)    .mx1  .bin  .rom  
+			#hbf700p          floppydisk       (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
+			if [[ -z $line ]];then
+				systems+=( "${systems[-1]}" )
+				ExtraPredefinedOptions+=( "$3" )
+				##echo ${systems[-1]} $line
+			else
+				#use the first column if seperated by a space
+				systems+=( "$(echo $line)" )
+				ExtraPredefinedOptions+=( "$3" )
+			fi
+			#use extra predefined options to alter when installing a driver from DEFAULT not installing from the section EXTRAS
+			#here we just check if the last index number of the array systems combined to the ExtraPredefinedOptions is empty using ${ExtraPredefinedOptions[${#systems[@]}-1]} 
+			#we still need to calculate the last index of the systems array to see if that value of ExtraPredefinedOptions is empty
+			#${systems[${#systems[@]}-1]} is typically an old way so now the new way ${systems[-1]} is used
+			#in contrary to installs from the EXTRAS the DEFAULT ones get the added ExtraPredefinedOptions in all runcommands
+			#for the installs from EXTRAS only the runcommands with the media options get ExtraPredefinedOptions in part 12, basename runcommands are skipped in part 13
+			if [[ -z ${ExtraPredefinedOptions[${#systems[@]}-1]} ]];then
+				[[ ${systems[-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy2 joybstr" )
+				if [[ ${systems[-1]} == coleco ]] || [[ ${systems[-1]} == colecop ]] && [[ $(expr $rp_module_version_database + 0) -gt 264 ]];then
+				echo "opening yes/no dialog-box"
+				sleep 3
+				dialog --colors --backtitle "$__backtitle" --yesno "Select (yes) to install coleco/colecop with Super Game Module as :\n'coleco_homebrew'\n\nSelect (no) to install just coleco/colecop as :\n'coleco'\n\nRemember : you have to do TWO installs to have them both installed !" 22 76 2>&1 >/dev/tty
+				#Get exit status
+				#0 means user hit [yes] button.
+				#1 means user hit [no] button.
+				response=$?
+				case $response in
+					0) ExtraPredefinedOptions+=( "-exp sgm" );;
+					1) ;;
+				esac
+				clear
+				echo "roceed...."
+				#in part 10 the description is changed to Coleco+SGM when installing coleco/colecop with Super Game Module
+				fi
+				[[ ${systems[-1]} == astrocd* ]] && ExtraPredefinedOptions+=( "-ctrl2 joy" )
+				[[ ${systems[-1]} == jupace  ]] && ExtraPredefinedOptions+=( "-ram 48k" )
+				#carmarty fmtmarty fmtmarty2
+				[[ ${systems[-1]} == *marty  ]] || \
+				[[ ${systems[-1]} == *marty2  ]] && ExtraPredefinedOptions+=( "-ram 4M" )
+				#fmtowns fmtownsftv fmtownshr fmtownsmx fmtownssj fmtownsux fmtownsv03
+				[[ ${systems[-1]} == fmtowns  ]] || \
+				[[ ${systems[-1]} == fmtowns*  ]] && ExtraPredefinedOptions+=( "-ram 6M" )
+				#philips p2000t and p2000m
+				[[ ${systems[-1]} == p2000*  ]] && ExtraPredefinedOptions+=( "-ram 102K" )
+				#next 2 sadly don't work with lr-mess, need to find another solution
+				#[[ ${systems[${#systems[@]}-1]} == cpc61 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
+				#[[ ${systems[${#systems[@]}-1]} == cpg120 ]] && ExtraPredefinedOptions+=( "-gen1 ''" )
+				#the idea was to add 2 c64gs joysticks but when loading robocop2 the game got confused
+				#[[ ${systems[${#systems[@]}-1]} == c64gs ]] && ExtraPredefinedOptions+=( "-joy1 joybstr -joy2 joybstr" )
+				#both don't work with cartridges as the cartridge has to be in the slot instead of the extra ram
+				#[[ ${systems[${#systems[@]}-1]} == coco ]] && ExtraPredefinedOptions+=( "-ext multi -ext:multi:slot1 ram" )
+				#[[ ${systems[${#systems[@]}-1]} == coco3 ]] && ExtraPredefinedOptions+=( "-ext multi -ext:multi:slot1 ram" )
+			fi
+		done < <($emudir/mame/mame -listmedia $1 $3| grep -v -E "$namesfilter" | grep -E "$mediafilter" | cut -d " " -f 1)
+	fi
+	[[ -n ${ExtraPredefinedOptions[@]} ]] && echo "use extra predefined options for ${systems[${#systems[@]}-1]}"
 
-#part 5 : extract all extension data per system to array
-#first part from the if function is meant for installing systems with extra options or special software cartridges,
-#that can't be extracted from mame with -listslots
-#if added more than one option then we have added extra information about extra predefined options and it's usable media
-#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
-echo "read the media extension(s) from commandline options"
-#will be the same as extensions in part 6
-allextensions+=( "$(echo $6|sed 's/*/ /g')" )
-else
-# an example output for the msx system hbf700p is :
-#hbf700p          printout         (prin)     .prn  
-#                 cassette         (cass)     .wav  .tap  .cas  
-#                 cartridge1       (cart1)    .mx1  .bin  .rom  
-#                 cartridge2       (cart2)    .mx1  .bin  .rom  
-#                 floppydisk       (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
-# from this example all extensions are added and this information is stored like this in (allextensions) :
-#.prn .wav  .tap  .cas .mx1  .bin  .rom .mx1  .bin  .rom .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
-echo "read all available extensions per system"
-for index in "${!systems[@]}"; do 
-# export all supported media per system on unique base
-allextensions+=( "$($emudir/mame/mame -listmedia ${systems[$index]} | grep -o "\...." | tr ' ' '\n' | sort -u | tr '\n' ' ')" )
-done
-fi
-#testline
-#echo testline ${systems[$index]} ${allextensions[$index]}
-#testline
-#echo ${allextensions[@]} ${#allextensions[@]}
+	#part 5 : extract all extension data per system to array
+	#first part from the if function is meant for installing systems with extra options or special software cartridges,
+	#that can't be extracted from mame with -listslots
+	#if added more than one option then we have added extra information about extra predefined options and it's usable media
+	#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+	if [[ -n "$2" ]];then
+		echo "read the media extension(s) from commandline options"
+		#will be the same as extensions in part 6
+		allextensions+=( "$(echo $6|sed 's/*/ /g')" )
+	else
+		#an example output for the msx system hbf700p is :
+		#hbf700p          printout         (prin)     .prn  
+		#                 cassette         (cass)     .wav  .tap  .cas  
+		#                 cartridge1       (cart1)    .mx1  .bin  .rom  
+		#                 cartridge2       (cart2)    .mx1  .bin  .rom  
+		#                 floppydisk       (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
+		#from this example all extensions are added and this information is stored like this in (allextensions) :
+		#.prn .wav  .tap  .cas .mx1  .bin  .rom .mx1  .bin  .rom .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
+		echo "read all available extensions per system"
+		for index in "${!systems[@]}";do 
+			#export all supported media per system on unique base
+			allextensions+=( "$($emudir/mame/mame -listmedia ${systems[$index]} | grep -o "\...." | tr ' ' '\n' | sort -u | tr '\n' ' ')" )
+		done
+	fi
+	#testlines
+	#echo testline ${systems[$index]} ${allextensions[$index]}
+	#echo ${allextensions[@]} ${#allextensions[@]}
 
-#part 6 : extract only extension data per media per system to array
-#first part from the if function is meant for installing systems with extra options or special software cartridges,
-#that can't be extracted from mame with -listslots
-#if added more than one option then we have added extra information about extra predefined options and it's usable media
-#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
-echo "read the media data from commandline options"
-index=0
-mediadescriptions+=( "$4")
-# use the third column if seperated by a space and remove ( ) characters and add - for media
-media+=( "-$5" )
-# use the second column if seperated by a ) character and cut off the first space
-extensions+=( "$(echo $6|sed 's/*/ /g')" )
-else
-#the collected data stored in the specific arrays using this example structure for the msx system hbf700p, information is stored like this :
-#(mediadescriptions)  (media)    (extensions)
-# printout            (prin)     .prn  
-# cassette            (cass)     .wav  .tap  .cas  
-# cartridge1          (cart1)    .mx1  .bin  .rom  
-# cartridge2          (cart2)    .mx1  .bin  .rom  
-# floppydisk          (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
-echo "read compatible extension(s) for the individual media"
-index=0
-while read line; do
-# if any?, remove earlier detected system(s) from the line
-substitudeline=$(echo $line | sed "s/${systems[$index]}//g")
-# use the first column if seperated by a space
-mediadescriptions+=( "$(echo $substitudeline | cut -d " " -f 1)" )
-# use the third column if seperated by a space and remove ( ) characters and add - for media
-media+=( "$(echo $substitudeline | cut -d " " -f 2 | sed s/\(/-/g | sed s/\)//g)" )
-# use the second column if seperated by a ) character and cut off the first space
-extensions+=( "$(echo $substitudeline | cut -d ")" -f 2 | cut -c 2-)" )
-index=$(( $index + 1 ))
-done < <($emudir/mame/mame -listmedia $1 $3| grep -v -E "$namesfilter" | grep -E "$mediafilter")
-fi
-#testline
-#echo testline ${mediadescriptions[@]} ${media[@]} ${extensions[@]} 
+	#part 6 : extract only extension data per media per system to array
+	#first part from the if function is meant for installing systems with extra options or special software cartridges,
+	#that can't be extracted from mame with -listslots
+	#if added more than one option then we have added extra information about extra predefined options and it's usable media
+	#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+	if [[ -n "$2" ]];then
+		echo "read the media data from commandline options"
+		index=0
+		mediadescriptions+=( "$4")
+		#use the third column if seperated by a space and remove ( ) characters and add - for media
+		media+=( "-$5" )
+		#use the second column if seperated by a ) character and cut off the first space
+		extensions+=( "$(echo $6|sed 's/*/ /g')" )
+	else
+		#the collected data stored in the specific arrays using this example structure for the msx system hbf700p, information is stored like this :
+		#(mediadescriptions)  (media)    (extensions)
+		#printout            (prin)     .prn  
+		#cassette            (cass)     .wav  .tap  .cas  
+		#cartridge1          (cart1)    .mx1  .bin  .rom  
+		#cartridge2          (cart2)    .mx1  .bin  .rom  
+		#floppydisk          (flop)     .dsk  .dmk  .d77  .d88  .1dd  .dfi  .hfe  .imd  .ipf  .mfi  .mfm  .td0  .cqm  .cqi 
+		echo "read compatible extension(s) for the individual media"
+		index=0
+		while read line;do
+			#if any?, remove earlier detected system(s) from the line
+			substitudeline=$(echo $line | sed "s/${systems[$index]}//g")
+			#use the first column if seperated by a space
+			mediadescriptions+=( "$(echo $substitudeline | cut -d " " -f 1)" )
+			#use the third column if seperated by a space and remove ( ) characters and add - for media
+			media+=( "$(echo $substitudeline | cut -d " " -f 2 | sed s/\(/-/g | sed s/\)//g)" )
+			#use the second column if seperated by a ) character and cut off the first space
+			extensions+=( "$(echo $substitudeline | cut -d ")" -f 2 | cut -c 2-)" )
+			index=$(( $index + 1 ))
+		done < <($emudir/mame/mame -listmedia $1 $3| grep -v -E "$namesfilter" | grep -E "$mediafilter")
+	fi
+	#testline
+	#echo testline ${mediadescriptions[@]} ${media[@]} ${extensions[@]} 
 
 
-#part 7 : do some filtering and read mamedev system descriptions into (descriptions)
-#first part from the if function is meant for installing systems with extra options or special software cartridges,
-#that can't be extracted from mame with -listslots
-#if added more than one option then we have added extra information about extra predefined options and it's usable media
-#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
-if [[ -n "$2" ]]; then
-echo "skip reading computer description from mame"
-else
-echo "read computer description(s)"
-#a manual command example would be :
-#$emudir/mame/mame -listdevices hbf700p | grep Driver | sed s/hbf700p//g | cut -c 10- | sed s/\)\://g
-#the output, stored in the (descriptions) would be :
-#HB-F700P (MSX2)
-#
-# keep the good info and delete text in lines ( "Driver"(cut), "system"(sed), "):"(sed) )
-for index in "${!systems[@]}"; do descriptions+=( "$($emudir/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" ); done
-fi
+	#part 7 : do some filtering and read mamedev system descriptions into (descriptions)
+	#first part from the if function is meant for installing systems with extra options or special software cartridges,
+	#that can't be extracted from mame with -listslots
+	#if added more than one option then we have added extra information about extra predefined options and it's usable media
+	#then $1=system $2=RPsystemName $3=ExtraPredefinedOption(s) $4=mediadescription $5=media $6=extension(s)
+	if [[ -n "$2" ]];then
+		echo "skip reading computer description from mame"
+	else
+		echo "read computer description(s)"
+		#a manual command example would be :
+		#$emudir/mame/mame -listdevices hbf700p | grep Driver | sed s/hbf700p//g | cut -c 10- | sed s/\)\://g
+		#the output, stored in the (descriptions) would be :
+		#HB-F700P (MSX2)
 
-#part 8 : read RetroPie / ArchyPie systems and descriptions from the platforms.cfg
-echo "read and match $(echo $romdir|cut -d/ -f4) names with mamedev names"
-while read line; do
-# read retropie rom directory names 
-systemsrp+=( "$(echo $line | cut -d '_' -f 1)" )
-# read retropie full system names
-#
-#sed is used to change descriptions on the fly, 
-#otherwise it has also 
-#descriptions that are changed to disable matching:
-#(PC => -PC-) #to prefent matches with CPC ,PC Engine etc., for PC a solution still has to be found
-#(Apple II => -Apple II-) #https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/653
-#descriptions that are changed for matching:
-#(Atari Jaguar => Jaguar)
-#(Mega CD => Mega-CD)
-#(Sega 32X => 32X)
-#(Commodore Amiga => Amiga)
-#(Game and Watch => Game & Watch) , (and => &)
-#&
-#also some "words" have to be filtered out :
-#(ProSystem)
-#otherwise we don't have matches for these systems
-#
-descriptionsrp+=( "$(echo $line | \
+		#keep the good info and delete text in lines ( "Driver"(cut), "system"(sed), "):"(sed) )
+		for index in "${!systems[@]}";do descriptions+=( "$($emudir/mame/mame -listdevices ${systems[$index]} | grep Driver | sed s/$(echo ${systems[$index]})//g | cut -c 10- | sed s/\)\://g)" );done
+	fi
+
+	#part 8 : read RetroPie / ArchyPie systems and descriptions from the platforms.cfg
+	echo "read and match $(echo $romdir|cut -d/ -f4) names with mamedev names"
+	while read line;do
+		#read retropie rom directory names 
+		systemsrp+=( "$(echo $line | cut -d '_' -f 1)" )
+		#read retropie full system names
+
+		#sed is used to change descriptions on the fly, 
+		#otherwise it has also 
+		#descriptions that are changed to disable matching:
+		#(PC => -PC-) #to prefent matches with CPC ,PC Engine etc., for PC a solution still has to be found
+		#(Apple II => -Apple II-) #https://retropie.org.uk/forum/topic/29682/development-of-module-script-generator-for-lr-mess-and-mame-standalone/653
+		#descriptions that are changed for matching:
+		#(Atari Jaguar => Jaguar)
+		#(Mega CD => Mega-CD)
+		#(Sega 32X => 32X)
+		#(Commodore Amiga => Amiga)
+		#(Game and Watch => Game & Watch) , (and => &)
+		#&
+		#also some "words" have to be filtered out :
+		#(ProSystem)
+		#otherwise we don't have matches for these systems
+		#
+		descriptionsrp+=( "$(echo $line | \
 sed 's/\"PC\"/\"-PC-\"/g' | \
 sed 's/Apple II/-Apple II-/g' | \
 sed 's/Atari 7800 ProSystem/Atari 7800/g' | \
@@ -2903,181 +2902,181 @@ sed 's/Commodore Amiga/Amiga/g' | \
 sed 's/ and / \& /g' | \
 sed 's/ and / \& /g' | \
 cut -d '"' -f 2)" )
-done < <(cat $scriptdir/platforms.cfg | grep fullname)
+	done < <(cat $scriptdir/platforms.cfg | grep fullname)
 
 
-#part 9 : add extra possible future/unknown RetroPie / ArchyPie names
-#added because of the @DTEAM in Handheld tutorial
-#!!! this name "handheld" not used by @DTEAM in Handheld tutorial !!! <=> can't extract "konamih" and "tigerh" from mamedev database, for now
-systemsrp+=( "handheld" ) # can be overruled by added @DTEAM name changing
-descriptionsrp+=( "handheld" ) # can be overruled by added @DTEAM name changing
-#this name "jakks" is used by @DTEAM in Handheld tutorial <=> "jakks" can be extracted from mamedev database
-#because "jakks" is not in the RetroPie / ArchyPie platforms we add this here for later matching
-systemsrp+=( "jakks" )
-descriptionsrp+=( "JAKKS" )
-#this name "tigerrz" is used by @DTEAM in Handheld tutorial <=> "tigerrz" can be extracted from mamedev database
-#because "tigerrz" is not in the RetroPie / ArchyPie platforms we add this here for later matching
-systemsrp+=( "tigerrz" )
-descriptionsrp+=( "R-Zone" )
-#not in the original platforms.cfg
-systemsrp+=( "cd32" )
-descriptionsrp+=( "Amiga CD32" )
-systemsrp+=( "archimedes" )
-descriptionsrp+=( "Archimedes" )
-systemsrp+=( "archimedes" )
-descriptionsrp+=( "Acorn A" )
-systemsrp+=( "archimedes" )
-descriptionsrp+=( "BBC A" )
-systemsrp+=( "astrocde" )
-descriptionsrp+=( "Bally Professional Arcade" )
-systemsrp+=( "bbcmicro" )
-descriptionsrp+=( "BBC Micro" )
-systemsrp+=( "bbcmicro" )
-descriptionsrp+=( "BBC Master" )
-systemsrp+=( "c64gs" )
-descriptionsrp+=( "Commodore 64 Games System (PAL)" )
-systemsrp+=( "coleco_homebrew" )
-descriptionsrp+=( "Coleco+SGM" )
-systemsrp+=( "dragon64" )
-descriptionsrp+=( "Dragon 64" )
-systemsrp+=( "jaguarcd" )
-descriptionsrp+=( "Jaguar CD" )
-systemsrp+=( "sega32-cd" )
-descriptionsrp+=( "Mega-CD with 32X" )
-systemsrp+=( "sega32-cd" )
-descriptionsrp+=( "Sega CD with 32X" )
-systemsrp+=( "scv" )
-descriptionsrp+=( "Super Cassette Vision (PAL)" )
-systemsrp+=( "msx2" )
-descriptionsrp+=( "MSX2" )
-systemsrp+=( "msx2+" )
-descriptionsrp+=( "MSX2+" )
-systemsrp+=( "msxturbor" )
-descriptionsrp+=( "MSX Turbo-R" )
-systemsrp+=( "neogeo-cd" )
-descriptionsrp+=( "Neo-Geo CD" )
-systemsrp+=( "zemmix" )
-descriptionsrp+=( "Zemmix" )
-systemsrp+=( "zemmix2" )
-descriptionsrp+=( "Zemmix CPC-61" )
-systemsrp+=( "zemmix2" )
-descriptionsrp+=( "Zemmix CPG-120" )
-for L in France Germany Italy Netherlands Spain Sweden Switzerland UK USA;do
- systemsrp+=( "atarist" )
- descriptionsrp+=( "ST ($L)" )
- systemsrp+=( "atarist" )
- descriptionsrp+=( "STE ($L)" )
- systemsrp+=( "atarist" )
- descriptionsrp+=( "MEGA STE ($L)" )
-done
-#adding this doesn't work with this type of system to get the correct description in es_systems.cfg, other solution required or we have to do a look up in the arrays somehow
-#systemsrp+=( "konamih" )
-#descriptionsrp+=( "Konami Handheld" )
+	#part 9 : add extra possible future/unknown RetroPie / ArchyPie names
+	#added because of the @DTEAM in Handheld tutorial
+	#!!! this name "handheld" not used by @DTEAM in Handheld tutorial !!! <=> can't extract "konamih" and "tigerh" from mamedev database, for now
+	systemsrp+=( "handheld" ) #can be overruled by added @DTEAM name changing
+	descriptionsrp+=( "handheld" ) #can be overruled by added @DTEAM name changing
+	#this name "jakks" is used by @DTEAM in Handheld tutorial <=> "jakks" can be extracted from mamedev database
+	#because "jakks" is not in the RetroPie / ArchyPie platforms we add this here for later matching
+	systemsrp+=( "jakks" )
+	descriptionsrp+=( "JAKKS" )
+	#this name "tigerrz" is used by @DTEAM in Handheld tutorial <=> "tigerrz" can be extracted from mamedev database
+	#because "tigerrz" is not in the RetroPie / ArchyPie platforms we add this here for later matching
+	systemsrp+=( "tigerrz" )
+	descriptionsrp+=( "R-Zone" )
+	#not in the original platforms.cfg
+	systemsrp+=( "cd32" )
+	descriptionsrp+=( "Amiga CD32" )
+	systemsrp+=( "archimedes" )
+	descriptionsrp+=( "Archimedes" )
+	systemsrp+=( "archimedes" )
+	descriptionsrp+=( "Acorn A" )
+	systemsrp+=( "archimedes" )
+	descriptionsrp+=( "BBC A" )
+	systemsrp+=( "astrocde" )
+	descriptionsrp+=( "Bally Professional Arcade" )
+	systemsrp+=( "bbcmicro" )
+	descriptionsrp+=( "BBC Micro" )
+	systemsrp+=( "bbcmicro" )
+	descriptionsrp+=( "BBC Master" )
+	systemsrp+=( "c64gs" )
+	descriptionsrp+=( "Commodore 64 Games System (PAL)" )
+	systemsrp+=( "coleco_homebrew" )
+	descriptionsrp+=( "Coleco+SGM" )
+	systemsrp+=( "dragon64" )
+	descriptionsrp+=( "Dragon 64" )
+	systemsrp+=( "jaguarcd" )
+	descriptionsrp+=( "Jaguar CD" )
+	systemsrp+=( "sega32-cd" )
+	descriptionsrp+=( "Mega-CD with 32X" )
+	systemsrp+=( "sega32-cd" )
+	descriptionsrp+=( "Sega CD with 32X" )
+	systemsrp+=( "scv" )
+	descriptionsrp+=( "Super Cassette Vision (PAL)" )
+	systemsrp+=( "msx2" )
+	descriptionsrp+=( "MSX2" )
+	systemsrp+=( "msx2+" )
+	descriptionsrp+=( "MSX2+" )
+	systemsrp+=( "msxturbor" )
+	descriptionsrp+=( "MSX Turbo-R" )
+	systemsrp+=( "neogeo-cd" )
+	descriptionsrp+=( "Neo-Geo CD" )
+	systemsrp+=( "zemmix" )
+	descriptionsrp+=( "Zemmix" )
+	systemsrp+=( "zemmix2" )
+	descriptionsrp+=( "Zemmix CPC-61" )
+	systemsrp+=( "zemmix2" )
+	descriptionsrp+=( "Zemmix CPG-120" )
+	for L in France Germany Italy Netherlands Spain Sweden Switzerland UK USA;do
+		systemsrp+=( "atarist" )
+		descriptionsrp+=( "ST ($L)" )
+		systemsrp+=( "atarist" )
+		descriptionsrp+=( "STE ($L)" )
+		systemsrp+=( "atarist" )
+		descriptionsrp+=( "MEGA STE ($L)" )
+	done
+	#adding this doesn't work with this type of system to get the correct description in es_systems.cfg, other solution required or we have to do a look up in the arrays somehow
+	#systemsrp+=( "konamih" )
+	#descriptionsrp+=( "Konami Handheld" )
 
-#testlines
-#echo ${systemsrp[@]}
-#echo ${descriptionsrp[@]}
-
-
-#part 10 : match the RetroPie / ArchyPie descriptions to the mamedev descriptions
-newsystems+=( "${systems[@]}" )
-# use this in if function *${descriptionsrp[$rpindex]}* for match for a global match (containing parts)
-# use this in if function "${descriptionsrp[$rpindex]}" for an exact match 
-
-# test array to check the code 
-#descriptionsrp=()
-#descriptionsrp=("MSX" "Vectrex" "Atari 2600")
-# end test array
-
-# how many platforms in platforms.cfg
-#echo ${#descriptionsrp[@]}
-
-#platform PC is a bit tricky and should be checked the first time, if there is a second match
-#the second match is probably the best match
-# ??? have to find a solution for this ??? filter out or put in first index of array
-
-  #here we can change mamedev systems names that normally wouldn't be detected in the next for loop
-  #so now they can be detected changed into RetroPie / ArchyPie names
-  for mamedevindex in "${!descriptions[@]}"; do
-    [[ "${descriptions[$mamedevindex]}" == "Adam" ]] && descriptions[$mamedevindex]="ColecoVision Adam"
-    [[ "${ExtraPredefinedOptions[$mamedevindex]}" == "-exp sgm" ]] && descriptions[$mamedevindex]="Coleco+SGM"   
-  done
-
-  #check the mamedev descriptions against the RetroPie / ArchyPie descriptions
-  #searching for matching names, when different matches occour then the last name is used !
-  for mamedevindex in "${!descriptions[@]}"; do
-    for rpindex in "${!descriptionsrp[@]}"; do
-      #create an empty array and split the the retropie name descriptions into seperate "words" in an array
-      splitdescriptionsrp=()
-      IFS=$' ' GLOBIGNORE='*' command eval  'splitdescriptionsrp=($(echo ${descriptionsrp[$rpindex]}))'
-      #check if every "word" is in the mamedev descriptions * *=globally , " "=exact, 
-      #!!! exact matching does not work here, because many times you are matching 1 "word" against multiple "words" !!!
-      if [[ "${descriptions[$mamedevindex]}" == *${splitdescriptionsrp[@]}* ]]; then
-        # If descriptions are exactly the same then use the system name of retropie as romdirectory
-        # for the other arrays we use the mamedev information
-        newsystems[$mamedevindex]=${systemsrp[$rpindex]}
-        #echo "match - mamedev(description) - ${descriptions[$mamedevindex]} -- rp(description) - ${descriptionsrp[$rpindex]}"
-        #echo "match - mamedev(romdir) - ${systems[$mamedevindex]} -- rp(romdir) - ${newsystems[$mamedevindex]} (RetroPie / ArchyPie name is used)"
-	lastdescriptionmatch=${descriptionsrp[$rpindex]}
-      fi
-    done
-  done
-if [[ -n "$2" ]]; then
-echo "MAME information -> (Skipped)"
-else
-echo "MAME information -> ${systems[$mamedevindex]} (${descriptions[$mamedevindex]})"
-[[ -z ${systems[$mamedevindex]} ]] && echo -e "\n!!!\nThe system variable is empty !\nNothing will be installed !\nIf you see 'unknown system' then you probably have a mismatch.\nA mismatch between the versions of the database and standalone mame.\nElse ask the developper to add specific media to the mediafilter !\n!!!\n"
-fi
+	#testlines
+	#echo ${systemsrp[@]}
+	#echo ${descriptionsrp[@]}
 
 
-#part 11 : match the added @DTEAM/RetroPie descriptions to the mamedev descriptions
-#create a subarray "dteam_systems" containing the arrays that have to be used here
-#now only two "for loops" can be use for checking multiple arrays against the RetroPie / ArchyPie names
-#note:some systems are not added because they should be recognised in a normal way
-dteam_systems=("all_in1" "classich" "konamih" "tigerh" "driving" "maze" "pinball" "puzzle" "shooter" "slot_machine" "sports" "neogeo" "nintendovs" "megaplay" "playchoice10" "deco_cassette")
-lastcategorymatch=false
-#multiple arrays over one for loop:
-#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
+	#part 10 : match the RetroPie / ArchyPie descriptions to the mamedev descriptions
+	newsystems+=( "${systems[@]}" )
+	#use this in if function *${descriptionsrp[$rpindex]}* for match for a global match (containing parts)
+	#use this in if function "${descriptionsrp[$rpindex]}" for an exact match 
 
-for mamedevindex in "${!systems[@]}"; do
-  for dteam_system in "${dteam_systems[@]}"; do
-    declare -n games="$dteam_system"
-    #testline#echo "system name: ${dteam_system} with system members: ${games[@]}"
-    for game in "${games[@]}"; do
-        #compare array game names with the mamedev systems ( * *=globally , " "=exact ) 
-        #testline#echo "${systems[$mamedevindex]}" == "$game"
-        if [[ "${systems[$mamedevindex]}" == "$game" ]]; then
-        # If descriptions are exactly the same then use the system name of retropie as romdirectory
-        # for the other arrays we use the mamedev information
-        newsystems[$mamedevindex]=$dteam_system
-	echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]} (Using pseudo system name / category name)"
-	lastcategorymatch=true
+	#test array to check the code 
+	#descriptionsrp=()
+	#descriptionsrp=("MSX" "Vectrex" "Atari 2600")
+	#end test array
+
+	#how many platforms in platforms.cfg
+	#echo ${#descriptionsrp[@]}
+
+	#platform PC is a bit tricky and should be checked the first time, if there is a second match
+	#the second match is probably the best match
+	#??? have to find a solution for this ??? filter out or put in first index of array
+
+	#here we can change mamedev systems names that normally wouldn't be detected in the next for loop
+	#so now they can be detected changed into RetroPie / ArchyPie names
+	for mamedevindex in "${!descriptions[@]}";do
+		[[ "${descriptions[$mamedevindex]}" == "Adam" ]] && descriptions[$mamedevindex]="ColecoVision Adam"
+		[[ "${ExtraPredefinedOptions[$mamedevindex]}" == "-exp sgm" ]] && descriptions[$mamedevindex]="Coleco+SGM"   
+	done
+
+	#check the mamedev descriptions against the RetroPie / ArchyPie descriptions
+	#searching for matching names, when different matches occour then the last name is used !
+	for mamedevindex in "${!descriptions[@]}";do
+		for rpindex in "${!descriptionsrp[@]}";do
+			#create an empty array and split the the retropie name descriptions into seperate "words" in an array
+			splitdescriptionsrp=()
+			IFS=$' ' GLOBIGNORE='*' command eval  'splitdescriptionsrp=($(echo ${descriptionsrp[$rpindex]}))'
+			#check if every "word" is in the mamedev descriptions * *=globally , " "=exact, 
+			#!!! exact matching does not work here, because many times you are matching 1 "word" against multiple "words" !!!
+			if [[ "${descriptions[$mamedevindex]}" == *${splitdescriptionsrp[@]}* ]];then
+			#if descriptions are exactly the same then use the system name of retropie as romdirectory
+			#for the other arrays we use the mamedev information
+			newsystems[$mamedevindex]=${systemsrp[$rpindex]}
+			#echo "match - mamedev(description) - ${descriptions[$mamedevindex]} -- rp(description) - ${descriptionsrp[$rpindex]}"
+			#echo "match - mamedev(romdir) - ${systems[$mamedevindex]} -- rp(romdir) - ${newsystems[$mamedevindex]} (RetroPie / ArchyPie name is used)"
+			lastdescriptionmatch=${descriptionsrp[$rpindex]}
+			fi
+		done
+	done
+	if [[ -n "$2" ]];then
+		echo "MAME information -> (Skipped)"
+	else
+		echo "MAME information -> ${systems[$mamedevindex]} (${descriptions[$mamedevindex]})"
+		[[ -z ${systems[$mamedevindex]} ]] && echo -e "\n!!!\nThe system variable is empty !\nNothing will be installed !\nIf you see 'unknown system' then you probably have a mismatch.\nA mismatch between the versions of the database and standalone mame.\nElse ask the developper to add specific media to the mediafilter !\n!!!\n"
 	fi
-    done
-  done
-done
-if [[ -n "$2" ]]; then
-echo "$(echo $romdir|cut -d/ -f4) install -> $2 (Using predefined pseudo system name / category name)"
-else
-[[ $lastcategorymatch == false ]] && [[ -n $lastdescriptionmatch ]] && echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]} ($lastdescriptionmatch)"
-[[ $lastcategorymatch == false ]] && [[ -z $lastdescriptionmatch ]] && echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]}"
-fi
-#reset variable
-lastdescriptionmatch=
-
-# test line total output
-#for index in "${!systems[@]}"; do echo $index ${systems[$index]} -- ${newsystems[$index]} | more ; echo -ne '\n'; done
-#  for index in "${!systems[@]}"; do
-#      if [[ "${systems[$index]}" != "${newsystems[$index]}" ]]; then
-#        echo "$index ${systems[$index]} => ${newsystems[$index]}"
-#      fi
-#  done
 
 
-#part 12 : use all stored data to install runcommands for lr-mame, lr-mess and mame with media option
-# in the name of the runcommand "lr-*" is used for compatibility with runcommand.sh 
-# because mame is added and because mame is using this BIOS dir : $datadir/BIOS/mame
-# the lr-mess command is changed to use the same BIOS dir
+	#part 11 : match the added @DTEAM/RetroPie descriptions to the mamedev descriptions
+	#create a subarray "dteam_systems" containing the arrays that have to be used here
+	#now only two "for loops" can be use for checking multiple arrays against the RetroPie / ArchyPie names
+	#note:some systems are not added because they should be recognised in a normal way
+	dteam_systems=("all_in1" "classich" "konamih" "tigerh" "driving" "maze" "pinball" "puzzle" "shooter" "slot_machine" "sports" "neogeo" "nintendovs" "megaplay" "playchoice10" "deco_cassette")
+	lastcategorymatch=false
+	#multiple arrays over one for loop:
+	#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
+
+	for mamedevindex in "${!systems[@]}";do
+		for dteam_system in "${dteam_systems[@]}";do
+			declare -n games="$dteam_system"
+			#testline#echo "system name: ${dteam_system} with system members: ${games[@]}"
+			for game in "${games[@]}";do
+				#compare array game names with the mamedev systems ( * *=globally , " "=exact ) 
+				#testline#echo "${systems[$mamedevindex]}" == "$game"
+				if [[ "${systems[$mamedevindex]}" == "$game" ]];then
+					#if descriptions are exactly the same then use the system name of retropie as romdirectory
+					#for the other arrays we use the mamedev information
+					newsystems[$mamedevindex]=$dteam_system
+					echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]} (Using pseudo system name / category name)"
+					lastcategorymatch=true
+				fi
+			done
+		done
+	done
+	if [[ -n "$2" ]];then
+		echo "$(echo $romdir|cut -d/ -f4) install -> $2 (Using predefined pseudo system name / category name)"
+	else
+		[[ $lastcategorymatch == false ]] && [[ -n $lastdescriptionmatch ]] && echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]} ($lastdescriptionmatch)"
+		[[ $lastcategorymatch == false ]] && [[ -z $lastdescriptionmatch ]] && echo "$(echo $romdir|cut -d/ -f4) install -> ${newsystems[$mamedevindex]}"
+	fi
+	#reset variable
+	lastdescriptionmatch=
+
+	#test line total output
+	#for index in "${!systems[@]}";do echo $index ${systems[$index]} -- ${newsystems[$index]} | more ; echo -ne '\n';done
+	#	for index in "${!systems[@]}";do
+	#		if [[ "${systems[$index]}" != "${newsystems[$index]}" ]];then
+	#			echo "$index ${systems[$index]} => ${newsystems[$index]}"
+	#		fi
+	#	done
+
+
+	#part 12 : use all stored data to install runcommands for lr-mame, lr-mess and mame with media option
+	#in the name of the runcommand "lr-*" is used for compatibility with runcommand.sh 
+	#because mame is added and because mame is using this BIOS dir : $datadir/BIOS/mame
+	#the lr-mess command is changed to use the same BIOS dir
 
 	local _retroarch_bin="$rootdir/emulators/retroarch/bin/retroarch"
 	local _mess_core=$rootdir/libretrocores/lr-mess/mamemess_libretro.so
@@ -3092,101 +3091,101 @@ lastdescriptionmatch=
 	local _basename_coreconfig="$configdir/$_system/retroarch-core-options.cfg.basename"
 	local _add_config_basename="$_config.basename"
 
-	# create retroarch configuration
+	#create retroarch configuration
 	mkRomDir "$_system"
 
-if [[ $SystemType == non-arcade ]] && [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
-	if [[ $scriptdir == *RetroPie* ]];then
-	    ensureSystemretroconfig "$_system"
-	else
-	    defaultRAConfig "$_system"
+	if [[ $SystemType == non-arcade ]] && [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
+		if [[ $scriptdir == *RetroPie* ]];then
+			ensureSystemretroconfig "$_system"
+		else
+			defaultRAConfig "$_system"
+		fi
+		#ensure using a custom per-fake-core config for media loaders without using softlist
+		iniConfig " = " "\"" "$_custom_coreconfig"
+		iniSet "mame_alternate_renderer" "enabled"
+		iniSet "mame_boot_from_cli" "enabled"
+		iniSet "mame_mouse_enable" "enabled"
+		iniSet "mame_rotation_mode" "internal"
+		iniSet "mame_softlists_enable" "disabled"
+		iniSet "mame_softlists_auto_media" "disabled"
+		#ensure using a custom per-fake-core config for basename loaders using softlist
+		iniConfig " = " "\"" "$_basename_coreconfig"
+		iniSet "mame_alternate_renderer" "enabled"
+		iniSet "mame_boot_from_cli" "enabled"
+		iniSet "mame_mouse_enable" "enabled"
+		iniSet "mame_rotation_mode" "internal"
+		#ensure custom per-fake-core configs get loaded too via --appendconfig
+		iniConfig " = " "\"" "$_add_config"
+		iniSet "core_options_path" "$_custom_coreconfig"
+		#
+		iniConfig " = " "\"" "$_add_config_basename"
+		iniSet "core_options_path" "$_basename_coreconfig"
+		[[ $_system == *90º ]]&&iniSet "screen_orientation" "3"
+		#
+		echo "enable cheats for lr-mame/lr-mess in $configdir/all/retroarch-core-options.cfg"
+		iniConfig " = " "\"" "$configdir/all/retroarch-core-options.cfg"
+		iniSet "mame_cheats_enable" "enabled"
+		#
+		echo "enable translation ai_service for RetroArch in $configdir/all/retroarch.cfg"
+		iniConfig " = " "\"" "$configdir/all/retroarch.cfg"
+		iniSet "ai_service_enable" "true"
+		iniSet "ai_service_mode" "0"
+		iniSet "ai_service_pause" "true"
+		iniSet "ai_service_source_lang" "0"
+		iniSet "ai_service_target_lang" "1"
+		iniSet "ai_service_url" "http://ztranslate.net/service?api_key=HEREISMYKEY"
+		iniSet "input_ai_service" "t"
+		iniSet "#input_ai_service_btn" "11"
 	fi
-	# ensure using a custom per-fake-core config for media loaders without using softlist
-	iniConfig " = " "\"" "$_custom_coreconfig"
-	iniSet "mame_alternate_renderer" "enabled"
-	iniSet "mame_boot_from_cli" "enabled"
-	iniSet "mame_mouse_enable" "enabled"
-	iniSet "mame_rotation_mode" "internal"
-	iniSet "mame_softlists_enable" "disabled"
-	iniSet "mame_softlists_auto_media" "disabled"
-	# ensure using a custom per-fake-core config for basename loaders using softlist
-	iniConfig " = " "\"" "$_basename_coreconfig"
-	iniSet "mame_alternate_renderer" "enabled"
-	iniSet "mame_boot_from_cli" "enabled"
-	iniSet "mame_mouse_enable" "enabled"
-	iniSet "mame_rotation_mode" "internal"
-	# ensure custom per-fake-core configs get loaded too via --appendconfig
-	iniConfig " = " "\"" "$_add_config"
-	iniSet "core_options_path" "$_custom_coreconfig"
-	#
-	iniConfig " = " "\"" "$_add_config_basename"
-	iniSet "core_options_path" "$_basename_coreconfig"
-	[[ $_system == *90º ]]&&iniSet "screen_orientation" "3"
-	#
-	echo "enable cheats for lr-mame/lr-mess in $configdir/all/retroarch-core-options.cfg"
-	iniConfig " = " "\"" "$configdir/all/retroarch-core-options.cfg"
-	iniSet "mame_cheats_enable" "enabled"
-	#
-	echo "enable translation ai_service for RetroArch in $configdir/all/retroarch.cfg"
-	iniConfig " = " "\"" "$configdir/all/retroarch.cfg"
-	iniSet "ai_service_enable" "true"
-	iniSet "ai_service_mode" "0"
-	iniSet "ai_service_pause" "true"
-	iniSet "ai_service_source_lang" "0"
-	iniSet "ai_service_target_lang" "1"
-	iniSet "ai_service_url" "http://ztranslate.net/service?api_key=HEREISMYKEY"
-	iniSet "input_ai_service" "t"
-	iniSet "#input_ai_service_btn" "11"
-fi
-if [[ $SystemType == arcade ]] && [[ -f $rootdir/libretrocores/lr-mame/mamearcade_libretro.so ]];then
-	if [[ $scriptdir == *RetroPie* ]];then
-	    ensureSystemretroconfig "$_system"
-	else
-	    defaultRAConfig "$_system"
+	if [[ $SystemType == arcade ]] && [[ -f $rootdir/libretrocores/lr-mame/mamearcade_libretro.so ]];then
+		if [[ $scriptdir == *RetroPie* ]];then
+			ensureSystemretroconfig "$_system"
+		else
+			defaultRAConfig "$_system"
+		fi
+		#ensure using a custom per-fake-core config for media loaders without using softlist
+		iniConfig " = " "\"" "$_custom_coreconfig"
+		iniSet "mame_alternate_renderer" "enabled"
+		iniSet "mame_boot_from_cli" "enabled"
+		iniSet "mame_mouse_enable" "enabled"
+		iniSet "mame_rotation_mode" "internal"
+		iniSet "mame_softlists_enable" "disabled"
+		iniSet "mame_softlists_auto_media" "disabled"
+		#ensure using a custom per-fake-core config for basename loaders using softlist
+		iniConfig " = " "\"" "$_basename_coreconfig"
+		iniSet "mame_alternate_renderer" "enabled"
+		iniSet "mame_boot_from_cli" "enabled"
+		iniSet "mame_mouse_enable" "enabled"
+		iniSet "mame_rotation_mode" "internal"
+		#ensure custom per-fake-core configs get loaded too via --appendconfig
+		iniConfig " = " "\"" "$_add_config"
+		iniSet "core_options_path" "$_custom_coreconfig"
+		#
+		iniConfig " = " "\"" "$_add_config_basename"
+		iniSet "core_options_path" "$_basename_coreconfig"
+		[[ $_system == *90º ]]&&iniSet "screen_orientation" "3"
+		#
+		echo "enable cheats for lr-mame/lr-mess in $configdir/all/retroarch-core-options.cfg"
+		iniConfig " = " "\"" "$configdir/all/retroarch-core-options.cfg"
+		iniSet "mame_cheats_enable" "enabled"
+		#
+		echo "enable translation ai_service for RetroArch in $configdir/all/retroarch.cfg"
+		iniConfig " = " "\"" "$configdir/all/retroarch.cfg"
+		iniSet "ai_service_enable" "true"
+		iniSet "ai_service_mode" "0"
+		iniSet "ai_service_pause" "true"
+		iniSet "ai_service_source_lang" "0"
+		iniSet "ai_service_target_lang" "1"
+		iniSet "ai_service_url" "http://ztranslate.net/service?api_key=HEREISMYKEY"
+		iniSet "input_ai_service" "t"
+		iniSet "#input_ai_service_btn" "11"
 	fi
-	# ensure using a custom per-fake-core config for media loaders without using softlist
-	iniConfig " = " "\"" "$_custom_coreconfig"
-	iniSet "mame_alternate_renderer" "enabled"
-	iniSet "mame_boot_from_cli" "enabled"
-	iniSet "mame_mouse_enable" "enabled"
-	iniSet "mame_rotation_mode" "internal"
-	iniSet "mame_softlists_enable" "disabled"
-	iniSet "mame_softlists_auto_media" "disabled"
-	# ensure using a custom per-fake-core config for basename loaders using softlist
-	iniConfig " = " "\"" "$_basename_coreconfig"
-	iniSet "mame_alternate_renderer" "enabled"
-	iniSet "mame_boot_from_cli" "enabled"
-	iniSet "mame_mouse_enable" "enabled"
-	iniSet "mame_rotation_mode" "internal"
-	# ensure custom per-fake-core configs get loaded too via --appendconfig
-	iniConfig " = " "\"" "$_add_config"
-	iniSet "core_options_path" "$_custom_coreconfig"
-	#
-	iniConfig " = " "\"" "$_add_config_basename"
-	iniSet "core_options_path" "$_basename_coreconfig"
-	[[ $_system == *90º ]]&&iniSet "screen_orientation" "3"
-	#
-	echo "enable cheats for lr-mame/lr-mess in $configdir/all/retroarch-core-options.cfg"
-	iniConfig " = " "\"" "$configdir/all/retroarch-core-options.cfg"
-	iniSet "mame_cheats_enable" "enabled"
-	#
-	echo "enable translation ai_service for RetroArch in $configdir/all/retroarch.cfg"
-	iniConfig " = " "\"" "$configdir/all/retroarch.cfg"
-	iniSet "ai_service_enable" "true"
-	iniSet "ai_service_mode" "0"
-	iniSet "ai_service_pause" "true"
-	iniSet "ai_service_source_lang" "0"
-	iniSet "ai_service_target_lang" "1"
-	iniSet "ai_service_url" "http://ztranslate.net/service?api_key=HEREISMYKEY"
-	iniSet "input_ai_service" "t"
-	iniSet "#input_ai_service_btn" "11"
-fi
 	echo "enable cheats for mame in $rootdir/configs/mame/mame.ini"  
 	iniConfig " " "" "$_mameini"
 	iniSet "cheatpath"  "$romdir/mame/cheat"
 	iniSet "cheat" "1"
 	
-	# set permissions for all configurations
+	#set permissions for all configurations
  	chown $user:$user "$_add_config" 2>&-
 	chown $user:$user "$_add_config_basename" 2>&-
  	chown $user:$user "$_custom_coreconfig" 2>&-
@@ -3197,174 +3196,169 @@ fi
 	chown $user:$user "$_mameini"
 
 	echo "install runcommands with media option(s) for non-softlist loading, if possible"
-	# add system to es_systems.cfg
+	#add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
 	addSystem "$_system" "${descriptions[$index]}" "$addextensions ${allextensions[$index]}"
-	# add system to es_systems.cfg
+	#add system to es_systems.cfg
 	#the line used by @valerino didn't work for the original RetroPie-setup 
 	#therefore the information is added in a different way
 	#the system name is also used as description because, for example, handhelds are generated with game system names
 	addSystem "$_system" "$(if [[ ${media[$index]} != "-none" ]];then echo ${descriptions[$index]};else echo ${newsystems[$index]};fi)" "$addextensionscmd $addextensions ${allextensions[$index]}$platformextensionsrp"
 
-for index in "${!systems[@]}"; do 
-if [[ -n ${allextensions[$index]} ]];then
-	# add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
-	# all option should work with both mame and lr-mess, although -autoframeskip is better with mame
-	# if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
-	if [[ -n $(cat $rootdir/supplementary/runcommand/runcommand.sh|grep "extra replace") ]];then
-	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]] && [[ -f $scriptdir/scriptmodules/run_mess.sh ]];then
-	    addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$_script $_retroarch_bin $_mess_core $_config \\${systems[$index]} $biosdir/mame\\;%DQUOTE%%ROMDIR%%DQUOTE%  -autoframeskip -cfg_directory $configdir/$_system/lr-mess -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
-	    addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$_script $_retroarch_bin $_mess_core $_config \\${systems[$index]} $biosdir/mame\\;%DQUOTE%%ROMDIR%%DQUOTE%  -cfg_directory $configdir/$_system/lr-mess/%CLEANBASENAME% -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
-	    fi
-	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
-	    addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% -cfg_directory $configdir/$_system/lr-mess -c -ui_active ${media[$index]} %ROM%'"
-	    addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
-	    addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% -cfg_directory $configdir/$_system/lr-mess/%CLEANBASENAME% -c -ui_active ${media[$index]} %ROM%'"
-	    addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% -cfg_directory $configdir/$_system/lr-mess/%CLEANBASENAME% -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
-	    fi
-	    addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
-	    addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -autoframeskip -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
-	    addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -cfg_directory $configdir/$_system/mame/%CLEANBASENAME% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
-	    addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -cfg_directory $configdir/$_system/mame/%CLEANBASENAME% -v -c -autoframeskip -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
-	else
-	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]] && [[ -f $scriptdir/scriptmodules/run_mess.sh ]];then
-	    addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$_script $_retroarch_bin $_mess_core $_config \\${systems[$index]} $biosdir/mame\\;$datadir/roms/$_system  -autoframeskip -cfg_directory $configdir/$_system/lr-mess -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
-	    addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$_script $_retroarch_bin $_mess_core $_config \\${systems[$index]} $biosdir/mame\\;$datadir/roms/$_system  -cfg_directory $configdir/$_system/lr-mess/%BASENAME% -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
-	    fi
-	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
-	    addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ -cfg_directory $configdir/$_system/lr-mess -c -ui_active ${media[$index]} %ROM%'"
-	    addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
-	    addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ -cfg_directory $configdir/$_system/lr-mess/%BASENAME% -c -ui_active ${media[$index]} %ROM%'"
-	    addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ -cfg_directory $configdir/$_system/lr-mess/%BASENAME% -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
-	    fi
-	    addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
-	    addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -autoframeskip -ui_active -statename $_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
-	    addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -cfg_directory $configdir/$_system/mame/%BASENAME% -v -c -ui_active -statename $_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
-	    addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -cfg_directory $configdir/$_system/mame/%BASENAME% -v -c -autoframeskip -ui_active -statename $_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
-	fi
-fi
-done
+	for index in "${!systems[@]}";do 
+		if [[ -n ${allextensions[$index]} ]];then
+			#add the emulators.cfg as normal, pointing to the above script # use old mess name for booting
+			#all option should work with both mame and lr-mess, although -autoframeskip is better with mame
+			#if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
+			if [[ -n $(cat $rootdir/supplementary/runcommand/runcommand.sh|grep "extra replace") ]];then
+				if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]] && [[ -f $scriptdir/scriptmodules/run_mess.sh ]];then
+					addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$_script $_retroarch_bin $_mess_core $_config \\${systems[$index]} $biosdir/mame\\;%DQUOTE%%ROMDIR%%DQUOTE%  -autoframeskip -cfg_directory $configdir/$_system/lr-mess -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+					addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$_script $_retroarch_bin $_mess_core $_config \\${systems[$index]} $biosdir/mame\\;%DQUOTE%%ROMDIR%%DQUOTE%  -cfg_directory $configdir/$_system/lr-mess/%CLEANBASENAME% -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+				fi
+				if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
+					addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% -cfg_directory $configdir/$_system/lr-mess -c -ui_active ${media[$index]} %ROM%'"
+					addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
+					addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% -cfg_directory $configdir/$_system/lr-mess/%CLEANBASENAME% -c -ui_active ${media[$index]} %ROM%'"
+					addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% -cfg_directory $configdir/$_system/lr-mess/%CLEANBASENAME% -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
+				fi
+				addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
+				addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -autoframeskip -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
+				addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -cfg_directory $configdir/$_system/mame/%CLEANBASENAME% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
+				addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -cfg_directory $configdir/$_system/mame/%CLEANBASENAME% -v -c -autoframeskip -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
+			else
+				if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]] && [[ -f $scriptdir/scriptmodules/run_mess.sh ]];then
+					addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$_script $_retroarch_bin $_mess_core $_config \\${systems[$index]} $biosdir/mame\\;$datadir/roms/$_system  -autoframeskip -cfg_directory $configdir/$_system/lr-mess -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+					addEmulator 0 "lr-run_mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$_script $_retroarch_bin $_mess_core $_config \\${systems[$index]} $biosdir/mame\\;$datadir/roms/$_system  -cfg_directory $configdir/$_system/lr-mess/%BASENAME% -autoframeskip -ui_active ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM%"
+				fi
+				if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
+					addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ -cfg_directory $configdir/$_system/lr-mess -c -ui_active ${media[$index]} %ROM%'"
+					addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
+					addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ -cfg_directory $configdir/$_system/lr-mess/%BASENAME% -c -ui_active ${media[$index]} %ROM%'"
+					addEmulator 0 "lr-mess-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core '${systems[$index]} ${ExtraPredefinedOptions[$index]} -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ -cfg_directory $configdir/$_system/lr-mess/%BASENAME% -c -ui_active -autoframeskip ${media[$index]} %ROM%'"
+				fi
+				addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
+				addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}${media[$index]}-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -autoframeskip -ui_active -statename $_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
+				addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -cfg_directory $configdir/$_system/mame/%BASENAME% -v -c -ui_active -statename $_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
+				addEmulator 0 "mame-${systems[$index]}${ExtraPredefinedLoaderName[$index]}-game-specific${media[$index]}-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -cfg_directory $configdir/$_system/mame/%BASENAME% -v -c -autoframeskip -ui_active -statename $_system/%BASENAME% ${systems[$index]} ${ExtraPredefinedOptions[$index]} ${media[$index]} %ROM% -view %BASENAME%"
+			fi
+		fi
+	done
 
 
-#part 13 : use all stored data to install runcommands for lr-mame, lr-mess and mame for loading handmade .cmd files or to run with basename
-# the none media mamedev system types have no extensions in the mamedev database
-# in order to switch between emulators at retropie rom boot
-# we have to add these extensions
-# otherwise extensions supported by other emulators will not be shown anymore
-echo "install basename runcommands for softlist loading"
-# grep function is used to get all extensions compatible with all possible emulation methods so switching within emulationstation is possible
-# grep searches in both platform.cfg and the ext/RetroPie-Share/platforms.cfg , so also extensions are added that are not in platform.cfg 
-# using grep this way can create double extension, but this should not be a problem
-##we have to use an if function to be sure this is only generated and installed once per system
-##the if function will check if the last created system is not equal to the next system in the array
-for index in "${!newsystems[@]}"; do 
-local platformextensionsrp=$(grep ${newsystems[$index]}_exts $scriptdir/platforms.cfg $scriptdir/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2)
-if [[ $SystemType == non-arcade ]];then
-	#plain commands
-	#lr-xxxx-cmd is used for loading .cmd files, amongst others
-	#single-quotes are used for loading lr-mess options
-	#adding 2 rompaths if available 
-	#option -cfg_directory is not added, it should use the propper directory
-	#in order to save files we need to add the savepaths to retroarch as options
-	#"-c -ui_active etc" is placed before "-rompath" and a / is added after the last rompath , this way the options are not added in the savestate filename
-	#only issue after is that the savestate filename still contains 1 space in the beginning of the filename and double quotes
-	#to fix this issue of double quotes the basename can be single quoted to remove them in the filename (we still have 1 space !) 
-	# if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
-	if [[ -n $(cat $rootdir/supplementary/runcommand/runcommand.sh|grep "extra replace") ]];then
-	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
-	    #addEmulator 0 "lr-mess-cmd" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -v -L $_mess_core %ROM%"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -frameskip 10 -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
-	    fi
-	else
-	    if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
-	    #addEmulator 0 "lr-mess-cmd" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config -v -L $_mess_core %ROM%"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
-	    addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -frameskip 10 -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
-	    fi
-	fi
-else
-	# if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
-	if [[ -n $(cat $rootdir/supplementary/runcommand/runcommand.sh|grep "extra replace") ]];then
-	    if [[ -f $rootdir/libretrocores/lr-mame/mamearcade_libretro.so ]];then
-	    addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
-	    addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -autoframeskip -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
-	    addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -frameskip 10 -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
-	    fi
-	else
-	    if [[ -f $rootdir/libretrocores/lr-mame/mamearcade_libretro.so ]];then
-	    addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
-	    addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -autoframeskip -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
-	    addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -frameskip 10 -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
-	    fi
-	fi
-fi
-	# if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
-	if [[ -n $(cat $rootdir/supplementary/runcommand/runcommand.sh|grep "extra replace") ]];then
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME% -view %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
-	else
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
-	addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
-	fi
-done
+	#part 13 : use all stored data to install runcommands for lr-mame, lr-mess and mame for loading handmade .cmd files or to run with basename
+	#the none media mamedev system types have no extensions in the mamedev database
+	#in order to switch between emulators at retropie rom boot
+	#we have to add these extensions
+	#otherwise extensions supported by other emulators will not be shown anymore
+	echo "install basename runcommands for softlist loading"
+	#grep function is used to get all extensions compatible with all possible emulation methods so switching within emulationstation is possible
+	#grep searches in both platform.cfg and the ext/RetroPie-Share/platforms.cfg , so also extensions are added that are not in platform.cfg 
+	#using grep this way can create double extension, but this should not be a problem
+	##we have to use an if function to be sure this is only generated and installed once per system
+	##the if function will check if the last created system is not equal to the next system in the array
+	for index in "${!newsystems[@]}";do 
+		local platformextensionsrp=$(grep ${newsystems[$index]}_exts $scriptdir/platforms.cfg $scriptdir/ext/RetroPie-Share/platforms.cfg | cut -d '"' -f 2)
+		if [[ $SystemType == non-arcade ]];then
+			#plain commands
+			#lr-xxxx-cmd is used for loading .cmd files, amongst others
+			#single-quotes are used for loading lr-mess options
+			#adding 2 rompaths if available 
+			#option -cfg_directory is not added, it should use the propper directory
+			#in order to save files we need to add the savepaths to retroarch as options
+			#"-c -ui_active etc" is placed before "-rompath" and a / is added after the last rompath , this way the options are not added in the savestate filename
+			#only issue after is that the savestate filename still contains 1 space in the beginning of the filename and double quotes
+			#to fix this issue of double quotes the basename can be single quoted to remove them in the filename (we still have 1 space !) 
+			#if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
+			if [[ -n $(cat $rootdir/supplementary/runcommand/runcommand.sh|grep "extra replace") ]];then
+				if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
+					addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
+					addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
+					addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -frameskip 10 -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% '%SOFTLIST%%BASENAME%''"
+				fi
+			else
+				if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
+					addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
+					addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -autoframeskip -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
+					addEmulator 0 "lr-mess$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mess_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mess -c -ui_active -frameskip 10 -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) '%BASENAME%''"
+				fi
+			fi
+		else
+			#if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
+			if [[ -n $(cat $rootdir/supplementary/runcommand/runcommand.sh|grep "extra replace") ]];then
+				if [[ -f $rootdir/libretrocores/lr-mame/mamearcade_libretro.so ]];then
+					addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
+					addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -autoframeskip -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
+					addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S %DQUOTE%%ROMDIR%%DQUOTE% -s %DQUOTE%%ROMDIR%%DQUOTE% -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -frameskip 10 -rompath %DQUOTE%$datadir/BIOS/mame;%ROMDIR%/%DQUOTE% '%BASENAME%''"
+				fi
+			else
+				if [[ -f $rootdir/libretrocores/lr-mame/mamearcade_libretro.so ]];then
+					addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
+					addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -autoframeskip -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
+					addEmulator 0 "lr-mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$_retroarch_bin --config $_config --appendconfig $_add_config_basename -S $datadir/roms/$_system -s $datadir/roms/$_system -v -L $_mame_core 'mame $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) -cfg_directory $configdir/$_system/lr-mame -c -ui_active -frameskip 10 -rompath $datadir/BIOS/mame;$datadir/roms/$_system/ '%BASENAME%''"
+				fi
+			fi
+		fi
+		#if using a patched runcommand.sh use these runcommands with extra repace tokens if not use the others without extra repace tokens
+		if [[ -n $(cat $rootdir/supplementary/runcommand/runcommand.sh|grep "extra replace") ]];then
+			addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME% -view %BASENAME%"
+			addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
+			addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;%DQUOTE%%ROMDIR%%DQUOTE% -v -c -ui_active -state_directory %DQUOTE%%ROMDIR%/mame/sta%DQUOTE% -statename %CLEANBASENAME% -state %CLEANBASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %ADDSLOT% %SOFTLIST%%BASENAME%  -view %BASENAME%"
+		else
+			addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
+			addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-autoframeskip" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -autoframeskip $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
+			addEmulator 0 "mame$(if [[ ${media[$index]} != "-none" ]];then echo -${systems[$index]};else echo ;fi)-basename-frameskip_10" "$_system" "$emudir/mame/mame -rompath $datadir/BIOS/mame\\;$datadir/roms/$_system -v -c -ui_active -statename $_system/%BASENAME% -frameskip 10 $([[ ${media[$index]} != "-none" ]] && echo ${systems[$index]}) $([[ $_system == *90º ]]&&echo "-rol") $([[ -z "$2" ]]  && [[ -n ${ExtraPredefinedOptions[@]} ]] && echo ${ExtraPredefinedOptions[${#ExtraPredefinedOptions[@]}-1]}) %BASENAME% -view %BASENAME%"
+		fi
+	done
 	#sort the emulators.cfg file
 	sort -o $_emulatorscfg $_emulatorscfg
 	#if containing a default line then remember the default line,
 	#delete it, remove the empty line and put it back at the end of the file
-	cat $_emulatorscfg|while read line
-	do if [[ $line == default* ]]; then 
-	sed -i "s/$line//g" $_emulatorscfg
-	#https://stackoverflow.com/questions/16414410/delete-empty-lines-using-sed
-	sed -i -r "/^\s*$/d" $_emulatorscfg
-	echo $line >> $_emulatorscfg
-	fi
+	cat $_emulatorscfg|while read line;do
+		if [[ $line == default* ]];then 
+			sed -i "s/$line//g" $_emulatorscfg
+			#https://stackoverflow.com/questions/16414410/delete-empty-lines-using-sed
+			sed -i -r "/^\s*$/d" $_emulatorscfg
+			echo $line >> $_emulatorscfg
+		fi
 	done
 	chown $user:$user "$_emulatorscfg"
 
 
-#part 14 : add config patches
-# PATCH 1 : cdmono1 => enable 4:3 screen, mouse and all mouse buttons using lr-mess
-if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
-    if [[ $1 == cdimono1 ]];then
-    show_message_mamedev "\
+	#part 14 : add config patches
+	#PATCH 1 : cdmono1 => enable 4:3 screen, mouse and all mouse buttons using lr-mess
+	if [[ -f $rootdir/libretrocores/lr-mess/mamemess_libretro.so ]];then
+		if [[ $1 == cdimono1 ]];then
+			show_message_mamedev "\
 After pressing ok a patch will be installed for cdimono1.\n\n\
 Patch cdimono1 retroarch.cfg for lr-mess to :\n\
 - assign the mouse buttons as joystick buttons to get mouse working !!!\n\
 - assign right-alt as grab_mouse_toggle key for matching mouse movements to the host enviroment when running in desktop mode !!!\n\n\
 The config is written in :\n\
 $rootdir/configs/cdimono1/"
-    #using sed here to keep ownership of the retroarch.cfg file correct (solution used with cdimono1.cfg will not work)
-    if  [[ "$(cat $rootdir/configs/cdimono1/retroarch.cfg)" != *input_player1_b_mbtn* ]]
-    then 
-    # adding 'input_player1_b_mbtn = "2"' line  below info line
-    sed -i s/line/line\\ninput\_player1\_b\_mbtn\ \=\ \"2\"/g  "$rootdir/configs/cdimono1/retroarch.cfg"
-    fi
-    if  [[ "$(cat $rootdir/configs/cdimono1/retroarch.cfg)" != *input_player1_a_mbtn* ]]
-    then 
-    # adding 'input_player1_a_mbtn = "1"' line below info line
-    sed -i s/line/line\\ninput\_player1\_a\_mbtn\ \=\ \"1\"/g "$rootdir/configs/cdimono1/retroarch.cfg"
-    fi
-    if  [[ "$(cat $rootdir/configs/cdimono1/retroarch.cfg)" != *input_grab_mouse_toggle* ]]
-    then 
-    # adding 'input_grab_mouse_toggle = shift' line  below info line
-    sed -i s/line/line\\ninput\_grab\_mouse\_toggle\ \=\ shift/g "$rootdir/configs/cdimono1/retroarch.cfg"
-    fi
-    show_message_mamedev "\
+			#using sed here to keep ownership of the retroarch.cfg file correct (solution used with cdimono1.cfg will not work)
+			if  [[ "$(cat $rootdir/configs/cdimono1/retroarch.cfg)" != *input_player1_b_mbtn* ]];then
+				#adding 'input_player1_b_mbtn = "2"' line  below info line
+				sed -i s/line/line\\ninput\_player1\_b\_mbtn\ \=\ \"2\"/g  "$rootdir/configs/cdimono1/retroarch.cfg"
+			fi
+			if  [[ "$(cat $rootdir/configs/cdimono1/retroarch.cfg)" != *input_player1_a_mbtn* ]];then 
+				#adding 'input_player1_a_mbtn = "1"' line below info line
+				sed -i s/line/line\\ninput\_player1\_a\_mbtn\ \=\ \"1\"/g "$rootdir/configs/cdimono1/retroarch.cfg"
+			fi
+			if  [[ "$(cat $rootdir/configs/cdimono1/retroarch.cfg)" != *input_grab_mouse_toggle* ]];then
+				#adding 'input_grab_mouse_toggle = shift' line  below info line
+				sed -i s/line/line\\ninput\_grab\_mouse\_toggle\ \=\ shift/g "$rootdir/configs/cdimono1/retroarch.cfg"
+			fi
+			show_message_mamedev "\
 After pressing ok a patch will be installed for cdimono1.\n\n\
 Patch the mame cdimono1.cfg for lr-mess to :\n\
 - assign the joystick buttons as mouse buttons to get mouse working !!!\n\
 - show standard 4:3 screen !!!\n\n
 The config is written in :\n\
 $rootdir/configs/cdimono1/lr-mess"
-    mv $rootdir/configs/cdimono1/lr-mess/cdimono1.cfg $rootdir/configs/cdimono1/lr-mess/cdimono1.cfg.bak 2>&-
-    mkdir $rootdir/configs/cdimono1/lr-mess 2>&-
-    cat >$rootdir/configs/cdimono1/lr-mess/cdimono1.cfg << _EOF_
+			mv $rootdir/configs/cdimono1/lr-mess/cdimono1.cfg $rootdir/configs/cdimono1/lr-mess/cdimono1.cfg.bak 2>&-
+			mkdir $rootdir/configs/cdimono1/lr-mess 2>&-
+			cat >$rootdir/configs/cdimono1/lr-mess/cdimono1.cfg << _EOF_
 <?xml version="1.0"?>
 <!-- This file is autogenerated; comments and unknown tags will be stripped -->
 <mameconfig version="10">
@@ -3390,21 +3384,21 @@ $rootdir/configs/cdimono1/lr-mess"
     </system>
 </mameconfig>
 _EOF_
-    chown -R $user:$user "$rootdir/configs/cdimono1/lr-mess" 2>&-
-fi
-fi
+			chown -R $user:$user "$rootdir/configs/cdimono1/lr-mess" 2>&-
+		fi
+	fi
 
-# PATCH 2 : cdmono1 => enable 4:3 screen using mame
-if [[ $1 == cdimono1 ]];then
-show_message_mamedev "\
+	#PATCH 2 : cdmono1 => enable 4:3 screen using mame
+	if [[ $1 == cdimono1 ]];then
+		show_message_mamedev "\
 After pressing ok a patch will be installed for cdimono1.\n\n\
 Patch mame cdimono1.cfg for standalone mame to :\n\
 - show standard 4:3 screen !!!\n\n\
 The config is written in :\n\
 $datadir/roms/mame/cfg"
-mv $datadir/roms/mame/cfg/cdimono1.cfg $datadir/roms/mame/cfg/cdimono1.cfg.bak 2>&-
-mkdir $datadir/roms/mame/cfg 2>&-
-cat >$datadir/roms/mame/cfg/cdimono1.cfg << _EOF_
+		mv $datadir/roms/mame/cfg/cdimono1.cfg $datadir/roms/mame/cfg/cdimono1.cfg.bak 2>&-
+		mkdir $datadir/roms/mame/cfg 2>&-
+		cat >$datadir/roms/mame/cfg/cdimono1.cfg << _EOF_
 <?xml version="1.0"?>
 <!-- This file is autogenerated; comments and unknown tags will be stripped -->
 <mameconfig version="10">
@@ -3422,282 +3416,275 @@ cat >$datadir/roms/mame/cfg/cdimono1.cfg << _EOF_
     </system>
 </mameconfig>
 _EOF_
-chown -R $user:$user "$datadir/roms/mame/cfg" 2>&-
-fi
-if [[ $8 != 0 ]];then
-echo
-echo ------------------------------------
-echo check for extra runcommands installs
-echo ------------------------------------
-#${10} will be filled with non-arcade or arcade
-[[ -z "$2" ]] && [[ ${systems[-1]} == apple2 ]] && install_system_mamedev apple2 apple2 '-bios autostart -gameio joy' floppydisk1 flop1 '.mfi .dfi .dsk .do .po .rti .edd .woz .nib .wav .flac' -autostart_joy '0' '' ${10}
-[[ -z "$2" ]] && [[ ${systems[-1]} == ep128 ]] && install_system_mamedev ep128 ep128 basic21*-exp*exdos floppydisk flop .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -basic21_exdos 1 '' ${10}
-[[ $8 == 1 ]] && [[ ${systems[-1]} == ep128 ]] && install_system_mamedev ep128 ep128 -exp*exdos*-exp:exdos:u1:1*35dd*-flop1*isdos floppydisk2 flop2 .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -exdos_isdos '0' '' ${10}
-fi
+		chown -R $user:$user "$datadir/roms/mame/cfg" 2>&-
+	fi
+	if [[ $8 != 0 ]];then
+		echo
+		echo "------------------------------------"
+		echo "check for extra runcommands installs"
+		echo "------------------------------------"
+		#${10} will be filled with non-arcade or arcade
+		[[ -z "$2" ]] && [[ ${systems[-1]} == apple2 ]] && install_system_mamedev apple2 apple2 '-bios autostart -gameio joy' floppydisk1 flop1 '.mfi .dfi .dsk .do .po .rti .edd .woz .nib .wav .flac' -autostart_joy '0' '' ${10}
+		[[ -z "$2" ]] && [[ ${systems[-1]} == ep128 ]] && install_system_mamedev ep128 ep128 basic21*-exp*exdos floppydisk flop .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -basic21_exdos 1 '' ${10}
+		[[ $8 == 1 ]] && [[ ${systems[-1]} == ep128 ]] && install_system_mamedev ep128 ep128 -exp*exdos*-exp:exdos:u1:1*35dd*-flop1*isdos floppydisk2 flop2 .wav*.bin*.rom*.mfi*.dfi*.hfe*.mfm*.td0*.imd*.d77*.d88*.1dd*.cqm*.cqi*.dsk*.img -exdos_isdos '0' '' ${10}
+	fi
 }
 
 
 function show_message_mamedev() {
-dialog --colors --backtitle "$__backtitle" --msgbox "$1" 22 76 2>&1 >/dev/tty
+	dialog --colors --backtitle "$__backtitle" --msgbox "$1" 22 76 2>&1 >/dev/tty
 }
 
 
 function show_message_yesno_mamedev() {
-dialog --colors --backtitle "$__backtitle" --yesno "$1" 22 76 2>&1 >/dev/tty
-# Get exit status
-# 0 means user hit [yes] button.
-# 1 means user hit [no] button.
-# 255 means user hit [Esc] key.
-response=$?
-case $response in
-   0) $2;;
-   1) $3;;
-   255) echo "[ESC] key pressed.";;
-esac
+	dialog --colors --backtitle "$__backtitle" --yesno "$1" 22 76 2>&1 >/dev/tty
+	#Get exit status
+	#0 means user hit [yes] button.
+	#1 means user hit [no] button.
+	#255 means user hit [Esc] key.
+	response=$?
+	case $response in
+		0) $2;;
+		1) $3;;
+		255) echo "[ESC] key pressed.";;
+	esac
 }
 
 
 function download_extra_files_mamedev() {
-#when used for cheats, see https://www.mamecheat.co.uk/
-#when used for samples, see https://www.progettosnaps.net/samples/
-clear
-echo "get the $3 file and extract the files in the correct paths to :"
-echo "- $datadir/roms/mame/$3"
-echo "- $datadir/BIOS/mame/$3"
-echo
-#$1=weblink/gd-id $2=filename $3=mame-folder $4=file_within_compressed_file_if_necessary $5=uncompress_extracted__7z_file
-if [[ $3 == "cheat" ]];then
-	su $user -c "curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | /home/$user/.local/bin/uv run --python 3.11 - https://drive.google.com/file/d/$1 -m -P /tmp"
-else
-	wget -N -P /tmp $1/$2
-fi
-#folderpath for mame
-unzip -o /tmp/${2} $4 -d $datadir/roms/mame/$3
-if [[ $5 == extract_7z ]];then
-7za -y x $datadir/roms/mame/$3/$4 -o$datadir/roms/mame/$3
-rm $datadir/roms/mame/$3/$4
-fi
-chown -R $user:$user "$datadir/roms/mame/$3" 
-#folderpath for lr-mame/lr-mess
-unzip -o /tmp/${2} $4 -d $datadir/BIOS/mame/$3
-if [[ $5 == extract_7z ]];then
-7za -y x $datadir/BIOS/mame/$3/$4 -o$datadir/BIOS/mame/$3
-rm $datadir/BIOS/mame/$3/$4
-fi
-chown -R $user:$user "$datadir/BIOS/mame/$3" 
-rm /tmp/${2}
-#see what has been done
-sleep 5
+	#when used for cheats, see https://www.mamecheat.co.uk/
+	#when used for samples, see https://www.progettosnaps.net/samples/
+	clear
+	echo "get the $3 file and extract the files in the correct paths to :"
+	echo "- $datadir/roms/mame/$3"
+	echo "- $datadir/BIOS/mame/$3"
+	echo
+	#$1=weblink/gd-id $2=filename $3=mame-folder $4=file_within_compressed_file_if_necessary $5=uncompress_extracted__7z_file
+	if [[ $3 == "cheat" ]];then
+		su $user -c "curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | /home/$user/.local/bin/uv run --python 3.11 - https://drive.google.com/file/d/$1 -m -P /tmp"
+	else
+		wget -N -P /tmp $1/$2
+	fi
+	#folderpath for mame
+	unzip -o /tmp/${2} $4 -d $datadir/roms/mame/$3
+	if [[ $5 == extract_7z ]];then
+		7za -y x $datadir/roms/mame/$3/$4 -o$datadir/roms/mame/$3
+		rm $datadir/roms/mame/$3/$4
+	fi
+	chown -R $user:$user "$datadir/roms/mame/$3" 
+	#folderpath for lr-mame/lr-mess
+	unzip -o /tmp/${2} $4 -d $datadir/BIOS/mame/$3
+	if [[ $5 == extract_7z ]];then
+		7za -y x $datadir/BIOS/mame/$3/$4 -o$datadir/BIOS/mame/$3
+		rm $datadir/BIOS/mame/$3/$4
+	fi
+	chown -R $user:$user "$datadir/BIOS/mame/$3" 
+	rm /tmp/${2}
+	#see what has been done
+	sleep 5
 }
 
 
 function organise_realistic_overlays_mamedev() {
-rm $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/* 2>&1
-#the original files are hosted here (checked on 16-01-2024):
-#- http://www.mediafire.com/file/q14d077q2mhcoj9/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip/file (594 Mb) (Apr 25, 2020, 4:39 PM)
-#- http://www.mediafire.com/file/s2ps82u7y6ixrgw/Orionsangels_Arcade_Overlays_For_Retroarch_Part2.zip/file (241 Mb) (May 15, 2020, 9:53 PM)
-#- https://www.mediafire.com/file/hccfnym0l26cn78/Orionsangels_Arcade_Overlays_For_Retroarch_Part3.zip/file (168 Mb) (Mar 30, 2021, 6:56 AM)
-#- http://www.mediafire.com/file/5d47jcbkhawuw8v/Orionsangels_Retroarch_Bezel_Collection.zip/file (described as complete archive up until ???) (1.2 Gb)
-#above files can probably be used to update things in the future when needed
-#next file is hosted on gdrive and most likely a selection of parts that were available at the time of creation
-unzip -u $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie.zip -d $datadir/downloads
-chown -R $user:$user $datadir/downloads
-# we want to convert the viewport values on the fly
-# the original files are made for the resolution 1920x1080
-# so if we want to re-calculate the values when using, for example 1600x900,
-# when the value is extracted, we can do it like this for the width (x) :  $(($value * 1600/1920)) , or for the height (y) : $(($value * 900/1080))
-# with "fbset -s" we can extract the resolution in a linux (without or with desktop enviroment)
-# with "xrandr" we can extract the correct resolution in a linux when changed with xrandr
-# so we check "xrandr" first and if we don't have a value we use "fbset"
-if [[ -n $(xrandr) ]];then echo -e "\nusing xrandr for detecting host resolution\n";else echo -e "\nusing xrandr for detecting host resolution\n";fi
-value_height_y=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f5);else echo $(fbset -s|grep geo|cut -d " " -f7);fi)
-value_width_x=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f4);else echo $(fbset -s|grep geo|cut -d " " -f6);fi)
+	rm $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/* 2>&1
+	#the original files are hosted here (checked on 16-01-2024):
+	#- http://www.mediafire.com/file/q14d077q2mhcoj9/Orionsangels_Arcade_Overlays_For_Retroarch_Part1.zip/file (594 Mb) (Apr 25, 2020, 4:39 PM)
+	#- http://www.mediafire.com/file/s2ps82u7y6ixrgw/Orionsangels_Arcade_Overlays_For_Retroarch_Part2.zip/file (241 Mb) (May 15, 2020, 9:53 PM)
+	#- https://www.mediafire.com/file/hccfnym0l26cn78/Orionsangels_Arcade_Overlays_For_Retroarch_Part3.zip/file (168 Mb) (Mar 30, 2021, 6:56 AM)
+	#- http://www.mediafire.com/file/5d47jcbkhawuw8v/Orionsangels_Retroarch_Bezel_Collection.zip/file (described as complete archive up until ???) (1.2 Gb)
+	#above files can probably be used to update things in the future when needed
+	#next file is hosted on gdrive and most likely a selection of parts that were available at the time of creation
+	unzip -u $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie.zip -d $datadir/downloads
+	chown -R $user:$user $datadir/downloads
+	#we want to convert the viewport values on the fly
+	#the original files are made for the resolution 1920x1080
+	#so if we want to re-calculate the values when using, for example 1600x900,
+	#when the value is extracted, we can do it like this for the width (x) :  $(($value * 1600/1920)) , or for the height (y) : $(($value * 900/1080))
+	#with "fbset -s" we can extract the resolution in a linux (without or with desktop enviroment)
+	#with "xrandr" we can extract the correct resolution in a linux when changed with xrandr
+	#so we check "xrandr" first and if we don't have a value we use "fbset"
+	if [[ -n $(xrandr) ]];then echo -e "\nusing xrandr for detecting host resolution\n";else echo -e "\nusing xrandr for detecting host resolution\n";fi
+	value_height_y=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f5);else echo $(fbset -s|grep geo|cut -d " " -f7);fi)
+	value_width_x=$(if [[ -n $(xrandr) ]];then echo $(xrandr 2>&1|grep \*|sed 's/x/ /'|cut -d " " -f4);else echo $(fbset -s|grep geo|cut -d " " -f6);fi)
 
-for cfg_file in $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/*.cfg
-do
- if
- [[ "$cfg_file"  != *.zip.cfg ]];then
- echo "patching $(echo $cfg_file|cut -d/ -f10) for "$value_width_x"x"$value_height_y", creating a.zip.cfg and a .7z.cfg"
- sed -i "s|[:]|\/home\/$user\/$(echo $romdir|cut -d/ -f4)\/downloads\/Orionsangels_Realistic_Overlays_For_RetroPie\/Retroarch|g;s|[\]|\/|g" "$cfg_file"
- echo input_overlay_enable = true  >> "$cfg_file"
- echo aspect_ratio_index = \"23\" >> "$cfg_file"
- if [[ -f $rootdir/configs/all/retroarch/shaders/fake-crt-geom.glslp ]];then
- echo video_shader = \"$rootdir/configs/all/retroarch/shaders/fake-crt-geom.glslp\" >> "$cfg_file"
- else
- echo video_shader = \"$rootdir/configs/all/retroarch/shaders/crt/crt-geom.glslp\" >> "$cfg_file"
- fi
- value=$(cat "$cfg_file"|grep _height|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
- value=$(cat "$cfg_file"|grep _width|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
- value=$(cat "$cfg_file"|grep _x|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
- value=$(cat "$cfg_file"|grep _y|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
- mv "$cfg_file" "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')"
- cp "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')" "$(echo $cfg_file|sed 's/\.cfg/\.7z\.cfg/')"
- fi
-done
-echo -e "\nmove all .zip.cfg and .7z.cfg files to $datadir/roms/realistic\n"
-sleep 2
-mv -f $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/*.cfg $datadir/roms/realistic
-chown -R $user:$user $datadir/roms/realistic
+	for cfg_file in $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/*.cfg;do
+		if
+			[[ "$cfg_file"  != *.zip.cfg ]];then
+			echo "patching $(echo $cfg_file|cut -d/ -f10) for "$value_width_x"x"$value_height_y", creating a.zip.cfg and a .7z.cfg"
+			sed -i "s|[:]|\/home\/$user\/$(echo $romdir|cut -d/ -f4)\/downloads\/Orionsangels_Realistic_Overlays_For_RetroPie\/Retroarch|g;s|[\]|\/|g" "$cfg_file"
+			echo input_overlay_enable = true  >> "$cfg_file"
+			echo aspect_ratio_index = \"23\" >> "$cfg_file"
+			if [[ -f $rootdir/configs/all/retroarch/shaders/fake-crt-geom.glslp ]];then
+				echo video_shader = \"$rootdir/configs/all/retroarch/shaders/fake-crt-geom.glslp\" >> "$cfg_file"
+			else
+				echo video_shader = \"$rootdir/configs/all/retroarch/shaders/crt/crt-geom.glslp\" >> "$cfg_file"
+			fi
+			value=$(cat "$cfg_file"|grep _height|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
+			value=$(cat "$cfg_file"|grep _width|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
+			value=$(cat "$cfg_file"|grep _x|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_width_x/1920))/g" "$cfg_file"
+			value=$(cat "$cfg_file"|grep _y|cut -d '"' -f2);sed -i "s/$value/$(($value * $value_height_y/1080))/g" "$cfg_file"
+			mv "$cfg_file" "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')"
+			cp "$(echo $cfg_file|sed 's/\.cfg/\.zip\.cfg/')" "$(echo $cfg_file|sed 's/\.cfg/\.7z\.cfg/')"
+		fi
+	done
+	echo -e "\nmove all .zip.cfg and .7z.cfg files to $datadir/roms/realistic\n"
+	sleep 2
+	mv -f $datadir/downloads/Orionsangels_Realistic_Overlays_For_RetroPie/Retroarch/config/MAME/*.cfg $datadir/roms/realistic
+	chown -R $user:$user $datadir/roms/realistic
 }
 
 
 function download_from_google_drive_mamedev() {
-clear
-echo "get all files and put these in the correct path"
-echo
-su $user -c "curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | \
+	clear
+	echo "get all files and put these in the correct path"
+	echo
+	su $user -c "curl https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py | \
 /home/$user/.local/bin/uv run --python 3.11 - https://drive.google.com/drive/folders/$1 -m -P \"$2\""
-#wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
-#python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P $rootdir/configs/all/emulationstation/gamelists
-chown -R $user:$user "$2"
-#rm /tmp/gdrivedl.py
+	#wget -nv -O /tmp/gdrivedl.py https://raw.githubusercontent.com/matthuisman/gdrivedl/master/gdrivedl.py
+	#python /tmp/gdrivedl.py https://drive.google.com/drive/folders/1f_jXMG0XMBdyOOBpz8CHM6AFj9vC1R6m -P $rootdir/configs/all/emulationstation/gamelists
+	chown -R $user:$user "$2"
+	#rm /tmp/gdrivedl.py
 }
 
 
 function download_from_github_mamedev() {
-clear
-#$1 = github_directory $2=target_directory $3=extension_of_the_multiple_files
-echo "get all files and put these in the correct path"
-echo
-curl -s https://github.com/$1|sed 's/name/name\n/g'|grep \.$3|cut -d\" -f 3|grep \.$3|while read github_file
-do 
-echo downloading $github_file to $2
-curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $github_file|sed 's/ /%20/g') > "$2/$github_file"
-chown $user:$user "$2/$github_file"
-done
+	clear
+	#$1 = github_directory $2=target_directory $3=extension_of_the_multiple_files
+	echo "get all files and put these in the correct path"
+	echo
+	curl -s https://github.com/$1|sed 's/name/name\n/g'|grep \.$3|cut -d\" -f 3|grep \.$3|while read github_file
+	do 
+		echo downloading $github_file to $2
+		curl https://raw.githubusercontent.com/$(echo $1|sed 's/\/tree//g')/$(echo $github_file|sed 's/ /%20/g') > "$2/$github_file"
+		chown $user:$user "$2/$github_file"
+	done
 }
 
 
 function download_file_mamedev() {
-clear
-echo "getting your desired file : $(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))"
-mkdir -p $3
-#show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
-#$1=filename $2=weblink $3=to_path
-#sed is used to remove html url encoding, more is described in function subform_archive_download_mamedev
-if [[ ! -f "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]]; then
-    wget -q --show-progress --progress=bar:force -t2 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
-else 
-    read -r -p "File exists or partly exists !, do you want to Overwrite or Continue ? [O/C] " response
-    if [[ "$response" =~ ^([cC])$ ]];then 
-        wget -q --show-progress --progress=bar:force -t2 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
-    else
-        wget -q --show-progress --progress=bar:force -t2 -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
-    fi
-fi
-[[ $3 == */BIOS/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-5)"
-[[ $3 == */downloads/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-5)"
-[[ $3 == */roms/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-6)"
+	clear
+	echo "getting your desired file : $(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))"
+	mkdir -p $3
+	#show a wget progress bar => https://stackoverflow.com/questions/4686464/how-can-i-show-the-wget-progress-bar-only
+	#$1=filename $2=weblink $3=to_path
+	#sed is used to remove html url encoding, more is described in function subform_archive_download_mamedev
+	if [[ ! -f "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" ]];then
+		wget -q --show-progress --progress=bar:force -t2 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
+	else 
+		read -r -p "File exists or partly exists !, do you want to Overwrite or Continue ? [O/C] " response
+		if [[ "$response" =~ ^([cC])$ ]];then 
+			wget -q --show-progress --progress=bar:force -t2 -c -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
+		else
+			wget -q --show-progress --progress=bar:force -t2 -w1 -O "$3/$(echo -e $(echo $1|sed -r 's/%([[:xdigit:]]{2})/\\x\1/g'))" $([[ $2 != http* ]] && echo https://)$2/$1 2>&1
+		fi
+	fi
+	[[ $3 == */BIOS/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-5)"
+	[[ $3 == */downloads/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-5)"
+	[[ $3 == */roms/* ]] && chown -R $user:$user "$(echo $3|cut -d/ -f-6)"
 }
 
 
 function create_background_overlays_mamedev() {
-clear
-echo "extract background files from mame artwork, if available, and create custom retroarch configs for overlay's"
-echo
-#added handheld arrays, used for overlays
-#this is an example command to extract the systems and add them here to the array :
-#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
-IFS=$'\n' 
-classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-tigerh=($(cut -d "," -f 2 <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-gameandwatch=($(cut -d "," -f 2 <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-unset IFS
+	clear
+	echo "extract background files from mame artwork, if available, and create custom retroarch configs for overlay's"
+	echo
+	#added handheld arrays, used for overlays
+	#this is an example command to extract the systems and add them here to the array :
+	#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+	IFS=$'\n' 
+	classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+	konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+	tigerh=($(cut -d "," -f 2 <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+	gameandwatch=($(cut -d "," -f 2 <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+	unset IFS
 
+	#create a subarray of the arrays being used for overlays
+	#now only two for loops can be use for multiple arrays
+	systems=("classich" "konamih" "tigerh" "gameandwatch")
 
-#create a subarray of the arrays being used for overlays
-#now only two for loops can be use for multiple arrays
-systems=("classich" "konamih" "tigerh" "gameandwatch")
-
-#use multiple arrays over one for loop:
-#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
-for system in "${systems[@]}"; do
-    declare -n games="$system"
-    #echo "system name: ${system} with system members: ${games[@]}"
-    for game in "${games[@]}"; do
-        #echo -en "\tworking on name $game of the $system system\n"
-        mkdir -p "$datadir/roms/$system/media/retroarch/overlays"
-	#extract Background files,if existing in zip, from mame artwork files // issue not all artwork files have Background.png
-        unzip $datadir/roms/mame/artwork/$game.zip Background.png -d $datadir/roms/mame/artwork 2>/dev/null
-        checkforbackground=$(ls $datadir/roms/mame/artwork/Background.png 2> /dev/null)
-        if [[ -n $checkforbackground ]]
-        then
-        mv $datadir/roms/mame/artwork/Background.png  $datadir/roms/$system/media/retroarch/overlays/$game.png 2>/dev/null
-	#create configs
-	cat > "$datadir/roms/$system/$game.zip.cfg" << _EOF_
+	#use multiple arrays over one for loop:
+	#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
+	for system in "${systems[@]}";do
+		declare -n games="$system"
+		#echo "system name: ${system} with system members: ${games[@]}"
+		for game in "${games[@]}";do
+			#echo -en "\tworking on name $game of the $system system\n"
+			mkdir -p "$datadir/roms/$system/media/retroarch/overlays"
+			#extract Background files,if existing in zip, from mame artwork files // issue not all artwork files have Background.png
+			unzip $datadir/roms/mame/artwork/$game.zip Background.png -d $datadir/roms/mame/artwork 2>/dev/null
+			checkforbackground=$(ls $datadir/roms/mame/artwork/Background.png 2> /dev/null)
+			if [[ -n $checkforbackground ]];then
+				mv $datadir/roms/mame/artwork/Background.png  $datadir/roms/$system/media/retroarch/overlays/$game.png 2>/dev/null
+				#create configs
+				cat > "$datadir/roms/$system/$game.zip.cfg" << _EOF_
 input_overlay =  ~/${datadir##*/}/roms/$system/media/retroarch/overlays/$game.cfg
 input_overlay_enable = true
 input_overlay_opacity = 0.500000
 input_overlay_scale = 1.000000
 _EOF_
-        cp "$datadir/roms/$system/$game.zip.cfg" "$datadir/roms/$system/$game.7z.cfg"
-        #
-	cat > "$datadir/roms/$system/media/retroarch/overlays/$game.cfg" << _EOF_
+				cp "$datadir/roms/$system/$game.zip.cfg" "$datadir/roms/$system/$game.7z.cfg"
+				#
+				cat > "$datadir/roms/$system/media/retroarch/overlays/$game.cfg" << _EOF_
 overlays = 1
 overlay0_overlay = $game.png
 overlay0_full_screen = false
 overlay0_descs = 0
 _EOF_
-        fi 
-    done
-chown -R $user:$user "$datadir/roms/$system"
-done
+			fi 
+		done
+		chown -R $user:$user "$datadir/roms/$system"
+	done
 }
 
 
 function create_bezel_overlays_mamedev() {
-clear
-echo "extract bezel files from mame artwork, if available, and create custom retroarch configs for bezels"
-echo
-#added handheld arrays, used for overlays
-#this is an example command to extract the systems and add them here to the array :
-#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
-IFS=$'\n' 
-classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-tigerh=($(cut -d "," -f 2 <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-gameandwatch=($(cut -d "," -f 2 <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
-unset IFS
+	clear
+	echo "extract bezel files from mame artwork, if available, and create custom retroarch configs for bezels"
+	echo
+	#added handheld arrays, used for overlays
+	#this is an example command to extract the systems and add them here to the array :
+	#classich=( "\"$(cat mame_systems_dteam_classich|cut -d " " -f2)\"" );echo ${classich[@]}|sed 's/ /\" \"/g'
+	IFS=$'\n' 
+	classich=($(cut -d "," -f 2 <<<$(awk /@classich/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+	konamih=($(cut -d "," -f 2 <<<$(awk /@konamih/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+	tigerh=($(cut -d "," -f 2 <<<$(awk /@tigerh/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+	gameandwatch=($(cut -d "," -f 2 <<<$(awk /@gameandwatch/<<<$(sed 's/\" \"/\"\n\"/g'<<<"${mamedev_csv[*]}"))))
+	unset IFS
 
+	#create a subarray of the arrays being used for overlays
+	#now only two for loops can be use for multiple arrays
+	systems=("classich" "konamih" "tigerh" "gameandwatch")
 
-#create a subarray of the arrays being used for overlays
-#now only two for loops can be use for multiple arrays
-systems=("classich" "konamih" "tigerh" "gameandwatch")
-
-#use multiple arrays over one for loop:
-#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
-for system in "${systems[@]}"; do
-    declare -n games="$system"
-    #echo "system name: ${system} with system members: ${games[@]}"
-    for game in "${games[@]}"; do
-        #echo -en "\tworking on name $game of the $system system\n"
-        mkdir -p "$datadir/roms/$system/media/retroarch/bezels"
-	#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel-16-9.png or Bezel-4-3.png
-        unzip $datadir/roms/mame/artwork/$game.zip Bezel$1.png -d $datadir/roms/mame/artwork 2>/dev/null
-        checkforbezel=$(ls $datadir/roms/mame/artwork/Bezel$1.png 2> /dev/null)
-        if [[ -n $checkforbezel ]]
-        then
-        mv $datadir/roms/mame/artwork/Bezel$1.png  $datadir/roms/$system/media/retroarch/bezels/$game.png 2>/dev/null
-	#create configs
-	cat > "$datadir/roms/$system/$game.zip.cfg" << _EOF_
+	#use multiple arrays over one for loop:
+	#https://unix.stackexchange.com/questions/545502/bash-array-of-arrays
+	for system in "${systems[@]}";do
+		declare -n games="$system"
+		#echo "system name: ${system} with system members: ${games[@]}"
+		for game in "${games[@]}";do
+			#echo -en "\tworking on name $game of the $system system\n"
+			mkdir -p "$datadir/roms/$system/media/retroarch/bezels"
+			#extract Bezel files,if existing in zip, from mame artwork files // not all artwork files have Bezel-16-9.png or Bezel-4-3.png
+			unzip $datadir/roms/mame/artwork/$game.zip Bezel$1.png -d $datadir/roms/mame/artwork 2>/dev/null
+			checkforbezel=$(ls $datadir/roms/mame/artwork/Bezel$1.png 2> /dev/null)
+			if [[ -n $checkforbezel ]];then
+				mv $datadir/roms/mame/artwork/Bezel$1.png  $datadir/roms/$system/media/retroarch/bezels/$game.png 2>/dev/null
+				#create configs
+				cat > "$datadir/roms/$system/$game.zip.cfg" << _EOF_
 input_overlay =  ~/${datadir##*/}/roms/$system/media/retroarch/bezels/$game.cfg
 input_overlay_enable = true
 input_overlay_opacity = 0.700000
 input_overlay_scale = 1.000000
 _EOF_
-        cp "$datadir/roms/$system/$game.zip.cfg" "$datadir/roms/$system/$game.7z.cfg"
-        #
-	cat > "$datadir/roms/$system/media/retroarch/bezels/$game.cfg" << _EOF_
+				cp "$datadir/roms/$system/$game.zip.cfg" "$datadir/roms/$system/$game.7z.cfg"
+				#
+				cat > "$datadir/roms/$system/media/retroarch/bezels/$game.cfg" << _EOF_
 overlays = 1
 overlay0_overlay = $game.png
 overlay0_full_screen = true
 overlay0_descs = 0
 _EOF_
-        fi 
-    done
-chown -R $user:$user "$datadir/roms/$system"
-done
+			fi 
+		done
+		chown -R $user:$user "$datadir/roms/$system"
+	done
 }
-
-
