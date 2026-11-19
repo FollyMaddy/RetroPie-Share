@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-18 (289)"
+rp_module_version="0290.pre-beta-19 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
 	rp_module_version_mame="$($emudir/mame/mame -version)"
@@ -83,7 +83,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 		show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-18 :\n\
+290.pre-beta-19 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper and functions (server down)\n\
@@ -98,6 +98,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 - uniform padding and clean up\n
 - turn-off obsolete menu items (not removed yet)\n
 - remove one-time-info of older versions\n
+- basic implementation of mamehotkeys.sh from DTEAM\n
 "
 		#check if mame is installed and which version
 		xattr -w user.comment "x" $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi)
@@ -956,6 +957,38 @@ function subgui_systems_extras_add_autoboot_mamedev() {
 }
 
 
+function subgui_joystick_configurations_mamedev () {
+	local csv=()
+    csv=(
+",menu_item,,to_do,,,,,help_to_do,"
+",►MAME gamepad hotkeys enhancement by @DTEAM,,subgui_joystick_mamehotkeys_mamedev,,,,,show_message_mamedev \"Go to the submenu and install/remove or run mamehotkeys.sh\","
+",,,,,,,,,"
+",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
+",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
+	)
+    build_menu_mamedev
+}
+
+
+function subgui_joystick_mamehotkeys_mamedev () {
+    [[ $1 != refresh ]] && local csv=()
+    csv=(
+",menu_item,,to_do,,,,,help_to_do,"
+	)
+	if [[ -f /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh ]];then
+		csv+=(
+",Run mamehotkeys.sh,,su $user -c 'bash /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh || true';sleep 5;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option will run mamehotkeys.sh from :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\","
+",Remove mamehotkeys.sh,,rm -f /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option will remove mamehotkeys.sh from :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\","
+		)
+	else
+		csv+=(
+",Install mamehotkeys.sh,,curl -sSL -o /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh https://raw.githubusercontent.com/DTEAM-1/test/main/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option will install mamehotkeys.sh from :\n /opt/retropie/supplementary/emulationstation/scripts/configscripts\","
+		)
+	fi
+    [[ $1 != refresh ]] && build_menu_mamedev
+}
+
+
 function subgui_addons_mamedev () {
     [[ $1 != refresh ]] && local csv=()
     csv=(
@@ -975,10 +1008,7 @@ function subgui_addons_mamedev () {
 ",,,,,,,,,"
 ",Experimental : CHANGE selected config options,,subgui_configs_settings_mamedev,,,,,help_to_do,"
 ",,,,,,,,,"
-",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
-",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
-",,,,,,,,,"
-
+",►Joystick configurations,,subgui_joystick_configurations_mamedev,,,,,show_message_mamedev \"Go to the submenu items regarding the joystick options.\","
 ",►Download / install cheatfile (279),,download_extra_files_mamedev 17RwDMSkoinMM510YcWTf8o3xsknpn1fy cheat0279.zip cheat cheat.7z,,,,,show_message_mamedev \"When this script installs a system or category the cheat option in the configs will be turned on in lr-mess/lr-mame and MAME. Together with the cheat file you will be able to use cheats on certain games. The cheat file used can be found on http://www.mamecheat.co.uk\","
 ",►Download / create gamelists,,subgui_gamelists_mamedev,,,,,show_message_mamedev \"Here you will find the options to create or install predefined gamelists with videos and pictures. These gamelists give a good preview in emulationstation of the games you can select. In contrary to where the gamelists normally are stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\","
 	)
