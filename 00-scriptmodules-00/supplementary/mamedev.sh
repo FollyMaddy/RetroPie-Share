@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-19 (289)"
+rp_module_version="0290.pre-beta-20 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
 	rp_module_version_mame="$($emudir/mame/mame -version)"
@@ -83,7 +83,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 		show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-19 :\n\
+290.pre-beta-20 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper and functions (server down)\n\
@@ -98,7 +98,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 - uniform padding and clean up\n
 - turn-off obsolete menu items (not removed yet)\n
 - remove one-time-info of older versions\n
-- basic implementation of mamehotkeys.sh from DTEAM\n
+- implementation of mamehotkeys.sh from DTEAM\n
 "
 		#check if mame is installed and which version
 		xattr -w user.comment "x" $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi)
@@ -961,7 +961,7 @@ function subgui_joystick_configurations_mamedev () {
 	local csv=()
     csv=(
 ",menu_item,,to_do,,,,,help_to_do,"
-",►MAME gamepad hotkeys enhancement by @DTEAM,,subgui_joystick_mamehotkeys_mamedev,,,,,show_message_mamedev \"Go to the submenu and install/remove or run mamehotkeys.sh\","
+",►MAME gamepad hotkeys enhancement by @DTEAM,,subgui_joystick_mamehotkeys_mamedev,,,,,show_message_mamedev \"Go to the submenu and install/remove or run mamehotkeys.sh\n\nGamepad hotkeys for MAME standalone.(mamehotkeys.sh)\nThey work like the RetroArch hotkeys with Select as the hotkey button :\n\nSelect + Start : quit\nSelect + R1 : quick save\nSelect + L1 : quick load\nSelect + X : MAME menu\nSelect + B : soft reset\nSelect + L3 : snapshot\nSelect + R3 : record AVI video\n\nThe hotkeys are written in the MAME default.cfg so they work in every game that has no input settings of its own.\nKeyboard keys keep working.\nSingle gamepad buttons are removed from the MAME shortcuts so one button alone can no longer quit or save or pause a game by accident.\","
 ",,,,,,,,,"
 ",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
 ",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
@@ -977,12 +977,12 @@ function subgui_joystick_mamehotkeys_mamedev () {
 	)
 	if [[ -f /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh ]];then
 		csv+=(
-",Run mamehotkeys.sh,,su $user -c 'bash /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh || true';sleep 5;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option will run mamehotkeys.sh from :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\","
-",Remove mamehotkeys.sh,,rm -f /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option will remove mamehotkeys.sh from :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\","
+",Run mamehotkeys.sh,,su $user -c 'bash /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh || true';sleep 5;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option applies the hotkeys right away to the player 1 gamepad already configured in EmulationStation.\n\nBefore running :\n- connect the player 1 gamepad\n- close MAME\n\nThe hotkeys are written in the MAME default.cfg (cfg_directory in mame.ini).\nThe first time a backup is made next to it :\ndefault.cfg.before-hotkeys\n\nThe button numbers are calculated the same way MAME does from the SDL2 gamepad mapping.\","
+",Remove mamehotkeys.sh,,rm -f /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option removes mamehotkeys.sh from :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\n\nIt will no longer run when a gamepad is configured in EmulationStation.\nThe hotkeys already written in the MAME default.cfg stay.\nTo go back to the old config restore the backup :\ndefault.cfg.before-hotkeys\","
 		)
 	else
 		csv+=(
-",Install mamehotkeys.sh,,curl -sSL -o /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh https://raw.githubusercontent.com/DTEAM-1/test/main/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option will install mamehotkeys.sh from :\n /opt/retropie/supplementary/emulationstation/scripts/configscripts\","
+",Install mamehotkeys.sh,,curl -sSL -o /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh https://raw.githubusercontent.com/DTEAM-1/test/main/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option downloads mamehotkeys.sh from :\nhttps://github.com/DTEAM-1/test\nand places it in :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\n\nFrom then on it runs by itself each time a gamepad is configured in EmulationStation.\nOnly the gamepad that MAME sees as player 1 gets the hotkeys.\n\nAfter installing use Run mamehotkeys.sh to apply the hotkeys right away to the gamepad that is already configured.\","
 		)
 	fi
     [[ $1 != refresh ]] && build_menu_mamedev
