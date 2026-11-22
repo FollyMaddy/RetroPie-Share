@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-20 (289)"
+rp_module_version="0290.pre-beta-21 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
 	rp_module_version_mame="$($emudir/mame/mame -version)"
@@ -83,7 +83,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 		show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-20 :\n\
+290.pre-beta-21 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper and functions (server down)\n\
@@ -99,6 +99,8 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 - turn-off obsolete menu items (not removed yet)\n
 - remove one-time-info of older versions\n
 - implementation of mamehotkeys.sh from DTEAM\n
+- improve warning addons\n
+- sort functions\n
 "
 		#check if mame is installed and which version
 		xattr -w user.comment "x" $(if [[ -f $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh ]];then echo $scriptdir/ext/RetroPie-Share/scriptmodules/supplementary/mamedev.sh;else echo $scriptdir/scriptmodules/supplementary/mamedev.sh;fi)
@@ -112,6 +114,38 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 		fi
 		#always read the database
 		read_data_mamedev clear
+}
+
+
+function direct_install_mamedev() {
+    local csv=()
+    local driver_name
+    local system_type
+    local driver_info=()
+
+    driver_name=$(dialog \
+--no-cancel \
+--default-item "$default" \
+--backtitle "$__backtitle" \
+--title "Give your driver name and install it directly" \
+--form "" \
+22 76 16 \
+"Driver name:" 1 1 "" 1 22 76 100 \
+2>&1 >/dev/tty \
+)
+	clear
+	#get non-arcade/arcade status from database
+	IFS=$'\n' driver_info=($(awk "/,$driver_name,/" <<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")));unset IFS
+	if [[ ${driver_info[@]} == *@non-arcad* ]];then
+		system_type="non-arcade"
+	else
+		system_type="arcade"
+	fi
+	if [[ -z $driver_info || -z $driver_name ]];then
+		show_message_mamedev "The drivername you entered doesn't exist\n\nNot proceeding !"
+	else
+		install_system_mamedev $driver_name "" "" "" "" "" "" "" "" "$system_type"
+	fi
 }
 
 
@@ -132,7 +166,7 @@ function gui_mamedev() {
 ",►Switch to another mame database version,,subgui_databases_mamedev,,,,,show_message_mamedev \"If you are running an older MAME / lr-mame / lr-mess version\nthen you can select an older suitable database over here.\nThat way an install will have the best version match.\n\nOnly the databases that were created and suitable can be selected.\nIf you use a version that does not exist then select the closest one.\","
 ",►Choose and remove installs,,subgui_remove_installs_mamedev,,,,,show_message_mamedev \"A most likely list of the installs is presented.\nBy selecting a system or a category you can remove one.\nAfter that you will go back into the menu.\nNext time an updated list is presented again.\n\n- only 'mamedev' runcommands are removed from the emulators.cfg\n- then the emulators.cfg is removed if empty\n- the system is removed from es_systems.cfg if no emulators.cfg is found\n- the config directory is not removed !\","
 ",,,,,,,,,"
-",►ADDONS / EXTRAS / CONFIGS,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $configdir/mame/mame.ini\n- $rootdir/supplementary/runcommand\n- $datadir/BIOS/mame/cheat\n- $datadir/roms/mame/cheat\n- $datadir/roms/mame/artwork\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_addons_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
+",►ADDONS / EXTRAS / CONFIGS,,show_message_mamedev \"The options in the next submenu are for downloading files and they will overwrite files with the same name. So be careful with them.\nThe possible options use these directories :\n- $rootdir/configs/all/emulationstation\n- $rootdir/configs/all/retroarch/overlay\n- $rootdir/configs/all/retroarch-joypads\n- $configdir/mame/mame.ini\n- $rootdir/supplementary\n- $datadir/BIOS/mame\n- $datadir/roms/mame\n- $datadir/roms/<system>\n- $scriptdir/scriptmodules\n\nIf you have important files then do a BACKUP first !!!\n\nPress Cancel in the next subgui to go back into the menu.\";subgui_addons_mamedev ,,,,,show_message_mamedev \"Get online files.\n\n- download retroarch joypad autoconfigs\n- download cheats\n- download ES gamelists + media\n- download artwork\n- browse and download artwork per system\n- create background overlays from artwork\n- create background overlay config files\n- download realistic bezels\n- create bezel overlay files\","
 ",,,,,,,,,"
 ",►Link roms from folder ~/RetroPie/BIOS/mame,,show_message_mamedev \"Warning : files or links are forced overwritten\";subgui_link_roms_mamedev,,,,,show_message_mamedev \"Show categories and ultimately create hardlinks from files that are in ~/RetroPie/BIOS/mame.\nMake sure you have downloaded the whole set of roms and placed it in ~/RetroPie/BIOS/mame.\nFor example: get the mame-merged set and place all the files in in ~/RetroPie/BIOS/mame\nBy doing this you will also ensure that all the bios roms are in the correct directory so there will be no need to place bios files inside that folder again.\","
    )
@@ -957,38 +991,6 @@ function subgui_systems_extras_add_autoboot_mamedev() {
 }
 
 
-function subgui_joystick_configurations_mamedev () {
-	local csv=()
-    csv=(
-",menu_item,,to_do,,,,,help_to_do,"
-",►MAME gamepad hotkeys enhancement by @DTEAM,,subgui_joystick_mamehotkeys_mamedev,,,,,show_message_mamedev \"Go to the submenu and install/remove or run mamehotkeys.sh\n\nGamepad hotkeys for MAME standalone.(mamehotkeys.sh)\nThey work like the RetroArch hotkeys with Select as the hotkey button :\n\nSelect + Start : quit\nSelect + R1 : quick save\nSelect + L1 : quick load\nSelect + X : MAME menu\nSelect + B : soft reset\nSelect + L3 : snapshot\nSelect + R3 : record AVI video\n\nThe hotkeys are written in the MAME default.cfg so they work in every game that has no input settings of its own.\nKeyboard keys keep working.\nSingle gamepad buttons are removed from the MAME shortcuts so one button alone can no longer quit or save or pause a game by accident.\","
-",,,,,,,,,"
-",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
-",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
-	)
-    build_menu_mamedev
-}
-
-
-function subgui_joystick_mamehotkeys_mamedev () {
-    [[ $1 != refresh ]] && local csv=()
-    csv=(
-",menu_item,,to_do,,,,,help_to_do,"
-	)
-	if [[ -f /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh ]];then
-		csv+=(
-",Run mamehotkeys.sh,,su $user -c 'bash /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh || true';sleep 5;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option applies the hotkeys right away to the player 1 gamepad already configured in EmulationStation.\n\nBefore running :\n- connect the player 1 gamepad\n- close MAME\n\nThe hotkeys are written in the MAME default.cfg (cfg_directory in mame.ini).\nThe first time a backup is made next to it :\ndefault.cfg.before-hotkeys\n\nThe button numbers are calculated the same way MAME does from the SDL2 gamepad mapping.\","
-",Remove mamehotkeys.sh,,rm -f /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option removes mamehotkeys.sh from :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\n\nIt will no longer run when a gamepad is configured in EmulationStation.\nThe hotkeys already written in the MAME default.cfg stay.\nTo go back to the old config restore the backup :\ndefault.cfg.before-hotkeys\","
-		)
-	else
-		csv+=(
-",Install mamehotkeys.sh,,curl -sSL -o /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh https://raw.githubusercontent.com/DTEAM-1/test/main/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option downloads mamehotkeys.sh from :\nhttps://github.com/DTEAM-1/test\nand places it in :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\n\nFrom then on it runs by itself each time a gamepad is configured in EmulationStation.\nOnly the gamepad that MAME sees as player 1 gets the hotkeys.\n\nAfter installing use Run mamehotkeys.sh to apply the hotkeys right away to the gamepad that is already configured.\","
-		)
-	fi
-    [[ $1 != refresh ]] && build_menu_mamedev
-}
-
-
 function subgui_addons_mamedev () {
     [[ $1 != refresh ]] && local csv=()
     csv=(
@@ -1042,35 +1044,16 @@ function subgui_databases_mamedev() {
 }
 
 
-function direct_install_mamedev() {
+function subgui_create_on_available_gamelists_mamedev() {
     local csv=()
-    local driver_name
-    local system_type
-    local driver_info=()
-
-    driver_name=$(dialog \
---no-cancel \
---default-item "$default" \
---backtitle "$__backtitle" \
---title "Give your driver name and install it directly" \
---form "" \
-22 76 16 \
-"Driver name:" 1 1 "" 1 22 76 100 \
-2>&1 >/dev/tty \
-)
-	clear
-	#get non-arcade/arcade status from database
-	IFS=$'\n' driver_info=($(awk "/,$driver_name,/" <<<$(sed 's/" "/"\n"/g' <<<"${mamedev_csv[*]}")));unset IFS
-	if [[ ${driver_info[@]} == *@non-arcad* ]];then
-		system_type="non-arcade"
-	else
-		system_type="arcade"
-	fi
-	if [[ -z $driver_info || -z $driver_name ]];then
-		show_message_mamedev "The drivername you entered doesn't exist\n\nNot proceeding !"
-	else
-		install_system_mamedev $driver_name "" "" "" "" "" "" "" "" "$system_type"
-	fi
+    local gamelists_csv=()
+    local gamelists_read
+    clear
+    echo "reading the individual gamelist data"
+    #the first value is reserved for the column descriptions
+    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 $datadir/roms|while read line;do echo "\",Create/update only for $([[ $line == *º ]]&&echo ' ')$(if [[ -f $datadir/roms/$line/gamelist.xml ]];then printf '%-20s\\\Z2(has gamelist)\n' $line;else printf '%-20s(no  gamelist)\n' $line;fi),,$1 $line $2 $3;#break,\"";done)
+    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
+    build_menu_mamedev
 }
 
 
@@ -1087,6 +1070,40 @@ function subgui_download_gamelists_mamedev() {
 }
 
 
+function subgui_joystick_configurations_mamedev () {
+	local csv=()
+    csv=(
+",menu_item,,to_do,,,,,help_to_do,"
+",►MAME gamepad hotkeys enhancement by @DTEAM,,subgui_joystick_mamehotkeys_mamedev,,,,,show_message_mamedev \"Go to the submenu and install/remove or run mamehotkeys.sh\n\nGamepad hotkeys for MAME standalone.(mamehotkeys.sh)\nThey work like the RetroArch hotkeys with Select as the hotkey button :\n\nSelect + Start : quit\nSelect + R1 : quick save\nSelect + L1 : quick load\nSelect + X : MAME menu\nSelect + B : soft reset\nSelect + L3 : snapshot\nSelect + R3 : record AVI video\n\nThe hotkeys are written in the MAME default.cfg so they work in every game that has no input settings of its own.\nKeyboard keys keep working.\nSingle gamepad buttons are removed from the MAME shortcuts so one button alone can no longer quit or save or pause a game by accident.\","
+",,,,,,,,,"
+",Download retroarch-joypad-autoconfigs (+/-1 min.),,download_from_github_mamedev  libretro/retroarch-joypad-autoconfig/tree/master/udev $rootdir/configs/all/retroarch-joypads cfg;download_from_github_mamedev  FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig $rootdir/configs/all/retroarch-joypads cfg,,,,,show_message_mamedev \"The autoconfig files mentioned in this option are used to recognize input devices and to automatically setup the default mappings between the physical device and the RetroPad virtual controller.\nThe configs come from :\nhttps://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev\nhttps://github.com/FollyMaddy/RetroPie-Share/tree/main/00-retroarch-00/retroarch-joypad-autoconfig\n\nThe configs are placed in :\n$rootdir/configs/all/retroarch-joypads\","
+",Download lr-mess configs for better button mapping (+/-1 min.),,download_from_google_drive_mamedev 1Js34M6b8n97CUp_Bf_x4FfpG68oKL3I5 $rootdir/configs,,,,,show_message_mamedev \"Most handheld games don't use the same joystick layout. To make it more universal @bbilford83 made some custom configs. Basically it means that the shooter button is always the same in these games.\n\nThe added game button configs are for the categories :\n- konamih ($rootdir/configs/konamih/lr-mess)\n- tigerh ($rootdir/configs/tigerh/lr-mess)\n\nKnown compatible joypads are :\n- 8bitdo\n- BigBen\n- PiBoy\n\nFiles are downloaded from the google-drive of @bbilford83 :\n1RTxt9lZpGwtbNsrPRV9_FJChpk_iDiDE\","
+	)
+    build_menu_mamedev
+}
+
+
+function subgui_joystick_mamehotkeys_mamedev () {
+    [[ $1 != refresh ]] && local csv=()
+    csv=(
+",menu_item,,to_do,,,,,help_to_do,"
+	)
+	if [[ -f /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh ]];then
+		csv+=(
+",Enable hotkeys (run mamehotkeys.sh),,su $user -c 'bash /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh || true';sleep 5;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option applies the hotkeys right away to the player 1 gamepad already configured in EmulationStation.\n\nBefore running :\n- connect the player 1 gamepad\n- close MAME\n\nThe hotkeys are written in the MAME default.cfg\n(cfg_directory in mame.ini).\nThe first time a backup is made next to it :\ndefault.cfg.before-hotkeys\n\nThe button numbers are calculated the same way MAME does from the SDL2 gamepad mapping.\","
+",Remove hotkeys and mamehotkeys.sh script,,bash /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh remove;sleep 5;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option removes the hotkeys in the MAME default.cfg (cfg_directory in mame.ini).\n\nThis also removes mamehotkeys.sh from :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\n\nFrom then on it will no longer run.\","
+",,,,,,,,,"
+",Update mamehotkeys.sh,,curl -sSL -o /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh https://raw.githubusercontent.com/DTEAM-1/test/main/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option downloads the latest mamehotkeys.sh from :\nhttps://github.com/DTEAM-1/test\nand places it in :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\n\nFrom then on it runs by itself each time a gamepad is configured in EmulationStation.\nOnly the gamepad that MAME sees as player 1 gets the hotkeys.\n\nAfter installing use Run mamehotkeys.sh to apply the hotkeys right away to the gamepad that is already configured.\","
+		)
+	else
+		csv+=(
+",Install mamehotkeys.sh,,curl -sSL -o /opt/retropie/supplementary/emulationstation/scripts/configscripts/mamehotkeys.sh https://raw.githubusercontent.com/DTEAM-1/test/main/mamehotkeys.sh;#refresh,subgui_joystick_mamehotkeys_mamedev,,,,show_message_mamedev \"This option downloads the latest mamehotkeys.sh from :\nhttps://github.com/DTEAM-1/test\nand places it in :\n/opt/retropie/supplementary/emulationstation/scripts/configscripts\n\nFrom then on it runs by itself each time a gamepad is configured in EmulationStation.\nOnly the gamepad that MAME sees as player 1 gets the hotkeys.\n\nAfter installing use Run mamehotkeys.sh to apply the hotkeys right away to the gamepad that is already configured.\","
+		)
+	fi
+    [[ $1 != refresh ]] && build_menu_mamedev
+}
+
+
 function subgui_remove_installs_mamedev() {
     [[ $1 != refresh ]] && local csv=()
     #the first value is reserved for the column descriptions
@@ -1100,19 +1117,6 @@ function subgui_remove_installs_mamedev() {
     csv+=( ",,,,,,,,," )
     fi
     [[ $1 != refresh ]] && build_menu_mamedev
-}
-
-
-function subgui_create_on_available_gamelists_mamedev() {
-    local csv=()
-    local gamelists_csv=()
-    local gamelists_read
-    clear
-    echo "reading the individual gamelist data"
-    #the first value is reserved for the column descriptions
-    while read gamelists_read;do gamelists_csv+=("$gamelists_read");done < <(echo \",,,,\";ls -w1 $datadir/roms|while read line;do echo "\",Create/update only for $([[ $line == *º ]]&&echo ' ')$(if [[ -f $datadir/roms/$line/gamelist.xml ]];then printf '%-20s\\\Z2(has gamelist)\n' $line;else printf '%-20s(no  gamelist)\n' $line;fi),,$1 $line $2 $3;#break,\"";done)
-    IFS=$'\n' csv=($(sort -t"," -d -k 2 --ignore-case <<<"${gamelists_csv[*]}"));unset IFS
-    build_menu_mamedev
 }
 
 
