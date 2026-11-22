@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-21 (289)"
+rp_module_version="0290.pre-beta-22 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
 	rp_module_version_mame="$($emudir/mame/mame -version)"
@@ -83,11 +83,11 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 		show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-21 :\n\
+290.pre-beta-22 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper and functions (server down)\n\
-- add simple and improved gamelist creator\n\
+- add simple gamelist creator\n\
 - function YESNO : possibility to do something when selection NO\n
 - be able to use 2 gdrives for getting and installing mame binaries\n
 - read latest database in the beginning and fix database not in array\n
@@ -1127,6 +1127,7 @@ function remove_installs_mamedev() {
 
 
 function real_basic_gamelist_creator_command_mamedev() {
+	local category_or_driver_folders=( "$(cat "/opt/retropie/configs/$1/emulators.cfg" |awk -F '-' '/mame-.*-basename / {print $2}')" )
 	local gamelist_file_extensions=("7z" "zip")
 	if [[ $2 == all ]];then
 	local gamelist_folders=("selects" "titles" "ingames" "flyers" "videos")
@@ -1134,44 +1135,47 @@ function real_basic_gamelist_creator_command_mamedev() {
 	#remember when creating the gamelist and when ${gamelist_folders[2] is empty videos aren't found, even if they exist, this is also what we want here !
 	local gamelist_folders=("selects" "titles" "ingames" "flyers")
 	fi
+	local arcade_italia_link
+	local folder_installed_by_script=$(cat "/opt/retropie/configs/$1/emulators.cfg" |awk -F '-' '/mame-/ && /-basename =/ {print $1}')
 	local gamelist_folder
 	local gamelist_file_extension
-	local arcade_italia_link
-	if [[ $3 == fresh ]];then
-		rm $datadir/roms/$1/gamelist.xml 2> /dev/null
-		rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
-    fi
-	echo "Images are downloaded from adb.arcadeitalia.net"
-	echo "-----------------------------------------------"
-	cat > $datadir/roms/$1/gamelist.xml << _EOF_
+	#if a category is installed by the script
+	if [[ -f /opt/retropie/configs/$1/emulators.cfg ]] && [[ -n  ${folder_installed_by_script} ]] && [[ -z ${category_or_driver_folders[@]} ]];then
+		if [[ $3 == fresh ]];then
+			rm $datadir/roms/$1/gamelist.xml 2> /dev/null
+			rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
+		fi
+		echo "Images are downloaded from adb.arcadeitalia.net"
+		echo "-----------------------------------------------"
+		cat > $datadir/roms/$1/gamelist.xml << _EOF_
 <?xml version=\"1.0\"?>
 <gameList>
 _EOF_
-	#https://stackoverflow.com/questions/29292268/how-can-i-define-the-variable-for-the-awk-filter
-	cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category=@"$1"@ '$0 ~ category { print $0 }'|while read line
-	do
-	shortname=$(echo $line|awk '{ print $2 }')
-	longname=$(echo $line|awk -F'[(:)]' '{ if ($3) print $2 "("$3")";else print $2 }')
-	for gamelist_folder in ${gamelist_folders[@]}
-	do
-		if [[ $gamelist_folder == "videos" ]];then
-			arcade_italia_link="https://adb.arcadeitalia.net/download_file.php?tipo=mame_current&codice=${shortname}&entity=shortplay&oper=streaming&filler=${shortname}.mp4"
-		else
-			arcade_italia_link="https://adb.arcadeitalia.net/media/mame.current/${gamelist_folder}/${shortname}.png"
-		fi
-		#wget fix for video filename (adding --content-disposition) : https://www.junian.dev/blog/wget-correct-name/ 
-		#or use : curl --create-dirs -o "$datadir/roms/$1/media/emulationstation/${gamelist_folder}/${shortname}.mp4" "${arcade_italia_link}"
-		if wget -q -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}";then
-			echo -e "\e[0;32m(V) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})" >&2
-		else
-			echo -e "\e[0;31m(X) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})" >&2
-		fi
-		#run ffmpeg only if the specific ingame image exists
-		[[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4" 2> /dev/null
-	done
-	for gamelist_file_extension in ${gamelist_file_extensions[@]}
-	do
-		cat >> $datadir/roms/$1/gamelist.xml << _EOF_
+		#https://stackoverflow.com/questions/29292268/how-can-i-define-the-variable-for-the-awk-filter
+		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk -v category=@"$1"@ '$0 ~ category { print $0 }'|while read line
+		do
+			shortname=$(echo $line|awk '{ print $2 }')
+			longname=$(echo $line|awk -F'[(:)]' '{ if ($3) print $2 "("$3")";else print $2 }')
+			for gamelist_folder in ${gamelist_folders[@]}
+			do
+				if [[ $gamelist_folder == "videos" ]];then
+					arcade_italia_link="https://adb.arcadeitalia.net/download_file.php?tipo=mame_current&codice=${shortname}&entity=shortplay&oper=streaming&filler=${shortname}.mp4"
+				else
+					arcade_italia_link="https://adb.arcadeitalia.net/media/mame.current/${gamelist_folder}/${shortname}.png"
+				fi
+				#wget fix for video filename (adding --content-disposition) : https://www.junian.dev/blog/wget-correct-name/ 
+				#or use : curl --create-dirs -o "$datadir/roms/$1/media/emulationstation/${gamelist_folder}/${shortname}.mp4" "${arcade_italia_link}"
+				if wget -q -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}";then
+					echo -e "\e[0;32m(V) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})" >&2
+				else
+					echo -e "\e[0;31m(X) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})" >&2
+				fi
+				#run ffmpeg only if the specific ingame image exists
+				[[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4" 2> /dev/null
+			done
+			for gamelist_file_extension in ${gamelist_file_extensions[@]}
+			do
+				cat >> $datadir/roms/$1/gamelist.xml << _EOF_
 	<game>
 		<path>./${shortname}.${gamelist_file_extension}</path>
 		<name>${longname}</name>
@@ -1180,13 +1184,24 @@ _EOF_
 		<video>$([[ ! -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[4]}/${shortname}.mp4 ]] && [[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4")$([[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[4]}/${shortname}.mp4 ]] && echo "./media/emulationstation/${gamelist_folders[4]}/${shortname}.mp4")</video>
 	</game> 
 _EOF_
-	done
-	done
-	cat >> $datadir/roms/$1/gamelist.xml << _EOF_
+			done
+		done
+		cat >> $datadir/roms/$1/gamelist.xml << _EOF_
 </gameList>
 _EOF_
-	chown $user:$user "$datadir/roms/$1/gamelist.xml"
-	chown -R $user:$user "$datadir/roms/$1/media"
+	#if a default driver with softlist is installed by the script
+	elif [[ -f /opt/retropie/configs/$1/emulators.cfg ]] && [[ -n  ${folder_installed_by_script} ]] && [[ -n ${category_or_driver_folders[@]} ]];then
+	echo "creating gamelists for default drivers with softlist has not been added yet !"
+	sleep 5
+	#if not installed by the script
+	else
+	echo "category or system not supported or installed by the script !"
+	sleep 5
+	fi
+	chown $user:$user "$datadir/roms/$1/gamelist.xml" 2>&-
+	chown -R $user:$user "$datadir/roms/$1/media" 2>&-
+
+
 }
 
 
