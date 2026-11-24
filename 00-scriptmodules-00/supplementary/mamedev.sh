@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-22 (289)"
+rp_module_version="0290.pre-beta-23 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
 	rp_module_version_mame="$($emudir/mame/mame -version)"
@@ -83,7 +83,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 		show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-22 :\n\
+290.pre-beta-23 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper and functions (server down)\n\
@@ -613,8 +613,8 @@ function subgui_gamelists_mamedev() {
 ",►Download/update gamelists with media per system,,subgui_download_gamelists_mamedev 19h16tSYtksWU1EfC92KxJBi-8zYTYkYr,,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option you can choose to download the gamelists seperately.\","
 ",Download/update all ES gamelists with media (+/-30 min.),,show_message_yesno_mamedev \"Would you like to proceed ?\" \"download_from_google_drive_mamedev 19h16tSYtksWU1EfC92KxJBi-8zYTYkYr $datadir/roms\",,,,,show_message_mamedev \"Here you will find predefined gamelists with videos and pictures. These are created to have a good preview in emulationstation of the games you can select. In contrary to where the gamelists are normally stored these gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\n\nWhen selecting this option all available gamelists with media are downloaded.\","
 ",,,,,,,,,"
-",►Create basic gamelists (image + marquee + video/still-video),,show_message_mamedev \"Experimental!\n\nNotice :\nAfter selecting a category a new gamelist.xml is created.\nYou will be presented a Yes/No question to delete or keep files !\n\nRemember for now :\nWorks only on category with drivers that use no media (carts or flops) !\n\nNewer categories are added from database 290.\nSo if one or more new categories are installed then switch to database 290 !\";show_message_yesno_mamedev \"Select YES if you want to make a gamelist and delete the old gamelist and media files from the selected category.\n(the gamelist.xml and the media folder is deleted !)\n\nSelect NO if you want to make a gamelist and re-use the media files from the selected category.\n(the gamelist.xml is overwritten and the media files are not deleted and when trying to download it will skip the download when the file exists)\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev all fresh\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev all\",,,,,show_message_mamedev \"Here you will be able to create gamelists using the mamedev database with media (depending on availability on the adb.arcadeitalia.net).\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nWhen selecting this option you can select a category to create a gamelist for.\nThe existing gamelist file is always overwritten !\","
-",►Create basic gamelists (image + marquee + still-video),,show_message_mamedev \"Experimental!\n\nNotice :\nAfter selecting a category a new gamelist.xml is created.\nYou will be presented a Yes/No question to delete or keep files !\n\nRemember for now :\nWorks only on category with drivers that use no media (carts or flops) !\n\nNewer categories are added from database 290.\nSo if one or more new categories are installed then switch to database 290 !\";show_message_yesno_mamedev \"Select YES if you want to make a gamelist and delete the old gamelist and media files from the selected category.\n(the gamelist.xml and the media folder is deleted !)\n\nSelect NO if you want to make a gamelist and re-use the media files from the selected category.\n(the gamelist.xml is overwritten and the media files are not deleted and when trying to download it will skip the download when the file exists)\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev images fresh\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev images\",,,,,show_message_mamedev \"Here you will be able to create gamelists using the mamedev database with media (depending on availability on the adb.arcadeitalia.net).\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nWhen selecting this option you can select a category to create a gamelist for.\nThe existing gamelist file is always overwritten !\","
+",►Create basic gamelists (image + marquee + video/still-video),,show_message_mamedev \"Experimental!\n\nNotice :\nAfter selecting a category a new gamelist.xml is created.\nYou will be presented a Yes/No question to delete or keep files !\n\nKeep in mind that new categories have been added from database 290 !\";show_message_yesno_mamedev \"Select YES if you want to make a gamelist and delete the old gamelist and media files from the selected category.\n(the gamelist.xml and the media folder is deleted !)\n\nSelect NO if you want to make a gamelist and re-use the media files from the selected category.\n(the gamelist.xml is overwritten and the media files are not deleted and when trying to download it will skip the download when the file exists)\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev all fresh;#break\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev all;#break\",,,,,show_message_mamedev \"Here you will be able to create gamelists using the mamedev database with media (depending on availability on the adb.arcadeitalia.net).\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nWhen selecting this option you can select a category to create a gamelist for.\nThe existing gamelist file is always overwritten !\n\nIt is also possible to create for non-arcade systems with softlist(s) but no videos are downloaded !\nA check reviewed that there are no videos online for softlist software.\","
+",►Create basic gamelists (image + marquee + still-video),,show_message_mamedev \"Experimental!\n\nNotice :\nAfter selecting a category a new gamelist.xml is created.\nYou will be presented a Yes/No question to delete or keep files !\n\nKeep in mind that new categories have been added from database 290 !\";show_message_yesno_mamedev \"Select YES if you want to make a gamelist and delete the old gamelist and media files from the selected category.\n(the gamelist.xml and the media folder is deleted !)\n\nSelect NO if you want to make a gamelist and re-use the media files from the selected category.\n(the gamelist.xml is overwritten and the media files are not deleted and when trying to download it will skip the download when the file exists)\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev images fresh;#break\" \"subgui_create_on_available_gamelists_mamedev real_basic_gamelist_creator_command_mamedev images;#break\",,,,,show_message_mamedev \"Here you will be able to create gamelists using the mamedev database with media (depending on availability on the adb.arcadeitalia.net).\nThe gamelists are stored in :\n~$datadir/roms/<system>\nThis makes it easier to backup the gamelists together with your roms and it prevents from overwriting gamelist files in other locations.\nWhen selecting this option you can select a category to create a gamelist for.\nThe existing gamelist file is always overwritten !\n\nIt is also possible to create for non-arcade systems with softlist(s).\","
     )
     build_menu_mamedev
 }
@@ -1127,8 +1127,9 @@ function remove_installs_mamedev() {
 
 
 function real_basic_gamelist_creator_command_mamedev() {
-	local category_or_driver_folders=( "$(cat "/opt/retropie/configs/$1/emulators.cfg" |awk -F '-' '/mame-.*-basename / {print $2}')" )
+	local category_or_drivers=( $(cat "/opt/retropie/configs/$1/emulators.cfg" |awk -F '-' '/mame-.*-basename / {print $2}'|sort ))
 	local gamelist_file_extensions=("7z" "zip")
+	local softwarelists=()
 	if [[ $2 == all ]];then
 	local gamelist_folders=("selects" "titles" "ingames" "flyers" "videos")
 	else
@@ -1139,8 +1140,11 @@ function real_basic_gamelist_creator_command_mamedev() {
 	local folder_installed_by_script=$(cat "/opt/retropie/configs/$1/emulators.cfg" |awk -F '-' '/mame-/ && /-basename =/ {print $1}')
 	local gamelist_folder
 	local gamelist_file_extension
+	local longname
+	local shortname
+
 	#if a category is installed by the script
-	if [[ -f /opt/retropie/configs/$1/emulators.cfg ]] && [[ -n  ${folder_installed_by_script} ]] && [[ -z ${category_or_driver_folders[@]} ]];then
+	if [[ -f /opt/retropie/configs/$1/emulators.cfg ]] && [[ -n  ${folder_installed_by_script} ]] && [[ -z ${category_or_drivers[@]} ]];then
 		if [[ $3 == fresh ]];then
 			rm $datadir/roms/$1/gamelist.xml 2> /dev/null
 			rm -r $datadir/roms/$1/media/emulationstation 2> /dev/null
@@ -1148,7 +1152,7 @@ function real_basic_gamelist_creator_command_mamedev() {
 		echo "Images are downloaded from adb.arcadeitalia.net"
 		echo "-----------------------------------------------"
 		cat > $datadir/roms/$1/gamelist.xml << _EOF_
-<?xml version=\"1.0\"?>
+<?xml version="1.0"?>
 <gameList>
 _EOF_
 		#https://stackoverflow.com/questions/29292268/how-can-i-define-the-variable-for-the-awk-filter
@@ -1166,9 +1170,9 @@ _EOF_
 				#wget fix for video filename (adding --content-disposition) : https://www.junian.dev/blog/wget-correct-name/ 
 				#or use : curl --create-dirs -o "$datadir/roms/$1/media/emulationstation/${gamelist_folder}/${shortname}.mp4" "${arcade_italia_link}"
 				if wget -q -t2 -c -w1 --content-disposition -P "$datadir/roms/$1/media/emulationstation/${gamelist_folder}" "${arcade_italia_link}";then
-					echo -e "\e[0;32m(V) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})" >&2
+					echo -e "\e[0;32m(V) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})\e[0m" >&2
 				else
-					echo -e "\e[0;31m(X) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})" >&2
+					echo -e "\e[0;31m(X) $1 (${gamelist_folder}/${shortname}.${arcade_italia_link/*./})\e[0m" >&2
 				fi
 				#run ffmpeg only if the specific ingame image exists
 				[[ -f $datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$1/media/emulationstation/${gamelist_folders[2]}/${shortname}.mp4" 2> /dev/null
@@ -1189,10 +1193,30 @@ _EOF_
 		cat >> $datadir/roms/$1/gamelist.xml << _EOF_
 </gameList>
 _EOF_
+
 	#if a default driver with softlist is installed by the script
-	elif [[ -f /opt/retropie/configs/$1/emulators.cfg ]] && [[ -n  ${folder_installed_by_script} ]] && [[ -n ${category_or_driver_folders[@]} ]];then
-	echo "creating gamelists for default drivers with softlist has not been added yet !"
-	sleep 5
+	elif [[ -f /opt/retropie/configs/$1/emulators.cfg ]] && [[ -n  ${folder_installed_by_script} ]] && [[ -n ${category_or_drivers[@]} ]];then
+
+	#echo "creating gamelists for default drivers with softlist has not been added yet !"
+	#echo ${category_or_drivers[0]}
+	#echo ${#category_or_drivers[@]}
+	#softwarelists=( "$(/opt/retropie/emulators/mame/mame hbf700p -listxml|awk -F ['"'] '! /:/ && /softwarelist tag=/ && /list/ {print $4}'|sort|uniq)" )
+	#echo ${softwarelists[@]}
+	#sleep 5
+	
+	local csv=()
+    clear
+    echo "reading the individual gamelist data"
+    #the first value is reserved for the column descriptions
+    local csv=()
+    local system_item
+    csv=( ",menu_item,,to_do," )
+	for system_item in ${category_or_drivers[@]}
+    do 
+      csv+=( "\",use system $system_item to create a gamelist,,real_basic_gamelist_creator_for_systems_command_mamedev $system_item $1 $3;#break,\"" )
+    done
+    build_menu_mamedev
+	
 	#if not installed by the script
 	else
 	echo "category or system not supported or installed by the script !"
@@ -1200,8 +1224,89 @@ _EOF_
 	fi
 	chown $user:$user "$datadir/roms/$1/gamelist.xml" 2>&-
 	chown -R $user:$user "$datadir/roms/$1/media" 2>&-
+}
 
 
+function real_basic_gamelist_creator_for_systems_command_mamedev() {
+	#checks
+	#echo $1 $2
+
+	local arcade_italia_link
+	local gamelist_folders=("titles" "ingames")
+	local softwarelists=( "$(/opt/retropie/emulators/mame/mame $1 -listxml|awk -F ['"'] '! /:/ && /softwarelist tag=/ && /list/ {print $4}'|sort|uniq)" )
+	local softwarelist
+	local softwarelistfolder
+	local softwarename
+	local softwaredescription
+	
+	if [[ $3 == fresh ]];then
+		for softwarelist in ${softwarelists[@]}
+		do
+			if [[ $softwarelist =~ "_" ]];then
+				softwarelistfolder="$(echo "$softwarelist/")"
+			else
+				softwarelistfolder=""
+			fi
+			rm $datadir/roms/$2/gamelist.xml 2> /dev/null
+			rm -r $datadir/roms/$2/${softwarelistfolder}media/emulationstation 2> /dev/null
+		done
+	fi
+	
+	echo $datadir/roms/$2/gamelist.xml
+	cat > $datadir/roms/$2/gamelist.xml << _EOF_
+<?xml version="1.0"?>
+<gameList>
+_EOF_
+	for softwarelist in ${softwarelists[@]}
+    do
+		if [[ $softwarelist =~ "_" ]];then
+			softwarelistfolder="$(echo "$softwarelist/")"
+		else
+			softwarelistfolder=""
+		fi
+		##works but using xmlstarlet is not quick
+		##-n for newline after last output
+    	xmlstarlet sel -t -v '//software/@name' -n /opt/retropie/emulators/mame/hash/$softwarelist.xml|while read softwarename
+    	do
+
+			#\" needed otherwise no output
+			#xmlstarlet sel -t -v "//software[@name=\"$softwarename\"]/description" /opt/retropie/emulators/mame/hash/$softwarelist.xml
+			softwaredescription=$(xmlstarlet sel -t -v "//software[@name=\"$softwarename\"]/description" /opt/retropie/emulators/mame/hash/$softwarelist.xml)
+
+			#checks
+			#echo "$softwarelist/$softwarename"
+			#echo "$softwaredescription"
+
+			for gamelist_folder in ${gamelist_folders[@]}
+			do
+				arcade_italia_link="https://adb.arcadeitalia.net/media/mess.current/${gamelist_folder}/${softwarelist}/${softwarename}.png"
+				#wget fix for video filename (adding --content-disposition) : https://www.junian.dev/blog/wget-correct-name/ 
+				#or use : curl --create-dirs -o "$datadir/roms/$1/media/emulationstation/${gamelist_folder}/${shortname}.mp4" "${arcade_italia_link}"
+				if wget -q -t2 -c --content-disposition -P "$datadir/roms/$2/${softwarelistfolder}media/emulationstation/${gamelist_folder}" "${arcade_italia_link}";then
+					echo -e "\e[0;32m(V) $2 (${gamelist_folder}/${softwarelist}/${softwarename}.${arcade_italia_link/*./})\e[0m" >&2
+				else
+					echo -e "\e[0;31m(X) $2 (${gamelist_folder}/${softwarelist}/${softwarename}.${arcade_italia_link/*./})\e[0m" >&2
+				fi
+				#run ffmpeg only if the specific ingame image exists
+				[[ -f $datadir/roms/$2/${softwarelistfolder}media/emulationstation/${gamelist_folders[1]}/${softwarename}.png ]] && ffmpeg -y -loop 1 -i "$datadir/roms/$2/${softwarelistfolder}media/emulationstation/${gamelist_folders[1]}/${softwarename}.png" -t 5 -r 25 -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -pix_fmt yuv420p -c:v libx264 -crf 20 "$datadir/roms/$2/${softwarelistfolder}media/emulationstation/${gamelist_folders[1]}/${softwarename}.mp4" 2> /dev/null
+			done
+
+			cat >> $datadir/roms/$2/gamelist.xml << _EOF_
+	<game>
+		<path>./${softwarelistfolder}$softwarename.zip</path>
+		<name>$softwaredescription</name>
+		<video>$([[ -f $datadir/roms/$2/${softwarelistfolder}media/emulationstation/${gamelist_folders[1]}/${softwarename}.mp4 ]] && echo "./${softwarelistfolder}media/emulationstation/${gamelist_folders[1]}/${softwarename}.mp4")</video>
+		<marquee>$([[ -f $datadir/roms/$2/${softwarelistfolder}media/emulationstation/${gamelist_folders[0]}/${softwarename}.png ]] && echo "./${softwarelistfolder}media/emulationstation/${gamelist_folders[0]}/${softwarename}.png")</marquee>
+	</game> 
+_EOF_
+    	done
+    done
+    cat >> $datadir/roms/$2/gamelist.xml << _EOF_
+</gameList>
+_EOF_
+	sleep 5
+	chown $user:$user "$datadir/roms/$2/gamelist.xml" 2>&-
+	chown -R $user:$user "$datadir/roms/$2/media" 2>&-
 }
 
 
@@ -2370,7 +2475,7 @@ _EOF_
 					1) ;;
 				esac
 				clear
-				echo "roceed...."
+				echo "proceed...."
 				#in part 10 the description is changed to Coleco+SGM when installing coleco/colecop with Super Game Module
 				fi
 				[[ ${systems[-1]} == astrocd* ]] && ExtraPredefinedOptions+=( "-ctrl2 joy" )
