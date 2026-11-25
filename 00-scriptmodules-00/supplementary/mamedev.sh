@@ -25,7 +25,7 @@ rp_module_desc="Add MAME/lr-mame/lr-mess systems"
 rp_module_section="config"
 
 rp_module_build="Default"
-rp_module_version="0290.pre-beta-24 (289)"
+rp_module_version="0290.pre-beta-25 (289)"
 rp_module_version_database="${rp_module_version%.*}"
 if [[ -f $emudir/mame/mame ]];then
 	rp_module_version_mame="$($emudir/mame/mame -version)"
@@ -83,7 +83,7 @@ __XDG_SESSION_TYPE = ${__XDG_SESSION_TYPE}\n\
 		show_message_mamedev "\
                                                  One time update info\n\
 
-290.pre-beta-24 :\n\
+290.pre-beta-25 :\n\
 - add beta 289 testdatabase as 290\n\
 - remember 290 is not out yet !\n\
 - remove retroscraper and functions (server down)\n\
@@ -723,14 +723,14 @@ function subgui_link_roms_mamedev() {
     local csv=()
     csv=(
 ",menu_item,,to_do,"
-",\Zr▼Link files : Fully automated with clones (do all but a bit slower),,,,,,,,"
+",\Zr▼Link files: Fully automated with clones (do all but a bit slower),,,,,,,,"
 ",►Show all non-arcade categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"yes\" \".zip\",,,,,,"
 ",►Show all arcade     categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\" \".zip\",,,,,,"
 ",►Show all arcade 90º categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\" \".zip\",,,,,,"
 ",►Show all non-arcade categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"/@non-arcade@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"yes\" \".7z\",,,,,,"
 ",►Show all arcade     categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\" \".7z\",,,,,,"
 ",►Show all arcade 90º categories from database and link .7z roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@mechanical@/ && /@arcade@/ && /@90º@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"yes\" \".7z\",,,,,,"
-",\Zr▼Link files : Fully automated without clones (quicker),,,,,,,,"
+",\Zr▼Link files: Fully automated without clones (quicker),,,,,,,,"
 ",►Show all non-arcade categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @non-arcade \"!/@clones@/ && /@non-arcade@/ && /@no_media@/\" \"! /90º|bios|computer|good|new0*|no_media|working_arcade/\" \"no\" \".zip\",,,,,,"
 ",►Show all arcade     categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\" \".zip\",,,,,,"
 ",►Show all arcade 90º categories from database and link .zip roms,,subformgui_categories_automated_mamedev \"show list to link category roms\" @arcade \"!/@clones@/ && !/@mechanical@/ && /@arcade@/ && /@90º@/\" \"! /90º|bios|computer|good|new0*|@ma@|oro|working_arcade/\" \"no\" \".zip\",,,,,,"
@@ -1198,14 +1198,12 @@ _EOF_
 	#if a default driver with softlist is installed by the script
 	elif [[ -f /opt/retropie/configs/$1/emulators.cfg ]] && [[ -n  ${folder_installed_by_script} ]] && [[ -n ${category_or_drivers[@]} ]];then
 
-	#echo "creating gamelists for default drivers with softlist has not been added yet !"
 	#echo ${category_or_drivers[0]}
 	#echo ${#category_or_drivers[@]}
 	#softwarelists=( "$(/opt/retropie/emulators/mame/mame hbf700p -listxml|awk -F ['"'] '! /:/ && /softwarelist tag=/ && /list/ {print $4}'|sort|uniq)" )
 	#echo ${softwarelists[@]}
 	#sleep 5
 	
-	local csv=()
     clear
     echo "reading the individual gamelist data"
     #the first value is reserved for the column descriptions
@@ -1678,7 +1676,7 @@ dialog \
 		cat $emudir/mame/mame${rp_module_version_database}_systems_sorted_info|awk "${filter1}"|sed 's/Driver.*: //;s/@/\n/g'|sort|uniq|awk "${filter2}"|while read line
 		do
 			[[ $1 == *download* ]] && [[ -n ${line} ]] && echo "\",Download to $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_archive_multi_downloads_mamedev '${filter1} && /@${line}@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${rompack_link_info[2]} download archive.??? ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
-			[[ $1 == *link* ]] && [[ -n ${line} ]] && echo "\",Create link in $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_link_multi_downloads_mamedev '${filter1} && /@${line}@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${biosdir}/mame ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
+			[[ $1 == *link* ]] && [[ -n ${line} ]] && echo "\",Create links in $(echo ${romdir}|cut -d/ -f4)/roms/${line}$([[ ${filter1} == *90º* ]] && echo 90º),,subform_link_multi_downloads_mamedev '${filter1} && /@${line}@/' ${rompack_link_info[1]} ${datadir}/roms/${line} ${biosdir}/mame ${detect_clone_save},,,,,show_message_mamedev \"NO HELP\",\""
 		done
 		)
 	fi
